@@ -11,8 +11,8 @@ import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.viewmanagers.StickerPickerRowViewManagerDelegate;
 import com.facebook.react.viewmanagers.StickerPickerRowViewManagerInterface;
-import ff.x;
 import java.util.Map;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;
@@ -51,7 +51,7 @@ public final class StickerPickerRowViewManager extends SimpleViewManager<Sticker
     
     @Override 
     public StickerPickerRowView createViewInstance(ThemedReactContext reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         StickerPickerRowView stickerPickerRowView = new StickerPickerRowView(reactContext);
         stickerPickerRowView.setOnPressSticker(new StickerPickerRowViewManager$createViewInstance$1$1(this, reactContext, stickerPickerRowView));
         stickerPickerRowView.setOnLongPressSticker(new StickerPickerRowViewManager$createViewInstance$1$2(this, reactContext, stickerPickerRowView));
@@ -65,14 +65,14 @@ public final class StickerPickerRowViewManager extends SimpleViewManager<Sticker
     }
 
     public void onDropViewInstance(StickerPickerRowView view) {
-        q.g(view, "view");
+        q.h(view, "view");
         super.onDropViewInstance((StickerPickerRowViewManager) view);
         view.clean();
     }
 
     @ReactProp(name = "rowData")
     public void setRowData(StickerPickerRowView view, ReadableMap readableMap) {
-        q.g(view, "view");
+        q.h(view, "view");
         if (readableMap != null) {
             view.setRowData(StickerPickerRowDataSerializationUtilsKt.deserializeStickerPickerRowData(readableMap));
         }

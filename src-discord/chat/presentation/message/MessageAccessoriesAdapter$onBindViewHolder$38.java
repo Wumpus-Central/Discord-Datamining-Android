@@ -23,22 +23,22 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$38 extends s imple
     @Override 
     public   Unit invoke(String str, String str2) {
         invoke2(str, str2);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String url, String filename) {
         ChatEventHandler chatEventHandler;
         String str;
-        q.g(url, "url");
-        q.g(filename, "filename");
+        q.h(url, "url");
+        q.h(filename, "filename");
         chatEventHandler = this.this$0.eventHandler;
         if (chatEventHandler == null) {
-            q.y("eventHandler");
+            q.z("eventHandler");
             chatEventHandler = null;
         }
         str = this.this$0.messageId;
-        q.d(str);
-        chatEventHandler.mo149onLinkClickedu7_MRrM(str, url, filename);
+        q.e(str);
+        chatEventHandler.mo150onLinkClickedu7_MRrM(str, url, filename);
     }
 }

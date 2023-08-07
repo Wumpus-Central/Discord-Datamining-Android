@@ -20,20 +20,20 @@ public final class PostPreviewEmbedViewHolder extends MessagePartViewHolder {
     
     public PostPreviewEmbedViewHolder(PostPreviewEmbedView postPreviewEmbedView) {
         super(postPreviewEmbedView, null);
-        q.g(postPreviewEmbedView, "postPreviewEmbedView");
+        q.h(postPreviewEmbedView, "postPreviewEmbedView");
         this.postPreviewEmbedView = postPreviewEmbedView;
     }
 
     
     public static final void bind$lambda$0(Function4 onTapPostPreviewEmbed, PostPreviewEmbed postPreviewEmbed, View view) {
-        q.g(onTapPostPreviewEmbed, "$onTapPostPreviewEmbed");
-        q.g(postPreviewEmbed, "$postPreviewEmbed");
-        onTapPostPreviewEmbed.invoke(GuildId.m579boximpl(postPreviewEmbed.m112getGuildIdfYKD8eg()), ChannelId.m566boximpl(postPreviewEmbed.m114getParentChannelIdo4g7jtM()), ChannelId.m566boximpl(postPreviewEmbed.m115getThreadIdo4g7jtM()), MessageId.m592boximpl(postPreviewEmbed.m113getMessageId3Eiw7ao()));
+        q.h(onTapPostPreviewEmbed, "$onTapPostPreviewEmbed");
+        q.h(postPreviewEmbed, "$postPreviewEmbed");
+        onTapPostPreviewEmbed.invoke(GuildId.m580boximpl(postPreviewEmbed.m113getGuildIdfYKD8eg()), ChannelId.m567boximpl(postPreviewEmbed.m115getParentChannelIdo4g7jtM()), ChannelId.m567boximpl(postPreviewEmbed.m116getThreadIdo4g7jtM()), MessageId.m593boximpl(postPreviewEmbed.m114getMessageId3Eiw7ao()));
     }
 
     public final void bind(final PostPreviewEmbed postPreviewEmbed, final Function4<? super GuildId, ? super ChannelId, ? super ChannelId, ? super MessageId, Unit> onTapPostPreviewEmbed, SpoilerConfig spoilerConfig) {
-        q.g(postPreviewEmbed, "postPreviewEmbed");
-        q.g(onTapPostPreviewEmbed, "onTapPostPreviewEmbed");
+        q.h(postPreviewEmbed, "postPreviewEmbed");
+        q.h(onTapPostPreviewEmbed, "onTapPostPreviewEmbed");
         PostPreviewEmbedView postPreviewEmbedView = this.postPreviewEmbedView;
         String title = postPreviewEmbed.getTitle();
         String subtitle = postPreviewEmbed.getSubtitle();
@@ -41,7 +41,7 @@ public final class PostPreviewEmbedViewHolder extends MessagePartViewHolder {
         int ctaButtonColor = postPreviewEmbed.getCtaButtonColor();
         String coverImage = postPreviewEmbed.getCoverImage();
         String blurredCoverImage = postPreviewEmbed.getBlurredCoverImage();
-        postPreviewEmbedView.m319setPostPreviewEmbedOGpb6Gk(title, subtitle, ctaText, ctaButtonColor, postPreviewEmbed.getFooter(), postPreviewEmbed.m113getMessageId3Eiw7ao(), coverImage, blurredCoverImage, postPreviewEmbed.getCoverImageOverlayText(), postPreviewEmbed.getBackgroundImage(), new View.OnClickListener() { 
+        postPreviewEmbedView.m320setPostPreviewEmbedOGpb6Gk(title, subtitle, ctaText, ctaButtonColor, postPreviewEmbed.getFooter(), postPreviewEmbed.m114getMessageId3Eiw7ao(), coverImage, blurredCoverImage, postPreviewEmbed.getCoverImageOverlayText(), postPreviewEmbed.getBackgroundImage(), new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {
                 PostPreviewEmbedViewHolder.bind$lambda$0(Function4.this, postPreviewEmbed, view);

@@ -1,9 +1,8 @@
 package com.discord.media.utils;
 
 import com.discord.media.utils.MediaResolver;
-import ff.t;
 import java.io.File;
-import ji.u;
+import jf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -12,7 +11,8 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
-import lf.d;
+import ni.u;
+import pf.d;
 
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -35,7 +35,7 @@ public final class MediaResolver$checkFreeSpace$2 extends k implements Function2
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaResolver$checkFreeSpace$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f20679a);
+        return ((MediaResolver$checkFreeSpace$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
     }
 
     @Override 
@@ -61,14 +61,14 @@ public final class MediaResolver$checkFreeSpace$2 extends k implements Function2
                     for (File file4 : listFiles2) {
                         if (file4.isFile()) {
                             String name = file4.getName();
-                            q.f(name, "cacheItem.name");
+                            q.g(name, "cacheItem.name");
                             H = u.H(name, "temp_", false, 2, null);
                             if (H && file4.lastModified() < half_day_millis) {
                                 file4.delete();
                             }
                         }
-                        if (file4.isDirectory() && q.b(file4.getName(), "compressor") && (listFiles = file4.listFiles()) != null) {
-                            q.f(listFiles, "listFiles()");
+                        if (file4.isDirectory() && q.c(file4.getName(), "compressor") && (listFiles = file4.listFiles()) != null) {
+                            q.g(listFiles, "listFiles()");
                             for (File file5 : listFiles) {
                                 if (file5.isFile() && file5.lastModified() < half_day_millis) {
                                     file5.delete();
@@ -78,7 +78,7 @@ public final class MediaResolver$checkFreeSpace$2 extends k implements Function2
                     }
                 }
             }
-            return Unit.f20679a;
+            return Unit.f21025a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

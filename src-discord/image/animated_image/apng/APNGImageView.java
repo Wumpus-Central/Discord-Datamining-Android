@@ -17,13 +17,13 @@ public abstract class APNGImageView extends FrameLayout {
     
     public APNGImageView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public APNGImageView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  APNGImageView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -72,14 +72,14 @@ public abstract class APNGImageView extends FrameLayout {
         if (aPNGView != null) {
             return aPNGView;
         }
-        q.y("apngView");
+        q.z("apngView");
         return null;
     }
 
     public final void inflateApngView(boolean z10) {
         if (this.apngView == null) {
             Context context = getContext();
-            q.f(context, "context");
+            q.g(context, "context");
             setApngView(new APNGView(context));
             getApngView().recycle(false, z10);
             getApngView().setId(View.generateViewId());
@@ -92,7 +92,7 @@ public abstract class APNGImageView extends FrameLayout {
     }
 
     public void recycleChild(View child, boolean z10) {
-        q.g(child, "child");
+        q.h(child, "child");
         APNGView aPNGView = child instanceof APNGView ? (APNGView) child : null;
         if (aPNGView != null) {
             aPNGView.recycle(true, z10);
@@ -103,11 +103,11 @@ public abstract class APNGImageView extends FrameLayout {
     public void resetViews(View view, boolean z10) {
         int i10;
         for (View view2 : k2.a(this)) {
-            boolean b10 = q.b(view2, view);
-            if (!b10) {
+            boolean c10 = q.c(view2, view);
+            if (!c10) {
                 recycleChild(view2, z10);
             }
-            if (b10) {
+            if (c10) {
                 i10 = 0;
             } else {
                 i10 = 8;
@@ -117,18 +117,18 @@ public abstract class APNGImageView extends FrameLayout {
     }
 
     protected final void setApngView(APNGView aPNGView) {
-        q.g(aPNGView, "<set-?>");
+        q.h(aPNGView, "<set-?>");
         this.apngView = aPNGView;
     }
 
     
     public APNGImageView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public void recycleChild(View child) {
-        q.g(child, "child");
+        q.h(child, "child");
         APNGView aPNGView = child instanceof APNGView ? (APNGView) child : null;
         if (aPNGView != null) {
             APNGView.recycle$default(aPNGView, true, false, 2, null);

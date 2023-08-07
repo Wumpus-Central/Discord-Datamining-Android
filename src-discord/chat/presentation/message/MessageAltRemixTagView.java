@@ -32,32 +32,32 @@ public final class MessageAltRemixTagView extends FrameLayout {
     
     public MessageAltRemixTagView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        q.g(context, "context");
-        q.g(attrs, "attrs");
+        q.h(context, "context");
+        q.h(attrs, "attrs");
         MessageAltRemixTagViewBinding inflate = MessageAltRemixTagViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView textView = inflate.altRemixTag;
-        q.f(textView, "binding.altRemixTag");
+        q.g(textView, "binding.altRemixTag");
         DiscordFontUtilsKt.setDiscordFont(textView, DiscordFont.PrimarySemibold);
         SimpleDraweeView simpleDraweeView = inflate.remixIcon;
-        q.f(simpleDraweeView, "binding.remixIcon");
+        q.g(simpleDraweeView, "binding.remixIcon");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.Remix);
     }
 
     
     public static final void configureTagView_e2j04IU$lambda$0(ChatEventHandler eventHandler, String messageId, long j10, String str, View view) {
-        q.g(eventHandler, "$eventHandler");
-        q.g(messageId, "$messageId");
-        eventHandler.mo176onTapTagEqy5D80(messageId, j10, str);
+        q.h(eventHandler, "$eventHandler");
+        q.h(messageId, "$messageId");
+        eventHandler.mo177onTapTagEqy5D80(messageId, j10, str);
     }
 
     
-    public final void m211configureTagViewe2j04IU(String str, Integer num, Integer num2, final ChatEventHandler eventHandler, final String messageId, final long j10, final String str2) {
+    public final void m212configureTagViewe2j04IU(String str, Integer num, Integer num2, final ChatEventHandler eventHandler, final String messageId, final long j10, final String str2) {
         int i10;
         int i11;
-        q.g(eventHandler, "eventHandler");
-        q.g(messageId, "messageId");
+        q.h(eventHandler, "eventHandler");
+        q.h(messageId, "messageId");
         if (str != null) {
             this.binding.altRemixTag.setText(str);
             TextView textView = this.binding.altRemixTag;
@@ -65,22 +65,22 @@ public final class MessageAltRemixTagView extends FrameLayout {
                 i10 = num.intValue();
             } else {
                 Context context = getContext();
-                q.f(context, "context");
+                q.g(context, "context");
                 i10 = ColorUtilsKt.getColorCompat(context, R.color.white);
             }
             textView.setTextColor(i10);
             SimpleDraweeView simpleDraweeView = this.binding.remixIcon;
-            q.f(simpleDraweeView, "binding.remixIcon");
+            q.g(simpleDraweeView, "binding.remixIcon");
             if (num != null) {
                 i11 = num.intValue();
             } else {
                 Context context2 = getContext();
-                q.f(context2, "context");
+                q.g(context2, "context");
                 i11 = ColorUtilsKt.getColorCompat(context2, R.color.white);
             }
             ColorUtilsKt.setTintColor(simpleDraweeView, Integer.valueOf(i11));
             ConstraintLayout constraintLayout = this.binding.layout;
-            q.f(constraintLayout, "binding.layout");
+            q.g(constraintLayout, "binding.layout");
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(constraintLayout, false, new View.OnClickListener() { 
                 @Override 
                 public final void onClick(View view) {
@@ -88,11 +88,11 @@ public final class MessageAltRemixTagView extends FrameLayout {
                 }
             }, 1, null);
             SimpleDraweeView simpleDraweeView2 = this.binding.remixIcon;
-            q.f(simpleDraweeView2, "binding.remixIcon");
+            q.g(simpleDraweeView2, "binding.remixIcon");
             simpleDraweeView2.setVisibility(0);
             if (num2 != null) {
                 ConstraintLayout constraintLayout2 = this.binding.layout;
-                q.f(constraintLayout2, "binding.layout");
+                q.g(constraintLayout2, "binding.layout");
                 ViewBackgroundUtilsKt.setBackgroundRectangle$default(constraintLayout2, ReactColorToAndroidColorKt.reactColorToAndroidColor(num2.intValue()), SizeUtilsKt.getDpToPx(3), null, 0, 12, null);
                 return;
             }

@@ -11,8 +11,8 @@ import com.discord.recycler_view.decorations.HorizontalSpacingItemDecoration;
 import com.discord.recycler_view.decorations.VerticalSpacingItemDecoration;
 import com.discord.theme.DiscordTheme;
 import com.google.android.flexbox.FlexboxLayoutManager;
-import ff.n;
 import java.util.List;
+import jf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -53,7 +53,7 @@ public final class ReactionsView extends RecyclerView {
     
     public ReactionsView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  ReactionsView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -69,22 +69,22 @@ public final class ReactionsView extends RecyclerView {
     }
 
     public final void setReactions(String messageId, List<? extends ReactionView.Reaction> reactions, boolean z10, boolean z11, String addReactionLabel, String addNewReactionAccessibilityLabel, String addNewBurstReactionAccessibilityLabel, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, View.OnClickListener onAddBurstReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, DiscordTheme discordTheme, boolean z12) {
-        q.g(messageId, "messageId");
-        q.g(reactions, "reactions");
-        q.g(addReactionLabel, "addReactionLabel");
-        q.g(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
-        q.g(addNewBurstReactionAccessibilityLabel, "addNewBurstReactionAccessibilityLabel");
-        q.g(onAddReactionClick, "onAddReactionClick");
-        q.g(onAddBurstReactionClick, "onAddBurstReactionClick");
-        q.g(onReactionClick, "onReactionClick");
-        q.g(onReactionLongPress, "onReactionLongPress");
+        q.h(messageId, "messageId");
+        q.h(reactions, "reactions");
+        q.h(addReactionLabel, "addReactionLabel");
+        q.h(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
+        q.h(addNewBurstReactionAccessibilityLabel, "addNewBurstReactionAccessibilityLabel");
+        q.h(onAddReactionClick, "onAddReactionClick");
+        q.h(onAddBurstReactionClick, "onAddBurstReactionClick");
+        q.h(onReactionClick, "onReactionClick");
+        q.h(onReactionLongPress, "onReactionLongPress");
         this.adapter.setReactions(messageId, ReactionsViewKt.separateAndSortDuplicateReactions(reactions), z10, z11, addReactionLabel, addNewReactionAccessibilityLabel, addNewBurstReactionAccessibilityLabel, reactionsTheme, onAddReactionClick, onAddBurstReactionClick, onReactionClick, onReactionLongPress, discordTheme, z12);
     }
 
     
     public ReactionsView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         setLayoutManager(new FlexboxLayoutManager(context));
         ReactionsViewAdapter reactionsViewAdapter = new ReactionsViewAdapter(REACTION_HEIGHT);
         this.adapter = reactionsViewAdapter;
@@ -98,7 +98,7 @@ public final class ReactionsView extends RecyclerView {
         if (itemAnimator != null) {
             defaultItemAnimator = (DefaultItemAnimator) (!(itemAnimator instanceof DefaultItemAnimator) ? null : itemAnimator);
         }
-        q.d(defaultItemAnimator);
+        q.e(defaultItemAnimator);
         defaultItemAnimator.setSupportsChangeAnimations(false);
     }
 }

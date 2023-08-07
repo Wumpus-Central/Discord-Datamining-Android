@@ -9,7 +9,7 @@ import kotlin.jvm.internal.q;
 
 public final class RandomFileAccessInputStreamKt {
     public static final InputStream inputStream(RandomAccessFile randomAccessFile) {
-        q.g(randomAccessFile, "<this>");
+        q.h(randomAccessFile, "<this>");
         return new RandomFileAccessInputStream(randomAccessFile);
     }
 }

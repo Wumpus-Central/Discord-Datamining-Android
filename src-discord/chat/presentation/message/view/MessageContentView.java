@@ -21,7 +21,7 @@ import com.discord.theme.ThemeManagerKt;
 import com.facebook.drawee.span.DraweeSpanStringBuilder;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
-import ff.n;
+import jf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -57,13 +57,13 @@ public final class MessageContentView extends SimpleDraweeSpanTextView implement
     
     public MessageContentView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public MessageContentView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  MessageContentView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -73,7 +73,7 @@ public final class MessageContentView extends SimpleDraweeSpanTextView implement
     private final void appendEditedLabel(SpannableStringBuilder spannableStringBuilder, String str) {
         Object E;
         Object[] spans = spannableStringBuilder.getSpans(spannableStringBuilder.length(), spannableStringBuilder.length(), QuoteSpan.class);
-        q.f(spans, "spannableStringBuilder.g…an::class.java,\n        )");
+        q.g(spans, "spannableStringBuilder.g…an::class.java,\n        )");
         E = f.E(spans);
         QuoteSpan quoteSpan = (QuoteSpan) E;
         int length = spannableStringBuilder.length();
@@ -90,15 +90,15 @@ public final class MessageContentView extends SimpleDraweeSpanTextView implement
     }
 
     
-    public static  void m315setMessageContent2i9KL1s$default(MessageContentView messageContentView, StructurableText structurableText, String str, boolean z10, boolean z11, boolean z12, Function2 function2, Function1 function1, Function3 function3, Function4 function4, Function2 function22, Function1 function12, Function1 function13, Function0 function0, Function1 function14, Function1 function15, Function1 function16, Function1 function17, int i10, int i11, String str2, Truncation truncation, DiscordTheme discordTheme, int i12, Object obj) {
-        messageContentView.m317setMessageContent2i9KL1s(structurableText, str, z10, z11, z12, function2, function1, function3, function4, function22, function12, function13, function0, function14, function15, function16, (i12 & 65536) != 0 ? MessageContentView$setMessageContent$1.INSTANCE : function17, i10, i11, (i12 & 524288) != 0 ? null : str2, (i12 & 1048576) != 0 ? null : truncation, (i12 & 2097152) != 0 ? ThemeManagerKt.getTheme() : discordTheme);
+    public static  void m316setMessageContent2i9KL1s$default(MessageContentView messageContentView, StructurableText structurableText, String str, boolean z10, boolean z11, boolean z12, Function2 function2, Function1 function1, Function3 function3, Function4 function4, Function2 function22, Function1 function12, Function1 function13, Function0 function0, Function1 function14, Function1 function15, Function1 function16, Function1 function17, int i10, int i11, String str2, Truncation truncation, DiscordTheme discordTheme, int i12, Object obj) {
+        messageContentView.m318setMessageContent2i9KL1s(structurableText, str, z10, z11, z12, function2, function1, function3, function4, function22, function12, function13, function0, function14, function15, function16, (i12 & 65536) != 0 ? MessageContentView$setMessageContent$1.INSTANCE : function17, i10, i11, (i12 & 524288) != 0 ? null : str2, (i12 & 1048576) != 0 ? null : truncation, (i12 & 2097152) != 0 ? ThemeManagerKt.getTheme() : discordTheme);
     }
 
     
-    private final void m316truncatepPZZVto(String str, Truncation truncation, int i10, DraweeSpanStringBuilder draweeSpanStringBuilder, Function1<? super MessageId, Unit> function1) {
+    private final void m317truncatepPZZVto(String str, Truncation truncation, int i10, DraweeSpanStringBuilder draweeSpanStringBuilder, Function1<? super MessageId, Unit> function1) {
         int i11;
         int i12;
-        boolean b10 = q.b(truncation.getForceShow(), Boolean.TRUE);
+        boolean c10 = q.c(truncation.getForceShow(), Boolean.TRUE);
         int numberOfLines = truncation.getNumberOfLines();
         String seeMoreLabel = truncation.getSeeMoreLabel();
         Integer seeMoreLabelColor = truncation.getSeeMoreLabelColor();
@@ -111,8 +111,8 @@ public final class MessageContentView extends SimpleDraweeSpanTextView implement
         getShadowView().layout(0, 0, getShadowView().getMeasuredWidth(), getShadowView().getMeasuredHeight());
         Layout layout = getShadowView().getLayout();
         int lineCount = getShadowView().getLineCount();
-        if (lineCount > numberOfLines || b10) {
-            if (b10) {
+        if (lineCount > numberOfLines || c10) {
+            if (c10) {
                 i11 = lineCount - 1;
             } else {
                 i11 = numberOfLines - 1;
@@ -135,9 +135,9 @@ public final class MessageContentView extends SimpleDraweeSpanTextView implement
     
     
     
-    public final void m317setMessageContent2i9KL1s(com.discord.chat.bridge.structurabletext.StructurableText r25, java.lang.String r26, boolean r27, boolean r28, boolean r29, kotlin.jvm.functions.Function2<? super com.discord.primitives.MessageId, ? super com.discord.chat.bridge.contentnode.LinkContentNode, kotlin.Unit> r30, kotlin.jvm.functions.Function1<? super com.discord.chat.bridge.contentnode.LinkContentNode, kotlin.Unit> r31, kotlin.jvm.functions.Function3<? super java.lang.String, ? super java.lang.String, ? super java.lang.String, kotlin.Unit> r32, kotlin.jvm.functions.Function4<? super java.lang.String, ? super java.lang.String, ? super java.lang.String, ? super java.lang.String, kotlin.Unit> r33, kotlin.jvm.functions.Function2<? super java.lang.String, ? super java.lang.String, kotlin.Unit> r34, kotlin.jvm.functions.Function1<? super com.discord.chat.bridge.contentnode.CommandMentionContentNode, kotlin.Unit> r35, kotlin.jvm.functions.Function1<? super com.discord.chat.bridge.contentnode.CommandMentionContentNode, kotlin.Unit> r36, kotlin.jvm.functions.Function0<kotlin.Unit> r37, kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> r38, kotlin.jvm.functions.Function1<? super com.discord.chat.bridge.contentnode.EmojiContentNode, kotlin.Unit> r39, kotlin.jvm.functions.Function1<? super com.discord.primitives.MessageId, kotlin.Unit> r40, kotlin.jvm.functions.Function1<? super com.discord.chat.bridge.contentnode.LinkContentNode, com.discord.chat.presentation.textutils.LinkStyle> r41, int r42, int r43, java.lang.String r44, com.discord.chat.bridge.truncation.Truncation r45, com.discord.theme.DiscordTheme r46) {
+    public final void m318setMessageContent2i9KL1s(com.discord.chat.bridge.structurabletext.StructurableText r25, java.lang.String r26, boolean r27, boolean r28, boolean r29, kotlin.jvm.functions.Function2<? super com.discord.primitives.MessageId, ? super com.discord.chat.bridge.contentnode.LinkContentNode, kotlin.Unit> r30, kotlin.jvm.functions.Function1<? super com.discord.chat.bridge.contentnode.LinkContentNode, kotlin.Unit> r31, kotlin.jvm.functions.Function3<? super java.lang.String, ? super java.lang.String, ? super java.lang.String, kotlin.Unit> r32, kotlin.jvm.functions.Function4<? super java.lang.String, ? super java.lang.String, ? super java.lang.String, ? super java.lang.String, kotlin.Unit> r33, kotlin.jvm.functions.Function2<? super java.lang.String, ? super java.lang.String, kotlin.Unit> r34, kotlin.jvm.functions.Function1<? super com.discord.chat.bridge.contentnode.CommandMentionContentNode, kotlin.Unit> r35, kotlin.jvm.functions.Function1<? super com.discord.chat.bridge.contentnode.CommandMentionContentNode, kotlin.Unit> r36, kotlin.jvm.functions.Function0<kotlin.Unit> r37, kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> r38, kotlin.jvm.functions.Function1<? super com.discord.chat.bridge.contentnode.EmojiContentNode, kotlin.Unit> r39, kotlin.jvm.functions.Function1<? super com.discord.primitives.MessageId, kotlin.Unit> r40, kotlin.jvm.functions.Function1<? super com.discord.chat.bridge.contentnode.LinkContentNode, com.discord.chat.presentation.textutils.LinkStyle> r41, int r42, int r43, java.lang.String r44, com.discord.chat.bridge.truncation.Truncation r45, com.discord.theme.DiscordTheme r46) {
         
-        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.MessageContentView.m317setMessageContent2i9KL1s(com.discord.chat.bridge.structurabletext.StructurableText, java.lang.String, boolean, boolean, boolean, kotlin.jvm.functions.Function2, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function3, kotlin.jvm.functions.Function4, kotlin.jvm.functions.Function2, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function0, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, int, int, java.lang.String, com.discord.chat.bridge.truncation.Truncation, com.discord.theme.DiscordTheme):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.MessageContentView.m318setMessageContent2i9KL1s(com.discord.chat.bridge.structurabletext.StructurableText, java.lang.String, boolean, boolean, boolean, kotlin.jvm.functions.Function2, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function3, kotlin.jvm.functions.Function4, kotlin.jvm.functions.Function2, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function0, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, int, int, java.lang.String, com.discord.chat.bridge.truncation.Truncation, com.discord.theme.DiscordTheme):void");
     }
 
     @Override 
@@ -154,7 +154,7 @@ public final class MessageContentView extends SimpleDraweeSpanTextView implement
     public MessageContentView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
         Lazy b10;
-        q.g(context, "context");
+        q.h(context, "context");
         b10 = n.b(new MessageContentView$shadowView$2(this));
         this.shadowView$delegate = b10;
         setLineSpacing(LINE_SPACING_ADD, LINE_SPACING_MULT);

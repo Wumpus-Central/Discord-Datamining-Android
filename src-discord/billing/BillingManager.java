@@ -57,7 +57,7 @@ public final class BillingManager {
             BillingManager.this.getOnConnectionUpdated().invoke(Integer.valueOf(BillingManager.ConnectionState.DISCONNECTED.getValue()));
             billingClient = BillingManager.this.billingClient;
             if (billingClient == null) {
-                q.y("billingClient");
+                q.z("billingClient");
                 billingClient = null;
             }
             if (!billingClient.d()) {
@@ -69,7 +69,7 @@ public final class BillingManager {
         public void onBillingSetupFinished(BillingResult billingResult) {
             boolean isNotOk;
             ExponentialBackoff exponentialBackoff;
-            q.g(billingResult, "billingResult");
+            q.h(billingResult, "billingResult");
             isNotOk = BillingManager.this.isNotOk(billingResult);
             if (isNotOk) {
                 BillingManager.this.reconnect();
@@ -81,7 +81,7 @@ public final class BillingManager {
             BillingManager.loadPurchases$default(BillingManager.this, null, null, 3, null);
         }
     };
-    private final ExponentialBackoff backoff = new ExponentialBackoff(n1.f20993k, 1000, 300000, 10);
+    private final ExponentialBackoff backoff = new ExponentialBackoff(n1.f21339k, 1000, 300000, 10);
 
     
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\b\n\u0002\b\b\b\u0082\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\n¨\u0006\u000b"}, d2 = {"Lcom/discord/billing/BillingManager$ConnectionState;", "", "value", "", "(Ljava/lang/String;II)V", "getValue", "()I", "DISCONNECTED", "CONNECTING", "CONNECTED", "ERROR", "billing_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -128,7 +128,7 @@ public final class BillingManager {
         private final List<ProductDetails> productDetails;
 
         public ProductDetailsResponse(BillingResult billingResult, List<ProductDetails> list) {
-            q.g(billingResult, "billingResult");
+            q.h(billingResult, "billingResult");
             this.billingResult = billingResult;
             this.productDetails = list;
         }
@@ -153,7 +153,7 @@ public final class BillingManager {
         }
 
         public final ProductDetailsResponse copy(BillingResult billingResult, List<ProductDetails> list) {
-            q.g(billingResult, "billingResult");
+            q.h(billingResult, "billingResult");
             return new ProductDetailsResponse(billingResult, list);
         }
 
@@ -165,7 +165,7 @@ public final class BillingManager {
                 return false;
             }
             ProductDetailsResponse productDetailsResponse = (ProductDetailsResponse) obj;
-            return q.b(this.billingResult, productDetailsResponse.billingResult) && q.b(this.productDetails, productDetailsResponse.productDetails);
+            return q.c(this.billingResult, productDetailsResponse.billingResult) && q.c(this.productDetails, productDetailsResponse.productDetails);
         }
 
         public final BillingResult getBillingResult() {
@@ -197,7 +197,7 @@ public final class BillingManager {
 
         
         public SkuDetailsResponse(BillingResult billingResult, List<? extends SkuDetails> list) {
-            q.g(billingResult, "billingResult");
+            q.h(billingResult, "billingResult");
             this.billingResult = billingResult;
             this.skuDetails = list;
         }
@@ -222,7 +222,7 @@ public final class BillingManager {
         }
 
         public final SkuDetailsResponse copy(BillingResult billingResult, List<? extends SkuDetails> list) {
-            q.g(billingResult, "billingResult");
+            q.h(billingResult, "billingResult");
             return new SkuDetailsResponse(billingResult, list);
         }
 
@@ -234,7 +234,7 @@ public final class BillingManager {
                 return false;
             }
             SkuDetailsResponse skuDetailsResponse = (SkuDetailsResponse) obj;
-            return q.b(this.billingResult, skuDetailsResponse.billingResult) && q.b(this.skuDetails, skuDetailsResponse.skuDetails);
+            return q.c(this.billingResult, skuDetailsResponse.billingResult) && q.c(this.skuDetails, skuDetailsResponse.skuDetails);
         }
 
         public final BillingResult getBillingResult() {
@@ -261,9 +261,9 @@ public final class BillingManager {
     
     
     public BillingManager(boolean z10, Function1<? super Integer, Unit> onConnectionUpdated, Function3<? super String, ? super String, ? super String, Unit> onPurchaseUpdated, Function1<? super Integer, Unit> onDowngradeCommand) {
-        q.g(onConnectionUpdated, "onConnectionUpdated");
-        q.g(onPurchaseUpdated, "onPurchaseUpdated");
-        q.g(onDowngradeCommand, "onDowngradeCommand");
+        q.h(onConnectionUpdated, "onConnectionUpdated");
+        q.h(onPurchaseUpdated, "onPurchaseUpdated");
+        q.h(onDowngradeCommand, "onDowngradeCommand");
         this.isProdBuild = z10;
         this.onConnectionUpdated = onConnectionUpdated;
         this.onPurchaseUpdated = onPurchaseUpdated;
@@ -272,11 +272,11 @@ public final class BillingManager {
 
     
     public static final void consumePurchase$lambda$0(BillingManager this$0, Function1 onError, Function0 onSuccess, BillingResult billingResult, String str) {
-        q.g(this$0, "this$0");
-        q.g(onError, "$onError");
-        q.g(onSuccess, "$onSuccess");
-        q.g(billingResult, "billingResult");
-        q.g(str, "<anonymous parameter 1>");
+        q.h(this$0, "this$0");
+        q.h(onError, "$onError");
+        q.h(onSuccess, "$onSuccess");
+        q.h(billingResult, "billingResult");
+        q.h(str, "<anonymous parameter 1>");
         if (this$0.isNotOk(billingResult)) {
             int a10 = billingResult.a();
             this$0.invoke(onError, "Consume purchase, bad response: " + a10);
@@ -304,7 +304,7 @@ public final class BillingManager {
             return gVar;
         }
         CrashReporting.addBreadcrumb$default(CrashReporting.INSTANCE, "Can't get lifecycleScope for billing client, defaulting to GlobalScope but API might be backing off while the app is background", null, null, 6, null);
-        return n1.f20993k;
+        return n1.f21339k;
     }
 
     private final void getProductsWithRetry(List<String> list, SkuType skuType, Promise promise, Function1<? super Exception, Unit> function1, ReactApplicationContext reactApplicationContext) {
@@ -348,7 +348,7 @@ public final class BillingManager {
 
     
     public final void invoke(Function1<? super Exception, Unit> function1, String str) {
-        q.g(function1, "<this>");
+        q.h(function1, "<this>");
         function1.invoke(new IllegalStateException(str));
     }
 
@@ -356,7 +356,7 @@ public final class BillingManager {
         BillingClient billingClient = this.billingClient;
         if (billingClient != null) {
             if (billingClient == null) {
-                q.y("billingClient");
+                q.z("billingClient");
                 billingClient = null;
             }
             if (billingClient.d()) {
@@ -401,7 +401,7 @@ public final class BillingManager {
         final Ref$BooleanRef ref$BooleanRef = new Ref$BooleanRef();
         BillingClient billingClient = this.billingClient;
         if (billingClient == null) {
-            q.y("billingClient");
+            q.z("billingClient");
             billingClient = null;
         }
         QueryProductDetailsParams queryProductDetailsParams = QueryProductDetailsParams.INSTANCE;
@@ -416,19 +416,19 @@ public final class BillingManager {
 
     
     public static final void purchaseWithProductDetails$lambda$4(BillingManager this$0, Function1 onError, String productId, String str, String str2, String userId, String str3, Activity activity, Function0 onSuccess, Ref$BooleanRef completed, BillingResult billingResult, List productDetails) {
-        q.g(this$0, "this$0");
-        q.g(onError, "$onError");
-        q.g(productId, "$productId");
-        q.g(userId, "$userId");
-        q.g(activity, "$activity");
-        q.g(onSuccess, "$onSuccess");
-        q.g(completed, "$completed");
-        q.g(billingResult, "billingResult");
-        q.g(productDetails, "productDetails");
+        q.h(this$0, "this$0");
+        q.h(onError, "$onError");
+        q.h(productId, "$productId");
+        q.h(userId, "$userId");
+        q.h(activity, "$activity");
+        q.h(onSuccess, "$onSuccess");
+        q.h(completed, "$completed");
+        q.h(billingResult, "billingResult");
+        q.h(productDetails, "productDetails");
         synchronized (this$0) {
-            if (!completed.f20704k) {
-                completed.f20704k = true;
-                Unit unit = Unit.f20679a;
+            if (!completed.f21050k) {
+                completed.f21050k = true;
+                Unit unit = Unit.f21025a;
                 if (this$0.isNotOk(billingResult)) {
                     int a10 = billingResult.a();
                     this$0.invoke(onError, "Purchase failed, bad code: " + a10);
@@ -442,14 +442,14 @@ public final class BillingManager {
                     }
                     BillingClient billingClient = this$0.billingClient;
                     if (billingClient == null) {
-                        q.y("billingClient");
+                        q.z("billingClient");
                         billingClient = null;
                     }
                     billingClient.e(activity, createWithProductDetails);
                     onSuccess.invoke();
                 } catch (AssertionError e10) {
                     String message = e10.getMessage();
-                    q.d(message);
+                    q.e(message);
                     this$0.invoke(onError, message);
                 }
             }
@@ -462,7 +462,7 @@ public final class BillingManager {
         final Ref$BooleanRef ref$BooleanRef = new Ref$BooleanRef();
         BillingClient billingClient = this.billingClient;
         if (billingClient == null) {
-            q.y("billingClient");
+            q.z("billingClient");
             billingClient = null;
         }
         SkuDetailsParams skuDetailsParams = SkuDetailsParams.INSTANCE;
@@ -477,18 +477,18 @@ public final class BillingManager {
 
     
     public static final void purchaseWithSkuDetails$lambda$2(BillingManager this$0, Function1 onError, String skuId, String str, String str2, String userId, Activity activity, Function0 onSuccess, Ref$BooleanRef completed, BillingResult billingResult, List list) {
-        q.g(this$0, "this$0");
-        q.g(onError, "$onError");
-        q.g(skuId, "$skuId");
-        q.g(userId, "$userId");
-        q.g(activity, "$activity");
-        q.g(onSuccess, "$onSuccess");
-        q.g(completed, "$completed");
-        q.g(billingResult, "billingResult");
+        q.h(this$0, "this$0");
+        q.h(onError, "$onError");
+        q.h(skuId, "$skuId");
+        q.h(userId, "$userId");
+        q.h(activity, "$activity");
+        q.h(onSuccess, "$onSuccess");
+        q.h(completed, "$completed");
+        q.h(billingResult, "billingResult");
         synchronized (this$0) {
-            if (!completed.f20704k) {
-                completed.f20704k = true;
-                Unit unit = Unit.f20679a;
+            if (!completed.f21050k) {
+                completed.f21050k = true;
+                Unit unit = Unit.f21025a;
                 if (this$0.isNotOk(billingResult)) {
                     int a10 = billingResult.a();
                     this$0.invoke(onError, "Purchase failed, bad code: " + a10);
@@ -501,7 +501,7 @@ public final class BillingManager {
                 }
                 BillingClient billingClient = this$0.billingClient;
                 if (billingClient == null) {
-                    q.y("billingClient");
+                    q.z("billingClient");
                     billingClient = null;
                 }
                 billingClient.e(activity, create);
@@ -522,14 +522,14 @@ public final class BillingManager {
     private final void verifyPurchase(Purchase purchase) {
         if (purchase.c() == 1 && !purchase.g()) {
             ArrayList<String> f10 = purchase.f();
-            q.f(f10, "purchase.skus");
+            q.g(f10, "purchase.skus");
             for (String sku : f10) {
                 Function3<String, String, String, Unit> function3 = this.onPurchaseUpdated;
                 String d10 = purchase.d();
-                q.f(d10, "purchase.purchaseToken");
+                q.g(d10, "purchase.purchaseToken");
                 String b10 = purchase.b();
-                q.f(b10, "purchase.packageName");
-                q.f(sku, "sku");
+                q.g(b10, "purchase.packageName");
+                q.g(sku, "sku");
                 function3.invoke(d10, b10, sku);
             }
         }
@@ -539,7 +539,7 @@ public final class BillingManager {
         BillingClient billingClient = this.billingClient;
         if (billingClient != null) {
             if (billingClient == null) {
-                q.y("billingClient");
+                q.z("billingClient");
                 billingClient = null;
             }
             billingClient.b();
@@ -550,18 +550,18 @@ public final class BillingManager {
     }
 
     public final void consumePurchase(String purchaseToken, final Function0<Unit> onSuccess, final Function1<? super Exception, Unit> onError) {
-        q.g(purchaseToken, "purchaseToken");
-        q.g(onSuccess, "onSuccess");
-        q.g(onError, "onError");
+        q.h(purchaseToken, "purchaseToken");
+        q.h(onSuccess, "onSuccess");
+        q.h(onError, "onError");
         if (!isBillingClientReady()) {
             invoke(onError, "Consume purchase, billing connection is not ready.");
             return;
         }
         b a10 = b.b().b(purchaseToken).a();
-        q.f(a10, "newBuilder()\n           …\n                .build()");
+        q.g(a10, "newBuilder()\n           …\n                .build()");
         BillingClient billingClient = this.billingClient;
         if (billingClient == null) {
-            q.y("billingClient");
+            q.z("billingClient");
             billingClient = null;
         }
         billingClient.a(a10, new c() { 
@@ -585,22 +585,22 @@ public final class BillingManager {
     }
 
     public final void getSkus(List<String> skuIds, SkuType skuType, Promise reactPromise, Function1<? super Exception, Unit> onError, ReactApplicationContext context) {
-        q.g(skuIds, "skuIds");
-        q.g(skuType, "skuType");
-        q.g(reactPromise, "reactPromise");
-        q.g(onError, "onError");
-        q.g(context, "context");
+        q.h(skuIds, "skuIds");
+        q.h(skuType, "skuType");
+        q.h(reactPromise, "reactPromise");
+        q.h(onError, "onError");
+        q.h(context, "context");
         if (!isBillingClientReady()) {
             invoke(onError, "Billing connection is not ready.");
             return;
         }
         BillingClient billingClient = this.billingClient;
         if (billingClient == null) {
-            q.y("billingClient");
+            q.z("billingClient");
             billingClient = null;
         }
         BillingResult c10 = billingClient.c("fff");
-        q.f(c10, "billingClient.isFeatureS…tureType.PRODUCT_DETAILS)");
+        q.g(c10, "billingClient.isFeatureS…tureType.PRODUCT_DETAILS)");
         if (isNotOk(c10)) {
             getSkusWithRetry(skuIds, skuType, reactPromise, onError, context);
         } else {
@@ -609,8 +609,8 @@ public final class BillingManager {
     }
 
     public final void loadPurchases(Function0<Unit> onSuccess, Function1<? super Exception, Unit> onError) {
-        q.g(onSuccess, "onSuccess");
-        q.g(onError, "onError");
+        q.h(onSuccess, "onSuccess");
+        q.h(onError, "onError");
         if (!isBillingClientReady()) {
             invoke(onError, "Failed to load purchases, billing connection is not ready.");
             return;
@@ -618,7 +618,7 @@ public final class BillingManager {
         BillingClient billingClient = this.billingClient;
         BillingClient billingClient2 = null;
         if (billingClient == null) {
-            q.y("billingClient");
+            q.z("billingClient");
             billingClient = null;
         }
         billingClient.h("inapp", new e() { 
@@ -629,7 +629,7 @@ public final class BillingManager {
         });
         BillingClient billingClient3 = this.billingClient;
         if (billingClient3 == null) {
-            q.y("billingClient");
+            q.z("billingClient");
         } else {
             billingClient2 = billingClient3;
         }
@@ -643,25 +643,25 @@ public final class BillingManager {
     }
 
     public final void open(ReactApplicationContext context) {
-        q.g(context, "context");
+        q.h(context, "context");
         BillingClient a10 = BillingClient.f(context).b().c(new f() { 
             @Override 
             public final void a(BillingResult billingResult, List list) {
                 BillingManager.this.handlePurchases(billingResult, list);
             }
         }).a();
-        q.f(a10, "newBuilder(context)\n    …\n                .build()");
+        q.g(a10, "newBuilder(context)\n    …\n                .build()");
         this.billingClient = a10;
         BillingClient billingClient = null;
         if (a10 == null) {
-            q.y("billingClient");
+            q.z("billingClient");
             a10 = null;
         }
         if (!a10.d()) {
             try {
                 BillingClient billingClient2 = this.billingClient;
                 if (billingClient2 == null) {
-                    q.y("billingClient");
+                    q.z("billingClient");
                 } else {
                     billingClient = billingClient2;
                 }
@@ -674,11 +674,11 @@ public final class BillingManager {
     }
 
     public final void purchase(Activity activity, String skuId, SkuType skuType, String userId, String str, String str2, String str3, Function0<Unit> onSuccess, Function1<? super Exception, Unit> onError) {
-        q.g(skuId, "skuId");
-        q.g(skuType, "skuType");
-        q.g(userId, "userId");
-        q.g(onSuccess, "onSuccess");
-        q.g(onError, "onError");
+        q.h(skuId, "skuId");
+        q.h(skuType, "skuType");
+        q.h(userId, "userId");
+        q.h(onSuccess, "onSuccess");
+        q.h(onError, "onError");
         if (!isBillingClientReady()) {
             invoke(onError, "Purchase failed, billing connection is not ready.");
         } else if (activity == null) {
@@ -686,11 +686,11 @@ public final class BillingManager {
         } else {
             BillingClient billingClient = this.billingClient;
             if (billingClient == null) {
-                q.y("billingClient");
+                q.z("billingClient");
                 billingClient = null;
             }
             BillingResult c10 = billingClient.c("fff");
-            q.f(c10, "billingClient.isFeatureS…tureType.PRODUCT_DETAILS)");
+            q.g(c10, "billingClient.isFeatureS…tureType.PRODUCT_DETAILS)");
             if (!isNotOk(c10)) {
                 purchaseWithProductDetails(activity, skuId, ProductType.valueOf(skuType.name()), userId, str, str2, str3, onSuccess, onError);
             } else if (str3 != null) {

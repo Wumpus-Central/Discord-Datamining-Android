@@ -16,23 +16,23 @@ public final class FriendFinderManagerModule extends ReactContextBaseJavaModule 
     
     public FriendFinderManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @ReactMethod
     public final void fetchContacts(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         FriendFinderSerializerKt.serializeFetchContactsResult(reactApplicationContext, callback);
     }
 
     @ReactMethod
     public final void getImageForContactId(String deviceContactId, Callback callback) {
-        q.g(deviceContactId, "deviceContactId");
-        q.g(callback, "callback");
+        q.h(deviceContactId, "deviceContactId");
+        q.h(callback, "callback");
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         FriendFinderSerializerKt.serializeGetImageForContactIdResult(reactApplicationContext, deviceContactId, callback);
     }
 
@@ -43,15 +43,15 @@ public final class FriendFinderManagerModule extends ReactContextBaseJavaModule 
 
     @ReactMethod
     public final void hasContactsPermissions(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         FriendFinderSerializerKt.serializeHasContactPermissionsResult(reactApplicationContext, promise);
     }
 
     @ReactMethod
     public final void isComposeSupported(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         callback.invoke(Boolean.FALSE);
     }
 }

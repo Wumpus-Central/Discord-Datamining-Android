@@ -22,7 +22,7 @@ import kotlin.jvm.internal.q;
 
 public final class MessageRowKt {
     public static final ChatListItem toChatListMessageItem(MessageRow messageRow) {
-        q.g(messageRow, "<this>");
+        q.h(messageRow, "<this>");
         MessageBase message = messageRow.getMessage();
         MessageFrame messageFrame = messageRow.getMessageFrame();
         MessageFrame messageFrame2 = messageRow.getMessageFrame();
@@ -30,15 +30,15 @@ public final class MessageRowKt {
     }
 
     public static final ChatListItem toChatListMessageItem(MessageBase messageBase, MessageFrame messageFrame, MessageContext messageContext, boolean z10, boolean z11, boolean z12, Integer num, BackgroundHighlight backgroundHighlight) {
-        q.g(messageBase, "<this>");
-        q.g(messageContext, "messageContext");
+        q.h(messageBase, "<this>");
+        q.h(messageContext, "messageContext");
         if (messageBase instanceof Message) {
             Message message = (Message) messageBase;
             return MessageKt.isSystemMessage(message) ? MessageKt.isCallMessage(message) ? new CallSystemMessageItem(message) : new SystemMessageItem(message, messageContext, backgroundHighlight) : MessageKt.isAutomodSystemMessage(message) ? new AutomodSystemMessageItem(message, messageContext, z10) : new MessageItem(message, messageFrame, messageContext, z10, z11, backgroundHighlight, num, z12);
         } else if (messageBase instanceof ErrorMessage) {
             return new DeserializationErrorMessageItem((ErrorMessage) messageBase);
         } else {
-            throw new ff.q();
+            throw new jf.q();
         }
     }
 }

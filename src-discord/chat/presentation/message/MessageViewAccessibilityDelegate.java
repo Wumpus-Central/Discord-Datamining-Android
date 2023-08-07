@@ -29,8 +29,8 @@ public final class MessageViewAccessibilityDelegate extends a {
     private final View.OnLongClickListener onLongClick;
 
     public MessageViewAccessibilityDelegate(Message message, MessageContentView contentView, View.OnClickListener onClickListener, View.OnLongClickListener onLongClickListener) {
-        q.g(message, "message");
-        q.g(contentView, "contentView");
+        q.h(message, "message");
+        q.h(contentView, "contentView");
         this.message = message;
         this.contentView = contentView;
         this.onClick = onClickListener;
@@ -49,23 +49,23 @@ public final class MessageViewAccessibilityDelegate extends a {
         SpoilerSpan[] spoilerSpanArr;
         EmojiAccessibilitySpan[] emojiAccessibilitySpanArr;
         String c02;
-        q.g(host, "host");
-        q.g(info, "info");
+        q.h(host, "host");
+        q.h(info, "info");
         super.onInitializeAccessibilityNodeInfo(host, info);
         SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(this.contentView.getText());
         Object[] spans = spannableStringBuilder.getSpans(0, spannableStringBuilder.length(), SpoilerSpan.class);
-        q.f(spans, "augmentedText.getSpans(0… SpoilerSpan::class.java)");
+        q.g(spans, "augmentedText.getSpans(0… SpoilerSpan::class.java)");
         for (SpoilerSpan spoilerSpan : (SpoilerSpan[]) spans) {
             if (!spoilerSpan.isRevealed()) {
                 int spanStart = spannableStringBuilder.getSpanStart(spoilerSpan);
                 int spanEnd = spannableStringBuilder.getSpanEnd(spoilerSpan);
                 Context context = host.getContext();
-                q.f(context, "host.context");
+                q.g(context, "host.context");
                 spannableStringBuilder.replace(spanStart, spanEnd, I18nUtilsKt.i18nFormat$default(context, I18nMessage.SPOILER_HIDDEN_A11Y_LABEL, null, 2, null));
             }
         }
         Object[] spans2 = spannableStringBuilder.getSpans(0, spannableStringBuilder.length(), EmojiAccessibilitySpan.class);
-        q.f(spans2, "augmentedText.getSpans(0…sibilitySpan::class.java)");
+        q.g(spans2, "augmentedText.getSpans(0…sibilitySpan::class.java)");
         for (EmojiAccessibilitySpan emojiAccessibilitySpan : (EmojiAccessibilitySpan[]) spans2) {
             spannableStringBuilder.replace(spannableStringBuilder.getSpanStart(emojiAccessibilitySpan), spannableStringBuilder.getSpanEnd(emojiAccessibilitySpan), (CharSequence) emojiAccessibilitySpan.getName());
         }
@@ -77,7 +77,7 @@ public final class MessageViewAccessibilityDelegate extends a {
             arrayList.add(this.message.getTimestamp());
         }
         Context context2 = host.getContext();
-        q.f(context2, "host.context");
+        q.g(context2, "host.context");
         CharSequence referencedMessageLabel = getReferencedMessageLabel(context2, this.message.getReferencedMessage());
         if (referencedMessageLabel != null) {
             arrayList.add(referencedMessageLabel);
@@ -86,15 +86,15 @@ public final class MessageViewAccessibilityDelegate extends a {
             c02 = r.c0(arrayList, ", ", null, null, 0, null, null, 62, null);
             spannableStringBuilder.replace(0, 0, (CharSequence) (c02 + ", "));
         }
-        info.D0(spannableStringBuilder);
-        info.S(AccessibilityNodeInfoCompat.a.f3627i);
-        info.p0(15);
+        info.J0(spannableStringBuilder);
+        info.Y(AccessibilityNodeInfoCompat.a.f2983i);
+        info.v0(15);
     }
 
     @Override 
     public boolean performAccessibilityAction(View host, int i10, Bundle bundle) {
         View.OnLongClickListener onLongClickListener;
-        q.g(host, "host");
+        q.h(host, "host");
         if (i10 == 16) {
             View.OnClickListener onClickListener = this.onClick;
             if (onClickListener != null) {

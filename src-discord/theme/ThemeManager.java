@@ -27,7 +27,7 @@ public final class ThemeManager {
         if (discordTheme != null) {
             return discordTheme;
         }
-        q.y("currentTheme");
+        q.z("currentTheme");
         return null;
     }
 
@@ -36,7 +36,7 @@ public final class ThemeManager {
         if (darkTheme2 != null) {
             return darkTheme2;
         }
-        q.y("darkTheme");
+        q.z("darkTheme");
         return null;
     }
 
@@ -45,7 +45,7 @@ public final class ThemeManager {
         if (lightTheme2 != null) {
             return lightTheme2;
         }
-        q.y("lightTheme");
+        q.z("lightTheme");
         return null;
     }
 
@@ -56,7 +56,7 @@ public final class ThemeManager {
     public final void init(Context context) {
         boolean z10;
         boolean z11;
-        q.g(context, "context");
+        q.h(context, "context");
         boolean z12 = true;
         if (lightTheme == null) {
             z10 = true;
@@ -87,7 +87,7 @@ public final class ThemeManager {
     }
 
     public final void setCurrentTheme$theme_release(DiscordTheme discordTheme) {
-        q.g(discordTheme, "<set-?>");
+        q.h(discordTheme, "<set-?>");
         currentTheme = discordTheme;
     }
 
@@ -108,14 +108,14 @@ public final class ThemeManager {
     }
 
     public final void updateSystemUi(View view) {
-        q.g(view, "view");
+        q.h(view, "view");
         UpdateSystemUiKt.updateSystemUi(view);
     }
 
     public final void updateWindowBackground(Context context, boolean z10) {
         Activity activity;
         ReactContext reactContext;
-        q.g(context, "context");
+        q.h(context, "context");
         showSplashImage = z10;
         Activity activity2 = null;
         if (context instanceof Activity) {
@@ -141,7 +141,7 @@ public final class ThemeManager {
     }
 
     public final void updateSystemUi(Activity activity) {
-        q.g(activity, "activity");
+        q.h(activity, "activity");
         UpdateSystemUiKt.updateSystemUi(activity);
     }
 }

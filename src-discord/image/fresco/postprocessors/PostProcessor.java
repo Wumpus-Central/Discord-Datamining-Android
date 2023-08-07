@@ -41,7 +41,7 @@ public interface PostProcessor {
 
         public final BasePostprocessor create(PostProcessor processor) {
             int s10;
-            q.g(processor, "processor");
+            q.h(processor, "processor");
             if (processor instanceof Composite) {
                 List<PostProcessor> postprocessors = ((Composite) processor).getPostprocessors();
                 s10 = k.s(postprocessors, 10);
@@ -59,7 +59,7 @@ public interface PostProcessor {
                 if (processor instanceof Gradient) {
                     return new GradientPostprocessor((Gradient) processor);
                 }
-                throw new ff.q();
+                throw new jf.q();
             }
         }
     }
@@ -71,7 +71,7 @@ public interface PostProcessor {
 
         
         public Composite(List<? extends PostProcessor> postprocessors) {
-            q.g(postprocessors, "postprocessors");
+            q.h(postprocessors, "postprocessors");
             this.postprocessors = postprocessors;
         }
 
@@ -88,7 +88,7 @@ public interface PostProcessor {
         }
 
         public final Composite copy(List<? extends PostProcessor> postprocessors) {
-            q.g(postprocessors, "postprocessors");
+            q.h(postprocessors, "postprocessors");
             return new Composite(postprocessors);
         }
 
@@ -101,7 +101,7 @@ public interface PostProcessor {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof Composite) && q.b(this.postprocessors, ((Composite) obj).postprocessors);
+            return (obj instanceof Composite) && q.c(this.postprocessors, ((Composite) obj).postprocessors);
         }
 
         public final List<PostProcessor> getPostprocessors() {
@@ -168,7 +168,7 @@ public interface PostProcessor {
         }
 
         public Gradient(Direction direction, int i10, int i11, float f10, float f11) {
-            q.g(direction, "direction");
+            q.h(direction, "direction");
             this.direction = direction;
             this.startColor = i10;
             this.endColor = i11;
@@ -216,7 +216,7 @@ public interface PostProcessor {
         }
 
         public final Gradient copy(Direction direction, int i10, int i11, float f10, float f11) {
-            q.g(direction, "direction");
+            q.h(direction, "direction");
             return new Gradient(direction, i10, i11, f10, f11);
         }
 

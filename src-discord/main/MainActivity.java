@@ -32,11 +32,11 @@ public final class MainActivity extends ReactActivity {
             private final void parseIntent(Intent intent) {
                 NotificationClient instance = NotificationClient.Companion.getInstance();
                 Context context = getContext();
-                q.f(context, "context");
+                q.g(context, "context");
                 instance.handleIntent(context, intent);
                 ForegroundServiceManager instance2 = ForegroundServiceManager.Companion.getInstance();
                 Context context2 = getContext();
-                q.f(context2, "context");
+                q.g(context2, "context");
                 instance2.handleIntent(context2, intent);
             }
 
@@ -45,13 +45,13 @@ public final class MainActivity extends ReactActivity {
             public void onCreate(Bundle bundle) {
                 super.onCreate(bundle);
                 Intent intent = MainActivity.this.getIntent();
-                q.f(intent, "intent");
+                q.g(intent, "intent");
                 parseIntent(intent);
             }
 
             @Override 
             public boolean onNewIntent(Intent intent) {
-                q.g(intent, "intent");
+                q.h(intent, "intent");
                 parseIntent(intent);
                 return super.onNewIntent(intent);
             }

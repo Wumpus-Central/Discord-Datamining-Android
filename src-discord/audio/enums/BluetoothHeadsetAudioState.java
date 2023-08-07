@@ -45,8 +45,8 @@ public enum BluetoothHeadsetAudioState {
 
         public final Update getUpdate(Intent intent) {
             BluetoothHeadsetAudioState bluetoothHeadsetAudioState;
-            q.g(intent, "intent");
-            if (q.b(intent.getAction(), "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED")) {
+            q.h(intent, "intent");
+            if (q.c(intent.getAction(), "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED")) {
                 BluetoothDevice bluetoothDeviceExtra = ExtensionsKt.getBluetoothDeviceExtra(intent);
                 Integer intExtraOrNull = ExtensionsKt.getIntExtraOrNull(intent, "android.bluetooth.profile.extra.PREVIOUS_STATE");
                 BluetoothHeadsetAudioState bluetoothHeadsetAudioState2 = null;
@@ -115,7 +115,7 @@ public enum BluetoothHeadsetAudioState {
                 return false;
             }
             Update update = (Update) obj;
-            return this.current == update.current && this.previous == update.previous && q.b(this.device, update.device);
+            return this.current == update.current && this.previous == update.previous && q.c(this.device, update.device);
         }
 
         public final BluetoothHeadsetAudioState getCurrent() {

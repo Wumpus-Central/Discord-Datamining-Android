@@ -17,29 +17,29 @@ public final class ReactionViewHolder extends RecyclerView.ViewHolder {
     
     public ReactionViewHolder(ReactionView reactionView) {
         super(reactionView);
-        q.g(reactionView, "reactionView");
+        q.h(reactionView, "reactionView");
         this.reactionView = reactionView;
     }
 
     
     public static final void bind$lambda$2$lambda$0(Function1 onReactionClick, ReactionView.Reaction reaction, View view) {
-        q.g(onReactionClick, "$onReactionClick");
-        q.g(reaction, "$reaction");
+        q.h(onReactionClick, "$onReactionClick");
+        q.h(reaction, "$reaction");
         onReactionClick.invoke(reaction);
     }
 
     
     public static final boolean bind$lambda$2$lambda$1(Function1 onReactionLongPress, ReactionView.Reaction reaction, View view) {
-        q.g(onReactionLongPress, "$onReactionLongPress");
-        q.g(reaction, "$reaction");
+        q.h(onReactionLongPress, "$onReactionLongPress");
+        q.h(reaction, "$reaction");
         onReactionLongPress.invoke(reaction);
         return true;
     }
 
     public final void bind(final ReactionView.Reaction reaction, final Function1<? super ReactionView.Reaction, Unit> onReactionClick, final Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, ReactionView.ReactionsTheme reactionsTheme) {
-        q.g(reaction, "reaction");
-        q.g(onReactionClick, "onReactionClick");
-        q.g(onReactionLongPress, "onReactionLongPress");
+        q.h(reaction, "reaction");
+        q.h(onReactionClick, "onReactionClick");
+        q.h(onReactionLongPress, "onReactionLongPress");
         ReactionView reactionView = this.reactionView;
         reactionView.setReaction(reaction, reactionsTheme);
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(reactionView, false, new View.OnClickListener() { 

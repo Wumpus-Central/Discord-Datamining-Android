@@ -41,20 +41,20 @@ public final class LoadingDelegate extends BaseChatListItemDelegate<LoadingChatL
     
     public LoadingDelegate(Function0<? extends ChatEventHandler> eventHandlerProvider) {
         super(eventHandlerProvider, null, 2, null);
-        q.g(eventHandlerProvider, "eventHandlerProvider");
+        q.h(eventHandlerProvider, "eventHandlerProvider");
     }
 
     @Override 
     public boolean isForItem(ChatListItem item, int i10) {
-        q.g(item, "item");
+        q.h(item, "item");
         return item instanceof LoadingChatListItem;
     }
 
     public void bindView(ChatLoadingView view, LoadingChatListItem item, BaseChatListItemDelegate.Metadata<ChatLoadingView> metadata) {
         Function0<Unit> function0;
-        q.g(view, "view");
-        q.g(item, "item");
-        q.g(metadata, "metadata");
+        q.h(view, "view");
+        q.h(item, "item");
+        q.h(metadata, "metadata");
         if (item.isLoading()) {
             view.showProgress();
             return;
@@ -66,16 +66,16 @@ public final class LoadingDelegate extends BaseChatListItemDelegate<LoadingChatL
         } else if (i10 == 2) {
             function0 = new LoadingDelegate$bindView$2(getEventHandler());
         } else {
-            throw new ff.q();
+            throw new jf.q();
         }
         view.showButton(button, function0);
     }
 
     @Override 
     public ChatLoadingView createView(ViewGroup parent) {
-        q.g(parent, "parent");
+        q.h(parent, "parent");
         Context context = parent.getContext();
-        q.f(context, "parent.context");
+        q.g(context, "parent.context");
         return new ChatLoadingView(context, null, 2, null);
     }
 }

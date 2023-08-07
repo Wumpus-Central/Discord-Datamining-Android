@@ -78,10 +78,10 @@ public final class BluetoothBroadcastReceiver extends BroadcastReceiver implemen
 
     
     public BluetoothBroadcastReceiver(Function1<? super BluetoothProfileConnectionState.Update, Unit> onHeadsetConnectionStateUpdate, Function1<? super BluetoothHeadsetAudioState.Update, Unit> onHeadsetAudioStateUpdate, Function1<? super BluetoothHeadset, Unit> onHeadsetProxyConnectionUpdate, Function1<? super BluetoothDevice, Unit> onActiveDeviceUpdate) {
-        q.g(onHeadsetConnectionStateUpdate, "onHeadsetConnectionStateUpdate");
-        q.g(onHeadsetAudioStateUpdate, "onHeadsetAudioStateUpdate");
-        q.g(onHeadsetProxyConnectionUpdate, "onHeadsetProxyConnectionUpdate");
-        q.g(onActiveDeviceUpdate, "onActiveDeviceUpdate");
+        q.h(onHeadsetConnectionStateUpdate, "onHeadsetConnectionStateUpdate");
+        q.h(onHeadsetAudioStateUpdate, "onHeadsetAudioStateUpdate");
+        q.h(onHeadsetProxyConnectionUpdate, "onHeadsetProxyConnectionUpdate");
+        q.h(onActiveDeviceUpdate, "onActiveDeviceUpdate");
         this.onHeadsetConnectionStateUpdate = onHeadsetConnectionStateUpdate;
         this.onHeadsetAudioStateUpdate = onHeadsetAudioStateUpdate;
         this.onHeadsetProxyConnectionUpdate = onHeadsetProxyConnectionUpdate;
@@ -106,11 +106,11 @@ public final class BluetoothBroadcastReceiver extends BroadcastReceiver implemen
 
     @Override 
     public void onReceive(Context context, Intent intent) {
-        q.g(context, "context");
+        q.h(context, "context");
         if (intent != null) {
             BluetoothBroadcastAction.Companion companion = BluetoothBroadcastAction.Companion;
             String action = intent.getAction();
-            q.d(action);
+            q.e(action);
             BluetoothBroadcastAction from = companion.from(action);
             if (from == null) {
                 Log log = Log.INSTANCE;
@@ -165,7 +165,7 @@ public final class BluetoothBroadcastReceiver extends BroadcastReceiver implemen
     public final void register(Context context) {
         boolean z10;
         BluetoothAdapter adapter;
-        q.g(context, "context");
+        q.h(context, "context");
         if (!this.registered) {
             Log log = Log.INSTANCE;
             Set<BluetoothBroadcastAction> set = actions;

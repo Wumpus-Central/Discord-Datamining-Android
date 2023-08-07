@@ -18,7 +18,7 @@ public final class MessageContentView$setMessageContent$1 extends s implements F
     }
 
     public final LinkStyle invoke(LinkContentNode linkContentNode) {
-        q.g(linkContentNode, "<anonymous parameter 0>");
+        q.h(linkContentNode, "<anonymous parameter 0>");
         return new LinkStyle(null, 0, 3, null);
     }
 }

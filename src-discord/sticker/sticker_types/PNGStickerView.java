@@ -20,7 +20,7 @@ public final class PNGStickerView extends SimpleDraweeView {
     
     public PNGStickerView(Context context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
         ShapeDrawable shapeDrawable = new ShapeDrawable();
         shapeDrawable.setShape(new OvalShape());
         shapeDrawable.getPaint().setColor(ThemeManagerKt.getTheme().getBackgroundAccent());
@@ -29,7 +29,7 @@ public final class PNGStickerView extends SimpleDraweeView {
 
     public final void loadGifImage(String url, Integer num, Integer num2, boolean z10) {
         int i10;
-        q.g(url, "url");
+        q.h(url, "url");
         setController(c.g().O(url).z(z10).build());
         int i11 = ViewDefaults.NUMBER_OF_LINES;
         if (num != null) {
@@ -46,9 +46,9 @@ public final class PNGStickerView extends SimpleDraweeView {
 
     public final void loadImage(String url, Integer num, Integer num2) {
         int i10;
-        q.g(url, "url");
+        q.h(url, "url");
         setImageURI(url);
-        getHierarchy().t(ScalingUtils.ScaleType.f7409e);
+        getHierarchy().t(ScalingUtils.ScaleType.f7622e);
         getHierarchy().z(this.placeholder);
         int i11 = ViewDefaults.NUMBER_OF_LINES;
         if (num != null) {

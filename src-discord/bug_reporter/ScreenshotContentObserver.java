@@ -11,14 +11,14 @@ import co.discord.media_engine.b;
 import com.discord.logging.Log;
 import com.reactnativecommunity.webview.RNCWebViewManager;
 import java.util.Locale;
-import ji.u;
-import ji.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.e;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
+import ni.u;
+import ni.v;
 
 @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b\u0004\u0018\u0000 \u001c2\u00020\u0001:\u0002\u001c\u001dB\u001b\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¢\u0006\u0002\u0010\u0007J\u0006\u0010\f\u001a\u00020\u0006J\u0006\u0010\r\u001a\u00020\u0006J\u0013\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u000b0\u000fH\u0002¢\u0006\u0002\u0010\u0010J\u0012\u0010\u0011\u001a\u0004\u0018\u00010\u00122\u0006\u0010\u0013\u001a\u00020\u0014H\u0003J\u001a\u0010\u0015\u001a\u00020\u00062\u0006\u0010\u0016\u001a\u00020\u00172\b\u0010\u0013\u001a\u0004\u0018\u00010\u0014H\u0016J\u0010\u0010\u0018\u001a\u00020\u00062\u0006\u0010\u0013\u001a\u00020\u0014H\u0002J\u0014\u0010\u0019\u001a\u00020\u0017*\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001aH\u0002R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0010\u0010\n\u001a\u0004\u0018\u00010\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001e"}, d2 = {"Lcom/discord/bug_reporter/ScreenshotContentObserver;", "Landroid/database/ContentObserver;", "contentResolver", "Landroid/content/ContentResolver;", "onScreenshot", "Lkotlin/Function0;", "", "(Landroid/content/ContentResolver;Lkotlin/jvm/functions/Function0;)V", "getContentResolver", "()Landroid/content/ContentResolver;", "lastProcessedPath", "", "connect", "disconnect", "getProjection", "", "()[Ljava/lang/String;", "getScreenshotData", "Lcom/discord/bug_reporter/ScreenshotContentObserver$ScreenshotData;", "uri", "Landroid/net/Uri;", "onChange", "selfChange", "", "process", "isWithinCurrentTimeWindow", "", "window", "Companion", "ScreenshotData", "bug_reporter_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -45,9 +45,9 @@ public final class ScreenshotContentObserver extends ContentObserver {
         public final boolean isScreenshotPath(String str) {
             boolean M;
             Locale locale = Locale.getDefault();
-            q.f(locale, "getDefault()");
+            q.g(locale, "getDefault()");
             String lowerCase = str.toLowerCase(locale);
-            q.f(lowerCase, "this as java.lang.String).toLowerCase(locale)");
+            q.g(lowerCase, "this as java.lang.String).toLowerCase(locale)");
             M = v.M(lowerCase, "screenshots/", false, 2, null);
             return M;
         }
@@ -60,16 +60,16 @@ public final class ScreenshotContentObserver extends ContentObserver {
         private final String fileName;
 
         
-        private final long f6869id;
+        private final long f7082id;
         private final String path;
         private final String relativePath;
         private final Uri uri;
 
         public ScreenshotData(long j10, String fileName, String relativePath, Uri uri, long j11) {
-            q.g(fileName, "fileName");
-            q.g(relativePath, "relativePath");
-            q.g(uri, "uri");
-            this.f6869id = j10;
+            q.h(fileName, "fileName");
+            q.h(relativePath, "relativePath");
+            q.h(uri, "uri");
+            this.f7082id = j10;
             this.fileName = fileName;
             this.relativePath = relativePath;
             this.uri = uri;
@@ -78,7 +78,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public final long component1() {
-            return this.f6869id;
+            return this.f7082id;
         }
 
         public final String component2() {
@@ -98,9 +98,9 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public final ScreenshotData copy(long j10, String fileName, String relativePath, Uri uri, long j11) {
-            q.g(fileName, "fileName");
-            q.g(relativePath, "relativePath");
-            q.g(uri, "uri");
+            q.h(fileName, "fileName");
+            q.h(relativePath, "relativePath");
+            q.h(uri, "uri");
             return new ScreenshotData(j10, fileName, relativePath, uri, j11);
         }
 
@@ -112,7 +112,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
                 return false;
             }
             ScreenshotData screenshotData = (ScreenshotData) obj;
-            return this.f6869id == screenshotData.f6869id && q.b(this.fileName, screenshotData.fileName) && q.b(this.relativePath, screenshotData.relativePath) && q.b(this.uri, screenshotData.uri) && this.dateAdded == screenshotData.dateAdded;
+            return this.f7082id == screenshotData.f7082id && q.c(this.fileName, screenshotData.fileName) && q.c(this.relativePath, screenshotData.relativePath) && q.c(this.uri, screenshotData.uri) && this.dateAdded == screenshotData.dateAdded;
         }
 
         public final long getDateAdded() {
@@ -124,7 +124,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public final long getId() {
-            return this.f6869id;
+            return this.f7082id;
         }
 
         public final String getPath() {
@@ -140,11 +140,11 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public int hashCode() {
-            return (((((((b.a(this.f6869id) * 31) + this.fileName.hashCode()) * 31) + this.relativePath.hashCode()) * 31) + this.uri.hashCode()) * 31) + b.a(this.dateAdded);
+            return (((((((b.a(this.f7082id) * 31) + this.fileName.hashCode()) * 31) + this.relativePath.hashCode()) * 31) + this.uri.hashCode()) * 31) + b.a(this.dateAdded);
         }
 
         public String toString() {
-            long j10 = this.f6869id;
+            long j10 = this.f7082id;
             String str = this.fileName;
             String str2 = this.relativePath;
             Uri uri = this.uri;
@@ -156,8 +156,8 @@ public final class ScreenshotContentObserver extends ContentObserver {
     
     public ScreenshotContentObserver(ContentResolver contentResolver, Function0<Unit> onScreenshot) {
         super(null);
-        q.g(contentResolver, "contentResolver");
-        q.g(onScreenshot, "onScreenshot");
+        q.h(contentResolver, "contentResolver");
+        q.h(onScreenshot, "onScreenshot");
         this.contentResolver = contentResolver;
         this.onScreenshot = onScreenshot;
     }
@@ -217,13 +217,13 @@ public final class ScreenshotContentObserver extends ContentObserver {
                         relativePath = query.getString(query.getColumnIndex("relative_path"));
                     } else {
                         String string = query.getString(query.getColumnIndex("_data"));
-                        q.f(string, "cursor.getString(cursor.…mages.ImageColumns.DATA))");
+                        q.g(string, "cursor.getString(cursor.…mages.ImageColumns.DATA))");
                         relativePath = v.T0(string, '/', th, 2, th);
                     }
                     long j10 = query.getLong(query.getColumnIndex("_id"));
                     String string2 = query.getString(query.getColumnIndex("_display_name"));
-                    q.f(string2, "cursor.getString(cursor.…ages.Media.DISPLAY_NAME))");
-                    q.f(relativePath, "relativePath");
+                    q.g(string2, "cursor.getString(cursor.…ages.Media.DISPLAY_NAME))");
+                    q.g(relativePath, "relativePath");
                     return new ScreenshotData(j10, string2, relativePath, uri, query.getLong(query.getColumnIndex("date_added")));
                 }
             } finally {
@@ -279,9 +279,9 @@ public final class ScreenshotContentObserver extends ContentObserver {
         super.onChange(z10, uri);
         if (uri != null) {
             String uri2 = uri.toString();
-            q.f(uri2, "uri.toString()");
+            q.g(uri2, "uri.toString()");
             String uri3 = MediaStore.Images.Media.EXTERNAL_CONTENT_URI.toString();
-            q.f(uri3, "EXTERNAL_CONTENT_URI.toString()");
+            q.g(uri3, "EXTERNAL_CONTENT_URI.toString()");
             H = u.H(uri2, uri3, false, 2, null);
             if (H) {
                 try {

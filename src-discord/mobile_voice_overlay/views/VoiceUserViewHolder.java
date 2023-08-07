@@ -13,12 +13,12 @@ final class VoiceUserViewHolder extends RecyclerView.ViewHolder {
     
     public VoiceUserViewHolder(OverlayVoiceBubble overlayVoiceBubble) {
         super(overlayVoiceBubble);
-        q.g(overlayVoiceBubble, "overlayVoiceBubble");
+        q.h(overlayVoiceBubble, "overlayVoiceBubble");
         this.overlayVoiceBubble = overlayVoiceBubble;
     }
 
     public final void bind(MobileVoiceOverlayDataUser user) {
-        q.g(user, "user");
+        q.h(user, "user");
         this.overlayVoiceBubble.configureUI(user);
     }
 

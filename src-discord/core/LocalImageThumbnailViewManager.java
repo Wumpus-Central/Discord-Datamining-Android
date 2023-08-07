@@ -17,15 +17,15 @@ public final class LocalImageThumbnailViewManager extends SimpleViewManager<Loca
 
     @ReactProp(name = "localImageSource")
     public final void setLocalImageSource(LocalImageThumbnailView view, ReadableMap source) {
-        q.g(view, "view");
-        q.g(source, "source");
+        q.h(view, "view");
+        q.h(source, "source");
         LocalImageThumbnailViewManagerImpl.INSTANCE.setLocalImageSource(view, source);
     }
 
     
     @Override 
     public LocalImageThumbnailView createViewInstance(ThemedReactContext reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         return new LocalImageThumbnailView(reactContext, null, 0, 6, null);
     }
 }

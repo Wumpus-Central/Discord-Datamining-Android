@@ -3,15 +3,15 @@ package com.discord.notifications.renderer;
 import android.app.Notification;
 import android.content.Context;
 import androidx.core.app.NotificationCompat;
-import androidx.core.os.d;
+import androidx.core.os.e;
 import com.discord.icons.IconUrlUtils;
 import com.discord.image.fresco.FrescoModuleDiscord;
 import com.discord.notifications.api.NotificationData;
 import com.discord.notifications.renderer.utils.NotificationManagerUtilsKt;
 import com.discord.primitives.ChannelId;
 import com.facebook.react.uimanager.ViewProps;
-import ff.x;
 import java.util.Map;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
@@ -35,28 +35,28 @@ public final class NotificationRenderer {
     }
 
     public final void clear(Context context, String notificationTag) {
-        q.g(context, "context");
-        q.g(notificationTag, "notificationTag");
+        q.h(context, "context");
+        q.h(notificationTag, "notificationTag");
         NotificationManagerUtilsKt.getNotificationManagerCompat(context).b(notificationTag, 0);
     }
 
     public final void clearAllNotifications(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         NotificationManagerUtilsKt.getNotificationManagerCompat(context).c();
     }
 
     public final void display(Context context, NotificationData notification, String str, Map<String, String> notificationDataMap, NotificationBehaviors notificationBehaviors, boolean z10, boolean z11) {
-        q.g(context, "context");
-        q.g(notification, "notification");
-        q.g(notificationDataMap, "notificationDataMap");
+        q.h(context, "context");
+        q.h(notification, "notification");
+        q.h(notificationDataMap, "notificationDataMap");
         k.b(null, new NotificationRenderer$display$1(notification, context, z11, notificationDataMap, notificationBehaviors, str, z10, null), 1, null);
     }
 
     public final void handleAcks(Context context, NotificationData notification) {
-        q.g(context, "context");
-        q.g(notification, "notification");
+        q.h(context, "context");
+        q.h(notification, "notification");
         for (ChannelId channelId : notification.getAckChannelIds()) {
-            String str = NotificationData.TYPE_MESSAGE_CREATE + ChannelId.m573toStringimpl(channelId.m575unboximpl());
+            String str = NotificationData.TYPE_MESSAGE_CREATE + ChannelId.m574toStringimpl(channelId.m576unboximpl());
             NotificationChannels notificationChannels = NotificationChannels.INSTANCE;
             if (!NotificationManagerUtilsKt.getNotificationBuilderOrCreate(context, notificationChannels.getNotificationChannelId(notification), NotificationManagerUtilsKt.getActiveNotification(context, str)).l().getBoolean(IGNORE_ACK_KEY, false)) {
                 clear(context, str);
@@ -67,30 +67,30 @@ public final class NotificationRenderer {
     }
 
     public final void initFresco(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         FrescoModuleDiscord.Companion.initializeFresco(context);
     }
 
     public final void initIconUrlUtils(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         IconUrlUtils.init$default(IconUrlUtils.INSTANCE, context, null, null, 6, null);
     }
 
     public final void initNotificationCategories(Context context, Map<String, String> localizedCategoryNames, Map<String, String> localizedGroupNames) {
-        q.g(context, "context");
-        q.g(localizedCategoryNames, "localizedCategoryNames");
-        q.g(localizedGroupNames, "localizedGroupNames");
+        q.h(context, "context");
+        q.h(localizedCategoryNames, "localizedCategoryNames");
+        q.h(localizedGroupNames, "localizedGroupNames");
         NotificationChannels.INSTANCE.init(context, localizedCategoryNames, localizedGroupNames);
     }
 
     public final void markNotificationAsDirectReply(Context context, String tag, String channelId, boolean z10) {
-        q.g(context, "context");
-        q.g(tag, "tag");
-        q.g(channelId, "channelId");
+        q.h(context, "context");
+        q.h(tag, "tag");
+        q.h(channelId, "channelId");
         Notification activeNotification = NotificationManagerUtilsKt.getActiveNotification(context, tag);
         if (activeNotification != null) {
-            NotificationCompat.Builder c10 = NotificationManagerUtilsKt.getNotificationBuilderOrCreate(context, channelId, activeNotification).c(d.a(x.a(IGNORE_ACK_KEY, Boolean.valueOf(z10))));
-            q.f(c10, "context.getNotificationB…_KEY to shouldIgnoreAck))");
+            NotificationCompat.Builder c10 = NotificationManagerUtilsKt.getNotificationBuilderOrCreate(context, channelId, activeNotification).c(e.a(x.a(IGNORE_ACK_KEY, Boolean.valueOf(z10))));
+            q.g(c10, "context.getNotificationB…_KEY to shouldIgnoreAck))");
             NotificationManagerUtilsKt.notify(NotificationManagerUtilsKt.getNotificationManagerCompat(context), tag, c10);
         }
     }

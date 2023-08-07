@@ -28,16 +28,17 @@ public final class AudioPlayerWipeAnimatorManager$scaleAnimator$2 extends s impl
     }
 
     
-    public static final void invoke$lambda$1$lambda$0(AudioPlayerViewBinding binding, AudioPlayerWipeAnimatorManager this$0, ValueAnimator valueAnimator) {
+    public static final void invoke$lambda$1$lambda$0(AudioPlayerViewBinding binding, AudioPlayerWipeAnimatorManager this$0, ValueAnimator it) {
         float f10;
         Drawable buttonContainerDefaultDrawable;
         ColorDrawable buttonContainerActiveDrawable;
         Drawable buttonContainerDefaultDrawable2;
         ColorDrawable buttonContainerActiveDrawable2;
-        q.g(binding, "$binding");
-        q.g(this$0, "this$0");
-        Object animatedValue = valueAnimator.getAnimatedValue();
-        q.e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+        q.h(binding, "$binding");
+        q.h(this$0, "this$0");
+        q.h(it, "it");
+        Object animatedValue = it.getAnimatedValue();
+        q.f(animatedValue, "null cannot be cast to non-null type kotlin.Float");
         float floatValue = ((Float) animatedValue).floatValue();
         if (binding.playerContainer.getWidth() <= 0 || binding.wipe.getWidth() <= 0) {
             f10 = 0.0f;
@@ -59,7 +60,7 @@ public final class AudioPlayerWipeAnimatorManager$scaleAnimator$2 extends s impl
         buttonContainerActiveDrawable2 = this$0.getButtonContainerActiveDrawable();
         view.setBackground(new LayerDrawable(new Drawable[]{buttonContainerDefaultDrawable2, buttonContainerActiveDrawable2}));
         View view2 = binding.buttonContainer;
-        q.f(view2, "binding.buttonContainer");
+        q.g(view2, "binding.buttonContainer");
         ViewClippingUtilsKt.clipToCircle(view2);
     }
 

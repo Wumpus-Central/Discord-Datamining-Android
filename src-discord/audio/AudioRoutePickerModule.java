@@ -28,7 +28,7 @@ public final class AudioRoutePickerModule extends ReactContextBaseJavaModule {
     
     public AudioRoutePickerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @Override 

@@ -7,13 +7,13 @@ import com.discord.simpleast.core.node.TextNode;
 import com.discord.simpleast.core.parser.ParseSpec;
 import com.discord.simpleast.core.parser.Parser;
 import com.discord.simpleast.core.parser.Rule;
-import ff.x;
-import gf.v;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import jf.x;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.collections.f;
 import kotlin.collections.j;
@@ -36,19 +36,19 @@ public final class CodeRules {
 
     static {
         Pattern compile = Pattern.compile("^```(?:([\\w+\\-.]+?)?(\\s*\\n))?([^\\n].*?)\\n*```", 32);
-        q.f(compile, "Pattern.compile(\"\"\"^```(…n*```\"\"\", Pattern.DOTALL)");
+        q.g(compile, "Pattern.compile(\"\"\"^```(…n*```\"\"\", Pattern.DOTALL)");
         PATTERN_CODE_BLOCK = compile;
         Pattern compile2 = Pattern.compile("^(``?)([^`]*)\\1", 32);
-        q.f(compile2, "Pattern.compile(\"\"\"^(``?…]*)\\1\"\"\", Pattern.DOTALL)");
+        q.g(compile2, "Pattern.compile(\"\"\"^(``?…]*)\\1\"\"\", Pattern.DOTALL)");
         PATTERN_CODE_INLINE = compile2;
         Pattern compile3 = Pattern.compile("^(?:\\n\\s*)+");
-        q.f(compile3, "Pattern.compile(\"\"\"^(?:\\n\\s*)+\"\"\")");
+        q.g(compile3, "Pattern.compile(\"\"\"^(?:\\n\\s*)+\"\"\")");
         PATTERN_LEADING_WS_CONSUMER = compile3;
         Pattern compile4 = Pattern.compile("^[\\s\\S]+?(?=\\b|[^0-9A-Za-z\\s\\u00c0-\\uffff]|\\n| {2,}\\n|\\w+:\\S|$)");
-        q.f(compile4, "Pattern.compile(\"\"\"^[\\s\\…|\\n| {2,}\\n|\\w+:\\S|$)\"\"\")");
+        q.g(compile4, "Pattern.compile(\"\"\"^[\\s\\…|\\n| {2,}\\n|\\w+:\\S|$)\"\"\")");
         PATTERN_TEXT = compile4;
         Pattern compile5 = Pattern.compile("^\\b\\d+?\\b");
-        q.f(compile5, "Pattern.compile(\"\"\"^\\b\\d+?\\b\"\"\")");
+        q.g(compile5, "Pattern.compile(\"\"\"^\\b\\d+?\\b\"\"\")");
         PATTERN_NUMBERS = compile5;
     }
 
@@ -66,9 +66,9 @@ public final class CodeRules {
         List k10;
         List<Rule<R, Node<R>, S>> m02;
         Pattern createWordPattern$simpleast_core_release = createWordPattern$simpleast_core_release((String[]) Arrays.copyOf(strArr2, strArr2.length));
-        q.f(createWordPattern$simpleast_core_release, "createWordPattern(*builtIns)");
+        q.g(createWordPattern$simpleast_core_release, "createWordPattern(*builtIns)");
         Pattern createWordPattern$simpleast_core_release2 = createWordPattern$simpleast_core_release((String[]) Arrays.copyOf(strArr3, strArr3.length));
-        q.f(createWordPattern$simpleast_core_release2, "createWordPattern(*keywords)");
+        q.g(createWordPattern$simpleast_core_release2, "createWordPattern(*keywords)");
         k10 = j.k(createDefinitionRule(codeStyleProviders, (String[]) Arrays.copyOf(strArr, strArr.length)), toMatchGroupRule$default(this, createWordPattern$simpleast_core_release, 0, codeStyleProviders.getGenericsStyleProvider(), 1, null), toMatchGroupRule$default(this, createWordPattern$simpleast_core_release2, 0, codeStyleProviders.getKeywordStyleProvider(), 1, null), toMatchGroupRule$default(this, PATTERN_NUMBERS, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), toMatchGroupRule$default(this, PATTERN_LEADING_WS_CONSUMER, 0, null, 3, null), toMatchGroupRule$default(this, PATTERN_TEXT, 0, null, 3, null));
         m02 = r.m0(list, k10);
         return m02;
@@ -95,33 +95,33 @@ public final class CodeRules {
         List k13;
         List k14;
         Map<String, List<Rule<R, Node<R>, S>>> k15;
-        q.g(codeStyleProviders, "codeStyleProviders");
+        q.h(codeStyleProviders, "codeStyleProviders");
         Kotlin kotlin2 = Kotlin.INSTANCE;
         String[] built_ins = kotlin2.getBUILT_INS();
         String[] keywords = kotlin2.getKEYWORDS();
         List<Rule<R, Node<R>, S>> createGenericCodeRules = createGenericCodeRules(codeStyleProviders, kotlin2.createKotlinCodeRules$simpleast_core_release(codeStyleProviders), new String[]{"object", "class", "interface"}, built_ins, (String[]) Arrays.copyOf(keywords, keywords.length));
         Pattern createSingleLineCommentPattern = createSingleLineCommentPattern("
-        q.f(createSingleLineCommentPattern, "createSingleLineCommentPattern(\"
+        q.g(createSingleLineCommentPattern, "createSingleLineCommentPattern(\"
         Pattern compile = Pattern.compile("^\"[\\s\\S]*?(?<!\\\\)\"(?=\\W|\\s|$)");
-        q.f(compile, "Pattern.compile(\"\"\"^\"[\\s…*?(?<!\\\\)\"(?=\\W|\\s|$)\"\"\")");
+        q.g(compile, "Pattern.compile(\"\"\"^\"[\\s…*?(?<!\\\\)\"(?=\\W|\\s|$)\"\"\")");
         k10 = j.k(toMatchGroupRule$default(this, createSingleLineCommentPattern, 0, codeStyleProviders.getCommentStyleProvider(), 1, null), toMatchGroupRule$default(this, compile, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null));
         List<Rule<R, Node<R>, S>> createGenericCodeRules2 = createGenericCodeRules(codeStyleProviders, k10, new String[]{"message|enum|extend|service"}, new String[]{"true|false", "string|bool|double|float|bytes", "int32|uint32|sint32|int64|unit64|sint64", "map"}, "required|repeated|optional|option|oneof|default|reserved", "package|import", "rpc|returns");
         Pattern createSingleLineCommentPattern2 = createSingleLineCommentPattern("#");
-        q.f(createSingleLineCommentPattern2, "createSingleLineCommentPattern(\"#\")");
+        q.g(createSingleLineCommentPattern2, "createSingleLineCommentPattern(\"#\")");
         Pattern compile2 = Pattern.compile("^\"[\\s\\S]*?(?<!\\\\)\"(?=\\W|\\s|$)");
-        q.f(compile2, "Pattern.compile(\"\"\"^\"[\\s…*?(?<!\\\\)\"(?=\\W|\\s|$)\"\"\")");
+        q.g(compile2, "Pattern.compile(\"\"\"^\"[\\s…*?(?<!\\\\)\"(?=\\W|\\s|$)\"\"\")");
         Pattern compile3 = Pattern.compile("^'[\\s\\S]*?(?<!\\\\)'(?=\\W|\\s|$)");
-        q.f(compile3, "Pattern.compile(\"\"\"^'[\\s…*?(?<!\\\\)'(?=\\W|\\s|$)\"\"\")");
+        q.g(compile3, "Pattern.compile(\"\"\"^'[\\s…*?(?<!\\\\)'(?=\\W|\\s|$)\"\"\")");
         Pattern compile4 = Pattern.compile("^@(\\w+)");
-        q.f(compile4, "Pattern.compile(\"\"\"^@(\\w+)\"\"\")");
+        q.g(compile4, "Pattern.compile(\"\"\"^@(\\w+)\"\"\")");
         k11 = j.k(toMatchGroupRule$default(this, createSingleLineCommentPattern2, 0, codeStyleProviders.getCommentStyleProvider(), 1, null), toMatchGroupRule$default(this, compile2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), toMatchGroupRule$default(this, compile3, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), toMatchGroupRule$default(this, compile4, 0, codeStyleProviders.getGenericsStyleProvider(), 1, null));
         List<Rule<R, Node<R>, S>> createGenericCodeRules3 = createGenericCodeRules(codeStyleProviders, k11, new String[]{"class", "def", "lambda"}, new String[]{"True|False|None"}, "from|import|global|nonlocal", "async|await|class|self|cls|def|lambda", "for|while|if|else|elif|break|continue|return", "try|except|finally|raise|pass|yeild", "in|as|is|del", "and|or|not|assert");
         Pattern createSingleLineCommentPattern3 = createSingleLineCommentPattern("
-        q.f(createSingleLineCommentPattern3, "createSingleLineCommentPattern(\"
+        q.g(createSingleLineCommentPattern3, "createSingleLineCommentPattern(\"
         Pattern compile5 = Pattern.compile("^\"[\\s\\S]*?(?<!\\\\)\"(?=\\W|\\s|$)");
-        q.f(compile5, "Pattern.compile(\"\"\"^\"[\\s…*?(?<!\\\\)\"(?=\\W|\\s|$)\"\"\")");
+        q.g(compile5, "Pattern.compile(\"\"\"^\"[\\s…*?(?<!\\\\)\"(?=\\W|\\s|$)\"\"\")");
         Pattern compile6 = Pattern.compile("^#!?\\[.*?\\]\\n");
-        q.f(compile6, "Pattern.compile(\"\"\"^#!?\\[.*?\\]\\n\"\"\")");
+        q.g(compile6, "Pattern.compile(\"\"\"^#!?\\[.*?\\]\\n\"\"\")");
         k12 = j.k(toMatchGroupRule$default(this, createSingleLineCommentPattern3, 0, codeStyleProviders.getCommentStyleProvider(), 1, null), toMatchGroupRule$default(this, compile5, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), toMatchGroupRule$default(this, compile6, 0, codeStyleProviders.getGenericsStyleProvider(), 1, null));
         List<Rule<R, Node<R>, S>> createGenericCodeRules4 = createGenericCodeRules(codeStyleProviders, k12, new String[]{"struct", "trait", "mod"}, new String[]{"Self|Result|Ok|Err|Option|None|Some", "Copy|Clone|Eq|Hash|Send|Sync|Sized|Debug|Display", "Arc|Rc|Box|Pin|Future", "true|false|bool|usize|i64|u64|u32|i32|str|String"}, "let|mut|static|const|unsafe", "crate|mod|extern|pub|pub(super)|use", "struct|enum|trait|type|where|impl|dyn|async|await|move|self|fn", "for|while|loop|if|else|match|break|continue|return|try", "in|as|ref");
         Xml xml = Xml.INSTANCE;
@@ -129,17 +129,17 @@ public final class CodeRules {
         Pattern pattern2 = PATTERN_TEXT;
         k13 = j.k(toMatchGroupRule$default(this, xml.getPATTERN_XML_COMMENT(), 0, codeStyleProviders.getCommentStyleProvider(), 1, null), xml.createTagRule(codeStyleProviders), toMatchGroupRule$default(this, pattern, 0, null, 3, null), toMatchGroupRule$default(this, pattern2, 0, null, 3, null));
         Pattern createSingleLineCommentPattern4 = createSingleLineCommentPattern("#");
-        q.f(createSingleLineCommentPattern4, "createSingleLineCommentPattern(\"#\")");
+        q.g(createSingleLineCommentPattern4, "createSingleLineCommentPattern(\"#\")");
         Pattern compile7 = Pattern.compile("^\"[\\s\\S]*?(?<!\\\\)\"(?=\\W|\\s|$)");
-        q.f(compile7, "Pattern.compile(\"\"\"^\"[\\s…*?(?<!\\\\)\"(?=\\W|\\s|$)\"\"\")");
+        q.g(compile7, "Pattern.compile(\"\"\"^\"[\\s…*?(?<!\\\\)\"(?=\\W|\\s|$)\"\"\")");
         String pattern3 = createWordPattern$simpleast_core_release("true|false|null").pattern();
-        q.f(pattern3, "createWordPattern(\"true|false|null\").pattern()");
+        q.g(pattern3, "createWordPattern(\"true|false|null\").pattern()");
         Pattern compile8 = Pattern.compile(pattern3, 2);
-        q.f(compile8, "java.util.regex.Pattern.compile(this, flags)");
+        q.g(compile8, "java.util.regex.Pattern.compile(this, flags)");
         String pattern4 = createWordPattern$simpleast_core_release("select|from|join|where|and|as|distinct|count|avg", "order by|group by|desc|sum|min|max", "like|having|in|is|not").pattern();
-        q.f(pattern4, "createWordPattern(\n     …ing|in|is|not\").pattern()");
+        q.g(pattern4, "createWordPattern(\n     …ing|in|is|not\").pattern()");
         Pattern compile9 = Pattern.compile(pattern4, 2);
-        q.f(compile9, "java.util.regex.Pattern.compile(this, flags)");
+        q.g(compile9, "java.util.regex.Pattern.compile(this, flags)");
         k14 = j.k(toMatchGroupRule$default(this, createSingleLineCommentPattern4, 0, codeStyleProviders.getCommentStyleProvider(), 1, null), toMatchGroupRule$default(this, compile7, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), toMatchGroupRule$default(this, compile8, 0, codeStyleProviders.getGenericsStyleProvider(), 1, null), toMatchGroupRule$default(this, compile9, 0, codeStyleProviders.getKeywordStyleProvider(), 1, null), toMatchGroupRule$default(this, PATTERN_NUMBERS, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), toMatchGroupRule$default(this, pattern, 0, null, 3, null), toMatchGroupRule$default(this, pattern2, 0, null, 3, null));
         Crystal crystal = Crystal.INSTANCE;
         String[] built_ins2 = crystal.getBUILT_INS();
@@ -154,16 +154,16 @@ public final class CodeRules {
     }
 
     public final <R, S> Rule<R, Node<R>, S> createCodeRule(final StyleNode.SpanProvider<R> textStyleProvider, final Map<String, ? extends List<? extends Rule<R, Node<R>, S>>> languageMap, final Function3<? super CodeNode<R>, ? super Boolean, ? super S, ? extends Node<R>> wrapperNodeProvider) {
-        q.g(textStyleProvider, "textStyleProvider");
-        q.g(languageMap, "languageMap");
-        q.g(wrapperNodeProvider, "wrapperNodeProvider");
+        q.h(textStyleProvider, "textStyleProvider");
+        q.h(languageMap, "languageMap");
+        q.h(wrapperNodeProvider, "wrapperNodeProvider");
         final Pattern pattern = PATTERN_CODE_BLOCK;
         return new Rule<R, Node<R>, S>(pattern) { 
             @Override 
             public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s10) {
                 CodeNode.Content content;
-                q.g(matcher, "matcher");
-                q.g(parser, "parser");
+                q.h(matcher, "matcher");
+                q.h(parser, "parser");
                 String group = matcher.group(1);
                 String group2 = matcher.group(3);
                 if (group2 == null) {
@@ -173,7 +173,7 @@ public final class CodeRules {
                 List list = null;
                 boolean z10 = false;
                 if (group3 != null) {
-                    z10 = ji.v.L(group3, '\n', false, 2, null);
+                    z10 = ni.v.L(group3, '\n', false, 2, null);
                 }
                 if (group != null) {
                     list = (List) languageMap.get(group);
@@ -195,38 +195,38 @@ public final class CodeRules {
 
     public final <R, S> Rule<R, Node<R>, S> createDefinitionRule(final CodeStyleProviders<R> codeStyleProviders, final String... identifiers) {
         String c02;
-        q.g(codeStyleProviders, "codeStyleProviders");
-        q.g(identifiers, "identifiers");
+        q.h(codeStyleProviders, "codeStyleProviders");
+        q.h(identifiers, "identifiers");
         StringBuilder sb2 = new StringBuilder();
         sb2.append("^\\b(");
         c02 = f.c0(identifiers, "|", null, null, 0, null, null, 62, null);
         sb2.append(c02);
         sb2.append(")(\\s+\\w+)");
         final Pattern compile = Pattern.compile(sb2.toString());
-        q.f(compile, "Pattern.compile(\"\"\"^\\b($…String(\"|\")})(\\s+\\w+)\"\"\")");
+        q.g(compile, "Pattern.compile(\"\"\"^\\b($…String(\"|\")})(\\s+\\w+)\"\"\")");
         return new Rule<R, Node<R>, S>(compile) { 
             @Override 
             public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s10) {
-                q.g(matcher, "matcher");
-                q.g(parser, "parser");
+                q.h(matcher, "matcher");
+                q.h(parser, "parser");
                 String group = matcher.group(1);
-                q.d(group);
+                q.e(group);
                 String group2 = matcher.group(2);
-                q.d(group2);
+                q.e(group2);
                 return ParseSpec.Companion.createTerminal(new CodeNode.DefinitionNode(group, group2, CodeStyleProviders.this), s10);
             }
         };
     }
 
     public final <R, S> Rule<R, Node<R>, S> createInlineCodeRule(StyleNode.SpanProvider<R> textStyleProvider, StyleNode.SpanProvider<R> bgStyleProvider) {
-        q.g(textStyleProvider, "textStyleProvider");
-        q.g(bgStyleProvider, "bgStyleProvider");
+        q.h(textStyleProvider, "textStyleProvider");
+        q.h(bgStyleProvider, "bgStyleProvider");
         return new CodeRules$createInlineCodeRule$1(this, textStyleProvider, bgStyleProvider, PATTERN_CODE_INLINE);
     }
 
     public final Pattern createWordPattern$simpleast_core_release(String... words) {
         String c02;
-        q.g(words, "words");
+        q.h(words, "words");
         StringBuilder sb2 = new StringBuilder();
         sb2.append("^\\b(?:");
         c02 = f.c0(words, "|", null, null, 0, null, null, 62, null);
@@ -256,13 +256,13 @@ public final class CodeRules {
     }
 
     public final <R, S> Rule<R, Node<R>, S> toMatchGroupRule(final Pattern toMatchGroupRule, final int i10, final StyleNode.SpanProvider<R> spanProvider) {
-        q.g(toMatchGroupRule, "$this$toMatchGroupRule");
+        q.h(toMatchGroupRule, "$this$toMatchGroupRule");
         return new Rule<R, Node<R>, S>(toMatchGroupRule) { 
             @Override 
             public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s10) {
                 Object obj;
-                q.g(matcher, "matcher");
-                q.g(parser, "parser");
+                q.h(matcher, "matcher");
+                q.h(parser, "parser");
                 String group = matcher.group(i10);
                 if (group == null) {
                     group = "";

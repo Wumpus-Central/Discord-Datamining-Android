@@ -1,6 +1,6 @@
 package com.discord.bundle_updater;
 
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.functions.Function1;
@@ -29,11 +29,11 @@ public final class BundleUpdaterUtils$compareJSONData$1 extends s implements Fun
         AssetStatus assetStatus;
         String string = this.$newData.getString(key);
         JSONObject jSONObject = this.$apkData;
-        q.f(key, "key");
-        if (q.b(string, BundleUpdaterUtilsKt.getStringOrNull(jSONObject, key))) {
+        q.g(key, "key");
+        if (q.c(string, BundleUpdaterUtilsKt.getStringOrNull(jSONObject, key))) {
             return null;
         }
-        if (q.b(string, BundleUpdaterUtilsKt.getStringOrNull(this.$oldData, key))) {
+        if (q.c(string, BundleUpdaterUtilsKt.getStringOrNull(this.$oldData, key))) {
             assetStatus = AssetStatus.CopyFromPrevious;
         } else {
             assetStatus = AssetStatus.Download;

@@ -31,16 +31,16 @@ public final class MessagingService extends FirebaseMessagingService {
 
     @Override 
     public void onMessageReceived(RemoteMessage remoteMessage) {
-        q.g(remoteMessage, "remoteMessage");
+        q.h(remoteMessage, "remoteMessage");
         NotificationClient instance = NotificationClient.Companion.getInstance();
-        Map<String, String> n10 = remoteMessage.n();
-        q.f(n10, "remoteMessage.data");
-        instance.onNotificationReceived(this, n10);
+        Map<String, String> p10 = remoteMessage.p();
+        q.g(p10, "remoteMessage.data");
+        instance.onNotificationReceived(this, p10);
     }
 
     @Override 
     public void onNewToken(String token) {
-        q.g(token, "token");
+        q.h(token, "token");
         NotificationClient.Companion.getInstance().setToken(token);
     }
 }

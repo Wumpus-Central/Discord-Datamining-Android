@@ -9,25 +9,32 @@ import e5.a;
 
 
 public abstract class NativeHeartbeatKeyProviderSpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
+    public static final String NAME = "RTNHeartbeatKeyProvider";
+
     public NativeHeartbeatKeyProviderSpec(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);
     }
 
-    @ReactMethod(isBlockingSynchronousMethod = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED)
+    @ReactMethod(isBlockingSynchronousMethod = true)
     @a
     public abstract String getHeartbeatInitializedTimestamp();
 
-    @ReactMethod(isBlockingSynchronousMethod = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED)
+    @ReactMethod(isBlockingSynchronousMethod = true)
     @a
     public abstract String getHeartbeatRefreshedTimestamp();
 
-    @ReactMethod(isBlockingSynchronousMethod = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED)
+    @ReactMethod(isBlockingSynchronousMethod = true)
     @a
     public abstract String getHeartbeatUUID();
 
-    @ReactMethod(isBlockingSynchronousMethod = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED)
+    @ReactMethod(isBlockingSynchronousMethod = true)
     @a
     public abstract String getLatestHeartbeatEventTimestamp();
+
+    @Override 
+    public String getName() {
+        return "RTNHeartbeatKeyProvider";
+    }
 
     @ReactMethod
     @a

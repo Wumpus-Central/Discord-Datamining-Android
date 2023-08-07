@@ -31,8 +31,8 @@ public final class RLottieImageView extends com.discord.rlottie.RLottieImageView
         private final int widthDp;
 
         public Config(String url, boolean z10, int i10, int i11, String asset, int i12) {
-            q.g(url, "url");
-            q.g(asset, "asset");
+            q.h(url, "url");
+            q.h(asset, "asset");
             this.url = url;
             this.animate = z10;
             this.widthDp = i10;
@@ -88,8 +88,8 @@ public final class RLottieImageView extends com.discord.rlottie.RLottieImageView
         }
 
         public final Config copy(String url, boolean z10, int i10, int i11, String asset, int i12) {
-            q.g(url, "url");
-            q.g(asset, "asset");
+            q.h(url, "url");
+            q.h(asset, "asset");
             return new Config(url, z10, i10, i11, asset, i12);
         }
 
@@ -101,7 +101,7 @@ public final class RLottieImageView extends com.discord.rlottie.RLottieImageView
                 return false;
             }
             Config config = (Config) obj;
-            return q.b(this.url, config.url) && this.animate == config.animate && this.widthDp == config.widthDp && this.heightDp == config.heightDp && q.b(this.asset, config.asset) && this.renderMode == config.renderMode;
+            return q.c(this.url, config.url) && this.animate == config.animate && this.widthDp == config.widthDp && this.heightDp == config.heightDp && q.c(this.asset, config.asset) && this.renderMode == config.renderMode;
         }
 
         public final boolean getAnimate() {
@@ -154,7 +154,7 @@ public final class RLottieImageView extends com.discord.rlottie.RLottieImageView
     
     public RLottieImageView(Context context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
         ShapeDrawable shapeDrawable = new ShapeDrawable();
         shapeDrawable.setShape(new OvalShape());
         shapeDrawable.getPaint().setColor(ThemeManagerKt.getTheme().getBackgroundAccent());
@@ -174,7 +174,7 @@ public final class RLottieImageView extends com.discord.rlottie.RLottieImageView
     }
 
     public final void loadImage(Config config) {
-        q.g(config, "config");
+        q.h(config, "config");
         this.rLottieStateManager.onTryFetch(config);
     }
 

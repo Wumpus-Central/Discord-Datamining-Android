@@ -16,15 +16,15 @@ public final class ContactSyncManagerModule extends ReactContextBaseJavaModule {
     
     public ContactSyncManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @ReactMethod
     public final void getImageForContactId(String deviceContactId, Callback callback) {
-        q.g(deviceContactId, "deviceContactId");
-        q.g(callback, "callback");
+        q.h(deviceContactId, "deviceContactId");
+        q.h(callback, "callback");
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         ContactSyncSerializerKt.serializeGetImageForContactIdResult(reactApplicationContext, deviceContactId, callback);
     }
 
@@ -35,18 +35,18 @@ public final class ContactSyncManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void hasContactsPermissions(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         ContactSyncSerializerKt.serializeHasContactPermissionsResult(reactApplicationContext, promise);
     }
 
     @ReactMethod
     public final void syncContacts(String str, String phone, Callback callback) {
-        q.g(phone, "phone");
-        q.g(callback, "callback");
+        q.h(phone, "phone");
+        q.h(callback, "callback");
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         ContactSyncSerializerKt.serializeSyncContactResult(reactApplicationContext, callback);
     }
 }

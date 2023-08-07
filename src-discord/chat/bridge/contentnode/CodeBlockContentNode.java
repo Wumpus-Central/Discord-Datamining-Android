@@ -7,8 +7,8 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import pi.f;
-import si.n1;
+import ti.f;
+import wi.n1;
 
 @f
 @Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 #2\u00020\u0001:\u0002\"#B5\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n¢\u0006\u0002\u0010\u000bB\u001d\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\b¢\u0006\u0002\u0010\fJ\t\u0010\u0012\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0013\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0014\u001a\u00020\bHÆ\u0003J'\u0010\u0015\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\bHÆ\u0001J\u0013\u0010\u0016\u001a\u00020\b2\b\u0010\u0017\u001a\u0004\u0018\u00010\u0018HÖ\u0003J\t\u0010\u0019\u001a\u00020\u0003HÖ\u0001J\t\u0010\u001a\u001a\u00020\u0005HÖ\u0001J!\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u00002\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020!HÇ\u0001R\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u000e¨\u0006$"}, d2 = {"Lcom/discord/chat/bridge/contentnode/CodeBlockContentNode;", "Lcom/discord/chat/bridge/contentnode/ContentNode;", "seen1", "", "lang", "", "content", "inQuote", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;ZLkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Z)V", "getContent", "()Ljava/lang/String;", "getInQuote", "()Z", "getLang", "component1", "component2", "component3", "copy", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -59,9 +59,9 @@ public final class CodeBlockContentNode extends ContentNode {
     }
 
     public static final void write$Self(CodeBlockContentNode self, CompositeEncoder output, SerialDescriptor serialDesc) {
-        q.g(self, "self");
-        q.g(output, "output");
-        q.g(serialDesc, "serialDesc");
+        q.h(self, "self");
+        q.h(output, "output");
+        q.h(serialDesc, "serialDesc");
         output.s(serialDesc, 0, self.lang);
         output.s(serialDesc, 1, self.content);
         output.r(serialDesc, 2, self.inQuote);
@@ -80,8 +80,8 @@ public final class CodeBlockContentNode extends ContentNode {
     }
 
     public final CodeBlockContentNode copy(String lang, String content, boolean z10) {
-        q.g(lang, "lang");
-        q.g(content, "content");
+        q.h(lang, "lang");
+        q.h(content, "content");
         return new CodeBlockContentNode(lang, content, z10);
     }
 
@@ -93,7 +93,7 @@ public final class CodeBlockContentNode extends ContentNode {
             return false;
         }
         CodeBlockContentNode codeBlockContentNode = (CodeBlockContentNode) obj;
-        return q.b(this.lang, codeBlockContentNode.lang) && q.b(this.content, codeBlockContentNode.content) && this.inQuote == codeBlockContentNode.inQuote;
+        return q.c(this.lang, codeBlockContentNode.lang) && q.c(this.content, codeBlockContentNode.content) && this.inQuote == codeBlockContentNode.inQuote;
     }
 
     public final String getContent() {
@@ -130,8 +130,8 @@ public final class CodeBlockContentNode extends ContentNode {
     
     public CodeBlockContentNode(String lang, String content, boolean z10) {
         super(null);
-        q.g(lang, "lang");
-        q.g(content, "content");
+        q.h(lang, "lang");
+        q.h(content, "content");
         this.lang = lang;
         this.content = content;
         this.inQuote = z10;

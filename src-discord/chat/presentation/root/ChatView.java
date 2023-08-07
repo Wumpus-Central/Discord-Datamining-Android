@@ -13,7 +13,7 @@ import com.discord.recycler_view.scroller.Scroller;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.views.view.ReactViewGroup;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -53,7 +53,7 @@ public final class ChatView extends ReactViewGroup {
     
     public ChatView(Context context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     private final void attachPortalViewToChatList(final View view) {
@@ -70,8 +70,8 @@ public final class ChatView extends ReactViewGroup {
     public static final void attachPortalViewToChatList$lambda$5(View portalView, ChatView this$0, View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
         boolean z10;
         Pair<Integer, Integer> pair;
-        q.g(portalView, "$portalView");
-        q.g(this$0, "this$0");
+        q.h(portalView, "$portalView");
+        q.h(this$0, "this$0");
         boolean z11 = true;
         if (portalView.getMeasuredHeight() <= 0 || portalView.getMeasuredWidth() <= 0) {
             z10 = false;
@@ -82,7 +82,7 @@ public final class ChatView extends ReactViewGroup {
             ChatListView chatListView = this$0.chatList;
             ChatListView chatListView2 = null;
             if (chatListView == null) {
-                q.y("chatList");
+                q.z("chatList");
                 chatListView = null;
             }
             if (!chatListView.isComputingLayout()) {
@@ -96,12 +96,12 @@ public final class ChatView extends ReactViewGroup {
                 }
                 if (portalView.getParent() instanceof ChatView) {
                     ViewParent parent = portalView.getParent();
-                    q.e(parent, "null cannot be cast to non-null type android.view.ViewGroup");
+                    q.f(parent, "null cannot be cast to non-null type android.view.ViewGroup");
                     ((ViewGroup) parent).removeView(portalView);
                 }
                 ChatListView chatListView3 = this$0.chatList;
                 if (chatListView3 == null) {
-                    q.y("chatList");
+                    q.z("chatList");
                 } else {
                     chatListView2 = chatListView3;
                 }
@@ -112,7 +112,7 @@ public final class ChatView extends ReactViewGroup {
 
     @Override 
     public void addView(View child, int i10, ViewGroup.LayoutParams layoutParams) {
-        q.g(child, "child");
+        q.h(child, "child");
         super.addView(child, i10, layoutParams);
         if (i10 != 0) {
             if (i10 == 2) {
@@ -122,7 +122,7 @@ public final class ChatView extends ReactViewGroup {
             ChatListView chatListView = (ChatListView) child;
             ChatEventHandler chatEventHandler = this.eventHandler;
             if (chatEventHandler == null) {
-                q.y("eventHandler");
+                q.z("eventHandler");
                 chatEventHandler = null;
             }
             chatListView.setEventHandler(chatEventHandler);
@@ -131,9 +131,9 @@ public final class ChatView extends ReactViewGroup {
             ChatListView chatListView2 = (ChatListView) child;
             chatListView2.setClipToPadding(true);
             Context context = getContext();
-            q.e(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
+            q.f(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
             NativeModule nativeModule = ((ReactContext) context).getNativeModule(ChatModule.class);
-            q.d(nativeModule);
+            q.e(nativeModule);
             final ChatModule chatModule = (ChatModule) nativeModule;
             chatListView2.setDataSource(new ChatListView.DataSource() { 
                 @Override 
@@ -148,11 +148,11 @@ public final class ChatView extends ReactViewGroup {
     }
 
     public final void scrollTo(int i10, Scroller.TargetAlignment targetScreenLocation, boolean z10, boolean z11) {
-        q.g(targetScreenLocation, "targetScreenLocation");
+        q.h(targetScreenLocation, "targetScreenLocation");
         if (ThreadUtilsKt.isOnMainThread()) {
             ChatListView chatListView = this.chatList;
             if (chatListView == null) {
-                q.y("chatList");
+                q.z("chatList");
                 chatListView = null;
             }
             chatListView.scrollToPosition(i10, targetScreenLocation, z10, z11);
@@ -172,7 +172,7 @@ public final class ChatView extends ReactViewGroup {
     }
 
     public final void setEventHandler(ChatEventHandler eventHandler) {
-        q.g(eventHandler, "eventHandler");
+        q.h(eventHandler, "eventHandler");
         if (ThreadUtilsKt.isOnMainThread()) {
             this.eventHandler = eventHandler;
             return;

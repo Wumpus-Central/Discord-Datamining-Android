@@ -5,7 +5,7 @@ import com.discord.file_downloader.DownloadState;
 import com.discord.file_downloader.PublicFileDownloader;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
-import ff.t;
+import jf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -17,7 +17,7 @@ import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
-import lf.d;
+import pf.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.media.MediaManagerModule$downloadMediaAsset$1", f = "MediaManagerModule.kt", l = {109}, m = "invokeSuspend")
@@ -43,7 +43,7 @@ final class MediaManagerModule$downloadMediaAsset$1 extends k implements Functio
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaManagerModule$downloadMediaAsset$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20679a);
+        return ((MediaManagerModule$downloadMediaAsset$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
     }
 
     @Override 
@@ -56,10 +56,10 @@ final class MediaManagerModule$downloadMediaAsset$1 extends k implements Functio
             t.b(obj);
             PublicFileDownloader publicFileDownloader = PublicFileDownloader.INSTANCE;
             reactApplicationContext = this.this$0.getReactApplicationContext();
-            q.f(reactApplicationContext, "reactApplicationContext");
+            q.g(reactApplicationContext, "reactApplicationContext");
             String str = this.$uri;
             String guessFileName = URLUtil.guessFileName(str, null, null);
-            q.f(guessFileName, "guessFileName(uri, null, null)");
+            q.g(guessFileName, "guessFileName(uri, null, null)");
             Flow downloadFile$default = PublicFileDownloader.downloadFile$default(publicFileDownloader, reactApplicationContext, str, guessFileName, null, 8, null);
             final Promise promise = this.$promise;
             FlowCollector flowCollector = new FlowCollector() { 
@@ -76,7 +76,7 @@ final class MediaManagerModule$downloadMediaAsset$1 extends k implements Functio
                     } else {
                         boolean z10 = downloadState instanceof DownloadState.InProgress;
                     }
-                    return Unit.f20679a;
+                    return Unit.f21025a;
                 }
             };
             this.label = 1;
@@ -88,6 +88,6 @@ final class MediaManagerModule$downloadMediaAsset$1 extends k implements Functio
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 }

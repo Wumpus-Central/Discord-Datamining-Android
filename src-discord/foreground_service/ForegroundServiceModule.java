@@ -18,7 +18,7 @@ public final class ForegroundServiceModule extends ReactContextBaseJavaModule {
     
     public ForegroundServiceModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.reactContext = reactContext;
     }
 
@@ -29,13 +29,13 @@ public final class ForegroundServiceModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void isServiceRunning(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         callback.invoke(Boolean.valueOf(ForegroundServiceManager.Companion.getInstance().isRunning$foreground_service_release()));
     }
 
     @ReactMethod
     public final void startService(ReadableArray parameters) {
-        q.g(parameters, "parameters");
+        q.h(parameters, "parameters");
         ForegroundServiceManager.Companion.getInstance().startService$foreground_service_release(this.reactContext, ForegroudServiceConfigurationParserKt.parseList(ServiceNotificationConfiguration.Companion, parameters));
     }
 

@@ -2,6 +2,8 @@ package com.discord.audio.utils;
 
 import android.bluetooth.BluetoothDevice;
 import android.content.Intent;
+import android.os.Parcelable;
+import androidx.core.content.e;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
@@ -12,7 +14,7 @@ public final class ExtensionsKt {
 
     public static final Integer getBluetoothAdapterPrevStateExtra(Intent intent) {
         boolean z10;
-        q.g(intent, "<this>");
+        q.h(intent, "<this>");
         Integer valueOf = Integer.valueOf(intent.getIntExtra("android.bluetooth.adapter.extra.PREVIOUS_STATE", Integer.MIN_VALUE));
         if (valueOf.intValue() == Integer.MIN_VALUE) {
             z10 = true;
@@ -27,7 +29,7 @@ public final class ExtensionsKt {
 
     public static final Integer getBluetoothAdapterStateExtra(Intent intent) {
         boolean z10;
-        q.g(intent, "<this>");
+        q.h(intent, "<this>");
         Integer valueOf = Integer.valueOf(intent.getIntExtra("android.bluetooth.adapter.extra.STATE", Integer.MIN_VALUE));
         if (valueOf.intValue() == Integer.MIN_VALUE) {
             z10 = true;
@@ -41,14 +43,14 @@ public final class ExtensionsKt {
     }
 
     public static final BluetoothDevice getBluetoothDeviceExtra(Intent intent) {
-        q.g(intent, "<this>");
-        return (BluetoothDevice) intent.getParcelableExtra("android.bluetooth.device.extra.DEVICE");
+        q.h(intent, "<this>");
+        return (BluetoothDevice) ((Parcelable) e.b(intent, "android.bluetooth.device.extra.DEVICE", BluetoothDevice.class));
     }
 
     public static final Integer getIntExtraOrNull(Intent intent, String key) {
         boolean z10;
-        q.g(intent, "<this>");
-        q.g(key, "key");
+        q.h(intent, "<this>");
+        q.h(key, "key");
         Integer valueOf = Integer.valueOf(intent.getIntExtra(key, Integer.MIN_VALUE));
         if (valueOf.intValue() == Integer.MIN_VALUE) {
             z10 = true;

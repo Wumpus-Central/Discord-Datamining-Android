@@ -44,9 +44,9 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
     
     public OverlayMenuBubbleDialog(Context context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
         OverlayMenuBubbleBinding inflate = OverlayMenuBubbleBinding.inflate(LayoutInflater.from(getContext()), this, true);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this, true)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this, true)");
         this.binding = inflate;
         inflate.overlayMenu.getBinding().overlayInviteLink.setOnClickListener(new View.OnClickListener() { 
             @Override 
@@ -86,48 +86,48 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         });
         setClipChildren(false);
         TextView _init_$lambda$6 = inflate.overlayMembersOverflowText;
-        q.f(_init_$lambda$6, "_init_$lambda$6");
+        q.g(_init_$lambda$6, "_init_$lambda$6");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$6, DiscordFont.PrimaryExtraBold);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$6, 20.0f);
         TextView _init_$lambda$7 = inflate.overlayMembersOverflowText;
         _init_$lambda$7.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
-        q.f(_init_$lambda$7, "_init_$lambda$7");
+        q.g(_init_$lambda$7, "_init_$lambda$7");
         ViewBackgroundUtilsKt.setBackgroundOval$default(_init_$lambda$7, ThemeManagerKt.getTheme().getBackgroundTertiary(), 0, 2, null);
     }
 
     
     public static final void _init_$lambda$0(OverlayMenuBubbleDialog this$0, View view) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         this$0.onGetInvitePressed.invoke();
     }
 
     
     public static final void _init_$lambda$1(OverlayMenuBubbleDialog this$0, View view) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         this$0.onSwitchChannelsPressed.invoke();
     }
 
     
     public static final void _init_$lambda$2(OverlayMenuBubbleDialog this$0, View view) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         this$0.onOpenDiscordPressed.invoke();
     }
 
     
     public static final void _init_$lambda$3(OverlayMenuBubbleDialog this$0, View view) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         this$0.onSourcePressed.invoke();
     }
 
     
     public static final void _init_$lambda$4(OverlayMenuBubbleDialog this$0, View view) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         this$0.onMutePressed.invoke();
     }
 
     
     public static final void _init_$lambda$5(OverlayMenuBubbleDialog this$0, View view) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         this$0.onDisconnectPressed.invoke();
         this$0.closeDialog();
     }
@@ -138,7 +138,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         animatorSet.setStartDelay(getResources().getInteger(17694720));
         Animator loadAnimator = AnimatorInflater.loadAnimator(this.binding.overlayMenu.getContext(), R.animator.overlay_slide_down_fade_out);
         loadAnimator.setTarget(this.binding.overlayMenu);
-        Unit unit = Unit.f20679a;
+        Unit unit = Unit.f21025a;
         Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), R.animator.overlay_slide_up_fade_out);
         loadAnimator2.setTarget(this.binding.overlayHeader);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
@@ -147,7 +147,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
 
     public final View getLinkedAnchorView() {
         View view = this.binding.overlayLinkedAnchorView;
-        q.f(view, "binding.overlayLinkedAnchorView");
+        q.g(view, "binding.overlayLinkedAnchorView");
         return view;
     }
 
@@ -163,7 +163,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         AnimatorSet animatorSet = new AnimatorSet();
         Animator loadAnimator = AnimatorInflater.loadAnimator(this.binding.overlayMenu.getContext(), R.animator.overlay_slide_up_fade_in);
         loadAnimator.setTarget(this.binding.overlayMenu);
-        Unit unit = Unit.f20679a;
+        Unit unit = Unit.f21025a;
         Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), R.animator.overlay_slide_down_fade_in);
         loadAnimator2.setTarget(this.binding.overlayHeader);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
@@ -181,7 +181,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
 
     @Override 
     public void setAssets(MobileVoiceOverlayAssets assets) {
-        q.g(assets, "assets");
+        q.h(assets, "assets");
         super.setAssets(assets);
         this.binding.overlayMenu.setAssets(assets);
     }
@@ -191,14 +191,14 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         List<MobileVoiceOverlayDataUser> list;
         int i10;
         String str;
-        IntRange p10;
-        q.g(data, "data");
+        IntRange q10;
+        q.h(data, "data");
         List<MobileVoiceOverlayDataUser> users = data.getUsers();
         if (users.size() < 2) {
             list = j.h();
         } else {
-            p10 = wf.j.p(1, users.size());
-            list = r.s0(users, p10);
+            q10 = ag.j.q(1, users.size());
+            list = r.s0(users, q10);
         }
         this.adapter.setData(list);
         TextView textView = this.binding.overlayMembersOverflowText;
@@ -224,16 +224,16 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
     }
 
     public final void setOnShowSelectorDialog(Function0<Unit> function0) {
-        q.g(function0, "<set-?>");
+        q.h(function0, "<set-?>");
         this.onShowSelectorDialog = function0;
     }
 
     
     public OverlayMenuBubbleDialog(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         OverlayMenuBubbleBinding inflate = OverlayMenuBubbleBinding.inflate(LayoutInflater.from(getContext()), this, true);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this, true)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this, true)");
         this.binding = inflate;
         inflate.overlayMenu.getBinding().overlayInviteLink.setOnClickListener(new View.OnClickListener() { 
             @Override 
@@ -273,21 +273,21 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         });
         setClipChildren(false);
         TextView _init_$lambda$6 = inflate.overlayMembersOverflowText;
-        q.f(_init_$lambda$6, "_init_$lambda$6");
+        q.g(_init_$lambda$6, "_init_$lambda$6");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$6, DiscordFont.PrimaryExtraBold);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$6, 20.0f);
         TextView _init_$lambda$7 = inflate.overlayMembersOverflowText;
         _init_$lambda$7.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
-        q.f(_init_$lambda$7, "_init_$lambda$7");
+        q.g(_init_$lambda$7, "_init_$lambda$7");
         ViewBackgroundUtilsKt.setBackgroundOval$default(_init_$lambda$7, ThemeManagerKt.getTheme().getBackgroundTertiary(), 0, 2, null);
     }
 
     
     public OverlayMenuBubbleDialog(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         OverlayMenuBubbleBinding inflate = OverlayMenuBubbleBinding.inflate(LayoutInflater.from(getContext()), this, true);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this, true)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this, true)");
         this.binding = inflate;
         inflate.overlayMenu.getBinding().overlayInviteLink.setOnClickListener(new View.OnClickListener() { 
             @Override 
@@ -327,12 +327,12 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         });
         setClipChildren(false);
         TextView _init_$lambda$6 = inflate.overlayMembersOverflowText;
-        q.f(_init_$lambda$6, "_init_$lambda$6");
+        q.g(_init_$lambda$6, "_init_$lambda$6");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$6, DiscordFont.PrimaryExtraBold);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$6, 20.0f);
         TextView _init_$lambda$7 = inflate.overlayMembersOverflowText;
         _init_$lambda$7.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
-        q.f(_init_$lambda$7, "_init_$lambda$7");
+        q.g(_init_$lambda$7, "_init_$lambda$7");
         ViewBackgroundUtilsKt.setBackgroundOval$default(_init_$lambda$7, ThemeManagerKt.getTheme().getBackgroundTertiary(), 0, 2, null);
     }
 }

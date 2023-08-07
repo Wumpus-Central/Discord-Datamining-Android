@@ -18,7 +18,7 @@ public final class FontManager {
     private static final String FONT_SCALE_KEY = "FONT_SCALE_KEY";
     static final  KProperty<Object>[] $$delegatedProperties = {f0.e(new w(FontManager.class, "initialFontSize", "getInitialFontSize()F", 0))};
     public static final FontManager INSTANCE = new FontManager();
-    private static final ReadWriteProperty initialFontSize$delegate = a.f20735a.a();
+    private static final ReadWriteProperty initialFontSize$delegate = a.f21081a.a();
 
     private FontManager() {
     }
@@ -46,17 +46,17 @@ public final class FontManager {
     }
 
     public final synchronized float getFontScale(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         return getCache(context).getFloat(FONT_SCALE_KEY, 1.0f);
     }
 
     public final synchronized boolean getIsClassicChatFontScaleEnabled(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         if (!getCache(context).contains(FONT_SCALE_CHAT_CLASSIC_KEY)) {
             SharedPreferences cache = getCache(context);
-            q.f(cache, "context.getCache()");
+            q.g(cache, "context.getCache()");
             SharedPreferences.Editor editor = cache.edit();
-            q.f(editor, "editor");
+            q.g(editor, "editor");
             editor.putBoolean(FONT_SCALE_CHAT_CLASSIC_KEY, false);
             editor.apply();
         }
@@ -64,21 +64,21 @@ public final class FontManager {
     }
 
     public final synchronized float getScaledFontSize(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         return getInitialFontSize() * getFontScale(context);
     }
 
     public final void init(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         setInitialFontSize(context.getResources().getConfiguration().fontScale);
     }
 
     public final synchronized void setFontSize(Context context, float f10, boolean z10) {
-        q.g(context, "context");
+        q.h(context, "context");
         SharedPreferences cache = getCache(context);
-        q.f(cache, "context.getCache()");
+        q.g(cache, "context.getCache()");
         SharedPreferences.Editor editor = cache.edit();
-        q.f(editor, "editor");
+        q.g(editor, "editor");
         editor.putFloat(FONT_SCALE_KEY, f10);
         editor.putBoolean(FONT_SCALE_CHAT_CLASSIC_KEY, z10);
         editor.commit();

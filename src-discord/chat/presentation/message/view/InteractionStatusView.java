@@ -6,22 +6,10 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.bridge.interaction.InteractionStatus;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.databinding.InteractionStatusViewBinding;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.misc.utilities.view.ViewUtilsKt;
 import com.discord.progress_dots.ProgressDots;
 import com.discord.react_asset_fetcher.ReactAsset;
@@ -44,7 +32,7 @@ public final class InteractionStatusView extends ConstraintLayout {
     
     public InteractionStatusView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  InteractionStatusView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -52,14 +40,13 @@ public final class InteractionStatusView extends ConstraintLayout {
     }
 
     
-    public final void m314setInteractionStatusntcYbpo(String messageId, InteractionStatus interactionStatus) {
+    public final void m315setInteractionStatusntcYbpo(String messageId, InteractionStatus interactionStatus) {
         int i10;
-        DraweeSpanStringBuilder spannable;
         int i11;
-        q.g(messageId, "messageId");
-        q.g(interactionStatus, "interactionStatus");
+        q.h(messageId, "messageId");
+        q.h(interactionStatus, "interactionStatus");
         ProgressDots progressDots = this.binding.viewInteractionStatusLoadingDots;
-        q.f(progressDots, "binding.viewInteractionStatusLoadingDots");
+        q.g(progressDots, "binding.viewInteractionStatusLoadingDots");
         int i12 = 0;
         if (interactionStatus.isLoading()) {
             i10 = 0;
@@ -68,21 +55,21 @@ public final class InteractionStatusView extends ConstraintLayout {
         }
         progressDots.setVisibility(i10);
         SimpleDraweeView simpleDraweeView = this.binding.viewInteractionStatusDangerIcon;
-        q.f(simpleDraweeView, "binding.viewInteractionStatusDangerIcon");
+        q.g(simpleDraweeView, "binding.viewInteractionStatusDangerIcon");
         if (!interactionStatus.isFailed()) {
             i12 = 8;
         }
         simpleDraweeView.setVisibility(i12);
         TextView setInteractionStatus_ntcYbpo$lambda$2 = this.binding.viewInteractionStatusLabelMessage;
-        q.f(setInteractionStatus_ntcYbpo$lambda$2, "setInteractionStatus_ntcYbpo$lambda$2");
+        q.g(setInteractionStatus_ntcYbpo$lambda$2, "setInteractionStatus_ntcYbpo$lambda$2");
         StructurableText text = interactionStatus.getText();
         Context context = setInteractionStatus_ntcYbpo$lambda$2.getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         Paint.FontMetrics fontMetrics = setInteractionStatus_ntcYbpo$lambda$2.getPaint().getFontMetrics();
-        q.f(fontMetrics, "paint.fontMetrics");
-        spannable = TextUtilsKt.toSpannable(text, context, messageId, false, false, false, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : null, (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (65536 & r42) != 0 ? false : false, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : TextUtilsKt.getBaselineHeight(fontMetrics));
-        SpannableExtensionsKt.coverWithSpan(spannable, new BackgroundSpanDrawer(setInteractionStatus_ntcYbpo$lambda$2));
-        ViewUtilsKt.setOptionalText(setInteractionStatus_ntcYbpo$lambda$2, spannable);
+        q.g(fontMetrics, "paint.fontMetrics");
+        DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(text, context, messageId, false, false, false, null, null, null, null, null, null, null, null, null, null, null, false, null, TextUtilsKt.getBaselineHeight(fontMetrics), 262112, null);
+        SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(setInteractionStatus_ntcYbpo$lambda$2));
+        ViewUtilsKt.setOptionalText(setInteractionStatus_ntcYbpo$lambda$2, spannable$default);
         if (interactionStatus.isFailed()) {
             i11 = ThemeManagerKt.getTheme().getTextDanger();
         } else {
@@ -94,12 +81,12 @@ public final class InteractionStatusView extends ConstraintLayout {
     
     public InteractionStatusView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         InteractionStatusViewBinding inflate = InteractionStatusViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         SimpleDraweeView _init_$lambda$0 = inflate.viewInteractionStatusDangerIcon;
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         ReactAssetUtilsKt.setReactAsset(_init_$lambda$0, ReactAsset.Warning);
         ColorUtilsKt.setTintColor(_init_$lambda$0, Integer.valueOf(ThemeManagerKt.getTheme().getTextDanger()));
     }

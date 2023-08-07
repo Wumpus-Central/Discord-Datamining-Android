@@ -26,12 +26,12 @@ public final class MediaEngineModule$addConnectionCallbacks$1 extends s implemen
     @Override 
     public   Unit invoke(String str, Integer num) {
         invoke(str, num.intValue());
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final void invoke(String userId, int i10) {
         ReactEvents reactEvents;
-        q.g(userId, "userId");
+        q.h(userId, "userId");
         reactEvents = this.this$0.reactEvents;
         reactEvents.emitModuleEvent(this.this$0.getReactContext(), new UserSpeakingEvent(this.$connectionId, userId, i10));
     }

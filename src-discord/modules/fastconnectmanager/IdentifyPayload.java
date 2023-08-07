@@ -2,14 +2,14 @@ package com.discord.modules.fastconnectmanager;
 
 import com.discord.app_database.GuildVersion;
 import com.discord.logging.Log;
-import ff.s;
-import ff.t;
-import ff.x;
-import gf.u;
-import gf.v;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import jf.s;
+import jf.t;
+import jf.x;
+import kf.u;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.j;
@@ -62,13 +62,13 @@ public final class IdentifyPayload {
         List<String> k10;
         int d10;
         int c10;
-        q.g(json, "json");
-        q.g(versions, "versions");
+        q.h(json, "json");
+        q.h(versions, "versions");
         try {
-            s.a aVar = s.f14787l;
-            obj = s.b(Json.f21180d.g(json));
+            s.a aVar = s.f20093l;
+            obj = s.b(Json.f21526d.g(json));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f14787l;
+            s.a aVar2 = s.f20093l;
             obj = s.b(t.a(th2));
         }
         if (s.g(obj)) {
@@ -79,7 +79,7 @@ public final class IdentifyPayload {
             JsonObject jsonObject = (JsonObject) jsonElement;
             k10 = j.k("d", "client_state", "guild_versions");
             d10 = u.d(versions.length);
-            c10 = wf.j.c(d10, 16);
+            c10 = ag.j.c(d10, 16);
             LinkedHashMap linkedHashMap = new LinkedHashMap(c10);
             for (GuildVersion guildVersion : versions) {
                 Pair a10 = x.a(guildVersion.getId(), g.c(Long.valueOf(guildVersion.getVersion())));

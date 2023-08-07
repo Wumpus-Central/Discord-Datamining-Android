@@ -12,14 +12,14 @@ public final class ViewClippingUtilsKt {
     private static final ViewClippingUtilsKt$circleOutlineProvider$1 circleOutlineProvider = new ViewOutlineProvider() { 
         @Override 
         public void getOutline(View view, Outline outline) {
-            q.g(view, "view");
-            q.g(outline, "outline");
+            q.h(view, "view");
+            q.h(outline, "outline");
             outline.setRoundRect(0, 0, view.getWidth(), view.getHeight(), view.getHeight() / 2.0f);
         }
     };
 
     public static final void clipToCircle(View view) {
-        q.g(view, "<this>");
+        q.h(view, "<this>");
         clipToOutline(view, circleOutlineProvider);
     }
 
@@ -29,12 +29,12 @@ public final class ViewClippingUtilsKt {
     }
 
     public static final void clipToRoundedRectangle(View view, final int i10) {
-        q.g(view, "<this>");
+        q.h(view, "<this>");
         clipToOutline(view, new ViewOutlineProvider() { 
             @Override 
             public void getOutline(View view2, Outline outline) {
-                q.g(view2, "view");
-                q.g(outline, "outline");
+                q.h(view2, "view");
+                q.h(outline, "outline");
                 outline.setRoundRect(0, 0, view2.getWidth(), view2.getHeight(), i10);
             }
         });

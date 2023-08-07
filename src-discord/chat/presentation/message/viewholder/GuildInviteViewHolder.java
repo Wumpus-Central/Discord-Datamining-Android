@@ -16,17 +16,17 @@ public final class GuildInviteViewHolder extends MessagePartViewHolder {
     
     public GuildInviteViewHolder(GuildInviteView guildInviteView, ChatEventHandler eventHandler) {
         super(guildInviteView, null);
-        q.g(guildInviteView, "guildInviteView");
-        q.g(eventHandler, "eventHandler");
+        q.h(guildInviteView, "guildInviteView");
+        q.h(eventHandler, "eventHandler");
         this.guildInviteView = guildInviteView;
         this.eventHandler = eventHandler;
     }
 
     
     public static final void bind$lambda$1$lambda$0(GuildInviteViewHolder this$0, GuildInviteMessageAccessory inviteAccessory, View view) {
-        q.g(this$0, "this$0");
-        q.g(inviteAccessory, "$inviteAccessory");
-        this$0.eventHandler.mo164onTapInviteEmbedAFFcxXc(inviteAccessory.mo217getMessageId3Eiw7ao(), inviteAccessory.getCodedLinkIndex(), null, null);
+        q.h(this$0, "this$0");
+        q.h(inviteAccessory, "$inviteAccessory");
+        this$0.eventHandler.mo165onTapInviteEmbedAFFcxXc(inviteAccessory.mo218getMessageId3Eiw7ao(), inviteAccessory.getCodedLinkIndex(), null, null);
     }
 
     

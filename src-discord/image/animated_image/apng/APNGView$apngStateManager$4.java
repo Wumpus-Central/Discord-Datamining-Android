@@ -22,7 +22,7 @@ public final class APNGView$apngStateManager$4 extends s implements Function1<AP
     public final Boolean invoke(APNGView.Config config) {
         boolean z10;
         boolean hasFilename;
-        q.g(config, "config");
+        q.h(config, "config");
         if (this.this$0.isAttachedToWindow()) {
             hasFilename = APNGView.Companion.hasFilename(config.getUrl());
             if (hasFilename) {

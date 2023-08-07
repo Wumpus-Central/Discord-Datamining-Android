@@ -19,12 +19,12 @@ public final class CustomTabs {
     }
 
     public final void openUrlWithCustomTabs(Context context, Uri uri, boolean z10, int i10, Integer num, Integer num2, Integer num3, Integer num4, Function1<? super Exception, Unit> onFailure) {
-        q.g(context, "context");
-        q.g(uri, "uri");
-        q.g(onFailure, "onFailure");
+        q.h(context, "context");
+        q.h(uri, "uri");
+        q.h(onFailure, "onFailure");
         if (CustomTabsPackages.INSTANCE.getCustomTabsDefaultPackage(context) != null) {
-            a a10 = new a.C0323a().b(i10).d(i10).c(i10).a();
-            q.f(a10, "Builder()\n              …\n                .build()");
+            a a10 = new a.C0334a().b(i10).d(i10).c(i10).a();
+            q.g(a10, "Builder()\n              …\n                .build()");
             b.a e10 = new b.a().b(a10).e(z10);
             if (!(num == null || num2 == null)) {
                 e10.f(context, num.intValue(), num2.intValue());
@@ -33,9 +33,9 @@ public final class CustomTabs {
                 e10.c(context, num3.intValue(), num4.intValue());
             }
             b a11 = e10.a();
-            q.f(a11, "Builder()\n              …\n                .build()");
+            q.g(a11, "Builder()\n              …\n                .build()");
             try {
-                a11.f22240a.setData(uri);
+                a11.f23393a.setData(uri);
                 a11.a(context, uri);
             } catch (ActivityNotFoundException e11) {
                 onFailure.invoke(e11);

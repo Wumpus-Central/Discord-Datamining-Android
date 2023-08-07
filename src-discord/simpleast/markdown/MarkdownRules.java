@@ -40,9 +40,9 @@ public final class MarkdownRules {
         
         public HeaderLineClassedRule(Function1<? super Integer, ? extends CharacterStyle> styleSpanProvider, Function1<? super String, ? extends T> classSpanProvider, List<? extends Rule<RC, Node<RC>, S>> innerRules) {
             super(MarkdownRules.INSTANCE.getPATTERN_HEADER_ITEM_ALT_CLASSED(), styleSpanProvider);
-            q.g(styleSpanProvider, "styleSpanProvider");
-            q.g(classSpanProvider, "classSpanProvider");
-            q.g(innerRules, "innerRules");
+            q.h(styleSpanProvider, "styleSpanProvider");
+            q.h(classSpanProvider, "classSpanProvider");
+            q.h(innerRules, "innerRules");
             this.classSpanProvider = classSpanProvider;
             this.innerRules = innerRules;
         }
@@ -84,7 +84,7 @@ public final class MarkdownRules {
         protected StyleNode<R, CharacterStyle> createHeaderStyleNode(String headerStyleGroup) {
             int i10;
             List d10;
-            q.g(headerStyleGroup, "headerStyleGroup");
+            q.h(headerStyleGroup, "headerStyleGroup");
             if (headerStyleGroup.hashCode() == 61 && headerStyleGroup.equals("=")) {
                 i10 = 1;
             } else {
@@ -96,19 +96,19 @@ public final class MarkdownRules {
 
         @Override 
         public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s10) {
-            q.g(matcher, "matcher");
-            q.g(parser, "parser");
+            q.h(matcher, "matcher");
+            q.h(parser, "parser");
             ParseSpec.Companion companion = ParseSpec.Companion;
             String group = matcher.group(2);
-            q.f(group, "matcher.group(2)");
+            q.g(group, "matcher.group(2)");
             return companion.createNonterminal(createHeaderStyleNode(group), s10, matcher.start(1), matcher.end(1));
         }
 
         
         public HeaderLineRule(Pattern pattern, Function1<? super Integer, ? extends CharacterStyle> styleSpanProvider) {
             super(pattern, styleSpanProvider);
-            q.g(pattern, "pattern");
-            q.g(styleSpanProvider, "styleSpanProvider");
+            q.h(pattern, "pattern");
+            q.h(styleSpanProvider, "styleSpanProvider");
         }
     }
 
@@ -121,14 +121,14 @@ public final class MarkdownRules {
         
         public HeaderRule(Pattern pattern, Function1<? super Integer, ? extends CharacterStyle> styleSpanProvider) {
             super(pattern);
-            q.g(pattern, "pattern");
-            q.g(styleSpanProvider, "styleSpanProvider");
+            q.h(pattern, "pattern");
+            q.h(styleSpanProvider, "styleSpanProvider");
             this.styleSpanProvider = styleSpanProvider;
         }
 
         protected StyleNode<R, CharacterStyle> createHeaderStyleNode(String headerStyleGroup) {
             List d10;
-            q.g(headerStyleGroup, "headerStyleGroup");
+            q.h(headerStyleGroup, "headerStyleGroup");
             d10 = i.d(this.styleSpanProvider.invoke(Integer.valueOf(headerStyleGroup.length())));
             return new StyleNode<>(d10);
         }
@@ -139,18 +139,18 @@ public final class MarkdownRules {
 
         @Override 
         public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s10) {
-            q.g(matcher, "matcher");
-            q.g(parser, "parser");
+            q.h(matcher, "matcher");
+            q.h(parser, "parser");
             ParseSpec.Companion companion = ParseSpec.Companion;
             String group = matcher.group(1);
-            q.f(group, "matcher.group(1)");
+            q.g(group, "matcher.group(1)");
             return companion.createNonterminal(createHeaderStyleNode(group), s10, matcher.start(2), matcher.end(2));
         }
 
         
         public HeaderRule(Function1<? super Integer, ? extends CharacterStyle> styleSpanProvider) {
             this(MarkdownRules.INSTANCE.getPATTERN_HEADER_ITEM(), styleSpanProvider);
-            q.g(styleSpanProvider, "styleSpanProvider");
+            q.h(styleSpanProvider, "styleSpanProvider");
         }
     }
 
@@ -163,27 +163,27 @@ public final class MarkdownRules {
         
         public ListItemRule(Function0<? extends BulletSpan> bulletSpanProvider) {
             super(MarkdownRules.INSTANCE.getPATTERN_LIST_ITEM());
-            q.g(bulletSpanProvider, "bulletSpanProvider");
+            q.h(bulletSpanProvider, "bulletSpanProvider");
             this.bulletSpanProvider = bulletSpanProvider;
         }
 
         @Override 
         public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s10) {
-            q.g(matcher, "matcher");
-            q.g(parser, "parser");
+            q.h(matcher, "matcher");
+            q.h(parser, "parser");
             return ParseSpec.Companion.createNonterminal(new MarkdownListItemNode(this.bulletSpanProvider), s10, matcher.start(1), matcher.end(1));
         }
     }
 
     static {
         Pattern compile = Pattern.compile("^\\*[ \\t](.*)(?=\\n|$)", 0);
-        q.f(compile, "java.util.regex.Pattern.compile(this, flags)");
+        q.g(compile, "java.util.regex.Pattern.compile(this, flags)");
         PATTERN_LIST_ITEM = compile;
         Pattern compile2 = Pattern.compile("^\\s*(#+)[ \\t](.*) *(?=\\n|$)", 0);
-        q.f(compile2, "java.util.regex.Pattern.compile(this, flags)");
+        q.g(compile2, "java.util.regex.Pattern.compile(this, flags)");
         PATTERN_HEADER_ITEM = compile2;
         Pattern compile3 = Pattern.compile("^\\s*(.+)\\n *(=|-){3,} *(?=\\n|$)", 0);
-        q.f(compile3, "java.util.regex.Pattern.compile(this, flags)");
+        q.g(compile3, "java.util.regex.Pattern.compile(this, flags)");
         PATTERN_HEADER_ITEM_ALT = compile3;
     }
 
@@ -192,8 +192,8 @@ public final class MarkdownRules {
 
     public static final <R, S> List<Rule<R, Node<R>, S>> createHeaderRules(Context context, List<Integer> headerStyles) {
         List<Rule<R, Node<R>, S>> k10;
-        q.g(context, "context");
-        q.g(headerStyles, "headerStyles");
+        q.h(context, "context");
+        q.h(headerStyles, "headerStyles");
         MarkdownRules$createHeaderRules$1 markdownRules$createHeaderRules$1 = new MarkdownRules$createHeaderRules$1(context, headerStyles);
         k10 = j.k(new HeaderRule(new MarkdownRules$createHeaderRules$2(markdownRules$createHeaderRules$1)), new HeaderLineRule(null, new MarkdownRules$createHeaderRules$3(markdownRules$createHeaderRules$1), 1, null));
         return k10;
@@ -201,8 +201,8 @@ public final class MarkdownRules {
 
     public static final <R, S> List<Rule<R, Node<R>, S>> createMarkdownRules(Context context, List<Integer> headerStyles) {
         List<Rule<R, Node<R>, S>> n02;
-        q.g(context, "context");
-        q.g(headerStyles, "headerStyles");
+        q.h(context, "context");
+        q.h(headerStyles, "headerStyles");
         n02 = r.n0(createHeaderRules(context, headerStyles), new ListItemRule(MarkdownRules$createMarkdownRules$1.INSTANCE));
         return n02;
     }

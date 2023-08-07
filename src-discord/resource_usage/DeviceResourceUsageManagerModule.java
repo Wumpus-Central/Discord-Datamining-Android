@@ -16,24 +16,24 @@ public final class DeviceResourceUsageManagerModule extends ReactContextBaseJava
     
     public DeviceResourceUsageManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @ReactMethod
     public final void getCpuCoreCount(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         callback.invoke(Integer.valueOf(this.deviceResourceUsageManager.getCpuCoreCount()));
     }
 
     @ReactMethod
     public final void getCurrentCpuUsagePercent(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         callback.invoke(Double.valueOf(this.deviceResourceUsageManager.getCpuUsagePercent()));
     }
 
     @ReactMethod
     public final void getCurrentMemoryUsageKb(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         callback.invoke(Integer.valueOf(this.deviceResourceUsageManager.getMemoryRssKB()));
     }
 
@@ -44,10 +44,10 @@ public final class DeviceResourceUsageManagerModule extends ReactContextBaseJava
 
     @ReactMethod
     public final void getNetworkUsage(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         callback.invoke(companion.getNetworkUsage(reactApplicationContext));
     }
 

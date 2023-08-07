@@ -42,20 +42,20 @@ public final class Crystal {
             }
 
             public final <RC, S> Rule<RC, Node<RC>, S> createFunctionRule(final CodeStyleProviders<RC> codeStyleProviders) {
-                q.g(codeStyleProviders, "codeStyleProviders");
+                q.h(codeStyleProviders, "codeStyleProviders");
                 final Pattern PATTERN_CRYSTAL_FUNC = FunctionNode.PATTERN_CRYSTAL_FUNC;
-                q.f(PATTERN_CRYSTAL_FUNC, "PATTERN_CRYSTAL_FUNC");
+                q.g(PATTERN_CRYSTAL_FUNC, "PATTERN_CRYSTAL_FUNC");
                 return new Rule<RC, Node<RC>, S>(PATTERN_CRYSTAL_FUNC) { 
                     @Override 
                     public ParseSpec<RC, S> parse(Matcher matcher, Parser<RC, ? super Node<RC>, S> parser, S s10) {
-                        q.g(matcher, "matcher");
-                        q.g(parser, "parser");
+                        q.h(matcher, "matcher");
+                        q.h(parser, "parser");
                         String group = matcher.group(1);
                         String group2 = matcher.group(2);
                         String group3 = matcher.group(3);
                         ParseSpec.Companion companion = ParseSpec.Companion;
-                        q.d(group);
-                        q.d(group2);
+                        q.e(group);
+                        q.e(group2);
                         return companion.createTerminal(new Crystal.FunctionNode(group, group2, group3, codeStyleProviders), s10);
                     }
                 };
@@ -75,18 +75,18 @@ public final class Crystal {
 
     public final <RC, S> List<Rule<RC, Node<RC>, S>> createCrystalCodeRules$simpleast_core_release(CodeStyleProviders<RC> codeStyleProviders) {
         List<Rule<RC, Node<RC>, S>> k10;
-        q.g(codeStyleProviders, "codeStyleProviders");
+        q.h(codeStyleProviders, "codeStyleProviders");
         CodeRules codeRules = CodeRules.INSTANCE;
         Pattern PATTERN_CRYSTAL_COMMENTS2 = PATTERN_CRYSTAL_COMMENTS;
-        q.f(PATTERN_CRYSTAL_COMMENTS2, "PATTERN_CRYSTAL_COMMENTS");
+        q.g(PATTERN_CRYSTAL_COMMENTS2, "PATTERN_CRYSTAL_COMMENTS");
         Pattern PATTERN_CRYSTAL_STRINGS2 = PATTERN_CRYSTAL_STRINGS;
-        q.f(PATTERN_CRYSTAL_STRINGS2, "PATTERN_CRYSTAL_STRINGS");
+        q.g(PATTERN_CRYSTAL_STRINGS2, "PATTERN_CRYSTAL_STRINGS");
         Pattern PATTERN_CRYSTAL_REGEX2 = PATTERN_CRYSTAL_REGEX;
-        q.f(PATTERN_CRYSTAL_REGEX2, "PATTERN_CRYSTAL_REGEX");
+        q.g(PATTERN_CRYSTAL_REGEX2, "PATTERN_CRYSTAL_REGEX");
         Pattern PATTERN_CRYSTAL_ANNOTATION2 = PATTERN_CRYSTAL_ANNOTATION;
-        q.f(PATTERN_CRYSTAL_ANNOTATION2, "PATTERN_CRYSTAL_ANNOTATION");
+        q.g(PATTERN_CRYSTAL_ANNOTATION2, "PATTERN_CRYSTAL_ANNOTATION");
         Pattern PATTERN_CRYSTAL_SYMBOL2 = PATTERN_CRYSTAL_SYMBOL;
-        q.f(PATTERN_CRYSTAL_SYMBOL2, "PATTERN_CRYSTAL_SYMBOL");
+        q.g(PATTERN_CRYSTAL_SYMBOL2, "PATTERN_CRYSTAL_SYMBOL");
         k10 = j.k(CodeRules.toMatchGroupRule$default(codeRules, PATTERN_CRYSTAL_COMMENTS2, 0, codeStyleProviders.getCommentStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_CRYSTAL_STRINGS2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_CRYSTAL_REGEX2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_CRYSTAL_ANNOTATION2, 0, codeStyleProviders.getGenericsStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_CRYSTAL_SYMBOL2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), FunctionNode.Companion.createFunctionRule(codeStyleProviders));
         return k10;
     }

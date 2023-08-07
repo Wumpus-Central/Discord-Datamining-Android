@@ -17,7 +17,7 @@ public final class TextUtilsKt$toSpannable$10 extends s implements Function1<Lin
     }
 
     public final LinkStyle invoke(LinkContentNode linkContentNode) {
-        q.g(linkContentNode, "<anonymous parameter 0>");
+        q.h(linkContentNode, "<anonymous parameter 0>");
         return new LinkStyle(null, 0, 3, null);
     }
 }

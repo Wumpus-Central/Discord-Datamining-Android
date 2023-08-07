@@ -4,6 +4,8 @@ import android.annotation.SuppressLint;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Parcelable;
+import androidx.core.content.e;
 import com.discord.foreground_service.service.ServiceNotification;
 import com.discord.foreground_service.service.ServiceNotificationConfiguration;
 import com.discord.foreground_service.utils.Log;
@@ -50,17 +52,17 @@ public final class ForegroundServiceManager {
         h10 = j.h();
         this.serviceConfigurations = h10;
         String tag2 = tag;
-        q.f(tag2, "tag");
+        q.g(tag2, "tag");
         this.serviceWakelocks = new Wakelocks(tag2, 0L, 2, null);
     }
 
     public final Unit handleIntent(Context context, Intent intent) {
         NotificationAction notificationAction;
-        q.g(context, "context");
-        q.g(intent, "intent");
+        q.h(context, "context");
+        q.h(intent, "intent");
         NotificationAction.Companion companion = NotificationAction.Companion;
         if (IntentUtilsKt.hasExtra(intent, f0.b(GenericAction.class))) {
-            notificationAction = (NotificationAction) IntentUtilsKt.getIntentParcelable(intent);
+            notificationAction = (NotificationAction) ((Parcelable) e.b(intent, "action_intent_arg_key", GenericAction.class));
         } else {
             notificationAction = null;
         }
@@ -69,7 +71,7 @@ public final class ForegroundServiceManager {
             return null;
         }
         genericAction.onNotificationAction(context, false);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final synchronized boolean isRunning$foreground_service_release() {
@@ -83,10 +85,10 @@ public final class ForegroundServiceManager {
     }
 
     public final synchronized void onServiceConnected$foreground_service_release(Service foregroundService) {
-        q.g(foregroundService, "foregroundService");
+        q.h(foregroundService, "foregroundService");
         Log log = Log.INSTANCE;
         String tag2 = tag;
-        q.f(tag2, "tag");
+        q.g(tag2, "tag");
         Log.i$foreground_service_release$default(log, tag2, "On service connected.", null, 4, null);
         this.service = foregroundService;
         if (foregroundService != null) {
@@ -94,17 +96,17 @@ public final class ForegroundServiceManager {
                 ServiceNotification.INSTANCE.startForegroundCompat(foregroundService, foregroundService, this.serviceConfigurations);
             } else {
                 stopService$foreground_service_release(foregroundService);
-                q.f(tag2, "tag");
+                q.g(tag2, "tag");
                 Log.i$foreground_service_release$default(log, tag2, "No configuration present (process liked died), stopping service.", null, 4, null);
             }
         }
     }
 
     public final synchronized void onServiceCreated$foreground_service_release(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         Log log = Log.INSTANCE;
         String tag2 = tag;
-        q.f(tag2, "tag");
+        q.g(tag2, "tag");
         Log.i$foreground_service_release$default(log, tag2, "On service created.", null, 4, null);
         this.serviceWakelocks.acquire(context);
     }
@@ -112,18 +114,18 @@ public final class ForegroundServiceManager {
     public final synchronized void onServiceDisconnected$foreground_service_release() {
         Log log = Log.INSTANCE;
         String tag2 = tag;
-        q.f(tag2, "tag");
+        q.g(tag2, "tag");
         Log.i$foreground_service_release$default(log, tag2, "On service destroyed.", null, 4, null);
         this.serviceWakelocks.release();
         this.service = null;
     }
 
     public final synchronized void startService$foreground_service_release(Context context, List<ServiceNotificationConfiguration> serviceConfigurations) {
-        q.g(context, "context");
-        q.g(serviceConfigurations, "serviceConfigurations");
+        q.h(context, "context");
+        q.h(serviceConfigurations, "serviceConfigurations");
         Log log = Log.INSTANCE;
         String tag2 = tag;
-        q.f(tag2, "tag");
+        q.g(tag2, "tag");
         int size = serviceConfigurations.size();
         Log.i$foreground_service_release$default(log, tag2, "Start service with " + size + " configurations.", null, 4, null);
         this.serviceConfigurations = serviceConfigurations;
@@ -131,10 +133,10 @@ public final class ForegroundServiceManager {
     }
 
     public final synchronized void stopService$foreground_service_release(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         Log log = Log.INSTANCE;
         String tag2 = tag;
-        q.f(tag2, "tag");
+        q.g(tag2, "tag");
         Log.i$foreground_service_release$default(log, tag2, "Stop service.", null, 4, null);
         ForegroundService.Companion.stop(context, this.service);
     }

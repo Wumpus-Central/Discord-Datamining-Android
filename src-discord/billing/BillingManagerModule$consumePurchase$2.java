@@ -22,12 +22,12 @@ final class BillingManagerModule$consumePurchase$2 extends s implements Function
     @Override 
     public   Unit invoke(Exception exc) {
         invoke2(exc);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(Exception e10) {
-        q.g(e10, "e");
+        q.h(e10, "e");
         this.$promise.reject(e10);
     }
 }

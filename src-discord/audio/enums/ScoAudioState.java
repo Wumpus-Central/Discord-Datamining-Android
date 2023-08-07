@@ -28,13 +28,13 @@ public enum ScoAudioState {
 
         private final ScoAudioState getCurrentState(Intent intent) {
             ScoAudioState from = from(intent.getIntExtra("android.media.extra.SCO_AUDIO_STATE", 0));
-            q.d(from);
+            q.e(from);
             return from;
         }
 
         private final ScoAudioState getPrevState(Intent intent) {
             ScoAudioState from = from(intent.getIntExtra("android.media.extra.SCO_AUDIO_PREVIOUS_STATE", 0));
-            q.d(from);
+            q.e(from);
             return from;
         }
 
@@ -55,8 +55,8 @@ public enum ScoAudioState {
         }
 
         public final Update getScoAudioUpdate(Intent intent) {
-            q.g(intent, "intent");
-            if (q.b(intent.getAction(), "android.media.ACTION_SCO_AUDIO_STATE_UPDATED")) {
+            q.h(intent, "intent");
+            if (q.c(intent.getAction(), "android.media.ACTION_SCO_AUDIO_STATE_UPDATED")) {
                 return new Update(getCurrentState(intent), getPrevState(intent));
             }
             throw new IllegalArgumentException("Failed requirement.".toString());
@@ -70,8 +70,8 @@ public enum ScoAudioState {
         private final ScoAudioState previous;
 
         public Update(ScoAudioState current, ScoAudioState previous) {
-            q.g(current, "current");
-            q.g(previous, "previous");
+            q.h(current, "current");
+            q.h(previous, "previous");
             this.current = current;
             this.previous = previous;
         }
@@ -95,8 +95,8 @@ public enum ScoAudioState {
         }
 
         public final Update copy(ScoAudioState current, ScoAudioState previous) {
-            q.g(current, "current");
-            q.g(previous, "previous");
+            q.h(current, "current");
+            q.h(previous, "previous");
             return new Update(current, previous);
         }
 

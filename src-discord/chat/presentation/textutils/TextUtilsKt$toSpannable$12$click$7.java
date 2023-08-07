@@ -24,7 +24,7 @@ public final class TextUtilsKt$toSpannable$12$click$7 extends s implements Funct
 
     
     public final Boolean invoke(View it) {
-        q.g(it, "it");
+        q.h(it, "it");
         this.$rc.getOnLongPressCommand().invoke(this.$contentNode);
         return Boolean.TRUE;
     }

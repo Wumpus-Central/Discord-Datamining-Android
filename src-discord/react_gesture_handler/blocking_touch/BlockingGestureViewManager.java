@@ -36,7 +36,7 @@ public final class BlockingGestureViewManager extends ViewGroupManager<BlockingG
     
     @Override 
     public BlockingGestureViewGroup createViewInstance(ThemedReactContext reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         return new BlockingGestureViewGroup(reactContext);
     }
 

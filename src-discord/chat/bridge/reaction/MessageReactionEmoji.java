@@ -10,10 +10,10 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import pi.f;
-import si.a2;
-import si.h;
-import si.n1;
+import ti.f;
+import wi.a2;
+import wi.h;
+import wi.n1;
 
 @f
 @Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0013\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 +2\u00020\u0001:\u0002*+BK\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\u0002\u0010\rB9\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n¢\u0006\u0002\u0010\u000eJ\u000b\u0010\u0017\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010\u0018\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0019\u001a\u00020\u0005HÆ\u0003J\u000b\u0010\u001a\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u0010\u0010\u001b\u001a\u0004\u0018\u00010\nHÆ\u0003¢\u0006\u0002\u0010\u0010JF\u0010\u001c\u001a\u00020\u00002\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\nHÆ\u0001¢\u0006\u0002\u0010\u001dJ\u0013\u0010\u001e\u001a\u00020\n2\b\u0010\u001f\u001a\u0004\u0018\u00010 HÖ\u0003J\t\u0010!\u001a\u00020\u0003HÖ\u0001J\t\u0010\"\u001a\u00020\u0005HÖ\u0001J!\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020\u00002\u0006\u0010&\u001a\u00020'2\u0006\u0010(\u001a\u00020)HÇ\u0001R\u0018\u0010\t\u001a\u0004\u0018\u00010\nX\u0096\u0004¢\u0006\n\n\u0002\u0010\u0011\u001a\u0004\b\u000f\u0010\u0010R\u0014\u0010\u0007\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0016\u0010\b\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0013R\u0016\u0010\u0004\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0013R\u0014\u0010\u0006\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0013¨\u0006,"}, d2 = {"Lcom/discord/chat/bridge/reaction/MessageReactionEmoji;", "Lcom/discord/reactions/ReactionView$Emoji;", "seen1", "", ZeroconfModule.KEY_SERVICE_NAME, "", "src", "displayName", "id", "animated", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;)V", "getAnimated", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getDisplayName", "()Ljava/lang/String;", "getId", "getName", "getSrc", "component1", "component2", "component3", "component4", "component5", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;)Lcom/discord/chat/bridge/reaction/MessageReactionEmoji;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -24,7 +24,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
     private final String displayName;
 
     
-    private final String f6895id;
+    private final String f7108id;
     private final String name;
     private final String src;
 
@@ -55,9 +55,9 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         this.src = str2;
         this.displayName = str3;
         if ((i10 & 8) == 0) {
-            this.f6895id = null;
+            this.f7108id = null;
         } else {
-            this.f6895id = str4;
+            this.f7108id = str4;
         }
         if ((i10 & 16) == 0) {
             this.animated = null;
@@ -88,9 +88,9 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
     public static final void write$Self(MessageReactionEmoji self, CompositeEncoder output, SerialDescriptor serialDesc) {
         boolean z10;
         boolean z11;
-        q.g(self, "self");
-        q.g(output, "output");
-        q.g(serialDesc, "serialDesc");
+        q.h(self, "self");
+        q.h(output, "output");
+        q.h(serialDesc, "serialDesc");
         boolean z12 = false;
         if (!output.w(serialDesc, 0) && self.getName() == null) {
             z10 = false;
@@ -98,7 +98,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, a2.f26246a, self.getName());
+            output.z(serialDesc, 0, a2.f29540a, self.getName());
         }
         output.s(serialDesc, 1, self.getSrc());
         output.s(serialDesc, 2, self.getDisplayName());
@@ -108,13 +108,13 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 3, a2.f26246a, self.getId());
+            output.z(serialDesc, 3, a2.f29540a, self.getId());
         }
         if (output.w(serialDesc, 4) || self.getAnimated() != null) {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 4, h.f26288a, self.getAnimated());
+            output.z(serialDesc, 4, h.f29582a, self.getAnimated());
         }
     }
 
@@ -139,8 +139,8 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
     }
 
     public final MessageReactionEmoji copy(String str, String src, String displayName, String str2, Boolean bool) {
-        q.g(src, "src");
-        q.g(displayName, "displayName");
+        q.h(src, "src");
+        q.h(displayName, "displayName");
         return new MessageReactionEmoji(str, src, displayName, str2, bool);
     }
 
@@ -152,7 +152,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
             return false;
         }
         MessageReactionEmoji messageReactionEmoji = (MessageReactionEmoji) obj;
-        return q.b(getName(), messageReactionEmoji.getName()) && q.b(getSrc(), messageReactionEmoji.getSrc()) && q.b(getDisplayName(), messageReactionEmoji.getDisplayName()) && q.b(getId(), messageReactionEmoji.getId()) && q.b(getAnimated(), messageReactionEmoji.getAnimated());
+        return q.c(getName(), messageReactionEmoji.getName()) && q.c(getSrc(), messageReactionEmoji.getSrc()) && q.c(getDisplayName(), messageReactionEmoji.getDisplayName()) && q.c(getId(), messageReactionEmoji.getId()) && q.c(getAnimated(), messageReactionEmoji.getAnimated());
     }
 
     @Override 
@@ -172,7 +172,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
 
     @Override 
     public String getId() {
-        return this.f6895id;
+        return this.f7108id;
     }
 
     @Override 
@@ -214,12 +214,12 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
     }
 
     public MessageReactionEmoji(String str, String src, String displayName, String str2, Boolean bool) {
-        q.g(src, "src");
-        q.g(displayName, "displayName");
+        q.h(src, "src");
+        q.h(displayName, "displayName");
         this.name = str;
         this.src = src;
         this.displayName = displayName;
-        this.f6895id = str2;
+        this.f7108id = str2;
         this.animated = bool;
     }
 

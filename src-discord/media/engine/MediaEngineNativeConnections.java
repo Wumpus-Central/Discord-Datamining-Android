@@ -32,7 +32,7 @@ public final class MediaEngineNativeConnections {
     }
 
     public final void register(int i10, NativeConnection connection) {
-        q.g(connection, "connection");
+        q.h(connection, "connection");
         if (!(!this.connections.containsKey(Integer.valueOf(i10)))) {
             throw new IllegalStateException("Check failed.".toString());
         } else if (!this.connections.containsValue(connection)) {
@@ -50,7 +50,7 @@ public final class MediaEngineNativeConnections {
             System.nanoTime();
             remove.dispose();
             Debug debug = Debug.INSTANCE;
-            unit = Unit.f20679a;
+            unit = Unit.f21025a;
         } else {
             unit = null;
         }

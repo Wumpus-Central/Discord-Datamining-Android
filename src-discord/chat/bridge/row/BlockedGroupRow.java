@@ -10,8 +10,8 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import pi.f;
-import si.n1;
+import ti.f;
+import wi.n1;
 
 @f
 @Metadata(d1 = {"\u0000\\\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u001d\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 =2\u00020\u0001:\u0002<=Bo\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\u0006\u0010\t\u001a\u00020\u0003\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\u0006\u0010\f\u001a\u00020\r\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\u000e\u0010\u0010\u001a\n\u0012\u0004\u0012\u00020\u0012\u0018\u00010\u0011\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0014¢\u0006\u0002\u0010\u0015BW\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\u0006\u0010\t\u001a\u00020\u0003\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\f\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u0012\u0010\b\u0002\u0010\u0010\u001a\n\u0012\u0004\u0012\u00020\u0012\u0018\u00010\u0011¢\u0006\u0002\u0010\u0016J\t\u0010&\u001a\u00020\u0003HÆ\u0003J\t\u0010'\u001a\u00020\u0006HÆ\u0003J\t\u0010(\u001a\u00020\u0003HÆ\u0003J\t\u0010)\u001a\u00020\u0003HÆ\u0003J\t\u0010*\u001a\u00020\u0003HÆ\u0003J\t\u0010+\u001a\u00020\u000bHÆ\u0003J\t\u0010,\u001a\u00020\rHÆ\u0003J\t\u0010-\u001a\u00020\u000fHÆ\u0003J\u0011\u0010.\u001a\n\u0012\u0004\u0012\u00020\u0012\u0018\u00010\u0011HÆ\u0003Jk\u0010/\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00062\b\b\u0002\u0010\u0007\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\u00032\b\b\u0002\u0010\t\u001a\u00020\u00032\b\b\u0002\u0010\n\u001a\u00020\u000b2\b\b\u0002\u0010\f\u001a\u00020\r2\b\b\u0002\u0010\u000e\u001a\u00020\u000f2\u0010\b\u0002\u0010\u0010\u001a\n\u0012\u0004\u0012\u00020\u0012\u0018\u00010\u0011HÆ\u0001J\u0013\u00100\u001a\u00020\r2\b\u00101\u001a\u0004\u0018\u000102HÖ\u0003J\t\u00103\u001a\u00020\u0003HÖ\u0001J\t\u00104\u001a\u00020\u000bHÖ\u0001J!\u00105\u001a\u0002062\u0006\u00107\u001a\u00020\u00002\u0006\u00108\u001a\u0002092\u0006\u0010:\u001a\u00020;HÇ\u0001R\u0011\u0010\t\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0011\u0010\b\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0018R\u0011\u0010\u000e\u001a\u00020\u000f¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001bR\u0014\u0010\u0005\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u0011\u0010\u0007\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u0018R\u0019\u0010\u0010\u001a\n\u0012\u0004\u0012\u00020\u0012\u0018\u00010\u0011¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010 R\u0014\u0010\u0004\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\u0018R\u0011\u0010\f\u001a\u00020\r¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010#R\u0011\u0010\n\u001a\u00020\u000b¢\u0006\b\n\u0000\u001a\u0004\b$\u0010%¨\u0006>"}, d2 = {"Lcom/discord/chat/bridge/row/BlockedGroupRow;", "Lcom/discord/chat/bridge/row/Row;", "seen1", "", "index", "changeType", "Lcom/discord/chat/bridge/ChangeType;", ViewProps.COLOR, ViewProps.BORDER_COLOR, ViewProps.BACKGROUND_COLOR, "text", "", "revealed", "", "button", "Lcom/discord/chat/bridge/row/BlockedGroupButton;", "content", "", "Lcom/discord/chat/bridge/row/BlockedGroupContent;", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILcom/discord/chat/bridge/ChangeType;IIILjava/lang/String;ZLcom/discord/chat/bridge/row/BlockedGroupButton;Ljava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(ILcom/discord/chat/bridge/ChangeType;IIILjava/lang/String;ZLcom/discord/chat/bridge/row/BlockedGroupButton;Ljava/util/List;)V", "getBackgroundColor", "()I", "getBorderColor", "getButton", "()Lcom/discord/chat/bridge/row/BlockedGroupButton;", "getChangeType", "()Lcom/discord/chat/bridge/ChangeType;", "getColor", "getContent", "()Ljava/util/List;", "getIndex", "getRevealed", "()Z", "getText", "()Ljava/lang/String;", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -65,23 +65,23 @@ public final class BlockedGroupRow extends Row {
     }
 
     public static final void write$Self(BlockedGroupRow self, CompositeEncoder output, SerialDescriptor serialDesc) {
-        q.g(self, "self");
-        q.g(output, "output");
-        q.g(serialDesc, "serialDesc");
+        q.h(self, "self");
+        q.h(output, "output");
+        q.h(serialDesc, "serialDesc");
         boolean z10 = false;
         output.q(serialDesc, 0, self.getIndex());
-        output.n(serialDesc, 1, ChangeType.Serializer.INSTANCE, self.getChangeType());
+        output.h(serialDesc, 1, ChangeType.Serializer.INSTANCE, self.getChangeType());
         output.q(serialDesc, 2, self.color);
         output.q(serialDesc, 3, self.borderColor);
         output.q(serialDesc, 4, self.backgroundColor);
         output.s(serialDesc, 5, self.text);
         output.r(serialDesc, 6, self.revealed);
-        output.n(serialDesc, 7, BlockedGroupButton$$serializer.INSTANCE, self.button);
+        output.h(serialDesc, 7, BlockedGroupButton$$serializer.INSTANCE, self.button);
         if (output.w(serialDesc, 8) || self.content != null) {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 8, new si.f(BlockedGroupContent$$serializer.INSTANCE), self.content);
+            output.z(serialDesc, 8, new wi.f(BlockedGroupContent$$serializer.INSTANCE), self.content);
         }
     }
 
@@ -122,9 +122,9 @@ public final class BlockedGroupRow extends Row {
     }
 
     public final BlockedGroupRow copy(int i10, ChangeType changeType, int i11, int i12, int i13, String text, boolean z10, BlockedGroupButton button, List<BlockedGroupContent> list) {
-        q.g(changeType, "changeType");
-        q.g(text, "text");
-        q.g(button, "button");
+        q.h(changeType, "changeType");
+        q.h(text, "text");
+        q.h(button, "button");
         return new BlockedGroupRow(i10, changeType, i11, i12, i13, text, z10, button, list);
     }
 
@@ -136,7 +136,7 @@ public final class BlockedGroupRow extends Row {
             return false;
         }
         BlockedGroupRow blockedGroupRow = (BlockedGroupRow) obj;
-        return getIndex() == blockedGroupRow.getIndex() && getChangeType() == blockedGroupRow.getChangeType() && this.color == blockedGroupRow.color && this.borderColor == blockedGroupRow.borderColor && this.backgroundColor == blockedGroupRow.backgroundColor && q.b(this.text, blockedGroupRow.text) && this.revealed == blockedGroupRow.revealed && q.b(this.button, blockedGroupRow.button) && q.b(this.content, blockedGroupRow.content);
+        return getIndex() == blockedGroupRow.getIndex() && getChangeType() == blockedGroupRow.getChangeType() && this.color == blockedGroupRow.color && this.borderColor == blockedGroupRow.borderColor && this.backgroundColor == blockedGroupRow.backgroundColor && q.c(this.text, blockedGroupRow.text) && this.revealed == blockedGroupRow.revealed && q.c(this.button, blockedGroupRow.button) && q.c(this.content, blockedGroupRow.content);
     }
 
     public final int getBackgroundColor() {
@@ -211,9 +211,9 @@ public final class BlockedGroupRow extends Row {
     
     public BlockedGroupRow(int i10, ChangeType changeType, int i11, int i12, int i13, String text, boolean z10, BlockedGroupButton button, List<BlockedGroupContent> list) {
         super(null);
-        q.g(changeType, "changeType");
-        q.g(text, "text");
-        q.g(button, "button");
+        q.h(changeType, "changeType");
+        q.h(text, "text");
+        q.h(button, "button");
         this.index = i10;
         this.changeType = changeType;
         this.color = i11;

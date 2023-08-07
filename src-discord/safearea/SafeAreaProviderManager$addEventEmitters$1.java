@@ -31,15 +31,15 @@ public final class SafeAreaProviderManager$addEventEmitters$1 extends s implemen
     @Override 
     public   Unit invoke(SafeAreaProvider safeAreaProvider, EdgeInsets edgeInsets, Rect rect) {
         invoke2(safeAreaProvider, edgeInsets, rect);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(SafeAreaProvider safeAreaProvider, EdgeInsets insets, Rect rect) {
         Insets insets2;
-        q.g(safeAreaProvider, "<anonymous parameter 0>");
-        q.g(insets, "insets");
-        q.g(rect, "<anonymous parameter 2>");
+        q.h(safeAreaProvider, "<anonymous parameter 0>");
+        q.h(insets, "insets");
+        q.h(rect, "<anonymous parameter 2>");
         SafeAreaProviderManager safeAreaProviderManager = this.this$0;
         ThemedReactContext themedReactContext = this.$reactContext;
         SafeAreaEdgeInsets safeAreaEdgeInsets = new SafeAreaEdgeInsets(insets);

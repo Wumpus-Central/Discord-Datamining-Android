@@ -18,30 +18,30 @@ public final class AutoModerationNotificationEmbedViewHolder extends MessagePart
     
     public AutoModerationNotificationEmbedViewHolder(AutoModerationNotificationEmbedView notificationEmbedView) {
         super(notificationEmbedView, null);
-        q.g(notificationEmbedView, "notificationEmbedView");
+        q.h(notificationEmbedView, "notificationEmbedView");
         this.notificationEmbedView = notificationEmbedView;
     }
 
     
     public static final void bind$lambda$0(Function2 onTapAutoModerationActions, String messageId, long j10, View view) {
-        q.g(onTapAutoModerationActions, "$onTapAutoModerationActions");
-        q.g(messageId, "$messageId");
-        onTapAutoModerationActions.invoke(MessageId.m592boximpl(messageId), ChannelId.m566boximpl(j10));
+        q.h(onTapAutoModerationActions, "$onTapAutoModerationActions");
+        q.h(messageId, "$messageId");
+        onTapAutoModerationActions.invoke(MessageId.m593boximpl(messageId), ChannelId.m567boximpl(j10));
     }
 
     
     public static final void bind$lambda$1(Function2 onTapAutoModerationFeedback, String messageId, long j10, View view) {
-        q.g(onTapAutoModerationFeedback, "$onTapAutoModerationFeedback");
-        q.g(messageId, "$messageId");
-        onTapAutoModerationFeedback.invoke(MessageId.m592boximpl(messageId), ChannelId.m566boximpl(j10));
+        q.h(onTapAutoModerationFeedback, "$onTapAutoModerationFeedback");
+        q.h(messageId, "$messageId");
+        onTapAutoModerationFeedback.invoke(MessageId.m593boximpl(messageId), ChannelId.m567boximpl(j10));
     }
 
     public final void bind(AutoModerationNotificationEmbedAccessory notificationEmbedAccessory, final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationActions, final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationFeedback) {
-        q.g(notificationEmbedAccessory, "notificationEmbedAccessory");
-        q.g(onTapAutoModerationActions, "onTapAutoModerationActions");
-        q.g(onTapAutoModerationFeedback, "onTapAutoModerationFeedback");
-        final long j10 = notificationEmbedAccessory.getMessage().m14getChannelIdo4g7jtM();
-        final String str = notificationEmbedAccessory.mo217getMessageId3Eiw7ao();
+        q.h(notificationEmbedAccessory, "notificationEmbedAccessory");
+        q.h(onTapAutoModerationActions, "onTapAutoModerationActions");
+        q.h(onTapAutoModerationFeedback, "onTapAutoModerationFeedback");
+        final long j10 = notificationEmbedAccessory.getMessage().m15getChannelIdo4g7jtM();
+        final String str = notificationEmbedAccessory.mo218getMessageId3Eiw7ao();
         this.notificationEmbedView.configure(notificationEmbedAccessory.getModerationContext(), new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {

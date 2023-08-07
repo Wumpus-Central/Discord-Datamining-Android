@@ -26,7 +26,7 @@ public final class ThemeModule extends NativeThemeManagerSpec {
         }
 
         public final NativeModule create(ReactApplicationContext reactContext) {
-            q.g(reactContext, "reactContext");
+            q.h(reactContext, "reactContext");
             return new ThemeModule(reactContext);
         }
     }
@@ -34,13 +34,13 @@ public final class ThemeModule extends NativeThemeManagerSpec {
     
     public ThemeModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         ThemeManager.INSTANCE.init(reactContext);
     }
 
     
     public static final void updateTheme$lambda$0(ThemeModule this$0) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         Activity currentActivity = this$0.getCurrentActivity();
         if (currentActivity != null) {
             ActivityThemeUtils.INSTANCE.updateActivityTheming$theme_release(currentActivity);
@@ -49,7 +49,7 @@ public final class ThemeModule extends NativeThemeManagerSpec {
 
     @Override 
     public String getName() {
-        return NAME;
+        return "RTNThemeManager";
     }
 
     

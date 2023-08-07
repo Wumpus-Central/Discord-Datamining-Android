@@ -20,16 +20,16 @@ public final class ForegroundServiceManager$startService$1 extends s implements 
     @Override 
     public   Unit invoke(Exception exc) {
         invoke2(exc);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(Exception e10) {
         String tag;
-        q.g(e10, "e");
+        q.h(e10, "e");
         Log log = Log.INSTANCE;
         tag = ForegroundServiceManager.tag;
-        q.f(tag, "tag");
+        q.g(tag, "tag");
         log.w$foreground_service_release(tag, "Unable to start service", e10);
     }
 }

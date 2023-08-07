@@ -22,12 +22,12 @@ public final class BitmapUtils {
     }
 
     public final byte[] toByteArray(Bitmap bitmap, Bitmap.CompressFormat format, int i10) {
-        q.g(bitmap, "<this>");
-        q.g(format, "format");
+        q.h(bitmap, "<this>");
+        q.h(format, "format");
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         bitmap.compress(format, i10, byteArrayOutputStream);
         byte[] byteArray = byteArrayOutputStream.toByteArray();
-        q.f(byteArray, "ByteArrayOutputStream().…)\n        }.toByteArray()");
+        q.g(byteArray, "ByteArrayOutputStream().…)\n        }.toByteArray()");
         return byteArray;
     }
 

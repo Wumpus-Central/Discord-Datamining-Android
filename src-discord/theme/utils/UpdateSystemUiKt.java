@@ -27,13 +27,13 @@ public final class UpdateSystemUiKt {
     }
 
     public static final void updateSystemUi(Activity activity) {
-        q.g(activity, "<this>");
+        q.h(activity, "<this>");
         if (ThemeManager.INSTANCE.isInitialized()) {
             boolean z10 = !(ThemeManagerKt.getTheme() instanceof DarkTheme);
             View rootView = ActivityExtensionsKt.getRootView(activity);
             if (rootView != null) {
                 WindowInsetsControllerCompat a10 = r2.a(activity.getWindow(), rootView);
-                q.f(a10, "getInsetsController(window, root)");
+                q.g(a10, "getInsetsController(window, root)");
                 setLightTheme(a10, z10);
             }
         }

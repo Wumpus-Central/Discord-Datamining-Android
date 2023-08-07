@@ -18,28 +18,28 @@ public final class SeparatorDelegate extends BaseChatListItemDelegate<SeparatorC
     
     public SeparatorDelegate(Function0<? extends ChatEventHandler> eventHandlerProvider) {
         super(eventHandlerProvider, null, 2, null);
-        q.g(eventHandlerProvider, "eventHandlerProvider");
+        q.h(eventHandlerProvider, "eventHandlerProvider");
     }
 
     @Override 
     public boolean isForItem(ChatListItem item, int i10) {
-        q.g(item, "item");
+        q.h(item, "item");
         return item instanceof SeparatorChatListItem;
     }
 
     public void bindView(SeparatorView view, SeparatorChatListItem item, BaseChatListItemDelegate.Metadata<SeparatorView> metadata) {
-        q.g(view, "view");
-        q.g(item, "item");
-        q.g(metadata, "metadata");
+        q.h(view, "view");
+        q.h(item, "item");
+        q.h(metadata, "metadata");
         view.setColor(item.getColor());
         view.setText(item.getText());
     }
 
     @Override 
     public SeparatorView createView(ViewGroup parent) {
-        q.g(parent, "parent");
+        q.h(parent, "parent");
         Context context = parent.getContext();
-        q.f(context, "parent.context");
+        q.g(context, "parent.context");
         return new SeparatorView(context, null, 2, null);
     }
 }

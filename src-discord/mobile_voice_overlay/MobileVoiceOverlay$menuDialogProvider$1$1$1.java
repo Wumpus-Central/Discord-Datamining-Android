@@ -22,12 +22,12 @@ final class MobileVoiceOverlay$menuDialogProvider$1$1$1 extends s implements Fun
     @Override 
     public   Unit invoke(OverlayDialog overlayDialog) {
         invoke2(overlayDialog);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(OverlayDialog it) {
-        q.g(it, "it");
+        q.h(it, "it");
         this.this$0.closeMenuDialog();
     }
 }

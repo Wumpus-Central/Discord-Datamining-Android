@@ -1,6 +1,6 @@
 package com.discord.bridge;
 
-import com.discord.segmented.control.SegmentedControlViewManager;
+import com.discord.zoom_layout.ZoomLayoutViewManager;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.LayoutShadowNode;
 import com.facebook.react.uimanager.ViewManager;
@@ -19,7 +19,7 @@ final class DCDPackageList$getPackages$71 extends s implements Function1<ReactAp
     }
 
     public final ViewManager<?, LayoutShadowNode> invoke(ReactApplicationContext it) {
-        q.g(it, "it");
-        return new SegmentedControlViewManager();
+        q.h(it, "it");
+        return new ZoomLayoutViewManager();
     }
 }

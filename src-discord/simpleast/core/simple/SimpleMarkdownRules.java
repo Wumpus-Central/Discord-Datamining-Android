@@ -68,13 +68,13 @@ public final class SimpleMarkdownRules {
     }
 
     public static final <R, S> Rule<R, Node<R>, S> createSimpleStyleRule(final Pattern pattern, final Function0<? extends List<? extends CharacterStyle>> styleFactory) {
-        q.g(pattern, "pattern");
-        q.g(styleFactory, "styleFactory");
+        q.h(pattern, "pattern");
+        q.h(styleFactory, "styleFactory");
         return new Rule<R, Node<R>, S>(pattern) { 
             @Override 
             public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s10) {
-                q.g(matcher, "matcher");
-                q.g(parser, "parser");
+                q.h(matcher, "matcher");
+                q.h(parser, "parser");
                 return ParseSpec.Companion.createNonterminal(new StyleNode((List) Function0.this.invoke()), s10, matcher.start(1), matcher.end(1));
             }
         };
@@ -82,21 +82,21 @@ public final class SimpleMarkdownRules {
 
     public final <R, S> Rule<R, Node<R>, S> createBoldRule() {
         Pattern PATTERN_BOLD2 = PATTERN_BOLD;
-        q.f(PATTERN_BOLD2, "PATTERN_BOLD");
+        q.g(PATTERN_BOLD2, "PATTERN_BOLD");
         return createSimpleStyleRule(PATTERN_BOLD2, SimpleMarkdownRules$createBoldRule$1.INSTANCE);
     }
 
     public final <R, S> Rule<R, Node<R>, S> createEscapeRule() {
         final Pattern PATTERN_ESCAPE2 = PATTERN_ESCAPE;
-        q.f(PATTERN_ESCAPE2, "PATTERN_ESCAPE");
+        q.g(PATTERN_ESCAPE2, "PATTERN_ESCAPE");
         return new Rule<R, Node<R>, S>(PATTERN_ESCAPE2) { 
             @Override 
             public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s10) {
-                q.g(matcher, "matcher");
-                q.g(parser, "parser");
+                q.h(matcher, "matcher");
+                q.h(parser, "parser");
                 ParseSpec.Companion companion = ParseSpec.Companion;
                 String group = matcher.group(1);
-                q.d(group);
+                q.e(group);
                 return companion.createTerminal(new TextNode(group), s10);
             }
         };
@@ -104,15 +104,15 @@ public final class SimpleMarkdownRules {
 
     public final <R, S> Rule<R, Node<R>, S> createItalicsRule() {
         final Pattern PATTERN_ITALICS2 = PATTERN_ITALICS;
-        q.f(PATTERN_ITALICS2, "PATTERN_ITALICS");
+        q.g(PATTERN_ITALICS2, "PATTERN_ITALICS");
         return new Rule<R, Node<R>, S>(PATTERN_ITALICS2) { 
             @Override 
             public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s10) {
                 int i10;
                 int i11;
                 boolean z10;
-                q.g(matcher, "matcher");
-                q.g(parser, "parser");
+                q.h(matcher, "matcher");
+                q.h(parser, "parser");
                 String group = matcher.group(2);
                 if (group != null) {
                     if (group.length() > 0) {
@@ -139,12 +139,12 @@ public final class SimpleMarkdownRules {
 
     public final <R, S> Rule<R, Node<R>, S> createNewlineRule() {
         final Pattern PATTERN_NEWLINE2 = PATTERN_NEWLINE;
-        q.f(PATTERN_NEWLINE2, "PATTERN_NEWLINE");
+        q.g(PATTERN_NEWLINE2, "PATTERN_NEWLINE");
         return new Rule.BlockRule<R, Node<R>, S>(PATTERN_NEWLINE2) { 
             @Override 
             public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s10) {
-                q.g(matcher, "matcher");
-                q.g(parser, "parser");
+                q.h(matcher, "matcher");
+                q.h(parser, "parser");
                 return ParseSpec.Companion.createTerminal(new TextNode(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE), s10);
             }
         };
@@ -152,20 +152,20 @@ public final class SimpleMarkdownRules {
 
     public final <R, S> Rule<R, Node<R>, S> createStrikethruRule() {
         Pattern PATTERN_STRIKETHRU2 = PATTERN_STRIKETHRU;
-        q.f(PATTERN_STRIKETHRU2, "PATTERN_STRIKETHRU");
+        q.g(PATTERN_STRIKETHRU2, "PATTERN_STRIKETHRU");
         return createSimpleStyleRule(PATTERN_STRIKETHRU2, SimpleMarkdownRules$createStrikethruRule$1.INSTANCE);
     }
 
     public final <R, S> Rule<R, Node<R>, S> createTextRule() {
         final Pattern PATTERN_TEXT2 = PATTERN_TEXT;
-        q.f(PATTERN_TEXT2, "PATTERN_TEXT");
+        q.g(PATTERN_TEXT2, "PATTERN_TEXT");
         return new Rule<R, Node<R>, S>(PATTERN_TEXT2) { 
             @Override 
             public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s10) {
-                q.g(matcher, "matcher");
-                q.g(parser, "parser");
+                q.h(matcher, "matcher");
+                q.h(parser, "parser");
                 String group = matcher.group();
-                q.f(group, "matcher.group()");
+                q.g(group, "matcher.group()");
                 return ParseSpec.Companion.createTerminal(new TextNode(group), s10);
             }
         };
@@ -173,7 +173,7 @@ public final class SimpleMarkdownRules {
 
     public final <R, S> Rule<R, Node<R>, S> createUnderlineRule() {
         Pattern PATTERN_UNDERLINE2 = PATTERN_UNDERLINE;
-        q.f(PATTERN_UNDERLINE2, "PATTERN_UNDERLINE");
+        q.g(PATTERN_UNDERLINE2, "PATTERN_UNDERLINE");
         return createSimpleStyleRule(PATTERN_UNDERLINE2, SimpleMarkdownRules$createUnderlineRule$1.INSTANCE);
     }
 

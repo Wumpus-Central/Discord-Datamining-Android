@@ -1,6 +1,5 @@
 package com.discord.skia;
 
-import com.discord.codegen.BuildConfig;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.module.annotations.ReactModule;
@@ -31,7 +30,7 @@ public final class RNSkiaModuleDummy extends ReactContextBaseJavaModule {
         return RNSkiaModule.NAME;
     }
 
-    @ReactMethod(isBlockingSynchronousMethod = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED)
+    @ReactMethod(isBlockingSynchronousMethod = true)
     public final String install() {
         return ERROR_INSTRUCTIONS;
     }

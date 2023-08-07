@@ -33,12 +33,12 @@ public final class BrowserManager {
     }
 
     public final void tryOpenUrlExternally(Context context, String url, Function1<? super Exception, Unit> onFailure) {
-        q.g(context, "context");
-        q.g(url, "url");
-        q.g(onFailure, "onFailure");
+        q.h(context, "context");
+        q.h(url, "url");
+        q.h(onFailure, "onFailure");
         try {
             Uri uri = Uri.parse(url);
-            q.f(uri, "uri");
+            q.g(uri, "uri");
             openUrlExternally(context, uri, onFailure);
         } catch (Exception e10) {
             onFailure.invoke(e10);
@@ -46,12 +46,12 @@ public final class BrowserManager {
     }
 
     public final void tryOpenUrlWithCustomTabs(Context context, String url, Function1<? super Exception, Unit> onFailure) {
-        q.g(context, "context");
-        q.g(url, "url");
-        q.g(onFailure, "onFailure");
+        q.h(context, "context");
+        q.h(url, "url");
+        q.h(onFailure, "onFailure");
         try {
             Uri uri = Uri.parse(url);
-            q.f(uri, "uri");
+            q.g(uri, "uri");
             openUrlWithCustomTabs(context, uri, new BrowserManager$tryOpenUrlWithCustomTabs$1(context, url, onFailure));
         } catch (Exception unused) {
             tryOpenUrlExternally(context, url, onFailure);

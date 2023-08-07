@@ -34,25 +34,25 @@ public final class SamsungConnectActivity extends b {
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
             ISACallback iSACallback;
             SamsungConnectActivity.this.serviceBound = true;
-            a c10 = a.AbstractBinderC0174a.c(iBinder);
+            a c10 = a.AbstractBinderC0172a.c(iBinder);
             Log log = Log.INSTANCE;
             Log.i$default(log, "Samsung", "Samsung Account service connection established", (Throwable) null, 4, (Object) null);
             try {
                 iSACallback = SamsungConnectActivity.this.samsungAccountServiceCallback;
                 if (iSACallback == null) {
-                    q.y("samsungAccountServiceCallback");
+                    q.z("samsungAccountServiceCallback");
                     iSACallback = null;
                 }
-                String A = c10.A(BuildConfig.SAMSUNGxDISCORD_CLIENT_ID, "dummy", BuildConfig.APPLICATION_ID, iSACallback);
-                Log.i$default(log, "Samsung", "Samsung Account service connection established: " + A, (Throwable) null, 4, (Object) null);
-                if (A == null) {
+                String B = c10.B(BuildConfig.SAMSUNGxDISCORD_CLIENT_ID, "dummy", BuildConfig.APPLICATION_ID, iSACallback);
+                Log.i$default(log, "Samsung", "Samsung Account service connection established: " + B, (Throwable) null, 4, (Object) null);
+                if (B == null) {
                     SamsungConnectActivity.this.finishedWithRestartRequested();
                     return;
                 }
                 Bundle bundle = new Bundle();
                 bundle.putStringArray("additional", new String[]{"api_server_url", "auth_server_url"});
-                Unit unit = Unit.f20679a;
-                Log.i$default(log, "Samsung", "Samsung Account service connection established: isReqSucc? " + c10.K(1221, A, bundle), (Throwable) null, 4, (Object) null);
+                Unit unit = Unit.f21025a;
+                Log.i$default(log, "Samsung", "Samsung Account service connection established: isReqSucc? " + c10.K(1221, B, bundle), (Throwable) null, 4, (Object) null);
             } catch (Throwable th2) {
                 Log.INSTANCE.e("Samsung", "Unable to connect to Samsung", th2);
                 SamsungConnectActivity.this.finishWithResult(null, null);
@@ -85,9 +85,9 @@ public final class SamsungConnectActivity extends b {
         }
 
         public final Intent getIntent(Context context, int i10) {
-            q.g(context, "context");
+            q.h(context, "context");
             Intent addFlags = new Intent(context, SamsungConnectActivity.class).putExtra(SamsungConnectActivity.EXTRA_ATTEMPT_COUNT, i10).addFlags(65536);
-            q.f(addFlags, "Intent(context, SamsungC…AG_ACTIVITY_NO_ANIMATION)");
+            q.g(addFlags, "Intent(context, SamsungC…AG_ACTIVITY_NO_ANIMATION)");
             return addFlags;
         }
     }
@@ -180,8 +180,8 @@ public final class SamsungConnectActivity extends b {
             
             public Success(String authCode, String serverUrl) {
                 super(null);
-                q.g(authCode, "authCode");
-                q.g(serverUrl, "serverUrl");
+                q.h(authCode, "authCode");
+                q.h(serverUrl, "serverUrl");
                 this.authCode = authCode;
                 this.serverUrl = serverUrl;
             }
@@ -205,8 +205,8 @@ public final class SamsungConnectActivity extends b {
             }
 
             public final Success copy(String authCode, String serverUrl) {
-                q.g(authCode, "authCode");
-                q.g(serverUrl, "serverUrl");
+                q.h(authCode, "authCode");
+                q.h(serverUrl, "serverUrl");
                 return new Success(authCode, serverUrl);
             }
 
@@ -218,7 +218,7 @@ public final class SamsungConnectActivity extends b {
                     return false;
                 }
                 Success success = (Success) obj;
-                return q.b(this.authCode, success.authCode) && q.b(this.serverUrl, success.serverUrl);
+                return q.c(this.authCode, success.authCode) && q.c(this.serverUrl, success.serverUrl);
             }
 
             public final String getAuthCode() {
@@ -250,7 +250,7 @@ public final class SamsungConnectActivity extends b {
 
     static {
         Intent intent = new Intent("com.msc.action.samsungaccount.REQUEST_SERVICE").setPackage("com.osp.app.signin");
-        q.f(intent, "Intent(\"com.msc.action.s…age(\"com.osp.app.signin\")");
+        q.g(intent, "Intent(\"com.msc.action.s…age(\"com.osp.app.signin\")");
         serviceIntent = intent;
     }
 

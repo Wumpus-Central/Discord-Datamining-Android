@@ -16,7 +16,7 @@ public final class CodeRules$createCodeRule$1 extends s implements Function3 {
     }
 
     public final CodeNode invoke(CodeNode codeNode, boolean z10, Object obj) {
-        q.g(codeNode, "codeNode");
+        q.h(codeNode, "codeNode");
         return codeNode;
     }
 

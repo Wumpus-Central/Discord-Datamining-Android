@@ -8,9 +8,9 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import pi.f;
-import si.a2;
-import si.n1;
+import ti.f;
+import wi.a2;
+import wi.n1;
 
 @f
 @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0012\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 .2\u00020\u0001:\u0002-.Ba\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\u000e\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\n\u0012\u000e\u0010\f\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\n\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\u0002\u0010\u000fBS\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\u0010\b\u0002\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\n\u0012\u000e\u0010\f\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\n¢\u0006\u0002\u0010\u0010J\t\u0010\u0019\u001a\u00020\u0005HÆ\u0003J\u000b\u0010\u001a\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010\u001b\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010\u001c\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u0011\u0010\u001d\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\nHÆ\u0003J\u0011\u0010\u001e\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\nHÆ\u0003J[\u0010\u001f\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00052\u0010\b\u0002\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\n2\u0010\b\u0002\u0010\f\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\nHÆ\u0001J\u0013\u0010 \u001a\u00020!2\b\u0010\"\u001a\u0004\u0018\u00010#HÖ\u0003J\t\u0010$\u001a\u00020\u0003HÖ\u0001J\t\u0010%\u001a\u00020\u0005HÖ\u0001J!\u0010&\u001a\u00020'2\u0006\u0010(\u001a\u00020\u00002\u0006\u0010)\u001a\u00020*2\u0006\u0010+\u001a\u00020,HÇ\u0001R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u001c\u0010\f\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\nX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0012R\u0019\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\n¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0014R\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0012R\u0013\u0010\b\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0012¨\u0006/"}, d2 = {"Lcom/discord/chat/bridge/contentnode/ChannelMentionContentNode;", "Lcom/discord/chat/bridge/contentnode/MentionContentNode;", "seen1", "", "channelId", "", "guildId", "messageId", "originalLink", "inContent", "", "Lcom/discord/chat/bridge/contentnode/ContentNode;", "content", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V", "getChannelId", "()Ljava/lang/String;", "getContent", "()Ljava/util/List;", "getGuildId", "getInContent", "getMessageId", "getOriginalLink", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "equals", "", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -96,9 +96,9 @@ public final class ChannelMentionContentNode extends MentionContentNode {
         boolean z10;
         boolean z11;
         boolean z12;
-        q.g(self, "self");
-        q.g(output, "output");
-        q.g(serialDesc, "serialDesc");
+        q.h(self, "self");
+        q.h(output, "output");
+        q.h(serialDesc, "serialDesc");
         MentionContentNode.write$Self(self, output, serialDesc);
         boolean z13 = false;
         output.s(serialDesc, 0, self.channelId);
@@ -108,7 +108,7 @@ public final class ChannelMentionContentNode extends MentionContentNode {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 1, a2.f26246a, self.guildId);
+            output.z(serialDesc, 1, a2.f29540a, self.guildId);
         }
         if (!output.w(serialDesc, 2) && self.messageId == null) {
             z11 = false;
@@ -116,7 +116,7 @@ public final class ChannelMentionContentNode extends MentionContentNode {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 2, a2.f26246a, self.messageId);
+            output.z(serialDesc, 2, a2.f29540a, self.messageId);
         }
         if (!output.w(serialDesc, 3) && self.originalLink == null) {
             z12 = false;
@@ -124,15 +124,15 @@ public final class ChannelMentionContentNode extends MentionContentNode {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 3, a2.f26246a, self.originalLink);
+            output.z(serialDesc, 3, a2.f29540a, self.originalLink);
         }
         if (output.w(serialDesc, 4) || self.inContent != null) {
             z13 = true;
         }
         if (z13) {
-            output.z(serialDesc, 4, new si.f(ContentNodeSerializer.INSTANCE), self.inContent);
+            output.z(serialDesc, 4, new wi.f(ContentNodeSerializer.INSTANCE), self.inContent);
         }
-        output.z(serialDesc, 5, new si.f(ContentNodeSerializer.INSTANCE), self.getContent());
+        output.z(serialDesc, 5, new wi.f(ContentNodeSerializer.INSTANCE), self.getContent());
     }
 
     public final String component1() {
@@ -160,7 +160,7 @@ public final class ChannelMentionContentNode extends MentionContentNode {
     }
 
     public final ChannelMentionContentNode copy(String channelId, String str, String str2, String str3, List<? extends ContentNode> list, List<? extends ContentNode> list2) {
-        q.g(channelId, "channelId");
+        q.h(channelId, "channelId");
         return new ChannelMentionContentNode(channelId, str, str2, str3, list, list2);
     }
 
@@ -172,7 +172,7 @@ public final class ChannelMentionContentNode extends MentionContentNode {
             return false;
         }
         ChannelMentionContentNode channelMentionContentNode = (ChannelMentionContentNode) obj;
-        return q.b(this.channelId, channelMentionContentNode.channelId) && q.b(this.guildId, channelMentionContentNode.guildId) && q.b(this.messageId, channelMentionContentNode.messageId) && q.b(this.originalLink, channelMentionContentNode.originalLink) && q.b(this.inContent, channelMentionContentNode.inContent) && q.b(getContent(), channelMentionContentNode.getContent());
+        return q.c(this.channelId, channelMentionContentNode.channelId) && q.c(this.guildId, channelMentionContentNode.guildId) && q.c(this.messageId, channelMentionContentNode.messageId) && q.c(this.originalLink, channelMentionContentNode.originalLink) && q.c(this.inContent, channelMentionContentNode.inContent) && q.c(getContent(), channelMentionContentNode.getContent());
     }
 
     public final String getChannelId() {
@@ -235,7 +235,7 @@ public final class ChannelMentionContentNode extends MentionContentNode {
     
     public ChannelMentionContentNode(String channelId, String str, String str2, String str3, List<? extends ContentNode> list, List<? extends ContentNode> list2) {
         super(null);
-        q.g(channelId, "channelId");
+        q.h(channelId, "channelId");
         this.channelId = channelId;
         this.guildId = str;
         this.messageId = str2;

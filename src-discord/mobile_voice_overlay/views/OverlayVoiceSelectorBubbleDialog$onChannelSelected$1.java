@@ -17,11 +17,11 @@ final class OverlayVoiceSelectorBubbleDialog$onChannelSelected$1 extends s imple
 
     @Override 
     public   Unit invoke(ChannelId channelId) {
-        m488invokeR7gqayM(channelId.m575unboximpl());
-        return Unit.f20679a;
+        m489invokeR7gqayM(channelId.m576unboximpl());
+        return Unit.f21025a;
     }
 
     
-    public final void m488invokeR7gqayM(long j10) {
+    public final void m489invokeR7gqayM(long j10) {
     }
 }

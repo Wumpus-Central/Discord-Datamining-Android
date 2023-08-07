@@ -22,7 +22,7 @@ final class MessageBundleDelegateUtilsKt$getEventHandler$2 extends s implements 
     @Override 
     public final Integer invoke() {
         Integer reactTag = this.$this_getEventHandler.getReactTag();
-        q.d(reactTag);
+        q.e(reactTag);
         return reactTag;
     }
 }

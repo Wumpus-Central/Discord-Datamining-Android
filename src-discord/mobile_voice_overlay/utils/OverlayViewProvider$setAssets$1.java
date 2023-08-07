@@ -23,12 +23,12 @@ final class OverlayViewProvider$setAssets$1 extends s implements Function1<T, Un
     @Override 
     public   Unit invoke(Object obj) {
         invoke((OverlayView) obj);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke(OverlayView view) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.setAssets(this.$assets);
     }
 }

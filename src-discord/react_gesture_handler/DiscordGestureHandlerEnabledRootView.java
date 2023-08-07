@@ -68,9 +68,9 @@ public final class DiscordGestureHandlerEnabledRootView extends RNGestureHandler
         }
 
         public final DiscordGestureHandlerEnabledRootView get$react_gesture_handler_release(View view) {
-            q.g(view, "view");
+            q.h(view, "view");
             DiscordGestureHandlerEnabledRootView nullable = getNullable(view);
-            q.d(nullable);
+            q.e(nullable);
             return nullable;
         }
     }
@@ -84,12 +84,12 @@ public final class DiscordGestureHandlerEnabledRootView extends RNGestureHandler
     
     public DiscordGestureHandlerEnabledRootView(Context context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     @Override 
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        q.g(ev, "ev");
+        q.h(ev, "ev");
         Iterator<Map.Entry<Function1<MotionEvent, Unit>, Boolean>> it = this.supplementalMotionEventReceivedCallbacks.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry<Function1<MotionEvent, Unit>, Boolean> next = it.next();
@@ -113,9 +113,9 @@ public final class DiscordGestureHandlerEnabledRootView extends RNGestureHandler
         super.onAttachedToWindow();
         ThemeManager themeManager = ThemeManager.INSTANCE;
         themeManager.updateSystemUi(this);
-        if (q.b(Companion.getNullable(this), this)) {
+        if (q.c(Companion.getNullable(this), this)) {
             Context context = getContext();
-            q.f(context, "context");
+            q.g(context, "context");
             themeManager.updateWindowBackground(context, false);
         }
     }

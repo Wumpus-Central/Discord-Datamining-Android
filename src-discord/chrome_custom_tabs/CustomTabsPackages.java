@@ -2,8 +2,11 @@ package com.discord.chrome_custom_tabs;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
+import android.os.Build;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -24,17 +27,30 @@ public final class CustomTabsPackages {
     }
 
     private final List<String> getCustomTabsPackages(Context context) {
+        List<ResolveInfo> list;
+        ResolveInfo resolveInfo;
         String str;
-        List<ResolveInfo> queryIntentActivities = context.getPackageManager().queryIntentActivities(getDefaultViewIntentHandler(), 0);
-        q.f(queryIntentActivities, "packageManager.queryInte…ltViewIntentHandler(), 0)");
+        ActivityInfo activityInfo;
+        Intent defaultViewIntentHandler = getDefaultViewIntentHandler();
+        if (Build.VERSION.SDK_INT >= 33) {
+            list = context.getPackageManager().queryIntentActivities(defaultViewIntentHandler, PackageManager.ResolveInfoFlags.of(0));
+        } else {
+            list = context.getPackageManager().queryIntentActivities(defaultViewIntentHandler, 0);
+        }
+        q.g(list, "if (Build.VERSION.SDK_IN…solveInfoFlags)\n        }");
         ArrayList arrayList = new ArrayList();
-        for (ResolveInfo resolveInfo : queryIntentActivities) {
-            Intent intent = new Intent().setAction("android.support.customtabs.action.CustomTabsService").setPackage(resolveInfo.activityInfo.packageName);
-            q.f(intent, "Intent()\n               …activityInfo.packageName)");
-            if (context.getPackageManager().resolveService(intent, 0) != null) {
-                str = resolveInfo.activityInfo.packageName;
+        for (ResolveInfo resolveInfo2 : list) {
+            Intent intent = new Intent().setAction("android.support.customtabs.action.CustomTabsService").setPackage(resolveInfo2.activityInfo.packageName);
+            q.g(intent, "Intent()\n               …activityInfo.packageName)");
+            if (Build.VERSION.SDK_INT >= 33) {
+                resolveInfo = context.getPackageManager().resolveService(intent, PackageManager.ResolveInfoFlags.of(0));
             } else {
+                resolveInfo = context.getPackageManager().resolveService(intent, 0);
+            }
+            if (resolveInfo == null || (activityInfo = resolveInfo.activityInfo) == null) {
                 str = null;
+            } else {
+                str = activityInfo.packageName;
             }
             if (str != null) {
                 arrayList.add(str);
@@ -45,7 +61,7 @@ public final class CustomTabsPackages {
 
     private final Intent getDefaultViewIntentHandler() {
         Intent data = new Intent().setAction("android.intent.action.VIEW").addCategory("android.intent.category.BROWSABLE").setData(Uri.fromParts("http", "", null));
-        q.f(data, "Intent()\n            .se…mParts(\"http\", \"\", null))");
+        q.g(data, "Intent()\n            .se…mParts(\"http\", \"\", null))");
         return data;
     }
 
@@ -55,7 +71,7 @@ public final class CustomTabsPackages {
         Object obj3;
         Object obj4;
         Object U;
-        q.g(context, "<this>");
+        q.h(context, "<this>");
         List<String> customTabsPackages = getCustomTabsPackages(context);
         Iterator<T> it = customTabsPackages.iterator();
         while (true) {
@@ -65,7 +81,7 @@ public final class CustomTabsPackages {
                 break;
             }
             obj2 = it.next();
-            if (q.b((String) obj2, CHROME_PROD_PACKAGE)) {
+            if (q.c((String) obj2, CHROME_PROD_PACKAGE)) {
                 break;
             }
         }
@@ -80,7 +96,7 @@ public final class CustomTabsPackages {
                 break;
             }
             obj3 = it2.next();
-            if (q.b((String) obj3, CHROME_BETA_PACKAGE)) {
+            if (q.c((String) obj3, CHROME_BETA_PACKAGE)) {
                 break;
             }
         }
@@ -95,7 +111,7 @@ public final class CustomTabsPackages {
                 break;
             }
             obj4 = it3.next();
-            if (q.b((String) obj4, CHROME_DEV_PACKAGE)) {
+            if (q.c((String) obj4, CHROME_DEV_PACKAGE)) {
                 break;
             }
         }
@@ -109,7 +125,7 @@ public final class CustomTabsPackages {
                 break;
             }
             Object next = it4.next();
-            if (q.b((String) next, CHROME_LOCAL_PACKAGE)) {
+            if (q.c((String) next, CHROME_LOCAL_PACKAGE)) {
                 obj = next;
                 break;
             }

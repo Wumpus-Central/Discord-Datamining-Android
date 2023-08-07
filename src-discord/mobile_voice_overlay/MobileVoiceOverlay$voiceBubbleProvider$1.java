@@ -49,12 +49,12 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
             @Override 
             public   Unit invoke(OverlayTrashWrap overlayTrashWrap) {
                 invoke2(overlayTrashWrap);
-                return Unit.f20679a;
+                return Unit.f21025a;
             }
 
             
             public final void invoke2(OverlayTrashWrap trashWrap) {
-                q.g(trashWrap, "trashWrap");
+                q.h(trashWrap, "trashWrap");
                 if (trashWrap.processMotionEvent(this.$voiceBubble, this.$event)) {
                     this.this$0.onTrashVoiceBubble();
                 }
@@ -71,12 +71,12 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
         @Override 
         public   Unit invoke(MotionEvent motionEvent) {
             invoke2(motionEvent);
-            return Unit.f20679a;
+            return Unit.f21025a;
         }
 
         
         public final void invoke2(MotionEvent event) {
-            q.g(event, "event");
+            q.h(event, "event");
             this.this$0.trashWrapProvider.withView(new AnonymousClass1(this.$voiceBubble, event, this.this$0));
         }
     }
@@ -109,12 +109,12 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
             @Override 
             public   Unit invoke(OverlayTrashWrap overlayTrashWrap) {
                 invoke2(overlayTrashWrap);
-                return Unit.f20679a;
+                return Unit.f21025a;
             }
 
             
             public final void invoke2(OverlayTrashWrap trashWrap) {
-                q.g(trashWrap, "trashWrap");
+                q.h(trashWrap, "trashWrap");
                 if (this.$isMoving) {
                     trashWrap.show();
                     return;
@@ -134,7 +134,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
         @Override 
         public   Unit invoke(Boolean bool) {
             invoke(bool.booleanValue());
-            return Unit.f20679a;
+            return Unit.f21025a;
         }
 
         public final void invoke(boolean z10) {
@@ -158,10 +158,10 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
         ViewGroup.MarginLayoutParams marginLayoutParams3;
         int i12;
         int i13;
-        q.g(voiceBubble, "$voiceBubble");
-        q.g(this$0, "this$0");
+        q.h(voiceBubble, "$voiceBubble");
+        q.h(this$0, "this$0");
         SimpleDraweeView imageView$mobile_voice_overlay_release = voiceBubble.getImageView$mobile_voice_overlay_release();
-        q.e(imageView$mobile_voice_overlay_release, "null cannot be cast to non-null type android.view.View");
+        q.f(imageView$mobile_voice_overlay_release, "null cannot be cast to non-null type android.view.View");
         ViewGroup.LayoutParams layoutParams = imageView$mobile_voice_overlay_release.getLayoutParams();
         ViewGroup.MarginLayoutParams marginLayoutParams4 = null;
         if (layoutParams instanceof ViewGroup.MarginLayoutParams) {
@@ -212,7 +212,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
     public final OverlayVoiceBubble invoke(OverlayViewProvider<OverlayVoiceBubble> it) {
         ReactApplicationContext reactApplicationContext;
         ReactApplicationContext reactApplicationContext2;
-        q.g(it, "it");
+        q.h(it, "it");
         reactApplicationContext = this.this$0.context;
         int dimensionPixelOffset = reactApplicationContext.getResources().getDimensionPixelOffset(R.dimen.overlay_safe_margin);
         reactApplicationContext2 = this.this$0.context;

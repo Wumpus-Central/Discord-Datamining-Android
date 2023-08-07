@@ -26,9 +26,9 @@ public final class MediaEngine$setDeviceChangeCallback$1$1 implements NativeEngi
 
     @Override 
     public final void onChange(AudioInputDeviceDescription[] inputDevices, AudioOutputDeviceDescription[] outputDevices, VideoInputDeviceDescription[] videoInputDevices) {
-        q.g(inputDevices, "inputDevices");
-        q.g(outputDevices, "outputDevices");
-        q.g(videoInputDevices, "videoInputDevices");
+        q.h(inputDevices, "inputDevices");
+        q.h(outputDevices, "outputDevices");
+        q.h(videoInputDevices, "videoInputDevices");
         this.$callback.invoke(NativeTypeExtensionsKt.toListOfMaps(inputDevices), NativeTypeExtensionsKt.toListOfMaps(outputDevices), NativeTypeExtensionsKt.toListOfMaps(videoInputDevices));
     }
 }

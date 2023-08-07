@@ -22,8 +22,8 @@ final class MessageViewReplyPreview$configureExecutedCommand$5 extends s impleme
     }
 
     public final LinkStyle invoke(LinkContentNode it) {
-        q.g(it, "it");
-        if (!q.b(it.getTarget(), "usernameOnClick")) {
+        q.h(it, "it");
+        if (!q.c(it.getTarget(), "usernameOnClick")) {
             return new LinkStyle(DiscordFont.PrimarySemibold, 0, 2, null);
         }
         return new LinkStyle(DiscordFont.PrimarySemibold, this.$executedCommand.getUsernameColor());

@@ -15,14 +15,14 @@ public final class GiftViewHolder extends MessagePartViewHolder {
     
     public GiftViewHolder(GiftView giftView) {
         super(giftView, null);
-        q.g(giftView, "giftView");
+        q.h(giftView, "giftView");
         this.giftView = giftView;
     }
 
     public final void bind(GiftMessageAccessory accessory, Function1<? super String, Unit> onTapEmbed, Function1<? super String, Unit> onTapAccept) {
-        q.g(accessory, "accessory");
-        q.g(onTapEmbed, "onTapEmbed");
-        q.g(onTapAccept, "onTapAccept");
+        q.h(accessory, "accessory");
+        q.h(onTapEmbed, "onTapEmbed");
+        q.h(onTapAccept, "onTapAccept");
         this.giftView.bind(accessory, onTapEmbed, onTapAccept);
     }
 }

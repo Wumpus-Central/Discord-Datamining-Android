@@ -1,8 +1,8 @@
 package com.discord.client_info;
 
 import android.content.Context;
-import ff.n;
 import java.util.Locale;
+import jf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
@@ -17,9 +17,9 @@ public final class ClientInfo {
     public static String otaManifestETag = null;
     public static String otaVersion = null;
     public static String packageName = null;
-    public static final String proguardUUID = "7a238e3e-91f7-42ad-8f42-9c33a459adca";
+    public static final String proguardUUID = "9979a6f3-636c-41ac-8f1c-099842d65861";
     public static final String sentryDsn = "https:
-    public static final String sentryRelease = "discord_android@191.0.0-2+191200";
+    public static final String sentryRelease = "discord_android@192.0.0-2+192200";
     public static String versionCode;
     public static String versionName;
 
@@ -37,7 +37,7 @@ public final class ClientInfo {
         if (str != null) {
             return str;
         }
-        q.y("otaManifestETag");
+        q.z("otaManifestETag");
         return null;
     }
 
@@ -46,7 +46,7 @@ public final class ClientInfo {
         if (str != null) {
             return str;
         }
-        q.y("otaVersion");
+        q.z("otaVersion");
         return null;
     }
 
@@ -55,7 +55,7 @@ public final class ClientInfo {
         if (str != null) {
             return str;
         }
-        q.y("packageName");
+        q.z("packageName");
         return null;
     }
 
@@ -63,24 +63,24 @@ public final class ClientInfo {
         String str = flavor;
         String str2 = null;
         if (str == null) {
-            q.y("flavor");
+            q.z("flavor");
             str = null;
         }
         String str3 = buildType;
         if (str3 == null) {
-            q.y("buildType");
+            q.z("buildType");
         } else {
             str2 = str3;
         }
         if (str2.length() > 0) {
             StringBuilder sb2 = new StringBuilder();
             String valueOf = String.valueOf(str2.charAt(0));
-            q.e(valueOf, "null cannot be cast to non-null type java.lang.String");
+            q.f(valueOf, "null cannot be cast to non-null type java.lang.String");
             String upperCase = valueOf.toUpperCase(Locale.ROOT);
-            q.f(upperCase, "this as java.lang.String).toUpperCase(Locale.ROOT)");
+            q.g(upperCase, "this as java.lang.String).toUpperCase(Locale.ROOT)");
             sb2.append((Object) upperCase);
             String substring = str2.substring(1);
-            q.f(substring, "this as java.lang.String).substring(startIndex)");
+            q.g(substring, "this as java.lang.String).substring(startIndex)");
             sb2.append(substring);
             str2 = sb2.toString();
         }
@@ -92,7 +92,7 @@ public final class ClientInfo {
         if (str != null) {
             return str;
         }
-        q.y("versionCode");
+        q.z("versionCode");
         return null;
     }
 
@@ -101,17 +101,17 @@ public final class ClientInfo {
         if (str != null) {
             return str;
         }
-        q.y("versionName");
+        q.z("versionName");
         return null;
     }
 
     public final void init(Context context, String versionName2, int i10, String flavor2, String buildType2, String otaManifest, String otaVersion2) {
-        q.g(context, "context");
-        q.g(versionName2, "versionName");
-        q.g(flavor2, "flavor");
-        q.g(buildType2, "buildType");
-        q.g(otaManifest, "otaManifest");
-        q.g(otaVersion2, "otaVersion");
+        q.h(context, "context");
+        q.h(versionName2, "versionName");
+        q.h(flavor2, "flavor");
+        q.h(buildType2, "buildType");
+        q.h(otaManifest, "otaManifest");
+        q.h(otaVersion2, "otaVersion");
         setVersionName(versionName2);
         setVersionCode(String.valueOf(i10));
         setOtaManifestETag(otaManifest);
@@ -119,7 +119,7 @@ public final class ClientInfo {
         flavor = flavor2;
         buildType = buildType2;
         String packageName2 = context.getPackageName();
-        q.f(packageName2, "context.packageName");
+        q.g(packageName2, "context.packageName");
         setPackageName(packageName2);
         ClientUserAgent clientUserAgent = ClientUserAgent.INSTANCE;
         clientUserAgent.init(context, "Discord-Android/" + i10 + ";RNA");
@@ -128,19 +128,19 @@ public final class ClientInfo {
     public final boolean isDebugBuild() {
         String str = buildType;
         if (str == null) {
-            q.y("buildType");
+            q.z("buildType");
             str = null;
         }
-        return q.b(str, "debug");
+        return q.c(str, "debug");
     }
 
     public final boolean isDeveloperBuild() {
         String str = flavor;
         if (str == null) {
-            q.y("flavor");
+            q.z("flavor");
             str = null;
         }
-        return q.b(str, "developer");
+        return q.c(str, "developer");
     }
 
     public final boolean isProdBuild() {
@@ -148,27 +148,27 @@ public final class ClientInfo {
     }
 
     public final void setOtaManifestETag(String str) {
-        q.g(str, "<set-?>");
+        q.h(str, "<set-?>");
         otaManifestETag = str;
     }
 
     public final void setOtaVersion(String str) {
-        q.g(str, "<set-?>");
+        q.h(str, "<set-?>");
         otaVersion = str;
     }
 
     public final void setPackageName(String str) {
-        q.g(str, "<set-?>");
+        q.h(str, "<set-?>");
         packageName = str;
     }
 
     public final void setVersionCode(String str) {
-        q.g(str, "<set-?>");
+        q.h(str, "<set-?>");
         versionCode = str;
     }
 
     public final void setVersionName(String str) {
-        q.g(str, "<set-?>");
+        q.h(str, "<set-?>");
         versionName = str;
     }
 }

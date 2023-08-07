@@ -18,12 +18,12 @@ import kotlin.jvm.internal.q;
     @Override 
     public   Unit invoke(String str, String str2, String str3, String str4) {
         invoke2(str, str2, str3, str4);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String p02, String str, String str2, String str3) {
-        q.g(p02, "p0");
+        q.h(p02, "p0");
         ((ChatEventHandler) this.receiver).onLongPressChannel(p02, str, str2, str3);
     }
 }

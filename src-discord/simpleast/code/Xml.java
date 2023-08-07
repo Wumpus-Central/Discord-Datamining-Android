@@ -6,14 +6,14 @@ import com.discord.simpleast.core.node.Node;
 import com.discord.simpleast.core.parser.ParseSpec;
 import com.discord.simpleast.core.parser.Parser;
 import com.discord.simpleast.core.parser.Rule;
-import ff.x;
 import java.util.Iterator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import ji.b;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.internal.q;
+import ni.b;
 
 @Metadata(bv = {1, 0, 3}, d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001:\u0001\u0014B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J8\u0010\r\u001a\u001a\u0012\u0004\u0012\u0002H\u000f\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u000f0\u0010\u0012\u0004\u0012\u0002H\u00110\u000e\"\u0004\b\u0000\u0010\u000f\"\u0004\b\u0001\u0010\u00112\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u0002H\u000f0\u0013R\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u0011\u0010\u0007\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\u0006R\u000e\u0010\t\u001a\u00020\nX\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\nX\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\nX\u0086T¢\u0006\u0002\n\u0000¨\u0006\u0015"}, d2 = {"Lcom/discord/simpleast/code/Xml;", "", "()V", "PATTERN_XML_COMMENT", "Ljava/util/regex/Pattern;", "getPATTERN_XML_COMMENT", "()Ljava/util/regex/Pattern;", "PATTERN_XML_TAG", "getPATTERN_XML_TAG", "PATTERN_XML_TAG_CLOSING_GROUP", "", "PATTERN_XML_TAG_CONTENT_GROUP", "PATTERN_XML_TAG_OPENING_GROUP", "createTagRule", "Lcom/discord/simpleast/core/parser/Rule;", "RC", "Lcom/discord/simpleast/core/node/Node;", "S", "codeStyleProviders", "Lcom/discord/simpleast/code/CodeStyleProviders;", "TagNode", "simpleast-core_release"}, k = 1, mv = {1, 4, 0})
 
@@ -35,8 +35,8 @@ public final class Xml {
         
         public TagNode(String opening, String str, CodeStyleProviders<RC> codeStyleProviders) {
             super(new Node[0]);
-            q.g(opening, "opening");
-            q.g(codeStyleProviders, "codeStyleProviders");
+            q.h(opening, "opening");
+            q.h(codeStyleProviders, "codeStyleProviders");
             this.opening = opening;
             this.closing = str;
             this.codeStyleProviders = codeStyleProviders;
@@ -55,7 +55,7 @@ public final class Xml {
             Pair pair;
             boolean c10;
             boolean z10;
-            q.g(builder, "builder");
+            q.h(builder, "builder");
             String str = this.opening;
             int length = str.length();
             boolean z11 = false;
@@ -81,11 +81,11 @@ public final class Xml {
                 String str2 = this.opening;
                 if (str2 != null) {
                     String substring = str2.substring(0, i10);
-                    q.f(substring, "(this as java.lang.Strin…ing(startIndex, endIndex)");
+                    q.g(substring, "(this as java.lang.Strin…ing(startIndex, endIndex)");
                     String str3 = this.opening;
                     if (str3 != null) {
                         String substring2 = str3.substring(i10);
-                        q.f(substring2, "(this as java.lang.String).substring(startIndex)");
+                        q.g(substring2, "(this as java.lang.String).substring(startIndex)");
                         pair = x.a(substring, substring2);
                     } else {
                         throw new NullPointerException("null cannot be cast to non-null type java.lang.String");
@@ -132,10 +132,10 @@ public final class Xml {
 
     static {
         Pattern compile = Pattern.compile("^<!--[\\s\\S]*?-->", 32);
-        q.f(compile, "Pattern.compile(\"\"\"^<!--…*?-->\"\"\", Pattern.DOTALL)");
+        q.g(compile, "Pattern.compile(\"\"\"^<!--…*?-->\"\"\", Pattern.DOTALL)");
         PATTERN_XML_COMMENT = compile;
         Pattern compile2 = Pattern.compile("^<([\\s\\S]+?)(?:>(.*?)<\\/([\\s\\S]+?))?>", 32);
-        q.f(compile2, "Pattern.compile(\n      \"…?))?>\"\"\", Pattern.DOTALL)");
+        q.g(compile2, "Pattern.compile(\n      \"…?))?>\"\"\", Pattern.DOTALL)");
         PATTERN_XML_TAG = compile2;
     }
 
@@ -143,15 +143,15 @@ public final class Xml {
     }
 
     public final <RC, S> Rule<RC, Node<RC>, S> createTagRule(final CodeStyleProviders<RC> codeStyleProviders) {
-        q.g(codeStyleProviders, "codeStyleProviders");
+        q.h(codeStyleProviders, "codeStyleProviders");
         final Pattern pattern = PATTERN_XML_TAG;
         return new Rule<RC, Node<RC>, S>(pattern) { 
             @Override 
             public ParseSpec<RC, S> parse(Matcher matcher, Parser<RC, ? super Node<RC>, S> parser, S s10) {
-                q.g(matcher, "matcher");
-                q.g(parser, "parser");
+                q.h(matcher, "matcher");
+                q.h(parser, "parser");
                 String group = matcher.group(1);
-                q.d(group);
+                q.e(group);
                 String group2 = matcher.group(3);
                 if (matcher.group(2) != null) {
                     return ParseSpec.Companion.createNonterminal(new Xml.TagNode(group, group2, codeStyleProviders), s10, matcher.start(2), matcher.end(2));

@@ -8,18 +8,18 @@ import kotlin.jvm.internal.q;
 
 public final class SpannableExtensionsKt {
     public static final void coverWithSpan(Spannable spannable, Object what) {
-        q.g(spannable, "<this>");
-        q.g(what, "what");
+        q.h(spannable, "<this>");
+        q.h(what, "what");
         spannable.setSpan(what, 0, spannable.length(), 18);
     }
 
     public static final  <T> boolean hasSpan(Spannable spannable) {
-        q.g(spannable, "<this>");
+        q.h(spannable, "<this>");
         int length = spannable.length();
-        q.m(4, "T");
+        q.n(4, "T");
         boolean z10 = false;
         Object[] spans = spannable.getSpans(0, length, Object.class);
-        q.f(spans, "getSpans(0, length, T::class.java)");
+        q.g(spans, "getSpans(0, length, T::class.java)");
         if (spans.length == 0) {
             z10 = true;
         }

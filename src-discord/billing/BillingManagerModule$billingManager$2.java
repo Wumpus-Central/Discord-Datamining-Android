@@ -27,15 +27,15 @@ public final class BillingManagerModule$billingManager$2 extends s implements Fu
     @Override 
     public   Unit invoke(String str, String str2, String str3) {
         invoke2(str, str2, str3);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String purchaseToken, String packageName, String sku) {
         ReactEvents reactEvents;
-        q.g(purchaseToken, "purchaseToken");
-        q.g(packageName, "packageName");
-        q.g(sku, "sku");
+        q.h(purchaseToken, "purchaseToken");
+        q.h(packageName, "packageName");
+        q.h(sku, "sku");
         reactEvents = this.this$0.reactEvents;
         reactEvents.emitModuleEvent(this.$reactContext, new BillingManagerPurchaseUpdated(purchaseToken, packageName, sku));
     }

@@ -31,7 +31,7 @@ public final class OverlappingItem {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof OverlappingItem) && q.b(this.imageUri, ((OverlappingItem) obj).imageUri);
+        return (obj instanceof OverlappingItem) && q.c(this.imageUri, ((OverlappingItem) obj).imageUri);
     }
 
     public final String getImageUri() {

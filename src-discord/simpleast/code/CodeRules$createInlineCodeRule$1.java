@@ -33,8 +33,8 @@ public final class CodeRules$createInlineCodeRule$1 extends Rule<R, Node<R>, S> 
     @Override 
     public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s10) {
         boolean z10;
-        q.g(matcher, "matcher");
-        q.g(parser, "parser");
+        q.h(matcher, "matcher");
+        q.h(parser, "parser");
         String group = matcher.group(2);
         if (group == null) {
             group = "";
@@ -47,7 +47,7 @@ public final class CodeRules$createInlineCodeRule$1 extends Rule<R, Node<R>, S> 
         if (z10) {
             ParseSpec.Companion companion = ParseSpec.Companion;
             String group2 = matcher.group();
-            q.f(group2, "matcher.group()");
+            q.g(group2, "matcher.group()");
             return companion.createTerminal(new TextNode(group2), s10);
         }
         final CodeNode codeNode = new CodeNode(new CodeNode.Content.Raw(group), null, this.$textStyleProvider);
@@ -55,7 +55,7 @@ public final class CodeRules$createInlineCodeRule$1 extends Rule<R, Node<R>, S> 
         return ParseSpec.Companion.createTerminal(new Node.Parent<R>(nodeArr) { 
             @Override 
             public void render(SpannableStringBuilder builder, R r10) {
-                q.g(builder, "builder");
+                q.h(builder, "builder");
                 int length = builder.length();
                 super.render(builder, r10);
                 Iterator<?> it = CodeRules$createInlineCodeRule$1.this.$bgStyleProvider.get(r10).iterator();

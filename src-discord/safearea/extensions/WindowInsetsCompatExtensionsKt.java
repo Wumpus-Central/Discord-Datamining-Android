@@ -12,7 +12,7 @@ import kotlin.jvm.internal.q;
 
 public final class WindowInsetsCompatExtensionsKt {
     public static final Insets getDisplayCutoutInsets(WindowInsetsCompat windowInsetsCompat, boolean z10) {
-        q.g(windowInsetsCompat, "<this>");
+        q.h(windowInsetsCompat, "<this>");
         return getInsets(windowInsetsCompat, WindowInsetsCompat.m.a(), z10);
     }
 
@@ -24,7 +24,7 @@ public final class WindowInsetsCompatExtensionsKt {
     }
 
     public static final Insets getImeInsets(WindowInsetsCompat windowInsetsCompat, boolean z10) {
-        q.g(windowInsetsCompat, "<this>");
+        q.h(windowInsetsCompat, "<this>");
         return getInsets(windowInsetsCompat, WindowInsetsCompat.m.b(), z10);
     }
 
@@ -42,7 +42,7 @@ public final class WindowInsetsCompatExtensionsKt {
         } else {
             insets = windowInsetsCompat.f(i10);
         }
-        q.f(insets, "if (ignoringVisibility) …    getInsets(type)\n    }");
+        q.g(insets, "if (ignoringVisibility) …    getInsets(type)\n    }");
         return insets;
     }
 
@@ -54,7 +54,7 @@ public final class WindowInsetsCompatExtensionsKt {
     }
 
     public static final Insets getSystemBarInsets(WindowInsetsCompat windowInsetsCompat, boolean z10) {
-        q.g(windowInsetsCompat, "<this>");
+        q.h(windowInsetsCompat, "<this>");
         return getInsets(windowInsetsCompat, WindowInsetsCompat.m.g(), z10);
     }
 
@@ -66,7 +66,7 @@ public final class WindowInsetsCompatExtensionsKt {
     }
 
     public static final WindowInsetsCompat getWindowInsetsCompat(Activity activity) {
-        q.g(activity, "<this>");
+        q.h(activity, "<this>");
         View rootView = ActivityExtensionsKt.getRootView(activity);
         if (rootView != null) {
             return WindowInsetsCompat.y(rootView.getRootWindowInsets());

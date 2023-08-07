@@ -4,17 +4,17 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.util.Base64;
+import bk.f;
 import com.discord.logging.Log;
-import ff.n;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
+import jf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.collections.e;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import xj.f;
 
 @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0010\u000e\n\u0002\b\u0006\b\u0007\u0018\u0000 \f2\u00020\u0001:\u0001\fB\u000f\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\u0004R!\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u00068FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\n\u0010\u000b\u001a\u0004\b\b\u0010\t¨\u0006\r"}, d2 = {"Lcom/discord/phone_verification/AppSignatureHelper;", "Landroid/content/ContextWrapper;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "appSignatures", "", "", "getAppSignatures", "()Ljava/util/List;", "appSignatures$delegate", "Lkotlin/Lazy;", "Companion", "phone_verification_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 @SuppressLint({"PackageManagerGetSignatures"})
@@ -42,15 +42,15 @@ public final class AppSignatureHelper extends ContextWrapper {
             byte[] i10;
             try {
                 MessageDigest instance = MessageDigest.getInstance(AppSignatureHelper.HASH_TYPE);
-                q.f(instance, "getInstance(HASH_TYPE)");
+                q.g(instance, "getInstance(HASH_TYPE)");
                 instance.update(f.a(str + " " + str2));
                 byte[] digest = instance.digest();
-                q.f(digest, "messageDigest.digest()");
+                q.g(digest, "messageDigest.digest()");
                 i10 = e.i(digest, 0, 9);
                 String encodeToString = Base64.encodeToString(i10, 3);
-                q.f(encodeToString, "encodeToString(hashSigna…ADDING or Base64.NO_WRAP)");
+                q.g(encodeToString, "encodeToString(hashSigna…ADDING or Base64.NO_WRAP)");
                 String substring = encodeToString.substring(0, 11);
-                q.f(substring, "this as java.lang.String…ing(startIndex, endIndex)");
+                q.g(substring, "this as java.lang.String…ing(startIndex, endIndex)");
                 Log.i$default(Log.INSTANCE, getTAG(), "pkg: " + str + " -- hash: " + substring, (Throwable) null, 4, (Object) null);
                 return substring;
             } catch (NoSuchAlgorithmException e10) {
@@ -66,7 +66,7 @@ public final class AppSignatureHelper extends ContextWrapper {
 
     static {
         String simpleName = AppSignatureHelper.class.getSimpleName();
-        q.f(simpleName, "AppSignatureHelper::class.java.simpleName");
+        q.g(simpleName, "AppSignatureHelper::class.java.simpleName");
         TAG = simpleName;
     }
 

@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.R;
 import com.discord.chat.bridge.contentnode.LinkContentNode;
@@ -15,17 +14,6 @@ import com.discord.chat.bridge.forums.PostSharePrompt;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.databinding.ForumPostActionBarViewBinding;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.core.DCDButton;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
@@ -41,7 +29,6 @@ import com.discord.reactions.ReactionView;
 import com.discord.reactions.ReactionsView;
 import com.discord.ripple.RippleUtilsKt;
 import com.discord.theme.ThemeManagerKt;
-import com.facebook.drawee.span.DraweeSpanStringBuilder;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import java.util.List;
@@ -62,13 +49,13 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     
     public ForumPostActionBarView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public ForumPostActionBarView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  ForumPostActionBarView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -77,10 +64,10 @@ public final class ForumPostActionBarView extends ConstraintLayout {
 
     private final void setReactions(String str, List<? extends ReactionView.Reaction> list, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onClickListener, Function1<? super ReactionView.Reaction, Unit> function1, Function1<? super ReactionView.Reaction, Unit> function12) {
         ReactionsView reactionsView = this.binding.reactionsView;
-        q.f(reactionsView, "binding.reactionsView");
+        q.g(reactionsView, "binding.reactionsView");
         reactionsView.setVisibility(0);
         ReactionsView reactionsView2 = this.binding.reactionsView;
-        q.f(reactionsView2, "binding.reactionsView");
+        q.g(reactionsView2, "binding.reactionsView");
         reactionsView2.setReactions(str, list, false, false, "", "", "", reactionsTheme, (r32 & 256) != 0 ? 
         
         
@@ -96,12 +83,11 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     }
 
     
-    private final void m311setSharePromptLdU2QRA(String str, PostSharePrompt postSharePrompt, View.OnClickListener onClickListener, String str2, View.OnClickListener onClickListener2, Function2<? super MessageId, ? super LinkContentNode, Unit> function2) {
+    private final void m312setSharePromptLdU2QRA(String str, PostSharePrompt postSharePrompt, View.OnClickListener onClickListener, String str2, View.OnClickListener onClickListener2, Function2<? super MessageId, ? super LinkContentNode, Unit> function2) {
         boolean z10;
         int i10;
-        DraweeSpanStringBuilder spannable;
         ConstraintLayout constraintLayout = this.binding.sharePromptContainer;
-        q.f(constraintLayout, "binding.sharePromptContainer");
+        q.g(constraintLayout, "binding.sharePromptContainer");
         if (postSharePrompt != null) {
             z10 = true;
         } else {
@@ -126,24 +112,23 @@ public final class ForumPostActionBarView extends ConstraintLayout {
             dCDButton2.setIcon(postSharePrompt.getCloseIcon(), SizeUtilsKt.getDpToPx(16));
             dCDButton2.setOnClickButtonListener(onClickListener2);
             SimpleDraweeView simpleDraweeView = this.binding.sharePromptIcon;
-            q.f(simpleDraweeView, "binding.sharePromptIcon");
+            q.g(simpleDraweeView, "binding.sharePromptIcon");
             ReactAssetUtilsKt.setOptionalReactImageUrl(simpleDraweeView, postSharePrompt.getIcon());
             SimpleDraweeSpanTextView setSharePrompt_LdU2QRA$lambda$13 = this.binding.sharePromptSubtitle;
-            q.f(setSharePrompt_LdU2QRA$lambda$13, "setSharePrompt_LdU2QRA$lambda$13");
+            q.g(setSharePrompt_LdU2QRA$lambda$13, "setSharePrompt_LdU2QRA$lambda$13");
             StructurableText subtitle = postSharePrompt.getSubtitle();
             Context context = setSharePrompt_LdU2QRA$lambda$13.getContext();
-            q.f(context, "context");
+            q.g(context, "context");
             ForumPostActionBarView$setSharePrompt$3$1 forumPostActionBarView$setSharePrompt$3$1 = new ForumPostActionBarView$setSharePrompt$3$1(function2, str);
             Paint.FontMetrics fontMetrics = setSharePrompt_LdU2QRA$lambda$13.getPaint().getFontMetrics();
-            q.f(fontMetrics, "paint.fontMetrics");
-            spannable = TextUtilsKt.toSpannable(subtitle, context, str, false, false, false, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : forumPostActionBarView$setSharePrompt$3$1, (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (65536 & r42) != 0 ? false : false, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : TextUtilsKt.getBaselineHeight(fontMetrics));
-            SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setSharePrompt_LdU2QRA$lambda$13, spannable);
+            q.g(fontMetrics, "paint.fontMetrics");
+            SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setSharePrompt_LdU2QRA$lambda$13, TextUtilsKt.toSpannable$default(subtitle, context, str, false, false, false, forumPostActionBarView$setSharePrompt$3$1, null, null, null, null, null, null, null, null, null, null, false, null, TextUtilsKt.getBaselineHeight(fontMetrics), 262080, null));
             NestedScrollOnTouchUtilsKt.enableNestedSpanClickListener$default(setSharePrompt_LdU2QRA$lambda$13, false, 1, null);
         }
     }
 
     
-    public final void m312configureCgeVRR0(String messageId, int i10, boolean z10, String str, String followLabel, String str2, String shareLabel, List<? extends ReactionView.Reaction> list, ReactionView.Reaction reaction, boolean z11, String addNewReactionAccessibilityLabel, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, View.OnClickListener onTapFollowForumPost, View.OnClickListener onTapShareForumPost, View.OnClickListener onTapReactionOverflow, PostSharePrompt postSharePrompt, View.OnClickListener onDismissSharePromptClick, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
+    public final void m313configureCgeVRR0(String messageId, int i10, boolean z10, String str, String followLabel, String str2, String shareLabel, List<? extends ReactionView.Reaction> list, ReactionView.Reaction reaction, boolean z11, String addNewReactionAccessibilityLabel, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, View.OnClickListener onTapFollowForumPost, View.OnClickListener onTapShareForumPost, View.OnClickListener onTapReactionOverflow, PostSharePrompt postSharePrompt, View.OnClickListener onDismissSharePromptClick, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
         boolean z12;
         Object obj;
         int i11;
@@ -151,29 +136,29 @@ public final class ForumPostActionBarView extends ConstraintLayout {
         boolean z13;
         List<? extends ReactionView.Reaction> v02;
         List d10;
-        q.g(messageId, "messageId");
-        q.g(followLabel, "followLabel");
-        q.g(shareLabel, "shareLabel");
-        q.g(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
-        q.g(onAddReactionClick, "onAddReactionClick");
-        q.g(onReactionClick, "onReactionClick");
-        q.g(onReactionLongPress, "onReactionLongPress");
-        q.g(onTapFollowForumPost, "onTapFollowForumPost");
-        q.g(onTapShareForumPost, "onTapShareForumPost");
-        q.g(onTapReactionOverflow, "onTapReactionOverflow");
-        q.g(onDismissSharePromptClick, "onDismissSharePromptClick");
-        q.g(onLinkClicked, "onLinkClicked");
+        q.h(messageId, "messageId");
+        q.h(followLabel, "followLabel");
+        q.h(shareLabel, "shareLabel");
+        q.h(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
+        q.h(onAddReactionClick, "onAddReactionClick");
+        q.h(onReactionClick, "onReactionClick");
+        q.h(onReactionLongPress, "onReactionLongPress");
+        q.h(onTapFollowForumPost, "onTapFollowForumPost");
+        q.h(onTapShareForumPost, "onTapShareForumPost");
+        q.h(onTapReactionOverflow, "onTapReactionOverflow");
+        q.h(onDismissSharePromptClick, "onDismissSharePromptClick");
+        q.h(onLinkClicked, "onLinkClicked");
         if (list == null || list.isEmpty()) {
             DCDButton dCDButton = this.binding.otherReactionsCount;
-            q.f(dCDButton, "binding.otherReactionsCount");
+            q.g(dCDButton, "binding.otherReactionsCount");
             dCDButton.setVisibility(8);
             if (reaction == null || !z11) {
                 ReactionsView reactionsView = this.binding.reactionsView;
-                q.f(reactionsView, "binding.reactionsView");
+                q.g(reactionsView, "binding.reactionsView");
                 reactionsView.setVisibility(8);
             } else {
                 d10 = i.d(reaction);
-                setReactions$default(this, MessageId.m598toStringimpl(messageId), d10, reactionsTheme, onAddReactionClick, onReactionClick, null, 32, null);
+                setReactions$default(this, MessageId.m599toStringimpl(messageId), d10, reactionsTheme, onAddReactionClick, onReactionClick, null, 32, null);
             }
             i11 = 2;
             obj = null;
@@ -184,16 +169,16 @@ public final class ForumPostActionBarView extends ConstraintLayout {
             int i13 = i10 - 1;
             v02 = r.v0(list, i13);
             ReactionsView reactionsView2 = this.binding.reactionsView;
-            q.f(reactionsView2, "binding.reactionsView");
+            q.g(reactionsView2, "binding.reactionsView");
             reactionsView2.setVisibility(0);
-            setReactions(MessageId.m598toStringimpl(messageId), v02, reactionsTheme, onAddReactionClick, onReactionClick, onReactionLongPress);
+            setReactions(MessageId.m599toStringimpl(messageId), v02, reactionsTheme, onAddReactionClick, onReactionClick, onReactionLongPress);
             int max = Math.max(list.size() - i13, 0);
             DCDButton configure_CgeVRR0$lambda$7 = this.binding.otherReactionsCount;
-            q.f(configure_CgeVRR0$lambda$7, "configure_CgeVRR0$lambda$7");
+            q.g(configure_CgeVRR0$lambda$7, "configure_CgeVRR0$lambda$7");
             configure_CgeVRR0$lambda$7.setVisibility(max != 0 ? 0 : 8);
             if (configure_CgeVRR0$lambda$7.getVisibility() == 0) {
                 Context context = configure_CgeVRR0$lambda$7.getContext();
-                q.f(context, "context");
+                q.g(context, "context");
                 configure_CgeVRR0$lambda$7.setText(I18nUtilsKt.i18nFormat(context, I18nMessage.FORUM_REACTIONS_OVERFLOW, new ForumPostActionBarView$configure$1$1(max)));
                 i11 = 2;
                 obj = null;
@@ -224,7 +209,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
         dCDButton3.setOnClickButtonListener(onTapShareForumPost);
         dCDButton3.setContentDescription(shareLabel);
         AddReactionView configure_CgeVRR0$lambda$10 = this.binding.addReaction;
-        q.f(configure_CgeVRR0$lambda$10, "configure_CgeVRR0$lambda$10");
+        q.g(configure_CgeVRR0$lambda$10, "configure_CgeVRR0$lambda$10");
         configure_CgeVRR0$lambda$10.setVisibility(z11 ? 0 : 8);
         if (configure_CgeVRR0$lambda$10.getVisibility() == 0) {
             boolean z14 = z12 ? 1 : 0;
@@ -244,15 +229,15 @@ public final class ForumPostActionBarView extends ConstraintLayout {
             int i17 = z12 ? 1 : 0;
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configure_CgeVRR0$lambda$10, false, onAddReactionClick, i14, obj);
         }
-        m311setSharePromptLdU2QRA(messageId, postSharePrompt, onTapShareForumPost, str2, onDismissSharePromptClick, onLinkClicked);
+        m312setSharePromptLdU2QRA(messageId, postSharePrompt, onTapShareForumPost, str2, onDismissSharePromptClick, onLinkClicked);
     }
 
     
     public ForumPostActionBarView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         ForumPostActionBarViewBinding inflate = ForumPostActionBarViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         inflate.footerDivider.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
         inflate.headerDivider.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundModifierAccent());
@@ -274,12 +259,12 @@ public final class ForumPostActionBarView extends ConstraintLayout {
         dCDButton3.setTextColor(Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
         TextView _init_$lambda$3 = inflate.sharePromptTitle;
         _init_$lambda$3.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
-        q.f(_init_$lambda$3, "_init_$lambda$3");
+        q.g(_init_$lambda$3, "_init_$lambda$3");
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$3, 16.0f);
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$3, discordFont);
         SimpleDraweeSpanTextView _init_$lambda$4 = inflate.sharePromptSubtitle;
         _init_$lambda$4.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
-        q.f(_init_$lambda$4, "_init_$lambda$4");
+        q.g(_init_$lambda$4, "_init_$lambda$4");
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$4, 14.0f);
         DiscordFont discordFont2 = DiscordFont.PrimaryMedium;
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$4, discordFont2);

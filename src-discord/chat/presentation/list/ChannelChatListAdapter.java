@@ -74,11 +74,11 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
     
     public ChannelChatListAdapter(Function0<Unit> doLayout, Function0<Unit> enableAnimations, Function0<Unit> disableAnimations, Function0<? extends ChatEventHandler> eventHandlerProvider, Function0<ComponentProvider> messageComponentProvider) {
         super(eventHandlerProvider, messageComponentProvider);
-        q.g(doLayout, "doLayout");
-        q.g(enableAnimations, "enableAnimations");
-        q.g(disableAnimations, "disableAnimations");
-        q.g(eventHandlerProvider, "eventHandlerProvider");
-        q.g(messageComponentProvider, "messageComponentProvider");
+        q.h(doLayout, "doLayout");
+        q.h(enableAnimations, "enableAnimations");
+        q.h(disableAnimations, "disableAnimations");
+        q.h(eventHandlerProvider, "eventHandlerProvider");
+        q.h(messageComponentProvider, "messageComponentProvider");
         this.doLayout = doLayout;
         this.enableAnimations = enableAnimations;
         this.disableAnimations = disableAnimations;
@@ -117,7 +117,7 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
             throw new IllegalStateException(("Expected to be on android main thread. Current: " + currentThread).toString());
         } else if (!this.updateQueue.isEmpty()) {
             Object remove = this.updateQueue.remove();
-            q.f(remove, "updateQueue.remove()");
+            q.g(remove, "updateQueue.remove()");
             processUpdate((ChannelChatListAdapterUpdate) remove);
         }
     }
@@ -154,7 +154,7 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
         if (i10 == 1) {
             List<ChatListItem> chatListItems$chat_release = getChatListItems$chat_release();
             PortalViewChatListItem portalChatListItem = portalViewUpdate.getPortalChatListItem();
-            q.d(portalChatListItem);
+            q.e(portalChatListItem);
             list = r.n0(chatListItems$chat_release, portalChatListItem);
         } else if (i10 == 2) {
             list = r.N(getChatListItems$chat_release(), 1);
@@ -162,10 +162,10 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
             list = r.D0(getChatListItems$chat_release());
             j13 = j.j(getChatListItems$chat_release());
             PortalViewChatListItem portalChatListItem2 = portalViewUpdate.getPortalChatListItem();
-            q.d(portalChatListItem2);
+            q.e(portalChatListItem2);
             list.set(j13, portalChatListItem2);
         } else {
-            throw new ff.q();
+            throw new jf.q();
         }
         setChatListItems$chat_release(list);
         super.setItems((ChannelChatListAdapter) getChatListItems$chat_release());
@@ -290,7 +290,7 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
         PortalViewChatListItem portalViewChatListItem;
         if (view != null) {
             String uuid = UUID.randomUUID().toString();
-            q.f(uuid, "randomUUID().toString()");
+            q.g(uuid, "randomUUID().toString()");
             portalViewChatListItem = new PortalViewChatListItem(uuid, view, pair);
         } else {
             portalViewChatListItem = null;
@@ -302,14 +302,14 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
     }
 
     public void setItems(List<? extends ChatListItem> items) {
-        q.g(items, "items");
+        q.h(items, "items");
         setItems(items, null, ChannelChatListAdapter$setItems$1.INSTANCE, ChannelChatListAdapter$setItems$2.INSTANCE);
     }
 
     public final void setItems(List<? extends ChatListItem> items, List<? extends ListOperation> list, Function0<Unit> preCommit, Function0<Unit> postCommit) {
-        q.g(items, "items");
-        q.g(preCommit, "preCommit");
-        q.g(postCommit, "postCommit");
+        q.h(items, "items");
+        q.h(preCommit, "preCommit");
+        q.h(postCommit, "postCommit");
         int i10 = this.updateCount + 1;
         this.updateCount = i10;
         enqueueUpdate(new ChatListItemUpdate(items, list, i10, preCommit, postCommit));

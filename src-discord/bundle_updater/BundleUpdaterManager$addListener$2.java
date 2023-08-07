@@ -26,14 +26,14 @@ final class BundleUpdaterManager$addListener$2 extends s implements Function1<Li
     @Override 
     public   Unit invoke(List<? extends BundleUpdater.OtaMetric> list) {
         invoke2((List<BundleUpdater.OtaMetric>) list);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(List<BundleUpdater.OtaMetric> metrics) {
         ReactEvents reactEvents;
         ReactApplicationContext reactApplicationContext;
-        q.g(metrics, "metrics");
+        q.h(metrics, "metrics");
         reactEvents = this.this$0.reactEvents;
         reactApplicationContext = this.this$0.reactContext;
         reactEvents.emitModuleEvent(reactApplicationContext, new OtaUpdateCheckedEvent(metrics));

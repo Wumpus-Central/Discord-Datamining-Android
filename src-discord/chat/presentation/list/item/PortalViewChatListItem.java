@@ -11,7 +11,7 @@ import kotlin.jvm.internal.q;
 public final class PortalViewChatListItem extends ChatListItem {
 
     
-    private final String f6943id;
+    private final String f7156id;
     private final Pair<Integer, Integer> measuredDimensions;
     private final View view;
 
@@ -46,8 +46,8 @@ public final class PortalViewChatListItem extends ChatListItem {
     }
 
     public final PortalViewChatListItem copy(String id2, View view, Pair<Integer, Integer> pair) {
-        q.g(id2, "id");
-        q.g(view, "view");
+        q.h(id2, "id");
+        q.h(view, "view");
         return new PortalViewChatListItem(id2, view, pair);
     }
 
@@ -59,12 +59,12 @@ public final class PortalViewChatListItem extends ChatListItem {
             return false;
         }
         PortalViewChatListItem portalViewChatListItem = (PortalViewChatListItem) obj;
-        return q.b(getId(), portalViewChatListItem.getId()) && q.b(this.view, portalViewChatListItem.view) && q.b(this.measuredDimensions, portalViewChatListItem.measuredDimensions);
+        return q.c(getId(), portalViewChatListItem.getId()) && q.c(this.view, portalViewChatListItem.view) && q.c(this.measuredDimensions, portalViewChatListItem.measuredDimensions);
     }
 
     @Override 
     public String getId() {
-        return this.f6943id;
+        return this.f7156id;
     }
 
     public final Pair<Integer, Integer> getMeasuredDimensions() {
@@ -91,9 +91,9 @@ public final class PortalViewChatListItem extends ChatListItem {
     
     public PortalViewChatListItem(String id2, View view, Pair<Integer, Integer> pair) {
         super(id2, null);
-        q.g(id2, "id");
-        q.g(view, "view");
-        this.f6943id = id2;
+        q.h(id2, "id");
+        q.h(view, "view");
+        this.f7156id = id2;
         this.view = view;
         this.measuredDimensions = pair;
     }

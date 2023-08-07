@@ -13,20 +13,20 @@ public final class ItemDiffer extends c.b {
 
     
     public ItemDiffer(List<? extends ItemDiffableType> oldItems, List<? extends ItemDiffableType> newItems) {
-        q.g(oldItems, "oldItems");
-        q.g(newItems, "newItems");
+        q.h(oldItems, "oldItems");
+        q.h(newItems, "newItems");
         this.oldItems = oldItems;
         this.newItems = newItems;
     }
 
     @Override 
     public boolean areContentsTheSame(int i10, int i11) {
-        return q.b(this.oldItems.get(i10), this.newItems.get(i11));
+        return q.c(this.oldItems.get(i10), this.newItems.get(i11));
     }
 
     @Override 
     public boolean areItemsTheSame(int i10, int i11) {
-        return q.b(this.oldItems.get(i10).getItemId(), this.newItems.get(i11).getItemId());
+        return q.c(this.oldItems.get(i10).getItemId(), this.newItems.get(i11).getItemId());
     }
 
     @Override 

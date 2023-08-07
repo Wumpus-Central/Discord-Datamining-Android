@@ -38,7 +38,7 @@ public final class UploadProgressView extends ConstraintLayout {
     
     public UploadProgressView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  UploadProgressView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -47,25 +47,25 @@ public final class UploadProgressView extends ConstraintLayout {
 
     
     public static final void set$lambda$4(Function0 onProgressCancel, View view) {
-        q.g(onProgressCancel, "$onProgressCancel");
+        q.h(onProgressCancel, "$onProgressCancel");
         onProgressCancel.invoke();
     }
 
     public final void set(String headerText, int i10, int i11, int i12, int i13, int i14, int i15, final Function0<Unit> onProgressCancel) {
         long j10;
-        q.g(headerText, "headerText");
-        q.g(onProgressCancel, "onProgressCancel");
+        q.h(headerText, "headerText");
+        q.h(onProgressCancel, "onProgressCancel");
         setBackgroundColor(i11);
         SimpleDraweeView simpleDraweeView = this.binding.progressFileImage;
-        q.f(simpleDraweeView, "binding.progressFileImage");
+        q.g(simpleDraweeView, "binding.progressFileImage");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.Upload);
         SimpleDraweeView simpleDraweeView2 = this.binding.progressFileImage;
-        q.f(simpleDraweeView2, "binding.progressFileImage");
+        q.g(simpleDraweeView2, "binding.progressFileImage");
         ColorUtilsKt.setTintColor(simpleDraweeView2, Integer.valueOf(i15));
         this.binding.progressText.setText(headerText);
         this.binding.progressText.setTextColor(i10);
         TextView textView = this.binding.progressText;
-        q.f(textView, "binding.progressText");
+        q.g(textView, "binding.progressText");
         DiscordFontUtilsKt.setDiscordFont(textView, DiscordFont.PrimarySemibold);
         TextView textView2 = this.binding.progressSubtext;
         textView2.setText("-- " + i12 + "%");
@@ -79,7 +79,7 @@ public final class UploadProgressView extends ConstraintLayout {
         }
         this.binding.progressBar.animate().setInterpolator(this.interpolator).setDuration(j10).scaleX(f10).start();
         SimpleDraweeView simpleDraweeView3 = this.binding.progressCancel;
-        q.f(simpleDraweeView3, "binding.progressCancel");
+        q.g(simpleDraweeView3, "binding.progressCancel");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView3, false, new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {
@@ -91,24 +91,24 @@ public final class UploadProgressView extends ConstraintLayout {
     
     public UploadProgressView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         UploadProgressViewBinding inflate = UploadProgressViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         this.interpolator = new DecelerateInterpolator();
         TextView it = inflate.progressText;
-        q.f(it, "it");
+        q.g(it, "it");
         SetTextSizeSpKt.setTextSizeSp(it, 16.0f);
         it.setTextColor(ThemeManagerKt.getTheme().getInteractiveActive());
         TextView it2 = inflate.progressSubtext;
-        q.f(it2, "it");
+        q.g(it2, "it");
         SetTextSizeSpKt.setTextSizeSp(it2, 16.0f);
         it2.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
         View view = inflate.progressBar;
         view.setPivotX(0.0f);
         view.setScaleX(0.0f);
         SimpleDraweeView it3 = inflate.progressCancel;
-        q.f(it3, "it");
+        q.g(it3, "it");
         ReactAssetUtilsKt.setReactAsset(it3, ReactAsset.Close);
         ColorUtilsKt.setTintColor(it3, Integer.valueOf(ThemeManagerKt.getTheme().getTextNormal()));
         I18nUtilsKt.i18nContentDescription$default(it3, I18nMessage.CANCEL, (Function1) null, 2, (Object) null);

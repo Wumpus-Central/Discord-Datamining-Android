@@ -15,7 +15,7 @@ final class ContentResolverMedia$QueryType$Companion$getUnsupportedImageMimeType
     }
 
     public final CharSequence invoke(String mimeType) {
-        q.g(mimeType, "mimeType");
+        q.h(mimeType, "mimeType");
         return "'" + mimeType + "'";
     }
 }

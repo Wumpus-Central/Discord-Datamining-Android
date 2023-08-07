@@ -34,105 +34,105 @@ public final class NotificationCache {
     private final SharedPreferences getCache(Context context) {
         if (this.cache == null) {
             SharedPreferences sharedPreferences = context.getSharedPreferences(CACHE_KEY, 0);
-            q.f(sharedPreferences, "getSharedPreferences(CAC…EY, Context.MODE_PRIVATE)");
+            q.g(sharedPreferences, "getSharedPreferences(CAC…EY, Context.MODE_PRIVATE)");
             this.cache = sharedPreferences;
         }
         SharedPreferences sharedPreferences2 = this.cache;
         if (sharedPreferences2 != null) {
             return sharedPreferences2;
         }
-        q.y("cache");
+        q.z("cache");
         return null;
     }
 
     public final long getBackgroundSyncRan(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         return getCache(context).getLong(CACHE_KEY_LAST_BACKGROUND_SYNC_RAN, 0L);
     }
 
     public final String getCurrentUsername(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         return getCache(context).getString(CACHE_KEY_CURRENT_USERNAME, null);
     }
 
     public final boolean isAuthed(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         return getCache(context).getBoolean(CACHE_KEY_AUTHED, false);
     }
 
     public final boolean isLightsEnabled(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         return getCache(context).getBoolean(CACHE_KEY_LIGHTS_ENABLED, true);
     }
 
     public final boolean isSoundsEnabled(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         return getCache(context).getBoolean(CACHE_KEY_SOUNDS_ENABLED, true);
     }
 
     public final boolean isVibrationsEnabled(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         return getCache(context).getBoolean(CACHE_KEY_VIBRATIONS_ENABLED, true);
     }
 
     public final void setBackgroundSyncRan(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         SharedPreferences.Editor editor = getCache(context).edit();
-        q.f(editor, "editor");
+        q.g(editor, "editor");
         editor.putLong(CACHE_KEY_LAST_BACKGROUND_SYNC_RAN, System.currentTimeMillis());
         editor.apply();
     }
 
     public final void setCurrentUsername(Context context, String str) {
-        q.g(context, "context");
+        q.h(context, "context");
         SharedPreferences.Editor editor = getCache(context).edit();
-        q.f(editor, "editor");
+        q.g(editor, "editor");
         editor.putString(CACHE_KEY_CURRENT_USERNAME, str);
         editor.apply();
     }
 
     public final void setIsAuthed(Context context, boolean z10) {
-        q.g(context, "context");
+        q.h(context, "context");
         SharedPreferences.Editor editor = getCache(context).edit();
-        q.f(editor, "editor");
+        q.g(editor, "editor");
         editor.putBoolean(CACHE_KEY_AUTHED, z10);
         editor.apply();
     }
 
     public final void setLightsEnabled(Context context, boolean z10) {
-        q.g(context, "context");
+        q.h(context, "context");
         SharedPreferences.Editor editor = getCache(context).edit();
-        q.f(editor, "editor");
+        q.g(editor, "editor");
         editor.putBoolean(CACHE_KEY_LIGHTS_ENABLED, z10);
         editor.apply();
     }
 
     public final void setNotifyEveryTime(Context context, boolean z10) {
-        q.g(context, "context");
+        q.h(context, "context");
         SharedPreferences.Editor editor = getCache(context).edit();
-        q.f(editor, "editor");
+        q.g(editor, "editor");
         editor.putBoolean(CACHE_KEY_NOTIFY_EVERY_TIME, z10);
         editor.apply();
     }
 
     public final void setSoundsEnabled(Context context, boolean z10) {
-        q.g(context, "context");
+        q.h(context, "context");
         SharedPreferences.Editor editor = getCache(context).edit();
-        q.f(editor, "editor");
+        q.g(editor, "editor");
         editor.putBoolean(CACHE_KEY_SOUNDS_ENABLED, z10);
         editor.apply();
     }
 
     public final void setVibrationsEnabled(Context context, boolean z10) {
-        q.g(context, "context");
+        q.h(context, "context");
         SharedPreferences.Editor editor = getCache(context).edit();
-        q.f(editor, "editor");
+        q.g(editor, "editor");
         editor.putBoolean(CACHE_KEY_VIBRATIONS_ENABLED, z10);
         editor.apply();
     }
 
     public final boolean shouldNotifyEveryTime(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         return getCache(context).getBoolean(CACHE_KEY_NOTIFY_EVERY_TIME, false);
     }
 }

@@ -8,7 +8,7 @@ import kotlin.text.Regex;
 
 public final class FilenameSanitizedKt {
     public static final String filenameSanitized(CharSequence charSequence) {
-        q.g(charSequence, "<this>");
+        q.h(charSequence, "<this>");
         return new Regex("[/\\\\]").h(charSequence, "_");
     }
 }

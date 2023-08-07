@@ -9,6 +9,8 @@ import java.util.Map;
 
 
 public abstract class NativeDeviceManagerSpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
+    public static final String NAME = "RTNDeviceManager";
+
     public NativeDeviceManagerSpec(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);
     }
@@ -17,6 +19,11 @@ public abstract class NativeDeviceManagerSpec extends ReactContextBaseJavaModule
     @a
     public final Map<String, Object> getConstants() {
         return getTypedExportedConstants();
+    }
+
+    @Override 
+    public String getName() {
+        return "RTNDeviceManager";
     }
 
     protected abstract Map<String, Object> getTypedExportedConstants();

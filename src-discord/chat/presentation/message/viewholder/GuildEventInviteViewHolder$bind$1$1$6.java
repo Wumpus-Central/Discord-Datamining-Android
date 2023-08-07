@@ -19,12 +19,12 @@ import kotlin.jvm.internal.q;
     @Override 
     public   Unit invoke(CommandMentionContentNode commandMentionContentNode) {
         invoke2(commandMentionContentNode);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(CommandMentionContentNode p02) {
-        q.g(p02, "p0");
+        q.h(p02, "p0");
         ((ChatEventHandler) this.receiver).onTapCommand(p02);
     }
 }

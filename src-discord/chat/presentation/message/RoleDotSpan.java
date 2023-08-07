@@ -28,7 +28,7 @@ public final class RoleDotSpan extends DynamicDrawableSpan {
     private final int topPos;
 
     public RoleDotSpan(Context context, int i10, int i11) {
-        q.g(context, "context");
+        q.h(context, "context");
         this.spSize = i11;
         float fontScale = FontManager.INSTANCE.getFontScale(context);
         this.scale = fontScale;

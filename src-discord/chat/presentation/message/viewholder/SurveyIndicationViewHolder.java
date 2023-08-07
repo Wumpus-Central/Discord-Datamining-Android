@@ -15,14 +15,14 @@ public final class SurveyIndicationViewHolder extends MessagePartViewHolder {
     
     public SurveyIndicationViewHolder(SurveyIndicationView surveyIndicationView, ChatEventHandler eventHandler) {
         super(surveyIndicationView, null);
-        q.g(surveyIndicationView, "surveyIndicationView");
-        q.g(eventHandler, "eventHandler");
+        q.h(surveyIndicationView, "surveyIndicationView");
+        q.h(eventHandler, "eventHandler");
         this.surveyIndicationView = surveyIndicationView;
         this.eventHandler = eventHandler;
     }
 
     public final void bind(SurveyIndicationMessageAccessory surveyAccessory) {
-        q.g(surveyAccessory, "surveyAccessory");
-        this.surveyIndicationView.m320setSurveyIndicationu7_MRrM(surveyAccessory.mo217getMessageId3Eiw7ao(), surveyAccessory.getSurveyIndication(), new SurveyIndicationViewHolder$bind$1$1(this.eventHandler));
+        q.h(surveyAccessory, "surveyAccessory");
+        this.surveyIndicationView.m321setSurveyIndicationu7_MRrM(surveyAccessory.mo218getMessageId3Eiw7ao(), surveyAccessory.getSurveyIndication(), new SurveyIndicationViewHolder$bind$1$1(this.eventHandler));
     }
 }

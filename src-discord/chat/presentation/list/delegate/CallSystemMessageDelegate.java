@@ -23,7 +23,7 @@ public final class CallSystemMessageDelegate extends BaseChatListItemDelegate<Ca
     
     public CallSystemMessageDelegate(Function0<? extends ChatEventHandler> eventHandlerProvider) {
         super(eventHandlerProvider, null, 2, null);
-        q.g(eventHandlerProvider, "eventHandlerProvider");
+        q.h(eventHandlerProvider, "eventHandlerProvider");
     }
 
     private final void bindViewInternal(CallSystemMessageView callSystemMessageView, final CallSystemMessageItem callSystemMessageItem) {
@@ -47,14 +47,14 @@ public final class CallSystemMessageDelegate extends BaseChatListItemDelegate<Ca
 
     
     public static final void bindViewInternal$lambda$2(CallSystemMessageDelegate this$0, CallSystemMessageItem item, View view) {
-        q.g(this$0, "this$0");
-        q.g(item, "$item");
-        this$0.getEventHandler().mo160onTapCallpfaIj0E(item.getMessage().m16getId3Eiw7ao(), item.getMessage().m14getChannelIdo4g7jtM());
+        q.h(this$0, "this$0");
+        q.h(item, "$item");
+        this$0.getEventHandler().mo161onTapCallpfaIj0E(item.getMessage().m17getId3Eiw7ao(), item.getMessage().m15getChannelIdo4g7jtM());
     }
 
     public final CallSystemMessageView createAndBindStandaloneView(ViewGroup parent, Message message) {
-        q.g(parent, "parent");
-        q.g(message, "message");
+        q.h(parent, "parent");
+        q.h(message, "message");
         CallSystemMessageView createView = createView(parent);
         bindViewInternal(createView, new CallSystemMessageItem(message));
         return createView;
@@ -62,22 +62,22 @@ public final class CallSystemMessageDelegate extends BaseChatListItemDelegate<Ca
 
     @Override 
     public boolean isForItem(ChatListItem item, int i10) {
-        q.g(item, "item");
+        q.h(item, "item");
         return item instanceof CallSystemMessageItem;
     }
 
     public void bindView(CallSystemMessageView view, CallSystemMessageItem item, BaseChatListItemDelegate.Metadata<CallSystemMessageView> metadata) {
-        q.g(view, "view");
-        q.g(item, "item");
-        q.g(metadata, "metadata");
+        q.h(view, "view");
+        q.h(item, "item");
+        q.h(metadata, "metadata");
         bindViewInternal(view, item);
     }
 
     @Override 
     public CallSystemMessageView createView(ViewGroup parent) {
-        q.g(parent, "parent");
+        q.h(parent, "parent");
         Context context = parent.getContext();
-        q.f(context, "parent.context");
+        q.g(context, "parent.context");
         return new CallSystemMessageView(context, null, 2, null);
     }
 }

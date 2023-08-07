@@ -28,20 +28,20 @@ public final class SystemLogReport {
 
         private final SharedPreferences getCache(Context context) {
             SharedPreferences sharedPreferences = context.getSharedPreferences(CACHE_KEY, 0);
-            q.f(sharedPreferences, "getSharedPreferences(CAC…EY, Context.MODE_PRIVATE)");
+            q.g(sharedPreferences, "getSharedPreferences(CAC…EY, Context.MODE_PRIVATE)");
             return sharedPreferences;
         }
 
         public final String get(Context context) {
-            q.g(context, "context");
+            q.h(context, "context");
             return getCache(context).getString(CACHE_KEY, null);
         }
 
         public final void set(Context context, String hash) {
-            q.g(context, "context");
-            q.g(hash, "hash");
+            q.h(context, "context");
+            q.h(hash, "hash");
             SharedPreferences.Editor editor = getCache(context).edit();
-            q.f(editor, "editor");
+            q.g(editor, "editor");
             editor.putString(CACHE_KEY, hash);
             editor.apply();
         }
@@ -53,7 +53,7 @@ public final class SystemLogReport {
     
     public final boolean checkHashChanged(Context context, String str) {
         LastStoredTombstoneCache lastStoredTombstoneCache = LastStoredTombstoneCache.INSTANCE;
-        if (q.b(lastStoredTombstoneCache.get(context), str)) {
+        if (q.c(lastStoredTombstoneCache.get(context), str)) {
             return false;
         }
         lastStoredTombstoneCache.set(context, str);
@@ -64,13 +64,13 @@ public final class SystemLogReport {
     public final void recordBreadcrumb(String str, String str2) {
         Log log = Log.INSTANCE;
         String TAG2 = TAG;
-        q.f(TAG2, "TAG");
+        q.g(TAG2, "TAG");
         Log.i$default(log, TAG2, "Breadcrumb, [" + str2 + "]: " + str, (Throwable) null, 4, (Object) null);
     }
 
     public final void reportLastCrash$crash_reporting_release(Context context, Function2<? super HistoricalProcessExitReason.Reason, ? super SystemLogUtils.Tombstone, Unit> cb2) {
-        q.g(context, "context");
-        q.g(cb2, "cb");
+        q.h(context, "context");
+        q.h(cb2, "cb");
         SystemLogUtils.INSTANCE.fetchLastTombstone(new SystemLogReport$reportLastCrash$1(cb2, context));
     }
 }

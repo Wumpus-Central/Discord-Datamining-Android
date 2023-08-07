@@ -24,10 +24,10 @@ public class HighlightedMessageDrawer {
 
     
     public HighlightedMessageDrawer(Context context, Function1<? super ChatListItem, Integer> cellHighlightColor, Function1<? super ChatListItem, Integer> gutterColor, Function1<? super ChatListItem, Boolean> shouldRenderHighlight) {
-        q.g(context, "context");
-        q.g(cellHighlightColor, "cellHighlightColor");
-        q.g(gutterColor, "gutterColor");
-        q.g(shouldRenderHighlight, "shouldRenderHighlight");
+        q.h(context, "context");
+        q.h(cellHighlightColor, "cellHighlightColor");
+        q.h(gutterColor, "gutterColor");
+        q.h(shouldRenderHighlight, "shouldRenderHighlight");
         this.cellHighlightColor = cellHighlightColor;
         this.gutterColor = gutterColor;
         this.shouldRenderHighlight = shouldRenderHighlight;
@@ -59,8 +59,8 @@ public class HighlightedMessageDrawer {
         float translatedRight;
         float translatedTop;
         float translatedBottom;
-        q.g(canvas, "canvas");
-        q.g(child, "child");
+        q.h(canvas, "canvas");
+        q.h(child, "child");
         translatedLeft = HighlightedMessageDrawerKt.getTranslatedLeft(child);
         translatedRight = HighlightedMessageDrawerKt.getTranslatedRight(child);
         translatedTop = HighlightedMessageDrawerKt.getTranslatedTop(child);
@@ -92,7 +92,7 @@ public class HighlightedMessageDrawer {
     }
 
     public final void setPaintStyles(ChatListItem chatListItem) {
-        q.g(chatListItem, "chatListItem");
+        q.h(chatListItem, "chatListItem");
         this.backgroundPaintColor = this.cellHighlightColor.invoke(chatListItem);
         this.gutterPaintColor = this.gutterColor.invoke(chatListItem);
     }

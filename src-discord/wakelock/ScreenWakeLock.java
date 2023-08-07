@@ -21,8 +21,8 @@ public final class ScreenWakeLock {
     }
 
     public final void releaseLock(final Activity activity, final String key) {
-        q.g(activity, "activity");
-        q.g(key, "key");
+        q.h(activity, "activity");
+        q.h(key, "key");
         if (ThreadUtilsKt.isOnMainThread()) {
             ScreenWakeLock screenWakeLock = INSTANCE;
             screenWakeLock.getKeys().remove(key);
@@ -45,8 +45,8 @@ public final class ScreenWakeLock {
     }
 
     public final void requestLock(final Activity activity, final String key) {
-        q.g(activity, "activity");
-        q.g(key, "key");
+        q.h(activity, "activity");
+        q.h(key, "key");
         if (!ThreadUtilsKt.isOnMainThread()) {
             ThreadUtilsKt.getUiHandler().post(new Runnable() { 
                 @Override 
@@ -62,7 +62,7 @@ public final class ScreenWakeLock {
     }
 
     public final void setKeys(Set<String> set) {
-        q.g(set, "<set-?>");
+        q.h(set, "<set-?>");
         keys = set;
     }
 }

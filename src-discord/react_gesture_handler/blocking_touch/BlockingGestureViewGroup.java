@@ -13,12 +13,12 @@ public final class BlockingGestureViewGroup extends ReactViewGroup {
     
     public BlockingGestureViewGroup(Context context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     @Override 
     public boolean onInterceptTouchEvent(MotionEvent event) {
-        q.g(event, "event");
+        q.h(event, "event");
         if (event.getAction() == 0) {
             GetDiscordGestureHandlerEnabledRootViewKt.getDiscordGestureHandlerEnabledRootView(this).requestDisallowInterceptTouchEvent(true);
         }

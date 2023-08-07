@@ -7,10 +7,10 @@ import com.facebook.react.util.JSStackTrace;
 import com.facebook.react.views.imagehelper.ImageSource;
 import com.facebook.react.views.imagehelper.ResourceDrawableIdHelper;
 import com.google.android.material.button.MaterialButton;
-import ff.t;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
+import jf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -19,7 +19,7 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
-import lf.d;
+import pf.d;
 
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "Landroid/graphics/drawable/Drawable;", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -44,7 +44,7 @@ public final class ReactAssetUtilsKt$setReactIcon$1$1$1 extends k implements Fun
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Drawable> continuation) {
-        return ((ReactAssetUtilsKt$setReactIcon$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20679a);
+        return ((ReactAssetUtilsKt$setReactIcon$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
     }
 
     @Override 
@@ -56,15 +56,15 @@ public final class ReactAssetUtilsKt$setReactIcon$1$1$1 extends k implements Fun
             MaterialButton materialButton = this.$this_setReactIcon;
             if (imageSource.isResource()) {
                 Drawable resourceDrawable = ResourceDrawableIdHelper.getInstance().getResourceDrawable(materialButton.getContext(), imageSource.getSource());
-                q.d(resourceDrawable);
+                q.e(resourceDrawable);
                 return resourceDrawable;
-            } else if (q.b(imageSource.getUri().getScheme(), JSStackTrace.FILE_KEY)) {
+            } else if (q.c(imageSource.getUri().getScheme(), JSStackTrace.FILE_KEY)) {
                 Drawable createFromPath = Drawable.createFromPath(imageSource.getUri().getPath());
-                q.d(createFromPath);
+                q.e(createFromPath);
                 return createFromPath;
             } else {
                 URLConnection openConnection = new URL(imageSource.getSource()).openConnection();
-                q.e(openConnection, "null cannot be cast to non-null type java.net.HttpURLConnection");
+                q.f(openConnection, "null cannot be cast to non-null type java.net.HttpURLConnection");
                 HttpURLConnection httpURLConnection = (HttpURLConnection) openConnection;
                 httpURLConnection.connect();
                 return new BitmapDrawable(materialButton.getResources(), BitmapFactory.decodeStream(httpURLConnection.getInputStream()));

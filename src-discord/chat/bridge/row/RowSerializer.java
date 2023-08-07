@@ -31,7 +31,7 @@ public final class RowSerializer extends d<Row> {
     protected DeserializationStrategy<Row> selectDeserializer(JsonElement element) {
         String str;
         JsonPrimitive n10;
-        q.g(element, "element");
+        q.h(element, "element");
         JsonObject m10 = g.m(element);
         if (m10.containsKey("type")) {
             return rowSealedClassSerializer;
@@ -42,7 +42,7 @@ public final class RowSerializer extends d<Row> {
         } else {
             str = n10.a();
         }
-        if (q.b(str, CHANGE_TYPE_DELETE)) {
+        if (q.c(str, CHANGE_TYPE_DELETE)) {
             return DeleteRow.Companion.serializer();
         }
         throw new IllegalArgumentException("unsupported row json: " + element);

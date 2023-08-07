@@ -45,6 +45,7 @@
     <item type="id" name="accessibility_links" />
     <item type="id" name="accessibility_role" />
     <item type="id" name="accessibility_state" />
+    <item type="id" name="accessibility_state_expanded" />
     <item type="id" name="accessibility_value" />
     <item type="id" name="accessories_view" />
     <item type="id" name="action0" />
@@ -481,12 +482,7 @@
     <item type="id" name="participants_info_container" />
     <item type="id" name="pickerWrapper" />
     <item type="id" name="player_container" />
-    <item type="id" name="pointer_enter" />
-    <item type="id" name="pointer_enter_capture" />
-    <item type="id" name="pointer_leave" />
-    <item type="id" name="pointer_leave_capture" />
-    <item type="id" name="pointer_move" />
-    <item type="id" name="pointer_move_capture" />
+    <item type="id" name="pointer_events" />
     <item type="id" name="progress" />
     <item type="id" name="progress_bar" />
     <item type="id" name="progress_bg" />

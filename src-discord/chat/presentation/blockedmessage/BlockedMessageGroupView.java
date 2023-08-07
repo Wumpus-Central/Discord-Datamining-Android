@@ -42,7 +42,7 @@ public final class BlockedMessageGroupView extends ConstraintLayout {
     
     public BlockedMessageGroupView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  BlockedMessageGroupView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -51,16 +51,16 @@ public final class BlockedMessageGroupView extends ConstraintLayout {
 
     
     public static final void bind$lambda$2(ChatEventHandler eventHandler, BlockedGroupChatListItem item, View view) {
-        q.g(eventHandler, "$eventHandler");
-        q.g(item, "$item");
-        eventHandler.mo178onTapToggleBlockedMessages1xi1bu0(MessageId.m593constructorimpl(item.getId()));
+        q.h(eventHandler, "$eventHandler");
+        q.h(item, "$item");
+        eventHandler.mo179onTapToggleBlockedMessages1xi1bu0(MessageId.m594constructorimpl(item.getId()));
     }
 
     @SuppressLint({"NotifyDataSetChanged"})
     public final void bind(final BlockedGroupChatListItem item, final ChatEventHandler eventHandler) {
         int i10;
-        q.g(item, "item");
-        q.g(eventHandler, "eventHandler");
+        q.h(item, "item");
+        q.h(eventHandler, "eventHandler");
         setOnClickListener(new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {
@@ -75,15 +75,15 @@ public final class BlockedMessageGroupView extends ConstraintLayout {
         }
         ViewBackgroundUtilsKt.setBackgroundRectangle$default(this, i10, SizeUtilsKt.getDpToPx(8), null, 0, 12, null);
         SimpleDraweeView simpleDraweeView = this.binding.closeIcon;
-        q.f(simpleDraweeView, "binding.closeIcon");
+        q.g(simpleDraweeView, "binding.closeIcon");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.Close);
         SimpleDraweeView simpleDraweeView2 = this.binding.closeIcon;
-        q.f(simpleDraweeView2, "binding.closeIcon");
+        q.g(simpleDraweeView2, "binding.closeIcon");
         ColorUtilsKt.setTintColor(simpleDraweeView2, Integer.valueOf(ThemeManagerKt.getTheme().getTextMuted()));
         this.binding.blockedMessageGroupButton.setText(item.getText());
         this.binding.blockedMessageGroupButton.setTextColor(item.getTextColor());
         RecyclerView recyclerView = this.binding.blockedMessages;
-        q.f(recyclerView, "binding.blockedMessages");
+        q.g(recyclerView, "binding.blockedMessages");
         if (!item.isRevealed()) {
             i11 = 8;
         }
@@ -91,13 +91,13 @@ public final class BlockedMessageGroupView extends ConstraintLayout {
         BaseChatListAdapter baseChatListAdapter = this.listAdapter;
         BaseChatListAdapter baseChatListAdapter2 = null;
         if (baseChatListAdapter == null) {
-            q.y("listAdapter");
+            q.z("listAdapter");
             baseChatListAdapter = null;
         }
         baseChatListAdapter.setItems(item.getContent());
         BaseChatListAdapter baseChatListAdapter3 = this.listAdapter;
         if (baseChatListAdapter3 == null) {
-            q.y("listAdapter");
+            q.z("listAdapter");
         } else {
             baseChatListAdapter2 = baseChatListAdapter3;
         }
@@ -109,8 +109,8 @@ public final class BlockedMessageGroupView extends ConstraintLayout {
     }
 
     public final void setupUI(Function0<? extends ChatEventHandler> eventHandler, Function0<ComponentProvider> componentProvider) {
-        q.g(eventHandler, "eventHandler");
-        q.g(componentProvider, "componentProvider");
+        q.h(eventHandler, "eventHandler");
+        q.h(componentProvider, "componentProvider");
         BaseChatListAdapter baseChatListAdapter = new BaseChatListAdapter(eventHandler, componentProvider);
         this.listAdapter = baseChatListAdapter;
         this.binding.blockedMessages.setAdapter(baseChatListAdapter);
@@ -119,14 +119,14 @@ public final class BlockedMessageGroupView extends ConstraintLayout {
     
     public BlockedMessageGroupView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         BlockedMessageGroupViewBinding inflate = BlockedMessageGroupViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         int dimensionPixelSize = context.getResources().getDimensionPixelSize(R.dimen.message_horizontal_spacing);
         setPaddingRelative(dimensionPixelSize, getPaddingTop(), dimensionPixelSize, getPaddingBottom());
         TextView textView = inflate.blockedMessageGroupButton;
-        q.f(textView, "binding.blockedMessageGroupButton");
+        q.g(textView, "binding.blockedMessageGroupButton");
         DiscordFontUtilsKt.setDiscordFont(textView, DiscordFont.PrimarySemibold);
         RecyclerView recyclerView = inflate.blockedMessages;
         recyclerView.setItemAnimator(null);

@@ -25,12 +25,12 @@ final class EmojiRendererKt$renderEmoji$clickableSpan$1 extends s implements Fun
     @Override 
     public   Unit invoke(View view) {
         invoke2(view);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(View it) {
-        q.g(it, "it");
+        q.h(it, "it");
         this.$rc.getOnTapEmoji().invoke(this.$emoji);
     }
 }

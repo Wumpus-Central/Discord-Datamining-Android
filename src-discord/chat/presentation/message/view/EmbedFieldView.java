@@ -33,13 +33,13 @@ public final class EmbedFieldView extends LinearLayout {
     
     public EmbedFieldView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public EmbedFieldView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  EmbedFieldView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -48,16 +48,16 @@ public final class EmbedFieldView extends LinearLayout {
 
     
     public static final boolean setName$lambda$4$lambda$3$lambda$2(Function1 onTapCopyText, String rawName, View view) {
-        q.g(onTapCopyText, "$onTapCopyText");
-        q.g(rawName, "$rawName");
+        q.h(onTapCopyText, "$onTapCopyText");
+        q.h(rawName, "$rawName");
         onTapCopyText.invoke(rawName);
         return true;
     }
 
     
     public static final boolean setValue$lambda$8$lambda$7$lambda$6(Function1 onTapCopyText, String rawValue, View view) {
-        q.g(onTapCopyText, "$onTapCopyText");
-        q.g(rawValue, "$rawValue");
+        q.h(onTapCopyText, "$onTapCopyText");
+        q.h(rawValue, "$rawValue");
         onTapCopyText.invoke(rawValue);
         return true;
     }
@@ -68,10 +68,10 @@ public final class EmbedFieldView extends LinearLayout {
 
     public final void setName(final String rawName, DraweeSpanStringBuilder draweeSpanStringBuilder, final Function1<? super CharSequence, Unit> onTapCopyText) {
         View.OnLongClickListener onLongClickListener;
-        q.g(rawName, "rawName");
-        q.g(onTapCopyText, "onTapCopyText");
+        q.h(rawName, "rawName");
+        q.h(onTapCopyText, "onTapCopyText");
         SimpleDraweeSpanTextView setName$lambda$4 = this.binding.name;
-        q.f(setName$lambda$4, "setName$lambda$4");
+        q.g(setName$lambda$4, "setName$lambda$4");
         SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setName$lambda$4, draweeSpanStringBuilder);
         if (draweeSpanStringBuilder != null) {
             onLongClickListener = new View.OnLongClickListener() { 
@@ -91,10 +91,10 @@ public final class EmbedFieldView extends LinearLayout {
     public final void setValue(final String rawValue, DraweeSpanStringBuilder draweeSpanStringBuilder, final Function1<? super CharSequence, Unit> onTapCopyText) {
         DraweeSpanStringBuilder draweeSpanStringBuilder2;
         View.OnLongClickListener onLongClickListener;
-        q.g(rawValue, "rawValue");
-        q.g(onTapCopyText, "onTapCopyText");
+        q.h(rawValue, "rawValue");
+        q.h(onTapCopyText, "onTapCopyText");
         SimpleDraweeSpanTextView setValue$lambda$8 = this.binding.value;
-        q.f(setValue$lambda$8, "setValue$lambda$8");
+        q.g(setValue$lambda$8, "setValue$lambda$8");
         if (draweeSpanStringBuilder != null) {
             SpannableExtensionsKt.coverWithSpan(draweeSpanStringBuilder, new BackgroundSpanDrawer(setValue$lambda$8));
             draweeSpanStringBuilder2 = draweeSpanStringBuilder;
@@ -120,17 +120,17 @@ public final class EmbedFieldView extends LinearLayout {
     
     public EmbedFieldView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         EmbedFieldViewBinding inflate = EmbedFieldViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         setOrientation(1);
         SimpleDraweeSpanTextView _init_$lambda$0 = inflate.name;
         _init_$lambda$0.setTextColor(ColorUtilsKt.getThemeColor(context, R.color.primary_500, R.color.primary_100));
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, DiscordFont.PrimarySemibold);
         SimpleDraweeSpanTextView _init_$lambda$1 = inflate.value;
-        q.f(_init_$lambda$1, "_init_$lambda$1");
+        q.g(_init_$lambda$1, "_init_$lambda$1");
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$1, 14.0f);
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$1, DiscordFont.PrimaryMedium);
         _init_$lambda$1.setTextColor(ThemeManagerKt.getTheme().getTextNormal());

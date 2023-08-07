@@ -19,15 +19,15 @@ public final class InviteToSpeakViewHolder extends MessagePartViewHolder {
     
     public InviteToSpeakViewHolder(InviteToSpeakView inviteToSpeakView, Function1<? super MessageId, Unit> onInviteToSpeakClicked) {
         super(inviteToSpeakView, null);
-        q.g(inviteToSpeakView, "inviteToSpeakView");
-        q.g(onInviteToSpeakClicked, "onInviteToSpeakClicked");
+        q.h(inviteToSpeakView, "inviteToSpeakView");
+        q.h(onInviteToSpeakClicked, "onInviteToSpeakClicked");
         this.inviteToSpeakView = inviteToSpeakView;
         this.onInviteToSpeakClicked = onInviteToSpeakClicked;
         inviteToSpeakView.setLayoutParams(new RecyclerView.i(-2, -2));
     }
 
     public final void bind(InviteToSpeakAccessory inviteToSpeakAccessory) {
-        q.g(inviteToSpeakAccessory, "inviteToSpeakAccessory");
+        q.h(inviteToSpeakAccessory, "inviteToSpeakAccessory");
         this.inviteToSpeakView.setProps(inviteToSpeakAccessory.getMessage(), this.onInviteToSpeakClicked);
     }
 }

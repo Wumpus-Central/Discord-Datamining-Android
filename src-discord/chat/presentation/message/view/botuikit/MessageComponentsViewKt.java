@@ -12,8 +12,8 @@ import kotlin.jvm.internal.q;
 
 public final class MessageComponentsViewKt {
     public static final void replaceViews(ViewGroup viewGroup, List<? extends ComponentView<? extends Component>> views) {
-        q.g(viewGroup, "<this>");
-        q.g(views, "views");
+        q.h(viewGroup, "<this>");
+        q.h(views, "views");
         int i10 = 0;
         for (Object obj : views) {
             int i11 = i10 + 1;
@@ -22,11 +22,11 @@ public final class MessageComponentsViewKt {
             }
             ComponentView componentView = (ComponentView) obj;
             if (i10 >= viewGroup.getChildCount()) {
-                q.e(componentView, "null cannot be cast to non-null type android.view.View");
+                q.f(componentView, "null cannot be cast to non-null type android.view.View");
                 viewGroup.addView((View) componentView, i10);
             } else if (viewGroup.getChildAt(i10) != componentView) {
                 viewGroup.removeViewAt(i10);
-                q.e(componentView, "null cannot be cast to non-null type android.view.View");
+                q.f(componentView, "null cannot be cast to non-null type android.view.View");
                 viewGroup.addView((View) componentView, i10);
             }
             i10 = i11;

@@ -25,10 +25,10 @@ public final class OrderedListBulletSpan implements LeadingMarginSpan {
 
     @Override 
     public void drawLeadingMargin(Canvas canvas, Paint paint, int i10, int i11, int i12, int i13, int i14, CharSequence text, int i15, int i16, boolean z10, Layout layout) {
-        q.g(canvas, "canvas");
-        q.g(paint, "paint");
-        q.g(text, "text");
-        q.g(layout, "layout");
+        q.h(canvas, "canvas");
+        q.h(paint, "paint");
+        q.h(text, "text");
+        q.h(layout, "layout");
         if (((Spanned) text).getSpanStart(this) == i15) {
             String fontFeatureSettings = paint.getFontFeatureSettings();
             paint.setFontFeatureSettings("tnum");

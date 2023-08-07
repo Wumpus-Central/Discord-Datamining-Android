@@ -16,8 +16,8 @@ public final class DCDJSIModulePackage implements JSIModulePackage {
     @Override 
     public List<JSIModuleSpec<JSIModule>> getJSIModules(ReactApplicationContext reactApplicationContext, JavaScriptContextHolder jsContext) {
         List<JSIModuleSpec<JSIModule>> h10;
-        q.g(reactApplicationContext, "reactApplicationContext");
-        q.g(jsContext, "jsContext");
+        q.h(reactApplicationContext, "reactApplicationContext");
+        q.h(jsContext, "jsContext");
         h10 = j.h();
         return h10;
     }

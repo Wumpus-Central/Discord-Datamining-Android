@@ -30,7 +30,7 @@ public final class VerticalSpacingItemDecoration extends RecyclerView.ItemDecora
         int i10;
         if (this.isRecyclerLayoutReversed) {
             RecyclerView.Adapter<? extends RecyclerView.ViewHolder> bindingAdapter = viewHolder.getBindingAdapter();
-            q.d(bindingAdapter);
+            q.e(bindingAdapter);
             i10 = bindingAdapter.getItemCount() - 1;
         } else {
             i10 = 0;
@@ -44,7 +44,7 @@ public final class VerticalSpacingItemDecoration extends RecyclerView.ItemDecora
             i10 = 0;
         } else {
             RecyclerView.Adapter<? extends RecyclerView.ViewHolder> bindingAdapter = viewHolder.getBindingAdapter();
-            q.d(bindingAdapter);
+            q.e(bindingAdapter);
             i10 = bindingAdapter.getItemCount() - 1;
         }
         return validateItemPosition(viewHolder, i10);
@@ -62,12 +62,12 @@ public final class VerticalSpacingItemDecoration extends RecyclerView.ItemDecora
         SpacingProviderView spacingProviderView;
         int i10;
         Integer spacingPxOverride;
-        q.g(outRect, "outRect");
-        q.g(view, "view");
-        q.g(parent, "parent");
-        q.g(state, "state");
+        q.h(outRect, "outRect");
+        q.h(view, "view");
+        q.h(parent, "parent");
+        q.h(state, "state");
         RecyclerView.ViewHolder viewHolder = parent.getChildViewHolder(view);
-        q.f(viewHolder, "viewHolder");
+        q.g(viewHolder, "viewHolder");
         boolean isOrWasAtLastItemPosition = isOrWasAtLastItemPosition(viewHolder);
         boolean isOrWasAtFirstItemPosition = isOrWasAtFirstItemPosition(viewHolder);
         if (view instanceof SpacingProviderView) {

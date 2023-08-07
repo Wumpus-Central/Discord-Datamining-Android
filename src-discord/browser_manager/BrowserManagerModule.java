@@ -39,13 +39,13 @@ public final class BrowserManagerModule extends ReactContextBaseJavaModule {
     
     public BrowserManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     private final CacheModule getCacheModule() {
         CacheModule.Companion companion = CacheModule.Companion;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         return companion.get(reactApplicationContext);
     }
 
@@ -64,25 +64,25 @@ public final class BrowserManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void openInAppURL(String url, String unused, Promise promise) {
-        q.g(url, "url");
-        q.g(unused, "unused");
-        q.g(promise, "promise");
+        q.h(url, "url");
+        q.h(unused, "unused");
+        q.h(promise, "promise");
         BrowserManager browserManager = BrowserManager.INSTANCE;
         Context currentActivity = getCurrentActivity();
         if (currentActivity == null) {
             currentActivity = getReactApplicationContext();
         }
-        q.f(currentActivity, "currentActivity ?: reactApplicationContext");
+        q.g(currentActivity, "currentActivity ?: reactApplicationContext");
         browserManager.tryOpenUrlWithCustomTabs(currentActivity, url, new BrowserManagerModule$openInAppURL$1(promise));
     }
 
     @ReactMethod
     public final void openInChromeURL(String url, boolean z10, Promise promise) {
-        q.g(url, "url");
-        q.g(promise, "promise");
+        q.h(url, "url");
+        q.h(promise, "promise");
         BrowserManager browserManager = BrowserManager.INSTANCE;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         browserManager.tryOpenUrlExternally(reactApplicationContext, url, new BrowserManagerModule$openInChromeURL$1(promise));
     }
 

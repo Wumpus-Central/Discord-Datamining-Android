@@ -3,7 +3,7 @@ package com.discord.chat.reactevents;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
@@ -11,9 +11,9 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import pi.f;
-import si.a2;
-import si.n1;
+import ti.f;
+import wi.a2;
+import wi.n1;
 
 @f
 @Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0081\b\u0018\u0000 '2\u00020\u0001:\u0002&'BA\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n¢\u0006\u0002\u0010\u000bB5\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\fJ\u000b\u0010\u0012\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010\u0013\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010\u0014\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010\u0015\u001a\u0004\u0018\u00010\u0005HÆ\u0003J9\u0010\u0016\u001a\u00020\u00002\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0005HÆ\u0001J\u0013\u0010\u0017\u001a\u00020\u00182\b\u0010\u0019\u001a\u0004\u0018\u00010\u001aHÖ\u0003J\t\u0010\u001b\u001a\u00020\u0003HÖ\u0001J\b\u0010\u001c\u001a\u00020\u001dH\u0016J\t\u0010\u001e\u001a\u00020\u0005HÖ\u0001J!\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\u00002\u0006\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020%HÇ\u0001R\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u000eR\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000eR\u0013\u0010\b\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u000e¨\u0006("}, d2 = {"Lcom/discord/chat/reactevents/LongPressChannelData;", "Lcom/discord/reactevents/ReactEvent;", "seen1", "", "guildId", "", "channelId", "messageId", "originalLink", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getChannelId", "()Ljava/lang/String;", "getGuildId", "getMessageId", "getOriginalLink", "component1", "component2", "component3", "component4", "copy", "equals", "", "other", "", "hashCode", "serialize", "Lcom/facebook/react/bridge/WritableMap;", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -90,9 +90,9 @@ public final class LongPressChannelData implements ReactEvent {
         boolean z10;
         boolean z11;
         boolean z12;
-        q.g(self, "self");
-        q.g(output, "output");
-        q.g(serialDesc, "serialDesc");
+        q.h(self, "self");
+        q.h(output, "output");
+        q.h(serialDesc, "serialDesc");
         boolean z13 = false;
         if (!output.w(serialDesc, 0) && self.guildId == null) {
             z10 = false;
@@ -100,7 +100,7 @@ public final class LongPressChannelData implements ReactEvent {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, a2.f26246a, self.guildId);
+            output.z(serialDesc, 0, a2.f29540a, self.guildId);
         }
         if (!output.w(serialDesc, 1) && self.channelId == null) {
             z11 = false;
@@ -108,7 +108,7 @@ public final class LongPressChannelData implements ReactEvent {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 1, a2.f26246a, self.channelId);
+            output.z(serialDesc, 1, a2.f29540a, self.channelId);
         }
         if (!output.w(serialDesc, 2) && self.messageId == null) {
             z12 = false;
@@ -116,13 +116,13 @@ public final class LongPressChannelData implements ReactEvent {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 2, a2.f26246a, self.messageId);
+            output.z(serialDesc, 2, a2.f29540a, self.messageId);
         }
         if (output.w(serialDesc, 3) || self.originalLink != null) {
             z13 = true;
         }
         if (z13) {
-            output.z(serialDesc, 3, a2.f26246a, self.originalLink);
+            output.z(serialDesc, 3, a2.f29540a, self.originalLink);
         }
     }
 
@@ -154,7 +154,7 @@ public final class LongPressChannelData implements ReactEvent {
             return false;
         }
         LongPressChannelData longPressChannelData = (LongPressChannelData) obj;
-        return q.b(this.guildId, longPressChannelData.guildId) && q.b(this.channelId, longPressChannelData.channelId) && q.b(this.messageId, longPressChannelData.messageId) && q.b(this.originalLink, longPressChannelData.originalLink);
+        return q.c(this.guildId, longPressChannelData.guildId) && q.c(this.channelId, longPressChannelData.channelId) && q.c(this.messageId, longPressChannelData.messageId) && q.c(this.originalLink, longPressChannelData.originalLink);
     }
 
     public final String getChannelId() {

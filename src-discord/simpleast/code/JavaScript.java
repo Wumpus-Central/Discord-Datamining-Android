@@ -10,11 +10,11 @@ import com.discord.simpleast.core.parser.Rule;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import ji.j;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import kotlin.text.Regex;
+import ni.j;
 
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÆ\u0002\u0018\u00002\u00020\u0001:\u0003\u001a\u001b\u001cB\u0007\b\u0002¢\u0006\u0002\u0010\u0002JE\u0010\u0011\u001a \u0012\u001c\u0012\u001a\u0012\u0004\u0012\u0002H\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00140\u0015\u0012\u0004\u0012\u0002H\u00160\u00130\u0012\"\u0004\b\u0000\u0010\u0014\"\u0004\b\u0001\u0010\u00162\f\u0010\u0017\u001a\b\u0012\u0004\u0012\u0002H\u00140\u0018H\u0000¢\u0006\u0002\b\u0019R\u0019\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\u0006\u0010\u0007R\u0019\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\n\u0010\u0007R\u0016\u0010\u000b\u001a\n \r*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u000e\u001a\n \r*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u000f\u001a\n \r*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u0010\u001a\n \r*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001d"}, d2 = {"Lcom/discord/simpleast/code/JavaScript;", "", "()V", "BUILT_INS", "", "", "getBUILT_INS", "()[Ljava/lang/String;", "[Ljava/lang/String;", "KEYWORDS", "getKEYWORDS", "PATTERN_JAVASCRIPT_COMMENTS", "Ljava/util/regex/Pattern;", "kotlin.jvm.PlatformType", "PATTERN_JAVASCRIPT_GENERIC", "PATTERN_JAVASCRIPT_REGEX", "PATTERN_JAVASCRIPT_STRINGS", "createCodeRules", "", "Lcom/discord/simpleast/core/parser/Rule;", "RC", "Lcom/discord/simpleast/core/node/Node;", "S", "codeStyleProviders", "Lcom/discord/simpleast/code/CodeStyleProviders;", "createCodeRules$simpleast_core_release", "FieldNode", "FunctionNode", "ObjectPropertyNode", "simpleast-core_release"}, k = 1, mv = {1, 4, 0})
 
@@ -44,19 +44,19 @@ public final class JavaScript {
             }
 
             public final <RC, S> Rule<RC, Node<RC>, S> createFieldRule(final CodeStyleProviders<RC> codeStyleProviders) {
-                q.g(codeStyleProviders, "codeStyleProviders");
+                q.h(codeStyleProviders, "codeStyleProviders");
                 final Pattern PATTERN_JAVASCRIPT_FIELD = FieldNode.PATTERN_JAVASCRIPT_FIELD;
-                q.f(PATTERN_JAVASCRIPT_FIELD, "PATTERN_JAVASCRIPT_FIELD");
+                q.g(PATTERN_JAVASCRIPT_FIELD, "PATTERN_JAVASCRIPT_FIELD");
                 return new Rule<RC, Node<RC>, S>(PATTERN_JAVASCRIPT_FIELD) { 
                     @Override 
                     public ParseSpec<RC, S> parse(Matcher matcher, Parser<RC, ? super Node<RC>, S> parser, S s10) {
-                        q.g(matcher, "matcher");
-                        q.g(parser, "parser");
+                        q.h(matcher, "matcher");
+                        q.h(parser, "parser");
                         String group = matcher.group(1);
                         String group2 = matcher.group(2);
                         ParseSpec.Companion companion = ParseSpec.Companion;
-                        q.d(group);
-                        q.d(group2);
+                        q.e(group);
+                        q.e(group2);
                         return companion.createTerminal(new JavaScript.FieldNode(group, group2, codeStyleProviders), s10);
                     }
                 };
@@ -66,9 +66,9 @@ public final class JavaScript {
         
         public FieldNode(String definition, String name, CodeStyleProviders<RC> codeStyleProviders) {
             super(new StyleNode.TextStyledNode(definition, codeStyleProviders.getKeywordStyleProvider()), new StyleNode.TextStyledNode(name, codeStyleProviders.getIdentifierStyleProvider()));
-            q.g(definition, "definition");
-            q.g(name, "name");
-            q.g(codeStyleProviders, "codeStyleProviders");
+            q.h(definition, "definition");
+            q.h(name, "name");
+            q.h(codeStyleProviders, "codeStyleProviders");
         }
     }
 
@@ -89,19 +89,19 @@ public final class JavaScript {
             }
 
             public final <RC, S> Rule<RC, Node<RC>, S> createFunctionRule(final CodeStyleProviders<RC> codeStyleProviders) {
-                q.g(codeStyleProviders, "codeStyleProviders");
+                q.h(codeStyleProviders, "codeStyleProviders");
                 final Pattern pattern = FunctionNode.PATTERN_JAVASCRIPT_FUNC;
                 return new Rule<RC, Node<RC>, S>(pattern) { 
                     @Override 
                     public ParseSpec<RC, S> parse(Matcher matcher, Parser<RC, ? super Node<RC>, S> parser, S s10) {
-                        q.g(matcher, "matcher");
-                        q.g(parser, "parser");
+                        q.h(matcher, "matcher");
+                        q.h(parser, "parser");
                         String group = matcher.group(1);
                         String group2 = matcher.group(2);
                         String group3 = matcher.group(3);
                         ParseSpec.Companion companion = ParseSpec.Companion;
-                        q.d(group);
-                        q.d(group3);
+                        q.e(group);
+                        q.e(group3);
                         return companion.createTerminal(new JavaScript.FunctionNode(group, group2, group3, codeStyleProviders), s10);
                     }
                 };
@@ -133,21 +133,21 @@ public final class JavaScript {
             }
 
             public final <RC, S> Rule<RC, Node<RC>, S> createObjectPropertyRule(final CodeStyleProviders<RC> codeStyleProviders) {
-                q.g(codeStyleProviders, "codeStyleProviders");
+                q.h(codeStyleProviders, "codeStyleProviders");
                 final Pattern PATTERN_JAVASCRIPT_OBJECT_PROPERTY = ObjectPropertyNode.PATTERN_JAVASCRIPT_OBJECT_PROPERTY;
-                q.f(PATTERN_JAVASCRIPT_OBJECT_PROPERTY, "PATTERN_JAVASCRIPT_OBJECT_PROPERTY");
+                q.g(PATTERN_JAVASCRIPT_OBJECT_PROPERTY, "PATTERN_JAVASCRIPT_OBJECT_PROPERTY");
                 return new Rule<RC, Node<RC>, S>(PATTERN_JAVASCRIPT_OBJECT_PROPERTY) { 
                     @Override 
                     public ParseSpec<RC, S> parse(Matcher matcher, Parser<RC, ? super Node<RC>, S> parser, S s10) {
-                        q.g(matcher, "matcher");
-                        q.g(parser, "parser");
+                        q.h(matcher, "matcher");
+                        q.h(parser, "parser");
                         String group = matcher.group(1);
                         String group2 = matcher.group(2);
                         String group3 = matcher.group(3);
                         ParseSpec.Companion companion = ParseSpec.Companion;
-                        q.d(group);
-                        q.d(group2);
-                        q.d(group3);
+                        q.e(group);
+                        q.e(group2);
+                        q.e(group3);
                         return companion.createTerminal(new JavaScript.ObjectPropertyNode(group, group2, group3, codeStyleProviders), s10);
                     }
                 };
@@ -157,10 +157,10 @@ public final class JavaScript {
         
         public ObjectPropertyNode(String prefix, String property, String suffix, CodeStyleProviders<RC> codeStyleProviders) {
             super(new StyleNode.TextStyledNode(prefix, codeStyleProviders.getDefaultStyleProvider()), new StyleNode.TextStyledNode(property, codeStyleProviders.getIdentifierStyleProvider()), new StyleNode.TextStyledNode(suffix, codeStyleProviders.getDefaultStyleProvider()));
-            q.g(prefix, "prefix");
-            q.g(property, "property");
-            q.g(suffix, "suffix");
-            q.g(codeStyleProviders, "codeStyleProviders");
+            q.h(prefix, "prefix");
+            q.h(property, "property");
+            q.h(suffix, "suffix");
+            q.h(codeStyleProviders, "codeStyleProviders");
         }
     }
 
@@ -169,16 +169,16 @@ public final class JavaScript {
 
     public final <RC, S> List<Rule<RC, Node<RC>, S>> createCodeRules$simpleast_core_release(CodeStyleProviders<RC> codeStyleProviders) {
         List<Rule<RC, Node<RC>, S>> k10;
-        q.g(codeStyleProviders, "codeStyleProviders");
+        q.h(codeStyleProviders, "codeStyleProviders");
         CodeRules codeRules = CodeRules.INSTANCE;
         Pattern PATTERN_JAVASCRIPT_COMMENTS2 = PATTERN_JAVASCRIPT_COMMENTS;
-        q.f(PATTERN_JAVASCRIPT_COMMENTS2, "PATTERN_JAVASCRIPT_COMMENTS");
+        q.g(PATTERN_JAVASCRIPT_COMMENTS2, "PATTERN_JAVASCRIPT_COMMENTS");
         Pattern PATTERN_JAVASCRIPT_STRINGS2 = PATTERN_JAVASCRIPT_STRINGS;
-        q.f(PATTERN_JAVASCRIPT_STRINGS2, "PATTERN_JAVASCRIPT_STRINGS");
+        q.g(PATTERN_JAVASCRIPT_STRINGS2, "PATTERN_JAVASCRIPT_STRINGS");
         Pattern PATTERN_JAVASCRIPT_GENERIC2 = PATTERN_JAVASCRIPT_GENERIC;
-        q.f(PATTERN_JAVASCRIPT_GENERIC2, "PATTERN_JAVASCRIPT_GENERIC");
+        q.g(PATTERN_JAVASCRIPT_GENERIC2, "PATTERN_JAVASCRIPT_GENERIC");
         Pattern PATTERN_JAVASCRIPT_REGEX2 = PATTERN_JAVASCRIPT_REGEX;
-        q.f(PATTERN_JAVASCRIPT_REGEX2, "PATTERN_JAVASCRIPT_REGEX");
+        q.g(PATTERN_JAVASCRIPT_REGEX2, "PATTERN_JAVASCRIPT_REGEX");
         k10 = kotlin.collections.j.k(CodeRules.toMatchGroupRule$default(codeRules, PATTERN_JAVASCRIPT_COMMENTS2, 0, codeStyleProviders.getCommentStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_JAVASCRIPT_STRINGS2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), ObjectPropertyNode.Companion.createObjectPropertyRule(codeStyleProviders), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_JAVASCRIPT_GENERIC2, 0, codeStyleProviders.getGenericsStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_JAVASCRIPT_REGEX2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), FieldNode.Companion.createFieldRule(codeStyleProviders), FunctionNode.Companion.createFunctionRule(codeStyleProviders));
         return k10;
     }

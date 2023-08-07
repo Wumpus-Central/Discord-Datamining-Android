@@ -6,9 +6,9 @@ import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.ReadableNativeArray;
 import com.facebook.react.bridge.WritableNativeMap;
-import ff.x;
 import java.util.ArrayList;
 import java.util.List;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.collections.k;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -49,7 +49,7 @@ public final class AudioManagerAudioDevicesUpdated implements ReactEvent {
     }
 
     public AudioManagerAudioDevicesUpdated(List<DiscordAudioManager.AudioDevice> devices) {
-        q.g(devices, "devices");
+        q.h(devices, "devices");
         this.devices = devices;
     }
 
@@ -66,7 +66,7 @@ public final class AudioManagerAudioDevicesUpdated implements ReactEvent {
     }
 
     public final AudioManagerAudioDevicesUpdated copy(List<DiscordAudioManager.AudioDevice> devices) {
-        q.g(devices, "devices");
+        q.h(devices, "devices");
         return new AudioManagerAudioDevicesUpdated(devices);
     }
 
@@ -74,7 +74,7 @@ public final class AudioManagerAudioDevicesUpdated implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof AudioManagerAudioDevicesUpdated) && q.b(this.devices, ((AudioManagerAudioDevicesUpdated) obj).devices);
+        return (obj instanceof AudioManagerAudioDevicesUpdated) && q.c(this.devices, ((AudioManagerAudioDevicesUpdated) obj).devices);
     }
 
     public final List<DiscordAudioManager.AudioDevice> getDevices() {

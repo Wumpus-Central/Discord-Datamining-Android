@@ -13,10 +13,10 @@ public final class SkuDetailsParams {
     }
 
     public final com.android.billingclient.api.SkuDetailsParams create(SkuType skuType, List<String> skuIds) {
-        q.g(skuType, "skuType");
-        q.g(skuIds, "skuIds");
+        q.h(skuType, "skuType");
+        q.h(skuIds, "skuIds");
         com.android.billingclient.api.SkuDetailsParams a10 = com.android.billingclient.api.SkuDetailsParams.c().c(skuType.getRawType()).b(skuIds).a();
-        q.f(a10, "newBuilder()\n           …Ids)\n            .build()");
+        q.g(a10, "newBuilder()\n           …Ids)\n            .build()");
         return a10;
     }
 }

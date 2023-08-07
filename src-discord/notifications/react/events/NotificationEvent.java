@@ -13,7 +13,7 @@ public final class NotificationEvent implements ReactEvent {
     private final Map<String, String> notification;
 
     public NotificationEvent(Map<String, String> notification) {
-        q.g(notification, "notification");
+        q.h(notification, "notification");
         this.notification = notification;
     }
 
@@ -30,7 +30,7 @@ public final class NotificationEvent implements ReactEvent {
     }
 
     public final NotificationEvent copy(Map<String, String> notification) {
-        q.g(notification, "notification");
+        q.h(notification, "notification");
         return new NotificationEvent(notification);
     }
 
@@ -38,7 +38,7 @@ public final class NotificationEvent implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof NotificationEvent) && q.b(this.notification, ((NotificationEvent) obj).notification);
+        return (obj instanceof NotificationEvent) && q.c(this.notification, ((NotificationEvent) obj).notification);
     }
 
     public final Map<String, String> getNotification() {

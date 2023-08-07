@@ -14,7 +14,7 @@ import kotlin.jvm.internal.q;
 public final class ButtonBackgroundUtilsKt {
     public static final void setBackgroundColors(Button button, int i10, Integer num) {
         int[] A0;
-        q.g(button, "<this>");
+        q.h(button, "<this>");
         ArrayList arrayList = new ArrayList(2);
         ArrayList arrayList2 = new ArrayList(2);
         if (num != null) {

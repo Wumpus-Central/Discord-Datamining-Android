@@ -4,7 +4,7 @@ import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.ViewProps;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
@@ -14,7 +14,7 @@ public final class TapImageData implements ReactEvent {
     private final Integer embedIndex;
 
     
-    private final String f7125id;
+    private final String f7338id;
     private final int index;
     private final Layout layout;
     private final Double portal;
@@ -28,17 +28,17 @@ public final class TapImageData implements ReactEvent {
         private final int width;
 
         
-        private final int f7126x;
+        private final int f7339x;
 
         
-        private final int f7127y;
+        private final int f7340y;
 
         public Layout(int i10, int i11, int i12, int i13, ViewResizeMode resizeMode) {
-            q.g(resizeMode, "resizeMode");
+            q.h(resizeMode, "resizeMode");
             this.width = i10;
             this.height = i11;
-            this.f7126x = i12;
-            this.f7127y = i13;
+            this.f7339x = i12;
+            this.f7340y = i13;
             this.resizeMode = resizeMode;
         }
 
@@ -50,10 +50,10 @@ public final class TapImageData implements ReactEvent {
                 i11 = layout.height;
             }
             if ((i14 & 4) != 0) {
-                i12 = layout.f7126x;
+                i12 = layout.f7339x;
             }
             if ((i14 & 8) != 0) {
-                i13 = layout.f7127y;
+                i13 = layout.f7340y;
             }
             if ((i14 & 16) != 0) {
                 viewResizeMode = layout.resizeMode;
@@ -70,11 +70,11 @@ public final class TapImageData implements ReactEvent {
         }
 
         public final int component3() {
-            return this.f7126x;
+            return this.f7339x;
         }
 
         public final int component4() {
-            return this.f7127y;
+            return this.f7340y;
         }
 
         public final ViewResizeMode component5() {
@@ -82,7 +82,7 @@ public final class TapImageData implements ReactEvent {
         }
 
         public final Layout copy(int i10, int i11, int i12, int i13, ViewResizeMode resizeMode) {
-            q.g(resizeMode, "resizeMode");
+            q.h(resizeMode, "resizeMode");
             return new Layout(i10, i11, i12, i13, resizeMode);
         }
 
@@ -94,7 +94,7 @@ public final class TapImageData implements ReactEvent {
                 return false;
             }
             Layout layout = (Layout) obj;
-            return this.width == layout.width && this.height == layout.height && this.f7126x == layout.f7126x && this.f7127y == layout.f7127y && this.resizeMode == layout.resizeMode;
+            return this.width == layout.width && this.height == layout.height && this.f7339x == layout.f7339x && this.f7340y == layout.f7340y && this.resizeMode == layout.resizeMode;
         }
 
         public final int getHeight() {
@@ -110,36 +110,36 @@ public final class TapImageData implements ReactEvent {
         }
 
         public final int getX() {
-            return this.f7126x;
+            return this.f7339x;
         }
 
         public final int getY() {
-            return this.f7127y;
+            return this.f7340y;
         }
 
         public int hashCode() {
-            return (((((((this.width * 31) + this.height) * 31) + this.f7126x) * 31) + this.f7127y) * 31) + this.resizeMode.hashCode();
+            return (((((((this.width * 31) + this.height) * 31) + this.f7339x) * 31) + this.f7340y) * 31) + this.resizeMode.hashCode();
         }
 
         public final WritableMap serialize() {
-            return NativeMapExtensionsKt.nativeMapOf(x.a("width", Integer.valueOf(this.width)), x.a("height", Integer.valueOf(this.height)), x.a("x", Integer.valueOf(this.f7126x)), x.a("y", Integer.valueOf(this.f7127y)), x.a(ViewProps.RESIZE_MODE, this.resizeMode.getValue()));
+            return NativeMapExtensionsKt.nativeMapOf(x.a("width", Integer.valueOf(this.width)), x.a("height", Integer.valueOf(this.height)), x.a("x", Integer.valueOf(this.f7339x)), x.a("y", Integer.valueOf(this.f7340y)), x.a(ViewProps.RESIZE_MODE, this.resizeMode.getValue()));
         }
 
         public String toString() {
             int i10 = this.width;
             int i11 = this.height;
-            int i12 = this.f7126x;
-            int i13 = this.f7127y;
+            int i12 = this.f7339x;
+            int i13 = this.f7340y;
             ViewResizeMode viewResizeMode = this.resizeMode;
             return "Layout(width=" + i10 + ", height=" + i11 + ", x=" + i12 + ", y=" + i13 + ", resizeMode=" + viewResizeMode + ")";
         }
     }
 
     public TapImageData(String id2, int i10, String type, Layout layout, Double d10, Integer num) {
-        q.g(id2, "id");
-        q.g(type, "type");
-        q.g(layout, "layout");
-        this.f7125id = id2;
+        q.h(id2, "id");
+        q.h(type, "type");
+        q.h(layout, "layout");
+        this.f7338id = id2;
         this.index = i10;
         this.type = type;
         this.layout = layout;
@@ -149,7 +149,7 @@ public final class TapImageData implements ReactEvent {
 
     public static  TapImageData copy$default(TapImageData tapImageData, String str, int i10, String str2, Layout layout, Double d10, Integer num, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = tapImageData.f7125id;
+            str = tapImageData.f7338id;
         }
         if ((i11 & 2) != 0) {
             i10 = tapImageData.index;
@@ -170,7 +170,7 @@ public final class TapImageData implements ReactEvent {
     }
 
     public final String component1() {
-        return this.f7125id;
+        return this.f7338id;
     }
 
     public final int component2() {
@@ -194,9 +194,9 @@ public final class TapImageData implements ReactEvent {
     }
 
     public final TapImageData copy(String id2, int i10, String type, Layout layout, Double d10, Integer num) {
-        q.g(id2, "id");
-        q.g(type, "type");
-        q.g(layout, "layout");
+        q.h(id2, "id");
+        q.h(type, "type");
+        q.h(layout, "layout");
         return new TapImageData(id2, i10, type, layout, d10, num);
     }
 
@@ -208,7 +208,7 @@ public final class TapImageData implements ReactEvent {
             return false;
         }
         TapImageData tapImageData = (TapImageData) obj;
-        return q.b(this.f7125id, tapImageData.f7125id) && this.index == tapImageData.index && q.b(this.type, tapImageData.type) && q.b(this.layout, tapImageData.layout) && q.b(this.portal, tapImageData.portal) && q.b(this.embedIndex, tapImageData.embedIndex);
+        return q.c(this.f7338id, tapImageData.f7338id) && this.index == tapImageData.index && q.c(this.type, tapImageData.type) && q.c(this.layout, tapImageData.layout) && q.c(this.portal, tapImageData.portal) && q.c(this.embedIndex, tapImageData.embedIndex);
     }
 
     public final Integer getEmbedIndex() {
@@ -216,7 +216,7 @@ public final class TapImageData implements ReactEvent {
     }
 
     public final String getId() {
-        return this.f7125id;
+        return this.f7338id;
     }
 
     public final int getIndex() {
@@ -236,7 +236,7 @@ public final class TapImageData implements ReactEvent {
     }
 
     public int hashCode() {
-        int hashCode = ((((((this.f7125id.hashCode() * 31) + this.index) * 31) + this.type.hashCode()) * 31) + this.layout.hashCode()) * 31;
+        int hashCode = ((((((this.f7338id.hashCode() * 31) + this.index) * 31) + this.type.hashCode()) * 31) + this.layout.hashCode()) * 31;
         Double d10 = this.portal;
         int i10 = 0;
         int hashCode2 = (hashCode + (d10 == null ? 0 : d10.hashCode())) * 31;
@@ -249,11 +249,11 @@ public final class TapImageData implements ReactEvent {
 
     @Override 
     public WritableMap serialize() {
-        return NativeMapExtensionsKt.nativeMapOf(x.a("id", this.f7125id), x.a("index", Integer.valueOf(this.index)), x.a("type", this.type), x.a("layout", this.layout.serialize()), x.a("portal", this.portal), x.a("embedIndex", this.embedIndex));
+        return NativeMapExtensionsKt.nativeMapOf(x.a("id", this.f7338id), x.a("index", Integer.valueOf(this.index)), x.a("type", this.type), x.a("layout", this.layout.serialize()), x.a("portal", this.portal), x.a("embedIndex", this.embedIndex));
     }
 
     public String toString() {
-        String str = this.f7125id;
+        String str = this.f7338id;
         int i10 = this.index;
         String str2 = this.type;
         Layout layout = this.layout;

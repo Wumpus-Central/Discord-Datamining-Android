@@ -25,13 +25,13 @@ public final class SystemLogUtils$fetchLastTombstone$1 extends s implements Func
     @Override 
     public   Unit invoke(LinkedList<String> linkedList) {
         invoke2(linkedList);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(LinkedList<String> crashes) {
         SystemLogUtils.Tombstone fetchLastTombstone;
-        q.g(crashes, "crashes");
+        q.h(crashes, "crashes");
         Function1<SystemLogUtils.Tombstone, Unit> function1 = this.$cb;
         fetchLastTombstone = SystemLogUtils.INSTANCE.fetchLastTombstone(crashes);
         function1.invoke(fetchLastTombstone);

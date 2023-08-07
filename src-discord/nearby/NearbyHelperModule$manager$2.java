@@ -25,14 +25,14 @@ public final class NearbyHelperModule$manager$2 extends s implements Function1<S
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String it) {
         ReactEvents reactEvents;
         ReactApplicationContext reactApplicationContext;
-        q.g(it, "it");
+        q.h(it, "it");
         reactEvents = this.this$0.reactEvents;
         reactApplicationContext = this.this$0.reactContext;
         reactEvents.emitModuleEvent(reactApplicationContext, new OnNearbyMessageLostEvent(it));

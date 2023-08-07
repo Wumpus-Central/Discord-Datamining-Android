@@ -20,11 +20,11 @@ public final class AudioWaveView$onAudioProgressChange$1 extends s implements Fu
     @Override 
     public   Unit invoke(AudioWaveView.ProgressEvent progressEvent) {
         invoke2(progressEvent);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(AudioWaveView.ProgressEvent it) {
-        q.g(it, "it");
+        q.h(it, "it");
     }
 }

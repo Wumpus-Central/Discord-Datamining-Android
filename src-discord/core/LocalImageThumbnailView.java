@@ -40,13 +40,13 @@ public final class LocalImageThumbnailView extends FrameLayout {
     
     public LocalImageThumbnailView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public LocalImageThumbnailView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  LocalImageThumbnailView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -82,21 +82,21 @@ public final class LocalImageThumbnailView extends FrameLayout {
     }
 
     public final void setLocalImageSource(Uri uri, int i10, int i11) {
-        q.g(uri, "uri");
+        q.h(uri, "uri");
         l.d(CoroutineViewUtilsKt.getAttachedScope(this), y0.b(), null, new LocalImageThumbnailView$setLocalImageSource$1(i10, i11, this, uri, null), 2, null);
     }
 
     
     public LocalImageThumbnailView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         ImageView imageView = new ImageView(context);
         addToParent(imageView);
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         this.imageView = imageView;
         SimpleDraweeView simpleDraweeView = new SimpleDraweeView(context);
         addToParent(simpleDraweeView);
-        simpleDraweeView.getHierarchy().t(ScalingUtils.ScaleType.f7413i);
+        simpleDraweeView.getHierarchy().t(ScalingUtils.ScaleType.f7626i);
         this.simpleDraweeView = simpleDraweeView;
     }
 }

@@ -4,9 +4,9 @@ import com.discord.react.utilities.NativeArrayExtensionsKt;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableNativeMap;
-import ff.x;
 import java.util.List;
 import java.util.Map;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
@@ -19,9 +19,9 @@ public final class DeviceChangedEvent implements ReactEvent {
 
     
     public DeviceChangedEvent(List<? extends Map<String, ? extends Object>> inputDevices, List<? extends Map<String, ? extends Object>> outputDevices, List<? extends Map<String, ? extends Object>> videoInputDevices) {
-        q.g(inputDevices, "inputDevices");
-        q.g(outputDevices, "outputDevices");
-        q.g(videoInputDevices, "videoInputDevices");
+        q.h(inputDevices, "inputDevices");
+        q.h(outputDevices, "outputDevices");
+        q.h(videoInputDevices, "videoInputDevices");
         this.inputDevices = inputDevices;
         this.outputDevices = outputDevices;
         this.videoInputDevices = videoInputDevices;

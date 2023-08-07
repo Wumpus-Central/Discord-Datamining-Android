@@ -47,9 +47,9 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
 
         
         public final String toNiceString(float f10) {
-            k0 k0Var = k0.f20728a;
+            k0 k0Var = k0.f21074a;
             String format = String.format(Locale.getDefault(), "%.3f", Arrays.copyOf(new Object[]{Float.valueOf(f10)}, 1));
-            q.f(format, "format(locale, format, *args)");
+            q.g(format, "format(locale, format, *args)");
             return format;
         }
     }
@@ -57,7 +57,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
     
     public TextureViewEglRenderer(String name) {
         super(name);
-        q.g(name, "name");
+        q.h(name, "name");
     }
 
     private final void debugOnFrame() {
@@ -88,12 +88,12 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
                 this.rotatedFrameHeight = videoFrame.getRotatedHeight();
                 this.frameRotation = videoFrame.getRotation();
             }
-            Unit unit = Unit.f20679a;
+            Unit unit = Unit.f21025a;
         }
     }
 
     public final void initialize(RendererCommon.RendererEvents rendererEvents) {
-        q.g(rendererEvents, "rendererEvents");
+        q.h(rendererEvents, "rendererEvents");
         if (ThreadUtilsKt.isOnMainThread()) {
             this.rendererEvents = rendererEvents;
             synchronized (this.layoutLock) {
@@ -101,7 +101,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
                 this.rotatedFrameWidth = 0;
                 this.rotatedFrameHeight = 0;
                 this.frameRotation = 0;
-                Unit unit = Unit.f20679a;
+                Unit unit = Unit.f21025a;
             }
             init();
             setErrorCallback(this);
@@ -113,7 +113,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
 
     @Override 
     public void onFrame(VideoFrame frame) {
-        q.g(frame, "frame");
+        q.h(frame, "frame");
         updateFrameDimensionsAndReportEvents(frame);
         super.onFrame(frame);
     }
@@ -125,7 +125,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
 
     @Override 
     public void onSurfaceTextureAvailable(SurfaceTexture surface, int i10, int i11) {
-        q.g(surface, "surface");
+        q.h(surface, "surface");
         if (ThreadUtilsKt.isOnMainThread()) {
             Log log = Log.INSTANCE;
             String name = getName();
@@ -140,7 +140,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
 
     @Override 
     public boolean onSurfaceTextureDestroyed(SurfaceTexture surface) {
-        q.g(surface, "surface");
+        q.h(surface, "surface");
         if (ThreadUtilsKt.isOnMainThread()) {
             long currentTimeMillis = System.currentTimeMillis();
             CountDownLatch countDownLatch = new CountDownLatch(1);
@@ -159,11 +159,11 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
 
     @Override 
     public void onSurfaceTextureSizeChanged(SurfaceTexture surface, int i10, int i11) {
-        q.g(surface, "surface");
+        q.h(surface, "surface");
     }
 
     @Override 
     public void onSurfaceTextureUpdated(SurfaceTexture surface) {
-        q.g(surface, "surface");
+        q.h(surface, "surface");
     }
 }

@@ -20,7 +20,7 @@ public final class BackgroundSpanDrawer implements LineBackgroundSpan {
     private final TextView provider;
 
     public BackgroundSpanDrawer(TextView provider) {
-        q.g(provider, "provider");
+        q.h(provider, "provider");
         this.provider = provider;
     }
 
@@ -30,15 +30,15 @@ public final class BackgroundSpanDrawer implements LineBackgroundSpan {
         int i18;
         float f10;
         int i19;
-        q.g(canvas, "canvas");
-        q.g(paint, "paint");
-        q.g(text, "text");
+        q.h(canvas, "canvas");
+        q.h(paint, "paint");
+        q.h(text, "text");
         SpannedString valueOf = SpannedString.valueOf(text);
-        q.f(valueOf, "valueOf(this)");
+        q.g(valueOf, "valueOf(this)");
         BackgroundSpan[] backgroundSpans = (BackgroundSpan[]) valueOf.getSpans(0, text.length(), BackgroundSpan.class);
         Layout layout = this.provider.getLayout();
-        q.f(layout, "provider.layout");
-        q.f(backgroundSpans, "backgroundSpans");
+        q.g(layout, "provider.layout");
+        q.g(backgroundSpans, "backgroundSpans");
         int length = backgroundSpans.length;
         int i20 = 0;
         while (i20 < length) {

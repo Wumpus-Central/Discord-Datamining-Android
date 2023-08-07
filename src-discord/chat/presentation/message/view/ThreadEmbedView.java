@@ -35,13 +35,13 @@ public final class ThreadEmbedView extends ConstraintLayout {
     
     public ThreadEmbedView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public ThreadEmbedView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  ThreadEmbedView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -67,10 +67,10 @@ public final class ThreadEmbedView extends ConstraintLayout {
     public final void setArchived(boolean z10, String str) {
         int i10;
         SimpleDraweeView simpleDraweeView = this.binding.threadEmbedIcon;
-        q.f(simpleDraweeView, "binding.threadEmbedIcon");
+        q.g(simpleDraweeView, "binding.threadEmbedIcon");
         ReactAssetUtilsKt.setOptionalReactImageUrl(simpleDraweeView, str);
         SimpleDraweeView simpleDraweeView2 = this.binding.threadEmbedIcon;
-        q.f(simpleDraweeView2, "binding.threadEmbedIcon");
+        q.g(simpleDraweeView2, "binding.threadEmbedIcon");
         if (z10) {
             i10 = 0;
         } else {
@@ -80,9 +80,9 @@ public final class ThreadEmbedView extends ConstraintLayout {
     }
 
     public final void setLabel(String label) {
-        q.g(label, "label");
+        q.h(label, "label");
         TextView textView = this.binding.threadEmbedMessagesCount;
-        q.f(textView, "binding.threadEmbedMessagesCount");
+        q.g(textView, "binding.threadEmbedMessagesCount");
         ViewUtilsKt.setOptionalText(textView, label);
     }
 
@@ -90,9 +90,9 @@ public final class ThreadEmbedView extends ConstraintLayout {
         boolean z11;
         int i10;
         DiscordFont discordFont;
-        q.g(message, "message");
+        q.h(message, "message");
         TextView textView = this.binding.threadEmbedMostRecentMessageName;
-        q.f(textView, "binding.threadEmbedMostRecentMessageName");
+        q.g(textView, "binding.threadEmbedMostRecentMessageName");
         ViewUtilsKt.setOptionalText(textView, str2);
         this.binding.threadEmbedMostRecentMessageAvatar.setImageURI(str);
         if (str2 != null) {
@@ -101,7 +101,7 @@ public final class ThreadEmbedView extends ConstraintLayout {
             z11 = false;
         }
         LinearLayout linearLayout = this.binding.threadEmbedMostRecentMessageHeader;
-        q.f(linearLayout, "binding.threadEmbedMostRecentMessageHeader");
+        q.g(linearLayout, "binding.threadEmbedMostRecentMessageHeader");
         if (z11) {
             i10 = 0;
         } else {
@@ -109,7 +109,7 @@ public final class ThreadEmbedView extends ConstraintLayout {
         }
         linearLayout.setVisibility(i10);
         SimpleDraweeSpanTextView simpleDraweeSpanTextView = this.binding.threadEmbedMostRecentMessageContent;
-        q.f(simpleDraweeSpanTextView, "binding.threadEmbedMostRecentMessageContent");
+        q.g(simpleDraweeSpanTextView, "binding.threadEmbedMostRecentMessageContent");
         if (z10) {
             discordFont = DiscordFont.PrimaryNormalItalic;
         } else {
@@ -120,42 +120,42 @@ public final class ThreadEmbedView extends ConstraintLayout {
             message.setSpan(getLeadingMarginSpan(), 0, message.length(), 33);
         }
         SimpleDraweeSpanTextView simpleDraweeSpanTextView2 = this.binding.threadEmbedMostRecentMessageContent;
-        q.f(simpleDraweeSpanTextView2, "binding.threadEmbedMostRecentMessageContent");
+        q.g(simpleDraweeSpanTextView2, "binding.threadEmbedMostRecentMessageContent");
         SpannableExtensionsKt.coverWithSpan(message, new BackgroundSpanDrawer(simpleDraweeSpanTextView2));
         this.binding.threadEmbedMostRecentMessageContent.setDraweeSpanStringBuilder(message);
     }
 
     public final void setTitle(CharSequence charSequence) {
         TextView textView = this.binding.threadEmbedName;
-        q.f(textView, "binding.threadEmbedName");
+        q.g(textView, "binding.threadEmbedName");
         ViewUtilsKt.setOptionalText(textView, charSequence);
     }
 
     
     public ThreadEmbedView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         ThreadEmbedViewBinding inflate = ThreadEmbedViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView _init_$lambda$0 = inflate.threadEmbedName;
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         DiscordFont discordFont = DiscordFont.PrimaryBold;
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, discordFont);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$0, 14.0f);
         _init_$lambda$0.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
         TextView _init_$lambda$1 = inflate.threadEmbedMessagesCount;
-        q.f(_init_$lambda$1, "_init_$lambda$1");
+        q.g(_init_$lambda$1, "_init_$lambda$1");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$1, discordFont);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$1, 14.0f);
         _init_$lambda$1.setTextColor(ThemeManagerKt.getTheme().getTextLink());
         TextView _init_$lambda$2 = inflate.threadEmbedMostRecentMessageName;
-        q.f(_init_$lambda$2, "_init_$lambda$2");
+        q.g(_init_$lambda$2, "_init_$lambda$2");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$2, discordFont);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$2, 14.0f);
         _init_$lambda$2.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
         SimpleDraweeSpanTextView _init_$lambda$3 = inflate.threadEmbedMostRecentMessageContent;
-        q.f(_init_$lambda$3, "_init_$lambda$3");
+        q.g(_init_$lambda$3, "_init_$lambda$3");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$3, DiscordFont.PrimaryMedium);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$3, 14.0f);
         _init_$lambda$3.setTextColor(ThemeManagerKt.getTheme().getTextNormal());

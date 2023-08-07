@@ -20,7 +20,7 @@ final class TextUtilsKt$toSpannable$12$1$1 extends s implements Function1<Render
     }
 
     public final RenderContext.Insets invoke(RenderContext.Insets updateInsets) {
-        q.g(updateInsets, "$this$updateInsets");
+        q.h(updateInsets, "$this$updateInsets");
         return RenderContext.Insets.copy$default(updateInsets, 0, 0, updateInsets.getStart() + this.$quote.getInsetStart(), 0, 11, null);
     }
 }

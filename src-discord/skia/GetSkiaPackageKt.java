@@ -22,7 +22,7 @@ public final class GetSkiaPackageKt {
             return getSkiaPackageDummy();
         }
         Object newInstance = skiaPackageClass.getConstructor(new Class[0]).newInstance(new Object[0]);
-        q.e(newInstance, "null cannot be cast to non-null type com.facebook.react.ReactPackage");
+        q.f(newInstance, "null cannot be cast to non-null type com.facebook.react.ReactPackage");
         return (ReactPackage) newInstance;
     }
 
@@ -36,14 +36,14 @@ public final class GetSkiaPackageKt {
             @Override 
             public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
                 List<NativeModule> d10;
-                q.g(reactContext, "reactContext");
+                q.h(reactContext, "reactContext");
                 d10 = i.d(new RNSkiaModuleDummy());
                 return d10;
             }
 
             @Override 
             public List<ViewManager<View, ReactShadowNode<?>>> createViewManagers(ReactApplicationContext reactContext) {
-                q.g(reactContext, "reactContext");
+                q.h(reactContext, "reactContext");
                 return new ArrayList();
             }
         };

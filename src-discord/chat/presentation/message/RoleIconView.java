@@ -24,17 +24,17 @@ public final class RoleIconView extends FrameLayout {
     
     public RoleIconView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        q.g(context, "context");
-        q.g(attrs, "attrs");
+        q.h(context, "context");
+        q.h(attrs, "attrs");
         RoleIconViewBinding inflate = RoleIconViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
     }
 
     
     public static final void configureRoleIcon$lambda$3$lambda$2(ChatEventHandler eventHandler, RoleIcon roleIcon, RenderableEmoji renderableEmoji, View view) {
-        q.g(eventHandler, "$eventHandler");
-        q.g(roleIcon, "$roleIcon");
+        q.h(eventHandler, "$eventHandler");
+        q.h(roleIcon, "$roleIcon");
         eventHandler.onTapRoleIcon(roleIcon.getName(), renderableEmoji.getUrl(true, roleIcon.getSize()));
     }
 
@@ -42,8 +42,8 @@ public final class RoleIconView extends FrameLayout {
         final RenderableEmoji renderableEmoji;
         boolean z10;
         int i10;
-        q.g(roleIcon, "roleIcon");
-        q.g(eventHandler, "eventHandler");
+        q.h(roleIcon, "roleIcon");
+        q.h(eventHandler, "eventHandler");
         String source = roleIcon.getSource();
         if (source == null || (renderableEmoji = RenderableEmoji.Companion.customWithUrl(source, roleIcon.getAlt())) == null) {
             String unicodeEmoji = roleIcon.getUnicodeEmoji();
@@ -67,9 +67,9 @@ public final class RoleIconView extends FrameLayout {
         if (renderableEmoji != null) {
             SimpleDraweeSpanTextView configureRoleIcon$lambda$3 = this.binding.roleIconViewUnicodeEmoji;
             Context context = configureRoleIcon$lambda$3.getContext();
-            q.f(context, "context");
+            q.g(context, "context");
             configureRoleIcon$lambda$3.setDraweeSpanStringBuilder(RenderableEmojiKt.renderEmoji$default(renderableEmoji, context, SizeUtilsKt.getSpToPx(roleIcon.getSize()), true, 0, null, 48, null));
-            q.f(configureRoleIcon$lambda$3, "configureRoleIcon$lambda$3");
+            q.g(configureRoleIcon$lambda$3, "configureRoleIcon$lambda$3");
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configureRoleIcon$lambda$3, false, new View.OnClickListener() { 
                 @Override 
                 public final void onClick(View view) {

@@ -26,7 +26,7 @@ public final class ErrorMessageView extends LinearLayout {
     
     public ErrorMessageView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  ErrorMessageView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -34,16 +34,16 @@ public final class ErrorMessageView extends LinearLayout {
     }
 
     public final void setErrorMessage(ErrorMessage message) {
-        q.g(message, "message");
+        q.h(message, "message");
         this.binding.errorLabel.setText(message.getStackTrace());
     }
 
     
     public ErrorMessageView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         ErrorMessageViewBinding inflate = ErrorMessageViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         setOrientation(1);
         int backgroundMobileSecondary = ThemeManagerKt.getTheme().getBackgroundMobileSecondary();
@@ -52,11 +52,11 @@ public final class ErrorMessageView extends LinearLayout {
         inflate.header.setText("Something went wrong here.");
         inflate.header.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
         TextView textView = inflate.header;
-        q.f(textView, "binding.header");
+        q.g(textView, "binding.header");
         DiscordFontUtilsKt.setDiscordFont(textView, DiscordFont.PrimarySemibold);
         inflate.errorLabel.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
         TextView textView2 = inflate.errorLabel;
-        q.f(textView2, "binding.errorLabel");
+        q.g(textView2, "binding.errorLabel");
         DiscordFontUtilsKt.setDiscordFont(textView2, DiscordFont.PrimaryMedium);
     }
 }

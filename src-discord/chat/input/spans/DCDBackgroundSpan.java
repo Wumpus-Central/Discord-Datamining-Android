@@ -11,6 +11,6 @@ public final class DCDBackgroundSpan extends BackgroundSpan implements DCDInputS
     
     public DCDBackgroundSpan(BackgroundStyle style) {
         super(style);
-        q.g(style, "style");
+        q.h(style, "style");
     }
 }

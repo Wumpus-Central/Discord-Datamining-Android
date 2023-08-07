@@ -15,13 +15,13 @@ public final class MessageBundleRecyclerView extends RecyclerView {
     
     public MessageBundleRecyclerView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public MessageBundleRecyclerView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  MessageBundleRecyclerView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -38,6 +38,6 @@ public final class MessageBundleRecyclerView extends RecyclerView {
     
     public MessageBundleRecyclerView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 }

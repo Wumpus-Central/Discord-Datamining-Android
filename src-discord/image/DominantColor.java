@@ -40,7 +40,7 @@ public final class DominantColor {
 
     public final List<Integer> getRepresentativeColors(Bitmap bitmap) {
         int s10;
-        q.g(bitmap, "bitmap");
+        q.h(bitmap, "bitmap");
         try {
             List<Integer> primaryColorsForBitmap = getPrimaryColorsForBitmap(bitmap);
             if (primaryColorsForBitmap.isEmpty()) {

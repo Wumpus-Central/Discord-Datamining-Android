@@ -9,7 +9,7 @@ import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
@@ -22,21 +22,21 @@ public final class DeviceThermalStateManagerModule extends ReactContextBaseJavaM
     
     public DeviceThermalStateManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     
     public static final void initialize$lambda$0(DeviceThermalStateManagerModule this$0, int i10) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         ReactEvents reactEvents = this$0.reactEvents;
         ReactApplicationContext reactApplicationContext = this$0.getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         reactEvents.emitModuleEvent(reactApplicationContext, new DeviceThermalStateChangedEvent(i10));
     }
 
     @ReactMethod
     public final void addListener(String type) {
-        q.g(type, "type");
+        q.h(type, "type");
     }
 
     @Override 
@@ -47,9 +47,9 @@ public final class DeviceThermalStateManagerModule extends ReactContextBaseJavaM
     @ReactMethod
     public final void getThermalState(Promise promise) {
         int currentThermalStatus;
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         Object systemService = getReactApplicationContext().getSystemService("power");
-        q.e(systemService, "null cannot be cast to non-null type android.os.PowerManager");
+        q.f(systemService, "null cannot be cast to non-null type android.os.PowerManager");
         PowerManager powerManager = (PowerManager) systemService;
         if (Build.VERSION.SDK_INT >= 29) {
             currentThermalStatus = powerManager.getCurrentThermalStatus();
@@ -63,7 +63,7 @@ public final class DeviceThermalStateManagerModule extends ReactContextBaseJavaM
     public void initialize() {
         super.initialize();
         Object systemService = getReactApplicationContext().getSystemService("power");
-        q.e(systemService, "null cannot be cast to non-null type android.os.PowerManager");
+        q.f(systemService, "null cannot be cast to non-null type android.os.PowerManager");
         PowerManager powerManager = (PowerManager) systemService;
         if (Build.VERSION.SDK_INT >= 29) {
             powerManager.addThermalStatusListener(new PowerManager.OnThermalStatusChangedListener() { 

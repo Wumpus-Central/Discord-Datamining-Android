@@ -13,8 +13,8 @@ public final class SpoilerConfig {
 
     
     public SpoilerConfig(SpoilerAttributes attributes, Function1<? super SpoilerIdentifier, Unit> onReveal) {
-        q.g(attributes, "attributes");
-        q.g(onReveal, "onReveal");
+        q.h(attributes, "attributes");
+        q.h(onReveal, "onReveal");
         this.attributes = attributes;
         this.onReveal = onReveal;
     }
@@ -39,8 +39,8 @@ public final class SpoilerConfig {
     }
 
     public final SpoilerConfig copy(SpoilerAttributes attributes, Function1<? super SpoilerIdentifier, Unit> onReveal) {
-        q.g(attributes, "attributes");
-        q.g(onReveal, "onReveal");
+        q.h(attributes, "attributes");
+        q.h(onReveal, "onReveal");
         return new SpoilerConfig(attributes, onReveal);
     }
 
@@ -52,7 +52,7 @@ public final class SpoilerConfig {
             return false;
         }
         SpoilerConfig spoilerConfig = (SpoilerConfig) obj;
-        return q.b(this.attributes, spoilerConfig.attributes) && q.b(this.onReveal, spoilerConfig.onReveal);
+        return q.c(this.attributes, spoilerConfig.attributes) && q.c(this.onReveal, spoilerConfig.onReveal);
     }
 
     public final SpoilerAttributes getAttributes() {
@@ -64,7 +64,7 @@ public final class SpoilerConfig {
     }
 
     public final void onReveal() {
-        this.onReveal.invoke(SpoilerIdentifier.m122boximpl(this.attributes.m119getIdentifierBq9X6Gg()));
+        this.onReveal.invoke(SpoilerIdentifier.m123boximpl(this.attributes.m120getIdentifierBq9X6Gg()));
     }
 
     public String toString() {

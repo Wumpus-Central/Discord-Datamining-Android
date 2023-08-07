@@ -164,7 +164,7 @@ public class IconView extends FrameLayout {
     
     public IconView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  IconView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -190,8 +190,8 @@ public class IconView extends FrameLayout {
 
     public final void setAssets(IconSize size, List<? extends Pair<? extends ReactAsset, Integer>> layers) {
         SimpleDraweeView simpleDraweeView;
-        q.g(size, "size");
-        q.g(layers, "layers");
+        q.h(size, "size");
+        q.h(layers, "layers");
         this.viewLayers.clear();
         int i10 = 0;
         for (Object obj : layers) {
@@ -226,9 +226,9 @@ public class IconView extends FrameLayout {
     }
 
     public final void tintAsset(ReactAsset asset, Integer num) {
-        q.g(asset, "asset");
+        q.h(asset, "asset");
         View view = this.viewLayers.get(asset);
-        q.e(view, "null cannot be cast to non-null type com.facebook.drawee.view.SimpleDraweeView");
+        q.f(view, "null cannot be cast to non-null type com.facebook.drawee.view.SimpleDraweeView");
         SimpleDraweeView simpleDraweeView = (SimpleDraweeView) view;
         if (num != null) {
             simpleDraweeView.setColorFilter(num.intValue());
@@ -240,16 +240,16 @@ public class IconView extends FrameLayout {
     
     public IconView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         this.viewLayers = new LinkedHashMap<>();
     }
 
     
     public IconView(Context context, IconSize size, List<? extends Pair<? extends ReactAsset, Integer>> layers) {
         this(context, null);
-        q.g(context, "context");
-        q.g(size, "size");
-        q.g(layers, "layers");
+        q.h(context, "context");
+        q.h(size, "size");
+        q.h(layers, "layers");
         setAssets(size, layers);
     }
 }

@@ -24,13 +24,13 @@ public final class MessageFrameJumpHeaderView extends ConstraintLayout {
     
     public MessageFrameJumpHeaderView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public MessageFrameJumpHeaderView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  MessageFrameJumpHeaderView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -38,29 +38,29 @@ public final class MessageFrameJumpHeaderView extends ConstraintLayout {
     }
 
     public final void configure(MessageFrameJump messageFrame) {
-        q.g(messageFrame, "messageFrame");
+        q.h(messageFrame, "messageFrame");
         TextView textView = this.binding.messageHeaderTitle;
-        q.f(textView, "binding.messageHeaderTitle");
+        q.g(textView, "binding.messageHeaderTitle");
         ViewUtilsKt.setOptionalText(textView, messageFrame.getChannelName());
         TextView textView2 = this.binding.messageHeaderSubtitle;
-        q.f(textView2, "binding.messageHeaderSubtitle");
+        q.g(textView2, "binding.messageHeaderSubtitle");
         ViewUtilsKt.setOptionalText(textView2, messageFrame.getGuildName());
     }
 
     
     public MessageFrameJumpHeaderView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         MessageFrameJumpHeaderBinding inflate = MessageFrameJumpHeaderBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView _init_$lambda$0 = inflate.messageHeaderTitle;
         _init_$lambda$0.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, DiscordFont.PrimarySemibold);
         TextView _init_$lambda$1 = inflate.messageHeaderSubtitle;
         _init_$lambda$1.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
-        q.f(_init_$lambda$1, "_init_$lambda$1");
+        q.g(_init_$lambda$1, "_init_$lambda$1");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$1, DiscordFont.PrimaryNormal);
         setPadding(SizeUtilsKt.getDpToPx(8), 0, SizeUtilsKt.getDpToPx(8), SizeUtilsKt.getDpToPx(8));
     }

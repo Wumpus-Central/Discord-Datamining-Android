@@ -23,7 +23,7 @@ public final class ResultAdapter extends RecyclerView.Adapter<ResultViewHolder> 
     
     public ResultAdapter(Function1<? super ChannelId, Unit> onChannelSelected) {
         List<MobileVoiceOverlaySelectorResult> h10;
-        q.g(onChannelSelected, "onChannelSelected");
+        q.h(onChannelSelected, "onChannelSelected");
         this.onChannelSelected = onChannelSelected;
         h10 = j.h();
         this.results = h10;
@@ -36,19 +36,19 @@ public final class ResultAdapter extends RecyclerView.Adapter<ResultViewHolder> 
 
     @SuppressLint({"NotifyDataSetChanged"})
     public final void setResults(List<MobileVoiceOverlaySelectorResult> results) {
-        q.g(results, "results");
+        q.h(results, "results");
         this.results = results;
         notifyDataSetChanged();
     }
 
     public void onBindViewHolder(ResultViewHolder holder, int i10) {
-        q.g(holder, "holder");
+        q.h(holder, "holder");
         holder.bind(this.results.get(i10));
     }
 
     @Override 
     public ResultViewHolder onCreateViewHolder(ViewGroup parent, int i10) {
-        q.g(parent, "parent");
+        q.h(parent, "parent");
         return new ResultViewHolder(parent, this.onChannelSelected, null, 4, null);
     }
 }

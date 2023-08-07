@@ -25,7 +25,7 @@ public final class FlaggedMessageEmbedFooterView extends ConstraintLayout {
     
     public FlaggedMessageEmbedFooterView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  FlaggedMessageEmbedFooterView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -42,22 +42,22 @@ public final class FlaggedMessageEmbedFooterView extends ConstraintLayout {
     
     public FlaggedMessageEmbedFooterView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         FlaggedMessageEmbedFooterViewBinding inflate = FlaggedMessageEmbedFooterViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         ImageView _init_$lambda$0 = inflate.separatorDot;
         _init_$lambda$0.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundModifierAccent());
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         ViewClippingUtilsKt.clipToRoundedRectangle(_init_$lambda$0, SizeUtilsKt.getDpToPx(4));
         TextView _init_$lambda$1 = inflate.flaggedMessageKeyword;
-        q.f(_init_$lambda$1, "_init_$lambda$1");
+        q.g(_init_$lambda$1, "_init_$lambda$1");
         DiscordFont discordFont = DiscordFont.PrimaryMedium;
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$1, discordFont);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$1, 12.0f, 15.0f);
         _init_$lambda$1.setTextColor(ThemeManagerKt.getTheme().getTextMuted());
         TextView _init_$lambda$2 = inflate.flaggedMessageRuleName;
-        q.f(_init_$lambda$2, "_init_$lambda$2");
+        q.g(_init_$lambda$2, "_init_$lambda$2");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$2, discordFont);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$2, 12.0f, 15.0f);
         _init_$lambda$2.setTextColor(ThemeManagerKt.getTheme().getTextMuted());

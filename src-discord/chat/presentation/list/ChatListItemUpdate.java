@@ -21,9 +21,9 @@ public final class ChatListItemUpdate extends ChannelChatListAdapterUpdate {
     
     public ChatListItemUpdate(List<? extends ChatListItem> items, List<? extends ListOperation> list, int i10, Function0<Unit> preCommit, Function0<Unit> postCommit) {
         super(i10, preCommit, postCommit, null);
-        q.g(items, "items");
-        q.g(preCommit, "preCommit");
-        q.g(postCommit, "postCommit");
+        q.h(items, "items");
+        q.h(preCommit, "preCommit");
+        q.h(postCommit, "postCommit");
         this.items = items;
         this.listOperations = list;
         this.updateId = i10;
@@ -72,9 +72,9 @@ public final class ChatListItemUpdate extends ChannelChatListAdapterUpdate {
     }
 
     public final ChatListItemUpdate copy(List<? extends ChatListItem> items, List<? extends ListOperation> list, int i10, Function0<Unit> preCommit, Function0<Unit> postCommit) {
-        q.g(items, "items");
-        q.g(preCommit, "preCommit");
-        q.g(postCommit, "postCommit");
+        q.h(items, "items");
+        q.h(preCommit, "preCommit");
+        q.h(postCommit, "postCommit");
         return new ChatListItemUpdate(items, list, i10, preCommit, postCommit);
     }
 
@@ -86,7 +86,7 @@ public final class ChatListItemUpdate extends ChannelChatListAdapterUpdate {
             return false;
         }
         ChatListItemUpdate chatListItemUpdate = (ChatListItemUpdate) obj;
-        return q.b(this.items, chatListItemUpdate.items) && q.b(this.listOperations, chatListItemUpdate.listOperations) && getUpdateId() == chatListItemUpdate.getUpdateId() && q.b(getPreCommit(), chatListItemUpdate.getPreCommit()) && q.b(getPostCommit(), chatListItemUpdate.getPostCommit());
+        return q.c(this.items, chatListItemUpdate.items) && q.c(this.listOperations, chatListItemUpdate.listOperations) && getUpdateId() == chatListItemUpdate.getUpdateId() && q.c(getPreCommit(), chatListItemUpdate.getPreCommit()) && q.c(getPostCommit(), chatListItemUpdate.getPostCommit());
     }
 
     public final List<ChatListItem> getItems() {

@@ -11,8 +11,8 @@ import kotlin.jvm.internal.q;
 public final class TextViewTouchUtilsKt {
     public static final  <T> T[] getSpansUnderMotionEvent(TextView textView, MotionEvent event) {
         Spannable spannable;
-        q.g(textView, "<this>");
-        q.g(event, "event");
+        q.h(textView, "<this>");
+        q.h(event, "event");
         CharSequence text = textView.getText();
         if (text instanceof Spannable) {
             spannable = (Spannable) text;
@@ -20,7 +20,7 @@ public final class TextViewTouchUtilsKt {
             spannable = null;
         }
         if (spannable == null) {
-            q.m(0, "T?");
+            q.n(0, "T?");
             return (T[]) new Object[0];
         }
         int x10 = (((int) event.getX()) - textView.getTotalPaddingLeft()) + textView.getScrollX();
@@ -29,13 +29,13 @@ public final class TextViewTouchUtilsKt {
         float lineLeft = textView.getLayout().getLineLeft(lineForVertical);
         float f10 = x10;
         if (f10 > lineRight || (x10 >= 0 && f10 < lineLeft)) {
-            q.m(0, "T?");
+            q.n(0, "T?");
             return (T[]) new Object[0];
         }
         int offsetForHorizontal = textView.getLayout().getOffsetForHorizontal(lineForVertical, f10);
-        q.m(4, "T");
+        q.n(4, "T");
         T[] tArr = (T[]) spannable.getSpans(offsetForHorizontal, offsetForHorizontal, Object.class);
-        q.f(tArr, "spannableText.getSpans(\n…     T::class.java,\n    )");
+        q.g(tArr, "spannableText.getSpans(\n…     T::class.java,\n    )");
         return tArr;
     }
 }

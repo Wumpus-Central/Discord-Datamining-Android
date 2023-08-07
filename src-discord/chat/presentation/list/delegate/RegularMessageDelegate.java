@@ -27,9 +27,9 @@ public final class RegularMessageDelegate extends BaseChatListItemDelegate<Messa
     
     public RegularMessageDelegate(Function0<? extends ChatEventHandler> eventHandlerProvider, Function0<ComponentProvider> messageComponentProvider, RecyclerView.RecycledViewPool messageAccessoriesRecycledViewPool) {
         super(eventHandlerProvider, null, 2, null);
-        q.g(eventHandlerProvider, "eventHandlerProvider");
-        q.g(messageComponentProvider, "messageComponentProvider");
-        q.g(messageAccessoriesRecycledViewPool, "messageAccessoriesRecycledViewPool");
+        q.h(eventHandlerProvider, "eventHandlerProvider");
+        q.h(messageComponentProvider, "messageComponentProvider");
+        q.h(messageAccessoriesRecycledViewPool, "messageAccessoriesRecycledViewPool");
         this.messageComponentProvider = messageComponentProvider;
         this.messageAccessoriesRecycledViewPool = messageAccessoriesRecycledViewPool;
     }
@@ -39,7 +39,7 @@ public final class RegularMessageDelegate extends BaseChatListItemDelegate<Messa
         Object V;
         boolean z10;
         RecyclerView.Adapter<? extends RecyclerView.ViewHolder> bindingAdapter = metadata.getHolder().getBindingAdapter();
-        q.e(bindingAdapter, "null cannot be cast to non-null type com.discord.chat.presentation.list.ChatListAdapter");
+        q.f(bindingAdapter, "null cannot be cast to non-null type com.discord.chat.presentation.list.ChatListAdapter");
         boolean z11 = true;
         V = r.V(((ChatListAdapter) bindingAdapter).getChatListItems(), metadata.getHolder().getBindingAdapterPosition() - 1);
         ChatListItem chatListItem = (ChatListItem) V;
@@ -69,14 +69,14 @@ public final class RegularMessageDelegate extends BaseChatListItemDelegate<Messa
 
     @Override 
     public boolean isForItem(ChatListItem item, int i10) {
-        q.g(item, "item");
+        q.h(item, "item");
         return item instanceof MessageItem;
     }
 
     public void bindView(MessageView view, MessageItem item, BaseChatListItemDelegate.Metadata<MessageView> metadata) {
-        q.g(view, "view");
-        q.g(item, "item");
-        q.g(metadata, "metadata");
+        q.h(view, "view");
+        q.h(item, "item");
+        q.h(metadata, "metadata");
         Message message = item.getMessage();
         MessageFrame messageFrame = item.getMessageFrame();
         ChatEventHandler eventHandler = getEventHandler();
@@ -86,9 +86,9 @@ public final class RegularMessageDelegate extends BaseChatListItemDelegate<Messa
 
     @Override 
     public MessageView createView(ViewGroup parent) {
-        q.g(parent, "parent");
+        q.h(parent, "parent");
         Context context = parent.getContext();
-        q.f(context, "parent.context");
+        q.g(context, "parent.context");
         MessageView messageView = new MessageView(context, null, 2, null);
         messageView.setAccessoriesRecycledViewPool(this.messageAccessoriesRecycledViewPool);
         return messageView;

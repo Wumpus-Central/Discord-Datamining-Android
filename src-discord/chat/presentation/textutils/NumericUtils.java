@@ -1,12 +1,12 @@
 package com.discord.chat.presentation.textutils;
 
+import ag.j;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
-import ji.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
-import wf.j;
+import ni.v;
 
 @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\b\u0004\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\t\u001a\u00020\u00052\u0006\u0010\n\u001a\u00020\bJ\u000e\u0010\u000b\u001a\u00020\u00052\u0006\u0010\n\u001a\u00020\bR\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u00050\u0007X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, d2 = {"Lcom/discord/chat/presentation/textutils/NumericUtils;", "", "()V", "letters", "", "", "romanNumeralMap", "Ljava/util/TreeMap;", "", "toLetter", "number", "toRomanNumeral", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -81,12 +81,12 @@ public final class NumericUtils {
         if (z10) {
             TreeMap<Long, String> treeMap = romanNumeralMap;
             Long floorKey = treeMap.floorKey(Long.valueOf(j10));
-            q.d(floorKey);
+            q.e(floorKey);
             long longValue = floorKey.longValue();
             if (j10 == longValue) {
                 String str = treeMap.get(Long.valueOf(j10));
-                q.d(str);
-                q.f(str, "{\n            romanNumeralMap[number]!!\n        }");
+                q.e(str);
+                q.g(str, "{\n            romanNumeralMap[number]!!\n        }");
                 return str;
             }
             String str2 = treeMap.get(Long.valueOf(longValue));

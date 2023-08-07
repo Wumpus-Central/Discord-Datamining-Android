@@ -19,7 +19,7 @@ final class DCDPackageList$getPackages$55 extends s implements Function1<ReactAp
     }
 
     public final ViewManager<?, LayoutShadowNode> invoke(ReactApplicationContext it) {
-        q.g(it, "it");
+        q.h(it, "it");
         return new AnimatableUnderlayViewManager();
     }
 }

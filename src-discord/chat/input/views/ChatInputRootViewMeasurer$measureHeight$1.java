@@ -22,13 +22,13 @@ public final class ChatInputRootViewMeasurer$measureHeight$1 extends s implement
     @Override 
     public   Unit invoke(ChatInputRootView chatInputRootView) {
         invoke2(chatInputRootView);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(ChatInputRootView it) {
         ChatInputRootView chatInputRootView;
-        q.g(it, "it");
+        q.h(it, "it");
         chatInputRootView = this.this$0.chatInputRootView;
         it.setText(chatInputRootView.getText());
     }

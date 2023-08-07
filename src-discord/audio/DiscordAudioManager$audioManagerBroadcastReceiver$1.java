@@ -19,12 +19,12 @@ public  class DiscordAudioManager$audioManagerBroadcastReceiver$1 extends n impl
     @Override 
     public   Unit invoke(WiredHeadsetState wiredHeadsetState) {
         invoke2(wiredHeadsetState);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(WiredHeadsetState p02) {
-        q.g(p02, "p0");
+        q.h(p02, "p0");
         ((DiscordAudioManager) this.receiver).onWiredHeadsetPlug(p02);
     }
 }

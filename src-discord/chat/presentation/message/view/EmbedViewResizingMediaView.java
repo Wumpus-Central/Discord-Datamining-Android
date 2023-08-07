@@ -107,7 +107,7 @@ public final class EmbedViewResizingMediaView extends MediaView {
     
     public EmbedViewResizingMediaView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  EmbedViewResizingMediaView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -119,24 +119,24 @@ public final class EmbedViewResizingMediaView extends MediaView {
         if (target != null) {
             return target;
         }
-        q.y(TouchesHelper.TARGET_KEY);
+        q.z(TouchesHelper.TARGET_KEY);
         return null;
     }
 
     public final void setTarget(Target target) {
-        q.g(target, "<set-?>");
+        q.h(target, "<set-?>");
         this.target = target;
     }
 
     
     public EmbedViewResizingMediaView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public final void setTarget(int i10, int i11, int i12, int i13) {
         Target target = new Target(i10, i11, i12, i13);
-        if (this.target == null || !q.b(getTarget(), target)) {
+        if (this.target == null || !q.c(getTarget(), target)) {
             setTarget(target);
         }
         MediaContainingViewResizer.resizeLayoutParams$default(MediaContainingViewResizer.INSTANCE, this, getTarget().getWidth(), getTarget().getHeight(), i13, i12, null, 16, null);

@@ -24,17 +24,17 @@ public final class ReferencedMessageSerializer extends d<ReferencedMessage> {
     protected DeserializationStrategy<ReferencedMessage> selectDeserializer(JsonElement element) {
         String str;
         JsonPrimitive n10;
-        q.g(element, "element");
+        q.h(element, "element");
         JsonElement jsonElement = (JsonElement) g.m(element).get("state");
         if (jsonElement == null || (n10 = g.n(jsonElement)) == null) {
             str = null;
         } else {
             str = n10.a();
         }
-        if (q.b(str, STATE_LOADED)) {
+        if (q.c(str, STATE_LOADED)) {
             return LoadedReferencedMessage.Companion.serializer();
         }
-        if (q.b(str, "1")) {
+        if (q.c(str, "1")) {
             return SystemReferencedMessage.Companion.serializer();
         }
         throw new IllegalArgumentException("unsupported state json: " + str);

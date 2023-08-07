@@ -25,7 +25,7 @@ public final class SafeRoundAsCirclePostprocessor extends a {
 
     @Override 
     public void process(Bitmap bitmap) {
-        q.g(bitmap, "bitmap");
+        q.h(bitmap, "bitmap");
         int width = bitmap.getWidth();
         int height = bitmap.getHeight();
         if (width >= 2 && height >= 2) {

@@ -12,7 +12,7 @@ public final class HostsModule extends ReactContextBaseJavaModule {
     
     public HostsModule(ReactApplicationContext context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     @Override 
@@ -22,11 +22,11 @@ public final class HostsModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void setHosts(String api, String cdn) {
-        q.g(api, "api");
-        q.g(cdn, "cdn");
+        q.h(api, "api");
+        q.h(cdn, "cdn");
         Hosts hosts = Hosts.INSTANCE;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         hosts.init(reactApplicationContext, api, cdn);
     }
 }

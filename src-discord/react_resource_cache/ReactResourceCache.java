@@ -16,13 +16,13 @@ public abstract class ReactResourceCache<T extends Enum<?>> {
 
     private final SharedPreferences getCache(Context context) {
         SharedPreferences sharedPreferences = context.getSharedPreferences(getCacheKey(), 0);
-        q.f(sharedPreferences, "getSharedPreferences(cac…ey, Context.MODE_PRIVATE)");
+        q.g(sharedPreferences, "getSharedPreferences(cac…ey, Context.MODE_PRIVATE)");
         return sharedPreferences;
     }
 
     public final String get(Context context, T reactResource) {
-        q.g(context, "context");
-        q.g(reactResource, "reactResource");
+        q.h(context, "context");
+        q.h(reactResource, "reactResource");
         String str = this.reactResources.get(reactResource.name());
         if (str == null) {
             String string = getCache(context).getString(reactResource.name(), null);
@@ -42,10 +42,10 @@ public abstract class ReactResourceCache<T extends Enum<?>> {
     public abstract String getCacheKey();
 
     public final void set(Context context, Map<String, String> newReactResources) {
-        q.g(context, "context");
-        q.g(newReactResources, "newReactResources");
+        q.h(context, "context");
+        q.h(newReactResources, "newReactResources");
         SharedPreferences.Editor editor = getCache(context).edit();
-        q.f(editor, "editor");
+        q.g(editor, "editor");
         editor.clear();
         for (Map.Entry<String, String> entry : newReactResources.entrySet()) {
             editor.putString(entry.getKey(), entry.getValue());

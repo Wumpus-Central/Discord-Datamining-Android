@@ -19,7 +19,7 @@ public final class PassthroughTouchViewGroup extends ReactViewGroup {
     
     public PassthroughTouchViewGroup(Context context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
         Field declaredField = ReactViewGroup.class.getDeclaredField("mPointerEvents");
         declaredField.setAccessible(true);
         declaredField.set(this, PointerEvents.BOX_NONE);
@@ -31,14 +31,14 @@ public final class PassthroughTouchViewGroup extends ReactViewGroup {
 
     @Override 
     public boolean onInterceptTouchEvent(MotionEvent event) {
-        q.g(event, "event");
+        q.h(event, "event");
         return false;
     }
 
     @Override 
     @SuppressLint({"ClickableViewAccessibility"})
     public boolean onTouchEvent(MotionEvent ev) {
-        q.g(ev, "ev");
+        q.h(ev, "ev");
         if (ev.getAction() != 0) {
             return false;
         }
@@ -47,7 +47,7 @@ public final class PassthroughTouchViewGroup extends ReactViewGroup {
     }
 
     public final void setOnTouchDown(Function0<Unit> function0) {
-        q.g(function0, "<set-?>");
+        q.h(function0, "<set-?>");
         this.onTouchDown = function0;
     }
 }

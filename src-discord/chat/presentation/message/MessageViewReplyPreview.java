@@ -15,7 +15,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.view.a;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.w0;
-import androidx.recyclerview.widget.RecyclerView;
 import com.discord.SetTextSizeSpKt;
 import com.discord.channel_spine.ChannelSpineView;
 import com.discord.chat.R;
@@ -33,17 +32,6 @@ import com.discord.chat.presentation.message.utils.ReplyUtilsKt;
 import com.discord.chat.presentation.message.view.MessageContentView;
 import com.discord.chat.presentation.spine.SpineParentMessage;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.misc.utilities.view.ViewBackgroundUtilsKt;
@@ -74,7 +62,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
     
     public MessageViewReplyPreview(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  MessageViewReplyPreview(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -82,10 +70,10 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
     }
 
     public static final void configureExecutedCommand_LdU2QRA$lambda$7(ChatEventHandler eventHandler, String messageId, ExecutedCommand executedCommand, View view) {
-        q.g(eventHandler, "$eventHandler");
-        q.g(messageId, "$messageId");
-        q.g(executedCommand, "$executedCommand");
-        eventHandler.mo158onTapAvatarx5gers8(messageId, executedCommand.m105getUserIdre6GcUE());
+        q.h(eventHandler, "$eventHandler");
+        q.h(messageId, "$messageId");
+        q.h(executedCommand, "$executedCommand");
+        eventHandler.mo159onTapAvatarx5gers8(messageId, executedCommand.m106getUserIdre6GcUE());
     }
 
     public static  void configureReply$default(MessageViewReplyPreview messageViewReplyPreview, ReferencedMessage referencedMessage, boolean z10, Function0 function0, int i10, Object obj) {
@@ -96,45 +84,44 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
     }
 
     public static final void configureReply$lambda$4(Function0 onClick, View view) {
-        q.g(onClick, "$onClick");
+        q.h(onClick, "$onClick");
         onClick.invoke();
     }
 
     public final void clear() {
         ChannelSpineView channelSpineView = this.binding.replySpline;
-        q.f(channelSpineView, "binding.replySpline");
+        q.g(channelSpineView, "binding.replySpline");
         channelSpineView.setVisibility(8);
         LinearLayout linearLayout = this.binding.replyLeadingViews;
-        q.f(linearLayout, "binding.replyLeadingViews");
+        q.g(linearLayout, "binding.replyLeadingViews");
         linearLayout.setVisibility(8);
         MessageContentView messageContentView = this.binding.replyText;
-        q.f(messageContentView, "binding.replyText");
+        q.g(messageContentView, "binding.replyText");
         messageContentView.setVisibility(8);
     }
 
     
-    public final void m213configureExecutedCommandLdU2QRA(final String messageId, final ExecutedCommand executedCommand, boolean z10, boolean z11, boolean z12, final ChatEventHandler eventHandler) {
-        DraweeSpanStringBuilder spannable;
-        q.g(messageId, "messageId");
-        q.g(executedCommand, "executedCommand");
-        q.g(eventHandler, "eventHandler");
+    public final void m214configureExecutedCommandLdU2QRA(final String messageId, final ExecutedCommand executedCommand, boolean z10, boolean z11, boolean z12, final ChatEventHandler eventHandler) {
+        q.h(messageId, "messageId");
+        q.h(executedCommand, "executedCommand");
+        q.h(eventHandler, "eventHandler");
         ChannelSpineView channelSpineView = this.binding.replySpline;
-        q.f(channelSpineView, "binding.replySpline");
+        q.g(channelSpineView, "binding.replySpline");
         channelSpineView.setVisibility(0);
         MessageContentView messageContentView = this.binding.replyText;
-        q.f(messageContentView, "binding.replyText");
+        q.g(messageContentView, "binding.replyText");
         messageContentView.setVisibility(0);
         LinearLayout linearLayout = this.binding.replyLeadingViews;
-        q.f(linearLayout, "binding.replyLeadingViews");
+        q.g(linearLayout, "binding.replyLeadingViews");
         linearLayout.setVisibility(0);
         SimpleDraweeView simpleDraweeView = this.binding.replyAuthorAvatar;
-        q.f(simpleDraweeView, "binding.replyAuthorAvatar");
+        q.g(simpleDraweeView, "binding.replyAuthorAvatar");
         simpleDraweeView.setVisibility(0);
         TextView textView = this.binding.replyAuthorName;
-        q.f(textView, "binding.replyAuthorName");
+        q.g(textView, "binding.replyAuthorName");
         textView.setVisibility(8);
         SimpleDraweeView simpleDraweeView2 = this.binding.replyAuthorAvatar;
-        q.f(simpleDraweeView2, "binding.replyAuthorAvatar");
+        q.g(simpleDraweeView2, "binding.replyAuthorAvatar");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView2, false, new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {
@@ -142,34 +129,33 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
             }
         }, 1, null);
         SimpleDraweeView simpleDraweeView3 = this.binding.replyIcon;
-        q.f(simpleDraweeView3, "binding.replyIcon");
+        q.g(simpleDraweeView3, "binding.replyIcon");
         simpleDraweeView3.setVisibility(8);
         MessageViewReplyPreviewBinding messageViewReplyPreviewBinding = this.binding;
         MessageContentView messageContentView2 = messageViewReplyPreviewBinding.replyText;
         LinearLayout linearLayout2 = messageViewReplyPreviewBinding.replyLeadingViews;
-        q.f(linearLayout2, "binding.replyLeadingViews");
+        q.g(linearLayout2, "binding.replyLeadingViews");
         AnnotatedStructurableText content = executedCommand.getContent();
         Context context = getContext();
         Paint.FontMetrics fontMetrics = this.binding.replyText.getPaint().getFontMetrics();
-        q.f(fontMetrics, "binding.replyText.paint.fontMetrics");
+        q.g(fontMetrics, "binding.replyText.paint.fontMetrics");
         float baselineHeight = TextUtilsKt.getBaselineHeight(fontMetrics);
-        q.f(context, "context");
-        spannable = TextUtilsKt.toSpannable(content, context, messageId, z10, z11, z12, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : new MessageViewReplyPreview$configureExecutedCommand$2(eventHandler, messageId), (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : new MessageViewReplyPreview$configureExecutedCommand$3(eventHandler), (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : new MessageViewReplyPreview$configureExecutedCommand$4(eventHandler), (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : new MessageViewReplyPreview$configureExecutedCommand$5(executedCommand), (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (65536 & r42) != 0 ? false : false, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : baselineHeight);
+        q.g(context, "context");
+        DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context, messageId, z10, z11, z12, new MessageViewReplyPreview$configureExecutedCommand$2(eventHandler, messageId), null, null, null, null, new MessageViewReplyPreview$configureExecutedCommand$3(eventHandler), new MessageViewReplyPreview$configureExecutedCommand$4(eventHandler), null, null, new MessageViewReplyPreview$configureExecutedCommand$5(executedCommand), null, false, null, baselineHeight, 242624, null);
         MessageContentView messageContentView3 = this.binding.replyText;
-        q.f(messageContentView3, "binding.replyText");
-        SpannableExtensionsKt.coverWithSpan(spannable, new BackgroundSpanDrawer(messageContentView3));
-        Unit unit = Unit.f20679a;
-        messageContentView2.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(linearLayout2, spannable));
+        q.g(messageContentView3, "binding.replyText");
+        SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(messageContentView3));
+        Unit unit = Unit.f21025a;
+        messageContentView2.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(linearLayout2, spannable$default));
         MessageContentView messageContentView4 = this.binding.replyText;
-        q.f(messageContentView4, "binding.replyText");
+        q.g(messageContentView4, "binding.replyText");
         NestedScrollOnTouchUtilsKt.enableNestedSpanClickListener(messageContentView4, true);
         this.binding.replyAuthorAvatar.setImageURI(executedCommand.getAvatarURL());
     }
 
     public final void configureReply(ReferencedMessage reply, boolean z10, final Function0<Unit> onClick) {
-        DraweeSpanStringBuilder spannable;
-        q.g(reply, "reply");
-        q.g(onClick, "onClick");
+        q.h(reply, "reply");
+        q.h(onClick, "onClick");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(this, false, new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {
@@ -180,47 +166,47 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
             LoadedReferencedMessage loadedReferencedMessage = (LoadedReferencedMessage) reply;
             Message message = loadedReferencedMessage.getMessage();
             ChannelSpineView channelSpineView = this.binding.replySpline;
-            q.f(channelSpineView, "binding.replySpline");
+            q.g(channelSpineView, "binding.replySpline");
             channelSpineView.setVisibility(z10 ? 0 : 8);
             LinearLayout linearLayout = this.binding.replyLeadingViews;
-            q.f(linearLayout, "binding.replyLeadingViews");
+            q.g(linearLayout, "binding.replyLeadingViews");
             linearLayout.setVisibility(0);
             MessageContentView messageContentView = this.binding.replyText;
-            q.f(messageContentView, "binding.replyText");
+            q.g(messageContentView, "binding.replyText");
             messageContentView.setVisibility(0);
             if (message.getShouldShowRoleDot()) {
                 RoleDotView roleDotView = this.binding.replyRoleDot;
-                q.f(roleDotView, "binding.replyRoleDot");
+                q.g(roleDotView, "binding.replyRoleDot");
                 roleDotView.setVisibility(0);
                 this.binding.replyRoleDot.configure(MessageKt.roleDotColor$default(message, 0, 1, null), 16);
             } else {
                 RoleDotView roleDotView2 = this.binding.replyRoleDot;
-                q.f(roleDotView2, "binding.replyRoleDot");
+                q.g(roleDotView2, "binding.replyRoleDot");
                 roleDotView2.setVisibility(8);
             }
             Context context = getContext();
-            q.f(context, "context");
+            q.g(context, "context");
             String avatarUrl = MessageKt.avatarUrl(message, context);
-            if (avatarUrl == null || message.getUsername() == null || message.m13getAuthorIdwUX8bhU() == null) {
+            if (avatarUrl == null || message.getUsername() == null || message.m14getAuthorIdwUX8bhU() == null) {
                 SimpleDraweeView simpleDraweeView = this.binding.replyAuthorAvatar;
-                q.f(simpleDraweeView, "binding.replyAuthorAvatar");
+                q.g(simpleDraweeView, "binding.replyAuthorAvatar");
                 simpleDraweeView.setVisibility(8);
                 TextView textView = this.binding.replyAuthorName;
-                q.f(textView, "binding.replyAuthorName");
+                q.g(textView, "binding.replyAuthorName");
                 textView.setVisibility(8);
                 SimpleDraweeView simpleDraweeView2 = this.binding.replyIcon;
-                q.f(simpleDraweeView2, "binding.replyIcon");
+                q.g(simpleDraweeView2, "binding.replyIcon");
                 simpleDraweeView2.setVisibility(0);
             } else {
                 SimpleDraweeView simpleDraweeView3 = this.binding.replyAuthorAvatar;
-                q.f(simpleDraweeView3, "binding.replyAuthorAvatar");
+                q.g(simpleDraweeView3, "binding.replyAuthorAvatar");
                 simpleDraweeView3.setVisibility(0);
                 SimpleDraweeView simpleDraweeView4 = this.binding.replyIcon;
-                q.f(simpleDraweeView4, "binding.replyIcon");
+                q.g(simpleDraweeView4, "binding.replyIcon");
                 simpleDraweeView4.setVisibility(8);
                 this.binding.replyAuthorAvatar.setImageURI(avatarUrl);
                 TextView textView2 = this.binding.replyAuthorName;
-                q.f(textView2, "binding.replyAuthorName");
+                q.g(textView2, "binding.replyAuthorName");
                 textView2.setVisibility(0);
                 this.binding.replyAuthorName.setText(message.getUsername());
                 this.binding.replyAuthorName.setTextColor(MessageKt.usernameColor$default(message, 0, 1, null));
@@ -229,58 +215,58 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
                 MessageViewReplyPreviewBinding messageViewReplyPreviewBinding = this.binding;
                 MessageContentView messageContentView2 = messageViewReplyPreviewBinding.replyText;
                 LinearLayout linearLayout2 = messageViewReplyPreviewBinding.replyLeadingViews;
-                q.f(linearLayout2, "binding.replyLeadingViews");
+                q.g(linearLayout2, "binding.replyLeadingViews");
                 messageContentView2.setDraweeSpanStringBuilder(ReplyUtilsKt.createSystemReplyContent(linearLayout2, loadedReferencedMessage.getSystemContent()));
             } else if (message.getContent() != null) {
                 MessageViewReplyPreviewBinding messageViewReplyPreviewBinding2 = this.binding;
                 MessageContentView messageContentView3 = messageViewReplyPreviewBinding2.replyText;
                 LinearLayout linearLayout3 = messageViewReplyPreviewBinding2.replyLeadingViews;
-                q.f(linearLayout3, "binding.replyLeadingViews");
+                q.g(linearLayout3, "binding.replyLeadingViews");
                 StructurableText content = message.getContent();
                 Context context2 = getContext();
-                q.f(context2, "context");
-                String str = message.m16getId3Eiw7ao();
+                q.g(context2, "context");
+                String str = message.m17getId3Eiw7ao();
                 boolean shouldAnimateEmoji = MessageKt.shouldAnimateEmoji(message);
                 boolean shouldShowRoleDot = message.getShouldShowRoleDot();
                 boolean shouldShowRoleOnName = message.getShouldShowRoleOnName();
                 Paint.FontMetrics fontMetrics = this.binding.replyText.getPaint().getFontMetrics();
-                q.f(fontMetrics, "binding.replyText.paint.fontMetrics");
-                spannable = TextUtilsKt.toSpannable(content, context2, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : null, (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (65536 & r42) != 0 ? false : true, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : TextUtilsKt.getBaselineHeight(fontMetrics));
+                q.g(fontMetrics, "binding.replyText.paint.fontMetrics");
+                DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context2, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, null, null, null, null, null, null, null, null, null, null, null, true, null, TextUtilsKt.getBaselineHeight(fontMetrics), 196576, null);
                 MessageContentView messageContentView4 = this.binding.replyText;
-                q.f(messageContentView4, "binding.replyText");
-                SpannableExtensionsKt.coverWithSpan(spannable, new BackgroundSpanDrawer(messageContentView4));
-                Unit unit = Unit.f20679a;
-                messageContentView3.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(linearLayout3, spannable));
+                q.g(messageContentView4, "binding.replyText");
+                SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(messageContentView4));
+                Unit unit = Unit.f21025a;
+                messageContentView3.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(linearLayout3, spannable$default));
             } else {
                 this.binding.replyText.setText((CharSequence) null);
             }
         } else if (reply instanceof SystemReferencedMessage) {
             ChannelSpineView channelSpineView2 = this.binding.replySpline;
-            q.f(channelSpineView2, "binding.replySpline");
+            q.g(channelSpineView2, "binding.replySpline");
             channelSpineView2.setVisibility(z10 ? 0 : 8);
             LinearLayout linearLayout4 = this.binding.replyLeadingViews;
-            q.f(linearLayout4, "binding.replyLeadingViews");
+            q.g(linearLayout4, "binding.replyLeadingViews");
             linearLayout4.setVisibility(0);
             SimpleDraweeView simpleDraweeView5 = this.binding.replyAuthorAvatar;
-            q.f(simpleDraweeView5, "binding.replyAuthorAvatar");
+            q.g(simpleDraweeView5, "binding.replyAuthorAvatar");
             simpleDraweeView5.setVisibility(0);
             SimpleDraweeView simpleDraweeView6 = this.binding.replyAuthorAvatar;
-            q.f(simpleDraweeView6, "binding.replyAuthorAvatar");
+            q.g(simpleDraweeView6, "binding.replyAuthorAvatar");
             ReactAssetUtilsKt.setReactAsset(simpleDraweeView6, ReactAsset.DefaultAvatar0);
             TextView textView3 = this.binding.replyAuthorName;
-            q.f(textView3, "binding.replyAuthorName");
+            q.g(textView3, "binding.replyAuthorName");
             textView3.setVisibility(8);
             SimpleDraweeView simpleDraweeView7 = this.binding.replyIcon;
-            q.f(simpleDraweeView7, "binding.replyIcon");
+            q.g(simpleDraweeView7, "binding.replyIcon");
             simpleDraweeView7.setVisibility(8);
             this.binding.replyIcon.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundTertiary());
             MessageContentView messageContentView5 = this.binding.replyText;
-            q.f(messageContentView5, "binding.replyText");
+            q.g(messageContentView5, "binding.replyText");
             messageContentView5.setVisibility(0);
             MessageViewReplyPreviewBinding messageViewReplyPreviewBinding3 = this.binding;
             MessageContentView messageContentView6 = messageViewReplyPreviewBinding3.replyText;
             LinearLayout linearLayout5 = messageViewReplyPreviewBinding3.replyLeadingViews;
-            q.f(linearLayout5, "binding.replyLeadingViews");
+            q.g(linearLayout5, "binding.replyLeadingViews");
             messageContentView6.setDraweeSpanStringBuilder(ReplyUtilsKt.createSystemReplyContent(linearLayout5, ((SystemReferencedMessage) reply).getContent()));
         }
         if (this.binding.replyText.isLaidOut() && this.binding.replyText.getWidth() > 0) {
@@ -290,7 +276,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
             Rect rect = this.replyTextLineBounds;
             int i10 = rect.bottom - rect.top;
             LinearLayout linearLayout6 = this.binding.replyLeadingViews;
-            q.f(linearLayout6, "binding.replyLeadingViews");
+            q.g(linearLayout6, "binding.replyLeadingViews");
             ViewGroup.LayoutParams layoutParams = linearLayout6.getLayoutParams();
             if (layoutParams != null) {
                 layoutParams.height = i10;
@@ -305,11 +291,11 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
             public void onInitializeAccessibilityNodeInfo(View host, AccessibilityNodeInfoCompat info) {
                 MessageViewReplyPreviewBinding messageViewReplyPreviewBinding4;
                 MessageViewReplyPreviewBinding messageViewReplyPreviewBinding5;
-                q.g(host, "host");
-                q.g(info, "info");
+                q.h(host, "host");
+                q.h(info, "info");
                 super.onInitializeAccessibilityNodeInfo(host, info);
                 Context context3 = MessageViewReplyPreview.this.getContext();
-                q.f(context3, "context");
+                q.g(context3, "context");
                 SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(I18nUtilsKt.i18nFormat$default(context3, I18nMessage.MOBILE_REPLY_PREVIEW_A11Y_LABEL, null, 2, null));
                 spannableStringBuilder.append((CharSequence) ", ");
                 messageViewReplyPreviewBinding4 = MessageViewReplyPreview.this.binding;
@@ -317,15 +303,15 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
                 spannableStringBuilder.append((CharSequence) ", ");
                 messageViewReplyPreviewBinding5 = MessageViewReplyPreview.this.binding;
                 spannableStringBuilder.append(messageViewReplyPreviewBinding5.replyText.getText());
-                info.e0(spannableStringBuilder);
+                info.k0(spannableStringBuilder);
                 Context context4 = MessageViewReplyPreview.this.getContext();
-                q.f(context4, "context");
+                q.g(context4, "context");
                 info.b(new AccessibilityNodeInfoCompat.a(16, I18nUtilsKt.i18nFormat$default(context4, I18nMessage.MOBILE_SCROLL_TO_MESSAGE_ACTION_A11Y_LABEL, null, 2, null)));
             }
 
             @Override 
             public boolean performAccessibilityAction(View host, int i11, Bundle bundle) {
-                q.g(host, "host");
+                q.h(host, "host");
                 if (i11 == 16) {
                     onClick.invoke();
                 }
@@ -338,7 +324,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
     public View getSpineOriginView() {
         boolean z10;
         SimpleDraweeView it = this.binding.replyAuthorAvatar;
-        q.f(it, "it");
+        q.g(it, "it");
         if (it.getVisibility() == 0) {
             z10 = true;
         } else {
@@ -351,36 +337,36 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
             return it;
         }
         SimpleDraweeView simpleDraweeView = this.binding.replyIcon;
-        q.f(simpleDraweeView, "binding.replyIcon");
+        q.g(simpleDraweeView, "binding.replyIcon");
         return simpleDraweeView;
     }
 
     
     public MessageViewReplyPreview(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         MessageViewReplyPreviewBinding inflate = MessageViewReplyPreviewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         this.replyTextLineBounds = new Rect();
         SimpleDraweeView _init_$lambda$1 = inflate.replyIcon;
         if (!_init_$lambda$1.isInEditMode()) {
-            q.f(_init_$lambda$1, "_init_$lambda$1");
+            q.g(_init_$lambda$1, "_init_$lambda$1");
             ReactAssetUtilsKt.setReactAsset(_init_$lambda$1, ReactAsset.Reply);
             ColorUtilsKt.setTintColor(_init_$lambda$1, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
             ViewBackgroundUtilsKt.setBackgroundOval$default(_init_$lambda$1, ThemeManagerKt.getTheme().getBackgroundTertiary(), 0, 2, null);
         }
         TextView textView = inflate.replyAuthorName;
-        q.f(textView, "binding.replyAuthorName");
+        q.g(textView, "binding.replyAuthorName");
         DiscordFontUtilsKt.setDiscordFont(textView, DiscordFont.PrimarySemibold);
         TextView textView2 = inflate.replyAuthorName;
-        q.f(textView2, "binding.replyAuthorName");
+        q.g(textView2, "binding.replyAuthorName");
         SetTextSizeSpKt.setTextSizeSp(textView2, 12.0f);
         SimpleDraweeView simpleDraweeView = inflate.replyAuthorAvatar;
-        q.f(simpleDraweeView, "binding.replyAuthorAvatar");
+        q.g(simpleDraweeView, "binding.replyAuthorAvatar");
         ViewClippingUtilsKt.clipToCircle(simpleDraweeView);
         MessageContentView _init_$lambda$2 = inflate.replyText;
-        q.f(_init_$lambda$2, "_init_$lambda$2");
+        q.g(_init_$lambda$2, "_init_$lambda$2");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$2, DiscordFont.PrimaryMedium);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$2, 12.0f);
         _init_$lambda$2.setTextColor(ThemeManagerKt.getTheme().getInteractiveNormal());
@@ -390,7 +376,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
         float dimension3 = (dimension - getResources().getDimension(R.dimen.message_reply_leading_views_margin_start)) - dimension2;
         inflate.replySpline.configureAsReplySpline();
         ChannelSpineView channelSpineView = inflate.replySpline;
-        q.f(channelSpineView, "binding.replySpline");
+        q.g(channelSpineView, "binding.replySpline");
         ViewGroup.LayoutParams layoutParams = channelSpineView.getLayoutParams();
         if (layoutParams != null) {
             ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;

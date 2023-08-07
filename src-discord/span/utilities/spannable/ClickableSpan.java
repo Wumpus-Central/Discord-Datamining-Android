@@ -32,7 +32,7 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
         }
 
         public final Boolean invoke(View it) {
-            q.g(it, "it");
+            q.h(it, "it");
             return Boolean.FALSE;
         }
     }
@@ -91,15 +91,15 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
     }
 
     public final ClickableSpan copy(NestedClickableSpan.TouchPriority touchPriority, Integer num, Function1<? super View, Boolean> onLongClickListener, Function1<? super View, Unit> onClickListener) {
-        q.g(touchPriority, "touchPriority");
-        q.g(onLongClickListener, "onLongClickListener");
-        q.g(onClickListener, "onClickListener");
+        q.h(touchPriority, "touchPriority");
+        q.h(onLongClickListener, "onLongClickListener");
+        q.h(onClickListener, "onClickListener");
         return new ClickableSpan(touchPriority, num, onLongClickListener, onClickListener);
     }
 
     @Override 
     public void enableHighlight(TextView textView) {
-        q.g(textView, "textView");
+        q.h(textView, "textView");
         setSpanView(textView);
     }
 
@@ -111,7 +111,7 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
             return false;
         }
         ClickableSpan clickableSpan = (ClickableSpan) obj;
-        return getTouchPriority() == clickableSpan.getTouchPriority() && q.b(this.textColor, clickableSpan.textColor) && q.b(this.onLongClickListener, clickableSpan.onLongClickListener) && q.b(this.onClickListener, clickableSpan.onClickListener);
+        return getTouchPriority() == clickableSpan.getTouchPriority() && q.c(this.textColor, clickableSpan.textColor) && q.c(this.onLongClickListener, clickableSpan.onLongClickListener) && q.c(this.onClickListener, clickableSpan.onClickListener);
     }
 
     @Override 
@@ -127,15 +127,15 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
 
     @Override 
     public void onClick(View view) {
-        q.g(view, "view");
+        q.h(view, "view");
         this.onClickListener.invoke(view);
-        Unit unit = Unit.f20679a;
+        Unit unit = Unit.f21025a;
         setSpanView(null);
     }
 
     @Override 
     public boolean onLongClick(View view) {
-        q.g(view, "view");
+        q.h(view, "view");
         Boolean invoke = this.onLongClickListener.invoke(view);
         invoke.booleanValue();
         setSpanView(null);
@@ -153,7 +153,7 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
     @Override 
     public void updateDrawState(TextPaint textPaint) {
         int i10;
-        q.g(textPaint, "textPaint");
+        q.h(textPaint, "textPaint");
         super.updateDrawState(textPaint);
         Integer num = this.textColor;
         if (num != null) {
@@ -169,9 +169,9 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
 
     
     public ClickableSpan(NestedClickableSpan.TouchPriority touchPriority, Integer num, Function1<? super View, Boolean> onLongClickListener, Function1<? super View, Unit> onClickListener) {
-        q.g(touchPriority, "touchPriority");
-        q.g(onLongClickListener, "onLongClickListener");
-        q.g(onClickListener, "onClickListener");
+        q.h(touchPriority, "touchPriority");
+        q.h(onLongClickListener, "onLongClickListener");
+        q.h(onClickListener, "onClickListener");
         this.touchPriority = touchPriority;
         this.textColor = num;
         this.onLongClickListener = onLongClickListener;

@@ -51,7 +51,7 @@ public final class EmojiPickerRowView extends LinearLayout {
     
     public EmojiPickerRowView(Context context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
         setOrientation(0);
     }
 
@@ -65,7 +65,7 @@ public final class EmojiPickerRowView extends LinearLayout {
             }
             final EmojiPickerRow.Emoji emoji = (EmojiPickerRow.Emoji) obj;
             View childAt = getChildAt(i10);
-            q.e(childAt, "null cannot be cast to non-null type com.facebook.drawee.view.SimpleDraweeView");
+            q.f(childAt, "null cannot be cast to non-null type com.facebook.drawee.view.SimpleDraweeView");
             SimpleDraweeView simpleDraweeView = (SimpleDraweeView) childAt;
             if (emoji == null) {
                 simpleDraweeView.setImageURI((String) null);
@@ -101,13 +101,13 @@ public final class EmojiPickerRowView extends LinearLayout {
 
     
     public static final void configureRowEmojiViews$lambda$2$lambda$0(EmojiPickerRowView this$0, EmojiPickerRow.Emoji emoji, View view) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         this$0.onPressEmoji.invoke(emoji.getName());
     }
 
     
     public static final boolean configureRowEmojiViews$lambda$2$lambda$1(EmojiPickerRowView this$0, EmojiPickerRow.Emoji emoji, View view) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         this$0.onLongPressEmoji.invoke(emoji.getName());
         return true;
     }
@@ -134,7 +134,7 @@ public final class EmojiPickerRowView extends LinearLayout {
             SimpleDraweeView simpleDraweeView = new SimpleDraweeView(getContext());
             RippleUtilsKt.addCircleRipple$default(simpleDraweeView, false, 1, null);
             ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).z(placeholder);
-            ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils.ScaleType.f7409e);
+            ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils.ScaleType.f7622e);
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(dpToPx, dpToPx);
             layoutParams.setMargins(i10, dpToPx3, 0, dpToPx3);
             simpleDraweeView.setLayoutParams(layoutParams);
@@ -152,17 +152,17 @@ public final class EmojiPickerRowView extends LinearLayout {
     }
 
     public final void setOnLongPressEmoji(Function1<? super String, Unit> function1) {
-        q.g(function1, "<set-?>");
+        q.h(function1, "<set-?>");
         this.onLongPressEmoji = function1;
     }
 
     public final void setOnPressEmoji(Function1<? super String, Unit> function1) {
-        q.g(function1, "<set-?>");
+        q.h(function1, "<set-?>");
         this.onPressEmoji = function1;
     }
 
     public final void setRowData(EmojiPickerRow rowData) {
-        q.g(rowData, "rowData");
+        q.h(rowData, "rowData");
         if (rowData.getItems().size() != getChildCount()) {
             createRowEmojiViews(rowData);
         }

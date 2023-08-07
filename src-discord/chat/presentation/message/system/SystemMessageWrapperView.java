@@ -33,7 +33,7 @@ public final class SystemMessageWrapperView extends FrameLayout {
     
     public SystemMessageWrapperView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  SystemMessageWrapperView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -42,7 +42,7 @@ public final class SystemMessageWrapperView extends FrameLayout {
 
     @Override 
     protected void onDraw(Canvas canvas) {
-        q.g(canvas, "canvas");
+        q.h(canvas, "canvas");
         super.onDraw(canvas);
         if (this.drawHighlight) {
             HighlightedMessageDrawer.drawHighlight$default(this.highlightDrawer, canvas, this, 0, 0, 12, null);
@@ -51,11 +51,11 @@ public final class SystemMessageWrapperView extends FrameLayout {
 
     public final void setMessage(Message message, MessageContext messageContext, ChatEventHandler eventHandler) {
         View view;
-        q.g(message, "message");
-        q.g(messageContext, "messageContext");
-        q.g(eventHandler, "eventHandler");
+        q.h(message, "message");
+        q.h(messageContext, "messageContext");
+        q.h(eventHandler, "eventHandler");
         MessageView messageView = this.binding.messageView;
-        q.f(messageView, "binding.messageView");
+        q.g(messageView, "binding.messageView");
         MessageView.setMessage$default(messageView, message, messageContext, null, eventHandler, null, null, false, false, false, 500, null);
         SystemMessageWrapperView$setMessage$eventHandlerProvider$1 systemMessageWrapperView$setMessage$eventHandlerProvider$1 = new SystemMessageWrapperView$setMessage$eventHandlerProvider$1(eventHandler);
         removeAllViews();
@@ -71,9 +71,9 @@ public final class SystemMessageWrapperView extends FrameLayout {
     
     public SystemMessageWrapperView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         DecoratedMessageViewBinding inflate = DecoratedMessageViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         this.highlightDrawer = new BackgroundHighlightDrawer(context);
         setWillNotDraw(false);

@@ -23,13 +23,13 @@ final class WebAuthn$authenticate$1 extends s implements Function1<PendingIntent
     @Override 
     public   Unit invoke(PendingIntent pendingIntent) {
         invoke2(pendingIntent);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(PendingIntent pendingIntent) {
         Activity activity = this.$currentActivity;
-        q.d(activity);
+        q.e(activity);
         activity.startIntentSenderForResult(pendingIntent.getIntentSender(), 4002, null, 0, 0, 0);
     }
 }

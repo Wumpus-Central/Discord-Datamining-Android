@@ -1,6 +1,6 @@
 package com.discord.chat.presentation.message.view.voicemessages;
 
-import ff.t;
+import jf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -12,7 +12,7 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.j;
 import kotlinx.coroutines.t0;
 import kotlinx.coroutines.y0;
-import lf.d;
+import pf.d;
 
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -40,7 +40,7 @@ public final class AudioPlayerView$reset$2 extends k implements Function2<Corout
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20679a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
         }
 
         @Override 
@@ -59,7 +59,7 @@ public final class AudioPlayerView$reset$2 extends k implements Function2<Corout
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            return Unit.f20679a;
+            return Unit.f21025a;
         }
     }
 
@@ -76,7 +76,7 @@ public final class AudioPlayerView$reset$2 extends k implements Function2<Corout
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioPlayerView$reset$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f20679a);
+        return ((AudioPlayerView$reset$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
     }
 
     @Override 
@@ -107,6 +107,6 @@ public final class AudioPlayerView$reset$2 extends k implements Function2<Corout
         audioPlayerViewState2 = audioPlayerView2.state;
         audioPlayerView2.configureAudioWave(audioPlayerViewState2);
         this.this$0.getBinding().wave.reset();
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 }

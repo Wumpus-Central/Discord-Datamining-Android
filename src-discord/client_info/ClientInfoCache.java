@@ -17,20 +17,20 @@ public final class ClientInfoCache {
 
     private final SharedPreferences getCache(Context context) {
         SharedPreferences sharedPreferences = context.getSharedPreferences("ClientInfoCache", 0);
-        q.f(sharedPreferences, "getSharedPreferences(\"Cl…e\", Context.MODE_PRIVATE)");
+        q.g(sharedPreferences, "getSharedPreferences(\"Cl…e\", Context.MODE_PRIVATE)");
         return sharedPreferences;
     }
 
     public final String getDeviceVendorId(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         String string = getCache(context).getString(DEVICE_VENDOR_ID_KEY, null);
         if (string != null) {
             return string;
         }
         String uuid = UUID.randomUUID().toString();
-        q.f(uuid, "randomUUID().toString()");
+        q.g(uuid, "randomUUID().toString()");
         SharedPreferences.Editor editor = INSTANCE.getCache(context).edit();
-        q.f(editor, "editor");
+        q.g(editor, "editor");
         editor.putString(DEVICE_VENDOR_ID_KEY, uuid);
         editor.apply();
         return uuid;

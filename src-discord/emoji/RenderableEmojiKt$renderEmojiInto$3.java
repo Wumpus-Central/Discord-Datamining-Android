@@ -19,11 +19,11 @@ final class RenderableEmojiKt$renderEmojiInto$3 extends s implements Function1<G
     @Override 
     public   Unit invoke(GenericDraweeHierarchyBuilder genericDraweeHierarchyBuilder) {
         invoke2(genericDraweeHierarchyBuilder);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(GenericDraweeHierarchyBuilder genericDraweeHierarchyBuilder) {
-        q.g(genericDraweeHierarchyBuilder, "$this$null");
+        q.h(genericDraweeHierarchyBuilder, "$this$null");
     }
 }

@@ -26,10 +26,10 @@ import com.facebook.imagepipeline.request.ImageRequestBuilder;
 import com.facebook.imagepipeline.request.Postprocessor;
 import com.facebook.react.uimanager.ViewProps;
 import e3.f;
-import ff.n;
-import ff.p;
 import java.util.ArrayList;
 import java.util.List;
+import jf.n;
+import jf.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.collections.j;
@@ -58,7 +58,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
             
             public End(String uri, boolean z10, boolean z11) {
                 super(null);
-                q.g(uri, "uri");
+                q.h(uri, "uri");
                 this.uri = uri;
                 this.fullSize = z10;
                 this.grayscale = z11;
@@ -90,7 +90,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
             }
 
             public final End copy(String uri, boolean z10, boolean z11) {
-                q.g(uri, "uri");
+                q.h(uri, "uri");
                 return new End(uri, z10, z11);
             }
 
@@ -102,7 +102,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
                     return false;
                 }
                 End end = (End) obj;
-                return q.b(this.uri, end.uri) && this.fullSize == end.fullSize && this.grayscale == end.grayscale;
+                return q.c(this.uri, end.uri) && this.fullSize == end.fullSize && this.grayscale == end.grayscale;
             }
 
             public final boolean getFullSize() {
@@ -161,7 +161,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
             
             public Start(String uri) {
                 super(null);
-                q.g(uri, "uri");
+                q.h(uri, "uri");
                 this.uri = uri;
             }
 
@@ -177,7 +177,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
             }
 
             public final Start copy(String uri) {
-                q.g(uri, "uri");
+                q.h(uri, "uri");
                 return new Start(uri);
             }
 
@@ -185,7 +185,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof Start) && q.b(this.uri, ((Start) obj).uri);
+                return (obj instanceof Start) && q.c(this.uri, ((Start) obj).uri);
             }
 
             public final String getUri() {
@@ -213,13 +213,13 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
     
     public ActivityInviteEmbedView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public ActivityInviteEmbedView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  ActivityInviteEmbedView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -249,28 +249,28 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
         int i10;
         if (imageConfig instanceof ImageConfig.None) {
             View view = this.binding.bgGradient;
-            q.f(view, "binding.bgGradient");
+            q.g(view, "binding.bgGradient");
             view.setVisibility(8);
             SimpleDraweeView simpleDraweeView = this.binding.endImage;
-            q.f(simpleDraweeView, "binding.endImage");
+            q.g(simpleDraweeView, "binding.endImage");
             simpleDraweeView.setVisibility(8);
             SimpleDraweeView simpleDraweeView2 = this.binding.startImage;
-            q.f(simpleDraweeView2, "binding.startImage");
+            q.g(simpleDraweeView2, "binding.startImage");
             simpleDraweeView2.setVisibility(8);
         } else if (imageConfig instanceof ImageConfig.Start) {
             View view2 = this.binding.bgGradient;
-            q.f(view2, "binding.bgGradient");
+            q.g(view2, "binding.bgGradient");
             view2.setVisibility(8);
             SimpleDraweeView simpleDraweeView3 = this.binding.startImage;
-            q.f(simpleDraweeView3, "binding.startImage");
+            q.g(simpleDraweeView3, "binding.startImage");
             simpleDraweeView3.setVisibility(0);
             SimpleDraweeView simpleDraweeView4 = this.binding.endImage;
-            q.f(simpleDraweeView4, "binding.endImage");
+            q.g(simpleDraweeView4, "binding.endImage");
             simpleDraweeView4.setVisibility(8);
             this.binding.startImage.setImageURI(((ImageConfig.Start) imageConfig).getUri());
         } else if (imageConfig instanceof ImageConfig.End) {
             View view3 = this.binding.bgGradient;
-            q.f(view3, "binding.bgGradient");
+            q.g(view3, "binding.bgGradient");
             ImageConfig.End end = (ImageConfig.End) imageConfig;
             if (end.getFullSize()) {
                 i10 = 0;
@@ -279,10 +279,10 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
             }
             view3.setVisibility(i10);
             SimpleDraweeView simpleDraweeView5 = this.binding.startImage;
-            q.f(simpleDraweeView5, "binding.startImage");
+            q.g(simpleDraweeView5, "binding.startImage");
             simpleDraweeView5.setVisibility(8);
             SimpleDraweeView simpleDraweeView6 = this.binding.endImage;
-            q.f(simpleDraweeView6, "binding.endImage");
+            q.g(simpleDraweeView6, "binding.endImage");
             simpleDraweeView6.setVisibility(0);
             setEndImage(end.getUri(), end.getFullSize(), end.getGrayscale());
         }
@@ -299,7 +299,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
             list = j.h();
         }
         OverlappingCirclesView overlappingCirclesView = this.binding.avatars;
-        q.f(overlappingCirclesView, "binding.avatars");
+        q.g(overlappingCirclesView, "binding.avatars");
         if (!list.isEmpty()) {
             i10 = 0;
         } else {
@@ -317,7 +317,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
 
     private final void setBottomEndLabel(CharSequence charSequence, int i10) {
         TextView textView = this.binding.bottomEndLabel;
-        q.f(textView, "binding.bottomEndLabel");
+        q.g(textView, "binding.bottomEndLabel");
         ViewUtilsKt.setOptionalText(textView, charSequence);
         this.binding.bottomEndLabel.setTextColor(i10);
     }
@@ -329,7 +329,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
     private final void setEndImage(String str, boolean z10, boolean z11) {
         if (z10) {
             SimpleDraweeView simpleDraweeView = this.binding.endImage;
-            q.f(simpleDraweeView, "binding.endImage");
+            q.g(simpleDraweeView, "binding.endImage");
             ViewGroup.LayoutParams layoutParams = simpleDraweeView.getLayoutParams();
             if (layoutParams != null) {
                 ConstraintLayout.LayoutParams layoutParams2 = (ConstraintLayout.LayoutParams) layoutParams;
@@ -344,7 +344,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
             }
         } else {
             SimpleDraweeView simpleDraweeView2 = this.binding.endImage;
-            q.f(simpleDraweeView2, "binding.endImage");
+            q.g(simpleDraweeView2, "binding.endImage");
             ViewGroup.LayoutParams layoutParams3 = simpleDraweeView2.getLayoutParams();
             if (layoutParams3 != null) {
                 ConstraintLayout.LayoutParams layoutParams4 = (ConstraintLayout.LayoutParams) layoutParams3;
@@ -367,19 +367,19 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
 
     private final void setHeaderText(CharSequence charSequence) {
         TextView textView = this.binding.header;
-        q.f(textView, "binding.header");
+        q.g(textView, "binding.header");
         ViewUtilsKt.setOptionalText(textView, charSequence);
     }
 
     private final void setHeroText(CharSequence charSequence) {
         TextView textView = this.binding.heroText;
-        q.f(textView, "binding.heroText");
+        q.g(textView, "binding.heroText");
         ViewUtilsKt.setOptionalText(textView, charSequence);
     }
 
     private final void setSubtext(CharSequence charSequence) {
         TextView textView = this.binding.subtext;
-        q.f(textView, "binding.subtext");
+        q.g(textView, "binding.subtext");
         ViewUtilsKt.setOptionalText(textView, charSequence);
     }
 
@@ -408,35 +408,35 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
     public ActivityInviteEmbedView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
         Lazy a10;
-        q.g(context, "context");
+        q.h(context, "context");
         ActivityInviteEmbedViewBinding inflate = ActivityInviteEmbedViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         a10 = n.a(p.NONE, ActivityInviteEmbedView$grayscalePostprocessor$2.INSTANCE);
         this.grayscalePostprocessor$delegate = a10;
         setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
         ViewClippingUtilsKt.clipToRoundedRectangle(this, SizeUtilsKt.getDpToPx(8));
         SimpleDraweeView simpleDraweeView = inflate.startImage;
-        q.f(simpleDraweeView, "binding.startImage");
+        q.g(simpleDraweeView, "binding.startImage");
         ViewClippingUtilsKt.clipToRoundedRectangle(simpleDraweeView, SizeUtilsKt.getDpToPx(8));
         TextView _init_$lambda$0 = inflate.header;
         _init_$lambda$0.setTextColor(ThemeManagerKt.getTheme().getInteractiveNormal());
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$0, 12.0f);
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, DiscordFont.PrimaryBold);
         TextView _init_$lambda$1 = inflate.bottomEndLabel;
         _init_$lambda$1.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
-        q.f(_init_$lambda$1, "_init_$lambda$1");
+        q.g(_init_$lambda$1, "_init_$lambda$1");
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$1, 16.0f);
         DiscordFont discordFont = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$1, discordFont);
         TextView _init_$lambda$2 = inflate.heroText;
         _init_$lambda$2.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
-        q.f(_init_$lambda$2, "_init_$lambda$2");
+        q.g(_init_$lambda$2, "_init_$lambda$2");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$2, discordFont);
         TextView _init_$lambda$3 = inflate.subtext;
         _init_$lambda$3.setTextColor(ThemeManagerKt.getTheme().getInteractiveNormal());
-        q.f(_init_$lambda$3, "_init_$lambda$3");
+        q.g(_init_$lambda$3, "_init_$lambda$3");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$3, DiscordFont.PrimaryMedium);
         inflate.button.setBackgroundColor(ColorUtilsKt.getColorCompat(this, R.color.green_360));
         inflate.bgGradient.setBackgroundTintList(ColorStateList.valueOf(ThemeManagerKt.getTheme().getBackgroundSecondary()));

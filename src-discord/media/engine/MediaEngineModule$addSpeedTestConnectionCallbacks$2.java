@@ -27,12 +27,12 @@ public final class MediaEngineModule$addSpeedTestConnectionCallbacks$2 extends s
     @Override 
     public   Unit invoke(String str, Integer num, Integer num2, Integer num3) {
         invoke(str, num.intValue(), num2.intValue(), num3.intValue());
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final void invoke(String server, int i10, int i11, int i12) {
         ReactEvents reactEvents;
-        q.g(server, "server");
+        q.h(server, "server");
         reactEvents = this.this$0.reactEvents;
         reactEvents.emitModuleEvent(this.this$0.getReactContext(), new SpeedTestPingTimeoutCallbackEvent(this.$connectionId, server, i10, i11, i12));
     }

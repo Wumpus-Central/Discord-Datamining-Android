@@ -28,15 +28,15 @@ public final class UserSearchWorkerManagerModule$worker$1 extends s implements F
     @Override 
     public   Unit invoke(List<? extends UserSearchWorkerResult> list, String str, String str2) {
         invoke2((List<UserSearchWorkerResult>) list, str, str2);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(List<UserSearchWorkerResult> results, String query, String uuid) {
         ReactEvents reactEvents;
-        q.g(results, "results");
-        q.g(query, "query");
-        q.g(uuid, "uuid");
+        q.h(results, "results");
+        q.h(query, "query");
+        q.h(uuid, "uuid");
         reactEvents = this.this$0.reactEvents;
         reactEvents.emitModuleEvent(this.$reactContext, new ReturnResultsEvent(results, query, uuid, "USER_RESULTS"));
     }

@@ -18,20 +18,20 @@ public final class ActivityInviteEmbedViewHolder extends MessagePartViewHolder {
     
     public ActivityInviteEmbedViewHolder(ActivityInviteEmbedView activityInviteEmbedView) {
         super(activityInviteEmbedView, null);
-        q.g(activityInviteEmbedView, "activityInviteEmbedView");
+        q.h(activityInviteEmbedView, "activityInviteEmbedView");
         this.activityInviteEmbedView = activityInviteEmbedView;
     }
 
     
     public static final void bind$lambda$0(Function1 onTapJoinActivity, ActivityInviteEmbedMessageAccessory accessory, View view) {
-        q.g(onTapJoinActivity, "$onTapJoinActivity");
-        q.g(accessory, "$accessory");
-        onTapJoinActivity.invoke(MessageId.m592boximpl(accessory.mo217getMessageId3Eiw7ao()));
+        q.h(onTapJoinActivity, "$onTapJoinActivity");
+        q.h(accessory, "$accessory");
+        onTapJoinActivity.invoke(MessageId.m593boximpl(accessory.mo218getMessageId3Eiw7ao()));
     }
 
     public final void bind(final ActivityInviteEmbedMessageAccessory accessory, final Function1<? super MessageId, Unit> onTapJoinActivity) {
-        q.g(accessory, "accessory");
-        q.g(onTapJoinActivity, "onTapJoinActivity");
+        q.h(accessory, "accessory");
+        q.h(onTapJoinActivity, "onTapJoinActivity");
         ActivityInviteEmbed activityInviteEmbed = accessory.getActivityInviteEmbed();
         this.activityInviteEmbedView.setActivityInviteEmbed(activityInviteEmbed.getCoverImage(), activityInviteEmbed.isListening(), activityInviteEmbed.getHeaderText(), activityInviteEmbed.getPartyStatus(), activityInviteEmbed.getAvatarsToRender(), activityInviteEmbed.getMaxPartySize(), activityInviteEmbed.getName(), activityInviteEmbed.getSubtext(), activityInviteEmbed.getJoinable(), activityInviteEmbed.getCtaText(), new View.OnClickListener() { 
             @Override 

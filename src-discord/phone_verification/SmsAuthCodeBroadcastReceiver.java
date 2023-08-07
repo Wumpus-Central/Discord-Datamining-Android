@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import androidx.core.os.d;
 import com.discord.logging.Log;
 import com.google.android.gms.common.api.Status;
 import kotlin.Metadata;
@@ -35,7 +36,7 @@ public final class SmsAuthCodeBroadcastReceiver extends BroadcastReceiver {
 
     
     public SmsAuthCodeBroadcastReceiver(Function1<? super String, Unit> onReceiveCallback) {
-        q.g(onReceiveCallback, "onReceiveCallback");
+        q.h(onReceiveCallback, "onReceiveCallback");
         this.onReceiveCallback = onReceiveCallback;
     }
 
@@ -53,7 +54,7 @@ public final class SmsAuthCodeBroadcastReceiver extends BroadcastReceiver {
                 }
             }
             str2 = sb2.toString();
-            q.f(str2, "filterTo(StringBuilder(), predicate).toString()");
+            q.g(str2, "filterTo(StringBuilder(), predicate).toString()");
         }
         if (str2 == null) {
             return "";
@@ -64,13 +65,16 @@ public final class SmsAuthCodeBroadcastReceiver extends BroadcastReceiver {
     private final void extractSecurityCode(Bundle bundle) {
         String str;
         boolean z10;
-        String str2 = (String) bundle.get("com.google.android.gms.auth.api.phone.EXTRA_SMS_MESSAGE");
-        if (str2 != null) {
-            str = extractCode(str2);
+        String str2 = null;
+        if (bundle.containsKey("com.google.android.gms.auth.api.phone.EXTRA_SMS_MESSAGE")) {
+            str = bundle.getString("com.google.android.gms.auth.api.phone.EXTRA_SMS_MESSAGE");
         } else {
             str = null;
         }
-        if (str == null || str.length() == 0) {
+        if (str != null) {
+            str2 = extractCode(str);
+        }
+        if (str2 == null || str2.length() == 0) {
             z10 = true;
         } else {
             z10 = false;
@@ -79,28 +83,22 @@ public final class SmsAuthCodeBroadcastReceiver extends BroadcastReceiver {
             Log.i$default(Log.INSTANCE, TAG, "Failed to extract code from SMS.", (Throwable) null, 4, (Object) null);
             return;
         }
-        Log.i$default(Log.INSTANCE, TAG, "Successfully extracted code from SMS: " + str, (Throwable) null, 4, (Object) null);
-        this.onReceiveCallback.invoke(str);
+        Log.i$default(Log.INSTANCE, TAG, "Successfully extracted code from SMS: " + str2, (Throwable) null, 4, (Object) null);
+        this.onReceiveCallback.invoke(str2);
         this.handled = true;
     }
 
     @Override 
     public void onReceive(Context context, Intent intent) {
-        Object obj;
         Status status;
         Integer num;
-        q.g(context, "context");
-        q.g(intent, "intent");
+        q.h(context, "context");
+        q.h(intent, "intent");
         if (!this.handled) {
             Bundle extras = intent.getExtras();
             Integer num2 = null;
             if (extras != null) {
-                obj = extras.get("com.google.android.gms.auth.api.phone.EXTRA_STATUS");
-            } else {
-                obj = null;
-            }
-            if (obj instanceof Status) {
-                status = (Status) obj;
+                status = (Status) d.a(extras, "com.google.android.gms.auth.api.phone.EXTRA_STATUS", Status.class);
             } else {
                 status = null;
             }

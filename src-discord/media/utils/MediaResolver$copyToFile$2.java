@@ -2,9 +2,9 @@ package com.discord.media.utils;
 
 import android.content.ContentResolver;
 import android.net.Uri;
-import ff.t;
 import java.io.File;
 import java.io.InputStream;
+import jf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -13,7 +13,7 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
-import lf.d;
+import pf.d;
 
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "Landroid/net/Uri;", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -40,7 +40,7 @@ public final class MediaResolver$copyToFile$2 extends k implements Function2<Cor
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Uri> continuation) {
-        return ((MediaResolver$copyToFile$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f20679a);
+        return ((MediaResolver$copyToFile$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
     }
 
     @Override 
@@ -62,9 +62,9 @@ public final class MediaResolver$copyToFile$2 extends k implements Function2<Cor
             InputStream inputStream = resolver.openInputStream(uri);
             if (inputStream != null) {
                 try {
-                    q.f(inputStream, "inputStream");
+                    q.g(inputStream, "inputStream");
                     FileUtilsKt.writeTo(inputStream, file);
-                    Unit unit = Unit.f20679a;
+                    Unit unit = Unit.f21025a;
                     th = null;
                 } finally {
                     try {
@@ -74,7 +74,7 @@ public final class MediaResolver$copyToFile$2 extends k implements Function2<Cor
                 }
             }
             Uri fromFile = Uri.fromFile(file);
-            q.f(fromFile, "fromFile(this)");
+            q.g(fromFile, "fromFile(this)");
             return fromFile;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");

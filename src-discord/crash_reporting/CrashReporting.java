@@ -5,19 +5,19 @@ import android.os.Build;
 import com.discord.BuildConfig;
 import com.discord.client_info.ClientInfo;
 import com.discord.logging.Log;
-import ff.f;
-import gf.v;
 import io.sentry.Scope;
 import io.sentry.android.core.SentryAndroidOptions;
-import io.sentry.android.core.b1;
-import io.sentry.b2;
-import io.sentry.d;
-import io.sentry.k2;
-import io.sentry.n3;
-import io.sentry.o3;
+import io.sentry.android.core.m1;
+import io.sentry.d3;
+import io.sentry.e;
+import io.sentry.m4;
+import io.sentry.r4;
+import io.sentry.t2;
 import java.io.File;
 import java.util.List;
 import java.util.Map;
+import jf.f;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.collections.i;
 import kotlin.jvm.internal.q;
@@ -79,32 +79,32 @@ public final class CrashReporting {
 
     public static final void captureMessage$lambda$1(String tag, String message, ErrorLevel errorLevel, Scope SentryScope) {
         List<String> d10;
-        n3 n3Var;
-        q.g(tag, "$tag");
-        q.g(message, "$message");
-        q.g(errorLevel, "$errorLevel");
-        q.g(SentryScope, "SentryScope");
+        m4 m4Var;
+        q.h(tag, "$tag");
+        q.h(message, "$message");
+        q.h(errorLevel, "$errorLevel");
+        q.h(SentryScope, "SentryScope");
         d10 = i.d(tag);
-        SentryScope.v(d10);
+        SentryScope.z(d10);
         int i10 = WhenMappings.$EnumSwitchMapping$0[errorLevel.ordinal()];
         if (i10 == 1) {
-            n3Var = n3.INFO;
+            m4Var = m4.INFO;
         } else if (i10 == 2) {
-            n3Var = n3.WARNING;
+            m4Var = m4.WARNING;
         } else {
-            throw new ff.q();
+            throw new jf.q();
         }
-        k2.h(message, n3Var);
+        d3.i(message, m4Var);
     }
 
     public static final void init$lambda$0(Context context, SentryAndroidOptions options) {
-        q.g(context, "$context");
-        q.g(options, "options");
+        q.h(context, "$context");
+        q.h(options, "options");
         options.setDsn("https:
         ClientInfo clientInfo = ClientInfo.INSTANCE;
         options.setEnvironment(clientInfo.getReleaseChannel());
         options.setDist(clientInfo.getVersionCode());
-        options.setRelease("discord_android@191.0.0-2+191200");
+        options.setRelease("discord_android@192.0.0-2+192200");
         File cacheDir = context.getCacheDir();
         options.setCacheDirPath(cacheDir + "/sentry");
         options.setEnableActivityLifecycleTracingAutoFinish(false);
@@ -112,43 +112,43 @@ public final class CrashReporting {
         CrashReporting crashReporting = INSTANCE;
         options.setTracesSampleRate(Double.valueOf(crashReporting.getTracingSampleRate()));
         options.setSampleRate(Double.valueOf(crashReporting.getSampleRate()));
-        options.setProguardUuid("7a238e3e-91f7-42ad-8f42-9c33a459adca");
+        options.setProguardUuid("9979a6f3-636c-41ac-8f1c-099842d65861");
         options.setTag(TAG_BUILD_NUMBER, clientInfo.getVersionCode());
         options.setTag(TAG_APP_VERSION, clientInfo.getVersionName());
     }
 
     public final void addBreadcrumb(String breadcrumbMessage, Map<String, String> breadcrumbData, String str) {
-        q.g(breadcrumbMessage, "breadcrumbMessage");
-        q.g(breadcrumbData, "breadcrumbData");
-        d dVar = new d(breadcrumbMessage);
+        q.h(breadcrumbMessage, "breadcrumbMessage");
+        q.h(breadcrumbData, "breadcrumbData");
+        e eVar = new e(breadcrumbMessage);
         for (Map.Entry<String, String> entry : breadcrumbData.entrySet()) {
-            dVar.m(entry.getKey(), entry.getValue());
+            eVar.m(entry.getKey(), entry.getValue());
         }
-        dVar.l(str);
+        eVar.l(str);
         Log.i$default(Log.INSTANCE, "SentryBreadcrumb", breadcrumbMessage, (Throwable) null, 4, (Object) null);
-        k2.b(dVar);
+        d3.c(eVar);
     }
 
     public final void captureException(Throwable throwable) {
         String b10;
-        q.g(throwable, "throwable");
+        q.h(throwable, "throwable");
         Log log = Log.INSTANCE;
         b10 = f.b(throwable);
         Log.e$default(log, "SentryBreadcrumb", b10, (Throwable) null, 4, (Object) null);
-        k2.f(throwable);
+        d3.g(throwable);
     }
 
     public final void captureMessage(final String tag, final String message, final ErrorLevel errorLevel) {
-        q.g(tag, "tag");
-        q.g(message, "message");
-        q.g(errorLevel, "errorLevel");
+        q.h(tag, "tag");
+        q.h(message, "message");
+        q.h(errorLevel, "errorLevel");
         int i10 = WhenMappings.$EnumSwitchMapping$0[errorLevel.ordinal()];
         if (i10 == 1) {
             Log.i$default(Log.INSTANCE, tag, message, (Throwable) null, 4, (Object) null);
         } else if (i10 == 2) {
             Log.w$default(Log.INSTANCE, tag, message, (Throwable) null, 4, (Object) null);
         }
-        k2.x(new b2() { 
+        d3.B(new t2() { 
             @Override 
             public final void a(Scope scope) {
                 CrashReporting.captureMessage$lambda$1(tag, message, errorLevel, scope);
@@ -162,14 +162,14 @@ public final class CrashReporting {
 
     public final double getTracingSampleRate() {
         boolean M;
-        M = ji.v.M(ClientInfo.INSTANCE.getReleaseChannel(), BuildConfig.FLAVOR, false, 2, null);
+        M = ni.v.M(ClientInfo.INSTANCE.getReleaseChannel(), BuildConfig.FLAVOR, false, 2, null);
         return M ? 0.05d : 0.0d;
     }
 
     public final void init(final Context context) {
         boolean z10;
         boolean M;
-        q.g(context, "context");
+        q.h(context, "context");
         ClientInfo clientInfo = ClientInfo.INSTANCE;
         if (clientInfo.isDebugBuild() || clientInfo.isDeveloperBuild()) {
             z10 = true;
@@ -179,19 +179,19 @@ public final class CrashReporting {
         if (!z10) {
             if (clientInfo.isProdBuild()) {
                 String DEVICE = Build.DEVICE;
-                q.f(DEVICE, "DEVICE");
-                M = ji.v.M(DEVICE, "vivo", false, 2, null);
+                q.g(DEVICE, "DEVICE");
+                M = ni.v.M(DEVICE, "vivo", false, 2, null);
                 if (M) {
                     return;
                 }
             }
-            b1.f(context, new k2.a() { 
+            m1.f(context, new d3.a() { 
                 @Override 
-                public final void a(o3 o3Var) {
-                    CrashReporting.init$lambda$0(context, (SentryAndroidOptions) o3Var);
+                public final void a(r4 r4Var) {
+                    CrashReporting.init$lambda$0(context, (SentryAndroidOptions) r4Var);
                 }
             });
-            isCrashedLastRun = k2.q();
+            isCrashedLastRun = d3.s();
         }
     }
 
@@ -200,8 +200,8 @@ public final class CrashReporting {
     }
 
     public final void captureMessage(String tag, Exception exception) {
-        q.g(tag, "tag");
-        q.g(exception, "exception");
+        q.h(tag, "tag");
+        q.h(exception, "exception");
         String message = exception.getMessage();
         if (message == null) {
             message = "";

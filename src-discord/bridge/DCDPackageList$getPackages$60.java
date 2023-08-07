@@ -18,7 +18,7 @@ final class DCDPackageList$getPackages$60 extends s implements Function1<ReactAp
     }
 
     public final ReactContextBaseJavaModule invoke(ReactApplicationContext it) {
-        q.g(it, "it");
+        q.h(it, "it");
         return new KeyCommandsViewManagerModule(it);
     }
 }

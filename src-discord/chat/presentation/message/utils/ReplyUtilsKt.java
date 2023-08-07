@@ -11,16 +11,16 @@ import kotlin.jvm.internal.q;
 
 public final class ReplyUtilsKt {
     public static final DraweeSpanStringBuilder createReplyContent(View referenceView, DraweeSpanStringBuilder builder) {
-        q.g(referenceView, "referenceView");
-        q.g(builder, "builder");
+        q.h(referenceView, "referenceView");
+        q.h(builder, "builder");
         referenceView.measure(0, 0);
         builder.setSpan(new LeadingMarginSpan.Standard(referenceView.getMeasuredWidth(), 0), 0, builder.length(), 33);
         return builder;
     }
 
     public static final DraweeSpanStringBuilder createSystemReplyContent(View referenceView, String content) {
-        q.g(referenceView, "referenceView");
-        q.g(content, "content");
+        q.h(referenceView, "referenceView");
+        q.h(content, "content");
         DraweeSpanStringBuilder draweeSpanStringBuilder = new DraweeSpanStringBuilder(content);
         draweeSpanStringBuilder.setSpan(new StyleSpan(2), 0, draweeSpanStringBuilder.length(), 33);
         return createReplyContent(referenceView, draweeSpanStringBuilder);

@@ -32,12 +32,12 @@ public final class ScreenshotDetector {
             if (screenshotDetector != null) {
                 return screenshotDetector;
             }
-            q.y("INSTANCE");
+            q.z("INSTANCE");
             return null;
         }
 
         public final void init(ContentResolver contentResolver) {
-            q.g(contentResolver, "contentResolver");
+            q.h(contentResolver, "contentResolver");
             if (ScreenshotDetector.INSTANCE == null) {
                 ScreenshotDetector.INSTANCE = new ScreenshotDetector(contentResolver);
             }
@@ -45,7 +45,7 @@ public final class ScreenshotDetector {
     }
 
     public ScreenshotDetector(ContentResolver contentResolver) {
-        q.g(contentResolver, "contentResolver");
+        q.h(contentResolver, "contentResolver");
         this.screenshotContentObserver = new ScreenshotContentObserver(contentResolver, new ScreenshotDetector$screenshotContentObserver$1(this));
     }
 

@@ -19,7 +19,7 @@ final class MediaEngine$setVideoOutputSink$1$1 implements NativeEngine.VideoFram
 
     @Override 
     public final boolean onFrame(VideoFrame videoFrame) {
-        q.g(videoFrame, "videoFrame");
+        q.h(videoFrame, "videoFrame");
         return this.$callback.invoke(videoFrame).booleanValue();
     }
 }

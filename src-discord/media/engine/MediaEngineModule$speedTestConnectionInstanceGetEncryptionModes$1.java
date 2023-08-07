@@ -23,12 +23,12 @@ final class MediaEngineModule$speedTestConnectionInstanceGetEncryptionModes$1 ex
     @Override 
     public   Unit invoke(String[] strArr) {
         invoke2(strArr);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String[] modes) {
-        q.g(modes, "modes");
+        q.h(modes, "modes");
         this.$callback.invoke(NativeArrayExtensionsKt.toNativeArray(modes));
     }
 }

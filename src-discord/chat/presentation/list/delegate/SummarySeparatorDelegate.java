@@ -19,45 +19,45 @@ public final class SummarySeparatorDelegate extends BaseChatListItemDelegate<Sum
     
     public SummarySeparatorDelegate(Function0<? extends ChatEventHandler> eventHandlerProvider) {
         super(eventHandlerProvider, null, 2, null);
-        q.g(eventHandlerProvider, "eventHandlerProvider");
+        q.h(eventHandlerProvider, "eventHandlerProvider");
     }
 
     
     public static final void bindView$lambda$2$lambda$0(SummarySeparatorChatListItem item, SummarySeparatorDelegate this$0, View view) {
         String str;
-        q.g(item, "$item");
-        q.g(this$0, "this$0");
+        q.h(item, "$item");
+        q.h(this$0, "this$0");
         if (item.isBeforeContent()) {
-            str = item.getSummary().m140getStartId3Eiw7ao();
+            str = item.getSummary().m141getStartId3Eiw7ao();
         } else {
-            str = item.getSummary().m139getEndId3Eiw7ao();
+            str = item.getSummary().m140getEndId3Eiw7ao();
         }
-        this$0.getEventHandler().mo174onTapSummarysekaTiM(item.getSummary().m138getChannelIdo4g7jtM(), str, item.getSummary().getId());
+        this$0.getEventHandler().mo175onTapSummarysekaTiM(item.getSummary().m139getChannelIdo4g7jtM(), str, item.getSummary().getId());
     }
 
     
     public static final void bindView$lambda$2$lambda$1(SummarySeparatorChatListItem item, SummarySeparatorDelegate this$0, View view) {
         String str;
-        q.g(item, "$item");
-        q.g(this$0, "this$0");
+        q.h(item, "$item");
+        q.h(this$0, "this$0");
         if (item.isBeforeContent()) {
-            str = item.getSummary().m139getEndId3Eiw7ao();
+            str = item.getSummary().m140getEndId3Eiw7ao();
         } else {
-            str = item.getSummary().m140getStartId3Eiw7ao();
+            str = item.getSummary().m141getStartId3Eiw7ao();
         }
-        this$0.getEventHandler().mo175onTapSummaryJumpsekaTiM(item.getSummary().m138getChannelIdo4g7jtM(), str, item.getSummary().getId());
+        this$0.getEventHandler().mo176onTapSummaryJumpsekaTiM(item.getSummary().m139getChannelIdo4g7jtM(), str, item.getSummary().getId());
     }
 
     @Override 
     public boolean isForItem(ChatListItem item, int i10) {
-        q.g(item, "item");
+        q.h(item, "item");
         return item instanceof SummarySeparatorChatListItem;
     }
 
     public void bindView(SummarySeparatorView view, final SummarySeparatorChatListItem item, BaseChatListItemDelegate.Metadata<SummarySeparatorView> metadata) {
-        q.g(view, "view");
-        q.g(item, "item");
-        q.g(metadata, "metadata");
+        q.h(view, "view");
+        q.h(item, "item");
+        q.h(metadata, "metadata");
         view.setDividerColor(item.getColor());
         view.setText(item.getText());
         view.setIsBeforeContent(item.isBeforeContent());
@@ -77,9 +77,9 @@ public final class SummarySeparatorDelegate extends BaseChatListItemDelegate<Sum
 
     @Override 
     public SummarySeparatorView createView(ViewGroup parent) {
-        q.g(parent, "parent");
+        q.h(parent, "parent");
         Context context = parent.getContext();
-        q.f(context, "parent.context");
+        q.g(context, "parent.context");
         return new SummarySeparatorView(context, null, 2, null);
     }
 }

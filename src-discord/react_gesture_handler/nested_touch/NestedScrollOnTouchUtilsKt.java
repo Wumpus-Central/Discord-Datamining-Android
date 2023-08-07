@@ -13,7 +13,7 @@ public final class NestedScrollOnTouchUtilsKt {
     private static WeakHashMap<View, View.OnLongClickListener> viewLongClickListeners = new WeakHashMap<>();
 
     public static final void enableNestedSpanClickListener(TextView textView, boolean z10) {
-        q.g(textView, "<this>");
+        q.h(textView, "<this>");
         textView.setOnTouchListener(new NestedScrollOnTouchListener(textView, z10));
     }
 
@@ -33,7 +33,7 @@ public final class NestedScrollOnTouchUtilsKt {
     }
 
     public static final void setOnClickListenerNested(View view, boolean z10, View.OnClickListener onClickListener) {
-        q.g(view, "<this>");
+        q.h(view, "<this>");
         if (onClickListener == null) {
             viewClickListeners.remove(view);
         } else {
@@ -51,7 +51,7 @@ public final class NestedScrollOnTouchUtilsKt {
     }
 
     public static final void setOnLongClickListenerNested(View view, boolean z10, View.OnLongClickListener onLongClickListener) {
-        q.g(view, "<this>");
+        q.h(view, "<this>");
         if (onLongClickListener == null) {
             viewLongClickListeners.remove(view);
         } else {
@@ -69,12 +69,12 @@ public final class NestedScrollOnTouchUtilsKt {
     }
 
     public static final void setViewClickListeners(WeakHashMap<View, View.OnClickListener> weakHashMap) {
-        q.g(weakHashMap, "<set-?>");
+        q.h(weakHashMap, "<set-?>");
         viewClickListeners = weakHashMap;
     }
 
     public static final void setViewLongClickListeners(WeakHashMap<View, View.OnLongClickListener> weakHashMap) {
-        q.g(weakHashMap, "<set-?>");
+        q.h(weakHashMap, "<set-?>");
         viewLongClickListeners = weakHashMap;
     }
 

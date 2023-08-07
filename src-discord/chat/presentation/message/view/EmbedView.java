@@ -10,7 +10,6 @@ import android.widget.LinearLayout;
 import android.widget.Space;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.R;
 import com.discord.chat.bridge.contentnode.CommandMentionContentNode;
@@ -31,17 +30,6 @@ import com.discord.chat.databinding.EmbedViewBinding;
 import com.discord.chat.presentation.media.MediaContainingViewResizer;
 import com.discord.chat.presentation.message.MessageAccessoriesView;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.image.fresco.SetOptionalImageUrlKt;
@@ -75,7 +63,7 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
-@Metadata(d1 = {"\u0000¾\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\r\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\u0013\n\u0002\u0010\u0006\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u001d\b\u0007\u0012\u0006\u0010u\u001a\u00020t\u0012\n\b\u0002\u0010w\u001a\u0004\u0018\u00010v¢\u0006\u0004\bx\u0010yJ9\u0010\t\u001a\u00020\u00072\b\u0010\u0003\u001a\u0004\u0018\u00010\u00022\n\b\u0001\u0010\u0005\u001a\u0004\u0018\u00010\u00042\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u0006H\u0002¢\u0006\u0004\b\t\u0010\nJK\u0010\u0013\u001a\u00020\u00072\u0006\u0010\f\u001a\u00020\u000b2\b\u0010\u000e\u001a\u0004\u0018\u00010\r2\n\b\u0001\u0010\u000f\u001a\u0004\u0018\u00010\u00042\b\u0010\u0011\u001a\u0004\u0018\u00010\u00102\u0012\u0010\u0012\u001a\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00070\u0006H\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001c\u0010\u0017\u001a\u00020\u00072\b\u0010\u0015\u001a\u0004\u0018\u00010\u000b2\b\u0010\u0016\u001a\u0004\u0018\u00010\u000bH\u0002J&\u0010\u0019\u001a\u00020\u00072\b\u0010\u0018\u001a\u0004\u0018\u00010\u00102\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u0006H\u0002J\u0012\u0010\u001c\u001a\u00020\u00072\b\u0010\u001b\u001a\u0004\u0018\u00010\u001aH\u0002J8\u0010 \u001a\u00020\u00072\u0006\u0010\u001d\u001a\u00020\u000b2\b\u0010\u001e\u001a\u0004\u0018\u00010\r2\b\b\u0001\u0010\u001f\u001a\u00020\u00042\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u0006H\u0002Jå\u0001\u00107\u001a\u00020\u00072\f\u0010#\u001a\b\u0012\u0004\u0012\u00020\"0!2\u0006\u0010%\u001a\u00020$2\u0006\u0010'\u001a\u00020&2\u0006\u0010(\u001a\u00020&2\u0006\u0010)\u001a\u00020&2\u0018\u0010,\u001a\u0014\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020+\u0012\u0004\u0012\u00020\u00070*2\u0012\u0010-\u001a\u000e\u0012\u0004\u0012\u00020+\u0012\u0004\u0012\u00020\u00070\u00062\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u00062\f\u0010/\u001a\b\u0012\u0004\u0012\u00020\u00070.2\u0012\u00101\u001a\u000e\u0012\u0004\u0012\u000200\u0012\u0004\u0012\u00020\u00070\u00062\"\u00103\u001a\u001e\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0004\u0012\u00020\u0007022\u0018\u00104\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00070*H\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b5\u00106J\u0010\u00109\u001a\u00020\u00072\u0006\u00108\u001a\u00020&H\u0002J\u001b\u0010;\u001a\u00020\u00072\n\b\u0001\u0010:\u001a\u0004\u0018\u00010\u0004H\u0002¢\u0006\u0004\b;\u0010<J0\u0010E\u001a\u00020\u00072\u0006\u0010>\u001a\u00020=2\u0006\u0010@\u001a\u00020?2\u0006\u0010B\u001a\u00020A2\u0006\u0010C\u001a\u00020\u00042\u0006\u0010D\u001a\u00020\u0004H\u0002J0\u0010H\u001a\u00020\u00072\b\u0010F\u001a\u0004\u0018\u00010\u000b2\b\u0010G\u001a\u0004\u0018\u00010\u000b2\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u0006H\u0002J;\u0010M\u001a\u00020\u00072\b\u0010I\u001a\u0004\u0018\u00010\u000b2\b\b\u0001\u0010J\u001a\u00020\u00042\n\b\u0002\u0010K\u001a\u0004\u0018\u00010\u000b2\n\b\u0003\u0010L\u001a\u0004\u0018\u00010\u0004H\u0002¢\u0006\u0004\bM\u0010NJ\u0012\u0010Q\u001a\u00020\u00072\b\u0010P\u001a\u0004\u0018\u00010OH\u0002J\b\u0010R\u001a\u00020\u0007H\u0002J\b\u0010S\u001a\u00020\u0007H\u0002J\b\u0010T\u001a\u00020\u0007H\u0002J\b\u0010U\u001a\u00020\u0007H\u0002J\b\u0010V\u001a\u00020\u0007H\u0002J\b\u0010W\u001a\u00020\u0007H\u0002J\b\u0010X\u001a\u00020\u0007H\u0002J\b\u0010Y\u001a\u00020\u0007H\u0002J\b\u0010Z\u001a\u00020\u0007H\u0002J\b\u0010[\u001a\u00020\u0007H\u0002J\b\u0010\\\u001a\u00020\u0007H\u0002J\b\u0010]\u001a\u00020\u0007H\u0002J\u008f\u0003\u0010m\u001a\u00020\u00072\u0006\u0010@\u001a\u00020?2\u0006\u0010%\u001a\u00020$2\u0006\u0010^\u001a\u00020\u00042\u0006\u0010C\u001a\u00020\u00042\u0006\u0010_\u001a\u00020\u00042\u0006\u0010`\u001a\u00020&2\u0006\u0010'\u001a\u00020&2\u0006\u0010(\u001a\u00020&2\u0006\u0010)\u001a\u00020&2 \u0010a\u001a\u001c\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0004\u0012\u00020\u0007022 \u0010b\u001a\u001c\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0004\u0012\u00020\u0007022\u001c\u0010d\u001a\u0018\u0012\u0006\u0012\u0004\u0018\u00010c\u0012\u0006\u0012\u0004\u0018\u00010\u0004\u0012\u0004\u0012\u00020\u00070*2\b\u0010f\u001a\u0004\u0018\u00010e2\u0018\u0010,\u001a\u0014\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020+\u0012\u0004\u0012\u00020\u00070*2\u0012\u0010g\u001a\u000e\u0012\u0004\u0012\u00020+\u0012\u0004\u0012\u00020\u00070\u00062\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u00062\f\u0010/\u001a\b\u0012\u0004\u0012\u00020\u00070.2\u0012\u00101\u001a\u000e\u0012\u0004\u0012\u000200\u0012\u0004\u0012\u00020\u00070\u00062\"\u00103\u001a\u001e\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0004\u0012\u00020\u0007022\u0018\u00104\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00070*2\u0012\u0010i\u001a\u000e\u0012\u0004\u0012\u00020h\u0012\u0004\u0012\u00020\u00070\u00062\b\u0010P\u001a\u0004\u0018\u00010O2\u0006\u0010j\u001a\u00020cø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\bk\u0010lR\u0014\u0010o\u001a\u00020n8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bo\u0010pR\u0018\u0010@\u001a\u0004\u0018\u00010?8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b@\u0010qR\u0016\u0010r\u001a\u00020\u00048\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\br\u0010s\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006z"}, d2 = {"Lcom/discord/chat/presentation/message/view/EmbedView;", "Landroid/widget/FrameLayout;", "", "provider", "", "providerColor", "Lkotlin/Function1;", "", "onTapCopyText", "setProvider", "(Ljava/lang/CharSequence;Ljava/lang/Integer;Lkotlin/jvm/functions/Function1;)V", "", "rawTitle", "Lcom/facebook/drawee/span/DraweeSpanStringBuilder;", "title", "titleColor", "Landroid/view/View$OnClickListener;", "onClickListener", "onLongClickListener", "setTitle", "(Ljava/lang/String;Lcom/facebook/drawee/span/DraweeSpanStringBuilder;Ljava/lang/Integer;Landroid/view/View$OnClickListener;Lkotlin/jvm/functions/Function1;)V", "authorUrl", "authorName", "setAuthor", "listener", "setAuthorOnClickListener", "Lcom/discord/chat/bridge/embed/EmbedThumbnail;", "thumbnail", "setThumbnail", "rawDescription", "description", "descriptionColor", "setDescription", "", "Lcom/discord/chat/bridge/embed/EmbedField;", "fields", "Lcom/discord/primitives/MessageId;", "messageId", "", "shouldAnimateEmoji", "shouldShowRoleDot", "shouldShowRoleOnName", "Lkotlin/Function2;", "Lcom/discord/chat/bridge/contentnode/LinkContentNode;", "onLinkClicked", "onLinkLongClicked", "Lkotlin/Function0;", "onTapSpoiler", "Lcom/discord/chat/bridge/contentnode/EmojiContentNode;", "onTapEmoji", "Lkotlin/Function3;", "onTapChannel", "onTapMention", "setFields-thlxG-E", "(Ljava/util/List;Ljava/lang/String;ZZZLkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;)V", "setFields", "isBackgroundColorEnabled", "setBackgroundColorEnabled", ViewProps.COLOR, "setBorder", "(Ljava/lang/Integer;)V", "Lcom/discord/chat/presentation/message/view/EmbedViewResizingMediaView;", "mediaView", "Lcom/discord/chat/bridge/embed/Embed;", "embed", "Lcom/discord/media_player/MediaSource;", "mediaSource", "maxHeightPx", "maxWidthPx", "setMediaEmbed", "imageUrl", "text", "setFooter", "error", "textColor", "iconURL", "iconTint", "setError", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Integer;)V", "Lcom/discord/chat/bridge/spoiler/SpoilerConfig;", "spoilerConfig", "configureSpoiler", "reset", "clearInlineMedia", "clearBorder", "clearThumbnail", "clearProvider", "clearAuthor", "clearTitle", "clearDescription", "clearFields", "clearMedia", "clearFooter", "clearError", "constrainedWidth", "radiusPx", "shouldAutoPlayGifs", "onTitleLinkClicked", "onAuthorLinkClicked", "", "onMediaClicked", "Landroid/view/View$OnLongClickListener;", "onMediaLongClicked", "onLongTapLinkNode", "Lcom/discord/chat/bridge/contentnode/CommandMentionContentNode;", "onTapCommand", "portal", "setEmbed-lKx2FiY", "(Lcom/discord/chat/bridge/embed/Embed;Ljava/lang/String;IIIZZZZLkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;Landroid/view/View$OnLongClickListener;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lcom/discord/chat/bridge/spoiler/SpoilerConfig;D)V", "setEmbed", "Lcom/discord/chat/databinding/EmbedViewBinding;", "binding", "Lcom/discord/chat/databinding/EmbedViewBinding;", "Lcom/discord/chat/bridge/embed/Embed;", "maxThumbnailSize", "I", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u0000¾\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\r\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\u0013\n\u0002\u0010\u0006\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u001d\b\u0007\u0012\u0006\u0010w\u001a\u00020v\u0012\n\b\u0002\u0010y\u001a\u0004\u0018\u00010x¢\u0006\u0004\bz\u0010{J9\u0010\t\u001a\u00020\u00072\b\u0010\u0003\u001a\u0004\u0018\u00010\u00022\n\b\u0001\u0010\u0005\u001a\u0004\u0018\u00010\u00042\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u0006H\u0002¢\u0006\u0004\b\t\u0010\nJK\u0010\u0013\u001a\u00020\u00072\u0006\u0010\f\u001a\u00020\u000b2\b\u0010\u000e\u001a\u0004\u0018\u00010\r2\n\b\u0001\u0010\u000f\u001a\u0004\u0018\u00010\u00042\b\u0010\u0011\u001a\u0004\u0018\u00010\u00102\u0012\u0010\u0012\u001a\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00070\u0006H\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001c\u0010\u0017\u001a\u00020\u00072\b\u0010\u0015\u001a\u0004\u0018\u00010\u000b2\b\u0010\u0016\u001a\u0004\u0018\u00010\u000bH\u0002J&\u0010\u0019\u001a\u00020\u00072\b\u0010\u0018\u001a\u0004\u0018\u00010\u00102\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u0006H\u0002J\u0012\u0010\u001c\u001a\u00020\u00072\b\u0010\u001b\u001a\u0004\u0018\u00010\u001aH\u0002J8\u0010 \u001a\u00020\u00072\u0006\u0010\u001d\u001a\u00020\u000b2\b\u0010\u001e\u001a\u0004\u0018\u00010\r2\b\b\u0001\u0010\u001f\u001a\u00020\u00042\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u0006H\u0002Jå\u0001\u00107\u001a\u00020\u00072\f\u0010#\u001a\b\u0012\u0004\u0012\u00020\"0!2\u0006\u0010%\u001a\u00020$2\u0006\u0010'\u001a\u00020&2\u0006\u0010(\u001a\u00020&2\u0006\u0010)\u001a\u00020&2\u0018\u0010,\u001a\u0014\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020+\u0012\u0004\u0012\u00020\u00070*2\u0012\u0010-\u001a\u000e\u0012\u0004\u0012\u00020+\u0012\u0004\u0012\u00020\u00070\u00062\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u00062\f\u0010/\u001a\b\u0012\u0004\u0012\u00020\u00070.2\u0012\u00101\u001a\u000e\u0012\u0004\u0012\u000200\u0012\u0004\u0012\u00020\u00070\u00062\"\u00103\u001a\u001e\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0004\u0012\u00020\u0007022\u0018\u00104\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00070*H\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b5\u00106J#\u0010:\u001a\u00020\u00072\u0006\u00108\u001a\u00020&2\n\b\u0002\u00109\u001a\u0004\u0018\u00010\u0004H\u0002¢\u0006\u0004\b:\u0010;J\u001b\u0010=\u001a\u00020\u00072\n\b\u0001\u0010<\u001a\u0004\u0018\u00010\u0004H\u0002¢\u0006\u0004\b=\u0010>J0\u0010G\u001a\u00020\u00072\u0006\u0010@\u001a\u00020?2\u0006\u0010B\u001a\u00020A2\u0006\u0010D\u001a\u00020C2\u0006\u0010E\u001a\u00020\u00042\u0006\u0010F\u001a\u00020\u0004H\u0002J0\u0010J\u001a\u00020\u00072\b\u0010H\u001a\u0004\u0018\u00010\u000b2\b\u0010I\u001a\u0004\u0018\u00010\u000b2\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u0006H\u0002J;\u0010O\u001a\u00020\u00072\b\u0010K\u001a\u0004\u0018\u00010\u000b2\b\b\u0001\u0010L\u001a\u00020\u00042\n\b\u0002\u0010M\u001a\u0004\u0018\u00010\u000b2\n\b\u0003\u0010N\u001a\u0004\u0018\u00010\u0004H\u0002¢\u0006\u0004\bO\u0010PJ\u0012\u0010S\u001a\u00020\u00072\b\u0010R\u001a\u0004\u0018\u00010QH\u0002J\b\u0010T\u001a\u00020\u0007H\u0002J\b\u0010U\u001a\u00020\u0007H\u0002J\b\u0010V\u001a\u00020\u0007H\u0002J\b\u0010W\u001a\u00020\u0007H\u0002J\b\u0010X\u001a\u00020\u0007H\u0002J\b\u0010Y\u001a\u00020\u0007H\u0002J\b\u0010Z\u001a\u00020\u0007H\u0002J\b\u0010[\u001a\u00020\u0007H\u0002J\b\u0010\\\u001a\u00020\u0007H\u0002J\b\u0010]\u001a\u00020\u0007H\u0002J\b\u0010^\u001a\u00020\u0007H\u0002J\b\u0010_\u001a\u00020\u0007H\u0002J\u008f\u0003\u0010o\u001a\u00020\u00072\u0006\u0010B\u001a\u00020A2\u0006\u0010%\u001a\u00020$2\u0006\u0010`\u001a\u00020\u00042\u0006\u0010E\u001a\u00020\u00042\u0006\u0010a\u001a\u00020\u00042\u0006\u0010b\u001a\u00020&2\u0006\u0010'\u001a\u00020&2\u0006\u0010(\u001a\u00020&2\u0006\u0010)\u001a\u00020&2 \u0010c\u001a\u001c\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0004\u0012\u00020\u0007022 \u0010d\u001a\u001c\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0004\u0012\u00020\u0007022\u001c\u0010f\u001a\u0018\u0012\u0006\u0012\u0004\u0018\u00010e\u0012\u0006\u0012\u0004\u0018\u00010\u0004\u0012\u0004\u0012\u00020\u00070*2\b\u0010h\u001a\u0004\u0018\u00010g2\u0018\u0010,\u001a\u0014\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020+\u0012\u0004\u0012\u00020\u00070*2\u0012\u0010i\u001a\u000e\u0012\u0004\u0012\u00020+\u0012\u0004\u0012\u00020\u00070\u00062\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u00062\f\u0010/\u001a\b\u0012\u0004\u0012\u00020\u00070.2\u0012\u00101\u001a\u000e\u0012\u0004\u0012\u000200\u0012\u0004\u0012\u00020\u00070\u00062\"\u00103\u001a\u001e\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0004\u0012\u00020\u0007022\u0018\u00104\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00070*2\u0012\u0010k\u001a\u000e\u0012\u0004\u0012\u00020j\u0012\u0004\u0012\u00020\u00070\u00062\b\u0010R\u001a\u0004\u0018\u00010Q2\u0006\u0010l\u001a\u00020eø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\bm\u0010nR\u0014\u0010q\u001a\u00020p8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bq\u0010rR\u0018\u0010B\u001a\u0004\u0018\u00010A8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bB\u0010sR\u0016\u0010t\u001a\u00020\u00048\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bt\u0010u\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006|"}, d2 = {"Lcom/discord/chat/presentation/message/view/EmbedView;", "Landroid/widget/FrameLayout;", "", "provider", "", "providerColor", "Lkotlin/Function1;", "", "onTapCopyText", "setProvider", "(Ljava/lang/CharSequence;Ljava/lang/Integer;Lkotlin/jvm/functions/Function1;)V", "", "rawTitle", "Lcom/facebook/drawee/span/DraweeSpanStringBuilder;", "title", "titleColor", "Landroid/view/View$OnClickListener;", "onClickListener", "onLongClickListener", "setTitle", "(Ljava/lang/String;Lcom/facebook/drawee/span/DraweeSpanStringBuilder;Ljava/lang/Integer;Landroid/view/View$OnClickListener;Lkotlin/jvm/functions/Function1;)V", "authorUrl", "authorName", "setAuthor", "listener", "setAuthorOnClickListener", "Lcom/discord/chat/bridge/embed/EmbedThumbnail;", "thumbnail", "setThumbnail", "rawDescription", "description", "descriptionColor", "setDescription", "", "Lcom/discord/chat/bridge/embed/EmbedField;", "fields", "Lcom/discord/primitives/MessageId;", "messageId", "", "shouldAnimateEmoji", "shouldShowRoleDot", "shouldShowRoleOnName", "Lkotlin/Function2;", "Lcom/discord/chat/bridge/contentnode/LinkContentNode;", "onLinkClicked", "onLinkLongClicked", "Lkotlin/Function0;", "onTapSpoiler", "Lcom/discord/chat/bridge/contentnode/EmojiContentNode;", "onTapEmoji", "Lkotlin/Function3;", "onTapChannel", "onTapMention", "setFields-thlxG-E", "(Ljava/util/List;Ljava/lang/String;ZZZLkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;)V", "setFields", "isBackgroundColorEnabled", ViewProps.BACKGROUND_COLOR, "setBackgroundColorEnabled", "(ZLjava/lang/Integer;)V", ViewProps.COLOR, "setBorder", "(Ljava/lang/Integer;)V", "Lcom/discord/chat/presentation/message/view/EmbedViewResizingMediaView;", "mediaView", "Lcom/discord/chat/bridge/embed/Embed;", "embed", "Lcom/discord/media_player/MediaSource;", "mediaSource", "maxHeightPx", "maxWidthPx", "setMediaEmbed", "imageUrl", "text", "setFooter", "error", "textColor", "iconURL", "iconTint", "setError", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Integer;)V", "Lcom/discord/chat/bridge/spoiler/SpoilerConfig;", "spoilerConfig", "configureSpoiler", "reset", "clearInlineMedia", "clearBorder", "clearThumbnail", "clearProvider", "clearAuthor", "clearTitle", "clearDescription", "clearFields", "clearMedia", "clearFooter", "clearError", "constrainedWidth", "radiusPx", "shouldAutoPlayGifs", "onTitleLinkClicked", "onAuthorLinkClicked", "", "onMediaClicked", "Landroid/view/View$OnLongClickListener;", "onMediaLongClicked", "onLongTapLinkNode", "Lcom/discord/chat/bridge/contentnode/CommandMentionContentNode;", "onTapCommand", "portal", "setEmbed-lKx2FiY", "(Lcom/discord/chat/bridge/embed/Embed;Ljava/lang/String;IIIZZZZLkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;Landroid/view/View$OnLongClickListener;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lcom/discord/chat/bridge/spoiler/SpoilerConfig;D)V", "setEmbed", "Lcom/discord/chat/databinding/EmbedViewBinding;", "binding", "Lcom/discord/chat/databinding/EmbedViewBinding;", "Lcom/discord/chat/bridge/embed/Embed;", "maxThumbnailSize", "I", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "chat_release"}, k = 1, mv = {1, 8, 0})
 
 public final class EmbedView extends FrameLayout {
     private final EmbedViewBinding binding;
@@ -100,7 +88,7 @@ public final class EmbedView extends FrameLayout {
     
     public EmbedView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  EmbedView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -109,55 +97,55 @@ public final class EmbedView extends FrameLayout {
 
     private final void clearAuthor() {
         TextView textView = this.binding.authorName;
-        q.f(textView, "binding.authorName");
+        q.g(textView, "binding.authorName");
         ViewUtilsKt.setOptionalText(textView, null);
         SimpleDraweeView simpleDraweeView = this.binding.authorAvatar;
-        q.f(simpleDraweeView, "binding.authorAvatar");
+        q.g(simpleDraweeView, "binding.authorAvatar");
         SetOptionalImageUrlKt.setOptionalImageUrl$default(simpleDraweeView, null, false, null, 6, null);
         LinearLayout linearLayout = this.binding.authorContainer;
-        q.f(linearLayout, "binding.authorContainer");
+        q.g(linearLayout, "binding.authorContainer");
         linearLayout.setVisibility(8);
     }
 
     private final void clearBorder() {
         View view = this.binding.border;
-        q.f(view, "binding.border");
+        q.g(view, "binding.border");
         view.setVisibility(8);
     }
 
     private final void clearDescription() {
         SimpleDraweeSpanTextView simpleDraweeSpanTextView = this.binding.description;
-        q.f(simpleDraweeSpanTextView, "binding.description");
+        q.g(simpleDraweeSpanTextView, "binding.description");
         SimpleDraweeSpanTextViewUtilsKt.setOptionalText(simpleDraweeSpanTextView, null);
     }
 
     private final void clearError() {
         TextView textView = this.binding.error;
-        q.f(textView, "binding.error");
+        q.g(textView, "binding.error");
         ViewUtilsKt.setOptionalText(textView, null);
         SimpleDraweeView simpleDraweeView = this.binding.errorIcon;
-        q.f(simpleDraweeView, "binding.errorIcon");
+        q.g(simpleDraweeView, "binding.errorIcon");
         simpleDraweeView.setVisibility(8);
     }
 
     private final void clearFields() {
         LinearLayout linearLayout = this.binding.fieldsContainer;
-        q.f(linearLayout, "binding.fieldsContainer");
+        q.g(linearLayout, "binding.fieldsContainer");
         linearLayout.setVisibility(8);
     }
 
     private final void clearFooter() {
         TextView textView = this.binding.footerText;
-        q.f(textView, "binding.footerText");
+        q.g(textView, "binding.footerText");
         ViewUtilsKt.setOptionalText(textView, null);
         SimpleDraweeView simpleDraweeView = this.binding.footerAvatar;
-        q.f(simpleDraweeView, "binding.footerAvatar");
+        q.g(simpleDraweeView, "binding.footerAvatar");
         SetOptionalImageUrlKt.setOptionalImageUrl$default(simpleDraweeView, null, false, null, 6, null);
         LinearLayout linearLayout = this.binding.footerContainer;
-        q.f(linearLayout, "binding.footerContainer");
+        q.g(linearLayout, "binding.footerContainer");
         linearLayout.setVisibility(8);
         Space space = this.binding.spacer;
-        q.f(space, "binding.spacer");
+        q.g(space, "binding.spacer");
         space.setVisibility(0);
     }
 
@@ -166,7 +154,7 @@ public final class EmbedView extends FrameLayout {
         EmbedViewResizingMediaView[] embedViewResizingMediaViewArr = {embedViewBinding.inlineMediaView, embedViewBinding.inlineMediaView2, embedViewBinding.inlineMediaView3, embedViewBinding.inlineMediaView4};
         for (int i10 = 0; i10 < 4; i10++) {
             EmbedViewResizingMediaView it = embedViewResizingMediaViewArr[i10];
-            q.f(it, "it");
+            q.g(it, "it");
             MediaView.setMediaData$default(it, null, false, false, false, null, false, null, null, false, false, false, 2046, null);
             it.setOnMediaClickListeners(null, null);
             it.setVisibility(8);
@@ -175,29 +163,29 @@ public final class EmbedView extends FrameLayout {
 
     private final void clearMedia() {
         EmbedViewResizingMediaView clearMedia$lambda$29 = this.binding.mediaView;
-        q.f(clearMedia$lambda$29, "clearMedia$lambda$29");
+        q.g(clearMedia$lambda$29, "clearMedia$lambda$29");
         MediaView.setMediaData$default(clearMedia$lambda$29, null, false, false, false, null, false, null, null, false, false, false, 2046, null);
         clearMedia$lambda$29.setVisibility(8);
     }
 
     private final void clearProvider() {
         SimpleDraweeSpanTextView simpleDraweeSpanTextView = this.binding.provider;
-        q.f(simpleDraweeSpanTextView, "binding.provider");
+        q.g(simpleDraweeSpanTextView, "binding.provider");
         SimpleDraweeSpanTextViewUtilsKt.setOptionalText(simpleDraweeSpanTextView, null);
     }
 
     private final void clearThumbnail() {
         SimpleDraweeView simpleDraweeView = this.binding.thumbnail;
-        q.f(simpleDraweeView, "binding.thumbnail");
+        q.g(simpleDraweeView, "binding.thumbnail");
         SetOptionalImageUrlKt.setOptionalImageUrl$default(simpleDraweeView, null, false, null, 6, null);
     }
 
     private final void clearTitle() {
         SimpleDraweeSpanTextView simpleDraweeSpanTextView = this.binding.title;
-        q.f(simpleDraweeSpanTextView, "binding.title");
+        q.g(simpleDraweeSpanTextView, "binding.title");
         SimpleDraweeSpanTextViewUtilsKt.setOptionalText(simpleDraweeSpanTextView, null);
         SimpleDraweeSpanTextView simpleDraweeSpanTextView2 = this.binding.title;
-        q.f(simpleDraweeSpanTextView2, "binding.title");
+        q.g(simpleDraweeSpanTextView2, "binding.title");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeSpanTextView2, false, null, 1, null);
     }
 
@@ -230,7 +218,7 @@ public final class EmbedView extends FrameLayout {
 
     private final void setAuthorOnClickListener(View.OnClickListener onClickListener, final Function1<? super CharSequence, Unit> function1) {
         TextView setAuthorOnClickListener$lambda$15 = this.binding.authorName;
-        q.f(setAuthorOnClickListener$lambda$15, "setAuthorOnClickListener$lambda$15");
+        q.g(setAuthorOnClickListener$lambda$15, "setAuthorOnClickListener$lambda$15");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(setAuthorOnClickListener$lambda$15, false, onClickListener, 1, null);
         NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(setAuthorOnClickListener$lambda$15, false, new View.OnLongClickListener() { 
             @Override 
@@ -244,20 +232,33 @@ public final class EmbedView extends FrameLayout {
 
     
     public static final boolean setAuthorOnClickListener$lambda$15$lambda$14(Function1 onTapCopyText, EmbedView this$0, View view) {
-        q.g(onTapCopyText, "$onTapCopyText");
-        q.g(this$0, "this$0");
+        q.h(onTapCopyText, "$onTapCopyText");
+        q.h(this$0, "this$0");
         CharSequence text = this$0.binding.authorName.getText();
-        q.f(text, "binding.authorName.text");
+        q.g(text, "binding.authorName.text");
         onTapCopyText.invoke(text);
         return true;
     }
 
-    private final void setBackgroundColorEnabled(boolean z10) {
+    private final void setBackgroundColorEnabled(boolean z10, Integer num) {
+        int i10;
         if (z10) {
-            setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
-        } else {
-            setBackgroundColor(0);
+            if (num != null) {
+                i10 = num.intValue();
+            } else {
+                i10 = ThemeManagerKt.getTheme().getBackgroundSecondary();
+            }
+            setBackgroundColor(i10);
+            return;
         }
+        setBackgroundColor(0);
+    }
+
+    static  void setBackgroundColorEnabled$default(EmbedView embedView, boolean z10, Integer num, int i10, Object obj) {
+        if ((i10 & 2) != 0) {
+            num = null;
+        }
+        embedView.setBackgroundColorEnabled(z10, num);
     }
 
     private final void setBorder(Integer num) {
@@ -266,7 +267,7 @@ public final class EmbedView extends FrameLayout {
             this.binding.border.setBackgroundColor(num.intValue());
         }
         View view = this.binding.border;
-        q.f(view, "binding.border");
+        q.g(view, "binding.border");
         int i10 = 0;
         if (num != null) {
             z10 = true;
@@ -281,7 +282,7 @@ public final class EmbedView extends FrameLayout {
 
     private final void setDescription(final String str, DraweeSpanStringBuilder draweeSpanStringBuilder, int i10, final Function1<? super CharSequence, Unit> function1) {
         SimpleDraweeSpanTextView setDescription$lambda$19 = this.binding.description;
-        q.f(setDescription$lambda$19, "setDescription$lambda$19");
+        q.g(setDescription$lambda$19, "setDescription$lambda$19");
         if (draweeSpanStringBuilder != null) {
             SpannableExtensionsKt.coverWithSpan(draweeSpanStringBuilder, new BackgroundSpanDrawer(setDescription$lambda$19));
         } else {
@@ -301,8 +302,8 @@ public final class EmbedView extends FrameLayout {
 
     
     public static final boolean setDescription$lambda$19$lambda$18(Function1 onTapCopyText, String rawDescription, View view) {
-        q.g(onTapCopyText, "$onTapCopyText");
-        q.g(rawDescription, "$rawDescription");
+        q.h(onTapCopyText, "$onTapCopyText");
+        q.h(rawDescription, "$rawDescription");
         onTapCopyText.invoke(rawDescription);
         return true;
     }
@@ -310,10 +311,10 @@ public final class EmbedView extends FrameLayout {
     
     public static final void setEmbed_lKx2FiY$lambda$3$lambda$2(Function3 onTitleLinkClicked, String messageId, String url, DraweeSpanStringBuilder draweeSpanStringBuilder, View view) {
         String str;
-        q.g(onTitleLinkClicked, "$onTitleLinkClicked");
-        q.g(messageId, "$messageId");
-        q.g(url, "$url");
-        MessageId messageId2 = MessageId.m592boximpl(messageId);
+        q.h(onTitleLinkClicked, "$onTitleLinkClicked");
+        q.h(messageId, "$messageId");
+        q.h(url, "$url");
+        MessageId messageId2 = MessageId.m593boximpl(messageId);
         if (draweeSpanStringBuilder != null) {
             str = draweeSpanStringBuilder.toString();
         } else {
@@ -327,10 +328,10 @@ public final class EmbedView extends FrameLayout {
 
     
     public static final void setEmbed_lKx2FiY$lambda$5$lambda$4(Function3 onAuthorLinkClicked, String messageId, Embed embed, View view) {
-        q.g(onAuthorLinkClicked, "$onAuthorLinkClicked");
-        q.g(messageId, "$messageId");
-        q.g(embed, "$embed");
-        onAuthorLinkClicked.invoke(MessageId.m592boximpl(messageId), embed.getAuthor().getUrl(), embed.getAuthor().getName());
+        q.h(onAuthorLinkClicked, "$onAuthorLinkClicked");
+        q.h(messageId, "$messageId");
+        q.h(embed, "$embed");
+        onAuthorLinkClicked.invoke(MessageId.m593boximpl(messageId), embed.getAuthor().getUrl(), embed.getAuthor().getName());
     }
 
     
@@ -351,7 +352,7 @@ public final class EmbedView extends FrameLayout {
     }
 
     
-    private final void m305setFieldsthlxGE(List<EmbedField> list, String str, boolean z10, boolean z11, boolean z12, Function2<? super MessageId, ? super LinkContentNode, Unit> function2, Function1<? super LinkContentNode, Unit> function1, Function1<? super CharSequence, Unit> function12, Function0<Unit> function0, Function1<? super EmojiContentNode, Unit> function13, Function3<? super String, ? super String, ? super String, Unit> function3, Function2<? super String, ? super String, Unit> function22) {
+    private final void m306setFieldsthlxGE(List<EmbedField> list, String str, boolean z10, boolean z11, boolean z12, Function2<? super MessageId, ? super LinkContentNode, Unit> function2, Function1<? super LinkContentNode, Unit> function1, Function1<? super CharSequence, Unit> function12, Function0<Unit> function0, Function1<? super EmojiContentNode, Unit> function13, Function3<? super String, ? super String, ? super String, Unit> function3, Function2<? super String, ? super String, Unit> function22) {
         EmbedView$setFields$onLinkClickedWithMessageId$1 embedView$setFields$onLinkClickedWithMessageId$1;
         String str2;
         EmbedFieldView embedFieldView;
@@ -360,10 +361,9 @@ public final class EmbedView extends FrameLayout {
         String str4;
         EmbedFieldView embedFieldView2;
         DraweeSpanStringBuilder draweeSpanStringBuilder2;
-        DraweeSpanStringBuilder spannable;
         EmbedView$setFields$onLinkClickedWithMessageId$1 embedView$setFields$onLinkClickedWithMessageId$12 = new EmbedView$setFields$onLinkClickedWithMessageId$1(function2, str);
         LinearLayout setFields_thlxG_E$lambda$22 = this.binding.fieldsContainer;
-        q.f(setFields_thlxG_E$lambda$22, "setFields_thlxG_E$lambda$22");
+        q.g(setFields_thlxG_E$lambda$22, "setFields_thlxG_E$lambda$22");
         int i10 = 0;
         setFields_thlxG_E$lambda$22.setVisibility(list.isEmpty() ^ true ? 0 : 8);
         ViewGroupUtilsKt.setUpLayoutForList(setFields_thlxG_E$lambda$22, list.size(), new EmbedView$setFields$1$1(setFields_thlxG_E$lambda$22));
@@ -374,18 +374,18 @@ public final class EmbedView extends FrameLayout {
             }
             EmbedField embedField = (EmbedField) obj;
             View childAt = setFields_thlxG_E$lambda$22.getChildAt(i10);
-            q.e(childAt, "null cannot be cast to non-null type com.discord.chat.presentation.message.view.EmbedFieldView");
+            q.f(childAt, "null cannot be cast to non-null type com.discord.chat.presentation.message.view.EmbedFieldView");
             EmbedFieldView embedFieldView3 = (EmbedFieldView) childAt;
             String rawName = embedField.getRawName();
             String str5 = rawName == null ? "" : rawName;
             StructurableText name = embedField.getName();
             if (name != null) {
                 Context context = embedFieldView3.getContext();
-                q.f(context, "context");
+                q.g(context, "context");
                 str2 = "context";
                 setFields_thlxG_E$lambda$22 = setFields_thlxG_E$lambda$22;
                 embedView$setFields$onLinkClickedWithMessageId$1 = embedView$setFields$onLinkClickedWithMessageId$12;
-                draweeSpanStringBuilder = TextUtilsKt.toSpannable(name, context, str, z10, z11, z12, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : embedView$setFields$onLinkClickedWithMessageId$12, (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : function1, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : function3, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : function22, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : function13, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : function0, (65536 & r42) != 0 ? false : false, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : 0.0f);
+                draweeSpanStringBuilder = TextUtilsKt.toSpannable$default(name, context, str, z10, z11, z12, embedView$setFields$onLinkClickedWithMessageId$12, function1, function3, null, function22, null, null, null, function13, null, function0, false, null, 0.0f, 482560, null);
                 str3 = str5;
                 embedFieldView = embedFieldView3;
             } else {
@@ -403,11 +403,10 @@ public final class EmbedView extends FrameLayout {
             if (value != null) {
                 Context context2 = embedFieldView.getContext();
                 Paint.FontMetrics fontMetrics = embedFieldView.getBinding().value.getPaint().getFontMetrics();
-                q.f(fontMetrics, "binding.value.paint.fontMetrics");
+                q.g(fontMetrics, "binding.value.paint.fontMetrics");
                 float baselineHeight = TextUtilsKt.getBaselineHeight(fontMetrics);
-                q.f(context2, str2);
-                spannable = TextUtilsKt.toSpannable(value, context2, str, z10, z11, z12, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : embedView$setFields$onLinkClickedWithMessageId$1, (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : function1, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : function3, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : function22, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : function13, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : function0, (65536 & r42) != 0 ? false : false, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : baselineHeight);
-                draweeSpanStringBuilder2 = spannable;
+                q.g(context2, str2);
+                draweeSpanStringBuilder2 = TextUtilsKt.toSpannable$default(value, context2, str, z10, z11, z12, embedView$setFields$onLinkClickedWithMessageId$1, function1, function3, null, function22, null, null, null, function13, null, function0, false, null, baselineHeight, 220416, null);
                 str4 = str6;
                 embedFieldView2 = embedFieldView;
             } else {
@@ -434,7 +433,7 @@ public final class EmbedView extends FrameLayout {
 
     
     public static final boolean setFooter$lambda$26$lambda$25$lambda$24(Function1 onTapCopyText, String str, View view) {
-        q.g(onTapCopyText, "$onTapCopyText");
+        q.h(onTapCopyText, "$onTapCopyText");
         onTapCopyText.invoke(str);
         return true;
     }
@@ -462,7 +461,7 @@ public final class EmbedView extends FrameLayout {
         embedViewResizingMediaView.setVisibility(0);
         EmbedThumbnail thumbnail = embed.getThumbnail();
         if (thumbnail != null) {
-            z10 = q.b(thumbnail.getShowPlayButton(), Boolean.TRUE);
+            z10 = q.c(thumbnail.getShowPlayButton(), Boolean.TRUE);
         } else {
             z10 = false;
         }
@@ -473,7 +472,7 @@ public final class EmbedView extends FrameLayout {
         int i10;
         View.OnLongClickListener onLongClickListener;
         SimpleDraweeSpanTextView setProvider$lambda$10 = this.binding.provider;
-        q.f(setProvider$lambda$10, "setProvider$lambda$10");
+        q.g(setProvider$lambda$10, "setProvider$lambda$10");
         ViewUtilsKt.setOptionalText(setProvider$lambda$10, charSequence);
         if (num != null) {
             i10 = num.intValue();
@@ -498,7 +497,7 @@ public final class EmbedView extends FrameLayout {
 
     
     public static final boolean setProvider$lambda$10$lambda$9$lambda$8(Function1 onTapCopyText, CharSequence charSequence, View view) {
-        q.g(onTapCopyText, "$onTapCopyText");
+        q.h(onTapCopyText, "$onTapCopyText");
         onTapCopyText.invoke(charSequence);
         return true;
     }
@@ -508,7 +507,7 @@ public final class EmbedView extends FrameLayout {
         String str;
         SimpleDraweeView setThumbnail$lambda$16 = this.binding.thumbnail;
         MediaContainingViewResizer mediaContainingViewResizer = MediaContainingViewResizer.INSTANCE;
-        q.f(setThumbnail$lambda$16, "setThumbnail$lambda$16");
+        q.g(setThumbnail$lambda$16, "setThumbnail$lambda$16");
         int i11 = 0;
         if (embedThumbnail != null) {
             i10 = embedThumbnail.getWidth();
@@ -532,7 +531,7 @@ public final class EmbedView extends FrameLayout {
         int i10;
         View.OnLongClickListener onLongClickListener;
         SimpleDraweeSpanTextView setTitle$lambda$13 = this.binding.title;
-        q.f(setTitle$lambda$13, "setTitle$lambda$13");
+        q.g(setTitle$lambda$13, "setTitle$lambda$13");
         SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setTitle$lambda$13, draweeSpanStringBuilder);
         if (num != null) {
             i10 = num.intValue();
@@ -558,69 +557,67 @@ public final class EmbedView extends FrameLayout {
 
     
     public static final boolean setTitle$lambda$13$lambda$12$lambda$11(Function1 onLongClickListener, String rawTitle, View view) {
-        q.g(onLongClickListener, "$onLongClickListener");
-        q.g(rawTitle, "$rawTitle");
+        q.h(onLongClickListener, "$onLongClickListener");
+        q.h(rawTitle, "$rawTitle");
         onLongClickListener.invoke(rawTitle);
         return true;
     }
 
     
-    public final void m306setEmbedlKx2FiY(final Embed embed, final String messageId, int i10, int i11, int i12, boolean z10, boolean z11, boolean z12, boolean z13, final Function3<? super MessageId, ? super String, ? super String, Unit> onTitleLinkClicked, final Function3<? super MessageId, ? super String, ? super String, Unit> onAuthorLinkClicked, Function2<? super Double, ? super Integer, Unit> onMediaClicked, View.OnLongClickListener onLongClickListener, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, Function1<? super LinkContentNode, Unit> onLongTapLinkNode, Function1<? super CharSequence, Unit> onTapCopyText, Function0<Unit> onTapSpoiler, Function1<? super EmojiContentNode, Unit> onTapEmoji, Function3<? super String, ? super String, ? super String, Unit> onTapChannel, Function2<? super String, ? super String, Unit> onTapMention, Function1<? super CommandMentionContentNode, Unit> onTapCommand, SpoilerConfig spoilerConfig, double d10) {
+    public final void m307setEmbedlKx2FiY(final Embed embed, final String messageId, int i10, int i11, int i12, boolean z10, boolean z11, boolean z12, boolean z13, final Function3<? super MessageId, ? super String, ? super String, Unit> onTitleLinkClicked, final Function3<? super MessageId, ? super String, ? super String, Unit> onAuthorLinkClicked, Function2<? super Double, ? super Integer, Unit> onMediaClicked, View.OnLongClickListener onLongClickListener, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, Function1<? super LinkContentNode, Unit> onLongTapLinkNode, Function1<? super CharSequence, Unit> onTapCopyText, Function0<Unit> onTapSpoiler, Function1<? super EmojiContentNode, Unit> onTapEmoji, Function3<? super String, ? super String, ? super String, Unit> onTapChannel, Function2<? super String, ? super String, Unit> onTapMention, Function1<? super CommandMentionContentNode, Unit> onTapCommand, SpoilerConfig spoilerConfig, double d10) {
         final DraweeSpanStringBuilder draweeSpanStringBuilder;
         Integer num;
         DraweeSpanStringBuilder draweeSpanStringBuilder2;
         List J0;
-        DraweeSpanStringBuilder spannable;
-        q.g(embed, "embed");
-        q.g(messageId, "messageId");
-        q.g(onTitleLinkClicked, "onTitleLinkClicked");
-        q.g(onAuthorLinkClicked, "onAuthorLinkClicked");
-        q.g(onMediaClicked, "onMediaClicked");
-        q.g(onLinkClicked, "onLinkClicked");
-        q.g(onLongTapLinkNode, "onLongTapLinkNode");
-        q.g(onTapCopyText, "onTapCopyText");
-        q.g(onTapSpoiler, "onTapSpoiler");
-        q.g(onTapEmoji, "onTapEmoji");
-        q.g(onTapChannel, "onTapChannel");
-        q.g(onTapMention, "onTapMention");
-        q.g(onTapCommand, "onTapCommand");
-        if (!q.b(embed, this.embed)) {
+        q.h(embed, "embed");
+        q.h(messageId, "messageId");
+        q.h(onTitleLinkClicked, "onTitleLinkClicked");
+        q.h(onAuthorLinkClicked, "onAuthorLinkClicked");
+        q.h(onMediaClicked, "onMediaClicked");
+        q.h(onLinkClicked, "onLinkClicked");
+        q.h(onLongTapLinkNode, "onLongTapLinkNode");
+        q.h(onTapCopyText, "onTapCopyText");
+        q.h(onTapSpoiler, "onTapSpoiler");
+        q.h(onTapEmoji, "onTapEmoji");
+        q.h(onTapChannel, "onTapChannel");
+        q.h(onTapMention, "onTapMention");
+        q.h(onTapCommand, "onTapCommand");
+        if (!q.c(embed, this.embed)) {
             reset();
             this.embed = embed;
         }
         View root = this.binding.getRoot();
-        q.f(root, "binding.root");
+        q.g(root, "binding.root");
         ViewClippingUtilsKt.clipToRoundedRectangle(root, i12);
         ConstraintLayout constraintLayout = this.binding.inlineMediaContainer;
-        q.f(constraintLayout, "binding.inlineMediaContainer");
+        q.g(constraintLayout, "binding.inlineMediaContainer");
         ViewClippingUtilsKt.clipToRoundedRectangle(constraintLayout, i12);
         EmbedViewResizingMediaView embedViewResizingMediaView = this.binding.mediaView;
-        q.f(embedViewResizingMediaView, "binding.mediaView");
+        q.g(embedViewResizingMediaView, "binding.mediaView");
         ViewClippingUtilsKt.clipToRoundedRectangle(embedViewResizingMediaView, i12);
         SimpleDraweeView simpleDraweeView = this.binding.thumbnail;
-        q.f(simpleDraweeView, "binding.thumbnail");
+        q.g(simpleDraweeView, "binding.thumbnail");
         ViewClippingUtilsKt.clipToRoundedRectangle(simpleDraweeView, i12);
         if (!EmbedUtilsKt.isInlineMedia(embed)) {
             MediaSource mediaSource = EmbedUtilsKt.toMediaSource(embed, z10, Double.valueOf(d10));
             if (mediaSource != null) {
                 Space space = this.binding.spacer;
-                q.f(space, "binding.spacer");
+                q.g(space, "binding.spacer");
                 space.setVisibility(8);
                 if (mediaSource.getPreviewUrl() != null) {
                     EmbedViewResizingMediaView embedViewResizingMediaView2 = this.binding.mediaView;
-                    q.f(embedViewResizingMediaView2, "binding.mediaView");
+                    q.g(embedViewResizingMediaView2, "binding.mediaView");
                     setMediaEmbed(embedViewResizingMediaView2, embed, mediaSource, i11, MessageAccessoriesView.Companion.getWidth(i10));
                     this.binding.mediaView.setOnMediaClickListeners(new EmbedView$setEmbed$1$1(onMediaClicked), onLongClickListener);
-                    setBackgroundColorEnabled(false);
+                    setBackgroundColorEnabled$default(this, false, null, 2, null);
                 }
             }
         } else {
             StructurableText title = embed.getTitle();
             if (title != null) {
                 Context context = getContext();
-                q.f(context, "context");
-                spannable = TextUtilsKt.toSpannable(title, context, messageId, z11, z12, z13, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : null, (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : onTapChannel, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : onTapMention, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : onTapCommand, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : onTapEmoji, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : onTapSpoiler, (65536 & r42) != 0 ? false : false, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : 0.0f);
-                draweeSpanStringBuilder = spannable;
+                q.g(context, "context");
+                draweeSpanStringBuilder = TextUtilsKt.toSpannable$default(title, context, messageId, z11, z12, z13, null, null, onTapChannel, null, onTapMention, onTapCommand, null, null, onTapEmoji, null, onTapSpoiler, false, null, 0.0f, 481632, null);
             } else {
                 draweeSpanStringBuilder = null;
             }
@@ -646,17 +643,17 @@ public final class EmbedView extends FrameLayout {
             if (description != null) {
                 Context context2 = getContext();
                 Paint.FontMetrics fontMetrics = this.binding.description.getPaint().getFontMetrics();
-                q.f(fontMetrics, "binding.description.paint.fontMetrics");
+                q.g(fontMetrics, "binding.description.paint.fontMetrics");
                 float baselineHeight = TextUtilsKt.getBaselineHeight(fontMetrics);
-                q.f(context2, "context");
-                draweeSpanStringBuilder2 = TextUtilsKt.toSpannable(description, context2, messageId, z11, z12, z13, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : new EmbedView$setEmbed$3(onLinkClicked, messageId), (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : onLongTapLinkNode, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : onTapChannel, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : onTapMention, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : onTapCommand, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : onTapEmoji, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : onTapSpoiler, (65536 & r42) != 0 ? false : false, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : baselineHeight);
+                q.g(context2, "context");
+                draweeSpanStringBuilder2 = TextUtilsKt.toSpannable$default(description, context2, messageId, z11, z12, z13, new EmbedView$setEmbed$3(onLinkClicked, messageId), onLongTapLinkNode, onTapChannel, null, onTapMention, onTapCommand, null, null, onTapEmoji, null, onTapSpoiler, false, null, baselineHeight, 219392, null);
             } else {
                 draweeSpanStringBuilder2 = null;
             }
             setDescription(rawDescription, draweeSpanStringBuilder2, embed.getBodyTextColor(), onTapCopyText);
             EmbedProvider provider = embed.getProvider();
             setProvider(provider != null ? provider.getName() : null, embed.getProviderColor(), onTapCopyText);
-            setBackgroundColorEnabled(!q.b(embed.getDisableBackgroundColor(), Boolean.TRUE));
+            setBackgroundColorEnabled(!q.c(embed.getDisableBackgroundColor(), Boolean.TRUE), embed.getBackgroundColor());
             setBorder(embed.getBorderLeftColor());
             EmbedAuthor author = embed.getAuthor();
             String imageUrl = author != null ? author.getImageUrl() : null;
@@ -673,7 +670,7 @@ public final class EmbedView extends FrameLayout {
             if (fields == null) {
                 fields = j.h();
             }
-            m305setFieldsthlxGE(fields, messageId, z11, z12, z13, onLinkClicked, onLongTapLinkNode, onTapCopyText, onTapSpoiler, onTapEmoji, onTapChannel, onTapMention);
+            m306setFieldsthlxGE(fields, messageId, z11, z12, z13, onLinkClicked, onLongTapLinkNode, onTapCopyText, onTapSpoiler, onTapEmoji, onTapChannel, onTapMention);
             EmbedFooter footer = embed.getFooter();
             String imageUrl2 = footer != null ? footer.getImageUrl() : null;
             EmbedFooter footer2 = embed.getFooter();
@@ -689,7 +686,7 @@ public final class EmbedView extends FrameLayout {
                 int widthForEmbedContent = MessageAccessoriesView.Companion.getWidthForEmbedContent(i10);
                 MediaContainingViewResizer mediaContainingViewResizer = MediaContainingViewResizer.INSTANCE;
                 ConstraintLayout constraintLayout2 = this.binding.inlineMediaContainer;
-                q.f(constraintLayout2, "binding.inlineMediaContainer");
+                q.g(constraintLayout2, "binding.inlineMediaContainer");
                 MediaContainingViewResizer.resizeLayoutParams$default(mediaContainingViewResizer, constraintLayout2, widthForEmbedContent, i13, widthForEmbedContent, i13, null, 16, null);
                 EmbedViewBinding embedViewBinding = this.binding;
                 J0 = r.J0(imageMediaSources, new EmbedViewResizingMediaView[]{embedViewBinding.inlineMediaView, embedViewBinding.inlineMediaView2, embedViewBinding.inlineMediaView3, embedViewBinding.inlineMediaView4});
@@ -701,7 +698,7 @@ public final class EmbedView extends FrameLayout {
                     }
                     Pair pair = (Pair) obj;
                     EmbedViewResizingMediaView mediaView = (EmbedViewResizingMediaView) pair.b();
-                    q.f(mediaView, "mediaView");
+                    q.g(mediaView, "mediaView");
                     setMediaEmbed(mediaView, embed, (MediaSource) pair.a(), 0, 0);
                     mediaView.setOnMediaClickListeners(new EmbedView$setEmbed$5$1(onMediaClicked, i14), onLongClickListener);
                 }
@@ -709,11 +706,15 @@ public final class EmbedView extends FrameLayout {
                 MediaSource mediaSource2 = EmbedUtilsKt.toMediaSource(embed, z10, Double.valueOf(d10));
                 if (mediaSource2 != null) {
                     EmbedViewResizingMediaView embedViewResizingMediaView3 = this.binding.inlineMediaView;
-                    q.f(embedViewResizingMediaView3, "binding.inlineMediaView");
+                    q.g(embedViewResizingMediaView3, "binding.inlineMediaView");
                     setMediaEmbed(embedViewResizingMediaView3, embed, mediaSource2, i11, MessageAccessoriesView.Companion.getWidthForEmbedContent(i10));
                     this.binding.inlineMediaView.setOnMediaClickListeners(new EmbedView$setEmbed$6$1(onMediaClicked), onLongClickListener);
                 }
-                if (WhenMappings.$EnumSwitchMapping$0[embed.getType().ordinal()] != 1 ? mediaSource2 == null : embed.getVideo() == null) {
+                boolean z14 = true;
+                if (WhenMappings.$EnumSwitchMapping$0[embed.getType().ordinal()] != 1 ? mediaSource2 != null : embed.getVideo() != null) {
+                    z14 = false;
+                }
+                if (z14) {
                     setThumbnail(embed.getThumbnail());
                 }
             }
@@ -724,52 +725,52 @@ public final class EmbedView extends FrameLayout {
     
     public EmbedView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         EmbedViewBinding inflate = EmbedViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         this.maxThumbnailSize = context.getResources().getDimensionPixelSize(R.dimen.message_embed_max_thumbnail_size);
         inflate.getRoot().setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
         SimpleDraweeSpanTextView _init_$lambda$0 = inflate.provider;
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$0, 10.0f);
         DiscordFont discordFont = DiscordFont.PrimaryMedium;
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, discordFont);
         SimpleDraweeView simpleDraweeView = inflate.authorAvatar;
-        q.f(simpleDraweeView, "binding.authorAvatar");
+        q.g(simpleDraweeView, "binding.authorAvatar");
         ViewClippingUtilsKt.clipToCircle(simpleDraweeView);
         TextView textView = inflate.authorName;
-        q.f(textView, "binding.authorName");
+        q.g(textView, "binding.authorName");
         DiscordFont discordFont2 = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(textView, discordFont2);
         inflate.authorName.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
         TextView textView2 = inflate.authorName;
-        q.f(textView2, "binding.authorName");
+        q.g(textView2, "binding.authorName");
         SetTextSizeSpKt.setTextSizeSp(textView2, 12.0f);
         SimpleDraweeSpanTextView simpleDraweeSpanTextView = inflate.title;
-        q.f(simpleDraweeSpanTextView, "binding.title");
+        q.g(simpleDraweeSpanTextView, "binding.title");
         DiscordFontUtilsKt.setDiscordFont(simpleDraweeSpanTextView, discordFont2);
         SimpleDraweeSpanTextView simpleDraweeSpanTextView2 = inflate.title;
-        q.f(simpleDraweeSpanTextView2, "binding.title");
+        q.g(simpleDraweeSpanTextView2, "binding.title");
         SetTextSizeSpKt.setTextSizeSp(simpleDraweeSpanTextView2, 16.0f);
         SimpleDraweeSpanTextView simpleDraweeSpanTextView3 = inflate.description;
-        q.f(simpleDraweeSpanTextView3, "binding.description");
+        q.g(simpleDraweeSpanTextView3, "binding.description");
         DiscordFontUtilsKt.setDiscordFont(simpleDraweeSpanTextView3, discordFont);
         TextView textView3 = inflate.footerText;
-        q.f(textView3, "binding.footerText");
+        q.g(textView3, "binding.footerText");
         DiscordFontUtilsKt.setDiscordFont(textView3, discordFont2);
         inflate.footerText.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
         TextView textView4 = inflate.footerText;
-        q.f(textView4, "binding.footerText");
+        q.g(textView4, "binding.footerText");
         SetTextSizeSpKt.setTextSizeSp(textView4, 12.0f);
         TextView textView5 = inflate.error;
-        q.f(textView5, "binding.error");
+        q.g(textView5, "binding.error");
         DiscordFontUtilsKt.setDiscordFont(textView5, discordFont);
         TextView textView6 = inflate.error;
-        q.f(textView6, "binding.error");
+        q.g(textView6, "binding.error");
         SetTextSizeSpKt.setTextSizeSp(textView6, 12.0f);
         SimpleDraweeView simpleDraweeView2 = inflate.errorIcon;
-        q.f(simpleDraweeView2, "binding.errorIcon");
+        q.g(simpleDraweeView2, "binding.errorIcon");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView2, ReactAsset.Alert);
     }
 }

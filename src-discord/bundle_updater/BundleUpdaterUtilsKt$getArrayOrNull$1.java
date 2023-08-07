@@ -22,7 +22,7 @@ final class BundleUpdaterUtilsKt$getArrayOrNull$1 extends s implements Function1
     }
 
     public final JSONArray invoke(JSONObject it) {
-        q.g(it, "it");
+        q.h(it, "it");
         return this.$this_getArrayOrNull.getJSONArray(this.$key);
     }
 }

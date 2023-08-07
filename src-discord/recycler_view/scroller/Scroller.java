@@ -97,15 +97,17 @@ public final class Scroller {
     }
 
     public Scroller(RecyclerView recyclerView) {
-        q.g(recyclerView, "recyclerView");
+        q.h(recyclerView, "recyclerView");
         this.recyclerView = recyclerView;
         recyclerView.addOnAttachStateChangeListener(new View.OnAttachStateChangeListener() { 
             @Override 
-            public void onViewAttachedToWindow(View view) {
+            public void onViewAttachedToWindow(View v10) {
+                q.h(v10, "v");
             }
 
             @Override 
-            public void onViewDetachedFromWindow(View view) {
+            public void onViewDetachedFromWindow(View v10) {
+                q.h(v10, "v");
                 Scroller.this.cancel();
             }
         });
@@ -123,7 +125,7 @@ public final class Scroller {
 
     private final LinearLayoutManager getLayoutManager() {
         RecyclerView.LayoutManager layoutManager = this.recyclerView.getLayoutManager();
-        q.e(layoutManager, "null cannot be cast to non-null type androidx.recyclerview.widget.LinearLayoutManager");
+        q.f(layoutManager, "null cannot be cast to non-null type androidx.recyclerview.widget.LinearLayoutManager");
         return (LinearLayoutManager) layoutManager;
     }
 
@@ -165,11 +167,11 @@ public final class Scroller {
 
     
     public static final void search$lambda$0(Scroller this$0, int i10, TargetAlignment targetAlignment, Function0 onStart, Function0 onComplete, Function0 onScrollProgress) {
-        q.g(this$0, "this$0");
-        q.g(targetAlignment, "$targetAlignment");
-        q.g(onStart, "$onStart");
-        q.g(onComplete, "$onComplete");
-        q.g(onScrollProgress, "$onScrollProgress");
+        q.h(this$0, "this$0");
+        q.h(targetAlignment, "$targetAlignment");
+        q.h(onStart, "$onStart");
+        q.h(onComplete, "$onComplete");
+        q.h(onScrollProgress, "$onScrollProgress");
         this$0.search(i10, targetAlignment, onStart, onComplete, onScrollProgress);
     }
 
@@ -182,10 +184,10 @@ public final class Scroller {
     }
 
     public final void scrollToPosition(int i10, TargetAlignment targetAlignment, boolean z10, Function0<Unit> onStart, Function0<Unit> onComplete, Function0<Unit> onScrollProgress) {
-        q.g(targetAlignment, "targetAlignment");
-        q.g(onStart, "onStart");
-        q.g(onComplete, "onComplete");
-        q.g(onScrollProgress, "onScrollProgress");
+        q.h(targetAlignment, "targetAlignment");
+        q.h(onStart, "onStart");
+        q.h(onComplete, "onComplete");
+        q.h(onScrollProgress, "onScrollProgress");
         cancel();
         onStart.invoke();
         if (z10) {

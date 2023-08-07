@@ -30,7 +30,7 @@ final class TimersModule$setInterval$1 extends s implements Function0<Unit> {
         ReactApplicationContext reactApplicationContext;
         reactEvents = this.this$0.reactEvents;
         reactApplicationContext = this.this$0.getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         reactEvents.emitModuleEvent(reactApplicationContext, new IntervalEvent(this.$id));
     }
 }

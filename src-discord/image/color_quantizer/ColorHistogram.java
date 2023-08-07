@@ -44,7 +44,7 @@ public final class ColorHistogram {
     }
 
     public ColorHistogram(int[] pixels) {
-        q.g(pixels, "pixels");
+        q.h(pixels, "pixels");
         Arrays.sort(pixels);
         int countDistinctColors = Companion.countDistinctColors(pixels);
         this.numberOfColors = countDistinctColors;

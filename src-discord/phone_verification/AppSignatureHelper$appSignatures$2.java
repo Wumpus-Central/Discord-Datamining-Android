@@ -3,6 +3,7 @@ package com.discord.phone_verification;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
 import android.content.pm.SigningInfo;
+import android.os.Build;
 import com.discord.logging.Log;
 import com.discord.phone_verification.AppSignatureHelper;
 import java.util.ArrayList;
@@ -27,21 +28,28 @@ final class AppSignatureHelper$appSignatures$2 extends s implements Function0<Li
 
     @Override 
     public final List<String> invoke() {
-        SigningInfo signingInfo;
-        Signature[] apkContentsSigners;
+        Signature[] packageInfos;
         String hash;
+        SigningInfo signingInfo;
+        SigningInfo signingInfo2;
         ArrayList arrayList = new ArrayList();
         try {
             String packageName = this.this$0.getPackageName();
-            signingInfo = this.this$0.getPackageManager().getPackageInfo(packageName, 134217728).signingInfo;
-            apkContentsSigners = signingInfo.getApkContentsSigners();
-            q.f(apkContentsSigners, "packageManager.getPackag…ngInfo.apkContentsSigners");
+            PackageManager packageManager = this.this$0.getPackageManager();
+            if (Build.VERSION.SDK_INT >= 33) {
+                signingInfo2 = packageManager.getPackageInfo(packageName, PackageManager.PackageInfoFlags.of(134217728)).signingInfo;
+                packageInfos = signingInfo2.getApkContentsSigners();
+            } else {
+                signingInfo = packageManager.getPackageInfo(packageName, 134217728).signingInfo;
+                packageInfos = signingInfo.getApkContentsSigners();
+            }
+            q.g(packageInfos, "packageInfos");
             ArrayList arrayList2 = new ArrayList();
-            for (Signature signature : apkContentsSigners) {
+            for (Signature signature : packageInfos) {
                 AppSignatureHelper.Companion companion = AppSignatureHelper.Companion;
-                q.f(packageName, "packageName");
+                q.g(packageName, "packageName");
                 String charsString = signature.toCharsString();
-                q.f(charsString, "signature.toCharsString()");
+                q.g(charsString, "signature.toCharsString()");
                 hash = companion.hash(packageName, charsString);
                 Log.i$default(Log.INSTANCE, companion.getTAG(), "Hash " + hash, (Throwable) null, 4, (Object) null);
                 if (hash != null) {

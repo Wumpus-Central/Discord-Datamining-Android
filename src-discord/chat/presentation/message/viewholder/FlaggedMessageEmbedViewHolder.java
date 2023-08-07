@@ -19,7 +19,7 @@ public final class FlaggedMessageEmbedViewHolder extends MessagePartViewHolder {
     }
 
     public final void bind(FlaggedMessageEmbedAccessory messageEmbedAccessory) {
-        q.g(messageEmbedAccessory, "messageEmbedAccessory");
+        q.h(messageEmbedAccessory, "messageEmbedAccessory");
         FlaggedMessageEmbedView flaggedMessageEmbedView = this.embeddedMessageView;
         Message message = messageEmbedAccessory.getMessage();
         ChatEventHandler chatEventHandler = this.eventHandler;
@@ -32,7 +32,7 @@ public final class FlaggedMessageEmbedViewHolder extends MessagePartViewHolder {
     
     public FlaggedMessageEmbedViewHolder(FlaggedMessageEmbedView embeddedMessageView, ChatEventHandler chatEventHandler) {
         super(embeddedMessageView, null);
-        q.g(embeddedMessageView, "embeddedMessageView");
+        q.h(embeddedMessageView, "embeddedMessageView");
         this.embeddedMessageView = embeddedMessageView;
         this.eventHandler = chatEventHandler;
     }

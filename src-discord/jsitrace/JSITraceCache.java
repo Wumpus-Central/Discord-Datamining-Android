@@ -18,19 +18,19 @@ public final class JSITraceCache {
 
     private final SharedPreferences getCache(Context context) {
         SharedPreferences sharedPreferences = context.getSharedPreferences(CACHE_KEY, 0);
-        q.f(sharedPreferences, "getSharedPreferences(CAC…EY, Context.MODE_PRIVATE)");
+        q.g(sharedPreferences, "getSharedPreferences(CAC…EY, Context.MODE_PRIVATE)");
         return sharedPreferences;
     }
 
     public final boolean isEnabled(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         return getCache(context).getBoolean(CACHE_KEY_JSI_TRACE_ENABLED, false);
     }
 
     public final void setEnabled(Context context, boolean z10) {
-        q.g(context, "context");
+        q.h(context, "context");
         SharedPreferences.Editor editor = getCache(context).edit();
-        q.f(editor, "editor");
+        q.g(editor, "editor");
         editor.putBoolean(CACHE_KEY_JSI_TRACE_ENABLED, z10);
         editor.apply();
     }

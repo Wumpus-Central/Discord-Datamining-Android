@@ -20,7 +20,7 @@ public final class MessageContextKt {
         boolean z11;
         boolean z12;
         boolean z13;
-        q.g(messageRow, "<this>");
+        q.h(messageRow, "<this>");
         MessageFrame messageFrame = messageRow.getMessageFrame();
         if (messageFrame != null) {
             messageFrameType = messageFrame.getType();
@@ -34,7 +34,7 @@ public final class MessageContextKt {
         }
         Boolean canAddNewReactions = messageRow.getCanAddNewReactions();
         Boolean bool = Boolean.TRUE;
-        boolean b10 = q.b(canAddNewReactions, bool);
+        boolean c10 = q.c(canAddNewReactions, bool);
         String addReactionLabel = messageRow.getAddReactionLabel();
         String str3 = "";
         if (addReactionLabel == null) {
@@ -54,22 +54,22 @@ public final class MessageContextKt {
         }
         ReactionsTheme reactionsTheme = messageRow.getReactionsTheme();
         Truncation truncation = messageRow.getTruncation();
-        if (!(messageRow.getMessage() instanceof Message) || !q.b(((Message) messageRow.getMessage()).getUseAttachmentGridLayout(), bool)) {
+        if (!(messageRow.getMessage() instanceof Message) || !q.c(((Message) messageRow.getMessage()).getUseAttachmentGridLayout(), bool)) {
             z11 = false;
         } else {
             z11 = true;
         }
-        if (!(messageRow.getMessage() instanceof Message) || !q.b(((Message) messageRow.getMessage()).getUseAttachmentUploadPreview(), bool)) {
+        if (!(messageRow.getMessage() instanceof Message) || !q.c(((Message) messageRow.getMessage()).getUseAttachmentUploadPreview(), bool)) {
             z12 = false;
         } else {
             z12 = true;
         }
         boolean enableSwipeToReply = messageRow.getEnableSwipeToReply();
-        if (!(messageRow.getMessage() instanceof Message) || !q.b(((Message) messageRow.getMessage()).getUseAddBurstReaction(), bool)) {
+        if (!(messageRow.getMessage() instanceof Message) || !q.c(((Message) messageRow.getMessage()).getUseAddBurstReaction(), bool)) {
             z13 = false;
         } else {
             z13 = true;
         }
-        return new MessageContext(z10, b10, str, str2, str3, reactionsTheme, truncation, z11, z12, enableSwipeToReply, z13);
+        return new MessageContext(z10, c10, str, str2, str3, reactionsTheme, truncation, z11, z12, enableSwipeToReply, z13);
     }
 }

@@ -18,12 +18,12 @@ import com.discord.chat.presentation.message.viewholder.ImageAttachmentViewHolde
 import com.discord.chat.presentation.message.viewholder.MessagePartViewHolder;
 import com.discord.chat.presentation.message.viewholder.VideoAttachmentViewHolder;
 import com.discord.misc.utilities.view.ViewClippingUtilsKt;
-import gf.m;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import kf.m;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.k;
@@ -45,7 +45,7 @@ public final class MediaMosaicView extends GridLayout {
     
     public MediaMosaicView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  MediaMosaicView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -55,7 +55,7 @@ public final class MediaMosaicView extends GridLayout {
     private final void bindAttachmentHolder(final MessagePartViewHolder messagePartViewHolder, MessageAccessory messageAccessory, int i10, int i11) {
         SpoilerConfig spoilerConfig = null;
         if (messagePartViewHolder instanceof ImageAttachmentViewHolder) {
-            q.e(messageAccessory, "null cannot be cast to non-null type com.discord.chat.presentation.message.messagepart.ImageAttachmentMessageAccessory");
+            q.f(messageAccessory, "null cannot be cast to non-null type com.discord.chat.presentation.message.messagepart.ImageAttachmentMessageAccessory");
             final ImageAttachmentMessageAccessory imageAttachmentMessageAccessory = (ImageAttachmentMessageAccessory) messageAccessory;
             ImageAttachmentViewHolder imageAttachmentViewHolder = (ImageAttachmentViewHolder) messagePartViewHolder;
             Attachment attachment = imageAttachmentMessageAccessory.getAttachment();
@@ -74,7 +74,7 @@ public final class MediaMosaicView extends GridLayout {
             }
             imageAttachmentViewHolder.bind(attachment, i10, i11, radiusPx, resizeMode, b0Var, onLongClick, spoilerConfig, true, imageAttachmentMessageAccessory.getAttachmentsOpacity());
         } else if (messagePartViewHolder instanceof VideoAttachmentViewHolder) {
-            q.e(messageAccessory, "null cannot be cast to non-null type com.discord.chat.presentation.message.messagepart.VideoAttachmentMessageAccessory");
+            q.f(messageAccessory, "null cannot be cast to non-null type com.discord.chat.presentation.message.messagepart.VideoAttachmentMessageAccessory");
             VideoAttachmentMessageAccessory videoAttachmentMessageAccessory = (VideoAttachmentMessageAccessory) messageAccessory;
             VideoAttachmentViewHolder videoAttachmentViewHolder = (VideoAttachmentViewHolder) messagePartViewHolder;
             int radiusPx2 = videoAttachmentMessageAccessory.getRadiusPx();
@@ -92,12 +92,12 @@ public final class MediaMosaicView extends GridLayout {
 
     
     public static final void bindAttachmentHolder$lambda$1(MediaMosaicView this$0, ImageAttachmentMessageAccessory item, MessagePartViewHolder holder, View view) {
-        q.g(this$0, "this$0");
-        q.g(item, "$item");
-        q.g(holder, "$holder");
+        q.h(this$0, "this$0");
+        q.h(item, "$item");
+        q.h(holder, "$holder");
         Function3<? super Integer, ? super MessageAccessory, ? super MessagePartViewHolder, Unit> function3 = this$0.onAttachmentClicked;
         if (function3 == null) {
-            q.y("onAttachmentClicked");
+            q.z("onAttachmentClicked");
             function3 = null;
         }
         function3.invoke(Integer.valueOf(item.getAttachmentIndex()), item, holder);
@@ -106,11 +106,11 @@ public final class MediaMosaicView extends GridLayout {
     private final MessagePartViewHolder createAttachmentHolder(MessageAccessory messageAccessory, ChatEventHandler chatEventHandler) {
         if (messageAccessory instanceof ImageAttachmentMessageAccessory) {
             Context context = getContext();
-            q.f(context, "context");
+            q.g(context, "context");
             return new ImageAttachmentViewHolder(new ImageAttachmentView(context, null, 2, null), chatEventHandler);
         } else if (messageAccessory instanceof VideoAttachmentMessageAccessory) {
             Context context2 = getContext();
-            q.f(context2, "context");
+            q.g(context2, "context");
             return new VideoAttachmentViewHolder(new VideoAttachmentView(context2, null, 2, null), chatEventHandler);
         } else {
             throw new IllegalStateException(("Invalid accessory type: " + messageAccessory).toString());
@@ -129,7 +129,7 @@ public final class MediaMosaicView extends GridLayout {
         F0 = r.F0(arrayList);
         Map<Long, MessagePartViewHolder> map = this.attachmentHolders;
         if (map == null) {
-            q.y("attachmentHolders");
+            q.z("attachmentHolders");
             map = null;
         }
         F02 = r.F0(map.keySet());
@@ -145,10 +145,10 @@ public final class MediaMosaicView extends GridLayout {
         int i15;
         int i16;
         int i17;
-        q.g(attachments, "attachments");
-        q.g(eventHandler, "eventHandler");
-        q.g(onAttachmentSpoilerClicked, "onAttachmentSpoilerClicked");
-        q.g(onAttachmentClicked, "onAttachmentClicked");
+        q.h(attachments, "attachments");
+        q.h(eventHandler, "eventHandler");
+        q.h(onAttachmentSpoilerClicked, "onAttachmentSpoilerClicked");
+        q.h(onAttachmentClicked, "onAttachmentClicked");
         this.onAttachmentSpoilerClicked = onAttachmentSpoilerClicked;
         this.onAttachmentClicked = onAttachmentClicked;
         if (this.attachmentHolders == null || !shouldOnlyUpdateBindings(attachments) || this.constrainedWidth != i10) {
@@ -227,7 +227,7 @@ public final class MediaMosaicView extends GridLayout {
                 addView(createAttachmentHolder.itemView);
                 Map<Long, MessagePartViewHolder> map = this.attachmentHolders;
                 if (map == null) {
-                    q.y("attachmentHolders");
+                    q.z("attachmentHolders");
                     map = null;
                 }
                 map.put(((MessageAccessory) mVar.d()).getItemId(), createAttachmentHolder);
@@ -251,7 +251,7 @@ public final class MediaMosaicView extends GridLayout {
         for (MessageAccessory messageAccessory : attachments) {
             Map<Long, MessagePartViewHolder> map2 = this.attachmentHolders;
             if (map2 == null) {
-                q.y("attachmentHolders");
+                q.z("attachmentHolders");
                 map2 = null;
             }
             MessagePartViewHolder messagePartViewHolder = map2.get(messageAccessory.getItemId());
@@ -264,7 +264,7 @@ public final class MediaMosaicView extends GridLayout {
     
     public MediaMosaicView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         this.spacingPx = context.getResources().getDimensionPixelSize(R.dimen.message_media_grid_spacing);
         ViewClippingUtilsKt.clipToRoundedRectangle(this, context.getResources().getDimensionPixelSize(R.dimen.message_media_radius));
     }

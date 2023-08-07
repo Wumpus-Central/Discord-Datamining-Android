@@ -32,8 +32,8 @@ public class CodeNode<RC> extends TextNode<RC> {
             
             public Parsed(String raw, List<? extends Node<RC>> children) {
                 super(raw, null);
-                q.g(raw, "raw");
-                q.g(children, "children");
+                q.h(raw, "raw");
+                q.h(children, "children");
                 this.children = children;
             }
 
@@ -48,7 +48,7 @@ public class CodeNode<RC> extends TextNode<RC> {
             
             public Raw(String body) {
                 super(body, null);
-                q.g(body, "body");
+                q.h(body, "body");
             }
         }
 
@@ -71,17 +71,17 @@ public class CodeNode<RC> extends TextNode<RC> {
         
         public DefinitionNode(String pre, String name, CodeStyleProviders<RC> codeStyleProviders) {
             super(new StyleNode.TextStyledNode(pre, codeStyleProviders.getKeywordStyleProvider()), new StyleNode.TextStyledNode(name, codeStyleProviders.getTypesStyleProvider()));
-            q.g(pre, "pre");
-            q.g(name, "name");
-            q.g(codeStyleProviders, "codeStyleProviders");
+            q.h(pre, "pre");
+            q.h(name, "name");
+            q.h(codeStyleProviders, "codeStyleProviders");
         }
     }
 
     
     public CodeNode(Content content, String str, StyleNode.SpanProvider<RC> stylesProvider) {
         super(content.getBody());
-        q.g(content, "content");
-        q.g(stylesProvider, "stylesProvider");
+        q.h(content, "content");
+        q.h(stylesProvider, "stylesProvider");
         this.language = str;
         this.stylesProvider = stylesProvider;
         if (content instanceof Content.Parsed) {
@@ -100,7 +100,7 @@ public class CodeNode<RC> extends TextNode<RC> {
     public boolean equals(Object obj) {
         if (obj instanceof CodeNode) {
             CodeNode codeNode = (CodeNode) obj;
-            if (q.b(codeNode.language, this.language) && q.b(codeNode.getContent(), getContent())) {
+            if (q.c(codeNode.language, this.language) && q.c(codeNode.getContent(), getContent())) {
                 return true;
             }
         }
@@ -109,7 +109,7 @@ public class CodeNode<RC> extends TextNode<RC> {
 
     @Override 
     public void render(SpannableStringBuilder builder, RC rc2) {
-        q.g(builder, "builder");
+        q.h(builder, "builder");
         Iterable<?> iterable = this.stylesProvider.get(rc2);
         if (hasChildren()) {
             SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();

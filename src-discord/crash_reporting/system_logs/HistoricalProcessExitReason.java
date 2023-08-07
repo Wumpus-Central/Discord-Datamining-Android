@@ -4,10 +4,10 @@ import android.app.ActivityManager;
 import android.app.ApplicationExitInfo;
 import android.content.Context;
 import android.os.Build;
-import ff.x;
-import gf.v;
 import java.util.List;
 import java.util.Map;
+import jf.x;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.collections.r;
 import kotlin.jvm.internal.q;
@@ -25,7 +25,7 @@ public final class HistoricalProcessExitReason {
         private final String reason;
 
         public Reason(String reason, String str) {
-            q.g(reason, "reason");
+            q.h(reason, "reason");
             this.reason = reason;
             this.description = str;
         }
@@ -49,7 +49,7 @@ public final class HistoricalProcessExitReason {
         }
 
         public final Reason copy(String reason, String str) {
-            q.g(reason, "reason");
+            q.h(reason, "reason");
             return new Reason(reason, str);
         }
 
@@ -61,7 +61,7 @@ public final class HistoricalProcessExitReason {
                 return false;
             }
             Reason reason = (Reason) obj;
-            return q.b(this.reason, reason.reason) && q.b(this.description, reason.description);
+            return q.c(this.reason, reason.reason) && q.c(this.description, reason.description);
         }
 
         public final String getDescription() {
@@ -105,7 +105,7 @@ public final class HistoricalProcessExitReason {
         int reason;
         String description;
         int reason2;
-        q.g(context, "context");
+        q.h(context, "context");
         if (Build.VERSION.SDK_INT < 30) {
             return null;
         }
@@ -119,7 +119,7 @@ public final class HistoricalProcessExitReason {
             return null;
         }
         historicalProcessExitReasons = activityManager.getHistoricalProcessExitReasons(null, 0, 1);
-        q.f(historicalProcessExitReasons, "activityManager.getHisto…ssExitReasons(null, 0, 1)");
+        q.g(historicalProcessExitReasons, "activityManager.getHisto…ssExitReasons(null, 0, 1)");
         U = r.U(historicalProcessExitReasons);
         ApplicationExitInfo applicationExitInfo = (ApplicationExitInfo) U;
         if (applicationExitInfo == null) {

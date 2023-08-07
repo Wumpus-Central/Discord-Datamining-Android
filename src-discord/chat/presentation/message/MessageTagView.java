@@ -32,40 +32,40 @@ public final class MessageTagView extends FrameLayout {
     
     public MessageTagView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        q.g(context, "context");
-        q.g(attrs, "attrs");
+        q.h(context, "context");
+        q.h(attrs, "attrs");
         MessageTagViewBinding inflate = MessageTagViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView textView = inflate.tag;
-        q.f(textView, "binding.tag");
+        q.g(textView, "binding.tag");
         DiscordFontUtilsKt.setDiscordFont(textView, DiscordFont.PrimarySemibold);
         SimpleDraweeView simpleDraweeView = inflate.verifiedBotIcon;
-        q.f(simpleDraweeView, "binding.verifiedBotIcon");
+        q.g(simpleDraweeView, "binding.verifiedBotIcon");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.Check);
         SimpleDraweeView simpleDraweeView2 = inflate.verifiedBotIcon;
-        q.f(simpleDraweeView2, "binding.verifiedBotIcon");
+        q.g(simpleDraweeView2, "binding.verifiedBotIcon");
         ColorUtilsKt.setTintColor(simpleDraweeView2, (Integer) (-1));
     }
 
     
     public static final void configureTagView_e_CJZyo$lambda$0(ChatEventHandler eventHandler, String messageId, long j10, String str, View view) {
-        q.g(eventHandler, "$eventHandler");
-        q.g(messageId, "$messageId");
-        eventHandler.mo176onTapTagEqy5D80(messageId, j10, str);
+        q.h(eventHandler, "$eventHandler");
+        q.h(messageId, "$messageId");
+        eventHandler.mo177onTapTagEqy5D80(messageId, j10, str);
     }
 
     
     public static final void configureTagView_e_CJZyo$lambda$1(ChatEventHandler eventHandler, View view) {
-        q.g(eventHandler, "$eventHandler");
+        q.h(eventHandler, "$eventHandler");
         eventHandler.onTapOpTag();
     }
 
     
-    public final void m212configureTagVieweCJZyo(String str, Boolean bool, Integer num, Integer num2, String str2, final ChatEventHandler eventHandler, final String messageId, final long j10, final String str3) {
+    public final void m213configureTagVieweCJZyo(String str, Boolean bool, Integer num, Integer num2, String str2, final ChatEventHandler eventHandler, final String messageId, final long j10, final String str3) {
         int i10;
-        q.g(eventHandler, "eventHandler");
-        q.g(messageId, "messageId");
+        q.h(eventHandler, "eventHandler");
+        q.h(messageId, "messageId");
         int i11 = 0;
         if (str != null) {
             this.binding.tag.setText(str);
@@ -74,12 +74,12 @@ public final class MessageTagView extends FrameLayout {
                 i10 = num.intValue();
             } else {
                 Context context = getContext();
-                q.f(context, "context");
+                q.g(context, "context");
                 i10 = ColorUtilsKt.getColorCompat(context, R.color.white);
             }
             textView.setTextColor(i10);
             ConstraintLayout constraintLayout = this.binding.layout;
-            q.f(constraintLayout, "binding.layout");
+            q.g(constraintLayout, "binding.layout");
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(constraintLayout, false, new View.OnClickListener() { 
                 @Override 
                 public final void onClick(View view) {
@@ -87,14 +87,14 @@ public final class MessageTagView extends FrameLayout {
                 }
             }, 1, null);
             SimpleDraweeView simpleDraweeView = this.binding.verifiedBotIcon;
-            q.f(simpleDraweeView, "binding.verifiedBotIcon");
-            if (!q.b(bool, Boolean.TRUE)) {
+            q.g(simpleDraweeView, "binding.verifiedBotIcon");
+            if (!q.c(bool, Boolean.TRUE)) {
                 i11 = 8;
             }
             simpleDraweeView.setVisibility(i11);
             if (num2 != null) {
                 ConstraintLayout constraintLayout2 = this.binding.layout;
-                q.f(constraintLayout2, "binding.layout");
+                q.g(constraintLayout2, "binding.layout");
                 ViewBackgroundUtilsKt.setBackgroundRectangle$default(constraintLayout2, ReactColorToAndroidColorKt.reactColorToAndroidColor(num2.intValue()), SizeUtilsKt.getDpToPx(3), null, 0, 12, null);
                 return;
             }
@@ -103,15 +103,15 @@ public final class MessageTagView extends FrameLayout {
             this.binding.tag.setText(str2);
             TextView textView2 = this.binding.tag;
             Context context2 = getContext();
-            q.f(context2, "context");
+            q.g(context2, "context");
             textView2.setTextColor(ColorUtilsKt.getColorCompat(context2, R.color.brand_560));
             ConstraintLayout constraintLayout3 = this.binding.layout;
-            q.f(constraintLayout3, "binding.layout");
+            q.g(constraintLayout3, "binding.layout");
             Context context3 = getContext();
-            q.f(context3, "context");
+            q.g(context3, "context");
             ViewBackgroundUtilsKt.setBackgroundRectangle$default(constraintLayout3, ColorUtilsKt.getThemeColor(context3, R.color.brand_200, R.color.brand_260), SizeUtilsKt.getDpToPx(8), null, 0, 12, null);
             ConstraintLayout constraintLayout4 = this.binding.layout;
-            q.f(constraintLayout4, "binding.layout");
+            q.g(constraintLayout4, "binding.layout");
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(constraintLayout4, false, new View.OnClickListener() { 
                 @Override 
                 public final void onClick(View view) {
@@ -119,7 +119,7 @@ public final class MessageTagView extends FrameLayout {
                 }
             }, 1, null);
             SimpleDraweeView simpleDraweeView2 = this.binding.verifiedBotIcon;
-            q.f(simpleDraweeView2, "binding.verifiedBotIcon");
+            q.g(simpleDraweeView2, "binding.verifiedBotIcon");
             simpleDraweeView2.setVisibility(8);
         }
     }

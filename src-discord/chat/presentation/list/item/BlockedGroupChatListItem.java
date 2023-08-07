@@ -13,7 +13,7 @@ public final class BlockedGroupChatListItem extends ChatListItem {
     private final List<ChatListItem> content;
 
     
-    private final String f6939id;
+    private final String f7152id;
     private final boolean isRevealed;
     private final String text;
     private final int textColor;
@@ -22,11 +22,11 @@ public final class BlockedGroupChatListItem extends ChatListItem {
     
     public BlockedGroupChatListItem(String text, String id2, int i10, int i11, int i12, boolean z10, List<? extends ChatListItem> content) {
         super(id2, null);
-        q.g(text, "text");
-        q.g(id2, "id");
-        q.g(content, "content");
+        q.h(text, "text");
+        q.h(id2, "id");
+        q.h(content, "content");
         this.text = text;
-        this.f6939id = id2;
+        this.f7152id = id2;
         this.textColor = i10;
         this.backgroundColor = i11;
         this.borderColor = i12;
@@ -89,9 +89,9 @@ public final class BlockedGroupChatListItem extends ChatListItem {
     }
 
     public final BlockedGroupChatListItem copy(String text, String id2, int i10, int i11, int i12, boolean z10, List<? extends ChatListItem> content) {
-        q.g(text, "text");
-        q.g(id2, "id");
-        q.g(content, "content");
+        q.h(text, "text");
+        q.h(id2, "id");
+        q.h(content, "content");
         return new BlockedGroupChatListItem(text, id2, i10, i11, i12, z10, content);
     }
 
@@ -103,7 +103,7 @@ public final class BlockedGroupChatListItem extends ChatListItem {
             return false;
         }
         BlockedGroupChatListItem blockedGroupChatListItem = (BlockedGroupChatListItem) obj;
-        return q.b(this.text, blockedGroupChatListItem.text) && q.b(getId(), blockedGroupChatListItem.getId()) && this.textColor == blockedGroupChatListItem.textColor && this.backgroundColor == blockedGroupChatListItem.backgroundColor && this.borderColor == blockedGroupChatListItem.borderColor && this.isRevealed == blockedGroupChatListItem.isRevealed && q.b(this.content, blockedGroupChatListItem.content);
+        return q.c(this.text, blockedGroupChatListItem.text) && q.c(getId(), blockedGroupChatListItem.getId()) && this.textColor == blockedGroupChatListItem.textColor && this.backgroundColor == blockedGroupChatListItem.backgroundColor && this.borderColor == blockedGroupChatListItem.borderColor && this.isRevealed == blockedGroupChatListItem.isRevealed && q.c(this.content, blockedGroupChatListItem.content);
     }
 
     public final int getBackgroundColor() {
@@ -120,7 +120,7 @@ public final class BlockedGroupChatListItem extends ChatListItem {
 
     @Override 
     public String getId() {
-        return this.f6939id;
+        return this.f7152id;
     }
 
     public final String getText() {

@@ -32,7 +32,7 @@ public final class SummarySeparatorView extends ConstraintLayout {
     
     public SummarySeparatorView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  SummarySeparatorView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -42,14 +42,14 @@ public final class SummarySeparatorView extends ConstraintLayout {
     public final void setDividerColor(int i10) {
         SeparatorSummaryViewBinding separatorSummaryViewBinding = this.binding;
         SimpleDraweeView indicatorTop = separatorSummaryViewBinding.indicatorTop;
-        q.f(indicatorTop, "indicatorTop");
+        q.g(indicatorTop, "indicatorTop");
         ColorUtilsKt.setTintColor(indicatorTop, Integer.valueOf(i10));
         SimpleDraweeView indicatorBottom = separatorSummaryViewBinding.indicatorBottom;
-        q.f(indicatorBottom, "indicatorBottom");
+        q.g(indicatorBottom, "indicatorBottom");
         ColorUtilsKt.setTintColor(indicatorBottom, Integer.valueOf(i10));
         separatorSummaryViewBinding.rightBar.setBackgroundColor(i10);
         SimpleDraweeView icon = separatorSummaryViewBinding.icon;
-        q.f(icon, "icon");
+        q.g(icon, "icon");
         ColorUtilsKt.setTintColor(icon, Integer.valueOf(i10));
         separatorSummaryViewBinding.middleText.setTextColor(i10);
     }
@@ -70,60 +70,60 @@ public final class SummarySeparatorView extends ConstraintLayout {
     }
 
     public final void setJumpToBottomHandler(View.OnClickListener onJumpToBottom) {
-        q.g(onJumpToBottom, "onJumpToBottom");
+        q.h(onJumpToBottom, "onJumpToBottom");
         SimpleDraweeView simpleDraweeView = this.binding.jumpButton;
-        q.f(simpleDraweeView, "binding.jumpButton");
+        q.g(simpleDraweeView, "binding.jumpButton");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView, false, onJumpToBottom, 1, null);
     }
 
     public final void setMoreActionsHandler(View.OnClickListener onMoreActions) {
-        q.g(onMoreActions, "onMoreActions");
+        q.h(onMoreActions, "onMoreActions");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(this, false, onMoreActions, 1, null);
         SimpleDraweeView simpleDraweeView = this.binding.moreButton;
-        q.f(simpleDraweeView, "binding.moreButton");
+        q.g(simpleDraweeView, "binding.moreButton");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView, false, onMoreActions, 1, null);
     }
 
     public final void setText(CharSequence text) {
-        q.g(text, "text");
+        q.h(text, "text");
         this.binding.middleText.setText(text);
     }
 
     
     public SummarySeparatorView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         SeparatorSummaryViewBinding inflate = SeparatorSummaryViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(\n        LayoutI…ext),\n        this,\n    )");
+        q.g(inflate, "inflate(\n        LayoutI…ext),\n        this,\n    )");
         this.binding = inflate;
         View root = inflate.getRoot();
-        q.f(root, "root");
+        q.g(root, "root");
         root.setPaddingRelative(context.getResources().getDimensionPixelSize(R.dimen.message_divider_margin_start), root.getPaddingTop(), context.getResources().getDimensionPixelSize(R.dimen.message_divider_margin_end), root.getPaddingBottom());
         TextView lambda$1$lambda$0 = inflate.middleText;
-        q.f(lambda$1$lambda$0, "lambda$1$lambda$0");
+        q.g(lambda$1$lambda$0, "lambda$1$lambda$0");
         ViewClippingUtilsKt.clipToRoundedRectangle(lambda$1$lambda$0, SizeUtilsKt.getDpToPx(4));
         DiscordFontUtilsKt.setDiscordFont(lambda$1$lambda$0, DiscordFont.PrimarySemibold);
         SetTextSizeSpKt.setTextSizeSp(lambda$1$lambda$0, 12.0f);
         SimpleDraweeView indicatorTop = inflate.indicatorTop;
-        q.f(indicatorTop, "indicatorTop");
+        q.g(indicatorTop, "indicatorTop");
         ReactAssetUtilsKt.setReactAsset(indicatorTop, ReactAsset.SummaryIndicatorStart);
         SimpleDraweeView indicatorBottom = inflate.indicatorBottom;
-        q.f(indicatorBottom, "indicatorBottom");
+        q.g(indicatorBottom, "indicatorBottom");
         ReactAssetUtilsKt.setReactAsset(indicatorBottom, ReactAsset.SummaryIndicatorEnd);
         SimpleDraweeView icon = inflate.icon;
-        q.f(icon, "icon");
+        q.g(icon, "icon");
         ReactAssetUtilsKt.setReactAsset(icon, ReactAsset.Summary);
         SimpleDraweeView jumpButton = inflate.jumpButton;
-        q.f(jumpButton, "jumpButton");
+        q.g(jumpButton, "jumpButton");
         ReactAssetUtilsKt.setReactAsset(jumpButton, ReactAsset.JumpToBottom);
         SimpleDraweeView jumpButton2 = inflate.jumpButton;
-        q.f(jumpButton2, "jumpButton");
+        q.g(jumpButton2, "jumpButton");
         ColorUtilsKt.setTintColor(jumpButton2, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
         SimpleDraweeView moreButton = inflate.moreButton;
-        q.f(moreButton, "moreButton");
+        q.g(moreButton, "moreButton");
         ReactAssetUtilsKt.setReactAsset(moreButton, ReactAsset.More);
         SimpleDraweeView moreButton2 = inflate.moreButton;
-        q.f(moreButton2, "moreButton");
+        q.g(moreButton2, "moreButton");
         ColorUtilsKt.setTintColor(moreButton2, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
     }
 }

@@ -27,12 +27,12 @@ final class MessageContentView$setMessageContent$spannableStringBuilder$1 extend
     @Override 
     public   Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(LinkContentNode node) {
-        q.g(node, "node");
-        this.$onTapLink.invoke(MessageId.m592boximpl(this.$messageId), node);
+        q.h(node, "node");
+        this.$onTapLink.invoke(MessageId.m593boximpl(this.$messageId), node);
     }
 }

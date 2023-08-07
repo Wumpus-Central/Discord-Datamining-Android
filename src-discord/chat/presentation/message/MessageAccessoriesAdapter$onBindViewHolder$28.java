@@ -28,18 +28,18 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$28 extends s imple
     @Override 
     public   Unit invoke(Sticker sticker) {
         invoke2(sticker);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(Sticker it) {
         ChatEventHandler chatEventHandler;
-        q.g(it, "it");
+        q.h(it, "it");
         chatEventHandler = this.this$0.eventHandler;
         if (chatEventHandler == null) {
-            q.y("eventHandler");
+            q.z("eventHandler");
             chatEventHandler = null;
         }
-        chatEventHandler.mo154onStickerLongClickedAyv7vGE(((StickerMessageAccessory) this.$part).getSticker(), this.$part.mo217getMessageId3Eiw7ao());
+        chatEventHandler.mo155onStickerLongClickedAyv7vGE(((StickerMessageAccessory) this.$part).getSticker(), this.$part.mo218getMessageId3Eiw7ao());
     }
 }

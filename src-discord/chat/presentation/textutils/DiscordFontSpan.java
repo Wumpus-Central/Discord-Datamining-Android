@@ -16,8 +16,8 @@ public final class DiscordFontSpan extends MetricAffectingSpan {
     private final Typeface font;
 
     public DiscordFontSpan(Context context, DiscordFont discordFont) {
-        q.g(context, "context");
-        q.g(discordFont, "discordFont");
+        q.h(context, "context");
+        q.h(discordFont, "discordFont");
         this.font = DiscordFontUtilsKt.getDiscordTypefaceFor(context, discordFont);
     }
 
@@ -41,13 +41,13 @@ public final class DiscordFontSpan extends MetricAffectingSpan {
 
     @Override 
     public void updateDrawState(TextPaint paint) {
-        q.g(paint, "paint");
+        q.h(paint, "paint");
         applyCustomTypeFace(paint, this.font);
     }
 
     @Override 
     public void updateMeasureState(TextPaint paint) {
-        q.g(paint, "paint");
+        q.h(paint, "paint");
         applyCustomTypeFace(paint, this.font);
     }
 }

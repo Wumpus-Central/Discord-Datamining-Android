@@ -12,26 +12,26 @@ import kotlin.jvm.internal.q;
 
 public final class EventEmitterUtilsKt {
     public static final void emitReactNativeEvent(Context context, String eventName, WritableMap serializedEvent) {
-        q.g(context, "<this>");
-        q.g(eventName, "eventName");
-        q.g(serializedEvent, "serializedEvent");
+        q.h(context, "<this>");
+        q.h(eventName, "eventName");
+        q.h(serializedEvent, "serializedEvent");
         getEventEmitter(context).emit(eventName, serializedEvent);
     }
 
     public static final void emitReactNativeViewEvent(Context context, String eventName, WritableMap serializedEvent, int i10) {
-        q.g(context, "<this>");
-        q.g(eventName, "eventName");
-        q.g(serializedEvent, "serializedEvent");
+        q.h(context, "<this>");
+        q.h(eventName, "eventName");
+        q.h(serializedEvent, "serializedEvent");
         getViewEventEmitter(context).receiveEvent(i10, eventName, serializedEvent);
     }
 
     private static final DeviceEventManagerModule.RCTDeviceEventEmitter getEventEmitter(Context context) {
-        q.e(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
+        q.f(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
         return (DeviceEventManagerModule.RCTDeviceEventEmitter) ((ReactContext) context).getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class);
     }
 
     private static final RCTEventEmitter getViewEventEmitter(Context context) {
-        q.e(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
+        q.f(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
         return (RCTEventEmitter) ((ReactContext) context).getJSModule(RCTEventEmitter.class);
     }
 }

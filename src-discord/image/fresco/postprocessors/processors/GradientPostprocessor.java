@@ -7,7 +7,7 @@ import android.graphics.Paint;
 import android.graphics.Shader;
 import com.discord.image.fresco.postprocessors.PostProcessor;
 import com.facebook.imagepipeline.request.BasePostprocessor;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -29,32 +29,32 @@ public final class GradientPostprocessor extends BasePostprocessor {
         private static final class Point {
 
             
-            private final float f7144x;
+            private final float f7357x;
 
             
-            private final float f7145y;
+            private final float f7358y;
 
             public Point(float f10, float f11) {
-                this.f7144x = f10;
-                this.f7145y = f11;
+                this.f7357x = f10;
+                this.f7358y = f11;
             }
 
             public static  Point copy$default(Point point, float f10, float f11, int i10, Object obj) {
                 if ((i10 & 1) != 0) {
-                    f10 = point.f7144x;
+                    f10 = point.f7357x;
                 }
                 if ((i10 & 2) != 0) {
-                    f11 = point.f7145y;
+                    f11 = point.f7358y;
                 }
                 return point.copy(f10, f11);
             }
 
             public final float component1() {
-                return this.f7144x;
+                return this.f7357x;
             }
 
             public final float component2() {
-                return this.f7145y;
+                return this.f7358y;
             }
 
             public final Point copy(float f10, float f11) {
@@ -69,24 +69,24 @@ public final class GradientPostprocessor extends BasePostprocessor {
                     return false;
                 }
                 Point point = (Point) obj;
-                return Float.compare(this.f7144x, point.f7144x) == 0 && Float.compare(this.f7145y, point.f7145y) == 0;
+                return Float.compare(this.f7357x, point.f7357x) == 0 && Float.compare(this.f7358y, point.f7358y) == 0;
             }
 
             public final float getX() {
-                return this.f7144x;
+                return this.f7357x;
             }
 
             public final float getY() {
-                return this.f7145y;
+                return this.f7358y;
             }
 
             public int hashCode() {
-                return (Float.floatToIntBits(this.f7144x) * 31) + Float.floatToIntBits(this.f7145y);
+                return (Float.floatToIntBits(this.f7357x) * 31) + Float.floatToIntBits(this.f7358y);
             }
 
             public String toString() {
-                float f10 = this.f7144x;
-                float f11 = this.f7145y;
+                float f10 = this.f7357x;
+                float f11 = this.f7358y;
                 return "Point(x=" + f10 + ", y=" + f11 + ")";
             }
         }
@@ -127,14 +127,14 @@ public final class GradientPostprocessor extends BasePostprocessor {
     }
 
     public GradientPostprocessor(PostProcessor.Gradient gradient) {
-        q.g(gradient, "gradient");
+        q.h(gradient, "gradient");
         this.gradient = gradient;
     }
 
     @Override 
     public void process(Bitmap bitmap) {
         Pair pair;
-        q.g(bitmap, "bitmap");
+        q.h(bitmap, "bitmap");
         int i10 = WhenMappings.$EnumSwitchMapping$0[this.gradient.getDirection().ordinal()];
         if (i10 == 1) {
             pair = x.a(new Companion.Point(0.0f, bitmap.getHeight() / 2.0f), new Companion.Point(bitmap.getWidth(), bitmap.getHeight() / 2.0f));
@@ -145,14 +145,14 @@ public final class GradientPostprocessor extends BasePostprocessor {
         } else if (i10 == 4) {
             pair = x.a(new Companion.Point(bitmap.getWidth() / 2.0f, bitmap.getHeight()), new Companion.Point(bitmap.getWidth() / 2.0f, 0.0f));
         } else {
-            throw new ff.q();
+            throw new jf.q();
         }
         Companion.Point point = (Companion.Point) pair.a();
         Companion.Point point2 = (Companion.Point) pair.b();
         float height = bitmap.getHeight();
         Paint paint = new Paint();
         paint.setShader(new LinearGradient(point.getX(), point.getY(), point2.getX(), point2.getY(), new int[]{this.gradient.getStartColor(), this.gradient.getEndColor()}, new float[]{this.gradient.getStartPosition(), this.gradient.getEndPosition()}, Shader.TileMode.CLAMP));
-        Unit unit = Unit.f20679a;
+        Unit unit = Unit.f21025a;
         new Canvas(bitmap).drawRect(0.0f, 0.0f, bitmap.getWidth(), height, paint);
     }
 }

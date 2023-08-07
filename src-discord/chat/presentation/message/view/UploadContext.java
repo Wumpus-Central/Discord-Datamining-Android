@@ -44,7 +44,7 @@ public final class UploadContext {
             return false;
         }
         UploadContext uploadContext = (UploadContext) obj;
-        return q.b(this.uploaderId, uploadContext.uploaderId) && q.b(this.uploadItemId, uploadContext.uploadItemId);
+        return q.c(this.uploaderId, uploadContext.uploaderId) && q.c(this.uploadItemId, uploadContext.uploadItemId);
     }
 
     public final String getUploadItemId() {

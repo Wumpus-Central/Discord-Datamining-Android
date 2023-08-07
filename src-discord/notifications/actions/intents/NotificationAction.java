@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Parcelable;
 import androidx.core.app.NotificationManagerCompat;
+import androidx.core.content.e;
 import com.discord.misc.utilities.intent.IntentUtilsKt;
 import com.discord.misc.utilities.intent.PendingIntentUtils;
 import com.discord.notifications.actions.NotificationActions;
@@ -18,11 +19,13 @@ import kotlin.reflect.KClass;
 
 public interface NotificationAction extends Parcelable {
     public static final Companion Companion = Companion.$$INSTANCE;
+    public static final String INTENT_ARG_KEY = "action_intent_arg_key";
     public static final String activityAction = "android.intent.action.VIEW";
 
-    @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J \u0010\f\u001a\u0004\u0018\u0001H\r\"\n\b\u0000\u0010\r\u0018\u0001*\u00020\u000e*\u00020\u000fH\u0086\b¢\u0006\u0002\u0010\u0010R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u0015\u0010\u0005\u001a\u0006\u0012\u0002\b\u00030\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u000e\u0010\t\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u0014\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0006X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0011"}, d2 = {"Lcom/discord/notifications/actions/intents/NotificationAction$Companion;", "", "()V", "activityAction", "", "activityClass", "Ljava/lang/Class;", "getActivityClass", "()Ljava/lang/Class;", "broadcastAction", "broadcastClass", "Lcom/discord/notifications/actions/NotificationActions;", "toAction", "T", "Lcom/discord/notifications/actions/intents/NotificationAction;", "Landroid/content/Intent;", "(Landroid/content/Intent;)Lcom/discord/notifications/actions/intents/NotificationAction;", "notification_actions_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    @Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J \u0010\r\u001a\u0004\u0018\u0001H\u000e\"\n\b\u0000\u0010\u000e\u0018\u0001*\u00020\u000f*\u00020\u0010H\u0086\b¢\u0006\u0002\u0010\u0011R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u0015\u0010\u0006\u001a\u0006\u0012\u0002\b\u00030\u0007¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u000e\u0010\n\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u0014\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\f0\u0007X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0012"}, d2 = {"Lcom/discord/notifications/actions/intents/NotificationAction$Companion;", "", "()V", "INTENT_ARG_KEY", "", "activityAction", "activityClass", "Ljava/lang/Class;", "getActivityClass", "()Ljava/lang/Class;", "broadcastAction", "broadcastClass", "Lcom/discord/notifications/actions/NotificationActions;", "toAction", "T", "Lcom/discord/notifications/actions/intents/NotificationAction;", "Landroid/content/Intent;", "(Landroid/content/Intent;)Lcom/discord/notifications/actions/intents/NotificationAction;", "notification_actions_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     
     public static final class Companion {
+        public static final String INTENT_ARG_KEY = "action_intent_arg_key";
         public static final String activityAction = "android.intent.action.VIEW";
         private static final String broadcastAction = "com.discord.intent.action.NOTIFICATION_ACTION";
         static final  Companion $$INSTANCE = new Companion();
@@ -37,12 +40,13 @@ public interface NotificationAction extends Parcelable {
         }
 
         public final  <T extends NotificationAction> T toAction(Intent intent) {
-            q.g(intent, "<this>");
-            q.m(4, "T");
-            if (IntentUtilsKt.hasExtra(intent, f0.b(NotificationAction.class))) {
-                return (T) ((NotificationAction) IntentUtilsKt.getIntentParcelable(intent));
+            q.h(intent, "<this>");
+            q.n(4, "T");
+            if (!IntentUtilsKt.hasExtra(intent, f0.b(NotificationAction.class))) {
+                return null;
             }
-            return null;
+            q.n(4, "T");
+            return (T) ((NotificationAction) ((Parcelable) e.b(intent, "action_intent_arg_key", Parcelable.class)));
         }
     }
 
@@ -62,7 +66,7 @@ public interface NotificationAction extends Parcelable {
             } else {
                 cls = Companion.broadcastClass;
             }
-            return IntentUtilsKt.putIntentParcelable(IntentUtilsKt.putExtra(new Intent(str, null, context, cls), f0.b(notificationAction.getClass())), notificationAction);
+            return IntentUtilsKt.putIntentParcelable(IntentUtilsKt.putExtra(new Intent(str, null, context, cls), f0.b(notificationAction.getClass())), "action_intent_arg_key", notificationAction);
         }
 
         public static int getPendingIntentRequestCode(NotificationAction notificationAction) {
@@ -72,25 +76,25 @@ public interface NotificationAction extends Parcelable {
         }
 
         public static void onNotificationAction(NotificationAction notificationAction, Context context, Intent intent) {
-            q.g(context, "context");
-            q.g(intent, "intent");
+            q.h(context, "context");
+            q.h(intent, "intent");
         }
 
         public static void onNotificationActionComplete(NotificationAction notificationAction, Context context) {
-            q.g(context, "context");
+            q.h(context, "context");
             NotificationManagerCompat.g(context).b(notificationAction.getTag(), 0);
         }
 
         public static PendingIntent toPendingIntent(NotificationAction notificationAction, Context context, int i10, boolean z10) {
             PendingIntent pendingIntent;
-            q.g(context, "context");
+            q.h(context, "context");
             Intent createIntent = createIntent(notificationAction, context, z10);
             if (z10) {
                 pendingIntent = PendingIntent.getActivity(context, notificationAction.getPendingIntentRequestCode(), createIntent, i10);
             } else {
                 pendingIntent = PendingIntent.getBroadcast(context, notificationAction.getPendingIntentRequestCode(), createIntent, i10);
             }
-            q.f(pendingIntent, "createIntent(context, la…t, flags)\n        }\n    }");
+            q.g(pendingIntent, "createIntent(context, la…t, flags)\n        }\n    }");
             return pendingIntent;
         }
 

@@ -109,12 +109,12 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
         if (i10 == getAddBurstReactionIndex()) {
             String str2 = this.messageId;
             if (str2 == null) {
-                q.y("messageId");
+                q.z("messageId");
                 str2 = null;
             }
             String str3 = this.addReactionLabel;
             if (str3 == null) {
-                q.y("addReactionLabel");
+                q.z("addReactionLabel");
             } else {
                 str = str3;
             }
@@ -122,12 +122,12 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
         } else if (i10 == getAddReactionIndex()) {
             String str4 = this.messageId;
             if (str4 == null) {
-                q.y("messageId");
+                q.z("messageId");
                 str4 = null;
             }
             String str5 = this.addReactionLabel;
             if (str5 == null) {
-                q.y("addReactionLabel");
+                q.z("addReactionLabel");
             } else {
                 str = str5;
             }
@@ -136,7 +136,7 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
             ReactionView.Reaction reaction = (ReactionView.Reaction) this.reactions.get(i10);
             String str6 = this.messageId;
             if (str6 == null) {
-                q.y("messageId");
+                q.z("messageId");
             } else {
                 str = str6;
             }
@@ -161,7 +161,7 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
 
     @Override 
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int i10) {
-        q.g(holder, "holder");
+        q.h(holder, "holder");
         ThemeManager themeManager = ThemeManager.INSTANCE;
         DiscordTheme themeOverride = themeManager.getThemeOverride();
         themeManager.setThemeOverride(this.theme);
@@ -174,12 +174,12 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
             BurstReactionViewHolder burstReactionViewHolder = (BurstReactionViewHolder) holder;
             Function1<? super ReactionView.Reaction, Unit> function13 = this.onReactionClick;
             if (function13 == null) {
-                q.y("onReactionClick");
+                q.z("onReactionClick");
                 function13 = null;
             }
             Function1<? super ReactionView.Reaction, Unit> function14 = this.onReactionLongPress;
             if (function14 == null) {
-                q.y("onReactionLongPress");
+                q.z("onReactionLongPress");
             } else {
                 function1 = function14;
             }
@@ -189,12 +189,12 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
             ReactionViewHolder reactionViewHolder = (ReactionViewHolder) holder;
             Function1<? super ReactionView.Reaction, Unit> function15 = this.onReactionClick;
             if (function15 == null) {
-                q.y("onReactionClick");
+                q.z("onReactionClick");
                 function15 = null;
             }
             Function1<? super ReactionView.Reaction, Unit> function16 = this.onReactionLongPress;
             if (function16 == null) {
-                q.y("onReactionLongPress");
+                q.z("onReactionLongPress");
             } else {
                 function12 = function16;
             }
@@ -203,17 +203,17 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
             AddReactionViewHolder addReactionViewHolder = (AddReactionViewHolder) holder;
             String str = this.addReactionLabel;
             if (str == null) {
-                q.y("addReactionLabel");
+                q.z("addReactionLabel");
                 str = null;
             }
             String str2 = this.addNewReactionAccessibilityLabel;
             if (str2 == null) {
-                q.y("addNewReactionAccessibilityLabel");
+                q.z("addNewReactionAccessibilityLabel");
                 str2 = null;
             }
             View.OnClickListener onClickListener3 = this.onAddReactionClick;
             if (onClickListener3 == null) {
-                q.y("onAddReactionClick");
+                q.z("onAddReactionClick");
             } else {
                 onClickListener2 = onClickListener3;
             }
@@ -222,17 +222,17 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
             AddBurstReactionViewHolder addBurstReactionViewHolder = (AddBurstReactionViewHolder) holder;
             String str3 = this.addReactionLabel;
             if (str3 == null) {
-                q.y("addReactionLabel");
+                q.z("addReactionLabel");
                 str3 = null;
             }
             String str4 = this.addNewBurstReactionAccessibilityLabel;
             if (str4 == null) {
-                q.y("addNewBurstReactionAccessibilityLabel");
+                q.z("addNewBurstReactionAccessibilityLabel");
                 str4 = null;
             }
             View.OnClickListener onClickListener4 = this.onAddBurstReactionClick;
             if (onClickListener4 == null) {
-                q.y("onAddBurstReactionClick");
+                q.z("onAddBurstReactionClick");
             } else {
                 onClickListener = onClickListener4;
             }
@@ -246,7 +246,7 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
     @Override 
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int i10) {
         RecyclerView.ViewHolder viewHolder;
-        q.g(parent, "parent");
+        q.h(parent, "parent");
         FlexboxLayoutManager.c cVar = new FlexboxLayoutManager.c(-2, this.reactionHeight);
         ThemeManager themeManager = ThemeManager.INSTANCE;
         DiscordTheme themeOverride = themeManager.getThemeOverride();
@@ -254,30 +254,30 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
         int i11 = WhenMappings.$EnumSwitchMapping$0[ViewType.values()[i10].ordinal()];
         if (i11 == 1) {
             Context context = parent.getContext();
-            q.f(context, "parent.context");
+            q.g(context, "parent.context");
             BurstReactionView burstReactionView = new BurstReactionView(context, null, 2, null);
             burstReactionView.setLayoutParams(cVar);
             viewHolder = new BurstReactionViewHolder(burstReactionView);
         } else if (i11 == 2) {
             Context context2 = parent.getContext();
-            q.f(context2, "parent.context");
+            q.g(context2, "parent.context");
             ReactionView reactionView = new ReactionView(context2, null, 2, null);
             reactionView.setLayoutParams(cVar);
             viewHolder = new ReactionViewHolder(reactionView);
         } else if (i11 == 3) {
             Context context3 = parent.getContext();
-            q.f(context3, "parent.context");
+            q.g(context3, "parent.context");
             AddReactionView addReactionView = new AddReactionView(context3, null, 2, null);
             addReactionView.setLayoutParams(cVar);
             viewHolder = new AddReactionViewHolder(addReactionView);
         } else if (i11 == 4) {
             Context context4 = parent.getContext();
-            q.f(context4, "parent.context");
+            q.g(context4, "parent.context");
             AddReactionView addReactionView2 = new AddReactionView(context4, null, 2, null);
             addReactionView2.setLayoutParams(cVar);
             viewHolder = new AddBurstReactionViewHolder(addReactionView2);
         } else {
-            throw new ff.q();
+            throw new jf.q();
         }
         themeManager.setThemeOverride(themeOverride);
         return viewHolder;
@@ -285,15 +285,15 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
 
     @SuppressLint({"NotifyDataSetChanged"})
     public final void setReactions(String messageId, List<? extends ReactionView.Reaction> reactions, boolean z10, boolean z11, String addReactionLabel, String addNewReactionAccessibilityLabel, String addNewBurstReactionAccessibilityLabel, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, View.OnClickListener onAddBurstReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, DiscordTheme discordTheme, boolean z12) {
-        q.g(messageId, "messageId");
-        q.g(reactions, "reactions");
-        q.g(addReactionLabel, "addReactionLabel");
-        q.g(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
-        q.g(addNewBurstReactionAccessibilityLabel, "addNewBurstReactionAccessibilityLabel");
-        q.g(onAddReactionClick, "onAddReactionClick");
-        q.g(onAddBurstReactionClick, "onAddBurstReactionClick");
-        q.g(onReactionClick, "onReactionClick");
-        q.g(onReactionLongPress, "onReactionLongPress");
+        q.h(messageId, "messageId");
+        q.h(reactions, "reactions");
+        q.h(addReactionLabel, "addReactionLabel");
+        q.h(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
+        q.h(addNewBurstReactionAccessibilityLabel, "addNewBurstReactionAccessibilityLabel");
+        q.h(onAddReactionClick, "onAddReactionClick");
+        q.h(onAddBurstReactionClick, "onAddBurstReactionClick");
+        q.h(onReactionClick, "onReactionClick");
+        q.h(onReactionLongPress, "onReactionLongPress");
         this.messageId = messageId;
         this.canAddNewReactions = z10;
         this.canAddNewBurstReactions = z11;
@@ -310,7 +310,7 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
             List<? extends ReactionView.Reaction> list = this.reactions;
             this.reactions = reactions;
             c.e b10 = c.b(new ItemDiffer(list, reactions), true);
-            q.f(b10, "calculateDiff(differ, true)");
+            q.g(b10, "calculateDiff(differ, true)");
             b10.c(this);
             return;
         }

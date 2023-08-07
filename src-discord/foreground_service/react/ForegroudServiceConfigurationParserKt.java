@@ -5,12 +5,12 @@ import com.discord.react.utilities.NativeArrayExtensionsKt;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
-import gf.p;
-import gf.v;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import kf.p;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.collections.j;
 import kotlin.collections.k;
@@ -25,8 +25,8 @@ public final class ForegroudServiceConfigurationParserKt {
         ArrayList arrayList;
         List h10;
         int s10;
-        q.g(companion, "<this>");
-        q.g(readableMap, "readableMap");
+        q.h(companion, "<this>");
+        q.h(readableMap, "readableMap");
         String nonNullString = NativeMapExtensionsKt.getNonNullString(readableMap, "title");
         String string = readableMap.getString("content");
         ServiceNotificationConfiguration.Companion companion2 = ServiceNotificationConfiguration.Companion;
@@ -45,7 +45,7 @@ public final class ForegroudServiceConfigurationParserKt {
             Iterator<Integer> it = sizeRange.iterator();
             while (it.hasNext()) {
                 ReadableMap map2 = array.getMap(((p) it).nextInt());
-                q.f(map2, "array.getMap(index)");
+                q.g(map2, "array.getMap(index)");
                 arrayList2.add(parseAction(ServiceNotificationConfiguration.Companion, map2));
             }
             arrayList = arrayList2;
@@ -70,8 +70,8 @@ public final class ForegroudServiceConfigurationParserKt {
 
     public static final List<ServiceNotificationConfiguration> parseList(ServiceNotificationConfiguration.Companion companion, ReadableArray readableArray) {
         int s10;
-        q.g(companion, "<this>");
-        q.g(readableArray, "readableArray");
+        q.h(companion, "<this>");
+        q.h(readableArray, "readableArray");
         IntRange sizeRange = NativeArrayExtensionsKt.sizeRange(readableArray);
         s10 = k.s(sizeRange, 10);
         ArrayList arrayList = new ArrayList(s10);
@@ -80,7 +80,7 @@ public final class ForegroudServiceConfigurationParserKt {
             int nextInt = ((p) it).nextInt();
             ServiceNotificationConfiguration.Companion companion2 = ServiceNotificationConfiguration.Companion;
             ReadableMap map = readableArray.getMap(nextInt);
-            q.f(map, "readableArray.getMap(index)");
+            q.g(map, "readableArray.getMap(index)");
             arrayList.add(parse(companion2, map));
         }
         return arrayList;

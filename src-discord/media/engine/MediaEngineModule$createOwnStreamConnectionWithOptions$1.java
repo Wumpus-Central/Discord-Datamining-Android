@@ -29,14 +29,14 @@ final class MediaEngineModule$createOwnStreamConnectionWithOptions$1 extends s i
     @Override 
     public   Unit invoke(String str, Map<String, ? extends Object> map) {
         invoke2(str, map);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String errorMessage, Map<String, ? extends Object> connectionInfo) {
         Intent intent;
-        q.g(errorMessage, "errorMessage");
-        q.g(connectionInfo, "connectionInfo");
+        q.h(errorMessage, "errorMessage");
+        q.h(connectionInfo, "connectionInfo");
         this.$callback.invoke(errorMessage, NativeMapExtensionsKt.toNativeMap(connectionInfo));
         intent = this.this$0.streamPermissions;
         if (intent != null) {

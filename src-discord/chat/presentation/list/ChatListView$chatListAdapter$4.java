@@ -27,7 +27,7 @@ public final class ChatListView$chatListAdapter$4 extends s implements Function0
         if (chatEventHandler != null) {
             return chatEventHandler;
         }
-        q.y("eventHandler");
+        q.z("eventHandler");
         return null;
     }
 }

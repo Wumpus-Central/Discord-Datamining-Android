@@ -11,6 +11,8 @@ import e5.a;
 
 
 public abstract class NativeMobileVoiceOverlaySpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
+    public static final String NAME = "RTNMobileVoiceOverlay";
+
     public NativeMobileVoiceOverlaySpec(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);
     }
@@ -18,6 +20,11 @@ public abstract class NativeMobileVoiceOverlaySpec extends ReactContextBaseJavaM
     @ReactMethod
     @a
     public abstract void enableOverlay(Promise promise);
+
+    @Override 
+    public String getName() {
+        return "RTNMobileVoiceOverlay";
+    }
 
     @ReactMethod
     @a

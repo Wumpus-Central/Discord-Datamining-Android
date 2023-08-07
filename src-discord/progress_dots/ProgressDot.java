@@ -26,7 +26,7 @@ public final class ProgressDot extends View {
         private final Function0<Unit> onComplete;
 
         public AnimationListenerImpl(Function0<Unit> onComplete) {
-            q.g(onComplete, "onComplete");
+            q.h(onComplete, "onComplete");
             this.onComplete = onComplete;
         }
 
@@ -51,13 +51,13 @@ public final class ProgressDot extends View {
     
     public ProgressDot(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public ProgressDot(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  ProgressDot(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -109,12 +109,12 @@ public final class ProgressDot extends View {
     
     public ProgressDot(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         Animation loadAnimation = AnimationUtils.loadAnimation(context, R.anim.anim_progress_dots_scale_up);
-        q.f(loadAnimation, "loadAnimation(context, R…m_progress_dots_scale_up)");
+        q.g(loadAnimation, "loadAnimation(context, R…m_progress_dots_scale_up)");
         this.scaleAndFadeUpAnimation = loadAnimation;
         Animation loadAnimation2 = AnimationUtils.loadAnimation(context, R.anim.anim_progress_dots_scale_down);
-        q.f(loadAnimation2, "loadAnimation(context, R…progress_dots_scale_down)");
+        q.g(loadAnimation2, "loadAnimation(context, R…progress_dots_scale_down)");
         this.scaleAndFadeDownAnimation = loadAnimation2;
     }
 }

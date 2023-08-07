@@ -3,6 +3,7 @@ package com.discord.foreground_service;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.IBinder;
 import com.discord.foreground_service.service.ServiceNotification;
 import com.discord.foreground_service.utils.ForegroundServiceUtilsKt;
@@ -33,19 +34,23 @@ public final class ForegroundService extends Service {
         }
 
         public final Object start(Context context, Function1<? super Exception, Unit> onError) {
-            q.g(context, "context");
-            q.g(onError, "onError");
+            q.h(context, "context");
+            q.h(onError, "onError");
             try {
                 return ForegroundServiceUtilsKt.startForegroundServiceCompat(context, getServiceIntent(context));
             } catch (Exception e10) {
                 onError.invoke(e10);
-                return Unit.f20679a;
+                return Unit.f21025a;
             }
         }
 
         public final void stop(Context context, Service service) {
-            q.g(context, "context");
-            if (service != null) {
+            q.h(context, "context");
+            if (Build.VERSION.SDK_INT >= 24) {
+                if (service != null) {
+                    service.stopForeground(1);
+                }
+            } else if (service != null) {
                 service.stopForeground(true);
             }
             if (service != null) {

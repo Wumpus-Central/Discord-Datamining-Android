@@ -17,7 +17,7 @@ public final class DiscordGestureHandlerRootViewManager extends RNGestureHandler
     
     @Override 
     public RNGestureHandlerRootView createViewInstance(ThemedReactContext reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         return new DiscordGestureHandlerEnabledRootView(reactContext);
     }
 }

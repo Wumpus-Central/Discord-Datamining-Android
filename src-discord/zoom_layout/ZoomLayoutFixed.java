@@ -23,13 +23,13 @@ public final class ZoomLayoutFixed extends ZoomLayout {
     
     public ZoomLayoutFixed(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public ZoomLayoutFixed(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  ZoomLayoutFixed(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -38,13 +38,13 @@ public final class ZoomLayoutFixed extends ZoomLayout {
 
     
     public static final void layoutChangeListener$lambda$0(ZoomLayoutFixed this$0, View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         this$0.getEngine().Z(view.getWidth(), view.getHeight(), true);
     }
 
     
     public static final void onMeasure$lambda$1(ZoomLayoutFixed this$0) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         this$0.getViewTreeObserver().dispatchOnGlobalLayout();
     }
 
@@ -86,7 +86,7 @@ public final class ZoomLayoutFixed extends ZoomLayout {
     @Override 
     @SuppressLint({"ClickableViewAccessibility"})
     public boolean onTouchEvent(MotionEvent ev) {
-        q.g(ev, "ev");
+        q.h(ev, "ev");
         if (!this.gestureEnabled) {
             return true;
         }
@@ -103,7 +103,7 @@ public final class ZoomLayoutFixed extends ZoomLayout {
     
     public ZoomLayoutFixed(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         this.pinchDetector = new ScaleGestureDetector(context, new ScaleGestureDetector.SimpleOnScaleGestureListener());
         this.gestureEnabled = true;
         this.layoutChangeListener = new View.OnLayoutChangeListener() { 

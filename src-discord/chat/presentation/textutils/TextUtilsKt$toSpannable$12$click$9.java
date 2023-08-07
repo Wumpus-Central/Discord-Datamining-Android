@@ -25,13 +25,13 @@ final class TextUtilsKt$toSpannable$12$click$9 extends s implements Function1<Vi
     @Override 
     public   Unit invoke(View view) {
         invoke2(view);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(View it) {
-        q.g(it, "it");
-        SpoilerManager.INSTANCE.m132markRevealedV2PEE7g(this.$id);
+        q.h(it, "it");
+        SpoilerManager.INSTANCE.m133markRevealedV2PEE7g(this.$id);
         this.$rc.getOnTapSpoiler().invoke();
     }
 }

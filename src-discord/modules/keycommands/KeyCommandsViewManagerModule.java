@@ -2,12 +2,15 @@ package com.discord.modules.keycommands;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
+import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.ViewGroupManager;
+import com.facebook.react.viewmanagers.KeyCommandsViewManagerDelegate;
+import com.facebook.react.viewmanagers.KeyCommandsViewManagerInterface;
 import com.facebook.react.views.view.ReactViewGroup;
-import ff.x;
-import gf.v;
 import java.util.Map;
+import jf.x;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
@@ -30,9 +33,12 @@ public final class KeyCommandsViewManagerModule extends ReactContextBaseJavaModu
         }
     }
 
-    @Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0003J\u0010\u0010\u0004\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0006H\u0014J\b\u0010\u0007\u001a\u00020\bH\u0016¨\u0006\t"}, d2 = {"Lcom/discord/modules/keycommands/KeyCommandsViewManagerModule$KeyCommandsView;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/facebook/react/views/view/ReactViewGroup;", "()V", "createViewInstance", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "getName", "", "app_canaryRelease"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    @Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\b\u0007\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u00012\b\u0012\u0004\u0012\u00020\u00020\u0003B\u0005¢\u0006\u0002\u0010\u0004J\u0010\u0010\b\u001a\u00020\u00022\u0006\u0010\t\u001a\u00020\nH\u0014J$\u0010\u000b\u001a\u001e\u0012\f\u0012\n \u0007*\u0004\u0018\u00010\u00020\u0002\u0012\f\u0012\n \u0007*\u0004\u0018\u00010\u00000\u00000\u0006H\u0014J\b\u0010\f\u001a\u00020\rH\u0016R*\u0010\u0005\u001a\u001e\u0012\f\u0012\n \u0007*\u0004\u0018\u00010\u00020\u0002\u0012\f\u0012\n \u0007*\u0004\u0018\u00010\u00000\u00000\u0006X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000e"}, d2 = {"Lcom/discord/modules/keycommands/KeyCommandsViewManagerModule$KeyCommandsView;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/facebook/react/views/view/ReactViewGroup;", "Lcom/facebook/react/viewmanagers/KeyCommandsViewManagerInterface;", "()V", "delegate", "Lcom/facebook/react/viewmanagers/KeyCommandsViewManagerDelegate;", "kotlin.jvm.PlatformType", "createViewInstance", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "getDelegate", "getName", "", "app_canaryRelease"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    @ReactModule(name = KeyCommandsViewManagerModule.MODULE_NAME)
     
-    public static final class KeyCommandsView extends ViewGroupManager<ReactViewGroup> {
+    public static final class KeyCommandsView extends ViewGroupManager<ReactViewGroup> implements KeyCommandsViewManagerInterface<ReactViewGroup> {
+        private final KeyCommandsViewManagerDelegate<ReactViewGroup, KeyCommandsView> delegate = new KeyCommandsViewManagerDelegate<>(this);
+
         @Override 
         public String getName() {
             return KeyCommandsViewManagerModule.MODULE_NAME;
@@ -41,15 +47,21 @@ public final class KeyCommandsViewManagerModule extends ReactContextBaseJavaModu
         
         @Override 
         public ReactViewGroup createViewInstance(ThemedReactContext reactContext) {
-            q.g(reactContext, "reactContext");
+            q.h(reactContext, "reactContext");
             return new ReactViewGroup(reactContext);
+        }
+
+        
+        @Override 
+        public KeyCommandsViewManagerDelegate<ReactViewGroup, KeyCommandsView> getDelegate() {
+            return this.delegate;
         }
     }
 
     
     public KeyCommandsViewManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @Override 

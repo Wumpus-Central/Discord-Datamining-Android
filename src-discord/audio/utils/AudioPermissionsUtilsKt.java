@@ -9,7 +9,7 @@ import kotlin.jvm.internal.q;
 
 public final class AudioPermissionsUtilsKt {
     public static final boolean hasBluetoothPermission(Context context) {
-        q.g(context, "<this>");
+        q.h(context, "<this>");
         if (a.a(context, "android.permission.BLUETOOTH") == 0) {
             return true;
         }
@@ -17,7 +17,7 @@ public final class AudioPermissionsUtilsKt {
     }
 
     public static final boolean hasModifyAudioSettingsPermission(Context context) {
-        q.g(context, "<this>");
+        q.h(context, "<this>");
         if (a.a(context, "android.permission.MODIFY_AUDIO_SETTINGS") == 0) {
             return true;
         }

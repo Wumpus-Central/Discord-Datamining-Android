@@ -15,7 +15,7 @@ import kotlin.jvm.internal.q;
 public final class ViewUtilsKt {
     public static final  <T extends ViewGroup> T findParentView(View view) {
         T t10;
-        q.g(view, "<this>");
+        q.h(view, "<this>");
         ViewParent parent = view.getParent();
         if (parent instanceof ViewGroup) {
             t10 = (T) ((ViewGroup) parent);
@@ -25,7 +25,7 @@ public final class ViewUtilsKt {
         if (t10 == null) {
             return null;
         }
-        q.m(2, "T");
+        q.n(2, "T");
         return t10;
     }
 
@@ -58,7 +58,7 @@ public final class ViewUtilsKt {
     }
 
     public static final boolean isLtr(View view) {
-        q.g(view, "<this>");
+        q.h(view, "<this>");
         if (view.getLayoutDirection() == 0) {
             return true;
         }

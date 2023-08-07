@@ -16,15 +16,15 @@ public final class LocalImageThumbnailViewManagerImpl {
     }
 
     public final LocalImageThumbnailView createViewInstance(ThemedReactContext reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         return new LocalImageThumbnailView(reactContext, null, 0, 6, null);
     }
 
     public final void setLocalImageSource(LocalImageThumbnailView view, ReadableMap source) {
-        q.g(view, "view");
-        q.g(source, "source");
+        q.h(view, "view");
+        q.h(source, "source");
         Uri uri = Uri.parse(source.getString("uri"));
-        q.f(uri, "uri");
+        q.g(uri, "uri");
         view.setLocalImageSource(uri, (int) source.getDouble("width"), (int) source.getDouble("height"));
     }
 }

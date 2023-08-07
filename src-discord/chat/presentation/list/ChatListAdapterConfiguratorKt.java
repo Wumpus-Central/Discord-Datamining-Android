@@ -32,10 +32,10 @@ import kotlin.jvm.internal.q;
 public final class ChatListAdapterConfiguratorKt {
     public static final Map<Class<? extends BaseChatListItemDelegate<? extends ChatListItem, ? extends View>>, Integer> chatListAdapterConfigurator(AdapterDelegatesManager<List<ChatListItem>> delegatesManager, Function0<? extends ChatEventHandler> eventHandlerProvider, Function0<ComponentProvider> messageComponentProvider, RecyclerView.RecycledViewPool messageAccessoriesRecycledViewPool) {
         List<BaseChatListItemDelegate> k10;
-        q.g(delegatesManager, "delegatesManager");
-        q.g(eventHandlerProvider, "eventHandlerProvider");
-        q.g(messageComponentProvider, "messageComponentProvider");
-        q.g(messageAccessoriesRecycledViewPool, "messageAccessoriesRecycledViewPool");
+        q.h(delegatesManager, "delegatesManager");
+        q.h(eventHandlerProvider, "eventHandlerProvider");
+        q.h(messageComponentProvider, "messageComponentProvider");
+        q.h(messageAccessoriesRecycledViewPool, "messageAccessoriesRecycledViewPool");
         HashMap hashMap = new HashMap();
         k10 = j.k(new RegularMessageDelegate(eventHandlerProvider, messageComponentProvider, messageAccessoriesRecycledViewPool), new SystemMessageDelegate(eventHandlerProvider, messageAccessoriesRecycledViewPool), new AutomodSystemMessageDelegate(eventHandlerProvider, messageComponentProvider, messageAccessoriesRecycledViewPool), new CallSystemMessageDelegate(eventHandlerProvider), new EmbeddedActivityMessageDelegate(eventHandlerProvider), new SeparatorDelegate(eventHandlerProvider), new SummarySeparatorDelegate(eventHandlerProvider), new LoadingDelegate(eventHandlerProvider), new BlockedGroupDelegate(eventHandlerProvider, messageComponentProvider), new PortalViewDelegate(eventHandlerProvider), new DeserializationErrorMessageDelegate(eventHandlerProvider), new DeserializationErrorDelegate(eventHandlerProvider));
         for (BaseChatListItemDelegate baseChatListItemDelegate : k10) {

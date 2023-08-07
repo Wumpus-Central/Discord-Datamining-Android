@@ -89,7 +89,7 @@ public enum ReactAsset {
     Warning;
 
     public final String getUri(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         return ReactAssetCache.INSTANCE.get(context, this);
     }
 }

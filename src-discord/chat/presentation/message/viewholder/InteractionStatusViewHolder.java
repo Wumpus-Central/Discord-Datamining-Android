@@ -13,12 +13,12 @@ public final class InteractionStatusViewHolder extends MessagePartViewHolder {
     
     public InteractionStatusViewHolder(InteractionStatusView interactionStatusView) {
         super(interactionStatusView, null);
-        q.g(interactionStatusView, "interactionStatusView");
+        q.h(interactionStatusView, "interactionStatusView");
         this.interactionStatusView = interactionStatusView;
     }
 
     public final void bind(InteractionStatusMessageAccessory accessory) {
-        q.g(accessory, "accessory");
-        this.interactionStatusView.m314setInteractionStatusntcYbpo(accessory.mo217getMessageId3Eiw7ao(), accessory.getInteractionStatus());
+        q.h(accessory, "accessory");
+        this.interactionStatusView.m315setInteractionStatusntcYbpo(accessory.mo218getMessageId3Eiw7ao(), accessory.getInteractionStatus());
     }
 }

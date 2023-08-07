@@ -17,7 +17,7 @@ public final class RLottieStubView extends View {
     
     public RLottieStubView(Context context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
         ShapeDrawable shapeDrawable = new ShapeDrawable();
         shapeDrawable.setShape(new OvalShape());
         shapeDrawable.getPaint().setColor(ThemeManagerKt.getTheme().getBackgroundAccent());

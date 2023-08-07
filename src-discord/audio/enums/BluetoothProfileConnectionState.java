@@ -2,6 +2,8 @@ package com.discord.audio.enums;
 
 import android.bluetooth.BluetoothDevice;
 import android.content.Intent;
+import android.os.Parcelable;
+import androidx.core.content.e;
 import com.discord.audio.utils.ExtensionsKt;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -46,8 +48,8 @@ public enum BluetoothProfileConnectionState {
 
         public final Update getUpdate(Intent intent) {
             BluetoothProfileConnectionState bluetoothProfileConnectionState;
-            q.g(intent, "intent");
-            if (q.b(intent.getAction(), "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED")) {
+            q.h(intent, "intent");
+            if (q.c(intent.getAction(), "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED")) {
                 Integer intExtraOrNull = ExtensionsKt.getIntExtraOrNull(intent, "android.bluetooth.profile.extra.PREVIOUS_STATE");
                 BluetoothProfileConnectionState bluetoothProfileConnectionState2 = null;
                 if (intExtraOrNull != null) {
@@ -59,7 +61,7 @@ public enum BluetoothProfileConnectionState {
                 if (intExtraOrNull2 != null) {
                     bluetoothProfileConnectionState2 = BluetoothProfileConnectionState.Companion.from(intExtraOrNull2.intValue());
                 }
-                return new Update(bluetoothProfileConnectionState, bluetoothProfileConnectionState2, (BluetoothDevice) intent.getParcelableExtra("android.bluetooth.device.extra.DEVICE"));
+                return new Update(bluetoothProfileConnectionState, bluetoothProfileConnectionState2, (BluetoothDevice) ((Parcelable) e.b(intent, "android.bluetooth.device.extra.DEVICE", BluetoothDevice.class)));
             }
             throw new IllegalArgumentException("Failed requirement.".toString());
         }
@@ -115,7 +117,7 @@ public enum BluetoothProfileConnectionState {
                 return false;
             }
             Update update = (Update) obj;
-            return this.previous == update.previous && this.current == update.current && q.b(this.device, update.device);
+            return this.previous == update.previous && this.current == update.current && q.c(this.device, update.device);
         }
 
         public final BluetoothProfileConnectionState getCurrent() {

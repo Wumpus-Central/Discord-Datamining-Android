@@ -45,21 +45,21 @@ public final class MobileVoiceOverlay {
         public static  void startHeadlessTask$default(Companion companion, Context context, String str, Bundle EMPTY, int i10, Object obj) {
             if ((i10 & 4) != 0) {
                 EMPTY = Bundle.EMPTY;
-                q.f(EMPTY, "EMPTY");
+                q.g(EMPTY, "EMPTY");
             }
             companion.startHeadlessTask(context, str, EMPTY);
         }
 
         public final void startHeadlessTask(Context context, String taskName, Bundle taskParams) {
-            q.g(context, "context");
-            q.g(taskName, "taskName");
-            q.g(taskParams, "taskParams");
-            HeadlessTasks.Companion.startHeadlessTask$default(HeadlessTasks.Companion, context, taskName, 0L, false, taskParams, false, 12, null);
+            q.h(context, "context");
+            q.h(taskName, "taskName");
+            q.h(taskParams, "taskParams");
+            HeadlessTasks.Companion.startHeadlessTask(context, taskName, (r18 & 4) != 0 ? HeadlessTasks.TASK_TIMEOUT_DEFAULT : 0L, (r18 & 8) != 0, (r18 & 16) != 0 ? new Bundle() : taskParams, (r18 & 32) != 0 ? false : false);
         }
     }
 
     public MobileVoiceOverlay(ReactApplicationContext context) {
-        q.g(context, "context");
+        q.h(context, "context");
         this.context = context;
     }
 
@@ -125,7 +125,7 @@ public final class MobileVoiceOverlay {
     }
 
     public final void setData$mobile_voice_overlay_release(MobileVoiceOverlayData data) {
-        q.g(data, "data");
+        q.h(data, "data");
         if (ThreadUtilsKt.isOnMainThread()) {
             this.voiceBubbleProvider.setData(data);
             this.menuDialogProvider.setData(data);
@@ -138,7 +138,7 @@ public final class MobileVoiceOverlay {
     }
 
     public final void showOverlay$mobile_voice_overlay_release(MobileVoiceOverlayAssets assets) {
-        q.g(assets, "assets");
+        q.h(assets, "assets");
         if (ThreadUtilsKt.isOnMainThread()) {
             this.selectorDialogProvider.setAssets(assets);
             this.menuDialogProvider.setAssets(assets);

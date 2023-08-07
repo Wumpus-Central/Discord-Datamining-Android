@@ -11,7 +11,7 @@ import kotlin.jvm.internal.q;
 
 public final class ReactionsViewKt {
     public static final ReactionView.Reaction copyReactionWithoutCount(final ReactionView.Reaction reaction, final boolean z10) {
-        q.g(reaction, "reaction");
+        q.h(reaction, "reaction");
         return new ReactionView.Reaction(z10, reaction) { 
             private final int burstCount;
             private final int count;

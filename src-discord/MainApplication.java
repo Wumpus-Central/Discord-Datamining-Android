@@ -20,6 +20,7 @@ import com.discord.tti_manager.TTIMetrics;
 import com.discord.tti_manager.react.ReactMarkerListener;
 import com.discord.utils.SoLoaderUtils;
 import com.facebook.react.ReactApplication;
+import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.modules.i18nmanager.I18nUtil;
 import com.facebook.react.modules.network.NetworkingModule;
 import kotlin.Metadata;
@@ -39,7 +40,7 @@ public final class MainApplication extends TTILoggingApplication implements Reac
         builder.b(new Interceptor() { 
             @Override 
             public final Response intercept(Interceptor.Chain chain) {
-                q.g(chain, "chain");
+                q.h(chain, "chain");
                 return DeviceResourceUsageRecorder.Companion.this.clientXHRInterceptor(chain);
             }
         });
@@ -79,6 +80,9 @@ public final class MainApplication extends TTILoggingApplication implements Reac
         FontManager.INSTANCE.init(this);
         ReactForkOverrides.INSTANCE.init();
         AudioPlayerManager.INSTANCE.init(this);
+        TTIMetrics.record$default(tTIMetrics, "AudioPlayerManager.init()", 0L, null, false, 14, null);
+        DefaultNewArchitectureEntryPoint.load$default(false, false, null, 4, null);
+        TTIMetrics.record$default(tTIMetrics, "DefaultNewArchitectureEntryPoint.load()", 0L, null, false, 14, null);
         TTIMetrics.record$default(tTIMetrics, "Finish MainApplication.initialize()", 0L, null, false, 14, null);
         this.host.getReactInstanceManager();
     }

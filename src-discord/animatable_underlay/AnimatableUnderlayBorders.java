@@ -33,9 +33,9 @@ public final class AnimatableUnderlayBorders {
     }
 
     public final void drawBorderStroke$animatable_underlay_release(Canvas canvas, Paint paint, RectF pathRect) {
-        q.g(canvas, "canvas");
-        q.g(paint, "paint");
-        q.g(pathRect, "pathRect");
+        q.h(canvas, "canvas");
+        q.h(paint, "paint");
+        q.h(pathRect, "pathRect");
         float f10 = this.borderWidth;
         if (f10 > 0.0f) {
             pathRect.left += f10 / 2.0f;

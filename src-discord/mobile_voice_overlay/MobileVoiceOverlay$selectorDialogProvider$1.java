@@ -23,7 +23,7 @@ public final class MobileVoiceOverlay$selectorDialogProvider$1 extends s impleme
 
     public final OverlayVoiceSelectorBubbleDialog invoke(OverlayViewProvider<OverlayVoiceSelectorBubbleDialog> provider) {
         ReactApplicationContext reactApplicationContext;
-        q.g(provider, "provider");
+        q.h(provider, "provider");
         reactApplicationContext = this.this$0.context;
         OverlayVoiceSelectorBubbleDialog overlayVoiceSelectorBubbleDialog = new OverlayVoiceSelectorBubbleDialog(reactApplicationContext);
         MobileVoiceOverlay mobileVoiceOverlay = this.this$0;

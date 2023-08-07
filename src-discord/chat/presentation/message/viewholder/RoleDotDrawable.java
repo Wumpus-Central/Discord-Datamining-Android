@@ -9,7 +9,7 @@ import android.graphics.drawable.Drawable;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.react.FontManager;
 import com.facebook.react.uimanager.ViewProps;
-import ff.r;
+import jf.r;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
@@ -25,7 +25,7 @@ public final class RoleDotDrawable extends Drawable {
     private final int spSize;
 
     public RoleDotDrawable(Context context, int i10, int i11) {
-        q.g(context, "context");
+        q.h(context, "context");
         this.spSize = i11;
         float fontScale = FontManager.INSTANCE.getFontScale(context);
         this.scale = fontScale;
@@ -44,7 +44,7 @@ public final class RoleDotDrawable extends Drawable {
 
     @Override 
     public void draw(Canvas canvas) {
-        q.g(canvas, "canvas");
+        q.h(canvas, "canvas");
         float f10 = this.pxSize;
         float f11 = 2;
         float f12 = ((f10 / f11) + f11) / f11;

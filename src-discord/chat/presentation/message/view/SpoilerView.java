@@ -34,7 +34,7 @@ public final class SpoilerView extends FrameLayout {
     
     public SpoilerView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  SpoilerView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -44,7 +44,7 @@ public final class SpoilerView extends FrameLayout {
     
     public static final void _init_$lambda$2(final SpoilerView this$0, View it) {
         ViewParent viewParent;
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         if (this$0.getParent().getParent() instanceof ViewGroup) {
             viewParent = this$0.getParent().getParent();
         } else if (this$0.getParent() instanceof ViewGroup) {
@@ -52,20 +52,20 @@ public final class SpoilerView extends FrameLayout {
         } else {
             viewParent = this$0;
         }
-        q.e(viewParent, "null cannot be cast to non-null type android.view.ViewGroup");
+        q.f(viewParent, "null cannot be cast to non-null type android.view.ViewGroup");
         c cVar = new c(2);
         cVar.X(150L);
         cVar.b(new i() { 
             @Override 
             public void onTransitionEnd(Transition transition) {
                 Function0 function0;
-                q.g(transition, "transition");
+                q.h(transition, "transition");
                 function0 = SpoilerView.this.onReveal;
                 function0.invoke();
             }
         });
         j.a((ViewGroup) viewParent, cVar);
-        q.f(it, "it");
+        q.g(it, "it");
         it.setVisibility(8);
     }
 
@@ -82,7 +82,7 @@ public final class SpoilerView extends FrameLayout {
     
     public SpoilerView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         TextView textView = new TextView(context);
         textView.setTextColor(-1);
         DiscordFontUtilsKt.setDiscordFont(textView, DiscordFont.PrimaryBold);

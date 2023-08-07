@@ -5,7 +5,7 @@ import com.discord.reactevents.ReactEvents;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
@@ -19,13 +19,13 @@ public final class SmsAutofillManagerModule extends ReactContextBaseJavaModule {
     
     public SmsAutofillManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.smsAutofillManager = new SmsAutofillManager(reactContext, new SmsAutofillManagerModule$smsAutofillManager$1(this, reactContext));
     }
 
     @ReactMethod
     public final void addListener(String type) {
-        q.g(type, "type");
+        q.h(type, "type");
     }
 
     @Override 

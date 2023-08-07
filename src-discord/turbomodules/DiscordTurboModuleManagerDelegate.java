@@ -22,8 +22,8 @@ public final class DiscordTurboModuleManagerDelegate extends ReactPackageTurboMo
         
         @Override 
         public DiscordTurboModuleManagerDelegate build(ReactApplicationContext context, List<? extends ReactPackage> packages) {
-            q.g(context, "context");
-            q.g(packages, "packages");
+            q.h(context, "context");
+            q.h(packages, "packages");
             return new DiscordTurboModuleManagerDelegate(context, packages);
         }
     }
@@ -42,8 +42,8 @@ public final class DiscordTurboModuleManagerDelegate extends ReactPackageTurboMo
     
     public DiscordTurboModuleManagerDelegate(ReactApplicationContext reactApplicationContext, List<? extends ReactPackage> packages) {
         super(reactApplicationContext, packages);
-        q.g(reactApplicationContext, "reactApplicationContext");
-        q.g(packages, "packages");
+        q.h(reactApplicationContext, "reactApplicationContext");
+        q.h(packages, "packages");
     }
 
     @Override 

@@ -19,7 +19,7 @@ final class FlaggedMessageEmbedView$configureMessageContent$1$12 extends s imple
     }
 
     public final LinkStyle invoke(LinkContentNode it) {
-        q.g(it, "it");
+        q.h(it, "it");
         return new LinkStyle(DiscordFont.PrimaryNormal, ThemeManagerKt.getTheme().getTextNormal());
     }
 }

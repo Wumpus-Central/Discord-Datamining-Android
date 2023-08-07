@@ -52,12 +52,12 @@ public final class ChatModule extends ReactContextBaseJavaModule {
     
     public ChatModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.reactContext = reactContext;
         x b10 = p2.b(null, 1, null);
         ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor();
-        q.f(newSingleThreadExecutor, "newSingleThreadExecutor()");
-        this.moduleScope = k0.a(b10.v(m1.a(newSingleThreadExecutor)));
+        q.g(newSingleThreadExecutor, "newSingleThreadExecutor()");
+        this.moduleScope = k0.a(b10.u(m1.a(newSingleThreadExecutor)));
     }
 
     
@@ -78,7 +78,7 @@ public final class ChatModule extends ReactContextBaseJavaModule {
 
     private final void withChatView(final int i10, final Function1<? super ChatView, Unit> function1) {
         NativeModule nativeModule = this.reactContext.getNativeModule(UIManagerModule.class);
-        q.d(nativeModule);
+        q.e(nativeModule);
         ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { 
             @Override 
             public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
@@ -138,7 +138,7 @@ public final class ChatModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public final void scrollIntoView(final int i10, final int i11, final boolean z10) {
         NativeModule nativeModule = this.reactContext.getNativeModule(UIManagerModule.class);
-        q.d(nativeModule);
+        q.e(nativeModule);
         ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { 
             @Override 
             public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
@@ -155,7 +155,7 @@ public final class ChatModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public final void scrollTo(final int i10, final int i11, final boolean z10) {
         NativeModule nativeModule = this.reactContext.getNativeModule(UIManagerModule.class);
-        q.d(nativeModule);
+        q.e(nativeModule);
         ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { 
             @Override 
             public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
@@ -172,7 +172,7 @@ public final class ChatModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public final void scrollToBottom(final int i10, final boolean z10) {
         NativeModule nativeModule = this.reactContext.getNativeModule(UIManagerModule.class);
-        q.d(nativeModule);
+        q.e(nativeModule);
         ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { 
             @Override 
             public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
@@ -196,7 +196,7 @@ public final class ChatModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void updateRows(int i10, String rowsJSON, boolean z10) {
-        q.g(rowsJSON, "rowsJSON");
+        q.h(rowsJSON, "rowsJSON");
         TTIMetrics.record$default(TTIMetrics.INSTANCE, "ChatModule.updateRows() Start", 0L, null, false, 14, null);
         withChatManager(i10, new ChatModule$updateRows$1(this, i10, rowsJSON, null));
     }

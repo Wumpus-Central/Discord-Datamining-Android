@@ -34,7 +34,7 @@ public final class SelectionGuardSpanWatcher implements SpanWatcher {
                 i11 = 0;
             }
             Object[] spans = spannable.getSpans(i10, i11, DCDNoSelectionSpan.class);
-            q.f(spans, "getSpans(start, end, T::class.java)");
+            q.g(spans, "getSpans(start, end, T::class.java)");
             DCDNoSelectionSpan[] dCDNoSelectionSpanArr = (DCDNoSelectionSpan[]) spans;
             if (dCDNoSelectionSpanArr.length == 0) {
                 z10 = true;
@@ -89,9 +89,9 @@ public final class SelectionGuardSpanWatcher implements SpanWatcher {
     @Override 
     public void onSpanChanged(Spannable spannable, Object obj, int i10, int i11, int i12, int i13) {
         if (spannable != null) {
-            if (q.b(obj, Selection.SELECTION_START)) {
+            if (q.c(obj, Selection.SELECTION_START)) {
                 checkSelections(spannable, Integer.valueOf(i12), null);
-            } else if (q.b(obj, Selection.SELECTION_END)) {
+            } else if (q.c(obj, Selection.SELECTION_END)) {
                 checkSelections(spannable, null, Integer.valueOf(i12));
             }
         }

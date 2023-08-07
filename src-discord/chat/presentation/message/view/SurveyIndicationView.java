@@ -5,24 +5,12 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.R;
 import com.discord.chat.bridge.contentnode.LinkContentNode;
 import com.discord.chat.bridge.feedback.SurveyIndication;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.databinding.SurveyActionViewBinding;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.image.fresco.SimpleDraweeSpanTextViewUtilsKt;
@@ -50,13 +38,13 @@ public final class SurveyIndicationView extends ConstraintLayout {
     
     public SurveyIndicationView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public SurveyIndicationView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  SurveyIndicationView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -64,41 +52,40 @@ public final class SurveyIndicationView extends ConstraintLayout {
     }
 
     
-    public final void m320setSurveyIndicationu7_MRrM(String messageId, SurveyIndication surveyIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
-        DraweeSpanStringBuilder spannable;
-        q.g(messageId, "messageId");
-        q.g(surveyIndication, "surveyIndication");
-        q.g(onLinkClicked, "onLinkClicked");
+    public final void m321setSurveyIndicationu7_MRrM(String messageId, SurveyIndication surveyIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
+        q.h(messageId, "messageId");
+        q.h(surveyIndication, "surveyIndication");
+        q.h(onLinkClicked, "onLinkClicked");
         SimpleDraweeView simpleDraweeView = this.binding.chatListFeedbackIcon;
-        q.f(simpleDraweeView, "binding.chatListFeedbackIcon");
+        q.g(simpleDraweeView, "binding.chatListFeedbackIcon");
         ReactAssetUtilsKt.setReactImageUrl(simpleDraweeView, surveyIndication.getFeedbackIconUrl());
         SimpleDraweeSpanTextView setSurveyIndication_u7_MRrM$lambda$2 = this.binding.chatListAdapterItemTextFeedback;
-        q.f(setSurveyIndication_u7_MRrM$lambda$2, "setSurveyIndication_u7_MRrM$lambda$2");
+        q.g(setSurveyIndication_u7_MRrM$lambda$2, "setSurveyIndication_u7_MRrM$lambda$2");
         StructurableText content = surveyIndication.getContent();
         Context context = setSurveyIndication_u7_MRrM$lambda$2.getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         SurveyIndicationView$setSurveyIndication$1$1 surveyIndicationView$setSurveyIndication$1$1 = new SurveyIndicationView$setSurveyIndication$1$1(onLinkClicked, messageId);
         Paint.FontMetrics fontMetrics = setSurveyIndication_u7_MRrM$lambda$2.getPaint().getFontMetrics();
-        q.f(fontMetrics, "paint.fontMetrics");
-        spannable = TextUtilsKt.toSpannable(content, context, messageId, false, false, false, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : surveyIndicationView$setSurveyIndication$1$1, (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (65536 & r42) != 0 ? false : false, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : TextUtilsKt.getBaselineHeight(fontMetrics));
-        SpannableExtensionsKt.coverWithSpan(spannable, new BackgroundSpanDrawer(setSurveyIndication_u7_MRrM$lambda$2));
-        SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setSurveyIndication_u7_MRrM$lambda$2, spannable);
+        q.g(fontMetrics, "paint.fontMetrics");
+        DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context, messageId, false, false, false, surveyIndicationView$setSurveyIndication$1$1, null, null, null, null, null, null, null, null, null, null, false, null, TextUtilsKt.getBaselineHeight(fontMetrics), 262080, null);
+        SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(setSurveyIndication_u7_MRrM$lambda$2));
+        SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setSurveyIndication_u7_MRrM$lambda$2, spannable$default);
         NestedScrollOnTouchUtilsKt.enableNestedSpanClickListener$default(setSurveyIndication_u7_MRrM$lambda$2, false, 1, null);
     }
 
     
     public SurveyIndicationView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         SurveyActionViewBinding inflate = SurveyActionViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         inflate.surveyCard.setCardBackgroundColor(ColorUtilsKt.getThemeColor(context, R.color.white_500, R.color.primary_800));
         SimpleDraweeView simpleDraweeView = this.binding.chatListFeedbackIcon;
-        q.f(simpleDraweeView, "binding.chatListFeedbackIcon");
+        q.g(simpleDraweeView, "binding.chatListFeedbackIcon");
         ColorUtilsKt.setTintColor(simpleDraweeView, Integer.valueOf(ThemeManagerKt.getTheme().getTextMuted()));
         SimpleDraweeSpanTextView _init_$lambda$0 = this.binding.chatListAdapterItemTextFeedback;
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, DiscordFont.PrimaryMedium);
         _init_$lambda$0.setTextColor(ThemeManagerKt.getTheme().getTextMuted());
     }

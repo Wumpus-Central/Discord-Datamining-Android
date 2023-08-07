@@ -13,7 +13,7 @@ public final class MinimizeAppModule extends ReactContextBaseJavaModule {
     
     public MinimizeAppModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @Override 

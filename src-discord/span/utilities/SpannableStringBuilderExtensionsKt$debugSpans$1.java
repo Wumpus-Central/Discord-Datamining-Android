@@ -18,7 +18,7 @@ final class SpannableStringBuilderExtensionsKt$debugSpans$1 extends s implements
     @Override 
     public final CharSequence invoke(Object obj) {
         String simpleName = obj.getClass().getSimpleName();
-        q.f(simpleName, "it::class.java.simpleName");
+        q.g(simpleName, "it::class.java.simpleName");
         return simpleName;
     }
 }

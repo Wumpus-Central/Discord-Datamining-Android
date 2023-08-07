@@ -26,12 +26,12 @@ final class TextUtilsKt$toSpannable$12$click$10 extends s implements Function1<V
     @Override 
     public   Unit invoke(View view) {
         invoke2(view);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(View it) {
-        q.g(it, "it");
+        q.h(it, "it");
         this.$rc.getOnTapTimestamp().invoke(((TimestampContentNode) this.$contentNode).getFull());
     }
 }

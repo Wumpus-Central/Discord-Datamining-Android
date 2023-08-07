@@ -20,16 +20,16 @@ public final class EmbedViewHolder extends MessagePartViewHolder {
     
     public EmbedViewHolder(EmbedView embedView, ChatEventHandler eventHandler) {
         super(embedView, null);
-        q.g(embedView, "embedView");
-        q.g(eventHandler, "eventHandler");
+        q.h(embedView, "embedView");
+        q.h(eventHandler, "eventHandler");
         this.embedView = embedView;
         this.eventHandler = eventHandler;
     }
 
     public final void bind(EmbedMessageAccessory accessory, int i10, int i11, Function0<Unit> onTapSpoiler, SpoilerConfig spoilerConfig, Function2<? super Double, ? super Integer, Unit> onMediaClicked, View.OnLongClickListener onLongClickListener, double d10) {
-        q.g(accessory, "accessory");
-        q.g(onTapSpoiler, "onTapSpoiler");
-        q.g(onMediaClicked, "onMediaClicked");
-        this.embedView.m306setEmbedlKx2FiY(accessory.getEmbed(), accessory.mo217getMessageId3Eiw7ao(), accessory.getConstrainedWidth(), i10, i11, accessory.getShouldAutoPlayGifs(), accessory.getShouldAnimateEmoji(), accessory.getShouldShowRoleDot(), accessory.getShouldShowRoleOnName(), new EmbedViewHolder$bind$1(this.eventHandler), new EmbedViewHolder$bind$2(this.eventHandler), onMediaClicked, onLongClickListener, new EmbedViewHolder$bind$3(this.eventHandler), new EmbedViewHolder$bind$4(this.eventHandler), new EmbedViewHolder$bind$5(this.eventHandler), onTapSpoiler, new EmbedViewHolder$bind$6(this.eventHandler), new EmbedViewHolder$bind$7(this.eventHandler), new EmbedViewHolder$bind$8(this.eventHandler), new EmbedViewHolder$bind$9(this.eventHandler), spoilerConfig, d10);
+        q.h(accessory, "accessory");
+        q.h(onTapSpoiler, "onTapSpoiler");
+        q.h(onMediaClicked, "onMediaClicked");
+        this.embedView.m307setEmbedlKx2FiY(accessory.getEmbed(), accessory.mo218getMessageId3Eiw7ao(), accessory.getConstrainedWidth(), i10, i11, accessory.getShouldAutoPlayGifs(), accessory.getShouldAnimateEmoji(), accessory.getShouldShowRoleDot(), accessory.getShouldShowRoleOnName(), new EmbedViewHolder$bind$1(this.eventHandler), new EmbedViewHolder$bind$2(this.eventHandler), onMediaClicked, onLongClickListener, new EmbedViewHolder$bind$3(this.eventHandler), new EmbedViewHolder$bind$4(this.eventHandler), new EmbedViewHolder$bind$5(this.eventHandler), onTapSpoiler, new EmbedViewHolder$bind$6(this.eventHandler), new EmbedViewHolder$bind$7(this.eventHandler), new EmbedViewHolder$bind$8(this.eventHandler), new EmbedViewHolder$bind$9(this.eventHandler), spoilerConfig, d10);
     }
 }

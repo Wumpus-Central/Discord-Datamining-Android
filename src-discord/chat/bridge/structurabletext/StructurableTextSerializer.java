@@ -20,7 +20,7 @@ public final class StructurableTextSerializer extends d<StructurableText> {
 
     @Override 
     protected DeserializationStrategy<StructurableText> selectDeserializer(JsonElement element) {
-        q.g(element, "element");
+        q.h(element, "element");
         if (element instanceof JsonPrimitive) {
             return PrimitiveStructurableTextSerializer.INSTANCE;
         }

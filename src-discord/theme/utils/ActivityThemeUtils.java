@@ -20,7 +20,7 @@ public final class ActivityThemeUtils {
     }
 
     public final void updateActivityTheming$theme_release(Activity activity) {
-        q.g(activity, "<this>");
+        q.h(activity, "<this>");
         UpdateSystemUiKt.updateSystemUi(activity);
         updateWindowBackground$theme_release(activity);
     }
@@ -28,13 +28,13 @@ public final class ActivityThemeUtils {
     public final void updateWindowBackground$theme_release(Activity activity) {
         int i10;
         int i11;
-        q.g(activity, "<this>");
+        q.h(activity, "<this>");
         ThemeManager themeManager = ThemeManager.INSTANCE;
         if (themeManager.isInitialized()) {
             if (!themeManager.shouldShowSplashImage$theme_release()) {
                 Window window = activity.getWindow();
                 Context applicationContext = activity.getApplicationContext();
-                q.f(applicationContext, "applicationContext");
+                q.g(applicationContext, "applicationContext");
                 if (ThemeManagerKt.getTheme() instanceof DarkTheme) {
                     i11 = R.color.primary_660;
                 } else {

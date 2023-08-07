@@ -35,12 +35,12 @@ public final class SystemMessageView$setMessage$1 extends s implements Function1
     @Override 
     public   Unit invoke(MessageContentView messageContentView) {
         invoke2(messageContentView);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(MessageContentView it) {
-        q.g(it, "it");
+        q.h(it, "it");
         w0.q0(this.this$0, new MessageViewAccessibilityDelegate(this.$message, it, new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {

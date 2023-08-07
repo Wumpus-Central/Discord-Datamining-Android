@@ -15,7 +15,7 @@ import kotlin.jvm.internal.q;
 
 public final class RippleUtilsKt {
     public static final void addCircleRipple(View view, boolean z10) {
-        q.g(view, "<this>");
+        q.h(view, "<this>");
         setDrawableRipple(view, z10, new OvalShape());
     }
 
@@ -27,7 +27,7 @@ public final class RippleUtilsKt {
     }
 
     public static final void addRipple(View view, boolean z10, int i10) {
-        q.g(view, "<this>");
+        q.h(view, "<this>");
         float f10 = i10;
         float[] fArr = new float[8];
         for (int i11 = 0; i11 < 8; i11++) {

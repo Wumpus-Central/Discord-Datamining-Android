@@ -23,7 +23,7 @@ public final class MediaPlayerView {
         private PlayerControlView playerControlView;
 
         public ControlView(Context context) {
-            q.g(context, "context");
+            q.h(context, "context");
             this.playerControlView = new PlayerControlView(context);
         }
 
@@ -38,13 +38,13 @@ public final class MediaPlayerView {
 
     public MediaPlayerView(Context context) {
         PlayerView playerView;
-        q.g(context, "context");
+        q.h(context, "context");
         if (Build.VERSION.SDK_INT < 24) {
             playerView = PlayerViewWithTextureViewBinding.inflate(LayoutInflater.from(context)).getRoot();
-            q.f(playerView, "{\n            PlayerView…(context)).root\n        }");
+            q.g(playerView, "{\n            PlayerView…(context)).root\n        }");
         } else {
             playerView = PlayerViewWithSurfaceViewBinding.inflate(LayoutInflater.from(context)).getRoot();
-            q.f(playerView, "{\n            PlayerView…(context)).root\n        }");
+            q.g(playerView, "{\n            PlayerView…(context)).root\n        }");
         }
         this.view = playerView;
         getPlayerView().setResizeMode(3);
@@ -53,7 +53,7 @@ public final class MediaPlayerView {
 
     private final PlayerView getPlayerView() {
         View view = this.view;
-        q.e(view, "null cannot be cast to non-null type com.google.android.exoplayer2.ui.PlayerView");
+        q.f(view, "null cannot be cast to non-null type com.google.android.exoplayer2.ui.PlayerView");
         return (PlayerView) view;
     }
 
@@ -81,7 +81,7 @@ public final class MediaPlayerView {
     }
 
     public final void setView(View view) {
-        q.g(view, "<set-?>");
+        q.h(view, "<set-?>");
         this.view = view;
     }
 

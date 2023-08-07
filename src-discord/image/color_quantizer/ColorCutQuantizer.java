@@ -63,12 +63,12 @@ public final class ColorCutQuantizer {
         
         public final boolean shouldIgnoreColor(Swatch swatch) {
             float[] hsl = swatch.getHsl();
-            q.f(hsl, "color.hsl");
+            q.g(hsl, "color.hsl");
             return shouldIgnoreColor(hsl);
         }
 
         public final ColorCutQuantizer fromBitmap(Bitmap bitmap, int i10) {
-            q.g(bitmap, "bitmap");
+            q.h(bitmap, "bitmap");
             int width = bitmap.getWidth();
             int height = bitmap.getHeight();
             int[] iArr = new int[width * height];

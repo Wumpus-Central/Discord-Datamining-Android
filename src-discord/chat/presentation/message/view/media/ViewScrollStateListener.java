@@ -23,8 +23,8 @@ public final class ViewScrollStateListener implements ViewTreeObserver.OnScrollC
 
     
     public ViewScrollStateListener(View view, Function1<? super Boolean, Unit> viewScrolling) {
-        q.g(view, "view");
-        q.g(viewScrolling, "viewScrolling");
+        q.h(view, "view");
+        q.h(viewScrolling, "viewScrolling");
         this.view = view;
         this.viewScrolling = viewScrolling;
         this.isScrollingDuration = view.getResources().getInteger(R.integer.material_motion_duration_long_2);
@@ -33,7 +33,7 @@ public final class ViewScrollStateListener implements ViewTreeObserver.OnScrollC
 
     
     public static final void isScrollingStoppedRunnable$lambda$0(ViewScrollStateListener this$0) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         this$0.viewScrolling.invoke(Boolean.FALSE);
     }
 

@@ -62,13 +62,13 @@ public class MediaView extends FrameLayout {
     
     public MediaView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public MediaView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  MediaView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -103,7 +103,7 @@ public class MediaView extends FrameLayout {
         MediaPlayerView mediaPlayerView = this.mediaPlayerView;
         if (mediaPlayerView == null) {
             Context context = getContext();
-            q.f(context, "context");
+            q.g(context, "context");
             mediaPlayerView = new MediaPlayerView(context);
             addView(mediaPlayerView.getView(), 0, new FrameLayout.LayoutParams(-1, -1));
         }
@@ -112,9 +112,9 @@ public class MediaView extends FrameLayout {
         if (mediaPlayer == null) {
             MediaPlayerManager mediaPlayerManager = MediaPlayerManager.INSTANCE;
             Context context2 = getContext();
-            q.f(context2, "context");
+            q.g(context2, "context");
             Double portal = mediaSource.getPortal();
-            q.d(portal);
+            q.e(portal);
             mediaPlayer = mediaPlayerManager.acquire(context2, portal.doubleValue());
         }
         mediaPlayer.setEventListener(new MediaView$prepareMediaPlayer$1$1(this));
@@ -140,9 +140,9 @@ public class MediaView extends FrameLayout {
             double doubleValue = portal.doubleValue();
             MediaPlayer mediaPlayer = this.mediaPlayer;
             if (mediaPlayer != null && this.mediaPlayerView != null) {
-                q.d(mediaPlayer);
+                q.e(mediaPlayer);
                 MediaPlayerView mediaPlayerView = this.mediaPlayerView;
-                q.d(mediaPlayerView);
+                q.e(mediaPlayerView);
                 pair = new Pair<>(mediaPlayer, mediaPlayerView);
             } else if (mediaSource.isValid()) {
                 pair = prepareMediaPlayer(mediaSource, mediaSource.isGifv());
@@ -177,7 +177,7 @@ public class MediaView extends FrameLayout {
         MediaPlayer mediaPlayer = this.mediaPlayer;
         if (mediaPlayer != null) {
             mediaPlayer.reset();
-            Unit unit = Unit.f20679a;
+            Unit unit = Unit.f21025a;
             this.mediaPlayer = null;
         }
         MediaPlayerView mediaPlayerView = this.mediaPlayerView;
@@ -195,7 +195,7 @@ public class MediaView extends FrameLayout {
     }
 
     public static final void setMediaData$lambda$3(MediaView this$0, MediaSource mediaSource, View view) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         if (this$0.mediaPlayer == null || this$0.mediaPlayerView == null) {
             this$0.prepareMediaPlayer(mediaSource, false);
         } else {
@@ -206,7 +206,7 @@ public class MediaView extends FrameLayout {
     public static final void setMediaData$lambda$5(MediaView this$0, boolean z10, MediaSource mediaSource, View view) {
         Double portal;
         float f10;
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         MediaPlayer mediaPlayer = this$0.mediaPlayer;
         if (mediaPlayer != null) {
             if (z10) {
@@ -227,7 +227,7 @@ public class MediaView extends FrameLayout {
 
     public static final void setOnMediaClickListeners$lambda$7(MediaView this$0, Function1 function1, View view) {
         Double portal;
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         this$0.registerForPortal();
         MediaSource mediaSource = this$0.mediaSource;
         Double d10 = null;
@@ -339,9 +339,9 @@ public class MediaView extends FrameLayout {
     
     public MediaView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         MediaViewBinding inflate = MediaViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         this.mediaViewFocused = true;
         this.mediaViewDetached = true;
@@ -352,12 +352,12 @@ public class MediaView extends FrameLayout {
         this.attachStateChangeListener = viewAttachedListener;
         addOnAttachStateChangeListener(viewAttachedListener);
         ImageView _init_$lambda$0 = inflate.inlineMediaPlayButton;
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         ViewBackgroundUtilsKt.setBackgroundOval$default(_init_$lambda$0, -16777216, 0, 2, null);
         ColorUtilsKt.setTintColor(_init_$lambda$0, (Integer) (-1));
         I18nUtilsKt.i18nContentDescription$default(_init_$lambda$0, I18nMessage.PLAY_FULL_VIDEO, (Function1) null, 2, (Object) null);
         SimpleDraweeView simpleDraweeView = inflate.inlineMediaGifIndicator;
-        q.f(simpleDraweeView, "binding.inlineMediaGifIndicator");
+        q.g(simpleDraweeView, "binding.inlineMediaGifIndicator");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.Gif);
         SimpleDraweeView simpleDraweeView2 = inflate.inlineMediaImagePreview;
         simpleDraweeView2.getHierarchy().z(new ColorDrawable(ThemeManagerKt.getTheme().getBackgroundSecondaryAlt()));

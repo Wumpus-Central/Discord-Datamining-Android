@@ -33,10 +33,10 @@ import com.facebook.react.bridge.ReadableType;
 import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.modules.appstate.AppStateModule;
 import com.facebook.react.uimanager.ViewProps;
-import ff.x;
-import gf.v;
 import java.util.List;
 import java.util.Map;
+import jf.x;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.j;
@@ -109,9 +109,9 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
         
         public final Intent createScreenCaptureIntent(Context context) {
             Object systemService = context.getSystemService("media_projection");
-            q.e(systemService, "null cannot be cast to non-null type android.media.projection.MediaProjectionManager");
+            q.f(systemService, "null cannot be cast to non-null type android.media.projection.MediaProjectionManager");
             Intent createScreenCaptureIntent = ((MediaProjectionManager) systemService).createScreenCaptureIntent();
-            q.f(createScreenCaptureIntent, "getSystemService(Context…eateScreenCaptureIntent()");
+            q.g(createScreenCaptureIntent, "getSystemService(Context…eateScreenCaptureIntent()");
             return createScreenCaptureIntent;
         }
 
@@ -127,7 +127,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
                 function1.invoke(Integer.valueOf(dynamic.asInt()));
             } else if (i10 == 2) {
                 String asString = dynamic.asString();
-                q.f(asString, "deviceIndex.asString()");
+                q.g(asString, "deviceIndex.asString()");
                 function12.invoke(asString);
             } else {
                 ReadableType type2 = dynamic.getType();
@@ -139,7 +139,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
     
     public MediaEngineModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.reactContext = reactContext;
         this.mediaEngine = new MediaEngine(reactContext, null, 2, null);
         Debug.INSTANCE.logDebugLoggingConfig();
@@ -167,7 +167,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void addListener(String type) {
-        q.g(type, "type");
+        q.h(type, "type");
     }
 
     @ReactMethod
@@ -186,55 +186,55 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final Unit connectionInstanceDestroyUser(int i10, String userId) {
-        q.g(userId, "userId");
+        q.h(userId, "userId");
         return this.mediaEngine.connectionInstanceDestroyUser$media_engine_release(i10, userId);
     }
 
     @ReactMethod
     public final Unit connectionInstanceGetEncryptionModes(int i10, Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         return this.mediaEngine.connectionInstanceGetEncryptionModes$media_engine_release(i10, new MediaEngineModule$connectionInstanceGetEncryptionModes$1(callback));
     }
 
     @ReactMethod
     public final Unit connectionInstanceGetFilteredStats(int i10, int i11, Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         return this.mediaEngine.connectionInstanceGetFilteredStats$media_engine_release(i10, i11, new MediaEngineModule$connectionInstanceGetFilteredStats$1(callback));
     }
 
     @ReactMethod
     public final Unit connectionInstanceGetStats(int i10, Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         return this.mediaEngine.connectionInstanceGetStats$media_engine_release(i10, new MediaEngineModule$connectionInstanceGetStats$1(callback));
     }
 
     @ReactMethod
     public final Unit connectionInstanceMergeUsers(int i10, ReadableArray users) {
-        q.g(users, "users");
+        q.h(users, "users");
         return this.mediaEngine.connectionInstanceMergeUsers$media_engine_release(i10, NativeArrayExtensionsKt.toJsonString(users));
     }
 
     @ReactMethod
     public final void connectionInstanceSetDesktopSource(int i10, String stringId, boolean z10, String type) {
-        q.g(stringId, "stringId");
-        q.g(type, "type");
+        q.h(stringId, "stringId");
+        q.h(type, "type");
     }
 
     @ReactMethod
     public final Unit connectionInstanceSetLocalMute(int i10, String userId, boolean z10) {
-        q.g(userId, "userId");
+        q.h(userId, "userId");
         return this.mediaEngine.connectionInstanceSetLocalMute$media_engine_release(i10, userId, z10);
     }
 
     @ReactMethod
     public final Unit connectionInstanceSetLocalPan(int i10, String userId, float f10, float f11) {
-        q.g(userId, "userId");
+        q.h(userId, "userId");
         return this.mediaEngine.connectionInstanceSetLocalPan$media_engine_release(i10, userId, f10, f11);
     }
 
     @ReactMethod
     public final Unit connectionInstanceSetLocalVolume(int i10, String userId, float f10) {
-        q.g(userId, "userId");
+        q.h(userId, "userId");
         return this.mediaEngine.connectionInstanceSetLocalVolume$media_engine_release(i10, userId, f10);
     }
 
@@ -270,7 +270,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final Unit connectionInstanceSetTransportOptions(int i10, ReadableMap options) {
-        q.g(options, "options");
+        q.h(options, "options");
         return this.mediaEngine.connectionInstanceSetTransportOptions$media_engine_release(i10, NativeMapExtensionsKt.toJsonString(options));
     }
 
@@ -286,9 +286,9 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void createOwnStreamConnectionWithOptions(int i10, String userId, ReadableMap connectionOptions, Callback callback) {
-        q.g(userId, "userId");
-        q.g(connectionOptions, "connectionOptions");
-        q.g(callback, "callback");
+        q.h(userId, "userId");
+        q.h(connectionOptions, "connectionOptions");
+        q.h(callback, "callback");
         createConnection(i10, userId, connectionOptions, new MediaEngineModule$createOwnStreamConnectionWithOptions$1(callback, this, i10));
         this.streamConnectionId = Integer.valueOf(i10);
         addConnectionCallbacks(i10);
@@ -296,37 +296,37 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void createSpeedTestConnectionWithOptions(int i10, String userId, ReadableMap connectionOptions, Callback callback) {
-        q.g(userId, "userId");
-        q.g(connectionOptions, "connectionOptions");
-        q.g(callback, "callback");
+        q.h(userId, "userId");
+        q.h(connectionOptions, "connectionOptions");
+        q.h(callback, "callback");
         createSpeedTestConnection(i10, userId, connectionOptions, new MediaEngineModule$createSpeedTestConnectionWithOptions$1(callback));
         addSpeedTestConnectionCallbacks(i10);
     }
 
     @ReactMethod
     public final void createVoiceConnectionWithOptions(int i10, String userId, ReadableMap connectionOptions, Callback callback) {
-        q.g(userId, "userId");
-        q.g(connectionOptions, "connectionOptions");
-        q.g(callback, "callback");
+        q.h(userId, "userId");
+        q.h(connectionOptions, "connectionOptions");
+        q.h(callback, "callback");
         createConnection(i10, userId, connectionOptions, new MediaEngineModule$createVoiceConnectionWithOptions$1(callback));
         addConnectionCallbacks(i10);
     }
 
     @ReactMethod
     public final void getAudioSubsystem(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         this.mediaEngine.getAudioSubsystem$media_engine_release(new MediaEngineModule$getAudioSubsystem$1(callback));
     }
 
     @ReactMethod
     public final void getCodecCapabilities(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         this.mediaEngine.getCodecCapabilities$media_engine_release(new MediaEngineModule$getCodecCapabilities$1(callback));
     }
 
     @ReactMethod
     public final void getCodecSurvey(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         this.mediaEngine.getCodecSurvey$media_engine_release(new MediaEngineModule$getCodecSurvey$1(callback));
     }
 
@@ -345,7 +345,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void getInputDevices(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         this.mediaEngine.getInputDevices$media_engine_release(new MediaEngineModule$getInputDevices$1(callback));
     }
 
@@ -360,7 +360,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void getOutputDevices(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         this.mediaEngine.getOutputDevices$media_engine_release(new MediaEngineModule$getOutputDevices$1(callback));
     }
 
@@ -370,13 +370,13 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void getSupportedVideoCodecs(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         this.mediaEngine.getSupportedVideoCodecs$media_engine_release(new MediaEngineModule$getSupportedVideoCodecs$1(callback));
     }
 
     @ReactMethod
     public final void getVideoInputDevices(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         this.mediaEngine.getVideoInputDevices$media_engine_release(new MediaEngineModule$getVideoInputDevices$1(callback));
     }
 
@@ -398,8 +398,8 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void rankRtcRegions(ReadableArray regionsWithIps, Callback callback) {
-        q.g(regionsWithIps, "regionsWithIps");
-        q.g(callback, "callback");
+        q.h(regionsWithIps, "regionsWithIps");
+        q.h(callback, "callback");
         this.mediaEngine.rankRtcRegions$media_engine_release(NativeArrayExtensionsKt.toJsonString(regionsWithIps), new MediaEngineModule$rankRtcRegions$1(callback));
     }
 
@@ -409,7 +409,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void setAVAudioSessionMode(String mode) {
-        q.g(mode, "mode");
+        q.h(mode, "mode");
     }
 
     @ReactMethod
@@ -430,7 +430,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public final void setInputDevice(Dynamic deviceIndex) {
         int i10;
-        q.g(deviceIndex, "deviceIndex");
+        q.h(deviceIndex, "deviceIndex");
         MediaEngine mediaEngine = this.mediaEngine;
         ReadableType type = deviceIndex.getType();
         if (type == null) {
@@ -442,7 +442,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
             mediaEngine.setInputDevice$media_engine_release(deviceIndex.asInt());
         } else if (i10 == 2) {
             String asString = deviceIndex.asString();
-            q.f(asString, "deviceIndex.asString()");
+            q.g(asString, "deviceIndex.asString()");
             mediaEngine.setInputDevice$media_engine_release(asString);
         } else {
             ReadableType type2 = deviceIndex.getType();
@@ -463,7 +463,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public final void setOutputDevice(Dynamic deviceIndex) {
         int i10;
-        q.g(deviceIndex, "deviceIndex");
+        q.h(deviceIndex, "deviceIndex");
         MediaEngine mediaEngine = this.mediaEngine;
         ReadableType type = deviceIndex.getType();
         if (type == null) {
@@ -475,7 +475,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
             mediaEngine.setOutputDevice$media_engine_release(deviceIndex.asInt());
         } else if (i10 == 2) {
             String asString = deviceIndex.asString();
-            q.f(asString, "deviceIndex.asString()");
+            q.g(asString, "deviceIndex.asString()");
             mediaEngine.setOutputDevice$media_engine_release(asString);
         } else {
             ReadableType type2 = deviceIndex.getType();
@@ -490,14 +490,14 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void setTransportOptions(ReadableMap options) {
-        q.g(options, "options");
+        q.h(options, "options");
         this.mediaEngine.setTransportOptions$media_engine_release(NativeMapExtensionsKt.toJsonString(options));
     }
 
     @ReactMethod
     public final void setVideoInputDevice(Dynamic deviceIndex) {
         int i10;
-        q.g(deviceIndex, "deviceIndex");
+        q.h(deviceIndex, "deviceIndex");
         MediaEngine mediaEngine = this.mediaEngine;
         ReadableType type = deviceIndex.getType();
         if (type == null) {
@@ -509,7 +509,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
             mediaEngine.setVideoInputDevice$media_engine_release(deviceIndex.asInt());
         } else if (i10 == 2) {
             String asString = deviceIndex.asString();
-            q.f(asString, "deviceIndex.asString()");
+            q.g(asString, "deviceIndex.asString()");
             mediaEngine.setVideoInputDevice$media_engine_release(asString);
         } else {
             ReadableType type2 = deviceIndex.getType();
@@ -524,13 +524,13 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final Unit speedTestConnectionInstanceGetEncryptionModes(int i10, Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         return this.mediaEngine.speedTestConnectionInstanceGetEncryptionModes$media_engine_release(i10, new MediaEngineModule$speedTestConnectionInstanceGetEncryptionModes$1(callback));
     }
 
     @ReactMethod
     public final Unit speedTestConnectionInstanceGetNetworkOverhead(int i10, Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         return this.mediaEngine.speedTestConnectionInstanceGetNetworkOverhead$media_engine_release(i10, new MediaEngineModule$speedTestConnectionInstanceGetNetworkOverhead$1(callback));
     }
 
@@ -541,27 +541,27 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final Unit speedTestConnectionInstanceSetTransportOptions(int i10, ReadableMap options) {
-        q.g(options, "options");
+        q.h(options, "options");
         return this.mediaEngine.speedTestConnectionInstanceSetTransportOptions$media_engine_release(i10, NativeMapExtensionsKt.toJsonString(options));
     }
 
     @ReactMethod
     public final Unit speedTestConnectionInstanceStartSpeedTestReceiver(int i10, ReadableMap options, Callback callback) {
-        q.g(options, "options");
-        q.g(callback, "callback");
+        q.h(options, "options");
+        q.h(callback, "callback");
         return this.mediaEngine.speedTestConnectionInstanceStartSpeedTestReceiver$media_engine_release(i10, NativeMapExtensionsKt.toJsonString(options), new MediaEngineModule$speedTestConnectionInstanceStartSpeedTestReceiver$1(callback));
     }
 
     @ReactMethod
     public final Unit speedTestConnectionInstanceStartSpeedTestSender(int i10, ReadableMap options, Callback callback) {
-        q.g(options, "options");
-        q.g(callback, "callback");
+        q.h(options, "options");
+        q.h(callback, "callback");
         return this.mediaEngine.speedTestConnectionInstanceStartSpeedTestSender$media_engine_release(i10, NativeMapExtensionsKt.toJsonString(options), new MediaEngineModule$speedTestConnectionInstanceStartSpeedTestSender$1(callback));
     }
 
     @ReactMethod
     public final Unit speedTestConnectionInstanceStopSpeedTestReceiver(int i10, Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         return this.mediaEngine.speedTestConnectionInstanceStopSpeedTestReceiver$media_engine_release(i10, new MediaEngineModule$speedTestConnectionInstanceStopSpeedTestReceiver$1(callback));
     }
 
@@ -580,8 +580,8 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void startLocalAudioRecording(ReadableMap options, Callback callback) {
-        q.g(options, "options");
-        q.g(callback, "callback");
+        q.h(options, "options");
+        q.h(callback, "callback");
         this.mediaEngine.startLocalAudioRecording$media_engine_release(NativeMapExtensionsKt.toJsonString(options), new MediaEngineModule$startLocalAudioRecording$1(callback));
     }
 
@@ -592,23 +592,23 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
             return null;
         }
         this.mediaEngine.connectionInstanceStopBroadcast$media_engine_release(num.intValue());
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     @ReactMethod
     public final Unit stopBroadcastWithError(int i10, String errorMessage) {
-        q.g(errorMessage, "errorMessage");
+        q.h(errorMessage, "errorMessage");
         Integer num = this.streamConnectionId;
         if (num == null) {
             return null;
         }
         this.mediaEngine.connectionInstanceStopBroadcastWithError$media_engine_release(num.intValue(), i10, errorMessage);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     @ReactMethod
     public final void stopLocalAudioRecording(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         this.mediaEngine.stopLocalAudioRecording$media_engine_release(new MediaEngineModule$stopLocalAudioRecording$1(callback));
     }
 }

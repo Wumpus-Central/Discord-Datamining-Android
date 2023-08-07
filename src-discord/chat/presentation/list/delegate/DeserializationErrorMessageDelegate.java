@@ -20,31 +20,31 @@ public final class DeserializationErrorMessageDelegate extends BaseChatListItemD
     
     public DeserializationErrorMessageDelegate(Function0<? extends ChatEventHandler> eventHandlerProvider) {
         super(eventHandlerProvider, null, 2, null);
-        q.g(eventHandlerProvider, "eventHandlerProvider");
+        q.h(eventHandlerProvider, "eventHandlerProvider");
     }
 
     @Override 
     public boolean isForItem(ChatListItem item, int i10) {
-        q.g(item, "item");
+        q.h(item, "item");
         return item instanceof DeserializationErrorMessageItem;
     }
 
     @SuppressLint({"SetTextI18n"})
     public void bindView(ErrorMessageView view, DeserializationErrorMessageItem item, BaseChatListItemDelegate.Metadata<ErrorMessageView> metadata) {
-        q.g(view, "view");
-        q.g(item, "item");
-        q.g(metadata, "metadata");
+        q.h(view, "view");
+        q.h(item, "item");
+        q.h(metadata, "metadata");
         ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
-        q.e(layoutParams, "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams");
+        q.f(layoutParams, "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams");
         ((ViewGroup.MarginLayoutParams) layoutParams).setMargins(SizeUtilsKt.getDpToPx(16), 0, SizeUtilsKt.getDpToPx(16), 0);
         view.setErrorMessage(item.getMessage());
     }
 
     @Override 
     public ErrorMessageView createView(ViewGroup parent) {
-        q.g(parent, "parent");
+        q.h(parent, "parent");
         Context context = parent.getContext();
-        q.f(context, "parent.context");
+        q.g(context, "parent.context");
         ErrorMessageView errorMessageView = new ErrorMessageView(context, null, 2, null);
         int dpToPx = SizeUtilsKt.getDpToPx(8);
         errorMessageView.setPadding(dpToPx, dpToPx, dpToPx, dpToPx);

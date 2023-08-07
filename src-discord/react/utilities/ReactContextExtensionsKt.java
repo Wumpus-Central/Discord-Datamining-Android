@@ -16,31 +16,31 @@ import kotlin.jvm.internal.q;
 
 public final class ReactContextExtensionsKt {
     public static final long jsiId(ReactContext reactContext) {
-        q.g(reactContext, "<this>");
+        q.h(reactContext, "<this>");
         JavaScriptContextHolder javaScriptContextHolder = reactContext.getJavaScriptContextHolder();
-        q.f(javaScriptContextHolder, "javaScriptContextHolder");
+        q.g(javaScriptContextHolder, "javaScriptContextHolder");
         return jsiId(javaScriptContextHolder);
     }
 
     public static final  <T extends View> void uiManagerResolveView(ReactContext reactContext, final int i10, final Function1<? super T, Unit> onView) {
-        q.g(reactContext, "<this>");
-        q.g(onView, "onView");
+        q.h(reactContext, "<this>");
+        q.h(onView, "onView");
         NativeModule nativeModule = reactContext.getNativeModule(UIManagerModule.class);
-        q.d(nativeModule);
-        q.l();
+        q.e(nativeModule);
+        q.m();
         ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { 
             @Override 
             public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
                 Function1<T, Unit> function1 = onView;
                 View resolveView = nativeViewHierarchyManager.resolveView(i10);
-                q.m(1, "T");
+                q.n(1, "T");
                 function1.invoke(resolveView);
             }
         });
     }
 
     public static final long jsiId(JavaScriptContextHolder javaScriptContextHolder) {
-        q.g(javaScriptContextHolder, "<this>");
+        q.h(javaScriptContextHolder, "<this>");
         long j10 = javaScriptContextHolder.get();
         if (j10 != 0) {
             return j10;

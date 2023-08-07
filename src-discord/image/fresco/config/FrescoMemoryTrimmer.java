@@ -16,7 +16,7 @@ public final class FrescoMemoryTrimmer {
     }
 
     public final void initialize(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         context.registerComponentCallbacks(new ComponentCallbacks2() { 
             private final void clearMemoryCaches() {
                 c.a().c();
@@ -24,7 +24,7 @@ public final class FrescoMemoryTrimmer {
 
             @Override 
             public void onConfigurationChanged(Configuration newConfig) {
-                q.g(newConfig, "newConfig");
+                q.h(newConfig, "newConfig");
             }
 
             @Override 

@@ -27,13 +27,13 @@ public final class AttachedVideoSinks {
 
         public VideoOutputSinks(VideoSink sink) {
             Set<VideoSink> g10;
-            q.g(sink, "sink");
+            q.h(sink, "sink");
             g10 = w.g(sink);
             this.sinks = g10;
         }
 
         public final synchronized boolean add(VideoSink sink) {
-            q.g(sink, "sink");
+            q.h(sink, "sink");
             return this.sinks.add(sink);
         }
 
@@ -42,7 +42,7 @@ public final class AttachedVideoSinks {
         }
 
         public final synchronized boolean onFrame(VideoFrame frame) {
-            q.g(frame, "frame");
+            q.h(frame, "frame");
             for (VideoSink videoSink : this.sinks) {
                 videoSink.onFrame(frame);
             }
@@ -51,7 +51,7 @@ public final class AttachedVideoSinks {
         }
 
         public final synchronized boolean remove(VideoSink sink) {
-            q.g(sink, "sink");
+            q.h(sink, "sink");
             return this.sinks.remove(sink);
         }
     }
@@ -60,9 +60,9 @@ public final class AttachedVideoSinks {
     }
 
     public final void addSink(MediaEngine mediaEngine, VideoSink sink, String streamId) {
-        q.g(mediaEngine, "mediaEngine");
-        q.g(sink, "sink");
-        q.g(streamId, "streamId");
+        q.h(mediaEngine, "mediaEngine");
+        q.h(sink, "sink");
+        q.h(streamId, "streamId");
         Map<String, VideoOutputSinks> map = streamOutputMap;
         VideoOutputSinks videoOutputSinks = map.get(streamId);
         if (videoOutputSinks != null) {
@@ -87,9 +87,9 @@ public final class AttachedVideoSinks {
     public final void removeSink(MediaEngine mediaEngine, VideoSink sink, String streamId) {
         boolean z10;
         Function2<? super String, ? super Boolean, Unit> function2;
-        q.g(mediaEngine, "mediaEngine");
-        q.g(sink, "sink");
-        q.g(streamId, "streamId");
+        q.h(mediaEngine, "mediaEngine");
+        q.h(sink, "sink");
+        q.h(streamId, "streamId");
         Map<String, VideoOutputSinks> map = streamOutputMap;
         VideoOutputSinks videoOutputSinks = map.get(streamId);
         if (videoOutputSinks != null) {
@@ -102,7 +102,7 @@ public final class AttachedVideoSinks {
                 } else {
                     z10 = false;
                 }
-                Unit unit = Unit.f20679a;
+                Unit unit = Unit.f21025a;
             }
             if (z10 && (function2 = activeSinksChangeCallback) != null) {
                 function2.invoke(streamId, Boolean.FALSE);
@@ -111,7 +111,7 @@ public final class AttachedVideoSinks {
     }
 
     public final void setActiveSinksChangeCallback(Function2<? super String, ? super Boolean, Unit> callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         activeSinksChangeCallback = callback;
     }
 }

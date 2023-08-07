@@ -16,35 +16,35 @@ import kotlin.jvm.internal.q;
 
 public final class ColorUtilsKt {
     public static final int getColorCompat(Context context, int i10) {
-        q.g(context, "<this>");
+        q.h(context, "<this>");
         return context.getColor(i10);
     }
 
     public static final int getThemeColor(Context context, int i10, int i11) {
-        q.g(context, "<this>");
+        q.h(context, "<this>");
         return getThemeColor(context, i10, i11, ThemeManagerKt.getTheme());
     }
 
     public static final void setTintColor(ImageView imageView, Integer num) {
-        q.g(imageView, "<this>");
+        q.h(imageView, "<this>");
         h.c(imageView, num != null ? ColorStateList.valueOf(num.intValue()) : null);
     }
 
     public static final int getColorCompat(View view, int i10) {
-        q.g(view, "<this>");
+        q.h(view, "<this>");
         Context context = view.getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         return getColorCompat(context, i10);
     }
 
     public static final int getThemeColor(Context context, int i10, int i11, DiscordTheme theme) {
-        q.g(context, "<this>");
-        q.g(theme, "theme");
+        q.h(context, "<this>");
+        q.h(theme, "theme");
         return getColorCompat(context, theme.getColorRes(i10, i11));
     }
 
     public static final void setTintColor(SimpleDraweeView simpleDraweeView, Integer num) {
-        q.g(simpleDraweeView, "<this>");
+        q.h(simpleDraweeView, "<this>");
         if (num == null) {
             simpleDraweeView.clearColorFilter();
         } else {

@@ -13,7 +13,7 @@ public final class ChatListItemViewHolder<V extends View> extends RecyclerView.V
     
     public ChatListItemViewHolder(V view) {
         super(view);
-        q.g(view, "view");
+        q.h(view, "view");
         this.view = view;
     }
 

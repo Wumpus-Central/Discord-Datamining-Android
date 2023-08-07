@@ -6,7 +6,7 @@ import com.discord.primitives.MessageId;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
@@ -27,18 +27,18 @@ public final class LongPressStickerData implements ReactEvent {
     }
 
     
-    public static  LongPressStickerData m358copyntcYbpo$default(LongPressStickerData longPressStickerData, String str, Sticker sticker, int i10, Object obj) {
+    public static  LongPressStickerData m359copyntcYbpo$default(LongPressStickerData longPressStickerData, String str, Sticker sticker, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = longPressStickerData.messageId;
         }
         if ((i10 & 2) != 0) {
             sticker = longPressStickerData.sticker;
         }
-        return longPressStickerData.m360copyntcYbpo(str, sticker);
+        return longPressStickerData.m361copyntcYbpo(str, sticker);
     }
 
     
-    public final String m359component13Eiw7ao() {
+    public final String m360component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -47,9 +47,9 @@ public final class LongPressStickerData implements ReactEvent {
     }
 
     
-    public final LongPressStickerData m360copyntcYbpo(String messageId, Sticker sticker) {
-        q.g(messageId, "messageId");
-        q.g(sticker, "sticker");
+    public final LongPressStickerData m361copyntcYbpo(String messageId, Sticker sticker) {
+        q.h(messageId, "messageId");
+        q.h(sticker, "sticker");
         return new LongPressStickerData(messageId, sticker, null);
     }
 
@@ -61,11 +61,11 @@ public final class LongPressStickerData implements ReactEvent {
             return false;
         }
         LongPressStickerData longPressStickerData = (LongPressStickerData) obj;
-        return MessageId.m596equalsimpl0(this.messageId, longPressStickerData.messageId) && q.b(this.sticker, longPressStickerData.sticker);
+        return MessageId.m597equalsimpl0(this.messageId, longPressStickerData.messageId) && q.c(this.sticker, longPressStickerData.sticker);
     }
 
     
-    public final String m361getMessageId3Eiw7ao() {
+    public final String m362getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -74,7 +74,7 @@ public final class LongPressStickerData implements ReactEvent {
     }
 
     public int hashCode() {
-        return (MessageId.m597hashCodeimpl(this.messageId) * 31) + this.sticker.hashCode();
+        return (MessageId.m598hashCodeimpl(this.messageId) * 31) + this.sticker.hashCode();
     }
 
     @Override 
@@ -83,7 +83,7 @@ public final class LongPressStickerData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m598toStringimpl(this.messageId);
+        String str = MessageId.m599toStringimpl(this.messageId);
         Sticker sticker = this.sticker;
         return "LongPressStickerData(messageId=" + str + ", sticker=" + sticker + ")";
     }

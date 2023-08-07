@@ -17,27 +17,27 @@ public final class EmbeddedActivityInviteViewHolder extends MessagePartViewHolde
     
     public EmbeddedActivityInviteViewHolder(EmbeddedActivityInviteView embeddedActivityInviteView, ChatEventHandler eventHandler) {
         super(embeddedActivityInviteView, null);
-        q.g(embeddedActivityInviteView, "embeddedActivityInviteView");
-        q.g(eventHandler, "eventHandler");
+        q.h(embeddedActivityInviteView, "embeddedActivityInviteView");
+        q.h(eventHandler, "eventHandler");
         this.embeddedActivityInviteView = embeddedActivityInviteView;
         this.eventHandler = eventHandler;
     }
 
     
     public static final void bind$lambda$1$lambda$0(EmbeddedActivityInviteViewHolder this$0, EmbeddedActivityInviteMessageAccessory embeddedActivityInviteAccessory, View view) {
-        q.g(this$0, "this$0");
-        q.g(embeddedActivityInviteAccessory, "$embeddedActivityInviteAccessory");
-        this$0.eventHandler.mo164onTapInviteEmbedAFFcxXc(embeddedActivityInviteAccessory.mo217getMessageId3Eiw7ao(), embeddedActivityInviteAccessory.getCodedLinkIndex(), null, null);
+        q.h(this$0, "this$0");
+        q.h(embeddedActivityInviteAccessory, "$embeddedActivityInviteAccessory");
+        this$0.eventHandler.mo165onTapInviteEmbedAFFcxXc(embeddedActivityInviteAccessory.mo218getMessageId3Eiw7ao(), embeddedActivityInviteAccessory.getCodedLinkIndex(), null, null);
     }
 
     public final void bind(final EmbeddedActivityInviteMessageAccessory embeddedActivityInviteAccessory) {
-        q.g(embeddedActivityInviteAccessory, "embeddedActivityInviteAccessory");
+        q.h(embeddedActivityInviteAccessory, "embeddedActivityInviteAccessory");
         EmbeddedActivityInviteEmbedImpl embeddedActivityInviteEmbed = embeddedActivityInviteAccessory.getEmbeddedActivityInviteEmbed();
         EmbeddedActivityInviteView embeddedActivityInviteView = this.embeddedActivityInviteView;
         embeddedActivityInviteView.setSplash(embeddedActivityInviteEmbed.getSplashUrl(), embeddedActivityInviteAccessory.getConstrainedWidth());
         embeddedActivityInviteView.setTitleText(embeddedActivityInviteEmbed.getTitleText());
         embeddedActivityInviteView.setHeaderText(embeddedActivityInviteEmbed.getHeaderText());
-        embeddedActivityInviteView.m307setSubtitleTextSAQFhFE(embeddedActivityInviteEmbed.getStructurableSubtitleText(), embeddedActivityInviteAccessory.mo217getMessageId3Eiw7ao(), new EmbeddedActivityInviteViewHolder$bind$1$1(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$2(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$3(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$4(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$5(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$6(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$7(this.eventHandler), EmbeddedActivityInviteViewHolder$bind$1$11.INSTANCE, new EmbeddedActivityInviteViewHolder$bind$1$8(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$9(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$10(this.eventHandler));
+        embeddedActivityInviteView.m308setSubtitleTextSAQFhFE(embeddedActivityInviteEmbed.getStructurableSubtitleText(), embeddedActivityInviteAccessory.mo218getMessageId3Eiw7ao(), new EmbeddedActivityInviteViewHolder$bind$1$1(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$2(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$3(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$4(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$5(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$6(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$7(this.eventHandler), EmbeddedActivityInviteViewHolder$bind$1$11.INSTANCE, new EmbeddedActivityInviteViewHolder$bind$1$8(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$9(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$10(this.eventHandler));
         embeddedActivityInviteView.setNoParticipantsText(embeddedActivityInviteEmbed.getNoParticipantsText());
         embeddedActivityInviteView.setLaunchButton(embeddedActivityInviteEmbed.getAcceptLabelText(), embeddedActivityInviteEmbed.getAcceptLabelBackgroundColor(), embeddedActivityInviteEmbed.getCtaEnabled());
         embeddedActivityInviteView.setAvatarUris(embeddedActivityInviteEmbed.getParticipantAvatarUris());

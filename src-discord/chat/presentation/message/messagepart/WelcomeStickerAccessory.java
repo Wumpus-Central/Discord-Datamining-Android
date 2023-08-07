@@ -37,8 +37,8 @@ public final class WelcomeStickerAccessory extends MessageAccessory {
     }
 
     public final WelcomeStickerAccessory copy(Message message, Sticker sticker) {
-        q.g(message, "message");
-        q.g(sticker, "sticker");
+        q.h(message, "message");
+        q.h(sticker, "sticker");
         return new WelcomeStickerAccessory(message, sticker);
     }
 
@@ -50,7 +50,7 @@ public final class WelcomeStickerAccessory extends MessageAccessory {
             return false;
         }
         WelcomeStickerAccessory welcomeStickerAccessory = (WelcomeStickerAccessory) obj;
-        return q.b(this.message, welcomeStickerAccessory.message) && q.b(this.sticker, welcomeStickerAccessory.sticker);
+        return q.c(this.message, welcomeStickerAccessory.message) && q.c(this.sticker, welcomeStickerAccessory.sticker);
     }
 
     public final Message getMessage() {

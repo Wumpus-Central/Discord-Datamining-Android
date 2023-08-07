@@ -27,7 +27,7 @@ public final class AudioPlayerView$configureAudioWave$1 extends s implements Fun
     @Override 
     public   Unit invoke(AudioWaveView.ProgressEvent progressEvent) {
         invoke2(progressEvent);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
@@ -37,7 +37,7 @@ public final class AudioPlayerView$configureAudioWave$1 extends s implements Fun
         long j11;
         long j12;
         boolean z10;
-        q.g(progressEvent, "progressEvent");
+        q.h(progressEvent, "progressEvent");
         job = this.this$0.resetJob;
         if (job != null) {
             Job.a.a(job, null, 1, null);

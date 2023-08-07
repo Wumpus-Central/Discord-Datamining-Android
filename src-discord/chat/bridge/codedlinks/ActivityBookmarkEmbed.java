@@ -7,10 +7,10 @@ import kotlin.Metadata;
 
 public interface ActivityBookmarkEmbed {
     
-    long mo32getApplicationIdVavddsQ();
+    long mo33getApplicationIdVavddsQ();
 
     
-    long mo33getChannelIdo4g7jtM();
+    long mo34getChannelIdo4g7jtM();
 
     String getDescription();
 

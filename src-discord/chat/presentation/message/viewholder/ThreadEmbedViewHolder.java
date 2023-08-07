@@ -16,15 +16,15 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
     
     public ThreadEmbedViewHolder(ThreadEmbedView threadEmbedView) {
         super(threadEmbedView, null);
-        q.g(threadEmbedView, "threadEmbedView");
+        q.h(threadEmbedView, "threadEmbedView");
         this.threadEmbedView = threadEmbedView;
     }
 
     
     public static final void bind$lambda$1$lambda$0(Function1 onTapThreadEmbed, ThreadEmbedMessageAccessory threadItem, View view) {
-        q.g(onTapThreadEmbed, "$onTapThreadEmbed");
-        q.g(threadItem, "$threadItem");
-        onTapThreadEmbed.invoke(MessageId.m592boximpl(threadItem.mo217getMessageId3Eiw7ao()));
+        q.h(onTapThreadEmbed, "$onTapThreadEmbed");
+        q.h(threadItem, "$threadItem");
+        onTapThreadEmbed.invoke(MessageId.m593boximpl(threadItem.mo218getMessageId3Eiw7ao()));
     }
 
     

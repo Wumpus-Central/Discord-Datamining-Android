@@ -23,13 +23,13 @@ public final class BundleUpdaterManager$removeSpinnerView$1 extends s implements
     @Override 
     public   Unit invoke(ViewGroup viewGroup) {
         invoke2(viewGroup);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(ViewGroup runOnActivity) {
         ViewGroup viewGroup;
-        q.g(runOnActivity, "$this$runOnActivity");
+        q.h(runOnActivity, "$this$runOnActivity");
         viewGroup = this.this$0.progressLayout;
         if (viewGroup != null) {
             runOnActivity.removeView(viewGroup);

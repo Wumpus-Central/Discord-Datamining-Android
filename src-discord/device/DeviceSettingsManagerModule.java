@@ -24,7 +24,7 @@ public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModul
     
     public DeviceSettingsManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     private final void openApplicationDetailSettings(Context context) {
@@ -49,7 +49,7 @@ public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModul
     
     public static final void setInsetsVisible$lambda$0(DeviceSettingsManagerModule this$0, boolean z10, int i10) {
         Window window;
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         Activity currentActivity = this$0.getReactApplicationContext().getCurrentActivity();
         if (currentActivity != null) {
             window = currentActivity.getWindow();
@@ -58,7 +58,7 @@ public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModul
         }
         if (window != null) {
             WindowInsetsControllerCompat a10 = r2.a(window, window.getDecorView());
-            q.f(a10, "getInsetsController(window, window.decorView)");
+            q.g(a10, "getInsetsController(window, window.decorView)");
             a10.d(2);
             if (z10) {
                 a10.e(i10);
@@ -80,7 +80,7 @@ public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModul
             return null;
         }
         openAccessibilitySettings(currentActivity);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     @ReactMethod
@@ -91,20 +91,20 @@ public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModul
                 return null;
             }
             openApplicationNotificationSettings(currentActivity);
-            return Unit.f20679a;
+            return Unit.f21025a;
         }
         Activity currentActivity2 = getReactApplicationContext().getCurrentActivity();
         if (currentActivity2 == null) {
             return null;
         }
         openApplicationDetailSettings(currentActivity2);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     @ReactMethod
     public final void openPrivacySettings() {
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         openApplicationDetailSettings(reactApplicationContext);
     }
 

@@ -61,7 +61,7 @@ public final class MediaProxy {
     }
 
     public final String withSize(String url, Integer num, String str) {
-        q.g(url, "url");
+        q.h(url, "url");
         String str2 = "";
         String str3 = null;
         if (num == null || num.intValue() <= 0) {

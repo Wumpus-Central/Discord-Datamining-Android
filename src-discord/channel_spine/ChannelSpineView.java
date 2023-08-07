@@ -69,7 +69,7 @@ public final class ChannelSpineView extends View {
     
     public ChannelSpineView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  ChannelSpineView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -82,7 +82,7 @@ public final class ChannelSpineView extends View {
 
     
     public static final void configureAsReplySpline$lambda$1(ChannelSpineView this$0, View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         this$0.setRowHeight(SizeUtilsKt.getPxToDp(i13 - i11));
     }
 
@@ -98,7 +98,7 @@ public final class ChannelSpineView extends View {
         } else if (i11 == 2) {
             f11 = yOfRow(f10, i10 + 1);
         } else {
-            throw new ff.q();
+            throw new jf.q();
         }
         if (this.isReplySpline) {
             f12 = SizeUtilsKt.getDpToPx(9);
@@ -192,7 +192,7 @@ public final class ChannelSpineView extends View {
 
     @Override 
     protected void onDraw(Canvas canvas) {
-        q.g(canvas, "canvas");
+        q.h(canvas, "canvas");
         super.onDraw(canvas);
         int save = canvas.save();
         for (Path path : this.paths) {
@@ -224,7 +224,7 @@ public final class ChannelSpineView extends View {
                 float f11 = this.numRows * this.rowHeight;
                 int mode2 = View.MeasureSpec.getMode(i11);
                 if (mode2 == Integer.MIN_VALUE) {
-                    f10 = wf.j.f(f11, View.MeasureSpec.getSize(i11));
+                    f10 = ag.j.f(f11, View.MeasureSpec.getSize(i11));
                     number = Float.valueOf(f10);
                 } else if (mode2 != 1073741824) {
                     number = Float.valueOf(f11);
@@ -290,7 +290,7 @@ public final class ChannelSpineView extends View {
         super(context, attributeSet);
         int i10;
         List<? extends Path> h10;
-        q.g(context, "context");
+        q.h(context, "context");
         Paint paint = new Paint();
         if (!isInEditMode()) {
             i10 = ThemeManagerKt.getTheme().getBackgroundAccent();

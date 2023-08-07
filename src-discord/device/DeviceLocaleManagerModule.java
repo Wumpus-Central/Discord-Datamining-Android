@@ -1,20 +1,20 @@
 package com.discord.device;
 
+import ag.j;
 import android.os.Build;
 import android.os.LocaleList;
 import com.discord.codegen.NativeDeviceLocaleManagerSpec;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
-import ff.x;
-import gf.v;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Map;
+import jf.x;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.collections.r;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import wf.j;
 
 @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010%\n\u0002\u0010\u0000\n\u0002\b\u0002\u0018\u0000 \n2\u00020\u0001:\u0001\nB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0005\u001a\u00020\u0006H\u0016J\u0016\u0010\u0007\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0006\u0012\u0004\u0018\u00010\t0\bH\u0014¨\u0006\u000b"}, d2 = {"Lcom/discord/device/DeviceLocaleManagerModule;", "Lcom/discord/codegen/NativeDeviceLocaleManagerSpec;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "getName", "", "getTypedExportedConstants", "", "", "Companion", "device_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -33,7 +33,7 @@ public final class DeviceLocaleManagerModule extends NativeDeviceLocaleManagerSp
         }
 
         public final NativeModule create(ReactApplicationContext reactContext) {
-            q.g(reactContext, "reactContext");
+            q.h(reactContext, "reactContext");
             return new DeviceLocaleManagerModule(reactContext);
         }
     }
@@ -41,12 +41,12 @@ public final class DeviceLocaleManagerModule extends NativeDeviceLocaleManagerSp
     
     public DeviceLocaleManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @Override 
     public String getName() {
-        return NAME;
+        return "RTNDeviceLocaleManager";
     }
 
     @Override 
@@ -59,14 +59,14 @@ public final class DeviceLocaleManagerModule extends NativeDeviceLocaleManagerSp
         ArrayList arrayList = new ArrayList();
         if (Build.VERSION.SDK_INT >= 24) {
             adjustedDefault = LocaleList.getAdjustedDefault();
-            q.f(adjustedDefault, "getAdjustedDefault()");
+            q.g(adjustedDefault, "getAdjustedDefault()");
             size = adjustedDefault.size();
             int i10 = 10;
             for (int i11 = 0; i11 < size; i11++) {
                 locale = adjustedDefault.get(i11);
                 String lang = locale.toLanguageTag();
                 if (i11 == 0) {
-                    q.f(lang, "lang");
+                    q.g(lang, "lang");
                     arrayList.add(lang);
                 } else {
                     arrayList.add(lang + ";q=0." + i10);
@@ -75,7 +75,7 @@ public final class DeviceLocaleManagerModule extends NativeDeviceLocaleManagerSp
             }
         } else {
             String languageTag = Locale.getDefault().toLanguageTag();
-            q.f(languageTag, "getDefault().toLanguageTag()");
+            q.g(languageTag, "getDefault().toLanguageTag()");
             arrayList.add(languageTag);
         }
         r.c0(arrayList, ",", null, null, 0, null, null, 62, null);

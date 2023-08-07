@@ -20,15 +20,15 @@ public final class WelcomeStickerViewHolder extends MessagePartViewHolder {
     
     public WelcomeStickerViewHolder(WelcomeStickerView welcomeStickerView, Function2<? super Sticker, ? super MessageId, Unit> onWelcomeReplyClicked) {
         super(welcomeStickerView, null);
-        q.g(welcomeStickerView, "welcomeStickerView");
-        q.g(onWelcomeReplyClicked, "onWelcomeReplyClicked");
+        q.h(welcomeStickerView, "welcomeStickerView");
+        q.h(onWelcomeReplyClicked, "onWelcomeReplyClicked");
         this.welcomeStickerView = welcomeStickerView;
         this.onWelcomeReplyClicked = onWelcomeReplyClicked;
         welcomeStickerView.setLayoutParams(new RecyclerView.i(-2, -2));
     }
 
     public final void bind(WelcomeStickerAccessory welcomeStickerAccessory) {
-        q.g(welcomeStickerAccessory, "welcomeStickerAccessory");
+        q.h(welcomeStickerAccessory, "welcomeStickerAccessory");
         this.welcomeStickerView.setSticker(welcomeStickerAccessory.getSticker(), welcomeStickerAccessory.getMessage(), this.onWelcomeReplyClicked);
     }
 }

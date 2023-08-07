@@ -41,7 +41,7 @@ public final class CallSystemMessageView extends ConstraintLayout {
     
     public CallSystemMessageView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  CallSystemMessageView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -52,22 +52,22 @@ public final class CallSystemMessageView extends ConstraintLayout {
         ReactAsset reactAsset;
         int i10;
         int s10;
-        q.g(message, "message");
+        q.h(message, "message");
         SimpleDraweeView simpleDraweeView = this.binding.icon;
-        q.f(simpleDraweeView, "binding.icon");
+        q.g(simpleDraweeView, "binding.icon");
         Boolean missed = message.getMissed();
         Boolean bool = Boolean.TRUE;
-        if (q.b(missed, bool)) {
+        if (q.c(missed, bool)) {
             reactAsset = ReactAsset.CallDisconnect;
         } else {
             reactAsset = ReactAsset.CallConnect;
         }
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView, reactAsset);
         SimpleDraweeView simpleDraweeView2 = this.binding.icon;
-        q.f(simpleDraweeView2, "binding.icon");
-        if (q.b(message.isCallActive(), bool)) {
+        q.g(simpleDraweeView2, "binding.icon");
+        if (q.c(message.isCallActive(), bool)) {
             i10 = this.greenIconColor;
-        } else if (q.b(message.getMissed(), bool)) {
+        } else if (q.c(message.getMissed(), bool)) {
             i10 = this.redIconColor;
         } else {
             i10 = this.grayIconColor;
@@ -77,9 +77,9 @@ public final class CallSystemMessageView extends ConstraintLayout {
         AttachedViewCoroutineScope attachedScope = CoroutineViewUtilsKt.getAttachedScope(this);
         String simpleName = CallSystemMessageView.class.getSimpleName();
         AttachedViewCoroutineScope.cancelAllWork$default(attachedScope, "Binding " + simpleName, null, 2, null);
-        if (q.b(message.isCallActive(), bool)) {
+        if (q.c(message.isCallActive(), bool)) {
             Long rawMilliseconds = message.getRawMilliseconds();
-            q.d(rawMilliseconds);
+            q.e(rawMilliseconds);
             l.d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new CallSystemMessageView$setMessage$1(this, rawMilliseconds.longValue(), message, null), 3, null);
         } else {
             this.binding.info.setText(message.getDescription());
@@ -100,21 +100,21 @@ public final class CallSystemMessageView extends ConstraintLayout {
     
     public CallSystemMessageView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         this.greenIconColor = ColorUtilsKt.getColorCompat(this, R.color.green_360);
         this.redIconColor = ColorUtilsKt.getColorCompat(this, R.color.red_400);
         this.grayIconColor = ThemeManagerKt.getTheme().getInteractiveNormal();
         CallSystemMessageViewBinding inflate = CallSystemMessageViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         AddSystemMessageCardStyleKt.addSystemMessageCardStyle(this);
         TextView _init_$lambda$0 = inflate.message;
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$0, 16.0f);
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, DiscordFont.PrimarySemibold);
         _init_$lambda$0.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
         TextView _init_$lambda$1 = inflate.info;
-        q.f(_init_$lambda$1, "_init_$lambda$1");
+        q.g(_init_$lambda$1, "_init_$lambda$1");
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$1, 12.0f);
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$1, DiscordFont.PrimaryNormal);
         _init_$lambda$1.setTextColor(ThemeManagerKt.getTheme().getTextMuted());

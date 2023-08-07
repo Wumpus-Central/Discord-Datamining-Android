@@ -52,10 +52,10 @@ public final class ButtonComponentView extends ConstraintLayout implements Compo
         }
 
         public final ButtonComponentView inflateComponent(Context context, ViewGroup root) {
-            q.g(context, "context");
-            q.g(root, "root");
+            q.h(context, "context");
+            q.h(root, "root");
             ButtonComponentView root2 = MessageComponentButtonViewBinding.inflate(LayoutInflater.from(context), root, false).getRoot();
-            q.f(root2, "inflate(\n               …false,\n            ).root");
+            q.g(root2, "inflate(\n               …false,\n            ).root");
             return root2;
         }
     }
@@ -98,13 +98,13 @@ public final class ButtonComponentView extends ConstraintLayout implements Compo
     
     public ButtonComponentView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public ButtonComponentView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  ButtonComponentView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -113,12 +113,12 @@ public final class ButtonComponentView extends ConstraintLayout implements Compo
 
     
     public static final void configure$lambda$1(ButtonComponent component, ComponentActionListener componentActionListener, View view) {
-        q.g(component, "$component");
-        q.g(componentActionListener, "$componentActionListener");
+        q.h(component, "$component");
+        q.h(componentActionListener, "$componentActionListener");
         if (component.getUrl() != null) {
             componentActionListener.openLink(component.getUrl());
         } else if (component.getCustomId() != null) {
-            componentActionListener.mo321onTapButtonActionComponenty43Yjpg(component.getCustomId(), component.m31getApplicationIdVavddsQ(), component.getIndices());
+            componentActionListener.mo322onTapButtonActionComponenty43Yjpg(component.getCustomId(), component.m32getApplicationIdVavddsQ(), component.getIndices());
         }
     }
 
@@ -205,29 +205,29 @@ public final class ButtonComponentView extends ConstraintLayout implements Compo
     
     public ButtonComponentView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public void configure(final ButtonComponent component, ComponentProvider componentProvider, final ComponentActionListener componentActionListener) {
-        q.g(component, "component");
-        q.g(componentProvider, "componentProvider");
-        q.g(componentActionListener, "componentActionListener");
+        q.h(component, "component");
+        q.h(componentProvider, "componentProvider");
+        q.h(componentActionListener, "componentActionListener");
         MessageComponentButtonViewBinding bind = MessageComponentButtonViewBinding.bind(this);
-        q.f(bind, "bind(this)");
+        q.g(bind, "bind(this)");
         int i10 = 0;
         boolean z10 = component.getState() == ActionComponentState.DISABLED || component.getDisabled();
         boolean z11 = component.getState() == ActionComponentState.LOADING;
         MaterialButton materialButton = bind.button;
-        q.f(materialButton, "binding.button");
+        q.g(materialButton, "binding.button");
         configureStyle(materialButton, component.getStyle());
         SimpleDraweeSpanTextView simpleDraweeSpanTextView = bind.emoji;
-        q.f(simpleDraweeSpanTextView, "binding.emoji");
+        q.g(simpleDraweeSpanTextView, "binding.emoji");
         configureEmoji(simpleDraweeSpanTextView, component.getEmoji(), z11);
         SimpleDraweeView simpleDraweeView = bind.linkIcon;
-        q.f(simpleDraweeView, "binding.linkIcon");
+        q.g(simpleDraweeView, "binding.linkIcon");
         configureLinkIcon(simpleDraweeView, component.getStyle() == ButtonStyle.LINK);
         MaterialTextView materialTextView = bind.label;
-        q.f(materialTextView, "binding.label");
+        q.g(materialTextView, "binding.label");
         configureLabelPadding(materialTextView, component);
         float f10 = 1.0f;
         bind.label.setAlpha(z10 ? 0.5f : 1.0f);
@@ -240,13 +240,13 @@ public final class ButtonComponentView extends ConstraintLayout implements Compo
         bind.button.setEnabled(!z10);
         MaterialTextView configure$lambda$0 = bind.label;
         configure$lambda$0.setText(component.getLabel());
-        q.f(configure$lambda$0, "configure$lambda$0");
+        q.g(configure$lambda$0, "configure$lambda$0");
         configure$lambda$0.setVisibility(z11 ? 4 : 0);
         DiscordFontUtilsKt.setDiscordFont(configure$lambda$0, DiscordFont.PrimaryMedium);
         configure$lambda$0.setTextColor(ColorUtilsKt.getColorCompat(configure$lambda$0, R.color.white));
         if (!z11) {
             MaterialButton materialButton2 = bind.button;
-            q.f(materialButton2, "binding.button");
+            q.g(materialButton2, "binding.button");
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(materialButton2, false, new View.OnClickListener() { 
                 @Override 
                 public final void onClick(View view) {
@@ -255,7 +255,7 @@ public final class ButtonComponentView extends ConstraintLayout implements Compo
             }, 1, null);
         } else {
             MaterialButton materialButton3 = bind.button;
-            q.f(materialButton3, "binding.button");
+            q.g(materialButton3, "binding.button");
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(materialButton3, false, new View.OnClickListener() { 
                 @Override 
                 public final void onClick(View view) {
@@ -264,7 +264,7 @@ public final class ButtonComponentView extends ConstraintLayout implements Compo
             }, 1, null);
         }
         ProgressDots progressDots = bind.loadingDots;
-        q.f(progressDots, "binding.loadingDots");
+        q.g(progressDots, "binding.loadingDots");
         if (!z11) {
             i10 = 8;
         }

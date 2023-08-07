@@ -26,18 +26,18 @@ public final class MediaManagerModule$mediaResolver$1 extends s implements Funct
     @Override 
     public   Unit invoke(Uri uri, Integer num) {
         invoke(uri, num.intValue());
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final void invoke(Uri uri, int i10) {
         ReactEvents reactEvents;
         ReactApplicationContext reactApplicationContext;
-        q.g(uri, "uri");
+        q.h(uri, "uri");
         reactEvents = this.this$0.reactEvents;
         reactApplicationContext = this.this$0.getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         String uri2 = uri.toString();
-        q.f(uri2, "uri.toString()");
+        q.g(uri2, "uri.toString()");
         reactEvents.emitModuleEvent(reactApplicationContext, new CompressionProgressEvent(uri2, i10));
     }
 }

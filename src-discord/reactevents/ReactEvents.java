@@ -18,7 +18,7 @@ public final class ReactEvents {
     private final ReactEventRegistry eventRegistry = new ReactEventRegistry();
 
     public ReactEvents(Pair<String, ? extends KClass<? extends ReactEvent>>... events) {
-        q.g(events, "events");
+        q.h(events, "events");
         for (Pair<String, ? extends KClass<? extends ReactEvent>> pair : events) {
             this.eventRegistry.registerEvent(pair.a(), (KClass) pair.b());
         }
@@ -32,16 +32,16 @@ public final class ReactEvents {
     }
 
     public final void emitEvent(View view, ReactEvent event) {
-        q.g(view, "view");
-        q.g(event, "event");
+        q.h(view, "view");
+        q.h(event, "event");
         Context context = view.getContext();
-        q.f(context, "view.context");
+        q.g(context, "view.context");
         emitEvent(context, event, view.getId());
     }
 
     public final void emitModuleEvent(Context context, ReactEvent event) {
-        q.g(context, "context");
-        q.g(event, "event");
+        q.h(context, "context");
+        q.h(event, "event");
         EventEmitterUtilsKt.emitReactNativeEvent(context, this.eventRegistry.getEventName(event), event.serialize());
     }
 
@@ -50,23 +50,23 @@ public final class ReactEvents {
     }
 
     public final void emitEvent(Context context, ReactEvent event, int i10) {
-        q.g(context, "context");
-        q.g(event, "event");
+        q.h(context, "context");
+        q.h(event, "event");
         requireEventExporting(event);
         EventEmitterUtilsKt.emitReactNativeViewEvent(context, this.eventRegistry.getEventName(event), event.serialize(), i10);
     }
 
     public final void emitEvent(ReactContext context, View view, ReactEvent event) {
-        q.g(context, "context");
-        q.g(view, "view");
-        q.g(event, "event");
+        q.h(context, "context");
+        q.h(view, "view");
+        q.h(event, "event");
         emitEvent(UIManagerHelper.getEventDispatcherForReactTag(context, view.getId()), context, view, event);
     }
 
     public final void emitEvent(EventDispatcher eventDispatcher, ReactContext context, View view, ReactEvent event) {
-        q.g(context, "context");
-        q.g(view, "view");
-        q.g(event, "event");
+        q.h(context, "context");
+        q.h(view, "view");
+        q.h(event, "event");
         if (eventDispatcher != null) {
             requireEventExporting(event);
             eventDispatcher.dispatchEvent(new DispatchedEvent(UIManagerHelper.getSurfaceId(context), view.getId(), this.eventRegistry.getEventName(event), event));

@@ -22,12 +22,12 @@ final class MediaEngineModule$connectionInstanceGetStats$1 extends s implements 
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String stats) {
-        q.g(stats, "stats");
+        q.h(stats, "stats");
         this.$callback.invoke(stats);
     }
 }

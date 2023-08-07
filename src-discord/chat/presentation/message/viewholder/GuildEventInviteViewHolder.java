@@ -21,9 +21,9 @@ public final class GuildEventInviteViewHolder extends MessagePartViewHolder {
     
     public GuildEventInviteViewHolder(GuildEventInviteView guildEventInviteView, ChatEventHandler eventHandler, Function1<? super MessagePartViewHolder, Unit> onTapSpoiler) {
         super(guildEventInviteView, null);
-        q.g(guildEventInviteView, "guildEventInviteView");
-        q.g(eventHandler, "eventHandler");
-        q.g(onTapSpoiler, "onTapSpoiler");
+        q.h(guildEventInviteView, "guildEventInviteView");
+        q.h(eventHandler, "eventHandler");
+        q.h(onTapSpoiler, "onTapSpoiler");
         this.guildEventInviteView = guildEventInviteView;
         this.eventHandler = eventHandler;
         this.onTapSpoiler = onTapSpoiler;
@@ -31,27 +31,27 @@ public final class GuildEventInviteViewHolder extends MessagePartViewHolder {
 
     
     public static final void bind$lambda$3$lambda$2$lambda$0(GuildEventInviteViewHolder this$0, GuildEventInviteMessageAccessory inviteAccessory, View view) {
-        q.g(this$0, "this$0");
-        q.g(inviteAccessory, "$inviteAccessory");
-        this$0.eventHandler.mo164onTapInviteEmbedAFFcxXc(inviteAccessory.mo217getMessageId3Eiw7ao(), inviteAccessory.getCodedLinkIndex(), Boolean.TRUE, Boolean.FALSE);
+        q.h(this$0, "this$0");
+        q.h(inviteAccessory, "$inviteAccessory");
+        this$0.eventHandler.mo165onTapInviteEmbedAFFcxXc(inviteAccessory.mo218getMessageId3Eiw7ao(), inviteAccessory.getCodedLinkIndex(), Boolean.TRUE, Boolean.FALSE);
     }
 
     
     public static final void bind$lambda$3$lambda$2$lambda$1(GuildEventInviteViewHolder this$0, GuildEventInviteMessageAccessory inviteAccessory, View view) {
-        q.g(this$0, "this$0");
-        q.g(inviteAccessory, "$inviteAccessory");
-        this$0.eventHandler.mo164onTapInviteEmbedAFFcxXc(inviteAccessory.mo217getMessageId3Eiw7ao(), inviteAccessory.getCodedLinkIndex(), Boolean.FALSE, Boolean.TRUE);
+        q.h(this$0, "this$0");
+        q.h(inviteAccessory, "$inviteAccessory");
+        this$0.eventHandler.mo165onTapInviteEmbedAFFcxXc(inviteAccessory.mo218getMessageId3Eiw7ao(), inviteAccessory.getCodedLinkIndex(), Boolean.FALSE, Boolean.TRUE);
     }
 
     public final void bind(final GuildEventInviteMessageAccessory inviteAccessory) {
-        q.g(inviteAccessory, "inviteAccessory");
+        q.h(inviteAccessory, "inviteAccessory");
         GuildEventInviteEmbedImpl invite = inviteAccessory.getInvite();
         GuildEventInviteView guildEventInviteView = this.guildEventInviteView;
         guildEventInviteView.setHeader(invite.getHeaderIcon(), invite.getHeaderText(), invite.getHeaderColor());
         guildEventInviteView.setCreatorAvatar(invite.getCreatorAvatar());
         guildEventInviteView.setBadge(invite.getBadgeIcon(), invite.getBadgeCount());
         guildEventInviteView.setTitle(invite.getTitleText(), invite.getTitleColor());
-        guildEventInviteView.m313setDescriptionKZKlOo(invite.getContent(), inviteAccessory.mo217getMessageId3Eiw7ao(), inviteAccessory.getShouldAnimateEmoji(), inviteAccessory.getShouldShowRoleDot(), inviteAccessory.getShouldShowRoleOnName(), new GuildEventInviteViewHolder$bind$1$1$1(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$2(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$3(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$4(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$5(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$6(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$7(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$11(this), new GuildEventInviteViewHolder$bind$1$1$8(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$9(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$10(this.eventHandler));
+        guildEventInviteView.m314setDescriptionKZKlOo(invite.getContent(), inviteAccessory.mo218getMessageId3Eiw7ao(), inviteAccessory.getShouldAnimateEmoji(), inviteAccessory.getShouldShowRoleDot(), inviteAccessory.getShouldShowRoleOnName(), new GuildEventInviteViewHolder$bind$1$1$1(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$2(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$3(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$4(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$5(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$6(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$7(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$11(this), new GuildEventInviteViewHolder$bind$1$1$8(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$9(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$10(this.eventHandler));
         guildEventInviteView.setGuild(invite.getGuildName(), invite.getGuildIcon());
         guildEventInviteView.setChannel(invite.getChannelIcon(), invite.getChannelName());
         guildEventInviteView.setAcceptButton(invite.getAcceptLabelIcon(), invite.getAcceptLabelText(), invite.getAcceptLabelColor(), invite.getAcceptLabelBorderColor(), invite.getAcceptLabelBackgroundColor(), new View.OnClickListener() { 

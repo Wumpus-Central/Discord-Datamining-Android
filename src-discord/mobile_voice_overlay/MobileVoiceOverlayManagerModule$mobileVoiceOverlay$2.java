@@ -24,7 +24,7 @@ public final class MobileVoiceOverlayManagerModule$mobileVoiceOverlay$2 extends 
     public final MobileVoiceOverlay invoke() {
         ReactApplicationContext reactApplicationContext;
         reactApplicationContext = this.this$0.getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         return new MobileVoiceOverlay(reactApplicationContext);
     }
 }

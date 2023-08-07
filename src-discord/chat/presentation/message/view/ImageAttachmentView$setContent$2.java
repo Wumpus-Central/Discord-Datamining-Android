@@ -25,14 +25,14 @@ public final class ImageAttachmentView$setContent$2 extends s implements Functio
     @Override 
     public   Unit invoke(PipelineDraweeControllerBuilder pipelineDraweeControllerBuilder) {
         invoke2(pipelineDraweeControllerBuilder);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(PipelineDraweeControllerBuilder setOptionalImageUrl) {
-        q.g(setOptionalImageUrl, "$this$setOptionalImageUrl");
+        q.h(setOptionalImageUrl, "$this$setOptionalImageUrl");
         SimpleDraweeView simpleDraweeView = this.this$0.getBinding().image;
-        q.f(simpleDraweeView, "binding.image");
+        q.g(simpleDraweeView, "binding.image");
         SetMediaImagePlaceholderStatesKt.setMediaImagePlaceholderStates(setOptionalImageUrl, simpleDraweeView);
     }
 }

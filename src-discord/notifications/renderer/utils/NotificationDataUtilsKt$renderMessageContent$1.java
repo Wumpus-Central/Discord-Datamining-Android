@@ -23,12 +23,12 @@ final class NotificationDataUtilsKt$renderMessageContent$1 extends s implements 
     @Override 
     public   Unit invoke(RenderContext renderContext) {
         invoke2(renderContext);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(RenderContext i18nFormat) {
-        q.g(i18nFormat, "$this$i18nFormat");
+        q.h(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("stickerName", this.$sticker.getName());
     }
 }

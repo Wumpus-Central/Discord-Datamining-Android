@@ -102,8 +102,8 @@ public final class MediaSource {
     }
 
     public final MediaSource copy(String str, String str2, String featureTag, MediaType type, boolean z10, Double d10) {
-        q.g(featureTag, "featureTag");
-        q.g(type, "type");
+        q.h(featureTag, "featureTag");
+        q.h(type, "type");
         return new MediaSource(str, str2, featureTag, type, z10, d10);
     }
 
@@ -115,7 +115,7 @@ public final class MediaSource {
             return false;
         }
         MediaSource mediaSource = (MediaSource) obj;
-        return q.b(this.sourceUrl, mediaSource.sourceUrl) && q.b(this.previewUrl, mediaSource.previewUrl) && q.b(this.featureTag, mediaSource.featureTag) && this.type == mediaSource.type && this.shouldAutoPlay == mediaSource.shouldAutoPlay && q.b(this.portal, mediaSource.portal);
+        return q.c(this.sourceUrl, mediaSource.sourceUrl) && q.c(this.previewUrl, mediaSource.previewUrl) && q.c(this.featureTag, mediaSource.featureTag) && this.type == mediaSource.type && this.shouldAutoPlay == mediaSource.shouldAutoPlay && q.c(this.portal, mediaSource.portal);
     }
 
     public final String getFeatureTag() {

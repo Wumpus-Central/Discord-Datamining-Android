@@ -3,9 +3,9 @@ package com.discord.client_info;
 import com.discord.codegen.NativeClientInfoManagerSpec;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
-import ff.x;
-import gf.v;
 import java.util.Map;
+import jf.x;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
@@ -27,7 +27,7 @@ public final class ClientInfoManagerModule extends NativeClientInfoManagerSpec {
         }
 
         public final NativeModule create(ReactApplicationContext reactContext) {
-            q.g(reactContext, "reactContext");
+            q.h(reactContext, "reactContext");
             return new ClientInfoManagerModule(reactContext);
         }
     }
@@ -35,7 +35,7 @@ public final class ClientInfoManagerModule extends NativeClientInfoManagerSpec {
     
     public ClientInfoManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @Override 
@@ -44,13 +44,13 @@ public final class ClientInfoManagerModule extends NativeClientInfoManagerSpec {
         ClientInfo clientInfo = ClientInfo.INSTANCE;
         ClientInfoCache clientInfoCache = ClientInfoCache.INSTANCE;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         l10 = v.l(x.a("Identifier", clientInfo.getPackageName()), x.a("Version", clientInfo.getVersionName()), x.a("Build", clientInfo.getVersionCode()), x.a("Manifest", clientInfo.getOtaManifestETag()), x.a("OTABuild", clientInfo.getOtaVersion()), x.a("DeviceVendorID", clientInfoCache.getDeviceVendorId(reactApplicationContext)), x.a("ReleaseChannel", clientInfo.getReleaseChannel()), x.a("SentryDsn", "https:
         return l10;
     }
 
     @Override 
     public String getName() {
-        return NAME;
+        return "RTNClientInfoManager";
     }
 }

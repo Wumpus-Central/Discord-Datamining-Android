@@ -17,12 +17,12 @@ public final class HorizontalSpacingItemDecoration extends RecyclerView.ItemDeco
 
     @Override 
     public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
-        q.g(outRect, "outRect");
-        q.g(view, "view");
-        q.g(parent, "parent");
-        q.g(state, "state");
+        q.h(outRect, "outRect");
+        q.h(view, "view");
+        q.h(parent, "parent");
+        q.h(state, "state");
         RecyclerView.Adapter adapter = parent.getAdapter();
-        q.d(adapter);
+        q.e(adapter);
         boolean z10 = true;
         if (parent.getChildAdapterPosition(view) != adapter.getItemCount() - 1) {
             z10 = false;

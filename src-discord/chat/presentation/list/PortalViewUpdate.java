@@ -81,7 +81,7 @@ public final class PortalViewUpdate extends ChannelChatListAdapterUpdate {
             return false;
         }
         PortalViewUpdate portalViewUpdate = (PortalViewUpdate) obj;
-        return q.b(this.portalChatListItem, portalViewUpdate.portalChatListItem) && getUpdateId() == portalViewUpdate.getUpdateId();
+        return q.c(this.portalChatListItem, portalViewUpdate.portalChatListItem) && getUpdateId() == portalViewUpdate.getUpdateId();
     }
 
     public final PortalViewChatListItem getPortalChatListItem() {

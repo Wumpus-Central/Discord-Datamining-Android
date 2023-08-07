@@ -54,13 +54,13 @@ public final class SegmentedControlView extends FrameLayout {
     
     public SegmentedControlView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public SegmentedControlView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  SegmentedControlView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -93,16 +93,16 @@ public final class SegmentedControlView extends FrameLayout {
         w0.q0(textView2, new a() { 
             @Override 
             public void onInitializeAccessibilityNodeInfo(View host, AccessibilityNodeInfoCompat info) {
-                q.g(host, "host");
-                q.g(info, "info");
+                q.h(host, "host");
+                q.h(info, "info");
                 super.onInitializeAccessibilityNodeInfo(host, info);
                 boolean z10 = true;
-                info.l0(true);
+                info.r0(true);
                 if (i10 != this.getSelectedIndex()) {
                     z10 = false;
                 }
-                info.y0(z10);
-                info.v0(this.getAccessibilityRoleDescriptions().get(i10));
+                info.E0(z10);
+                info.B0(this.getAccessibilityRoleDescriptions().get(i10));
             }
         });
         this.binding.segmentContainer.addView(textView2, new LinearLayout.LayoutParams(0, -1, 1.0f));
@@ -120,7 +120,7 @@ public final class SegmentedControlView extends FrameLayout {
         if (this.segmentWidth != i10) {
             this.segmentWidth = i10;
             CardView cardView = this.binding.selectedSegmentBg;
-            q.f(cardView, "binding.selectedSegmentBg");
+            q.g(cardView, "binding.selectedSegmentBg");
             ViewGroup.LayoutParams layoutParams = cardView.getLayoutParams();
             if (layoutParams != null) {
                 layoutParams.width = i10;
@@ -179,8 +179,8 @@ public final class SegmentedControlView extends FrameLayout {
 
     
     public static final void updateView$lambda$3$lambda$2$lambda$1(SegmentedControlView this$0, int i10, String label, View view) {
-        q.g(this$0, "this$0");
-        q.g(label, "$label");
+        q.h(this$0, "this$0");
+        q.h(label, "$label");
         Function2<? super Integer, ? super String, Unit> function2 = this$0.onSegmentSelected;
         if (function2 != null) {
             function2.invoke(Integer.valueOf(i10), label);
@@ -188,12 +188,12 @@ public final class SegmentedControlView extends FrameLayout {
     }
 
     private final <T> ReadWriteProperty<Object, T> updateViewOnChange(final T t10, final boolean z10) {
-        kotlin.properties.a aVar = kotlin.properties.a.f20735a;
+        kotlin.properties.a aVar = kotlin.properties.a.f21081a;
         return new c<T>(t10) { 
             @Override 
             protected void afterChange(KProperty<?> property, T t11, T t12) {
-                q.g(property, "property");
-                if (!q.b(t12, t11)) {
+                q.h(property, "property");
+                if (!q.c(t12, t11)) {
                     this.updateView(z10);
                 }
             }
@@ -258,7 +258,7 @@ public final class SegmentedControlView extends FrameLayout {
     }
 
     public final void setAccessibilityRoleDescriptions(List<String> list) {
-        q.g(list, "<set-?>");
+        q.h(list, "<set-?>");
         this.accessibilityRoleDescriptions$delegate.setValue(this, $$delegatedProperties[9], list);
     }
 
@@ -271,7 +271,7 @@ public final class SegmentedControlView extends FrameLayout {
     }
 
     public final void setLabels(List<String> list) {
-        q.g(list, "<set-?>");
+        q.h(list, "<set-?>");
         this.labels$delegate.setValue(this, $$delegatedProperties[8], list);
     }
 
@@ -308,9 +308,9 @@ public final class SegmentedControlView extends FrameLayout {
         super(context, attributeSet, i10);
         List h10;
         List h11;
-        q.g(context, "context");
+        q.h(context, "context");
         SegmentedControlBinding inflate = SegmentedControlBinding.inflate(LayoutInflater.from(context), this, true);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this, true)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this, true)");
         this.binding = inflate;
         float f10 = context.getResources().getDisplayMetrics().density * 2.0f;
         inflate.selectedSegmentBg.setElevation(f10);

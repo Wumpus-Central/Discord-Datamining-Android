@@ -18,8 +18,8 @@ import kotlin.jvm.internal.q;
 
 public final class SetMediaImagePlaceholderStatesKt {
     public static final PipelineDraweeControllerBuilder setMediaImagePlaceholderStates(PipelineDraweeControllerBuilder pipelineDraweeControllerBuilder, final SimpleDraweeView imageView) {
-        q.g(pipelineDraweeControllerBuilder, "<this>");
-        q.g(imageView, "imageView");
+        q.h(pipelineDraweeControllerBuilder, "<this>");
+        q.h(imageView, "imageView");
         PipelineDraweeControllerBuilder C = pipelineDraweeControllerBuilder.C(new CompoundControllerListener(new BackgroundManagingControllerListener(imageView, new ColorDrawable(ThemeManagerKt.getTheme().getBackgroundSecondary()), false, false, false, 28, null), new ControllerListener() { 
             private final ScalingUtils.ScaleType imageViewInitialScaleType;
 
@@ -31,7 +31,7 @@ public final class SetMediaImagePlaceholderStatesKt {
             @Override 
             public void onFailure(String str, Throwable th2) {
                 ReactAsset reactAsset;
-                SimpleDraweeView.this.getHierarchy().t(ScalingUtils.ScaleType.f7409e);
+                SimpleDraweeView.this.getHierarchy().t(ScalingUtils.ScaleType.f7622e);
                 SimpleDraweeView simpleDraweeView = SimpleDraweeView.this;
                 if (ThemeManagerKt.getTheme() instanceof DarkTheme) {
                     reactAsset = ReactAsset.PoopDark;
@@ -46,7 +46,7 @@ public final class SetMediaImagePlaceholderStatesKt {
                 SimpleDraweeView.this.getHierarchy().t(this.imageViewInitialScaleType);
             }
         }));
-        q.f(C, "imageView: SimpleDraweeV…      },\n        ),\n    )");
+        q.g(C, "imageView: SimpleDraweeV…      },\n        ),\n    )");
         return C;
     }
 }

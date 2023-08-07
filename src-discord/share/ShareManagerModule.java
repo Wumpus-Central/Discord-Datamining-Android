@@ -17,7 +17,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
     
     public ShareManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.shareBroadcastReceiver = new ShareBroadcastReceiver(reactContext);
     }
 
@@ -31,7 +31,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
         super.initialize();
         ShareBroadcastReceiver.Companion companion = ShareBroadcastReceiver.Companion;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         companion.register(reactApplicationContext, this.shareBroadcastReceiver);
     }
 
@@ -41,7 +41,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
         try {
             ShareBroadcastReceiver.Companion companion = ShareBroadcastReceiver.Companion;
             ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-            q.f(reactApplicationContext, "reactApplicationContext");
+            q.g(reactApplicationContext, "reactApplicationContext");
             companion.unregister(reactApplicationContext, this.shareBroadcastReceiver);
         } catch (Exception unused) {
         }
@@ -65,7 +65,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void setAuthenticationToken(String str, String superProperties) {
-        q.g(superProperties, "superProperties");
+        q.h(superProperties, "superProperties");
     }
 
     @ReactMethod

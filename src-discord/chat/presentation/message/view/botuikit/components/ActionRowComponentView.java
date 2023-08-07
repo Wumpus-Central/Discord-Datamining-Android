@@ -31,10 +31,10 @@ public final class ActionRowComponentView extends LinearLayout implements Compon
         }
 
         public final ComponentView<ActionRowComponent> inflateComponent(Context context, ViewGroup root) {
-            q.g(context, "context");
-            q.g(root, "root");
+            q.h(context, "context");
+            q.h(root, "root");
             ActionRowComponentView root2 = MessageComponentActionRowViewBinding.inflate(LayoutInflater.from(context), root, false).getRoot();
-            q.f(root2, "inflate(\n               …false,\n            ).root");
+            q.g(root2, "inflate(\n               …false,\n            ).root");
             return root2;
         }
     }
@@ -42,13 +42,13 @@ public final class ActionRowComponentView extends LinearLayout implements Compon
     
     public ActionRowComponentView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public ActionRowComponentView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  ActionRowComponentView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -80,7 +80,7 @@ public final class ActionRowComponentView extends LinearLayout implements Compon
     
     public ActionRowComponentView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     

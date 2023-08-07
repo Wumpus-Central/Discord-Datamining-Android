@@ -36,11 +36,11 @@ public final class AnimatedImageStateManager<T> {
 
     
     public AnimatedImageStateManager(Function0<Unit> handlePlay, Function0<Unit> handlePause, Function1<? super T, Unit> handleSetPlaceholder, Function1<? super T, Boolean> handleConfigIsValid, Function1<? super T, Unit> handleFetchAnimatedImage) {
-        q.g(handlePlay, "handlePlay");
-        q.g(handlePause, "handlePause");
-        q.g(handleSetPlaceholder, "handleSetPlaceholder");
-        q.g(handleConfigIsValid, "handleConfigIsValid");
-        q.g(handleFetchAnimatedImage, "handleFetchAnimatedImage");
+        q.h(handlePlay, "handlePlay");
+        q.h(handlePause, "handlePause");
+        q.h(handleSetPlaceholder, "handleSetPlaceholder");
+        q.h(handleConfigIsValid, "handleConfigIsValid");
+        q.h(handleFetchAnimatedImage, "handleFetchAnimatedImage");
         this.handlePlay = handlePlay;
         this.handlePause = handlePause;
         this.handleSetPlaceholder = handleSetPlaceholder;
@@ -105,7 +105,7 @@ public final class AnimatedImageStateManager<T> {
         if (!ThreadUtilsKt.isOnMainThread()) {
             Thread currentThread = Thread.currentThread();
             throw new IllegalStateException(("Expected to be on android main thread. Current: " + currentThread).toString());
-        } else if (!q.b(this.animatedImageConfig, t10) || !this.animatedImageLoaded) {
+        } else if (!q.c(this.animatedImageConfig, t10) || !this.animatedImageLoaded) {
             this.animatedImageConfig = t10;
             this.animatedImageLoaded = false;
             this.handleSetPlaceholder.invoke(t10);

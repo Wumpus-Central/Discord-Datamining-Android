@@ -30,7 +30,7 @@ public final class DeserializationErrorView extends LinearLayout {
     
     public DeserializationErrorView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  DeserializationErrorView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -39,21 +39,21 @@ public final class DeserializationErrorView extends LinearLayout {
 
     
     public static final void configure$lambda$0(DeserializationErrorView this$0, String json, View view) {
-        q.g(this$0, "this$0");
-        q.g(json, "$json");
+        q.h(this$0, "this$0");
+        q.h(json, "$json");
         Object i10 = a.i(this$0.getContext(), ClipboardManager.class);
-        q.d(i10);
+        q.e(i10);
         ((ClipboardManager) i10).setPrimaryClip(ClipData.newPlainText("Error JSON", json));
         Toast.makeText(this$0.getContext(), "Copied error json to clipboard", 0).show();
     }
 
     public final void configure(final String json, String causeMessage) {
-        q.g(json, "json");
-        q.g(causeMessage, "causeMessage");
+        q.h(json, "json");
+        q.h(causeMessage, "causeMessage");
         this.binding.json.setText(json);
         this.binding.exception.setText(causeMessage);
         Button button = this.binding.copyButton;
-        q.f(button, "binding.copyButton");
+        q.g(button, "binding.copyButton");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(button, false, new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {
@@ -65,42 +65,42 @@ public final class DeserializationErrorView extends LinearLayout {
     
     public DeserializationErrorView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         DeserializationErrorViewBinding inflate = DeserializationErrorViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         inflate.json.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
         TextView textView = inflate.json;
-        q.f(textView, "binding.json");
+        q.g(textView, "binding.json");
         DiscordFont discordFont = DiscordFont.PrimaryMedium;
         DiscordFontUtilsKt.setDiscordFont(textView, discordFont);
         inflate.exception.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
         TextView textView2 = inflate.exception;
-        q.f(textView2, "binding.exception");
+        q.g(textView2, "binding.exception");
         DiscordFontUtilsKt.setDiscordFont(textView2, discordFont);
         inflate.causeHeader.setTextColor(ThemeManagerKt.getTheme().getInteractiveActive());
         TextView textView3 = inflate.causeHeader;
-        q.f(textView3, "binding.causeHeader");
+        q.g(textView3, "binding.causeHeader");
         SetTextSizeSpKt.setTextSizeSp(textView3, 24.0f);
         TextView textView4 = inflate.causeHeader;
-        q.f(textView4, "binding.causeHeader");
+        q.g(textView4, "binding.causeHeader");
         DiscordFont discordFont2 = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(textView4, discordFont2);
         inflate.jsonHeader.setTextColor(ThemeManagerKt.getTheme().getInteractiveActive());
         TextView textView5 = inflate.jsonHeader;
-        q.f(textView5, "binding.jsonHeader");
+        q.g(textView5, "binding.jsonHeader");
         SetTextSizeSpKt.setTextSizeSp(textView5, 24.0f);
         TextView textView6 = inflate.jsonHeader;
-        q.f(textView6, "binding.jsonHeader");
+        q.g(textView6, "binding.jsonHeader");
         DiscordFontUtilsKt.setDiscordFont(textView6, discordFont2);
         TextView textView7 = inflate.header;
-        q.f(textView7, "binding.header");
+        q.g(textView7, "binding.header");
         DiscordFontUtilsKt.setDiscordFont(textView7, discordFont);
         TextView textView8 = inflate.header;
-        q.f(textView8, "binding.header");
+        q.g(textView8, "binding.header");
         SetTextSizeSpKt.setTextSizeSp(textView8, 24.0f);
         Button button = inflate.copyButton;
-        q.f(button, "binding.copyButton");
+        q.g(button, "binding.copyButton");
         DiscordFontUtilsKt.setDiscordFont(button, discordFont);
         setOrientation(1);
     }

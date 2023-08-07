@@ -21,9 +21,9 @@ import l3.c;
 
 public final class RenderableEmojiKt {
     public static final DraweeSpanStringBuilder renderEmoji(RenderableEmoji emoji, Context context, int i10, boolean z10, int i11, Function1<? super GenericDraweeHierarchyBuilder, Unit> additionalBuilderActions) {
-        q.g(emoji, "emoji");
-        q.g(context, "context");
-        q.g(additionalBuilderActions, "additionalBuilderActions");
+        q.h(emoji, "emoji");
+        q.h(context, "context");
+        q.h(additionalBuilderActions, "additionalBuilderActions");
         DraweeSpanStringBuilder draweeSpanStringBuilder = new DraweeSpanStringBuilder();
         renderEmojiInto(draweeSpanStringBuilder, emoji, context, i10, z10, i11, additionalBuilderActions);
         return draweeSpanStringBuilder;
@@ -41,10 +41,10 @@ public final class RenderableEmojiKt {
 
     public static final void renderEmojiInto(DraweeSpanStringBuilder builder, RenderableEmoji emoji, Context context, int i10, boolean z10, int i11, Function1<? super GenericDraweeHierarchyBuilder, Unit> additionalBuilderActions) {
         String exception;
-        q.g(builder, "builder");
-        q.g(emoji, "emoji");
-        q.g(context, "context");
-        q.g(additionalBuilderActions, "additionalBuilderActions");
+        q.h(builder, "builder");
+        q.h(emoji, "emoji");
+        q.h(context, "context");
+        q.h(additionalBuilderActions, "additionalBuilderActions");
         SpannableStringBuilder spannableStringBuilder = null;
         RenderableEmoji.Unicode unicode = emoji instanceof RenderableEmoji.Unicode ? (RenderableEmoji.Unicode) emoji : null;
         if (!(unicode == null || (exception = unicode.getException()) == null)) {
@@ -69,7 +69,7 @@ public final class RenderableEmojiKt {
         int length = draweeSpanStringBuilder.length();
         draweeSpanStringBuilder.append((char) 8203);
         a c10 = c.g().z(z10).D(ImageRequestBuilder.s(Uri.parse(str)).E(new ResizeOptions(i10, i10)).z(ImageRequest.RequestLevel.FULL_FETCH).a()).B(str2).build();
-        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f7409e);
+        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f7622e);
         function1.invoke(w10);
         draweeSpanStringBuilder.j(context, w10.a(), c10, length, i10, i10, false, i11);
     }

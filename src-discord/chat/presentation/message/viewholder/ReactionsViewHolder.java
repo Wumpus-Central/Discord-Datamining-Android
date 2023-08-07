@@ -21,21 +21,21 @@ public final class ReactionsViewHolder extends MessagePartViewHolder {
     
     public ReactionsViewHolder(ReactionsView reactionsView) {
         super(reactionsView, null);
-        q.g(reactionsView, "reactionsView");
+        q.h(reactionsView, "reactionsView");
         this.reactionsView = reactionsView;
     }
 
     
-    public final void m342bindJJXpD5M(String messageId, List<MessageReaction> reactions, boolean z10, boolean z11, String addReactionLabel, String addNewReactionAccessibilityLabel, String addNewBurstReactionAccessibilityLabel, ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, View.OnClickListener onAddBurstReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, DiscordTheme discordTheme) {
-        q.g(messageId, "messageId");
-        q.g(reactions, "reactions");
-        q.g(addReactionLabel, "addReactionLabel");
-        q.g(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
-        q.g(addNewBurstReactionAccessibilityLabel, "addNewBurstReactionAccessibilityLabel");
-        q.g(onAddReactionClick, "onAddReactionClick");
-        q.g(onAddBurstReactionClick, "onAddBurstReactionClick");
-        q.g(onReactionClick, "onReactionClick");
-        q.g(onReactionLongPress, "onReactionLongPress");
+    public final void m343bindJJXpD5M(String messageId, List<MessageReaction> reactions, boolean z10, boolean z11, String addReactionLabel, String addNewReactionAccessibilityLabel, String addNewBurstReactionAccessibilityLabel, ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, View.OnClickListener onAddBurstReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, DiscordTheme discordTheme) {
+        q.h(messageId, "messageId");
+        q.h(reactions, "reactions");
+        q.h(addReactionLabel, "addReactionLabel");
+        q.h(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
+        q.h(addNewBurstReactionAccessibilityLabel, "addNewBurstReactionAccessibilityLabel");
+        q.h(onAddReactionClick, "onAddReactionClick");
+        q.h(onAddBurstReactionClick, "onAddBurstReactionClick");
+        q.h(onReactionClick, "onReactionClick");
+        q.h(onReactionLongPress, "onReactionLongPress");
         this.reactionsView.setReactions(messageId, reactions, z10, z11, addReactionLabel, addNewReactionAccessibilityLabel, addNewBurstReactionAccessibilityLabel, reactionsTheme, onAddReactionClick, onAddBurstReactionClick, new ReactionsViewHolder$bind$1(onReactionClick), new ReactionsViewHolder$bind$2(onReactionLongPress), discordTheme, ChatView.Companion.getAreChatAnimationsEnabled());
     }
 }

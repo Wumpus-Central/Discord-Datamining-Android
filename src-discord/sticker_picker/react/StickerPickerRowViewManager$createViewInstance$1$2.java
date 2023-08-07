@@ -30,13 +30,13 @@ public final class StickerPickerRowViewManager$createViewInstance$1$2 extends s 
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String stickerId) {
         ReactEvents reactEvents;
-        q.g(stickerId, "stickerId");
+        q.h(stickerId, "stickerId");
         reactEvents = this.this$0.reactEvents;
         reactEvents.emitEvent(this.$reactContext, this.$view, new OnLongPressStickerEvent(stickerId));
     }

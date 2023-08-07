@@ -9,7 +9,7 @@ import kotlin.jvm.internal.q;
 
 public final class ViewLocationUtilsKt {
     public static final Point getLocationInWindow(View view) {
-        q.g(view, "<this>");
+        q.h(view, "<this>");
         int[] iArr = new int[2];
         view.getLocationInWindow(iArr);
         return new Point(iArr[0], iArr[1]);

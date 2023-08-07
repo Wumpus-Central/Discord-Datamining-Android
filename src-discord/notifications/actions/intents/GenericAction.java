@@ -27,7 +27,7 @@ public final class GenericAction implements NotificationAction {
         
         @Override 
         public final GenericAction createFromParcel(Parcel parcel) {
-            q.g(parcel, "parcel");
+            q.h(parcel, "parcel");
             String readString = parcel.readString();
             String readString2 = parcel.readString();
             int readInt = parcel.readInt();
@@ -46,9 +46,9 @@ public final class GenericAction implements NotificationAction {
     }
 
     public GenericAction(String tag, String taskName, Map<String, String> data) {
-        q.g(tag, "tag");
-        q.g(taskName, "taskName");
-        q.g(data, "data");
+        q.h(tag, "tag");
+        q.h(taskName, "taskName");
+        q.h(data, "data");
         this.tag = tag;
         this.taskName = taskName;
         this.data = data;
@@ -81,9 +81,9 @@ public final class GenericAction implements NotificationAction {
     }
 
     public final GenericAction copy(String tag, String taskName, Map<String, String> data) {
-        q.g(tag, "tag");
-        q.g(taskName, "taskName");
-        q.g(data, "data");
+        q.h(tag, "tag");
+        q.h(taskName, "taskName");
+        q.h(data, "data");
         return new GenericAction(tag, taskName, data);
     }
 
@@ -100,7 +100,7 @@ public final class GenericAction implements NotificationAction {
             return false;
         }
         GenericAction genericAction = (GenericAction) obj;
-        return q.b(getTag(), genericAction.getTag()) && q.b(this.taskName, genericAction.taskName) && q.b(this.data, genericAction.data);
+        return q.c(getTag(), genericAction.getTag()) && q.c(this.taskName, genericAction.taskName) && q.c(this.data, genericAction.data);
     }
 
     public final Map<String, String> getData() {
@@ -127,8 +127,8 @@ public final class GenericAction implements NotificationAction {
 
     @Override 
     public void onNotificationAction(Context context, Intent intent) {
-        q.g(context, "context");
-        q.g(intent, "intent");
+        q.h(context, "context");
+        q.h(intent, "intent");
         onNotificationAction(context, true);
     }
 
@@ -151,7 +151,7 @@ public final class GenericAction implements NotificationAction {
 
     @Override 
     public void writeToParcel(Parcel out, int i10) {
-        q.g(out, "out");
+        q.h(out, "out");
         out.writeString(this.tag);
         out.writeString(this.taskName);
         Map<String, String> map = this.data;
@@ -163,13 +163,13 @@ public final class GenericAction implements NotificationAction {
     }
 
     public final void onNotificationAction(Context context, boolean z10) {
-        q.g(context, "context");
+        q.h(context, "context");
         HeadlessTasks.Companion companion = HeadlessTasks.Companion;
         String str = this.taskName;
         Bundle bundle = new Bundle();
         for (Map.Entry<String, String> entry : this.data.entrySet()) {
             bundle.putString(entry.getKey(), entry.getValue());
         }
-        HeadlessTasks.Companion.startHeadlessTask$default(companion, context, str, 0L, false, bundle, z10, 12, null);
+        companion.startHeadlessTask(context, str, (r18 & 4) != 0 ? HeadlessTasks.TASK_TIMEOUT_DEFAULT : 0L, (r18 & 8) != 0, (r18 & 16) != 0 ? new Bundle() : bundle, (r18 & 32) != 0 ? false : z10);
     }
 }

@@ -19,11 +19,11 @@ final class MediaPlayer$eventListener$1 extends s implements Function1<MediaPlay
     @Override 
     public   Unit invoke(MediaPlayer.Event event) {
         invoke2(event);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(MediaPlayer.Event it) {
-        q.g(it, "it");
+        q.h(it, "it");
     }
 }

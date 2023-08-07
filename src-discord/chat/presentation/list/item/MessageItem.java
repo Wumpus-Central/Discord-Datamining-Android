@@ -58,8 +58,8 @@ public final class MessageItem extends ChatListItem {
     }
 
     public final MessageItem copy(Message message, MessageFrame messageFrame, MessageContext messageContext, boolean z10, boolean z11, BackgroundHighlight backgroundHighlight, Integer num, boolean z12) {
-        q.g(message, "message");
-        q.g(messageContext, "messageContext");
+        q.h(message, "message");
+        q.h(messageContext, "messageContext");
         return new MessageItem(message, messageFrame, messageContext, z10, z11, backgroundHighlight, num, z12);
     }
 
@@ -71,7 +71,7 @@ public final class MessageItem extends ChatListItem {
             return false;
         }
         MessageItem messageItem = (MessageItem) obj;
-        return q.b(this.message, messageItem.message) && q.b(this.messageFrame, messageItem.messageFrame) && q.b(this.messageContext, messageItem.messageContext) && this.allowChildGestures == messageItem.allowChildGestures && this.isHighlight == messageItem.isHighlight && q.b(this.backgroundHighlight, messageItem.backgroundHighlight) && q.b(this.reactTag, messageItem.reactTag) && this.renderContentOnly == messageItem.renderContentOnly;
+        return q.c(this.message, messageItem.message) && q.c(this.messageFrame, messageItem.messageFrame) && q.c(this.messageContext, messageItem.messageContext) && this.allowChildGestures == messageItem.allowChildGestures && this.isHighlight == messageItem.isHighlight && q.c(this.backgroundHighlight, messageItem.backgroundHighlight) && q.c(this.reactTag, messageItem.reactTag) && this.renderContentOnly == messageItem.renderContentOnly;
     }
 
     public final boolean getAllowChildGestures() {
@@ -156,9 +156,9 @@ public final class MessageItem extends ChatListItem {
 
     
     public MessageItem(Message message, MessageFrame messageFrame, MessageContext messageContext, boolean z10, boolean z11, BackgroundHighlight backgroundHighlight, Integer num, boolean z12) {
-        super(MessageId.m598toStringimpl(message.m16getId3Eiw7ao()), null);
-        q.g(message, "message");
-        q.g(messageContext, "messageContext");
+        super(MessageId.m599toStringimpl(message.m17getId3Eiw7ao()), null);
+        q.h(message, "message");
+        q.h(messageContext, "messageContext");
         this.message = message;
         this.messageFrame = messageFrame;
         this.messageContext = messageContext;

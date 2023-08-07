@@ -27,7 +27,7 @@ public final class AudioRouteEmitterModule extends NativeAudioRouteEmitterSpec {
         }
 
         public final NativeModule create(ReactApplicationContext reactContext) {
-            q.g(reactContext, "reactContext");
+            q.h(reactContext, "reactContext");
             return new AudioRouteEmitterModule(reactContext);
         }
     }
@@ -35,7 +35,7 @@ public final class AudioRouteEmitterModule extends NativeAudioRouteEmitterSpec {
     
     public AudioRouteEmitterModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @Override 
@@ -50,6 +50,6 @@ public final class AudioRouteEmitterModule extends NativeAudioRouteEmitterSpec {
 
     @Override 
     public String getName() {
-        return NAME;
+        return "RTNAudioRouteEmitter";
     }
 }

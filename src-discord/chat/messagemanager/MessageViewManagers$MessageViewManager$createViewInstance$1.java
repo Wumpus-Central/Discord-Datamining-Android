@@ -24,11 +24,11 @@ public final class MessageViewManagers$MessageViewManager$createViewInstance$1 e
     @Override 
     public   Unit invoke(View view, Integer num, Integer num2) {
         invoke(view, num.intValue(), num2.intValue());
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final void invoke(View view, int i10, int i11) {
-        q.g(view, "view");
+        q.h(view, "view");
         MessageViewManagers.INSTANCE.updateNodeSize(this.$reactContext, view.getId(), i10, i11);
     }
 }

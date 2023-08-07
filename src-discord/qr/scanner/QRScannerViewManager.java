@@ -7,8 +7,8 @@ import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.viewmanagers.DCDQRScannerManagerDelegate;
 import com.facebook.react.viewmanagers.DCDQRScannerManagerInterface;
-import ff.x;
 import java.util.Map;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;
@@ -47,7 +47,7 @@ public final class QRScannerViewManager extends ViewGroupManager<QRScanner> impl
     
     @Override 
     public QRScanner createViewInstance(ThemedReactContext reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         QRScanner qRScanner = new QRScanner(reactContext, null, 0, 6, null);
         qRScanner.setOnCodeFound(new QRScannerViewManager$createViewInstance$1$1(this, qRScanner));
         qRScanner.setOnCodeNotFound(new QRScannerViewManager$createViewInstance$1$2(this, qRScanner));

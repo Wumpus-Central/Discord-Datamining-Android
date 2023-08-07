@@ -2,9 +2,9 @@ package com.discord.chat.bridge.embed;
 
 import com.discord.media_player.MediaSource;
 import com.discord.media_player.MediaType;
-import ff.x;
 import java.util.ArrayList;
 import java.util.List;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.k;
@@ -55,7 +55,7 @@ public final class EmbedUtilsKt {
 
     public static final EmbedUrlProvider getMedia(Embed embed) {
         EmbedMedia embedMedia;
-        q.g(embed, "<this>");
+        q.h(embed, "<this>");
         switch (WhenMappings.$EnumSwitchMapping$0[embed.getType().ordinal()]) {
             case 1:
             case 2:
@@ -82,7 +82,7 @@ public final class EmbedUtilsKt {
     }
 
     public static final String getTag(Embed embed) {
-        q.g(embed, "<this>");
+        q.h(embed, "<this>");
         String simpleName = embed.getClass().getSimpleName();
         String name = embed.getType().name();
         return simpleName + ": " + name;
@@ -92,7 +92,7 @@ public final class EmbedUtilsKt {
         Integer num;
         Integer num2;
         Pair<Integer, Integer> a10;
-        q.g(embed, "<this>");
+        q.h(embed, "<this>");
         int i10 = WhenMappings.$EnumSwitchMapping$0[embed.getType().ordinal()];
         Integer num3 = null;
         if (i10 == 1) {
@@ -129,7 +129,7 @@ public final class EmbedUtilsKt {
     }
 
     public static final boolean isInlineMedia(Embed embed) {
-        q.g(embed, "<this>");
+        q.h(embed, "<this>");
         if (getMedia(embed) == null && embed.getVideo() == null) {
             return true;
         }
@@ -142,7 +142,7 @@ public final class EmbedUtilsKt {
 
     public static final List<MediaSource> toImageMediaSources(Embed embed) {
         int s10;
-        q.g(embed, "<this>");
+        q.h(embed, "<this>");
         List<EmbedMedia> images = embed.getImages();
         if (images == null) {
             return null;
@@ -159,7 +159,7 @@ public final class EmbedUtilsKt {
         String str;
         String str2;
         String embedUrl;
-        q.g(embed, "<this>");
+        q.h(embed, "<this>");
         int i10 = WhenMappings.$EnumSwitchMapping$0[embed.getType().ordinal()];
         String str3 = null;
         if (i10 == 1) {

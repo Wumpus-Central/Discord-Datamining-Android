@@ -17,7 +17,7 @@ public final class I18nModule extends ReactResourceModule<I18nMessage> {
     
     public I18nModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.reactContext = reactContext;
     }
 
@@ -28,13 +28,13 @@ public final class I18nModule extends ReactResourceModule<I18nMessage> {
 
     @ReactMethod
     public final void keysRequest(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         callback.invoke(keysArray());
     }
 
     @ReactMethod
     public final void valuesResult(ReadableArray values) {
-        q.g(values, "values");
+        q.h(values, "values");
         cache().set(this.reactContext, reactResources(values));
     }
 

@@ -27,15 +27,15 @@ public final class Log {
     }
 
     public final void i$foreground_service_release(String tag, String message, Exception exc) {
-        q.g(tag, "tag");
-        q.g(message, "message");
+        q.h(tag, "tag");
+        q.h(message, "message");
         CrashReporting.addBreadcrumb$default(CrashReporting.INSTANCE, message, null, tag, 2, null);
         com.discord.logging.Log.INSTANCE.i(tag, message, exc);
     }
 
     public final void w$foreground_service_release(String tag, String message, Exception exc) {
-        q.g(tag, "tag");
-        q.g(message, "message");
+        q.h(tag, "tag");
+        q.h(message, "message");
         CrashReporting.addBreadcrumb$default(CrashReporting.INSTANCE, message, null, tag, 2, null);
         com.discord.logging.Log.INSTANCE.w(tag, message, exc);
     }

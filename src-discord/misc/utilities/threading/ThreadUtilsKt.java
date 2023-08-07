@@ -2,8 +2,8 @@ package com.discord.misc.utilities.threading;
 
 import android.os.Handler;
 import android.os.Looper;
-import ff.n;
-import ff.p;
+import jf.n;
+import jf.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -22,7 +22,7 @@ public final class ThreadUtilsKt {
     }
 
     public static final <T> T assertOnUiThread(Function0<? extends T> block) {
-        q.g(block, "block");
+        q.h(block, "block");
         if (isOnMainThread()) {
             return (T) block.invoke();
         }
@@ -35,11 +35,11 @@ public final class ThreadUtilsKt {
     }
 
     public static final boolean isOnMainThread() {
-        return q.b(Looper.myLooper(), Looper.getMainLooper());
+        return q.c(Looper.myLooper(), Looper.getMainLooper());
     }
 
     public static final void postOrRunOnMainThread(final Function0<Unit> block) {
-        q.g(block, "block");
+        q.h(block, "block");
         if (isOnMainThread()) {
             block.invoke();
         } else {

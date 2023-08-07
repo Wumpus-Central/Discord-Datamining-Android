@@ -12,11 +12,11 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
-import ff.x;
-import gf.u;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CancellationException;
+import jf.x;
+import kf.u;
 import kotlin.Metadata;
 import kotlin.collections.j;
 import kotlin.jvm.internal.f0;
@@ -36,65 +36,65 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
     
     public MediaManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.mediaResolver = new MediaResolver(reactContext, new MediaManagerModule$mediaResolver$1(this));
     }
 
     @ReactMethod
     public final void addListener(String type) {
-        q.g(type, "type");
+        q.h(type, "type");
     }
 
     @ReactMethod
     public final void cancelResolveToMediaFilePath(String uri, ReadableMap readableMap, Promise promise) {
-        q.g(uri, "uri");
-        q.g(promise, "promise");
+        q.h(uri, "uri");
+        q.h(promise, "promise");
         MediaResolver mediaResolver = this.mediaResolver;
         Uri parse = Uri.parse(uri);
-        q.f(parse, "parse(uri)");
+        q.g(parse, "parse(uri)");
         mediaResolver.cancel(parse);
         promise.resolve(null);
     }
 
     @ReactMethod
     public final void convertBase64ToGIF(String uri, ReadableMap readableMap, Promise promise) {
-        q.g(uri, "uri");
-        q.g(promise, "promise");
+        q.h(uri, "uri");
+        q.h(promise, "promise");
         throw new IllegalStateException("Unused on Android".toString());
     }
 
     @ReactMethod
     public final void convertBase64ToJPEG(String uri, ReadableMap readableMap, Promise promise) {
-        q.g(uri, "uri");
-        q.g(promise, "promise");
+        q.h(uri, "uri");
+        q.h(promise, "promise");
         throw new IllegalStateException("Unused on Android".toString());
     }
 
     @ReactMethod
     public final void convertToCompatibleMOV(String uri, ReadableMap readableMap, Promise promise) {
-        q.g(uri, "uri");
-        q.g(promise, "promise");
+        q.h(uri, "uri");
+        q.h(promise, "promise");
         throw new IllegalStateException("Unused on Android".toString());
     }
 
     @ReactMethod
     public final void convertToJPEG(String uri, ReadableMap readableMap, Promise promise) {
-        q.g(uri, "uri");
-        q.g(promise, "promise");
+        q.h(uri, "uri");
+        q.h(promise, "promise");
         throw new IllegalStateException("Unused on Android".toString());
     }
 
     @ReactMethod
     public final void convertToVideoFilePath(String uri, ReadableMap readableMap, Promise promise) {
-        q.g(uri, "uri");
-        q.g(promise, "promise");
+        q.h(uri, "uri");
+        q.h(promise, "promise");
         throw new IllegalStateException("Unused on Android".toString());
     }
 
     @ReactMethod
     public final void downloadMediaAsset(String uri, int i10, Promise promise) {
-        q.g(uri, "uri");
-        q.g(promise, "promise");
+        q.h(uri, "uri");
+        q.h(promise, "promise");
         l.d(this.scope, y0.b(), null, new MediaManagerModule$downloadMediaAsset$1(this, uri, promise, null), 2, null);
     }
 
@@ -125,8 +125,8 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public final void resolveToMediaFilePath(String uri, ReadableMap readableMap, Promise promise) {
         String str;
-        q.g(uri, "uri");
-        q.g(promise, "promise");
+        q.h(uri, "uri");
+        q.h(promise, "promise");
         Uri parse = Uri.parse(uri);
         int i10 = (int) (NativeMapExtensionsKt.getDouble(readableMap, "compressionQuality", 1.0d) * 100);
         VideoCompressionQuality.Companion companion = VideoCompressionQuality.Companion;

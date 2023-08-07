@@ -16,13 +16,13 @@ public final class FontModule extends ReactContextBaseJavaModule {
     
     public FontModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.reactContext = reactContext;
     }
 
     @ReactMethod
     public final void getFontScale(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         FontManager fontManager = FontManager.INSTANCE;
         callback.invoke(Float.valueOf(fontManager.getFontScale(this.reactContext)), Boolean.valueOf(fontManager.getIsClassicChatFontScaleEnabled(this.reactContext)));
     }

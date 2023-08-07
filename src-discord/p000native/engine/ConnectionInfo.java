@@ -13,8 +13,8 @@ public final class ConnectionInfo {
     private final String protocol;
 
     public ConnectionInfo(boolean z10, String protocol, String localAddress, int i10) {
-        q.g(protocol, "protocol");
-        q.g(localAddress, "localAddress");
+        q.h(protocol, "protocol");
+        q.h(localAddress, "localAddress");
         this.isConnected = z10;
         this.protocol = protocol;
         this.localAddress = localAddress;
@@ -54,8 +54,8 @@ public final class ConnectionInfo {
     }
 
     public final ConnectionInfo copy(boolean z10, String protocol, String localAddress, int i10) {
-        q.g(protocol, "protocol");
-        q.g(localAddress, "localAddress");
+        q.h(protocol, "protocol");
+        q.h(localAddress, "localAddress");
         return new ConnectionInfo(z10, protocol, localAddress, i10);
     }
 
@@ -67,7 +67,7 @@ public final class ConnectionInfo {
             return false;
         }
         ConnectionInfo connectionInfo = (ConnectionInfo) obj;
-        return this.isConnected == connectionInfo.isConnected && q.b(this.protocol, connectionInfo.protocol) && q.b(this.localAddress, connectionInfo.localAddress) && this.localPort == connectionInfo.localPort;
+        return this.isConnected == connectionInfo.isConnected && q.c(this.protocol, connectionInfo.protocol) && q.c(this.localAddress, connectionInfo.localAddress) && this.localPort == connectionInfo.localPort;
     }
 
     public final String getLocalAddress() {

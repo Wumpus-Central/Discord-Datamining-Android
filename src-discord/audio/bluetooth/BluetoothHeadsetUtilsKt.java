@@ -17,7 +17,7 @@ public final class BluetoothHeadsetUtilsKt {
     
     @SuppressLint({"MissingPermission"})
     public static final BluetoothDevice getActiveHeadset(BluetoothHeadset bluetoothHeadset) {
-        q.g(bluetoothHeadset, "<this>");
+        q.h(bluetoothHeadset, "<this>");
         List<BluetoothDevice> connectedDevices = bluetoothHeadset.getConnectedDevices();
         BluetoothDevice bluetoothDevice = null;
         if (connectedDevices != null) {
@@ -53,8 +53,8 @@ public final class BluetoothHeadsetUtilsKt {
     }
 
     public static final void registerActiveHeadsetReceiver(Context context, BroadcastReceiver receiver) {
-        q.g(context, "<this>");
-        q.g(receiver, "receiver");
+        q.h(context, "<this>");
+        q.h(receiver, "receiver");
         try {
             String str = null;
             Object obj = BluetoothHeadset.class.getField("ACTION_ACTIVE_DEVICE_CHANGED").get(null);

@@ -24,7 +24,7 @@ public final class SeparatorView extends ConstraintLayout {
     
     public SeparatorView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  SeparatorView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -38,26 +38,26 @@ public final class SeparatorView extends ConstraintLayout {
     }
 
     public final void setText(CharSequence text) {
-        q.g(text, "text");
+        q.h(text, "text");
         this.binding.middleText.setText(text);
     }
 
     
     public SeparatorView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         SeparatorViewBinding inflate = SeparatorViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(\n        LayoutI…ext),\n        this,\n    )");
+        q.g(inflate, "inflate(\n        LayoutI…ext),\n        this,\n    )");
         this.binding = inflate;
         int dimensionPixelSize = context.getResources().getDimensionPixelSize(R.dimen.message_horizontal_spacing);
         View root = inflate.getRoot();
-        q.f(root, "binding.root");
+        q.g(root, "binding.root");
         root.setPaddingRelative(dimensionPixelSize, root.getPaddingTop(), dimensionPixelSize, root.getPaddingBottom());
         TextView textView = inflate.middleText;
-        q.f(textView, "binding.middleText");
+        q.g(textView, "binding.middleText");
         DiscordFontUtilsKt.setDiscordFont(textView, DiscordFont.PrimarySemibold);
         TextView textView2 = inflate.middleText;
-        q.f(textView2, "binding.middleText");
+        q.g(textView2, "binding.middleText");
         SetTextSizeSpKt.setTextSizeSp(textView2, 12.0f);
     }
 }

@@ -32,8 +32,8 @@ public final class MediaContainingViewResizer {
     public final void resizeLayoutParams(View view, int i10, int i11, int i12, int i13, ResizeMode resizeMode) {
         boolean z10;
         float f10;
-        q.g(view, "<this>");
-        q.g(resizeMode, "resizeMode");
+        q.h(view, "<this>");
+        q.h(resizeMode, "resizeMode");
         boolean z11 = false;
         if (resizeMode == ResizeMode.Fill || resizeMode == ResizeMode.Cover || i10 > i12 || i11 > i13) {
             z10 = true;

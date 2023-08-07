@@ -7,7 +7,7 @@ import kotlin.jvm.internal.q;
 
 public final class MessageFlagKt {
     public static final boolean hasMessageFlag(Long l10, MessageFlag flag) {
-        q.g(flag, "flag");
+        q.h(flag, "flag");
         if (l10 != null && (l10.longValue() & flag.getValue()) == flag.getValue()) {
             return true;
         }

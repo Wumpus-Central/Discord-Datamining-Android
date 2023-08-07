@@ -2,11 +2,11 @@ package com.discord.mobile_voice_overlay.views;
 
 import android.content.Context;
 import android.content.Intent;
-import androidx.core.os.d;
+import androidx.core.os.e;
 import com.discord.mobile_voice_overlay.MobileVoiceOverlay;
 import com.discord.mobile_voice_overlay.MobileVoiceOverlayData;
 import com.discord.react_activities.ReactActivity;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
@@ -37,7 +37,7 @@ final class OverlayMenuBubbleDialog$setData$4 extends s implements Function0<Uni
         context.startActivity(intent);
         MobileVoiceOverlay.Companion companion = MobileVoiceOverlay.Companion;
         Context context2 = this.this$0.getContext();
-        q.f(context2, "context");
-        companion.startHeadlessTask(context2, "SelectChannel", d.a(x.a("channelId", String.valueOf(this.$data.m475getChannelIdo4g7jtM()))));
+        q.g(context2, "context");
+        companion.startHeadlessTask(context2, "SelectChannel", e.a(x.a("channelId", String.valueOf(this.$data.m476getChannelIdo4g7jtM()))));
     }
 }

@@ -27,12 +27,12 @@ final class BrowserManager$tryOpenUrlWithCustomTabs$1 extends s implements Funct
     @Override 
     public   Unit invoke(Exception exc) {
         invoke2(exc);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(Exception it) {
-        q.g(it, "it");
+        q.h(it, "it");
         BrowserManager.INSTANCE.tryOpenUrlExternally(this.$context, this.$url, this.$onFailure);
     }
 }

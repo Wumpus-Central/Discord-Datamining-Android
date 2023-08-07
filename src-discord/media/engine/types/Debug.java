@@ -23,31 +23,31 @@ public final class Debug {
         if ((i10 & 2) != 0) {
             method = "";
         }
-        q.g(tag, "tag");
-        q.g(method, "method");
-        q.g(lazyMsg, "lazyMsg");
+        q.h(tag, "tag");
+        q.h(method, "method");
+        q.h(lazyMsg, "lazyMsg");
     }
 
     public final void log(String tag, String method) {
-        q.g(tag, "tag");
-        q.g(method, "method");
+        q.h(tag, "tag");
+        q.h(method, "method");
     }
 
     public final void log(String tag, String method, long j10) {
-        q.g(tag, "tag");
-        q.g(method, "method");
+        q.h(tag, "tag");
+        q.h(method, "method");
     }
 
     public final void log(String tag, String method, long j10, Function0<? extends Object> lazyMsg) {
-        q.g(tag, "tag");
-        q.g(method, "method");
-        q.g(lazyMsg, "lazyMsg");
+        q.h(tag, "tag");
+        q.h(method, "method");
+        q.h(lazyMsg, "lazyMsg");
     }
 
     public final void log(String tag, String method, Function0<? extends Object> lazyMsg) {
-        q.g(tag, "tag");
-        q.g(method, "method");
-        q.g(lazyMsg, "lazyMsg");
+        q.h(tag, "tag");
+        q.h(method, "method");
+        q.h(lazyMsg, "lazyMsg");
     }
 
     public final void logDebugLoggingConfig() {
@@ -58,24 +58,24 @@ public final class Debug {
         if ((i10 & 2) != 0) {
             method = "";
         }
-        q.g(tag, "tag");
-        q.g(method, "method");
-        q.g(lazyMsg, "lazyMsg");
+        q.h(tag, "tag");
+        q.h(method, "method");
+        q.h(lazyMsg, "lazyMsg");
     }
 
     public static  void log$default(Debug debug, String tag, String method, int i10, Object obj) {
         if ((i10 & 2) != 0) {
             method = "";
         }
-        q.g(tag, "tag");
-        q.g(method, "method");
+        q.h(tag, "tag");
+        q.h(method, "method");
     }
 
     public static  void log$default(Debug debug, String tag, String method, long j10, int i10, Object obj) {
         if ((i10 & 2) != 0) {
             method = "";
         }
-        q.g(tag, "tag");
-        q.g(method, "method");
+        q.h(tag, "tag");
+        q.h(method, "method");
     }
 }

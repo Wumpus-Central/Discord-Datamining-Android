@@ -14,10 +14,10 @@ import kotlinx.coroutines.j;
 
 public final class ReactAssetUtilsKt {
     public static final String getReactImageUrl(Context context, String assetUrl) {
-        q.g(context, "<this>");
-        q.g(assetUrl, "assetUrl");
+        q.h(context, "<this>");
+        q.h(assetUrl, "assetUrl");
         String uri = new ImageSource(context, assetUrl).getUri().toString();
-        q.f(uri, "ImageSource(this, assetUrl).uri.toString()");
+        q.g(uri, "ImageSource(this, assetUrl).uri.toString()");
         return uri;
     }
 
@@ -30,26 +30,26 @@ public final class ReactAssetUtilsKt {
     }
 
     public static final void setReactAsset(SimpleDraweeView simpleDraweeView, ReactAsset asset) {
-        q.g(simpleDraweeView, "<this>");
-        q.g(asset, "asset");
+        q.h(simpleDraweeView, "<this>");
+        q.h(asset, "asset");
         Context context = simpleDraweeView.getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         setReactImageUrl(simpleDraweeView, asset.getUri(context));
     }
 
     public static final void setReactIcon(MaterialButton materialButton, String assetUrl, int i10) {
-        q.g(materialButton, "<this>");
-        q.g(assetUrl, "assetUrl");
+        q.h(materialButton, "<this>");
+        q.h(assetUrl, "assetUrl");
         materialButton.setIconSize(i10);
         materialButton.setIcon(new PaintDrawable(0));
         j.d(CoroutineViewUtilsKt.getAttachedScope(materialButton), null, null, new ReactAssetUtilsKt$setReactIcon$1(materialButton, assetUrl, null), 3, null);
     }
 
     public static final void setReactImageUrl(SimpleDraweeView simpleDraweeView, String assetUrl) {
-        q.g(simpleDraweeView, "<this>");
-        q.g(assetUrl, "assetUrl");
+        q.h(simpleDraweeView, "<this>");
+        q.h(assetUrl, "assetUrl");
         Context context = simpleDraweeView.getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         simpleDraweeView.setImageURI(getReactImageUrl(context, assetUrl));
     }
 }

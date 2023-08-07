@@ -18,17 +18,17 @@ public final class FrescoDiskCache {
 
     private final DiskCacheConfig newDiskCacheConfig(Context context, String str) {
         DiskCacheConfig n10 = DiskCacheConfig.m(context).p(context.getCacheDir()).o(str).q(MAX_DISK_CACHE_SIZE).n();
-        q.f(n10, "newBuilder(this)\n       …IZE)\n            .build()");
+        q.g(n10, "newBuilder(this)\n       …IZE)\n            .build()");
         return n10;
     }
 
     public final DiskCacheConfig newRegularDiskCache(Context context) {
-        q.g(context, "<this>");
+        q.h(context, "<this>");
         return newDiskCacheConfig(context, CACHE_DIR);
     }
 
     public final DiskCacheConfig newSmallDiskCache(Context context) {
-        q.g(context, "<this>");
+        q.h(context, "<this>");
         return newDiskCacheConfig(context, CACHE_DIR_SMALL);
     }
 }

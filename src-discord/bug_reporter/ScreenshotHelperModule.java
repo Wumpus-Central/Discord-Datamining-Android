@@ -7,7 +7,7 @@ import com.discord.reactevents.ReactEvents;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;
@@ -35,14 +35,14 @@ public final class ScreenshotHelperModule extends ReactContextBaseJavaModule {
     
     public ScreenshotHelperModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.reactContext = reactContext;
     }
 
     @ReactMethod
     public final void addListener(String type) {
-        q.g(type, "type");
-        if (q.b(type, SCREENSHOT_TAKEN)) {
+        q.h(type, "type");
+        if (q.c(type, SCREENSHOT_TAKEN)) {
             ScreenshotDetector.Companion.get().setScreenshotListener(new ScreenshotHelperModule$addListener$1(this));
         }
     }
@@ -62,25 +62,26 @@ public final class ScreenshotHelperModule extends ReactContextBaseJavaModule {
         super.initialize();
         ScreenshotDetector.Companion companion = ScreenshotDetector.Companion;
         ContentResolver contentResolver = this.reactContext.getContentResolver();
-        q.f(contentResolver, "reactContext.contentResolver");
+        q.g(contentResolver, "reactContext.contentResolver");
         companion.init(contentResolver);
     }
 
     @ReactMethod
     public final void registerEventListener(String type) {
-        q.g(type, "type");
+        q.h(type, "type");
         addListener(type);
     }
 
     @ReactMethod
     public final void removeEventListener(String type) {
-        q.g(type, "type");
-        if (q.b(type, SCREENSHOT_TAKEN)) {
+        q.h(type, "type");
+        if (q.c(type, SCREENSHOT_TAKEN)) {
             ScreenshotDetector.Companion.get().setScreenshotListener(null);
         }
     }
 
     @ReactMethod
     public final void removeListeners(int i10) {
+        removeEventListener(SCREENSHOT_TAKEN);
     }
 }

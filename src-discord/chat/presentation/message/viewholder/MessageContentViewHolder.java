@@ -27,36 +27,36 @@ public final class MessageContentViewHolder extends MessagePartViewHolder {
     
     public MessageContentViewHolder(MessageContentView messageContentView) {
         super(messageContentView, null);
-        q.g(messageContentView, "messageContentView");
+        q.h(messageContentView, "messageContentView");
         this.messageContentView = messageContentView;
     }
 
     public final void bind(MessageContentAccessory messageContentItem, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, Function1<? super LinkContentNode, Unit> onLinkLongClicked, Function3<? super String, ? super String, ? super String, Unit> onTapChannel, Function4<? super String, ? super String, ? super String, ? super String, Unit> onLongPressChannel, Function2<? super String, ? super String, Unit> onTapMention, Function1<? super CommandMentionContentNode, Unit> onTapCommand, Function1<? super CommandMentionContentNode, Unit> onLongPressCommand, Function0<Unit> onTapSpoiler, Function1<? super String, Unit> onTapTimestamp, Function1<? super EmojiContentNode, Unit> onTapEmoji, Function1<? super MessageId, Unit> onTapSeeMore) {
-        q.g(messageContentItem, "messageContentItem");
-        q.g(onLinkClicked, "onLinkClicked");
-        q.g(onLinkLongClicked, "onLinkLongClicked");
-        q.g(onTapChannel, "onTapChannel");
-        q.g(onLongPressChannel, "onLongPressChannel");
-        q.g(onTapMention, "onTapMention");
-        q.g(onTapCommand, "onTapCommand");
-        q.g(onLongPressCommand, "onLongPressCommand");
-        q.g(onTapSpoiler, "onTapSpoiler");
-        q.g(onTapTimestamp, "onTapTimestamp");
-        q.g(onTapEmoji, "onTapEmoji");
-        q.g(onTapSeeMore, "onTapSeeMore");
+        q.h(messageContentItem, "messageContentItem");
+        q.h(onLinkClicked, "onLinkClicked");
+        q.h(onLinkLongClicked, "onLinkLongClicked");
+        q.h(onTapChannel, "onTapChannel");
+        q.h(onLongPressChannel, "onLongPressChannel");
+        q.h(onTapMention, "onTapMention");
+        q.h(onTapCommand, "onTapCommand");
+        q.h(onLongPressCommand, "onLongPressCommand");
+        q.h(onTapSpoiler, "onTapSpoiler");
+        q.h(onTapTimestamp, "onTapTimestamp");
+        q.h(onTapEmoji, "onTapEmoji");
+        q.h(onTapSeeMore, "onTapSeeMore");
         this.messageContentView.setTextColor(messageContentItem.getMessageTextColor());
         DiscordFontUtilsKt.setDiscordFont(this.messageContentView, messageContentItem.getMessageFont());
         SetTextSizeSpKt.setTextSizeSp(this.messageContentView, messageContentItem.getTextSizeSp());
         MessageContentView messageContentView = this.messageContentView;
         StructurableText messageContent = messageContentItem.getMessageContent();
-        String str = messageContentItem.mo217getMessageId3Eiw7ao();
+        String str = messageContentItem.mo218getMessageId3Eiw7ao();
         boolean shouldAnimateEmoji = messageContentItem.getShouldAnimateEmoji();
         boolean shouldShowRoleDot = messageContentItem.getShouldShowRoleDot();
         boolean shouldShowRoleOnName = messageContentItem.getShouldShowRoleOnName();
         int bottomSpacingPx = messageContentItem.getBottomSpacingPx();
         String editedLabel = messageContentItem.getEditedLabel();
         Truncation truncation = messageContentItem.getTruncation();
-        messageContentView.m317setMessageContent2i9KL1s(messageContent, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, onLinkClicked, onLinkLongClicked, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, onTapSeeMore, new MessageContentViewHolder$bind$1(messageContentItem), bottomSpacingPx, messageContentItem.getConstrainedWidth(), editedLabel, truncation, messageContentItem.getTheme());
+        messageContentView.m318setMessageContent2i9KL1s(messageContent, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, onLinkClicked, onLinkLongClicked, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, onTapSeeMore, new MessageContentViewHolder$bind$1(messageContentItem), bottomSpacingPx, messageContentItem.getConstrainedWidth(), editedLabel, truncation, messageContentItem.getTheme());
     }
 
     public final MessageContentView getMessageContentView() {

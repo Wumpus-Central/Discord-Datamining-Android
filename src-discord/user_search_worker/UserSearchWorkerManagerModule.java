@@ -5,7 +5,7 @@ import com.discord.user_search_worker.react_events.ReturnResultsEvent;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
@@ -19,13 +19,13 @@ public final class UserSearchWorkerManagerModule extends ReactContextBaseJavaMod
     
     public UserSearchWorkerManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.worker = new UserSearchWorker(new UserSearchWorkerManagerModule$worker$1(this, reactContext));
     }
 
     @ReactMethod
     public final void addListener(String type) {
-        q.g(type, "type");
+        q.h(type, "type");
     }
 
     @Override 
@@ -35,7 +35,7 @@ public final class UserSearchWorkerManagerModule extends ReactContextBaseJavaMod
 
     @ReactMethod
     public final void onmessage(String dataJSON) {
-        q.g(dataJSON, "dataJSON");
+        q.h(dataJSON, "dataJSON");
         this.worker.onMessage(dataJSON);
     }
 

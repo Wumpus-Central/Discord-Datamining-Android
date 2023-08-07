@@ -1,10 +1,10 @@
 package com.discord.mobile_voice_overlay.views;
 
 import android.content.Context;
-import androidx.core.os.d;
+import androidx.core.os.e;
 import com.discord.mobile_voice_overlay.MobileVoiceOverlay;
 import com.discord.mobile_voice_overlay.MobileVoiceOverlayData;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
@@ -30,7 +30,7 @@ final class OverlayMenuBubbleDialog$setData$7 extends s implements Function0<Uni
     public final void invoke2() {
         MobileVoiceOverlay.Companion companion = MobileVoiceOverlay.Companion;
         Context context = this.this$0.getContext();
-        q.f(context, "context");
-        companion.startHeadlessTask(context, "Disconnect", d.a(x.a("channelId", String.valueOf(this.$data.m475getChannelIdo4g7jtM()))));
+        q.g(context, "context");
+        companion.startHeadlessTask(context, "Disconnect", e.a(x.a("channelId", String.valueOf(this.$data.m476getChannelIdo4g7jtM()))));
     }
 }

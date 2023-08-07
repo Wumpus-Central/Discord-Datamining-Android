@@ -53,7 +53,7 @@ public final class StickerPickerRowView extends LinearLayout {
     
     public StickerPickerRowView(Context context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
         setOrientation(0);
     }
 
@@ -67,7 +67,7 @@ public final class StickerPickerRowView extends LinearLayout {
             }
             final StickerPickerRow.Sticker sticker = (StickerPickerRow.Sticker) obj;
             View childAt = getChildAt(i10);
-            q.e(childAt, "null cannot be cast to non-null type com.discord.sticker.StickerView");
+            q.f(childAt, "null cannot be cast to non-null type com.discord.sticker.StickerView");
             StickerView stickerView = (StickerView) childAt;
             if (sticker == null) {
                 stickerView.setVisibility(4);
@@ -112,13 +112,13 @@ public final class StickerPickerRowView extends LinearLayout {
 
     
     public static final void configureRowStickerViews$lambda$3$lambda$1(StickerPickerRowView this$0, StickerPickerRow.Sticker sticker, View view) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         this$0.onPressSticker.invoke(sticker.getId());
     }
 
     
     public static final boolean configureRowStickerViews$lambda$3$lambda$2(StickerPickerRowView this$0, StickerPickerRow.Sticker sticker, View view) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         this$0.onLongPressSticker.invoke(sticker.getId());
         return true;
     }
@@ -143,7 +143,7 @@ public final class StickerPickerRowView extends LinearLayout {
                 i10 = dpToPx2;
             }
             Context context = getContext();
-            q.f(context, "context");
+            q.g(context, "context");
             View stickerView = new StickerView(context, null, 0, 6, null);
             RippleUtilsKt.addRipple$default(stickerView, true, 0, 2, null);
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(dpToPx, dpToPx);
@@ -156,7 +156,7 @@ public final class StickerPickerRowView extends LinearLayout {
 
     public final void clean() {
         for (View view : k2.a(this)) {
-            q.e(view, "null cannot be cast to non-null type com.discord.sticker.StickerView");
+            q.f(view, "null cannot be cast to non-null type com.discord.sticker.StickerView");
             ((StickerView) view).recycle();
         }
     }
@@ -170,17 +170,17 @@ public final class StickerPickerRowView extends LinearLayout {
     }
 
     public final void setOnLongPressSticker(Function1<? super String, Unit> function1) {
-        q.g(function1, "<set-?>");
+        q.h(function1, "<set-?>");
         this.onLongPressSticker = function1;
     }
 
     public final void setOnPressSticker(Function1<? super String, Unit> function1) {
-        q.g(function1, "<set-?>");
+        q.h(function1, "<set-?>");
         this.onPressSticker = function1;
     }
 
     public final void setRowData(StickerPickerRow rowData) {
-        q.g(rowData, "rowData");
+        q.h(rowData, "rowData");
         if (rowData.getItems().size() != getChildCount()) {
             createRowStickerViews(rowData);
         }

@@ -10,10 +10,10 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.modules.websocket.WebSocketModule;
-import ff.x;
-import gf.v;
 import j$.util.concurrent.ConcurrentHashMap;
 import java.util.Map;
+import jf.x;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 import okhttp3.WebSocket;
@@ -30,7 +30,7 @@ public final class FastConnectManagerModule extends ReactContextBaseJavaModule {
     
     public FastConnectManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     private final WebSocketModule getWebSocketModule() {
@@ -67,7 +67,7 @@ public final class FastConnectManagerModule extends ReactContextBaseJavaModule {
         } else {
             str = this.identifyPayload;
         }
-        if (!q.b(this.identifyPayload, str)) {
+        if (!q.c(this.identifyPayload, str)) {
             Log log = Log.INSTANCE;
             int length = guildVersionArr.length;
             Log.i$default(log, "FastConnectManagerModule", length + " guild_versions added to identify payload", (Throwable) null, 4, (Object) null);
@@ -81,7 +81,7 @@ public final class FastConnectManagerModule extends ReactContextBaseJavaModule {
     private final void setCacheValue(String str, String str2) {
         CacheModule.Companion companion = CacheModule.Companion;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         CacheModule cacheModule = companion.get(reactApplicationContext);
         if (str2 == null) {
             cacheModule.removeItem(str);
@@ -95,11 +95,11 @@ public final class FastConnectManagerModule extends ReactContextBaseJavaModule {
         Map<String, String> l10;
         CacheModule.Companion companion = CacheModule.Companion;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         ReactApplicationContext reactApplicationContext2 = getReactApplicationContext();
-        q.f(reactApplicationContext2, "reactApplicationContext");
+        q.g(reactApplicationContext2, "reactApplicationContext");
         ReactApplicationContext reactApplicationContext3 = getReactApplicationContext();
-        q.f(reactApplicationContext3, "reactApplicationContext");
+        q.g(reactApplicationContext3, "reactApplicationContext");
         l10 = v.l(x.a("clientState", companion.get(reactApplicationContext).getItem("_clientStateKey")), x.a("userId", companion.get(reactApplicationContext2).getItem("_userIdKey")), x.a("token", CacheModule.getToken$default(companion.get(reactApplicationContext3), false, 1, null)));
         return l10;
     }
@@ -134,7 +134,7 @@ public final class FastConnectManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void prepareIdentify(String str, String payload, int i10) {
-        q.g(payload, "payload");
+        q.h(payload, "payload");
         this.socketId = Integer.valueOf(i10);
         this.identifyUserId = str;
         this.identifyPayload = payload;

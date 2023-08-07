@@ -22,13 +22,13 @@ public final class ClientUserAgent {
         private final String userAgent;
 
         public DiscordUserAgentInterceptor(String userAgent) {
-            q.g(userAgent, "userAgent");
+            q.h(userAgent, "userAgent");
             this.userAgent = userAgent;
         }
 
         @Override 
         public Response intercept(Interceptor.Chain chain) {
-            q.g(chain, "chain");
+            q.h(chain, "chain");
             return chain.b(chain.a().i().i("User-Agent").a("User-Agent", this.userAgent).b());
         }
     }
@@ -45,14 +45,14 @@ public final class ClientUserAgent {
 
     
     public static final OkHttpClient init$lambda$0(Context context, String userAgent) {
-        q.g(context, "$context");
-        q.g(userAgent, "$userAgent");
+        q.h(context, "$context");
+        q.h(userAgent, "$userAgent");
         return OkHttpClientProvider.createClientBuilder(context).g(INSTANCE.createDispatcher()).a(new DiscordUserAgentInterceptor(userAgent)).c();
     }
 
     public final void init(final Context context, final String userAgent) {
-        q.g(context, "context");
-        q.g(userAgent, "userAgent");
+        q.h(context, "context");
+        q.h(userAgent, "userAgent");
         OkHttpClientProvider.setOkHttpClientFactory(new OkHttpClientFactory() { 
             @Override 
             public final OkHttpClient createNewNetworkModuleClient() {

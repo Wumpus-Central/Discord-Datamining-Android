@@ -1,7 +1,7 @@
 package com.discord.chat.bridge.embed;
 
 import com.balthazargronon.RCTZeroconf.ZeroconfModule;
-import ff.n;
+import jf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
@@ -12,9 +12,9 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import pi.f;
-import si.a2;
-import si.n1;
+import ti.f;
+import wi.a2;
+import wi.n1;
 
 @f
 @Metadata(d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0011\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 (2\u00020\u0001:\u0002'(BA\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n¢\u0006\u0002\u0010\u000bB1\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\fJ\t\u0010\u0016\u001a\u00020\u0005HÆ\u0003J\u000b\u0010\u0017\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010\u0018\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010\u0019\u001a\u0004\u0018\u00010\u0005HÆ\u0003J7\u0010\u001a\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0005HÆ\u0001J\u0013\u0010\u001b\u001a\u00020\u001c2\b\u0010\u001d\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001e\u001a\u00020\u0003HÖ\u0001J\t\u0010\u001f\u001a\u00020\u0005HÖ\u0001J!\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020\u00002\u0006\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020&HÇ\u0001R\u0013\u0010\b\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u000eR\u001d\u0010\u0010\u001a\u0004\u0018\u00010\u00058FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\u0012\u0010\u0013\u001a\u0004\b\u0011\u0010\u000eR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u000eR\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u000e¨\u0006)"}, d2 = {"Lcom/discord/chat/bridge/embed/EmbedAuthor;", "", "seen1", "", ZeroconfModule.KEY_SERVICE_NAME, "", "url", "iconURL", "iconProxyURL", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getIconProxyURL", "()Ljava/lang/String;", "getIconURL", "imageUrl", "getImageUrl", "imageUrl$delegate", "Lkotlin/Lazy;", "getName", "getUrl", "component1", "component2", "component3", "component4", "copy", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -100,9 +100,9 @@ public final class EmbedAuthor {
     public static final void write$Self(EmbedAuthor self, CompositeEncoder output, SerialDescriptor serialDesc) {
         boolean z10;
         boolean z11;
-        q.g(self, "self");
-        q.g(output, "output");
-        q.g(serialDesc, "serialDesc");
+        q.h(self, "self");
+        q.h(output, "output");
+        q.h(serialDesc, "serialDesc");
         boolean z12 = false;
         output.s(serialDesc, 0, self.name);
         if (!output.w(serialDesc, 1) && self.url == null) {
@@ -111,7 +111,7 @@ public final class EmbedAuthor {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 1, a2.f26246a, self.url);
+            output.z(serialDesc, 1, a2.f29540a, self.url);
         }
         if (!output.w(serialDesc, 2) && self.iconURL == null) {
             z11 = false;
@@ -119,13 +119,13 @@ public final class EmbedAuthor {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 2, a2.f26246a, self.iconURL);
+            output.z(serialDesc, 2, a2.f29540a, self.iconURL);
         }
         if (output.w(serialDesc, 3) || self.iconProxyURL != null) {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 3, a2.f26246a, self.iconProxyURL);
+            output.z(serialDesc, 3, a2.f29540a, self.iconProxyURL);
         }
     }
 
@@ -146,7 +146,7 @@ public final class EmbedAuthor {
     }
 
     public final EmbedAuthor copy(String name, String str, String str2, String str3) {
-        q.g(name, "name");
+        q.h(name, "name");
         return new EmbedAuthor(name, str, str2, str3);
     }
 
@@ -158,7 +158,7 @@ public final class EmbedAuthor {
             return false;
         }
         EmbedAuthor embedAuthor = (EmbedAuthor) obj;
-        return q.b(this.name, embedAuthor.name) && q.b(this.url, embedAuthor.url) && q.b(this.iconURL, embedAuthor.iconURL) && q.b(this.iconProxyURL, embedAuthor.iconProxyURL);
+        return q.c(this.name, embedAuthor.name) && q.c(this.url, embedAuthor.url) && q.c(this.iconURL, embedAuthor.iconURL) && q.c(this.iconProxyURL, embedAuthor.iconProxyURL);
     }
 
     public final String getIconProxyURL() {
@@ -205,7 +205,7 @@ public final class EmbedAuthor {
 
     public EmbedAuthor(String name, String str, String str2, String str3) {
         Lazy b10;
-        q.g(name, "name");
+        q.h(name, "name");
         this.name = name;
         this.url = str;
         this.iconURL = str2;

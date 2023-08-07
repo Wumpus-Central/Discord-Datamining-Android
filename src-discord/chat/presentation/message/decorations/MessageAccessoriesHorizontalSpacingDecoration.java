@@ -20,10 +20,10 @@ public final class MessageAccessoriesHorizontalSpacingDecoration extends Recycle
 
     @Override 
     public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
-        q.g(outRect, "outRect");
-        q.g(view, "view");
-        q.g(parent, "parent");
-        q.g(state, "state");
+        q.h(outRect, "outRect");
+        q.h(view, "view");
+        q.h(parent, "parent");
+        q.h(state, "state");
         if (!(view instanceof ForumPostActionBarView)) {
             outRect.left = this.leftMarginPx;
             outRect.right = this.rightMarginPx;

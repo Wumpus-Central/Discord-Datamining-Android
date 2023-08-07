@@ -51,13 +51,13 @@ public final class NestedScrollOnTouchListener implements View.OnTouchListener {
     }
 
     public NestedScrollOnTouchListener(final View view, boolean z10) {
-        q.g(view, "view");
+        q.h(view, "view");
         if (!z10) {
             w0.q0(view, new a() { 
                 @Override 
                 public boolean performAccessibilityAction(View host, int i10, Bundle bundle) {
                     View.OnLongClickListener onLongClickListener;
-                    q.g(host, "host");
+                    q.h(host, "host");
                     if (i10 == 16) {
                         View.OnClickListener onClickListener = NestedScrollOnTouchUtilsKt.getViewClickListeners().get(view);
                         if (onClickListener != null) {
@@ -71,7 +71,7 @@ public final class NestedScrollOnTouchListener implements View.OnTouchListener {
             });
         }
         Context context = view.getContext();
-        q.f(context, "view.context");
+        q.g(context, "view.context");
         this.viewTouchTracker = new NestedScrollOnTouchTracker(context, NestedScrollOnTouchUtilsKt.getViewClickListeners().get(view), NestedScrollOnTouchUtilsKt.getViewLongClickListeners().get(view), new NestedScrollOnTouchListener$viewTouchTracker$1(this), new NestedScrollOnTouchListener$viewTouchTracker$2(this));
         this.onSupplementalMotionEventReceived = new NestedScrollOnTouchListener$onSupplementalMotionEventReceived$1(this, view);
     }
@@ -79,8 +79,8 @@ public final class NestedScrollOnTouchListener implements View.OnTouchListener {
     @Override 
     @SuppressLint({"ClickableViewAccessibility"})
     public boolean onTouch(View view, MotionEvent event) {
-        q.g(view, "view");
-        q.g(event, "event");
+        q.h(view, "view");
+        q.h(event, "event");
         return this.viewTouchTracker.handleTouch$react_gesture_handler_release(view, event, false);
     }
 }

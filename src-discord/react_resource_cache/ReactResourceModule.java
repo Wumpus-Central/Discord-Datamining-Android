@@ -15,7 +15,7 @@ public abstract class ReactResourceModule<T extends Enum<?>> extends ReactContex
     
     public ReactResourceModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     public abstract ReactResourceCache<T> cache();
@@ -31,7 +31,7 @@ public abstract class ReactResourceModule<T extends Enum<?>> extends ReactContex
     }
 
     public final HashMap<String, String> reactResources(ReadableArray values) {
-        q.g(values, "values");
+        q.h(values, "values");
         HashMap<String, String> hashMap = new HashMap<>(values.size());
         T[] keys = keys();
         int length = keys.length;
@@ -41,7 +41,7 @@ public abstract class ReactResourceModule<T extends Enum<?>> extends ReactContex
             int i12 = i11 + 1;
             String name = keys[i10].name();
             String string = values.getString(i11);
-            q.f(string, "values.getString(index)");
+            q.g(string, "values.getString(index)");
             hashMap.put(name, string);
             i10++;
             i11 = i12;

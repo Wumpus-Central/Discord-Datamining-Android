@@ -9,12 +9,12 @@ import kotlin.jvm.internal.q;
 
 public final class ActivityExtensionsKt {
     public static final View getContentView(Activity activity) {
-        q.g(activity, "<this>");
+        q.h(activity, "<this>");
         return activity.findViewById(16908290);
     }
 
     public static final View getRootView(Activity activity) {
-        q.g(activity, "<this>");
+        q.h(activity, "<this>");
         View contentView = getContentView(activity);
         if (contentView != null) {
             return contentView.getRootView();

@@ -15,14 +15,14 @@ public final class AddBurstReactionViewHolder extends RecyclerView.ViewHolder {
     
     public AddBurstReactionViewHolder(AddReactionView addReactionView) {
         super(addReactionView);
-        q.g(addReactionView, "addReactionView");
+        q.h(addReactionView, "addReactionView");
         this.addReactionView = addReactionView;
     }
 
     public final void bind(String addReactionLabel, String addNewReactionAccessibilityLabel, View.OnClickListener onAddReactionClick, ReactionView.ReactionsTheme reactionsTheme) {
-        q.g(addReactionLabel, "addReactionLabel");
-        q.g(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
-        q.g(onAddReactionClick, "onAddReactionClick");
+        q.h(addReactionLabel, "addReactionLabel");
+        q.h(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
+        q.h(onAddReactionClick, "onAddReactionClick");
         AddReactionView addReactionView = this.addReactionView;
         addReactionView.configure(addReactionLabel, reactionsTheme, true);
         addReactionView.setContentDescription(addNewReactionAccessibilityLabel);

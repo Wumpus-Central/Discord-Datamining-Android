@@ -29,27 +29,27 @@ public final class ChatListHighlightItemAtPositionKt {
                 ChatListHighlightItemAtPositionKt.animateBackgroundColor$anim$lambda$1$lambda$0(view, valueAnimator);
             }
         });
-        q.f(animator, "animator");
+        q.g(animator, "animator");
         animator.addListener(new Animator.AnimatorListener() { 
             @Override 
             public void onAnimationCancel(Animator animator2) {
-                q.g(animator2, "animator");
+                q.h(animator2, "animator");
             }
 
             @Override 
             public void onAnimationEnd(Animator animator2) {
-                q.g(animator2, "animator");
+                q.h(animator2, "animator");
                 Function1.this.invoke(animator2);
             }
 
             @Override 
             public void onAnimationRepeat(Animator animator2) {
-                q.g(animator2, "animator");
+                q.h(animator2, "animator");
             }
 
             @Override 
             public void onAnimationStart(Animator animator2) {
-                q.g(animator2, "animator");
+                q.h(animator2, "animator");
             }
         });
         animator.setStartDelay(j10 + 100);
@@ -67,9 +67,10 @@ public final class ChatListHighlightItemAtPositionKt {
 
     
     public static final void animateBackgroundColor$anim$lambda$1$lambda$0(View this_animateBackgroundColor, ValueAnimator valueAnimator) {
-        q.g(this_animateBackgroundColor, "$this_animateBackgroundColor");
+        q.h(this_animateBackgroundColor, "$this_animateBackgroundColor");
+        q.h(valueAnimator, "valueAnimator");
         Object animatedValue = valueAnimator.getAnimatedValue();
-        q.e(animatedValue, "null cannot be cast to non-null type kotlin.Int");
+        q.f(animatedValue, "null cannot be cast to non-null type kotlin.Int");
         this_animateBackgroundColor.setBackgroundColor(((Integer) animatedValue).intValue());
     }
 
@@ -92,22 +93,23 @@ public final class ChatListHighlightItemAtPositionKt {
 
     
     public static final void animateHighlightBackgroundColor$anim$4$lambda$3$lambda$2(View this_animateHighlightBackgroundColor, ValueAnimator valueAnimator) {
-        q.g(this_animateHighlightBackgroundColor, "$this_animateHighlightBackgroundColor");
+        q.h(this_animateHighlightBackgroundColor, "$this_animateHighlightBackgroundColor");
+        q.h(valueAnimator, "valueAnimator");
         Object animatedValue = valueAnimator.getAnimatedValue();
-        q.e(animatedValue, "null cannot be cast to non-null type kotlin.Int");
+        q.f(animatedValue, "null cannot be cast to non-null type kotlin.Int");
         this_animateHighlightBackgroundColor.setBackgroundColor(((Integer) animatedValue).intValue());
     }
 
     public static final void chatListEmphasizeHighlightItemAtPosition(RecyclerView recyclerView, int i10, long j10) {
         View N;
-        q.g(recyclerView, "<this>");
+        q.h(recyclerView, "<this>");
         RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
         if (layoutManager != null && (N = layoutManager.N(i10)) != null) {
             Context context = recyclerView.getContext();
-            q.f(context, "context");
+            q.g(context, "context");
             int colorCompat = ColorUtilsKt.getColorCompat(context, 17170445);
             Context context2 = recyclerView.getContext();
-            q.f(context2, "context");
+            q.g(context2, "context");
             animateHighlightBackgroundColor(N, j10, colorCompat, ColorUtilsKt.getColorCompat(context2, ThemeManagerKt.getTheme().getColorRes(R.color.brand_new_360_alpha_20, R.color.brand_new_360_alpha_25)), ThemeManagerKt.getTheme().getBackgroundMessageHighlight());
         }
     }
@@ -121,11 +123,11 @@ public final class ChatListHighlightItemAtPositionKt {
 
     public static final void chatListHighlightItemAtPosition(RecyclerView recyclerView, int i10, long j10) {
         View N;
-        q.g(recyclerView, "<this>");
+        q.h(recyclerView, "<this>");
         RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
         if (layoutManager != null && (N = layoutManager.N(i10)) != null) {
             Context context = recyclerView.getContext();
-            q.f(context, "context");
+            q.g(context, "context");
             animateBackgroundColor(N, j10, ColorUtilsKt.getColorCompat(context, 17170445), ThemeManagerKt.getTheme().getBackgroundModifierSelected());
         }
     }

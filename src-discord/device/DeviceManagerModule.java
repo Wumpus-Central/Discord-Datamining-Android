@@ -6,9 +6,9 @@ import com.discord.codegen.NativeDeviceManagerSpec;
 import com.discord.device.utils.IsGestureNavigationEnabledKt;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
-import ff.x;
-import gf.v;
 import java.util.Map;
+import jf.x;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
@@ -46,7 +46,7 @@ public final class DeviceManagerModule extends NativeDeviceManagerSpec {
         }
 
         public final NativeModule create(ReactApplicationContext reactContext) {
-            q.g(reactContext, "reactContext");
+            q.h(reactContext, "reactContext");
             return new DeviceManagerModule(reactContext);
         }
     }
@@ -54,13 +54,13 @@ public final class DeviceManagerModule extends NativeDeviceManagerSpec {
     
     public DeviceManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.reactContext = reactContext;
     }
 
     @Override 
     public String getName() {
-        return NAME;
+        return "RTNDeviceManager";
     }
 
     @Override 

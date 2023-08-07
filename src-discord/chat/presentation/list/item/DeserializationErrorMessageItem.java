@@ -11,8 +11,8 @@ public final class DeserializationErrorMessageItem extends ChatListItem {
 
     
     public DeserializationErrorMessageItem(ErrorMessage message) {
-        super(message.m5getId3Eiw7ao(), null);
-        q.g(message, "message");
+        super(message.m6getId3Eiw7ao(), null);
+        q.h(message, "message");
         this.message = message;
     }
 
@@ -28,7 +28,7 @@ public final class DeserializationErrorMessageItem extends ChatListItem {
     }
 
     public final DeserializationErrorMessageItem copy(ErrorMessage message) {
-        q.g(message, "message");
+        q.h(message, "message");
         return new DeserializationErrorMessageItem(message);
     }
 
@@ -36,7 +36,7 @@ public final class DeserializationErrorMessageItem extends ChatListItem {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof DeserializationErrorMessageItem) && q.b(this.message, ((DeserializationErrorMessageItem) obj).message);
+        return (obj instanceof DeserializationErrorMessageItem) && q.c(this.message, ((DeserializationErrorMessageItem) obj).message);
     }
 
     public final ErrorMessage getMessage() {

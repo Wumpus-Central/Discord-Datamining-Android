@@ -112,7 +112,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     
     public MessageView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  MessageView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -151,7 +151,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             i11 = SizeUtilsKt.getDpToPx(4);
         }
         ViewGroup.LayoutParams layoutParams = this.binding.accessoriesView.getLayoutParams();
-        q.e(layoutParams, "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams");
+        q.f(layoutParams, "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams");
         ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
         int i12 = marginLayoutParams.topMargin;
         int i13 = marginLayoutParams.bottomMargin;
@@ -167,17 +167,17 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             TextView configureAuthor$lambda$25 = this.binding.authorName;
             configureAuthor$lambda$25.setTextColor(MessageKt.usernameColor$default(message, 0, 1, null));
             configureAuthor$lambda$25.setText(message.getUsername());
-            q.f(configureAuthor$lambda$25, "configureAuthor$lambda$25");
+            q.g(configureAuthor$lambda$25, "configureAuthor$lambda$25");
             configureAuthorClickListeners(configureAuthor$lambda$25, message, chatEventHandler);
             View view = this.binding.roleDot;
-            q.f(view, "binding.roleDot");
+            q.g(view, "binding.roleDot");
             configureAuthorClickListeners(view, message, chatEventHandler);
             this.binding.timestamp.setText(message.getTimestamp());
             SimpleDraweeView configureAuthor$lambda$28 = this.binding.authorAvatar;
             Context context = configureAuthor$lambda$28.getContext();
-            q.f(context, "context");
+            q.g(context, "context");
             configureAuthor$lambda$28.setImageURI(MessageKt.avatarUrl(message, context));
-            q.f(configureAuthor$lambda$28, "configureAuthor$lambda$28");
+            q.g(configureAuthor$lambda$28, "configureAuthor$lambda$28");
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configureAuthor$lambda$28, false, new View.OnClickListener() { 
                 @Override 
                 public final void onClick(View view2) {
@@ -194,127 +194,127 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             }, 1, null);
             if (message.getAvatarDecorationURL() != null) {
                 SimpleDraweeView simpleDraweeView = this.binding.authorAvatarDecoration;
-                q.f(simpleDraweeView, "binding.authorAvatarDecoration");
+                q.g(simpleDraweeView, "binding.authorAvatarDecoration");
                 simpleDraweeView.setVisibility(0);
                 this.binding.authorAvatarDecoration.setImageURI(message.getAvatarDecorationURL());
             } else {
                 SimpleDraweeView simpleDraweeView2 = this.binding.authorAvatarDecoration;
-                q.f(simpleDraweeView2, "binding.authorAvatarDecoration");
+                q.g(simpleDraweeView2, "binding.authorAvatarDecoration");
                 simpleDraweeView2.setVisibility(8);
             }
             TextView textView = this.binding.timestamp;
-            q.f(textView, "binding.timestamp");
+            q.g(textView, "binding.timestamp");
             textView.setVisibility(0);
             TextView textView2 = this.binding.authorName;
-            q.f(textView2, "binding.authorName");
+            q.g(textView2, "binding.authorName");
             textView2.setVisibility(0);
             SimpleDraweeView simpleDraweeView3 = this.binding.authorAvatar;
-            q.f(simpleDraweeView3, "binding.authorAvatar");
+            q.g(simpleDraweeView3, "binding.authorAvatar");
             simpleDraweeView3.setVisibility(0);
             if (message.getShouldShowRoleDot()) {
                 RoleDotView roleDotView = this.binding.roleDot;
-                q.f(roleDotView, "binding.roleDot");
+                q.g(roleDotView, "binding.roleDot");
                 roleDotView.setVisibility(0);
                 RoleDotView roleDotView2 = this.binding.roleDot;
-                q.f(roleDotView2, "binding.roleDot");
+                q.g(roleDotView2, "binding.roleDot");
                 RoleDotView.configure$default(roleDotView2, MessageKt.roleDotColor$default(message, 0, 1, null), 0, 2, null);
             } else {
                 RoleDotView roleDotView3 = this.binding.roleDot;
-                q.f(roleDotView3, "binding.roleDot");
+                q.g(roleDotView3, "binding.roleDot");
                 roleDotView3.setVisibility(8);
             }
             if (message.getRoleIcon() != null) {
                 this.binding.roleIcon.configureRoleIcon(message.getRoleIcon(), chatEventHandler);
                 RoleIconView roleIconView = this.binding.roleIcon;
-                q.f(roleIconView, "binding.roleIcon");
+                q.g(roleIconView, "binding.roleIcon");
                 roleIconView.setVisibility(0);
             } else {
                 RoleIconView roleIconView2 = this.binding.roleIcon;
-                q.f(roleIconView2, "binding.roleIcon");
+                q.g(roleIconView2, "binding.roleIcon");
                 roleIconView2.setVisibility(8);
             }
             if (message.getConnectionsRoleTag() != null) {
-                this.binding.connectionsRoleTag.m194configureConnectionsRoleTaguESh2Cg(message.m13getAuthorIdwUX8bhU(), message.m15getGuildIdqOKuAAo(), ChannelId.m566boximpl(message.m14getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
+                this.binding.connectionsRoleTag.m195configureConnectionsRoleTaguESh2Cg(message.m14getAuthorIdwUX8bhU(), message.m16getGuildIdqOKuAAo(), ChannelId.m567boximpl(message.m15getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
                 ConnectionsRoleTagView connectionsRoleTagView = this.binding.connectionsRoleTag;
-                q.f(connectionsRoleTagView, "binding.connectionsRoleTag");
+                q.g(connectionsRoleTagView, "binding.connectionsRoleTag");
                 connectionsRoleTagView.setVisibility(0);
                 i10 = 8;
             } else {
                 ConnectionsRoleTagView connectionsRoleTagView2 = this.binding.connectionsRoleTag;
-                q.f(connectionsRoleTagView2, "binding.connectionsRoleTag");
+                q.g(connectionsRoleTagView2, "binding.connectionsRoleTag");
                 i10 = 8;
                 connectionsRoleTagView2.setVisibility(8);
             }
             if (message.getTagText() == null && message.getOpTagText() == null) {
                 MessageTagView messageTagView = this.binding.messageTagView;
-                q.f(messageTagView, "binding.messageTagView");
+                q.g(messageTagView, "binding.messageTagView");
                 messageTagView.setVisibility(i10);
                 MessageAltRemixTagView messageAltRemixTagView = this.binding.messageAltRemixTagView;
-                q.f(messageAltRemixTagView, "binding.messageAltRemixTagView");
+                q.g(messageAltRemixTagView, "binding.messageAltRemixTagView");
                 messageAltRemixTagView.setVisibility(i10);
-            } else if (message.getTagType() == null || !q.b(message.getTagType(), "f")) {
+            } else if (message.getTagType() == null || !q.c(message.getTagType(), "f")) {
                 MessageTagView messageTagView2 = this.binding.messageTagView;
-                q.f(messageTagView2, "binding.messageTagView");
+                q.g(messageTagView2, "binding.messageTagView");
                 messageTagView2.setVisibility(0);
-                this.binding.messageTagView.m212configureTagVieweCJZyo(message.getTagText(), message.getTagVerified(), message.getTagTextColor(), message.getTagBackgroundColor(), message.getOpTagText(), chatEventHandler, message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.getTagType());
+                this.binding.messageTagView.m213configureTagVieweCJZyo(message.getTagText(), message.getTagVerified(), message.getTagTextColor(), message.getTagBackgroundColor(), message.getOpTagText(), chatEventHandler, message.m17getId3Eiw7ao(), message.m15getChannelIdo4g7jtM(), message.getTagType());
                 MessageAltRemixTagView messageAltRemixTagView2 = this.binding.messageAltRemixTagView;
-                q.f(messageAltRemixTagView2, "binding.messageAltRemixTagView");
+                q.g(messageAltRemixTagView2, "binding.messageAltRemixTagView");
                 messageAltRemixTagView2.setVisibility(8);
             } else {
                 MessageAltRemixTagView messageAltRemixTagView3 = this.binding.messageAltRemixTagView;
-                q.f(messageAltRemixTagView3, "binding.messageAltRemixTagView");
+                q.g(messageAltRemixTagView3, "binding.messageAltRemixTagView");
                 messageAltRemixTagView3.setVisibility(0);
-                this.binding.messageAltRemixTagView.m211configureTagViewe2j04IU(message.getTagText(), message.getTagTextColor(), message.getTagBackgroundColor(), chatEventHandler, message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.getTagType());
+                this.binding.messageAltRemixTagView.m212configureTagViewe2j04IU(message.getTagText(), message.getTagTextColor(), message.getTagBackgroundColor(), chatEventHandler, message.m17getId3Eiw7ao(), message.m15getChannelIdo4g7jtM(), message.getTagType());
                 MessageTagView messageTagView3 = this.binding.messageTagView;
-                q.f(messageTagView3, "binding.messageTagView");
+                q.g(messageTagView3, "binding.messageTagView");
                 messageTagView3.setVisibility(8);
             }
         } else {
             TextView textView3 = this.binding.timestamp;
-            q.f(textView3, "binding.timestamp");
+            q.g(textView3, "binding.timestamp");
             textView3.setVisibility(8);
             TextView textView4 = this.binding.authorName;
-            q.f(textView4, "binding.authorName");
+            q.g(textView4, "binding.authorName");
             textView4.setVisibility(8);
             SimpleDraweeView simpleDraweeView4 = this.binding.authorAvatar;
-            q.f(simpleDraweeView4, "binding.authorAvatar");
+            q.g(simpleDraweeView4, "binding.authorAvatar");
             simpleDraweeView4.setVisibility(8);
             SimpleDraweeView simpleDraweeView5 = this.binding.authorAvatarDecoration;
-            q.f(simpleDraweeView5, "binding.authorAvatarDecoration");
+            q.g(simpleDraweeView5, "binding.authorAvatarDecoration");
             simpleDraweeView5.setVisibility(8);
             RoleDotView roleDotView4 = this.binding.roleDot;
-            q.f(roleDotView4, "binding.roleDot");
+            q.g(roleDotView4, "binding.roleDot");
             roleDotView4.setVisibility(8);
             RoleIconView roleIconView3 = this.binding.roleIcon;
-            q.f(roleIconView3, "binding.roleIcon");
+            q.g(roleIconView3, "binding.roleIcon");
             roleIconView3.setVisibility(8);
             ConnectionsRoleTagView connectionsRoleTagView3 = this.binding.connectionsRoleTag;
-            q.f(connectionsRoleTagView3, "binding.connectionsRoleTag");
+            q.g(connectionsRoleTagView3, "binding.connectionsRoleTag");
             connectionsRoleTagView3.setVisibility(8);
             MessageTagView messageTagView4 = this.binding.messageTagView;
-            q.f(messageTagView4, "binding.messageTagView");
+            q.g(messageTagView4, "binding.messageTagView");
             messageTagView4.setVisibility(8);
             MessageAltRemixTagView messageAltRemixTagView4 = this.binding.messageAltRemixTagView;
-            q.f(messageAltRemixTagView4, "binding.messageAltRemixTagView");
+            q.g(messageAltRemixTagView4, "binding.messageAltRemixTagView");
             messageAltRemixTagView4.setVisibility(8);
         }
     }
 
     public static final void configureAuthor$lambda$28$lambda$26(Message message, ChatEventHandler eventHandler, View view) {
-        q.g(message, "$message");
-        q.g(eventHandler, "$eventHandler");
-        if (message.m13getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo158onTapAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m639unboximpl());
+        q.h(message, "$message");
+        q.h(eventHandler, "$eventHandler");
+        if (message.m14getAuthorIdwUX8bhU() != null) {
+            eventHandler.mo159onTapAvatarx5gers8(message.m17getId3Eiw7ao(), message.m14getAuthorIdwUX8bhU().m640unboximpl());
         }
     }
 
     public static final boolean configureAuthor$lambda$28$lambda$27(Message message, ChatEventHandler eventHandler, View view) {
-        q.g(message, "$message");
-        q.g(eventHandler, "$eventHandler");
-        if (message.m13getAuthorIdwUX8bhU() == null) {
+        q.h(message, "$message");
+        q.h(eventHandler, "$eventHandler");
+        if (message.m14getAuthorIdwUX8bhU() == null) {
             return true;
         }
-        eventHandler.mo150onLongPressAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m639unboximpl());
+        eventHandler.mo151onLongPressAvatarx5gers8(message.m17getId3Eiw7ao(), message.m14getAuthorIdwUX8bhU().m640unboximpl());
         return true;
     }
 
@@ -336,20 +336,20 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     }
 
     public static final void configureAuthorClickListeners$lambda$4(Message message, ChatEventHandler eventHandler, View view) {
-        q.g(message, "$message");
-        q.g(eventHandler, "$eventHandler");
-        if (message.m13getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo179onTapUsernamex5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m639unboximpl());
+        q.h(message, "$message");
+        q.h(eventHandler, "$eventHandler");
+        if (message.m14getAuthorIdwUX8bhU() != null) {
+            eventHandler.mo180onTapUsernamex5gers8(message.m17getId3Eiw7ao(), message.m14getAuthorIdwUX8bhU().m640unboximpl());
         }
     }
 
     public static final boolean configureAuthorClickListeners$lambda$5(Message message, ChatEventHandler eventHandler, View view) {
-        q.g(message, "$message");
-        q.g(eventHandler, "$eventHandler");
-        if (message.m13getAuthorIdwUX8bhU() == null) {
+        q.h(message, "$message");
+        q.h(eventHandler, "$eventHandler");
+        if (message.m14getAuthorIdwUX8bhU() == null) {
             return true;
         }
-        eventHandler.mo152onLongPressUsernamex5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m639unboximpl());
+        eventHandler.mo153onLongPressUsernamex5gers8(message.m17getId3Eiw7ao(), message.m14getAuthorIdwUX8bhU().m640unboximpl());
         return true;
     }
 
@@ -365,13 +365,13 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             z11 = true;
         }
         SimpleDraweeView simpleDraweeView = this.binding.guildCommunicationDisabledIcon;
-        q.f(simpleDraweeView, "binding.guildCommunicationDisabledIcon");
+        q.g(simpleDraweeView, "binding.guildCommunicationDisabledIcon");
         if (!z11) {
             i10 = 8;
         }
         simpleDraweeView.setVisibility(i10);
         SimpleDraweeView simpleDraweeView2 = this.binding.guildCommunicationDisabledIcon;
-        q.f(simpleDraweeView2, "binding.guildCommunicationDisabledIcon");
+        q.g(simpleDraweeView2, "binding.guildCommunicationDisabledIcon");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView2, ReactAsset.ClockTimeout);
         SimpleDraweeView simpleDraweeView3 = this.binding.authorAvatar;
         float f13 = 0.5f;
@@ -405,7 +405,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     private final void configureDivider(boolean z10) {
         int i10;
         View view = this.binding.messageHeaderDivider;
-        q.f(view, "binding.messageHeaderDivider");
+        q.g(view, "binding.messageHeaderDivider");
         if (z10) {
             i10 = 0;
         } else {
@@ -423,7 +423,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             z11 = true;
         }
         SimpleDraweeView simpleDraweeView = this.binding.suppressNotificationsIcon;
-        q.f(simpleDraweeView, "binding.suppressNotificationsIcon");
+        q.g(simpleDraweeView, "binding.suppressNotificationsIcon");
         if (z11) {
             i10 = 0;
         } else {
@@ -432,14 +432,14 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         simpleDraweeView.setVisibility(i10);
         if (z11) {
             SimpleDraweeView simpleDraweeView2 = this.binding.suppressNotificationsIcon;
-            q.f(simpleDraweeView2, "binding.suppressNotificationsIcon");
+            q.g(simpleDraweeView2, "binding.suppressNotificationsIcon");
             ReactAssetUtilsKt.setReactAsset(simpleDraweeView2, ReactAsset.BellSnooze);
             SimpleDraweeView simpleDraweeView3 = this.binding.suppressNotificationsIcon;
-            q.f(simpleDraweeView3, "binding.suppressNotificationsIcon");
+            q.g(simpleDraweeView3, "binding.suppressNotificationsIcon");
             ColorUtilsKt.setTintColor(simpleDraweeView3, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
         }
         SimpleDraweeView simpleDraweeView4 = this.binding.suppressNotificationsIcon;
-        q.f(simpleDraweeView4, "binding.suppressNotificationsIcon");
+        q.g(simpleDraweeView4, "binding.suppressNotificationsIcon");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView4, false, new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {
@@ -449,7 +449,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     }
 
     public static final void configureSuppressNotifications$lambda$29(ChatEventHandler eventHandler, View view) {
-        q.g(eventHandler, "$eventHandler");
+        q.h(eventHandler, "$eventHandler");
         eventHandler.onTapSuppressNotificationsIcon();
     }
 
@@ -475,9 +475,9 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     }
 
     public static final boolean generateMessageAccessories$getLongClickListener$lambda$7$lambda$6(Function4 function4, Message message, int i10, MediaType mediaType, View view) {
-        q.g(message, "$message");
-        q.g(mediaType, "$mediaType");
-        function4.invoke(MessageId.m592boximpl(message.m16getId3Eiw7ao()), ChannelId.m566boximpl(message.m14getChannelIdo4g7jtM()), Integer.valueOf(i10), mediaType);
+        q.h(message, "$message");
+        q.h(mediaType, "$mediaType");
+        function4.invoke(MessageId.m593boximpl(message.m17getId3Eiw7ao()), ChannelId.m567boximpl(message.m15getChannelIdo4g7jtM()), Integer.valueOf(i10), mediaType);
         return true;
     }
 
@@ -528,15 +528,15 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     }
 
     public static final void setMessage$lambda$1$lambda$0(Function2 onMessageTapped, Message message, View view) {
-        q.g(onMessageTapped, "$onMessageTapped");
-        q.g(message, "$message");
-        onMessageTapped.invoke(MessageId.m592boximpl(message.m16getId3Eiw7ao()), ChannelId.m566boximpl(message.m14getChannelIdo4g7jtM()));
+        q.h(onMessageTapped, "$onMessageTapped");
+        q.h(message, "$message");
+        onMessageTapped.invoke(MessageId.m593boximpl(message.m17getId3Eiw7ao()), ChannelId.m567boximpl(message.m15getChannelIdo4g7jtM()));
     }
 
     public static final boolean setMessage$lambda$3$lambda$2(Function4 it, Message message, View view) {
-        q.g(it, "$it");
-        q.g(message, "$message");
-        it.invoke(MessageId.m592boximpl(message.m16getId3Eiw7ao()), ChannelId.m566boximpl(message.m14getChannelIdo4g7jtM()), null, null);
+        q.h(it, "$it");
+        q.h(message, "$message");
+        it.invoke(MessageId.m593boximpl(message.m17getId3Eiw7ao()), ChannelId.m567boximpl(message.m15getChannelIdo4g7jtM()), null, null);
         return true;
     }
 
@@ -553,18 +553,18 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     @Override 
     public View getSpineOriginView() {
         SimpleDraweeView simpleDraweeView = this.binding.authorAvatar;
-        q.f(simpleDraweeView, "binding.authorAvatar");
+        q.g(simpleDraweeView, "binding.authorAvatar");
         return simpleDraweeView;
     }
 
     @Override 
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        q.g(ev, "ev");
+        q.h(ev, "ev");
         return !this.allowChildGestures;
     }
 
     public final void setAccessoriesRecycledViewPool(RecyclerView.RecycledViewPool recycledViewPool) {
-        q.g(recycledViewPool, "recycledViewPool");
+        q.h(recycledViewPool, "recycledViewPool");
         this.binding.accessoriesView.setRecycledViewPool(recycledViewPool);
     }
 
@@ -574,10 +574,10 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     }
 
     public final void setMessage(final Message message, MessageContext messageContext, MessageFrame messageFrame, ChatEventHandler eventHandler, ComponentProvider componentProvider, Function0<? extends ChainPart> onChainPart, boolean z10, boolean z11, boolean z12) {
-        q.g(message, "message");
-        q.g(messageContext, "messageContext");
-        q.g(eventHandler, "eventHandler");
-        q.g(onChainPart, "onChainPart");
+        q.h(message, "message");
+        q.h(messageContext, "messageContext");
+        q.h(eventHandler, "eventHandler");
+        q.h(onChainPart, "onChainPart");
         this.onChainPart = onChainPart;
         setOnInitiateReply(new MessageView$setMessage$2(eventHandler, message));
         setEnableSwipeToReply(messageContext.getEnableSwipeToReply());
@@ -591,11 +591,11 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         int i10 = 8;
         if (messageFrame == null || (messageFrame instanceof UnknownMessageFrame)) {
             MessageFrameHeaderView messageFrameHeaderView = this.binding.messageFrameHeader;
-            q.f(messageFrameHeaderView, "binding.messageFrameHeader");
+            q.g(messageFrameHeaderView, "binding.messageFrameHeader");
             messageFrameHeaderView.setVisibility(8);
         } else {
             MessageFrameHeaderView messageFrameHeaderView2 = this.binding.messageFrameHeader;
-            q.f(messageFrameHeaderView2, "binding.messageFrameHeader");
+            q.g(messageFrameHeaderView2, "binding.messageFrameHeader");
             messageFrameHeaderView2.setVisibility(0);
             this.binding.messageFrameHeader.configure(messageFrame);
         }
@@ -603,17 +603,17 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         configureDivider(messageContext.getShowDivider());
         this.binding.threadStarterHeader.configure(message.getThreadStarterMessageHeader(), message.getReferencedMessage() != null);
         MessageHighlightHeader messageHighlightHeader = this.binding.highlightHeader;
-        q.f(messageHighlightHeader, "binding.highlightHeader");
+        q.g(messageHighlightHeader, "binding.highlightHeader");
         if (z11) {
             i10 = 0;
         }
         messageHighlightHeader.setVisibility(i10);
         if (message.getReferencedMessage() != null) {
             MessageViewReplyPreview messageViewReplyPreview = this.binding.replyPreview;
-            q.f(messageViewReplyPreview, "binding.replyPreview");
+            q.g(messageViewReplyPreview, "binding.replyPreview");
             MessageViewReplyPreview.configureReply$default(messageViewReplyPreview, message.getReferencedMessage(), false, new MessageView$setMessage$3(eventHandler, message), 2, null);
         } else if (message.getExecutedCommand() != null) {
-            this.binding.replyPreview.m213configureExecutedCommandLdU2QRA(message.m16getId3Eiw7ao(), message.getExecutedCommand(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), eventHandler);
+            this.binding.replyPreview.m214configureExecutedCommandLdU2QRA(message.m17getId3Eiw7ao(), message.getExecutedCommand(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), eventHandler);
         } else {
             this.binding.replyPreview.clear();
         }
@@ -639,16 +639,16 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested(this, true, mVar);
         NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested(this, true, onLongClickListener);
         List<MessageAccessory> generateMessageAccessories = generateMessageAccessories(message, messageContext, messageFrame, eventHandler.getOnMessageLongPressed());
-        this.binding.accessoriesView.m210setAccessoriesRC8ZMxU(message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.m15getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, componentProvider);
+        this.binding.accessoriesView.m211setAccessoriesRC8ZMxU(message.m17getId3Eiw7ao(), message.m15getChannelIdo4g7jtM(), message.m16getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, componentProvider);
         configureAccessoriesMargin(generateMessageAccessories);
-        configureCommunicationDisabled(q.b(message.getCommunicationDisabled(), Boolean.TRUE), chainPart);
+        configureCommunicationDisabled(q.c(message.getCommunicationDisabled(), Boolean.TRUE), chainPart);
         configureSuppressNotifications(MessageFlagKt.hasMessageFlag(Long.valueOf(message.getFlags()), MessageFlag.SUPPRESS_NOTIFICATIONS), eventHandler, chainPart);
         this.binding.accessoriesView.setOnCurrentContentViewChanged(new MessageView$setMessage$4(this, message, mVar, onLongClickListener));
     }
 
     @Override 
     public void setOnInitiateReply(Function0<Unit> function0) {
-        q.g(function0, "<set-?>");
+        q.h(function0, "<set-?>");
         this.onInitiateReply = function0;
     }
 
@@ -666,7 +666,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         } else if (i11 == 3 || i11 == 4) {
             i10 = 0;
         } else {
-            throw new ff.q();
+            throw new jf.q();
         }
         return Integer.valueOf(i10);
     }
@@ -674,27 +674,27 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     
     public MessageView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         MessageViewBinding inflate = MessageViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         setPadding(0, SizeUtilsKt.getDpToPx(2), 0, SizeUtilsKt.getDpToPx(2));
         RippleUtilsKt.addRipple$default(this, false, 0, 3, null);
         TextView textView = inflate.timestamp;
-        q.f(textView, "binding.timestamp");
+        q.g(textView, "binding.timestamp");
         DiscordFontUtilsKt.setDiscordFont(textView, DiscordFont.PrimaryMedium);
         inflate.timestamp.setTextColor(ThemeManagerKt.getTheme().getTextMuted());
         TextView textView2 = inflate.timestamp;
-        q.f(textView2, "binding.timestamp");
+        q.g(textView2, "binding.timestamp");
         SetTextSizeSpKt.setTextSizeSp(textView2, 12.0f, 15.0f);
         TextView textView3 = inflate.authorName;
-        q.f(textView3, "binding.authorName");
+        q.g(textView3, "binding.authorName");
         DiscordFontUtilsKt.setDiscordFont(textView3, DiscordFont.PrimarySemibold);
         TextView textView4 = inflate.authorName;
-        q.f(textView4, "binding.authorName");
+        q.g(textView4, "binding.authorName");
         SetTextSizeSpKt.setTextSizeSp(textView4, 16.0f, 20.0f);
         SimpleDraweeView simpleDraweeView = inflate.authorAvatar;
-        q.f(simpleDraweeView, "binding.authorAvatar");
+        q.g(simpleDraweeView, "binding.authorAvatar");
         ViewClippingUtilsKt.clipToCircle(simpleDraweeView);
         inflate.messageHeaderDivider.setBackgroundColor(ColorUtilsKt.getThemeColor(context, R.color.message_divider_light, R.color.message_divider_dark));
         this.onChainPart = MessageView$onChainPart$1.INSTANCE;

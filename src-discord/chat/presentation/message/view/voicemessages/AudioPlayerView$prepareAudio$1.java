@@ -23,17 +23,17 @@ public final class AudioPlayerView$prepareAudio$1 extends s implements Function1
     @Override 
     public   Unit invoke(MediaPlayer.Event event) {
         invoke2(event);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(MediaPlayer.Event event) {
-        q.g(event, "event");
-        if (q.b(event, MediaPlayer.Event.Paused.INSTANCE) ? true : q.b(event, MediaPlayer.Event.PlaybackEnded.INSTANCE)) {
+        q.h(event, "event");
+        if (q.c(event, MediaPlayer.Event.Paused.INSTANCE) ? true : q.c(event, MediaPlayer.Event.PlaybackEnded.INSTANCE)) {
             this.this$0.maybeLogPlaybackEnded();
         } else if (event instanceof MediaPlayer.Event.PlaybackError) {
             this.this$0.maybeLogPlaybackFailed(((MediaPlayer.Event.PlaybackError) event).getException().getMessage());
-        } else if (q.b(event, MediaPlayer.Event.StartedPlaying.INSTANCE)) {
+        } else if (q.c(event, MediaPlayer.Event.StartedPlaying.INSTANCE)) {
             this.this$0.maybeLogPlaybackStarted();
         }
         AudioPlayerView.setState$default(this.this$0, null, true, 1, null);

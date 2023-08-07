@@ -7,9 +7,9 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.uimanager.ViewProps;
-import ff.x;
-import gf.v;
 import java.util.Map;
+import jf.x;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
@@ -19,7 +19,7 @@ public final class SafeAreaManagerModule extends ReactContextBaseJavaModule {
     
     public SafeAreaManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @Override 
@@ -37,7 +37,7 @@ public final class SafeAreaManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void getStableSafeAreaInsets(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         SafeAreaEdgeInsets fromRootViewAsStableInsets = SafeAreaEdgeInsets.Companion.fromRootViewAsStableInsets(getCurrentActivity());
         promise.resolve(NativeMapExtensionsKt.nativeMapOf(x.a(ViewProps.TOP, Float.valueOf(fromRootViewAsStableInsets.getTopDp())), x.a(ViewProps.BOTTOM, Float.valueOf(fromRootViewAsStableInsets.getBottomDp())), x.a(ViewProps.LEFT, Float.valueOf(fromRootViewAsStableInsets.getLeftDp())), x.a(ViewProps.RIGHT, Float.valueOf(fromRootViewAsStableInsets.getRightDp()))));
     }

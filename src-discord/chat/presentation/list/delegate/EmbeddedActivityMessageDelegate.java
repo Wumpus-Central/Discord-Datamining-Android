@@ -24,7 +24,7 @@ public final class EmbeddedActivityMessageDelegate extends BaseChatListItemDeleg
     
     public EmbeddedActivityMessageDelegate(Function0<? extends ChatEventHandler> eventHandlerProvider) {
         super(eventHandlerProvider, null, 2, null);
-        q.g(eventHandlerProvider, "eventHandlerProvider");
+        q.h(eventHandlerProvider, "eventHandlerProvider");
         this.eventHandlerProvider = eventHandlerProvider;
     }
 
@@ -53,15 +53,15 @@ public final class EmbeddedActivityMessageDelegate extends BaseChatListItemDeleg
 
     
     public static final void bindViewInternal$lambda$0(EmbeddedActivityMessageDelegate this$0, EmbeddedActivityChatListItem item, View view) {
-        q.g(this$0, "this$0");
-        q.g(item, "$item");
+        q.h(this$0, "this$0");
+        q.h(item, "$item");
         this$0.eventHandlerProvider.invoke().onTapJoinEmbeddedActivity(item.getEmbeddedActivityKey());
     }
 
     
     public static final void bindViewInternal$lambda$1(EmbeddedActivityMessageDelegate this$0, EmbeddedActivityChatListItem item, View view) {
-        q.g(this$0, "this$0");
-        q.g(item, "$item");
+        q.h(this$0, "this$0");
+        q.h(item, "$item");
         this$0.eventHandlerProvider.invoke().onTapDismissEmbeddedActivity(item.getEmbeddedActivityKey());
     }
 
@@ -71,22 +71,22 @@ public final class EmbeddedActivityMessageDelegate extends BaseChatListItemDeleg
 
     @Override 
     public boolean isForItem(ChatListItem item, int i10) {
-        q.g(item, "item");
+        q.h(item, "item");
         return item instanceof EmbeddedActivityChatListItem;
     }
 
     public void bindView(EmbeddedActivityMessageView view, EmbeddedActivityChatListItem item, BaseChatListItemDelegate.Metadata<EmbeddedActivityMessageView> metadata) {
-        q.g(view, "view");
-        q.g(item, "item");
-        q.g(metadata, "metadata");
+        q.h(view, "view");
+        q.h(item, "item");
+        q.h(metadata, "metadata");
         bindViewInternal(view, item);
     }
 
     @Override 
     public EmbeddedActivityMessageView createView(ViewGroup parent) {
-        q.g(parent, "parent");
+        q.h(parent, "parent");
         Context context = parent.getContext();
-        q.f(context, "parent.context");
+        q.g(context, "parent.context");
         return new EmbeddedActivityMessageView(context, null, 2, null);
     }
 }

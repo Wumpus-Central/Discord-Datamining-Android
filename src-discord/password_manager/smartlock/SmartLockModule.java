@@ -15,14 +15,14 @@ import com.google.android.gms.auth.api.credentials.CredentialsClient;
 import com.google.android.gms.auth.api.credentials.a;
 import com.google.android.gms.common.api.ResolvableApiException;
 import com.google.android.gms.tasks.Task;
-import fa.d;
-import ff.x;
-import gf.v;
+import ha.d;
 import java.util.Map;
+import jf.x;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import x8.b;
+import z8.b;
 
 @Metadata(d1 = {"\u0000O\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004*\u0001\u0006\u0018\u0000 !2\u00020\u0001:\u0001!B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000bH\u0007J\b\u0010\u000f\u001a\u00020\u0010H\u0016J\u0010\u0010\u0011\u001a\u00020\r2\u0006\u0010\u0012\u001a\u00020\u0010H\u0007J\b\u0010\u0013\u001a\u00020\rH\u0002J\u001a\u0010\u0014\u001a\u00020\r2\u0006\u0010\u0012\u001a\u00020\u00102\b\u0010\u0015\u001a\u0004\u0018\u00010\u0010H\u0002J \u0010\u0016\u001a\u00020\r2\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001cH\u0002J\u0010\u0010\u0016\u001a\u00020\r2\u0006\u0010\u001b\u001a\u00020\u001cH\u0002J,\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u0012\u001a\u00020\u00102\u0006\u0010\u0015\u001a\u00020\u00102\b\u0010\u001f\u001a\u0004\u0018\u00010\u00102\b\u0010 \u001a\u0004\u0018\u00010\u0010H\u0007R\u0010\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0004\n\u0002\u0010\u0007R\u000e\u0010\b\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\n\u001a\u0004\u0018\u00010\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\""}, d2 = {"Lcom/discord/password_manager/smartlock/SmartLockModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "activityEventListener", "com/discord/password_manager/smartlock/SmartLockModule$activityEventListener$1", "Lcom/discord/password_manager/smartlock/SmartLockModule$activityEventListener$1;", "credentialsClient", "Lcom/google/android/gms/auth/api/credentials/CredentialsClient;", "loginPromise", "Lcom/facebook/react/bridge/Promise;", "autoLogin", "", BaseJavaModule.METHOD_TYPE_PROMISE, "getName", "", "removeCredentials", "login", "requestCredentials", "resolvePromiseWithCredentials", "password", "tryResolveResult", "activity", "Landroid/app/Activity;", "requestCode", "", "resolvableApiException", "Lcom/google/android/gms/common/api/ResolvableApiException;", "updateAccountCredentials", "", "usernameWithDiscriminator", "avatarUri", "Companion", "password_manager_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -54,7 +54,7 @@ public final class SmartLockModule extends ReactContextBaseJavaModule {
 
     static {
         String simpleName = SmartLockModule.class.getSimpleName();
-        q.f(simpleName, "SmartLockModule::class.java.simpleName");
+        q.g(simpleName, "SmartLockModule::class.java.simpleName");
         logTag = simpleName;
     }
 
@@ -69,8 +69,8 @@ public final class SmartLockModule extends ReactContextBaseJavaModule {
     }
 
     private final void requestCredentials() {
-        a a10 = new a.C0148a().c(true).b(DISCORD_ACCOUNT_IDENTITY).a();
-        q.f(a10, "Builder()\n            .s…ITY)\n            .build()");
+        a a10 = new a.C0145a().c(true).b(DISCORD_ACCOUNT_IDENTITY).a();
+        q.g(a10, "Builder()\n            .s…ITY)\n            .build()");
         this.credentialsClient.D(a10).b(new d() { 
             @Override 
             public final void a(Task task) {
@@ -83,17 +83,17 @@ public final class SmartLockModule extends ReactContextBaseJavaModule {
     public static final void requestCredentials$lambda$0(SmartLockModule this$0, Task task) {
         boolean z10;
         String str;
-        q.g(this$0, "this$0");
-        q.g(task, "task");
+        q.h(this$0, "this$0");
+        q.h(task, "task");
         if (task.o()) {
-            Credential c10 = ((p8.a) task.k()).c();
+            Credential c10 = ((r8.a) task.k()).c();
             String str2 = null;
             if (c10 != null) {
                 str = c10.getId();
             } else {
                 str = null;
             }
-            Credential c11 = ((p8.a) task.k()).c();
+            Credential c11 = ((r8.a) task.k()).c();
             if (c11 != null) {
                 str2 = c11.E();
             }
@@ -142,8 +142,8 @@ public final class SmartLockModule extends ReactContextBaseJavaModule {
 
     
     public static final void updateAccountCredentials$lambda$4(SmartLockModule this$0, Task task) {
-        q.g(this$0, "this$0");
-        q.g(task, "task");
+        q.h(this$0, "this$0");
+        q.h(task, "task");
         if (!task.o()) {
             Exception j10 = task.j();
             if (j10 instanceof ResolvableApiException) {
@@ -157,7 +157,7 @@ public final class SmartLockModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void autoLogin(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         this.loginPromise = promise;
         requestCredentials();
     }
@@ -169,14 +169,14 @@ public final class SmartLockModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void removeCredentials(String login) {
-        q.g(login, "login");
+        q.h(login, "login");
         this.credentialsClient.C(new Credential.a(login).a());
     }
 
     @ReactMethod
     public final boolean updateAccountCredentials(String login, String password, String str, String str2) {
-        q.g(login, "login");
-        q.g(password, "password");
+        q.h(login, "login");
+        q.h(password, "password");
         Credential.a aVar = new Credential.a(login);
         if (str != null) {
             aVar.b(str);
@@ -186,7 +186,7 @@ public final class SmartLockModule extends ReactContextBaseJavaModule {
         }
         aVar.c(password);
         Credential a10 = aVar.a();
-        q.f(a10, "Builder(login).apply {\n …ssword)\n        }.build()");
+        q.g(a10, "Builder(login).apply {\n …ssword)\n        }.build()");
         this.credentialsClient.E(a10).b(new d() { 
             @Override 
             public final void a(Task task) {

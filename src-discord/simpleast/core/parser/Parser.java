@@ -2,13 +2,13 @@ package com.discord.simpleast.core.parser;
 
 import android.util.Log;
 import com.discord.simpleast.core.node.Node;
-import ff.x;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Stack;
 import java.util.regex.Matcher;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.e;
@@ -46,7 +46,7 @@ public class Parser<R, T extends Node<R>, S> {
         
         public ParseException(String message, CharSequence charSequence, Throwable th2) {
             super("Error while parsing: " + message + " \n Source: " + charSequence, th2);
-            q.g(message, "message");
+            q.h(message, "message");
         }
     }
 
@@ -83,14 +83,14 @@ public class Parser<R, T extends Node<R>, S> {
     }
 
     public final Parser<R, T, S> addRule(Rule<R, ? extends T, S> rule) {
-        q.g(rule, "rule");
+        q.h(rule, "rule");
         this.rules.add(rule);
         return this;
     }
 
     public final Parser<R, T, S> addRules(Rule<R, ? extends T, S>... newRules) {
         List d10;
-        q.g(newRules, "newRules");
+        q.h(newRules, "newRules");
         d10 = e.d(newRules);
         return addRules(d10);
     }
@@ -103,8 +103,8 @@ public class Parser<R, T extends Node<R>, S> {
     public final List<T> parse(CharSequence source, S s10, List<? extends Rule<R, ? extends T, S>> rules) {
         List<T> list;
         Pair pair;
-        q.g(source, "source");
-        q.g(rules, "rules");
+        q.h(source, "source");
+        q.h(rules, "rules");
         Stack stack = new Stack();
         List<T> list2 = null;
         boolean z10 = true;
@@ -182,7 +182,7 @@ public class Parser<R, T extends Node<R>, S> {
     }
 
     public final Parser<R, T, S> addRules(Collection<? extends Rule<R, ? extends T, S>> newRules) {
-        q.g(newRules, "newRules");
+        q.h(newRules, "newRules");
         this.rules.addAll(newRules);
         return this;
     }

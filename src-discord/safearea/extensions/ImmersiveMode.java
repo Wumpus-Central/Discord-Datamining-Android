@@ -38,7 +38,7 @@ public final class ImmersiveMode {
         if (viewGroup != null) {
             view = viewGroup.getChildAt(0);
         }
-        q.d(view);
+        q.e(view);
         w0.D0(viewGroup, new r0() { 
             @Override 
             public final WindowInsetsCompat a(View view2, WindowInsetsCompat windowInsetsCompat) {
@@ -51,28 +51,28 @@ public final class ImmersiveMode {
 
     
     public static final WindowInsetsCompat fitSystemWindowsAndAdjustResize$lambda$2(ViewGroup viewGroup, View rootViewChild, View view, WindowInsetsCompat insets) {
-        q.g(rootViewChild, "$rootViewChild");
-        q.g(view, "<anonymous parameter 0>");
-        q.g(insets, "insets");
+        q.h(rootViewChild, "$rootViewChild");
+        q.h(view, "<anonymous parameter 0>");
+        q.h(insets, "insets");
         viewGroup.setFitsSystemWindows(true);
         Iterator<T> it = rootViewInsetUpdateCallbacks.iterator();
         while (it.hasNext()) {
             ((Function1) it.next()).invoke(insets);
         }
-        WindowInsetsCompat a10 = new WindowInsetsCompat.b(insets).b(WindowInsetsCompat.m.g(), Insets.b(0, 0, 0, Math.max(WindowInsetsCompatExtensionsKt.getImeInsets$default(insets, false, 1, null).f3396d, 0))).a();
+        WindowInsetsCompat a10 = new WindowInsetsCompat.b(insets).b(WindowInsetsCompat.m.g(), Insets.b(0, 0, 0, Math.max(WindowInsetsCompatExtensionsKt.getImeInsets$default(insets, false, 1, null).f2744d, 0))).a();
         w0.c0(rootViewChild, a10);
         return a10;
     }
 
     public final void addRootViewInsetUpdateCallback$safe_area_release(Function1<? super WindowInsetsCompat, Unit> onRootViewInsetsUpdated) {
-        q.g(onRootViewInsetsUpdated, "onRootViewInsetsUpdated");
+        q.h(onRootViewInsetsUpdated, "onRootViewInsetsUpdated");
         rootViewInsetUpdateCallbacks.add(onRootViewInsetsUpdated);
     }
 
     public final void enableImmersiveMode(Activity activity) {
-        q.g(activity, "activity");
+        q.h(activity, "activity");
         Window window = activity.getWindow();
-        q.f(window, "activity.window");
+        q.g(window, "activity.window");
         WindowExtensionsKt.setSystemUITransparent(window);
         fitSystemWindowsAndAdjustResize(activity);
     }

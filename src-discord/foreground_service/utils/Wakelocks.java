@@ -17,13 +17,13 @@ public final class Wakelocks {
     private WifiManager.WifiLock wakeLockWifi;
 
     public Wakelocks(String tag, long j10) {
-        q.g(tag, "tag");
+        q.h(tag, "tag");
         this.tag = tag;
         this.timeout = j10;
     }
 
     public final void acquire(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         WifiManager wifiManager = (WifiManager) a.i(context, WifiManager.class);
         if (wifiManager != null) {
             WifiManager.WifiLock createWifiLock = wifiManager.createWifiLock(3, this.tag);

@@ -22,12 +22,12 @@ final class MediaPlayerManagerModule$setMuted$1 extends s implements Function1<S
     @Override 
     public   Unit invoke(SimpleExoPlayer simpleExoPlayer) {
         invoke2(simpleExoPlayer);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(SimpleExoPlayer player) {
-        q.g(player, "player");
+        q.h(player, "player");
         player.e1(this.$muted ? 0.0f : 1.0f);
     }
 }

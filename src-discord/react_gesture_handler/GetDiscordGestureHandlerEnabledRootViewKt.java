@@ -9,7 +9,7 @@ import kotlin.jvm.internal.q;
 
 public final class GetDiscordGestureHandlerEnabledRootViewKt {
     public static final ViewGroup getDiscordGestureHandlerEnabledRootView(View view) {
-        q.g(view, "view");
+        q.h(view, "view");
         return DiscordGestureHandlerEnabledRootView.Companion.get$react_gesture_handler_release(view);
     }
 }

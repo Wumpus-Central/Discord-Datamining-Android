@@ -12,8 +12,8 @@ import com.facebook.react.uimanager.UIManagerHelper;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.uimanager.events.EventDispatcher;
 import com.facebook.react.viewmanagers.EmojiPickerRowViewManagerInterface;
-import ff.x;
 import java.util.Map;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;
@@ -51,7 +51,7 @@ public final class EmojiPickerRowViewManager extends SimpleViewManager<EmojiPick
     
     @Override 
     public EmojiPickerRowView createViewInstance(ThemedReactContext reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         EmojiPickerRowView emojiPickerRowView = new EmojiPickerRowView(reactContext);
         EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag(reactContext, emojiPickerRowView.getId());
         emojiPickerRowView.setOnPressEmoji(new EmojiPickerRowViewManager$createViewInstance$1$1(this, eventDispatcherForReactTag, reactContext, emojiPickerRowView));
@@ -61,7 +61,7 @@ public final class EmojiPickerRowViewManager extends SimpleViewManager<EmojiPick
 
     @ReactProp(name = "rowData")
     public void setRowData(EmojiPickerRowView view, ReadableMap readableMap) {
-        q.g(view, "view");
+        q.h(view, "view");
         if (readableMap != null) {
             view.setRowData(EmojiPickerRowDataSerializationUtilsKt.deserializeEmojiPickerRowData(readableMap));
         }

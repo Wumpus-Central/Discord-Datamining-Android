@@ -23,12 +23,12 @@ public final class MobileVoiceOverlay$showOverlay$1$1 extends s implements Funct
     @Override 
     public   Unit invoke(OverlayVoiceBubble overlayVoiceBubble) {
         invoke2(overlayVoiceBubble);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(OverlayVoiceBubble it) {
-        q.g(it, "it");
+        q.h(it, "it");
         this.this$0.floatBubbleToHorizontalEdge(it);
     }
 }

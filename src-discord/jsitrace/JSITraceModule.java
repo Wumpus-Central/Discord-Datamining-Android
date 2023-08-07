@@ -1,6 +1,5 @@
 package com.discord.jsitrace;
 
-import com.discord.codegen.BuildConfig;
 import com.discord.react.utilities.ReactContextExtensionsKt;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -32,7 +31,7 @@ public final class JSITraceModule extends ReactContextBaseJavaModule {
     
     public JSITraceModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     private final native void nativeInstall(long j10);
@@ -42,7 +41,7 @@ public final class JSITraceModule extends ReactContextBaseJavaModule {
         return NAME;
     }
 
-    @ReactMethod(isBlockingSynchronousMethod = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED)
+    @ReactMethod(isBlockingSynchronousMethod = true)
     public final boolean install() {
         try {
             if (!isEnabled()) {
@@ -50,7 +49,7 @@ public final class JSITraceModule extends ReactContextBaseJavaModule {
             }
             System.loadLibrary("jsitrace");
             ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-            q.f(reactApplicationContext, "reactApplicationContext");
+            q.g(reactApplicationContext, "reactApplicationContext");
             nativeInstall(ReactContextExtensionsKt.jsiId(reactApplicationContext));
             return true;
         } catch (Exception unused) {
@@ -58,11 +57,11 @@ public final class JSITraceModule extends ReactContextBaseJavaModule {
         }
     }
 
-    @ReactMethod(isBlockingSynchronousMethod = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED)
+    @ReactMethod(isBlockingSynchronousMethod = true)
     public final boolean isEnabled() {
         JSITraceCache jSITraceCache = JSITraceCache.INSTANCE;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         return jSITraceCache.isEnabled(reactApplicationContext);
     }
 
@@ -70,7 +69,7 @@ public final class JSITraceModule extends ReactContextBaseJavaModule {
     public final void setEnabled(boolean z10) {
         JSITraceCache jSITraceCache = JSITraceCache.INSTANCE;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         jSITraceCache.setEnabled(reactApplicationContext, z10);
     }
 }

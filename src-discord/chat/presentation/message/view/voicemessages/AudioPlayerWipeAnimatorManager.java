@@ -11,7 +11,7 @@ import android.os.Build;
 import com.discord.chat.R;
 import com.discord.chat.databinding.AudioPlayerViewBinding;
 import com.discord.theme.ThemeManagerKt;
-import ff.n;
+import jf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -51,8 +51,8 @@ public final class AudioPlayerWipeAnimatorManager {
         Lazy b13;
         Lazy b14;
         Lazy b15;
-        q.g(context, "context");
-        q.g(binding, "binding");
+        q.h(context, "context");
+        q.h(binding, "binding");
         this.brand500 = context.getColor(R.color.brand_500);
         b10 = n.b(new AudioPlayerWipeAnimatorManager$buttonContainerDefaultDrawable$2(context));
         this.buttonContainerDefaultDrawable$delegate = b10;
@@ -84,23 +84,23 @@ public final class AudioPlayerWipeAnimatorManager {
         animatorSet.addListener(new Animator.AnimatorListener() { 
             @Override 
             public void onAnimationCancel(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationEnd(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
                 AudioPlayerWipeAnimatorManager.this.animatorSet = null;
             }
 
             @Override 
             public void onAnimationRepeat(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationStart(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
         });
         return animatorSet;

@@ -19,12 +19,12 @@ public  class MessagingService$Companion$init$1 extends n implements Function1<S
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String p02) {
-        q.g(p02, "p0");
+        q.h(p02, "p0");
         ((NotificationClient) this.receiver).setToken(p02);
     }
 }

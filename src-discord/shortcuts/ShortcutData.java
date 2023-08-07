@@ -33,11 +33,11 @@ public final class ShortcutData {
         public final Intent createShortcutIntent(Context context, String action, Class<?> clazz, String tag, Map<String, String> data) {
             List c10;
             List a10;
-            q.g(context, "context");
-            q.g(action, "action");
-            q.g(clazz, "clazz");
-            q.g(tag, "tag");
-            q.g(data, "data");
+            q.h(context, "context");
+            q.h(action, "action");
+            q.h(clazz, "clazz");
+            q.h(tag, "tag");
+            q.h(data, "data");
             Intent putExtra = new Intent(action, null, context, clazz).putExtra(ShortcutData.KEY_SHORTCUT, true).putExtra(ShortcutData.KEY_TAG, tag);
             c10 = i.c();
             for (Map.Entry<String, String> entry : data.entrySet()) {
@@ -48,10 +48,10 @@ public final class ShortcutData {
                     c10.add(value);
                 }
             }
-            Unit unit = Unit.f20679a;
+            Unit unit = Unit.f21025a;
             a10 = i.a(c10);
             Intent putExtra2 = putExtra.putExtra(ShortcutData.KEY_DATA, (String[]) a10.toArray(new String[0]));
-            q.f(putExtra2, "Intent(action, null, con…rray(),\n                )");
+            q.g(putExtra2, "Intent(action, null, con…rray(),\n                )");
             return putExtra2;
         }
 
@@ -65,8 +65,8 @@ public final class ShortcutData {
     }
 
     public ShortcutData(String tag, Map<String, String> data) {
-        q.g(tag, "tag");
-        q.g(data, "data");
+        q.h(tag, "tag");
+        q.h(data, "data");
         this.tag = tag;
         this.data = data;
     }
@@ -91,8 +91,8 @@ public final class ShortcutData {
     }
 
     public final ShortcutData copy(String tag, Map<String, String> data) {
-        q.g(tag, "tag");
-        q.g(data, "data");
+        q.h(tag, "tag");
+        q.h(data, "data");
         return new ShortcutData(tag, data);
     }
 
@@ -104,7 +104,7 @@ public final class ShortcutData {
             return false;
         }
         ShortcutData shortcutData = (ShortcutData) obj;
-        return q.b(this.tag, shortcutData.tag) && q.b(this.data, shortcutData.data);
+        return q.c(this.tag, shortcutData.tag) && q.c(this.data, shortcutData.data);
     }
 
     public final Map<String, String> getData() {

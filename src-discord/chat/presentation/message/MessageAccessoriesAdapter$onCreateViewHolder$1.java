@@ -23,13 +23,13 @@ public final class MessageAccessoriesAdapter$onCreateViewHolder$1 extends s impl
     @Override 
     public   Unit invoke(MessagePartViewHolder messagePartViewHolder) {
         invoke2(messagePartViewHolder);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(MessagePartViewHolder holder) {
         Function1 function1;
-        q.g(holder, "holder");
+        q.h(holder, "holder");
         function1 = this.this$0.onTapSpoiler;
         function1.invoke(holder);
     }

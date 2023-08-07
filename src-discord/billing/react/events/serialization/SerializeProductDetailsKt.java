@@ -4,10 +4,10 @@ import com.android.billingclient.api.ProductDetails;
 import com.discord.react.utilities.NativeArrayExtensionsKt;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.facebook.react.bridge.ReadableNativeArray;
-import ff.x;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.collections.k;
 import kotlin.jvm.internal.q;
@@ -21,15 +21,15 @@ public final class SerializeProductDetailsKt {
         long j10;
         String str;
         boolean z10;
-        q.g(list, "<this>");
+        q.h(list, "<this>");
         s10 = k.s(list, 10);
         ArrayList arrayList = new ArrayList(s10);
         for (ProductDetails productDetails : list) {
             ArrayList arrayList2 = new ArrayList();
-            if (q.b(productDetails.d(), "inapp")) {
+            if (q.c(productDetails.d(), "inapp")) {
                 ProductDetails.a b10 = productDetails.b();
                 if (b10 != null) {
-                    q.f(b10, "productDetails.oneTimePu…oductDetails.productId}\")");
+                    q.g(b10, "productDetails.oneTimePu…oductDetails.productId}\")");
                     j10 = b10.b();
                     obj = b10.a();
                     str = b10.c();
@@ -38,7 +38,7 @@ public final class SerializeProductDetailsKt {
                 }
             } else {
                 obj = null;
-                if (q.b(productDetails.d(), "subs")) {
+                if (q.c(productDetails.d(), "subs")) {
                     List<ProductDetails.d> e10 = productDetails.e();
                     if (e10 != null) {
                         Iterator<T> it = e10.iterator();

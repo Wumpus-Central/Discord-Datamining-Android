@@ -9,25 +9,25 @@ import kotlin.jvm.internal.q;
 
 public final class LegacyCacheUtilsKt {
     public static final String getLegacyAuthToken(Context context) {
-        q.g(context, "<this>");
+        q.h(context, "<this>");
         return getLegacySharedPrefs(context).getString("STORE_AUTHED_TOKEN", null);
     }
 
     private static final SharedPreferences getLegacySharedPrefs(Context context) {
         String packageName = context.getPackageName();
         SharedPreferences sharedPreferences = context.getSharedPreferences(packageName + "_preferences", 0);
-        q.f(sharedPreferences, "getSharedPreferences(\"${…s\", Context.MODE_PRIVATE)");
+        q.g(sharedPreferences, "getSharedPreferences(\"${…s\", Context.MODE_PRIVATE)");
         return sharedPreferences;
     }
 
     private static final SharedPreferences getLegacySharedPrefsDurable(Context context) {
         SharedPreferences sharedPreferences = context.getSharedPreferences("prefsSessionDurable", 0);
-        q.f(sharedPreferences, "getSharedPreferences(\"pr…e\", Context.MODE_PRIVATE)");
+        q.g(sharedPreferences, "getSharedPreferences(\"pr…e\", Context.MODE_PRIVATE)");
         return sharedPreferences;
     }
 
     public static final boolean wasLegacyUsingAMOLEDTheme(Context context) {
-        q.g(context, "<this>");
-        return q.b(getLegacySharedPrefsDurable(context).getString("CACHE_KEY_THEME", null), "pureEvil");
+        q.h(context, "<this>");
+        return q.c(getLegacySharedPrefsDurable(context).getString("CACHE_KEY_THEME", null), "pureEvil");
     }
 }

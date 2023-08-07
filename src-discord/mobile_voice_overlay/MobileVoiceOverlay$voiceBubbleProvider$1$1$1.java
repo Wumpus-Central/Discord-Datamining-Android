@@ -30,12 +30,12 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1$1$1 extends s implem
     @Override 
     public   Unit invoke(OverlayMenuBubbleDialog overlayMenuBubbleDialog) {
         invoke2(overlayMenuBubbleDialog);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(OverlayMenuBubbleDialog menuDialog) {
-        q.g(menuDialog, "menuDialog");
+        q.h(menuDialog, "menuDialog");
         ViewGroup.LayoutParams layoutParams = menuDialog.getLinkedAnchorView().getLayoutParams();
         OverlayVoiceBubble overlayVoiceBubble = this.$voiceBubble;
         Rect rect = this.$marginRect;
@@ -47,28 +47,29 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1$1$1 extends s implem
         menuDialog.addOnAttachStateChangeListener(new View.OnAttachStateChangeListener() { 
             @Override 
             public void onViewAttachedToWindow(final View v10) {
-                q.g(v10, "v");
+                q.h(v10, "v");
                 final OverlayVoiceBubble overlayVoiceBubble3 = OverlayVoiceBubble.this;
                 if (!w0.U(v10) || v10.isLayoutRequested()) {
                     v10.addOnLayoutChangeListener(new View.OnLayoutChangeListener() { 
                         @Override 
                         public void onLayoutChange(View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
-                            q.g(view, "view");
+                            q.h(view, "view");
                             view.removeOnLayoutChangeListener(this);
                             View findViewWithTag = v10.findViewWithTag("Active Voice Bubble");
-                            q.f(findViewWithTag, "v.findViewWithTag(ANCHOR_TAG)");
+                            q.g(findViewWithTag, "v.findViewWithTag(ANCHOR_TAG)");
                             overlayVoiceBubble3.anchorOn(findViewWithTag);
                         }
                     });
                     return;
                 }
                 View findViewWithTag = v10.findViewWithTag("Active Voice Bubble");
-                q.f(findViewWithTag, "v.findViewWithTag(ANCHOR_TAG)");
+                q.g(findViewWithTag, "v.findViewWithTag(ANCHOR_TAG)");
                 overlayVoiceBubble3.anchorOn(findViewWithTag);
             }
 
             @Override 
-            public void onViewDetachedFromWindow(View view) {
+            public void onViewDetachedFromWindow(View v10) {
+                q.h(v10, "v");
                 if (w0.T(OverlayVoiceBubble.this)) {
                     OverlayVoiceBubble.this.setBubbleTouchable(true);
                     OverlayVoiceBubble.this.anchorOff(true);

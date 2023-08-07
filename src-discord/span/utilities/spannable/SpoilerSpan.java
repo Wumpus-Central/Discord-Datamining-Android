@@ -26,7 +26,7 @@ public final class SpoilerSpan extends CharacterStyle implements UpdateAppearanc
 
     @Override 
     public void updateDrawState(TextPaint tp) {
-        q.g(tp, "tp");
+        q.h(tp, "tp");
         if (this.isRevealed) {
             tp.bgColor = this.revealedColor;
             return;

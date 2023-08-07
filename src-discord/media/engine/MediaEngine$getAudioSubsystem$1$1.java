@@ -19,8 +19,8 @@ final class MediaEngine$getAudioSubsystem$1$1 implements NativeEngine.GetAudioSu
 
     @Override 
     public final void onAudioSubsystem(String subsystem, String audioLayer) {
-        q.g(subsystem, "subsystem");
-        q.g(audioLayer, "audioLayer");
+        q.h(subsystem, "subsystem");
+        q.h(audioLayer, "audioLayer");
         this.$cb.invoke(subsystem, audioLayer);
     }
 }

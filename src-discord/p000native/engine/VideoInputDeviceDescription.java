@@ -13,9 +13,9 @@ public final class VideoInputDeviceDescription {
     private final String name;
 
     public VideoInputDeviceDescription(String name, String guid, VideoInputDeviceFacing facing) {
-        q.g(name, "name");
-        q.g(guid, "guid");
-        q.g(facing, "facing");
+        q.h(name, "name");
+        q.h(guid, "guid");
+        q.h(facing, "facing");
         this.name = name;
         this.guid = guid;
         this.facing = facing;
@@ -47,9 +47,9 @@ public final class VideoInputDeviceDescription {
     }
 
     public final VideoInputDeviceDescription copy(String name, String guid, VideoInputDeviceFacing facing) {
-        q.g(name, "name");
-        q.g(guid, "guid");
-        q.g(facing, "facing");
+        q.h(name, "name");
+        q.h(guid, "guid");
+        q.h(facing, "facing");
         return new VideoInputDeviceDescription(name, guid, facing);
     }
 
@@ -61,7 +61,7 @@ public final class VideoInputDeviceDescription {
             return false;
         }
         VideoInputDeviceDescription videoInputDeviceDescription = (VideoInputDeviceDescription) obj;
-        return q.b(this.name, videoInputDeviceDescription.name) && q.b(this.guid, videoInputDeviceDescription.guid) && this.facing == videoInputDeviceDescription.facing;
+        return q.c(this.name, videoInputDeviceDescription.name) && q.c(this.guid, videoInputDeviceDescription.guid) && this.facing == videoInputDeviceDescription.facing;
     }
 
     public final VideoInputDeviceFacing getFacing() {

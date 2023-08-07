@@ -1,11 +1,11 @@
 package com.discord.file_downloader;
 
 import android.content.Context;
-import ff.n;
-import gf.v;
 import java.io.File;
 import java.util.Iterator;
 import java.util.Map;
+import jf.n;
+import kf.v;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
@@ -44,7 +44,7 @@ public final class FileDownloader {
     public static  Flow downloadFile$default(FileDownloader fileDownloader, Context context, String str, String str2, File file, boolean z10, int i10, Object obj) {
         if ((i10 & 8) != 0) {
             file = context.getCacheDir();
-            q.f(file, "context.cacheDir");
+            q.g(file, "context.cacheDir");
         }
         if ((i10 & 16) != 0) {
             z10 = false;
@@ -57,9 +57,9 @@ public final class FileDownloader {
     }
 
     public final Response downloadBlob(String fileUrl, Map<String, String> headers, OkHttpClient client) {
-        q.g(fileUrl, "fileUrl");
-        q.g(headers, "headers");
-        q.g(client, "client");
+        q.h(fileUrl, "fileUrl");
+        q.h(headers, "headers");
+        q.h(client, "client");
         Request.Builder builder = new Request.Builder();
         Iterator<T> it = headers.entrySet().iterator();
         while (it.hasNext()) {
@@ -70,10 +70,10 @@ public final class FileDownloader {
     }
 
     public final Flow<DownloadState> downloadFile(Context context, String fileUrl, String fileName, File downloadDirectory, boolean z10) {
-        q.g(context, "context");
-        q.g(fileUrl, "fileUrl");
-        q.g(fileName, "fileName");
-        q.g(downloadDirectory, "downloadDirectory");
+        q.h(context, "context");
+        q.h(fileUrl, "fileUrl");
+        q.h(fileName, "fileName");
+        q.h(downloadDirectory, "downloadDirectory");
         return d.e(new FileDownloader$downloadFile$1(downloadDirectory, fileName, fileUrl, z10, null));
     }
 }

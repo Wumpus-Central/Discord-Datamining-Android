@@ -14,13 +14,13 @@ public final class UploadProgressViewHolder extends MessagePartViewHolder {
     
     public UploadProgressViewHolder(UploadProgressView uploadProgressView) {
         super(uploadProgressView, null);
-        q.g(uploadProgressView, "uploadProgressView");
+        q.h(uploadProgressView, "uploadProgressView");
         this.uploadProgressView = uploadProgressView;
     }
 
     public final void bind(UploadProgress uploadProgress, ChatEventHandler eventHandler) {
-        q.g(uploadProgress, "uploadProgress");
-        q.g(eventHandler, "eventHandler");
+        q.h(uploadProgress, "uploadProgress");
+        q.h(eventHandler, "eventHandler");
         this.uploadProgressView.set(uploadProgress.getHeaderText(), uploadProgress.getHeaderColor(), uploadProgress.getBackgroundColor(), (int) (uploadProgress.getProgress() * 100), uploadProgress.getProgressStartColor(), uploadProgress.getProgressTrackColor(), uploadProgress.getIconTintColor(), new UploadProgressViewHolder$bind$1(eventHandler, uploadProgress));
     }
 }

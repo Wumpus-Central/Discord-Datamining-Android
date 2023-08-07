@@ -22,11 +22,11 @@ final class MediaEngineModule$speedTestConnectionInstanceStopSpeedTestReceiver$1
     @Override 
     public   Unit invoke(Integer num, String str) {
         invoke(num.intValue(), str);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final void invoke(int i10, String results) {
-        q.g(results, "results");
+        q.h(results, "results");
         this.$callback.invoke(Integer.valueOf(i10), results);
     }
 }

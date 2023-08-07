@@ -12,8 +12,8 @@ public final class CallSystemMessageItem extends ChatListItem {
 
     
     public CallSystemMessageItem(Message message) {
-        super(message.m16getId3Eiw7ao(), null);
-        q.g(message, "message");
+        super(message.m17getId3Eiw7ao(), null);
+        q.h(message, "message");
         this.message = message;
         if (!MessageKt.isCallMessage(message)) {
             throw new IllegalArgumentException("Only \"call\" system messages are allowed".toString());
@@ -32,7 +32,7 @@ public final class CallSystemMessageItem extends ChatListItem {
     }
 
     public final CallSystemMessageItem copy(Message message) {
-        q.g(message, "message");
+        q.h(message, "message");
         return new CallSystemMessageItem(message);
     }
 
@@ -40,7 +40,7 @@ public final class CallSystemMessageItem extends ChatListItem {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof CallSystemMessageItem) && q.b(this.message, ((CallSystemMessageItem) obj).message);
+        return (obj instanceof CallSystemMessageItem) && q.c(this.message, ((CallSystemMessageItem) obj).message);
     }
 
     public final Message getMessage() {

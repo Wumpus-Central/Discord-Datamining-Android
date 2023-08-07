@@ -23,12 +23,12 @@ public final class RLottieImageView$rLottieStateManager$3 extends s implements F
     @Override 
     public   Unit invoke(RLottieImageView.Config config) {
         invoke2(config);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(RLottieImageView.Config it) {
-        q.g(it, "it");
+        q.h(it, "it");
         this.this$0.recycle(false);
     }
 }

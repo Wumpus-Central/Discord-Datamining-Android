@@ -43,7 +43,7 @@ public final class PromiseWrapper implements Promise {
         }
 
         public final Rejection invoke(Rejection it) {
-            q.g(it, "it");
+            q.h(it, "it");
             return it;
         }
     }
@@ -107,7 +107,7 @@ public final class PromiseWrapper implements Promise {
                 return false;
             }
             Rejection rejection = (Rejection) obj;
-            return q.b(this.code, rejection.code) && q.b(this.message, rejection.message) && q.b(this.throwable, rejection.throwable) && q.b(this.userInfo, rejection.userInfo);
+            return q.c(this.code, rejection.code) && q.c(this.message, rejection.message) && q.c(this.throwable, rejection.throwable) && q.c(this.userInfo, rejection.userInfo);
         }
 
         public final String getCode() {
@@ -152,9 +152,9 @@ public final class PromiseWrapper implements Promise {
 
     
     public PromiseWrapper(Promise promise, Function1<Object, ? extends Object> resolveTransform, Function1<? super Rejection, Rejection> rejectTransform) {
-        q.g(promise, "promise");
-        q.g(resolveTransform, "resolveTransform");
-        q.g(rejectTransform, "rejectTransform");
+        q.h(promise, "promise");
+        q.h(resolveTransform, "resolveTransform");
+        q.h(rejectTransform, "rejectTransform");
         this.promise = promise;
         this.resolveTransform = resolveTransform;
         this.rejectTransform = rejectTransform;
@@ -200,12 +200,12 @@ public final class PromiseWrapper implements Promise {
 
     @Override 
     public void reject(String str, WritableMap userInfo) {
-        q.g(userInfo, "userInfo");
+        q.h(userInfo, "userInfo");
         Rejection invoke = this.rejectTransform.invoke(new Rejection(str, null, null, userInfo));
         Promise promise = this.promise;
         String code = invoke.getCode();
         WritableMap userInfo2 = invoke.getUserInfo();
-        q.d(userInfo2);
+        q.e(userInfo2);
         promise.reject(code, userInfo2);
     }
 
@@ -217,13 +217,13 @@ public final class PromiseWrapper implements Promise {
 
     @Override 
     public void reject(String str, String str2, WritableMap userInfo) {
-        q.g(userInfo, "userInfo");
+        q.h(userInfo, "userInfo");
         Rejection invoke = this.rejectTransform.invoke(new Rejection(null, str2, null, userInfo));
         Promise promise = this.promise;
         String code = invoke.getCode();
         String message = invoke.getMessage();
         WritableMap userInfo2 = invoke.getUserInfo();
-        q.d(userInfo2);
+        q.e(userInfo2);
         promise.reject(code, message, userInfo2);
     }
 

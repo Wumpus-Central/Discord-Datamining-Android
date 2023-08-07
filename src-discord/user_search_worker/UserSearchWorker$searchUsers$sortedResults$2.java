@@ -15,7 +15,7 @@ final class UserSearchWorker$searchUsers$sortedResults$2 extends s implements Fu
     }
 
     public final Comparable<?> invoke(UserSearchWorkerResult it) {
-        q.g(it, "it");
+        q.h(it, "it");
         return it.getComparator();
     }
 }

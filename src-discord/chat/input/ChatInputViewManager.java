@@ -19,8 +19,8 @@ import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.viewmanagers.DCDChatInputManagerDelegate;
 import com.facebook.react.viewmanagers.DCDChatInputManagerInterface;
 import com.facebook.react.views.textinput.ReactTextInputShadowNode;
-import ff.x;
 import java.util.Map;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Ref$ObjectRef;
@@ -63,64 +63,64 @@ public final class ChatInputViewManager extends ViewGroupManager<ChatInputRootVi
 
     @ReactProp(name = "keyboardAppearance")
     public void setKeyboardAppearance(ChatInputRootView view, int i10) {
-        q.g(view, "view");
+        q.h(view, "view");
     }
 
     @ReactProp(name = "markAsSpoilerTitle")
     public void setMarkAsSpoilerTitle(ChatInputRootView view, String str) {
-        q.g(view, "view");
+        q.h(view, "view");
     }
 
     @ReactProp(name = "selectionColor")
     public void setSelectionColor(ChatInputRootView view, String str) {
-        q.g(view, "view");
+        q.h(view, "view");
     }
 
     
     
     @Override 
     public ChatInputRootView createViewInstance(final ThemedReactContext reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         final ChatInputRootView chatInputRootView = new ChatInputRootView(reactContext, null, 0, 6, null);
         final Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
-        ref$ObjectRef.f20706k = UIManagerHelper.getEventDispatcherForReactTag(reactContext, chatInputRootView.getId());
+        ref$ObjectRef.f21052k = UIManagerHelper.getEventDispatcherForReactTag(reactContext, chatInputRootView.getId());
         chatInputRootView.setListener(new ChatInputRootView.ChatInputListener() { 
             @Override 
             public void onContentSizeChange(int i10, int i11) {
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20706k, reactContext, chatInputRootView, new OnContentSizeChangeEvent(i10, i11));
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f21052k, reactContext, chatInputRootView, new OnContentSizeChangeEvent(i10, i11));
             }
 
             @Override 
             public void onEndBlur(String text) {
-                q.g(text, "text");
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20706k, reactContext, chatInputRootView, new OnEndBlurEvent(text));
+                q.h(text, "text");
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f21052k, reactContext, chatInputRootView, new OnEndBlurEvent(text));
             }
 
             @Override 
             public void onFocus(int i10, int i11) {
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20706k, reactContext, chatInputRootView, new OnFocusEvent(i10, i11, 0, 4, (DefaultConstructorMarker) null));
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f21052k, reactContext, chatInputRootView, new OnFocusEvent(i10, i11, 0, 4, (DefaultConstructorMarker) null));
             }
 
             @Override 
             public void onImageInserted(Uri uri) {
-                q.g(uri, "uri");
+                q.h(uri, "uri");
                 ThemedReactContext themedReactContext = reactContext;
                 ChatInputRootView chatInputRootView2 = chatInputRootView;
                 String uri2 = uri.toString();
-                q.f(uri2, "uri.toString()");
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20706k, themedReactContext, chatInputRootView2, new OnPasteImageEvent(uri2, reactContext.getContentResolver().getType(uri)));
+                q.g(uri2, "uri.toString()");
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f21052k, themedReactContext, chatInputRootView2, new OnPasteImageEvent(uri2, reactContext.getContentResolver().getType(uri)));
             }
 
             @Override 
             public void onRequestSend() {
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20706k, reactContext, chatInputRootView, new OnRequestSendEvent());
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f21052k, reactContext, chatInputRootView, new OnRequestSendEvent());
             }
 
             @Override 
             public void onTextOrSelectionChanged(int i10, int i11, String text, String editId) {
-                q.g(text, "text");
-                q.g(editId, "editId");
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20706k, reactContext, chatInputRootView, new OnSelectionOrTextChangeEvent(i10, i11, text, editId));
+                q.h(text, "text");
+                q.h(editId, "editId");
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f21052k, reactContext, chatInputRootView, new OnSelectionOrTextChangeEvent(i10, i11, text, editId));
             }
         });
         KeyboardManager.INSTANCE.addKeyboardListener(chatInputRootView);
@@ -134,37 +134,37 @@ public final class ChatInputViewManager extends ViewGroupManager<ChatInputRootVi
     }
 
     public void onDropViewInstance(ChatInputRootView view) {
-        q.g(view, "view");
+        q.h(view, "view");
         KeyboardManager.INSTANCE.removeKeyboardListener(view);
     }
 
     @ReactProp(name = "editable")
     public void setEditable(ChatInputRootView view, boolean z10) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.setEditTextEnabled(z10);
     }
 
     @ReactProp(name = ReactTextInputShadowNode.PROP_PLACEHOLDER)
     public void setPlaceholder(ChatInputRootView view, String str) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.setHint(str);
     }
 
     @ReactProp(name = "placeholderColor")
     public void setPlaceholderColor(ChatInputRootView view, String str) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.setHintTextColor(Color.parseColor(str));
     }
 
     @ReactProp(name = "shouldShowCursor")
     public void setShouldShowCursor(ChatInputRootView view, boolean z10) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.setCursorVisible(z10);
     }
 
     @ReactProp(name = "text")
     public void setText(ChatInputRootView view, String str) {
-        q.g(view, "view");
+        q.h(view, "view");
         if (str != null) {
             view.setText(str);
         }
@@ -172,7 +172,7 @@ public final class ChatInputViewManager extends ViewGroupManager<ChatInputRootVi
 
     @ReactProp(name = "textColor")
     public void setTextColor(ChatInputRootView view, String str) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.setTextColor(Color.parseColor(str));
     }
 }

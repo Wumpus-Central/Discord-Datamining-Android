@@ -18,7 +18,7 @@ public abstract class DownloadState {
         
         public Completed(File file) {
             super(null);
-            q.g(file, "file");
+            q.h(file, "file");
             this.file = file;
         }
 
@@ -34,7 +34,7 @@ public abstract class DownloadState {
         }
 
         public final Completed copy(File file) {
-            q.g(file, "file");
+            q.h(file, "file");
             return new Completed(file);
         }
 
@@ -42,7 +42,7 @@ public abstract class DownloadState {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof Completed) && q.b(this.file, ((Completed) obj).file);
+            return (obj instanceof Completed) && q.c(this.file, ((Completed) obj).file);
         }
 
         public final File getFile() {
@@ -67,7 +67,7 @@ public abstract class DownloadState {
         
         public Failure(Exception exception) {
             super(null);
-            q.g(exception, "exception");
+            q.h(exception, "exception");
             this.exception = exception;
         }
 
@@ -83,7 +83,7 @@ public abstract class DownloadState {
         }
 
         public final Failure copy(Exception exception) {
-            q.g(exception, "exception");
+            q.h(exception, "exception");
             return new Failure(exception);
         }
 
@@ -91,7 +91,7 @@ public abstract class DownloadState {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof Failure) && q.b(this.exception, ((Failure) obj).exception);
+            return (obj instanceof Failure) && q.c(this.exception, ((Failure) obj).exception);
         }
 
         public final Exception getException() {

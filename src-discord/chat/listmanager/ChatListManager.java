@@ -40,7 +40,7 @@ import kotlinx.coroutines.flow.m;
 import kotlinx.coroutines.k0;
 import kotlinx.coroutines.l;
 import kotlinx.coroutines.y0;
-import mi.e;
+import qi.e;
 
 @Metadata(d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001:\u0001$B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0006\u0010\u000e\u001a\u00020\u000fJ\u0016\u0010\u0010\u001a\u00020\u00112\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\n0\u0013H\u0002J\u0006\u0010\u0014\u001a\u00020\u0015J\u0016\u0010\u0016\u001a\u00020\u000f2\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0018J\u0016\u0010\u001a\u001a\u00020\u00112\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\n0\u0013H\u0002J\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\r0\u001cJ\u0010\u0010\u001d\u001a\u00020\u000f2\u0006\u0010\u001e\u001a\u00020\rH\u0002J\u0014\u0010\u001f\u001a\u00020\u000f2\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\n0\u0013J\u001a\u0010 \u001a\u00020\u000f*\b\u0012\u0004\u0012\u00020\n0\t2\u0006\u0010!\u001a\u00020\nH\u0002J\f\u0010\"\u001a\u00020#*\u00020\nH\u0002R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\b\u001a\n\u0012\u0004\u0012\u00020\n\u0018\u00010\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\r0\fX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006%"}, d2 = {"Lcom/discord/chat/listmanager/ChatListManager;", "", "coroutineScope", "Lkotlinx/coroutines/CoroutineScope;", "(Lkotlinx/coroutines/CoroutineScope;)V", "isDisabled", "", "publishScope", "rows", "", "Lcom/discord/chat/bridge/row/Row;", "updatesFlow", "Lkotlinx/coroutines/flow/MutableSharedFlow;", "Lcom/discord/chat/listmanager/ChatListUpdate;", "clearRows", "", "createNewRows", "Lcom/discord/chat/listmanager/ChatListManager$RowsModificationResult;", "updates", "", "getRowCount", "", "handleError", "errorJson", "", "causeMessage", "modifyExistingRows", "observeUpdates", "Lkotlinx/coroutines/flow/Flow;", "publishUpdate", "update", "updateRows", "insert", "row", "toChatListItem", "Lcom/discord/chat/presentation/list/item/ChatListItem;", "RowsModificationResult", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -60,7 +60,7 @@ public final class ChatListManager {
 
         
         public RowsModificationResult(List<? extends Row> rows, boolean z10, List<? extends ListOperation> list) {
-            q.g(rows, "rows");
+            q.h(rows, "rows");
             this.rows = rows;
             this.didInsertAtBottom = z10;
             this.listOperations = list;
@@ -93,7 +93,7 @@ public final class ChatListManager {
         }
 
         public final RowsModificationResult copy(List<? extends Row> rows, boolean z10, List<? extends ListOperation> list) {
-            q.g(rows, "rows");
+            q.h(rows, "rows");
             return new RowsModificationResult(rows, z10, list);
         }
 
@@ -105,7 +105,7 @@ public final class ChatListManager {
                 return false;
             }
             RowsModificationResult rowsModificationResult = (RowsModificationResult) obj;
-            return q.b(this.rows, rowsModificationResult.rows) && this.didInsertAtBottom == rowsModificationResult.didInsertAtBottom && q.b(this.listOperations, rowsModificationResult.listOperations);
+            return q.c(this.rows, rowsModificationResult.rows) && this.didInsertAtBottom == rowsModificationResult.didInsertAtBottom && q.c(this.listOperations, rowsModificationResult.listOperations);
         }
 
         public final boolean getDidInsertAtBottom() {
@@ -143,7 +143,7 @@ public final class ChatListManager {
     }
 
     public ChatListManager(CoroutineScope coroutineScope) {
-        q.g(coroutineScope, "coroutineScope");
+        q.h(coroutineScope, "coroutineScope");
         this.publishScope = k0.g(coroutineScope, y0.a());
     }
 
@@ -190,22 +190,26 @@ public final class ChatListManager {
     private final RowsModificationResult modifyExistingRows(List<? extends Row> list) {
         boolean z10;
         List<Row> E;
+        boolean z11;
         Object S;
+        boolean z12;
+        boolean z13;
+        boolean z14;
         List<Row> list2 = this.rows;
-        q.d(list2);
+        q.e(list2);
         ListOperationsBuilder listOperationsBuilder = new ListOperationsBuilder();
         ArrayList<Row> arrayList = new ArrayList();
         Iterator<T> it = list.iterator();
         while (true) {
-            boolean z11 = true;
+            boolean z15 = true;
             if (!it.hasNext()) {
                 break;
             }
             Object next = it.next();
             if (((Row) next).getChangeType() != ChangeType.INSERT) {
-                z11 = false;
+                z15 = false;
             }
-            if (z11) {
+            if (z15) {
                 arrayList.add(next);
             }
         }
@@ -223,6 +227,11 @@ public final class ChatListManager {
         for (Object obj : list) {
             Row row2 = (Row) obj;
             if (row2.getChangeType() == ChangeType.DELETE || row2.getChangeType() == ChangeType.UPDATE) {
+                z14 = true;
+            } else {
+                z14 = false;
+            }
+            if (z14) {
                 arrayList2.add(obj);
             }
         }
@@ -232,10 +241,24 @@ public final class ChatListManager {
                 list2.remove(row3.getIndex());
                 listOperationsBuilder.add(new ListOperation.Remove(row3.getIndex()));
             } else {
-                boolean z12 = (row3 instanceof LoadingRow) && ((LoadingRow) row3).getButton().getAction().getType() == LoadingActionType.LOAD_MORE_AFTER && row3.getIndex() == 0;
+                if ((row3 instanceof LoadingRow) && ((LoadingRow) row3).getButton().getAction().getType() == LoadingActionType.LOAD_MORE_AFTER && row3.getIndex() == 0) {
+                    z11 = true;
+                } else {
+                    z11 = false;
+                }
                 S = r.S(list2);
                 Row row4 = (Row) S;
-                if (z12 && ((row4 instanceof LoadingRow) && ((LoadingRow) row4).isLoading())) {
+                if (!(row4 instanceof LoadingRow) || !((LoadingRow) row4).isLoading()) {
+                    z12 = false;
+                } else {
+                    z12 = true;
+                }
+                if (!z11 || !z12) {
+                    z13 = false;
+                } else {
+                    z13 = true;
+                }
+                if (z13) {
                     list2.add(1, row3);
                     list2.remove(0);
                     listOperationsBuilder.add(new ListOperation.Insert(1));
@@ -325,8 +348,8 @@ public final class ChatListManager {
 
     public final void handleError(String errorJson, String causeMessage) {
         List n10;
-        q.g(errorJson, "errorJson");
-        q.g(causeMessage, "causeMessage");
+        q.h(errorJson, "errorJson");
+        q.h(causeMessage, "causeMessage");
         n10 = j.n(new DeserializationErrorChatListItem("error-id", errorJson, causeMessage));
         publishUpdate(new ChatListUpdate(n10, ChatListAction.Noop.INSTANCE, null));
         this.isDisabled = true;
@@ -347,7 +370,7 @@ public final class ChatListManager {
         MessageRow messageRow2;
         boolean z13;
         Boolean jumped;
-        q.g(updates, "updates");
+        q.h(updates, "updates");
         if (!this.isDisabled) {
             if (this.rows != null) {
                 rowsModificationResult = modifyExistingRows(updates);
@@ -369,9 +392,9 @@ public final class ChatListManager {
                 Row row2 = (Row) obj;
                 boolean z14 = row2 instanceof MessageRow;
                 if (z14) {
-                    z10 = q.b(((MessageRow) row2).getScrollTo(), Boolean.TRUE);
+                    z10 = q.c(((MessageRow) row2).getScrollTo(), Boolean.TRUE);
                 } else if (row2 instanceof SeparatorRow) {
-                    z10 = q.b(((SeparatorRow) row2).getScrollTo(), Boolean.TRUE);
+                    z10 = q.c(((SeparatorRow) row2).getScrollTo(), Boolean.TRUE);
                 } else {
                     z10 = false;
                 }

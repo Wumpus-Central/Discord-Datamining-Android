@@ -36,12 +36,12 @@ public final class DeviceAccessibilityModule extends ReactContextBaseJavaModule 
         }
 
         public final boolean useReducedMotion(Context context) {
-            q.g(context, "context");
+            q.h(context, "context");
             String str = DeviceAccessibilityModule.appReducedMotionSetting;
-            if (q.b(str, "reduce")) {
+            if (q.c(str, "reduce")) {
                 return true;
             }
-            if (q.b(str, "no-preference")) {
+            if (q.c(str, "no-preference")) {
                 return false;
             }
             return isSystemReducedMotionEnabled(context);
@@ -51,7 +51,7 @@ public final class DeviceAccessibilityModule extends ReactContextBaseJavaModule 
     
     public DeviceAccessibilityModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @Override 
@@ -61,7 +61,7 @@ public final class DeviceAccessibilityModule extends ReactContextBaseJavaModule 
 
     @ReactMethod
     public final void handleSetPrefersReducedMotion(String prefersReducedMotion) {
-        q.g(prefersReducedMotion, "prefersReducedMotion");
+        q.h(prefersReducedMotion, "prefersReducedMotion");
         appReducedMotionSetting = prefersReducedMotion;
     }
 }

@@ -7,7 +7,7 @@ import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.WritableNativeMap;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.internal.q;
@@ -18,7 +18,7 @@ public final class TapEmojiData implements ReactEvent {
     private final EmojiContentNode emoji;
 
     public TapEmojiData(EmojiContentNode emoji) {
-        q.g(emoji, "emoji");
+        q.h(emoji, "emoji");
         this.emoji = emoji;
     }
 
@@ -34,7 +34,7 @@ public final class TapEmojiData implements ReactEvent {
     }
 
     public final TapEmojiData copy(EmojiContentNode emoji) {
-        q.g(emoji, "emoji");
+        q.h(emoji, "emoji");
         return new TapEmojiData(emoji);
     }
 
@@ -42,7 +42,7 @@ public final class TapEmojiData implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof TapEmojiData) && q.b(this.emoji, ((TapEmojiData) obj).emoji);
+        return (obj instanceof TapEmojiData) && q.c(this.emoji, ((TapEmojiData) obj).emoji);
     }
 
     public int hashCode() {
@@ -59,7 +59,7 @@ public final class TapEmojiData implements ReactEvent {
         } else if (emojiContentNode instanceof CustomEmojiContentNode) {
             writableNativeMap = NativeMapExtensionsKt.nativeMapOf(x.a("id", String.valueOf(((CustomEmojiContentNode) emojiContentNode).getId())), x.a("alt", ((CustomEmojiContentNode) this.emoji).getAlt()), x.a("src", ((CustomEmojiContentNode) this.emoji).getSrc()));
         } else {
-            throw new ff.q();
+            throw new jf.q();
         }
         pairArr[0] = x.a("node", writableNativeMap);
         return NativeMapExtensionsKt.nativeMapOf(pairArr);

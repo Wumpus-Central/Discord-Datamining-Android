@@ -23,19 +23,19 @@ public final class ThreadEmbedMessageAccessory extends MessageAccessory {
     }
 
     
-    public static  ThreadEmbedMessageAccessory m292copyntcYbpo$default(ThreadEmbedMessageAccessory threadEmbedMessageAccessory, String str, ThreadEmbed threadEmbed, int i10, Object obj) {
+    public static  ThreadEmbedMessageAccessory m293copyntcYbpo$default(ThreadEmbedMessageAccessory threadEmbedMessageAccessory, String str, ThreadEmbed threadEmbed, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = threadEmbedMessageAccessory.mo217getMessageId3Eiw7ao();
+            str = threadEmbedMessageAccessory.mo218getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             threadEmbed = threadEmbedMessageAccessory.threadEmbed;
         }
-        return threadEmbedMessageAccessory.m294copyntcYbpo(str, threadEmbed);
+        return threadEmbedMessageAccessory.m295copyntcYbpo(str, threadEmbed);
     }
 
     
-    public final String m293component13Eiw7ao() {
-        return mo217getMessageId3Eiw7ao();
+    public final String m294component13Eiw7ao() {
+        return mo218getMessageId3Eiw7ao();
     }
 
     public final ThreadEmbed component2() {
@@ -43,9 +43,9 @@ public final class ThreadEmbedMessageAccessory extends MessageAccessory {
     }
 
     
-    public final ThreadEmbedMessageAccessory m294copyntcYbpo(String messageId, ThreadEmbed threadEmbed) {
-        q.g(messageId, "messageId");
-        q.g(threadEmbed, "threadEmbed");
+    public final ThreadEmbedMessageAccessory m295copyntcYbpo(String messageId, ThreadEmbed threadEmbed) {
+        q.h(messageId, "messageId");
+        q.h(threadEmbed, "threadEmbed");
         return new ThreadEmbedMessageAccessory(messageId, threadEmbed, null);
     }
 
@@ -57,12 +57,12 @@ public final class ThreadEmbedMessageAccessory extends MessageAccessory {
             return false;
         }
         ThreadEmbedMessageAccessory threadEmbedMessageAccessory = (ThreadEmbedMessageAccessory) obj;
-        return MessageId.m596equalsimpl0(mo217getMessageId3Eiw7ao(), threadEmbedMessageAccessory.mo217getMessageId3Eiw7ao()) && q.b(this.threadEmbed, threadEmbedMessageAccessory.threadEmbed);
+        return MessageId.m597equalsimpl0(mo218getMessageId3Eiw7ao(), threadEmbedMessageAccessory.mo218getMessageId3Eiw7ao()) && q.c(this.threadEmbed, threadEmbedMessageAccessory.threadEmbed);
     }
 
     @Override 
     
-    public String mo217getMessageId3Eiw7ao() {
+    public String mo218getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -71,11 +71,11 @@ public final class ThreadEmbedMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (MessageId.m597hashCodeimpl(mo217getMessageId3Eiw7ao()) * 31) + this.threadEmbed.hashCode();
+        return (MessageId.m598hashCodeimpl(mo218getMessageId3Eiw7ao()) * 31) + this.threadEmbed.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m598toStringimpl(mo217getMessageId3Eiw7ao());
+        String str = MessageId.m599toStringimpl(mo218getMessageId3Eiw7ao());
         ThreadEmbed threadEmbed = this.threadEmbed;
         return "ThreadEmbedMessageAccessory(messageId=" + str + ", threadEmbed=" + threadEmbed + ")";
     }

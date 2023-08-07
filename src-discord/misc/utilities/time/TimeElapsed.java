@@ -1,7 +1,7 @@
 package com.discord.misc.utilities.time;
 
 import co.discord.media_engine.b;
-import ff.n;
+import jf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -52,7 +52,7 @@ public final class TimeElapsed {
 
     public final String getDuration() {
         Object value = this.duration$delegate.getValue();
-        q.f(value, "<get-duration>(...)");
+        q.g(value, "<get-duration>(...)");
         return (String) value;
     }
 

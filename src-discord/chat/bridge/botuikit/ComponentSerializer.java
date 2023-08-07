@@ -44,7 +44,7 @@ public final class ComponentSerializer extends d<Component> {
         Integer num;
         boolean K;
         JsonPrimitive n10;
-        q.g(element, "element");
+        q.h(element, "element");
         List<Integer> list = knownTypes;
         JsonElement jsonElement = (JsonElement) g.m(element).get("type");
         if (jsonElement == null || (n10 = g.n(jsonElement)) == null) {

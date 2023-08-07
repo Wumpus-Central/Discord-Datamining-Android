@@ -4,10 +4,10 @@ import android.content.res.AssetManager;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import ji.d;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
+import ni.d;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -15,18 +15,18 @@ import org.json.JSONObject;
 
 public final class BundleUpdaterUtilsKt {
     public static final JSONArray getArrayOrNull(JSONObject jSONObject, String key) {
-        q.g(jSONObject, "<this>");
-        q.g(key, "key");
+        q.h(jSONObject, "<this>");
+        q.h(key, "key");
         return (JSONArray) getOrNull(jSONObject, key, new BundleUpdaterUtilsKt$getArrayOrNull$1(jSONObject, key));
     }
 
     public static final JSONObject getJSONFromAsset(AssetManager assetManager, String asset) {
         BufferedReader bufferedReader;
-        q.g(assetManager, "<this>");
-        q.g(asset, "asset");
+        q.h(assetManager, "<this>");
+        q.h(asset, "asset");
         InputStream open = assetManager.open(asset);
-        q.f(open, "open(asset)");
-        InputStreamReader inputStreamReader = new InputStreamReader(open, d.f19899b);
+        q.g(open, "open(asset)");
+        InputStreamReader inputStreamReader = new InputStreamReader(open, d.f24672b);
         if (inputStreamReader instanceof BufferedReader) {
             bufferedReader = (BufferedReader) inputStreamReader;
         } else {
@@ -34,7 +34,7 @@ public final class BundleUpdaterUtilsKt {
         }
         try {
             th = null;
-            return new JSONObject(pf.q.e(bufferedReader));
+            return new JSONObject(tf.q.e(bufferedReader));
         } finally {
             try {
                 throw th;
@@ -44,15 +44,15 @@ public final class BundleUpdaterUtilsKt {
     }
 
     public static final JSONObject getObjectOrNull(JSONObject jSONObject, String key) {
-        q.g(jSONObject, "<this>");
-        q.g(key, "key");
+        q.h(jSONObject, "<this>");
+        q.h(key, "key");
         return (JSONObject) getOrNull(jSONObject, key, new BundleUpdaterUtilsKt$getObjectOrNull$1(jSONObject, key));
     }
 
     public static final <T> T getOrNull(JSONObject jSONObject, String key, Function1<? super JSONObject, ? extends T> callback) {
-        q.g(jSONObject, "<this>");
-        q.g(key, "key");
-        q.g(callback, "callback");
+        q.h(jSONObject, "<this>");
+        q.h(key, "key");
+        q.h(callback, "callback");
         if (jSONObject.has(key)) {
             return (T) callback.invoke(jSONObject);
         }
@@ -60,8 +60,8 @@ public final class BundleUpdaterUtilsKt {
     }
 
     public static final String getStringOrNull(JSONObject jSONObject, String key) {
-        q.g(jSONObject, "<this>");
-        q.g(key, "key");
+        q.h(jSONObject, "<this>");
+        q.h(key, "key");
         return (String) getOrNull(jSONObject, key, new BundleUpdaterUtilsKt$getStringOrNull$1(jSONObject, key));
     }
 }

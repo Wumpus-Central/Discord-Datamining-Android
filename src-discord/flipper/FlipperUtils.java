@@ -48,20 +48,20 @@ public final class FlipperUtils {
             @Override 
             public List<ReactContextBaseJavaModule> createNativeModules(ReactApplicationContext reactContext) {
                 List<ReactContextBaseJavaModule> h10;
-                q.g(reactContext, "reactContext");
+                q.h(reactContext, "reactContext");
                 h10 = j.h();
                 return h10;
             }
 
             @Override 
             public List<ViewManager<View, ReactShadowNode<?>>> createViewManagers(ReactApplicationContext reactContext) {
-                q.g(reactContext, "reactContext");
+                q.h(reactContext, "reactContext");
                 return new ArrayList();
             }
         };
     }
 
     public final void init(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
     }
 }

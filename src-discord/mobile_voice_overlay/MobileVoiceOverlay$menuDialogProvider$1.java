@@ -23,7 +23,7 @@ public final class MobileVoiceOverlay$menuDialogProvider$1 extends s implements 
 
     public final OverlayMenuBubbleDialog invoke(OverlayViewProvider<OverlayMenuBubbleDialog> it) {
         ReactApplicationContext reactApplicationContext;
-        q.g(it, "it");
+        q.h(it, "it");
         reactApplicationContext = this.this$0.context;
         OverlayMenuBubbleDialog overlayMenuBubbleDialog = new OverlayMenuBubbleDialog(reactApplicationContext);
         MobileVoiceOverlay mobileVoiceOverlay = this.this$0;

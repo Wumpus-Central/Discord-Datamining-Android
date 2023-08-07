@@ -23,7 +23,7 @@ public final class MobileVoiceOverlay$trashWrapProvider$1 extends s implements F
 
     public final OverlayTrashWrap invoke(OverlayViewProvider<OverlayTrashWrap> it) {
         ReactApplicationContext reactApplicationContext;
-        q.g(it, "it");
+        q.h(it, "it");
         reactApplicationContext = this.this$0.context;
         return new OverlayTrashWrap(reactApplicationContext);
     }

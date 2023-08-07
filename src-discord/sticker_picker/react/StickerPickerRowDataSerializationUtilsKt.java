@@ -5,9 +5,9 @@ import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.sticker_picker.StickerPickerRow;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
-import gf.p;
 import java.util.ArrayList;
 import java.util.Iterator;
+import kf.p;
 import kotlin.Metadata;
 import kotlin.collections.k;
 import kotlin.jvm.internal.q;
@@ -20,7 +20,7 @@ public final class StickerPickerRowDataSerializationUtilsKt {
         int s10;
         StickerPickerRow.Sticker sticker;
         StickerPickerRow.Sticker.Type type;
-        q.g(data, "data");
+        q.h(data, "data");
         int i10 = data.getInt("rowContentWidth");
         int i11 = data.getInt("rowContentPaddingVertical");
         int i12 = data.getInt("itemSize");
@@ -33,7 +33,7 @@ public final class StickerPickerRowDataSerializationUtilsKt {
             int nextInt = ((p) it).nextInt();
             if (!nonNullArray.isNull(nextInt)) {
                 ReadableMap stickerRow = nonNullArray.getMap(nextInt);
-                q.f(stickerRow, "stickerRow");
+                q.g(stickerRow, "stickerRow");
                 String nonNullString = NativeMapExtensionsKt.getNonNullString(stickerRow, "stickerId");
                 String nonNullString2 = NativeMapExtensionsKt.getNonNullString(stickerRow, "stickerName");
                 int i13 = stickerRow.getInt("stickerType");

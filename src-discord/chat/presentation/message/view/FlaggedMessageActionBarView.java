@@ -26,13 +26,13 @@ public final class FlaggedMessageActionBarView extends LinearLayout implements V
     
     public FlaggedMessageActionBarView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public FlaggedMessageActionBarView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  FlaggedMessageActionBarView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -40,9 +40,9 @@ public final class FlaggedMessageActionBarView extends LinearLayout implements V
     }
 
     public final void setActions(AutoModerationContext autoModerationContext, View.OnClickListener onTapAutoModerationActions, View.OnClickListener onTapAutoModerationFeedback) {
-        q.g(autoModerationContext, "autoModerationContext");
-        q.g(onTapAutoModerationActions, "onTapAutoModerationActions");
-        q.g(onTapAutoModerationFeedback, "onTapAutoModerationFeedback");
+        q.h(autoModerationContext, "autoModerationContext");
+        q.h(onTapAutoModerationActions, "onTapAutoModerationActions");
+        q.h(onTapAutoModerationFeedback, "onTapAutoModerationFeedback");
         String actionsIconURL = autoModerationContext.getActionsIconURL();
         String actionsText = autoModerationContext.getActionsText();
         DCDButton dCDButton = this.binding.actionsButton;
@@ -65,13 +65,13 @@ public final class FlaggedMessageActionBarView extends LinearLayout implements V
     
     public FlaggedMessageActionBarView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         FlaggedMessageActionBarViewBinding inflate = FlaggedMessageActionBarViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         ImageView _init_$lambda$0 = inflate.separatorDot;
         _init_$lambda$0.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundModifierAccent());
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         ViewClippingUtilsKt.clipToRoundedRectangle(_init_$lambda$0, SizeUtilsKt.getDpToPx(4));
         DCDButton dCDButton = inflate.actionsButton;
         dCDButton.setCornerRadius(SizeUtilsKt.getDpToPx(8));

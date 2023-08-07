@@ -27,7 +27,7 @@ public final class Hosts {
     private final String requireHost(String str) {
         SharedPreferences sharedPreferences = prefs;
         if (sharedPreferences == null) {
-            q.y("prefs");
+            q.z("prefs");
             sharedPreferences = null;
         }
         String string = sharedPreferences.getString(str, null);
@@ -48,11 +48,11 @@ public final class Hosts {
     private final void setHost(String str, String str2) {
         SharedPreferences sharedPreferences = prefs;
         if (sharedPreferences == null) {
-            q.y("prefs");
+            q.z("prefs");
             sharedPreferences = null;
         }
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        q.f(editor, "editor");
+        q.g(editor, "editor");
         editor.putString(str, str2);
         editor.apply();
     }
@@ -66,10 +66,10 @@ public final class Hosts {
     }
 
     public final void init(Context context, String str, String str2) {
-        q.g(context, "context");
+        q.h(context, "context");
         if (prefs == null) {
             SharedPreferences sharedPreferences = context.getSharedPreferences("discord_hosts", 0);
-            q.f(sharedPreferences, "context.getSharedPrefere…s\", Context.MODE_PRIVATE)");
+            q.g(sharedPreferences, "context.getSharedPrefere…s\", Context.MODE_PRIVATE)");
             prefs = sharedPreferences;
         }
         if (str != null) {

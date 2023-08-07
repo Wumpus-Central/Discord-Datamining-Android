@@ -13,10 +13,10 @@ import com.discord.primitives.MessageId;
 import com.facebook.react.uimanager.ViewProps;
 import com.hannesdorfmann.adapterdelegates4.AdapterDelegate;
 import com.hannesdorfmann.adapterdelegates4.b;
-import ff.x;
-import gf.v;
 import java.util.List;
 import java.util.Map;
+import jf.x;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -84,7 +84,7 @@ public final class MessageBundleAdapter extends b<List<? extends MessageBundleIt
                     if (num != null) {
                         i13 += num.intValue();
                         if (i13 > floatValue) {
-                            this.onTruncateMessage.invoke(MessageId.m592boximpl(MessageId.m593constructorimpl(((MessageBundleItem) ((List) this.items).get(i12)).getId())));
+                            this.onTruncateMessage.invoke(MessageId.m593boximpl(MessageId.m594constructorimpl(((MessageBundleItem) ((List) this.items).get(i12)).getId())));
                             return;
                         } else {
                             i11++;
@@ -135,7 +135,7 @@ public final class MessageBundleAdapter extends b<List<? extends MessageBundleIt
     @Override 
     public List<MessageBundleItem> getChatListItems() {
         T items = this.items;
-        q.f(items, "items");
+        q.g(items, "items");
         return (List) items;
     }
 
@@ -151,10 +151,10 @@ public final class MessageBundleAdapter extends b<List<? extends MessageBundleIt
     
     @SuppressLint({"NotifyDataSetChanged"})
     public final void setItems(List<? extends MessageBundleItem> items, Function1<? super MessageId, Unit> onTruncateMessage, Float f10, Function1<? super MessageId, Unit> onTapReply, View.OnClickListener onTapViewMoreText) {
-        q.g(items, "items");
-        q.g(onTruncateMessage, "onTruncateMessage");
-        q.g(onTapReply, "onTapReply");
-        q.g(onTapViewMoreText, "onTapViewMoreText");
+        q.h(items, "items");
+        q.h(onTruncateMessage, "onTruncateMessage");
+        q.h(onTapReply, "onTapReply");
+        q.h(onTapViewMoreText, "onTapViewMoreText");
         this.items = items;
         this.onTruncateMessage = onTruncateMessage;
         this.truncationThresholdPx = f10;

@@ -22,13 +22,13 @@ final class MessageBundleView$setBundle$2 extends s implements Function1<Message
 
     @Override 
     public   Unit invoke(MessageId messageId) {
-        m192invoke1xi1bu0(messageId.m600unboximpl());
-        return Unit.f20679a;
+        m193invoke1xi1bu0(messageId.m601unboximpl());
+        return Unit.f21025a;
     }
 
     
-    public final void m192invoke1xi1bu0(String it) {
-        q.g(it, "it");
-        this.$onTapReply.invoke(MessageId.m592boximpl(it));
+    public final void m193invoke1xi1bu0(String it) {
+        q.h(it, "it");
+        this.$onTapReply.invoke(MessageId.m593boximpl(it));
     }
 }

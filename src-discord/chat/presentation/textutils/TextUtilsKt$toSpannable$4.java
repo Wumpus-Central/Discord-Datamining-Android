@@ -19,11 +19,11 @@ public final class TextUtilsKt$toSpannable$4 extends s implements Function4<Stri
     @Override 
     public   Unit invoke(String str, String str2, String str3, String str4) {
         invoke2(str, str2, str3, str4);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String str, String str2, String str3, String str4) {
-        q.g(str, "<anonymous parameter 0>");
+        q.h(str, "<anonymous parameter 0>");
     }
 }

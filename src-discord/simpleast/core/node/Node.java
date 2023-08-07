@@ -27,7 +27,7 @@ public class Node<R> {
 
         @Override 
         public void render(SpannableStringBuilder builder, R r10) {
-            q.g(builder, "builder");
+            q.h(builder, "builder");
             Collection<Node<R>> children = getChildren();
             if (children != null) {
                 Iterator<T> it = children.iterator();
@@ -62,13 +62,13 @@ public class Node<R> {
     }
 
     public final void addChild(Node<R> child) {
-        q.g(child, "child");
+        q.h(child, "child");
         Collection<Node<R>> collection = this.children;
         if (collection == null) {
             collection = new ArrayList<>();
         }
         collection.add(child);
-        Unit unit = Unit.f20679a;
+        Unit unit = Unit.f21025a;
         this.children = collection;
     }
 
@@ -82,7 +82,7 @@ public class Node<R> {
     }
 
     public void render(SpannableStringBuilder builder, R r10) {
-        q.g(builder, "builder");
+        q.h(builder, "builder");
     }
 
     public  Node(Collection collection, int i10, DefaultConstructorMarker defaultConstructorMarker) {

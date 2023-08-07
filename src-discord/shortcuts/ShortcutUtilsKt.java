@@ -6,7 +6,7 @@ import android.graphics.Bitmap;
 import android.os.Build;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.Person;
-import androidx.core.content.f;
+import androidx.core.content.g;
 import androidx.core.content.pm.ShortcutInfoCompat;
 import androidx.core.content.pm.b;
 import androidx.core.graphics.drawable.IconCompat;
@@ -21,31 +21,24 @@ import kotlin.jvm.internal.q;
 
 public final class ShortcutUtilsKt {
     public static final NotificationCompat.Builder addShortcut(NotificationCompat.Builder builder, Context context, ShortcutInfoCompat shortcutInfo) {
-        q.g(builder, "<this>");
-        q.g(context, "context");
-        q.g(shortcutInfo, "shortcutInfo");
+        q.h(builder, "<this>");
+        q.h(context, "context");
+        q.h(shortcutInfo, "shortcutInfo");
         builder.W(shortcutInfo.f());
-        builder.O(new f(shortcutInfo.f()));
+        builder.O(new g(shortcutInfo.f()));
         b.f(context, shortcutInfo);
         return builder;
     }
 
     public static final ShortcutInfoCompat createShortcut(Context context, String id2, CharSequence label, CharSequence longLabel, Bitmap bitmap, List<? extends Person> persons, Intent intent, int i10) {
-        IconCompat iconCompat;
-        q.g(context, "<this>");
-        q.g(id2, "id");
-        q.g(label, "label");
-        q.g(longLabel, "longLabel");
-        q.g(persons, "persons");
-        q.g(intent, "intent");
-        ShortcutInfoCompat.a i11 = new ShortcutInfoCompat.a(context, id2).h(new f(id2)).m(label).i(longLabel);
-        if (bitmap != null) {
-            iconCompat = IconCompat.h(bitmap);
-        } else {
-            iconCompat = null;
-        }
-        ShortcutInfoCompat a10 = i11.e(iconCompat).f(intent).l(i10).j(true).c(getShareCategories()).k((Person[]) persons.toArray(new Person[0])).a();
-        q.f(a10, "Builder(this, id)\n      …Array())\n        .build()");
+        q.h(context, "<this>");
+        q.h(id2, "id");
+        q.h(label, "label");
+        q.h(longLabel, "longLabel");
+        q.h(persons, "persons");
+        q.h(intent, "intent");
+        ShortcutInfoCompat a10 = new ShortcutInfoCompat.b(context, id2).h(new g(id2)).m(label).i(longLabel).e(bitmap != null ? IconCompat.i(bitmap) : null).f(intent).l(i10).j(true).c(getShareCategories()).k((Person[]) persons.toArray(new Person[0])).a();
+        q.g(a10, "Builder(this, id)\n      …Array())\n        .build()");
         return a10;
     }
 

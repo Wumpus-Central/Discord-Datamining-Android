@@ -9,7 +9,7 @@ import kotlin.jvm.internal.q;
 public final class MediaEngineKt {
     public static final MediaEngine getMediaEngine(ReactContext reactContext) {
         MediaEngine mediaEngine;
-        q.g(reactContext, "<this>");
+        q.h(reactContext, "<this>");
         MediaEngineModule mediaEngineModule = (MediaEngineModule) reactContext.getNativeModule(MediaEngineModule.class);
         if (mediaEngineModule != null && (mediaEngine = mediaEngineModule.getMediaEngine()) != null) {
             return mediaEngine;

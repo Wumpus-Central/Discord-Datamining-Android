@@ -17,39 +17,39 @@ public final class KeyboardExtensionsKt {
     
     public static final WindowInsetsControllerCompat getInsetsController(Window window, View view) {
         WindowInsetsControllerCompat a10 = r2.a(window, view);
-        q.f(a10, "getInsetsController(this, view)");
+        q.g(a10, "getInsetsController(this, view)");
         return a10;
     }
 
     public static final void hideKeyboard(Activity activity) {
-        q.g(activity, "<this>");
+        q.h(activity, "<this>");
         View contentView = ActivityExtensionsKt.getContentView(activity);
         if (contentView != null) {
             Window window = activity.getWindow();
-            q.f(window, "window");
+            q.g(window, "window");
             hideKeyboard(contentView, window);
         }
     }
 
     public static final void showKeyboard(Activity activity) {
-        q.g(activity, "<this>");
+        q.h(activity, "<this>");
         View contentView = ActivityExtensionsKt.getContentView(activity);
         if (contentView != null) {
             Window window = activity.getWindow();
-            q.f(window, "window");
+            q.g(window, "window");
             showKeyboard(contentView, window);
         }
     }
 
     public static final void hideKeyboard(View view, Window window) {
-        q.g(view, "<this>");
-        q.g(window, "window");
+        q.h(view, "<this>");
+        q.h(window, "window");
         j.d(MainImmediateScopeKt.MainImmediateScope(), null, null, new KeyboardExtensionsKt$hideKeyboard$1(window, view, null), 3, null);
     }
 
     public static final void showKeyboard(View view, Window window) {
-        q.g(view, "<this>");
-        q.g(window, "window");
+        q.h(view, "<this>");
+        q.h(window, "window");
         j.d(MainImmediateScopeKt.MainImmediateScope(), null, null, new KeyboardExtensionsKt$showKeyboard$1(window, view, null), 3, null);
     }
 }

@@ -39,7 +39,7 @@ public final class AudioWaveAnimationManager {
         }
         long currentTimeMillis = System.currentTimeMillis();
         Long l10 = this.audioChunkAnimationStarts[i10];
-        q.d(l10);
+        q.e(l10);
         long longValue = currentTimeMillis - l10.longValue();
         if (longValue > 500) {
             return 1.0f;
@@ -67,7 +67,7 @@ public final class AudioWaveAnimationManager {
     }
 
     public final void setData(byte[] value) {
-        q.g(value, "value");
+        q.h(value, "value");
         this.audioChunkAnimationStarts = new Long[value.length];
         this.data = value;
     }

@@ -4,7 +4,7 @@ import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.WritableNativeMap;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -18,7 +18,7 @@ public final class TapSeparatorData implements ReactEvent {
     private final String type;
 
     public TapSeparatorData(String type, String str) {
-        q.g(type, "type");
+        q.h(type, "type");
         this.type = type;
         this.context = str;
     }
@@ -42,7 +42,7 @@ public final class TapSeparatorData implements ReactEvent {
     }
 
     public final TapSeparatorData copy(String type, String str) {
-        q.g(type, "type");
+        q.h(type, "type");
         return new TapSeparatorData(type, str);
     }
 
@@ -54,7 +54,7 @@ public final class TapSeparatorData implements ReactEvent {
             return false;
         }
         TapSeparatorData tapSeparatorData = (TapSeparatorData) obj;
-        return q.b(this.type, tapSeparatorData.type) && q.b(this.context, tapSeparatorData.context);
+        return q.c(this.type, tapSeparatorData.type) && q.c(this.context, tapSeparatorData.context);
     }
 
     public final String getContext() {
@@ -84,7 +84,7 @@ public final class TapSeparatorData implements ReactEvent {
         if (str2 != null) {
             nativeMapOf2.putString("context", str2);
         }
-        Unit unit = Unit.f20679a;
+        Unit unit = Unit.f21025a;
         pairArr[0] = x.a("action", nativeMapOf2);
         return NativeMapExtensionsKt.nativeMapOf(pairArr);
     }

@@ -56,15 +56,15 @@ public final class AudioManagerBroadcastReceiver extends BroadcastReceiver {
 
     
     public AudioManagerBroadcastReceiver(Function1<? super WiredHeadsetState, Unit> onWiredHeadsetPlug, Function1<? super ScoAudioState.Update, Unit> onScoAudioStateUpdate) {
-        q.g(onWiredHeadsetPlug, "onWiredHeadsetPlug");
-        q.g(onScoAudioStateUpdate, "onScoAudioStateUpdate");
+        q.h(onWiredHeadsetPlug, "onWiredHeadsetPlug");
+        q.h(onScoAudioStateUpdate, "onScoAudioStateUpdate");
         this.onWiredHeadsetPlug = onWiredHeadsetPlug;
         this.onScoAudioStateUpdate = onScoAudioStateUpdate;
     }
 
     @Override 
     public void onReceive(Context context, Intent intent) {
-        q.g(context, "context");
+        q.h(context, "context");
         if (intent != null) {
             AudioManagerBroadcastAction from = AudioManagerBroadcastAction.Companion.from(intent);
             if (from == null) {
@@ -89,7 +89,7 @@ public final class AudioManagerBroadcastReceiver extends BroadcastReceiver {
 
     public final void register(Context context) {
         List<AudioManagerBroadcastAction> k10;
-        q.g(context, "context");
+        q.h(context, "context");
         k10 = j.k(AudioManagerBroadcastAction.HeadsetPlug, AudioManagerBroadcastAction.ScoAudioStateUpdated);
         IntentFilter intentFilter = new IntentFilter();
         for (AudioManagerBroadcastAction audioManagerBroadcastAction : k10) {

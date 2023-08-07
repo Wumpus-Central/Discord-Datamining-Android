@@ -47,13 +47,13 @@ public final class ProgressDots extends ConstraintLayout {
     
     public ProgressDots(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public ProgressDots(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  ProgressDots(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -137,22 +137,22 @@ public final class ProgressDots extends ConstraintLayout {
 
     public final void setupColors() {
         ProgressDot progressDot = this.binding.viewProgressDots1;
-        q.f(progressDot, "binding.viewProgressDots1");
+        q.g(progressDot, "binding.viewProgressDots1");
         ViewBackgroundUtilsKt.setBackgroundOval$default(progressDot, ThemeManagerKt.getTheme().getTextNormal(), 0, 2, null);
         ProgressDot progressDot2 = this.binding.viewProgressDots2;
-        q.f(progressDot2, "binding.viewProgressDots2");
+        q.g(progressDot2, "binding.viewProgressDots2");
         ViewBackgroundUtilsKt.setBackgroundOval$default(progressDot2, ThemeManagerKt.getTheme().getTextNormal(), 0, 2, null);
         ProgressDot progressDot3 = this.binding.viewProgressDots3;
-        q.f(progressDot3, "binding.viewProgressDots3");
+        q.g(progressDot3, "binding.viewProgressDots3");
         ViewBackgroundUtilsKt.setBackgroundOval$default(progressDot3, ThemeManagerKt.getTheme().getTextNormal(), 0, 2, null);
     }
 
     
     public ProgressDots(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         ProgressDotsViewBinding inflate = ProgressDotsViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         int integer = getResources().getInteger(R.integer.progress_dots_animation_time);
         this.dotsAnimationTimeMs = integer;

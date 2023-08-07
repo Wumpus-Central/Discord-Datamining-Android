@@ -11,6 +11,8 @@ import java.util.Map;
 
 
 public abstract class NativeFileManagerSpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
+    public static final String NAME = "RTNFileManager";
+
     public NativeFileManagerSpec(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);
     }
@@ -23,6 +25,11 @@ public abstract class NativeFileManagerSpec extends ReactContextBaseJavaModule i
     @a
     public final Map<String, Object> getConstants() {
         return getTypedExportedConstants();
+    }
+
+    @Override 
+    public String getName() {
+        return "RTNFileManager";
     }
 
     @ReactMethod

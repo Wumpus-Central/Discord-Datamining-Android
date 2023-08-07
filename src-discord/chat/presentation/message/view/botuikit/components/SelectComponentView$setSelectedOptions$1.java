@@ -31,7 +31,7 @@ public final class SelectComponentView$setSelectedOptions$1 extends s implements
     @Override 
     public final View invoke() {
         MaterialTextView root = MessageComponentSelectPillViewBinding.inflate(this.$inflater).getRoot();
-        q.f(root, "inflate(inflater).root");
+        q.g(root, "inflate(inflater).root");
         DiscordFontUtilsKt.setDiscordFont(root, DiscordFont.PrimaryMedium);
         ViewBackgroundUtilsKt.setBackgroundRectangle$default(root, ThemeManagerKt.getTheme().getBackgroundAccent(), SizeUtilsKt.getDpToPx(4), null, 0, 12, null);
         root.setTextColor(ThemeManagerKt.getTheme().getTextNormal());

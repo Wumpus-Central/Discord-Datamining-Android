@@ -42,7 +42,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
     
     public FlaggedMessageEmbedView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  FlaggedMessageEmbedView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -54,9 +54,9 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         int i10;
         SimpleDraweeView configureAuthor$lambda$7 = this.binding.authorAvatar;
         Context context = configureAuthor$lambda$7.getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         configureAuthor$lambda$7.setImageURI(MessageKt.avatarUrl(message, context));
-        q.f(configureAuthor$lambda$7, "configureAuthor$lambda$7");
+        q.g(configureAuthor$lambda$7, "configureAuthor$lambda$7");
         int i11 = 0;
         boolean z11 = true;
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configureAuthor$lambda$7, false, new View.OnClickListener() { 
@@ -76,7 +76,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         TextView configureAuthor$lambda$9 = this.binding.authorName;
         configureAuthor$lambda$9.setTextColor(MessageKt.usernameColor$default(message, 0, 1, null));
         configureAuthor$lambda$9.setText(message.getUsername());
-        q.f(configureAuthor$lambda$9, "configureAuthor$lambda$9");
+        q.g(configureAuthor$lambda$9, "configureAuthor$lambda$9");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configureAuthor$lambda$9, false, new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {
@@ -84,7 +84,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
             }
         }, 1, null);
         RoleIconView configureAuthor$lambda$10 = this.binding.roleIcon;
-        q.f(configureAuthor$lambda$10, "configureAuthor$lambda$10");
+        q.g(configureAuthor$lambda$10, "configureAuthor$lambda$10");
         if (message.getRoleIcon() != null) {
             z10 = true;
         } else {
@@ -100,7 +100,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
             configureAuthor$lambda$10.configureRoleIcon(message.getRoleIcon(), chatEventHandler);
         }
         ConnectionsRoleTagView configureAuthor$lambda$11 = this.binding.connectionsRoleTag;
-        q.f(configureAuthor$lambda$11, "configureAuthor$lambda$11");
+        q.g(configureAuthor$lambda$11, "configureAuthor$lambda$11");
         if (message.getConnectionsRoleTag() == null) {
             z11 = false;
         }
@@ -109,36 +109,36 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         }
         configureAuthor$lambda$11.setVisibility(i11);
         if (message.getConnectionsRoleTag() != null) {
-            configureAuthor$lambda$11.m194configureConnectionsRoleTaguESh2Cg(message.m13getAuthorIdwUX8bhU(), message.m15getGuildIdqOKuAAo(), ChannelId.m566boximpl(message.m14getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
+            configureAuthor$lambda$11.m195configureConnectionsRoleTaguESh2Cg(message.m14getAuthorIdwUX8bhU(), message.m16getGuildIdqOKuAAo(), ChannelId.m567boximpl(message.m15getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
         }
     }
 
     
     public static final void configureAuthor$lambda$7$lambda$5(Message message, ChatEventHandler eventHandler, View view) {
-        q.g(message, "$message");
-        q.g(eventHandler, "$eventHandler");
-        if (message.m13getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo158onTapAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m639unboximpl());
+        q.h(message, "$message");
+        q.h(eventHandler, "$eventHandler");
+        if (message.m14getAuthorIdwUX8bhU() != null) {
+            eventHandler.mo159onTapAvatarx5gers8(message.m17getId3Eiw7ao(), message.m14getAuthorIdwUX8bhU().m640unboximpl());
         }
     }
 
     
     public static final boolean configureAuthor$lambda$7$lambda$6(Message message, ChatEventHandler eventHandler, View view) {
-        q.g(message, "$message");
-        q.g(eventHandler, "$eventHandler");
-        if (message.m13getAuthorIdwUX8bhU() == null) {
+        q.h(message, "$message");
+        q.h(eventHandler, "$eventHandler");
+        if (message.m14getAuthorIdwUX8bhU() == null) {
             return true;
         }
-        eventHandler.mo150onLongPressAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m639unboximpl());
+        eventHandler.mo151onLongPressAvatarx5gers8(message.m17getId3Eiw7ao(), message.m14getAuthorIdwUX8bhU().m640unboximpl());
         return true;
     }
 
     
     public static final void configureAuthor$lambda$9$lambda$8(Message message, ChatEventHandler eventHandler, View view) {
-        q.g(message, "$message");
-        q.g(eventHandler, "$eventHandler");
-        if (message.m13getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo152onLongPressUsernamex5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m639unboximpl());
+        q.h(message, "$message");
+        q.h(eventHandler, "$eventHandler");
+        if (message.m14getAuthorIdwUX8bhU() != null) {
+            eventHandler.mo153onLongPressUsernamex5gers8(message.m17getId3Eiw7ao(), message.m14getAuthorIdwUX8bhU().m640unboximpl());
         }
     }
 
@@ -147,7 +147,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         float f10;
         float f11;
         SimpleDraweeView simpleDraweeView = this.binding.guildCommunicationDisabledIcon;
-        q.f(simpleDraweeView, "binding.guildCommunicationDisabledIcon");
+        q.g(simpleDraweeView, "binding.guildCommunicationDisabledIcon");
         if (z10) {
             i10 = 0;
         } else {
@@ -155,7 +155,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         }
         simpleDraweeView.setVisibility(i10);
         SimpleDraweeView simpleDraweeView2 = this.binding.guildCommunicationDisabledIcon;
-        q.f(simpleDraweeView2, "binding.guildCommunicationDisabledIcon");
+        q.g(simpleDraweeView2, "binding.guildCommunicationDisabledIcon");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView2, ReactAsset.ClockTimeout);
         SimpleDraweeView simpleDraweeView3 = this.binding.authorAvatar;
         float f12 = 0.5f;
@@ -194,7 +194,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         } else {
             i10 = configureMessageContent$lambda$3.getResources().getDisplayMetrics().widthPixels;
         }
-        q.f(configureMessageContent$lambda$3, "configureMessageContent$lambda$3");
+        q.g(configureMessageContent$lambda$3, "configureMessageContent$lambda$3");
         StructurableText content = message.getContent();
         if (content == null || !content.getHasContent()) {
             z10 = false;
@@ -215,12 +215,12 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         }
         if (z11) {
             z12 = true;
-            configureMessageContent$lambda$3.m317setMessageContent2i9KL1s(message.getContent(), message.m16getId3Eiw7ao(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), FlaggedMessageEmbedView$configureMessageContent$1$1.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$2.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$3.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$4.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$5.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$6.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$7.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$8.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$9.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$10.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$11.INSTANCE, (r47 & 65536) != 0 ? MessageContentView$setMessageContent$1.INSTANCE : FlaggedMessageEmbedView$configureMessageContent$1$12.INSTANCE, configureMessageContent$lambda$3.getResources().getDimensionPixelSize(R.dimen.message_accessories_vertical_spacing), i10, (r47 & 524288) != 0 ? null : null, (r47 & 1048576) != 0 ? null : null, (r47 & 2097152) != 0 ? ThemeManagerKt.getTheme() : null);
+            configureMessageContent$lambda$3.m318setMessageContent2i9KL1s(message.getContent(), message.m17getId3Eiw7ao(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), FlaggedMessageEmbedView$configureMessageContent$1$1.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$2.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$3.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$4.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$5.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$6.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$7.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$8.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$9.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$10.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$11.INSTANCE, (r47 & 65536) != 0 ? MessageContentView$setMessageContent$1.INSTANCE : FlaggedMessageEmbedView$configureMessageContent$1$12.INSTANCE, configureMessageContent$lambda$3.getResources().getDimensionPixelSize(R.dimen.message_accessories_vertical_spacing), i10, (r47 & 524288) != 0 ? null : null, (r47 & 1048576) != 0 ? null : null, (r47 & 2097152) != 0 ? ThemeManagerKt.getTheme() : null);
         } else {
             z12 = true;
         }
         FlaggedMessageEmbedFooterView configureMessageContent$lambda$4 = this.binding.contentFooterView;
-        q.f(configureMessageContent$lambda$4, "configureMessageContent$lambda$4");
+        q.g(configureMessageContent$lambda$4, "configureMessageContent$lambda$4");
         if (message.getAutoModerationContext() != null) {
             z13 = z12;
         } else {
@@ -249,16 +249,16 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
 
     @Override 
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        q.g(ev, "ev");
+        q.h(ev, "ev");
         return !this.allowChildGestures;
     }
 
     public final void setMessage(Message message, ChatEventHandler eventHandler, boolean z10) {
-        q.g(message, "message");
-        q.g(eventHandler, "eventHandler");
+        q.h(message, "message");
+        q.h(eventHandler, "eventHandler");
         this.allowChildGestures = z10;
         configureAuthor(message, eventHandler);
-        configureCommunicationDisabled(q.b(message.getCommunicationDisabled(), Boolean.TRUE));
+        configureCommunicationDisabled(q.c(message.getCommunicationDisabled(), Boolean.TRUE));
         configureMessageContent(message);
     }
 
@@ -270,30 +270,30 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
     
     public FlaggedMessageEmbedView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         FlaggedMessageEmbedViewBinding inflate = FlaggedMessageEmbedViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         this.allowChildGestures = true;
         RippleUtilsKt.addRipple$default(this, false, SizeUtilsKt.getDpToPx(8), 1, null);
         View _init_$lambda$0 = inflate.getRoot();
         _init_$lambda$0.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         ViewClippingUtilsKt.clipToRoundedRectangle(_init_$lambda$0, SizeUtilsKt.getDpToPx(8));
         int dpToPx = SizeUtilsKt.getDpToPx(12);
         _init_$lambda$0.setPadding(dpToPx, dpToPx, dpToPx, dpToPx);
         TextView _init_$lambda$1 = inflate.authorName;
-        q.f(_init_$lambda$1, "_init_$lambda$1");
+        q.g(_init_$lambda$1, "_init_$lambda$1");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$1, DiscordFont.PrimarySemibold);
         float f10 = 16.0f;
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$1, 16.0f, 20.0f);
         _init_$lambda$1.setLineSpacing(0.0f, 1.05f);
         SimpleDraweeView simpleDraweeView = inflate.authorAvatar;
-        q.f(simpleDraweeView, "binding.authorAvatar");
+        q.g(simpleDraweeView, "binding.authorAvatar");
         ViewClippingUtilsKt.clipToCircle(simpleDraweeView);
         MessageContentView _init_$lambda$2 = inflate.contentView;
         _init_$lambda$2.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
-        q.f(_init_$lambda$2, "_init_$lambda$2");
+        q.g(_init_$lambda$2, "_init_$lambda$2");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$2, DiscordFont.PrimaryMedium);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$2, FontManager.INSTANCE.getIsClassicChatFontScaleEnabled(context) ? 14.0f : f10);
     }

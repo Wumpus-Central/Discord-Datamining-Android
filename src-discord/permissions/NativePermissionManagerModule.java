@@ -1,6 +1,8 @@
 package com.discord.permissions;
 
+import android.os.Build;
 import androidx.core.app.NotificationManagerCompat;
+import com.discord.react.utilities.NativeArrayExtensionsKt;
 import com.discord.react.utilities.PromiseWrapper;
 import com.facebook.react.bridge.BaseJavaModule;
 import com.facebook.react.bridge.NativeModule;
@@ -10,7 +12,9 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.modules.permissions.PermissionsModule;
+import java.util.List;
 import kotlin.Metadata;
+import kotlin.collections.j;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
@@ -44,12 +48,12 @@ public final class NativePermissionManagerModule extends ReactContextBaseJavaMod
     
     public NativePermissionManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     private final PermissionsModule getPermissionsModule() {
         NativeModule nativeModule = getReactApplicationContext().getNativeModule(PermissionsModule.class);
-        q.d(nativeModule);
+        q.e(nativeModule);
         return (PermissionsModule) nativeModule;
     }
 
@@ -60,7 +64,7 @@ public final class NativePermissionManagerModule extends ReactContextBaseJavaMod
 
     @ReactMethod
     public final void getNotificationAuthorizationStatus(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         if (NotificationManagerCompat.g(getReactApplicationContext()).a()) {
             promise.resolve(2);
         } else {
@@ -70,85 +74,96 @@ public final class NativePermissionManagerModule extends ReactContextBaseJavaMod
 
     @ReactMethod
     public final void hasBluetoothAuthorization(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         getPermissionsModule().checkPermission("android.permission.BLUETOOTH", Companion.transformHasAuthorizationResult(promise));
     }
 
     @ReactMethod
     public final void hasCameraAuthorization(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         getPermissionsModule().checkPermission("android.permission.CAMERA", Companion.transformHasAuthorizationResult(promise));
     }
 
     @ReactMethod
     public final void hasContactAuthorization(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         getPermissionsModule().checkPermission("android.permission.READ_CONTACTS", Companion.transformHasAuthorizationResult(promise));
     }
 
     @ReactMethod
     public final void hasExternalStorageAuthorization(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         getPermissionsModule().checkPermission("android.permission.WRITE_EXTERNAL_STORAGE", Companion.transformHasAuthorizationResult(promise));
     }
 
     @ReactMethod
     public final void hasMicrophoneAuthorization(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         getPermissionsModule().checkPermission("android.permission.RECORD_AUDIO", Companion.transformHasAuthorizationResult(promise));
     }
 
     @ReactMethod
     public final void hasModifyAudioAuthorization(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         getPermissionsModule().checkPermission("android.permission.MODIFY_AUDIO_SETTINGS", Companion.transformHasAuthorizationResult(promise));
     }
 
     @ReactMethod
     public final void hasPhotoAuthorization(Promise promise) {
-        q.g(promise, "promise");
-        getPermissionsModule().checkPermission("android.permission.READ_EXTERNAL_STORAGE", Companion.transformHasAuthorizationResult(promise));
+        q.h(promise, "promise");
+        if (Build.VERSION.SDK_INT >= 33) {
+            getPermissionsModule().checkPermission("android.permission.READ_MEDIA_IMAGES", Companion.transformHasAuthorizationResult(promise));
+        } else {
+            getPermissionsModule().checkPermission("android.permission.READ_EXTERNAL_STORAGE", Companion.transformHasAuthorizationResult(promise));
+        }
     }
 
     @ReactMethod
     public final void requestBluetoothAuthorization(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         getPermissionsModule().requestPermission("android.permission.BLUETOOTH", Companion.transformRequestResult(promise));
     }
 
     @ReactMethod
     public final void requestCameraAuthorization(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         getPermissionsModule().requestPermission("android.permission.CAMERA", Companion.transformRequestResult(promise));
     }
 
     @ReactMethod
     public final void requestContactsAuthorization(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         getPermissionsModule().requestPermission("android.permission.READ_CONTACTS", Companion.transformRequestResult(promise));
     }
 
     @ReactMethod
     public final void requestExternalStorageAuthorization(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         getPermissionsModule().requestPermission("android.permission.WRITE_EXTERNAL_STORAGE", Companion.transformRequestResult(promise));
     }
 
     @ReactMethod
     public final void requestMicrophoneAuthorization(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         getPermissionsModule().requestPermission("android.permission.RECORD_AUDIO", Companion.transformRequestResult(promise));
     }
 
     @ReactMethod
     public final void requestModifyAudioAuthorization(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         getPermissionsModule().requestPermission("android.permission.MODIFY_AUDIO_SETTINGS", Companion.transformRequestResult(promise));
     }
 
     @ReactMethod
     public final void requestPhotoAuthorization(Promise promise) {
-        q.g(promise, "promise");
+        List k10;
+        q.h(promise, "promise");
+        if (Build.VERSION.SDK_INT >= 33) {
+            PermissionsModule permissionsModule = getPermissionsModule();
+            k10 = j.k("android.permission.READ_MEDIA_IMAGES", "android.permission.READ_MEDIA_VIDEO", "android.permission.READ_MEDIA_AUDIO");
+            permissionsModule.requestMultiplePermissions(NativeArrayExtensionsKt.toNativeArray(k10), Companion.transformRequestResult(promise));
+            return;
+        }
         getPermissionsModule().requestPermission("android.permission.READ_EXTERNAL_STORAGE", Companion.transformRequestResult(promise));
     }
 }

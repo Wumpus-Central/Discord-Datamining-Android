@@ -28,8 +28,8 @@ public final class MuteAction implements NotificationAction {
         
         @Override 
         public final MuteAction createFromParcel(Parcel parcel) {
-            q.g(parcel, "parcel");
-            return new MuteAction(parcel.readString(), (GuildId) parcel.readParcelable(MuteAction.class.getClassLoader()), ((ChannelId) parcel.readParcelable(MuteAction.class.getClassLoader())).m575unboximpl(), null);
+            q.h(parcel, "parcel");
+            return new MuteAction(parcel.readString(), (GuildId) parcel.readParcelable(MuteAction.class.getClassLoader()), ((ChannelId) parcel.readParcelable(MuteAction.class.getClassLoader())).m576unboximpl(), null);
         }
 
         
@@ -66,16 +66,16 @@ public final class MuteAction implements NotificationAction {
 
     @Override 
     public void onNotificationAction(Context context, Intent intent) {
-        q.g(context, "context");
-        q.g(intent, "intent");
+        q.h(context, "context");
+        q.h(intent, "intent");
         HeadlessTasks.Companion companion = HeadlessTasks.Companion;
         Bundle bundle = new Bundle();
         GuildId guildId = this.guildId;
         if (guildId != null) {
-            bundle.putString("guildId", String.valueOf(guildId.m588unboximpl()));
+            bundle.putString("guildId", String.valueOf(guildId.m589unboximpl()));
         }
         bundle.putString("channelId", String.valueOf(this.channelId));
-        HeadlessTasks.Companion.startHeadlessTask$default(companion, context, "MuteAction", 0L, false, bundle, true, 12, null);
+        companion.startHeadlessTask(context, "MuteAction", (r18 & 4) != 0 ? HeadlessTasks.TASK_TIMEOUT_DEFAULT : 0L, (r18 & 8) != 0, (r18 & 16) != 0 ? new Bundle() : bundle, (r18 & 32) != 0 ? false : true);
     }
 
     @Override 
@@ -90,9 +90,9 @@ public final class MuteAction implements NotificationAction {
 
     @Override 
     public void writeToParcel(Parcel out, int i10) {
-        q.g(out, "out");
+        q.h(out, "out");
         out.writeString(this.tag);
         out.writeParcelable(this.guildId, i10);
-        out.writeParcelable(ChannelId.m566boximpl(this.channelId), i10);
+        out.writeParcelable(ChannelId.m567boximpl(this.channelId), i10);
     }
 }

@@ -11,8 +11,8 @@ import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.viewmanagers.SafeAreaViewManagerDelegate;
 import com.facebook.react.viewmanagers.SafeAreaViewManagerInterface;
 import com.th3rdwave.safeareacontext.SafeAreaProvider;
-import ff.x;
 import java.util.Map;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;
@@ -111,7 +111,7 @@ public final class SafeAreaProviderManager extends ViewGroupManager<SafeAreaProv
         
         public SafeAreaProviderDimensions(SafeAreaProvider safeAreaProvider) {
             this(safeAreaProvider.getRootView().getHeight(), safeAreaProvider.getRootView().getWidth());
-            q.g(safeAreaProvider, "safeAreaProvider");
+            q.h(safeAreaProvider, "safeAreaProvider");
         }
     }
 
@@ -129,13 +129,13 @@ public final class SafeAreaProviderManager extends ViewGroupManager<SafeAreaProv
         float leftDp = safeAreaEdgeInsets.getLeftDp();
         float rightDp = safeAreaEdgeInsets.getRightDp();
         if (insets != null) {
-            f10 = SizeUtilsKt.getPxToDp(insets.f3396d);
+            f10 = SizeUtilsKt.getPxToDp(insets.f2744d);
         } else {
             f10 = DEFAULT_IME_INSETS_BOTTOM;
         }
         OnSafeAreaInsetsDidChangeData onSafeAreaInsetsDidChangeData = new OnSafeAreaInsetsDidChangeData(topDp, bottomDp, leftDp, rightDp, f10);
         SafeAreaProviderDimensions safeAreaProviderDimensions = new SafeAreaProviderDimensions(safeAreaProvider);
-        if (!q.b(this.dimensions, safeAreaProviderDimensions)) {
+        if (!q.c(this.dimensions, safeAreaProviderDimensions)) {
             this.changeData = DEFAULT_CHANGE_DATA;
             this.dimensions = safeAreaProviderDimensions;
         }
@@ -156,8 +156,8 @@ public final class SafeAreaProviderManager extends ViewGroupManager<SafeAreaProv
 
     
     public void addEventEmitters(ThemedReactContext reactContext, SafeAreaProvider view) {
-        q.g(reactContext, "reactContext");
-        q.g(view, "view");
+        q.h(reactContext, "reactContext");
+        q.h(view, "view");
         view.setOnInsetsChangeHandler(new SafeAreaProviderManager$addEventEmitters$1(this, reactContext, view));
         ImmersiveMode.INSTANCE.addRootViewInsetUpdateCallback$safe_area_release(new SafeAreaProviderManager$addEventEmitters$2(this, reactContext, view));
     }
@@ -165,7 +165,7 @@ public final class SafeAreaProviderManager extends ViewGroupManager<SafeAreaProv
     
     @Override 
     public SafeAreaProvider createViewInstance(ThemedReactContext reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         return new SafeAreaProvider(reactContext);
     }
 

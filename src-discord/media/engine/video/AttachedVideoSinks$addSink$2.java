@@ -16,7 +16,7 @@ import org.webrtc.VideoFrame;
     }
 
     public final Boolean invoke(VideoFrame p02) {
-        q.g(p02, "p0");
+        q.h(p02, "p0");
         return Boolean.valueOf(((AttachedVideoSinks.VideoOutputSinks) this.receiver).onFrame(p02));
     }
 }

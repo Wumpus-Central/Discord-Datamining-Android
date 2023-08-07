@@ -12,6 +12,6 @@ public final class ReleaseRowLogger implements RowLogger {
 
     @Override 
     public void logRowsUpdate(String rowsJson) {
-        q.g(rowsJson, "rowsJson");
+        q.h(rowsJson, "rowsJson");
     }
 }

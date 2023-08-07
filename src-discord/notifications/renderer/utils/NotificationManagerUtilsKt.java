@@ -10,9 +10,9 @@ import androidx.core.app.NotificationManagerCompat;
 import com.discord.notifications.renderer.NotificationBehaviors;
 import com.discord.notifications.renderer.R;
 import com.discord.theme.utils.ColorUtilsKt;
-import ff.s;
-import ff.t;
 import java.util.List;
+import jf.s;
+import jf.t;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
@@ -24,17 +24,17 @@ public final class NotificationManagerUtilsKt {
     public static final Notification getActiveNotification(Context context, String tag) {
         Object obj;
         StatusBarNotification statusBarNotification;
-        q.g(context, "<this>");
-        q.g(tag, "tag");
+        q.h(context, "<this>");
+        q.h(tag, "tag");
         NotificationManager notificationManager = getNotificationManager(context);
         if (notificationManager == null) {
             return null;
         }
         try {
-            s.a aVar = s.f14787l;
+            s.a aVar = s.f20093l;
             obj = s.b(notificationManager.getActiveNotifications());
         } catch (Throwable th2) {
-            s.a aVar2 = s.f14787l;
+            s.a aVar2 = s.f20093l;
             obj = s.b(t.a(th2));
         }
         if (s.g(obj)) {
@@ -52,7 +52,7 @@ public final class NotificationManagerUtilsKt {
                 break;
             }
             statusBarNotification = statusBarNotificationArr[i10];
-            if (q.b(statusBarNotification.getTag(), tag)) {
+            if (q.c(statusBarNotification.getTag(), tag)) {
                 break;
             }
             i10++;
@@ -65,9 +65,9 @@ public final class NotificationManagerUtilsKt {
 
     public static final int getActiveNotificationMessageCount(Context context, String tag) {
         NotificationCompat.MessagingStyle messagingStyle;
-        List<NotificationCompat.MessagingStyle.a> B;
-        q.g(context, "<this>");
-        q.g(tag, "tag");
+        List<NotificationCompat.MessagingStyle.e> B;
+        q.h(context, "<this>");
+        q.h(tag, "tag");
         Notification activeNotification = getActiveNotification(context, tag);
         if (activeNotification == null || (messagingStyle = getMessagingStyle(activeNotification)) == null || (B = messagingStyle.B()) == null) {
             return 0;
@@ -76,13 +76,13 @@ public final class NotificationManagerUtilsKt {
     }
 
     public static final NotificationCompat.MessagingStyle getMessagingStyle(Notification notification) {
-        q.g(notification, "<this>");
+        q.h(notification, "<this>");
         return NotificationCompat.MessagingStyle.z(notification);
     }
 
     public static final NotificationCompat.Builder getNotificationBuilderOrCreate(Context context, String notificationChannelId, Notification notification) {
-        q.g(context, "<this>");
-        q.g(notificationChannelId, "notificationChannelId");
+        q.h(context, "<this>");
+        q.h(notificationChannelId, "notificationChannelId");
         if (notification != null) {
             return new NotificationCompat.Builder(context, notification);
         }
@@ -90,27 +90,27 @@ public final class NotificationManagerUtilsKt {
     }
 
     public static final NotificationManager getNotificationManager(Context context) {
-        q.g(context, "<this>");
+        q.h(context, "<this>");
         return (NotificationManager) context.getSystemService("notification");
     }
 
     public static final NotificationManagerCompat getNotificationManagerCompat(Context context) {
-        q.g(context, "<this>");
+        q.h(context, "<this>");
         NotificationManagerCompat g10 = NotificationManagerCompat.g(context);
-        q.f(g10, "from(this)");
+        q.g(g10, "from(this)");
         return g10;
     }
 
     public static final void notify(NotificationManagerCompat notificationManagerCompat, String tag, NotificationCompat.Builder notificationBuilder) {
-        q.g(notificationManagerCompat, "<this>");
-        q.g(tag, "tag");
-        q.g(notificationBuilder, "notificationBuilder");
+        q.h(notificationManagerCompat, "<this>");
+        q.h(tag, "tag");
+        q.h(notificationBuilder, "notificationBuilder");
         notificationManagerCompat.m(tag, 0, notificationBuilder.g());
     }
 
     public static final NotificationCompat.Builder setLegacyNotificationBehaviors(NotificationCompat.Builder builder, Context context, NotificationBehaviors notificationBehaviors, Uri uri) {
-        q.g(builder, "<this>");
-        q.g(context, "context");
+        q.h(builder, "<this>");
+        q.h(context, "context");
         if (notificationBehaviors == null) {
             return builder;
         }
@@ -126,14 +126,14 @@ public final class NotificationManagerUtilsKt {
             int i11 = soundsEnabled ? 1 : 0;
             int i12 = soundsEnabled ? 1 : 0;
             NotificationCompat.Builder F = builder.F(i10);
-            q.f(F, "{\n        setDefaults(defaults)\n    }");
+            q.g(F, "{\n        setDefaults(defaults)\n    }");
             return F;
         }
         NotificationCompat.Builder c02 = builder.c0(uri);
         int i13 = soundsEnabled ? 1 : 0;
         char c10 = soundsEnabled ? 1 : 0;
         NotificationCompat.Builder F2 = c02.F(i13 & (-2));
-        q.f(F2, "{\n        
+        q.g(F2, "{\n        
         return F2;
     }
 }

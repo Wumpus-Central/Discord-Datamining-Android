@@ -14,7 +14,7 @@ public final class PasswordManagerModule extends ReactContextBaseJavaModule {
     
     public PasswordManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @Override 
@@ -24,7 +24,7 @@ public final class PasswordManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void isSupported(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         promise.resolve(Boolean.FALSE);
     }
 }

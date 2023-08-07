@@ -26,7 +26,7 @@ final class CrashReportingModule$addListener$1 extends s implements Function2<Hi
     @Override 
     public   Unit invoke(HistoricalProcessExitReason.Reason reason, SystemLogUtils.Tombstone tombstone) {
         invoke2(reason, tombstone);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
@@ -35,7 +35,7 @@ final class CrashReportingModule$addListener$1 extends s implements Function2<Hi
         ReactApplicationContext reactApplicationContext;
         reactEvents = this.this$0.reactEvents;
         reactApplicationContext = this.this$0.getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         reactEvents.emitModuleEvent(reactApplicationContext, new CrashReportEvent(Boolean.TRUE, reason, tombstone));
     }
 }

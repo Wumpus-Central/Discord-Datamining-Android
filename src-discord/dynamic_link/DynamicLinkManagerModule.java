@@ -14,12 +14,12 @@ public final class DynamicLinkManagerModule extends ReactContextBaseJavaModule {
     
     public DynamicLinkManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @ReactMethod
     public final void getInitialURL(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         promise.resolve(null);
     }
 

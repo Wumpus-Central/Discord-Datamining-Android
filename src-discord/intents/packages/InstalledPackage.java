@@ -31,7 +31,7 @@ public enum InstalledPackage {
 
         public final InstalledPackage parse(String appName) {
             InstalledPackage installedPackage;
-            q.g(appName, "appName");
+            q.h(appName, "appName");
             InstalledPackage[] values = InstalledPackage.values();
             int length = values.length;
             int i10 = 0;
@@ -41,7 +41,7 @@ public enum InstalledPackage {
                     break;
                 }
                 installedPackage = values[i10];
-                if (q.b(installedPackage.appName, appName)) {
+                if (q.c(installedPackage.appName, appName)) {
                     break;
                 }
                 i10++;

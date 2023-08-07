@@ -26,13 +26,13 @@ public final class MediaEngineModule$addConnectionCallbacks$4 extends s implemen
     @Override 
     public   Unit invoke(String str, Long l10, String str2) {
         invoke(str, l10.longValue(), str2);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final void invoke(String userId, long j10, String streamId) {
         ReactEvents reactEvents;
-        q.g(userId, "userId");
-        q.g(streamId, "streamId");
+        q.h(userId, "userId");
+        q.h(streamId, "streamId");
         reactEvents = this.this$0.reactEvents;
         reactEvents.emitModuleEvent(this.this$0.getReactContext(), new FirstFrameCallbackEvent(this.$connectionId, userId, j10, streamId));
     }

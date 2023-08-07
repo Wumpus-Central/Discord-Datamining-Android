@@ -14,7 +14,7 @@ import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;
@@ -44,7 +44,7 @@ public final class PhotoLibraryHelperModule extends ReactContextBaseJavaModule {
     
     public PhotoLibraryHelperModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.reactContext = reactContext;
         final Handler handler = new Handler(Looper.getMainLooper());
         this.listener = new ContentObserver(handler) { 
@@ -75,8 +75,8 @@ public final class PhotoLibraryHelperModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void addListener(String type) {
-        q.g(type, "type");
-        if (q.b(type, PHOTO_LIBRARY_CHANGED)) {
+        q.h(type, "type");
+        if (q.c(type, PHOTO_LIBRARY_CHANGED)) {
             register();
         }
     }
@@ -84,8 +84,8 @@ public final class PhotoLibraryHelperModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public final void doesAttachmentExist(String uri, Promise promise) {
         int i10;
-        q.g(uri, "uri");
-        q.g(promise, "promise");
+        q.h(uri, "uri");
+        q.h(promise, "promise");
         Cursor query = this.reactContext.getContentResolver().query(Uri.parse(uri), new String[]{"_id"}, null, null, null, null);
         boolean z10 = false;
         if (query != null) {
@@ -109,21 +109,22 @@ public final class PhotoLibraryHelperModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void registerEventListener(String type) {
-        q.g(type, "type");
-        if (q.b(type, PHOTO_LIBRARY_CHANGED)) {
+        q.h(type, "type");
+        if (q.c(type, PHOTO_LIBRARY_CHANGED)) {
             register();
         }
     }
 
     @ReactMethod
     public final void removeEventListener(String type) {
-        q.g(type, "type");
-        if (q.b(type, PHOTO_LIBRARY_CHANGED)) {
+        q.h(type, "type");
+        if (q.c(type, PHOTO_LIBRARY_CHANGED)) {
             unregister();
         }
     }
 
     @ReactMethod
     public final void removeListeners(int i10) {
+        removeEventListener(PHOTO_LIBRARY_CHANGED);
     }
 }

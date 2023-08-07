@@ -24,13 +24,13 @@ final class MediaEngineModule$createVoiceConnectionWithOptions$1 extends s imple
     @Override 
     public   Unit invoke(String str, Map<String, ? extends Object> map) {
         invoke2(str, map);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String errorMessage, Map<String, ? extends Object> connectionInfo) {
-        q.g(errorMessage, "errorMessage");
-        q.g(connectionInfo, "connectionInfo");
+        q.h(errorMessage, "errorMessage");
+        q.h(connectionInfo, "connectionInfo");
         this.$callback.invoke(errorMessage, NativeMapExtensionsKt.toNativeMap(connectionInfo));
     }
 }

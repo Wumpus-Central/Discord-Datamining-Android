@@ -11,8 +11,8 @@ public final class InviteToSpeakAccessory extends MessageAccessory {
 
     
     public InviteToSpeakAccessory(Message message) {
-        super(message.m16getId3Eiw7ao(), "invite to speak", null);
-        q.g(message, "message");
+        super(message.m17getId3Eiw7ao(), "invite to speak", null);
+        q.h(message, "message");
         this.message = message;
     }
 
@@ -28,7 +28,7 @@ public final class InviteToSpeakAccessory extends MessageAccessory {
     }
 
     public final InviteToSpeakAccessory copy(Message message) {
-        q.g(message, "message");
+        q.h(message, "message");
         return new InviteToSpeakAccessory(message);
     }
 
@@ -36,7 +36,7 @@ public final class InviteToSpeakAccessory extends MessageAccessory {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof InviteToSpeakAccessory) && q.b(this.message, ((InviteToSpeakAccessory) obj).message);
+        return (obj instanceof InviteToSpeakAccessory) && q.c(this.message, ((InviteToSpeakAccessory) obj).message);
     }
 
     public final Message getMessage() {

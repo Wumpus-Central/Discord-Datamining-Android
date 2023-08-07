@@ -19,16 +19,16 @@ public final class MediaMosaicAttachmentViewHolder extends MessagePartViewHolder
     
     public MediaMosaicAttachmentViewHolder(MediaMosaicView view, ChatEventHandler eventHandler) {
         super(view, null);
-        q.g(view, "view");
-        q.g(eventHandler, "eventHandler");
+        q.h(view, "view");
+        q.h(eventHandler, "eventHandler");
         this.view = view;
         this.eventHandler = eventHandler;
     }
 
     public final void bind(List<? extends MessageAccessory> attachments, int i10, Function1<? super Integer, Unit> onAttachmentSpoilerClicked, Function3<? super Integer, ? super MessageAccessory, ? super MessagePartViewHolder, Unit> onAttachmentClicked) {
-        q.g(attachments, "attachments");
-        q.g(onAttachmentSpoilerClicked, "onAttachmentSpoilerClicked");
-        q.g(onAttachmentClicked, "onAttachmentClicked");
+        q.h(attachments, "attachments");
+        q.h(onAttachmentSpoilerClicked, "onAttachmentSpoilerClicked");
+        q.h(onAttachmentClicked, "onAttachmentClicked");
         this.view.setAttachments(attachments, i10, this.eventHandler, onAttachmentSpoilerClicked, onAttachmentClicked);
     }
 }

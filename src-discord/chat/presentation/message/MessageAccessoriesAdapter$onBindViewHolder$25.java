@@ -24,21 +24,21 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$25 extends s imple
     @Override 
     public   Unit invoke(ReactionView.Reaction reaction) {
         invoke2(reaction);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(ReactionView.Reaction reaction) {
         ChatEventHandler chatEventHandler;
         String str;
-        q.g(reaction, "reaction");
+        q.h(reaction, "reaction");
         chatEventHandler = this.this$0.eventHandler;
         if (chatEventHandler == null) {
-            q.y("eventHandler");
+            q.z("eventHandler");
             chatEventHandler = null;
         }
         str = this.this$0.messageId;
-        q.d(str);
-        ChatEventHandler.DefaultImpls.m186onTapReactionu7_MRrM$default(chatEventHandler, str, reaction, null, 4, null);
+        q.e(str);
+        ChatEventHandler.DefaultImpls.m187onTapReactionu7_MRrM$default(chatEventHandler, str, reaction, null, 4, null);
     }
 }

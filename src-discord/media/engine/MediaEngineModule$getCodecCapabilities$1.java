@@ -22,12 +22,12 @@ final class MediaEngineModule$getCodecCapabilities$1 extends s implements Functi
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String codecs) {
-        q.g(codecs, "codecs");
+        q.h(codecs, "codecs");
         this.$callback.invoke(codecs);
     }
 }

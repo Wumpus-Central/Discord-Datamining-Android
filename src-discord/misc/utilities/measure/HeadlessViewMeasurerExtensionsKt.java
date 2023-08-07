@@ -13,18 +13,18 @@ import kotlin.jvm.internal.q;
 
 public final class HeadlessViewMeasurerExtensionsKt {
     public static final <T extends View> Size measureHeadlessView(Context context, Class<T> clazz, Function1<? super T, Unit> configureView, HeadlessViewMeasurer.MeasureBounds measureBounds) {
-        q.g(context, "<this>");
-        q.g(clazz, "clazz");
-        q.g(configureView, "configureView");
-        q.g(measureBounds, "measureBounds");
+        q.h(context, "<this>");
+        q.h(clazz, "clazz");
+        q.h(configureView, "configureView");
+        q.h(measureBounds, "measureBounds");
         return new HeadlessViewMeasurer(clazz).measure$misc_utilities_release(context, configureView, measureBounds);
     }
 
     public static final  <T extends View> Size measureHeadlessView(Context context, Function1<? super T, Unit> configureView, HeadlessViewMeasurer.MeasureBounds measureBounds) {
-        q.g(context, "<this>");
-        q.g(configureView, "configureView");
-        q.g(measureBounds, "measureBounds");
-        q.m(4, "T");
+        q.h(context, "<this>");
+        q.h(configureView, "configureView");
+        q.h(measureBounds, "measureBounds");
+        q.n(4, "T");
         return measureHeadlessView(context, View.class, configureView, measureBounds);
     }
 }

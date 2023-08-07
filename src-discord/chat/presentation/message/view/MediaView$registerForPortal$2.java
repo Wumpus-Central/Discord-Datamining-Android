@@ -29,13 +29,13 @@ public final class MediaView$registerForPortal$2 extends s implements Function1<
     @Override 
     public   Unit invoke(View view) {
         invoke2(view);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(View it) {
         MediaPlayerManagerModule mediaPlayerManagerModule;
-        q.g(it, "it");
+        q.h(it, "it");
         mediaPlayerManagerModule = this.this$0.managerModule;
         if (mediaPlayerManagerModule != null) {
             mediaPlayerManagerModule.startPlayerProgressInterval(this.$portal, this.$mediaPlayer);

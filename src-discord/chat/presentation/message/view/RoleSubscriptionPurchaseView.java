@@ -29,13 +29,13 @@ public final class RoleSubscriptionPurchaseView extends ConstraintLayout {
     
     public RoleSubscriptionPurchaseView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public RoleSubscriptionPurchaseView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  RoleSubscriptionPurchaseView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -62,31 +62,31 @@ public final class RoleSubscriptionPurchaseView extends ConstraintLayout {
     
     public RoleSubscriptionPurchaseView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         RoleSubscriptionPurchaseViewBinding inflate = RoleSubscriptionPurchaseViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView _init_$lambda$0 = inflate.roleSubscriptionWelcome;
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, DiscordFont.PrimaryMedium);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$0, 16.0f);
         _init_$lambda$0.setTextColor(ThemeManagerKt.getTheme().getStatusPositiveText());
         TextView _init_$lambda$1 = inflate.roleSubscriptionPurchaserUsername;
-        q.f(_init_$lambda$1, "_init_$lambda$1");
+        q.g(_init_$lambda$1, "_init_$lambda$1");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$1, DiscordFont.PrimaryExtraBold);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$1, 20.0f);
         _init_$lambda$1.setTextColor(ThemeManagerKt.getTheme().getStatusPositiveText());
         SimpleDraweeView simpleDraweeView = inflate.roleSubscriptionPurchaseBadge;
-        q.f(simpleDraweeView, "binding.roleSubscriptionPurchaseBadge");
+        q.g(simpleDraweeView, "binding.roleSubscriptionPurchaseBadge");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.RoleSubscriptionBadge);
         SimpleDraweeView simpleDraweeView2 = inflate.roleSubscriptionPurchaseLanyard;
-        q.f(simpleDraweeView2, "binding.roleSubscriptionPurchaseLanyard");
+        q.g(simpleDraweeView2, "binding.roleSubscriptionPurchaseLanyard");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView2, ReactAsset.RoleSubscriptionLanyard);
         SimpleDraweeView simpleDraweeView3 = inflate.roleSubscriptionPurchaseCardBg;
-        q.f(simpleDraweeView3, "binding.roleSubscriptionPurchaseCardBg");
+        q.g(simpleDraweeView3, "binding.roleSubscriptionPurchaseCardBg");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView3, ReactAsset.RoleSubscriptionPurchaseCardBg);
         SimpleDraweeView simpleDraweeView4 = inflate.roleSubscriptionPurchaserAvatar;
-        q.f(simpleDraweeView4, "binding.roleSubscriptionPurchaserAvatar");
+        q.g(simpleDraweeView4, "binding.roleSubscriptionPurchaserAvatar");
         ViewClippingUtilsKt.clipToCircle(simpleDraweeView4);
         inflate.roleSubscriptionWelcome.setText(I18nUtilsKt.i18nFormat$default(context, I18nMessage.ROLE_SUBSCRIPTION_WELCOME_LABEL, null, 2, null));
     }

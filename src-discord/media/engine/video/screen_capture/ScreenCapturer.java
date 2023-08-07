@@ -94,7 +94,7 @@ public final class ScreenCapturer extends ScreenCapturerAndroid {
                     if (TimestampAligner.getRtcTimeNanos() - l10.longValue() > screenCapturer.intervalNanos) {
                         NativeCapturerObserver nativeCapturerObserver = screenCapturer.nativeObserver;
                         if (nativeCapturerObserver == null) {
-                            q.y("nativeObserver");
+                            q.z("nativeObserver");
                             nativeCapturerObserver = null;
                         }
                         nativeCapturerObserver.repeatLastFrame();
@@ -108,7 +108,7 @@ public final class ScreenCapturer extends ScreenCapturerAndroid {
     
     public ScreenCapturer(Intent mediaProjectionPermissionResultData) {
         super(mediaProjectionPermissionResultData, new OnStopCallback());
-        q.g(mediaProjectionPermissionResultData, "mediaProjectionPermissionResultData");
+        q.h(mediaProjectionPermissionResultData, "mediaProjectionPermissionResultData");
     }
 
     private final AudioRecord createRecorder() {
@@ -125,7 +125,7 @@ public final class ScreenCapturer extends ScreenCapturerAndroid {
         addMatchingUsage2 = addMatchingUsage.addMatchingUsage(14);
         addMatchingUsage3 = addMatchingUsage2.addMatchingUsage(0);
         build = addMatchingUsage3.build();
-        q.f(build, "Builder(mediaProjection)…\n                .build()");
+        q.g(build, "Builder(mediaProjection)…\n                .build()");
         try {
             audioPlaybackCaptureConfig = new AudioRecord.Builder().setAudioFormat(new AudioFormat.Builder().setEncoding(2).setSampleRate(SAMPLING_RATE_IN_HZ).setChannelMask(16).build()).setAudioPlaybackCaptureConfig(build);
             return audioPlaybackCaptureConfig.build();
@@ -161,7 +161,7 @@ public final class ScreenCapturer extends ScreenCapturerAndroid {
     }
 
     public final synchronized void changeCaptureFormatInternal(Rect measuredSize, int i10) {
-        q.g(measuredSize, "measuredSize");
+        q.h(measuredSize, "measuredSize");
         int max = Math.max(measuredSize.width(), measuredSize.height());
         if (max > 0) {
             float f10 = i10 / max;
@@ -200,9 +200,9 @@ public final class ScreenCapturer extends ScreenCapturerAndroid {
 
     @Override 
     public synchronized void initialize(SurfaceTextureHelper surfaceTextureHelper, Context applicationContext, CapturerObserver capturerObserver) {
-        q.g(surfaceTextureHelper, "surfaceTextureHelper");
-        q.g(applicationContext, "applicationContext");
-        q.g(capturerObserver, "capturerObserver");
+        q.h(surfaceTextureHelper, "surfaceTextureHelper");
+        q.h(applicationContext, "applicationContext");
+        q.h(capturerObserver, "capturerObserver");
         this.surfaceTextureHelper = surfaceTextureHelper;
         this.context = applicationContext;
         this.nativeObserver = (NativeCapturerObserver) capturerObserver;
@@ -216,11 +216,11 @@ public final class ScreenCapturer extends ScreenCapturerAndroid {
             Companion companion = Companion;
             Context context = this.context;
             if (context == null) {
-                q.y("context");
+                q.z("context");
                 context = null;
             }
             rect.set(companion.getScreenSize(context));
-            if (!q.b(this.currMeasuredSize, this.lastMeasuredSize)) {
+            if (!q.c(this.currMeasuredSize, this.lastMeasuredSize)) {
                 this.lastMeasuredSize.set(this.currMeasuredSize);
                 changeCaptureFormatInternal(this.currMeasuredSize, this.maxDimension);
             }
@@ -243,7 +243,7 @@ public final class ScreenCapturer extends ScreenCapturerAndroid {
         if (this.framerate > 0) {
             SurfaceTextureHelper surfaceTextureHelper = this.surfaceTextureHelper;
             if (surfaceTextureHelper == null) {
-                q.y("surfaceTextureHelper");
+                q.z("surfaceTextureHelper");
                 surfaceTextureHelper = null;
             }
             surfaceTextureHelper.getHandler().postDelayed(this.watchdog, this.intervalNanos / 1000000);

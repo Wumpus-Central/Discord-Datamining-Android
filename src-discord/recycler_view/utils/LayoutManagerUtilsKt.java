@@ -13,7 +13,7 @@ public final class LayoutManagerUtilsKt {
         boolean z10;
         boolean z11;
         boolean z12;
-        q.g(linearLayoutManager, "<this>");
+        q.h(linearLayoutManager, "<this>");
         Integer valueOf = Integer.valueOf(linearLayoutManager.e2());
         boolean z13 = true;
         if (valueOf.intValue() != -1) {

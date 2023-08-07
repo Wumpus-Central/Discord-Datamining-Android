@@ -2,10 +2,10 @@ package com.discord.file_manager;
 
 import android.util.Base64;
 import com.facebook.react.bridge.Promise;
-import ff.t;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.HashMap;
+import jf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -14,8 +14,8 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
-import lf.d;
-import pf.c;
+import pf.d;
+import tf.c;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.file_manager.FileManagerModule$writeFile$1", f = "FileManagerModule.kt", l = {}, m = "invokeSuspend")
@@ -47,13 +47,15 @@ final class FileManagerModule$writeFile$1 extends k implements Function2<Corouti
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileManagerModule$writeFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20679a);
+        return ((FileManagerModule$writeFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
     }
 
     @Override 
     public final Object invokeSuspend(Object obj) {
         HashMap hashMap;
         HashMap hashMap2;
+        boolean z10;
+        String str;
         HashMap hashMap3;
         d.d();
         if (this.label == 0) {
@@ -61,47 +63,57 @@ final class FileManagerModule$writeFile$1 extends k implements Function2<Corouti
             hashMap = this.this$0.storageDirs;
             if (!hashMap.containsKey(this.$storageDir)) {
                 Promise promise = this.$promise;
-                String str = this.$storageDir;
+                String str2 = this.$storageDir;
                 hashMap3 = this.this$0.storageDirs;
-                promise.reject("err", "Unknown storage directory " + str + ". Supported storage directories: " + hashMap3.keySet());
-                return Unit.f20679a;
+                promise.reject("err", "Unknown storage directory " + str2 + ". Supported storage directories: " + hashMap3.keySet());
+                return Unit.f21025a;
             }
             try {
                 hashMap2 = this.this$0.storageDirs;
                 Object obj2 = hashMap2.get(this.$storageDir);
-                q.d(obj2);
+                q.e(obj2);
                 File file = new File((String) obj2, this.$path);
                 File parentFile = file.getParentFile();
-                boolean z10 = true;
-                if (parentFile != null && !parentFile.exists()) {
+                boolean z11 = true;
+                if (parentFile == null || parentFile.exists()) {
+                    z10 = false;
+                } else {
+                    z10 = true;
+                }
+                if (z10) {
                     File parentFile2 = file.getParentFile();
                     if (parentFile2 == null || parentFile2.mkdirs()) {
-                        z10 = false;
+                        z11 = false;
                     }
-                    if (z10) {
+                    if (z11) {
                         Promise promise2 = this.$promise;
                         File parentFile3 = file.getParentFile();
-                        promise2.reject((String) null, "Failed to create parent directory " + (parentFile3 != null ? parentFile3.toString() : null));
+                        if (parentFile3 != null) {
+                            str = parentFile3.toString();
+                        } else {
+                            str = null;
+                        }
+                        promise2.reject((String) null, "Failed to create parent directory " + str);
                     }
                 }
-                if (q.b(this.$encoding, "base64")) {
+                if (q.c(this.$encoding, "base64")) {
                     FileOutputStream fileOutputStream = new FileOutputStream(file);
                     fileOutputStream.write(Base64.decode(this.$data, 0));
-                    Unit unit = Unit.f20679a;
+                    Unit unit = Unit.f21025a;
                     c.a(fileOutputStream, null);
                 } else {
                     FileOutputStream fileOutputStream2 = new FileOutputStream(file);
-                    byte[] bytes = this.$data.getBytes(ji.d.f19899b);
-                    q.f(bytes, "this as java.lang.String).getBytes(charset)");
+                    byte[] bytes = this.$data.getBytes(ni.d.f24672b);
+                    q.g(bytes, "this as java.lang.String).getBytes(charset)");
                     fileOutputStream2.write(bytes);
-                    Unit unit2 = Unit.f20679a;
+                    Unit unit2 = Unit.f21025a;
                     c.a(fileOutputStream2, null);
                 }
                 this.$promise.resolve(file.getAbsolutePath());
             } catch (Throwable th2) {
                 this.$promise.reject(th2);
             }
-            return Unit.f20679a;
+            return Unit.f21025a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

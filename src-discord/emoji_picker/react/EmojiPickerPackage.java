@@ -16,14 +16,14 @@ import kotlin.jvm.internal.q;
 public final class EmojiPickerPackage implements ReactPackage {
     @Override 
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         return new ArrayList();
     }
 
     @Override 
     public List<ViewManager<?, LayoutShadowNode>> createViewManagers(ReactApplicationContext reactContext) {
         List<ViewManager<?, LayoutShadowNode>> n10;
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         n10 = j.n(new EmojiPickerRowViewManager());
         return n10;
     }

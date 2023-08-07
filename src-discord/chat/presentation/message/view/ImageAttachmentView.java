@@ -111,7 +111,7 @@ public final class ImageAttachmentView extends ConstraintLayout {
     
     public ImageAttachmentView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  ImageAttachmentView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -147,17 +147,17 @@ public final class ImageAttachmentView extends ConstraintLayout {
             w0.q0(this.binding.image, new a() { 
                 @Override 
                 public void onInitializeAccessibilityNodeInfo(View host, AccessibilityNodeInfoCompat info) {
-                    q.g(host, "host");
-                    q.g(info, "info");
+                    q.h(host, "host");
+                    q.h(info, "info");
                     super.onInitializeAccessibilityNodeInfo(host, info);
-                    info.v0(str);
+                    info.B0(str);
                 }
             });
         }
     }
 
     public final void showAltTextButton(boolean z10, String str, Function1<? super String, Unit> onTapShowAltText) {
-        q.g(onTapShowAltText, "onTapShowAltText");
+        q.h(onTapShowAltText, "onTapShowAltText");
         AltTextButtonView altTextButtonView = this.binding.mediaViewAltTextButton;
         if (!z10) {
             str = null;
@@ -168,7 +168,7 @@ public final class ImageAttachmentView extends ConstraintLayout {
     public final void showDescription(boolean z10, String str) {
         boolean z11;
         TextView showDescription$lambda$1 = this.binding.imageAltText;
-        q.f(showDescription$lambda$1, "showDescription$lambda$1");
+        q.g(showDescription$lambda$1, "showDescription$lambda$1");
         ViewUtilsKt.setOptionalText(showDescription$lambda$1, str);
         int i10 = 0;
         if (str == null || !z10) {
@@ -185,14 +185,14 @@ public final class ImageAttachmentView extends ConstraintLayout {
     
     public ImageAttachmentView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         ImageAttachmentViewBinding inflate = ImageAttachmentViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         inflate.image.getHierarchy().z(new ColorDrawable(ThemeManagerKt.getTheme().getBackgroundSecondaryAlt()));
         TextView _init_$lambda$0 = inflate.imageAltText;
         _init_$lambda$0.setImportantForAccessibility(4);
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, DiscordFont.PrimaryNormal);
         _init_$lambda$0.setTextColor(ThemeManagerKt.getTheme().getTextMuted());
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$0, 12.0f);

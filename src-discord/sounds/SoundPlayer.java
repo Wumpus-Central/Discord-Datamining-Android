@@ -51,7 +51,7 @@ public final class SoundPlayer {
     }
 
     public SoundPlayer(MediaPlayer mediaPlayer, Function1<? super Integer, Unit> soundResIdPrepared) {
-        q.g(soundResIdPrepared, "soundResIdPrepared");
+        q.h(soundResIdPrepared, "soundResIdPrepared");
         this.mediaPlayer = mediaPlayer;
         this.volume = 1.0f;
         initializeMediaPlayer(soundResIdPrepared);
@@ -89,7 +89,7 @@ public final class SoundPlayer {
 
     
     public static final void initializeMediaPlayer$lambda$0(SoundPlayer this$0, MediaPlayer mediaPlayer) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         int i10 = this$0.numberOfLoops;
         if (i10 != 0) {
             this$0.numberOfLoops = i10 - 1;
@@ -101,7 +101,7 @@ public final class SoundPlayer {
 
     
     public static final void initializeMediaPlayer$lambda$1(Function1 soundResIdPrepared, MediaPlayer mediaPlayer) {
-        q.g(soundResIdPrepared, "$soundResIdPrepared");
+        q.h(soundResIdPrepared, "$soundResIdPrepared");
         soundResIdPrepared.invoke(Integer.valueOf(mediaPlayer.getDuration()));
     }
 
@@ -214,7 +214,7 @@ public final class SoundPlayer {
     
     public SoundPlayer(Context context, int i10, Integer num, String str, Function1<? super Integer, Unit> soundResIdPrepared) {
         this(Companion.createMediaPlayer(context, i10, num, str), soundResIdPrepared);
-        q.g(context, "context");
-        q.g(soundResIdPrepared, "soundResIdPrepared");
+        q.h(context, "context");
+        q.h(soundResIdPrepared, "soundResIdPrepared");
     }
 }

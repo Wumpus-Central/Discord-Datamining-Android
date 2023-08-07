@@ -13,7 +13,7 @@ public final class LoadingChatListItem extends ChatListItem {
     
     public LoadingChatListItem(LoadMoreButton button, boolean z10) {
         super("loading + " + z10, null);
-        q.g(button, "button");
+        q.h(button, "button");
         this.button = button;
         this.isLoading = z10;
     }
@@ -37,7 +37,7 @@ public final class LoadingChatListItem extends ChatListItem {
     }
 
     public final LoadingChatListItem copy(LoadMoreButton button, boolean z10) {
-        q.g(button, "button");
+        q.h(button, "button");
         return new LoadingChatListItem(button, z10);
     }
 
@@ -49,7 +49,7 @@ public final class LoadingChatListItem extends ChatListItem {
             return false;
         }
         LoadingChatListItem loadingChatListItem = (LoadingChatListItem) obj;
-        return q.b(this.button, loadingChatListItem.button) && this.isLoading == loadingChatListItem.isLoading;
+        return q.c(this.button, loadingChatListItem.button) && this.isLoading == loadingChatListItem.isLoading;
     }
 
     public final LoadMoreButton getButton() {

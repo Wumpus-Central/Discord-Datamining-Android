@@ -35,12 +35,12 @@ public final class BlockedGroupDelegate extends BaseChatListItemDelegate<Blocked
         @Override 
         public   Unit invoke(BlockedMessageGroupView blockedMessageGroupView) {
             invoke2(blockedMessageGroupView);
-            return Unit.f20679a;
+            return Unit.f21025a;
         }
 
         
         public final void invoke2(BlockedMessageGroupView blockedMessageGroupView) {
-            q.g(blockedMessageGroupView, "$this$null");
+            q.h(blockedMessageGroupView, "$this$null");
             BlockedGroupDelegateKt.setupLayout(blockedMessageGroupView);
         }
     }
@@ -49,30 +49,30 @@ public final class BlockedGroupDelegate extends BaseChatListItemDelegate<Blocked
     
     public BlockedGroupDelegate(Function0<? extends ChatEventHandler> eventHandlerProvider, Function0<ComponentProvider> messageComponentProvider) {
         super(eventHandlerProvider, AnonymousClass1.INSTANCE);
-        q.g(eventHandlerProvider, "eventHandlerProvider");
-        q.g(messageComponentProvider, "messageComponentProvider");
+        q.h(eventHandlerProvider, "eventHandlerProvider");
+        q.h(messageComponentProvider, "messageComponentProvider");
         this.eventHandlerProvider = eventHandlerProvider;
         this.messageComponentProvider = messageComponentProvider;
     }
 
     @Override 
     public boolean isForItem(ChatListItem item, int i10) {
-        q.g(item, "item");
+        q.h(item, "item");
         return item instanceof BlockedGroupChatListItem;
     }
 
     public void bindView(BlockedMessageGroupView view, BlockedGroupChatListItem item, BaseChatListItemDelegate.Metadata<BlockedMessageGroupView> metadata) {
-        q.g(view, "view");
-        q.g(item, "item");
-        q.g(metadata, "metadata");
+        q.h(view, "view");
+        q.h(item, "item");
+        q.h(metadata, "metadata");
         view.bind(item, getEventHandler());
     }
 
     @Override 
     public BlockedMessageGroupView createView(ViewGroup parent) {
-        q.g(parent, "parent");
+        q.h(parent, "parent");
         Context context = parent.getContext();
-        q.f(context, "parent.context");
+        q.g(context, "parent.context");
         BlockedMessageGroupView blockedMessageGroupView = new BlockedMessageGroupView(context, null, 2, null);
         blockedMessageGroupView.setupUI(this.eventHandlerProvider, this.messageComponentProvider);
         return blockedMessageGroupView;

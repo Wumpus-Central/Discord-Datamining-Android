@@ -8,7 +8,7 @@ import kotlin.jvm.internal.q;
 
 public final class ViewMeasureExtensionsKt {
     public static final void measureAndLayout(View view) {
-        q.g(view, "<this>");
+        q.h(view, "<this>");
         view.measure(View.MeasureSpec.makeMeasureSpec(view.getWidth(), 1073741824), View.MeasureSpec.makeMeasureSpec(view.getHeight(), 1073741824));
         view.layout(view.getLeft(), view.getTop(), view.getRight(), view.getBottom());
     }

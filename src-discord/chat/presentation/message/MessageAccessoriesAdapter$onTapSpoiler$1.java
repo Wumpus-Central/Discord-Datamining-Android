@@ -24,13 +24,13 @@ public final class MessageAccessoriesAdapter$onTapSpoiler$1 extends s implements
     @Override 
     public   Unit invoke(MessagePartViewHolder messagePartViewHolder) {
         invoke2(messagePartViewHolder);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(MessagePartViewHolder holder) {
         Function0 function0;
-        q.g(holder, "holder");
+        q.h(holder, "holder");
         this.this$0.notifyItemChanged(holder.getBindingAdapterPosition());
         function0 = this.this$0.measureAndLayout;
         function0.invoke();

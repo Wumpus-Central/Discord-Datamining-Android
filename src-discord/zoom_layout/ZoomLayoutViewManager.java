@@ -13,8 +13,8 @@ import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.viewmanagers.DCDZoomLayoutAndroidManagerDelegate;
 import com.facebook.react.viewmanagers.DCDZoomLayoutAndroidManagerInterface;
 import com.otaliastudios.zoom.ZoomEngine;
-import ff.x;
 import java.util.Map;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Ref$ObjectRef;
@@ -67,66 +67,66 @@ public final class ZoomLayoutViewManager extends ViewGroupManager<ZoomLayoutFixe
     
     @Override 
     public ZoomLayoutFixed createViewInstance(final ThemedReactContext reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         final ZoomLayoutFixed zoomLayoutFixed = new ZoomLayoutFixed(reactContext, null, 0, 6, null);
         final Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
-        ref$ObjectRef.f20706k = UIManagerHelper.getEventDispatcherForReactTag(reactContext, zoomLayoutFixed.getId());
+        ref$ObjectRef.f21052k = UIManagerHelper.getEventDispatcherForReactTag(reactContext, zoomLayoutFixed.getId());
         zoomLayoutFixed.setOverScrollHorizontal(false);
         zoomLayoutFixed.setOverScrollVertical(false);
         zoomLayoutFixed.setOverPinchable(false);
         zoomLayoutFixed.getEngine().l(new ZoomEngine.c() { 
             @Override 
             public void onIdle(ZoomEngine engine) {
-                q.g(engine, "engine");
+                q.h(engine, "engine");
             }
 
             @Override 
             public void onUpdate(ZoomEngine engine, Matrix matrix) {
-                q.g(engine, "engine");
-                q.g(matrix, "matrix");
-                ZoomLayoutViewManager.this.getReactEvents$zoom_layout_release().emitEvent(ref$ObjectRef.f20706k, reactContext, zoomLayoutFixed, new OnZoomChangedEvent(zoomLayoutFixed.getZoom()));
+                q.h(engine, "engine");
+                q.h(matrix, "matrix");
+                ZoomLayoutViewManager.this.getReactEvents$zoom_layout_release().emitEvent(ref$ObjectRef.f21052k, reactContext, zoomLayoutFixed, new OnZoomChangedEvent(zoomLayoutFixed.getZoom()));
             }
         });
         return zoomLayoutFixed;
     }
 
     public void receiveCommand(ZoomLayoutFixed zoomLayout, String commandId, ReadableArray readableArray) {
-        q.g(zoomLayout, "zoomLayout");
-        q.g(commandId, "commandId");
-        if (q.b(commandId, COMMAND_ZOOM_TO)) {
+        q.h(zoomLayout, "zoomLayout");
+        q.h(commandId, "commandId");
+        if (q.c(commandId, COMMAND_ZOOM_TO)) {
             if (readableArray != null) {
                 zoomTo(zoomLayout, (float) readableArray.getDouble(0), (float) readableArray.getDouble(1));
             }
-        } else if (q.b(commandId, COMMAND_UN_ZOOM)) {
+        } else if (q.c(commandId, COMMAND_UN_ZOOM)) {
             unzoom(zoomLayout);
         }
     }
 
     @ReactProp(name = "gestureEnabled")
     public void setGestureEnabled(ZoomLayoutFixed view, boolean z10) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.setGestureEnabled(z10);
     }
 
     @ReactProp(name = "maximumZoomScale")
     public void setMaximumZoomScale(ZoomLayoutFixed view, float f10) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.setMaxZoom(f10);
     }
 
     @ReactProp(name = "minimumZoomScale")
     public void setMinimumZoomScale(ZoomLayoutFixed view, float f10) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.setMinZoom(f10);
     }
 
     public void unzoom(ZoomLayoutFixed view) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.moveToCenter(Float.valueOf(1.0f), true);
     }
 
     public void zoomTo(ZoomLayoutFixed view, float f10, float f11) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.moveTo(2.0f, f10, f11, true);
     }
 }

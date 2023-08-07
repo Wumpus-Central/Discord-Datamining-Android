@@ -40,13 +40,13 @@ public final class ActivityBookmarkView extends ConstraintLayout {
     
     public ActivityBookmarkView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public ActivityBookmarkView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  ActivityBookmarkView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -56,10 +56,10 @@ public final class ActivityBookmarkView extends ConstraintLayout {
     public final void setAvatarUris(List<String> avatarUris) {
         int i10;
         int s10;
-        q.g(avatarUris, "avatarUris");
+        q.h(avatarUris, "avatarUris");
         boolean z10 = !avatarUris.isEmpty();
         OverlappingCirclesView overlappingCirclesView = this.binding.participants;
-        q.f(overlappingCirclesView, "binding.participants");
+        q.g(overlappingCirclesView, "binding.participants");
         int i11 = 0;
         if (z10) {
             i10 = 0;
@@ -75,7 +75,7 @@ public final class ActivityBookmarkView extends ConstraintLayout {
         }
         overlappingCirclesView2.setItems(arrayList);
         LinearLayout linearLayout = this.binding.participantsInfoContainer;
-        q.f(linearLayout, "binding.participantsInfoContainer");
+        q.g(linearLayout, "binding.participantsInfoContainer");
         if (!(!z10)) {
             i11 = 8;
         }
@@ -98,7 +98,7 @@ public final class ActivityBookmarkView extends ConstraintLayout {
         }
         boolean z11 = true ^ z10;
         TextView textView = this.binding.itemHeader;
-        q.f(textView, "binding.itemHeader");
+        q.g(textView, "binding.itemHeader");
         if (!z11) {
             i10 = 8;
         }
@@ -109,7 +109,7 @@ public final class ActivityBookmarkView extends ConstraintLayout {
     public final void setLaunchButton(String str, Integer num) {
         boolean z10;
         DCDButton setLaunchButton$lambda$6 = this.binding.launchButton;
-        q.f(setLaunchButton$lambda$6, "setLaunchButton$lambda$6");
+        q.g(setLaunchButton$lambda$6, "setLaunchButton$lambda$6");
         int i10 = 0;
         if (str == null || str.length() == 0) {
             z10 = true;
@@ -125,19 +125,19 @@ public final class ActivityBookmarkView extends ConstraintLayout {
     }
 
     public final void setOnLaunchButtonClickListener(View.OnClickListener onLaunchButtonClickListener) {
-        q.g(onLaunchButtonClickListener, "onLaunchButtonClickListener");
+        q.h(onLaunchButtonClickListener, "onLaunchButtonClickListener");
         this.binding.launchButton.setOnClickButtonListener(onLaunchButtonClickListener);
     }
 
     public final void setParticipantsText(String text) {
-        q.g(text, "text");
+        q.h(text, "text");
         this.binding.participantsInfo.setText(text);
     }
 
     public final void setSplash(String str, int i10) {
         boolean z10;
         SimpleDraweeView simpleDraweeView = this.binding.itemHero;
-        q.f(simpleDraweeView, "binding.itemHero");
+        q.g(simpleDraweeView, "binding.itemHero");
         int i11 = 0;
         if (str != null) {
             z10 = true;
@@ -153,35 +153,35 @@ public final class ActivityBookmarkView extends ConstraintLayout {
         int i12 = (width * 9) / 16;
         MediaContainingViewResizer mediaContainingViewResizer = MediaContainingViewResizer.INSTANCE;
         SimpleDraweeView simpleDraweeView2 = this.binding.itemHero;
-        q.f(simpleDraweeView2, "binding.itemHero");
+        q.g(simpleDraweeView2, "binding.itemHero");
         mediaContainingViewResizer.resizeLayoutParams(simpleDraweeView2, width, i12, width, i12, MediaContainingViewResizer.ResizeMode.Fill);
     }
 
     
     public ActivityBookmarkView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         ActivityBookmarkViewBinding inflate = ActivityBookmarkViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView lambda$4$lambda$0 = inflate.itemHeader;
         lambda$4$lambda$0.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
-        q.f(lambda$4$lambda$0, "lambda$4$lambda$0");
+        q.g(lambda$4$lambda$0, "lambda$4$lambda$0");
         SetTextSizeSpKt.setTextSizeSp(lambda$4$lambda$0, 24.0f);
         DiscordFont discordFont = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(lambda$4$lambda$0, discordFont);
         TextView lambda$4$lambda$1 = inflate.itemDescription;
         lambda$4$lambda$1.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
-        q.f(lambda$4$lambda$1, "lambda$4$lambda$1");
+        q.g(lambda$4$lambda$1, "lambda$4$lambda$1");
         SetTextSizeSpKt.setTextSizeSp(lambda$4$lambda$1, 14.0f);
         DiscordFontUtilsKt.setDiscordFont(lambda$4$lambda$1, DiscordFont.PrimaryMedium);
         SimpleDraweeView lambda$4$lambda$2 = inflate.icon;
-        q.f(lambda$4$lambda$2, "lambda$4$lambda$2");
+        q.g(lambda$4$lambda$2, "lambda$4$lambda$2");
         ReactAssetUtilsKt.setReactAsset(lambda$4$lambda$2, ReactAsset.Members);
         ColorUtilsKt.setTintColor(lambda$4$lambda$2, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
         TextView lambda$4$lambda$3 = inflate.participantsInfo;
         lambda$4$lambda$3.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
-        q.f(lambda$4$lambda$3, "lambda$4$lambda$3");
+        q.g(lambda$4$lambda$3, "lambda$4$lambda$3");
         SetTextSizeSpKt.setTextSizeSp(lambda$4$lambda$3, 12.0f);
         DiscordFontUtilsKt.setDiscordFont(lambda$4$lambda$3, discordFont);
         ViewBackgroundUtilsKt.setBackgroundRectangle$default(this, ColorUtilsKt.getColorCompat(context, ThemeManagerKt.getTheme().getColorRes(R.color.primary_130, R.color.primary_630)), SizeUtilsKt.getDpToPx(8), null, 0, 12, null);

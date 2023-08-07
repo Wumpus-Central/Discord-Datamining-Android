@@ -11,7 +11,7 @@ public final class MessageBundleViewMoreItem extends MessageBundleItem {
     
     public MessageBundleViewMoreItem(String viewMoreText) {
         super("view more", null);
-        q.g(viewMoreText, "viewMoreText");
+        q.h(viewMoreText, "viewMoreText");
         this.viewMoreText = viewMoreText;
     }
 
@@ -27,7 +27,7 @@ public final class MessageBundleViewMoreItem extends MessageBundleItem {
     }
 
     public final MessageBundleViewMoreItem copy(String viewMoreText) {
-        q.g(viewMoreText, "viewMoreText");
+        q.h(viewMoreText, "viewMoreText");
         return new MessageBundleViewMoreItem(viewMoreText);
     }
 
@@ -35,7 +35,7 @@ public final class MessageBundleViewMoreItem extends MessageBundleItem {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof MessageBundleViewMoreItem) && q.b(this.viewMoreText, ((MessageBundleViewMoreItem) obj).viewMoreText);
+        return (obj instanceof MessageBundleViewMoreItem) && q.c(this.viewMoreText, ((MessageBundleViewMoreItem) obj).viewMoreText);
     }
 
     public final String getViewMoreText() {

@@ -21,7 +21,7 @@ final class BundleUpdaterUtilsKt$getStringOrNull$1 extends s implements Function
     }
 
     public final String invoke(JSONObject it) {
-        q.g(it, "it");
+        q.h(it, "it");
         return this.$this_getStringOrNull.getString(this.$key);
     }
 }

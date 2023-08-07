@@ -14,17 +14,17 @@ public final class ChannelSpineViewManagerImpl {
     }
 
     public final ChannelSpineView createViewInstance(ThemedReactContext reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         return new ChannelSpineView(reactContext, null, 2, null);
     }
 
     public final void numRows(ChannelSpineView view, int i10) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.setNumRows(i10);
     }
 
     public final void rowHeight(ChannelSpineView view, float f10) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.setRowHeight(f10);
     }
 }

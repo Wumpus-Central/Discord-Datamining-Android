@@ -31,7 +31,7 @@ public final class DCDButton extends FrameLayout {
     
     public DCDButton(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  DCDButton(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -54,7 +54,7 @@ public final class DCDButton extends FrameLayout {
     }
 
     public final void ellipsize(TextUtils.TruncateAt behavior) {
-        q.g(behavior, "behavior");
+        q.h(behavior, "behavior");
         this.button.setEllipsize(behavior);
     }
 
@@ -69,7 +69,7 @@ public final class DCDButton extends FrameLayout {
         if (num != null) {
             this.button.setStrokeColor(ColorStateList.valueOf(num.intValue()));
             this.button.setStrokeWidth(SizeUtilsKt.getDpToPx(1));
-            unit = Unit.f20679a;
+            unit = Unit.f21025a;
         } else {
             unit = null;
         }
@@ -84,7 +84,7 @@ public final class DCDButton extends FrameLayout {
     }
 
     public final void setDiscordFont(DiscordFont font) {
-        q.g(font, "font");
+        q.h(font, "font");
         DiscordFontUtilsKt.setDiscordFont(this.button, font);
     }
 
@@ -94,7 +94,7 @@ public final class DCDButton extends FrameLayout {
     }
 
     public final void setIcon(String iconUrl, int i10) {
-        q.g(iconUrl, "iconUrl");
+        q.h(iconUrl, "iconUrl");
         ReactAssetUtilsKt.setReactIcon(this.button, iconUrl, i10);
     }
 
@@ -153,15 +153,15 @@ public final class DCDButton extends FrameLayout {
     
     public DCDButton(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         DcdButtonBinding inflate = DcdButtonBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         MaterialButton materialButton = inflate.button;
-        q.f(materialButton, "binding.button");
+        q.g(materialButton, "binding.button");
         this.button = materialButton;
         ProgressBar progressBar = inflate.progress;
-        q.f(progressBar, "binding.progress");
+        q.g(progressBar, "binding.progress");
         this.progress = progressBar;
         materialButton.setStateListAnimator(null);
         materialButton.setMinimumHeight(progressBar.getHeight());

@@ -28,8 +28,8 @@ public final class OneShotPreDrawListener implements ViewTreeObserver.OnPreDrawL
         }
 
         public final OneShotPreDrawListener add(boolean z10, View view, Function0<Unit> action) {
-            q.g(view, "view");
-            q.g(action, "action");
+            q.h(view, "view");
+            q.h(action, "action");
             OneShotPreDrawListener oneShotPreDrawListener = new OneShotPreDrawListener(z10, view, action, null);
             view.getViewTreeObserver().addOnPreDrawListener(oneShotPreDrawListener);
             return oneShotPreDrawListener;

@@ -25,14 +25,14 @@ final class MediaEngineModule$connectionInstanceTriggerOnVideoCallback$1 extends
     @Override 
     public   Unit invoke(String str, Long l10, String str2, String str3) {
         invoke(str, l10.longValue(), str2, str3);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final void invoke(String userId, long j10, String streamId, String videoStreamParametersJSON) {
         ReactEvents reactEvents;
-        q.g(userId, "userId");
-        q.g(streamId, "streamId");
-        q.g(videoStreamParametersJSON, "videoStreamParametersJSON");
+        q.h(userId, "userId");
+        q.h(streamId, "streamId");
+        q.h(videoStreamParametersJSON, "videoStreamParametersJSON");
         reactEvents = this.this$0.reactEvents;
         reactEvents.emitModuleEvent(this.this$0.getReactContext(), new OnVideoCallbackEvent(this.$connectionId, userId, j10, streamId, videoStreamParametersJSON));
     }

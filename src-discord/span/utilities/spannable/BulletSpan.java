@@ -38,7 +38,7 @@ public final class BulletSpan implements LeadingMarginSpan {
     }
 
     public BulletSpan(int i10, int i11, boolean z10, int i12, float f10, Paint.Style style) {
-        q.g(style, "style");
+        q.h(style, "style");
         this.mGapWidth = i11;
         this.mBulletRadius = i12;
         this.mWantColor = z10;
@@ -50,10 +50,10 @@ public final class BulletSpan implements LeadingMarginSpan {
     @Override 
     public void drawLeadingMargin(Canvas c10, Paint p10, int i10, int i11, int i12, int i13, int i14, CharSequence text, int i15, int i16, boolean z10, Layout l10) {
         int i17;
-        q.g(c10, "c");
-        q.g(p10, "p");
-        q.g(text, "text");
-        q.g(l10, "l");
+        q.h(c10, "c");
+        q.h(p10, "p");
+        q.h(text, "text");
+        q.h(l10, "l");
         if (((Spanned) text).getSpanStart(this) == i15) {
             Paint.Style style = p10.getStyle();
             if (this.mWantColor) {
@@ -76,7 +76,7 @@ public final class BulletSpan implements LeadingMarginSpan {
                 c10.save();
                 c10.translate(i10 + (i11 * 1.2f * this.mBulletRadius), (i12 + i14) / 2.0f);
                 Path path2 = sBulletPath;
-                q.d(path2);
+                q.e(path2);
                 c10.drawPath(path2, p10);
                 c10.restore();
             } else {

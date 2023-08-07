@@ -64,7 +64,7 @@ public final class MessageAccessoriesView extends RecyclerView {
 
         @Override 
         public void onAttachedToWindow(MessageContentView messageContentView) {
-            q.g(messageContentView, "messageContentView");
+            q.h(messageContentView, "messageContentView");
             this.currentContentView = messageContentView;
             this.onViewChanged.invoke(messageContentView);
         }
@@ -75,7 +75,7 @@ public final class MessageAccessoriesView extends RecyclerView {
         }
 
         public final void setOnViewChanged(Function1<? super MessageContentView, Unit> onViewChanged) {
-            q.g(onViewChanged, "onViewChanged");
+            q.h(onViewChanged, "onViewChanged");
             this.onViewChanged = onViewChanged;
             MessageContentView messageContentView = this.currentContentView;
             if (messageContentView != null) {
@@ -87,7 +87,7 @@ public final class MessageAccessoriesView extends RecyclerView {
     
     public MessageAccessoriesView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  MessageAccessoriesView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -102,11 +102,11 @@ public final class MessageAccessoriesView extends RecyclerView {
     }
 
     
-    public final void m210setAccessoriesRC8ZMxU(String messageId, long j10, GuildId guildId, List<? extends MessageAccessory> items, ChatEventHandler eventHandler, ComponentProvider componentProvider) {
+    public final void m211setAccessoriesRC8ZMxU(String messageId, long j10, GuildId guildId, List<? extends MessageAccessory> items, ChatEventHandler eventHandler, ComponentProvider componentProvider) {
         MessageAccessoriesView$defaultItemAnimator$1 messageAccessoriesView$defaultItemAnimator$1;
-        q.g(messageId, "messageId");
-        q.g(items, "items");
-        q.g(eventHandler, "eventHandler");
+        q.h(messageId, "messageId");
+        q.h(items, "items");
+        q.h(eventHandler, "eventHandler");
         if (ChatView.Companion.getAreChatAnimationsEnabled()) {
             messageAccessoriesView$defaultItemAnimator$1 = this.defaultItemAnimator;
         } else {
@@ -131,11 +131,11 @@ public final class MessageAccessoriesView extends RecyclerView {
         threadSpineItemDecoration.setShowThreadSpine(z10);
         this.accessoriesAdapter.setEventHandler(eventHandler);
         this.accessoriesAdapter.setComponentProvider(componentProvider);
-        this.accessoriesAdapter.m197setItemsbo5iIEc(messageId, j10, guildId, items);
+        this.accessoriesAdapter.m198setItemsbo5iIEc(messageId, j10, guildId, items);
     }
 
     public final void setOnCurrentContentViewChanged(Function1<? super MessageContentView, Unit> onViewChanged) {
-        q.g(onViewChanged, "onViewChanged");
+        q.h(onViewChanged, "onViewChanged");
         this.contentViewTracker.setOnViewChanged(onViewChanged);
     }
 

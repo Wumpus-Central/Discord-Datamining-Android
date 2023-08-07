@@ -35,8 +35,8 @@ public final class EditTextUtilsKt {
     }
 
     public static final void addEllipsizedHint(EditText editText, CharSequence charSequence, TextUtils.TruncateAt hintTruncateAt) {
-        q.g(editText, "<this>");
-        q.g(hintTruncateAt, "hintTruncateAt");
+        q.h(editText, "<this>");
+        q.h(hintTruncateAt, "hintTruncateAt");
         if (editText.getMaxLines() != 1) {
             editText.setMaxLines(1);
         }
@@ -52,16 +52,16 @@ public final class EditTextUtilsKt {
     }
 
     public static final void applyDCDSpan(Editable editable, DCDInputSpan span, ChatInputNode node) {
-        q.g(editable, "<this>");
-        q.g(span, "span");
-        q.g(node, "node");
+        q.h(editable, "<this>");
+        q.h(span, "span");
+        q.h(node, "node");
         if (node.getLocation() <= editable.length() && node.getLocation() + node.getLength() <= editable.length()) {
             editable.setSpan(span, node.getLocation(), node.getLocation() + node.getLength(), 33);
         }
     }
 
     public static final void removeEllipsizedHint(EditText editText, int i10) {
-        q.g(editText, "<this>");
+        q.h(editText, "<this>");
         if (editText.getMaxLines() != i10) {
             editText.setMaxLines(i10);
         }
@@ -71,8 +71,8 @@ public final class EditTextUtilsKt {
 
     public static final void setChatInputNodeStyle(Editable editable, ChatInputNode node) {
         int i10;
-        q.g(editable, "<this>");
-        q.g(node, "node");
+        q.h(editable, "<this>");
+        q.h(node, "node");
         ChatInputNodeStyle style = node.getStyle();
         if (style != null) {
             applyDCDSpan(editable, new DCDColorSpan(style.getColor()), node);

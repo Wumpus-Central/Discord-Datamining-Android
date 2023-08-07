@@ -28,9 +28,9 @@ public enum BluetoothBroadcastAction {
 
         public final BluetoothBroadcastAction from(String action) {
             BluetoothBroadcastAction[] values;
-            q.g(action, "action");
+            q.h(action, "action");
             for (BluetoothBroadcastAction bluetoothBroadcastAction : BluetoothBroadcastAction.values()) {
-                if (q.b(bluetoothBroadcastAction.getAction(), action)) {
+                if (q.c(bluetoothBroadcastAction.getAction(), action)) {
                     return bluetoothBroadcastAction;
                 }
             }

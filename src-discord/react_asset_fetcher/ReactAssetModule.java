@@ -17,14 +17,14 @@ public final class ReactAssetModule extends ReactResourceModule<ReactAsset> {
     
     public ReactAssetModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.reactContext = reactContext;
     }
 
     @Override 
     public ReactResourceCache<ReactAsset> cache() {
         ReactAssetCache reactAssetCache = ReactAssetCache.INSTANCE;
-        q.e(reactAssetCache, "null cannot be cast to non-null type com.discord.react_resource_cache.ReactResourceCache<com.discord.react_asset_fetcher.ReactAsset>");
+        q.f(reactAssetCache, "null cannot be cast to non-null type com.discord.react_resource_cache.ReactResourceCache<com.discord.react_asset_fetcher.ReactAsset>");
         return reactAssetCache;
     }
 
@@ -35,13 +35,13 @@ public final class ReactAssetModule extends ReactResourceModule<ReactAsset> {
 
     @ReactMethod
     public final void keysRequest(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         callback.invoke(keysArray());
     }
 
     @ReactMethod
     public final void valuesResult(ReadableArray values) {
-        q.g(values, "values");
+        q.h(values, "values");
         cache().set(this.reactContext, reactResources(values));
     }
 

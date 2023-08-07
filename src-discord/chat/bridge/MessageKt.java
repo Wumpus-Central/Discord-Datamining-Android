@@ -12,8 +12,8 @@ import kotlin.jvm.internal.q;
 
 public final class MessageKt {
     public static final String avatarUrl(Message message, Context context) {
-        q.g(message, "<this>");
-        q.g(context, "context");
+        q.h(message, "<this>");
+        q.h(context, "context");
         if (message.getAvatarURL$chat_release() == null) {
             return null;
         }
@@ -24,17 +24,17 @@ public final class MessageKt {
     }
 
     public static final boolean isAutomodSystemMessage(Message message) {
-        q.g(message, "<this>");
+        q.h(message, "<this>");
         return message.getType().isAutomodSystem();
     }
 
     public static final boolean isCallMessage(Message message) {
-        q.g(message, "<this>");
+        q.h(message, "<this>");
         return message.getType().isCall();
     }
 
     public static final boolean isEphemeral(Message message) {
-        q.g(message, "<this>");
+        q.h(message, "<this>");
         if (message.getEphemeralIndication() != null) {
             return true;
         }
@@ -42,7 +42,7 @@ public final class MessageKt {
     }
 
     public static final boolean isSurvey(Message message) {
-        q.g(message, "<this>");
+        q.h(message, "<this>");
         if (message.getSurveyIndication() != null) {
             return true;
         }
@@ -50,12 +50,12 @@ public final class MessageKt {
     }
 
     public static final boolean isSystemMessage(Message message) {
-        q.g(message, "<this>");
+        q.h(message, "<this>");
         return message.getType().isSystem();
     }
 
     public static final int roleDotColor(Message message, int i10) {
-        q.g(message, "<this>");
+        q.h(message, "<this>");
         Integer roleColor = message.getRoleColor();
         if (roleColor != null) {
             return ReactColorToAndroidColorKt.reactColorToAndroidColor(roleColor.intValue());
@@ -71,7 +71,7 @@ public final class MessageKt {
     }
 
     public static final boolean shouldAnimateEmoji(Message message) {
-        q.g(message, "<this>");
+        q.h(message, "<this>");
         Boolean animateEmoji = message.getAnimateEmoji();
         if (animateEmoji != null) {
             return animateEmoji.booleanValue();
@@ -80,7 +80,7 @@ public final class MessageKt {
     }
 
     public static final boolean shouldAutoPlayGifs(Message message) {
-        q.g(message, "<this>");
+        q.h(message, "<this>");
         Boolean gifAutoPlay = message.getGifAutoPlay();
         if (gifAutoPlay != null) {
             return gifAutoPlay.booleanValue();
@@ -89,7 +89,7 @@ public final class MessageKt {
     }
 
     public static final int usernameColor(Message message, int i10) {
-        q.g(message, "<this>");
+        q.h(message, "<this>");
         Integer usernameColor = message.getUsernameColor();
         if (usernameColor != null) {
             return ReactColorToAndroidColorKt.reactColorToAndroidColor(usernameColor.intValue());

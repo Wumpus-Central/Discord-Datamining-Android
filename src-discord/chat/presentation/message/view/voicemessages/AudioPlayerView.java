@@ -1,5 +1,6 @@
 package com.discord.chat.presentation.message.view.voicemessages;
 
+import ag.j;
 import android.content.Context;
 import android.graphics.Paint;
 import android.graphics.drawable.ShapeDrawable;
@@ -34,11 +35,8 @@ import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
-import ff.n;
 import java.util.Arrays;
-import ki.a;
-import ki.c;
-import ki.d;
+import jf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -47,7 +45,9 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.l;
-import wf.j;
+import oi.a;
+import oi.c;
+import oi.d;
 
 @Metadata(d1 = {"\u0000\u008e\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u000e\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0010\u0012\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\t\u0018\u0000 \\2\u00020\u0001:\u0002\\]B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\u0010\u0010/\u001a\u0002002\u0006\u0010+\u001a\u00020,H\u0002J#\u00101\u001a\u0002002\n\b\u0002\u00102\u001a\u0004\u0018\u00010\u001e2\b\b\u0002\u00103\u001a\u00020(H\u0002¢\u0006\u0002\u00104J\u0010\u00105\u001a\u0002002\u0006\u0010+\u001a\u00020,H\u0002J\u0010\u00106\u001a\u0002002\u0006\u0010+\u001a\u00020,H\u0002J\u001a\u00107\u001a\u0002002\u0006\u0010+\u001a\u00020,2\b\b\u0002\u00108\u001a\u00020(H\u0002J\b\u00109\u001a\u000200H\u0002J\u000f\u0010:\u001a\u0004\u0018\u00010\u001eH\u0002¢\u0006\u0002\u0010;J\b\u0010<\u001a\u000200H\u0002J\u0012\u0010=\u001a\u0002002\b\u0010>\u001a\u0004\u0018\u00010?H\u0002J\b\u0010@\u001a\u000200H\u0002J\u0010\u0010A\u001a\u0002002\u0006\u0010+\u001a\u00020,H\u0002J\u0010\u0010B\u001a\u0002002\u0006\u0010C\u001a\u00020(H\u0002J\u000e\u0010D\u001a\u0002002\u0006\u0010\u001d\u001a\u00020\u001eJ\u000e\u0010E\u001a\u0002002\u0006\u0010F\u001a\u00020GJ%\u0010H\u001a\u0002002\u0006\u0010I\u001a\u00020J2\b\u0010K\u001a\u0004\u0018\u00010?ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\bL\u0010MJ\u001c\u0010N\u001a\u0002002\b\b\u0002\u0010+\u001a\u00020,2\b\b\u0002\u0010O\u001a\u00020(H\u0002J-\u0010P\u001a\u0002002\b\u0010Q\u001a\u0004\u0018\u00010\u00072\f\u0010R\u001a\b\u0012\u0004\u0012\u0002000S2\b\u0010T\u001a\u0004\u0018\u00010U¢\u0006\u0002\u0010VJ\u000e\u0010'\u001a\u0002002\u0006\u0010'\u001a\u00020(J\u0010\u0010W\u001a\u0002002\u0006\u0010X\u001a\u00020(H\u0002J\f\u0010Y\u001a\u00020?*\u00020\u0007H\u0002J\f\u0010Z\u001a\u00020?*\u00020\u0007H\u0002J\f\u0010[\u001a\u00020\u0007*\u00020\u001eH\u0002R\u001b\u0010\t\u001a\u00020\n8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\r\u0010\u000e\u001a\u0004\b\u000b\u0010\fR\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0011\u001a\u00020\u0012¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R#\u0010\u0015\u001a\n \u0017*\u0004\u0018\u00010\u00160\u00168BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u001a\u0010\u000e\u001a\u0004\b\u0018\u0010\u0019R\u0010\u0010\u001b\u001a\u0004\u0018\u00010\u001cX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u001eX\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\u001f\u001a\u0004\u0018\u00010 X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b!\u0010\"\"\u0004\b#\u0010$R\u0010\u0010%\u001a\u0004\u0018\u00010\u001cX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010&\u001a\u0004\u0018\u00010\u001cX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010'\u001a\u00020(X\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010)\u001a\u0004\u0018\u00010\u001eX\u0082\u000e¢\u0006\u0004\n\u0002\u0010*R\u000e\u0010+\u001a\u00020,X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010-\u001a\u00020(X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010.\u001a\u00020(X\u0082\u000e¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006^"}, d2 = {"Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView;", "Landroid/widget/FrameLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "animatorManager", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerWipeAnimatorManager;", "getAnimatorManager", "()Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerWipeAnimatorManager;", "animatorManager$delegate", "Lkotlin/Lazy;", "attachStateChangeListener", "Lcom/discord/chat/presentation/message/view/media/ViewAttachedListener;", "binding", "Lcom/discord/chat/databinding/AudioPlayerViewBinding;", "getBinding", "()Lcom/discord/chat/databinding/AudioPlayerViewBinding;", "bounceAnimator", "Landroid/view/animation/Animation;", "kotlin.jvm.PlatformType", "getBounceAnimator", "()Landroid/view/animation/Animation;", "bounceAnimator$delegate", "durationJob", "Lkotlinx/coroutines/Job;", "durationMs", "", "listener", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView$Listener;", "getListener", "()Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView$Listener;", "setListener", "(Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView$Listener;)V", "playerJob", "resetJob", "shouldAnimate", "", "startTimeMS", "Ljava/lang/Long;", "state", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerViewState;", "uploadFinished", "wasPlayingBeforeBeingPaused", "configureAudioWave", "", "configureDuration", "overrideDuration", "isPlaying", "(Ljava/lang/Long;Z)V", "configureLoading", "configurePlayButton", "configurePlayerState", "hasSourceChanged", "configureProgress", "getCurrentPosition", "()Ljava/lang/Long;", "maybeLogPlaybackEnded", "maybeLogPlaybackFailed", "errorMessage", "", "maybeLogPlaybackStarted", "prepareAudio", "reset", "logDuration", "setDurationMs", "setSampleData", "sampleData", "", "setSourceUrl", "messageId", "Lcom/discord/primitives/MessageId;", "sourceUrl", "setSourceUrl-ntcYbpo", "(Ljava/lang/String;Ljava/lang/String;)V", "setState", "forceRefresh", "setUploadProgress", "progress", "onCancelUpload", "Lkotlin/Function0;", "attachmentsOpacity", "", "(Ljava/lang/Integer;Lkotlin/jvm/functions/Function0;Ljava/lang/Float;)V", "toggleDurationEmitter", "shouldEmit", "timeRemainingAccessibilityText", "timeRemainingText", "toSeconds", "Companion", "Listener", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -95,8 +95,8 @@ public final class AudioPlayerView extends FrameLayout {
 
             public final float secondsSinceStart(long j10) {
                 Comparable e10;
-                a.C0287a aVar = a.f20596l;
-                e10 = j.e(a.e(c.t(System.currentTimeMillis() - j10, d.MILLISECONDS)), a.e(a.f20596l.b()));
+                a.C0358a aVar = a.f25061l;
+                e10 = j.e(a.f(c.t(System.currentTimeMillis() - j10, d.MILLISECONDS)), a.f(a.f25061l.b()));
                 return (float) a.F(((a) e10).K(), d.SECONDS);
             }
         }
@@ -111,13 +111,13 @@ public final class AudioPlayerView extends FrameLayout {
     
     public AudioPlayerView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public AudioPlayerView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  AudioPlayerView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -126,7 +126,7 @@ public final class AudioPlayerView extends FrameLayout {
 
     
     public static final void _init_$lambda$2(AudioPlayerView this$0, View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         boolean isPlaying$chat_release = this$0.state.isPlaying$chat_release(this$0.wasPlayingBeforeBeingPaused);
         if (isPlaying$chat_release) {
             this$0.getAnimatorManager().startAnimator(isPlaying$chat_release, false);
@@ -182,11 +182,11 @@ public final class AudioPlayerView extends FrameLayout {
         LinearLayout linearLayout = this.binding.playerContainer;
         if (z10) {
             Context context = getContext();
-            q.f(context, "context");
+            q.g(context, "context");
             charSequence = I18nUtilsKt.i18nFormat(context, I18nMessage.VOICE_MESSAGES_PLAYING_A11Y_STATUS, new AudioPlayerView$configureDuration$1(this, seconds2, seconds));
         } else {
             Context context2 = getContext();
-            q.f(context2, "context");
+            q.g(context2, "context");
             charSequence = I18nUtilsKt.i18nFormat(context2, I18nMessage.VOICE_MESSAGES_A11Y_STATUS, new AudioPlayerView$configureDuration$2(this, seconds2));
         }
         linearLayout.setContentDescription(charSequence);
@@ -218,7 +218,7 @@ public final class AudioPlayerView extends FrameLayout {
         View.OnClickListener onClickListener;
         final boolean isPlaying$chat_release = audioPlayerViewState.isPlaying$chat_release(this.wasPlayingBeforeBeingPaused);
         SimpleDraweeView simpleDraweeView = this.binding.button;
-        q.f(simpleDraweeView, "binding.button");
+        q.g(simpleDraweeView, "binding.button");
         if (isPlaying$chat_release) {
             reactAsset = ReactAsset.Pause;
         } else {
@@ -234,7 +234,7 @@ public final class AudioPlayerView extends FrameLayout {
         simpleDraweeView2.setPadding(i10, 0, 0, 0);
         getAnimatorManager().startAnimator(isPlaying$chat_release, this.shouldAnimate);
         LinearLayout linearLayout = this.binding.playerContainer;
-        q.f(linearLayout, "binding.playerContainer");
+        q.g(linearLayout, "binding.playerContainer");
         if (audioPlayerViewState.getSourceUrl() != null) {
             onClickListener = new View.OnClickListener() { 
                 @Override 
@@ -250,8 +250,8 @@ public final class AudioPlayerView extends FrameLayout {
 
     
     public static final void configurePlayButton$lambda$5(AudioPlayerView this$0, AudioPlayerViewState state, boolean z10, View view) {
-        q.g(this$0, "this$0");
-        q.g(state, "$state");
+        q.h(this$0, "this$0");
+        q.h(state, "$state");
         this$0.binding.buttonContainer.startAnimation(this$0.getBounceAnimator());
         if (state.getPlayer$chat_release() == null) {
             this$0.prepareAudio(state);
@@ -264,19 +264,19 @@ public final class AudioPlayerView extends FrameLayout {
 
     private final void configurePlayerState(AudioPlayerViewState audioPlayerViewState, boolean z10) {
         boolean z11;
-        boolean b10 = q.b(audioPlayerViewState.getMediaState$chat_release(), MediaPlayer.Event.PlaybackEnded.INSTANCE);
+        boolean c10 = q.c(audioPlayerViewState.getMediaState$chat_release(), MediaPlayer.Event.PlaybackEnded.INSTANCE);
         boolean z12 = false;
-        if ((!z10 || AudioPlayerManager.INSTANCE.hasCurrentPlayer(audioPlayerViewState.getAudioSource())) && !b10) {
+        if ((!z10 || AudioPlayerManager.INSTANCE.hasCurrentPlayer(audioPlayerViewState.getAudioSource())) && !c10) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            reset(!b10);
+            reset(!c10);
             return;
         }
         boolean z13 = !hasWindowFocus();
-        if (q.b(audioPlayerViewState.getMediaState$chat_release(), MediaPlayer.Event.StartedPlaying.INSTANCE) && !z13 && audioPlayerViewState.getAttached()) {
+        if (q.c(audioPlayerViewState.getMediaState$chat_release(), MediaPlayer.Event.StartedPlaying.INSTANCE) && !z13 && audioPlayerViewState.getAttached()) {
             z12 = true;
         }
         setKeepScreenOn(z12);
@@ -338,7 +338,7 @@ public final class AudioPlayerView extends FrameLayout {
                 this.startTimeMS = null;
                 Listener listener = this.listener;
                 if (listener != null) {
-                    a.C0287a aVar = a.f20596l;
+                    a.C0358a aVar = a.f25061l;
                     listener.voiceMessagePlaybackEnded((float) a.F(c.t(longValue, d.MILLISECONDS), d.SECONDS), secondsSinceStart);
                 }
             }
@@ -361,7 +361,7 @@ public final class AudioPlayerView extends FrameLayout {
             this.startTimeMS = Long.valueOf(System.currentTimeMillis());
             Listener listener = this.listener;
             if (listener != null) {
-                a.C0287a aVar = a.f20596l;
+                a.C0358a aVar = a.f25061l;
                 listener.voiceMessagePlaybackStarted((float) a.F(c.t(longValue, d.MILLISECONDS), d.SECONDS));
             }
         }
@@ -372,7 +372,7 @@ public final class AudioPlayerView extends FrameLayout {
         if (audioSource != null) {
             AudioPlayerManager audioPlayerManager = AudioPlayerManager.INSTANCE;
             Context context = getContext();
-            q.f(context, "context");
+            q.g(context, "context");
             audioPlayerManager.setupPlayer(context, audioSource, this.durationMs, new AudioPlayerView$prepareAudio$1(this));
             this.binding.wave.setEnabled(true);
         }
@@ -398,11 +398,11 @@ public final class AudioPlayerView extends FrameLayout {
 
     private final synchronized void setState(AudioPlayerViewState audioPlayerViewState, boolean z10) {
         if (!z10) {
-            if (q.b(this.state, audioPlayerViewState)) {
+            if (q.c(this.state, audioPlayerViewState)) {
                 return;
             }
         }
-        boolean z11 = !q.b(audioPlayerViewState.getSourceUrl(), this.state.getSourceUrl());
+        boolean z11 = !q.c(audioPlayerViewState.getSourceUrl(), this.state.getSourceUrl());
         if (z11 && AudioPlayerManager.INSTANCE.hasCurrentPlayer(audioPlayerViewState.getAudioSource())) {
             prepareAudio(audioPlayerViewState);
         }
@@ -435,12 +435,12 @@ public final class AudioPlayerView extends FrameLayout {
 
     private final String timeRemainingText(int i10) {
         String format = String.format("%01d:%02d", Arrays.copyOf(new Object[]{Integer.valueOf(i10 / 60), Integer.valueOf(i10 % 60)}, 2));
-        q.f(format, "format(this, *args)");
+        q.g(format, "format(this, *args)");
         return format;
     }
 
     private final int toSeconds(long j10) {
-        a.C0287a aVar = a.f20596l;
+        a.C0358a aVar = a.f25061l;
         return (int) Math.ceil(a.F(c.t(j10, d.MILLISECONDS), d.SECONDS));
     }
 
@@ -450,7 +450,7 @@ public final class AudioPlayerView extends FrameLayout {
         Job job = this.durationJob;
         if (job != null) {
             Job.a.a(job, null, 1, null);
-            Unit unit = Unit.f20679a;
+            Unit unit = Unit.f21025a;
         }
         this.durationJob = null;
         if (z10) {
@@ -479,7 +479,7 @@ public final class AudioPlayerView extends FrameLayout {
         }
         AudioWaveView setDurationMs$lambda$3 = this.binding.wave;
         setDurationMs$lambda$3.setDuration(Long.valueOf(j10));
-        q.f(setDurationMs$lambda$3, "setDurationMs$lambda$3");
+        q.g(setDurationMs$lambda$3, "setDurationMs$lambda$3");
         AudioWaveView.setAudioProgress$default(setDurationMs$lambda$3, ((float) j11) / ((float) j10), false, 2, null);
         if (this.state.getCurrentProgress$chat_release() != null) {
             z10 = true;
@@ -495,15 +495,15 @@ public final class AudioPlayerView extends FrameLayout {
     }
 
     public final void setSampleData(byte[] sampleData) {
-        q.g(sampleData, "sampleData");
+        q.h(sampleData, "sampleData");
         this.binding.wave.setOriginalSampleData(sampleData);
     }
 
     
-    public final void m326setSourceUrlntcYbpo(String messageId, String str) {
-        q.g(messageId, "messageId");
+    public final void m327setSourceUrlntcYbpo(String messageId, String str) {
+        q.h(messageId, "messageId");
         this.binding.wave.setEnabled(false);
-        if (!q.b(str, this.state.getSourceUrl())) {
+        if (!q.c(str, this.state.getSourceUrl())) {
             if (str == null) {
                 reset(false);
             } else {
@@ -515,7 +515,7 @@ public final class AudioPlayerView extends FrameLayout {
     public final void setUploadProgress(Integer num, Function0<Unit> onCancelUpload, Float f10) {
         boolean z10;
         float f11;
-        q.g(onCancelUpload, "onCancelUpload");
+        q.h(onCancelUpload, "onCancelUpload");
         if (num != null) {
             z10 = true;
         } else {
@@ -533,20 +533,20 @@ public final class AudioPlayerView extends FrameLayout {
         ShapeDrawable shapeDrawable = new ShapeDrawable();
         Paint paint = shapeDrawable.getPaint();
         Context context = getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         paint.setColor(ColorUtilsKt.getColorCompat(context, 17170445));
-        Unit unit = Unit.f20679a;
+        Unit unit = Unit.f21025a;
         attachmentUploadOverlayView.configureProgressView(valueOf, shapeDrawable, Integer.valueOf(SizeUtilsKt.getDpToPx(16)), Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()), Integer.valueOf(SizeUtilsKt.getDpToPx(29)), Integer.valueOf(ThemeManagerKt.getTheme().getBackgroundModifierAccent()));
         this.binding.uploadOverlay.configureCompleteView(Integer.valueOf(SizeUtilsKt.getDpToPx(32)), Integer.valueOf(SizeUtilsKt.getDpToPx(19)));
         if (z10 && !this.uploadFinished) {
             this.binding.uploadOverlayBackground.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
             LinearLayout linearLayout = this.binding.uploadOverlayBackground;
-            q.f(linearLayout, "binding.uploadOverlayBackground");
+            q.g(linearLayout, "binding.uploadOverlayBackground");
             linearLayout.setVisibility(0);
         }
         AudioPlayerView$setUploadProgress$hideOverlayBackground$1 audioPlayerView$setUploadProgress$hideOverlayBackground$1 = new AudioPlayerView$setUploadProgress$hideOverlayBackground$1(this);
         AttachmentUploadOverlayView attachmentUploadOverlayView2 = this.binding.uploadOverlay;
-        q.f(attachmentUploadOverlayView2, "binding.uploadOverlay");
+        q.g(attachmentUploadOverlayView2, "binding.uploadOverlay");
         AttachmentUploadOverlayView.setProgress$default(attachmentUploadOverlayView2, num, null, 2, null);
         this.binding.uploadOverlay.setUploadCancel(onCancelUpload);
         this.binding.uploadOverlay.setOnProgressAnimationComplete(audioPlayerView$setUploadProgress$hideOverlayBackground$1);
@@ -563,9 +563,9 @@ public final class AudioPlayerView extends FrameLayout {
         Lazy b10;
         Lazy b11;
         int i11;
-        q.g(context, "context");
+        q.h(context, "context");
         AudioPlayerViewBinding inflate = AudioPlayerViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         this.state = new AudioPlayerViewState(null, null, false, 7, null);
         this.shouldAnimate = true;
@@ -577,7 +577,7 @@ public final class AudioPlayerView extends FrameLayout {
         this.animatorManager$delegate = b11;
         addOnAttachStateChangeListener(viewAttachedListener);
         LinearLayout _init_$lambda$0 = inflate.playerContainer;
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         int dpToPx = SizeUtilsKt.getDpToPx(8);
         _init_$lambda$0.setPadding(dpToPx, dpToPx, dpToPx, dpToPx);
         _init_$lambda$0.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
@@ -585,10 +585,10 @@ public final class AudioPlayerView extends FrameLayout {
         _init_$lambda$0.setOrientation(0);
         _init_$lambda$0.setGravity(16);
         SimpleDraweeView simpleDraweeView = inflate.button;
-        q.f(simpleDraweeView, "binding.button");
+        q.g(simpleDraweeView, "binding.button");
         ViewClippingUtilsKt.clipToCircle(simpleDraweeView);
         SimpleDraweeSpanTextView _init_$lambda$1 = inflate.text;
-        q.f(_init_$lambda$1, "_init_$lambda$1");
+        q.g(_init_$lambda$1, "_init_$lambda$1");
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$1, 14.0f);
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$1, DiscordFont.PrimaryMedium);
         _init_$lambda$1.setTextColor(ThemeManagerKt.getTheme().getInteractiveNormal());
@@ -603,9 +603,9 @@ public final class AudioPlayerView extends FrameLayout {
             @Override 
             public boolean onRequestSendAccessibilityEvent(ViewGroup host, View child, AccessibilityEvent event) {
                 int i12;
-                q.g(host, "host");
-                q.g(child, "child");
-                q.g(event, "event");
+                q.h(host, "host");
+                q.h(child, "child");
+                q.h(event, "event");
                 LinearLayout linearLayout = AudioPlayerView.this.getBinding().playerContainer;
                 if (event.getAction() == 32768) {
                     i12 = 2;

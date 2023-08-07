@@ -24,7 +24,7 @@ final class EmbedView$setFields$1$1 extends s implements Function0<View> {
     @Override 
     public final View invoke() {
         Context context = this.$this_apply.getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         return new EmbedFieldView(context, null, 0, 6, null);
     }
 }

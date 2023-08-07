@@ -56,22 +56,22 @@ public final class OverlayMenuView extends LinearLayout {
     
     public OverlayMenuView(Context context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
         ViewOverlayMenuBinding inflate = ViewOverlayMenuBinding.inflate(LayoutInflater.from(getContext()), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView textView = inflate.overlayGuildName;
-        q.f(textView, "binding.overlayGuildName");
+        q.g(textView, "binding.overlayGuildName");
         DiscordFont discordFont = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(textView, discordFont);
         TextView textView2 = inflate.overlayInviteLink;
-        q.f(textView2, "binding.overlayInviteLink");
+        q.g(textView2, "binding.overlayInviteLink");
         DiscordFontUtilsKt.setDiscordFont(textView2, discordFont);
         TextView textView3 = inflate.overlaySwitchChannels;
-        q.f(textView3, "binding.overlaySwitchChannels");
+        q.g(textView3, "binding.overlaySwitchChannels");
         DiscordFontUtilsKt.setDiscordFont(textView3, discordFont);
         TextView textView4 = inflate.overlayOpenApp;
-        q.f(textView4, "binding.overlayOpenApp");
+        q.g(textView4, "binding.overlayOpenApp");
         DiscordFontUtilsKt.setDiscordFont(textView4, discordFont);
         inflate.menuTop.setCardBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
         inflate.menuTopStatusContainer.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundTertiary());
@@ -89,21 +89,21 @@ public final class OverlayMenuView extends LinearLayout {
     }
 
     public final void setAssets(MobileVoiceOverlayAssets assets) {
-        q.g(assets, "assets");
+        q.h(assets, "assets");
         this.assets = assets;
         SimpleDraweeView setAssets$lambda$0 = this.binding.srcToggle;
         setAssets$lambda$0.setContentDescription(assets.getUseSpeaker());
-        q.f(setAssets$lambda$0, "setAssets$lambda$0");
+        q.g(setAssets$lambda$0, "setAssets$lambda$0");
         ReactAssetUtilsKt.setReactAsset(setAssets$lambda$0, ReactAsset.Speaker);
         ColorUtilsKt.setTintColor(setAssets$lambda$0, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
         SimpleDraweeView setAssets$lambda$1 = this.binding.muteToggle;
         setAssets$lambda$1.setContentDescription(assets.getMute());
-        q.f(setAssets$lambda$1, "setAssets$lambda$1");
+        q.g(setAssets$lambda$1, "setAssets$lambda$1");
         ReactAssetUtilsKt.setReactAsset(setAssets$lambda$1, ReactAsset.Mic);
         ColorUtilsKt.setTintColor(setAssets$lambda$1, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
         SimpleDraweeView setAssets$lambda$2 = this.binding.disconnectBtn;
         setAssets$lambda$2.setContentDescription(assets.getDisconnectFromVoice());
-        q.f(setAssets$lambda$2, "setAssets$lambda$2");
+        q.g(setAssets$lambda$2, "setAssets$lambda$2");
         ReactAssetUtilsKt.setReactAsset(setAssets$lambda$2, ReactAsset.Disconnect);
         ColorUtilsKt.setTintColor(setAssets$lambda$2, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
         this.binding.overlayInviteLink.setText(assets.getGetInvite());
@@ -115,9 +115,9 @@ public final class OverlayMenuView extends LinearLayout {
         int i10;
         ReactAsset reactAsset;
         ReactAsset reactAsset2;
-        q.g(data, "data");
+        q.h(data, "data");
         TextView textView = this.binding.overlayInviteLink;
-        q.f(textView, "binding.overlayInviteLink");
+        q.g(textView, "binding.overlayInviteLink");
         if (data.getCanGenerateInvite()) {
             i10 = 0;
         } else {
@@ -125,7 +125,7 @@ public final class OverlayMenuView extends LinearLayout {
         }
         textView.setVisibility(i10);
         SimpleDraweeView simpleDraweeView = this.binding.muteToggle;
-        q.f(simpleDraweeView, "binding.muteToggle");
+        q.g(simpleDraweeView, "binding.muteToggle");
         if (data.getMuted()) {
             reactAsset = ReactAsset.MicMutedDark;
         } else {
@@ -133,7 +133,7 @@ public final class OverlayMenuView extends LinearLayout {
         }
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView, reactAsset);
         SimpleDraweeView simpleDraweeView2 = this.binding.overlayNetworkIcon;
-        q.f(simpleDraweeView2, "binding.overlayNetworkIcon");
+        q.g(simpleDraweeView2, "binding.overlayNetworkIcon");
         int i11 = WhenMappings.$EnumSwitchMapping$0[data.getConnectionQuality().ordinal()];
         if (i11 == 1) {
             reactAsset2 = ReactAsset.CallStatusGreen;
@@ -144,7 +144,7 @@ public final class OverlayMenuView extends LinearLayout {
         } else if (i11 == 4) {
             reactAsset2 = ReactAsset.CallStatusUnknown;
         } else {
-            throw new ff.q();
+            throw new jf.q();
         }
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView2, reactAsset2);
         this.binding.overlayGuildName.setText(data.getGuildName());
@@ -154,22 +154,22 @@ public final class OverlayMenuView extends LinearLayout {
     
     public OverlayMenuView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         ViewOverlayMenuBinding inflate = ViewOverlayMenuBinding.inflate(LayoutInflater.from(getContext()), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView textView = inflate.overlayGuildName;
-        q.f(textView, "binding.overlayGuildName");
+        q.g(textView, "binding.overlayGuildName");
         DiscordFont discordFont = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(textView, discordFont);
         TextView textView2 = inflate.overlayInviteLink;
-        q.f(textView2, "binding.overlayInviteLink");
+        q.g(textView2, "binding.overlayInviteLink");
         DiscordFontUtilsKt.setDiscordFont(textView2, discordFont);
         TextView textView3 = inflate.overlaySwitchChannels;
-        q.f(textView3, "binding.overlaySwitchChannels");
+        q.g(textView3, "binding.overlaySwitchChannels");
         DiscordFontUtilsKt.setDiscordFont(textView3, discordFont);
         TextView textView4 = inflate.overlayOpenApp;
-        q.f(textView4, "binding.overlayOpenApp");
+        q.g(textView4, "binding.overlayOpenApp");
         DiscordFontUtilsKt.setDiscordFont(textView4, discordFont);
         inflate.menuTop.setCardBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
         inflate.menuTopStatusContainer.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundTertiary());
@@ -185,22 +185,22 @@ public final class OverlayMenuView extends LinearLayout {
     
     public OverlayMenuView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         ViewOverlayMenuBinding inflate = ViewOverlayMenuBinding.inflate(LayoutInflater.from(getContext()), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView textView = inflate.overlayGuildName;
-        q.f(textView, "binding.overlayGuildName");
+        q.g(textView, "binding.overlayGuildName");
         DiscordFont discordFont = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(textView, discordFont);
         TextView textView2 = inflate.overlayInviteLink;
-        q.f(textView2, "binding.overlayInviteLink");
+        q.g(textView2, "binding.overlayInviteLink");
         DiscordFontUtilsKt.setDiscordFont(textView2, discordFont);
         TextView textView3 = inflate.overlaySwitchChannels;
-        q.f(textView3, "binding.overlaySwitchChannels");
+        q.g(textView3, "binding.overlaySwitchChannels");
         DiscordFontUtilsKt.setDiscordFont(textView3, discordFont);
         TextView textView4 = inflate.overlayOpenApp;
-        q.f(textView4, "binding.overlayOpenApp");
+        q.g(textView4, "binding.overlayOpenApp");
         DiscordFontUtilsKt.setDiscordFont(textView4, discordFont);
         inflate.menuTop.setCardBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
         inflate.menuTopStatusContainer.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundTertiary());

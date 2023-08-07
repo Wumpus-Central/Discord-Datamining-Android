@@ -1,6 +1,5 @@
 package com.discord.tti_manager;
 
-import com.discord.codegen.BuildConfig;
 import com.discord.logging.Log;
 import com.discord.react.utilities.NativeArrayExtensionsKt;
 import com.discord.react.utilities.NativeMapExtensionsKt;
@@ -11,10 +10,10 @@ import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import ff.x;
-import gf.v;
 import java.util.ArrayList;
 import java.util.Map;
+import jf.x;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.collections.k;
 import kotlin.jvm.internal.q;
@@ -25,13 +24,13 @@ public final class TTIManagerModule extends ReactContextBaseJavaModule {
     
     public TTIManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @ReactMethod
     public final void getAllNativeTimestamps(Promise promise) {
         int s10;
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         try {
             ArrayList<TTIMetrics.Timing> timings = TTIMetrics.INSTANCE.getTimings();
             s10 = k.s(timings, 10);
@@ -54,7 +53,7 @@ public final class TTIManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void getJSBundleTimestamps(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         try {
             ReactMarkerListener reactMarkerListener = ReactMarkerListener.INSTANCE;
             promise.resolve(NativeMapExtensionsKt.nativeMapOf(x.a("JSBundleStartedTimestamp", Double.valueOf(reactMarkerListener.getBundleStartedTimestamp())), x.a("JSBundleLoadedTimestamp", Double.valueOf(reactMarkerListener.getBundleLoadedTimestamp())), x.a("JSBundleParsedTimestamp", Double.valueOf(reactMarkerListener.getBundleParsedTimestamp()))));
@@ -70,20 +69,20 @@ public final class TTIManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void logToDevice(String value) {
-        q.g(value, "value");
+        q.h(value, "value");
         Log.i$default(Log.INSTANCE, "ttidata", value, (Throwable) null, 4, (Object) null);
     }
 
     @ReactMethod
     public final void logToDeviceEnabled(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         promise.resolve(BuildConfig.logTTIMetrics);
     }
 
-    @ReactMethod(isBlockingSynchronousMethod = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED)
+    @ReactMethod(isBlockingSynchronousMethod = true)
     public final boolean runningTTIAutomation() {
         Boolean logTTIMetrics = BuildConfig.logTTIMetrics;
-        q.f(logTTIMetrics, "logTTIMetrics");
+        q.g(logTTIMetrics, "logTTIMetrics");
         return logTTIMetrics.booleanValue();
     }
 

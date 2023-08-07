@@ -30,7 +30,7 @@ public final class ContentResolverMedia$Companion$getMedia$performQuery$1 extend
 
     public final List<ContentResolverMedia> invoke(Uri contentUri) {
         List<ContentResolverMedia> queryMedia;
-        q.g(contentUri, "contentUri");
+        q.h(contentUri, "contentUri");
         queryMedia = ContentResolverMedia.Companion.queryMedia(this.$context, this.$queryType, this.$queryLimit, contentUri, this.$queryOffset);
         return queryMedia;
     }

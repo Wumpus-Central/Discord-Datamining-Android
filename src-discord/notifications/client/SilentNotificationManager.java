@@ -30,7 +30,7 @@ public final class SilentNotificationManager {
         }
 
         public final SilentNotificationManager get(Context context) {
-            q.g(context, "context");
+            q.h(context, "context");
             SilentNotificationManager silentNotificationManager = SilentNotificationManager.instance;
             if (silentNotificationManager != null) {
                 return silentNotificationManager;
@@ -42,70 +42,70 @@ public final class SilentNotificationManager {
     }
 
     public SilentNotificationManager(Context reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.sharedPrefs = reactContext.getSharedPreferences(SILENT_NOTIFICATION_CACHE_STORE_NAME, 0);
     }
 
     
-    private final int m546getNumAccumulatedMessagesForChannelR7gqayM(long j10) {
-        return this.sharedPrefs.getInt(m550toMessageCountKeyR7gqayM(j10), 0);
+    private final int m547getNumAccumulatedMessagesForChannelR7gqayM(long j10) {
+        return this.sharedPrefs.getInt(m551toMessageCountKeyR7gqayM(j10), 0);
     }
 
     
-    private final long m547lastMessagedReceivedAgoInMinsR7gqayM(long j10) {
-        long j11 = this.sharedPrefs.getLong(ChannelId.m573toStringimpl(j10), 0L);
+    private final long m548lastMessagedReceivedAgoInMinsR7gqayM(long j10) {
+        long j11 = this.sharedPrefs.getLong(ChannelId.m574toStringimpl(j10), 0L);
         return TimeUnit.MILLISECONDS.toMinutes(System.currentTimeMillis() - j11);
     }
 
     
-    private final void m548setLastMessageReceivedForChannelLJLSWy8(long j10, long j11) {
+    private final void m549setLastMessageReceivedForChannelLJLSWy8(long j10, long j11) {
         SharedPreferences sharedPrefs = this.sharedPrefs;
-        q.f(sharedPrefs, "sharedPrefs");
+        q.g(sharedPrefs, "sharedPrefs");
         SharedPreferences.Editor editor = sharedPrefs.edit();
-        q.f(editor, "editor");
-        editor.putLong(ChannelId.m573toStringimpl(j10), j11);
+        q.g(editor, "editor");
+        editor.putLong(ChannelId.m574toStringimpl(j10), j11);
         editor.apply();
     }
 
     private final void setMessageReceivedForChannel(NotificationData notificationData) {
-        ChannelId channelId = notificationData.m533getChannelIdqMVnFVQ();
+        ChannelId channelId = notificationData.m534getChannelIdqMVnFVQ();
         if (channelId != null) {
-            long j10 = channelId.m575unboximpl();
-            m549setNumAccumulatedMessagesForChannelLJLSWy8(j10, m546getNumAccumulatedMessagesForChannelR7gqayM(j10) + 1);
-            m551updateLastMessageReceivedForChannelR7gqayM(j10);
+            long j10 = channelId.m576unboximpl();
+            m550setNumAccumulatedMessagesForChannelLJLSWy8(j10, m547getNumAccumulatedMessagesForChannelR7gqayM(j10) + 1);
+            m552updateLastMessageReceivedForChannelR7gqayM(j10);
         }
     }
 
     
-    private final void m549setNumAccumulatedMessagesForChannelLJLSWy8(long j10, int i10) {
+    private final void m550setNumAccumulatedMessagesForChannelLJLSWy8(long j10, int i10) {
         SharedPreferences sharedPrefs = this.sharedPrefs;
-        q.f(sharedPrefs, "sharedPrefs");
+        q.g(sharedPrefs, "sharedPrefs");
         SharedPreferences.Editor editor = sharedPrefs.edit();
-        q.f(editor, "editor");
-        editor.putInt(m550toMessageCountKeyR7gqayM(j10), i10);
+        q.g(editor, "editor");
+        editor.putInt(m551toMessageCountKeyR7gqayM(j10), i10);
         editor.apply();
     }
 
     
-    private final String m550toMessageCountKeyR7gqayM(long j10) {
-        String str = ChannelId.m573toStringimpl(j10);
+    private final String m551toMessageCountKeyR7gqayM(long j10) {
+        String str = ChannelId.m574toStringimpl(j10);
         return str + "_num";
     }
 
     
-    private final void m551updateLastMessageReceivedForChannelR7gqayM(long j10) {
-        m548setLastMessageReceivedForChannelLJLSWy8(j10, System.currentTimeMillis());
+    private final void m552updateLastMessageReceivedForChannelR7gqayM(long j10) {
+        m549setLastMessageReceivedForChannelLJLSWy8(j10, System.currentTimeMillis());
     }
 
     public final void handleAcks(NotificationData notificationData) {
-        q.g(notificationData, "notificationData");
+        q.h(notificationData, "notificationData");
         for (ChannelId channelId : notificationData.getAckChannelIds()) {
-            m549setNumAccumulatedMessagesForChannelLJLSWy8(channelId.m575unboximpl(), 0);
+            m550setNumAccumulatedMessagesForChannelLJLSWy8(channelId.m576unboximpl(), 0);
         }
     }
 
     public final void onDisplayNotification(NotificationData notificationData) {
-        q.g(notificationData, "notificationData");
+        q.h(notificationData, "notificationData");
         Integer channelType = notificationData.getChannelType();
         if (channelType == null || channelType.intValue() != 1) {
             setMessageReceivedForChannel(notificationData);
@@ -113,24 +113,24 @@ public final class SilentNotificationManager {
     }
 
     public final void onSilentNotification(NotificationData notificationData) {
-        q.g(notificationData, "notificationData");
+        q.h(notificationData, "notificationData");
         setMessageReceivedForChannel(notificationData);
     }
 
     public final boolean shouldDisplayNotification(NotificationData notificationData) {
         Integer channelType;
-        q.g(notificationData, "notificationData");
-        if (!q.b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || ((channelType = notificationData.getChannelType()) != null && channelType.intValue() == 1)) {
+        q.h(notificationData, "notificationData");
+        if (!q.c(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || ((channelType = notificationData.getChannelType()) != null && channelType.intValue() == 1)) {
             return true;
         }
-        ChannelId channelId = notificationData.m533getChannelIdqMVnFVQ();
+        ChannelId channelId = notificationData.m534getChannelIdqMVnFVQ();
         if (channelId != null) {
-            long j10 = channelId.m575unboximpl();
-            if (m546getNumAccumulatedMessagesForChannelR7gqayM(j10) < 3) {
+            long j10 = channelId.m576unboximpl();
+            if (m547getNumAccumulatedMessagesForChannelR7gqayM(j10) < 3) {
                 return true;
             }
-            if (m547lastMessagedReceivedAgoInMinsR7gqayM(j10) >= 15) {
-                m549setNumAccumulatedMessagesForChannelLJLSWy8(j10, 0);
+            if (m548lastMessagedReceivedAgoInMinsR7gqayM(j10) >= 15) {
+                m550setNumAccumulatedMessagesForChannelLJLSWy8(j10, 0);
                 return true;
             }
         }

@@ -18,27 +18,27 @@ public final class DeserializationErrorDelegate extends BaseChatListItemDelegate
     
     public DeserializationErrorDelegate(Function0<? extends ChatEventHandler> eventHandlerProvider) {
         super(eventHandlerProvider, null, 2, null);
-        q.g(eventHandlerProvider, "eventHandlerProvider");
+        q.h(eventHandlerProvider, "eventHandlerProvider");
     }
 
     @Override 
     public boolean isForItem(ChatListItem item, int i10) {
-        q.g(item, "item");
+        q.h(item, "item");
         return item instanceof DeserializationErrorChatListItem;
     }
 
     public void bindView(DeserializationErrorView view, DeserializationErrorChatListItem item, BaseChatListItemDelegate.Metadata<DeserializationErrorView> metadata) {
-        q.g(view, "view");
-        q.g(item, "item");
-        q.g(metadata, "metadata");
+        q.h(view, "view");
+        q.h(item, "item");
+        q.h(metadata, "metadata");
         view.configure(item.getJson(), item.getCauseMessage());
     }
 
     @Override 
     public DeserializationErrorView createView(ViewGroup parent) {
-        q.g(parent, "parent");
+        q.h(parent, "parent");
         Context context = parent.getContext();
-        q.f(context, "parent.context");
+        q.g(context, "parent.context");
         return new DeserializationErrorView(context, null, 2, null);
     }
 }

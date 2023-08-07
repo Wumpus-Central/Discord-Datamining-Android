@@ -26,13 +26,13 @@ public final class NestedScrollOnTouchListener$onSupplementalMotionEventReceived
     @Override 
     public   Unit invoke(MotionEvent motionEvent) {
         invoke2(motionEvent);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(MotionEvent event) {
         NestedScrollOnTouchTracker nestedScrollOnTouchTracker;
-        q.g(event, "event");
+        q.h(event, "event");
         nestedScrollOnTouchTracker = this.this$0.viewTouchTracker;
         nestedScrollOnTouchTracker.handleTouch$react_gesture_handler_release(this.$view, event, true);
     }

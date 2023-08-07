@@ -20,11 +20,11 @@ public final class SetOptionalImageUrlKt$setOptionalImageUrl$1 extends s impleme
     @Override 
     public   Unit invoke(PipelineDraweeControllerBuilder pipelineDraweeControllerBuilder) {
         invoke2(pipelineDraweeControllerBuilder);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(PipelineDraweeControllerBuilder pipelineDraweeControllerBuilder) {
-        q.g(pipelineDraweeControllerBuilder, "$this$null");
+        q.h(pipelineDraweeControllerBuilder, "$this$null");
     }
 }

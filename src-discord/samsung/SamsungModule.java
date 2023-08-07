@@ -13,14 +13,14 @@ import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import ff.s;
-import ff.t;
-import ji.v;
-import ji.x;
+import jf.s;
+import jf.t;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.l;
+import ni.v;
+import ni.x;
 import okhttp3.Response;
 
 @Metadata(d1 = {"\u0000Q\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0003\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003*\u0001\b\u0018\u0000 %2\u00020\u0001:\u0001%B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0018\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u0006H\u0007J,\u0010\u000f\u001a\u00020\u000b2\u0006\u0010\u0010\u001a\u00020\r2\b\u0010\u0011\u001a\u0004\u0018\u00010\r2\b\u0010\u0012\u001a\u0004\u0018\u00010\r2\u0006\u0010\u000e\u001a\u00020\u0006H\u0007J\u0010\u0010\u0013\u001a\u00020\u000b2\u0006\u0010\u000e\u001a\u00020\u0006H\u0007J\u0010\u0010\u0014\u001a\u00020\r2\u0006\u0010\u0015\u001a\u00020\rH\u0002J\b\u0010\u0016\u001a\u00020\rH\u0016J\u0010\u0010\u0017\u001a\u00020\u000b2\u0006\u0010\u0018\u001a\u00020\u0019H\u0002J\u0012\u0010\u001a\u001a\u0004\u0018\u00010\u001b2\u0006\u0010\u001c\u001a\u00020\u001dH\u0002J\u0010\u0010\u001e\u001a\u00020\u000b2\u0006\u0010\u001f\u001a\u00020 H\u0002J\u0014\u0010!\u001a\u00020\u000b2\n\b\u0002\u0010\"\u001a\u0004\u0018\u00010#H\u0002J\u0010\u0010$\u001a\u00020\u000b2\u0006\u0010\u000e\u001a\u00020\u0006H\u0007R\u0010\u0010\u0005\u001a\u0004\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0004\n\u0002\u0010\t¨\u0006&"}, d2 = {"Lcom/discord/samsung/SamsungModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "connectionPromise", "Lcom/facebook/react/bridge/Promise;", "samsungActivityEventListener", "com/discord/samsung/SamsungModule$samsungActivityEventListener$1", "Lcom/discord/samsung/SamsungModule$samsungActivityEventListener$1;", "checkIfOAuthRequest", "", "clientId", "", BaseJavaModule.METHOD_TYPE_PROMISE, "finishSamsungAuthorization", "authCode", "location", "state", "getAccountUrlAndAuthCode", "getAccountUrlFromAuthServerUrl", "authServerUrl", "getName", "handleAuthResult", "result", "Lcom/discord/samsung/SamsungConnectActivity$Result;", "handleSamsungCallback", "Landroid/net/Uri;", "response", "Lokhttp3/Response;", "rejectConnection", "throwable", "", "resolveConnection", "what", "", "showConnectionDisclaimer", "Companion", "samsung_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -52,7 +52,7 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
             
             public SamsungCallbackException(String errorCode, String str) {
                 super("[" + errorCode + "] " + str);
-                q.g(errorCode, "errorCode");
+                q.h(errorCode, "errorCode");
             }
         }
 
@@ -66,7 +66,7 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
 
     static {
         Intent putExtra = new Intent("com.msc.action.samsungaccount.REQUEST_NEW_THIRD_PARTY_INTEGRATION_WITH_SAMSUNG_ACCOUNT").putExtra("client_id", BuildConfig.SAMSUNGxDISCORD_CLIENT_ID).putExtra("progress_theme", "dark");
-        q.f(putExtra, "Intent(\"com.msc.action.s…\"progress_theme\", \"dark\")");
+        q.g(putExtra, "Intent(\"com.msc.action.s…\"progress_theme\", \"dark\")");
         disclaimerIntent = putExtra;
     }
 
@@ -107,10 +107,10 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
                 return;
             }
             Activity currentActivity = getCurrentActivity();
-            q.d(currentActivity);
+            q.e(currentActivity);
             SamsungConnectActivity.Companion companion = SamsungConnectActivity.Companion;
             Activity currentActivity2 = getCurrentActivity();
-            q.d(currentActivity2);
+            q.e(currentActivity2);
             currentActivity.startActivityForResult(companion.getIntent(currentActivity2, failure.getAttemptCount()), 101);
         }
     }
@@ -131,7 +131,7 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
         if (!(uri == null || (query = uri.getQuery()) == null)) {
             z10 = v.M(query, "error", false, 2, null);
         }
-        if (!z10 && (response.e0() || response.E())) {
+        if (!z10 && (response.h0() || response.G())) {
             return uri;
         }
         if (uri == null || (str = uri.getQueryParameter("error")) == null) {
@@ -178,28 +178,28 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void finishSamsungAuthorization(String authCode, String str, String str2, Promise promise) {
-        q.g(authCode, "authCode");
-        q.g(promise, "promise");
+        q.h(authCode, "authCode");
+        q.h(promise, "promise");
         this.connectionPromise = promise;
         Activity currentActivity = getCurrentActivity();
-        q.e(currentActivity, "null cannot be cast to non-null type androidx.lifecycle.LifecycleOwner");
+        q.f(currentActivity, "null cannot be cast to non-null type androidx.lifecycle.LifecycleOwner");
         l.d(n.a((LifecycleOwner) currentActivity), null, null, new SamsungModule$finishSamsungAuthorization$1(str, this, str2, authCode, null), 3, null);
     }
 
     @ReactMethod
     public final void getAccountUrlAndAuthCode(Promise promise) {
         Object obj;
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         this.connectionPromise = promise;
         try {
-            s.a aVar = s.f14787l;
+            s.a aVar = s.f20093l;
             ReactApplicationContext reactApplicationContext = getReactApplicationContext();
             SamsungConnectActivity.Companion companion = SamsungConnectActivity.Companion;
             Activity currentActivity = getCurrentActivity();
-            q.d(currentActivity);
+            q.e(currentActivity);
             obj = s.b(Boolean.valueOf(reactApplicationContext.startActivityForResult(SamsungConnectActivity.Companion.getIntent$default(companion, currentActivity, 0, 2, null), 101, Bundle.EMPTY)));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f14787l;
+            s.a aVar2 = s.f20093l;
             obj = s.b(t.a(th2));
         }
         Throwable e10 = s.e(obj);
@@ -216,13 +216,13 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public final void showConnectionDisclaimer(Promise promise) {
         Object obj;
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         this.connectionPromise = promise;
         try {
-            s.a aVar = s.f14787l;
+            s.a aVar = s.f20093l;
             obj = s.b(Boolean.valueOf(getReactApplicationContext().startActivityForResult(disclaimerIntent, 100, Bundle.EMPTY)));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f14787l;
+            s.a aVar2 = s.f20093l;
             obj = s.b(t.a(th2));
         }
         Throwable e10 = s.e(obj);

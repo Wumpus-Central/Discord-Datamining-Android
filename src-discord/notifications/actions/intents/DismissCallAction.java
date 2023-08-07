@@ -26,8 +26,8 @@ public final class DismissCallAction implements NotificationAction {
         
         @Override 
         public final DismissCallAction createFromParcel(Parcel parcel) {
-            q.g(parcel, "parcel");
-            return new DismissCallAction(parcel.readString(), ((ChannelId) parcel.readParcelable(DismissCallAction.class.getClassLoader())).m575unboximpl(), null);
+            q.h(parcel, "parcel");
+            return new DismissCallAction(parcel.readString(), ((ChannelId) parcel.readParcelable(DismissCallAction.class.getClassLoader())).m576unboximpl(), null);
         }
 
         
@@ -47,19 +47,19 @@ public final class DismissCallAction implements NotificationAction {
     }
 
     
-    private final long m492component2o4g7jtM() {
+    private final long m493component2o4g7jtM() {
         return this.channelId;
     }
 
     
-    public static  DismissCallAction m493copymJqaSGE$default(DismissCallAction dismissCallAction, String str, long j10, int i10, Object obj) {
+    public static  DismissCallAction m494copymJqaSGE$default(DismissCallAction dismissCallAction, String str, long j10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = dismissCallAction.getTag();
         }
         if ((i10 & 2) != 0) {
             j10 = dismissCallAction.channelId;
         }
-        return dismissCallAction.m494copymJqaSGE(str, j10);
+        return dismissCallAction.m495copymJqaSGE(str, j10);
     }
 
     public final String component1() {
@@ -67,8 +67,8 @@ public final class DismissCallAction implements NotificationAction {
     }
 
     
-    public final DismissCallAction m494copymJqaSGE(String tag, long j10) {
-        q.g(tag, "tag");
+    public final DismissCallAction m495copymJqaSGE(String tag, long j10) {
+        q.h(tag, "tag");
         return new DismissCallAction(tag, j10, null);
     }
 
@@ -85,7 +85,7 @@ public final class DismissCallAction implements NotificationAction {
             return false;
         }
         DismissCallAction dismissCallAction = (DismissCallAction) obj;
-        return q.b(getTag(), dismissCallAction.getTag()) && ChannelId.m570equalsimpl0(this.channelId, dismissCallAction.channelId);
+        return q.c(getTag(), dismissCallAction.getTag()) && ChannelId.m571equalsimpl0(this.channelId, dismissCallAction.channelId);
     }
 
     @Override 
@@ -99,17 +99,17 @@ public final class DismissCallAction implements NotificationAction {
     }
 
     public int hashCode() {
-        return (getTag().hashCode() * 31) + ChannelId.m571hashCodeimpl(this.channelId);
+        return (getTag().hashCode() * 31) + ChannelId.m572hashCodeimpl(this.channelId);
     }
 
     @Override 
     public void onNotificationAction(Context context, Intent intent) {
-        q.g(context, "context");
-        q.g(intent, "intent");
+        q.h(context, "context");
+        q.h(intent, "intent");
         HeadlessTasks.Companion companion = HeadlessTasks.Companion;
         Bundle bundle = new Bundle();
         bundle.putString("channelId", String.valueOf(this.channelId));
-        HeadlessTasks.Companion.startHeadlessTask$default(companion, context, "DismissCallAction", 0L, false, bundle, true, 12, null);
+        companion.startHeadlessTask(context, "DismissCallAction", (r18 & 4) != 0 ? HeadlessTasks.TASK_TIMEOUT_DEFAULT : 0L, (r18 & 8) != 0, (r18 & 16) != 0 ? new Bundle() : bundle, (r18 & 32) != 0 ? false : true);
     }
 
     @Override 
@@ -124,14 +124,14 @@ public final class DismissCallAction implements NotificationAction {
 
     public String toString() {
         String tag = getTag();
-        String str = ChannelId.m573toStringimpl(this.channelId);
+        String str = ChannelId.m574toStringimpl(this.channelId);
         return "DismissCallAction(tag=" + tag + ", channelId=" + str + ")";
     }
 
     @Override 
     public void writeToParcel(Parcel out, int i10) {
-        q.g(out, "out");
+        q.h(out, "out");
         out.writeString(this.tag);
-        out.writeParcelable(ChannelId.m566boximpl(this.channelId), i10);
+        out.writeParcelable(ChannelId.m567boximpl(this.channelId), i10);
     }
 }

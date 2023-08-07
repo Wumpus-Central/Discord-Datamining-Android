@@ -78,7 +78,7 @@ public final class OriginTracker {
     }
 
     public OriginTracker(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         this.context = context;
         this.scaledTouchSlopPx = ViewConfiguration.get(context).getScaledTouchSlop();
     }
@@ -93,7 +93,7 @@ public final class OriginTracker {
     }
 
     public final boolean hasOriginMoved(boolean z10, MotionEvent event) {
-        q.g(event, "event");
+        q.h(event, "event");
         if (z10) {
             if (this.originSupplemental == null) {
                 this.originSupplemental = new Origin(event.getX(), event.getY());

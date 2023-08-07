@@ -1,11 +1,11 @@
 package com.discord.mobile_voice_overlay;
 
 import android.content.Context;
-import androidx.core.os.d;
+import androidx.core.os.e;
 import com.discord.mobile_voice_overlay.MobileVoiceOverlay;
 import com.discord.mobile_voice_overlay.views.OverlayVoiceSelectorBubbleDialog;
 import com.discord.primitives.ChannelId;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -26,15 +26,15 @@ final class MobileVoiceOverlay$selectorDialogProvider$1$1$3 extends s implements
 
     @Override 
     public   Unit invoke(ChannelId channelId) {
-        m470invokeR7gqayM(channelId.m575unboximpl());
-        return Unit.f20679a;
+        m471invokeR7gqayM(channelId.m576unboximpl());
+        return Unit.f21025a;
     }
 
     
-    public final void m470invokeR7gqayM(long j10) {
+    public final void m471invokeR7gqayM(long j10) {
         MobileVoiceOverlay.Companion companion = MobileVoiceOverlay.Companion;
         Context context = this.$this_apply.getContext();
-        q.f(context, "context");
-        companion.startHeadlessTask(context, "SelectChannel", d.a(x.a("channelId", String.valueOf(j10)), x.a("connectToVoice", Boolean.TRUE)));
+        q.g(context, "context");
+        companion.startHeadlessTask(context, "SelectChannel", e.a(x.a("channelId", String.valueOf(j10)), x.a("connectToVoice", Boolean.TRUE)));
     }
 }

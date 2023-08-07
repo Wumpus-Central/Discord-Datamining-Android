@@ -1,29 +1,29 @@
 package com.discord.notifications.renderer;
 
+import ag.j;
 import android.content.Context;
 import android.media.AudioAttributes;
 import android.net.Uri;
 import androidx.core.app.NotificationChannelCompat;
-import androidx.core.app.p0;
+import androidx.core.app.s0;
 import com.discord.crash_reporting.CrashReporting;
 import com.discord.notifications.api.NotificationData;
 import com.discord.notifications.renderer.utils.NotificationManagerUtilsKt;
 import com.discord.theme.utils.ColorUtilsKt;
-import ff.x;
-import gf.u;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import jf.x;
+import kf.u;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import wf.j;
 
-@Metadata(d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0006\bÀ\u0002\u0018\u00002\u00020\u0001:\u0002\u001f B\t\b\u0002¢\u0006\u0004\b\u001d\u0010\u001eJ\u0016\u0010\u0006\u001a\u0004\u0018\u00010\u0005*\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u0003H\u0002J*\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u000b0\n2\u0006\u0010\u0004\u001a\u00020\u00032\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u0007H\u0002JT\u0010\u0015\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\r\u001a\u00020\u00022\u0006\u0010\u000f\u001a\u00020\u000e2\u0012\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u00072\u001c\b\u0002\u0010\u0014\u001a\u0016\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u00130\u0011H\u0002J\"\u0010\u0018\u001a\u00020\u00132\u0006\u0010\u0004\u001a\u00020\u00032\b\u0010\u0016\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0017\u001a\u00020\u0012H\u0002J\u001a\u0010\u0019\u001a\u00020\u00132\b\u0010\u0016\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0017\u001a\u00020\u0012H\u0002J6\u0010\u001a\u001a\u00020\u00132\u0006\u0010\u0004\u001a\u00020\u00032\u0012\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u00072\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u0007J\n\u0010\u001c\u001a\u00020\b*\u00020\u001b¨\u0006!"}, d2 = {"Lcom/discord/notifications/renderer/NotificationChannels;", "", "Lcom/discord/notifications/renderer/NotificationChannels$Category;", "Landroid/content/Context;", "context", "Landroidx/core/app/NotificationChannelCompat;", "getLegacyNotificationChannel", "", "", "localizedGroupNames", "", "Landroidx/core/app/p0;", "createNotificationChannelGroups", "category", "", "brandColor", "localizedCategoryNames", "Lkotlin/Function2;", "Landroidx/core/app/NotificationChannelCompat$Builder;", "", "onConfigure", "migrateOrCreateNotificationChannel", "legacyChannel", "builder", "configureCallChannel", "configureMediaChannel", "init", "Lcom/discord/notifications/api/NotificationData;", "getNotificationChannelId", "<init>", "()V", "Category", "ChannelGroup", "notification_renderer_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0006\bÀ\u0002\u0018\u00002\u00020\u0001:\u0002\u001f B\t\b\u0002¢\u0006\u0004\b\u001d\u0010\u001eJ\u0016\u0010\u0006\u001a\u0004\u0018\u00010\u0005*\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u0003H\u0002J*\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u000b0\n2\u0006\u0010\u0004\u001a\u00020\u00032\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u0007H\u0002JT\u0010\u0015\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\r\u001a\u00020\u00022\u0006\u0010\u000f\u001a\u00020\u000e2\u0012\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u00072\u001c\b\u0002\u0010\u0014\u001a\u0016\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u00130\u0011H\u0002J\"\u0010\u0018\u001a\u00020\u00132\u0006\u0010\u0004\u001a\u00020\u00032\b\u0010\u0016\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0017\u001a\u00020\u0012H\u0002J\u001a\u0010\u0019\u001a\u00020\u00132\b\u0010\u0016\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0017\u001a\u00020\u0012H\u0002J6\u0010\u001a\u001a\u00020\u00132\u0006\u0010\u0004\u001a\u00020\u00032\u0012\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u00072\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u0007J\n\u0010\u001c\u001a\u00020\b*\u00020\u001b¨\u0006!"}, d2 = {"Lcom/discord/notifications/renderer/NotificationChannels;", "", "Lcom/discord/notifications/renderer/NotificationChannels$Category;", "Landroid/content/Context;", "context", "Landroidx/core/app/NotificationChannelCompat;", "getLegacyNotificationChannel", "", "", "localizedGroupNames", "", "Landroidx/core/app/s0;", "createNotificationChannelGroups", "category", "", "brandColor", "localizedCategoryNames", "Lkotlin/Function2;", "Landroidx/core/app/NotificationChannelCompat$Builder;", "", "onConfigure", "migrateOrCreateNotificationChannel", "legacyChannel", "builder", "configureCallChannel", "configureMediaChannel", "init", "Lcom/discord/notifications/api/NotificationData;", "getNotificationChannelId", "<init>", "()V", "Category", "ChannelGroup", "notification_renderer_release"}, k = 1, mv = {1, 8, 0})
 
 public final class NotificationChannels {
     public static final NotificationChannels INSTANCE = new NotificationChannels();
@@ -65,7 +65,7 @@ public final class NotificationChannels {
         private final ChannelGroup group;
 
         
-        private final String f7203id;
+        private final String f7416id;
         private final int importance;
         private final String legacyId;
 
@@ -140,7 +140,7 @@ public final class NotificationChannels {
             }
 
             public final String defaultLabel(Category category) {
-                q.g(category, "category");
+                q.h(category, "category");
                 switch (WhenMappings.$EnumSwitchMapping$0[category.ordinal()]) {
                     case 1:
                         return "Incoming calls";
@@ -195,7 +195,7 @@ public final class NotificationChannels {
         }
 
         Category(String str, int i10, ChannelGroup channelGroup, String str2) {
-            this.f7203id = str;
+            this.f7416id = str;
             this.importance = i10;
             this.group = channelGroup;
             this.legacyId = str2;
@@ -206,7 +206,7 @@ public final class NotificationChannels {
         }
 
         public final String getId() {
-            return this.f7203id;
+            return this.f7416id;
         }
 
         public final int getImportance() {
@@ -235,7 +235,7 @@ public final class NotificationChannels {
         private final String groupId;
 
         
-        private final String f7204id;
+        private final String f7417id;
 
         @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0004¨\u0006\u0006"}, d2 = {"Lcom/discord/notifications/renderer/NotificationChannels$ChannelGroup$Companion;", "", "()V", "defaultLabel", "", "id", "notification_renderer_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
         
@@ -248,7 +248,7 @@ public final class NotificationChannels {
             }
 
             public final String defaultLabel(String id2) {
-                q.g(id2, "id");
+                q.h(id2, "id");
                 int hashCode = id2.hashCode();
                 if (hashCode != -905826493) {
                     if (hashCode != -897050771) {
@@ -266,7 +266,7 @@ public final class NotificationChannels {
         }
 
         ChannelGroup(String str, String str2) {
-            this.f7204id = str;
+            this.f7417id = str;
             this.groupId = str2;
         }
 
@@ -275,7 +275,7 @@ public final class NotificationChannels {
         }
 
         public final String getId() {
-            return this.f7204id;
+            return this.f7417id;
         }
     }
 
@@ -297,7 +297,7 @@ public final class NotificationChannels {
         String packageName = context.getPackageName();
         int i10 = R.raw.call_ringing;
         sb2.append(packageName + "/" + i10);
-        g10.h(Uri.parse(sb2.toString()), new AudioAttributes.Builder().setUsage(7).setContentType(2).build());
+        g10.h(Uri.parse(sb2.toString()), new AudioAttributes.Builder().setUsage(5).setContentType(2).build());
     }
 
     
@@ -325,7 +325,7 @@ public final class NotificationChannels {
 
     
     
-    private final java.util.List<androidx.core.app.p0> createNotificationChannelGroups(android.content.Context r10, java.util.Map<java.lang.String, java.lang.String> r11) {
+    private final java.util.List<androidx.core.app.s0> createNotificationChannelGroups(android.content.Context r10, java.util.Map<java.lang.String, java.lang.String> r11) {
         
         throw new UnsupportedOperationException("Method not decompiled: com.discord.notifications.renderer.NotificationChannels.createNotificationChannelGroups(android.content.Context, java.util.Map):java.util.List");
     }
@@ -367,7 +367,7 @@ public final class NotificationChannels {
     
     public final String getNotificationChannelId(NotificationData notificationData) {
         Category category;
-        q.g(notificationData, "<this>");
+        q.h(notificationData, "<this>");
         String type = notificationData.getType();
         switch (type.hashCode()) {
             case -1502317553:
@@ -448,11 +448,11 @@ public final class NotificationChannels {
         int d10;
         int c10;
         boolean z10;
-        q.g(context, "context");
-        q.g(localizedCategoryNames, "localizedCategoryNames");
-        q.g(localizedGroupNames, "localizedGroupNames");
+        q.h(context, "context");
+        q.h(localizedCategoryNames, "localizedCategoryNames");
+        q.h(localizedGroupNames, "localizedGroupNames");
         int colorCompat = ColorUtilsKt.getColorCompat(context, R.color.brand);
-        List<p0> createNotificationChannelGroups = createNotificationChannelGroups(context, localizedGroupNames);
+        List<s0> createNotificationChannelGroups = createNotificationChannelGroups(context, localizedGroupNames);
         Category[] values = Category.values();
         ArrayList arrayList = new ArrayList();
         for (Category category : values) {
@@ -469,9 +469,9 @@ public final class NotificationChannels {
             d10 = u.d(s10);
             c10 = j.c(d10, 16);
             LinkedHashMap linkedHashMap = new LinkedHashMap(c10);
-            for (p0 p0Var : createNotificationChannelGroups) {
-                String valueOf = String.valueOf(p0Var.b());
-                if (NotificationManagerUtilsKt.getNotificationManagerCompat(context).k(p0Var.a()) != null) {
+            for (s0 s0Var : createNotificationChannelGroups) {
+                String valueOf = String.valueOf(s0Var.b());
+                if (NotificationManagerUtilsKt.getNotificationManagerCompat(context).k(s0Var.a()) != null) {
                     z10 = true;
                 } else {
                     z10 = false;

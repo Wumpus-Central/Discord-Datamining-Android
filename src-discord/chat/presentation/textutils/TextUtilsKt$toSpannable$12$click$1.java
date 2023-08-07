@@ -26,7 +26,7 @@ public final class TextUtilsKt$toSpannable$12$click$1 extends s implements Funct
     
     public final Boolean invoke(View it) {
         boolean z10;
-        q.g(it, "it");
+        q.h(it, "it");
         if (((LinkContentNode) this.$contentNode).isUrl()) {
             this.$rc.getOnLongTapLink().invoke(this.$contentNode);
             z10 = true;

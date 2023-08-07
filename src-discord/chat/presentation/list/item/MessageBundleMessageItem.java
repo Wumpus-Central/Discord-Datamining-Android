@@ -11,8 +11,8 @@ public final class MessageBundleMessageItem extends MessageBundleItem {
 
     
     public MessageBundleMessageItem(MessageItem messageItem) {
-        super(MessageId.m598toStringimpl(messageItem.getMessage().m16getId3Eiw7ao()), null);
-        q.g(messageItem, "messageItem");
+        super(MessageId.m599toStringimpl(messageItem.getMessage().m17getId3Eiw7ao()), null);
+        q.h(messageItem, "messageItem");
         this.messageItem = messageItem;
     }
 
@@ -28,7 +28,7 @@ public final class MessageBundleMessageItem extends MessageBundleItem {
     }
 
     public final MessageBundleMessageItem copy(MessageItem messageItem) {
-        q.g(messageItem, "messageItem");
+        q.h(messageItem, "messageItem");
         return new MessageBundleMessageItem(messageItem);
     }
 
@@ -36,7 +36,7 @@ public final class MessageBundleMessageItem extends MessageBundleItem {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof MessageBundleMessageItem) && q.b(this.messageItem, ((MessageBundleMessageItem) obj).messageItem);
+        return (obj instanceof MessageBundleMessageItem) && q.c(this.messageItem, ((MessageBundleMessageItem) obj).messageItem);
     }
 
     public final MessageItem getMessageItem() {

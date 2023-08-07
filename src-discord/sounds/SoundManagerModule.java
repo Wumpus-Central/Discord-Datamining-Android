@@ -1,5 +1,6 @@
 package com.discord.sounds;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.webkit.URLUtil;
 import com.discord.logging.Log;
@@ -20,10 +21,11 @@ public final class SoundManagerModule extends ReactContextBaseJavaModule {
     
     public SoundManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.soundManager = new SoundManager(reactContext);
     }
 
+    @SuppressLint({"DiscouragedApi"})
     private final int resolveRawResId(Context context, String str, String str2) {
         boolean z10;
         int identifier = context.getResources().getIdentifier(str, str2, context.getPackageName());
@@ -70,8 +72,8 @@ public final class SoundManagerModule extends ReactContextBaseJavaModule {
     public final void prepare(String fileName, String str, int i10, Callback callback) {
         String str2;
         Integer num;
-        q.g(fileName, "fileName");
-        q.g(callback, "callback");
+        q.h(fileName, "fileName");
+        q.h(callback, "callback");
         Log.i$default(Log.INSTANCE, SoundManager.Companion.getLogTag(), "Prepare " + fileName + " with " + i10 + ".", (Throwable) null, 4, (Object) null);
         int i11 = 5;
         if (str != null) {
@@ -91,11 +93,11 @@ public final class SoundManagerModule extends ReactContextBaseJavaModule {
         if (URLUtil.isValidUrl(fileName)) {
             String remoteSoundFilename = SoundExtensionsKt.getRemoteSoundFilename(fileName);
             ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-            q.f(reactApplicationContext, "reactApplicationContext");
+            q.g(reactApplicationContext, "reactApplicationContext");
             File file = new File(SoundExtensionsKt.getSoundsCacheDirectory(reactApplicationContext), remoteSoundFilename);
             if (!file.exists()) {
                 ReactApplicationContext reactApplicationContext2 = getReactApplicationContext();
-                q.f(reactApplicationContext2, "reactApplicationContext");
+                q.g(reactApplicationContext2, "reactApplicationContext");
                 SoundExtensionsKt.fetchSound(reactApplicationContext2, fileName, this.soundManager, i10, i11, new SoundManagerModule$prepare$1(callback));
                 return;
             }
@@ -104,7 +106,7 @@ public final class SoundManagerModule extends ReactContextBaseJavaModule {
             num = null;
         } else {
             ReactApplicationContext reactApplicationContext3 = getReactApplicationContext();
-            q.f(reactApplicationContext3, "reactApplicationContext");
+            q.g(reactApplicationContext3, "reactApplicationContext");
             num = Integer.valueOf(resolveRawResId$default(this, reactApplicationContext3, fileName, null, 2, null));
             str2 = null;
         }

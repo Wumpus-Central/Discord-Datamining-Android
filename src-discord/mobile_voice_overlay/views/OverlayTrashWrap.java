@@ -41,7 +41,7 @@ public final class OverlayTrashWrap extends OverlayView {
     
     public OverlayTrashWrap(Context context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
         WindowUtils windowUtils = WindowUtils.INSTANCE;
         WindowManager.LayoutParams createWindowLayoutParams = windowUtils.createWindowLayoutParams();
         createWindowLayoutParams.width = -1;
@@ -49,7 +49,7 @@ public final class OverlayTrashWrap extends OverlayView {
         windowUtils.addFlag(createWindowLayoutParams, 16);
         this.windowLayoutParams = createWindowLayoutParams;
         TrashWrapBinding inflate = TrashWrapBinding.inflate(LayoutInflater.from(getContext()), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         setBackgroundResource(R.drawable.trash_bg);
         setVisibility(4);
@@ -57,29 +57,29 @@ public final class OverlayTrashWrap extends OverlayView {
         AnimatorSet animatorSet = new AnimatorSet();
         Animator loadAnimator = AnimatorInflater.loadAnimator(getContext(), R.animator.fade_in);
         loadAnimator.setTarget(this);
-        Unit unit = Unit.f20679a;
+        Unit unit = Unit.f21025a;
         Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), R.animator.slide_in_bottom);
         loadAnimator2.setTarget(inflate.trashWrapTargetZone);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
         animatorSet.addListener(new Animator.AnimatorListener() { 
             @Override 
             public void onAnimationCancel(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationEnd(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationRepeat(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationStart(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(0);
             }
         });
@@ -93,23 +93,23 @@ public final class OverlayTrashWrap extends OverlayView {
         animatorSet2.addListener(new Animator.AnimatorListener() { 
             @Override 
             public void onAnimationCancel(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationEnd(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(4);
             }
 
             @Override 
             public void onAnimationRepeat(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationStart(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
         });
         this.hideAnimator = animatorSet2;
@@ -157,8 +157,8 @@ public final class OverlayTrashWrap extends OverlayView {
     }
 
     public final boolean processMotionEvent(OverlayBubbleWrap bubble, MotionEvent motionEvent) {
-        q.g(bubble, "bubble");
-        q.g(motionEvent, "motionEvent");
+        q.h(bubble, "bubble");
+        q.h(motionEvent, "motionEvent");
         if (!this.trashZoneRect.contains((int) motionEvent.getRawX(), (int) motionEvent.getRawY())) {
             bubble = null;
         }
@@ -168,10 +168,10 @@ public final class OverlayTrashWrap extends OverlayView {
         } else if (bubble == null && isActivated) {
             handleViewDraggedOutOfTrashZone();
         }
-        if (!q.b(bubble, this.previousBubbleOverTrashZone)) {
+        if (!q.c(bubble, this.previousBubbleOverTrashZone)) {
             if (bubble != null) {
                 SimpleDraweeView simpleDraweeView = this.binding.trashWrapIcon;
-                q.f(simpleDraweeView, "binding.trashWrapIcon");
+                q.g(simpleDraweeView, "binding.trashWrapIcon");
                 bubble.anchorOn(simpleDraweeView);
             }
             performHapticFeedback(6);
@@ -189,19 +189,19 @@ public final class OverlayTrashWrap extends OverlayView {
 
     @Override 
     public void setAssets(MobileVoiceOverlayAssets assets) {
-        q.g(assets, "assets");
+        q.h(assets, "assets");
         super.setAssets(assets);
         SimpleDraweeView simpleDraweeView = this.binding.trashWrapIcon;
-        q.f(simpleDraweeView, "binding.trashWrapIcon");
+        q.g(simpleDraweeView, "binding.trashWrapIcon");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.Close);
         SimpleDraweeView simpleDraweeView2 = this.binding.trashWrapIcon;
-        q.f(simpleDraweeView2, "binding.trashWrapIcon");
+        q.g(simpleDraweeView2, "binding.trashWrapIcon");
         ColorUtilsKt.setTintColor(simpleDraweeView2, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
     }
 
     @Override 
     public void setData(MobileVoiceOverlayData data) {
-        q.g(data, "data");
+        q.h(data, "data");
     }
 
     public final void show() {
@@ -211,7 +211,7 @@ public final class OverlayTrashWrap extends OverlayView {
     
     public OverlayTrashWrap(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         WindowUtils windowUtils = WindowUtils.INSTANCE;
         WindowManager.LayoutParams createWindowLayoutParams = windowUtils.createWindowLayoutParams();
         createWindowLayoutParams.width = -1;
@@ -219,7 +219,7 @@ public final class OverlayTrashWrap extends OverlayView {
         windowUtils.addFlag(createWindowLayoutParams, 16);
         this.windowLayoutParams = createWindowLayoutParams;
         TrashWrapBinding inflate = TrashWrapBinding.inflate(LayoutInflater.from(getContext()), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         setBackgroundResource(R.drawable.trash_bg);
         setVisibility(4);
@@ -227,29 +227,29 @@ public final class OverlayTrashWrap extends OverlayView {
         AnimatorSet animatorSet = new AnimatorSet();
         Animator loadAnimator = AnimatorInflater.loadAnimator(getContext(), R.animator.fade_in);
         loadAnimator.setTarget(this);
-        Unit unit = Unit.f20679a;
+        Unit unit = Unit.f21025a;
         Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), R.animator.slide_in_bottom);
         loadAnimator2.setTarget(inflate.trashWrapTargetZone);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
         animatorSet.addListener(new Animator.AnimatorListener() { 
             @Override 
             public void onAnimationCancel(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationEnd(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationRepeat(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationStart(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(0);
             }
         });
@@ -263,23 +263,23 @@ public final class OverlayTrashWrap extends OverlayView {
         animatorSet2.addListener(new Animator.AnimatorListener() { 
             @Override 
             public void onAnimationCancel(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationEnd(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(4);
             }
 
             @Override 
             public void onAnimationRepeat(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationStart(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
         });
         this.hideAnimator = animatorSet2;
@@ -288,7 +288,7 @@ public final class OverlayTrashWrap extends OverlayView {
     
     public OverlayTrashWrap(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         WindowUtils windowUtils = WindowUtils.INSTANCE;
         WindowManager.LayoutParams createWindowLayoutParams = windowUtils.createWindowLayoutParams();
         createWindowLayoutParams.width = -1;
@@ -296,7 +296,7 @@ public final class OverlayTrashWrap extends OverlayView {
         windowUtils.addFlag(createWindowLayoutParams, 16);
         this.windowLayoutParams = createWindowLayoutParams;
         TrashWrapBinding inflate = TrashWrapBinding.inflate(LayoutInflater.from(getContext()), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         setBackgroundResource(R.drawable.trash_bg);
         setVisibility(4);
@@ -304,29 +304,29 @@ public final class OverlayTrashWrap extends OverlayView {
         AnimatorSet animatorSet = new AnimatorSet();
         Animator loadAnimator = AnimatorInflater.loadAnimator(getContext(), R.animator.fade_in);
         loadAnimator.setTarget(this);
-        Unit unit = Unit.f20679a;
+        Unit unit = Unit.f21025a;
         Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), R.animator.slide_in_bottom);
         loadAnimator2.setTarget(inflate.trashWrapTargetZone);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
         animatorSet.addListener(new Animator.AnimatorListener() { 
             @Override 
             public void onAnimationCancel(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationEnd(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationRepeat(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationStart(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(0);
             }
         });
@@ -340,23 +340,23 @@ public final class OverlayTrashWrap extends OverlayView {
         animatorSet2.addListener(new Animator.AnimatorListener() { 
             @Override 
             public void onAnimationCancel(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationEnd(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(4);
             }
 
             @Override 
             public void onAnimationRepeat(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationStart(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
         });
         this.hideAnimator = animatorSet2;

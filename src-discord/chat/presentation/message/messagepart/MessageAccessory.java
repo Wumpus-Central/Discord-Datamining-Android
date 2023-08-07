@@ -26,13 +26,13 @@ public abstract class MessageAccessory implements ItemDiffableType {
     }
 
     
-    public String mo217getMessageId3Eiw7ao() {
+    public String mo218getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     @Override 
     public Long getItemId() {
-        String str = MessageId.m598toStringimpl(mo217getMessageId3Eiw7ao());
+        String str = MessageId.m599toStringimpl(mo218getMessageId3Eiw7ao());
         String str2 = this.accessoryDescription;
         return Long.valueOf(IdUtilsKt.convertToId(str + " - " + str2));
     }

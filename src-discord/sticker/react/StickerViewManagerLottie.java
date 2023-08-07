@@ -39,7 +39,7 @@ public final class StickerViewManagerLottie extends SimpleViewManager<StickerVie
     
     @Override 
     public StickerView createViewInstance(ThemedReactContext reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         StickerView stickerView = new StickerView(reactContext, null, 0, 6, null);
         stickerView.inflateLottieView();
         return stickerView;
@@ -52,21 +52,21 @@ public final class StickerViewManagerLottie extends SimpleViewManager<StickerVie
     }
 
     public void onDropViewInstance(StickerView view) {
-        q.g(view, "view");
+        q.h(view, "view");
         super.onDropViewInstance((StickerViewManagerLottie) view);
         view.recycle();
     }
 
     public void receiveCommand(StickerView node, String commandId, ReadableArray readableArray) {
-        q.g(node, "node");
-        q.g(commandId, "commandId");
-        if (q.b(commandId, SETUP_COMMAND_ID) && readableArray != null) {
+        q.h(node, "node");
+        q.h(commandId, "commandId");
+        if (q.c(commandId, SETUP_COMMAND_ID) && readableArray != null) {
             setup(node, readableArray.getString(0), readableArray.getString(1), readableArray.getInt(2), readableArray.getInt(3), readableArray.getInt(4), readableArray.getBoolean(5));
         }
     }
 
     public void setup(StickerView view, String str, String str2, int i10, int i11, int i12, boolean z10) {
-        q.g(view, "view");
+        q.h(view, "view");
         if (str != null && str2 != null) {
             view.asLottie(str2, i10, i11, z10, str, i12);
         }

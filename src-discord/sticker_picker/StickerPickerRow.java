@@ -20,7 +20,7 @@ public final class StickerPickerRow {
         private final boolean disabled;
 
         
-        private final String f7236id;
+        private final String f7449id;
         private final String name;
         private final boolean opaque;
         private final Type type;
@@ -36,11 +36,11 @@ public final class StickerPickerRow {
         }
 
         public Sticker(String id2, String name, Type type, boolean z10, String url, boolean z11, boolean z12) {
-            q.g(id2, "id");
-            q.g(name, "name");
-            q.g(type, "type");
-            q.g(url, "url");
-            this.f7236id = id2;
+            q.h(id2, "id");
+            q.h(name, "name");
+            q.h(type, "type");
+            q.h(url, "url");
+            this.f7449id = id2;
             this.name = name;
             this.type = type;
             this.animated = z10;
@@ -51,7 +51,7 @@ public final class StickerPickerRow {
 
         public static  Sticker copy$default(Sticker sticker, String str, String str2, Type type, boolean z10, String str3, boolean z11, boolean z12, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                str = sticker.f7236id;
+                str = sticker.f7449id;
             }
             if ((i10 & 2) != 0) {
                 str2 = sticker.name;
@@ -75,7 +75,7 @@ public final class StickerPickerRow {
         }
 
         public final String component1() {
-            return this.f7236id;
+            return this.f7449id;
         }
 
         public final String component2() {
@@ -103,10 +103,10 @@ public final class StickerPickerRow {
         }
 
         public final Sticker copy(String id2, String name, Type type, boolean z10, String url, boolean z11, boolean z12) {
-            q.g(id2, "id");
-            q.g(name, "name");
-            q.g(type, "type");
-            q.g(url, "url");
+            q.h(id2, "id");
+            q.h(name, "name");
+            q.h(type, "type");
+            q.h(url, "url");
             return new Sticker(id2, name, type, z10, url, z11, z12);
         }
 
@@ -118,7 +118,7 @@ public final class StickerPickerRow {
                 return false;
             }
             Sticker sticker = (Sticker) obj;
-            return q.b(this.f7236id, sticker.f7236id) && q.b(this.name, sticker.name) && this.type == sticker.type && this.animated == sticker.animated && q.b(this.url, sticker.url) && this.disabled == sticker.disabled && this.opaque == sticker.opaque;
+            return q.c(this.f7449id, sticker.f7449id) && q.c(this.name, sticker.name) && this.type == sticker.type && this.animated == sticker.animated && q.c(this.url, sticker.url) && this.disabled == sticker.disabled && this.opaque == sticker.opaque;
         }
 
         public final boolean getAnimated() {
@@ -130,7 +130,7 @@ public final class StickerPickerRow {
         }
 
         public final String getId() {
-            return this.f7236id;
+            return this.f7449id;
         }
 
         public final String getName() {
@@ -150,7 +150,7 @@ public final class StickerPickerRow {
         }
 
         public int hashCode() {
-            int hashCode = ((((this.f7236id.hashCode() * 31) + this.name.hashCode()) * 31) + this.type.hashCode()) * 31;
+            int hashCode = ((((this.f7449id.hashCode() * 31) + this.name.hashCode()) * 31) + this.type.hashCode()) * 31;
             boolean z10 = this.animated;
             int i10 = 1;
             if (z10) {
@@ -176,7 +176,7 @@ public final class StickerPickerRow {
         }
 
         public String toString() {
-            String str = this.f7236id;
+            String str = this.f7449id;
             String str2 = this.name;
             Type type = this.type;
             boolean z10 = this.animated;
@@ -188,7 +188,7 @@ public final class StickerPickerRow {
     }
 
     public StickerPickerRow(int i10, int i11, int i12, List<Sticker> items) {
-        q.g(items, "items");
+        q.h(items, "items");
         this.rowContentWidth = i10;
         this.rowContentPaddingVertical = i11;
         this.itemSize = i12;
@@ -229,7 +229,7 @@ public final class StickerPickerRow {
     }
 
     public final StickerPickerRow copy(int i10, int i11, int i12, List<Sticker> items) {
-        q.g(items, "items");
+        q.h(items, "items");
         return new StickerPickerRow(i10, i11, i12, items);
     }
 
@@ -241,7 +241,7 @@ public final class StickerPickerRow {
             return false;
         }
         StickerPickerRow stickerPickerRow = (StickerPickerRow) obj;
-        return this.rowContentWidth == stickerPickerRow.rowContentWidth && this.rowContentPaddingVertical == stickerPickerRow.rowContentPaddingVertical && this.itemSize == stickerPickerRow.itemSize && q.b(this.items, stickerPickerRow.items);
+        return this.rowContentWidth == stickerPickerRow.rowContentWidth && this.rowContentPaddingVertical == stickerPickerRow.rowContentPaddingVertical && this.itemSize == stickerPickerRow.itemSize && q.c(this.items, stickerPickerRow.items);
     }
 
     public final int getItemSize() {

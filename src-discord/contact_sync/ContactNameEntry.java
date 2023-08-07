@@ -44,7 +44,7 @@ public final class ContactNameEntry {
             return false;
         }
         ContactNameEntry contactNameEntry = (ContactNameEntry) obj;
-        return q.b(this.givenName, contactNameEntry.givenName) && q.b(this.familyName, contactNameEntry.familyName);
+        return q.c(this.givenName, contactNameEntry.givenName) && q.c(this.familyName, contactNameEntry.familyName);
     }
 
     public final String getFamilyName() {

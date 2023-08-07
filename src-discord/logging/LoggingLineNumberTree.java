@@ -15,16 +15,16 @@ public final class LoggingLineNumberTree extends a.c {
 
     public LoggingLineNumberTree() {
         List<String> k10;
-        k10 = j.k(a.class.getName(), a.b.class.getName(), a.c.class.getName(), a.C0392a.class.getName(), LoggingLineNumberTree.class.getName(), Log.class.getName());
+        k10 = j.k(a.class.getName(), a.b.class.getName(), a.c.class.getName(), a.C0399a.class.getName(), LoggingLineNumberTree.class.getName(), Log.class.getName());
         this.ignoreClasses = k10;
     }
 
     private final StackTraceElement getCalleStackTraceElement() {
         StackTraceElement[] stackTrace = new Throwable().getStackTrace();
-        q.f(stackTrace, "Throwable().stackTrace");
+        q.g(stackTrace, "Throwable().stackTrace");
         for (StackTraceElement stackTraceElement : stackTrace) {
             if (!this.ignoreClasses.contains(stackTraceElement.getClassName())) {
-                q.f(stackTraceElement, "Throwable().stackTrace\n …sName !in ignoreClasses }");
+                q.g(stackTraceElement, "Throwable().stackTrace\n …sName !in ignoreClasses }");
                 return stackTraceElement;
             }
         }
@@ -33,7 +33,7 @@ public final class LoggingLineNumberTree extends a.c {
 
     @Override 
     protected void log(int i10, String str, String message, Throwable th2) {
-        q.g(message, "message");
+        q.h(message, "message");
         StackTraceElement calleStackTraceElement = getCalleStackTraceElement();
         String fileName = calleStackTraceElement.getFileName();
         int lineNumber = calleStackTraceElement.getLineNumber();

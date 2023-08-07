@@ -27,12 +27,12 @@ public final class MediaEngineModule$addConnectionCallbacks$2 extends s implemen
     @Override 
     public   Unit invoke(Integer num, String str, Integer num2, Integer num3) {
         invoke(num.intValue(), str, num2.intValue(), num3.intValue());
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final void invoke(int i10, String server, int i11, int i12) {
         ReactEvents reactEvents;
-        q.g(server, "server");
+        q.h(server, "server");
         reactEvents = this.this$0.reactEvents;
         reactEvents.emitModuleEvent(this.this$0.getReactContext(), new PingCallbackEvent(this.$connectionId, i10, server, i11, i12));
     }

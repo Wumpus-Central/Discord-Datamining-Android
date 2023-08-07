@@ -16,14 +16,14 @@ public final class TimersManager {
     private final ConcurrentHashMap<Integer, Runnable> intervals = new ConcurrentHashMap<>();
 
     public TimersManager(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         this.timeoutHandler = new Handler(context.getMainLooper());
     }
 
     
     public static final void setTimeout$lambda$0(TimersManager this$0, int i10, Function0 onTimeout) {
-        q.g(this$0, "this$0");
-        q.g(onTimeout, "$onTimeout");
+        q.h(this$0, "this$0");
+        q.h(onTimeout, "$onTimeout");
         this$0.timeouts.remove(Integer.valueOf(i10));
         onTimeout.invoke();
     }
@@ -49,7 +49,7 @@ public final class TimersManager {
     }
 
     public final void setInterval(int i10, double d10, final Function0<Unit> onInterval) {
-        q.g(onInterval, "onInterval");
+        q.h(onInterval, "onInterval");
         final long j10 = (long) d10;
         Runnable timersManager$setInterval$runnable$1 = new Runnable() { 
             @Override 
@@ -65,7 +65,7 @@ public final class TimersManager {
     }
 
     public final void setTimeout(final int i10, double d10, final Function0<Unit> onTimeout) {
-        q.g(onTimeout, "onTimeout");
+        q.h(onTimeout, "onTimeout");
         Runnable aVar = new Runnable() { 
             @Override 
             public final void run() {

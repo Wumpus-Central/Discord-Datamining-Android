@@ -25,12 +25,12 @@ public final class AltTextButtonView extends FrameLayout {
     
     public AltTextButtonView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         AltTextButtonViewBinding inflate = AltTextButtonViewBinding.inflate(LayoutInflater.from(context), this, true);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this, true)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this, true)");
         this.binding = inflate;
         FrameLayout frameLayout = inflate.altTextContainer;
-        q.f(frameLayout, "binding.altTextContainer");
+        q.g(frameLayout, "binding.altTextContainer");
         ViewClippingUtilsKt.clipToRoundedRectangle(frameLayout, SizeUtilsKt.getDpToPx(8));
         inflate.altTextLabel.setText(I18nUtilsKt.i18nFormat$default(context, I18nMessage.MEDIA_MOSAIC_ALT_TEXT_CTA, null, 2, null));
         inflate.altTextLabel.setContentDescription(I18nUtilsKt.i18nFormat$default(context, I18nMessage.MEDIA_MOSAIC_ALT_TEXT_POPOUT_TITLE, null, 2, null));
@@ -38,7 +38,7 @@ public final class AltTextButtonView extends FrameLayout {
 
     
     public static final void configure$lambda$0(String str, Function1 onTapShowAltText, View view) {
-        q.g(onTapShowAltText, "$onTapShowAltText");
+        q.h(onTapShowAltText, "$onTapShowAltText");
         if (str != null) {
             onTapShowAltText.invoke(str);
         }
@@ -47,7 +47,7 @@ public final class AltTextButtonView extends FrameLayout {
     public final void configure(final String str, final Function1<? super String, Unit> onTapShowAltText) {
         boolean z10;
         int i10;
-        q.g(onTapShowAltText, "onTapShowAltText");
+        q.h(onTapShowAltText, "onTapShowAltText");
         if (str != null) {
             z10 = true;
         } else {

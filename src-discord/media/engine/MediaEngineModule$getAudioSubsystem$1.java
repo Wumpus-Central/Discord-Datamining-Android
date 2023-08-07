@@ -22,13 +22,13 @@ final class MediaEngineModule$getAudioSubsystem$1 extends s implements Function2
     @Override 
     public   Unit invoke(String str, String str2) {
         invoke2(str, str2);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String subsystem, String audioLayer) {
-        q.g(subsystem, "subsystem");
-        q.g(audioLayer, "audioLayer");
+        q.h(subsystem, "subsystem");
+        q.h(audioLayer, "audioLayer");
         this.$callback.invoke(subsystem, audioLayer);
     }
 }

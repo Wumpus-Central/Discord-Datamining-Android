@@ -21,17 +21,17 @@ public final class ImageAttachmentViewHolder extends MessagePartViewHolder {
     
     public ImageAttachmentViewHolder(ImageAttachmentView view, ChatEventHandler eventHandler) {
         super(view, null);
-        q.g(view, "view");
-        q.g(eventHandler, "eventHandler");
+        q.h(view, "view");
+        q.h(eventHandler, "eventHandler");
         this.view = view;
         this.eventHandler = eventHandler;
     }
 
     public final void bind(Attachment attachment, int i10, int i11, int i12, MediaContainingViewResizer.ResizeMode resizeMode, View.OnClickListener onClicked, View.OnLongClickListener onLongClickListener, SpoilerConfig spoilerConfig, boolean z10, Float f10) {
         boolean z11;
-        q.g(attachment, "attachment");
-        q.g(resizeMode, "resizeMode");
-        q.g(onClicked, "onClicked");
+        q.h(attachment, "attachment");
+        q.h(resizeMode, "resizeMode");
+        q.h(onClicked, "onClicked");
         String uploaderId = attachment.getUploaderId();
         String uploaderItemId = attachment.getUploaderItemId();
         this.view.setContent(attachment.getUrl(), attachment.getWidth(), attachment.getHeight(), i11, i10, resizeMode, attachment.isSpoiler(), spoilerConfig, i12, attachment.getProgress(), new ImageAttachmentViewHolder$bind$onCancelUpload$1(uploaderId, uploaderItemId, this), new UploadContext(uploaderId, uploaderItemId), f10);

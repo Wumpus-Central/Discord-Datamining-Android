@@ -61,7 +61,7 @@ public final class PortalViewModule extends ReactContextBaseJavaModule {
         
         @Override 
         public FrameLayout createViewInstance(ThemedReactContext reactContext) {
-            q.g(reactContext, "reactContext");
+            q.h(reactContext, "reactContext");
             return new FrameLayout(reactContext);
         }
 
@@ -73,7 +73,7 @@ public final class PortalViewModule extends ReactContextBaseJavaModule {
 
         @ReactProp(name = "portal")
         public void setPortal(FrameLayout portalView, double d10) {
-            q.g(portalView, "portalView");
+            q.h(portalView, "portalView");
             l.d(CoroutineViewUtilsKt.getAttachedScope(portalView), null, null, new PortalViewModule$PortalViewManager$setPortal$1(d10, portalView, null), 3, null);
         }
     }
@@ -81,7 +81,7 @@ public final class PortalViewModule extends ReactContextBaseJavaModule {
     
     public PortalViewModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     

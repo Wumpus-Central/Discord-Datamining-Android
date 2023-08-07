@@ -25,7 +25,7 @@ final class FileDownloader$defaultClient$2 extends s implements Function0<OkHttp
         return builder.a(new Interceptor() { 
             @Override 
             public final Response intercept(Interceptor.Chain chain) {
-                q.g(chain, "chain");
+                q.h(chain, "chain");
                 return DeviceResourceUsageRecorder.Companion.this.downloadInterceptor(chain);
             }
         }).c();

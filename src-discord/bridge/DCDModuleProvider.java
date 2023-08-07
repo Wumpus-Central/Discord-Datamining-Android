@@ -33,7 +33,7 @@ public final class DCDModuleProvider {
     }
 
     public final ReactPackage getLegacyPackageForModule(Function1<? super ReactApplicationContext, ? extends ReactContextBaseJavaModule> onNativeModule) {
-        q.g(onNativeModule, "onNativeModule");
+        q.h(onNativeModule, "onNativeModule");
         return getLegacyPackageForModuleWithViewManager$default(this, onNativeModule, null, 2, null);
     }
 
@@ -43,7 +43,7 @@ public final class DCDModuleProvider {
             public List<ReactContextBaseJavaModule> createNativeModules(ReactApplicationContext reactContext) {
                 ReactContextBaseJavaModule reactContextBaseJavaModule;
                 List<ReactContextBaseJavaModule> l10;
-                q.g(reactContext, "reactContext");
+                q.h(reactContext, "reactContext");
                 Function1<ReactApplicationContext, ReactContextBaseJavaModule> function13 = function1;
                 if (function13 != null) {
                     reactContextBaseJavaModule = function13.invoke(reactContext);
@@ -58,7 +58,7 @@ public final class DCDModuleProvider {
             public List<ViewManager<?, LayoutShadowNode>> createViewManagers(ReactApplicationContext reactContext) {
                 ViewManager<?, LayoutShadowNode> viewManager;
                 List<ViewManager<?, LayoutShadowNode>> l10;
-                q.g(reactContext, "reactContext");
+                q.h(reactContext, "reactContext");
                 Function1<ReactApplicationContext, ViewManager<?, LayoutShadowNode>> function13 = function12;
                 if (function13 != null) {
                     viewManager = function13.invoke(reactContext);
@@ -72,8 +72,8 @@ public final class DCDModuleProvider {
     }
 
     public final TurboReactPackage getTurboPackageForModule(String moduleName, Function1<? super ReactApplicationContext, ? extends NativeModule> onNativeModule) {
-        q.g(moduleName, "moduleName");
-        q.g(onNativeModule, "onNativeModule");
+        q.h(moduleName, "moduleName");
+        q.h(onNativeModule, "onNativeModule");
         return new DCDModuleProvider$getTurboPackageForModule$1(moduleName, onNativeModule);
     }
 }

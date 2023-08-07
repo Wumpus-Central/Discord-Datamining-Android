@@ -37,7 +37,7 @@ public final class InviteToSpeakView extends LinearLayout {
     
     public InviteToSpeakView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  InviteToSpeakView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -46,14 +46,14 @@ public final class InviteToSpeakView extends LinearLayout {
 
     
     public static final void setProps$lambda$1(Function1 onInviteToSpeakClicked, Message message, View view) {
-        q.g(onInviteToSpeakClicked, "$onInviteToSpeakClicked");
-        q.g(message, "$message");
-        onInviteToSpeakClicked.invoke(MessageId.m592boximpl(message.m16getId3Eiw7ao()));
+        q.h(onInviteToSpeakClicked, "$onInviteToSpeakClicked");
+        q.h(message, "$message");
+        onInviteToSpeakClicked.invoke(MessageId.m593boximpl(message.m17getId3Eiw7ao()));
     }
 
     public final void setProps(final Message message, final Function1<? super MessageId, Unit> onInviteToSpeakClicked) {
-        q.g(message, "message");
-        q.g(onInviteToSpeakClicked, "onInviteToSpeakClicked");
+        q.h(message, "message");
+        q.h(onInviteToSpeakClicked, "onInviteToSpeakClicked");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(this, false, new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {
@@ -62,26 +62,26 @@ public final class InviteToSpeakView extends LinearLayout {
         }, 1, null);
         this.binding.inviteToSpeakText.setText(message.getButtonLabel());
         SimpleDraweeView simpleDraweeView = this.binding.moveToSpeakerIcon;
-        q.f(simpleDraweeView, "binding.moveToSpeakerIcon");
+        q.g(simpleDraweeView, "binding.moveToSpeakerIcon");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.MoveToSpeaker);
         SimpleDraweeView simpleDraweeView2 = this.binding.moveToSpeakerIcon;
-        q.f(simpleDraweeView2, "binding.moveToSpeakerIcon");
+        q.g(simpleDraweeView2, "binding.moveToSpeakerIcon");
         ColorUtilsKt.setTintColor(simpleDraweeView2, Integer.valueOf(ThemeManagerKt.getTheme().getHeaderPrimary()));
     }
 
     
     public InviteToSpeakView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         InviteToSpeakViewBinding inflate = InviteToSpeakViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         RippleUtilsKt.addRipple$default(this, true, 0, 2, null);
         setOrientation(0);
         setLayoutParams(new LinearLayout.LayoutParams(-2, -2));
         setPadding(SizeUtilsKt.getDpToPx(12), SizeUtilsKt.getDpToPx(8), SizeUtilsKt.getDpToPx(12), SizeUtilsKt.getDpToPx(8));
         TextView _init_$lambda$0 = inflate.inviteToSpeakText;
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         _init_$lambda$0.setTextColor(ColorUtilsKt.getColorCompat(_init_$lambda$0, R.color.white));
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$0, 16.0f);
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, DiscordFont.PrimarySemibold);

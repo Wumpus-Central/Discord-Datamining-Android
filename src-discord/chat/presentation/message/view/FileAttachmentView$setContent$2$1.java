@@ -6,7 +6,7 @@ import com.discord.chat.databinding.FileAttachmentViewBinding;
 import com.discord.file_downloader.DownloadState;
 import com.discord.file_downloader.PublicFileDownloader;
 import com.facebook.drawee.view.SimpleDraweeView;
-import ff.t;
+import jf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -19,11 +19,11 @@ import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
 import kotlinx.coroutines.j;
 import kotlinx.coroutines.y0;
-import lf.d;
+import pf.d;
 
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
-@e(c = "com.discord.chat.presentation.message.view.FileAttachmentView$setContent$2$1", f = "FileAttachmentView.kt", l = {94}, m = "invokeSuspend")
+@e(c = "com.discord.chat.presentation.message.view.FileAttachmentView$setContent$2$1", f = "FileAttachmentView.kt", l = {97}, m = "invokeSuspend")
 
 public final class FileAttachmentView$setContent$2$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final  String $attachmentDescription;
@@ -48,7 +48,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileAttachmentView$setContent$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20679a);
+        return ((FileAttachmentView$setContent$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
     }
 
     @Override 
@@ -60,7 +60,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
             t.b(obj);
             PublicFileDownloader publicFileDownloader = PublicFileDownloader.INSTANCE;
             Context context = this.this$0.getContext();
-            q.f(context, "context");
+            q.g(context, "context");
             Flow<DownloadState> downloadFile = publicFileDownloader.downloadFile(context, this.$url, this.$attachmentName, this.$attachmentDescription);
             final FileAttachmentView fileAttachmentView = this.this$0;
             FlowCollector<? super DownloadState> flowCollector = new FlowCollector() { 
@@ -70,13 +70,13 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
                 @e(c = "com.discord.chat.presentation.message.view.FileAttachmentView$setContent$2$1$1$1", f = "FileAttachmentView.kt", l = {}, m = "invokeSuspend")
                 
                 
-                public static final class C01031 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+                public static final class C01001 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
                     final  DownloadState $downloadState;
                     int label;
                     final  FileAttachmentView this$0;
 
                     
-                    C01031(DownloadState downloadState, FileAttachmentView fileAttachmentView, Continuation<? super C01031> continuation) {
+                    C01001(DownloadState downloadState, FileAttachmentView fileAttachmentView, Continuation<? super C01001> continuation) {
                         super(2, continuation);
                         this.$downloadState = downloadState;
                         this.this$0 = fileAttachmentView;
@@ -84,11 +84,11 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
 
                     @Override 
                     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-                        return new C01031(this.$downloadState, this.this$0, continuation);
+                        return new C01001(this.$downloadState, this.this$0, continuation);
                     }
 
                     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                        return ((C01031) create(coroutineScope, continuation)).invokeSuspend(Unit.f20679a);
+                        return ((C01001) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
                     }
 
                     @Override 
@@ -102,7 +102,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
                             boolean z10 = this.$downloadState instanceof DownloadState.InProgress;
                             fileAttachmentViewBinding = this.this$0.binding;
                             ProgressBar progressBar = fileAttachmentViewBinding.fileAttachmentDownloadProgressBar;
-                            q.f(progressBar, "binding.fileAttachmentDownloadProgressBar");
+                            q.g(progressBar, "binding.fileAttachmentDownloadProgressBar");
                             int i11 = 0;
                             if (z10) {
                                 i10 = 0;
@@ -112,12 +112,12 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
                             progressBar.setVisibility(i10);
                             fileAttachmentViewBinding2 = this.this$0.binding;
                             SimpleDraweeView simpleDraweeView = fileAttachmentViewBinding2.fileAttachmentDownload;
-                            q.f(simpleDraweeView, "binding.fileAttachmentDownload");
+                            q.g(simpleDraweeView, "binding.fileAttachmentDownload");
                             if (!(!z10)) {
                                 i11 = 8;
                             }
                             simpleDraweeView.setVisibility(i11);
-                            return Unit.f20679a;
+                            return Unit.f21025a;
                         }
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
@@ -130,9 +130,9 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
 
                 public final Object emit(DownloadState downloadState, Continuation<? super Unit> continuation) {
                     Object d11;
-                    Object g10 = j.g(y0.c(), new C01031(downloadState, FileAttachmentView.this, null), continuation);
+                    Object g10 = j.g(y0.c(), new C01001(downloadState, FileAttachmentView.this, null), continuation);
                     d11 = d.d();
-                    return g10 == d11 ? g10 : Unit.f20679a;
+                    return g10 == d11 ? g10 : Unit.f21025a;
                 }
             };
             this.label = 1;
@@ -144,6 +144,6 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 }

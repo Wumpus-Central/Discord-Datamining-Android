@@ -26,14 +26,14 @@ public class BaseChatListAdapter extends b<List<? extends ChatListItem>> impleme
 
     public BaseChatListAdapter(Function0<? extends ChatEventHandler> eventHandlerProvider, Function0<ComponentProvider> messageComponentProvider) {
         List<? extends ChatListItem> h10;
-        q.g(eventHandlerProvider, "eventHandlerProvider");
-        q.g(messageComponentProvider, "messageComponentProvider");
+        q.h(eventHandlerProvider, "eventHandlerProvider");
+        q.h(messageComponentProvider, "messageComponentProvider");
         RecyclerView.RecycledViewPool messageAccessoriesViewPool = ChatListUtilsKt.getMessageAccessoriesViewPool();
         this.messageAccessoriesRecycledViewPool = messageAccessoriesViewPool;
         h10 = j.h();
         this.chatListItems = h10;
         AdapterDelegatesManager<T> delegatesManager = this.delegatesManager;
-        q.f(delegatesManager, "delegatesManager");
+        q.g(delegatesManager, "delegatesManager");
         this.delegateViewTypes = ChatListAdapterConfiguratorKt.chatListAdapterConfigurator(delegatesManager, eventHandlerProvider, messageComponentProvider, messageAccessoriesViewPool);
         setHasStableIds(true);
     }
@@ -48,7 +48,7 @@ public class BaseChatListAdapter extends b<List<? extends ChatListItem>> impleme
     @Override 
     public List<ChatListItem> getChatListItems() {
         T items = this.items;
-        q.f(items, "items");
+        q.g(items, "items");
         return (List) items;
     }
 
@@ -66,7 +66,7 @@ public class BaseChatListAdapter extends b<List<? extends ChatListItem>> impleme
     }
 
     public final void setChatListItems$chat_release(List<? extends ChatListItem> list) {
-        q.g(list, "<set-?>");
+        q.h(list, "<set-?>");
         this.chatListItems = list;
     }
 }

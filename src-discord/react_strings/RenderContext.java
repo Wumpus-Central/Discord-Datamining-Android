@@ -43,8 +43,8 @@ public final class RenderContext {
         }
 
         public final String replace(CharSequence input, Function3<? super String, ? super String, ? super Boolean, ? extends CharSequence> onMatch) {
-            q.g(input, "input");
-            q.g(onMatch, "onMatch");
+            q.h(input, "input");
+            q.h(onMatch, "onMatch");
             return argumentRegex.i(input, new RenderContext$Argument$replace$1(onMatch));
         }
     }

@@ -18,12 +18,12 @@ public  class SecurityKeyManagerModule$webauthn$2 extends n implements Function1
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String p02) {
-        q.g(p02, "p0");
+        q.h(p02, "p0");
         ((SecurityKeyManagerModule) this.receiver).reject(p02);
     }
 }

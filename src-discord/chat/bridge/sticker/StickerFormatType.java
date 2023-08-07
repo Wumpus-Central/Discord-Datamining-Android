@@ -1,8 +1,8 @@
 package com.discord.chat.bridge.sticker;
 
-import ff.n;
-import ff.p;
 import java.util.NoSuchElementException;
+import jf.n;
+import jf.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -11,9 +11,9 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
-import pi.f;
-import ri.e;
-import ri.g;
+import ti.f;
+import vi.e;
+import vi.g;
 
 @f(with = StickerFormatTypeSerializer.class)
 @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\b\n\u0002\b\n\b\u0087\u0001\u0018\u0000 \u000b2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0002\u000b\fB\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\n¨\u0006\r"}, d2 = {"Lcom/discord/chat/bridge/sticker/StickerFormatType;", "", "intType", "", "(Ljava/lang/String;II)V", "getIntType", "()I", "PNG", "APNG", "LOTTIE", "GIF", "Companion", "StickerFormatTypeSerializer", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -57,13 +57,13 @@ public enum StickerFormatType {
 
         @Override 
         public SerialDescriptor getDescriptor() {
-            return g.a("StickerFormatType", e.f.f25644a);
+            return g.a("StickerFormatType", e.f.f29044a);
         }
 
         @Override 
         public StickerFormatType deserialize(Decoder decoder) {
             StickerFormatType[] values;
-            q.g(decoder, "decoder");
+            q.h(decoder, "decoder");
             int j10 = decoder.j();
             for (StickerFormatType stickerFormatType : StickerFormatType.values()) {
                 if (stickerFormatType.getIntType() == j10) {
@@ -74,8 +74,8 @@ public enum StickerFormatType {
         }
 
         public void serialize(Encoder encoder, StickerFormatType value) {
-            q.g(encoder, "encoder");
-            q.g(value, "value");
+            q.h(encoder, "encoder");
+            q.h(value, "value");
             encoder.x(value.getIntType());
         }
     }

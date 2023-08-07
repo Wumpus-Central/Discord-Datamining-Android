@@ -24,12 +24,12 @@ final class MediaResolver$handleImage$compressed$1 extends s implements Function
     @Override 
     public   Unit invoke(Compression compression) {
         invoke2(compression);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(Compression compress) {
-        q.g(compress, "$this$compress");
+        q.h(compress, "$this$compress");
         compress.a(new QualityAndResolutionConstraint(this.$compressionQuality, this.$shouldResize));
     }
 }

@@ -18,11 +18,11 @@ public final class PortalViewContext {
 
     
     public PortalViewContext(WeakReference<View> view, Function1<? super View, Unit> removeViewFromParent, Function1<? super View, Unit> onViewAddedToPortal, Function1<? super View, Unit> onViewRemovedFromPortal, Function1<? super View, Unit> returnViewToParent) {
-        q.g(view, "view");
-        q.g(removeViewFromParent, "removeViewFromParent");
-        q.g(onViewAddedToPortal, "onViewAddedToPortal");
-        q.g(onViewRemovedFromPortal, "onViewRemovedFromPortal");
-        q.g(returnViewToParent, "returnViewToParent");
+        q.h(view, "view");
+        q.h(removeViewFromParent, "removeViewFromParent");
+        q.h(onViewAddedToPortal, "onViewAddedToPortal");
+        q.h(onViewRemovedFromPortal, "onViewRemovedFromPortal");
+        q.h(returnViewToParent, "returnViewToParent");
         this.view = view;
         this.removeViewFromParent = removeViewFromParent;
         this.onViewAddedToPortal = onViewAddedToPortal;
@@ -71,11 +71,11 @@ public final class PortalViewContext {
     }
 
     public final PortalViewContext copy(WeakReference<View> view, Function1<? super View, Unit> removeViewFromParent, Function1<? super View, Unit> onViewAddedToPortal, Function1<? super View, Unit> onViewRemovedFromPortal, Function1<? super View, Unit> returnViewToParent) {
-        q.g(view, "view");
-        q.g(removeViewFromParent, "removeViewFromParent");
-        q.g(onViewAddedToPortal, "onViewAddedToPortal");
-        q.g(onViewRemovedFromPortal, "onViewRemovedFromPortal");
-        q.g(returnViewToParent, "returnViewToParent");
+        q.h(view, "view");
+        q.h(removeViewFromParent, "removeViewFromParent");
+        q.h(onViewAddedToPortal, "onViewAddedToPortal");
+        q.h(onViewRemovedFromPortal, "onViewRemovedFromPortal");
+        q.h(returnViewToParent, "returnViewToParent");
         return new PortalViewContext(view, removeViewFromParent, onViewAddedToPortal, onViewRemovedFromPortal, returnViewToParent);
     }
 
@@ -87,7 +87,7 @@ public final class PortalViewContext {
             return false;
         }
         PortalViewContext portalViewContext = (PortalViewContext) obj;
-        return q.b(this.view, portalViewContext.view) && q.b(this.removeViewFromParent, portalViewContext.removeViewFromParent) && q.b(this.onViewAddedToPortal, portalViewContext.onViewAddedToPortal) && q.b(this.onViewRemovedFromPortal, portalViewContext.onViewRemovedFromPortal) && q.b(this.returnViewToParent, portalViewContext.returnViewToParent);
+        return q.c(this.view, portalViewContext.view) && q.c(this.removeViewFromParent, portalViewContext.removeViewFromParent) && q.c(this.onViewAddedToPortal, portalViewContext.onViewAddedToPortal) && q.c(this.onViewRemovedFromPortal, portalViewContext.onViewRemovedFromPortal) && q.c(this.returnViewToParent, portalViewContext.returnViewToParent);
     }
 
     public final Function1<View, Unit> getOnViewAddedToPortal() {

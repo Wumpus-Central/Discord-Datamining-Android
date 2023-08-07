@@ -168,7 +168,7 @@ public final class ReactionView extends LinearLayout {
     
     public ReactionView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  ReactionView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -186,7 +186,7 @@ public final class ReactionView extends LinearLayout {
         if (z10) {
             if (reactionsTheme == null || (activeReactionBackgroundColor = reactionsTheme.getActiveReactionBackgroundColor()) == null) {
                 Context context = getContext();
-                q.f(context, "context");
+                q.g(context, "context");
                 i11 = ColorUtilsKt.getColorCompat(context, R.color.brand_new_500_alpha_20);
             } else {
                 i11 = activeReactionBackgroundColor.intValue();
@@ -194,7 +194,7 @@ public final class ReactionView extends LinearLayout {
             int i13 = CORNER_RADIUS;
             if (reactionsTheme == null || (activeReactionBorderColor = reactionsTheme.getActiveReactionBorderColor()) == null) {
                 Context context2 = getContext();
-                q.f(context2, "context");
+                q.g(context2, "context");
                 i12 = ColorUtilsKt.getColorCompat(context2, R.color.brand_560);
             } else {
                 i12 = activeReactionBorderColor.intValue();
@@ -271,9 +271,9 @@ public final class ReactionView extends LinearLayout {
     
     public ReactionView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         ReactionViewBinding inflate = ReactionViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(\n        LayoutI…ext),\n        this,\n    )");
+        q.g(inflate, "inflate(\n        LayoutI…ext),\n        this,\n    )");
         this.binding = inflate;
         setOrientation(0);
         setGravity(16);
@@ -281,17 +281,17 @@ public final class ReactionView extends LinearLayout {
         int i10 = HORIZ_PADDING;
         setPadding(i10, 0, i10, 0);
         TextView textView = inflate.reactionCount1;
-        q.f(textView, "binding.reactionCount1");
+        q.g(textView, "binding.reactionCount1");
         DiscordFont discordFont = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(textView, discordFont);
         TextView textView2 = inflate.reactionCount1;
-        q.f(textView2, "binding.reactionCount1");
+        q.g(textView2, "binding.reactionCount1");
         SetTextSizeSpKt.setTextSizeSp(textView2, 14.0f, 14.0f);
         TextView textView3 = inflate.reactionCount2;
-        q.f(textView3, "binding.reactionCount2");
+        q.g(textView3, "binding.reactionCount2");
         DiscordFontUtilsKt.setDiscordFont(textView3, discordFont);
         TextView textView4 = inflate.reactionCount2;
-        q.f(textView4, "binding.reactionCount2");
+        q.g(textView4, "binding.reactionCount2");
         SetTextSizeSpKt.setTextSizeSp(textView4, 14.0f, 14.0f);
         inflate.reactionCountSwitcher.setMeasureAllChildren(false);
     }

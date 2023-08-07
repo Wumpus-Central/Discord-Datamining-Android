@@ -45,7 +45,7 @@ public final class SummarySeparatorChatListItem extends ChatListItem {
     }
 
     public final SummarySeparatorChatListItem copy(int i10, Summary summary, boolean z10) {
-        q.g(summary, "summary");
+        q.h(summary, "summary");
         return new SummarySeparatorChatListItem(i10, summary, z10);
     }
 
@@ -57,7 +57,7 @@ public final class SummarySeparatorChatListItem extends ChatListItem {
             return false;
         }
         SummarySeparatorChatListItem summarySeparatorChatListItem = (SummarySeparatorChatListItem) obj;
-        return this.color == summarySeparatorChatListItem.color && q.b(this.summary, summarySeparatorChatListItem.summary) && this.isBeforeContent == summarySeparatorChatListItem.isBeforeContent;
+        return this.color == summarySeparatorChatListItem.color && q.c(this.summary, summarySeparatorChatListItem.summary) && this.isBeforeContent == summarySeparatorChatListItem.isBeforeContent;
     }
 
     public final int getColor() {

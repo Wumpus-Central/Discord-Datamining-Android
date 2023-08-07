@@ -15,7 +15,7 @@ public final class MessageBundleSpineItemDecoration extends RecyclerView.ItemDec
     private final SpineDrawer spineDrawer;
 
     public MessageBundleSpineItemDecoration(Context context, int i10) {
-        q.g(context, "context");
+        q.h(context, "context");
         this.spineDrawer = new SpineDrawer(context, i10);
     }
 

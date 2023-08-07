@@ -5,7 +5,7 @@ import com.discord.reactevents.ReactEvents;
 import com.facebook.react.bridge.LifecycleEventListener;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
@@ -18,7 +18,7 @@ public final class AppLifecycleManagerModule extends ReactContextBaseJavaModule 
     
     public AppLifecycleManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         reactContext.addLifecycleEventListener(this);
     }
 
@@ -31,7 +31,7 @@ public final class AppLifecycleManagerModule extends ReactContextBaseJavaModule 
     public void onHostDestroy() {
         ReactEvents reactEvents = this.reactEvents;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         reactEvents.emitModuleEvent(reactApplicationContext, new OnHostDestroyEvent());
     }
 

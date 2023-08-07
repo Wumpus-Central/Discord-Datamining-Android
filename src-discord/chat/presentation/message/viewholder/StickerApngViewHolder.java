@@ -17,21 +17,21 @@ public final class StickerApngViewHolder extends StickerPartViewHolder {
     
     public StickerApngViewHolder(StickerView stickerView) {
         super(stickerView);
-        q.g(stickerView, "stickerView");
+        q.h(stickerView, "stickerView");
         this.stickerView = stickerView;
     }
 
     
     public static final void bind$lambda$0(Function1 onStickerClicked, Sticker sticker, View view) {
-        q.g(onStickerClicked, "$onStickerClicked");
-        q.g(sticker, "$sticker");
+        q.h(onStickerClicked, "$onStickerClicked");
+        q.h(sticker, "$sticker");
         onStickerClicked.invoke(sticker);
     }
 
     
     public static final boolean bind$lambda$1(Function1 onStickerLongClicked, Sticker sticker, View view) {
-        q.g(onStickerLongClicked, "$onStickerLongClicked");
-        q.g(sticker, "$sticker");
+        q.h(onStickerLongClicked, "$onStickerLongClicked");
+        q.h(sticker, "$sticker");
         onStickerLongClicked.invoke(sticker);
         return true;
     }
@@ -39,9 +39,9 @@ public final class StickerApngViewHolder extends StickerPartViewHolder {
     @Override 
     public void bind(final Sticker sticker, final Function1<? super Sticker, Unit> onStickerClicked, final Function1<? super Sticker, Unit> onStickerLongClicked, int i10, int i11) {
         boolean z10;
-        q.g(sticker, "sticker");
-        q.g(onStickerClicked, "onStickerClicked");
-        q.g(onStickerLongClicked, "onStickerLongClicked");
+        q.h(sticker, "sticker");
+        q.h(onStickerClicked, "onStickerClicked");
+        q.h(onStickerLongClicked, "onStickerLongClicked");
         StickerView stickerView = this.stickerView;
         String url = sticker.getUrl();
         if (sticker.getRenderMode() == 0) {

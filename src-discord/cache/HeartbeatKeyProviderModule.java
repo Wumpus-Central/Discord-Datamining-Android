@@ -28,7 +28,7 @@ public final class HeartbeatKeyProviderModule extends NativeHeartbeatKeyProvider
         }
 
         public final NativeModule create(ReactApplicationContext reactContext) {
-            q.g(reactContext, "reactContext");
+            q.h(reactContext, "reactContext");
             return new HeartbeatKeyProviderModule(reactContext);
         }
     }
@@ -36,7 +36,7 @@ public final class HeartbeatKeyProviderModule extends NativeHeartbeatKeyProvider
     
     public HeartbeatKeyProviderModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.sharedPrefs = reactContext.getSharedPreferences("heartbeat_keys", 0);
     }
 
@@ -62,49 +62,49 @@ public final class HeartbeatKeyProviderModule extends NativeHeartbeatKeyProvider
 
     @Override 
     public String getName() {
-        return NAME;
+        return "RTNHeartbeatKeyProvider";
     }
 
     @Override 
     public void setHeartbeatInitializedTimestamp(String timestamp) {
-        q.g(timestamp, "timestamp");
+        q.h(timestamp, "timestamp");
         SharedPreferences sharedPrefs = this.sharedPrefs;
-        q.f(sharedPrefs, "sharedPrefs");
+        q.g(sharedPrefs, "sharedPrefs");
         SharedPreferences.Editor editor = sharedPrefs.edit();
-        q.f(editor, "editor");
+        q.g(editor, "editor");
         editor.putString(HeartbeatKeyProviderModuleKt.LATEST_HEARTBEAST_INITIALIZED_TIMESTAMP, timestamp);
         editor.apply();
     }
 
     @Override 
     public void setHeartbeatRefreshedTimestamp(String timestamp) {
-        q.g(timestamp, "timestamp");
+        q.h(timestamp, "timestamp");
         SharedPreferences sharedPrefs = this.sharedPrefs;
-        q.f(sharedPrefs, "sharedPrefs");
+        q.g(sharedPrefs, "sharedPrefs");
         SharedPreferences.Editor editor = sharedPrefs.edit();
-        q.f(editor, "editor");
+        q.g(editor, "editor");
         editor.putString(HeartbeatKeyProviderModuleKt.LATEST_HEARTBEAST_TIMESTAMP, timestamp);
         editor.apply();
     }
 
     @Override 
     public void setHeartbeatUUID(String uuid) {
-        q.g(uuid, "uuid");
+        q.h(uuid, "uuid");
         SharedPreferences sharedPrefs = this.sharedPrefs;
-        q.f(sharedPrefs, "sharedPrefs");
+        q.g(sharedPrefs, "sharedPrefs");
         SharedPreferences.Editor editor = sharedPrefs.edit();
-        q.f(editor, "editor");
+        q.g(editor, "editor");
         editor.putString(HeartbeatKeyProviderModuleKt.LATEST_HEARTBEAT_UUID, uuid);
         editor.apply();
     }
 
     @Override 
     public void setLatestHeartbeatEventTimestamp(String timestamp) {
-        q.g(timestamp, "timestamp");
+        q.h(timestamp, "timestamp");
         SharedPreferences sharedPrefs = this.sharedPrefs;
-        q.f(sharedPrefs, "sharedPrefs");
+        q.g(sharedPrefs, "sharedPrefs");
         SharedPreferences.Editor editor = sharedPrefs.edit();
-        q.f(editor, "editor");
+        q.g(editor, "editor");
         editor.putString(HeartbeatKeyProviderModuleKt.LATEST_HEARTBEAST_TIMESTAMP, timestamp);
         editor.apply();
     }

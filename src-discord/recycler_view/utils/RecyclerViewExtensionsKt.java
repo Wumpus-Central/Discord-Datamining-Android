@@ -16,34 +16,34 @@ import kotlin.jvm.internal.q;
 
 public final class RecyclerViewExtensionsKt {
     public static final void scrollToCenter(RecyclerView recyclerView, int i10) {
-        q.g(recyclerView, "<this>");
+        q.h(recyclerView, "<this>");
         scrollToPositionWithOffset(recyclerView, i10, recyclerView.getHeight() / 2);
     }
 
     public static final void scrollToPositionAnimated(RecyclerView recyclerView, int i10, Scroller.TargetAlignment targetAlignment, Function0<Unit> onComplete) {
-        q.g(recyclerView, "<this>");
-        q.g(targetAlignment, "targetAlignment");
-        q.g(onComplete, "onComplete");
+        q.h(recyclerView, "<this>");
+        q.h(targetAlignment, "targetAlignment");
+        q.h(onComplete, "onComplete");
         RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
-        q.d(layoutManager);
+        q.e(layoutManager);
         Context context = recyclerView.getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         layoutManager.S1(new SmoothScroller(context, i10, targetAlignment, onComplete));
     }
 
     public static final void scrollToPositionWithOffset(RecyclerView recyclerView, int i10, int i11) {
-        q.g(recyclerView, "<this>");
+        q.h(recyclerView, "<this>");
         RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
-        q.e(layoutManager, "null cannot be cast to non-null type androidx.recyclerview.widget.LinearLayoutManager");
+        q.f(layoutManager, "null cannot be cast to non-null type androidx.recyclerview.widget.LinearLayoutManager");
         ((LinearLayoutManager) layoutManager).K2(i10, i11);
     }
 
     public static final void scrollToTop(RecyclerView recyclerView, int i10, int i11) {
         int i12;
         View view;
-        q.g(recyclerView, "<this>");
+        q.h(recyclerView, "<this>");
         RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
-        q.e(layoutManager, "null cannot be cast to non-null type androidx.recyclerview.widget.LinearLayoutManager");
+        q.f(layoutManager, "null cannot be cast to non-null type androidx.recyclerview.widget.LinearLayoutManager");
         if (((LinearLayoutManager) layoutManager).x2()) {
             RecyclerView.ViewHolder findViewHolderForAdapterPosition = recyclerView.findViewHolderForAdapterPosition(i10);
             if (findViewHolderForAdapterPosition == null || (view = findViewHolderForAdapterPosition.itemView) == null) {
@@ -62,7 +62,7 @@ public final class RecyclerViewExtensionsKt {
     }
 
     public static final void toggleSuppressLayout(RecyclerView recyclerView) {
-        q.g(recyclerView, "<this>");
+        q.h(recyclerView, "<this>");
         recyclerView.suppressLayout(true);
         recyclerView.suppressLayout(false);
     }

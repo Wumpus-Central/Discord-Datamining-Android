@@ -25,15 +25,15 @@ final class MediaEngineModule$initialize$4 extends s implements Function3<List<?
     @Override 
     public   Unit invoke(List<? extends Map<String, ? extends Object>> list, List<? extends Map<String, ? extends Object>> list2, List<? extends Map<String, ? extends Object>> list3) {
         invoke2(list, list2, list3);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(List<? extends Map<String, ? extends Object>> inputDevices, List<? extends Map<String, ? extends Object>> outputDevices, List<? extends Map<String, ? extends Object>> videoInputDevices) {
         ReactEvents reactEvents;
-        q.g(inputDevices, "inputDevices");
-        q.g(outputDevices, "outputDevices");
-        q.g(videoInputDevices, "videoInputDevices");
+        q.h(inputDevices, "inputDevices");
+        q.h(outputDevices, "outputDevices");
+        q.h(videoInputDevices, "videoInputDevices");
         reactEvents = this.this$0.reactEvents;
         reactEvents.emitModuleEvent(this.this$0.getReactContext(), new DeviceChangedEvent(inputDevices, outputDevices, videoInputDevices));
     }

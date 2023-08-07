@@ -20,7 +20,7 @@ import y4.z;
 
 public final class FrescoConfigKt {
     public static final ImagePipelineConfig frescoConfig(Context context) {
-        q.g(context, "<this>");
+        q.h(context, "<this>");
         ImagePipelineConfig.Builder defaultConfigBuilder = FrescoModule.getDefaultConfigBuilder(new ReactContext(context));
         FrescoDiskCache frescoDiskCache = FrescoDiskCache.INSTANCE;
         ImagePipelineConfig.Builder M = defaultConfigBuilder.O(frescoDiskCache.newRegularDiskCache(context)).S(frescoDiskCache.newSmallDiskCache(context)).M(new FrescoBitmapSupplier(context));
@@ -29,14 +29,14 @@ public final class FrescoConfigKt {
         ImagePipelineConfig.Builder P = M.P(new ReactOkHttpNetworkFetcher(B.b(new Interceptor() { 
             @Override 
             public final Response intercept(Interceptor.Chain chain) {
-                q.g(chain, "chain");
+                q.h(chain, "chain");
                 return DeviceResourceUsageRecorder.Companion.this.frescoInterceptor(chain);
             }
         }).c()));
         x.b n10 = x.n();
         z a10 = l.a();
-        ImagePipelineConfig K = P.Q(new y(n10.n(new z(a10.f29493b, a10.f29492a * 2, a10.f29494c)).m())).N(true).L().t(true).K();
-        q.f(K, "getDefaultConfigBuilder(…ns(true)\n        .build()");
+        ImagePipelineConfig K = P.Q(new y(n10.n(new z(a10.f30596b, a10.f30595a * 2, a10.f30597c)).m())).N(true).L().t(true).K();
+        q.g(K, "getDefaultConfigBuilder(…ns(true)\n        .build()");
         return K;
     }
 }

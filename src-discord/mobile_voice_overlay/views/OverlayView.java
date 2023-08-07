@@ -18,7 +18,7 @@ public abstract class OverlayView extends FrameLayout {
     
     public OverlayView(Context context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public abstract WindowManager.LayoutParams getInitialLayoutParams();
@@ -30,7 +30,7 @@ public abstract class OverlayView extends FrameLayout {
 
     public final void initializeWithWindowManager() {
         Object systemService = getContext().getSystemService("window");
-        q.e(systemService, "null cannot be cast to non-null type android.view.WindowManager");
+        q.f(systemService, "null cannot be cast to non-null type android.view.WindowManager");
         ((WindowManager) systemService).addView(this, getInitialLayoutParams());
         this.managedByWindow = true;
     }
@@ -42,13 +42,13 @@ public abstract class OverlayView extends FrameLayout {
 
     public final void removeFromWindowManager() {
         Object systemService = getContext().getSystemService("window");
-        q.e(systemService, "null cannot be cast to non-null type android.view.WindowManager");
+        q.f(systemService, "null cannot be cast to non-null type android.view.WindowManager");
         ((WindowManager) systemService).removeView(this);
         this.managedByWindow = false;
     }
 
     public void setAssets(MobileVoiceOverlayAssets assets) {
-        q.g(assets, "assets");
+        q.h(assets, "assets");
         this.overlayAssets = assets;
     }
 
@@ -61,12 +61,12 @@ public abstract class OverlayView extends FrameLayout {
     
     public OverlayView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public OverlayView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 }

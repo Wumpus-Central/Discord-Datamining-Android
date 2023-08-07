@@ -14,13 +14,13 @@ public final class DecorationView extends APNGImageView {
     
     public DecorationView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public DecorationView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  DecorationView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -28,7 +28,7 @@ public final class DecorationView extends APNGImageView {
     }
 
     public final void asDecoration(String url, Integer num, Integer num2, boolean z10) {
-        q.g(url, "url");
+        q.h(url, "url");
         inflateApngView(false);
         getApngView().loadImage(new APNGView.Config(url, z10, false, num, num2, "decorations"));
         resetViews(getApngView(), false);
@@ -37,6 +37,6 @@ public final class DecorationView extends APNGImageView {
     
     public DecorationView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 }

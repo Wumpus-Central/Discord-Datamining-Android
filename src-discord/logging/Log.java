@@ -11,7 +11,7 @@ public final class Log {
     public static final Log INSTANCE = new Log();
 
     static {
-        a.f27210a.a(new LoggingTree());
+        a.f27788a.a(new LoggingTree());
     }
 
     private Log() {
@@ -46,33 +46,33 @@ public final class Log {
     }
 
     public final void d(String tag, String message, Throwable th2) {
-        q.g(tag, "tag");
-        q.g(message, "message");
-        a.b bVar = a.f27210a;
+        q.h(tag, "tag");
+        q.h(message, "message");
+        a.b bVar = a.f27788a;
         bVar.b(tag);
         bVar.d(th2, message, new Object[0]);
     }
 
     public final void e(String tag, String message, Throwable th2) {
-        q.g(tag, "tag");
-        q.g(message, "message");
-        a.b bVar = a.f27210a;
+        q.h(tag, "tag");
+        q.h(message, "message");
+        a.b bVar = a.f27788a;
         bVar.b(tag);
         bVar.e(th2, message, new Object[0]);
     }
 
     public final void i(String tag, String message, Throwable th2) {
-        q.g(tag, "tag");
-        q.g(message, "message");
-        a.b bVar = a.f27210a;
+        q.h(tag, "tag");
+        q.h(message, "message");
+        a.b bVar = a.f27788a;
         bVar.b(tag);
         bVar.i(th2, message, new Object[0]);
     }
 
     public final void w(String tag, String message, Throwable th2) {
-        q.g(tag, "tag");
-        q.g(message, "message");
-        a.b bVar = a.f27210a;
+        q.h(tag, "tag");
+        q.h(message, "message");
+        a.b bVar = a.f27788a;
         bVar.b(tag);
         bVar.w(th2, message, new Object[0]);
     }
@@ -106,34 +106,34 @@ public final class Log {
     }
 
     public final void d(KClass<?> tag, String message, Throwable th2) {
-        q.g(tag, "tag");
-        q.g(message, "message");
-        String simpleName = qf.a.b(tag).getSimpleName();
-        q.f(simpleName, "tag.java.simpleName");
+        q.h(tag, "tag");
+        q.h(message, "message");
+        String simpleName = uf.a.b(tag).getSimpleName();
+        q.g(simpleName, "tag.java.simpleName");
         d(simpleName, message, th2);
     }
 
     public final void e(KClass<?> tag, String message, Throwable th2) {
-        q.g(tag, "tag");
-        q.g(message, "message");
-        String simpleName = qf.a.b(tag).getSimpleName();
-        q.f(simpleName, "tag.java.simpleName");
+        q.h(tag, "tag");
+        q.h(message, "message");
+        String simpleName = uf.a.b(tag).getSimpleName();
+        q.g(simpleName, "tag.java.simpleName");
         e(simpleName, message, th2);
     }
 
     public final void i(KClass<?> tag, String message, Throwable th2) {
-        q.g(tag, "tag");
-        q.g(message, "message");
-        String simpleName = qf.a.b(tag).getSimpleName();
-        q.f(simpleName, "tag.java.simpleName");
+        q.h(tag, "tag");
+        q.h(message, "message");
+        String simpleName = uf.a.b(tag).getSimpleName();
+        q.g(simpleName, "tag.java.simpleName");
         i(simpleName, message, th2);
     }
 
     public final void w(KClass<?> tag, String message, Throwable th2) {
-        q.g(tag, "tag");
-        q.g(message, "message");
-        String simpleName = qf.a.b(tag).getSimpleName();
-        q.f(simpleName, "tag.java.simpleName");
+        q.h(tag, "tag");
+        q.h(message, "message");
+        String simpleName = uf.a.b(tag).getSimpleName();
+        q.g(simpleName, "tag.java.simpleName");
         w(simpleName, message, th2);
     }
 }

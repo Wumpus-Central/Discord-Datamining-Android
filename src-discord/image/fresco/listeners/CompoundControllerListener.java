@@ -11,7 +11,7 @@ public final class CompoundControllerListener implements ControllerListener<Obje
     private final ControllerListener<Object>[] _listeners;
 
     public CompoundControllerListener(ControllerListener<Object>... listeners) {
-        q.g(listeners, "listeners");
+        q.h(listeners, "listeners");
         this._listeners = listeners;
     }
 

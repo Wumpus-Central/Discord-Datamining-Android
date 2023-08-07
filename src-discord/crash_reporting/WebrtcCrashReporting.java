@@ -1,6 +1,6 @@
 package com.discord.crash_reporting;
 
-import io.sentry.k2;
+import io.sentry.d3;
 
 
 class WebrtcCrashReporting {
@@ -8,7 +8,7 @@ class WebrtcCrashReporting {
     }
 
     static String reportWebrtcException(Throwable th2) {
-        k2.f(th2);
+        d3.g(th2);
         return th2.toString();
     }
 }

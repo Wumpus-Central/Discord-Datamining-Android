@@ -36,7 +36,7 @@ public final class ChatListViewManager extends SimpleViewManager<ChatListView> i
     
     @Override 
     public ChatListView createViewInstance(ThemedReactContext reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         return new ChatListView(reactContext, null, 0, 6, null);
     }
 
@@ -47,7 +47,7 @@ public final class ChatListViewManager extends SimpleViewManager<ChatListView> i
     }
 
     public void onDropViewInstance(ChatListView view) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.cleanup();
         super.onDropViewInstance((ChatListViewManager) view);
     }

@@ -50,9 +50,9 @@ public final class SafeAreaEdgeInsets {
             Insets displayCutoutInsets = WindowInsetsCompatExtensionsKt.getDisplayCutoutInsets(windowInsetsCompat, true);
             Insets systemBarInsets = WindowInsetsCompatExtensionsKt.getSystemBarInsets(windowInsetsCompat, true);
             if (Build.VERSION.SDK_INT > 29) {
-                return new SafeAreaEdgeInsets(SizeUtilsKt.getPxToDp(Math.max(displayCutoutInsets.f3394b, systemBarInsets.f3394b)), SizeUtilsKt.getPxToDp(displayCutoutInsets.f3395c), SizeUtilsKt.getPxToDp(Math.max(displayCutoutInsets.f3396d, systemBarInsets.f3396d)), SizeUtilsKt.getPxToDp(displayCutoutInsets.f3393a));
+                return new SafeAreaEdgeInsets(SizeUtilsKt.getPxToDp(Math.max(displayCutoutInsets.f2742b, systemBarInsets.f2742b)), SizeUtilsKt.getPxToDp(displayCutoutInsets.f2743c), SizeUtilsKt.getPxToDp(Math.max(displayCutoutInsets.f2744d, systemBarInsets.f2744d)), SizeUtilsKt.getPxToDp(displayCutoutInsets.f2741a));
             }
-            return new SafeAreaEdgeInsets(SizeUtilsKt.getPxToDp(Math.max(displayCutoutInsets.f3394b, windowInsetsCompat.i())), SizeUtilsKt.getPxToDp(displayCutoutInsets.f3395c), SizeUtilsKt.getPxToDp(Math.max(displayCutoutInsets.f3396d, windowInsetsCompat.h())), SizeUtilsKt.getPxToDp(displayCutoutInsets.f3393a));
+            return new SafeAreaEdgeInsets(SizeUtilsKt.getPxToDp(Math.max(displayCutoutInsets.f2742b, windowInsetsCompat.i())), SizeUtilsKt.getPxToDp(displayCutoutInsets.f2743c), SizeUtilsKt.getPxToDp(Math.max(displayCutoutInsets.f2744d, windowInsetsCompat.h())), SizeUtilsKt.getPxToDp(displayCutoutInsets.f2741a));
         }
     }
 
@@ -149,6 +149,6 @@ public final class SafeAreaEdgeInsets {
     
     public SafeAreaEdgeInsets(EdgeInsets edgeInsets) {
         this(SizeUtilsKt.getPxToDp((int) edgeInsets.d()), SizeUtilsKt.getPxToDp((int) edgeInsets.c()), SizeUtilsKt.getPxToDp((int) edgeInsets.a()), SizeUtilsKt.getPxToDp((int) edgeInsets.b()));
-        q.g(edgeInsets, "edgeInsets");
+        q.h(edgeInsets, "edgeInsets");
     }
 }

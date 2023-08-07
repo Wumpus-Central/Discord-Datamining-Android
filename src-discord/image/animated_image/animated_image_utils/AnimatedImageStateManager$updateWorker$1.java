@@ -19,12 +19,12 @@ public final class AnimatedImageStateManager$updateWorker$1 extends s implements
     @Override 
     public   Unit invoke(AnimatedImageStateManager<?> animatedImageStateManager) {
         invoke2(animatedImageStateManager);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(AnimatedImageStateManager<?> stateManager) {
-        q.g(stateManager, "stateManager");
+        q.h(stateManager, "stateManager");
         stateManager.reload();
     }
 }

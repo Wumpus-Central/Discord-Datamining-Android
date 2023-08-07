@@ -17,7 +17,7 @@ import kotlin.jvm.internal.q;
     }
 
     public final InstallReferrerModule invoke(ReactApplicationContext p02) {
-        q.g(p02, "p0");
+        q.h(p02, "p0");
         return new InstallReferrerModule(p02);
     }
 }

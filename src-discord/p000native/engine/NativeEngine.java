@@ -141,15 +141,15 @@ public final class NativeEngine {
     }
 
     public NativeEngine(Context context, int i10) {
-        q.g(context, "context");
+        q.h(context, "context");
         this.logLevel = i10;
         Context applicationContext = context.getApplicationContext();
-        q.f(applicationContext, "context.applicationContext");
+        q.g(applicationContext, "context.applicationContext");
         CameraEnumeratorProvider.maybeInit(applicationContext);
         Context applicationContext2 = context.getApplicationContext();
-        q.f(applicationContext2, "context.applicationContext");
+        q.g(applicationContext2, "context.applicationContext");
         EglBase.Context eglContext = SharedEglBaseContext.getEglContext();
-        q.f(eglContext, "getEglContext()");
+        q.g(eglContext, "getEglContext()");
         this.nativeInstance = nativeCreateInstance(applicationContext2, eglContext, i10);
     }
 

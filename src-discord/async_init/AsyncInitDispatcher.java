@@ -22,7 +22,7 @@ public final class AsyncInitDispatcher {
     private final AsyncInitThreadChecker threadChecker;
 
     public AsyncInitDispatcher(String name, long j10) {
-        q.g(name, "name");
+        q.h(name, "name");
         this.name = name;
         this.longDispatchThresholdMs = j10;
         this.delayedTasks = new ArrayList();
@@ -61,7 +61,7 @@ public final class AsyncInitDispatcher {
         if ((i10 & 1) != 0) {
             z10 = true;
         }
-        q.g(task, "task");
+        q.h(task, "task");
         if (z10) {
             asyncInitDispatcher.validateState();
         }
@@ -81,7 +81,7 @@ public final class AsyncInitDispatcher {
     }
 
     public final void post(boolean z10, Function0<Unit> task) {
-        q.g(task, "task");
+        q.h(task, "task");
         if (z10) {
             validateState();
         }
@@ -93,8 +93,8 @@ public final class AsyncInitDispatcher {
     }
 
     public final void postOrElse(Function0<Unit> task, Function0<Unit> fallback) {
-        q.g(task, "task");
-        q.g(fallback, "fallback");
+        q.h(task, "task");
+        q.h(fallback, "fallback");
         validateState();
         if (getInitialized()) {
             task.invoke();

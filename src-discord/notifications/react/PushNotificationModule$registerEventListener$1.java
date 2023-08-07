@@ -24,14 +24,14 @@ final class PushNotificationModule$registerEventListener$1 extends s implements 
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String token) {
         ReactEvents reactEvents;
         ReactApplicationContext reactApplicationContext;
-        q.g(token, "token");
+        q.h(token, "token");
         reactEvents = this.this$0.reactEvents;
         reactApplicationContext = this.this$0.reactContext;
         reactEvents.emitModuleEvent(reactApplicationContext, new RegisterEvent(token));

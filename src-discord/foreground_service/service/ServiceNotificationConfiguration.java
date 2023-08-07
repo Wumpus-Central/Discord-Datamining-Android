@@ -25,9 +25,9 @@ public final class ServiceNotificationConfiguration {
         private final String title;
 
         public Action(String tag, String taskName, String str, Map<String, String> data) {
-            q.g(tag, "tag");
-            q.g(taskName, "taskName");
-            q.g(data, "data");
+            q.h(tag, "tag");
+            q.h(taskName, "taskName");
+            q.h(data, "data");
             this.tag = tag;
             this.taskName = taskName;
             this.title = str;
@@ -68,9 +68,9 @@ public final class ServiceNotificationConfiguration {
         }
 
         public final Action copy(String tag, String taskName, String str, Map<String, String> data) {
-            q.g(tag, "tag");
-            q.g(taskName, "taskName");
-            q.g(data, "data");
+            q.h(tag, "tag");
+            q.h(taskName, "taskName");
+            q.h(data, "data");
             return new Action(tag, taskName, str, data);
         }
 
@@ -82,7 +82,7 @@ public final class ServiceNotificationConfiguration {
                 return false;
             }
             Action action = (Action) obj;
-            return q.b(this.tag, action.tag) && q.b(this.taskName, action.taskName) && q.b(this.title, action.title) && q.b(this.data, action.data);
+            return q.c(this.tag, action.tag) && q.c(this.taskName, action.taskName) && q.c(this.title, action.title) && q.c(this.data, action.data);
         }
 
         public final Map<String, String> getData() {
@@ -136,9 +136,9 @@ public final class ServiceNotificationConfiguration {
     }
 
     public ServiceNotificationConfiguration(String title, String str, Priority priority, Action action, List<Action> auxiliaryActions) {
-        q.g(title, "title");
-        q.g(priority, "priority");
-        q.g(auxiliaryActions, "auxiliaryActions");
+        q.h(title, "title");
+        q.h(priority, "priority");
+        q.h(auxiliaryActions, "auxiliaryActions");
         this.title = title;
         this.content = str;
         this.priority = priority;
@@ -187,9 +187,9 @@ public final class ServiceNotificationConfiguration {
     }
 
     public final ServiceNotificationConfiguration copy(String title, String str, Priority priority, Action action, List<Action> auxiliaryActions) {
-        q.g(title, "title");
-        q.g(priority, "priority");
-        q.g(auxiliaryActions, "auxiliaryActions");
+        q.h(title, "title");
+        q.h(priority, "priority");
+        q.h(auxiliaryActions, "auxiliaryActions");
         return new ServiceNotificationConfiguration(title, str, priority, action, auxiliaryActions);
     }
 
@@ -201,7 +201,7 @@ public final class ServiceNotificationConfiguration {
             return false;
         }
         ServiceNotificationConfiguration serviceNotificationConfiguration = (ServiceNotificationConfiguration) obj;
-        return q.b(this.title, serviceNotificationConfiguration.title) && q.b(this.content, serviceNotificationConfiguration.content) && this.priority == serviceNotificationConfiguration.priority && q.b(this.contentAction, serviceNotificationConfiguration.contentAction) && q.b(this.auxiliaryActions, serviceNotificationConfiguration.auxiliaryActions);
+        return q.c(this.title, serviceNotificationConfiguration.title) && q.c(this.content, serviceNotificationConfiguration.content) && this.priority == serviceNotificationConfiguration.priority && q.c(this.contentAction, serviceNotificationConfiguration.contentAction) && q.c(this.auxiliaryActions, serviceNotificationConfiguration.auxiliaryActions);
     }
 
     public final List<Action> getAuxiliaryActions() {

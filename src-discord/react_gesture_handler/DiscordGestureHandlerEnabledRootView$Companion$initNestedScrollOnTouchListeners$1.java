@@ -23,14 +23,14 @@ public final class DiscordGestureHandlerEnabledRootView$Companion$initNestedScro
     @Override 
     public   Unit invoke(View view, Function1<? super MotionEvent, ? extends Unit> function1) {
         invoke2(view, (Function1<? super MotionEvent, Unit>) function1);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(View view, Function1<? super MotionEvent, Unit> callback) {
         Map map;
-        q.g(view, "view");
-        q.g(callback, "callback");
+        q.h(view, "view");
+        q.h(callback, "callback");
         map = DiscordGestureHandlerEnabledRootView.Companion.get$react_gesture_handler_release(view).supplementalMotionEventReceivedCallbacks;
         map.put(callback, Boolean.TRUE);
     }

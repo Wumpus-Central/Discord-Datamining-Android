@@ -15,7 +15,7 @@ public final class KeyboardManager {
     }
 
     public final synchronized void addKeyboardListener(KeyboardEvent listener) {
-        q.g(listener, "listener");
+        q.h(listener, "listener");
         keyboardListeners.add(listener);
     }
 
@@ -26,7 +26,7 @@ public final class KeyboardManager {
     }
 
     public final synchronized void removeKeyboardListener(KeyboardEvent listener) {
-        q.g(listener, "listener");
+        q.h(listener, "listener");
         keyboardListeners.remove(listener);
     }
 }

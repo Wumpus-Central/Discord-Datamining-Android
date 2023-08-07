@@ -22,7 +22,7 @@ public abstract class MessageBundleBaseDelegate extends AdapterDelegate<List<? e
 
     
     public MessageBundleBaseDelegate(Function3<? super View, ? super Integer, ? super Integer, Unit> onMeasured) {
-        q.g(onMeasured, "onMeasured");
+        q.h(onMeasured, "onMeasured");
         this.onMeasured = onMeasured;
     }
 
@@ -38,18 +38,18 @@ public abstract class MessageBundleBaseDelegate extends AdapterDelegate<List<? e
     
     @Override 
     public void onViewRecycled(RecyclerView.ViewHolder holder) {
-        q.g(holder, "holder");
+        q.h(holder, "holder");
         super.onViewRecycled(holder);
         holder.itemView.setId(-1);
     }
 
     
     protected void onBindViewHolder2(List<? extends MessageBundleItem> items, int i10, RecyclerView.ViewHolder holder, List<Object> payloads) {
-        q.g(items, "items");
-        q.g(holder, "holder");
-        q.g(payloads, "payloads");
+        q.h(items, "items");
+        q.h(holder, "holder");
+        q.h(payloads, "payloads");
         View view = holder.itemView;
-        q.f(view, "holder.itemView");
+        q.g(view, "holder.itemView");
         if (!(view instanceof ViewMeasuringWrapper)) {
             view = null;
         }
@@ -66,9 +66,9 @@ public abstract class MessageBundleBaseDelegate extends AdapterDelegate<List<? e
     
     @Override 
     public ChatListItemViewHolder<ViewMeasuringWrapper<View>> onCreateViewHolder(ViewGroup parent) {
-        q.g(parent, "parent");
+        q.h(parent, "parent");
         Context context = parent.getContext();
-        q.f(context, "parent.context");
+        q.g(context, "parent.context");
         View createView = createView(context);
         createView.setLayoutParams(new ViewGroup.LayoutParams(-1, -2));
         ViewMeasuringWrapper viewMeasuringWrapper = new ViewMeasuringWrapper(createView, this.onMeasured);

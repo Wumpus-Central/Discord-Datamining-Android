@@ -7,8 +7,8 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
-import gf.v;
 import java.util.Map;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
@@ -18,7 +18,7 @@ public final class PushNotificationCategoryModule extends ReactContextBaseJavaMo
     
     public PushNotificationCategoryModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @Override 
@@ -29,10 +29,10 @@ public final class PushNotificationCategoryModule extends ReactContextBaseJavaMo
     @ReactMethod
     public final void registerNotificationCategories(ReadableMap localizedCategoryNames) {
         Map<String, String> h10;
-        q.g(localizedCategoryNames, "localizedCategoryNames");
+        q.h(localizedCategoryNames, "localizedCategoryNames");
         NotificationClient instance = NotificationClient.Companion.getInstance();
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         Map<String, String> stringMap = NativeMapExtensionsKt.toStringMap(localizedCategoryNames);
         h10 = v.h();
         instance.initNotificationCategories(reactApplicationContext, stringMap, h10);
@@ -40,19 +40,19 @@ public final class PushNotificationCategoryModule extends ReactContextBaseJavaMo
 
     @ReactMethod
     public final void registerNotificationCategoriesAndGroups(ReadableMap localizedCategoryNames, ReadableMap localizedGroupNames) {
-        q.g(localizedCategoryNames, "localizedCategoryNames");
-        q.g(localizedGroupNames, "localizedGroupNames");
+        q.h(localizedCategoryNames, "localizedCategoryNames");
+        q.h(localizedGroupNames, "localizedGroupNames");
         NotificationClient instance = NotificationClient.Companion.getInstance();
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         instance.initNotificationCategories(reactApplicationContext, NativeMapExtensionsKt.toStringMap(localizedCategoryNames), NativeMapExtensionsKt.toStringMap(localizedGroupNames));
     }
 
     @ReactMethod
     public final void registerNotificationReplyCategories(String title, String buttonTitle, String inputPlaceholder, Callback callback) {
-        q.g(title, "title");
-        q.g(buttonTitle, "buttonTitle");
-        q.g(inputPlaceholder, "inputPlaceholder");
-        q.g(callback, "callback");
+        q.h(title, "title");
+        q.h(buttonTitle, "buttonTitle");
+        q.h(inputPlaceholder, "inputPlaceholder");
+        q.h(callback, "callback");
     }
 }

@@ -20,11 +20,11 @@ public final class ForumPostActionBarView$setReactions$1 extends s implements Fu
     @Override 
     public   Unit invoke(ReactionView.Reaction reaction) {
         invoke2(reaction);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(ReactionView.Reaction it) {
-        q.g(it, "it");
+        q.h(it, "it");
     }
 }

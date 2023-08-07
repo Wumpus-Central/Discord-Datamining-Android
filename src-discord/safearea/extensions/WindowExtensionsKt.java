@@ -8,7 +8,7 @@ import kotlin.jvm.internal.q;
 
 public final class WindowExtensionsKt {
     public static final void setSystemUITransparent(Window window) {
-        q.g(window, "<this>");
+        q.h(window, "<this>");
         window.setStatusBarColor(0);
         window.setNavigationBarColor(0);
     }

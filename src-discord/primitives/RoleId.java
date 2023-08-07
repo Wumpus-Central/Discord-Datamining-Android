@@ -8,7 +8,7 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import kotlinx.serialization.KSerializer;
-import pi.f;
+import ti.f;
 
 @f
 @Metadata(d1 = {"\u0000B\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\b\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0087@\u0018\u0000 $2\u00020\u0001:\u0002#$B\u0016\u0012\n\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004ø\u0001\u0000¢\u0006\u0004\b\u0005\u0010\u0006J\u0010\u0010\t\u001a\u00020\nHÖ\u0001¢\u0006\u0004\b\u000b\u0010\fJ\u001a\u0010\r\u001a\u00020\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010HÖ\u0003¢\u0006\u0004\b\u0011\u0010\u0012J\u0010\u0010\u0013\u001a\u00020\nHÖ\u0001¢\u0006\u0004\b\u0014\u0010\fJ\u000f\u0010\u0015\u001a\u00020\u000eH\u0016¢\u0006\u0004\b\u0016\u0010\u0017J\u000f\u0010\u0018\u001a\u00020\u0019H\u0016¢\u0006\u0004\b\u001a\u0010\u001bJ \u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\nHÖ\u0001¢\u0006\u0004\b!\u0010\"R\u0018\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\b\u0088\u0001\u0002ø\u0001\u0000\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006%"}, d2 = {"Lcom/discord/primitives/RoleId;", "Lcom/discord/snowflake/SnowflakePrimitive;", "snowflake", "", "Lcom/discord/snowflake/Snowflake;", "constructor-impl", "(J)J", "getSnowflake", "()J", "describeContents", "", "describeContents-impl", "(J)I", "equals", "", "other", "", "equals-impl", "(JLjava/lang/Object;)Z", "hashCode", "hashCode-impl", "isValid", "isValid-impl", "(J)Z", "toString", "", "toString-impl", "(J)Ljava/lang/String;", "writeToParcel", "", "parcel", "Landroid/os/Parcel;", "flags", "writeToParcel-impl", "(JLandroid/os/Parcel;I)V", "$serializer", "Companion", "primitives_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -38,13 +38,13 @@ public final class RoleId implements SnowflakePrimitive {
     public static final class Creator implements Parcelable.Creator<RoleId> {
         @Override 
         public   RoleId createFromParcel(Parcel parcel) {
-            return RoleId.m604boximpl(m616createFromParcelK4NZIAs(parcel));
+            return RoleId.m605boximpl(m617createFromParcelK4NZIAs(parcel));
         }
 
         
-        public final long m616createFromParcelK4NZIAs(Parcel parcel) {
-            q.g(parcel, "parcel");
-            return RoleId.m605constructorimpl(parcel.readLong());
+        public final long m617createFromParcelK4NZIAs(Parcel parcel) {
+            q.h(parcel, "parcel");
+            return RoleId.m606constructorimpl(parcel.readLong());
         }
 
         
@@ -59,58 +59,58 @@ public final class RoleId implements SnowflakePrimitive {
     }
 
     
-    public static final  RoleId m604boximpl(long j10) {
+    public static final  RoleId m605boximpl(long j10) {
         return new RoleId(j10);
     }
 
     
-    public static long m605constructorimpl(long j10) {
+    public static long m606constructorimpl(long j10) {
         return j10;
     }
 
     
-    public static int m606describeContentsimpl(long j10) {
+    public static int m607describeContentsimpl(long j10) {
         return 0;
     }
 
     
-    public static boolean m607equalsimpl(long j10, Object obj) {
-        return (obj instanceof RoleId) && j10 == ((RoleId) obj).m613unboximpl();
+    public static boolean m608equalsimpl(long j10, Object obj) {
+        return (obj instanceof RoleId) && j10 == ((RoleId) obj).m614unboximpl();
     }
 
     
-    public static final boolean m608equalsimpl0(long j10, long j11) {
+    public static final boolean m609equalsimpl0(long j10, long j11) {
         return j10 == j11;
     }
 
     
-    public static int m609hashCodeimpl(long j10) {
+    public static int m610hashCodeimpl(long j10) {
         return b.a(j10);
     }
 
     
-    public static boolean m610isValidimpl(long j10) {
+    public static boolean m611isValidimpl(long j10) {
         return j10 > 0;
     }
 
     
-    public static String m611toStringimpl(long j10) {
+    public static String m612toStringimpl(long j10) {
         return String.valueOf(j10);
     }
 
     
-    public static void m612writeToParcelimpl(long j10, Parcel out, int i10) {
-        q.g(out, "out");
+    public static void m613writeToParcelimpl(long j10, Parcel out, int i10) {
+        q.h(out, "out");
         out.writeLong(j10);
     }
 
     @Override 
     public int describeContents() {
-        return m606describeContentsimpl(this.snowflake);
+        return m607describeContentsimpl(this.snowflake);
     }
 
     public boolean equals(Object obj) {
-        return m607equalsimpl(this.snowflake, obj);
+        return m608equalsimpl(this.snowflake, obj);
     }
 
     @Override 
@@ -119,26 +119,26 @@ public final class RoleId implements SnowflakePrimitive {
     }
 
     public int hashCode() {
-        return m609hashCodeimpl(this.snowflake);
+        return m610hashCodeimpl(this.snowflake);
     }
 
     @Override 
     public boolean isValid() {
-        return m610isValidimpl(this.snowflake);
+        return m611isValidimpl(this.snowflake);
     }
 
     public String toString() {
-        return m611toStringimpl(this.snowflake);
+        return m612toStringimpl(this.snowflake);
     }
 
     
-    public final  long m613unboximpl() {
+    public final  long m614unboximpl() {
         return this.snowflake;
     }
 
     @Override 
     public void writeToParcel(Parcel out, int i10) {
-        q.g(out, "out");
-        m612writeToParcelimpl(this.snowflake, out, i10);
+        q.h(out, "out");
+        m613writeToParcelimpl(this.snowflake, out, i10);
     }
 }

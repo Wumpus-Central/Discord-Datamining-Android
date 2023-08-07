@@ -24,7 +24,7 @@ public final class TextUtilsKt$toSpannable$12$click$4 extends s implements Funct
     }
 
     public final Boolean invoke(View it) {
-        q.g(it, "it");
+        q.h(it, "it");
         this.$rc.getOnLongPressChannel().invoke(((ChannelMentionContentNode) this.$contentNode).getChannelId(), ((ChannelMentionContentNode) this.$contentNode).getGuildId(), ((ChannelMentionContentNode) this.$contentNode).getMessageId(), ((ChannelMentionContentNode) this.$contentNode).getOriginalLink());
         return Boolean.TRUE;
     }

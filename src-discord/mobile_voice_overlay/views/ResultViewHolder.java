@@ -32,15 +32,15 @@ public final class ResultViewHolder extends RecyclerView.ViewHolder {
 
     
     public static final void _init_$lambda$1(ResultViewHolder this$0, View view) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         MobileVoiceOverlaySelectorResult mobileVoiceOverlaySelectorResult = this$0.result;
         if (mobileVoiceOverlaySelectorResult != null) {
-            this$0.onChannelSelected.invoke(ChannelId.m566boximpl(mobileVoiceOverlaySelectorResult.m485getChannelIdo4g7jtM()));
+            this$0.onChannelSelected.invoke(ChannelId.m567boximpl(mobileVoiceOverlaySelectorResult.m486getChannelIdo4g7jtM()));
         }
     }
 
     public final void bind(MobileVoiceOverlaySelectorResult result) {
-        q.g(result, "result");
+        q.h(result, "result");
         this.result = result;
         this.binding.channelName.setText(result.getChannelName());
         this.binding.categoryName.setText(result.getCategoryName());
@@ -59,9 +59,9 @@ public final class ResultViewHolder extends RecyclerView.ViewHolder {
     
     public ResultViewHolder(ViewGroup parent, Function1<? super ChannelId, Unit> onChannelSelected, OverlayVoiceChannelSearchResultBinding binding) {
         super(binding.getRoot());
-        q.g(parent, "parent");
-        q.g(onChannelSelected, "onChannelSelected");
-        q.g(binding, "binding");
+        q.h(parent, "parent");
+        q.h(onChannelSelected, "onChannelSelected");
+        q.h(binding, "binding");
         this.onChannelSelected = onChannelSelected;
         this.binding = binding;
         binding.container.setOnClickListener(new View.OnClickListener() { 
@@ -71,16 +71,16 @@ public final class ResultViewHolder extends RecyclerView.ViewHolder {
             }
         });
         TextView _init_$lambda$2 = binding.channelName;
-        q.f(_init_$lambda$2, "_init_$lambda$2");
+        q.g(_init_$lambda$2, "_init_$lambda$2");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$2, DiscordFont.PrimarySemibold);
         _init_$lambda$2.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
         TextView _init_$lambda$3 = binding.categoryName;
-        q.f(_init_$lambda$3, "_init_$lambda$3");
+        q.g(_init_$lambda$3, "_init_$lambda$3");
         DiscordFont discordFont = DiscordFont.PrimaryMedium;
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$3, discordFont);
         _init_$lambda$3.setTextColor(ThemeManagerKt.getTheme().getHeaderSecondary());
         TextView _init_$lambda$4 = binding.guildName;
-        q.f(_init_$lambda$4, "_init_$lambda$4");
+        q.g(_init_$lambda$4, "_init_$lambda$4");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$4, discordFont);
         _init_$lambda$4.setTextColor(ThemeManagerKt.getTheme().getHeaderSecondary());
     }

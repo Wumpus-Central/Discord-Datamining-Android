@@ -9,6 +9,8 @@ import e5.a;
 
 
 public abstract class NativeKeyboardManagerSpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
+    public static final String NAME = "RTNKeyboardManager";
+
     public NativeKeyboardManagerSpec(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);
     }
@@ -20,6 +22,11 @@ public abstract class NativeKeyboardManagerSpec extends ReactContextBaseJavaModu
     @ReactMethod
     @a
     public abstract void dismissGlobalKeyboard();
+
+    @Override 
+    public String getName() {
+        return "RTNKeyboardManager";
+    }
 
     @ReactMethod
     @a

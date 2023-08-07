@@ -53,12 +53,28 @@ public final class PortalViewContextManager {
     private PortalViewContextManager() {
     }
 
+    public static  void addPortal$default(PortalViewContextManager portalViewContextManager, double d10, View view, Function1 function1, Function1 function12, Function1 function13, Function1 function14, int i10, Object obj) {
+        PortalViewContextManager$addPortal$1 portalViewContextManager$addPortal$1;
+        PortalViewContextManager$addPortal$2 portalViewContextManager$addPortal$2;
+        if ((i10 & 8) != 0) {
+            portalViewContextManager$addPortal$1 = PortalViewContextManager$addPortal$1.INSTANCE;
+        } else {
+            portalViewContextManager$addPortal$1 = function12;
+        }
+        if ((i10 & 16) != 0) {
+            portalViewContextManager$addPortal$2 = PortalViewContextManager$addPortal$2.INSTANCE;
+        } else {
+            portalViewContextManager$addPortal$2 = function13;
+        }
+        portalViewContextManager.addPortal(d10, view, function1, portalViewContextManager$addPortal$1, portalViewContextManager$addPortal$2, function14);
+    }
+
     public final void addPortal(double d10, View view, Function1<? super View, Unit> removeViewFromParent, Function1<? super View, Unit> onViewAddedToPortal, Function1<? super View, Unit> onViewRemovedFromPortal, Function1<? super View, Unit> returnViewToParent) {
-        kotlin.jvm.internal.q.g(view, "view");
-        kotlin.jvm.internal.q.g(removeViewFromParent, "removeViewFromParent");
-        kotlin.jvm.internal.q.g(onViewAddedToPortal, "onViewAddedToPortal");
-        kotlin.jvm.internal.q.g(onViewRemovedFromPortal, "onViewRemovedFromPortal");
-        kotlin.jvm.internal.q.g(returnViewToParent, "returnViewToParent");
+        kotlin.jvm.internal.q.h(view, "view");
+        kotlin.jvm.internal.q.h(removeViewFromParent, "removeViewFromParent");
+        kotlin.jvm.internal.q.h(onViewAddedToPortal, "onViewAddedToPortal");
+        kotlin.jvm.internal.q.h(onViewRemovedFromPortal, "onViewRemovedFromPortal");
+        kotlin.jvm.internal.q.h(returnViewToParent, "returnViewToParent");
         if (portalContextMap.get(Double.valueOf(d10)) == null) {
             portalContextMap.put(Double.valueOf(d10), new PortalViewContext(new WeakReference(view), removeViewFromParent, onViewAddedToPortal, onViewRemovedFromPortal, returnViewToParent));
         }
@@ -81,10 +97,10 @@ public final class PortalViewContextManager {
 
     public final void registerView(double d10, FrameLayout portalView) {
         View view;
-        kotlin.jvm.internal.q.g(portalView, "portalView");
+        kotlin.jvm.internal.q.h(portalView, "portalView");
         PortalViewContext portalViewContext = portalContextMap.get(Double.valueOf(d10));
         if (portalViewContext != null && (view = portalViewContext.getView().get()) != null) {
-            kotlin.jvm.internal.q.f(view, "context.view.get() ?: return@let");
+            kotlin.jvm.internal.q.g(view, "context.view.get() ?: return@let");
             portalViewContext.getRemoveViewFromParent().invoke(view);
             portalView.addView(view);
             ViewMeasureExtensionsKt.measureAndLayout(portalView);
@@ -99,7 +115,7 @@ public final class PortalViewContextManager {
             _portalContextIdsFlow.setValue(null);
             View view = remove.getView().get();
             if (view != null) {
-                kotlin.jvm.internal.q.f(view, "context.view.get() ?: return");
+                kotlin.jvm.internal.q.g(view, "context.view.get() ?: return");
                 PortalViewContextUtilsKt.removeFromParent(view);
                 remove.getOnViewRemovedFromPortal().invoke(view);
                 remove.getReturnViewToParent().invoke(view);

@@ -39,9 +39,9 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
     
     public OverlayVoiceBubble(Context context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
         OverlayVoiceBubbleBinding inflate = OverlayVoiceBubbleBinding.inflate(LayoutInflater.from(getContext()), this, true);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this, true)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this, true)");
         this.binding = inflate;
     }
 
@@ -55,12 +55,12 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
 
     public final void configureUI(MobileVoiceOverlayDataUser user) {
         String str;
-        q.g(user, "user");
+        q.h(user, "user");
         SimpleDraweeView simpleDraweeView = this.binding.overlayBubbleIv;
         IconUrlUtils iconUrlUtils = IconUrlUtils.INSTANCE;
         Context context = getContext();
-        q.f(context, "context");
-        str = iconUrlUtils.m467getForUser_fRzTXg(context, UserId.m630boximpl(user.m480getUserIdre6GcUE()), user.getAvatar(), (r16 & 8) != 0 ? null : Integer.valueOf(user.getDiscriminator()), (r16 & 16) != 0 ? false : false, (r16 & 32) != 0 ? null : null);
+        q.g(context, "context");
+        str = iconUrlUtils.m468getForUser_fRzTXg(context, UserId.m631boximpl(user.m481getUserIdre6GcUE()), user.getAvatar(), (r16 & 8) != 0 ? null : Integer.valueOf(user.getDiscriminator()), (r16 & 16) != 0 ? false : false, (r16 & 32) != 0 ? null : null);
         simpleDraweeView.setImageURI(str);
         if (user.getSpeaking()) {
             fadeActive();
@@ -71,7 +71,7 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
 
     public final SimpleDraweeView getImageView$mobile_voice_overlay_release() {
         SimpleDraweeView simpleDraweeView = this.binding.overlayBubbleIv;
-        q.f(simpleDraweeView, "binding.overlayBubbleIv");
+        q.g(simpleDraweeView, "binding.overlayBubbleIv");
         return simpleDraweeView;
     }
 
@@ -81,7 +81,7 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
         int i10;
         int i11 = getWindowLayoutParams().x;
         Context context = getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         if (i11 > getAllowedAreaBounds(context).centerX()) {
             i10 = ViewDefaults.NUMBER_OF_LINES;
         } else {
@@ -96,7 +96,7 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
     @Override 
     public void setData(MobileVoiceOverlayData data) {
         Object U;
-        q.g(data, "data");
+        q.h(data, "data");
         U = r.U(data.getUsers());
         MobileVoiceOverlayDataUser mobileVoiceOverlayDataUser = (MobileVoiceOverlayDataUser) U;
         if (mobileVoiceOverlayDataUser != null) {
@@ -107,18 +107,18 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
     
     public OverlayVoiceBubble(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         OverlayVoiceBubbleBinding inflate = OverlayVoiceBubbleBinding.inflate(LayoutInflater.from(getContext()), this, true);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this, true)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this, true)");
         this.binding = inflate;
     }
 
     
     public OverlayVoiceBubble(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         OverlayVoiceBubbleBinding inflate = OverlayVoiceBubbleBinding.inflate(LayoutInflater.from(getContext()), this, true);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this, true)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this, true)");
         this.binding = inflate;
     }
 }

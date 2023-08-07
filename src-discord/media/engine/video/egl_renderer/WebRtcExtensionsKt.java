@@ -8,7 +8,7 @@ import org.webrtc.VideoFrame;
 
 public final class WebRtcExtensionsKt {
     public static final float getRotatedAspectRatio(VideoFrame videoFrame) {
-        q.g(videoFrame, "<this>");
+        q.h(videoFrame, "<this>");
         return videoFrame.getRotatedWidth() / videoFrame.getRotatedHeight();
     }
 }

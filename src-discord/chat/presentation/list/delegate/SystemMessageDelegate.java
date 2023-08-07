@@ -23,15 +23,15 @@ public final class SystemMessageDelegate extends BaseChatListItemDelegate<System
     
     public SystemMessageDelegate(Function0<? extends ChatEventHandler> eventHandlerProvider, RecyclerView.RecycledViewPool messageAccessoriesRecycledViewPool) {
         super(eventHandlerProvider, null, 2, null);
-        q.g(eventHandlerProvider, "eventHandlerProvider");
-        q.g(messageAccessoriesRecycledViewPool, "messageAccessoriesRecycledViewPool");
+        q.h(eventHandlerProvider, "eventHandlerProvider");
+        q.h(messageAccessoriesRecycledViewPool, "messageAccessoriesRecycledViewPool");
         this.messageAccessoriesRecycledViewPool = messageAccessoriesRecycledViewPool;
     }
 
     public final SystemMessageView createAndBindStandaloneView(ViewGroup parent, Message message, MessageContext messageContext) {
-        q.g(parent, "parent");
-        q.g(message, "message");
-        q.g(messageContext, "messageContext");
+        q.h(parent, "parent");
+        q.h(message, "message");
+        q.h(messageContext, "messageContext");
         SystemMessageView createView = createView(parent);
         SystemMessageItem systemMessageItem = new SystemMessageItem(message, messageContext, null, 4, null);
         createView.setMessage(systemMessageItem.getMessage(), systemMessageItem.getMessageContext(), getEventHandler());
@@ -40,22 +40,22 @@ public final class SystemMessageDelegate extends BaseChatListItemDelegate<System
 
     @Override 
     public boolean isForItem(ChatListItem item, int i10) {
-        q.g(item, "item");
+        q.h(item, "item");
         return item instanceof SystemMessageItem;
     }
 
     public void bindView(SystemMessageView view, SystemMessageItem item, BaseChatListItemDelegate.Metadata<SystemMessageView> metadata) {
-        q.g(view, "view");
-        q.g(item, "item");
-        q.g(metadata, "metadata");
+        q.h(view, "view");
+        q.h(item, "item");
+        q.h(metadata, "metadata");
         view.setMessage(item.getMessage(), item.getMessageContext(), getEventHandler());
     }
 
     @Override 
     public SystemMessageView createView(ViewGroup parent) {
-        q.g(parent, "parent");
+        q.h(parent, "parent");
         Context context = parent.getContext();
-        q.f(context, "parent.context");
+        q.g(context, "parent.context");
         SystemMessageView systemMessageView = new SystemMessageView(context, null, 2, null);
         systemMessageView.setAccessoriesRecycledViewPool(this.messageAccessoriesRecycledViewPool);
         return systemMessageView;

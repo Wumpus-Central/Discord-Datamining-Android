@@ -1,6 +1,8 @@
 package com.discord.crash_reporting.system_logs;
 
 import android.content.Context;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import com.discord.crash_reporting.system_logs.HistoricalProcessExitReason;
@@ -35,9 +37,15 @@ public final class DebugPrintableCollection {
         }
 
         public final String libdiscordVersion(Context context) {
+            ApplicationInfo applicationInfo;
             String string;
-            q.g(context, "context");
-            Bundle bundle = context.getPackageManager().getApplicationInfo(context.getPackageName(), 128).metaData;
+            q.h(context, "context");
+            if (Build.VERSION.SDK_INT >= 33) {
+                applicationInfo = context.getPackageManager().getApplicationInfo(context.getPackageName(), PackageManager.ApplicationInfoFlags.of(128L));
+            } else {
+                applicationInfo = context.getPackageManager().getApplicationInfo(context.getPackageName(), 128);
+            }
+            Bundle bundle = applicationInfo.metaData;
             if (bundle == null || (string = bundle.getString("libdiscord_version")) == null) {
                 return "Unknown libdiscord version";
             }
@@ -53,7 +61,7 @@ public final class DebugPrintableCollection {
         private final String tag;
 
         public DebugPrintableRef(String str, WeakReference<DebugPrintable> reference) {
-            q.g(reference, "reference");
+            q.h(reference, "reference");
             this.tag = str;
             this.reference = reference;
         }
@@ -78,7 +86,7 @@ public final class DebugPrintableCollection {
         }
 
         public final DebugPrintableRef copy(String str, WeakReference<DebugPrintable> reference) {
-            q.g(reference, "reference");
+            q.h(reference, "reference");
             return new DebugPrintableRef(str, reference);
         }
 
@@ -90,7 +98,7 @@ public final class DebugPrintableCollection {
                 return false;
             }
             DebugPrintableRef debugPrintableRef = (DebugPrintableRef) obj;
-            return q.b(this.tag, debugPrintableRef.tag) && q.b(this.reference, debugPrintableRef.reference);
+            return q.c(this.tag, debugPrintableRef.tag) && q.c(this.reference, debugPrintableRef.reference);
         }
 
         public final WeakReference<DebugPrintable> getReference() {
@@ -169,8 +177,8 @@ public final class DebugPrintableCollection {
     }
 
     public final void debugPrint(Context context, StringBuilder sb2) {
-        q.g(context, "context");
-        q.g(sb2, "sb");
+        q.h(context, "context");
+        q.h(sb2, "sb");
         DebugPrintBuilder debugPrintBuilder = new DebugPrintBuilder(sb2);
         synchronized (this.sync) {
             addSystemEntry(context, debugPrintBuilder);
@@ -184,23 +192,23 @@ public final class DebugPrintableCollection {
                 DebugPrintableRef value = next.getValue();
                 DebugPrintable debugPrintable = value.getReference().get();
                 if (debugPrintable != null) {
-                    q.f(debugPrintable, "printableRef.reference.get() ?: continue");
+                    q.g(debugPrintable, "printableRef.reference.get() ?: continue");
                     sb2.append(longValue);
                     if (value.getTag() != null) {
                         sb2.append(' ');
                         sb2.append(value.getTag());
                     }
                     sb2.append(":");
-                    q.f(sb2, "append(value)");
+                    q.g(sb2, "append(value)");
                     sb2.append('\n');
-                    q.f(sb2, "append('\\n')");
+                    q.g(sb2, "append('\\n')");
                     try {
                         debugPrintable.debugPrint(debugPrintBuilder);
                     } catch (Exception e10) {
                         sb2.append("Exception: " + e10);
                     }
                     sb2.append('\n');
-                    q.f(sb2, "append('\\n')");
+                    q.g(sb2, "append('\\n')");
                     if (sb2.length() > maxDebugPrintableStringLength) {
                         sb2.delete(maxDebugPrintableStringLength, sb2.length() - 1);
                         sb2.append(" {truncated}");
@@ -208,7 +216,7 @@ public final class DebugPrintableCollection {
                     }
                 }
             }
-            Unit unit = Unit.f20679a;
+            Unit unit = Unit.f21025a;
         }
     }
 }

@@ -26,18 +26,18 @@ public final class ParseSpec<R, S> {
         }
 
         public final <R, S> ParseSpec<R, S> createNonterminal(Node<R> node, S s10, int i10, int i11) {
-            q.g(node, "node");
+            q.h(node, "node");
             return new ParseSpec<>(node, s10, i10, i11);
         }
 
         public final <R, S> ParseSpec<R, S> createTerminal(Node<R> node, S s10) {
-            q.g(node, "node");
+            q.h(node, "node");
             return new ParseSpec<>(node, s10);
         }
     }
 
     public ParseSpec(Node<R> root, S s10, int i10, int i11) {
-        q.g(root, "root");
+        q.h(root, "root");
         this.root = root;
         this.state = s10;
         this.startIndex = i10;
@@ -86,7 +86,7 @@ public final class ParseSpec<R, S> {
     }
 
     public ParseSpec(Node<R> root, S s10) {
-        q.g(root, "root");
+        q.h(root, "root");
         this.root = root;
         this.state = s10;
     }

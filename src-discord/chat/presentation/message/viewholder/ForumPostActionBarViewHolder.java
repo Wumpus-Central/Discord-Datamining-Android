@@ -22,21 +22,21 @@ public final class ForumPostActionBarViewHolder extends MessagePartViewHolder {
     
     public ForumPostActionBarViewHolder(ForumPostActionBarView forumPostActionBarView) {
         super(forumPostActionBarView, null);
-        q.g(forumPostActionBarView, "forumPostActionBarView");
+        q.h(forumPostActionBarView, "forumPostActionBarView");
         this.forumPostActionBarView = forumPostActionBarView;
     }
 
     public final void bind(ForumPostActionBar forumPostActionBar, ReactionsTheme reactionsTheme, View.OnClickListener onTapFollowForumPost, View.OnClickListener onTapShareForumPost, View.OnClickListener onAddReactionClick, View.OnClickListener onTapReactionOverflow, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, View.OnClickListener onTapDismissMediaPostSharePrompt, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
-        q.g(forumPostActionBar, "forumPostActionBar");
-        q.g(onTapFollowForumPost, "onTapFollowForumPost");
-        q.g(onTapShareForumPost, "onTapShareForumPost");
-        q.g(onAddReactionClick, "onAddReactionClick");
-        q.g(onTapReactionOverflow, "onTapReactionOverflow");
-        q.g(onReactionClick, "onReactionClick");
-        q.g(onReactionLongPress, "onReactionLongPress");
-        q.g(onTapDismissMediaPostSharePrompt, "onTapDismissMediaPostSharePrompt");
-        q.g(onLinkClicked, "onLinkClicked");
+        q.h(forumPostActionBar, "forumPostActionBar");
+        q.h(onTapFollowForumPost, "onTapFollowForumPost");
+        q.h(onTapShareForumPost, "onTapShareForumPost");
+        q.h(onAddReactionClick, "onAddReactionClick");
+        q.h(onTapReactionOverflow, "onTapReactionOverflow");
+        q.h(onReactionClick, "onReactionClick");
+        q.h(onReactionLongPress, "onReactionLongPress");
+        q.h(onTapDismissMediaPostSharePrompt, "onTapDismissMediaPostSharePrompt");
+        q.h(onLinkClicked, "onLinkClicked");
         ForumPostActions postActions = forumPostActionBar.getPostActions();
-        this.forumPostActionBarView.m312configureCgeVRR0(forumPostActionBar.mo217getMessageId3Eiw7ao(), postActions.getNumDisplayedReactions(), postActions.isFollowing(), postActions.getFollowIcon(), postActions.getFollowLabel(), postActions.getShareIcon(), postActions.getShareLabel(), forumPostActionBar.getReactions(), postActions.getDefaultReaction(), forumPostActionBar.getCanAddNewReactions(), forumPostActionBar.getAddNewReactionAccessibilityLabel(), reactionsTheme, onAddReactionClick, onReactionClick, onReactionLongPress, onTapFollowForumPost, onTapShareForumPost, onTapReactionOverflow, postActions.getSharePrompt(), onTapDismissMediaPostSharePrompt, onLinkClicked);
+        this.forumPostActionBarView.m313configureCgeVRR0(forumPostActionBar.mo218getMessageId3Eiw7ao(), postActions.getNumDisplayedReactions(), postActions.isFollowing(), postActions.getFollowIcon(), postActions.getFollowLabel(), postActions.getShareIcon(), postActions.getShareLabel(), forumPostActionBar.getReactions(), postActions.getDefaultReaction(), forumPostActionBar.getCanAddNewReactions(), forumPostActionBar.getAddNewReactionAccessibilityLabel(), reactionsTheme, onAddReactionClick, onReactionClick, onReactionLongPress, onTapFollowForumPost, onTapShareForumPost, onTapReactionOverflow, postActions.getSharePrompt(), onTapDismissMediaPostSharePrompt, onLinkClicked);
     }
 }

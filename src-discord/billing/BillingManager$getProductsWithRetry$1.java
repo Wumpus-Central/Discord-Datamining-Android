@@ -14,11 +14,10 @@ import com.discord.misc.utilities.backoff.MaxAttemptsExceededException;
 import com.discord.react.utilities.NativeArrayExtensionsKt;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReadableNativeArray;
-import ff.s;
-import ff.t;
 import java.util.List;
 import java.util.concurrent.CancellationException;
-import kf.g;
+import jf.s;
+import jf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -29,8 +28,9 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
-import lf.c;
-import lf.d;
+import of.g;
+import pf.c;
+import pf.d;
 
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -73,7 +73,7 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
         }
 
         public final Object invoke(Continuation<? super BillingManager.ProductDetailsResponse> continuation) {
-            return ((AnonymousClass1) create(continuation)).invokeSuspend(Unit.f20679a);
+            return ((AnonymousClass1) create(continuation)).invokeSuspend(Unit.f21025a);
         }
 
         @Override 
@@ -97,15 +97,15 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
                 final g gVar = new g(c10);
                 billingClient = billingManager.billingClient;
                 if (billingClient == null) {
-                    q.y("billingClient");
+                    q.z("billingClient");
                     billingClient = null;
                 }
                 billingClient.g(QueryProductDetailsParams.INSTANCE.create(ProductType.valueOf(skuType.name()), list), new t1.d() { 
                     @Override 
                     public final void onProductDetailsResponse(BillingResult billingResult, List<ProductDetails> productDetails) {
                         boolean z10;
-                        q.g(billingResult, "billingResult");
-                        q.g(productDetails, "productDetails");
+                        q.h(billingResult, "billingResult");
+                        q.h(productDetails, "productDetails");
                         z10 = BillingManager.this.isProdBuild;
                         if (!z10) {
                             CrashReporting crashReporting = CrashReporting.INSTANCE;
@@ -113,7 +113,7 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
                             CrashReporting.addBreadcrumb$default(crashReporting, "Resuming getProductsBackoff with " + a10, null, null, 6, null);
                         }
                         Continuation<BillingManager.ProductDetailsResponse> continuation = gVar;
-                        s.a aVar = s.f14787l;
+                        s.a aVar = s.f20093l;
                         continuation.resumeWith(s.b(new BillingManager.ProductDetailsResponse(billingResult, productDetails)));
                     }
                 });
@@ -161,7 +161,7 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
         }
 
         public final Object invoke(BillingManager.ProductDetailsResponse productDetailsResponse, Continuation<? super Boolean> continuation) {
-            return ((AnonymousClass2) create(productDetailsResponse, continuation)).invokeSuspend(Unit.f20679a);
+            return ((AnonymousClass2) create(productDetailsResponse, continuation)).invokeSuspend(Unit.f21025a);
         }
 
         @Override 
@@ -196,7 +196,7 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((BillingManager$getProductsWithRetry$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20679a);
+        return ((BillingManager$getProductsWithRetry$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
     }
 
     @Override 
@@ -262,6 +262,6 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
                 throw e11;
             }
         }
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 }

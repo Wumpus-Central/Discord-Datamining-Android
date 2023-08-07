@@ -27,12 +27,12 @@ public final class TextUtilsKt$toSpannable$12$click$6 extends s implements Funct
     @Override 
     public   Unit invoke(View view) {
         invoke2(view);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(View it) {
-        q.g(it, "it");
-        this.$rc.getOnTapChannel().invoke(((StaticChannelMentionContentNode) this.$contentNode).getChannelId().getChannelId(), String.valueOf(((StaticChannelMentionContentNode) this.$contentNode).m85getGuildIdqOKuAAo()), null);
+        q.h(it, "it");
+        this.$rc.getOnTapChannel().invoke(((StaticChannelMentionContentNode) this.$contentNode).getChannelId().getChannelId(), String.valueOf(((StaticChannelMentionContentNode) this.$contentNode).m86getGuildIdqOKuAAo()), null);
     }
 }

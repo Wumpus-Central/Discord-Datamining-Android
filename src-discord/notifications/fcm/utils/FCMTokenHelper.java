@@ -4,8 +4,8 @@ import com.discord.logging.Log;
 import com.discord.notifications.fcm.utils.FCMTokenHelper;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.messaging.FirebaseMessaging;
-import fa.d;
-import fa.e;
+import ha.d;
+import ha.e;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -21,14 +21,14 @@ public final class FCMTokenHelper {
 
     
     public static final void getToken$lambda$0(Exception e10) {
-        q.g(e10, "e");
+        q.h(e10, "e");
         INSTANCE.logError(e10);
     }
 
     
     public static final void getToken$lambda$1(Function1 onToken, Task task) {
-        q.g(onToken, "$onToken");
-        q.g(task, "task");
+        q.h(onToken, "$onToken");
+        q.h(task, "task");
         try {
             String str = (String) task.k();
             if (str == null || !task.o()) {
@@ -47,12 +47,12 @@ public final class FCMTokenHelper {
     private final void logError(Throwable th2) {
         Log log = Log.INSTANCE;
         String simpleName = th2.getClass().getSimpleName();
-        q.f(simpleName, "javaClass.simpleName");
+        q.g(simpleName, "javaClass.simpleName");
         log.w(simpleName, "Fetching FCM registration token failed", th2);
     }
 
     public final void getToken(final Function1<? super String, Unit> onToken) {
-        q.g(onToken, "onToken");
+        q.h(onToken, "onToken");
         try {
             FirebaseMessaging.l().o().d(new e() { 
                 @Override 

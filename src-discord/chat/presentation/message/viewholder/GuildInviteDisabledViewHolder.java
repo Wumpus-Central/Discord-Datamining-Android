@@ -16,14 +16,14 @@ public final class GuildInviteDisabledViewHolder extends MessagePartViewHolder {
     
     public GuildInviteDisabledViewHolder(GuildInviteDisabledView guildInviteDisabledView, ChatEventHandler eventHandler) {
         super(guildInviteDisabledView, null);
-        q.g(guildInviteDisabledView, "guildInviteDisabledView");
-        q.g(eventHandler, "eventHandler");
+        q.h(guildInviteDisabledView, "guildInviteDisabledView");
+        q.h(eventHandler, "eventHandler");
         this.guildInviteDisabledView = guildInviteDisabledView;
         this.eventHandler = eventHandler;
     }
 
     public final void bind(GuildInviteDisabledMessageAccessory inviteAccessory) {
-        q.g(inviteAccessory, "inviteAccessory");
+        q.h(inviteAccessory, "inviteAccessory");
         GuildInviteDisabledEmbedImpl invite = inviteAccessory.getInvite();
         GuildInviteDisabledView guildInviteDisabledView = this.guildInviteDisabledView;
         guildInviteDisabledView.setHeaderText(invite.getHeaderText());
@@ -34,6 +34,7 @@ public final class GuildInviteDisabledViewHolder extends MessagePartViewHolder {
         guildInviteDisabledView.setGuildImage(invite.getGuildIcon(), invite.getThumbnailText(), invite.getThumbnailBackgroundColor());
         guildInviteDisabledView.setSubtitle(invite.getSubtitle(), invite.getGuildName());
         guildInviteDisabledView.setSubtitleColor(invite.getSubtitleColor());
+        guildInviteDisabledView.setBackgroundRectangleColor(Integer.valueOf(invite.getBackgroundColor()));
     }
 
     public final ChatEventHandler getEventHandler() {

@@ -30,7 +30,7 @@ public final class AudioPlayerManagerModule extends ReactContextBaseJavaModule {
     
     public AudioPlayerManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     

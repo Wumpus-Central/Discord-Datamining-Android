@@ -29,8 +29,8 @@ public final class VerticalPaddingSpan implements LineHeightSpan {
 
     @Override 
     public void chooseHeight(CharSequence text, int i10, int i11, int i12, int i13, Paint.FontMetricsInt fontMetrics) {
-        q.g(text, "text");
-        q.g(fontMetrics, "fontMetrics");
+        q.h(text, "text");
+        q.h(fontMetrics, "fontMetrics");
         if (text instanceof Spanned) {
             if (!this.initialized) {
                 this.origTop = fontMetrics.top;

@@ -16,11 +16,11 @@ public final class EmbeddedActivityChatListItem extends ChatListItem {
     
     public EmbeddedActivityChatListItem(String content, List<String> avatarUrls, String buttonText, String embeddedActivityKey, String dismissButtonAccessibilityLabel) {
         super(embeddedActivityKey, null);
-        q.g(content, "content");
-        q.g(avatarUrls, "avatarUrls");
-        q.g(buttonText, "buttonText");
-        q.g(embeddedActivityKey, "embeddedActivityKey");
-        q.g(dismissButtonAccessibilityLabel, "dismissButtonAccessibilityLabel");
+        q.h(content, "content");
+        q.h(avatarUrls, "avatarUrls");
+        q.h(buttonText, "buttonText");
+        q.h(embeddedActivityKey, "embeddedActivityKey");
+        q.h(dismissButtonAccessibilityLabel, "dismissButtonAccessibilityLabel");
         this.content = content;
         this.avatarUrls = avatarUrls;
         this.buttonText = buttonText;
@@ -69,11 +69,11 @@ public final class EmbeddedActivityChatListItem extends ChatListItem {
     }
 
     public final EmbeddedActivityChatListItem copy(String content, List<String> avatarUrls, String buttonText, String embeddedActivityKey, String dismissButtonAccessibilityLabel) {
-        q.g(content, "content");
-        q.g(avatarUrls, "avatarUrls");
-        q.g(buttonText, "buttonText");
-        q.g(embeddedActivityKey, "embeddedActivityKey");
-        q.g(dismissButtonAccessibilityLabel, "dismissButtonAccessibilityLabel");
+        q.h(content, "content");
+        q.h(avatarUrls, "avatarUrls");
+        q.h(buttonText, "buttonText");
+        q.h(embeddedActivityKey, "embeddedActivityKey");
+        q.h(dismissButtonAccessibilityLabel, "dismissButtonAccessibilityLabel");
         return new EmbeddedActivityChatListItem(content, avatarUrls, buttonText, embeddedActivityKey, dismissButtonAccessibilityLabel);
     }
 
@@ -85,7 +85,7 @@ public final class EmbeddedActivityChatListItem extends ChatListItem {
             return false;
         }
         EmbeddedActivityChatListItem embeddedActivityChatListItem = (EmbeddedActivityChatListItem) obj;
-        return q.b(this.content, embeddedActivityChatListItem.content) && q.b(this.avatarUrls, embeddedActivityChatListItem.avatarUrls) && q.b(this.buttonText, embeddedActivityChatListItem.buttonText) && q.b(this.embeddedActivityKey, embeddedActivityChatListItem.embeddedActivityKey) && q.b(this.dismissButtonAccessibilityLabel, embeddedActivityChatListItem.dismissButtonAccessibilityLabel);
+        return q.c(this.content, embeddedActivityChatListItem.content) && q.c(this.avatarUrls, embeddedActivityChatListItem.avatarUrls) && q.c(this.buttonText, embeddedActivityChatListItem.buttonText) && q.c(this.embeddedActivityKey, embeddedActivityChatListItem.embeddedActivityKey) && q.c(this.dismissButtonAccessibilityLabel, embeddedActivityChatListItem.dismissButtonAccessibilityLabel);
     }
 
     public final List<String> getAvatarUrls() {

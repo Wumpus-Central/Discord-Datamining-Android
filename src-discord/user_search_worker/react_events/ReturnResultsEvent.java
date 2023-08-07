@@ -5,9 +5,9 @@ import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.discord.user_search_worker.UserSearchWorkerResult;
 import com.facebook.react.bridge.WritableMap;
-import ff.x;
 import java.util.ArrayList;
 import java.util.List;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.k;
@@ -22,10 +22,10 @@ public final class ReturnResultsEvent implements ReactEvent {
     private final String uuid;
 
     public ReturnResultsEvent(List<UserSearchWorkerResult> results, String query, String uuid, String type) {
-        q.g(results, "results");
-        q.g(query, "query");
-        q.g(uuid, "uuid");
-        q.g(type, "type");
+        q.h(results, "results");
+        q.h(query, "query");
+        q.h(uuid, "uuid");
+        q.h(type, "type");
         this.results = results;
         this.query = query;
         this.uuid = uuid;
@@ -66,10 +66,10 @@ public final class ReturnResultsEvent implements ReactEvent {
     }
 
     public final ReturnResultsEvent copy(List<UserSearchWorkerResult> results, String query, String uuid, String type) {
-        q.g(results, "results");
-        q.g(query, "query");
-        q.g(uuid, "uuid");
-        q.g(type, "type");
+        q.h(results, "results");
+        q.h(query, "query");
+        q.h(uuid, "uuid");
+        q.h(type, "type");
         return new ReturnResultsEvent(results, query, uuid, type);
     }
 
@@ -81,7 +81,7 @@ public final class ReturnResultsEvent implements ReactEvent {
             return false;
         }
         ReturnResultsEvent returnResultsEvent = (ReturnResultsEvent) obj;
-        return q.b(this.results, returnResultsEvent.results) && q.b(this.query, returnResultsEvent.query) && q.b(this.uuid, returnResultsEvent.uuid) && q.b(this.type, returnResultsEvent.type);
+        return q.c(this.results, returnResultsEvent.results) && q.c(this.query, returnResultsEvent.query) && q.c(this.uuid, returnResultsEvent.uuid) && q.c(this.type, returnResultsEvent.type);
     }
 
     public final String getQuery() {

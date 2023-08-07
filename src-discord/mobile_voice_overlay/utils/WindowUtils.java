@@ -18,12 +18,12 @@ public final class WindowUtils {
     }
 
     public final void addFlag(WindowManager.LayoutParams layoutParams, int i10) {
-        q.g(layoutParams, "<this>");
+        q.h(layoutParams, "<this>");
         layoutParams.flags = i10 | layoutParams.flags;
     }
 
     public final boolean canDrawOverlay(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         return Settings.canDrawOverlays(context);
     }
 
@@ -38,8 +38,8 @@ public final class WindowUtils {
     }
 
     public final int[] getCenterPointOnScreen(View view, int[] outLocation) {
-        q.g(view, "view");
-        q.g(outLocation, "outLocation");
+        q.h(view, "view");
+        q.h(outLocation, "outLocation");
         view.getLocationOnScreen(outLocation);
         outLocation[0] = outLocation[0] + (view.getWidth() / 2);
         outLocation[1] = outLocation[1] + (view.getHeight() / 2);
@@ -47,17 +47,17 @@ public final class WindowUtils {
     }
 
     public final Rect getScreenSize(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         return new Rect(0, 0, context.getResources().getDisplayMetrics().widthPixels, context.getResources().getDisplayMetrics().heightPixels);
     }
 
     public final void removeFlag(WindowManager.LayoutParams layoutParams, int i10) {
-        q.g(layoutParams, "<this>");
+        q.h(layoutParams, "<this>");
         layoutParams.flags = (~i10) & layoutParams.flags;
     }
 
     public final void setFlagTouchable(WindowManager.LayoutParams layoutParams, boolean z10) {
-        q.g(layoutParams, "<this>");
+        q.h(layoutParams, "<this>");
         if (z10) {
             removeFlag(layoutParams, 16);
         } else {

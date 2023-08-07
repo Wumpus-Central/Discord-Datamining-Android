@@ -43,8 +43,8 @@ import com.facebook.react.viewmanagers.DCDMessageViewManagerDelegate;
 import com.facebook.react.viewmanagers.DCDMessageViewManagerInterface;
 import com.facebook.react.viewmanagers.DCDSystemMessageViewManagerDelegate;
 import com.facebook.react.viewmanagers.DCDSystemMessageViewManagerInterface;
-import ff.x;
 import java.util.Map;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;
@@ -85,7 +85,7 @@ public final class MessageViewManagers {
 
         @Override 
         protected Void createViewInstance(ThemedReactContext reactContext) {
-            q.g(reactContext, "reactContext");
+            q.h(reactContext, "reactContext");
             throw new UnsupportedOperationException("multiline system messages are not supported.");
         }
 
@@ -97,7 +97,7 @@ public final class MessageViewManagers {
 
         @ReactProp(name = "row")
         public void setRow(ViewMeasuringWrapper<MessageView> view, String str) {
-            q.g(view, "view");
+            q.h(view, "view");
             throw new UnsupportedOperationException("multiline system messages are not supported.");
         }
     }
@@ -133,7 +133,7 @@ public final class MessageViewManagers {
         private final boolean emitOnLongPressItem(View view) {
             ReactEvents reactEvents = this.reactEvents;
             Context context = view.getContext();
-            q.e(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
+            q.f(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
             reactEvents.emitEvent((ReactContext) context, view, new OnLongPressMessageBundleItemData());
             return true;
         }
@@ -141,50 +141,50 @@ public final class MessageViewManagers {
         private final void emitOnTapItem(View view) {
             ReactEvents reactEvents = this.reactEvents;
             Context context = view.getContext();
-            q.e(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
+            q.f(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
             reactEvents.emitEvent((ReactContext) context, view, new OnTapMessageBundleItemData());
         }
 
         
         
-        public final void m143emitOnTapReplyAyv7vGE(View view, String str) {
+        public final void m144emitOnTapReplyAyv7vGE(View view, String str) {
             ReactEvents reactEvents = this.reactEvents;
             Context context = view.getContext();
-            q.e(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
+            q.f(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
             reactEvents.emitEvent((ReactContext) context, view, new OnTapReplyItemData(str, null));
         }
 
         private final void emitOnTapViewMoreText(View view) {
             ReactEvents reactEvents = this.reactEvents;
             Context context = view.getContext();
-            q.e(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
+            q.f(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
             reactEvents.emitEvent((ReactContext) context, view, new OnTapViewMoreTextData());
         }
 
         
         
-        public final void m144emitOnTruncateMessageJPrav84(Context context, int i10, String str) {
+        public final void m145emitOnTruncateMessageJPrav84(Context context, int i10, String str) {
             this.reactEvents.emitEvent(context, new OnTruncateMessageData(str, null), i10);
         }
 
         
         public static final void setData$lambda$6$lambda$3(MessageBundleViewManager this$0, ViewMeasuringWrapper wrappedView, View view) {
-            q.g(this$0, "this$0");
-            q.g(wrappedView, "$wrappedView");
+            q.h(this$0, "this$0");
+            q.h(wrappedView, "$wrappedView");
             this$0.emitOnTapItem(wrappedView);
         }
 
         
         public static final boolean setData$lambda$6$lambda$4(MessageBundleViewManager this$0, ViewMeasuringWrapper wrappedView, View view) {
-            q.g(this$0, "this$0");
-            q.g(wrappedView, "$wrappedView");
+            q.h(this$0, "this$0");
+            q.h(wrappedView, "$wrappedView");
             return this$0.emitOnLongPressItem(wrappedView);
         }
 
         
         public static final void setData$lambda$6$lambda$5(MessageBundleViewManager this$0, ViewMeasuringWrapper wrappedView, View view) {
-            q.g(this$0, "this$0");
-            q.g(wrappedView, "$wrappedView");
+            q.h(this$0, "this$0");
+            q.h(wrappedView, "$wrappedView");
             this$0.emitOnTapViewMoreText(wrappedView);
         }
 
@@ -201,7 +201,7 @@ public final class MessageViewManagers {
         
         @Override 
         public ViewMeasuringWrapper<MessageBundleView> createViewInstance(ThemedReactContext reactContext) {
-            q.g(reactContext, "reactContext");
+            q.h(reactContext, "reactContext");
             ViewMeasuringWrapper<MessageBundleView> viewMeasuringWrapper = new ViewMeasuringWrapper<>(new MessageBundleView(reactContext, null, 0, 6, null), new MessageViewManagers$MessageBundleViewManager$createViewInstance$1(reactContext));
             MessageBundleView view = viewMeasuringWrapper.getView();
             view.setMessageRowViewPool(this.messageRowViewPool);
@@ -218,7 +218,7 @@ public final class MessageViewManagers {
 
         @ReactProp(name = "data")
         public void setData(final ViewMeasuringWrapper<MessageBundleView> wrappedView, String str) {
-            q.g(wrappedView, "wrappedView");
+            q.h(wrappedView, "wrappedView");
             if (str != null) {
                 Json json = MessageViewManagers.json;
                 json.a();
@@ -271,7 +271,7 @@ public final class MessageViewManagers {
         
         @Override 
         public ViewMeasuringWrapper<DecoratedMessageView> createViewInstance(ThemedReactContext reactContext) {
-            q.g(reactContext, "reactContext");
+            q.h(reactContext, "reactContext");
             return new ViewMeasuringWrapper<>(new DecoratedMessageView(reactContext, null, 2, null), new MessageViewManagers$MessageViewManager$createViewInstance$1(reactContext));
         }
 
@@ -283,7 +283,7 @@ public final class MessageViewManagers {
 
         @ReactProp(name = "row")
         public void setRow(ViewMeasuringWrapper<DecoratedMessageView> wrappedView, String str) {
-            q.g(wrappedView, "wrappedView");
+            q.h(wrappedView, "wrappedView");
             if (str != null) {
                 MessageViewManagers messageViewManagers = MessageViewManagers.INSTANCE;
                 MessageRow convertRowJsonToMessageRow = messageViewManagers.convertRowJsonToMessageRow(str);
@@ -294,11 +294,11 @@ public final class MessageViewManagers {
                 }
                 DecoratedMessageView view = wrappedView.getView();
                 MessageBase message = convertRowJsonToMessageRow.getMessage();
-                q.e(message, "null cannot be cast to non-null type com.discord.chat.bridge.Message");
+                q.f(message, "null cannot be cast to non-null type com.discord.chat.bridge.Message");
                 MessageContext messageContext = MessageContextKt.getMessageContext(convertRowJsonToMessageRow);
                 MessageFrame messageFrame2 = convertRowJsonToMessageRow.getMessageFrame();
                 Context context = wrappedView.getContext();
-                q.f(context, "wrappedView.context");
+                q.g(context, "wrappedView.context");
                 DecoratedMessageView.setMessage$default(view, (Message) message, messageContext, messageFrame2, messageViewManagers.getEventHandler(convertRowJsonToMessageRow, context), null, null, false, convertRowJsonToMessageRow.isHighlight(), false, 368, null);
                 ThemeManager.INSTANCE.setThemeOverride(null);
             }
@@ -332,7 +332,7 @@ public final class MessageViewManagers {
         
         @Override 
         public ViewMeasuringWrapper<SystemMessageWrapperView> createViewInstance(ThemedReactContext reactContext) {
-            q.g(reactContext, "reactContext");
+            q.h(reactContext, "reactContext");
             return new ViewMeasuringWrapper<>(new SystemMessageWrapperView(reactContext, null, 2, null), new MessageViewManagers$SystemMessageViewManager$createViewInstance$1(reactContext));
         }
 
@@ -344,15 +344,15 @@ public final class MessageViewManagers {
 
         @ReactProp(name = "row")
         public void setRow(ViewMeasuringWrapper<SystemMessageWrapperView> wrappedView, String str) {
-            q.g(wrappedView, "wrappedView");
+            q.h(wrappedView, "wrappedView");
             if (str != null) {
                 MessageViewManagers messageViewManagers = MessageViewManagers.INSTANCE;
                 MessageRow convertRowJsonToMessageRow = messageViewManagers.convertRowJsonToMessageRow(str);
                 MessageBase message = convertRowJsonToMessageRow.getMessage();
-                q.e(message, "null cannot be cast to non-null type com.discord.chat.bridge.Message");
+                q.f(message, "null cannot be cast to non-null type com.discord.chat.bridge.Message");
                 MessageContext messageContext = MessageContextKt.getMessageContext(convertRowJsonToMessageRow);
                 Context context = wrappedView.getContext();
-                q.f(context, "wrappedView.context");
+                q.g(context, "wrappedView.context");
                 wrappedView.getView().setMessage((Message) message, messageContext, messageViewManagers.getEventHandler(convertRowJsonToMessageRow, context));
             }
         }
@@ -372,7 +372,7 @@ public final class MessageViewManagers {
         Json json2 = json;
         json2.a();
         Object b10 = json2.b(Row.Companion.serializer(), str);
-        q.e(b10, "null cannot be cast to non-null type com.discord.chat.bridge.row.MessageRow");
+        q.f(b10, "null cannot be cast to non-null type com.discord.chat.bridge.row.MessageRow");
         return (MessageRow) b10;
     }
 
@@ -396,9 +396,9 @@ public final class MessageViewManagers {
 
     
     public static final void updateNodeSize$lambda$1(ReactContext this_updateNodeSize, int i10, int i11, int i12) {
-        q.g(this_updateNodeSize, "$this_updateNodeSize");
+        q.h(this_updateNodeSize, "$this_updateNodeSize");
         NativeModule nativeModule = this_updateNodeSize.getNativeModule(UIManagerModule.class);
-        q.d(nativeModule);
+        q.e(nativeModule);
         ((UIManagerModule) nativeModule).updateNodeSize(i10, i11, i12);
     }
 }

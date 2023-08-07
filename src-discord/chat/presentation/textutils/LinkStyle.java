@@ -17,7 +17,7 @@ public final class LinkStyle {
     }
 
     public LinkStyle(DiscordFont font, int i10) {
-        q.g(font, "font");
+        q.h(font, "font");
         this.font = font;
         this.linkColor = i10;
     }
@@ -41,7 +41,7 @@ public final class LinkStyle {
     }
 
     public final LinkStyle copy(DiscordFont font, int i10) {
-        q.g(font, "font");
+        q.h(font, "font");
         return new LinkStyle(font, i10);
     }
 

@@ -22,23 +22,23 @@ public final class CodedLinkSerializer extends d<CodedLinkEmbed> {
     protected DeserializationStrategy<CodedLinkEmbed> selectDeserializer(JsonElement element) {
         String str;
         JsonPrimitive n10;
-        q.g(element, "element");
+        q.h(element, "element");
         JsonElement jsonElement = (JsonElement) g.m(element).get("extendedType");
         if (jsonElement == null || (n10 = g.n(jsonElement)) == null) {
             str = null;
         } else {
             str = n10.a();
         }
-        if (q.b(str, String.valueOf(CodedLinkExtendedType.GUILD_SCHEDULED_EVENT.getSerialNumber()))) {
+        if (q.c(str, String.valueOf(CodedLinkExtendedType.GUILD_SCHEDULED_EVENT.getSerialNumber()))) {
             return GuildEventInviteEmbedImpl.Companion.serializer();
         }
-        if (q.b(str, String.valueOf(CodedLinkExtendedType.GUILD_INVITE_DISABLED.getSerialNumber()))) {
+        if (q.c(str, String.valueOf(CodedLinkExtendedType.GUILD_INVITE_DISABLED.getSerialNumber()))) {
             return GuildInviteDisabledEmbedImpl.Companion.serializer();
         }
-        if (q.b(str, String.valueOf(CodedLinkExtendedType.ACTIVITY_BOOKMARK.getSerialNumber()))) {
+        if (q.c(str, String.valueOf(CodedLinkExtendedType.ACTIVITY_BOOKMARK.getSerialNumber()))) {
             return ActivityBookmarkEmbedImpl.Companion.serializer();
         }
-        if (q.b(str, String.valueOf(CodedLinkExtendedType.EMBEDDED_ACTIVITY_INVITE.getSerialNumber()))) {
+        if (q.c(str, String.valueOf(CodedLinkExtendedType.EMBEDDED_ACTIVITY_INVITE.getSerialNumber()))) {
             return EmbeddedActivityInviteEmbedImpl.Companion.serializer();
         }
         return GuildInviteEmbedImpl.Companion.serializer();

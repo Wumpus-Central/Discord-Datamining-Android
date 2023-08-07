@@ -63,7 +63,7 @@ public final class WelcomeStickerView extends LinearLayout {
     
     public WelcomeStickerView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  WelcomeStickerView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -85,16 +85,16 @@ public final class WelcomeStickerView extends LinearLayout {
 
     
     public static final void setSticker$lambda$1(Function2 onWelcomeReplyClicked, Sticker sticker, Message message, View view) {
-        q.g(onWelcomeReplyClicked, "$onWelcomeReplyClicked");
-        q.g(sticker, "$sticker");
-        q.g(message, "$message");
-        onWelcomeReplyClicked.invoke(sticker, MessageId.m592boximpl(message.m16getId3Eiw7ao()));
+        q.h(onWelcomeReplyClicked, "$onWelcomeReplyClicked");
+        q.h(sticker, "$sticker");
+        q.h(message, "$message");
+        onWelcomeReplyClicked.invoke(sticker, MessageId.m593boximpl(message.m17getId3Eiw7ao()));
     }
 
     public final void setSticker(final Sticker sticker, final Message message, final Function2<? super Sticker, ? super MessageId, Unit> onWelcomeReplyClicked) {
-        q.g(sticker, "sticker");
-        q.g(message, "message");
-        q.g(onWelcomeReplyClicked, "onWelcomeReplyClicked");
+        q.h(sticker, "sticker");
+        q.h(message, "message");
+        q.h(onWelcomeReplyClicked, "onWelcomeReplyClicked");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(this, false, new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {
@@ -108,16 +108,16 @@ public final class WelcomeStickerView extends LinearLayout {
     
     public WelcomeStickerView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         WelcomeStickerViewBinding inflate = WelcomeStickerViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         RippleUtilsKt.addRipple$default(this, true, 0, 2, null);
         setOrientation(0);
         setLayoutParams(new LinearLayout.LayoutParams(-2, -2));
         setPadding(SizeUtilsKt.getDpToPx(12), SizeUtilsKt.getDpToPx(8), SizeUtilsKt.getDpToPx(12), SizeUtilsKt.getDpToPx(8));
         TextView _init_$lambda$0 = inflate.welcomeReplyText;
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         _init_$lambda$0.setTextColor(ColorUtilsKt.getColorCompat(_init_$lambda$0, R.color.white));
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$0, 16.0f);
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, DiscordFont.PrimarySemibold);

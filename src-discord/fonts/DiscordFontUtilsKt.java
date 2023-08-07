@@ -10,16 +10,16 @@ import kotlin.jvm.internal.q;
 
 public final class DiscordFontUtilsKt {
     public static final Typeface getDiscordTypefaceFor(Context context, DiscordFont font) {
-        q.g(context, "<this>");
-        q.g(font, "font");
+        q.h(context, "<this>");
+        q.h(font, "font");
         return font.typeface$fonts_release(context);
     }
 
     public static final void setDiscordFont(TextView textView, DiscordFont font) {
-        q.g(textView, "<this>");
-        q.g(font, "font");
+        q.h(textView, "<this>");
+        q.h(font, "font");
         Context context = textView.getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         textView.setTypeface(getDiscordTypefaceFor(context, font));
     }
 }

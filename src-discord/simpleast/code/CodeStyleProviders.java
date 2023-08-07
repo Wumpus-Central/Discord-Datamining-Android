@@ -22,14 +22,14 @@ public final class CodeStyleProviders<R> {
     }
 
     public CodeStyleProviders(StyleNode.SpanProvider<R> defaultStyleProvider, StyleNode.SpanProvider<R> commentStyleProvider, StyleNode.SpanProvider<R> literalStyleProvider, StyleNode.SpanProvider<R> keywordStyleProvider, StyleNode.SpanProvider<R> identifierStyleProvider, StyleNode.SpanProvider<R> typesStyleProvider, StyleNode.SpanProvider<R> genericsStyleProvider, StyleNode.SpanProvider<R> paramsStyleProvider) {
-        q.g(defaultStyleProvider, "defaultStyleProvider");
-        q.g(commentStyleProvider, "commentStyleProvider");
-        q.g(literalStyleProvider, "literalStyleProvider");
-        q.g(keywordStyleProvider, "keywordStyleProvider");
-        q.g(identifierStyleProvider, "identifierStyleProvider");
-        q.g(typesStyleProvider, "typesStyleProvider");
-        q.g(genericsStyleProvider, "genericsStyleProvider");
-        q.g(paramsStyleProvider, "paramsStyleProvider");
+        q.h(defaultStyleProvider, "defaultStyleProvider");
+        q.h(commentStyleProvider, "commentStyleProvider");
+        q.h(literalStyleProvider, "literalStyleProvider");
+        q.h(keywordStyleProvider, "keywordStyleProvider");
+        q.h(identifierStyleProvider, "identifierStyleProvider");
+        q.h(typesStyleProvider, "typesStyleProvider");
+        q.h(genericsStyleProvider, "genericsStyleProvider");
+        q.h(paramsStyleProvider, "paramsStyleProvider");
         this.defaultStyleProvider = defaultStyleProvider;
         this.commentStyleProvider = commentStyleProvider;
         this.literalStyleProvider = literalStyleProvider;
@@ -73,14 +73,14 @@ public final class CodeStyleProviders<R> {
     }
 
     public final CodeStyleProviders<R> copy(StyleNode.SpanProvider<R> defaultStyleProvider, StyleNode.SpanProvider<R> commentStyleProvider, StyleNode.SpanProvider<R> literalStyleProvider, StyleNode.SpanProvider<R> keywordStyleProvider, StyleNode.SpanProvider<R> identifierStyleProvider, StyleNode.SpanProvider<R> typesStyleProvider, StyleNode.SpanProvider<R> genericsStyleProvider, StyleNode.SpanProvider<R> paramsStyleProvider) {
-        q.g(defaultStyleProvider, "defaultStyleProvider");
-        q.g(commentStyleProvider, "commentStyleProvider");
-        q.g(literalStyleProvider, "literalStyleProvider");
-        q.g(keywordStyleProvider, "keywordStyleProvider");
-        q.g(identifierStyleProvider, "identifierStyleProvider");
-        q.g(typesStyleProvider, "typesStyleProvider");
-        q.g(genericsStyleProvider, "genericsStyleProvider");
-        q.g(paramsStyleProvider, "paramsStyleProvider");
+        q.h(defaultStyleProvider, "defaultStyleProvider");
+        q.h(commentStyleProvider, "commentStyleProvider");
+        q.h(literalStyleProvider, "literalStyleProvider");
+        q.h(keywordStyleProvider, "keywordStyleProvider");
+        q.h(identifierStyleProvider, "identifierStyleProvider");
+        q.h(typesStyleProvider, "typesStyleProvider");
+        q.h(genericsStyleProvider, "genericsStyleProvider");
+        q.h(paramsStyleProvider, "paramsStyleProvider");
         return new CodeStyleProviders<>(defaultStyleProvider, commentStyleProvider, literalStyleProvider, keywordStyleProvider, identifierStyleProvider, typesStyleProvider, genericsStyleProvider, paramsStyleProvider);
     }
 
@@ -92,7 +92,7 @@ public final class CodeStyleProviders<R> {
             return false;
         }
         CodeStyleProviders codeStyleProviders = (CodeStyleProviders) obj;
-        return q.b(this.defaultStyleProvider, codeStyleProviders.defaultStyleProvider) && q.b(this.commentStyleProvider, codeStyleProviders.commentStyleProvider) && q.b(this.literalStyleProvider, codeStyleProviders.literalStyleProvider) && q.b(this.keywordStyleProvider, codeStyleProviders.keywordStyleProvider) && q.b(this.identifierStyleProvider, codeStyleProviders.identifierStyleProvider) && q.b(this.typesStyleProvider, codeStyleProviders.typesStyleProvider) && q.b(this.genericsStyleProvider, codeStyleProviders.genericsStyleProvider) && q.b(this.paramsStyleProvider, codeStyleProviders.paramsStyleProvider);
+        return q.c(this.defaultStyleProvider, codeStyleProviders.defaultStyleProvider) && q.c(this.commentStyleProvider, codeStyleProviders.commentStyleProvider) && q.c(this.literalStyleProvider, codeStyleProviders.literalStyleProvider) && q.c(this.keywordStyleProvider, codeStyleProviders.keywordStyleProvider) && q.c(this.identifierStyleProvider, codeStyleProviders.identifierStyleProvider) && q.c(this.typesStyleProvider, codeStyleProviders.typesStyleProvider) && q.c(this.genericsStyleProvider, codeStyleProviders.genericsStyleProvider) && q.c(this.paramsStyleProvider, codeStyleProviders.paramsStyleProvider);
     }
 
     public final StyleNode.SpanProvider<R> getCommentStyleProvider() {

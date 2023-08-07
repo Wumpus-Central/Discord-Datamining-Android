@@ -26,13 +26,13 @@ public final class QRScannerViewManager$createViewInstance$1$1 extends s impleme
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String code) {
         ReactEvents reactEvents;
-        q.g(code, "code");
+        q.h(code, "code");
         reactEvents = this.this$0.reactEvents;
         reactEvents.emitEvent(this.$scanner, new OnQRCodeFoundEvent("SUCCEEDED", code));
     }

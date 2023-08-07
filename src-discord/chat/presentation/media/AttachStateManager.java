@@ -13,7 +13,7 @@ public final class AttachStateManager {
     private final View view;
 
     public AttachStateManager(View view) {
-        q.g(view, "view");
+        q.h(view, "view");
         this.view = view;
     }
 
@@ -34,17 +34,19 @@ public final class AttachStateManager {
     }
 
     public final void onAttachStateChange(final Function0<Unit> onAttach, final Function0<Unit> onDetach) {
-        q.g(onAttach, "onAttach");
-        q.g(onDetach, "onDetach");
+        q.h(onAttach, "onAttach");
+        q.h(onDetach, "onDetach");
         this.view.removeOnAttachStateChangeListener(this.currentListener);
         View.OnAttachStateChangeListener attachStateManager$onAttachStateChange$3 = new View.OnAttachStateChangeListener() { 
             @Override 
             public void onViewAttachedToWindow(View view) {
+                q.h(view, "view");
                 onAttach.invoke();
             }
 
             @Override 
             public void onViewDetachedFromWindow(View view) {
+                q.h(view, "view");
                 onDetach.invoke();
             }
         };

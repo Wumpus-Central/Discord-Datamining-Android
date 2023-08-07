@@ -22,7 +22,7 @@ public final class GrayscalePostprocessor extends BasePostprocessor {
     @Override 
     public String getName() {
         String simpleName = GrayscalePostprocessor.class.getSimpleName();
-        q.f(simpleName, "javaClass.simpleName");
+        q.g(simpleName, "javaClass.simpleName");
         return simpleName;
     }
 
@@ -33,8 +33,8 @@ public final class GrayscalePostprocessor extends BasePostprocessor {
 
     @Override 
     public void process(Bitmap destBitmap, Bitmap sourceBitmap) {
-        q.g(destBitmap, "destBitmap");
-        q.g(sourceBitmap, "sourceBitmap");
+        q.h(destBitmap, "destBitmap");
+        q.h(sourceBitmap, "sourceBitmap");
         super.process(destBitmap, sourceBitmap);
         ColorMatrix colorMatrix = new ColorMatrix();
         colorMatrix.setSaturation(0.0f);

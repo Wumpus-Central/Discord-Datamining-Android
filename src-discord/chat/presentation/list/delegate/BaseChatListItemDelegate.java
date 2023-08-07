@@ -35,11 +35,11 @@ public abstract class BaseChatListItemDelegate<T extends ChatListItem, V extends
         @Override 
         public   Unit invoke(Object obj) {
             invoke((AnonymousClass1) ((View) obj));
-            return Unit.f20679a;
+            return Unit.f21025a;
         }
 
         public final void invoke(V v10) {
-            q.g(v10, "$this$null");
+            q.h(v10, "$this$null");
             v10.setLayoutParams(new RecyclerView.i(-1, -2));
         }
     }
@@ -53,9 +53,9 @@ public abstract class BaseChatListItemDelegate<T extends ChatListItem, V extends
 
         
         public Metadata(ChatListItemViewHolder<V> holder, List<? extends ChatListItem> items, List<? extends Object> payloads) {
-            q.g(holder, "holder");
-            q.g(items, "items");
-            q.g(payloads, "payloads");
+            q.h(holder, "holder");
+            q.h(items, "items");
+            q.h(payloads, "payloads");
             this.holder = holder;
             this.items = items;
             this.payloads = payloads;
@@ -88,9 +88,9 @@ public abstract class BaseChatListItemDelegate<T extends ChatListItem, V extends
         }
 
         public final Metadata<V> copy(ChatListItemViewHolder<V> holder, List<? extends ChatListItem> items, List<? extends Object> payloads) {
-            q.g(holder, "holder");
-            q.g(items, "items");
-            q.g(payloads, "payloads");
+            q.h(holder, "holder");
+            q.h(items, "items");
+            q.h(payloads, "payloads");
             return new Metadata<>(holder, items, payloads);
         }
 
@@ -102,7 +102,7 @@ public abstract class BaseChatListItemDelegate<T extends ChatListItem, V extends
                 return false;
             }
             Metadata metadata = (Metadata) obj;
-            return q.b(this.holder, metadata.holder) && q.b(this.items, metadata.items) && q.b(this.payloads, metadata.payloads);
+            return q.c(this.holder, metadata.holder) && q.c(this.items, metadata.items) && q.c(this.payloads, metadata.payloads);
         }
 
         public final ChatListItemViewHolder<V> getHolder() {
@@ -152,7 +152,7 @@ public abstract class BaseChatListItemDelegate<T extends ChatListItem, V extends
     
     @Override 
     public final RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent) {
-        q.g(parent, "parent");
+        q.h(parent, "parent");
         V createView = createView(parent);
         this.initBlock.invoke(createView);
         return new ChatListItemViewHolder(createView);
@@ -160,27 +160,27 @@ public abstract class BaseChatListItemDelegate<T extends ChatListItem, V extends
 
     
     public final boolean isForViewType(List<? extends ChatListItem> items, int i10) {
-        q.g(items, "items");
+        q.h(items, "items");
         return isForItem((ChatListItem) items.get(i10), i10);
     }
 
     
     
     protected final void onBindViewHolder2(List<? extends ChatListItem> items, int i10, RecyclerView.ViewHolder holder, List<? extends Object> payloads) {
-        q.g(items, "items");
-        q.g(holder, "holder");
-        q.g(payloads, "payloads");
+        q.h(items, "items");
+        q.h(holder, "holder");
+        q.h(payloads, "payloads");
         ChatListItemViewHolder chatListItemViewHolder = (ChatListItemViewHolder) holder;
         Object obj = items.get(i10);
-        q.e(obj, "null cannot be cast to non-null type T of com.discord.chat.presentation.list.delegate.BaseChatListItemDelegate");
+        q.f(obj, "null cannot be cast to non-null type T of com.discord.chat.presentation.list.delegate.BaseChatListItemDelegate");
         Metadata metadata = new Metadata(chatListItemViewHolder, items, payloads);
         bindView(chatListItemViewHolder.getView(), (ChatListItem) obj, metadata);
     }
 
     
     public BaseChatListItemDelegate(Function0<? extends ChatEventHandler> eventHandlerProvider, Function1<? super V, Unit> initBlock) {
-        q.g(eventHandlerProvider, "eventHandlerProvider");
-        q.g(initBlock, "initBlock");
+        q.h(eventHandlerProvider, "eventHandlerProvider");
+        q.h(initBlock, "initBlock");
         this.eventHandlerProvider = eventHandlerProvider;
         this.initBlock = initBlock;
     }

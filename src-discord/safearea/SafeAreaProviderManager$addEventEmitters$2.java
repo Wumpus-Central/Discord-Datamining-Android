@@ -31,14 +31,14 @@ public final class SafeAreaProviderManager$addEventEmitters$2 extends s implemen
     @Override 
     public   Unit invoke(WindowInsetsCompat windowInsetsCompat) {
         invoke2(windowInsetsCompat);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(WindowInsetsCompat insets) {
         SafeAreaEdgeInsets safeAreaEdgeInsets;
         Insets insets2;
-        q.g(insets, "insets");
+        q.h(insets, "insets");
         this.this$0.imeInsets = WindowInsetsCompatExtensionsKt.getImeInsets$default(insets, false, 1, null);
         SafeAreaProviderManager safeAreaProviderManager = this.this$0;
         ThemedReactContext themedReactContext = this.$reactContext;

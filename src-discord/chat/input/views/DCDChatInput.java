@@ -30,7 +30,7 @@ public final class DCDChatInput extends k {
     
     public DCDChatInput(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  DCDChatInput(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -39,7 +39,7 @@ public final class DCDChatInput extends k {
 
     
     public static final void measureAndLayoutRunnable$lambda$0(DCDChatInput this$0) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         ViewMeasureExtensionsKt.measureAndLayout(this$0);
     }
 
@@ -60,9 +60,9 @@ public final class DCDChatInput extends k {
         boolean z10;
         boolean z11;
         Function0<Unit> function0;
-        q.g(isEnterHeldDown, "$isEnterHeldDown");
-        q.g(this$0, "this$0");
-        q.g(event, "event");
+        q.h(isEnterHeldDown, "$isEnterHeldDown");
+        q.h(this$0, "this$0");
+        q.h(event, "event");
         if ((event.getFlags() & 2) == 2) {
             z10 = true;
         } else {
@@ -79,9 +79,9 @@ public final class DCDChatInput extends k {
         if (!z11) {
             return false;
         }
-        boolean z12 = isEnterHeldDown.f20704k;
+        boolean z12 = isEnterHeldDown.f21050k;
         if (event.getAction() == 0) {
-            isEnterHeldDown.f20704k = true;
+            isEnterHeldDown.f21050k = true;
             if (event.hasModifiers(1)) {
                 return false;
             }
@@ -91,7 +91,7 @@ public final class DCDChatInput extends k {
             return true;
         }
         if (event.getAction() == 1) {
-            isEnterHeldDown.f20704k = false;
+            isEnterHeldDown.f21050k = false;
         }
         return false;
     }
@@ -140,7 +140,7 @@ public final class DCDChatInput extends k {
     @Override 
     @SuppressLint({"ClickableViewAccessibility"})
     public boolean onTouchEvent(MotionEvent event) {
-        q.g(event, "event");
+        q.h(event, "event");
         if (event.getAction() == 0) {
             GetDiscordGestureHandlerEnabledRootViewKt.getDiscordGestureHandlerEnabledRootView(this).requestDisallowInterceptTouchEvent(true);
         }
@@ -157,19 +157,19 @@ public final class DCDChatInput extends k {
     }
 
     public final void setOnRequestSend(Function0<Unit> onRequestSend) {
-        q.g(onRequestSend, "onRequestSend");
+        q.h(onRequestSend, "onRequestSend");
         this.onRequestSend = onRequestSend;
     }
 
     public final void setOnSelectionChanged(Function2<? super Integer, ? super Integer, Unit> onSelectionChanged) {
-        q.g(onSelectionChanged, "onSelectionChanged");
+        q.h(onSelectionChanged, "onSelectionChanged");
         this.onSelectionChanged = onSelectionChanged;
     }
 
     
     public DCDChatInput(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         this.measureAndLayoutRunnable = new Runnable() { 
             @Override 
             public final void run() {

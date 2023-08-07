@@ -6,9 +6,9 @@ import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.module.model.ReactModuleInfo;
 import com.facebook.react.module.model.ReactModuleInfoProvider;
-import ff.x;
-import gf.v;
 import java.util.Map;
+import jf.x;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
@@ -29,7 +29,7 @@ public final class DCDModuleProvider$getTurboPackageForModule$1 extends TurboRea
     
     public static final Map getReactModuleInfoProvider$lambda$1(String moduleName) {
         Map l10;
-        q.g(moduleName, "$moduleName");
+        q.h(moduleName, "$moduleName");
         l10 = v.l(x.a(moduleName, new ReactModuleInfo(moduleName, moduleName, false, false, true, false, true)));
         return l10;
     }
@@ -41,7 +41,7 @@ public final class DCDModuleProvider$getTurboPackageForModule$1 extends TurboRea
         }
         String str2 = this.$moduleName;
         Function1<ReactApplicationContext, NativeModule> function1 = this.$onNativeModule;
-        if (q.b(str, str2)) {
+        if (q.c(str, str2)) {
             return function1.invoke(reactApplicationContext);
         }
         return null;

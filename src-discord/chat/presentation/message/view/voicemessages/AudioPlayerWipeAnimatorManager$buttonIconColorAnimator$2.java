@@ -22,12 +22,13 @@ final class AudioPlayerWipeAnimatorManager$buttonIconColorAnimator$2 extends s i
     }
 
     
-    public static final void invoke$lambda$1$lambda$0(AudioPlayerViewBinding binding, ValueAnimator valueAnimator) {
-        q.g(binding, "$binding");
+    public static final void invoke$lambda$1$lambda$0(AudioPlayerViewBinding binding, ValueAnimator it) {
+        q.h(binding, "$binding");
+        q.h(it, "it");
         SimpleDraweeView simpleDraweeView = binding.button;
-        q.f(simpleDraweeView, "binding.button");
-        Object animatedValue = valueAnimator.getAnimatedValue();
-        q.e(animatedValue, "null cannot be cast to non-null type kotlin.Int");
+        q.g(simpleDraweeView, "binding.button");
+        Object animatedValue = it.getAnimatedValue();
+        q.f(animatedValue, "null cannot be cast to non-null type kotlin.Int");
         ColorUtilsKt.setTintColor(simpleDraweeView, (Integer) animatedValue);
     }
 

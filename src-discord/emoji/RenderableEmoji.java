@@ -25,19 +25,19 @@ public abstract class RenderableEmoji {
         }
 
         public final CustomWithEmojiId customWithEmojiId(long j10, boolean z10, String alt) {
-            q.g(alt, "alt");
+            q.h(alt, "alt");
             return new CustomWithEmojiId(j10, z10, alt);
         }
 
         public final CustomWithUrl customWithUrl(String url, String alt) {
-            q.g(url, "url");
-            q.g(alt, "alt");
+            q.h(url, "url");
+            q.h(alt, "alt");
             return new CustomWithUrl(url, alt);
         }
 
         public final Unicode unicode(String surrogates) {
-            q.g(surrogates, "surrogates");
-            return new Unicode(Surrogates.m449constructorimpl(surrogates), null);
+            q.h(surrogates, "surrogates");
+            return new Unicode(Surrogates.m450constructorimpl(surrogates), null);
         }
     }
 
@@ -51,7 +51,7 @@ public abstract class RenderableEmoji {
         
         public CustomWithEmojiId(long j10, boolean z10, String alt) {
             super(null);
-            q.g(alt, "alt");
+            q.h(alt, "alt");
             this.emojiId = j10;
             this.isAnimated = z10;
             this.alt = alt;
@@ -83,7 +83,7 @@ public abstract class RenderableEmoji {
         }
 
         public final CustomWithEmojiId copy(long j10, boolean z10, String alt) {
-            q.g(alt, "alt");
+            q.h(alt, "alt");
             return new CustomWithEmojiId(j10, z10, alt);
         }
 
@@ -95,7 +95,7 @@ public abstract class RenderableEmoji {
                 return false;
             }
             CustomWithEmojiId customWithEmojiId = (CustomWithEmojiId) obj;
-            return this.emojiId == customWithEmojiId.emojiId && this.isAnimated == customWithEmojiId.isAnimated && q.b(this.alt, customWithEmojiId.alt);
+            return this.emojiId == customWithEmojiId.emojiId && this.isAnimated == customWithEmojiId.isAnimated && q.c(this.alt, customWithEmojiId.alt);
         }
 
         public final String getAlt() {
@@ -149,8 +149,8 @@ public abstract class RenderableEmoji {
         
         public CustomWithUrl(String url, String alt) {
             super(null);
-            q.g(url, "url");
-            q.g(alt, "alt");
+            q.h(url, "url");
+            q.h(alt, "alt");
             this.url = url;
             this.alt = alt;
         }
@@ -174,8 +174,8 @@ public abstract class RenderableEmoji {
         }
 
         public final CustomWithUrl copy(String url, String alt) {
-            q.g(url, "url");
-            q.g(alt, "alt");
+            q.h(url, "url");
+            q.h(alt, "alt");
             return new CustomWithUrl(url, alt);
         }
 
@@ -187,7 +187,7 @@ public abstract class RenderableEmoji {
                 return false;
             }
             CustomWithUrl customWithUrl = (CustomWithUrl) obj;
-            return q.b(this.url, customWithUrl.url) && q.b(this.alt, customWithUrl.alt);
+            return q.c(this.url, customWithUrl.url) && q.c(this.alt, customWithUrl.alt);
         }
 
         public final String getAlt() {
@@ -230,7 +230,7 @@ public abstract class RenderableEmoji {
             super(null);
             String str2 = null;
             this.surrogates = str;
-            String str3 = Surrogates.m456withoutDiversityimpl(str);
+            String str3 = Surrogates.m457withoutDiversityimpl(str);
             this.exception = RenderableEmoji.exceptions.contains(str3) ? str3 : str2;
         }
 
@@ -239,21 +239,21 @@ public abstract class RenderableEmoji {
         }
 
         
-        public static  Unicode m444copyhLBmEAo$default(Unicode unicode, String str, int i10, Object obj) {
+        public static  Unicode m445copyhLBmEAo$default(Unicode unicode, String str, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 str = unicode.surrogates;
             }
-            return unicode.m446copyhLBmEAo(str);
+            return unicode.m447copyhLBmEAo(str);
         }
 
         
-        public final String m445component1Mny0UXI() {
+        public final String m446component1Mny0UXI() {
             return this.surrogates;
         }
 
         
-        public final Unicode m446copyhLBmEAo(String surrogates) {
-            q.g(surrogates, "surrogates");
+        public final Unicode m447copyhLBmEAo(String surrogates) {
+            q.h(surrogates, "surrogates");
             return new Unicode(surrogates, null);
         }
 
@@ -261,7 +261,7 @@ public abstract class RenderableEmoji {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof Unicode) && Surrogates.m451equalsimpl0(this.surrogates, ((Unicode) obj).surrogates);
+            return (obj instanceof Unicode) && Surrogates.m452equalsimpl0(this.surrogates, ((Unicode) obj).surrogates);
         }
 
         @Override 
@@ -274,21 +274,21 @@ public abstract class RenderableEmoji {
         }
 
         
-        public final String m447getSurrogatesMny0UXI() {
+        public final String m448getSurrogatesMny0UXI() {
             return this.surrogates;
         }
 
         @Override 
         public String getUrl(boolean z10, int i10) {
-            return Surrogates.m453toAssetUrlimpl(this.surrogates);
+            return Surrogates.m454toAssetUrlimpl(this.surrogates);
         }
 
         public int hashCode() {
-            return Surrogates.m452hashCodeimpl(this.surrogates);
+            return Surrogates.m453hashCodeimpl(this.surrogates);
         }
 
         public String toString() {
-            String str = Surrogates.m455toStringimpl(this.surrogates);
+            String str = Surrogates.m456toStringimpl(this.surrogates);
             return "Unicode(surrogates=" + str + ")";
         }
     }

@@ -10,11 +10,11 @@ import com.discord.simpleast.core.parser.Rule;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import ji.j;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import kotlin.text.Regex;
+import ni.j;
 
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\bÆ\u0002\u0018\u00002\u00020\u0001:\u0002\u0019\u001aB\u0007\b\u0002¢\u0006\u0002\u0010\u0002JE\u0010\u0010\u001a \u0012\u001c\u0012\u001a\u0012\u0004\u0012\u0002H\u0013\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00130\u0014\u0012\u0004\u0012\u0002H\u00150\u00120\u0011\"\u0004\b\u0000\u0010\u0013\"\u0004\b\u0001\u0010\u00152\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u0002H\u00130\u0017H\u0000¢\u0006\u0002\b\u0018R\u0019\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\u0006\u0010\u0007R\u0019\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\n\u0010\u0007R\u0016\u0010\u000b\u001a\n \r*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u000e\u001a\n \r*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u000f\u001a\n \r*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001b"}, d2 = {"Lcom/discord/simpleast/code/Kotlin;", "", "()V", "BUILT_INS", "", "", "getBUILT_INS", "()[Ljava/lang/String;", "[Ljava/lang/String;", "KEYWORDS", "getKEYWORDS", "PATTERN_KOTLIN_ANNOTATION", "Ljava/util/regex/Pattern;", "kotlin.jvm.PlatformType", "PATTERN_KOTLIN_COMMENTS", "PATTERN_KOTLIN_STRINGS", "createKotlinCodeRules", "", "Lcom/discord/simpleast/core/parser/Rule;", "RC", "Lcom/discord/simpleast/core/node/Node;", "S", "codeStyleProviders", "Lcom/discord/simpleast/code/CodeStyleProviders;", "createKotlinCodeRules$simpleast_core_release", "FieldNode", "FunctionNode", "simpleast-core_release"}, k = 1, mv = {1, 4, 0})
 
@@ -43,19 +43,19 @@ public final class Kotlin {
             }
 
             public final <RC, S> Rule<RC, Node<RC>, S> createFieldRule(final CodeStyleProviders<RC> codeStyleProviders) {
-                q.g(codeStyleProviders, "codeStyleProviders");
+                q.h(codeStyleProviders, "codeStyleProviders");
                 final Pattern PATTERN_KOTLIN_FIELD = FieldNode.PATTERN_KOTLIN_FIELD;
-                q.f(PATTERN_KOTLIN_FIELD, "PATTERN_KOTLIN_FIELD");
+                q.g(PATTERN_KOTLIN_FIELD, "PATTERN_KOTLIN_FIELD");
                 return new Rule<RC, Node<RC>, S>(PATTERN_KOTLIN_FIELD) { 
                     @Override 
                     public ParseSpec<RC, S> parse(Matcher matcher, Parser<RC, ? super Node<RC>, S> parser, S s10) {
-                        q.g(matcher, "matcher");
-                        q.g(parser, "parser");
+                        q.h(matcher, "matcher");
+                        q.h(parser, "parser");
                         String group = matcher.group(1);
                         String group2 = matcher.group(2);
                         ParseSpec.Companion companion = ParseSpec.Companion;
-                        q.d(group);
-                        q.d(group2);
+                        q.e(group);
+                        q.e(group2);
                         return companion.createTerminal(new Kotlin.FieldNode(group, group2, codeStyleProviders), s10);
                     }
                 };
@@ -65,9 +65,9 @@ public final class Kotlin {
         
         public FieldNode(String definition, String name, CodeStyleProviders<RC> codeStyleProviders) {
             super(new StyleNode.TextStyledNode(definition, codeStyleProviders.getKeywordStyleProvider()), new StyleNode.TextStyledNode(name, codeStyleProviders.getIdentifierStyleProvider()));
-            q.g(definition, "definition");
-            q.g(name, "name");
-            q.g(codeStyleProviders, "codeStyleProviders");
+            q.h(definition, "definition");
+            q.h(name, "name");
+            q.h(codeStyleProviders, "codeStyleProviders");
         }
     }
 
@@ -88,21 +88,21 @@ public final class Kotlin {
             }
 
             public final <RC, S> Rule<RC, Node<RC>, S> createFunctionRule(final CodeStyleProviders<RC> codeStyleProviders) {
-                q.g(codeStyleProviders, "codeStyleProviders");
+                q.h(codeStyleProviders, "codeStyleProviders");
                 final Pattern pattern = FunctionNode.PATTERN_KOTLIN_FUNC;
                 return new Rule<RC, Node<RC>, S>(pattern) { 
                     @Override 
                     public ParseSpec<RC, S> parse(Matcher matcher, Parser<RC, ? super Node<RC>, S> parser, S s10) {
-                        q.g(matcher, "matcher");
-                        q.g(parser, "parser");
+                        q.h(matcher, "matcher");
+                        q.h(parser, "parser");
                         String group = matcher.group(1);
                         String group2 = matcher.group(2);
                         String group3 = matcher.group(3);
                         String group4 = matcher.group(4);
                         ParseSpec.Companion companion = ParseSpec.Companion;
-                        q.d(group);
-                        q.d(group3);
-                        q.d(group4);
+                        q.e(group);
+                        q.e(group3);
+                        q.e(group4);
                         return companion.createTerminal(new Kotlin.FunctionNode(group, group2, group3, group4, codeStyleProviders), s10);
                     }
                 };
@@ -122,14 +122,14 @@ public final class Kotlin {
 
     public final <RC, S> List<Rule<RC, Node<RC>, S>> createKotlinCodeRules$simpleast_core_release(CodeStyleProviders<RC> codeStyleProviders) {
         List<Rule<RC, Node<RC>, S>> k10;
-        q.g(codeStyleProviders, "codeStyleProviders");
+        q.h(codeStyleProviders, "codeStyleProviders");
         CodeRules codeRules = CodeRules.INSTANCE;
         Pattern PATTERN_KOTLIN_COMMENTS2 = PATTERN_KOTLIN_COMMENTS;
-        q.f(PATTERN_KOTLIN_COMMENTS2, "PATTERN_KOTLIN_COMMENTS");
+        q.g(PATTERN_KOTLIN_COMMENTS2, "PATTERN_KOTLIN_COMMENTS");
         Pattern PATTERN_KOTLIN_STRINGS2 = PATTERN_KOTLIN_STRINGS;
-        q.f(PATTERN_KOTLIN_STRINGS2, "PATTERN_KOTLIN_STRINGS");
+        q.g(PATTERN_KOTLIN_STRINGS2, "PATTERN_KOTLIN_STRINGS");
         Pattern PATTERN_KOTLIN_ANNOTATION2 = PATTERN_KOTLIN_ANNOTATION;
-        q.f(PATTERN_KOTLIN_ANNOTATION2, "PATTERN_KOTLIN_ANNOTATION");
+        q.g(PATTERN_KOTLIN_ANNOTATION2, "PATTERN_KOTLIN_ANNOTATION");
         k10 = kotlin.collections.j.k(CodeRules.toMatchGroupRule$default(codeRules, PATTERN_KOTLIN_COMMENTS2, 0, codeStyleProviders.getCommentStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_KOTLIN_STRINGS2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_KOTLIN_ANNOTATION2, 0, codeStyleProviders.getGenericsStyleProvider(), 1, null), FieldNode.Companion.createFieldRule(codeStyleProviders), FunctionNode.Companion.createFunctionRule(codeStyleProviders));
         return k10;
     }

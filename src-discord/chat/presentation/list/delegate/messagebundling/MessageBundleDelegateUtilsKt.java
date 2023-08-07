@@ -26,8 +26,8 @@ public final class MessageBundleDelegateUtilsKt {
     }
 
     public static final ChatViewEventHandler getEventHandler(MessageItem messageItem, final Context context) {
-        q.g(messageItem, "<this>");
-        q.g(context, "context");
+        q.h(messageItem, "<this>");
+        q.h(context, "context");
         final ReactEvents reactEvents2 = reactEvents;
         final MessageBundleDelegateUtilsKt$getEventHandler$2 messageBundleDelegateUtilsKt$getEventHandler$2 = new MessageBundleDelegateUtilsKt$getEventHandler$2(messageItem);
         return new ChatViewEventHandler(context, reactEvents2, messageBundleDelegateUtilsKt$getEventHandler$2) { 

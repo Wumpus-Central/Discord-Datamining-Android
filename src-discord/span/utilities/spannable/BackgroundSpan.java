@@ -10,7 +10,7 @@ public class BackgroundSpan {
     private final BackgroundStyle style;
 
     public BackgroundSpan(BackgroundStyle style) {
-        q.g(style, "style");
+        q.h(style, "style");
         this.style = style;
     }
 

@@ -9,16 +9,16 @@ public final class DeserializationErrorChatListItem extends ChatListItem {
     private final String causeMessage;
 
     
-    private final String f6941id;
+    private final String f7154id;
     private final String json;
 
     
     public DeserializationErrorChatListItem(String id2, String json, String causeMessage) {
         super(id2, null);
-        q.g(id2, "id");
-        q.g(json, "json");
-        q.g(causeMessage, "causeMessage");
-        this.f6941id = id2;
+        q.h(id2, "id");
+        q.h(json, "json");
+        q.h(causeMessage, "causeMessage");
+        this.f7154id = id2;
         this.json = json;
         this.causeMessage = causeMessage;
     }
@@ -49,9 +49,9 @@ public final class DeserializationErrorChatListItem extends ChatListItem {
     }
 
     public final DeserializationErrorChatListItem copy(String id2, String json, String causeMessage) {
-        q.g(id2, "id");
-        q.g(json, "json");
-        q.g(causeMessage, "causeMessage");
+        q.h(id2, "id");
+        q.h(json, "json");
+        q.h(causeMessage, "causeMessage");
         return new DeserializationErrorChatListItem(id2, json, causeMessage);
     }
 
@@ -63,7 +63,7 @@ public final class DeserializationErrorChatListItem extends ChatListItem {
             return false;
         }
         DeserializationErrorChatListItem deserializationErrorChatListItem = (DeserializationErrorChatListItem) obj;
-        return q.b(getId(), deserializationErrorChatListItem.getId()) && q.b(this.json, deserializationErrorChatListItem.json) && q.b(this.causeMessage, deserializationErrorChatListItem.causeMessage);
+        return q.c(getId(), deserializationErrorChatListItem.getId()) && q.c(this.json, deserializationErrorChatListItem.json) && q.c(this.causeMessage, deserializationErrorChatListItem.causeMessage);
     }
 
     public final String getCauseMessage() {
@@ -72,7 +72,7 @@ public final class DeserializationErrorChatListItem extends ChatListItem {
 
     @Override 
     public String getId() {
-        return this.f6941id;
+        return this.f7154id;
     }
 
     public final String getJson() {

@@ -33,18 +33,18 @@ public final class InstallReferrerModule extends ReactContextBaseJavaModule {
     
     public InstallReferrerModule(ReactApplicationContext context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     @ReactMethod
     public final void get(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         SharedPreferences sharedPreferences = getReactApplicationContext().getSharedPreferences("InstallReferrer", 0);
         Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
-        ref$ObjectRef.f20706k = sharedPreferences.getString("referrer", null);
+        ref$ObjectRef.f21052k = sharedPreferences.getString("referrer", null);
         int i10 = sharedPreferences.getInt("attempts", 0);
-        Object obj = ref$ObjectRef.f20706k;
+        Object obj = ref$ObjectRef.f21052k;
         if (obj != null) {
             promise.resolve(obj);
         } else if (i10 < 10) {

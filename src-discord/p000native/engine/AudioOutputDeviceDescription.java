@@ -12,8 +12,8 @@ public final class AudioOutputDeviceDescription {
     private final String name;
 
     public AudioOutputDeviceDescription(String name, String guid) {
-        q.g(name, "name");
-        q.g(guid, "guid");
+        q.h(name, "name");
+        q.h(guid, "guid");
         this.name = name;
         this.guid = guid;
     }
@@ -37,8 +37,8 @@ public final class AudioOutputDeviceDescription {
     }
 
     public final AudioOutputDeviceDescription copy(String name, String guid) {
-        q.g(name, "name");
-        q.g(guid, "guid");
+        q.h(name, "name");
+        q.h(guid, "guid");
         return new AudioOutputDeviceDescription(name, guid);
     }
 
@@ -50,7 +50,7 @@ public final class AudioOutputDeviceDescription {
             return false;
         }
         AudioOutputDeviceDescription audioOutputDeviceDescription = (AudioOutputDeviceDescription) obj;
-        return q.b(this.name, audioOutputDeviceDescription.name) && q.b(this.guid, audioOutputDeviceDescription.guid);
+        return q.c(this.name, audioOutputDeviceDescription.name) && q.c(this.guid, audioOutputDeviceDescription.guid);
     }
 
     public final String getGuid() {

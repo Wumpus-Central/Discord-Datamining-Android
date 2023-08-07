@@ -12,7 +12,7 @@ public class TextNode<R> extends Node<R> {
     
     public TextNode(String content) {
         super(null, 1, null);
-        q.g(content, "content");
+        q.h(content, "content");
         this.content = content;
     }
 
@@ -22,7 +22,7 @@ public class TextNode<R> extends Node<R> {
 
     @Override 
     public void render(SpannableStringBuilder builder, R r10) {
-        q.g(builder, "builder");
+        q.h(builder, "builder");
         builder.append((CharSequence) this.content);
     }
 

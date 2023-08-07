@@ -10,7 +10,7 @@ import timber.log.a;
 public final class LoggingTree extends a.c {
     @Override 
     protected void log(int i10, String str, String message, Throwable th2) {
-        q.g(message, "message");
+        q.h(message, "message");
         Log.println(i10, str, message);
     }
 }

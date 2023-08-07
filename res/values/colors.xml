@@ -174,6 +174,9 @@
     <color name="blue_830">#ff001630</color>
     <color name="blue_860">#ff00132b</color>
     <color name="blue_900">#ff001024</color>
+    <color name="blur_fallback_dark">#f51e1f22</color>
+    <color name="blur_fallback_darker">#f52b2c38</color>
+    <color name="blur_fallback_light">#f541434a</color>
     <color name="border_strong_dark">#29ffffff</color>
     <color name="border_strong_darker">#2e6b6e87</color>
     <color name="border_strong_light">#29000000</color>
@@ -237,6 +240,8 @@
     <color name="button_outline_primary_background_dark">#00ffffff</color>
     <color name="button_outline_primary_background_darker">#00ffffff</color>
     <color name="button_outline_primary_background_light">#00ffffff</color>
+    <color name="call_notification_answer_color">#ff1d873b</color>
+    <color name="call_notification_decline_color">#ffd93025</color>
     <color name="cardview_dark_background">#ff424242</color>
     <color name="cardview_light_background">#ffffffff</color>
     <color name="cardview_shadow_end_color">#03000000</color>
@@ -436,6 +441,18 @@
     <color name="info_warning_background_light">#1aaf7615</color>
     <color name="input_background_darker">#990f1015</color>
     <color name="input_placeholder_text_dark">#ff87898c</color>
+    <color name="legacy_android_blur_overlay_default_dark">#80000000</color>
+    <color name="legacy_android_blur_overlay_default_darker">#80000000</color>
+    <color name="legacy_android_blur_overlay_default_light">#bfffffff</color>
+    <color name="legacy_android_blur_overlay_ultra_thin_dark">#06000000</color>
+    <color name="legacy_android_blur_overlay_ultra_thin_darker">#06000000</color>
+    <color name="legacy_android_blur_overlay_ultra_thin_light">#40ffffff</color>
+    <color name="legacy_blur_fallback_default_dark">#f9232428</color>
+    <color name="legacy_blur_fallback_default_darker">#f9232428</color>
+    <color name="legacy_blur_fallback_default_light">#f9dbdee1</color>
+    <color name="legacy_blur_fallback_ultra_thin_dark">#f2000000</color>
+    <color name="legacy_blur_fallback_ultra_thin_darker">#f2000000</color>
+    <color name="legacy_blur_fallback_ultra_thin_light">#f2ffffff</color>
     <color name="live_stage_tile_border_dark">#994e5058</color>
     <color name="live_stage_tile_border_darker">#994e5058</color>
     <color name="live_stage_tile_border_light">#266d6f78</color>
@@ -855,6 +872,9 @@
     <color name="teal_860">#ff021619</color>
     <color name="teal_900">#ff011215</color>
     <color name="test_color">#ff000000</color>
+    <color name="theme_locked_blur_fallback_dark">#f51e1f22</color>
+    <color name="theme_locked_blur_fallback_darker">#f51e1f22</color>
+    <color name="theme_locked_blur_fallback_light">#f51e1f22</color>
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6ffffff</color>
     <color name="transparent">#00000000</color>
@@ -887,6 +907,9 @@
     <color name="user_profile_header_overflow_background_dark">#801e1f22</color>
     <color name="user_profile_header_overflow_background_darker">#801e1f22</color>
     <color name="user_profile_header_overflow_background_light">#80ffffff</color>
+    <color name="voice_video_video_tile_blur_fallback_dark">#7a1e1f22</color>
+    <color name="voice_video_video_tile_blur_fallback_darker">#7a1e1f22</color>
+    <color name="voice_video_video_tile_blur_fallback_light">#7a1e1f22</color>
     <color name="white">#ffffffff</color>
     <color name="white_100">#ffffffff</color>
     <color name="white_130">#ffffffff</color>

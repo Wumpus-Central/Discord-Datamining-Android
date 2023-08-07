@@ -23,19 +23,19 @@ public final class ActivityInviteEmbedMessageAccessory extends MessageAccessory 
     }
 
     
-    public static  ActivityInviteEmbedMessageAccessory m218copyntcYbpo$default(ActivityInviteEmbedMessageAccessory activityInviteEmbedMessageAccessory, String str, ActivityInviteEmbed activityInviteEmbed, int i10, Object obj) {
+    public static  ActivityInviteEmbedMessageAccessory m219copyntcYbpo$default(ActivityInviteEmbedMessageAccessory activityInviteEmbedMessageAccessory, String str, ActivityInviteEmbed activityInviteEmbed, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = activityInviteEmbedMessageAccessory.mo217getMessageId3Eiw7ao();
+            str = activityInviteEmbedMessageAccessory.mo218getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             activityInviteEmbed = activityInviteEmbedMessageAccessory.activityInviteEmbed;
         }
-        return activityInviteEmbedMessageAccessory.m220copyntcYbpo(str, activityInviteEmbed);
+        return activityInviteEmbedMessageAccessory.m221copyntcYbpo(str, activityInviteEmbed);
     }
 
     
-    public final String m219component13Eiw7ao() {
-        return mo217getMessageId3Eiw7ao();
+    public final String m220component13Eiw7ao() {
+        return mo218getMessageId3Eiw7ao();
     }
 
     public final ActivityInviteEmbed component2() {
@@ -43,9 +43,9 @@ public final class ActivityInviteEmbedMessageAccessory extends MessageAccessory 
     }
 
     
-    public final ActivityInviteEmbedMessageAccessory m220copyntcYbpo(String messageId, ActivityInviteEmbed activityInviteEmbed) {
-        q.g(messageId, "messageId");
-        q.g(activityInviteEmbed, "activityInviteEmbed");
+    public final ActivityInviteEmbedMessageAccessory m221copyntcYbpo(String messageId, ActivityInviteEmbed activityInviteEmbed) {
+        q.h(messageId, "messageId");
+        q.h(activityInviteEmbed, "activityInviteEmbed");
         return new ActivityInviteEmbedMessageAccessory(messageId, activityInviteEmbed, null);
     }
 
@@ -57,7 +57,7 @@ public final class ActivityInviteEmbedMessageAccessory extends MessageAccessory 
             return false;
         }
         ActivityInviteEmbedMessageAccessory activityInviteEmbedMessageAccessory = (ActivityInviteEmbedMessageAccessory) obj;
-        return MessageId.m596equalsimpl0(mo217getMessageId3Eiw7ao(), activityInviteEmbedMessageAccessory.mo217getMessageId3Eiw7ao()) && q.b(this.activityInviteEmbed, activityInviteEmbedMessageAccessory.activityInviteEmbed);
+        return MessageId.m597equalsimpl0(mo218getMessageId3Eiw7ao(), activityInviteEmbedMessageAccessory.mo218getMessageId3Eiw7ao()) && q.c(this.activityInviteEmbed, activityInviteEmbedMessageAccessory.activityInviteEmbed);
     }
 
     public final ActivityInviteEmbed getActivityInviteEmbed() {
@@ -66,16 +66,16 @@ public final class ActivityInviteEmbedMessageAccessory extends MessageAccessory 
 
     @Override 
     
-    public String mo217getMessageId3Eiw7ao() {
+    public String mo218getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (MessageId.m597hashCodeimpl(mo217getMessageId3Eiw7ao()) * 31) + this.activityInviteEmbed.hashCode();
+        return (MessageId.m598hashCodeimpl(mo218getMessageId3Eiw7ao()) * 31) + this.activityInviteEmbed.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m598toStringimpl(mo217getMessageId3Eiw7ao());
+        String str = MessageId.m599toStringimpl(mo218getMessageId3Eiw7ao());
         ActivityInviteEmbed activityInviteEmbed = this.activityInviteEmbed;
         return "ActivityInviteEmbedMessageAccessory(messageId=" + str + ", activityInviteEmbed=" + activityInviteEmbed + ")";
     }

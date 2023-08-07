@@ -34,7 +34,7 @@ public final class AutoModerationNotificationEmbedView extends ConstraintLayout 
     
     public AutoModerationNotificationEmbedView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  AutoModerationNotificationEmbedView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -43,48 +43,48 @@ public final class AutoModerationNotificationEmbedView extends ConstraintLayout 
 
     public final void configure(AutoModerationContext moderationContext, View.OnClickListener onTapAutoModerationActions, View.OnClickListener onTapAutoModerationFeedback) {
         boolean z10;
-        q.g(moderationContext, "moderationContext");
-        q.g(onTapAutoModerationActions, "onTapAutoModerationActions");
-        q.g(onTapAutoModerationFeedback, "onTapAutoModerationFeedback");
+        q.h(moderationContext, "moderationContext");
+        q.h(onTapAutoModerationActions, "onTapAutoModerationActions");
+        q.h(onTapAutoModerationFeedback, "onTapAutoModerationFeedback");
         AutoModerationNotification notification = moderationContext.getNotification();
         int i10 = 8;
         if (notification != null) {
             TextView textView = this.binding.body;
-            q.f(textView, "binding.body");
+            q.g(textView, "binding.body");
             textView.setVisibility(0);
             this.binding.header.setText(notification.getHeader());
             if (notification.getBody() != null) {
                 this.binding.body.setText(notification.getBody());
                 TextView textView2 = this.binding.body;
-                q.f(textView2, "binding.body");
+                q.g(textView2, "binding.body");
                 textView2.setVisibility(0);
             } else {
                 TextView textView3 = this.binding.body;
-                q.f(textView3, "binding.body");
+                q.g(textView3, "binding.body");
                 textView3.setVisibility(8);
             }
             if (notification.getSeverity() != null) {
                 this.binding.subtitleSeverity.setText(notification.getSeverity());
                 TextView textView4 = this.binding.subtitleSeverity;
-                q.f(textView4, "binding.subtitleSeverity");
+                q.g(textView4, "binding.subtitleSeverity");
                 textView4.setVisibility(0);
             } else {
                 TextView textView5 = this.binding.subtitleSeverity;
-                q.f(textView5, "binding.subtitleSeverity");
+                q.g(textView5, "binding.subtitleSeverity");
                 textView5.setVisibility(8);
             }
             if (notification.getStartTime() != null) {
                 this.binding.subtitleStartTime.setText(notification.getStartTime());
                 TextView textView6 = this.binding.subtitleStartTime;
-                q.f(textView6, "binding.subtitleStartTime");
+                q.g(textView6, "binding.subtitleStartTime");
                 textView6.setVisibility(0);
             } else {
                 TextView textView7 = this.binding.subtitleStartTime;
-                q.f(textView7, "binding.subtitleStartTime");
+                q.g(textView7, "binding.subtitleStartTime");
                 textView7.setVisibility(8);
             }
             ImageView imageView = this.binding.subtitleDivider;
-            q.f(imageView, "binding.subtitleDivider");
+            q.g(imageView, "binding.subtitleDivider");
             if (notification.getSeverity() == null || notification.getStartTime() == null) {
                 z10 = false;
             } else {
@@ -96,7 +96,7 @@ public final class AutoModerationNotificationEmbedView extends ConstraintLayout 
             imageView.setVisibility(i10);
         } else {
             TextView textView8 = this.binding.body;
-            q.f(textView8, "binding.body");
+            q.g(textView8, "binding.body");
             textView8.setVisibility(8);
         }
         String actionsIconURL = moderationContext.getActionsIconURL();
@@ -115,7 +115,7 @@ public final class AutoModerationNotificationEmbedView extends ConstraintLayout 
 
     @Override 
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        q.g(ev, "ev");
+        q.h(ev, "ev");
         return !this.allowChildGestures;
     }
 
@@ -127,47 +127,47 @@ public final class AutoModerationNotificationEmbedView extends ConstraintLayout 
     
     public AutoModerationNotificationEmbedView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         AutoModerationNotificationEmbedViewBinding inflate = AutoModerationNotificationEmbedViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         this.allowChildGestures = true;
         RippleUtilsKt.addRipple$default(this, false, SizeUtilsKt.getDpToPx(8), 1, null);
         View _init_$lambda$0 = inflate.getRoot();
         _init_$lambda$0.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         ViewClippingUtilsKt.clipToRoundedRectangle(_init_$lambda$0, SizeUtilsKt.getDpToPx(8));
         TextView _init_$lambda$1 = inflate.header;
         _init_$lambda$1.setTextColor(ThemeManagerKt.getTheme().getTextDanger());
-        q.f(_init_$lambda$1, "_init_$lambda$1");
+        q.g(_init_$lambda$1, "_init_$lambda$1");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$1, DiscordFont.PrimarySemibold);
         float f10 = 16.0f;
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$1, 16.0f, 20.0f);
         _init_$lambda$1.setLineSpacing(0.0f, 1.05f);
         ImageView _init_$lambda$2 = inflate.subtitleDivider;
         _init_$lambda$2.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundModifierAccent());
-        q.f(_init_$lambda$2, "_init_$lambda$2");
+        q.g(_init_$lambda$2, "_init_$lambda$2");
         ViewClippingUtilsKt.clipToRoundedRectangle(_init_$lambda$2, SizeUtilsKt.getDpToPx(4));
         TextView _init_$lambda$3 = inflate.subtitleSeverity;
         _init_$lambda$3.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
-        q.f(_init_$lambda$3, "_init_$lambda$3");
+        q.g(_init_$lambda$3, "_init_$lambda$3");
         DiscordFont discordFont = DiscordFont.PrimaryMedium;
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$3, discordFont);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$3, 12.0f, 20.0f);
         TextView _init_$lambda$4 = inflate.subtitleStartTime;
         _init_$lambda$4.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
-        q.f(_init_$lambda$4, "_init_$lambda$4");
+        q.g(_init_$lambda$4, "_init_$lambda$4");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$4, discordFont);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$4, 12.0f, 20.0f);
         TextView _init_$lambda$5 = inflate.body;
         _init_$lambda$5.setTextColor(ThemeManagerKt.getTheme().getTextMuted());
-        q.f(_init_$lambda$5, "_init_$lambda$5");
+        q.g(_init_$lambda$5, "_init_$lambda$5");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$5, discordFont);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$5, FontManager.INSTANCE.getIsClassicChatFontScaleEnabled(context) ? 14.0f : f10);
         inflate.actions.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondaryAlt());
         ImageView _init_$lambda$7 = inflate.separatorDot;
         _init_$lambda$7.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundModifierAccent());
-        q.f(_init_$lambda$7, "_init_$lambda$7");
+        q.g(_init_$lambda$7, "_init_$lambda$7");
         ViewClippingUtilsKt.clipToRoundedRectangle(_init_$lambda$7, SizeUtilsKt.getDpToPx(4));
         DCDButton dCDButton = inflate.actionsButton;
         dCDButton.setTextSizeSp(12.0f);

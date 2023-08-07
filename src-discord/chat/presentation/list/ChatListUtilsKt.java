@@ -10,9 +10,9 @@ import kotlin.jvm.internal.q;
 
 public final class ChatListUtilsKt {
     public static final void configureMessageRecyclerView(RecyclerView recyclerView, Context context, RecyclerView.ItemDecoration... decorations) {
-        q.g(recyclerView, "<this>");
-        q.g(context, "context");
-        q.g(decorations, "decorations");
+        q.h(recyclerView, "<this>");
+        q.h(context, "context");
+        q.h(decorations, "decorations");
         recyclerView.addItemDecoration(new BackgroundHighlightDecoration(context));
         recyclerView.setItemViewCacheSize(20);
         for (RecyclerView.ItemDecoration itemDecoration : decorations) {

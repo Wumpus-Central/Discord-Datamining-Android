@@ -23,13 +23,13 @@ final class MediaEngineModule$setBroadcastThumbnailParams$1 extends s implements
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String imgdata) {
         ReactEvents reactEvents;
-        q.g(imgdata, "imgdata");
+        q.h(imgdata, "imgdata");
         reactEvents = this.this$0.reactEvents;
         reactEvents.emitModuleEvent(this.this$0.getReactContext(), new OnBroadcastThumbnailEvent(imgdata));
     }

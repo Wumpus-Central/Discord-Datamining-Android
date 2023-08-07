@@ -20,23 +20,23 @@ public final class PortalViewDelegate extends BaseChatListItemDelegate<PortalVie
     
     public PortalViewDelegate(Function0<? extends ChatEventHandler> eventHandlerProvider) {
         super(eventHandlerProvider, null, 2, null);
-        q.g(eventHandlerProvider, "eventHandlerProvider");
+        q.h(eventHandlerProvider, "eventHandlerProvider");
     }
 
     @Override 
     public boolean isForItem(ChatListItem item, int i10) {
-        q.g(item, "item");
+        q.h(item, "item");
         return item instanceof PortalViewChatListItem;
     }
 
     public void bindView(FrameLayout view, PortalViewChatListItem item, BaseChatListItemDelegate.Metadata<FrameLayout> metadata) {
-        q.g(view, "view");
-        q.g(item, "item");
-        q.g(metadata, "metadata");
+        q.h(view, "view");
+        q.h(item, "item");
+        q.h(metadata, "metadata");
         item.getView().setVisibility(0);
         if (item.getView().getParent() != null) {
             ViewParent parent = item.getView().getParent();
-            q.e(parent, "null cannot be cast to non-null type android.view.ViewGroup");
+            q.f(parent, "null cannot be cast to non-null type android.view.ViewGroup");
             ((ViewGroup) parent).removeView(item.getView());
         }
         if (item.getMeasuredDimensions() != null) {
@@ -59,7 +59,7 @@ public final class PortalViewDelegate extends BaseChatListItemDelegate<PortalVie
 
     @Override 
     public FrameLayout createView(ViewGroup parent) {
-        q.g(parent, "parent");
+        q.h(parent, "parent");
         return new FrameLayout(parent.getContext());
     }
 }

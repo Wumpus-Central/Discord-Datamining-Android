@@ -24,7 +24,7 @@ public final class MessageContentViewHolder$bind$1 extends s implements Function
 
     public final LinkStyle invoke(LinkContentNode it) {
         DiscordFont discordFont;
-        q.g(it, "it");
+        q.h(it, "it");
         if (this.$messageContentItem.getBoldLinkText()) {
             discordFont = DiscordFont.PrimarySemibold;
         } else {

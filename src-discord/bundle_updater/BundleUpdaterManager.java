@@ -18,8 +18,8 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.jakewharton.processphoenix.ProcessPhoenix;
-import ff.x;
 import java.lang.reflect.Field;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -51,7 +51,7 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
     
     public BundleUpdaterManager(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.reactContext = reactContext;
     }
 
@@ -75,8 +75,8 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
 
     
     public static final void runOnActivity$lambda$5$lambda$4(Activity this_apply, Function1 callback) {
-        q.g(this_apply, "$this_apply");
-        q.g(callback, "$callback");
+        q.h(this_apply, "$this_apply");
+        q.h(callback, "$callback");
         View rootView = ActivityExtensionsKt.getRootView(this_apply);
         if (rootView != null) {
             if (!(rootView instanceof ViewGroup)) {
@@ -103,7 +103,7 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
         }
         if (createFileLoader == null) {
             createFileLoader = JSBundleLoader.createAssetLoader(getReactApplicationContext(), "assets:
-            q.f(createFileLoader, "createAssetLoader(\n     …     false,\n            )");
+            q.g(createFileLoader, "createAssetLoader(\n     …     false,\n            )");
         }
         Field declaredField = reactInstanceManager.getClass().getDeclaredField("mBundleLoader");
         declaredField.setAccessible(true);
@@ -125,10 +125,10 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void addListener(String type) {
-        q.g(type, "type");
-        if (q.b(type, BUNDLE_DOWNLOADED)) {
+        q.h(type, "type");
+        if (q.c(type, BUNDLE_DOWNLOADED)) {
             BundleUpdater.Companion.instance().setOnBundleDownloadedListener(new BundleUpdaterManager$addListener$1(this));
-        } else if (q.b(type, OTA_UPDATE_CHECKED)) {
+        } else if (q.c(type, OTA_UPDATE_CHECKED)) {
             BundleUpdater.Companion.instance().setOnOtaUpdateCheckedListener(new BundleUpdaterManager$addListener$2(this));
         }
     }
@@ -141,13 +141,13 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void getInitialBundleDownloaded(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         promise.resolve(new BundleDownloadedEvent(BundleUpdater.Companion.instance().isVersionRequired()).serialize());
     }
 
     @ReactMethod
     public final void getInitialOtaUpdateChecked(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         promise.resolve(new OtaUpdateCheckedEvent(BundleUpdater.Companion.instance().getOtaMetrics()).serialize());
     }
 

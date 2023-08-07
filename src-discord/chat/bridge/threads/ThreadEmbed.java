@@ -7,10 +7,10 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import pi.f;
-import si.a2;
-import si.h;
-import si.n1;
+import ti.f;
+import wi.a2;
+import wi.h;
+import wi.n1;
 
 @f
 @Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0019\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 /2\u00020\u0001:\u0002./BU\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\u0002\u0010\u000fBE\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\u0002\u0010\u0010J\t\u0010\u001b\u001a\u00020\u0005HÆ\u0003J\t\u0010\u001c\u001a\u00020\u0005HÆ\u0003J\u000b\u0010\u001d\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u0010\u0010\u001e\u001a\u0004\u0018\u00010\tHÆ\u0003¢\u0006\u0002\u0010\u0012J\u000b\u0010\u001f\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010 \u001a\u0004\u0018\u00010\fHÆ\u0003JR\u0010!\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\fHÆ\u0001¢\u0006\u0002\u0010\"J\u0013\u0010#\u001a\u00020\t2\b\u0010$\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010%\u001a\u00020\u0003HÖ\u0001J\t\u0010&\u001a\u00020\u0005HÖ\u0001J!\u0010'\u001a\u00020(2\u0006\u0010)\u001a\u00020\u00002\u0006\u0010*\u001a\u00020+2\u0006\u0010,\u001a\u00020-HÇ\u0001R\u0015\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0011\u0010\u0012R\u0013\u0010\n\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0015R\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0015R\u0013\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0015¨\u00060"}, d2 = {"Lcom/discord/chat/bridge/threads/ThreadEmbed;", "", "seen1", "", "title", "", "messageCountLabel", "messagePreviewString", "archived", "", "archivedIconUrl", "referencedMessage", "Lcom/discord/chat/bridge/threads/ThreadEmbedMessage;", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Lcom/discord/chat/bridge/threads/ThreadEmbedMessage;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Lcom/discord/chat/bridge/threads/ThreadEmbedMessage;)V", "getArchived", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getArchivedIconUrl", "()Ljava/lang/String;", "getMessageCountLabel", "getMessagePreviewString", "getReferencedMessage", "()Lcom/discord/chat/bridge/threads/ThreadEmbedMessage;", "getTitle", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Lcom/discord/chat/bridge/threads/ThreadEmbedMessage;)Lcom/discord/chat/bridge/threads/ThreadEmbed;", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -93,9 +93,9 @@ public final class ThreadEmbed {
         boolean z10;
         boolean z11;
         boolean z12;
-        q.g(self, "self");
-        q.g(output, "output");
-        q.g(serialDesc, "serialDesc");
+        q.h(self, "self");
+        q.h(output, "output");
+        q.h(serialDesc, "serialDesc");
         boolean z13 = false;
         output.s(serialDesc, 0, self.title);
         output.s(serialDesc, 1, self.messageCountLabel);
@@ -105,7 +105,7 @@ public final class ThreadEmbed {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 2, a2.f26246a, self.messagePreviewString);
+            output.z(serialDesc, 2, a2.f29540a, self.messagePreviewString);
         }
         if (!output.w(serialDesc, 3) && self.archived == null) {
             z11 = false;
@@ -113,7 +113,7 @@ public final class ThreadEmbed {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 3, h.f26288a, self.archived);
+            output.z(serialDesc, 3, h.f29582a, self.archived);
         }
         if (!output.w(serialDesc, 4) && self.archivedIconUrl == null) {
             z12 = false;
@@ -121,7 +121,7 @@ public final class ThreadEmbed {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 4, a2.f26246a, self.archivedIconUrl);
+            output.z(serialDesc, 4, a2.f29540a, self.archivedIconUrl);
         }
         if (output.w(serialDesc, 5) || self.referencedMessage != null) {
             z13 = true;
@@ -156,8 +156,8 @@ public final class ThreadEmbed {
     }
 
     public final ThreadEmbed copy(String title, String messageCountLabel, String str, Boolean bool, String str2, ThreadEmbedMessage threadEmbedMessage) {
-        q.g(title, "title");
-        q.g(messageCountLabel, "messageCountLabel");
+        q.h(title, "title");
+        q.h(messageCountLabel, "messageCountLabel");
         return new ThreadEmbed(title, messageCountLabel, str, bool, str2, threadEmbedMessage);
     }
 
@@ -169,7 +169,7 @@ public final class ThreadEmbed {
             return false;
         }
         ThreadEmbed threadEmbed = (ThreadEmbed) obj;
-        return q.b(this.title, threadEmbed.title) && q.b(this.messageCountLabel, threadEmbed.messageCountLabel) && q.b(this.messagePreviewString, threadEmbed.messagePreviewString) && q.b(this.archived, threadEmbed.archived) && q.b(this.archivedIconUrl, threadEmbed.archivedIconUrl) && q.b(this.referencedMessage, threadEmbed.referencedMessage);
+        return q.c(this.title, threadEmbed.title) && q.c(this.messageCountLabel, threadEmbed.messageCountLabel) && q.c(this.messagePreviewString, threadEmbed.messagePreviewString) && q.c(this.archived, threadEmbed.archived) && q.c(this.archivedIconUrl, threadEmbed.archivedIconUrl) && q.c(this.referencedMessage, threadEmbed.referencedMessage);
     }
 
     public final Boolean getArchived() {
@@ -223,8 +223,8 @@ public final class ThreadEmbed {
     }
 
     public ThreadEmbed(String title, String messageCountLabel, String str, Boolean bool, String str2, ThreadEmbedMessage threadEmbedMessage) {
-        q.g(title, "title");
-        q.g(messageCountLabel, "messageCountLabel");
+        q.h(title, "title");
+        q.h(messageCountLabel, "messageCountLabel");
         this.title = title;
         this.messageCountLabel = messageCountLabel;
         this.messagePreviewString = str;

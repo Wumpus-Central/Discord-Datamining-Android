@@ -13,11 +13,11 @@ import kotlin.jvm.internal.q;
 
 public final class I18nUtilsKt {
     public static final void i18nContentDescription(TextView textView, I18nMessage i18nMessage, Function1<? super RenderContext, Unit> initializer) {
-        q.g(textView, "<this>");
-        q.g(i18nMessage, "i18nMessage");
-        q.g(initializer, "initializer");
+        q.h(textView, "<this>");
+        q.h(i18nMessage, "i18nMessage");
+        q.h(initializer, "initializer");
         Context context = textView.getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         textView.setContentDescription(i18nFormat(context, i18nMessage, initializer));
     }
 
@@ -29,9 +29,9 @@ public final class I18nUtilsKt {
     }
 
     public static final CharSequence i18nFormat(Context context, I18nMessage i18nMessage, Function1<? super RenderContext, Unit> initializer) {
-        q.g(context, "<this>");
-        q.g(i18nMessage, "i18nMessage");
-        q.g(initializer, "initializer");
+        q.h(context, "<this>");
+        q.h(i18nMessage, "i18nMessage");
+        q.h(initializer, "initializer");
         RenderContext renderContext = new RenderContext();
         initializer.invoke(renderContext);
         return RenderContext.Argument.INSTANCE.replace(i18nMessage.format$react_strings_release(context), new I18nUtilsKt$i18nFormat$2(renderContext));
@@ -45,11 +45,11 @@ public final class I18nUtilsKt {
     }
 
     public static final void i18nSetText(TextView textView, I18nMessage i18nMessage, Function1<? super RenderContext, Unit> initializer) {
-        q.g(textView, "<this>");
-        q.g(i18nMessage, "i18nMessage");
-        q.g(initializer, "initializer");
+        q.h(textView, "<this>");
+        q.h(i18nMessage, "i18nMessage");
+        q.h(initializer, "initializer");
         Context context = textView.getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         textView.setText(i18nFormat(context, i18nMessage, initializer));
     }
 
@@ -61,11 +61,11 @@ public final class I18nUtilsKt {
     }
 
     public static final void i18nContentDescription(ImageView imageView, I18nMessage i18nMessage, Function1<? super RenderContext, Unit> initializer) {
-        q.g(imageView, "<this>");
-        q.g(i18nMessage, "i18nMessage");
-        q.g(initializer, "initializer");
+        q.h(imageView, "<this>");
+        q.h(i18nMessage, "i18nMessage");
+        q.h(initializer, "initializer");
         Context context = imageView.getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         imageView.setContentDescription(i18nFormat(context, i18nMessage, initializer));
     }
 

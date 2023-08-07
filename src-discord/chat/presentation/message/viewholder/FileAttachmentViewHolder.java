@@ -20,18 +20,18 @@ public final class FileAttachmentViewHolder extends MessagePartViewHolder {
     
     public FileAttachmentViewHolder(FileAttachmentView view, ChatEventHandler eventHandler) {
         super(view, null);
-        q.g(view, "view");
-        q.g(eventHandler, "eventHandler");
+        q.h(view, "view");
+        q.h(eventHandler, "eventHandler");
         this.view = view;
         this.eventHandler = eventHandler;
     }
 
     public final void bind(FileAttachmentMessageAccessory fileAttachmentItem, Function2<? super String, ? super String, Unit> onClick, SpoilerConfig spoilerConfig, Float f10) {
-        q.g(fileAttachmentItem, "fileAttachmentItem");
-        q.g(onClick, "onClick");
+        q.h(fileAttachmentItem, "fileAttachmentItem");
+        q.h(onClick, "onClick");
         Attachment attachment = fileAttachmentItem.getAttachment();
         String uploaderId = attachment.getUploaderId();
         String uploaderItemId = attachment.getUploaderItemId();
-        this.view.setContent(attachment.getFilename(), attachment.getSize(), attachment.getUrl(), onClick, attachment.isSpoiler(), spoilerConfig, attachment.getProgress(), new FileAttachmentViewHolder$bind$onCancelUpload$1(uploaderId, uploaderItemId, this), new UploadContext(uploaderId, uploaderItemId), f10);
+        this.view.setContent(attachment.getFilename(), attachment.getSize(), attachment.getUrl(), onClick, attachment.isSpoiler(), spoilerConfig, attachment.getProgress(), new FileAttachmentViewHolder$bind$onCancelUpload$1(uploaderId, uploaderItemId, this), new UploadContext(uploaderId, uploaderItemId), f10, attachment.getBackgroundColor());
     }
 }

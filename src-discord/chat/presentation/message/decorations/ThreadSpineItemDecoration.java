@@ -9,8 +9,8 @@ import com.discord.chat.presentation.message.view.MessageContentView;
 import com.discord.chat.presentation.message.view.ThreadEmbedView;
 import com.discord.chat.presentation.spine.SpineParentMessage;
 import com.discord.misc.utilities.size.SizeUtilsKt;
-import gf.p;
 import java.util.Iterator;
+import kf.p;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 import kotlin.ranges.IntRange;
@@ -22,7 +22,7 @@ public final class ThreadSpineItemDecoration extends RecyclerView.ItemDecoration
     private final SpineDrawer spineDrawer;
 
     public ThreadSpineItemDecoration(Context context, int i10) {
-        q.g(context, "context");
+        q.h(context, "context");
         this.spineDrawer = new SpineDrawer(context, i10);
     }
 
@@ -35,9 +35,9 @@ public final class ThreadSpineItemDecoration extends RecyclerView.ItemDecoration
         SpineParentMessage spineParentMessage;
         View spineOriginView;
         int i10;
-        q.g(canvas, "canvas");
-        q.g(parent, "parent");
-        q.g(state, "state");
+        q.h(canvas, "canvas");
+        q.h(parent, "parent");
+        q.h(state, "state");
         super.onDraw(canvas, parent, state);
         if (this.showThreadSpine) {
             ViewParent parent2 = parent.getParent();
@@ -53,7 +53,7 @@ public final class ThreadSpineItemDecoration extends RecyclerView.ItemDecoration
                     int nextInt = ((p) it).nextInt();
                     View childAt = parent.getChildAt(nextInt);
                     if (childAt != null) {
-                        q.f(childAt, "getChildAt(index)");
+                        q.g(childAt, "getChildAt(index)");
                         if (childAt instanceof ThreadEmbedView) {
                             this.spineDrawer.drawSpineCurve(canvas, parent, childAt, childAt, left);
                         } else if (childAt instanceof MessageContentView) {

@@ -28,7 +28,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import ji.u;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.e;
@@ -47,6 +46,7 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.j0;
 import kotlinx.coroutines.k0;
 import kotlinx.coroutines.y0;
+import ni.u;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.webrtc.MediaStreamTrack;
@@ -83,7 +83,7 @@ public final class MediaEngine {
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
             bitmap.compress(Bitmap.CompressFormat.JPEG, 92, byteArrayOutputStream);
             byte[] byteArray = byteArrayOutputStream.toByteArray();
-            q.f(byteArray, "ByteArrayOutputStream()\n…           .toByteArray()");
+            q.g(byteArray, "ByteArrayOutputStream()\n…           .toByteArray()");
             return byteArray;
         }
 
@@ -106,7 +106,7 @@ public final class MediaEngine {
         private final ScreenCapturer screenCapturer;
 
         public ScreenCapturerForConnection(ScreenCapturer screenCapturer, int i10) {
-            q.g(screenCapturer, "screenCapturer");
+            q.h(screenCapturer, "screenCapturer");
             this.screenCapturer = screenCapturer;
             this.connectionId = i10;
         }
@@ -130,7 +130,7 @@ public final class MediaEngine {
         }
 
         public final ScreenCapturerForConnection copy(ScreenCapturer screenCapturer, int i10) {
-            q.g(screenCapturer, "screenCapturer");
+            q.h(screenCapturer, "screenCapturer");
             return new ScreenCapturerForConnection(screenCapturer, i10);
         }
 
@@ -142,7 +142,7 @@ public final class MediaEngine {
                 return false;
             }
             ScreenCapturerForConnection screenCapturerForConnection = (ScreenCapturerForConnection) obj;
-            return q.b(this.screenCapturer, screenCapturerForConnection.screenCapturer) && this.connectionId == screenCapturerForConnection.connectionId;
+            return q.c(this.screenCapturer, screenCapturerForConnection.screenCapturer) && this.connectionId == screenCapturerForConnection.connectionId;
         }
 
         public final int getConnectionId() {
@@ -175,80 +175,80 @@ public final class MediaEngine {
     }
 
     public MediaEngine(Context context, CoroutineDispatcher coroutineDispatcher) {
-        q.g(context, "context");
-        q.g(coroutineDispatcher, "coroutineDispatcher");
+        q.h(context, "context");
+        q.h(coroutineDispatcher, "coroutineDispatcher");
         this.context = context;
         this.instanceCreationNs = System.nanoTime();
         this.engineConnections = new MediaEngineNativeConnections();
         this.engineSpeedTestConnections = new MediaEngineNativeSpeedTestConnections();
         this.dispatcher = new AsyncInitDispatcher(TAG, 0L, 2, null);
-        this.coroutineScope = k0.a(coroutineDispatcher.v(new j0(TAG)));
+        this.coroutineScope = k0.a(coroutineDispatcher.u(new j0(TAG)));
     }
 
     
     public static final void connectionInstanceGetEncryptionModes$lambda$54(Function1 callback, String[] modes) {
-        q.g(callback, "$callback");
-        q.g(modes, "modes");
+        q.h(callback, "$callback");
+        q.h(modes, "modes");
         callback.invoke(modes);
     }
 
     
     public static final void connectionInstanceGetFilteredStats$lambda$56(Function1 callback, String stats) {
-        q.g(callback, "$callback");
-        q.g(stats, "stats");
+        q.h(callback, "$callback");
+        q.h(stats, "stats");
         callback.invoke(stats);
     }
 
     
     public static final void connectionInstanceGetStats$lambda$55(Function1 callback, String stats) {
-        q.g(callback, "$callback");
-        q.g(stats, "stats");
+        q.h(callback, "$callback");
+        q.h(stats, "stats");
         callback.invoke(stats);
     }
 
     
     public static final void connectionInstanceSetOnFirstFrameCallback$lambda$50(Function3 cb2, String userId, long j10, String streamId) {
-        q.g(cb2, "$cb");
-        q.g(userId, "userId");
-        q.g(streamId, "streamId");
+        q.h(cb2, "$cb");
+        q.h(userId, "userId");
+        q.h(streamId, "streamId");
         cb2.invoke(userId, Long.valueOf(j10), streamId);
     }
 
     
     public static final void connectionInstanceSetOnPingCallback$lambda$48(Function4 cb2, int i10, String server, int i11, int i12) {
-        q.g(cb2, "$cb");
-        q.g(server, "server");
+        q.h(cb2, "$cb");
+        q.h(server, "server");
         cb2.invoke(Integer.valueOf(i10), server, Integer.valueOf(i11), Integer.valueOf(i12));
     }
 
     
     public static final void connectionInstanceSetOnPingTimeoutCallback$lambda$49(Function4 cb2, String server, int i10, int i11, int i12) {
-        q.g(cb2, "$cb");
-        q.g(server, "server");
+        q.h(cb2, "$cb");
+        q.h(server, "server");
         cb2.invoke(server, Integer.valueOf(i10), Integer.valueOf(i11), Integer.valueOf(i12));
     }
 
     
     public static final void connectionInstanceSetOnSpeakingCallback$lambda$47(Function2 cb2, String userId, int i10) {
-        q.g(cb2, "$cb");
-        q.g(userId, "userId");
+        q.h(cb2, "$cb");
+        q.h(userId, "userId");
         cb2.invoke(userId, Integer.valueOf(i10));
     }
 
     
     public static final void connectionInstanceSetOnVideoCallback$lambda$51(Function4 cb2, String userId, long j10, String streamId, String videoStreamParametersJSON) {
-        q.g(cb2, "$cb");
-        q.g(userId, "userId");
-        q.g(streamId, "streamId");
-        q.g(videoStreamParametersJSON, "videoStreamParametersJSON");
+        q.h(cb2, "$cb");
+        q.h(userId, "userId");
+        q.h(streamId, "streamId");
+        q.h(videoStreamParametersJSON, "videoStreamParametersJSON");
         cb2.invoke(userId, Long.valueOf(j10), streamId, videoStreamParametersJSON);
     }
 
     
     public static final void createSpeedTestConnection$lambda$57(Function2 callback, ConnectionInfo connectionInfo, String errorMessage) {
-        q.g(callback, "$callback");
-        q.g(connectionInfo, "connectionInfo");
-        q.g(errorMessage, "errorMessage");
+        q.h(callback, "$callback");
+        q.h(connectionInfo, "connectionInfo");
+        q.h(errorMessage, "errorMessage");
         Log log = Log.INSTANCE;
         Log.i$default(log, TAG, "On created with " + connectionInfo + ", " + errorMessage, (Throwable) null, 4, (Object) null);
         callback.invoke(errorMessage, NativeTypeExtensionsKt.toMap(connectionInfo));
@@ -256,9 +256,9 @@ public final class MediaEngine {
 
     
     public static final void createVoiceConnection$lambda$45(Function2 callback, ConnectionInfo connectionInfo, String errorMessage) {
-        q.g(callback, "$callback");
-        q.g(connectionInfo, "connectionInfo");
-        q.g(errorMessage, "errorMessage");
+        q.h(callback, "$callback");
+        q.h(connectionInfo, "connectionInfo");
+        q.h(errorMessage, "errorMessage");
         Log log = Log.INSTANCE;
         Log.i$default(log, TAG, "On created with " + connectionInfo + ", " + errorMessage, (Throwable) null, 4, (Object) null);
         callback.invoke(errorMessage, NativeTypeExtensionsKt.toMap(connectionInfo));
@@ -274,8 +274,8 @@ public final class MediaEngine {
 
     
     public static final void getCodecCapabilities$lambda$32$lambda$31(Function1 callback, String codecs) {
-        q.g(callback, "$callback");
-        q.g(codecs, "codecs");
+        q.h(callback, "$callback");
+        q.h(codecs, "codecs");
         callback.invoke(codecs);
     }
 
@@ -307,15 +307,15 @@ public final class MediaEngine {
 
     
     public static final void getInputDevices$lambda$10$lambda$9(Function1 callback, AudioInputDeviceDescription[] devices) {
-        q.g(callback, "$callback");
-        q.g(devices, "devices");
+        q.h(callback, "$callback");
+        q.h(devices, "devices");
         callback.invoke(NativeTypeExtensionsKt.toListOfMaps(devices));
     }
 
     
     public static final void getOutputDevices$lambda$15$lambda$14(Function1 callback, AudioOutputDeviceDescription[] devices) {
-        q.g(callback, "$callback");
-        q.g(devices, "devices");
+        q.h(callback, "$callback");
+        q.h(devices, "devices");
         callback.invoke(NativeTypeExtensionsKt.toListOfMaps(devices));
     }
 
@@ -330,82 +330,82 @@ public final class MediaEngine {
 
     
     public static final void getSupportedVideoCodecs$lambda$29$lambda$28(Function1 callback, String[] codecs) {
-        q.g(callback, "$callback");
-        q.g(codecs, "codecs");
+        q.h(callback, "$callback");
+        q.h(codecs, "codecs");
         callback.invoke(codecs);
     }
 
     
     public static final void getVideoInputDevices$lambda$20$lambda$19(Function1 callback, VideoInputDeviceDescription[] videoInputDevices) {
-        q.g(callback, "$callback");
-        q.g(videoInputDevices, "videoInputDevices");
+        q.h(callback, "$callback");
+        q.h(videoInputDevices, "videoInputDevices");
         callback.invoke(NativeTypeExtensionsKt.toListOfMaps(videoInputDevices));
     }
 
     
     public static final void rankRtcRegions$lambda$38$lambda$37(Function1 callback, String[] regions) {
-        q.g(callback, "$callback");
-        q.g(regions, "regions");
+        q.h(callback, "$callback");
+        q.h(regions, "regions");
         callback.invoke(regions);
     }
 
     
     public static final void speedTestConnectionInstanceGetEncryptionModes$lambda$61(Function1 callback, String[] modes) {
-        q.g(callback, "$callback");
-        q.g(modes, "modes");
+        q.h(callback, "$callback");
+        q.h(modes, "modes");
         callback.invoke(modes);
     }
 
     
     public static final void speedTestConnectionInstanceGetNetworkOverhead$lambda$62(Function1 callback, int i10) {
-        q.g(callback, "$callback");
+        q.h(callback, "$callback");
         callback.invoke(Integer.valueOf(i10));
     }
 
     
     public static final void speedTestConnectionInstanceSetOnPingCallback$lambda$59(Function4 cb2, int i10, String server, int i11, int i12) {
-        q.g(cb2, "$cb");
-        q.g(server, "server");
+        q.h(cb2, "$cb");
+        q.h(server, "server");
         cb2.invoke(Integer.valueOf(i10), server, Integer.valueOf(i11), Integer.valueOf(i12));
     }
 
     
     public static final void speedTestConnectionInstanceSetOnPingTimeoutCallback$lambda$60(Function4 cb2, String server, int i10, int i11, int i12) {
-        q.g(cb2, "$cb");
-        q.g(server, "server");
+        q.h(cb2, "$cb");
+        q.h(server, "server");
         cb2.invoke(server, Integer.valueOf(i10), Integer.valueOf(i11), Integer.valueOf(i12));
     }
 
     
     public static final void speedTestConnectionInstanceStartSpeedTestReceiver$lambda$64(Function0 callback) {
-        q.g(callback, "$callback");
+        q.h(callback, "$callback");
         callback.invoke();
     }
 
     
     public static final void speedTestConnectionInstanceStartSpeedTestSender$lambda$63(Function2 callback, int i10, String desc) {
-        q.g(callback, "$callback");
-        q.g(desc, "desc");
+        q.h(callback, "$callback");
+        q.h(desc, "desc");
         callback.invoke(Integer.valueOf(i10), desc);
     }
 
     
     public static final void speedTestConnectionInstanceStopSpeedTestReceiver$lambda$65(Function2 callback, int i10, String results) {
-        q.g(callback, "$callback");
-        q.g(results, "results");
+        q.h(callback, "$callback");
+        q.h(results, "results");
         callback.invoke(Integer.valueOf(i10), results);
     }
 
     
     public static final void startLocalAudioRecording$lambda$40(Function1 callback, boolean z10) {
-        q.g(callback, "$callback");
+        q.h(callback, "$callback");
         callback.invoke(Boolean.valueOf(z10));
     }
 
     
     public static final void stopLocalAudioRecording$lambda$42$lambda$41(Function2 callback, String fileName, int i10) {
-        q.g(callback, "$callback");
-        q.g(fileName, "fileName");
+        q.h(callback, "$callback");
+        q.h(fileName, "fileName");
         callback.invoke(fileName, Integer.valueOf(i10));
     }
 
@@ -430,7 +430,7 @@ public final class MediaEngine {
             return null;
         }
         connection.configureConnectionRetries(i11, i12, i13);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final void connectionInstanceDestroy$media_engine_release(int i10) {
@@ -439,17 +439,17 @@ public final class MediaEngine {
     }
 
     public final Unit connectionInstanceDestroyUser$media_engine_release(int i10, String userId) {
-        q.g(userId, "userId");
+        q.h(userId, "userId");
         NativeConnection connection = getConnection(i10, "destroyUser");
         if (connection == null) {
             return null;
         }
         connection.destroyUser(userId);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceGetEncryptionModes$media_engine_release(int i10, final Function1<? super String[], Unit> callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         NativeConnection connection = getConnection(i10, "getEncryptionModes");
         if (connection == null) {
             return null;
@@ -460,11 +460,11 @@ public final class MediaEngine {
                 MediaEngine.connectionInstanceGetEncryptionModes$lambda$54(Function1.this, strArr);
             }
         });
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceGetFilteredStats$media_engine_release(int i10, int i11, final Function1<? super String, Unit> callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         NativeConnection connection = getConnection(i10, "getFilteredStats");
         if (connection == null) {
             return null;
@@ -475,11 +475,11 @@ public final class MediaEngine {
                 MediaEngine.connectionInstanceGetFilteredStats$lambda$56(Function1.this, str);
             }
         });
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceGetStats$media_engine_release(int i10, final Function1<? super String, Unit> callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         NativeConnection connection = getConnection(i10, "getStats");
         if (connection == null) {
             return null;
@@ -490,47 +490,47 @@ public final class MediaEngine {
                 MediaEngine.connectionInstanceGetStats$lambda$55(Function1.this, str);
             }
         });
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceMergeUsers$media_engine_release(int i10, String usersJSON) {
-        q.g(usersJSON, "usersJSON");
+        q.h(usersJSON, "usersJSON");
         NativeConnection connection = getConnection(i10, "mergeUsers");
         if (connection == null) {
             return null;
         }
         connection.mergeUsers(usersJSON);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceSetLocalMute$media_engine_release(int i10, String userId, boolean z10) {
-        q.g(userId, "userId");
+        q.h(userId, "userId");
         NativeConnection connection = getConnection(i10, "setLocalMute");
         if (connection == null) {
             return null;
         }
         connection.setLocalMute(userId, z10);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceSetLocalPan$media_engine_release(int i10, String userId, float f10, float f11) {
-        q.g(userId, "userId");
+        q.h(userId, "userId");
         NativeConnection connection = getConnection(i10, "setLocalPan");
         if (connection == null) {
             return null;
         }
         connection.setLocalPan(userId, f10, f11);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceSetLocalVolume$media_engine_release(int i10, String userId, float f10) {
-        q.g(userId, "userId");
+        q.h(userId, "userId");
         NativeConnection connection = getConnection(i10, "setLocalVolume");
         if (connection == null) {
             return null;
         }
         connection.setLocalVolume(userId, f10);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceSetMinimumOutputDelay$media_engine_release(int i10, int i11) {
@@ -539,7 +539,7 @@ public final class MediaEngine {
             return null;
         }
         connection.setMinimumOutputDelay(i11);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceSetNoInputThreshold$media_engine_release(int i10, float f10) {
@@ -548,11 +548,11 @@ public final class MediaEngine {
             return null;
         }
         connection.setNoInputThreshold(f10);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceSetOnFirstFrameCallback$media_engine_release(int i10, final Function3<? super String, ? super Long, ? super String, Unit> cb2) {
-        q.g(cb2, "cb");
+        q.h(cb2, "cb");
         NativeConnection connection = getConnection(i10, "setOnFirstFrameCallback");
         if (connection == null) {
             return null;
@@ -563,11 +563,11 @@ public final class MediaEngine {
                 MediaEngine.connectionInstanceSetOnFirstFrameCallback$lambda$50(Function3.this, str, j10, str2);
             }
         });
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceSetOnPingCallback$media_engine_release(int i10, final Function4<? super Integer, ? super String, ? super Integer, ? super Integer, Unit> cb2) {
-        q.g(cb2, "cb");
+        q.h(cb2, "cb");
         NativeConnection connection = getConnection(i10, "setOnPingCallback");
         if (connection == null) {
             return null;
@@ -578,11 +578,11 @@ public final class MediaEngine {
                 MediaEngine.connectionInstanceSetOnPingCallback$lambda$48(Function4.this, i11, str, i12, i13);
             }
         });
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceSetOnPingTimeoutCallback$media_engine_release(int i10, final Function4<? super String, ? super Integer, ? super Integer, ? super Integer, Unit> cb2) {
-        q.g(cb2, "cb");
+        q.h(cb2, "cb");
         NativeConnection connection = getConnection(i10, "setOnPingTimeoutCallback");
         if (connection == null) {
             return null;
@@ -593,11 +593,11 @@ public final class MediaEngine {
                 MediaEngine.connectionInstanceSetOnPingTimeoutCallback$lambda$49(Function4.this, str, i11, i12, i13);
             }
         });
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceSetOnSpeakingCallback$media_engine_release(int i10, final Function2<? super String, ? super Integer, Unit> cb2) {
-        q.g(cb2, "cb");
+        q.h(cb2, "cb");
         NativeConnection connection = getConnection(i10, "setOnSpeakingCallback");
         if (connection == null) {
             return null;
@@ -608,11 +608,11 @@ public final class MediaEngine {
                 MediaEngine.connectionInstanceSetOnSpeakingCallback$lambda$47(Function2.this, str, i11);
             }
         });
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceSetOnVideoCallback$media_engine_release(int i10, final Function4<? super String, ? super Long, ? super String, ? super String, Unit> cb2) {
-        q.g(cb2, "cb");
+        q.h(cb2, "cb");
         NativeConnection connection = getConnection(i10, "setOnVideoCallback");
         if (connection == null) {
             return null;
@@ -623,7 +623,7 @@ public final class MediaEngine {
                 MediaEngine.connectionInstanceSetOnVideoCallback$lambda$51(Function4.this, str, j10, str2, str3);
             }
         });
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceSetPTTActive$media_engine_release(int i10, boolean z10, boolean z11) {
@@ -632,7 +632,7 @@ public final class MediaEngine {
             return null;
         }
         connection.setPTTActive(z10, z11);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceSetPingInterval$media_engine_release(int i10, int i11) {
@@ -641,7 +641,7 @@ public final class MediaEngine {
             return null;
         }
         connection.setPingInterval(i11);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceSetSelfDeafen$media_engine_release(int i10, boolean z10) {
@@ -650,7 +650,7 @@ public final class MediaEngine {
             return null;
         }
         connection.setSelfDeafen(z10);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceSetSelfMute$media_engine_release(int i10, boolean z10) {
@@ -659,17 +659,17 @@ public final class MediaEngine {
             return null;
         }
         connection.setSelfMute(z10);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceSetTransportOptions$media_engine_release(int i10, String optionsJSON) {
-        q.g(optionsJSON, "optionsJSON");
+        q.h(optionsJSON, "optionsJSON");
         NativeConnection connection = getConnection(i10, "setTransportOptions");
         if (connection == null) {
             return null;
         }
         connection.setTransportOptions(optionsJSON);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit connectionInstanceSetVideoBroadcast$media_engine_release(int i10, boolean z10) {
@@ -678,11 +678,11 @@ public final class MediaEngine {
             return null;
         }
         connection.setVideoBroadcast(z10);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final void connectionInstanceStartBroadcast$media_engine_release(int i10, Intent permissions) {
-        q.g(permissions, "permissions");
+        q.h(permissions, "permissions");
         NativeConnection connection = getConnection(i10, "startBroadcast");
         if (connection != null) {
             forceStopScreenCapturer();
@@ -701,7 +701,7 @@ public final class MediaEngine {
     }
 
     public final void connectionInstanceStopBroadcastWithError$media_engine_release(int i10, int i11, String errorMessage) {
-        q.g(errorMessage, "errorMessage");
+        q.h(errorMessage, "errorMessage");
         NativeConnection connection = getConnection(i10, "stopBroadcastWithError");
         if (connection != null) {
             connection.stopBroadcast();
@@ -710,9 +710,9 @@ public final class MediaEngine {
     }
 
     public final void createSpeedTestConnection(int i10, String userId, String connectionOptionsJSON, final Function2<? super String, ? super Map<String, ? extends Object>, Unit> callback) {
-        q.g(userId, "userId");
-        q.g(connectionOptionsJSON, "connectionOptionsJSON");
-        q.g(callback, "callback");
+        q.h(userId, "userId");
+        q.h(connectionOptionsJSON, "connectionOptionsJSON");
+        q.h(callback, "callback");
         this.engineSpeedTestConnections.register(i10, getEngine().createSpeedTestConnection(userId, connectionOptionsJSON, new NativeEngine.ConnectToServerCallback() { 
             @Override 
             public final void onConnectToServer(ConnectionInfo connectionInfo, String str) {
@@ -722,9 +722,9 @@ public final class MediaEngine {
     }
 
     public final void createVoiceConnection(int i10, String userId, String connectionOptionsJSON, final Function2<? super String, ? super Map<String, ? extends Object>, Unit> callback) {
-        q.g(userId, "userId");
-        q.g(connectionOptionsJSON, "connectionOptionsJSON");
-        q.g(callback, "callback");
+        q.h(userId, "userId");
+        q.h(connectionOptionsJSON, "connectionOptionsJSON");
+        q.h(callback, "callback");
         this.engineConnections.register(i10, getEngine().createVoiceConnection(userId, connectionOptionsJSON, new NativeEngine.ConnectToServerCallback() { 
             @Override 
             public final void onConnectToServer(ConnectionInfo connectionInfo, String str) {
@@ -734,7 +734,7 @@ public final class MediaEngine {
     }
 
     public final void getAudioSubsystem$media_engine_release(Function2<? super String, ? super String, Unit> cb2) {
-        q.g(cb2, "cb");
+        q.h(cb2, "cb");
         AsyncInitDispatcher asyncInitDispatcher = this.dispatcher;
         asyncInitDispatcher.validateState();
         if (asyncInitDispatcher.getInitialized()) {
@@ -745,7 +745,7 @@ public final class MediaEngine {
     }
 
     public final void getCodecCapabilities$media_engine_release(final Function1<? super String, Unit> callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         AsyncInitDispatcher asyncInitDispatcher = this.dispatcher;
         asyncInitDispatcher.validateState();
         if (asyncInitDispatcher.getInitialized()) {
@@ -768,7 +768,7 @@ public final class MediaEngine {
         Object[] o11;
         boolean isHardwareAccelerated;
         boolean H;
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         AsyncInitDispatcher asyncInitDispatcher = this.dispatcher;
         asyncInitDispatcher.validateState();
         if (asyncInitDispatcher.getInitialized()) {
@@ -777,21 +777,21 @@ public final class MediaEngine {
             String[] strArr = new String[0];
             String[] strArr2 = new String[0];
             MediaCodecInfo[] codecInfos = new MediaCodecList(0).getCodecInfos();
-            q.f(codecInfos, "codecList.codecInfos");
+            q.g(codecInfos, "codecList.codecInfos");
             int length = codecInfos.length;
             int i11 = 0;
             while (i11 < length) {
                 MediaCodecInfo mediaCodecInfo = codecInfos[i11];
                 String name = mediaCodecInfo.getName();
-                q.f(name, "codecInfo.name");
+                q.g(name, "codecInfo.name");
                 String[] supportedTypes = mediaCodecInfo.getSupportedTypes();
-                q.f(supportedTypes, "codecInfo.supportedTypes");
+                q.g(supportedTypes, "codecInfo.supportedTypes");
                 ArrayList<String> arrayList = new ArrayList();
                 int length2 = supportedTypes.length;
                 int i12 = i10;
                 while (i12 < length2) {
                     String type = supportedTypes[i12];
-                    q.f(type, "type");
+                    q.g(type, "type");
                     H = u.H(type, MediaStreamTrack.VIDEO_TRACK_KIND, false, 2, null);
                     if (H) {
                         arrayList.add(type);
@@ -829,7 +829,7 @@ public final class MediaEngine {
             jSONObject.put("available_video_encoders", new JSONArray(strArr));
             jSONObject.put("available_video_decoders", new JSONArray(strArr2));
             String jSONObject2 = jSONObject.toString();
-            q.f(jSONObject2, "codecJson.toString()");
+            q.g(jSONObject2, "codecJson.toString()");
             callback.invoke(jSONObject2);
             return;
         }
@@ -838,7 +838,7 @@ public final class MediaEngine {
 
     public final void getInputDevices$media_engine_release(final Function1<? super List<? extends Map<String, ? extends Object>>, Unit> callback) {
         List h10;
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         AsyncInitDispatcher asyncInitDispatcher = this.dispatcher;
         asyncInitDispatcher.validateState();
         if (asyncInitDispatcher.getInitialized()) {
@@ -856,7 +856,7 @@ public final class MediaEngine {
 
     public final void getOutputDevices$media_engine_release(final Function1<? super List<? extends Map<String, ? extends Object>>, Unit> callback) {
         List h10;
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         AsyncInitDispatcher asyncInitDispatcher = this.dispatcher;
         asyncInitDispatcher.validateState();
         if (asyncInitDispatcher.getInitialized()) {
@@ -873,7 +873,7 @@ public final class MediaEngine {
     }
 
     public final void getSupportedVideoCodecs$media_engine_release(final Function1<? super String[], Unit> callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         AsyncInitDispatcher asyncInitDispatcher = this.dispatcher;
         asyncInitDispatcher.validateState();
         if (asyncInitDispatcher.getInitialized()) {
@@ -890,7 +890,7 @@ public final class MediaEngine {
 
     public final void getVideoInputDevices$media_engine_release(final Function1<? super List<? extends Map<String, ? extends Object>>, Unit> callback) {
         List h10;
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         AsyncInitDispatcher asyncInitDispatcher = this.dispatcher;
         asyncInitDispatcher.validateState();
         if (asyncInitDispatcher.getInitialized()) {
@@ -907,8 +907,8 @@ public final class MediaEngine {
     }
 
     public final void rankRtcRegions$media_engine_release(String regionsWithIpsJSON, final Function1<? super String[], Unit> callback) {
-        q.g(regionsWithIpsJSON, "regionsWithIpsJSON");
-        q.g(callback, "callback");
+        q.h(regionsWithIpsJSON, "regionsWithIpsJSON");
+        q.h(callback, "callback");
         AsyncInitDispatcher asyncInitDispatcher = this.dispatcher;
         asyncInitDispatcher.validateState();
         if (asyncInitDispatcher.getInitialized()) {
@@ -938,7 +938,7 @@ public final class MediaEngine {
     }
 
     public final void setActiveSinksChangeCallback$media_engine_release(Function2<? super String, ? super Boolean, Unit> cb2) {
-        q.g(cb2, "cb");
+        q.h(cb2, "cb");
         AttachedVideoSinks.INSTANCE.setActiveSinksChangeCallback(cb2);
     }
 
@@ -953,7 +953,7 @@ public final class MediaEngine {
     }
 
     public final void setBroadcastThumbnailParams$media_engine_release(int i10, int i11, int i12, Function1<? super String, Unit> callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         ScreenCapturerForConnection screenCapturerForConnection = this.screenCapturer;
         if (screenCapturerForConnection != null) {
             screenCapturerForConnection.component1().setThumbnailEmitter(new ThumbnailEmitter(i10, i11, i12 * 1000, new MediaEngine$setBroadcastThumbnailParams$1$1(this, callback)));
@@ -961,7 +961,7 @@ public final class MediaEngine {
     }
 
     public final void setDeviceChangeCallback$media_engine_release(Function3<? super List<? extends Map<String, ? extends Object>>, ? super List<? extends Map<String, ? extends Object>>, ? super List<? extends Map<String, ? extends Object>>, Unit> callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         AsyncInitDispatcher asyncInitDispatcher = this.dispatcher;
         asyncInitDispatcher.validateState();
         if (asyncInitDispatcher.getInitialized()) {
@@ -1012,7 +1012,7 @@ public final class MediaEngine {
     }
 
     public final void setOnNoInputCallback$media_engine_release(Function1<? super Boolean, Unit> cb2) {
-        q.g(cb2, "cb");
+        q.h(cb2, "cb");
         AsyncInitDispatcher asyncInitDispatcher = this.dispatcher;
         asyncInitDispatcher.validateState();
         if (asyncInitDispatcher.getInitialized()) {
@@ -1023,7 +1023,7 @@ public final class MediaEngine {
     }
 
     public final void setOnVoiceCallback$media_engine_release(Function2<? super Float, ? super Integer, Unit> cb2) {
-        q.g(cb2, "cb");
+        q.h(cb2, "cb");
         AsyncInitDispatcher asyncInitDispatcher = this.dispatcher;
         asyncInitDispatcher.validateState();
         if (asyncInitDispatcher.getInitialized()) {
@@ -1054,7 +1054,7 @@ public final class MediaEngine {
     }
 
     public final void setTransportOptions$media_engine_release(String optionsJSON) {
-        q.g(optionsJSON, "optionsJSON");
+        q.h(optionsJSON, "optionsJSON");
         AsyncInitDispatcher asyncInitDispatcher = this.dispatcher;
         asyncInitDispatcher.validateState();
         if (asyncInitDispatcher.getInitialized()) {
@@ -1065,7 +1065,7 @@ public final class MediaEngine {
     }
 
     public final void setVideoInputDevice$media_engine_release(String deviceName) {
-        q.g(deviceName, "deviceName");
+        q.h(deviceName, "deviceName");
         AsyncInitDispatcher asyncInitDispatcher = this.dispatcher;
         asyncInitDispatcher.validateState();
         if (asyncInitDispatcher.getInitialized()) {
@@ -1076,7 +1076,7 @@ public final class MediaEngine {
     }
 
     public final void setVideoOutputSink$media_engine_release(String streamIdentifier, Function1<? super VideoFrame, Boolean> function1) {
-        q.g(streamIdentifier, "streamIdentifier");
+        q.h(streamIdentifier, "streamIdentifier");
         AsyncInitDispatcher asyncInitDispatcher = this.dispatcher;
         if (!asyncInitDispatcher.getInitialized()) {
             asyncInitDispatcher.getDelayedTasks().add(new MediaEngine$setVideoOutputSink$$inlined$post$1(function1, this, streamIdentifier));
@@ -1092,7 +1092,7 @@ public final class MediaEngine {
     }
 
     public final Unit speedTestConnectionInstanceGetEncryptionModes$media_engine_release(int i10, final Function1<? super String[], Unit> callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         NativeSpeedTestConnection speedTestConnection = getSpeedTestConnection(i10, "getEncryptionModes");
         if (speedTestConnection == null) {
             return null;
@@ -1103,11 +1103,11 @@ public final class MediaEngine {
                 MediaEngine.speedTestConnectionInstanceGetEncryptionModes$lambda$61(Function1.this, strArr);
             }
         });
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit speedTestConnectionInstanceGetNetworkOverhead$media_engine_release(int i10, final Function1<? super Integer, Unit> callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         NativeSpeedTestConnection speedTestConnection = getSpeedTestConnection(i10, "getNetworkOverhead");
         if (speedTestConnection == null) {
             return null;
@@ -1118,11 +1118,11 @@ public final class MediaEngine {
                 MediaEngine.speedTestConnectionInstanceGetNetworkOverhead$lambda$62(Function1.this, i11);
             }
         });
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit speedTestConnectionInstanceSetOnPingCallback$media_engine_release(int i10, final Function4<? super Integer, ? super String, ? super Integer, ? super Integer, Unit> cb2) {
-        q.g(cb2, "cb");
+        q.h(cb2, "cb");
         NativeSpeedTestConnection speedTestConnection = getSpeedTestConnection(i10, "setOnPingCallback");
         if (speedTestConnection == null) {
             return null;
@@ -1133,11 +1133,11 @@ public final class MediaEngine {
                 MediaEngine.speedTestConnectionInstanceSetOnPingCallback$lambda$59(Function4.this, i11, str, i12, i13);
             }
         });
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit speedTestConnectionInstanceSetOnPingTimeoutCallback$media_engine_release(int i10, final Function4<? super String, ? super Integer, ? super Integer, ? super Integer, Unit> cb2) {
-        q.g(cb2, "cb");
+        q.h(cb2, "cb");
         NativeSpeedTestConnection speedTestConnection = getSpeedTestConnection(i10, "setOnPingTimeoutCallback");
         if (speedTestConnection == null) {
             return null;
@@ -1148,7 +1148,7 @@ public final class MediaEngine {
                 MediaEngine.speedTestConnectionInstanceSetOnPingTimeoutCallback$lambda$60(Function4.this, str, i11, i12, i13);
             }
         });
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit speedTestConnectionInstanceSetPingInterval$media_engine_release(int i10, int i11) {
@@ -1157,22 +1157,22 @@ public final class MediaEngine {
             return null;
         }
         speedTestConnection.setPingInterval(i11);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit speedTestConnectionInstanceSetTransportOptions$media_engine_release(int i10, String optionsJSON) {
-        q.g(optionsJSON, "optionsJSON");
+        q.h(optionsJSON, "optionsJSON");
         NativeSpeedTestConnection speedTestConnection = getSpeedTestConnection(i10, "setTransportOptions");
         if (speedTestConnection == null) {
             return null;
         }
         speedTestConnection.setTransportOptions(optionsJSON);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit speedTestConnectionInstanceStartSpeedTestReceiver$media_engine_release(int i10, String optionsJSON, final Function0<Unit> callback) {
-        q.g(optionsJSON, "optionsJSON");
-        q.g(callback, "callback");
+        q.h(optionsJSON, "optionsJSON");
+        q.h(callback, "callback");
         NativeSpeedTestConnection speedTestConnection = getSpeedTestConnection(i10, "startSpeedTestReceiver");
         if (speedTestConnection == null) {
             return null;
@@ -1183,12 +1183,12 @@ public final class MediaEngine {
                 MediaEngine.speedTestConnectionInstanceStartSpeedTestReceiver$lambda$64(Function0.this);
             }
         });
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit speedTestConnectionInstanceStartSpeedTestSender$media_engine_release(int i10, String optionsJSON, final Function2<? super Integer, ? super String, Unit> callback) {
-        q.g(optionsJSON, "optionsJSON");
-        q.g(callback, "callback");
+        q.h(optionsJSON, "optionsJSON");
+        q.h(callback, "callback");
         NativeSpeedTestConnection speedTestConnection = getSpeedTestConnection(i10, "startSpeedTestSender");
         if (speedTestConnection == null) {
             return null;
@@ -1199,11 +1199,11 @@ public final class MediaEngine {
                 MediaEngine.speedTestConnectionInstanceStartSpeedTestSender$lambda$63(Function2.this, i11, str);
             }
         });
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit speedTestConnectionInstanceStopSpeedTestReceiver$media_engine_release(int i10, final Function2<? super Integer, ? super String, Unit> callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         NativeSpeedTestConnection speedTestConnection = getSpeedTestConnection(i10, "stopSpeedTestReceiver");
         if (speedTestConnection == null) {
             return null;
@@ -1214,7 +1214,7 @@ public final class MediaEngine {
                 MediaEngine.speedTestConnectionInstanceStopSpeedTestReceiver$lambda$65(Function2.this, i11, str);
             }
         });
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final Unit speedTestConnectionInstanceStopSpeedTestSender$media_engine_release(int i10) {
@@ -1223,12 +1223,12 @@ public final class MediaEngine {
             return null;
         }
         speedTestConnection.stopSpeedTestSender();
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final void startLocalAudioRecording$media_engine_release(String optionsJSON, final Function1<? super Boolean, Unit> callback) {
-        q.g(optionsJSON, "optionsJSON");
-        q.g(callback, "callback");
+        q.h(optionsJSON, "optionsJSON");
+        q.h(callback, "callback");
         getEngine().startLocalAudioRecording(optionsJSON, new NativeEngine.StartLocalAudioRecordingCallback() { 
             @Override 
             public final void onStartLocalAudioRecording(boolean z10) {
@@ -1238,7 +1238,7 @@ public final class MediaEngine {
     }
 
     public final void stopLocalAudioRecording$media_engine_release(final Function2<? super String, ? super Integer, Unit> callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         AsyncInitDispatcher asyncInitDispatcher = this.dispatcher;
         asyncInitDispatcher.validateState();
         if (asyncInitDispatcher.getInitialized()) {
@@ -1254,7 +1254,7 @@ public final class MediaEngine {
     }
 
     public final void setInputDevice$media_engine_release(String deviceIndex) {
-        q.g(deviceIndex, "deviceIndex");
+        q.h(deviceIndex, "deviceIndex");
         AsyncInitDispatcher asyncInitDispatcher = this.dispatcher;
         asyncInitDispatcher.validateState();
         if (asyncInitDispatcher.getInitialized()) {
@@ -1265,7 +1265,7 @@ public final class MediaEngine {
     }
 
     public final void setOutputDevice$media_engine_release(String deviceIndex) {
-        q.g(deviceIndex, "deviceIndex");
+        q.h(deviceIndex, "deviceIndex");
         AsyncInitDispatcher asyncInitDispatcher = this.dispatcher;
         asyncInitDispatcher.validateState();
         if (asyncInitDispatcher.getInitialized()) {

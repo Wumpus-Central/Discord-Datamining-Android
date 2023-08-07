@@ -13,14 +13,14 @@ public final class CompositePostprocessor extends BasePostprocessor {
 
     
     public CompositePostprocessor(List<? extends BasePostprocessor> postprocessors) {
-        q.g(postprocessors, "postprocessors");
+        q.h(postprocessors, "postprocessors");
         this.postprocessors = postprocessors;
     }
 
     @Override 
     public void process(Bitmap destBitmap, Bitmap sourceBitmap) {
-        q.g(destBitmap, "destBitmap");
-        q.g(sourceBitmap, "sourceBitmap");
+        q.h(destBitmap, "destBitmap");
+        q.h(sourceBitmap, "sourceBitmap");
         for (BasePostprocessor basePostprocessor : this.postprocessors) {
             basePostprocessor.process(destBitmap, sourceBitmap);
         }

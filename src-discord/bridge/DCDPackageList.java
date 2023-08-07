@@ -1,37 +1,29 @@
 package com.discord.bridge;
 
 import b1.a;
-import ce.f;
+import be.f;
 import com.airbnb.android.react.lottie.b;
 import com.balthazargronon.RCTZeroconf.ZeroconfModule;
-import com.discord.audio.AudioRouteEmitterModule;
 import com.discord.avatar.react.AvatarPackage;
-import com.discord.cache.HeartbeatKeyProviderModule;
+import com.discord.blur.BlurViewPackage;
 import com.discord.chat.ChatPackage;
-import com.discord.client_info.ClientInfoManagerModule;
-import com.discord.device.DeviceLocaleManagerModule;
-import com.discord.device.DeviceManagerModule;
 import com.discord.emoji_picker.react.EmojiPickerPackage;
-import com.discord.file_manager.FileManagerModule;
 import com.discord.flipper.FlipperUtils;
-import com.discord.keyboard.KeyboardManagerModule;
 import com.discord.kvstorage.reactnative.KvStoragePackage;
-import com.discord.mobile_voice_overlay.MobileVoiceOverlayManagerModule;
 import com.discord.react_gesture_handler.DiscordGestureHandlerPackage;
 import com.discord.skia.GetSkiaPackageKt;
 import com.discord.sticker.react.StickerPackage;
 import com.discord.sticker_picker.react.StickerPickerPackage;
-import com.discord.theme.ThemeModule;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.horcrux.svg.SvgPackage;
 import com.imagepicker.c;
 import com.reactnative.ivpusic.imagepicker.e;
-import com.reactnativecommunity.slider.d;
 import com.reactnativecommunity.webview.e1;
 import com.swmansion.reanimated.ReanimatedPackage;
 import com.swmansion.rnscreens.i;
+import io.sentry.react.m;
 import java.util.ArrayList;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
@@ -42,39 +34,40 @@ public final class DCDPackageList extends PackageList {
     
     public DCDPackageList(ReactNativeHost host) {
         super(host);
-        q.g(host, "host");
+        q.h(host, "host");
     }
 
     @Override 
     public ArrayList<ReactPackage> getPackages() {
         ArrayList<ReactPackage> packages = super.getPackages();
+        packages.add(new BlurViewPackage());
         packages.add(new a());
-        packages.add(new com.reactnativecommunity.clipboard.a());
+        packages.add(new ae.a());
         packages.add(new c());
         packages.add(new w3.a());
         packages.add(new e());
         packages.add(new com.BV.LinearGradient.a());
         packages.add(new b());
-        packages.add(new yd.c());
+        packages.add(new f());
         packages.add(new com.github.yamill.orientation.a() { 
         });
-        packages.add(new d());
+        packages.add(new com.reactnativecommunity.slider.e());
         packages.add(new a2.c());
         packages.add(new ReanimatedPackage());
         packages.add(new e1());
-        packages.add(new com.henninghall.date_picker.b());
-        packages.add(new com.reactnativedocumentpicker.b());
-        packages.add(new ee.a());
-        packages.add(new bk.a());
+        packages.add(new com.henninghall.date_picker.a());
+        packages.add(new ee.b());
+        packages.add(new ie.a());
+        packages.add(new ek.a());
         packages.add(new com.mkuczera.a());
         packages.add(new i());
-        packages.add(new io.sentry.react.i());
+        packages.add(new m());
         packages.add(new com.th3rdwave.safeareacontext.c());
         packages.add(new SvgPackage());
         packages.add(GetSkiaPackageKt.getSkiaPackage());
         packages.add(new com.reactnativepagerview.b());
         packages.add(new x1.c());
-        packages.add(new f());
+        packages.add(new ge.e());
         DCDModuleProvider dCDModuleProvider = DCDModuleProvider.INSTANCE;
         packages.add(dCDModuleProvider.getLegacyPackageForModule(DCDPackageList$getPackages$2.INSTANCE));
         packages.add(dCDModuleProvider.getLegacyPackageForModule(DCDPackageList$getPackages$3.INSTANCE));
@@ -146,20 +139,19 @@ public final class DCDPackageList extends PackageList {
         packages.add(dCDModuleProvider.getLegacyPackageForModuleWithViewManager(DCDPackageList$getPackages$63.INSTANCE, DCDPackageList$getPackages$64.INSTANCE));
         packages.add(dCDModuleProvider.getLegacyPackageForModuleWithViewManager(DCDPackageList$getPackages$65.INSTANCE, DCDPackageList$getPackages$66.INSTANCE));
         packages.add(dCDModuleProvider.getLegacyPackageForModuleWithViewManager(null, DCDPackageList$getPackages$67.INSTANCE));
-        packages.add(dCDModuleProvider.getLegacyPackageForModuleWithViewManager(null, DCDPackageList$getPackages$68.INSTANCE));
-        packages.add(dCDModuleProvider.getLegacyPackageForModuleWithViewManager(DCDPackageList$getPackages$69.INSTANCE, DCDPackageList$getPackages$70.INSTANCE));
+        packages.add(dCDModuleProvider.getLegacyPackageForModuleWithViewManager(DCDPackageList$getPackages$68.INSTANCE, DCDPackageList$getPackages$69.INSTANCE));
+        packages.add(dCDModuleProvider.getLegacyPackageForModuleWithViewManager(null, DCDPackageList$getPackages$70.INSTANCE));
         packages.add(dCDModuleProvider.getLegacyPackageForModuleWithViewManager(null, DCDPackageList$getPackages$71.INSTANCE));
-        packages.add(dCDModuleProvider.getLegacyPackageForModuleWithViewManager(null, DCDPackageList$getPackages$72.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(AudioRouteEmitterModule.NAME, DCDPackageList$getPackages$73.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(DeviceManagerModule.NAME, DCDPackageList$getPackages$74.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(DeviceLocaleManagerModule.NAME, DCDPackageList$getPackages$75.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(FileManagerModule.NAME, DCDPackageList$getPackages$76.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(ClientInfoManagerModule.NAME, DCDPackageList$getPackages$77.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(KeyboardManagerModule.NAME, DCDPackageList$getPackages$78.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(HeartbeatKeyProviderModule.NAME, DCDPackageList$getPackages$79.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(ThemeModule.NAME, DCDPackageList$getPackages$80.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(MobileVoiceOverlayManagerModule.NAME, DCDPackageList$getPackages$81.INSTANCE));
-        q.f(packages, "packages");
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNAudioRouteEmitter", DCDPackageList$getPackages$72.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNDeviceManager", DCDPackageList$getPackages$73.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNDeviceLocaleManager", DCDPackageList$getPackages$74.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNFileManager", DCDPackageList$getPackages$75.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNClientInfoManager", DCDPackageList$getPackages$76.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNKeyboardManager", DCDPackageList$getPackages$77.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNHeartbeatKeyProvider", DCDPackageList$getPackages$78.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNThemeManager", DCDPackageList$getPackages$79.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNMobileVoiceOverlay", DCDPackageList$getPackages$80.INSTANCE));
+        q.g(packages, "packages");
         return packages;
     }
 }

@@ -45,8 +45,8 @@ public final class BackgroundManagingControllerListener extends ControllerListen
     }
 
     public BackgroundManagingControllerListener(SimpleDraweeView draweeView, Drawable background, boolean z10, boolean z11, boolean z12) {
-        q.g(draweeView, "draweeView");
-        q.g(background, "background");
+        q.h(draweeView, "draweeView");
+        q.h(background, "background");
         this.draweeView = draweeView;
         this.background = background;
         this.showDuringRequest = z10;

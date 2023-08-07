@@ -112,8 +112,8 @@ public final class VideoAttachmentView extends ConstraintLayout {
         private final String sourceUrl;
 
         public TargetUrl(String sourceUrl, String previewUrl) {
-            q.g(sourceUrl, "sourceUrl");
-            q.g(previewUrl, "previewUrl");
+            q.h(sourceUrl, "sourceUrl");
+            q.h(previewUrl, "previewUrl");
             this.sourceUrl = sourceUrl;
             this.previewUrl = previewUrl;
         }
@@ -137,8 +137,8 @@ public final class VideoAttachmentView extends ConstraintLayout {
         }
 
         public final TargetUrl copy(String sourceUrl, String previewUrl) {
-            q.g(sourceUrl, "sourceUrl");
-            q.g(previewUrl, "previewUrl");
+            q.h(sourceUrl, "sourceUrl");
+            q.h(previewUrl, "previewUrl");
             return new TargetUrl(sourceUrl, previewUrl);
         }
 
@@ -150,7 +150,7 @@ public final class VideoAttachmentView extends ConstraintLayout {
                 return false;
             }
             TargetUrl targetUrl = (TargetUrl) obj;
-            return q.b(this.sourceUrl, targetUrl.sourceUrl) && q.b(this.previewUrl, targetUrl.previewUrl);
+            return q.c(this.sourceUrl, targetUrl.sourceUrl) && q.c(this.previewUrl, targetUrl.previewUrl);
         }
 
         public final String getPreviewUrl() {
@@ -175,7 +175,7 @@ public final class VideoAttachmentView extends ConstraintLayout {
     
     public VideoAttachmentView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  VideoAttachmentView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -204,7 +204,7 @@ public final class VideoAttachmentView extends ConstraintLayout {
     }
 
     public final void setOnMediaClickListeners(Function1<? super Double, Unit> onClickListener, View.OnLongClickListener onLongClickListener) {
-        q.g(onClickListener, "onClickListener");
+        q.h(onClickListener, "onClickListener");
         this.binding.mediaView.setOnMediaClickListeners(onClickListener, onLongClickListener);
     }
 
@@ -213,17 +213,17 @@ public final class VideoAttachmentView extends ConstraintLayout {
             w0.q0(this.binding.mediaView, new a() { 
                 @Override 
                 public void onInitializeAccessibilityNodeInfo(View host, AccessibilityNodeInfoCompat info) {
-                    q.g(host, "host");
-                    q.g(info, "info");
+                    q.h(host, "host");
+                    q.h(info, "info");
                     super.onInitializeAccessibilityNodeInfo(host, info);
-                    info.v0(str);
+                    info.B0(str);
                 }
             });
         }
     }
 
     public final void showAltTextButton(boolean z10, String str, Function1<? super String, Unit> onTapShowAltText) {
-        q.g(onTapShowAltText, "onTapShowAltText");
+        q.h(onTapShowAltText, "onTapShowAltText");
         AltTextButtonView altTextButtonView = this.binding.mediaViewAltTextButton;
         if (!z10) {
             str = null;
@@ -234,7 +234,7 @@ public final class VideoAttachmentView extends ConstraintLayout {
     public final void showDescription(boolean z10, String str) {
         boolean z11;
         TextView showDescription$lambda$1 = this.binding.mediaViewAltText;
-        q.f(showDescription$lambda$1, "showDescription$lambda$1");
+        q.g(showDescription$lambda$1, "showDescription$lambda$1");
         ViewUtilsKt.setOptionalText(showDescription$lambda$1, str);
         int i10 = 0;
         if (str == null || !z10) {
@@ -251,13 +251,13 @@ public final class VideoAttachmentView extends ConstraintLayout {
     
     public VideoAttachmentView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         VideoAttachmentViewBinding inflate = VideoAttachmentViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView _init_$lambda$0 = inflate.mediaViewAltText;
         _init_$lambda$0.setImportantForAccessibility(4);
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, DiscordFont.PrimaryNormal);
         _init_$lambda$0.setTextColor(ThemeManagerKt.getTheme().getTextMuted());
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$0, 12.0f);

@@ -3,6 +3,8 @@ package com.discord.notifications.actions;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Parcelable;
+import androidx.core.content.e;
 import com.discord.misc.utilities.intent.IntentUtilsKt;
 import com.discord.notifications.actions.intents.DeleteAction;
 import com.discord.notifications.actions.intents.DirectReplyAction;
@@ -40,47 +42,47 @@ public final class NotificationActions extends BroadcastReceiver {
         NotificationAction notificationAction3;
         NotificationAction notificationAction4;
         NotificationAction notificationAction5;
-        q.g(context, "context");
-        q.g(intent, "intent");
+        q.h(context, "context");
+        q.h(intent, "intent");
         NotificationAction.Companion companion = NotificationAction.Companion;
         NotificationAction notificationAction6 = null;
         if (IntentUtilsKt.hasExtra(intent, f0.b(MarkAsReadAction.class))) {
-            notificationAction = (NotificationAction) IntentUtilsKt.getIntentParcelable(intent);
+            notificationAction = (NotificationAction) ((Parcelable) e.b(intent, "action_intent_arg_key", MarkAsReadAction.class));
         } else {
             notificationAction = null;
         }
         NotificationAction notificationAction7 = (MarkAsReadAction) notificationAction;
         if (notificationAction7 == null) {
             if (IntentUtilsKt.hasExtra(intent, f0.b(MuteAction.class))) {
-                notificationAction2 = (NotificationAction) IntentUtilsKt.getIntentParcelable(intent);
+                notificationAction2 = (NotificationAction) ((Parcelable) e.b(intent, "action_intent_arg_key", MuteAction.class));
             } else {
                 notificationAction2 = null;
             }
             notificationAction7 = (MuteAction) notificationAction2;
             if (notificationAction7 == null) {
                 if (IntentUtilsKt.hasExtra(intent, f0.b(DismissCallAction.class))) {
-                    notificationAction3 = (NotificationAction) IntentUtilsKt.getIntentParcelable(intent);
+                    notificationAction3 = (NotificationAction) ((Parcelable) e.b(intent, "action_intent_arg_key", DismissCallAction.class));
                 } else {
                     notificationAction3 = null;
                 }
                 notificationAction7 = (DismissCallAction) notificationAction3;
                 if (notificationAction7 == null) {
                     if (IntentUtilsKt.hasExtra(intent, f0.b(DirectReplyAction.class))) {
-                        notificationAction4 = (NotificationAction) IntentUtilsKt.getIntentParcelable(intent);
+                        notificationAction4 = (NotificationAction) ((Parcelable) e.b(intent, "action_intent_arg_key", DirectReplyAction.class));
                     } else {
                         notificationAction4 = null;
                     }
                     notificationAction7 = (DirectReplyAction) notificationAction4;
                     if (notificationAction7 == null) {
                         if (IntentUtilsKt.hasExtra(intent, f0.b(DeleteAction.class))) {
-                            notificationAction5 = (NotificationAction) IntentUtilsKt.getIntentParcelable(intent);
+                            notificationAction5 = (NotificationAction) ((Parcelable) e.b(intent, "action_intent_arg_key", DeleteAction.class));
                         } else {
                             notificationAction5 = null;
                         }
                         notificationAction7 = (DeleteAction) notificationAction5;
                         if (notificationAction7 == null) {
                             if (IntentUtilsKt.hasExtra(intent, f0.b(GenericAction.class))) {
-                                notificationAction6 = (NotificationAction) IntentUtilsKt.getIntentParcelable(intent);
+                                notificationAction6 = (NotificationAction) ((Parcelable) e.b(intent, "action_intent_arg_key", GenericAction.class));
                             }
                             notificationAction7 = notificationAction6;
                         }

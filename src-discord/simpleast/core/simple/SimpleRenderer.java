@@ -19,33 +19,33 @@ public final class SimpleRenderer {
     }
 
     public static final <R, S> SpannableStringBuilder render(CharSequence source, Collection<? extends Rule<R, Node<R>, S>> rules, S s10, R r10) {
-        q.g(source, "source");
-        q.g(rules, "rules");
+        q.h(source, "source");
+        q.h(rules, "rules");
         return render(new SpannableStringBuilder(), Parser.parse$default(new Parser(false, 1, null).addRules(rules), source, s10, null, 4, null), r10);
     }
 
     public static final void renderBasicMarkdown(int i10, TextView textView) {
-        q.g(textView, "textView");
+        q.h(textView, "textView");
         String string = textView.getContext().getString(i10);
-        q.f(string, "textView.context.getString(sourceResId)");
+        q.g(string, "textView.context.getString(sourceResId)");
         renderBasicMarkdown(string, textView);
     }
 
     public static final <R, S> SpannableStringBuilder render(CharSequence source, Parser<R, Node<R>, S> parser, R r10, S s10) {
-        q.g(source, "source");
-        q.g(parser, "parser");
+        q.h(source, "source");
+        q.h(parser, "parser");
         return render(new SpannableStringBuilder(), Parser.parse$default(parser, source, s10, null, 4, null), r10);
     }
 
     public static final void renderBasicMarkdown(CharSequence source, TextView textView) {
-        q.g(source, "source");
-        q.g(textView, "textView");
+        q.h(source, "source");
+        q.h(textView, "textView");
         textView.setText(renderBasicMarkdown(source));
     }
 
     public static final <T extends SpannableStringBuilder, R> T render(T builder, Collection<? extends Node<R>> ast, R r10) {
-        q.g(builder, "builder");
-        q.g(ast, "ast");
+        q.h(builder, "builder");
+        q.h(ast, "ast");
         Iterator<? extends Node<R>> it = ast.iterator();
         while (it.hasNext()) {
             ((Node) it.next()).render(builder, r10);
@@ -54,7 +54,7 @@ public final class SimpleRenderer {
     }
 
     public static final SpannableStringBuilder renderBasicMarkdown(CharSequence source) {
-        q.g(source, "source");
+        q.h(source, "source");
         return render(source, SimpleMarkdownRules.createSimpleMarkdownRules$default(false, false, 3, null), (Object) null, (Object) null);
     }
 }

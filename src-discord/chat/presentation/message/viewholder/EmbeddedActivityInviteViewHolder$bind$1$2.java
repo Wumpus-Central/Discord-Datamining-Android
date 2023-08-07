@@ -20,12 +20,12 @@ public  class EmbeddedActivityInviteViewHolder$bind$1$2 extends n implements Fun
     @Override 
     public   Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(LinkContentNode p02) {
-        q.g(p02, "p0");
+        q.h(p02, "p0");
         ((ChatEventHandler) this.receiver).onLinkLongClicked(p02);
     }
 }

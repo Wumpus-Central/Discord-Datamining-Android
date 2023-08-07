@@ -40,10 +40,10 @@ public final class QuoteSpan implements LeadingMarginSpan {
 
     @Override 
     public void drawLeadingMargin(Canvas c10, Paint p10, int i10, int i11, int i12, int i13, int i14, CharSequence text, int i15, int i16, boolean z10, Layout layout) {
-        q.g(c10, "c");
-        q.g(p10, "p");
-        q.g(text, "text");
-        q.g(layout, "layout");
+        q.h(c10, "c");
+        q.h(p10, "p");
+        q.h(text, "text");
+        q.h(layout, "layout");
         if (text instanceof Spanned) {
             Spanned spanned = (Spanned) text;
             if (spanned.getSpanStart(this) == i15) {

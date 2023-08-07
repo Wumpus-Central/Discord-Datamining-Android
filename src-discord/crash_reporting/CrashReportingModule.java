@@ -10,8 +10,8 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
-import ff.x;
 import io.sentry.react.RNSentryModule;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
@@ -24,22 +24,22 @@ public final class CrashReportingModule extends ReactContextBaseJavaModule {
     
     public CrashReportingModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     private final RNSentryModule getSentryModule() {
         NativeModule nativeModule = getReactApplicationContext().getNativeModule(RNSentryModule.class);
-        q.d(nativeModule);
+        q.e(nativeModule);
         return (RNSentryModule) nativeModule;
     }
 
     @ReactMethod
     public final void addListener(String type) {
-        q.g(type, "type");
-        if (q.b(CrashReporting.INSTANCE.isCrashedLastRun(), Boolean.TRUE)) {
+        q.h(type, "type");
+        if (q.c(CrashReporting.INSTANCE.isCrashedLastRun(), Boolean.TRUE)) {
             SystemLogReport systemLogReport = SystemLogReport.INSTANCE;
             ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-            q.f(reactApplicationContext, "reactApplicationContext");
+            q.g(reactApplicationContext, "reactApplicationContext");
             systemLogReport.reportLastCrash$crash_reporting_release(reactApplicationContext, new CrashReportingModule$addListener$1(this));
         }
     }
@@ -51,7 +51,7 @@ public final class CrashReportingModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void getDidCrashDuringPreviousExecution(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         Boolean isCrashedLastRun = CrashReporting.INSTANCE.isCrashedLastRun();
         if (isCrashedLastRun != null) {
             callback.invoke(isCrashedLastRun);
@@ -65,10 +65,10 @@ public final class CrashReportingModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void getSystemLog(Callback callback) {
-        q.g(callback, "callback");
+        q.h(callback, "callback");
         SystemLogUtils systemLogUtils = SystemLogUtils.INSTANCE;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         callback.invoke(systemLogUtils.fetch(reactApplicationContext));
     }
 
@@ -76,7 +76,7 @@ public final class CrashReportingModule extends ReactContextBaseJavaModule {
     public final void initializeManager() {
         SystemLogUtils systemLogUtils = SystemLogUtils.INSTANCE;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         systemLogUtils.initSystemLogCapture(reactApplicationContext);
     }
 
@@ -86,6 +86,6 @@ public final class CrashReportingModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void setUser(ReadableMap user) {
-        q.g(user, "user");
+        q.h(user, "user");
     }
 }

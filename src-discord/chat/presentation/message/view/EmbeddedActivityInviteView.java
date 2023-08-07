@@ -49,13 +49,13 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
     
     public EmbeddedActivityInviteView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public EmbeddedActivityInviteView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  EmbeddedActivityInviteView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -65,10 +65,10 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
     public final void setAvatarUris(List<String> avatarUris) {
         int i10;
         int s10;
-        q.g(avatarUris, "avatarUris");
+        q.h(avatarUris, "avatarUris");
         boolean z10 = !avatarUris.isEmpty();
         OverlappingCirclesView overlappingCirclesView = this.binding.participants;
-        q.f(overlappingCirclesView, "binding.participants");
+        q.g(overlappingCirclesView, "binding.participants");
         int i11 = 0;
         if (z10) {
             i10 = 0;
@@ -84,7 +84,7 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
         }
         overlappingCirclesView2.setItems(arrayList);
         TextView textView = this.binding.noParticipantsText;
-        q.f(textView, "binding.noParticipantsText");
+        q.g(textView, "binding.noParticipantsText");
         if (!(!z10)) {
             i11 = 8;
         }
@@ -101,7 +101,7 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
         }
         boolean z11 = true ^ z10;
         TextView textView = this.binding.itemHeader;
-        q.f(textView, "binding.itemHeader");
+        q.g(textView, "binding.itemHeader");
         if (!z11) {
             i10 = 8;
         }
@@ -113,7 +113,7 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
         boolean z11;
         float f10;
         DCDButton setLaunchButton$lambda$9 = this.binding.launchButton;
-        q.f(setLaunchButton$lambda$9, "setLaunchButton$lambda$9");
+        q.g(setLaunchButton$lambda$9, "setLaunchButton$lambda$9");
         int i10 = 0;
         if (str == null || str.length() == 0) {
             z11 = true;
@@ -136,19 +136,19 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
     }
 
     public final void setNoParticipantsText(String noParticipantsText) {
-        q.g(noParticipantsText, "noParticipantsText");
+        q.h(noParticipantsText, "noParticipantsText");
         this.binding.noParticipantsText.setText(noParticipantsText);
     }
 
     public final void setOnLaunchButtonClickListener(View.OnClickListener onLaunchButtonClickListener) {
-        q.g(onLaunchButtonClickListener, "onLaunchButtonClickListener");
+        q.h(onLaunchButtonClickListener, "onLaunchButtonClickListener");
         this.binding.launchButton.setOnClickButtonListener(onLaunchButtonClickListener);
     }
 
     public final void setSplash(String str, int i10) {
         boolean z10;
         SimpleDraweeView simpleDraweeView = this.binding.itemHero;
-        q.f(simpleDraweeView, "binding.itemHero");
+        q.g(simpleDraweeView, "binding.itemHero");
         int i11 = 0;
         if (str != null) {
             z10 = true;
@@ -164,34 +164,34 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
         int i12 = (width * 9) / 16;
         MediaContainingViewResizer mediaContainingViewResizer = MediaContainingViewResizer.INSTANCE;
         SimpleDraweeView simpleDraweeView2 = this.binding.itemHero;
-        q.f(simpleDraweeView2, "binding.itemHero");
+        q.g(simpleDraweeView2, "binding.itemHero");
         mediaContainingViewResizer.resizeLayoutParams(simpleDraweeView2, width, i12, width, i12, MediaContainingViewResizer.ResizeMode.Fill);
     }
 
     
-    public final void m307setSubtitleTextSAQFhFE(StructurableText structurableText, String messageId, Function2<? super MessageId, ? super LinkContentNode, Unit> onTapLink, Function1<? super LinkContentNode, Unit> onLongTapLink, Function3<? super String, ? super String, ? super String, Unit> onTapChannel, Function4<? super String, ? super String, ? super String, ? super String, Unit> onLongPressChannel, Function2<? super String, ? super String, Unit> onTapMention, Function1<? super CommandMentionContentNode, Unit> onTapCommand, Function1<? super CommandMentionContentNode, Unit> onLongPressCommand, Function0<Unit> onTapSpoiler, Function1<? super String, Unit> onTapTimestamp, Function1<? super EmojiContentNode, Unit> onTapEmoji, Function1<? super MessageId, Unit> onTapSeeMore) {
-        q.g(messageId, "messageId");
-        q.g(onTapLink, "onTapLink");
-        q.g(onLongTapLink, "onLongTapLink");
-        q.g(onTapChannel, "onTapChannel");
-        q.g(onLongPressChannel, "onLongPressChannel");
-        q.g(onTapMention, "onTapMention");
-        q.g(onTapCommand, "onTapCommand");
-        q.g(onLongPressCommand, "onLongPressCommand");
-        q.g(onTapSpoiler, "onTapSpoiler");
-        q.g(onTapTimestamp, "onTapTimestamp");
-        q.g(onTapEmoji, "onTapEmoji");
-        q.g(onTapSeeMore, "onTapSeeMore");
+    public final void m308setSubtitleTextSAQFhFE(StructurableText structurableText, String messageId, Function2<? super MessageId, ? super LinkContentNode, Unit> onTapLink, Function1<? super LinkContentNode, Unit> onLongTapLink, Function3<? super String, ? super String, ? super String, Unit> onTapChannel, Function4<? super String, ? super String, ? super String, ? super String, Unit> onLongPressChannel, Function2<? super String, ? super String, Unit> onTapMention, Function1<? super CommandMentionContentNode, Unit> onTapCommand, Function1<? super CommandMentionContentNode, Unit> onLongPressCommand, Function0<Unit> onTapSpoiler, Function1<? super String, Unit> onTapTimestamp, Function1<? super EmojiContentNode, Unit> onTapEmoji, Function1<? super MessageId, Unit> onTapSeeMore) {
+        q.h(messageId, "messageId");
+        q.h(onTapLink, "onTapLink");
+        q.h(onLongTapLink, "onLongTapLink");
+        q.h(onTapChannel, "onTapChannel");
+        q.h(onLongPressChannel, "onLongPressChannel");
+        q.h(onTapMention, "onTapMention");
+        q.h(onTapCommand, "onTapCommand");
+        q.h(onLongPressCommand, "onLongPressCommand");
+        q.h(onTapSpoiler, "onTapSpoiler");
+        q.h(onTapTimestamp, "onTapTimestamp");
+        q.h(onTapEmoji, "onTapEmoji");
+        q.h(onTapSeeMore, "onTapSeeMore");
         MessageContentView messageContentView = this.binding.itemSubtitle;
-        q.f(messageContentView, "binding.itemSubtitle");
+        q.g(messageContentView, "binding.itemSubtitle");
         messageContentView.setVisibility(structurableText != null ? 0 : 8);
         SimpleDraweeView simpleDraweeView = this.binding.subtitleIcon;
-        q.f(simpleDraweeView, "binding.subtitleIcon");
+        q.g(simpleDraweeView, "binding.subtitleIcon");
         simpleDraweeView.setVisibility(structurableText != null ? 0 : 8);
         if (structurableText != null) {
             MessageContentView messageContentView2 = this.binding.itemSubtitle;
-            q.f(messageContentView2, "binding.itemSubtitle");
-            messageContentView2.m317setMessageContent2i9KL1s(structurableText, messageId, false, false, false, onTapLink, onLongTapLink, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, onTapSeeMore, (r47 & 65536) != 0 ? MessageContentView$setMessageContent$1.INSTANCE : null, 0, 0, (r47 & 524288) != 0 ? null : null, (r47 & 1048576) != 0 ? null : null, (r47 & 2097152) != 0 ? ThemeManagerKt.getTheme() : null);
+            q.g(messageContentView2, "binding.itemSubtitle");
+            messageContentView2.m318setMessageContent2i9KL1s(structurableText, messageId, false, false, false, onTapLink, onLongTapLink, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, onTapSeeMore, (r47 & 65536) != 0 ? MessageContentView$setMessageContent$1.INSTANCE : null, 0, 0, (r47 & 524288) != 0 ? null : null, (r47 & 1048576) != 0 ? null : null, (r47 & 2097152) != 0 ? ThemeManagerKt.getTheme() : null);
         }
     }
 
@@ -205,7 +205,7 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
         }
         boolean z11 = true ^ z10;
         TextView textView = this.binding.itemTitle;
-        q.f(textView, "binding.itemTitle");
+        q.g(textView, "binding.itemTitle");
         if (!z11) {
             i10 = 8;
         }
@@ -216,32 +216,32 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
     
     public EmbeddedActivityInviteView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         EmbeddedActivityInviteViewBinding inflate = EmbeddedActivityInviteViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView lambda$6$lambda$0 = inflate.itemTitle;
         lambda$6$lambda$0.setTextColor(ThemeManagerKt.getTheme().getHeaderSecondary());
-        q.f(lambda$6$lambda$0, "lambda$6$lambda$0");
+        q.g(lambda$6$lambda$0, "lambda$6$lambda$0");
         SetTextSizeSpKt.setTextSizeSp(lambda$6$lambda$0, 12.0f);
         DiscordFontUtilsKt.setDiscordFont(lambda$6$lambda$0, DiscordFont.PrimaryExtraBold);
         TextView lambda$6$lambda$1 = inflate.itemHeader;
         lambda$6$lambda$1.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
-        q.f(lambda$6$lambda$1, "lambda$6$lambda$1");
+        q.g(lambda$6$lambda$1, "lambda$6$lambda$1");
         SetTextSizeSpKt.setTextSizeSp(lambda$6$lambda$1, 24.0f);
         DiscordFontUtilsKt.setDiscordFont(lambda$6$lambda$1, DiscordFont.PrimarySemibold);
         MessageContentView lambda$6$lambda$2 = inflate.itemSubtitle;
-        q.f(lambda$6$lambda$2, "lambda$6$lambda$2");
+        q.g(lambda$6$lambda$2, "lambda$6$lambda$2");
         DiscordFont discordFont = DiscordFont.PrimaryMedium;
         DiscordFontUtilsKt.setDiscordFont(lambda$6$lambda$2, discordFont);
         lambda$6$lambda$2.setTextColor(ThemeManagerKt.getTheme().getHeaderSecondary());
         SetTextSizeSpKt.setTextSizeSp(lambda$6$lambda$2, 12.0f);
         SimpleDraweeView lambda$6$lambda$3 = inflate.subtitleIcon;
-        q.f(lambda$6$lambda$3, "lambda$6$lambda$3");
+        q.g(lambda$6$lambda$3, "lambda$6$lambda$3");
         ReactAssetUtilsKt.setReactAsset(lambda$6$lambda$3, ReactAsset.Speaker);
         ColorUtilsKt.setTintColor(lambda$6$lambda$3, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
         TextView lambda$6$lambda$4 = inflate.noParticipantsText;
-        q.f(lambda$6$lambda$4, "lambda$6$lambda$4");
+        q.g(lambda$6$lambda$4, "lambda$6$lambda$4");
         DiscordFontUtilsKt.setDiscordFont(lambda$6$lambda$4, discordFont);
         lambda$6$lambda$4.setTextColor(ThemeManagerKt.getTheme().getInteractiveNormal());
         SetTextSizeSpKt.setTextSizeSp(lambda$6$lambda$4, 12.0f);

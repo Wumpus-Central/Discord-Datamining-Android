@@ -17,14 +17,14 @@ public final class HandlerWithExceptionCallback extends Handler {
     
     public HandlerWithExceptionCallback(Looper looper, Function1<? super Exception, Unit> exceptionCallback) {
         super(looper);
-        q.g(looper, "looper");
-        q.g(exceptionCallback, "exceptionCallback");
+        q.h(looper, "looper");
+        q.h(exceptionCallback, "exceptionCallback");
         this.exceptionCallback = exceptionCallback;
     }
 
     @Override 
     public void dispatchMessage(Message msg) {
-        q.g(msg, "msg");
+        q.h(msg, "msg");
         try {
             super.dispatchMessage(msg);
         } catch (Exception e10) {

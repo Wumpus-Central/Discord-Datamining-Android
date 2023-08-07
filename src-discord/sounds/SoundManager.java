@@ -34,29 +34,29 @@ public final class SoundManager {
 
     static {
         String simpleName = SoundManager.class.getSimpleName();
-        q.f(simpleName, "SoundManager::class.java.simpleName");
+        q.g(simpleName, "SoundManager::class.java.simpleName");
         logTag = simpleName;
     }
 
     public SoundManager(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         this.context = context;
     }
 
     public final void pause(int i10) {
         SoundPlayer soundPlayer = this.soundPlayers.get(Integer.valueOf(i10));
-        q.d(soundPlayer);
+        q.e(soundPlayer);
         soundPlayer.pause();
     }
 
     public final void play(int i10) {
         SoundPlayer soundPlayer = this.soundPlayers.get(Integer.valueOf(i10));
-        q.d(soundPlayer);
+        q.e(soundPlayer);
         soundPlayer.play();
     }
 
     public final void prepare(int i10, int i11, Integer num, String str, Function1<? super Integer, Unit> soundResIdPrepared) {
-        q.g(soundResIdPrepared, "soundResIdPrepared");
+        q.h(soundResIdPrepared, "soundResIdPrepared");
         if (!this.soundPlayers.containsKey(Integer.valueOf(i10))) {
             this.soundPlayers.put(Integer.valueOf(i10), new SoundPlayer(this.context, i11, num, str, soundResIdPrepared));
             return;
@@ -66,38 +66,38 @@ public final class SoundManager {
 
     public final void release(int i10) {
         SoundPlayer soundPlayer = this.soundPlayers.get(Integer.valueOf(i10));
-        q.d(soundPlayer);
+        q.e(soundPlayer);
         soundPlayer.release();
         this.soundPlayers.remove(Integer.valueOf(i10));
     }
 
     public final void setCurrentTime(int i10, int i11) {
         SoundPlayer soundPlayer = this.soundPlayers.get(Integer.valueOf(i10));
-        q.d(soundPlayer);
+        q.e(soundPlayer);
         soundPlayer.setCurrentTime(i11);
     }
 
     public final void setNumberOfLoops(int i10, int i11) {
         SoundPlayer soundPlayer = this.soundPlayers.get(Integer.valueOf(i10));
-        q.d(soundPlayer);
+        q.e(soundPlayer);
         soundPlayer.setNumberOfLoops(i11);
     }
 
     public final void setPan(int i10, float f10) {
         SoundPlayer soundPlayer = this.soundPlayers.get(Integer.valueOf(i10));
-        q.d(soundPlayer);
+        q.e(soundPlayer);
         soundPlayer.setPan(f10);
     }
 
     public final void setVolume(int i10, float f10) {
         SoundPlayer soundPlayer = this.soundPlayers.get(Integer.valueOf(i10));
-        q.d(soundPlayer);
+        q.e(soundPlayer);
         soundPlayer.setVolume(f10);
     }
 
     public final void stop(int i10) {
         SoundPlayer soundPlayer = this.soundPlayers.get(Integer.valueOf(i10));
-        q.d(soundPlayer);
+        q.e(soundPlayer);
         soundPlayer.stop();
     }
 }

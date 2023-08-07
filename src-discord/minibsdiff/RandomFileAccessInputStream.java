@@ -11,7 +11,7 @@ public final class RandomFileAccessInputStream extends InputStream {
     private final RandomAccessFile randomAccessFile;
 
     public RandomFileAccessInputStream(RandomAccessFile randomAccessFile) {
-        q.g(randomAccessFile, "randomAccessFile");
+        q.h(randomAccessFile, "randomAccessFile");
         this.randomAccessFile = randomAccessFile;
     }
 

@@ -7,11 +7,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.IntentSender;
+import android.os.Parcelable;
+import androidx.core.content.e;
 import com.discord.misc.utilities.intent.PendingIntentUtils;
 import com.discord.reactevents.ReactEvents;
 import com.discord.share.react.events.ShareBroadcastReceiverAppClicked;
 import com.facebook.react.bridge.ReactApplicationContext;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -38,24 +40,24 @@ public final class ShareBroadcastReceiver extends BroadcastReceiver {
         }
 
         public final IntentSender getPendingIntentSender(Context context, String str) {
-            q.g(context, "context");
+            q.h(context, "context");
             Intent intent = new Intent(ShareBroadcastReceiver.SHARE_SHEET_CLICK);
             intent.putExtra(ShareBroadcastReceiver.SHARE_SHEET_LOCATION, str);
-            Unit unit = Unit.f20679a;
+            Unit unit = Unit.f21025a;
             IntentSender intentSender = PendingIntent.getBroadcast(context, 0, intent, PendingIntentUtils.mutablePendingIntentFlag$default(PendingIntentUtils.INSTANCE, 0, 1, null)).getIntentSender();
-            q.f(intentSender, "getBroadcast(\n          …           ).intentSender");
+            q.g(intentSender, "getBroadcast(\n          …           ).intentSender");
             return intentSender;
         }
 
         public final void register(Context context, ShareBroadcastReceiver receiver) {
-            q.g(context, "context");
-            q.g(receiver, "receiver");
+            q.h(context, "context");
+            q.h(receiver, "receiver");
             context.registerReceiver(receiver, new IntentFilter(ShareBroadcastReceiver.SHARE_SHEET_CLICK));
         }
 
         public final void unregister(Context context, ShareBroadcastReceiver receiver) {
-            q.g(context, "context");
-            q.g(receiver, "receiver");
+            q.h(context, "context");
+            q.h(receiver, "receiver");
             try {
                 context.unregisterReceiver(receiver);
             } catch (Exception unused) {
@@ -64,7 +66,7 @@ public final class ShareBroadcastReceiver extends BroadcastReceiver {
     }
 
     public ShareBroadcastReceiver(ReactApplicationContext reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.reactApplicationContext = reactContext;
     }
 
@@ -73,7 +75,7 @@ public final class ShareBroadcastReceiver extends BroadcastReceiver {
         ComponentName componentName;
         String str = null;
         if (intent != null) {
-            componentName = (ComponentName) intent.getParcelableExtra("android.intent.extra.CHOSEN_COMPONENT");
+            componentName = (ComponentName) ((Parcelable) e.b(intent, "android.intent.extra.CHOSEN_COMPONENT", ComponentName.class));
         } else {
             componentName = null;
         }
@@ -84,7 +86,7 @@ public final class ShareBroadcastReceiver extends BroadcastReceiver {
             ReactEvents reactEvents = this.reactEvents;
             ReactApplicationContext reactApplicationContext = this.reactApplicationContext;
             String packageName = componentName.getPackageName();
-            q.f(packageName, "clickedComponent.packageName");
+            q.g(packageName, "clickedComponent.packageName");
             reactEvents.emitModuleEvent(reactApplicationContext, new ShareBroadcastReceiverAppClicked(packageName, str));
         }
     }

@@ -28,10 +28,10 @@ public enum DiscordFont {
     }
 
     public final Typeface typeface$fonts_release(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         Typeface typeface = ReactFontManager.getInstance().getTypeface(this.rawName, 0, context.getAssets());
-        q.f(typeface, "getInstance()\n          …e.NORMAL, context.assets)");
-        if (!q.b(typeface, Typeface.DEFAULT)) {
+        q.g(typeface, "getInstance()\n          …e.NORMAL, context.assets)");
+        if (!q.c(typeface, Typeface.DEFAULT)) {
             return typeface;
         }
         String str = this.rawName;

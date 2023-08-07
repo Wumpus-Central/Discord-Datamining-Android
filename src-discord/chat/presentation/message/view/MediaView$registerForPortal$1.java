@@ -25,13 +25,13 @@ public final class MediaView$registerForPortal$1 extends s implements Function1<
     @Override 
     public   Unit invoke(View view) {
         invoke2(view);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(View view) {
         ViewAttachedListener viewAttachedListener;
-        q.g(view, "view");
+        q.h(view, "view");
         MediaView mediaView = this.this$0;
         viewAttachedListener = mediaView.attachStateChangeListener;
         mediaView.removeOnAttachStateChangeListener(viewAttachedListener);

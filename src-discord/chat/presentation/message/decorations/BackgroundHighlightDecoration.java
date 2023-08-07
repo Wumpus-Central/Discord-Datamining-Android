@@ -10,6 +10,6 @@ public final class BackgroundHighlightDecoration extends HighlightedMessageDecor
     
     public BackgroundHighlightDecoration(Context context) {
         super(new BackgroundHighlightDrawer(context));
-        q.g(context, "context");
+        q.h(context, "context");
     }
 }

@@ -1,11 +1,11 @@
 package com.discord.reactevents;
 
-import ff.x;
-import gf.v;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import jf.x;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
@@ -34,7 +34,7 @@ public final class ReactEventRegistry {
     }
 
     public final String getEventName(ReactEvent event) {
-        q.g(event, "event");
+        q.h(event, "event");
         String str = this.events.get(f0.b(event.getClass()));
         if (str != null) {
             return str;
@@ -44,8 +44,8 @@ public final class ReactEventRegistry {
     }
 
     public final void registerEvent(String eventName, KClass<? extends ReactEvent> eventClass) {
-        q.g(eventName, "eventName");
-        q.g(eventClass, "eventClass");
+        q.h(eventName, "eventName");
+        q.h(eventClass, "eventClass");
         if (!this.events.containsKey(eventClass)) {
             this.events.put(eventClass, eventName);
             return;

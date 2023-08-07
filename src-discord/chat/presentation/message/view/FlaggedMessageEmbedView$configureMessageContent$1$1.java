@@ -19,13 +19,13 @@ final class FlaggedMessageEmbedView$configureMessageContent$1$1 extends s implem
 
     @Override 
     public   Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
-        m309invokentcYbpo(messageId.m600unboximpl(), linkContentNode);
-        return Unit.f20679a;
+        m310invokentcYbpo(messageId.m601unboximpl(), linkContentNode);
+        return Unit.f21025a;
     }
 
     
-    public final void m309invokentcYbpo(String str, LinkContentNode linkContentNode) {
-        q.g(str, "<anonymous parameter 0>");
-        q.g(linkContentNode, "<anonymous parameter 1>");
+    public final void m310invokentcYbpo(String str, LinkContentNode linkContentNode) {
+        q.h(str, "<anonymous parameter 0>");
+        q.h(linkContentNode, "<anonymous parameter 1>");
     }
 }

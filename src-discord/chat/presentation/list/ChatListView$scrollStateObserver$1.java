@@ -23,19 +23,19 @@ public final class ChatListView$scrollStateObserver$1 extends s implements Funct
     @Override 
     public   Unit invoke(ScrollState scrollState) {
         invoke2(scrollState);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(ScrollState scrollState) {
         ChatEventHandler chatEventHandler;
         ChatEventHandler chatEventHandler2;
-        q.g(scrollState, "scrollState");
+        q.h(scrollState, "scrollState");
         chatEventHandler = this.this$0.eventHandler;
         if (chatEventHandler != null) {
             chatEventHandler2 = this.this$0.eventHandler;
             if (chatEventHandler2 == null) {
-                q.y("eventHandler");
+                q.z("eventHandler");
                 chatEventHandler2 = null;
             }
             chatEventHandler2.onScrollStateChanged(scrollState);

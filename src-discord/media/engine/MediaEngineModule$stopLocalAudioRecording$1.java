@@ -24,13 +24,13 @@ final class MediaEngineModule$stopLocalAudioRecording$1 extends s implements Fun
     @Override 
     public   Unit invoke(String str, Integer num) {
         invoke(str, num.intValue());
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final void invoke(String fileName, int i10) {
-        q.g(fileName, "fileName");
+        q.h(fileName, "fileName");
         Uri fromFile = Uri.fromFile(new File(fileName));
-        q.f(fromFile, "fromFile(this)");
+        q.g(fromFile, "fromFile(this)");
         this.$callback.invoke(fromFile.toString(), Integer.valueOf(i10));
     }
 }

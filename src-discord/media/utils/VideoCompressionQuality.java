@@ -43,7 +43,7 @@ public enum VideoCompressionQuality {
                     break;
                 }
                 videoCompressionQuality = values[i10];
-                if (q.b(videoCompressionQuality.getValue(), str)) {
+                if (q.c(videoCompressionQuality.getValue(), str)) {
                     break;
                 }
                 i10++;

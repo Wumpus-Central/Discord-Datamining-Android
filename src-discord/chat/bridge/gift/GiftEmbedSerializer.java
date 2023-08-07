@@ -21,7 +21,7 @@ public final class GiftEmbedSerializer extends d<GiftEmbed> {
 
     @Override 
     protected DeserializationStrategy<GiftEmbed> selectDeserializer(JsonElement element) {
-        q.g(element, "element");
+        q.h(element, "element");
         JsonObject m10 = g.m(element);
         if (GiftEmbedKt.access$hasPrimitives(m10, "resolvingGradientStart", "resolvingGradientEnd")) {
             return GiftEmbed.Resolving.Companion.serializer();

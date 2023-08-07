@@ -14,8 +14,8 @@ public final class ChatListUpdate {
 
     
     public ChatListUpdate(List<? extends ChatListItem> items, ChatListAction action, List<? extends ListOperation> list) {
-        q.g(items, "items");
-        q.g(action, "action");
+        q.h(items, "items");
+        q.h(action, "action");
         this.items = items;
         this.action = action;
         this.listOperations = list;
@@ -48,8 +48,8 @@ public final class ChatListUpdate {
     }
 
     public final ChatListUpdate copy(List<? extends ChatListItem> items, ChatListAction action, List<? extends ListOperation> list) {
-        q.g(items, "items");
-        q.g(action, "action");
+        q.h(items, "items");
+        q.h(action, "action");
         return new ChatListUpdate(items, action, list);
     }
 
@@ -61,7 +61,7 @@ public final class ChatListUpdate {
             return false;
         }
         ChatListUpdate chatListUpdate = (ChatListUpdate) obj;
-        return q.b(this.items, chatListUpdate.items) && q.b(this.action, chatListUpdate.action) && q.b(this.listOperations, chatListUpdate.listOperations);
+        return q.c(this.items, chatListUpdate.items) && q.c(this.action, chatListUpdate.action) && q.c(this.listOperations, chatListUpdate.listOperations);
     }
 
     public final ChatListAction getAction() {

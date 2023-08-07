@@ -21,7 +21,7 @@ public final class SystemLogUtils$fetchLastTombstone$extractedGroups$1 extends s
     }
 
     public final String invoke(MatchResult it) {
-        q.g(it, "it");
+        q.h(it, "it");
         return this.$removeDexNameExp.h(it.b().get(1), "classesN.dex");
     }
 }

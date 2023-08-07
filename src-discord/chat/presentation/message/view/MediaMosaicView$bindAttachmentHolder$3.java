@@ -29,7 +29,7 @@ public final class MediaMosaicView$bindAttachmentHolder$3 extends s implements F
     @Override 
     public   Unit invoke(Double d10) {
         invoke2(d10);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
@@ -37,7 +37,7 @@ public final class MediaMosaicView$bindAttachmentHolder$3 extends s implements F
         Function3 function3;
         function3 = this.this$0.onAttachmentClicked;
         if (function3 == null) {
-            q.y("onAttachmentClicked");
+            q.z("onAttachmentClicked");
             function3 = null;
         }
         function3.invoke(Integer.valueOf(this.$item.getIndex()), this.$item, this.$holder);

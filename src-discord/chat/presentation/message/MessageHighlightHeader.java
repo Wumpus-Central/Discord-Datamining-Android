@@ -26,7 +26,7 @@ public final class MessageHighlightHeader extends LinearLayout {
     
     public MessageHighlightHeader(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  MessageHighlightHeader(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -36,17 +36,17 @@ public final class MessageHighlightHeader extends LinearLayout {
     
     public MessageHighlightHeader(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         MessageHighlightHeaderBinding inflate = MessageHighlightHeaderBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView _init_$lambda$0 = inflate.header;
         _init_$lambda$0.setTextColor(ThemeManagerKt.getTheme().getTextBrand());
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, DiscordFont.PrimarySemibold);
         _init_$lambda$0.setText(I18nUtilsKt.i18nFormat$default(context, I18nMessage.HIGHLIGHT, null, 2, null));
         SimpleDraweeView simpleDraweeView = inflate.highlightIcon;
-        q.f(simpleDraweeView, "binding.highlightIcon");
+        q.g(simpleDraweeView, "binding.highlightIcon");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.Highlight);
     }
 }

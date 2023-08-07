@@ -3,7 +3,7 @@ package com.discord.chat.presentation.message.view.media;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import com.discord.chat.R;
-import ff.n;
+import jf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -35,7 +35,7 @@ public final class ViewAttachedListener implements View.OnAttachStateChangeListe
         @Override 
         public   Unit invoke(Boolean bool) {
             invoke(bool.booleanValue());
-            return Unit.f20679a;
+            return Unit.f21025a;
         }
 
         public final void invoke(boolean z10) {
@@ -45,9 +45,9 @@ public final class ViewAttachedListener implements View.OnAttachStateChangeListe
     
     public ViewAttachedListener(View view, Function1<? super Boolean, Unit> viewAttached, Function1<? super Boolean, Unit> viewScrolling) {
         Lazy b10;
-        q.g(view, "view");
-        q.g(viewAttached, "viewAttached");
-        q.g(viewScrolling, "viewScrolling");
+        q.h(view, "view");
+        q.h(viewAttached, "viewAttached");
+        q.h(viewScrolling, "viewScrolling");
         this.view = view;
         this.viewAttached = viewAttached;
         this.viewScrolling = viewScrolling;
@@ -68,13 +68,13 @@ public final class ViewAttachedListener implements View.OnAttachStateChangeListe
 
     
     public static final void isAttachedRunnable$lambda$0(ViewAttachedListener this$0) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         this$0.viewAttached.invoke(Boolean.TRUE);
     }
 
     @Override 
     public void onViewAttachedToWindow(View view) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.postDelayed(this.isAttachedRunnable, this.isAttachedDelay);
         ViewTreeObserver viewTreeObserver = view.getViewTreeObserver();
         if (viewTreeObserver != null) {
@@ -84,7 +84,7 @@ public final class ViewAttachedListener implements View.OnAttachStateChangeListe
 
     @Override 
     public void onViewDetachedFromWindow(View view) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.removeCallbacks(this.isAttachedRunnable);
         ViewTreeObserver viewTreeObserver = view.getViewTreeObserver();
         if (viewTreeObserver != null) {

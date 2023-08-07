@@ -6,24 +6,12 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.bridge.contentnode.LinkContentNode;
 import com.discord.chat.bridge.ephemeral.EphemeralIndication;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.databinding.EphemeralActionViewBinding;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.image.fresco.SimpleDraweeSpanTextViewUtilsKt;
@@ -53,13 +41,13 @@ public final class EphemeralIndicationView extends ConstraintLayout {
     
     public EphemeralIndicationView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public EphemeralIndicationView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  EphemeralIndicationView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -68,18 +56,17 @@ public final class EphemeralIndicationView extends ConstraintLayout {
 
     
     public static final void setEphemeralIndication_AFFcxXc$lambda$4$lambda$3(Function1 onHelpArticleClicked, EphemeralIndication ephemeralIndication, View view) {
-        q.g(onHelpArticleClicked, "$onHelpArticleClicked");
-        q.g(ephemeralIndication, "$ephemeralIndication");
+        q.h(onHelpArticleClicked, "$onHelpArticleClicked");
+        q.h(ephemeralIndication, "$ephemeralIndication");
         onHelpArticleClicked.invoke(ephemeralIndication.getHelpArticleLink());
     }
 
     
-    public final void m308setEphemeralIndicationAFFcxXc(String messageId, final EphemeralIndication ephemeralIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, final Function1<? super String, Unit> onHelpArticleClicked) {
-        DraweeSpanStringBuilder spannable;
-        q.g(messageId, "messageId");
-        q.g(ephemeralIndication, "ephemeralIndication");
-        q.g(onLinkClicked, "onLinkClicked");
-        q.g(onHelpArticleClicked, "onHelpArticleClicked");
+    public final void m309setEphemeralIndicationAFFcxXc(String messageId, final EphemeralIndication ephemeralIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, final Function1<? super String, Unit> onHelpArticleClicked) {
+        q.h(messageId, "messageId");
+        q.h(ephemeralIndication, "ephemeralIndication");
+        q.h(onLinkClicked, "onLinkClicked");
+        q.h(onHelpArticleClicked, "onHelpArticleClicked");
         SimpleDraweeView simpleDraweeView = this.binding.chatListAdapterItemIconHelp;
         simpleDraweeView.setContentDescription(ephemeralIndication.getHelpButtonAccessibilityLabel());
         simpleDraweeView.setOnClickListener(new View.OnClickListener() { 
@@ -89,37 +76,37 @@ public final class EphemeralIndicationView extends ConstraintLayout {
             }
         });
         SimpleDraweeSpanTextView setEphemeralIndication_AFFcxXc$lambda$6 = this.binding.chatListAdapterItemTextDismiss;
-        q.f(setEphemeralIndication_AFFcxXc$lambda$6, "setEphemeralIndication_AFFcxXc$lambda$6");
+        q.g(setEphemeralIndication_AFFcxXc$lambda$6, "setEphemeralIndication_AFFcxXc$lambda$6");
         StructurableText content = ephemeralIndication.getContent();
         Context context = setEphemeralIndication_AFFcxXc$lambda$6.getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         EphemeralIndicationView$setEphemeralIndication$2$1 ephemeralIndicationView$setEphemeralIndication$2$1 = new EphemeralIndicationView$setEphemeralIndication$2$1(onLinkClicked, messageId);
         Paint.FontMetrics fontMetrics = setEphemeralIndication_AFFcxXc$lambda$6.getPaint().getFontMetrics();
-        q.f(fontMetrics, "paint.fontMetrics");
-        spannable = TextUtilsKt.toSpannable(content, context, messageId, false, false, false, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : ephemeralIndicationView$setEphemeralIndication$2$1, (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (65536 & r42) != 0 ? false : false, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : TextUtilsKt.getBaselineHeight(fontMetrics));
-        SpannableExtensionsKt.coverWithSpan(spannable, new BackgroundSpanDrawer(setEphemeralIndication_AFFcxXc$lambda$6));
-        SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setEphemeralIndication_AFFcxXc$lambda$6, spannable);
+        q.g(fontMetrics, "paint.fontMetrics");
+        DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context, messageId, false, false, false, ephemeralIndicationView$setEphemeralIndication$2$1, null, null, null, null, null, null, null, null, null, null, false, null, TextUtilsKt.getBaselineHeight(fontMetrics), 262080, null);
+        SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(setEphemeralIndication_AFFcxXc$lambda$6));
+        SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setEphemeralIndication_AFFcxXc$lambda$6, spannable$default);
         NestedScrollOnTouchUtilsKt.enableNestedSpanClickListener$default(setEphemeralIndication_AFFcxXc$lambda$6, false, 1, null);
     }
 
     
     public EphemeralIndicationView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         EphemeralActionViewBinding inflate = EphemeralActionViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         SimpleDraweeSpanTextView _init_$lambda$0 = inflate.chatListAdapterItemTextDismiss;
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, DiscordFont.PrimaryMedium);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$0, 12.0f);
         _init_$lambda$0.setTextColor(ThemeManagerKt.getTheme().getTextMuted());
         SimpleDraweeView _init_$lambda$1 = this.binding.chatListAdapterItemIconHelp;
-        q.f(_init_$lambda$1, "_init_$lambda$1");
+        q.g(_init_$lambda$1, "_init_$lambda$1");
         ReactAssetUtilsKt.setReactAsset(_init_$lambda$1, ReactAsset.Help);
         ColorUtilsKt.setTintColor(_init_$lambda$1, Integer.valueOf(ThemeManagerKt.getTheme().getTextMuted()));
         SimpleDraweeView _init_$lambda$2 = this.binding.chatListAdapterItemVisibilityIcon;
-        q.f(_init_$lambda$2, "_init_$lambda$2");
+        q.g(_init_$lambda$2, "_init_$lambda$2");
         ReactAssetUtilsKt.setReactAsset(_init_$lambda$2, ReactAsset.ShowPassword);
         ColorUtilsKt.setTintColor(_init_$lambda$2, Integer.valueOf(ThemeManagerKt.getTheme().getTextMuted()));
     }

@@ -14,10 +14,10 @@ import com.discord.react_strings.I18nMessage;
 import com.discord.react_strings.I18nUtilsKt;
 import com.discord.shortcuts.ShortcutUtilsKt;
 import com.discord.theme.utils.ColorUtilsKt;
-import ff.t;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import jf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.j;
@@ -31,7 +31,7 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.f;
 import kotlinx.coroutines.l;
 import kotlinx.coroutines.q0;
-import lf.d;
+import pf.d;
 
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -73,7 +73,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Bitmap> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20679a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
         }
 
         @Override 
@@ -84,7 +84,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
             if (i10 == 0) {
                 t.b(obj);
                 this.label = 1;
-                obj = NotificationRenderer$display$1.invokeSuspend$fetchImage(this.$context, this.$postProcessor, this.$iconUrl.f20706k, this);
+                obj = NotificationRenderer$display$1.invokeSuspend$fetchImage(this.$context, this.$postProcessor, this.$iconUrl.f21052k, this);
                 if (obj == d10) {
                     return d10;
                 }
@@ -122,7 +122,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Bitmap> continuation) {
-            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f20679a);
+            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
         }
 
         @Override 
@@ -164,7 +164,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
 
     
     public static final Object invokeSuspend$fetchImage(Context context, Ref$ObjectRef<PostProcessor> ref$ObjectRef, String str, Continuation<? super Bitmap> continuation) {
-        return FrescoFetchDecodedImageKt.fetchDecodedImage(context, str, ref$ObjectRef.f20706k, true, continuation);
+        return FrescoFetchDecodedImageKt.fetchDecodedImage(context, str, ref$ObjectRef.f21052k, true, continuation);
     }
 
     @Override 
@@ -175,7 +175,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((NotificationRenderer$display$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20679a);
+        return ((NotificationRenderer$display$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
     }
 
     
@@ -187,7 +187,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
         Object obj2;
         List<NotificationCompat.Action> k10;
         NotificationCompat.MessagingStyle messagingStyle;
-        List<NotificationCompat.MessagingStyle.a> B;
+        List<NotificationCompat.MessagingStyle.e> B;
         q0 b10;
         q0 b11;
         d10 = d.d();
@@ -196,17 +196,17 @@ public final class NotificationRenderer$display$1 extends k implements Function2
             t.b(obj);
             CoroutineScope coroutineScope = (CoroutineScope) this.L$0;
             Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
-            ref$ObjectRef.f20706k = PostProcessor.Circle.INSTANCE;
+            ref$ObjectRef.f21052k = PostProcessor.Circle.INSTANCE;
             Ref$ObjectRef ref$ObjectRef2 = new Ref$ObjectRef();
-            ref$ObjectRef2.f20706k = NotificationDataUtilsKt.getIconUrl(this.$notification, this.$context);
+            ref$ObjectRef2.f21052k = NotificationDataUtilsKt.getIconUrl(this.$notification, this.$context);
             if (this.$notification.getImageAttachmentUrl() != null) {
                 String imageAttachmentUrl = this.$notification.getImageAttachmentUrl();
                 T t10 = imageAttachmentUrl;
                 if (imageAttachmentUrl == null) {
                     t10 = "";
                 }
-                ref$ObjectRef2.f20706k = t10;
-                ref$ObjectRef.f20706k = null;
+                ref$ObjectRef2.f21052k = t10;
+                ref$ObjectRef.f21052k = null;
             }
             b10 = l.b(coroutineScope, null, null, new AnonymousClass1(ref$ObjectRef2, this.$context, ref$ObjectRef, null), 3, null);
             b11 = l.b(coroutineScope, null, null, new AnonymousClass2(this.$notification, this.$context, ref$ObjectRef, null), 3, null);
@@ -227,7 +227,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
         CharSequence content = NotificationDataUtilsKt.getContent(this.$notification, this.$context);
         int activeNotificationMessageCount = NotificationManagerUtilsKt.getActiveNotificationMessageCount(this.$context, NotificationDataUtilsKt.getTag(this.$notification)) + 1;
         NotificationCompat.Builder C = NotificationManagerUtilsKt.getNotificationBuilderOrCreate(this.$context, NotificationChannels.INSTANCE.getNotificationChannelId(this.$notification), NotificationManagerUtilsKt.getActiveNotification(this.$context, NotificationDataUtilsKt.getTag(this.$notification))).t(true).R(!this.$notifyEveryTime).Z(NotificationDataUtilsKt.getSmallIcon(this.$notification)).z(ColorUtilsKt.getColorCompat(this.$context, R.color.brand_500)).w(NotificationDataUtilsKt.getNotificationCategory(this.$notification)).E(NotificationDataUtilsKt.getTitle(this.$notification, this.$context)).D(content).J(NotificationDataUtilsKt.getGroupKey(this.$notification)).P(activeNotificationMessageCount).L(bitmap).G(NotificationDataUtilsKt.getDeletePendingIntent(this.$notification, this.$context)).C(NotificationDataUtilsKt.getContentPendingIntent(this.$notification, this.$context, this.$notificationDataMap));
-        q.f(C, "context.getNotificationB…xt, notificationDataMap))");
+        q.g(C, "context.getNotificationB…xt, notificationDataMap))");
         Context context = this.$context;
         NotificationCompat.Builder builder = NotificationManagerUtilsKt.setLegacyNotificationBehaviors(C, context, this.$behaviors, NotificationDataUtilsKt.getSound(this.$notification, context)).h();
         NotificationData notificationData = this.$notification;
@@ -243,18 +243,18 @@ public final class NotificationRenderer$display$1 extends k implements Function2
             NotificationCompat.MessagingStyle H = new NotificationCompat.MessagingStyle(cVar.f(charSequence).e("me").a()).G(NotificationDataUtilsKt.getConversationTitle(notificationData)).H(NotificationDataUtilsKt.isGroupConversation(notificationData));
             Notification activeNotification = NotificationManagerUtilsKt.getActiveNotification(context2, NotificationDataUtilsKt.getTag(notificationData));
             if (!(activeNotification == null || (messagingStyle = NotificationManagerUtilsKt.getMessagingStyle(activeNotification)) == null || (B = messagingStyle.B()) == null)) {
-                for (NotificationCompat.MessagingStyle.a aVar : B) {
-                    H.x(aVar);
+                for (NotificationCompat.MessagingStyle.e eVar : B) {
+                    H.x(eVar);
                 }
             }
             H.y(content, NotificationDataUtilsKt.getSendTime(notificationData), NotificationDataUtilsKt.getSenderForMessageNotification(notificationData, bitmap2));
             builder.e0(H);
             if (z10) {
-                q.f(builder, "builder");
+                q.g(builder, "builder");
                 ShortcutUtilsKt.addShortcut(builder, context2, NotificationDataUtilsKt.getShortcutInfo(notificationData, context2, map, bitmap, bitmap2));
             }
         } else if (NotificationDataUtilsKt.shouldUseBigText(notificationData)) {
-            builder.e0(new NotificationCompat.c().x(content));
+            builder.e0(new NotificationCompat.f().x(content));
         }
         k10 = j.k(NotificationDataUtilsKt.getMarkAsReadAction(notificationData, context2), NotificationDataUtilsKt.getDirectReplyAction(notificationData, context2), NotificationDataUtilsKt.getCallAction(notificationData, context2, false, map), NotificationDataUtilsKt.getCallAction(notificationData, context2, true, map), NotificationDataUtilsKt.getTimedMuteAction(notificationData, context2, activeNotificationMessageCount));
         ArrayList arrayList = new ArrayList();
@@ -264,8 +264,8 @@ public final class NotificationRenderer$display$1 extends k implements Function2
                 arrayList.add(b12);
             }
         }
-        q.f(builder, "context.getNotificationB…n(action) }\n            }");
+        q.g(builder, "context.getNotificationB…n(action) }\n            }");
         NotificationManagerUtilsKt.notify(NotificationManagerUtilsKt.getNotificationManagerCompat(this.$context), NotificationDataUtilsKt.getTag(this.$notification), builder);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 }

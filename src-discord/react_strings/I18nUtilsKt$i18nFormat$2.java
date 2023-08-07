@@ -23,7 +23,7 @@ final class I18nUtilsKt$i18nFormat$2 extends s implements Function3<String, Stri
     }
 
     public final CharSequence invoke(String argName, String str, boolean z10) {
-        q.g(argName, "argName");
+        q.h(argName, "argName");
         String str2 = this.$messageRenderContext.getArgs().get(argName);
         return str2 != null ? str2 : argName;
     }

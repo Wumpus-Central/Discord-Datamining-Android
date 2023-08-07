@@ -28,15 +28,15 @@ public final class AudioPlayerManager$setupPlayer$1$1 extends s implements Funct
     @Override 
     public   Unit invoke(MediaPlayer.Event event) {
         invoke2(event);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(MediaPlayer.Event event) {
         MediaPlayer.Event event2;
         Map map;
-        q.g(event, "event");
-        if (q.b(event, MediaPlayer.Event.PlaybackEnded.INSTANCE)) {
+        q.h(event, "event");
+        if (q.c(event, MediaPlayer.Event.PlaybackEnded.INSTANCE)) {
             map = AudioPlayerManager.currentProgressMap;
             map.remove(this.$source);
             AudioPlayerManager.INSTANCE.abandonAudioFocus();
@@ -44,7 +44,7 @@ public final class AudioPlayerManager$setupPlayer$1$1 extends s implements Funct
             AudioPlayerManager.INSTANCE.storeDuration(this.$source);
         }
         event2 = AudioPlayerManager.mediaPlayerState;
-        if (!q.b(event2, event)) {
+        if (!q.c(event2, event)) {
             AudioPlayerManager.mediaPlayerState = event;
             this.$onStateChanged.invoke(event);
         }

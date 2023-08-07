@@ -27,7 +27,7 @@ public final class FileAttachmentView$setContent$hideOverlayBackground$1 extends
         FileAttachmentViewBinding fileAttachmentViewBinding;
         fileAttachmentViewBinding = this.this$0.binding;
         LinearLayout linearLayout = fileAttachmentViewBinding.uploadOverlayBackground;
-        q.f(linearLayout, "binding.uploadOverlayBackground");
+        q.g(linearLayout, "binding.uploadOverlayBackground");
         linearLayout.setVisibility(8);
         this.this$0.uploadFinished = true;
     }

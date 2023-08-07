@@ -18,7 +18,7 @@ public final class OverlayViewProvider<T extends OverlayView> {
 
     
     public OverlayViewProvider(Function1<? super OverlayViewProvider<T>, ? extends T> initializer) {
-        q.g(initializer, "initializer");
+        q.h(initializer, "initializer");
         this.initializer = initializer;
     }
 
@@ -30,7 +30,7 @@ public final class OverlayViewProvider<T extends OverlayView> {
         T invoke = this.initializer.invoke(this);
         MobileVoiceOverlayAssets mobileVoiceOverlayAssets = this.assets;
         if (mobileVoiceOverlayAssets == null) {
-            q.y("assets");
+            q.z("assets");
             mobileVoiceOverlayAssets = null;
         }
         invoke.setAssets(mobileVoiceOverlayAssets);
@@ -60,13 +60,13 @@ public final class OverlayViewProvider<T extends OverlayView> {
     }
 
     public final void setAssets(MobileVoiceOverlayAssets assets) {
-        q.g(assets, "assets");
+        q.h(assets, "assets");
         this.assets = assets;
         withViewOptional(new OverlayViewProvider$setAssets$1(assets));
     }
 
     public final void setData(MobileVoiceOverlayData data) {
-        q.g(data, "data");
+        q.h(data, "data");
         this.data = data;
         withViewOptional(new OverlayViewProvider$setData$1(data));
     }
@@ -76,7 +76,7 @@ public final class OverlayViewProvider<T extends OverlayView> {
     }
 
     public final void withView(Function1<? super T, Unit> operation) {
-        q.g(operation, "operation");
+        q.h(operation, "operation");
         operation.invoke(ensureView());
     }
 }

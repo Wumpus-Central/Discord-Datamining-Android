@@ -17,13 +17,13 @@ public final class MessageFrameHeaderView extends FrameLayout {
     
     public MessageFrameHeaderView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public MessageFrameHeaderView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  MessageFrameHeaderView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -37,7 +37,7 @@ public final class MessageFrameHeaderView extends FrameLayout {
                 removeViewAt(0);
             }
             Context context = getContext();
-            q.f(context, "context");
+            q.g(context, "context");
             childAt = new MessageFrameJumpHeaderView(context, null, 0, 6, null);
             childAt.setLayoutParams(new FrameLayout.LayoutParams(-1, -2));
             addView(childAt);
@@ -47,9 +47,9 @@ public final class MessageFrameHeaderView extends FrameLayout {
 
     private final  <T extends View> T getOrCreate(Function0<? extends T> function0) {
         T child = (T) getChildAt(0);
-        q.m(3, "T");
+        q.n(3, "T");
         if (child instanceof View) {
-            q.f(child, "child");
+            q.g(child, "child");
             return child;
         }
         if (child != null) {
@@ -62,7 +62,7 @@ public final class MessageFrameHeaderView extends FrameLayout {
     }
 
     public final void configure(MessageFrame messageFrame) {
-        q.g(messageFrame, "messageFrame");
+        q.h(messageFrame, "messageFrame");
         boolean z10 = true;
         if (getChildCount() > 1) {
             z10 = false;
@@ -77,6 +77,6 @@ public final class MessageFrameHeaderView extends FrameLayout {
     
     public MessageFrameHeaderView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 }

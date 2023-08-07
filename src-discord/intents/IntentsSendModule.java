@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import com.discord.intents.packages.InstalledPackage;
 import com.facebook.react.bridge.BaseJavaModule;
 import com.facebook.react.bridge.Callback;
@@ -23,19 +24,19 @@ public final class IntentsSendModule extends ReactContextBaseJavaModule {
     
     public IntentsSendModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.reactContext = reactContext;
     }
 
     @ReactMethod
     public final void canSendMail(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         promise.resolve(Boolean.TRUE);
     }
 
     @ReactMethod
     public final void canSendSMS(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         promise.resolve(Boolean.TRUE);
     }
 
@@ -46,17 +47,21 @@ public final class IntentsSendModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void isPackageInstalled(String appName, Promise promise) {
-        q.g(appName, "appName");
-        q.g(promise, "promise");
+        q.h(appName, "appName");
+        q.h(promise, "promise");
         String appPackage = InstalledPackage.Companion.parse(appName).getAppPackage();
         PackageManager packageManager = this.reactContext.getPackageManager();
         try {
             if (appPackage != null) {
-                packageManager.getPackageInfo(appPackage, 0);
+                if (Build.VERSION.SDK_INT >= 33) {
+                    packageManager.getPackageInfo(appPackage, PackageManager.PackageInfoFlags.of(0L));
+                } else {
+                    packageManager.getPackageInfo(appPackage, 0);
+                }
                 promise.resolve(Boolean.TRUE);
-            } else {
-                promise.resolve(Boolean.FALSE);
+                return;
             }
+            promise.resolve(Boolean.FALSE);
         } catch (PackageManager.NameNotFoundException unused) {
             promise.resolve(Boolean.FALSE);
         }
@@ -64,8 +69,8 @@ public final class IntentsSendModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void sendMail(ReadableMap options, Callback callback) {
-        q.g(options, "options");
-        q.g(callback, "callback");
+        q.h(options, "options");
+        q.h(callback, "callback");
         Intent intent = new Intent("android.intent.action.SENDTO");
         intent.setData(Uri.parse("mailto:"));
         String string = options.getString("subject");
@@ -88,8 +93,8 @@ public final class IntentsSendModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void sendSMS(ReadableMap options, Callback callback) {
-        q.g(options, "options");
-        q.g(callback, "callback");
+        q.h(options, "options");
+        q.h(callback, "callback");
         Activity currentActivity = this.reactContext.getCurrentActivity();
         if (currentActivity != null) {
             Intent intent = new Intent("android.intent.action.VIEW");

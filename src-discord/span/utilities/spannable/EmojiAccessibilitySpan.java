@@ -10,7 +10,7 @@ public final class EmojiAccessibilitySpan {
     private final String name;
 
     public EmojiAccessibilitySpan(String name) {
-        q.g(name, "name");
+        q.h(name, "name");
         this.name = name;
     }
 

@@ -25,14 +25,14 @@ final class PushNotificationModule$registerEventListener$3 extends s implements 
     @Override 
     public   Unit invoke(Map<String, ? extends String> map) {
         invoke2((Map<String, String>) map);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(Map<String, String> notification) {
         ReactEvents reactEvents;
         ReactApplicationContext reactApplicationContext;
-        q.g(notification, "notification");
+        q.h(notification, "notification");
         reactEvents = this.this$0.reactEvents;
         reactApplicationContext = this.this$0.reactContext;
         reactEvents.emitModuleEvent(reactApplicationContext, new LocalNotificationEvent(notification));

@@ -21,7 +21,7 @@ public final class DeleteAction implements NotificationAction {
         
         @Override 
         public final DeleteAction createFromParcel(Parcel parcel) {
-            q.g(parcel, "parcel");
+            q.h(parcel, "parcel");
             return new DeleteAction(parcel.readString());
         }
 
@@ -33,7 +33,7 @@ public final class DeleteAction implements NotificationAction {
     }
 
     public DeleteAction(String tag) {
-        q.g(tag, "tag");
+        q.h(tag, "tag");
         this.tag = tag;
     }
 
@@ -69,7 +69,7 @@ public final class DeleteAction implements NotificationAction {
 
     @Override 
     public void writeToParcel(Parcel out, int i10) {
-        q.g(out, "out");
+        q.h(out, "out");
         out.writeString(this.tag);
     }
 }

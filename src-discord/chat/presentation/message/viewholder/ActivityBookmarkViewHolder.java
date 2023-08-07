@@ -17,21 +17,21 @@ public final class ActivityBookmarkViewHolder extends MessagePartViewHolder {
     
     public ActivityBookmarkViewHolder(ActivityBookmarkView activityBookmarkView, ChatEventHandler eventHandler) {
         super(activityBookmarkView, null);
-        q.g(activityBookmarkView, "activityBookmarkView");
-        q.g(eventHandler, "eventHandler");
+        q.h(activityBookmarkView, "activityBookmarkView");
+        q.h(eventHandler, "eventHandler");
         this.activityBookmarkView = activityBookmarkView;
         this.eventHandler = eventHandler;
     }
 
     
     public static final void bind$lambda$1$lambda$0(ActivityBookmarkEmbedImpl activityBookmarkEmbed, ActivityBookmarkViewHolder this$0, View view) {
-        q.g(activityBookmarkEmbed, "$activityBookmarkEmbed");
-        q.g(this$0, "this$0");
-        this$0.eventHandler.mo155onTapActivityBookmarkEmbeduU1mFKc(activityBookmarkEmbed.mo32getApplicationIdVavddsQ(), activityBookmarkEmbed.mo33getChannelIdo4g7jtM());
+        q.h(activityBookmarkEmbed, "$activityBookmarkEmbed");
+        q.h(this$0, "this$0");
+        this$0.eventHandler.mo156onTapActivityBookmarkEmbeduU1mFKc(activityBookmarkEmbed.mo33getApplicationIdVavddsQ(), activityBookmarkEmbed.mo34getChannelIdo4g7jtM());
     }
 
     public final void bind(ActivityBookmarkMessageAccessory activityMessageAccessory) {
-        q.g(activityMessageAccessory, "activityMessageAccessory");
+        q.h(activityMessageAccessory, "activityMessageAccessory");
         final ActivityBookmarkEmbedImpl activityBookmarkEmbed = activityMessageAccessory.getActivityBookmarkEmbed();
         ActivityBookmarkView activityBookmarkView = this.activityBookmarkView;
         activityBookmarkView.setSplash(activityBookmarkEmbed.getSplashUrl(), activityMessageAccessory.getConstrainedWidth());

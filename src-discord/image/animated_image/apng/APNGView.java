@@ -11,7 +11,6 @@ import com.discord.theme.ThemeManagerKt;
 import com.facebook.react.views.textinput.ReactTextInputShadowNode;
 import com.linecorp.apng.ApngDrawable;
 import java.util.List;
-import ji.u;
 import kotlin.Metadata;
 import kotlin.collections.r;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -20,6 +19,7 @@ import kotlin.text.MatchResult;
 import kotlin.text.Regex;
 import kotlinx.coroutines.l;
 import kotlinx.coroutines.y0;
+import ni.u;
 
 @Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 \u00192\u00020\u0001:\u0002\u0019\u001aB\u000f\u0012\u0006\u0010\u0016\u001a\u00020\u0015¢\u0006\u0004\b\u0017\u0010\u0018J\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\b\u0010\u0006\u001a\u00020\u0004H\u0002J\b\u0010\u0007\u001a\u00020\u0004H\u0002J\u000e\u0010\b\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002J\u001a\u0010\f\u001a\u00020\u00042\b\b\u0002\u0010\n\u001a\u00020\t2\b\b\u0002\u0010\u000b\u001a\u00020\tJ\b\u0010\r\u001a\u00020\u0004H\u0014J\b\u0010\u000e\u001a\u00020\u0004H\u0014R\u0014\u0010\u0010\u001a\u00020\u000f8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011R\u001a\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00020\u00128\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0013\u0010\u0014¨\u0006\u001b"}, d2 = {"Lcom/discord/image/animated_image/apng/APNGView;", "Landroidx/appcompat/widget/n;", "Lcom/discord/image/animated_image/apng/APNGView$Config;", "config", "", "fetchAPNG", "playApngAnimation", "pauseApngAnimation", "loadImage", "", "resetState", "showLoading", "recycle", "onDetachedFromWindow", "onAttachedToWindow", "Landroid/graphics/drawable/ShapeDrawable;", ReactTextInputShadowNode.PROP_PLACEHOLDER, "Landroid/graphics/drawable/ShapeDrawable;", "Lcom/discord/image/animated_image/animated_image_utils/AnimatedImageStateManager;", "apngStateManager", "Lcom/discord/image/animated_image/animated_image_utils/AnimatedImageStateManager;", "Landroid/content/Context;", "context", "<init>", "(Landroid/content/Context;)V", "Companion", "Config", "animated_image_release"}, k = 1, mv = {1, 8, 0})
 
@@ -63,7 +63,7 @@ public final class APNGView extends n {
     
     public APNGView(Context context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
         ShapeDrawable shapeDrawable = new ShapeDrawable();
         shapeDrawable.setShape(new OvalShape());
         shapeDrawable.getPaint().setColor(ThemeManagerKt.getTheme().getBackgroundAccent());
@@ -101,7 +101,7 @@ public final class APNGView extends n {
     }
 
     public final void loadImage(Config config) {
-        q.g(config, "config");
+        q.h(config, "config");
         this.apngStateManager.onTryFetch(config);
     }
 
@@ -144,8 +144,8 @@ public final class APNGView extends n {
         private final Integer widthDp;
 
         public Config(String url, boolean z10, boolean z11, Integer num, Integer num2, String cacheDirectory) {
-            q.g(url, "url");
-            q.g(cacheDirectory, "cacheDirectory");
+            q.h(url, "url");
+            q.h(cacheDirectory, "cacheDirectory");
             this.url = url;
             this.animate = z10;
             this.showLoading = z11;
@@ -201,8 +201,8 @@ public final class APNGView extends n {
         }
 
         public final Config copy(String url, boolean z10, boolean z11, Integer num, Integer num2, String cacheDirectory) {
-            q.g(url, "url");
-            q.g(cacheDirectory, "cacheDirectory");
+            q.h(url, "url");
+            q.h(cacheDirectory, "cacheDirectory");
             return new Config(url, z10, z11, num, num2, cacheDirectory);
         }
 
@@ -214,7 +214,7 @@ public final class APNGView extends n {
                 return false;
             }
             Config config = (Config) obj;
-            return q.b(this.url, config.url) && this.animate == config.animate && this.showLoading == config.showLoading && q.b(this.widthDp, config.widthDp) && q.b(this.heightDp, config.heightDp) && q.b(this.cacheDirectory, config.cacheDirectory);
+            return q.c(this.url, config.url) && this.animate == config.animate && this.showLoading == config.showLoading && q.c(this.widthDp, config.widthDp) && q.c(this.heightDp, config.heightDp) && q.c(this.cacheDirectory, config.cacheDirectory);
         }
 
         public final boolean getAnimate() {

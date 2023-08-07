@@ -31,42 +31,42 @@ public final class ConnectionsRoleTagView extends FrameLayout {
     
     public ConnectionsRoleTagView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        q.g(context, "context");
-        q.g(attrs, "attrs");
+        q.h(context, "context");
+        q.h(attrs, "attrs");
         ConnectionsRoleTagViewBinding inflate = ConnectionsRoleTagViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         inflate.connectionsRoleTagContainer.setCardBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondaryAlt());
         inflate.roleName.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
         TextView textView = inflate.roleName;
-        q.f(textView, "binding.roleName");
+        q.g(textView, "binding.roleName");
         SetTextSizeSpKt.setTextSizeSp(textView, 12.0f);
         TextView textView2 = inflate.roleName;
-        q.f(textView2, "binding.roleName");
+        q.g(textView2, "binding.roleName");
         DiscordFontUtilsKt.setDiscordFont(textView2, DiscordFont.PrimaryBold);
     }
 
     
     public static final void configureConnectionsRoleTag_uESh2Cg$lambda$0(ChatEventHandler eventHandler, UserId userId, GuildId guildId, ChannelId channelId, ConnectionsRoleTag connectionsRoleTag, View view) {
-        q.g(eventHandler, "$eventHandler");
-        q.g(connectionsRoleTag, "$connectionsRoleTag");
-        eventHandler.onTapConnectionsRoleTag(UserId.m637toStringimpl(userId.m639unboximpl()), GuildId.m586toStringimpl(guildId.m588unboximpl()), ChannelId.m573toStringimpl(channelId.m575unboximpl()), connectionsRoleTag.getId());
+        q.h(eventHandler, "$eventHandler");
+        q.h(connectionsRoleTag, "$connectionsRoleTag");
+        eventHandler.onTapConnectionsRoleTag(UserId.m638toStringimpl(userId.m640unboximpl()), GuildId.m587toStringimpl(guildId.m589unboximpl()), ChannelId.m574toStringimpl(channelId.m576unboximpl()), connectionsRoleTag.getId());
     }
 
     
-    public final void m194configureConnectionsRoleTaguESh2Cg(final UserId userId, final GuildId guildId, final ChannelId channelId, final ConnectionsRoleTag connectionsRoleTag, final ChatEventHandler eventHandler) {
-        q.g(connectionsRoleTag, "connectionsRoleTag");
-        q.g(eventHandler, "eventHandler");
+    public final void m195configureConnectionsRoleTaguESh2Cg(final UserId userId, final GuildId guildId, final ChannelId channelId, final ConnectionsRoleTag connectionsRoleTag, final ChatEventHandler eventHandler) {
+        q.h(connectionsRoleTag, "connectionsRoleTag");
+        q.h(eventHandler, "eventHandler");
         ImageView imageView = this.binding.verifiedCheckIconBackground;
-        q.f(imageView, "binding.verifiedCheckIconBackground");
+        q.g(imageView, "binding.verifiedCheckIconBackground");
         ColorUtilsKt.setTintColor(imageView, Integer.valueOf(connectionsRoleTag.getBackgroundColor()));
         ImageView imageView2 = this.binding.verifiedCheckIcon;
-        q.f(imageView2, "binding.verifiedCheckIcon");
+        q.g(imageView2, "binding.verifiedCheckIcon");
         ColorUtilsKt.setTintColor(imageView2, Integer.valueOf(connectionsRoleTag.getIconColor()));
         this.binding.roleName.setText(connectionsRoleTag.getName());
         if (userId != null && guildId != null && channelId != null) {
             CardView cardView = this.binding.connectionsRoleTagContainer;
-            q.f(cardView, "binding.connectionsRoleTagContainer");
+            q.g(cardView, "binding.connectionsRoleTagContainer");
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(cardView, false, new View.OnClickListener() { 
                 @Override 
                 public final void onClick(View view) {

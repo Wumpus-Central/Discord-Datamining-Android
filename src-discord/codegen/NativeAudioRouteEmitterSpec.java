@@ -10,6 +10,8 @@ import e5.a;
 
 
 public abstract class NativeAudioRouteEmitterSpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
+    public static final String NAME = "RTNAudioRouteEmitter";
+
     public NativeAudioRouteEmitterSpec(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);
     }
@@ -17,4 +19,9 @@ public abstract class NativeAudioRouteEmitterSpec extends ReactContextBaseJavaMo
     @ReactMethod
     @a
     public abstract void getCurrentRoute(Promise promise);
+
+    @Override 
+    public String getName() {
+        return "RTNAudioRouteEmitter";
+    }
 }

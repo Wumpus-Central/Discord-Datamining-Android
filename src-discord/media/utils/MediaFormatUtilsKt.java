@@ -1,8 +1,8 @@
 package com.discord.media.utils;
 
 import android.media.MediaFormat;
-import ff.s;
-import ff.t;
+import jf.s;
+import jf.t;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
@@ -11,12 +11,12 @@ import kotlin.jvm.internal.q;
 public final class MediaFormatUtilsKt {
     public static final String getMimeType(MediaFormat mediaFormat) {
         Object obj;
-        q.g(mediaFormat, "<this>");
+        q.h(mediaFormat, "<this>");
         try {
-            s.a aVar = s.f14787l;
+            s.a aVar = s.f20093l;
             obj = s.b(mediaFormat.getString("mime"));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f14787l;
+            s.a aVar2 = s.f20093l;
             obj = s.b(t.a(th2));
         }
         if (s.g(obj)) {
@@ -26,7 +26,7 @@ public final class MediaFormatUtilsKt {
     }
 
     public static final boolean isHevcVideo(MediaFormat mediaFormat) {
-        q.g(mediaFormat, "<this>");
-        return q.b(getMimeType(mediaFormat), "video/hevc");
+        q.h(mediaFormat, "<this>");
+        return q.c(getMimeType(mediaFormat), "video/hevc");
     }
 }

@@ -25,7 +25,7 @@ public final class MessageBundleMessageDelegate extends MessageBundleBaseDelegat
     
     public MessageBundleMessageDelegate(Function3<? super View, ? super Integer, ? super Integer, Unit> onMeasured) {
         super(onMeasured);
-        q.g(onMeasured, "onMeasured");
+        q.h(onMeasured, "onMeasured");
     }
 
     
@@ -49,9 +49,9 @@ public final class MessageBundleMessageDelegate extends MessageBundleBaseDelegat
 
     @Override 
     public void onBindViewHolder(View view, MessageBundleItem item, List<? extends MessageBundleItem> items, int i10) {
-        q.g(view, "view");
-        q.g(item, "item");
-        q.g(items, "items");
+        q.h(view, "view");
+        q.h(item, "item");
+        q.h(items, "items");
         if ((view instanceof MessageView) && (item instanceof MessageBundleMessageItem)) {
             MessageView messageView = (MessageView) view;
             MessageBundleMessageItem messageBundleMessageItem = (MessageBundleMessageItem) item;
@@ -60,7 +60,7 @@ public final class MessageBundleMessageDelegate extends MessageBundleBaseDelegat
             MessageFrame messageFrame = messageBundleMessageItem.getMessageItem().getMessageFrame();
             MessageItem messageItem = messageBundleMessageItem.getMessageItem();
             Context context = messageView.getContext();
-            q.f(context, "view.context");
+            q.g(context, "view.context");
             MessageView.setMessage$default(messageView, message, messageContext, messageFrame, MessageBundleDelegateUtilsKt.getEventHandler(messageItem, context), null, new MessageBundleMessageDelegate$onBindViewHolder$1(this, items, i10), false, messageBundleMessageItem.getMessageItem().isHighlight(), messageBundleMessageItem.getMessageItem().getRenderContentOnly(), 80, null);
             RecyclerView.RecycledViewPool recycledViewPool = this.messageAccessoriesViewPool;
             if (recycledViewPool != null) {
@@ -75,13 +75,13 @@ public final class MessageBundleMessageDelegate extends MessageBundleBaseDelegat
 
     @Override 
     public MessageView createView(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         return new MessageView(context, null, 2, null);
     }
 
     
     public boolean isForViewType(List<? extends MessageBundleItem> items, int i10) {
-        q.g(items, "items");
+        q.h(items, "items");
         return items.get(i10) instanceof MessageBundleMessageItem;
     }
 }

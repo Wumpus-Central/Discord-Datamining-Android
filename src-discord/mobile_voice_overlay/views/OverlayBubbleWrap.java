@@ -47,7 +47,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
     
     public OverlayBubbleWrap(Context context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
         WindowManager.LayoutParams createWindowLayoutParams = WindowUtils.INSTANCE.createWindowLayoutParams();
         createWindowLayoutParams.gravity = 51;
         this.windowLayoutParams = createWindowLayoutParams;
@@ -55,12 +55,12 @@ public abstract class OverlayBubbleWrap extends OverlayView {
         this.insetMargins = new Rect();
         this.moveThresholdPx = getResources().getDimensionPixelOffset(R.dimen.movement_threshold_dp);
         setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), R.drawable.bubble_state_selector));
-        a aVar = a.f20735a;
+        a aVar = a.f21081a;
         final Boolean bool = Boolean.FALSE;
         this.isMoving$delegate = new c<Boolean>(bool) { 
             @Override 
             protected void afterChange(KProperty<?> property, Boolean bool2, Boolean bool3) {
-                q.g(property, "property");
+                q.h(property, "property");
                 boolean booleanValue = bool3.booleanValue();
                 if (bool2.booleanValue() != booleanValue) {
                     Function1<Boolean, Unit> onMovingStateChanged = this.getOnMovingStateChanged();
@@ -77,12 +77,12 @@ public abstract class OverlayBubbleWrap extends OverlayView {
             }
         };
         this.screenOffset = new int[2];
-        SpringAnimation springAnimation = new SpringAnimation(this, DynamicAnimation.f3844u, 0.0f);
+        SpringAnimation springAnimation = new SpringAnimation(this, DynamicAnimation.f3203u, 0.0f);
         springAnimation.k(50.0f);
         springAnimation.q().f(200.0f);
         springAnimation.q().d(0.75f);
         this.springAnimationX = springAnimation;
-        SpringAnimation springAnimation2 = new SpringAnimation(this, DynamicAnimation.f3845v, 0.0f);
+        SpringAnimation springAnimation2 = new SpringAnimation(this, DynamicAnimation.f3204v, 0.0f);
         springAnimation2.k(50.0f);
         springAnimation2.q().d(0.75f);
         springAnimation2.q().f(200.0f);
@@ -112,7 +112,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
         if (obj == null) {
             if ((i12 & 4) != 0) {
                 Context context = overlayBubbleWrap.getContext();
-                q.f(context, "context");
+                q.g(context, "context");
                 rect = overlayBubbleWrap.getAllowedAreaBounds(context);
             }
             overlayBubbleWrap.animateToCoordinate(i10, i11, rect);
@@ -170,7 +170,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
     }
 
     public void anchorOn(View targetView) {
-        q.g(targetView, "targetView");
+        q.h(targetView, "targetView");
         int[] centerPointOnScreen = WindowUtils.INSTANCE.getCenterPointOnScreen(targetView, new int[2]);
         int i10 = centerPointOnScreen[0];
         int[] iArr = this.screenOffset;
@@ -179,14 +179,14 @@ public abstract class OverlayBubbleWrap extends OverlayView {
     }
 
     public final void animateToCoordinate(int i10, int i11, Rect screenBounds) {
-        q.g(screenBounds, "screenBounds");
+        q.h(screenBounds, "screenBounds");
         animateTo(this.springAnimationX, this.windowLayoutParams.x, Math.min(Math.max(screenBounds.left, i10), screenBounds.right - getWidth()));
         animateTo(this.springAnimationY, this.windowLayoutParams.y, Math.min(Math.max(screenBounds.top - this.screenOffset[1], i11), screenBounds.bottom - getHeight()));
     }
 
     @Override 
     public boolean dispatchTouchEvent(MotionEvent motionEvent) {
-        q.g(motionEvent, "motionEvent");
+        q.h(motionEvent, "motionEvent");
         int action = motionEvent.getAction();
         if (action != 0) {
             boolean z10 = false;
@@ -224,7 +224,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
 
     
     public final Rect getAllowedAreaBounds(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         Rect screenSize = WindowUtils.INSTANCE.getScreenSize(context);
         int i10 = screenSize.left;
         Rect rect = this.insetMargins;
@@ -309,7 +309,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
             addOnLayoutChangeListener(new View.OnLayoutChangeListener() { 
                 @Override 
                 public void onLayoutChange(View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
-                    q.g(view, "view");
+                    q.h(view, "view");
                     view.removeOnLayoutChangeListener(this);
                     OverlayBubbleWrap.this.computeScreenOffset();
                 }
@@ -321,7 +321,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
 
     @Override 
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
-        q.g(motionEvent, "motionEvent");
+        q.h(motionEvent, "motionEvent");
         if (motionEvent.getAction() == 2) {
             return isMoving();
         }
@@ -350,12 +350,12 @@ public abstract class OverlayBubbleWrap extends OverlayView {
     }
 
     public final void setTouchDispatchSideEffectHandler$mobile_voice_overlay_release(Function1<? super MotionEvent, Unit> function1) {
-        q.g(function1, "<set-?>");
+        q.h(function1, "<set-?>");
         this.touchDispatchSideEffectHandler = function1;
     }
 
     protected final void setWindowLayoutParams(WindowManager.LayoutParams layoutParams) {
-        q.g(layoutParams, "<set-?>");
+        q.h(layoutParams, "<set-?>");
         this.windowLayoutParams = layoutParams;
     }
 
@@ -375,7 +375,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
     public final void updateViewLayout() {
         if (isAttachedToWindow() && isManagedByWindow()) {
             Object systemService = getContext().getSystemService("window");
-            q.e(systemService, "null cannot be cast to non-null type android.view.WindowManager");
+            q.f(systemService, "null cannot be cast to non-null type android.view.WindowManager");
             ((WindowManager) systemService).updateViewLayout(this, this.windowLayoutParams);
         }
     }
@@ -383,7 +383,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
     
     public OverlayBubbleWrap(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         WindowManager.LayoutParams createWindowLayoutParams = WindowUtils.INSTANCE.createWindowLayoutParams();
         createWindowLayoutParams.gravity = 51;
         this.windowLayoutParams = createWindowLayoutParams;
@@ -391,12 +391,12 @@ public abstract class OverlayBubbleWrap extends OverlayView {
         this.insetMargins = new Rect();
         this.moveThresholdPx = getResources().getDimensionPixelOffset(R.dimen.movement_threshold_dp);
         setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), R.drawable.bubble_state_selector));
-        a aVar = a.f20735a;
+        a aVar = a.f21081a;
         final Boolean bool = Boolean.FALSE;
         this.isMoving$delegate = new c<Boolean>(bool) { 
             @Override 
             protected void afterChange(KProperty<?> property, Boolean bool2, Boolean bool3) {
-                q.g(property, "property");
+                q.h(property, "property");
                 boolean booleanValue = bool3.booleanValue();
                 if (bool2.booleanValue() != booleanValue) {
                     Function1<Boolean, Unit> onMovingStateChanged = this.getOnMovingStateChanged();
@@ -413,12 +413,12 @@ public abstract class OverlayBubbleWrap extends OverlayView {
             }
         };
         this.screenOffset = new int[2];
-        SpringAnimation springAnimation = new SpringAnimation(this, DynamicAnimation.f3844u, 0.0f);
+        SpringAnimation springAnimation = new SpringAnimation(this, DynamicAnimation.f3203u, 0.0f);
         springAnimation.k(50.0f);
         springAnimation.q().f(200.0f);
         springAnimation.q().d(0.75f);
         this.springAnimationX = springAnimation;
-        SpringAnimation springAnimation2 = new SpringAnimation(this, DynamicAnimation.f3845v, 0.0f);
+        SpringAnimation springAnimation2 = new SpringAnimation(this, DynamicAnimation.f3204v, 0.0f);
         springAnimation2.k(50.0f);
         springAnimation2.q().d(0.75f);
         springAnimation2.q().f(200.0f);
@@ -430,7 +430,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
     
     public OverlayBubbleWrap(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         WindowManager.LayoutParams createWindowLayoutParams = WindowUtils.INSTANCE.createWindowLayoutParams();
         createWindowLayoutParams.gravity = 51;
         this.windowLayoutParams = createWindowLayoutParams;
@@ -438,12 +438,12 @@ public abstract class OverlayBubbleWrap extends OverlayView {
         this.insetMargins = new Rect();
         this.moveThresholdPx = getResources().getDimensionPixelOffset(R.dimen.movement_threshold_dp);
         setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), R.drawable.bubble_state_selector));
-        a aVar = a.f20735a;
+        a aVar = a.f21081a;
         final Boolean bool = Boolean.FALSE;
         this.isMoving$delegate = new c<Boolean>(bool) { 
             @Override 
             protected void afterChange(KProperty<?> property, Boolean bool2, Boolean bool3) {
-                q.g(property, "property");
+                q.h(property, "property");
                 boolean booleanValue = bool3.booleanValue();
                 if (bool2.booleanValue() != booleanValue) {
                     Function1<Boolean, Unit> onMovingStateChanged = this.getOnMovingStateChanged();
@@ -460,12 +460,12 @@ public abstract class OverlayBubbleWrap extends OverlayView {
             }
         };
         this.screenOffset = new int[2];
-        SpringAnimation springAnimation = new SpringAnimation(this, DynamicAnimation.f3844u, 0.0f);
+        SpringAnimation springAnimation = new SpringAnimation(this, DynamicAnimation.f3203u, 0.0f);
         springAnimation.k(50.0f);
         springAnimation.q().f(200.0f);
         springAnimation.q().d(0.75f);
         this.springAnimationX = springAnimation;
-        SpringAnimation springAnimation2 = new SpringAnimation(this, DynamicAnimation.f3845v, 0.0f);
+        SpringAnimation springAnimation2 = new SpringAnimation(this, DynamicAnimation.f3204v, 0.0f);
         springAnimation2.k(50.0f);
         springAnimation2.q().d(0.75f);
         springAnimation2.q().f(200.0f);

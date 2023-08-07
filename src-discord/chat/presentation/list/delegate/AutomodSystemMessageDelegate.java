@@ -23,9 +23,9 @@ public final class AutomodSystemMessageDelegate extends BaseChatListItemDelegate
     
     public AutomodSystemMessageDelegate(Function0<? extends ChatEventHandler> eventHandlerProvider, Function0<ComponentProvider> messageComponentProvider, RecyclerView.RecycledViewPool messageAccessoriesRecycledViewPool) {
         super(eventHandlerProvider, null, 2, null);
-        q.g(eventHandlerProvider, "eventHandlerProvider");
-        q.g(messageComponentProvider, "messageComponentProvider");
-        q.g(messageAccessoriesRecycledViewPool, "messageAccessoriesRecycledViewPool");
+        q.h(eventHandlerProvider, "eventHandlerProvider");
+        q.h(messageComponentProvider, "messageComponentProvider");
+        q.h(messageAccessoriesRecycledViewPool, "messageAccessoriesRecycledViewPool");
         this.messageComponentProvider = messageComponentProvider;
         this.messageAccessoriesRecycledViewPool = messageAccessoriesRecycledViewPool;
     }
@@ -36,22 +36,22 @@ public final class AutomodSystemMessageDelegate extends BaseChatListItemDelegate
 
     @Override 
     public boolean isForItem(ChatListItem item, int i10) {
-        q.g(item, "item");
+        q.h(item, "item");
         return item instanceof AutomodSystemMessageItem;
     }
 
     public void bindView(AutomodSystemMessageView view, AutomodSystemMessageItem item, BaseChatListItemDelegate.Metadata<AutomodSystemMessageView> metadata) {
-        q.g(view, "view");
-        q.g(item, "item");
-        q.g(metadata, "metadata");
+        q.h(view, "view");
+        q.h(item, "item");
+        q.h(metadata, "metadata");
         view.setMessage(item.getMessage(), item.getMessageContext(), getEventHandler(), getComponentProvider(), item.getAllowChildGestures());
     }
 
     @Override 
     public AutomodSystemMessageView createView(ViewGroup parent) {
-        q.g(parent, "parent");
+        q.h(parent, "parent");
         Context context = parent.getContext();
-        q.f(context, "parent.context");
+        q.g(context, "parent.context");
         AutomodSystemMessageView automodSystemMessageView = new AutomodSystemMessageView(context, null, 2, null);
         automodSystemMessageView.setAccessoriesRecycledViewPool(this.messageAccessoriesRecycledViewPool);
         return automodSystemMessageView;

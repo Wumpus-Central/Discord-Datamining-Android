@@ -6,8 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.presentation.list.ChatListAdapter;
 import com.discord.chat.presentation.list.item.ChatListItem;
 import com.discord.logging.Log;
-import gf.p;
 import java.util.Iterator;
+import kf.p;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 import kotlin.ranges.IntRange;
@@ -18,19 +18,19 @@ public abstract class HighlightedMessageDecoration extends RecyclerView.ItemDeco
     private final HighlightedMessageDrawer drawer;
 
     public HighlightedMessageDecoration(HighlightedMessageDrawer drawer) {
-        q.g(drawer, "drawer");
+        q.h(drawer, "drawer");
         this.drawer = drawer;
     }
 
     @Override 
     public void onDraw(Canvas canvas, RecyclerView parent, RecyclerView.State state) {
-        q.g(canvas, "canvas");
-        q.g(parent, "parent");
-        q.g(state, "state");
+        q.h(canvas, "canvas");
+        q.h(parent, "parent");
+        q.h(state, "state");
         super.onDraw(canvas, parent, state);
         canvas.save();
         RecyclerView.Adapter adapter = parent.getAdapter();
-        q.e(adapter, "null cannot be cast to non-null type com.discord.chat.presentation.list.ChatListAdapter");
+        q.f(adapter, "null cannot be cast to non-null type com.discord.chat.presentation.list.ChatListAdapter");
         ChatListAdapter chatListAdapter = (ChatListAdapter) adapter;
         Iterator<Integer> it = new IntRange(0, parent.getChildCount()).iterator();
         while (it.hasNext()) {
@@ -41,13 +41,13 @@ public abstract class HighlightedMessageDecoration extends RecyclerView.ItemDeco
                 if (chatListItem == null) {
                     Log log = Log.INSTANCE;
                     String simpleName = getClass().getSimpleName();
-                    q.f(simpleName, "javaClass.simpleName");
+                    q.g(simpleName, "javaClass.simpleName");
                     Log.e$default(log, simpleName, "Missing item in position " + childAdapterPosition, (Throwable) null, 4, (Object) null);
                     return;
                 } else if (this.drawer.getShouldRenderHighlight().invoke(chatListItem).booleanValue()) {
                     this.drawer.setPaintStyles(chatListItem);
                     HighlightedMessageDrawer highlightedMessageDrawer = this.drawer;
-                    q.f(child, "child");
+                    q.g(child, "child");
                     highlightedMessageDrawer.drawHighlight(canvas, child, 0, 0);
                 }
             }

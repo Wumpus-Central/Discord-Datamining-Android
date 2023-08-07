@@ -38,7 +38,7 @@ public final class APNGDecorationViewManager extends SimpleViewManager<Decoratio
     
     @Override 
     public DecorationView createViewInstance(ThemedReactContext reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         DecorationView decorationView = new DecorationView(reactContext, null, 0, 6, null);
         decorationView.inflateApngView(false);
         return decorationView;
@@ -51,13 +51,13 @@ public final class APNGDecorationViewManager extends SimpleViewManager<Decoratio
     }
 
     public void onDropViewInstance(DecorationView view) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.recycle();
     }
 
     @ReactProp(name = "url")
     public void setUrl(DecorationView view, String str) {
-        q.g(view, "view");
+        q.h(view, "view");
         if (str != null) {
             view.asDecoration(str, null, null, true);
         }

@@ -20,13 +20,13 @@ public final class MessageBundleViewMoreView extends AppCompatTextView implement
     
     public MessageBundleViewMoreView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public MessageBundleViewMoreView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  MessageBundleViewMoreView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -41,7 +41,7 @@ public final class MessageBundleViewMoreView extends AppCompatTextView implement
     
     public MessageBundleViewMoreView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         DiscordFontUtilsKt.setDiscordFont(this, DiscordFont.PrimarySemibold);
         setTextColor(ThemeManagerKt.getTheme().getTextLink());
         SetTextSizeSpKt.setTextSizeSp(this, MessageUtilsKt.getChatTextSizeSp(context));

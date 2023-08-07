@@ -13,7 +13,7 @@ public final class SeparatorChatListItem extends ChatListItem {
     
     public SeparatorChatListItem(int i10, String text) {
         super("separator: " + text, null);
-        q.g(text, "text");
+        q.h(text, "text");
         this.color = i10;
         this.text = text;
     }
@@ -37,7 +37,7 @@ public final class SeparatorChatListItem extends ChatListItem {
     }
 
     public final SeparatorChatListItem copy(int i10, String text) {
-        q.g(text, "text");
+        q.h(text, "text");
         return new SeparatorChatListItem(i10, text);
     }
 
@@ -49,7 +49,7 @@ public final class SeparatorChatListItem extends ChatListItem {
             return false;
         }
         SeparatorChatListItem separatorChatListItem = (SeparatorChatListItem) obj;
-        return this.color == separatorChatListItem.color && q.b(this.text, separatorChatListItem.text);
+        return this.color == separatorChatListItem.color && q.c(this.text, separatorChatListItem.text);
     }
 
     public final int getColor() {

@@ -38,7 +38,7 @@ public final class FrescoModuleDiscord extends FrescoModule {
         }
 
         public final synchronized void initializeFresco(Context context) {
-            q.g(context, "context");
+            q.h(context, "context");
             if (!isFrescoInitialized()) {
                 FrescoModuleDiscord.isFrescoExternallyInitialized = true;
                 c.c(context, FrescoConfigKt.frescoConfig(context));
@@ -50,7 +50,7 @@ public final class FrescoModuleDiscord extends FrescoModule {
     
     public FrescoModuleDiscord(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     private final void initializeSkinny() {
@@ -66,7 +66,7 @@ public final class FrescoModuleDiscord extends FrescoModule {
     public void initialize() {
         Companion companion = Companion;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         companion.initializeFresco(reactApplicationContext);
         initializeSkinny();
     }

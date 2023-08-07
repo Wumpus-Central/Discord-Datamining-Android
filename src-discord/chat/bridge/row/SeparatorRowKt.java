@@ -10,10 +10,10 @@ import kotlin.jvm.internal.q;
 
 public final class SeparatorRowKt {
     public static final ChatListItem toSeparatorChatListItem(SeparatorRow separatorRow) {
-        q.g(separatorRow, "<this>");
+        q.h(separatorRow, "<this>");
         if (separatorRow.getSummary() == null) {
             return new SeparatorChatListItem(separatorRow.getColor(), separatorRow.getText());
         }
-        return new SummarySeparatorChatListItem(separatorRow.getColor(), separatorRow.getSummary(), q.b(separatorRow.isBeforeContent(), Boolean.TRUE));
+        return new SummarySeparatorChatListItem(separatorRow.getColor(), separatorRow.getSummary(), q.c(separatorRow.isBeforeContent(), Boolean.TRUE));
     }
 }

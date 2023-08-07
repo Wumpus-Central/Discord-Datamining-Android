@@ -39,8 +39,8 @@ public abstract class WiredHeadsetState {
 
         public final WiredHeadsetState from(Intent intent) {
             boolean z10;
-            q.g(intent, "intent");
-            if (q.b(intent.getAction(), "android.intent.action.HEADSET_PLUG")) {
+            q.h(intent, "intent");
+            if (q.c(intent.getAction(), "android.intent.action.HEADSET_PLUG")) {
                 boolean z11 = false;
                 if (intent.getIntExtra("state", 0) == 1) {
                     z10 = true;
@@ -72,7 +72,7 @@ public abstract class WiredHeadsetState {
         
         public PluggedIn(String name, boolean z10) {
             super(null);
-            q.g(name, "name");
+            q.h(name, "name");
             this.name = name;
             this.hasMic = z10;
         }
@@ -96,7 +96,7 @@ public abstract class WiredHeadsetState {
         }
 
         public final PluggedIn copy(String name, boolean z10) {
-            q.g(name, "name");
+            q.h(name, "name");
             return new PluggedIn(name, z10);
         }
 
@@ -108,7 +108,7 @@ public abstract class WiredHeadsetState {
                 return false;
             }
             PluggedIn pluggedIn = (PluggedIn) obj;
-            return q.b(this.name, pluggedIn.name) && this.hasMic == pluggedIn.hasMic;
+            return q.c(this.name, pluggedIn.name) && this.hasMic == pluggedIn.hasMic;
         }
 
         public final boolean getHasMic() {

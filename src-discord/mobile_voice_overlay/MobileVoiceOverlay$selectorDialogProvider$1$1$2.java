@@ -21,12 +21,12 @@ final class MobileVoiceOverlay$selectorDialogProvider$1$1$2 extends s implements
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String text) {
-        q.g(text, "text");
+        q.h(text, "text");
         this.this$0.invokeJs("onChannelQueryUpdate", text);
     }
 }

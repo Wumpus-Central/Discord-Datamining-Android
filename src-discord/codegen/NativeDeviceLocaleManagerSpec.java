@@ -9,6 +9,8 @@ import java.util.Map;
 
 
 public abstract class NativeDeviceLocaleManagerSpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
+    public static final String NAME = "RTNDeviceLocaleManager";
+
     public NativeDeviceLocaleManagerSpec(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);
     }
@@ -17,6 +19,11 @@ public abstract class NativeDeviceLocaleManagerSpec extends ReactContextBaseJava
     @a
     public final Map<String, Object> getConstants() {
         return getTypedExportedConstants();
+    }
+
+    @Override 
+    public String getName() {
+        return "RTNDeviceLocaleManager";
     }
 
     protected abstract Map<String, Object> getTypedExportedConstants();

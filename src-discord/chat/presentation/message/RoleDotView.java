@@ -23,9 +23,9 @@ public final class RoleDotView extends FrameLayout {
     
     public RoleDotView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         RoleDotViewBinding inflate = RoleDotViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
     }
 
@@ -38,11 +38,11 @@ public final class RoleDotView extends FrameLayout {
 
     public final void configure(int i10, int i11) {
         FrameLayout frameLayout = this.binding.roleDotViewBackground;
-        q.f(frameLayout, "binding.roleDotViewBackground");
+        q.g(frameLayout, "binding.roleDotViewBackground");
         ViewBackgroundUtilsKt.setBackgroundRectangle$default(frameLayout, ThemeManagerKt.getTheme().getBackgroundSecondaryAlt(), SizeUtilsKt.getDpToPx(4), null, 0, 12, null);
         int colorCompat = ColorUtilsKt.getColorCompat(this, ThemeManagerKt.getTheme().getColorRes(R.color.black, R.color.white));
         Context context = getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         RoleDotDrawable roleDotDrawable = new RoleDotDrawable(context, colorCompat, i11);
         roleDotDrawable.setColor(i10);
         this.binding.roleDotViewDot.setImageDrawable(roleDotDrawable);

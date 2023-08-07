@@ -15,13 +15,13 @@ import com.facebook.react.module.annotations.ReactModule;
 import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.ui.PlayerView;
-import ff.x;
 import java.lang.ref.WeakReference;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -60,12 +60,12 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
     
     public MediaPlayerManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.reactContext = reactContext;
         kotlinx.coroutines.x b10 = p2.b(null, 1, null);
         ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor();
-        q.f(newSingleThreadExecutor, "newSingleThreadExecutor()");
-        this.scope = k0.a(b10.v(m1.a(newSingleThreadExecutor)));
+        q.g(newSingleThreadExecutor, "newSingleThreadExecutor()");
+        this.scope = k0.a(b10.u(m1.a(newSingleThreadExecutor)));
     }
 
     
@@ -93,7 +93,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
         WeakReference<View> view;
         View view2;
         Player player;
-        q.g(callback, "$callback");
+        q.h(callback, "$callback");
         PortalViewContext viewContext = PortalViewContextManager.INSTANCE.getViewContext(d10);
         if (viewContext != null && (view = viewContext.getView()) != null && (view2 = view.get()) != null) {
             SimpleExoPlayer simpleExoPlayer = null;
@@ -102,7 +102,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             }
             PlayerView playerView = (PlayerView) view2;
             if (playerView != null && (player = playerView.getPlayer()) != null) {
-                q.f(player, "player");
+                q.g(player, "player");
                 if (player instanceof SimpleExoPlayer) {
                     simpleExoPlayer = player;
                 }
@@ -116,7 +116,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void addListener(String type) {
-        q.g(type, "type");
+        q.h(type, "type");
     }
 
     @ReactMethod
@@ -149,7 +149,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
 
     public final void startPlayerProgressInterval(double d10, MediaPlayer mediaPlayer) {
         Job d11;
-        q.g(mediaPlayer, "mediaPlayer");
+        q.h(mediaPlayer, "mediaPlayer");
         stopPlayerProgressInterval(d10);
         onMediaPlayerProgress(d10, mediaPlayer.currentPositionMs(), mediaPlayer.durationMs());
         Double valueOf = Double.valueOf(d10);
@@ -164,7 +164,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             return null;
         }
         Job.a.a(remove, null, 1, null);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     @ReactMethod

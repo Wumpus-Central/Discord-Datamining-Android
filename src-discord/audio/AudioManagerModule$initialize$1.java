@@ -26,14 +26,14 @@ final class AudioManagerModule$initialize$1 extends s implements Function1<List<
     @Override 
     public   Unit invoke(List<? extends DiscordAudioManager.AudioDevice> list) {
         invoke2((List<DiscordAudioManager.AudioDevice>) list);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(List<DiscordAudioManager.AudioDevice> devices) {
         ReactEvents reactEvents;
         ReactApplicationContext reactApplicationContext;
-        q.g(devices, "devices");
+        q.h(devices, "devices");
         reactEvents = this.this$0.reactEvents;
         reactApplicationContext = this.this$0.reactContext;
         reactEvents.emitModuleEvent(reactApplicationContext, new AudioManagerAudioDevicesUpdated(devices));

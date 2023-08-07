@@ -10,6 +10,6 @@ import kotlinx.coroutines.y0;
 
 public final class MainImmediateScopeKt {
     public static final CoroutineScope MainImmediateScope() {
-        return k0.a(p2.b(null, 1, null).v(y0.c().D0()));
+        return k0.a(p2.b(null, 1, null).u(y0.c().D0()));
     }
 }

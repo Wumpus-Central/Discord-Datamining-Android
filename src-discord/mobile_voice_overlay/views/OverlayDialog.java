@@ -21,7 +21,7 @@ public abstract class OverlayDialog extends OverlayBubbleWrap {
     
     public OverlayDialog(Context context) {
         super(context);
-        q.g(context, "context");
+        q.h(context, "context");
         setOnClickListener(new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {
@@ -40,7 +40,7 @@ public abstract class OverlayDialog extends OverlayBubbleWrap {
 
     
     public static final void _init_$lambda$0(OverlayDialog this$0, View view) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         this$0.closeDialog();
     }
 
@@ -53,33 +53,35 @@ public abstract class OverlayDialog extends OverlayBubbleWrap {
         closingAnimator.addListener(new Animator.AnimatorListener() { 
             @Override 
             public void onAnimationCancel(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationEnd(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
                 OverlayDialog.this.getOnDialogClosed().invoke(OverlayDialog.this);
             }
 
             @Override 
             public void onAnimationRepeat(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationStart(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
         });
         closingAnimator.start();
         addOnAttachStateChangeListener(new View.OnAttachStateChangeListener() { 
             @Override 
-            public void onViewAttachedToWindow(View view) {
+            public void onViewAttachedToWindow(View v10) {
+                q.h(v10, "v");
             }
 
             @Override 
-            public void onViewDetachedFromWindow(View view) {
+            public void onViewDetachedFromWindow(View v10) {
+                q.h(v10, "v");
                 closingAnimator.end();
             }
         });
@@ -110,14 +112,14 @@ public abstract class OverlayDialog extends OverlayBubbleWrap {
     }
 
     public final void setOnDialogClosed(Function1<? super OverlayDialog, Unit> function1) {
-        q.g(function1, "<set-?>");
+        q.h(function1, "<set-?>");
         this.onDialogClosed = function1;
     }
 
     
     public OverlayDialog(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         setOnClickListener(new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {
@@ -137,7 +139,7 @@ public abstract class OverlayDialog extends OverlayBubbleWrap {
     
     public OverlayDialog(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         setOnClickListener(new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {

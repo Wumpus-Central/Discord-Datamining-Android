@@ -6,12 +6,13 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import androidx.core.os.d;
+import android.os.Parcelable;
+import androidx.core.os.e;
 import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.discord.share.intent.GetFileNameKt;
-import ff.x;
 import java.util.ArrayList;
 import java.util.List;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.j;
@@ -35,8 +36,8 @@ public final class ShareProps {
         private final String uri;
 
         public Attachment(String name, String uri, String str) {
-            q.g(name, "name");
-            q.g(uri, "uri");
+            q.h(name, "name");
+            q.h(uri, "uri");
             this.name = name;
             this.uri = uri;
             this.mimeType = str;
@@ -68,8 +69,8 @@ public final class ShareProps {
         }
 
         public final Attachment copy(String name, String uri, String str) {
-            q.g(name, "name");
-            q.g(uri, "uri");
+            q.h(name, "name");
+            q.h(uri, "uri");
             return new Attachment(name, uri, str);
         }
 
@@ -81,7 +82,7 @@ public final class ShareProps {
                 return false;
             }
             Attachment attachment = (Attachment) obj;
-            return q.b(this.name, attachment.name) && q.b(this.uri, attachment.uri) && q.b(this.mimeType, attachment.mimeType);
+            return q.c(this.name, attachment.name) && q.c(this.uri, attachment.uri) && q.c(this.mimeType, attachment.mimeType);
         }
 
         public final String getMimeType() {
@@ -103,7 +104,7 @@ public final class ShareProps {
         }
 
         public final Bundle toBundle() {
-            return d.a(x.a(ZeroconfModule.KEY_SERVICE_NAME, this.name), x.a("uri", this.uri), x.a("mimeType", this.mimeType));
+            return e.a(x.a(ZeroconfModule.KEY_SERVICE_NAME, this.name), x.a("uri", this.uri), x.a("mimeType", this.mimeType));
         }
 
         public String toString() {
@@ -126,19 +127,19 @@ public final class ShareProps {
 
         private final List<Uri> getUriExtras(Intent intent) {
             List<Uri> l10;
-            ArrayList parcelableArrayListExtra = intent.getParcelableArrayListExtra("android.intent.extra.STREAM");
-            if (parcelableArrayListExtra != null) {
-                return parcelableArrayListExtra;
+            ArrayList a10 = androidx.core.content.e.a(intent, "android.intent.extra.STREAM", Uri.class);
+            if (a10 != null) {
+                return a10;
             }
-            l10 = j.l(intent.getParcelableExtra("android.intent.extra.STREAM"));
+            l10 = j.l((Parcelable) androidx.core.content.e.b(intent, "android.intent.extra.STREAM", Uri.class));
             return l10;
         }
 
         public final ShareProps createShareProps(Intent intent, Context context) {
             int s10;
             String str;
-            q.g(intent, "<this>");
-            q.g(context, "context");
+            q.h(intent, "<this>");
+            q.h(context, "context");
             String stringExtra = intent.getStringExtra("android.intent.extra.TEXT");
             if (stringExtra == null) {
                 stringExtra = "";
@@ -148,10 +149,10 @@ public final class ShareProps {
             ArrayList arrayList = new ArrayList(s10);
             for (Uri uri : uriExtras) {
                 ContentResolver contentResolver = context.getContentResolver();
-                q.f(contentResolver, "context.contentResolver");
+                q.g(contentResolver, "context.contentResolver");
                 String fileName = GetFileNameKt.getFileName(contentResolver, uri);
                 String uri2 = uri.toString();
-                q.f(uri2, "uri.toString()");
+                q.g(uri2, "uri.toString()");
                 arrayList.add(new Attachment(fileName, uri2, context.getContentResolver().getType(uri)));
             }
             if (Build.VERSION.SDK_INT >= 29) {
@@ -164,8 +165,8 @@ public final class ShareProps {
     }
 
     public ShareProps(String text, List<Attachment> attachments, String str) {
-        q.g(text, "text");
-        q.g(attachments, "attachments");
+        q.h(text, "text");
+        q.h(attachments, "attachments");
         this.text = text;
         this.attachments = attachments;
         this.targetChannelId = str;
@@ -198,8 +199,8 @@ public final class ShareProps {
     }
 
     public final ShareProps copy(String text, List<Attachment> attachments, String str) {
-        q.g(text, "text");
-        q.g(attachments, "attachments");
+        q.h(text, "text");
+        q.h(attachments, "attachments");
         return new ShareProps(text, attachments, str);
     }
 
@@ -211,7 +212,7 @@ public final class ShareProps {
             return false;
         }
         ShareProps shareProps = (ShareProps) obj;
-        return q.b(this.text, shareProps.text) && q.b(this.attachments, shareProps.attachments) && q.b(this.targetChannelId, shareProps.targetChannelId);
+        return q.c(this.text, shareProps.text) && q.c(this.attachments, shareProps.attachments) && q.c(this.targetChannelId, shareProps.targetChannelId);
     }
 
     public final List<Attachment> getAttachments() {
@@ -244,7 +245,7 @@ public final class ShareProps {
         }
         pairArr[1] = x.a("attachments", arrayList.toArray(new Bundle[0]));
         pairArr[2] = x.a("targetChannelId", this.targetChannelId);
-        return d.a(pairArr);
+        return e.a(pairArr);
     }
 
     public String toString() {

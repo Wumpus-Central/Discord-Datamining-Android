@@ -13,7 +13,7 @@ public final class ScreenWakeLockManagerModule extends ReactContextBaseJavaModul
     
     public ScreenWakeLockManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @Override 
@@ -23,7 +23,7 @@ public final class ScreenWakeLockManagerModule extends ReactContextBaseJavaModul
 
     @ReactMethod
     public final void releaseLock(String key) {
-        q.g(key, "key");
+        q.h(key, "key");
         Activity currentActivity = getReactApplicationContext().getCurrentActivity();
         if (currentActivity != null) {
             ScreenWakeLock.INSTANCE.releaseLock(currentActivity, key);
@@ -32,7 +32,7 @@ public final class ScreenWakeLockManagerModule extends ReactContextBaseJavaModul
 
     @ReactMethod
     public final void requestLock(String key) {
-        q.g(key, "key");
+        q.h(key, "key");
         Activity currentActivity = getReactApplicationContext().getCurrentActivity();
         if (currentActivity != null) {
             ScreenWakeLock.INSTANCE.requestLock(currentActivity, key);

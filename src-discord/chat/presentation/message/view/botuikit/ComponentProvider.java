@@ -10,7 +10,7 @@ public final class ComponentProvider {
     private final Context context;
 
     public ComponentProvider(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         this.context = context;
     }
 

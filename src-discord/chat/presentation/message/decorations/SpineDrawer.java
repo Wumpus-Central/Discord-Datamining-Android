@@ -8,7 +8,7 @@ import android.view.View;
 import androidx.recyclerview.widget.RecyclerView;
 import com.discord.channel_spine.ChannelSpineView;
 import com.discord.chat.R;
-import ff.n;
+import jf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
@@ -26,7 +26,7 @@ public final class SpineDrawer extends RecyclerView.ItemDecoration {
     public SpineDrawer(Context context, int i10) {
         Lazy b10;
         Lazy b11;
-        q.g(context, "context");
+        q.h(context, "context");
         this.context = context;
         this.contentStartPositionPx = i10;
         b10 = n.b(new SpineDrawer$lineDrawable$2(this));
@@ -52,10 +52,10 @@ public final class SpineDrawer extends RecyclerView.ItemDecoration {
     }
 
     public final void drawSpineCurve(Canvas canvas, RecyclerView parent, View child, View viewToCenterSpine, int i10) {
-        q.g(canvas, "canvas");
-        q.g(parent, "parent");
-        q.g(child, "child");
-        q.g(viewToCenterSpine, "viewToCenterSpine");
+        q.h(canvas, "canvas");
+        q.h(parent, "parent");
+        q.h(child, "child");
+        q.h(viewToCenterSpine, "viewToCenterSpine");
         canvas.save();
         parent.getDecoratedBoundsWithMargins(child, this.spineRect);
         Rect rect = new Rect(i10 - (getLineDrawable().getIntrinsicWidth() / 2), child.getTop(), this.contentStartPositionPx, child.getTop() + ((viewToCenterSpine.getBottom() - viewToCenterSpine.getTop()) / 2) + this.itemPaddingOffset);
@@ -69,9 +69,9 @@ public final class SpineDrawer extends RecyclerView.ItemDecoration {
     }
 
     public final void drawSpinePiece(Canvas canvas, RecyclerView parent, View child, int i10, int i11) {
-        q.g(canvas, "canvas");
-        q.g(parent, "parent");
-        q.g(child, "child");
+        q.h(canvas, "canvas");
+        q.h(parent, "parent");
+        q.h(child, "child");
         canvas.save();
         parent.getDecoratedBoundsWithMargins(child, this.spineRect);
         PaintDrawable lineDrawable = getLineDrawable();

@@ -10,7 +10,7 @@ import kotlin.jvm.internal.q;
 public final class SimpleDraweeSpanTextViewUtilsKt {
     public static final void setOptionalText(SimpleDraweeSpanTextView simpleDraweeSpanTextView, DraweeSpanStringBuilder draweeSpanStringBuilder) {
         int i10;
-        q.g(simpleDraweeSpanTextView, "<this>");
+        q.h(simpleDraweeSpanTextView, "<this>");
         if (draweeSpanStringBuilder != null) {
             simpleDraweeSpanTextView.setDraweeSpanStringBuilder(draweeSpanStringBuilder);
             i10 = 0;

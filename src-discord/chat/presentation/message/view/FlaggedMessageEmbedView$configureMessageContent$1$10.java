@@ -19,11 +19,11 @@ final class FlaggedMessageEmbedView$configureMessageContent$1$10 extends s imple
     @Override 
     public   Unit invoke(EmojiContentNode emojiContentNode) {
         invoke2(emojiContentNode);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(EmojiContentNode it) {
-        q.g(it, "it");
+        q.h(it, "it");
     }
 }

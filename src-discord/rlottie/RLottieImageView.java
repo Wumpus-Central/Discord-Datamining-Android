@@ -12,10 +12,10 @@ import com.BV.LinearGradient.LinearGradientManager;
 import com.discord.rlottie.RLottieDrawable;
 import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.util.JSStackTrace;
-import ff.y;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
+import jf.y;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
@@ -34,7 +34,7 @@ public class RLottieImageView extends n {
     
     public RLottieImageView(Context context) {
         super(context);
-        q.h(context, "context");
+        q.i(context, "context");
         this.playbackMode = RLottieDrawable.PlaybackMode.FREEZE;
     }
 
@@ -44,15 +44,15 @@ public class RLottieImageView extends n {
         if (Build.VERSION.SDK_INT >= 30) {
             display = context.getDisplay();
             if (display == null) {
-                q.s();
+                q.t();
             }
-            q.c(display, "display!!");
+            q.d(display, "display!!");
             return display;
         }
         Object systemService = context.getSystemService("window");
         if (systemService != null) {
             Display defaultDisplay = ((WindowManager) systemService).getDefaultDisplay();
-            q.c(defaultDisplay, "(getSystemService(Contex…owManager).defaultDisplay");
+            q.d(defaultDisplay, "(getSystemService(Contex…owManager).defaultDisplay");
             return defaultDisplay;
         }
         throw new y("null cannot be cast to non-null type android.view.WindowManager");
@@ -150,13 +150,13 @@ public class RLottieImageView extends n {
     }
 
     public final void setLayerColor(String layer, int i10) {
-        q.h(layer, "layer");
+        q.i(layer, "layer");
         if (this.layerColors == null) {
             this.layerColors = new HashMap<>();
         }
         HashMap<String, Integer> hashMap = this.layerColors;
         if (hashMap == null) {
-            q.s();
+            q.t();
         }
         hashMap.put(layer, Integer.valueOf(i10));
         RLottieDrawable rLottieDrawable = this.drawable;
@@ -166,7 +166,7 @@ public class RLottieImageView extends n {
     }
 
     public final void setPlaybackMode(RLottieDrawable.PlaybackMode playbackMode) {
-        q.h(playbackMode, "playbackMode");
+        q.i(playbackMode, "playbackMode");
         this.playbackMode = playbackMode;
         RLottieDrawable rLottieDrawable = this.drawable;
         if (rLottieDrawable != null) {
@@ -182,12 +182,12 @@ public class RLottieImageView extends n {
     }
 
     public final void setAnimation(int i10, int i11, int i12, int[] iArr, RLottieDrawable.PlaybackMode playbackMode) {
-        q.h(playbackMode, "playbackMode");
+        q.i(playbackMode, "playbackMode");
         Context context = getContext();
-        q.c(context, "context");
+        q.d(context, "context");
         String valueOf = String.valueOf(i10);
         Context context2 = getContext();
-        q.c(context2, "context");
+        q.d(context2, "context");
         RLottieDrawable rLottieDrawable = new RLottieDrawable(context, i10, valueOf, i11, i12, getDisplayCompat(context2).getRefreshRate(), false, iArr);
         this.drawable = rLottieDrawable;
         this.playbackMode = playbackMode;
@@ -221,7 +221,7 @@ public class RLottieImageView extends n {
     
     public RLottieImageView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.h(context, "context");
+        q.i(context, "context");
         this.playbackMode = RLottieDrawable.PlaybackMode.FREEZE;
     }
 
@@ -243,14 +243,14 @@ public class RLottieImageView extends n {
     
     public RLottieImageView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.h(context, "context");
+        q.i(context, "context");
         this.playbackMode = RLottieDrawable.PlaybackMode.FREEZE;
     }
 
     public final void setAnimation(Context context, File file, int i10, int i11, RLottieDrawable.PlaybackMode playbackMode) {
-        q.h(context, "context");
-        q.h(file, "file");
-        q.h(playbackMode, "playbackMode");
+        q.i(context, "context");
+        q.i(file, "file");
+        q.i(playbackMode, "playbackMode");
         RLottieDrawable rLottieDrawable = new RLottieDrawable(file, i10, i11, false, true, getDisplayCompat(context).getRefreshRate(), null, 64, null);
         this.drawable = rLottieDrawable;
         this.playbackMode = playbackMode;

@@ -17,29 +17,29 @@ public final class ImageManagerModule extends ReactContextBaseJavaModule {
     
     public ImageManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @ReactMethod
     public final void getAvatarBase64(ReadableMap imageSource, Promise promise) {
-        q.g(imageSource, "imageSource");
-        q.g(promise, "promise");
+        q.h(imageSource, "imageSource");
+        q.h(promise, "promise");
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         FrescoFetchDecodedImageKt.fetchDecodedImage$default(reactApplicationContext, imageSource.getString("uri"), (PostProcessor) null, new ImageManagerModule$getAvatarBase64$1(promise), 2, (Object) null);
     }
 
     @ReactMethod
     public final void getDominantColors(ReadableMap imageSource, Promise promise) {
-        q.g(imageSource, "imageSource");
-        q.g(promise, "promise");
+        q.h(imageSource, "imageSource");
+        q.h(promise, "promise");
         getDominantColors(imageSource.getString("uri"), promise);
     }
 
     @ReactMethod
     public final void getDominantColorsLocalAsset(ReadableMap imageSource, Promise promise) {
-        q.g(imageSource, "imageSource");
-        q.g(promise, "promise");
+        q.h(imageSource, "imageSource");
+        q.h(promise, "promise");
         getDominantColors(imageSource.getString("uri"), promise);
     }
 
@@ -50,7 +50,7 @@ public final class ImageManagerModule extends ReactContextBaseJavaModule {
 
     private final void getDominantColors(String str, Promise promise) {
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         FrescoFetchDecodedImageKt.fetchDecodedImage$default(reactApplicationContext, str, (PostProcessor) null, new ImageManagerModule$getDominantColors$1(promise), 2, (Object) null);
     }
 }

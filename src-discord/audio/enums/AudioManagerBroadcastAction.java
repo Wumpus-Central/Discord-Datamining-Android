@@ -37,9 +37,9 @@ public enum AudioManagerBroadcastAction {
 
         public final AudioManagerBroadcastAction from(String action) {
             AudioManagerBroadcastAction[] values;
-            q.g(action, "action");
+            q.h(action, "action");
             for (AudioManagerBroadcastAction audioManagerBroadcastAction : AudioManagerBroadcastAction.values()) {
-                if (q.b(audioManagerBroadcastAction.getAction(), action)) {
+                if (q.c(audioManagerBroadcastAction.getAction(), action)) {
                     return audioManagerBroadcastAction;
                 }
             }
@@ -47,7 +47,7 @@ public enum AudioManagerBroadcastAction {
         }
 
         public final AudioManagerBroadcastAction from(Intent intent) {
-            q.g(intent, "intent");
+            q.h(intent, "intent");
             String action = intent.getAction();
             if (action != null) {
                 return AudioManagerBroadcastAction.Companion.from(action);

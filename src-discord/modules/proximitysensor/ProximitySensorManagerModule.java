@@ -13,7 +13,7 @@ public final class ProximitySensorManagerModule extends ReactContextBaseJavaModu
     
     public ProximitySensorManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     @Override 

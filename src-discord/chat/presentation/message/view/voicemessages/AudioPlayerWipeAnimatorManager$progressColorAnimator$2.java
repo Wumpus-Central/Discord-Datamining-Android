@@ -21,11 +21,12 @@ final class AudioPlayerWipeAnimatorManager$progressColorAnimator$2 extends s imp
     }
 
     
-    public static final void invoke$lambda$1$lambda$0(AudioPlayerViewBinding binding, ValueAnimator valueAnimator) {
-        q.g(binding, "$binding");
+    public static final void invoke$lambda$1$lambda$0(AudioPlayerViewBinding binding, ValueAnimator it) {
+        q.h(binding, "$binding");
+        q.h(it, "it");
         AudioWaveView audioWaveView = binding.wave;
-        Object animatedValue = valueAnimator.getAnimatedValue();
-        q.e(animatedValue, "null cannot be cast to non-null type kotlin.Int");
+        Object animatedValue = it.getAnimatedValue();
+        q.f(animatedValue, "null cannot be cast to non-null type kotlin.Int");
         audioWaveView.setAudioProgressPaintColor(((Integer) animatedValue).intValue());
     }
 

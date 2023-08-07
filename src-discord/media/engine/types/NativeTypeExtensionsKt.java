@@ -6,11 +6,11 @@ import com.discord.p000native.engine.AudioOutputDeviceDescription;
 import com.discord.p000native.engine.ConnectionInfo;
 import com.discord.p000native.engine.VideoInputDeviceDescription;
 import com.discord.p000native.engine.VideoInputDeviceFacing;
-import ff.x;
-import gf.v;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import jf.x;
+import kf.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.j;
@@ -43,7 +43,7 @@ public final class NativeTypeExtensionsKt {
 
     public static final List<Map<String, Object>> toListOfMaps(AudioInputDeviceDescription[] audioInputDeviceDescriptionArr) {
         Map k10;
-        q.g(audioInputDeviceDescriptionArr, "<this>");
+        q.h(audioInputDeviceDescriptionArr, "<this>");
         ArrayList arrayList = new ArrayList(audioInputDeviceDescriptionArr.length);
         int i10 = 0;
         for (AudioInputDeviceDescription audioInputDeviceDescription : audioInputDeviceDescriptionArr) {
@@ -56,14 +56,14 @@ public final class NativeTypeExtensionsKt {
 
     public static final Map<String, Object> toMap(ConnectionInfo connectionInfo) {
         Map<String, Object> k10;
-        q.g(connectionInfo, "<this>");
+        q.h(connectionInfo, "<this>");
         k10 = v.k(x.a("protocol", connectionInfo.getProtocol()), x.a("address", connectionInfo.getLocalAddress()), x.a(ZeroconfModule.KEY_SERVICE_PORT, Integer.valueOf(connectionInfo.getLocalPort())));
         return k10;
     }
 
     public static final List<Map<String, Object>> toListOfMaps(AudioOutputDeviceDescription[] audioOutputDeviceDescriptionArr) {
         Map k10;
-        q.g(audioOutputDeviceDescriptionArr, "<this>");
+        q.h(audioOutputDeviceDescriptionArr, "<this>");
         ArrayList arrayList = new ArrayList(audioOutputDeviceDescriptionArr.length);
         int i10 = 0;
         for (AudioOutputDeviceDescription audioOutputDeviceDescription : audioOutputDeviceDescriptionArr) {
@@ -81,7 +81,7 @@ public final class NativeTypeExtensionsKt {
         List P;
         int s10;
         Map k11;
-        q.g(videoInputDeviceDescriptionArr, "<this>");
+        q.h(videoInputDeviceDescriptionArr, "<this>");
         ArrayList arrayList = new ArrayList();
         ArrayList arrayList2 = new ArrayList();
         int length = videoInputDeviceDescriptionArr.length;

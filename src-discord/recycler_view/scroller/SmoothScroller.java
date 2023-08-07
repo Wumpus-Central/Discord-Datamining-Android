@@ -20,8 +20,8 @@ public final class SmoothScroller extends g {
     
     public SmoothScroller(Context context, int i10, Scroller.TargetAlignment targetAlignment, Function0<Unit> function0) {
         super(context);
-        q.g(context, "context");
-        q.g(targetAlignment, "targetAlignment");
+        q.h(context, "context");
+        q.h(targetAlignment, "targetAlignment");
         this.targetAlignment = targetAlignment;
         this.onStopScroll = function0;
         setTargetPosition(i10);
@@ -39,13 +39,13 @@ public final class SmoothScroller extends g {
         if (targetAlignment instanceof Scroller.TargetAlignment.Anywhere) {
             return super.calculateDtToFit(i10, i11, i12, i13, i14);
         }
-        throw new ff.q();
+        throw new jf.q();
     }
 
     
     @Override 
     public void onChildAttachedToWindow(View child) {
-        q.g(child, "child");
+        q.h(child, "child");
         super.onChildAttachedToWindow(child);
         if (this.targetView == null && getChildPosition(child) == getTargetPosition()) {
             this.targetView = child;
@@ -55,8 +55,8 @@ public final class SmoothScroller extends g {
     
     @Override 
     public void onSeekTargetStep(int i10, int i11, RecyclerView.State state, RecyclerView.SmoothScroller.Action action) {
-        q.g(state, "state");
-        q.g(action, "action");
+        q.h(state, "state");
+        q.h(action, "action");
         View view = this.targetView;
         if (view != null) {
             onTargetFound(view, state, action);

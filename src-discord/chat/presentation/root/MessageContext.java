@@ -25,9 +25,9 @@ public final class MessageContext {
     }
 
     public MessageContext(boolean z10, boolean z11, String addReactionLabel, String addNewReactionAccessibilityLabel, String addNewBurstReactionAccessibilityLabel, ReactionsTheme reactionsTheme, Truncation truncation, boolean z12, boolean z13, boolean z14, boolean z15) {
-        q.g(addReactionLabel, "addReactionLabel");
-        q.g(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
-        q.g(addNewBurstReactionAccessibilityLabel, "addNewBurstReactionAccessibilityLabel");
+        q.h(addReactionLabel, "addReactionLabel");
+        q.h(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
+        q.h(addNewBurstReactionAccessibilityLabel, "addNewBurstReactionAccessibilityLabel");
         this.showDivider = z10;
         this.canAddNewReactions = z11;
         this.addReactionLabel = addReactionLabel;
@@ -86,9 +86,9 @@ public final class MessageContext {
     }
 
     public final MessageContext copy(boolean z10, boolean z11, String addReactionLabel, String addNewReactionAccessibilityLabel, String addNewBurstReactionAccessibilityLabel, ReactionsTheme reactionsTheme, Truncation truncation, boolean z12, boolean z13, boolean z14, boolean z15) {
-        q.g(addReactionLabel, "addReactionLabel");
-        q.g(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
-        q.g(addNewBurstReactionAccessibilityLabel, "addNewBurstReactionAccessibilityLabel");
+        q.h(addReactionLabel, "addReactionLabel");
+        q.h(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
+        q.h(addNewBurstReactionAccessibilityLabel, "addNewBurstReactionAccessibilityLabel");
         return new MessageContext(z10, z11, addReactionLabel, addNewReactionAccessibilityLabel, addNewBurstReactionAccessibilityLabel, reactionsTheme, truncation, z12, z13, z14, z15);
     }
 
@@ -100,7 +100,7 @@ public final class MessageContext {
             return false;
         }
         MessageContext messageContext = (MessageContext) obj;
-        return this.showDivider == messageContext.showDivider && this.canAddNewReactions == messageContext.canAddNewReactions && q.b(this.addReactionLabel, messageContext.addReactionLabel) && q.b(this.addNewReactionAccessibilityLabel, messageContext.addNewReactionAccessibilityLabel) && q.b(this.addNewBurstReactionAccessibilityLabel, messageContext.addNewBurstReactionAccessibilityLabel) && q.b(this.reactionsTheme, messageContext.reactionsTheme) && q.b(this.truncation, messageContext.truncation) && this.useAttachmentGridLayout == messageContext.useAttachmentGridLayout && this.useAttachmentUploadPreview == messageContext.useAttachmentUploadPreview && this.enableSwipeToReply == messageContext.enableSwipeToReply && this.useAddBurstReaction == messageContext.useAddBurstReaction;
+        return this.showDivider == messageContext.showDivider && this.canAddNewReactions == messageContext.canAddNewReactions && q.c(this.addReactionLabel, messageContext.addReactionLabel) && q.c(this.addNewReactionAccessibilityLabel, messageContext.addNewReactionAccessibilityLabel) && q.c(this.addNewBurstReactionAccessibilityLabel, messageContext.addNewBurstReactionAccessibilityLabel) && q.c(this.reactionsTheme, messageContext.reactionsTheme) && q.c(this.truncation, messageContext.truncation) && this.useAttachmentGridLayout == messageContext.useAttachmentGridLayout && this.useAttachmentUploadPreview == messageContext.useAttachmentUploadPreview && this.enableSwipeToReply == messageContext.enableSwipeToReply && this.useAddBurstReaction == messageContext.useAddBurstReaction;
     }
 
     public final String getAddNewBurstReactionAccessibilityLabel() {

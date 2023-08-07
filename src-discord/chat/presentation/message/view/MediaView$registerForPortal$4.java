@@ -28,14 +28,14 @@ public final class MediaView$registerForPortal$4 extends s implements Function1<
     @Override 
     public   Unit invoke(View view) {
         invoke2(view);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(View view) {
         MediaSource mediaSource;
         ViewAttachedListener viewAttachedListener;
-        q.g(view, "view");
+        q.h(view, "view");
         Double portal = this.$mediaSource.getPortal();
         mediaSource = this.this$0.mediaSource;
         if (q.a(portal, mediaSource != null ? mediaSource.getPortal() : null)) {

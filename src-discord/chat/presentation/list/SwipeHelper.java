@@ -1,5 +1,6 @@
 package com.discord.chat.presentation.list;
 
+import ag.j;
 import android.animation.Animator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
@@ -29,7 +30,6 @@ import com.facebook.react.uimanager.events.TouchesHelper;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import wf.j;
 
 @Metadata(d1 = {"\u0000p\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0017\b\u0000\u0018\u0000 @2\u00020\u0001:\u0001@B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020!H\u0002J(\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020\u000e2\u0006\u0010'\u001a\u00020\u000b2\u0006\u0010(\u001a\u00020\u000bH\u0016J$\u0010)\u001a\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b0*2\u0006\u0010+\u001a\u00020\u000b2\u0006\u0010,\u001a\u00020\u000bH\u0016J\u0018\u0010-\u001a\u00020\u000e2\u0006\u0010$\u001a\u00020%2\u0006\u0010.\u001a\u00020\u0011H\u0016J@\u0010/\u001a\u00020\u001f2\u0006\u00100\u001a\u00020!2\u0006\u0010$\u001a\u00020%2\u0006\u0010.\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u000b2\u0006\u00101\u001a\u00020\u000b2\u0006\u00102\u001a\u00020\u000e2\u0006\u00103\u001a\u00020\u001bH\u0016J \u00104\u001a\u00020\u001b2\u0006\u0010$\u001a\u00020%2\u0006\u0010.\u001a\u00020\u00112\u0006\u00105\u001a\u00020\u0011H\u0016J\u001a\u00106\u001a\u00020\u001f2\u0006\u0010$\u001a\u00020%2\b\u0010.\u001a\u0004\u0018\u00010\u0011H\u0016J\u001a\u00107\u001a\u00020\u001f2\b\u0010.\u001a\u0004\u0018\u00010\u00112\u0006\u00102\u001a\u00020\u000eH\u0016J\u0018\u00108\u001a\u00020\u001f2\u0006\u0010.\u001a\u00020\u00112\u0006\u00109\u001a\u00020\u000eH\u0016J\b\u0010:\u001a\u00020\u001bH\u0016J\b\u0010;\u001a\u00020\u001bH\u0016J\u0010\u0010<\u001a\u00020\u001f2\u0006\u0010$\u001a\u00020%H\u0002J\u0010\u0010=\u001a\u00020\u001f2\u0006\u0010$\u001a\u00020%H\u0002J\u0010\u0010>\u001a\u00020\u001f2\u0006\u0010$\u001a\u00020%H\u0002J\b\u0010?\u001a\u00020\u001fH\u0002R\u0010\u0010\u0005\u001a\u0004\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0007\u001a\u0004\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\b\u001a\u0004\u0018\u00010\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0014X\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010\u0015\u001a\u0004\u0018\u00010\u0016X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0017\u001a\u0004\u0018\u00010\u0016X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0018\u001a\u0004\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0019\u001a\u0004\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u001bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u001bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u001bX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006A"}, d2 = {"Lcom/discord/chat/presentation/list/SwipeHelper;", "Lcom/discord/chat/presentation/list/ChatListCallback;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "arrowAnimator", "Landroid/animation/ValueAnimator;", "arrowRotationAnimator", "arrowRotationSpringAnimation", "Landroidx/dynamicanimation/animation/SpringAnimation;", "curArrowRotationRadians", "", "curArrowScale", "curRippleAlpha", "", "curRippleRadius", "currentItemViewHolder", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "dX", "mView", "Landroid/view/View;", "replyIcon", "Landroid/graphics/drawable/Drawable;", "replyIconOutline", "rippleAnimator", "rippleFadeAnimator", "shouldPerformHapticFeedback", "", "shouldTriggerReply", "swipeBack", "drawContextArea", "", "canvas", "Landroid/graphics/Canvas;", "getAnimationDuration", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "animationType", "animateDx", "animateDy", "getEffectiveDxDy", "Landroid/util/Pair;", "rawDx", "rawDy", "getMovementFlags", "viewHolder", "onChildDraw", "c", "dY", "actionState", "isCurrentlyActive", "onMove", TouchesHelper.TARGET_KEY, "onReleased", "onSelectedChanged", "onSwiped", "direction", "shouldReturnToOriginalPosition", "shouldUseSpringyExit", "startArrowPulseAnimation", "startRippleAnimation", "updateHapticFeedbackTrigger", "updateReplyTrigger", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -89,7 +89,7 @@ public final class SwipeHelper extends ChatListCallback {
     }
 
     public SwipeHelper(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         this.context = context;
         this.replyIcon = h.f(context.getResources(), R.drawable.ic_swipe_reply, context.getTheme());
         this.replyIconOutline = h.f(context.getResources(), R.drawable.ic_swipe_reply_outline, context.getTheme());
@@ -98,49 +98,50 @@ public final class SwipeHelper extends ChatListCallback {
     private final void drawContextArea(Canvas canvas) {
         int j10;
         float f10;
+        float f11;
         int j11;
         if (this.currentItemViewHolder != null) {
             View view = this.mView;
             View view2 = null;
             if (view == null) {
-                q.y("mView");
+                q.z("mView");
                 view = null;
             }
             float abs = Math.abs(view.getTranslationX());
             View view3 = this.mView;
             if (view3 == null) {
-                q.y("mView");
+                q.z("mView");
                 view3 = null;
             }
             float measuredHeight = view3.getMeasuredHeight();
             View view4 = this.mView;
             if (view4 == null) {
-                q.y("mView");
+                q.z("mView");
                 view4 = null;
             }
             float measuredWidth = view4.getMeasuredWidth();
             View view5 = this.mView;
             if (view5 == null) {
-                q.y("mView");
+                q.z("mView");
                 view5 = null;
             }
             float translationX = measuredWidth + view5.getTranslationX();
             View view6 = this.mView;
             if (view6 == null) {
-                q.y("mView");
+                q.z("mView");
                 view6 = null;
             }
             float top = view6.getTop();
-            float f11 = 20;
-            float f12 = 235;
+            float f12 = 20;
+            float f13 = 235;
             View view7 = this.mView;
             if (view7 == null) {
-                q.y("mView");
+                q.z("mView");
                 view7 = null;
             }
             float translationX2 = view7.getTranslationX();
             int i10 = SWIPE_STOP_OFFSET_X;
-            j10 = j.j((int) (f11 + (f12 * (translationX2 / i10))), 0, 255);
+            j10 = j.j((int) (f12 + (f13 * (translationX2 / i10))), 0, 255);
             Paint paint = new Paint();
             paint.setColor(ColorUtilsKt.getColorCompat(this.context, R.color.brand_500));
             paint.setAlpha(j10);
@@ -148,20 +149,20 @@ public final class SwipeHelper extends ChatListCallback {
             canvas.save();
             View view8 = this.mView;
             if (view8 == null) {
-                q.y("mView");
+                q.z("mView");
             } else {
                 view2 = view8;
             }
             float max = Math.max(0.0f, Math.min(view2.getTranslationX() / i10, 1.0f));
-            float f13 = measuredHeight / 2.0f;
-            float min = Math.min(f13, MAX_BORDER_RADIUS) * max;
+            float f14 = measuredHeight / 2.0f;
+            float min = Math.min(f14, MAX_BORDER_RADIUS) * max;
             float[] fArr = {min, min, 0.0f, 0.0f, 0.0f, 0.0f, min, min};
             Path path = new Path();
-            float f14 = translationX + abs;
-            float f15 = top + measuredHeight;
-            path.addRoundRect(translationX, top, f14, f15, fArr, Path.Direction.CW);
+            float f15 = translationX + abs;
+            float f16 = top + measuredHeight;
+            path.addRoundRect(translationX, top, f15, f16, fArr, Path.Direction.CW);
             canvas.clipPath(path);
-            canvas.drawRect(translationX, top, f14, f15, paint);
+            canvas.drawRect(translationX, top, f15, f16, paint);
             f10 = j.f(measuredHeight - SizeUtilsKt.getDpToPx(6), SizeUtilsKt.getDpToPx(24));
             PorterDuffColorFilter porterDuffColorFilter = new PorterDuffColorFilter(ColorUtilsKt.getColorCompat(this.context, R.color.white), PorterDuff.Mode.SRC_ATOP);
             Drawable drawable = this.replyIcon;
@@ -173,14 +174,19 @@ public final class SwipeHelper extends ChatListCallback {
                 drawable2.setColorFilter(porterDuffColorFilter);
             }
             canvas.save();
-            canvas.translate(translationX + 4.0f + (abs / 2.0f), top + f13);
+            canvas.translate(translationX + 4.0f + (abs / 2.0f), top + f14);
             paint.setColor(ColorUtilsKt.getColorCompat(this.context, R.color.white_500));
             paint.setAlpha(this.curRippleAlpha);
             paint.setStyle(Paint.Style.FILL);
             canvas.drawCircle(0.0f, 0.0f, this.curRippleRadius, paint);
-            float f16 = this.curArrowScale;
-            canvas.scale(f16, f16);
-            canvas.rotate((DeviceAccessibilityModule.Companion.useReducedMotion(this.context) ? 0.0f : 90.0f * (1.0f - max)) + ((float) (((this.curArrowRotationRadians / 300.0d) * 180.0d) / 3.141592653589793d)));
+            float f17 = this.curArrowScale;
+            canvas.scale(f17, f17);
+            if (DeviceAccessibilityModule.Companion.useReducedMotion(this.context)) {
+                f11 = 0.0f;
+            } else {
+                f11 = 90.0f * (1.0f - max);
+            }
+            canvas.rotate(f11 + ((float) (((this.curArrowRotationRadians / 300.0d) * 180.0d) / 3.141592653589793d)));
             int i11 = (int) (f10 / 2.0f);
             int i12 = -i11;
             Rect rect = new Rect(i12, i12, i11, i11);
@@ -248,7 +254,7 @@ public final class SwipeHelper extends ChatListCallback {
             valueAnimator3.addListener(new Animator.AnimatorListener() { 
                 @Override 
                 public void onAnimationCancel(Animator animator) {
-                    q.g(animator, "animator");
+                    q.h(animator, "animator");
                 }
 
                 @Override 
@@ -257,7 +263,7 @@ public final class SwipeHelper extends ChatListCallback {
                     SpringAnimation springAnimation2;
                     b bVar;
                     SpringAnimation springAnimation3;
-                    q.g(animator, "animator");
+                    q.h(animator, "animator");
                     SwipeHelper swipeHelper = SwipeHelper.this;
                     SpringAnimation springAnimation4 = new SpringAnimation(new f0.b(r2 * 300.0f));
                     springAnimation4.t(new b().d(0.2f).f(200.0f));
@@ -292,12 +298,12 @@ public final class SwipeHelper extends ChatListCallback {
 
                 @Override 
                 public void onAnimationRepeat(Animator animator) {
-                    q.g(animator, "animator");
+                    q.h(animator, "animator");
                 }
 
                 @Override 
                 public void onAnimationStart(Animator animator) {
-                    q.g(animator, "animator");
+                    q.h(animator, "animator");
                 }
             });
             this.arrowRotationAnimator = valueAnimator3;
@@ -306,21 +312,23 @@ public final class SwipeHelper extends ChatListCallback {
     }
 
     
-    public static final void startArrowPulseAnimation$lambda$1$lambda$0(SwipeHelper this$0, RecyclerView recyclerView, ValueAnimator valueAnimator) {
-        q.g(this$0, "this$0");
-        q.g(recyclerView, "$recyclerView");
-        Object animatedValue = valueAnimator.getAnimatedValue(ANIM_VALUE_ARROW_SCALE);
-        q.e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+    public static final void startArrowPulseAnimation$lambda$1$lambda$0(SwipeHelper this$0, RecyclerView recyclerView, ValueAnimator it) {
+        q.h(this$0, "this$0");
+        q.h(recyclerView, "$recyclerView");
+        q.h(it, "it");
+        Object animatedValue = it.getAnimatedValue(ANIM_VALUE_ARROW_SCALE);
+        q.f(animatedValue, "null cannot be cast to non-null type kotlin.Float");
         this$0.curArrowScale = ((Float) animatedValue).floatValue();
         recyclerView.invalidate();
     }
 
     
-    public static final void startArrowPulseAnimation$lambda$5$lambda$2(SwipeHelper this$0, RecyclerView recyclerView, ValueAnimator valueAnimator) {
-        q.g(this$0, "this$0");
-        q.g(recyclerView, "$recyclerView");
-        Object animatedValue = valueAnimator.getAnimatedValue(ANIM_VALUE_ARROW_ROTATION);
-        q.e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+    public static final void startArrowPulseAnimation$lambda$5$lambda$2(SwipeHelper this$0, RecyclerView recyclerView, ValueAnimator it) {
+        q.h(this$0, "this$0");
+        q.h(recyclerView, "$recyclerView");
+        q.h(it, "it");
+        Object animatedValue = it.getAnimatedValue(ANIM_VALUE_ARROW_ROTATION);
+        q.f(animatedValue, "null cannot be cast to non-null type kotlin.Float");
         this$0.curArrowRotationRadians = ((Float) animatedValue).floatValue();
         recyclerView.invalidate();
     }
@@ -339,7 +347,7 @@ public final class SwipeHelper extends ChatListCallback {
             this.curRippleAlpha = 26;
             View view = this.mView;
             if (view == null) {
-                q.y("mView");
+                q.z("mView");
                 view = null;
             }
             float max = Math.max(view.getMeasuredHeight(), Math.abs(MAX_CONTEXT_AREA_WIDTH) + SizeUtilsKt.getDpToPx(50));
@@ -382,22 +390,24 @@ public final class SwipeHelper extends ChatListCallback {
     }
 
     
-    public static final void startRippleAnimation$lambda$7$lambda$6(SwipeHelper this$0, RecyclerView recyclerView, ValueAnimator valueAnimator) {
-        q.g(this$0, "this$0");
-        q.g(recyclerView, "$recyclerView");
-        Object animatedValue = valueAnimator.getAnimatedValue(ANIM_VALUE_RIPPLE_SCALE);
-        q.e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+    public static final void startRippleAnimation$lambda$7$lambda$6(SwipeHelper this$0, RecyclerView recyclerView, ValueAnimator it) {
+        q.h(this$0, "this$0");
+        q.h(recyclerView, "$recyclerView");
+        q.h(it, "it");
+        Object animatedValue = it.getAnimatedValue(ANIM_VALUE_RIPPLE_SCALE);
+        q.f(animatedValue, "null cannot be cast to non-null type kotlin.Float");
         this$0.curRippleRadius = ((Float) animatedValue).floatValue();
         recyclerView.invalidate();
     }
 
     
-    public static final void startRippleAnimation$lambda$9$lambda$8(SwipeHelper this$0, RecyclerView recyclerView, ValueAnimator valueAnimator) {
+    public static final void startRippleAnimation$lambda$9$lambda$8(SwipeHelper this$0, RecyclerView recyclerView, ValueAnimator it) {
         int j10;
-        q.g(this$0, "this$0");
-        q.g(recyclerView, "$recyclerView");
-        Object animatedValue = valueAnimator.getAnimatedValue(ANIM_VALUE_RIPPLE_FADE);
-        q.e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+        q.h(this$0, "this$0");
+        q.h(recyclerView, "$recyclerView");
+        q.h(it, "it");
+        Object animatedValue = it.getAnimatedValue(ANIM_VALUE_RIPPLE_FADE);
+        q.f(animatedValue, "null cannot be cast to non-null type kotlin.Float");
         j10 = j.j((int) (((Float) animatedValue).floatValue() * 255), 0, 255);
         this$0.curRippleAlpha = j10;
         recyclerView.invalidate();
@@ -408,13 +418,13 @@ public final class SwipeHelper extends ChatListCallback {
         if (this.shouldPerformHapticFeedback) {
             View view2 = this.mView;
             if (view2 == null) {
-                q.y("mView");
+                q.z("mView");
                 view2 = null;
             }
             if (view2.getTranslationX() <= HAPTIC_TRIGGER_X) {
                 View view3 = this.mView;
                 if (view3 == null) {
-                    q.y("mView");
+                    q.z("mView");
                 } else {
                     view = view3;
                 }
@@ -428,7 +438,7 @@ public final class SwipeHelper extends ChatListCallback {
         if (!this.shouldPerformHapticFeedback) {
             View view4 = this.mView;
             if (view4 == null) {
-                q.y("mView");
+                q.z("mView");
             } else {
                 view = view4;
             }
@@ -443,7 +453,7 @@ public final class SwipeHelper extends ChatListCallback {
         if (this.shouldTriggerReply) {
             View view2 = this.mView;
             if (view2 == null) {
-                q.y("mView");
+                q.z("mView");
                 view2 = null;
             }
             if (view2.getTranslationX() > REPLY_RESET_X) {
@@ -454,7 +464,7 @@ public final class SwipeHelper extends ChatListCallback {
         if (!this.shouldTriggerReply) {
             View view3 = this.mView;
             if (view3 == null) {
-                q.y("mView");
+                q.z("mView");
             } else {
                 view = view3;
             }
@@ -466,7 +476,7 @@ public final class SwipeHelper extends ChatListCallback {
 
     @Override 
     public long getAnimationDuration(RecyclerView recyclerView, int i10, float f10, float f11) {
-        q.g(recyclerView, "recyclerView");
+        q.h(recyclerView, "recyclerView");
         return ANIM_RETURN_DURATION;
     }
 
@@ -482,14 +492,14 @@ public final class SwipeHelper extends ChatListCallback {
     @Override 
     public int getMovementFlags(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
         int i10;
-        q.g(recyclerView, "recyclerView");
-        q.g(viewHolder, "viewHolder");
+        q.h(recyclerView, "recyclerView");
+        q.h(viewHolder, "viewHolder");
         View view = viewHolder.itemView;
-        q.f(view, "viewHolder.itemView");
+        q.g(view, "viewHolder.itemView");
         this.mView = view;
         View view2 = viewHolder.itemView;
         if (view2 instanceof SwipeReplyInitiator) {
-            q.e(view2, "null cannot be cast to non-null type com.discord.chat.presentation.list.SwipeReplyInitiator");
+            q.f(view2, "null cannot be cast to non-null type com.discord.chat.presentation.list.SwipeReplyInitiator");
             if (((SwipeReplyInitiator) view2).getEnableSwipeToReply()) {
                 i10 = 4;
                 return ItemTouchHelper.c.makeMovementFlags(0, i10);
@@ -501,9 +511,9 @@ public final class SwipeHelper extends ChatListCallback {
 
     @Override 
     public void onChildDraw(Canvas c10, RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, float f10, float f11, int i10, boolean z10) {
-        q.g(c10, "c");
-        q.g(recyclerView, "recyclerView");
-        q.g(viewHolder, "viewHolder");
+        q.h(c10, "c");
+        q.h(recyclerView, "recyclerView");
+        q.h(viewHolder, "viewHolder");
         super.onChildDraw(c10, recyclerView, viewHolder, f10, f11, i10, z10);
         this.dX = f10;
         this.currentItemViewHolder = viewHolder;
@@ -514,20 +524,20 @@ public final class SwipeHelper extends ChatListCallback {
 
     @Override 
     public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
-        q.g(recyclerView, "recyclerView");
-        q.g(viewHolder, "viewHolder");
-        q.g(target, "target");
+        q.h(recyclerView, "recyclerView");
+        q.h(viewHolder, "viewHolder");
+        q.h(target, "target");
         return false;
     }
 
     @Override 
     public void onReleased(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
-        q.g(recyclerView, "recyclerView");
+        q.h(recyclerView, "recyclerView");
         this.swipeBack = true;
         if (this.shouldTriggerReply && viewHolder != null) {
             View view = viewHolder.itemView;
             if (view instanceof SwipeReplyInitiator) {
-                q.e(view, "null cannot be cast to non-null type com.discord.chat.presentation.list.SwipeReplyInitiator");
+                q.f(view, "null cannot be cast to non-null type com.discord.chat.presentation.list.SwipeReplyInitiator");
                 ((SwipeReplyInitiator) view).getOnInitiateReply().invoke();
             }
         }
@@ -547,7 +557,7 @@ public final class SwipeHelper extends ChatListCallback {
 
     @Override 
     public void onSwiped(RecyclerView.ViewHolder viewHolder, int i10) {
-        q.g(viewHolder, "viewHolder");
+        q.h(viewHolder, "viewHolder");
     }
 
     @Override 

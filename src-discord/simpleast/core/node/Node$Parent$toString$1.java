@@ -15,7 +15,7 @@ final class Node$Parent$toString$1 extends s implements Function1<Node<R>, CharS
     }
 
     public final CharSequence invoke(Node<R> it) {
-        q.g(it, "it");
+        q.h(it, "it");
         return it.toString();
     }
 }

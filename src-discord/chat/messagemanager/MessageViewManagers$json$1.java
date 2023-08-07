@@ -19,12 +19,12 @@ final class MessageViewManagers$json$1 extends s implements Function1<JsonBuilde
     @Override 
     public   Unit invoke(JsonBuilder jsonBuilder) {
         invoke2(jsonBuilder);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(JsonBuilder Json) {
-        q.g(Json, "$this$Json");
+        q.h(Json, "$this$Json");
         Json.c(true);
     }
 }

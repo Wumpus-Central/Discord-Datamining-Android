@@ -24,12 +24,12 @@ final class MediaEngineModule$initialize$3 extends s implements Function2<String
     @Override 
     public   Unit invoke(String str, Boolean bool) {
         invoke(str, bool.booleanValue());
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final void invoke(String streamId, boolean z10) {
         ReactEvents reactEvents;
-        q.g(streamId, "streamId");
+        q.h(streamId, "streamId");
         reactEvents = this.this$0.reactEvents;
         reactEvents.emitModuleEvent(this.this$0.getReactContext(), new ActiveSinksChangeEvent(streamId, z10));
     }

@@ -10,8 +10,8 @@ import kotlin.jvm.internal.q;
 
 public final class ViewGroupUtilsKt {
     public static final void setUpLayoutForList(ViewGroup viewGroup, int i10, Function0<? extends View> inflater) {
-        q.g(viewGroup, "<this>");
-        q.g(inflater, "inflater");
+        q.h(viewGroup, "<this>");
+        q.h(inflater, "inflater");
         if (i10 != viewGroup.getChildCount()) {
             if (viewGroup.getChildCount() > i10) {
                 viewGroup.removeViews(0, viewGroup.getChildCount() - i10);

@@ -66,11 +66,11 @@ public abstract class ListOperation {
         
         public ChangeRange(IntRange range) {
             super(null);
-            q.g(range, "range");
+            q.h(range, "range");
             this.range = range;
             this.first = range.a();
-            this.last = range.d();
-            this.count = (range.d() - range.a()) + 1;
+            this.last = range.c();
+            this.count = (range.c() - range.a()) + 1;
         }
 
         public static  ChangeRange copy$default(ChangeRange changeRange, IntRange intRange, int i10, Object obj) {
@@ -85,7 +85,7 @@ public abstract class ListOperation {
         }
 
         public final ChangeRange copy(IntRange range) {
-            q.g(range, "range");
+            q.h(range, "range");
             return new ChangeRange(range);
         }
 
@@ -93,7 +93,7 @@ public abstract class ListOperation {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof ChangeRange) && q.b(this.range, ((ChangeRange) obj).range);
+            return (obj instanceof ChangeRange) && q.c(this.range, ((ChangeRange) obj).range);
         }
 
         public final int getCount() {
@@ -179,11 +179,11 @@ public abstract class ListOperation {
         
         public InsertRange(IntRange range) {
             super(null);
-            q.g(range, "range");
+            q.h(range, "range");
             this.range = range;
             this.first = range.a();
-            this.last = range.d();
-            this.count = (range.d() - range.a()) + 1;
+            this.last = range.c();
+            this.count = (range.c() - range.a()) + 1;
         }
 
         public static  InsertRange copy$default(InsertRange insertRange, IntRange intRange, int i10, Object obj) {
@@ -198,7 +198,7 @@ public abstract class ListOperation {
         }
 
         public final InsertRange copy(IntRange range) {
-            q.g(range, "range");
+            q.h(range, "range");
             return new InsertRange(range);
         }
 
@@ -206,7 +206,7 @@ public abstract class ListOperation {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof InsertRange) && q.b(this.range, ((InsertRange) obj).range);
+            return (obj instanceof InsertRange) && q.c(this.range, ((InsertRange) obj).range);
         }
 
         public final int getCount() {
@@ -292,11 +292,11 @@ public abstract class ListOperation {
         
         public RemoveRange(IntRange range) {
             super(null);
-            q.g(range, "range");
+            q.h(range, "range");
             this.range = range;
             this.first = range.a();
-            this.last = range.d();
-            this.count = (range.d() - range.a()) + 1;
+            this.last = range.c();
+            this.count = (range.c() - range.a()) + 1;
         }
 
         public static  RemoveRange copy$default(RemoveRange removeRange, IntRange intRange, int i10, Object obj) {
@@ -311,7 +311,7 @@ public abstract class ListOperation {
         }
 
         public final RemoveRange copy(IntRange range) {
-            q.g(range, "range");
+            q.h(range, "range");
             return new RemoveRange(range);
         }
 
@@ -319,7 +319,7 @@ public abstract class ListOperation {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof RemoveRange) && q.b(this.range, ((RemoveRange) obj).range);
+            return (obj instanceof RemoveRange) && q.c(this.range, ((RemoveRange) obj).range);
         }
 
         public final int getCount() {

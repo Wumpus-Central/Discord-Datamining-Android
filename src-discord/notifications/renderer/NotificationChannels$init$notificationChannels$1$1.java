@@ -46,12 +46,12 @@ public final class NotificationChannels$init$notificationChannels$1$1 extends s 
     @Override 
     public   Unit invoke(NotificationChannelCompat notificationChannelCompat, NotificationChannelCompat.Builder builder) {
         invoke2(notificationChannelCompat, builder);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(NotificationChannelCompat notificationChannelCompat, NotificationChannelCompat.Builder builder) {
-        q.g(builder, "builder");
+        q.h(builder, "builder");
         int i10 = WhenMappings.$EnumSwitchMapping$0[this.$category.ordinal()];
         if (i10 == 1) {
             NotificationChannels.INSTANCE.configureCallChannel(this.$context, notificationChannelCompat, builder);

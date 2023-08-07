@@ -47,8 +47,8 @@ public final class AutomodSystemMessageItem extends ChatListItem {
     }
 
     public final AutomodSystemMessageItem copy(Message message, MessageContext messageContext, boolean z10) {
-        q.g(message, "message");
-        q.g(messageContext, "messageContext");
+        q.h(message, "message");
+        q.h(messageContext, "messageContext");
         return new AutomodSystemMessageItem(message, messageContext, z10);
     }
 
@@ -60,7 +60,7 @@ public final class AutomodSystemMessageItem extends ChatListItem {
             return false;
         }
         AutomodSystemMessageItem automodSystemMessageItem = (AutomodSystemMessageItem) obj;
-        return q.b(this.message, automodSystemMessageItem.message) && q.b(this.messageContext, automodSystemMessageItem.messageContext) && this.allowChildGestures == automodSystemMessageItem.allowChildGestures;
+        return q.c(this.message, automodSystemMessageItem.message) && q.c(this.messageContext, automodSystemMessageItem.messageContext) && this.allowChildGestures == automodSystemMessageItem.allowChildGestures;
     }
 
     public final boolean getAllowChildGestures() {
@@ -96,9 +96,9 @@ public final class AutomodSystemMessageItem extends ChatListItem {
 
     
     public AutomodSystemMessageItem(Message message, MessageContext messageContext, boolean z10) {
-        super(MessageId.m598toStringimpl(message.m16getId3Eiw7ao()), null);
-        q.g(message, "message");
-        q.g(messageContext, "messageContext");
+        super(MessageId.m599toStringimpl(message.m17getId3Eiw7ao()), null);
+        q.h(message, "message");
+        q.h(messageContext, "messageContext");
         this.message = message;
         this.messageContext = messageContext;
         this.allowChildGestures = z10;

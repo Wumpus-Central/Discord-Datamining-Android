@@ -29,7 +29,7 @@ public final class ThreadStarterMessageHeaderView extends LinearLayout {
     
     public ThreadStarterMessageHeaderView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  ThreadStarterMessageHeaderView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -40,7 +40,7 @@ public final class ThreadStarterMessageHeaderView extends LinearLayout {
         boolean z11;
         int i10;
         View root = this.binding.getRoot();
-        q.f(root, "binding.root");
+        q.g(root, "binding.root");
         int i11 = 0;
         if (str != null) {
             z11 = true;
@@ -55,7 +55,7 @@ public final class ThreadStarterMessageHeaderView extends LinearLayout {
         root.setVisibility(i10);
         this.binding.threadStarterHeaderText.setText(str);
         View root2 = this.binding.getRoot();
-        q.f(root2, "binding.root");
+        q.g(root2, "binding.root");
         ViewGroup.LayoutParams layoutParams = root2.getLayoutParams();
         if (layoutParams != null) {
             ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
@@ -72,23 +72,23 @@ public final class ThreadStarterMessageHeaderView extends LinearLayout {
     
     public ThreadStarterMessageHeaderView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         ThreadStarterMessageHeaderViewBinding inflate = ThreadStarterMessageHeaderViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(\n        LayoutI…ext),\n        this,\n    )");
+        q.g(inflate, "inflate(\n        LayoutI…ext),\n        this,\n    )");
         this.binding = inflate;
         setOrientation(0);
         SimpleDraweeView simpleDraweeView = inflate.threadStarterHeaderIcon;
-        q.f(simpleDraweeView, "binding.threadStarterHeaderIcon");
+        q.g(simpleDraweeView, "binding.threadStarterHeaderIcon");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.TextChannel);
         SimpleDraweeView simpleDraweeView2 = inflate.threadStarterHeaderIcon;
-        q.f(simpleDraweeView2, "binding.threadStarterHeaderIcon");
+        q.g(simpleDraweeView2, "binding.threadStarterHeaderIcon");
         ColorUtilsKt.setTintColor(simpleDraweeView2, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
         inflate.threadStarterHeaderText.setTextColor(ThemeManagerKt.getTheme().getHeaderSecondary());
         TextView textView = inflate.threadStarterHeaderText;
-        q.f(textView, "binding.threadStarterHeaderText");
+        q.g(textView, "binding.threadStarterHeaderText");
         DiscordFontUtilsKt.setDiscordFont(textView, DiscordFont.PrimaryMedium);
         TextView textView2 = inflate.threadStarterHeaderText;
-        q.f(textView2, "binding.threadStarterHeaderText");
+        q.g(textView2, "binding.threadStarterHeaderText");
         SetTextSizeSpKt.setTextSizeSp(textView2, 12.0f);
     }
 }

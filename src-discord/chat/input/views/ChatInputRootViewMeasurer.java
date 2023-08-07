@@ -19,8 +19,8 @@ public final class ChatInputRootViewMeasurer {
 
     
     public ChatInputRootViewMeasurer(ChatInputRootView chatInputRootView, Function1<? super Integer, Unit> onHeightChanged) {
-        q.g(chatInputRootView, "chatInputRootView");
-        q.g(onHeightChanged, "onHeightChanged");
+        q.h(chatInputRootView, "chatInputRootView");
+        q.h(onHeightChanged, "onHeightChanged");
         this.chatInputRootView = chatInputRootView;
         this.onHeightChanged = onHeightChanged;
     }
@@ -31,7 +31,7 @@ public final class ChatInputRootViewMeasurer {
 
     private final int measureHeight(ChatInputRootView chatInputRootView) {
         Context context = chatInputRootView.getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         return HeadlessViewMeasurerExtensionsKt.measureHeadlessView(context, ChatInputRootView.class, new ChatInputRootViewMeasurer$measureHeight$1(this), new HeadlessViewMeasurer.MeasureBounds(Integer.valueOf(this.chatInputRootView.getWidth()), null, 2, null)).getHeight();
     }
 

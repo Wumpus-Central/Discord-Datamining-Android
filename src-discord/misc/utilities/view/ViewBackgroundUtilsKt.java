@@ -11,7 +11,7 @@ import kotlin.jvm.internal.q;
 
 public final class ViewBackgroundUtilsKt {
     public static final void setBackgroundOval(View view, int i10, int i11) {
-        q.g(view, "<this>");
+        q.h(view, "<this>");
         GradientDrawable gradientDrawable = new GradientDrawable();
         gradientDrawable.setShape(1);
         gradientDrawable.setColor(i10);
@@ -29,7 +29,7 @@ public final class ViewBackgroundUtilsKt {
     
     public static final void setBackgroundRectangle(View view, int i10, int i11, Integer num, int i12) {
         PaintDrawable paintDrawable;
-        q.g(view, "<this>");
+        q.h(view, "<this>");
         if (num != null) {
             GradientDrawable gradientDrawable = new GradientDrawable();
             gradientDrawable.setShape(0);

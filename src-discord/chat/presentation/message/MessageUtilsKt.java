@@ -9,7 +9,7 @@ import kotlin.jvm.internal.q;
 
 public final class MessageUtilsKt {
     public static final int getChatTextSizeSp(Context context) {
-        q.g(context, "<this>");
+        q.h(context, "<this>");
         if (FontManager.INSTANCE.getIsClassicChatFontScaleEnabled(context)) {
             return 14;
         }

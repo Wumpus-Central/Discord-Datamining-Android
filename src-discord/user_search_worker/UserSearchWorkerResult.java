@@ -9,15 +9,15 @@ public final class UserSearchWorkerResult {
     private final String comparator;
 
     
-    private final String f7247id;
+    private final String f7460id;
     private final double score;
     private final String username;
 
     public UserSearchWorkerResult(String id2, String username, String comparator, double d10) {
-        q.g(id2, "id");
-        q.g(username, "username");
-        q.g(comparator, "comparator");
-        this.f7247id = id2;
+        q.h(id2, "id");
+        q.h(username, "username");
+        q.h(comparator, "comparator");
+        this.f7460id = id2;
         this.username = username;
         this.comparator = comparator;
         this.score = d10;
@@ -25,7 +25,7 @@ public final class UserSearchWorkerResult {
 
     public static  UserSearchWorkerResult copy$default(UserSearchWorkerResult userSearchWorkerResult, String str, String str2, String str3, double d10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = userSearchWorkerResult.f7247id;
+            str = userSearchWorkerResult.f7460id;
         }
         if ((i10 & 2) != 0) {
             str2 = userSearchWorkerResult.username;
@@ -40,7 +40,7 @@ public final class UserSearchWorkerResult {
     }
 
     public final String component1() {
-        return this.f7247id;
+        return this.f7460id;
     }
 
     public final String component2() {
@@ -56,9 +56,9 @@ public final class UserSearchWorkerResult {
     }
 
     public final UserSearchWorkerResult copy(String id2, String username, String comparator, double d10) {
-        q.g(id2, "id");
-        q.g(username, "username");
-        q.g(comparator, "comparator");
+        q.h(id2, "id");
+        q.h(username, "username");
+        q.h(comparator, "comparator");
         return new UserSearchWorkerResult(id2, username, comparator, d10);
     }
 
@@ -70,7 +70,7 @@ public final class UserSearchWorkerResult {
             return false;
         }
         UserSearchWorkerResult userSearchWorkerResult = (UserSearchWorkerResult) obj;
-        return q.b(this.f7247id, userSearchWorkerResult.f7247id) && q.b(this.username, userSearchWorkerResult.username) && q.b(this.comparator, userSearchWorkerResult.comparator) && Double.compare(this.score, userSearchWorkerResult.score) == 0;
+        return q.c(this.f7460id, userSearchWorkerResult.f7460id) && q.c(this.username, userSearchWorkerResult.username) && q.c(this.comparator, userSearchWorkerResult.comparator) && Double.compare(this.score, userSearchWorkerResult.score) == 0;
     }
 
     public final String getComparator() {
@@ -78,7 +78,7 @@ public final class UserSearchWorkerResult {
     }
 
     public final String getId() {
-        return this.f7247id;
+        return this.f7460id;
     }
 
     public final double getScore() {
@@ -90,11 +90,11 @@ public final class UserSearchWorkerResult {
     }
 
     public int hashCode() {
-        return (((((this.f7247id.hashCode() * 31) + this.username.hashCode()) * 31) + this.comparator.hashCode()) * 31) + Double.doubleToLongBits(this.score);
+        return (((((this.f7460id.hashCode() * 31) + this.username.hashCode()) * 31) + this.comparator.hashCode()) * 31) + Double.doubleToLongBits(this.score);
     }
 
     public String toString() {
-        String str = this.f7247id;
+        String str = this.f7460id;
         String str2 = this.username;
         String str3 = this.comparator;
         double d10 = this.score;

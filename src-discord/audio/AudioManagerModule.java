@@ -12,9 +12,9 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.uimanager.ViewProps;
-import ff.x;
 import java.util.ArrayList;
 import java.util.List;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.collections.k;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -62,24 +62,24 @@ public final class AudioManagerModule extends ReactContextBaseJavaModule {
     
     public AudioManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.reactContext = reactContext;
     }
 
     @ReactMethod
     public final void addListener(String type) {
-        q.g(type, "type");
+        q.h(type, "type");
     }
 
     @ReactMethod
     public final void getActiveAudioDevice(Callback cb2) {
-        q.g(cb2, "cb");
+        q.h(cb2, "cb");
         cb2.invoke(getAudioManager().getActiveAudioDevice().toString());
     }
 
     @ReactMethod
     public final void getAudioDevices(Callback cb2) {
-        q.g(cb2, "cb");
+        q.h(cb2, "cb");
         cb2.invoke(NativeArrayExtensionsKt.toNativeArray(Companion.convertDevices(getAudioManager().getAudioDevices())));
     }
 
@@ -88,13 +88,13 @@ public final class AudioManagerModule extends ReactContextBaseJavaModule {
         if (discordAudioManager != null) {
             return discordAudioManager;
         }
-        q.y("audioManager");
+        q.z("audioManager");
         return null;
     }
 
     @ReactMethod
     public final void getMediaVolume(Callback cb2) {
-        q.g(cb2, "cb");
+        q.h(cb2, "cb");
         cb2.invoke(Float.valueOf(getAudioManager().getCurrentMediaVolume() / getAudioManager().getMaxMediaVolume()));
     }
 
@@ -125,12 +125,12 @@ public final class AudioManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final boolean setActiveAudioDevice(String device) {
-        q.g(device, "device");
+        q.h(device, "device");
         return getAudioManager().setDevice(DiscordAudioManager.DeviceTypes.valueOf(device));
     }
 
     public final void setAudioManager(DiscordAudioManager discordAudioManager) {
-        q.g(discordAudioManager, "<set-?>");
+        q.h(discordAudioManager, "<set-?>");
         this.audioManager = discordAudioManager;
     }
 

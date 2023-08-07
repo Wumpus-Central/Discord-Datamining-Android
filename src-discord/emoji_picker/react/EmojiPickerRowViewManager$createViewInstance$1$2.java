@@ -33,13 +33,13 @@ public final class EmojiPickerRowViewManager$createViewInstance$1$2 extends s im
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String emojiName) {
         ReactEvents reactEvents;
-        q.g(emojiName, "emojiName");
+        q.h(emojiName, "emojiName");
         reactEvents = this.this$0.reactEvents;
         reactEvents.emitEvent(this.$eventDispatcher, this.$reactContext, this.$view, new OnLongPressEmojiEvent(emojiName));
     }

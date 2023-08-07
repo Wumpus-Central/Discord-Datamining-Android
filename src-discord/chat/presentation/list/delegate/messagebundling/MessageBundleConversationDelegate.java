@@ -24,14 +24,14 @@ public final class MessageBundleConversationDelegate extends MessageBundleBaseDe
     
     public MessageBundleConversationDelegate(Function3<? super View, ? super Integer, ? super Integer, Unit> onMeasured) {
         super(onMeasured);
-        q.g(onMeasured, "onMeasured");
+        q.h(onMeasured, "onMeasured");
     }
 
     
     public static final void onBindViewHolder$lambda$0(MessageBundleConversationDelegate this$0, MessageBundleItem item, View view) {
-        q.g(this$0, "this$0");
-        q.g(item, "$item");
-        this$0.onTapReply.invoke(MessageId.m592boximpl(((MessageBundleConversationItem) item).getMessageItem().getMessage().m16getId3Eiw7ao()));
+        q.h(this$0, "this$0");
+        q.h(item, "$item");
+        this$0.onTapReply.invoke(MessageId.m593boximpl(((MessageBundleConversationItem) item).getMessageItem().getMessage().m17getId3Eiw7ao()));
     }
 
     public final Function1<MessageId, Unit> getOnTapReply() {
@@ -40,16 +40,16 @@ public final class MessageBundleConversationDelegate extends MessageBundleBaseDe
 
     @Override 
     public void onBindViewHolder(View view, final MessageBundleItem item, List<? extends MessageBundleItem> items, int i10) {
-        q.g(view, "view");
-        q.g(item, "item");
-        q.g(items, "items");
+        q.h(view, "view");
+        q.h(item, "item");
+        q.h(items, "items");
         if ((view instanceof MessageBundleConversationView) && (item instanceof MessageBundleConversationItem)) {
             MessageBundleConversationView messageBundleConversationView = (MessageBundleConversationView) view;
             MessageBundleConversationItem messageBundleConversationItem = (MessageBundleConversationItem) item;
             MessageItem messageItem = messageBundleConversationItem.getMessageItem();
             MessageItem messageItem2 = messageBundleConversationItem.getMessageItem();
             Context context = messageBundleConversationView.getContext();
-            q.f(context, "view.context");
+            q.g(context, "view.context");
             messageBundleConversationView.configure(messageItem, MessageBundleDelegateUtilsKt.getEventHandler(messageItem2, context));
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(view, false, new View.OnClickListener() { 
                 @Override 
@@ -61,19 +61,19 @@ public final class MessageBundleConversationDelegate extends MessageBundleBaseDe
     }
 
     public final void setOnTapReply(Function1<? super MessageId, Unit> function1) {
-        q.g(function1, "<set-?>");
+        q.h(function1, "<set-?>");
         this.onTapReply = function1;
     }
 
     @Override 
     public MessageBundleConversationView createView(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         return new MessageBundleConversationView(context, null, 0, 6, null);
     }
 
     
     public boolean isForViewType(List<? extends MessageBundleItem> items, int i10) {
-        q.g(items, "items");
+        q.h(items, "items");
         return items.get(i10) instanceof MessageBundleConversationItem;
     }
 }

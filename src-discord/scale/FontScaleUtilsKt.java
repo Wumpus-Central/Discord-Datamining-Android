@@ -11,11 +11,11 @@ import kotlin.jvm.internal.q;
 
 public final class FontScaleUtilsKt {
     public static final Context getFontScaledContext(Context context) {
-        q.g(context, "<this>");
+        q.h(context, "<this>");
         Configuration configuration = context.getResources().getConfiguration();
-        q.f(configuration, "resources.configuration");
+        q.g(configuration, "resources.configuration");
         Context createConfigurationContext = context.createConfigurationContext(modifyFontScale(configuration, context));
-        q.f(createConfigurationContext, "createConfigurationConte…ifyFontScale(this),\n    )");
+        q.g(createConfigurationContext, "createConfigurationConte…ifyFontScale(this),\n    )");
         return createConfigurationContext;
     }
 
@@ -25,10 +25,10 @@ public final class FontScaleUtilsKt {
     }
 
     public static final void setFontScaleDeprecated(Context context) {
-        q.g(context, "<this>");
+        q.h(context, "<this>");
         Resources resources = context.getResources();
         Configuration configuration = context.getResources().getConfiguration();
-        q.f(configuration, "resources.configuration");
+        q.g(configuration, "resources.configuration");
         resources.updateConfiguration(modifyFontScale(configuration, context), context.getResources().getDisplayMetrics());
     }
 }

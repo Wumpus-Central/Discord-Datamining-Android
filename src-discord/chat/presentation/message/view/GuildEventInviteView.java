@@ -48,13 +48,13 @@ public final class GuildEventInviteView extends ConstraintLayout {
     
     public GuildEventInviteView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public GuildEventInviteView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  GuildEventInviteView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -76,7 +76,7 @@ public final class GuildEventInviteView extends ConstraintLayout {
     public final void setBadge(String str, String str2) {
         GuildEventInviteViewBinding guildEventInviteViewBinding = this.binding;
         SimpleDraweeView badgeIcon = guildEventInviteViewBinding.badgeIcon;
-        q.f(badgeIcon, "badgeIcon");
+        q.g(badgeIcon, "badgeIcon");
         ReactAssetUtilsKt.setOptionalReactImageUrl(badgeIcon, str);
         guildEventInviteViewBinding.badgeText.setText(str2);
     }
@@ -84,45 +84,45 @@ public final class GuildEventInviteView extends ConstraintLayout {
     public final void setChannel(String str, String str2) {
         GuildEventInviteViewBinding guildEventInviteViewBinding = this.binding;
         SimpleDraweeView channelIcon = guildEventInviteViewBinding.channelIcon;
-        q.f(channelIcon, "channelIcon");
+        q.g(channelIcon, "channelIcon");
         ReactAssetUtilsKt.setOptionalReactImageUrl(channelIcon, str);
         TextView channelName = guildEventInviteViewBinding.channelName;
-        q.f(channelName, "channelName");
+        q.g(channelName, "channelName");
         ViewUtilsKt.setOptionalText(channelName, str2);
         guildEventInviteViewBinding.channelIcon.setColorFilter(new PorterDuffColorFilter(ThemeManagerKt.getTheme().getHeaderSecondary(), PorterDuff.Mode.SRC_ATOP));
     }
 
     public final void setCreatorAvatar(String str) {
         SimpleDraweeView simpleDraweeView = this.binding.creatorAvatar;
-        q.f(simpleDraweeView, "binding.creatorAvatar");
+        q.g(simpleDraweeView, "binding.creatorAvatar");
         ReactAssetUtilsKt.setOptionalReactImageUrl(simpleDraweeView, str);
     }
 
     
-    public final void m313setDescriptionKZKlOo(StructurableText structurableText, String messageId, boolean z10, boolean z11, boolean z12, Function2<? super MessageId, ? super LinkContentNode, Unit> onTapLink, Function1<? super LinkContentNode, Unit> onLongTapLink, Function3<? super String, ? super String, ? super String, Unit> onTapChannel, Function4<? super String, ? super String, ? super String, ? super String, Unit> onLongPressChannel, Function2<? super String, ? super String, Unit> onTapMention, Function1<? super CommandMentionContentNode, Unit> onTapCommand, Function1<? super CommandMentionContentNode, Unit> onLongPressCommand, Function0<Unit> onTapSpoiler, Function1<? super String, Unit> onTapTimestamp, Function1<? super EmojiContentNode, Unit> onTapEmoji, Function1<? super MessageId, Unit> onTapSeeMore) {
+    public final void m314setDescriptionKZKlOo(StructurableText structurableText, String messageId, boolean z10, boolean z11, boolean z12, Function2<? super MessageId, ? super LinkContentNode, Unit> onTapLink, Function1<? super LinkContentNode, Unit> onLongTapLink, Function3<? super String, ? super String, ? super String, Unit> onTapChannel, Function4<? super String, ? super String, ? super String, ? super String, Unit> onLongPressChannel, Function2<? super String, ? super String, Unit> onTapMention, Function1<? super CommandMentionContentNode, Unit> onTapCommand, Function1<? super CommandMentionContentNode, Unit> onLongPressCommand, Function0<Unit> onTapSpoiler, Function1<? super String, Unit> onTapTimestamp, Function1<? super EmojiContentNode, Unit> onTapEmoji, Function1<? super MessageId, Unit> onTapSeeMore) {
         String str;
-        q.g(messageId, "messageId");
-        q.g(onTapLink, "onTapLink");
-        q.g(onLongTapLink, "onLongTapLink");
-        q.g(onTapChannel, "onTapChannel");
-        q.g(onLongPressChannel, "onLongPressChannel");
-        q.g(onTapMention, "onTapMention");
-        q.g(onTapCommand, "onTapCommand");
-        q.g(onLongPressCommand, "onLongPressCommand");
-        q.g(onTapSpoiler, "onTapSpoiler");
-        q.g(onTapTimestamp, "onTapTimestamp");
-        q.g(onTapEmoji, "onTapEmoji");
-        q.g(onTapSeeMore, "onTapSeeMore");
+        q.h(messageId, "messageId");
+        q.h(onTapLink, "onTapLink");
+        q.h(onLongTapLink, "onLongTapLink");
+        q.h(onTapChannel, "onTapChannel");
+        q.h(onLongPressChannel, "onLongPressChannel");
+        q.h(onTapMention, "onTapMention");
+        q.h(onTapCommand, "onTapCommand");
+        q.h(onLongPressCommand, "onLongPressCommand");
+        q.h(onTapSpoiler, "onTapSpoiler");
+        q.h(onTapTimestamp, "onTapTimestamp");
+        q.h(onTapEmoji, "onTapEmoji");
+        q.h(onTapSeeMore, "onTapSeeMore");
         if (structurableText != null) {
             MessageContentView messageContentView = this.binding.descriptionText;
-            q.f(messageContentView, "binding.descriptionText");
+            q.g(messageContentView, "binding.descriptionText");
             str = "binding.descriptionText";
-            MessageContentView.m315setMessageContent2i9KL1s$default(messageContentView, structurableText, messageId, z10, z11, z12, onTapLink, onLongTapLink, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, onTapSeeMore, null, getResources().getDimensionPixelSize(R.dimen.message_accessories_vertical_spacing), 0, null, null, null, 3735552, null);
+            MessageContentView.m316setMessageContent2i9KL1s$default(messageContentView, structurableText, messageId, z10, z11, z12, onTapLink, onLongTapLink, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, onTapSeeMore, null, getResources().getDimensionPixelSize(R.dimen.message_accessories_vertical_spacing), 0, null, null, null, 3735552, null);
         } else {
             str = "binding.descriptionText";
         }
         MessageContentView messageContentView2 = this.binding.descriptionText;
-        q.f(messageContentView2, str);
+        q.g(messageContentView2, str);
         int i10 = 0;
         if (!(structurableText != null)) {
             i10 = 8;
@@ -134,13 +134,13 @@ public final class GuildEventInviteView extends ConstraintLayout {
         boolean z10;
         GuildEventInviteViewBinding guildEventInviteViewBinding = this.binding;
         TextView guildName = guildEventInviteViewBinding.guildName;
-        q.f(guildName, "guildName");
+        q.g(guildName, "guildName");
         ViewUtilsKt.setOptionalText(guildName, str);
         SimpleDraweeView guildIcon = guildEventInviteViewBinding.guildIcon;
-        q.f(guildIcon, "guildIcon");
+        q.g(guildIcon, "guildIcon");
         ReactAssetUtilsKt.setOptionalReactImageUrl(guildIcon, str2);
         SimpleDraweeView guildIcon2 = guildEventInviteViewBinding.guildIcon;
-        q.f(guildIcon2, "guildIcon");
+        q.g(guildIcon2, "guildIcon");
         int i10 = 0;
         if (str2 != null) {
             z10 = true;
@@ -154,10 +154,10 @@ public final class GuildEventInviteView extends ConstraintLayout {
     }
 
     public final void setHeader(String str, String text, int i10) {
-        q.g(text, "text");
+        q.h(text, "text");
         GuildEventInviteViewBinding guildEventInviteViewBinding = this.binding;
         SimpleDraweeView headerIcon = guildEventInviteViewBinding.headerIcon;
-        q.f(headerIcon, "headerIcon");
+        q.g(headerIcon, "headerIcon");
         ReactAssetUtilsKt.setOptionalReactImageUrl(headerIcon, str);
         guildEventInviteViewBinding.headerText.setText(text);
         guildEventInviteViewBinding.headerIcon.setColorFilter(new PorterDuffColorFilter(i10, PorterDuff.Mode.SRC_ATOP));
@@ -165,56 +165,56 @@ public final class GuildEventInviteView extends ConstraintLayout {
 
     public final void setSecondaryButton(String str, View.OnClickListener onClickListener) {
         SimpleDraweeView setSecondaryButton$lambda$15 = this.binding.secondaryButton;
-        q.f(setSecondaryButton$lambda$15, "setSecondaryButton$lambda$15");
+        q.g(setSecondaryButton$lambda$15, "setSecondaryButton$lambda$15");
         ReactAssetUtilsKt.setOptionalReactImageUrl(setSecondaryButton$lambda$15, str);
         setSecondaryButton$lambda$15.setOnClickListener(onClickListener);
     }
 
     public final Unit setTitle(String str, Integer num) {
         TextView titleText = this.binding.titleText;
-        q.f(titleText, "titleText");
+        q.g(titleText, "titleText");
         ViewUtilsKt.setOptionalText(titleText, str);
         if (num == null) {
             return null;
         }
         this.binding.titleText.setTextColor(num.intValue());
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public GuildEventInviteView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         GuildEventInviteViewBinding inflate = GuildEventInviteViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView lambda$6$lambda$0 = inflate.headerText;
         lambda$6$lambda$0.setTextColor(ThemeManagerKt.getTheme().getHeaderSecondary());
-        q.f(lambda$6$lambda$0, "lambda$6$lambda$0");
+        q.g(lambda$6$lambda$0, "lambda$6$lambda$0");
         DiscordFont discordFont = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(lambda$6$lambda$0, discordFont);
         ConstraintLayout badgeContainer = inflate.badgeContainer;
-        q.f(badgeContainer, "badgeContainer");
+        q.g(badgeContainer, "badgeContainer");
         ViewBackgroundUtilsKt.setBackgroundRectangle$default(badgeContainer, ThemeManagerKt.getTheme().getBackgroundTertiary(), SizeUtilsKt.getDpToPx((int) RNCWebViewManager.COMMAND_CLEAR_FORM_DATA), null, 0, 12, null);
         inflate.badgeText.setTextColor(ThemeManagerKt.getTheme().getHeaderSecondary());
         TextView lambda$6$lambda$1 = inflate.titleText;
-        q.f(lambda$6$lambda$1, "lambda$6$lambda$1");
+        q.g(lambda$6$lambda$1, "lambda$6$lambda$1");
         DiscordFontUtilsKt.setDiscordFont(lambda$6$lambda$1, DiscordFont.PrimaryExtraBold);
         lambda$6$lambda$1.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
         SetTextSizeSpKt.setTextSizeSp(lambda$6$lambda$1, 18.0f);
         MessageContentView lambda$6$lambda$2 = inflate.descriptionText;
-        q.f(lambda$6$lambda$2, "lambda$6$lambda$2");
+        q.g(lambda$6$lambda$2, "lambda$6$lambda$2");
         DiscordFont discordFont2 = DiscordFont.PrimaryMedium;
         DiscordFontUtilsKt.setDiscordFont(lambda$6$lambda$2, discordFont2);
         lambda$6$lambda$2.setTextColor(ThemeManagerKt.getTheme().getHeaderSecondary());
         SetTextSizeSpKt.setTextSizeSp(lambda$6$lambda$2, 14.0f);
         TextView lambda$6$lambda$3 = inflate.guildName;
-        q.f(lambda$6$lambda$3, "lambda$6$lambda$3");
+        q.g(lambda$6$lambda$3, "lambda$6$lambda$3");
         DiscordFontUtilsKt.setDiscordFont(lambda$6$lambda$3, discordFont);
         lambda$6$lambda$3.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
         SetTextSizeSpKt.setTextSizeSp(lambda$6$lambda$3, 14.0f);
         TextView lambda$6$lambda$4 = inflate.channelName;
-        q.f(lambda$6$lambda$4, "lambda$6$lambda$4");
+        q.g(lambda$6$lambda$4, "lambda$6$lambda$4");
         DiscordFontUtilsKt.setDiscordFont(lambda$6$lambda$4, discordFont2);
         lambda$6$lambda$4.setTextColor(ThemeManagerKt.getTheme().getHeaderSecondary());
         SetTextSizeSpKt.setTextSizeSp(lambda$6$lambda$4, 12.0f);
@@ -223,10 +223,10 @@ public final class GuildEventInviteView extends ConstraintLayout {
         dCDButton.setMaxLines(1);
         dCDButton.ellipsize(TextUtils.TruncateAt.END);
         SimpleDraweeView secondaryButton = inflate.secondaryButton;
-        q.f(secondaryButton, "secondaryButton");
+        q.g(secondaryButton, "secondaryButton");
         ViewBackgroundUtilsKt.setBackgroundRectangle(secondaryButton, ThemeManagerKt.getTheme().getBackgroundAccent(), SizeUtilsKt.getDpToPx(4), Integer.valueOf(ThemeManagerKt.getTheme().getBackgroundAccent()), SizeUtilsKt.getDpToPx(1));
         SimpleDraweeView guildIcon = inflate.guildIcon;
-        q.f(guildIcon, "guildIcon");
+        q.g(guildIcon, "guildIcon");
         ViewClippingUtilsKt.clipToRoundedRectangle(guildIcon, SizeUtilsKt.getDpToPx(8));
         ViewBackgroundUtilsKt.setBackgroundRectangle$default(this, ThemeManagerKt.getTheme().getBackgroundSecondary(), SizeUtilsKt.getDpToPx(4), null, 0, 12, null);
         int dpToPx = SizeUtilsKt.getDpToPx(12);

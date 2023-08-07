@@ -2,7 +2,6 @@ package com.discord.bundle_updater;
 
 import android.webkit.CookieManager;
 import com.discord.resource_usage.DeviceResourceUsageRecorder;
-import hj.k;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import kotlin.Metadata;
@@ -10,6 +9,7 @@ import kotlin.collections.r;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.q;
 import kotlin.jvm.internal.s;
+import lj.k;
 import okhttp3.CookieJar;
 import okhttp3.HttpUrl;
 import okhttp3.Interceptor;
@@ -37,9 +37,9 @@ public final class BundleUpdater$client$2 extends s implements Function0<OkHttpC
             @Override 
             public List<k> loadForRequest(HttpUrl url) {
                 CookieManager cookieManager;
-                q.g(url, "url");
+                q.h(url, "url");
                 cookieManager = BundleUpdater.this.getCookieManager();
-                q.f(cookieManager, "cookieManager");
+                q.g(cookieManager, "cookieManager");
                 return CookieValidatorKt.getCookiesForUrl(cookieManager, url.toString());
             }
 
@@ -47,8 +47,8 @@ public final class BundleUpdater$client$2 extends s implements Function0<OkHttpC
             public void saveFromResponse(HttpUrl url, List<k> cookies) {
                 CookieManager cookieManager;
                 String c02;
-                q.g(url, "url");
-                q.g(cookies, "cookies");
+                q.h(url, "url");
+                q.h(cookies, "cookies");
                 cookieManager = BundleUpdater.this.getCookieManager();
                 String httpUrl = url.toString();
                 c02 = r.c0(cookies, "; ", null, null, 0, null, null, 62, null);
@@ -59,7 +59,7 @@ public final class BundleUpdater$client$2 extends s implements Function0<OkHttpC
         return O.a(new Interceptor() { 
             @Override 
             public final Response intercept(Interceptor.Chain chain) {
-                q.g(chain, "chain");
+                q.h(chain, "chain");
                 return DeviceResourceUsageRecorder.Companion.this.bundleUpdaterInterceptor(chain);
             }
         }).c();

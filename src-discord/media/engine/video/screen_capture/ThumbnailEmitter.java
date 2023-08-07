@@ -16,7 +16,7 @@ import org.webrtc.GlUtil;
 import org.webrtc.JniCommon;
 import org.webrtc.VideoFrame;
 import org.webrtc.VideoFrameDrawer;
-import tf.c;
+import xf.c;
 
 @Metadata(d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0000\u0018\u0000 \u001c2\u00020\u0001:\u0001\u001cB1\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0012\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\b¢\u0006\u0002\u0010\u000bJ\u0010\u0010\u0017\u001a\u00020\t2\u0006\u0010\u0018\u001a\u00020\u0019H\u0002J\u000e\u0010\u001a\u001a\u00020\n2\u0006\u0010\u0018\u001a\u00020\u0019J\u0006\u0010\u001b\u001a\u00020\nR\u000e\u0010\f\u001a\u00020\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u000f\u001a\n \u0011*\u0004\u0018\u00010\u00100\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0014X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0016X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001d"}, d2 = {"Lcom/discord/media/engine/video/screen_capture/ThumbnailEmitter;", "", "width", "", "height", "periodMs", "", "onNextThumbnail", "Lkotlin/Function1;", "Landroid/graphics/Bitmap;", "", "(IIJLkotlin/jvm/functions/Function1;)V", "frameDrawer", "Lorg/webrtc/VideoFrameDrawer;", "lastTimestampNs", "outputByteBuffer", "Ljava/nio/ByteBuffer;", "kotlin.jvm.PlatformType", "periodNs", "rectDrawer", "Lorg/webrtc/GlRectDrawer;", "released", "", "createThumbnail", "frame", "Lorg/webrtc/VideoFrame;", "onFrame", "release", "Companion", "media_engine_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -60,7 +60,7 @@ public final class ThumbnailEmitter {
 
     
     public ThumbnailEmitter(int i10, int i11, long j10, Function1<? super Bitmap, Unit> onNextThumbnail) {
-        q.g(onNextThumbnail, "onNextThumbnail");
+        q.h(onNextThumbnail, "onNextThumbnail");
         this.width = i10;
         this.height = i11;
         this.onNextThumbnail = onNextThumbnail;
@@ -110,12 +110,12 @@ public final class ThumbnailEmitter {
         this.outputByteBuffer.rewind();
         Bitmap bitmap = Bitmap.createBitmap(this.width, this.height, Bitmap.Config.ARGB_8888);
         bitmap.copyPixelsFromBuffer(this.outputByteBuffer);
-        q.f(bitmap, "bitmap");
+        q.g(bitmap, "bitmap");
         return bitmap;
     }
 
     public final synchronized void onFrame(VideoFrame frame) {
-        q.g(frame, "frame");
+        q.h(frame, "frame");
         if (!this.released) {
             long timestampNs = frame.getTimestampNs();
             if (timestampNs - this.lastTimestampNs > this.periodNs) {

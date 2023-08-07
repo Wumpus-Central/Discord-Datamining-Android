@@ -36,7 +36,7 @@ final class BundleUpdaterManager$checkForUpdateAndReload$1 extends s implements 
         @Override 
         public   Unit invoke(ViewGroup viewGroup) {
             invoke2(viewGroup);
-            return Unit.f20679a;
+            return Unit.f21025a;
         }
 
         
@@ -45,7 +45,7 @@ final class BundleUpdaterManager$checkForUpdateAndReload$1 extends s implements 
             Application application;
             ReactNativeHost reactNativeHost;
             ReactInstanceManager reactInstanceManager;
-            q.g(runOnActivity, "$this$runOnActivity");
+            q.h(runOnActivity, "$this$runOnActivity");
             reactApplicationContext = this.this$0.reactContext;
             Activity currentActivity = reactApplicationContext.getCurrentActivity();
             if (currentActivity != null && (application = currentActivity.getApplication()) != null) {

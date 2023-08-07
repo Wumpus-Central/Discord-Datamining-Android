@@ -73,7 +73,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
     
     public AutomodSystemMessageView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  AutomodSystemMessageView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -86,10 +86,10 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         int i10;
         SimpleDraweeView simpleDraweeView = this.binding.authorAvatar;
         Context context = getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         simpleDraweeView.setImageURI(MessageKt.avatarUrl(message, context));
         this.binding.authorName.setText(message.getUsername());
-        this.binding.messageTagView.m212configureTagVieweCJZyo(autoModerationContext.getHeaderBadgeText(), Boolean.FALSE, null, null, null, chatEventHandler, message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.getTagType());
+        this.binding.messageTagView.m213configureTagVieweCJZyo(autoModerationContext.getHeaderBadgeText(), Boolean.FALSE, null, null, null, chatEventHandler, message.m17getId3Eiw7ao(), message.m15getChannelIdo4g7jtM(), message.getTagType());
         this.binding.automodMessageContextHeader.setText(autoModerationContext.getHeaderText());
         this.binding.timestamp.setText(message.getTimestamp());
         TextView configureAuthor$lambda$8 = this.binding.automodMessageChannel;
@@ -98,7 +98,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
             channelName = "channel";
         }
         configureAuthor$lambda$8.setText("#" + channelName);
-        q.f(configureAuthor$lambda$8, "configureAuthor$lambda$8");
+        q.g(configureAuthor$lambda$8, "configureAuthor$lambda$8");
         if (autoModerationContext.getMessage().getChannelName() != null) {
             z10 = true;
         } else {
@@ -121,12 +121,12 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
     
     public static final void configureAuthor$lambda$8$lambda$7(ChatEventHandler eventHandler, AutoModerationContext automodContext, View view) {
         String str;
-        q.g(eventHandler, "$eventHandler");
-        q.g(automodContext, "$automodContext");
-        String str2 = ChannelId.m573toStringimpl(automodContext.getMessage().m24getChannelIdo4g7jtM());
-        GuildId guildId = automodContext.getMessage().m25getGuildIdqOKuAAo();
+        q.h(eventHandler, "$eventHandler");
+        q.h(automodContext, "$automodContext");
+        String str2 = ChannelId.m574toStringimpl(automodContext.getMessage().m25getChannelIdo4g7jtM());
+        GuildId guildId = automodContext.getMessage().m26getGuildIdqOKuAAo();
         if (guildId != null) {
-            str = GuildId.m586toStringimpl(guildId.m588unboximpl());
+            str = GuildId.m587toStringimpl(guildId.m589unboximpl());
         } else {
             str = null;
         }
@@ -137,7 +137,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         int i10;
         float f10;
         SimpleDraweeView configureCommunicationDisabled$lambda$9 = this.binding.guildCommunicationDisabledIcon;
-        q.f(configureCommunicationDisabled$lambda$9, "configureCommunicationDisabled$lambda$9");
+        q.g(configureCommunicationDisabled$lambda$9, "configureCommunicationDisabled$lambda$9");
         if (z10) {
             i10 = 0;
         } else {
@@ -159,7 +159,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
     private final void configureDivider(boolean z10) {
         int i10;
         View view = this.binding.messageHeaderDivider;
-        q.f(view, "binding.messageHeaderDivider");
+        q.g(view, "binding.messageHeaderDivider");
         if (z10) {
             i10 = 0;
         } else {
@@ -178,10 +178,10 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         }
         FlaggedMessageEmbed message2 = autoModerationContext.getMessage();
         MessageType messageType = MessageType.DEFAULT;
-        String str = message2.m26getId3Eiw7ao();
-        long j10 = message2.m24getChannelIdo4g7jtM();
-        GuildId guildId = message2.m25getGuildIdqOKuAAo();
-        UserId userId = message2.m27getUserIdwUX8bhU();
+        String str = message2.m27getId3Eiw7ao();
+        long j10 = message2.m25getChannelIdo4g7jtM();
+        GuildId guildId = message2.m26getGuildIdqOKuAAo();
+        UserId userId = message2.m28getUserIdwUX8bhU();
         String username = message2.getUsername();
         String avatarURL = message2.getAvatarURL();
         StructurableText content = message2.getContent();
@@ -197,20 +197,20 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         }
         Message message3 = new Message(messageType, str, (String) null, j10, guildId, (MessageState) null, userId, 0L, (String) null, (Float) null, (String) null, username, Integer.valueOf(usernameColor), roleColor, shouldShowRoleDot, false, (Integer) null, avatarURL, (String) null, (List) null, (List) null, (Float) null, content, (List) null, (List) null, (Boolean) null, (List) null, (List) null, message.getRoleIcon(), (ConnectionsRoleTag) null, (ThreadEmbed) null, false, (Boolean) null, (Boolean) null, (ReferencedMessage) null, (ExecutedCommand) null, (List) null, (String) null, Boolean.valueOf(z10), (String) null, (Boolean) null, (Integer) null, (Integer) null, (String) null, (String) null, (EphemeralIndication) null, (SurveyIndication) null, (InteractionStatus) null, (Boolean) null, (Boolean) null, (Boolean) null, (String) null, (String) null, (List) null, (Boolean) null, (Boolean) null, (Long) null, (Sticker) null, (String) null, (String) null, (Boolean) null, (ActivityInviteEmbed) null, false, (ForumPostActions) null, autoModerationContext, (List) null, (GiftEmbed) null, (Integer) null, (String) null, (List) null, 1874692004, -65, 62, (DefaultConstructorMarker) null);
         if (autoModerationContext.getNotification() != null) {
-            this.accessories.add(new AutoModerationNotificationEmbedAccessory(message3.m16getId3Eiw7ao(), message, autoModerationContext, null));
+            this.accessories.add(new AutoModerationNotificationEmbedAccessory(message3.m17getId3Eiw7ao(), message, autoModerationContext, null));
         } else {
-            this.accessories.add(new FlaggedMessageEmbedAccessory(message3.m16getId3Eiw7ao(), message3, messageContext, null));
-            this.accessories.add(new FlaggedMessageActionBarAccessory(message3.m16getId3Eiw7ao(), message, autoModerationContext, null));
+            this.accessories.add(new FlaggedMessageEmbedAccessory(message3.m17getId3Eiw7ao(), message3, messageContext, null));
+            this.accessories.add(new FlaggedMessageActionBarAccessory(message3.m17getId3Eiw7ao(), message, autoModerationContext, null));
         }
         if (message.getReactions() != null && (!reactions.isEmpty())) {
             z11 = true;
         }
         if (z11) {
-            this.accessories.add(new ReactionsMessageAccessory(message.m16getId3Eiw7ao(), message.getReactions(), messageContext.getCanAddNewReactions(), messageContext.getUseAddBurstReaction(), messageContext.getAddReactionLabel(), messageContext.getAddNewReactionAccessibilityLabel(), messageContext.getAddNewBurstReactionAccessibilityLabel(), messageContext.getReactionsTheme(), null, null));
+            this.accessories.add(new ReactionsMessageAccessory(message.m17getId3Eiw7ao(), message.getReactions(), messageContext.getCanAddNewReactions(), messageContext.getUseAddBurstReaction(), messageContext.getAddReactionLabel(), messageContext.getAddNewReactionAccessibilityLabel(), messageContext.getAddNewBurstReactionAccessibilityLabel(), messageContext.getReactionsTheme(), null, null));
         }
         ThreadEmbed threadEmbed = message.getThreadEmbed();
         if (threadEmbed != null) {
-            this.accessories.add(new ThreadEmbedMessageAccessory(message.m16getId3Eiw7ao(), threadEmbed, null));
+            this.accessories.add(new ThreadEmbedMessageAccessory(message.m17getId3Eiw7ao(), threadEmbed, null));
         }
         return this.accessories;
     }
@@ -231,31 +231,31 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
     @Override 
     public View getSpineOriginView() {
         SimpleDraweeView simpleDraweeView = this.binding.authorAvatar;
-        q.f(simpleDraweeView, "binding.authorAvatar");
+        q.g(simpleDraweeView, "binding.authorAvatar");
         return simpleDraweeView;
     }
 
     @Override 
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        q.g(ev, "ev");
+        q.h(ev, "ev");
         return !this.allowChildGestures;
     }
 
     public final void setAccessoriesRecycledViewPool(RecyclerView.RecycledViewPool recycledViewPool) {
-        q.g(recycledViewPool, "recycledViewPool");
+        q.h(recycledViewPool, "recycledViewPool");
         this.binding.accessoriesView.setRecycledViewPool(recycledViewPool);
     }
 
     public final void setMessage(Message message, MessageContext messageContext, ChatEventHandler eventHandler, ComponentProvider componentProvider, boolean z10) {
         boolean z11;
-        q.g(message, "message");
-        q.g(messageContext, "messageContext");
-        q.g(eventHandler, "eventHandler");
+        q.h(message, "message");
+        q.h(messageContext, "messageContext");
+        q.h(eventHandler, "eventHandler");
         this.allowChildGestures = z10;
         AutoModerationContext autoModerationContext = message.getAutoModerationContext();
         if (autoModerationContext != null) {
             configureAuthor(message, autoModerationContext, eventHandler);
-            configureCommunicationDisabled(q.b(message.getCommunicationDisabled(), Boolean.TRUE));
+            configureCommunicationDisabled(q.c(message.getCommunicationDisabled(), Boolean.TRUE));
             configureDivider(messageContext.getShowDivider());
             String threadStarterMessageHeader = message.getThreadStarterMessageHeader();
             ThreadStarterMessageHeaderView threadStarterMessageHeaderView = this.binding.threadStarterHeader;
@@ -266,7 +266,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
             }
             threadStarterMessageHeaderView.configure(threadStarterMessageHeader, z11);
             this.binding.replyPreview.clear();
-            this.binding.accessoriesView.m210setAccessoriesRC8ZMxU(message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.m15getGuildIdqOKuAAo(), generateMessageAccessories(message, messageContext), eventHandler, componentProvider);
+            this.binding.accessoriesView.m211setAccessoriesRC8ZMxU(message.m17getId3Eiw7ao(), message.m15getChannelIdo4g7jtM(), message.m16getGuildIdqOKuAAo(), generateMessageAccessories(message, messageContext), eventHandler, componentProvider);
         }
     }
 
@@ -278,44 +278,44 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
     
     public AutomodSystemMessageView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         AutomodSystemMessageViewBinding inflate = AutomodSystemMessageViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         this.allowChildGestures = true;
         RippleUtilsKt.addRipple$default(this, false, SizeUtilsKt.getDpToPx(4), 1, null);
         inflate.messageHeaderDivider.setBackgroundColor(ColorUtilsKt.getThemeColor(context, R.color.message_divider_light, R.color.message_divider_dark));
         TextView _init_$lambda$0 = inflate.messageHeaderTitle;
         _init_$lambda$0.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         DiscordFont discordFont = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, discordFont);
         TextView _init_$lambda$1 = inflate.messageHeaderSubtitle;
         _init_$lambda$1.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
-        q.f(_init_$lambda$1, "_init_$lambda$1");
+        q.g(_init_$lambda$1, "_init_$lambda$1");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$1, DiscordFont.PrimaryNormal);
         TextView _init_$lambda$2 = inflate.authorName;
         _init_$lambda$2.setTextColor(ThemeManagerKt.getTheme().getTextBrand());
-        q.f(_init_$lambda$2, "_init_$lambda$2");
+        q.g(_init_$lambda$2, "_init_$lambda$2");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$2, discordFont);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$2, 16.0f, 20.0f);
         SimpleDraweeView simpleDraweeView = inflate.authorAvatar;
-        q.f(simpleDraweeView, "binding.authorAvatar");
+        q.g(simpleDraweeView, "binding.authorAvatar");
         ViewClippingUtilsKt.clipToCircle(simpleDraweeView);
         TextView _init_$lambda$3 = inflate.automodMessageContextHeader;
-        q.f(_init_$lambda$3, "_init_$lambda$3");
+        q.g(_init_$lambda$3, "_init_$lambda$3");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$3, discordFont);
         _init_$lambda$3.setTextColor(ThemeManagerKt.getTheme().getTextMuted());
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$3, 16.0f, 20.0f);
         TextView _init_$lambda$4 = inflate.automodMessageChannel;
         _init_$lambda$4.setBackgroundColor(ColorUtilsKt.getThemeColor(context, R.color.brand_500, R.color.brand_600));
         _init_$lambda$4.setTextColor(ColorUtilsKt.getThemeColor(context, R.color.white_100, R.color.white_160));
-        q.f(_init_$lambda$4, "_init_$lambda$4");
+        q.g(_init_$lambda$4, "_init_$lambda$4");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$4, discordFont);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$4, 12.0f, 15.0f);
         ViewClippingUtilsKt.clipToRoundedRectangle(_init_$lambda$4, SizeUtilsKt.getDpToPx(4));
         TextView _init_$lambda$5 = inflate.timestamp;
-        q.f(_init_$lambda$5, "_init_$lambda$5");
+        q.g(_init_$lambda$5, "_init_$lambda$5");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$5, DiscordFont.PrimaryMedium);
         _init_$lambda$5.setTextColor(ThemeManagerKt.getTheme().getTextMuted());
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$5, 12.0f, 15.0f);

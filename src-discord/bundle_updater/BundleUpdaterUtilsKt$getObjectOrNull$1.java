@@ -21,7 +21,7 @@ final class BundleUpdaterUtilsKt$getObjectOrNull$1 extends s implements Function
     }
 
     public final JSONObject invoke(JSONObject it) {
-        q.g(it, "it");
+        q.h(it, "it");
         return this.$this_getObjectOrNull.getJSONObject(this.$key);
     }
 }

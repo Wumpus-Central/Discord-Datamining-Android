@@ -30,12 +30,12 @@ public final class ChatListHighlightItemAtPositionKt$animateBackgroundColor$1 ex
     @Override 
     public   Unit invoke(Animator animator) {
         invoke2(animator);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(Animator it) {
-        q.g(it, "it");
+        q.h(it, "it");
         ChatListHighlightItemAtPositionKt.animateBackgroundColor$anim$default(this.$delay, this.$this_animateBackgroundColor, this.$endColor, this.$startColor, null, 16, null);
     }
 }

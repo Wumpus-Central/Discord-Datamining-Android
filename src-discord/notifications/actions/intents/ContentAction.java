@@ -24,7 +24,7 @@ public final class ContentAction implements NotificationAction {
         
         @Override 
         public final ContentAction createFromParcel(Parcel parcel) {
-            q.g(parcel, "parcel");
+            q.h(parcel, "parcel");
             String readString = parcel.readString();
             int readInt = parcel.readInt();
             LinkedHashMap linkedHashMap = new LinkedHashMap(readInt);
@@ -42,8 +42,8 @@ public final class ContentAction implements NotificationAction {
     }
 
     public ContentAction(String tag, Map<String, String> data) {
-        q.g(tag, "tag");
-        q.g(data, "data");
+        q.h(tag, "tag");
+        q.h(data, "data");
         this.tag = tag;
         this.data = data;
     }
@@ -68,8 +68,8 @@ public final class ContentAction implements NotificationAction {
     }
 
     public final ContentAction copy(String tag, Map<String, String> data) {
-        q.g(tag, "tag");
-        q.g(data, "data");
+        q.h(tag, "tag");
+        q.h(data, "data");
         return new ContentAction(tag, data);
     }
 
@@ -86,7 +86,7 @@ public final class ContentAction implements NotificationAction {
             return false;
         }
         ContentAction contentAction = (ContentAction) obj;
-        return q.b(getTag(), contentAction.getTag()) && q.b(this.data, contentAction.data);
+        return q.c(getTag(), contentAction.getTag()) && q.c(this.data, contentAction.data);
     }
 
     public final Map<String, String> getData() {
@@ -130,7 +130,7 @@ public final class ContentAction implements NotificationAction {
 
     @Override 
     public void writeToParcel(Parcel out, int i10) {
-        q.g(out, "out");
+        q.h(out, "out");
         out.writeString(this.tag);
         Map<String, String> map = this.data;
         out.writeInt(map.size());

@@ -18,7 +18,7 @@ public final class ComponentInflater {
     private final Context context;
 
     public ComponentInflater(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         this.context = context;
     }
 
@@ -28,8 +28,8 @@ public final class ComponentInflater {
 
     public final <T extends Component> ComponentView<T> inflateComponent(T component, ViewGroup root) {
         ComponentView<ActionRowComponent> componentView;
-        q.g(component, "component");
-        q.g(root, "root");
+        q.h(component, "component");
+        q.h(root, "root");
         if (component instanceof ActionRowComponent) {
             componentView = ActionRowComponentView.Companion.inflateComponent(this.context, root);
         } else if (component instanceof ButtonComponent) {

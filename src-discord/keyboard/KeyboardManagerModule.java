@@ -30,7 +30,7 @@ public final class KeyboardManagerModule extends NativeKeyboardManagerSpec {
         }
 
         public final NativeModule create(ReactApplicationContext reactContext) {
-            q.g(reactContext, "reactContext");
+            q.h(reactContext, "reactContext");
             return new KeyboardManagerModule(reactContext);
         }
     }
@@ -38,7 +38,7 @@ public final class KeyboardManagerModule extends NativeKeyboardManagerSpec {
     
     public KeyboardManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     
@@ -66,7 +66,7 @@ public final class KeyboardManagerModule extends NativeKeyboardManagerSpec {
 
     @Override 
     public String getName() {
-        return NAME;
+        return "RTNKeyboardManager";
     }
 
     @Override 

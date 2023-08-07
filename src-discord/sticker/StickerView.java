@@ -22,13 +22,13 @@ public final class StickerView extends APNGImageView {
     
     public StickerView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public StickerView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  StickerView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -36,24 +36,24 @@ public final class StickerView extends APNGImageView {
     }
 
     public final void asApng(String url, Integer num, Integer num2, boolean z10) {
-        q.g(url, "url");
+        q.h(url, "url");
         APNGImageView.inflateApngView$default(this, false, 1, null);
         getApngView().loadImage(new APNGView.Config(url, z10, false, num, num2, "stickers", 4, null));
         APNGImageView.resetViews$default(this, getApngView(), false, 2, null);
     }
 
     public final void asGif(String url, Integer num, Integer num2, boolean z10) {
-        q.g(url, "url");
+        q.h(url, "url");
         inflatePngView();
         PNGStickerView pNGStickerView = this.pngView;
         if (pNGStickerView == null) {
-            q.y("pngView");
+            q.z("pngView");
             pNGStickerView = null;
         }
         pNGStickerView.loadGifImage(url, num, num2, z10);
         PNGStickerView pNGStickerView2 = this.pngView;
         if (pNGStickerView2 == null) {
-            q.y("pngView");
+            q.z("pngView");
             pNGStickerView2 = null;
         }
         APNGImageView.resetViews$default(this, pNGStickerView2, false, 2, null);
@@ -61,12 +61,12 @@ public final class StickerView extends APNGImageView {
 
     public final void asLottie(String url, int i10, int i11, boolean z10, String asset, int i12) {
         RLottieImageView rLottieImageView;
-        q.g(url, "url");
-        q.g(asset, "asset");
+        q.h(url, "url");
+        q.h(asset, "asset");
         inflateLottieView();
         View view = this.lottieView;
         if (view == null) {
-            q.y("lottieView");
+            q.z("lottieView");
             view = null;
         }
         if (view instanceof RLottieImageView) {
@@ -81,17 +81,17 @@ public final class StickerView extends APNGImageView {
     }
 
     public final void asPng(String url, Integer num, Integer num2) {
-        q.g(url, "url");
+        q.h(url, "url");
         inflatePngView();
         PNGStickerView pNGStickerView = this.pngView;
         if (pNGStickerView == null) {
-            q.y("pngView");
+            q.z("pngView");
             pNGStickerView = null;
         }
         pNGStickerView.loadImage(url, num, num2);
         PNGStickerView pNGStickerView2 = this.pngView;
         if (pNGStickerView2 == null) {
-            q.y("pngView");
+            q.z("pngView");
             pNGStickerView2 = null;
         }
         APNGImageView.resetViews$default(this, pNGStickerView2, false, 2, null);
@@ -102,18 +102,18 @@ public final class StickerView extends APNGImageView {
             View view = null;
             if (RLottieUtils.INSTANCE.getInitialized$sticker_release()) {
                 Context context = getContext();
-                q.f(context, "context");
+                q.g(context, "context");
                 RLottieImageView rLottieImageView = new RLottieImageView(context);
                 RLottieImageView.recycle$default(rLottieImageView, false, 1, null);
                 this.lottieView = rLottieImageView;
             } else {
                 Context context2 = getContext();
-                q.f(context2, "context");
+                q.g(context2, "context");
                 this.lottieView = new RLottieStubView(context2);
             }
             View view2 = this.lottieView;
             if (view2 == null) {
-                q.y("lottieView");
+                q.z("lottieView");
             } else {
                 view = view2;
             }
@@ -124,7 +124,7 @@ public final class StickerView extends APNGImageView {
     public final void inflatePngView() {
         if (this.pngView == null) {
             Context context = getContext();
-            q.f(context, "context");
+            q.g(context, "context");
             PNGStickerView pNGStickerView = new PNGStickerView(context);
             this.pngView = pNGStickerView;
             addView(pNGStickerView);
@@ -134,7 +134,7 @@ public final class StickerView extends APNGImageView {
     @Override 
     public void recycleChild(View child) {
         RLottieImageView rLottieImageView;
-        q.g(child, "child");
+        q.h(child, "child");
         super.recycleChild(child);
         if (child instanceof RLottieImageView) {
             rLottieImageView = (RLottieImageView) child;
@@ -149,6 +149,6 @@ public final class StickerView extends APNGImageView {
     
     public StickerView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 }

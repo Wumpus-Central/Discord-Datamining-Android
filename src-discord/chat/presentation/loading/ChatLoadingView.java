@@ -30,7 +30,7 @@ public final class ChatLoadingView extends ConstraintLayout {
     
     public ChatLoadingView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  ChatLoadingView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -39,23 +39,23 @@ public final class ChatLoadingView extends ConstraintLayout {
 
     
     public static final void showButton$lambda$0(Function0 onClick, View view) {
-        q.g(onClick, "$onClick");
+        q.h(onClick, "$onClick");
         onClick.invoke();
     }
 
     public final void showButton(LoadMoreButton button, final Function0<Unit> onClick) {
         int i10;
-        q.g(button, "button");
-        q.g(onClick, "onClick");
+        q.h(button, "button");
+        q.h(onClick, "onClick");
         ProgressBar progressBar = this.binding.progressSpinner;
-        q.f(progressBar, "binding.progressSpinner");
+        q.g(progressBar, "binding.progressSpinner");
         progressBar.setVisibility(8);
         Button button2 = this.binding.button;
-        q.f(button2, "binding.button");
+        q.g(button2, "binding.button");
         button2.setVisibility(0);
         this.binding.button.setText(button.getText());
         Button button3 = this.binding.button;
-        q.f(button3, "binding.button");
+        q.g(button3, "binding.button");
         DiscordFontUtilsKt.setDiscordFont(button3, DiscordFont.PrimaryMedium);
         this.binding.button.setClickable(true);
         this.binding.button.setBackgroundTintList(ColorStateList.valueOf(button.getBackgroundColor()));
@@ -68,7 +68,7 @@ public final class ChatLoadingView extends ConstraintLayout {
         }
         button4.setTextColor(i10);
         Button button5 = this.binding.button;
-        q.f(button5, "binding.button");
+        q.g(button5, "binding.button");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(button5, false, new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {
@@ -79,22 +79,22 @@ public final class ChatLoadingView extends ConstraintLayout {
 
     public final void showProgress() {
         ProgressBar progressBar = this.binding.progressSpinner;
-        q.f(progressBar, "binding.progressSpinner");
+        q.g(progressBar, "binding.progressSpinner");
         progressBar.setVisibility(0);
         Button button = this.binding.button;
-        q.f(button, "binding.button");
+        q.g(button, "binding.button");
         button.setVisibility(8);
         Button button2 = this.binding.button;
-        q.f(button2, "binding.button");
+        q.g(button2, "binding.button");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(button2, false, null, 1, null);
     }
 
     
     public ChatLoadingView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         ChatLoadingViewBinding inflate = ChatLoadingViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         int dimensionPixelSize = context.getResources().getDimensionPixelSize(R.dimen.message_horizontal_spacing);
         setPaddingRelative(dimensionPixelSize, getPaddingTop(), dimensionPixelSize, getPaddingBottom());

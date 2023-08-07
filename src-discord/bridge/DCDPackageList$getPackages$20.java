@@ -17,7 +17,7 @@ import kotlin.jvm.internal.q;
     }
 
     public final FastConnectManagerModule invoke(ReactApplicationContext p02) {
-        q.g(p02, "p0");
+        q.h(p02, "p0");
         return new FastConnectManagerModule(p02);
     }
 }

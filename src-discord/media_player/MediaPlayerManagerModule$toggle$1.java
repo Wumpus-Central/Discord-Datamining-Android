@@ -30,18 +30,18 @@ public final class MediaPlayerManagerModule$toggle$1 extends s implements Functi
     @Override 
     public   Unit invoke(SimpleExoPlayer simpleExoPlayer) {
         invoke2(simpleExoPlayer);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(SimpleExoPlayer player) {
         ReactEvents reactEvents;
         ReactApplicationContext reactApplicationContext;
-        q.g(player, "player");
-        if (this.$play && player.D() == 4) {
+        q.h(player, "player");
+        if (this.$play && player.C() == 4) {
             player.c0(0L);
         }
-        player.y(this.$play);
+        player.w(this.$play);
         reactEvents = this.this$0.reactEvents;
         reactApplicationContext = this.this$0.reactContext;
         reactEvents.emitModuleEvent(reactApplicationContext, new MediaPlayerPause(this.$portal, !this.$play));

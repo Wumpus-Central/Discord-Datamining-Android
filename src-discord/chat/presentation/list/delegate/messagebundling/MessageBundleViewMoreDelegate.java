@@ -27,7 +27,7 @@ public final class MessageBundleViewMoreDelegate extends MessageBundleBaseDelega
     
     public MessageBundleViewMoreDelegate(Function3<? super View, ? super Integer, ? super Integer, Unit> onMeasured) {
         super(onMeasured);
-        q.g(onMeasured, "onMeasured");
+        q.h(onMeasured, "onMeasured");
     }
 
     
@@ -40,9 +40,9 @@ public final class MessageBundleViewMoreDelegate extends MessageBundleBaseDelega
 
     @Override 
     public void onBindViewHolder(View view, MessageBundleItem item, List<? extends MessageBundleItem> items, int i10) {
-        q.g(view, "view");
-        q.g(item, "item");
-        q.g(items, "items");
+        q.h(view, "view");
+        q.h(item, "item");
+        q.h(items, "items");
         if ((view instanceof TextView) && (item instanceof MessageBundleViewMoreItem)) {
             TextView textView = (TextView) view;
             textView.setText(((MessageBundleViewMoreItem) item).getViewMoreText());
@@ -51,19 +51,19 @@ public final class MessageBundleViewMoreDelegate extends MessageBundleBaseDelega
     }
 
     public final void setOnTapViewMoreText(View.OnClickListener onClickListener) {
-        q.g(onClickListener, "<set-?>");
+        q.h(onClickListener, "<set-?>");
         this.onTapViewMoreText = onClickListener;
     }
 
     @Override 
     public MessageBundleViewMoreView createView(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         return new MessageBundleViewMoreView(context, null, 0, 6, null);
     }
 
     
     public boolean isForViewType(List<? extends MessageBundleItem> items, int i10) {
-        q.g(items, "items");
+        q.h(items, "items");
         return items.get(i10) instanceof MessageBundleViewMoreItem;
     }
 }

@@ -20,7 +20,7 @@ public final class ComponentViewKt {
     }
 
     public static final void setEmojiOrHide(SimpleDraweeSpanTextView simpleDraweeSpanTextView, ComponentEmoji componentEmoji) {
-        q.g(simpleDraweeSpanTextView, "<this>");
+        q.h(simpleDraweeSpanTextView, "<this>");
         if (componentEmoji == null) {
             simpleDraweeSpanTextView.setVisibility(8);
             return;
@@ -28,7 +28,7 @@ public final class ComponentViewKt {
         simpleDraweeSpanTextView.setVisibility(0);
         RenderableEmoji renderable = renderable(componentEmoji);
         Context context = simpleDraweeSpanTextView.getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         simpleDraweeSpanTextView.setDraweeSpanStringBuilder(RenderableEmojiKt.renderEmoji$default(renderable, context, SizeUtilsKt.getDpToPx(20), componentEmoji.getAnimated(), 1, null, 32, null));
     }
 }

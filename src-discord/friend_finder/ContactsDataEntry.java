@@ -9,10 +9,10 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import pi.f;
-import si.a2;
-import si.n1;
-import si.v1;
+import ti.f;
+import wi.a2;
+import wi.n1;
+import wi.v1;
 
 @f
 @Metadata(d1 = {"\u0000H\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b$\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 ;2\u00020\u0001:\u0002:;Bk\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0001\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0001\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0001\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\u0010\b\u0001\u0010\b\u001a\n\u0012\u0004\u0012\u00020\n\u0018\u00010\t\u0012\b\b\u0001\u0010\u000b\u001a\u00020\f\u0012\u0010\b\u0001\u0010\r\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\t\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\u0002\u0010\u0010BA\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\f\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00050\t¢\u0006\u0002\u0010\u0011J\t\u0010'\u001a\u00020\u0005HÆ\u0003J\t\u0010(\u001a\u00020\u0005HÆ\u0003J\t\u0010)\u001a\u00020\u0005HÆ\u0003J\u0014\u0010*\u001a\b\u0012\u0004\u0012\u00020\n0\tHÆ\u0003¢\u0006\u0002\u0010\u001cJ\t\u0010+\u001a\u00020\fHÆ\u0003J\u0014\u0010,\u001a\b\u0012\u0004\u0012\u00020\u00050\tHÆ\u0003¢\u0006\u0002\u0010 JV\u0010-\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\u000e\b\u0002\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t2\b\b\u0002\u0010\u000b\u001a\u00020\f2\u000e\b\u0002\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00050\tHÆ\u0001¢\u0006\u0002\u0010.J\u0013\u0010/\u001a\u00020\f2\b\u00100\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00101\u001a\u00020\u0003HÖ\u0001J\t\u00102\u001a\u00020\u0005HÖ\u0001J!\u00103\u001a\u0002042\u0006\u00105\u001a\u00020\u00002\u0006\u00106\u001a\u0002072\u0006\u00108\u001a\u000209HÇ\u0001R\u001c\u0010\u0004\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u0012\u0010\u0013\u001a\u0004\b\u0014\u0010\u0015R\u001c\u0010\u0006\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u0016\u0010\u0013\u001a\u0004\b\u0017\u0010\u0015R\u001c\u0010\u0007\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u0018\u0010\u0013\u001a\u0004\b\u0019\u0010\u0015R$\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t8\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010\u001d\u0012\u0004\b\u001a\u0010\u0013\u001a\u0004\b\u001b\u0010\u001cR$\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00050\t8\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010!\u0012\u0004\b\u001e\u0010\u0013\u001a\u0004\b\u001f\u0010 R$\u0010\u000b\u001a\u00020\f8\u0006@\u0006X\u0087\u000e¢\u0006\u0014\n\u0000\u0012\u0004\b\"\u0010\u0013\u001a\u0004\b#\u0010$\"\u0004\b%\u0010&¨\u0006<"}, d2 = {"Lcom/discord/friend_finder/ContactsDataEntry;", "", "seen1", "", "contactMethod", "", "contactMethodLabel", "contactMethodType", "contactNames", "", "Lcom/discord/friend_finder/ContactName;", "hasImageData", "", "deviceContactIds", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Lcom/discord/friend_finder/ContactName;Z[Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Lcom/discord/friend_finder/ContactName;Z[Ljava/lang/String;)V", "getContactMethod$annotations", "()V", "getContactMethod", "()Ljava/lang/String;", "getContactMethodLabel$annotations", "getContactMethodLabel", "getContactMethodType$annotations", "getContactMethodType", "getContactNames$annotations", "getContactNames", "()[Lcom/discord/friend_finder/ContactName;", "[Lcom/discord/friend_finder/ContactName;", "getDeviceContactIds$annotations", "getDeviceContactIds", "()[Ljava/lang/String;", "[Ljava/lang/String;", "getHasImageData$annotations", "getHasImageData", "()Z", "setHasImageData", "(Z)V", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Lcom/discord/friend_finder/ContactName;Z[Ljava/lang/String;)Lcom/discord/friend_finder/ContactsDataEntry;", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "friend_finder_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -94,15 +94,15 @@ public final class ContactsDataEntry {
     }
 
     public static final void write$Self(ContactsDataEntry self, CompositeEncoder output, SerialDescriptor serialDesc) {
-        q.g(self, "self");
-        q.g(output, "output");
-        q.g(serialDesc, "serialDesc");
+        q.h(self, "self");
+        q.h(output, "output");
+        q.h(serialDesc, "serialDesc");
         output.s(serialDesc, 0, self.contactMethod);
         output.s(serialDesc, 1, self.contactMethodLabel);
         output.s(serialDesc, 2, self.contactMethodType);
-        output.n(serialDesc, 3, new v1(f0.b(ContactName.class), ContactName$$serializer.INSTANCE), self.contactNames);
+        output.h(serialDesc, 3, new v1(f0.b(ContactName.class), ContactName$$serializer.INSTANCE), self.contactNames);
         output.r(serialDesc, 4, self.hasImageData);
-        output.n(serialDesc, 5, new v1(f0.b(String.class), a2.f26246a), self.deviceContactIds);
+        output.h(serialDesc, 5, new v1(f0.b(String.class), a2.f29540a), self.deviceContactIds);
     }
 
     public final String component1() {
@@ -130,11 +130,11 @@ public final class ContactsDataEntry {
     }
 
     public final ContactsDataEntry copy(String contactMethod, String contactMethodLabel, String contactMethodType, ContactName[] contactNames, boolean z10, String[] deviceContactIds) {
-        q.g(contactMethod, "contactMethod");
-        q.g(contactMethodLabel, "contactMethodLabel");
-        q.g(contactMethodType, "contactMethodType");
-        q.g(contactNames, "contactNames");
-        q.g(deviceContactIds, "deviceContactIds");
+        q.h(contactMethod, "contactMethod");
+        q.h(contactMethodLabel, "contactMethodLabel");
+        q.h(contactMethodType, "contactMethodType");
+        q.h(contactNames, "contactNames");
+        q.h(deviceContactIds, "deviceContactIds");
         return new ContactsDataEntry(contactMethod, contactMethodLabel, contactMethodType, contactNames, z10, deviceContactIds);
     }
 
@@ -146,7 +146,7 @@ public final class ContactsDataEntry {
             return false;
         }
         ContactsDataEntry contactsDataEntry = (ContactsDataEntry) obj;
-        return q.b(this.contactMethod, contactsDataEntry.contactMethod) && q.b(this.contactMethodLabel, contactsDataEntry.contactMethodLabel) && q.b(this.contactMethodType, contactsDataEntry.contactMethodType) && q.b(this.contactNames, contactsDataEntry.contactNames) && this.hasImageData == contactsDataEntry.hasImageData && q.b(this.deviceContactIds, contactsDataEntry.deviceContactIds);
+        return q.c(this.contactMethod, contactsDataEntry.contactMethod) && q.c(this.contactMethodLabel, contactsDataEntry.contactMethodLabel) && q.c(this.contactMethodType, contactsDataEntry.contactMethodType) && q.c(this.contactNames, contactsDataEntry.contactNames) && this.hasImageData == contactsDataEntry.hasImageData && q.c(this.deviceContactIds, contactsDataEntry.deviceContactIds);
     }
 
     public final String getContactMethod() {
@@ -200,11 +200,11 @@ public final class ContactsDataEntry {
     }
 
     public ContactsDataEntry(String contactMethod, String contactMethodLabel, String contactMethodType, ContactName[] contactNames, boolean z10, String[] deviceContactIds) {
-        q.g(contactMethod, "contactMethod");
-        q.g(contactMethodLabel, "contactMethodLabel");
-        q.g(contactMethodType, "contactMethodType");
-        q.g(contactNames, "contactNames");
-        q.g(deviceContactIds, "deviceContactIds");
+        q.h(contactMethod, "contactMethod");
+        q.h(contactMethodLabel, "contactMethodLabel");
+        q.h(contactMethodType, "contactMethodType");
+        q.h(contactNames, "contactNames");
+        q.h(deviceContactIds, "deviceContactIds");
         this.contactMethod = contactMethod;
         this.contactMethodLabel = contactMethodLabel;
         this.contactMethodType = contactMethodType;

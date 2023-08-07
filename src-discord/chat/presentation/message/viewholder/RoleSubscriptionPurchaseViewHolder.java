@@ -13,12 +13,12 @@ public final class RoleSubscriptionPurchaseViewHolder extends MessagePartViewHol
     
     public RoleSubscriptionPurchaseViewHolder(RoleSubscriptionPurchaseView roleSubscriptionPurchaseView) {
         super(roleSubscriptionPurchaseView, null);
-        q.g(roleSubscriptionPurchaseView, "roleSubscriptionPurchaseView");
+        q.h(roleSubscriptionPurchaseView, "roleSubscriptionPurchaseView");
         this.roleSubscriptionPurchaseView = roleSubscriptionPurchaseView;
     }
 
     public final void bind(RoleSubscriptionPurchaseAccessory accessory, int i10) {
-        q.g(accessory, "accessory");
+        q.h(accessory, "accessory");
         this.roleSubscriptionPurchaseView.configure(accessory.getAuthorUsername(), accessory.getAuthorAvatar(), i10);
     }
 }

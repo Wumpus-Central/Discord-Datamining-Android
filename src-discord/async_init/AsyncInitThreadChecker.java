@@ -11,7 +11,7 @@ public final class AsyncInitThreadChecker {
     private Thread thread;
 
     public AsyncInitThreadChecker(String name) {
-        q.g(name, "name");
+        q.h(name, "name");
         this.name = name;
     }
 

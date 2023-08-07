@@ -44,8 +44,8 @@ import com.facebook.imagepipeline.request.ImageRequestBuilder;
 import com.facebook.react.uimanager.ViewProps;
 import com.google.android.flexbox.FlexboxLayout;
 import com.google.android.material.textview.MaterialTextView;
-import ff.n;
 import java.util.List;
+import jf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.collections.j;
@@ -73,10 +73,10 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
         }
 
         public final SelectComponentView inflateComponent(Context context, ViewGroup root) {
-            q.g(context, "context");
-            q.g(root, "root");
+            q.h(context, "context");
+            q.h(root, "root");
             SelectComponentView root2 = MessageComponentSelectViewBinding.inflate(LayoutInflater.from(context), root, false).getRoot();
-            q.f(root2, "inflate(\n               …false,\n            ).root");
+            q.g(root2, "inflate(\n               …false,\n            ).root");
             return root2;
         }
     }
@@ -84,13 +84,13 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
     
     public SelectComponentView(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public SelectComponentView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  SelectComponentView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -99,8 +99,8 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
 
     
     public static final void configure$lambda$1(ComponentActionListener componentActionListener, SelectComponent component, View view) {
-        q.g(componentActionListener, "$componentActionListener");
-        q.g(component, "$component");
+        q.h(componentActionListener, "$componentActionListener");
+        q.h(component, "$component");
         componentActionListener.onTapSelectActionComponent(component);
     }
 
@@ -117,9 +117,9 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
             z11.A(getPostProcessor());
         }
         a c10 = c.g().D(z11.a()).build();
-        q.f(c10, "newDraweeControllerBuild…d())\n            .build()");
-        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(getContext().getResources()).w(ScalingUtils.ScaleType.f7409e);
-        q.f(w10, "newInstance(context.reso…ils.ScaleType.FIT_CENTER)");
+        q.g(c10, "newDraweeControllerBuild…d())\n            .build()");
+        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(getContext().getResources()).w(ScalingUtils.ScaleType.f7622e);
+        q.g(w10, "newInstance(context.reso…ils.ScaleType.FIT_CENTER)");
         if (num != null) {
             w10.v(new PorterDuffColorFilter(num.intValue(), PorterDuff.Mode.SRC_IN));
         }
@@ -159,49 +159,49 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
     public SelectComponentView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
         Lazy b10;
-        q.g(context, "context");
+        q.h(context, "context");
         b10 = n.b(SelectComponentView$postProcessor$2.INSTANCE);
         this.postProcessor$delegate = b10;
     }
 
     public void configure(final SelectComponent component, ComponentProvider componentProvider, final ComponentActionListener componentActionListener) {
         Object U;
-        q.g(component, "component");
-        q.g(componentProvider, "componentProvider");
-        q.g(componentActionListener, "componentActionListener");
+        q.h(component, "component");
+        q.h(componentProvider, "componentProvider");
+        q.h(componentActionListener, "componentActionListener");
         MessageComponentSelectViewBinding bind = MessageComponentSelectViewBinding.bind(this);
-        q.f(bind, "bind(this)");
+        q.g(bind, "bind(this)");
         String placeholder = component.getPlaceholder();
         SelectComponentView root = bind.getRoot();
-        q.f(root, "binding.root");
+        q.g(root, "binding.root");
         int i10 = 4;
         RippleUtilsKt.addRipple(root, true, SizeUtilsKt.getDpToPx(4));
         SelectComponentView root2 = bind.getRoot();
-        q.f(root2, "binding.root");
+        q.g(root2, "binding.root");
         ViewBackgroundUtilsKt.setBackgroundRectangle(root2, ThemeManagerKt.getTheme().getBackgroundSecondary(), SizeUtilsKt.getDpToPx(4), Integer.valueOf(ThemeManagerKt.getTheme().getBackgroundTertiary()), SizeUtilsKt.getDpToPx(1));
         MaterialTextView materialTextView = bind.selectComponentSelectionText;
-        q.f(materialTextView, "binding.selectComponentSelectionText");
+        q.g(materialTextView, "binding.selectComponentSelectionText");
         DiscordFontUtilsKt.setDiscordFont(materialTextView, DiscordFont.PrimaryMedium);
         SimpleDraweeView simpleDraweeView = bind.selectComponentChevron;
-        q.f(simpleDraweeView, "binding.selectComponentChevron");
+        q.g(simpleDraweeView, "binding.selectComponentChevron");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.ArrowRight);
         List<SelectItem> selectedItems = component.getSelectedItems();
         boolean z10 = false;
         if (!(!selectedItems.isEmpty())) {
             MaterialTextView materialTextView2 = bind.selectComponentSelectionText;
-            q.f(materialTextView2, "binding.selectComponentSelectionText");
+            q.g(materialTextView2, "binding.selectComponentSelectionText");
             materialTextView2.setVisibility(0);
             FlexboxLayout flexboxLayout = bind.selectComponentSelectionsRoot;
-            q.f(flexboxLayout, "binding.selectComponentSelectionsRoot");
+            q.g(flexboxLayout, "binding.selectComponentSelectionsRoot");
             flexboxLayout.setVisibility(8);
             bind.selectComponentSelectionText.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
             bind.selectComponentSelectionText.setText(placeholder);
         } else if (component.getMaxValues() == 1) {
             MaterialTextView materialTextView3 = bind.selectComponentSelectionText;
-            q.f(materialTextView3, "binding.selectComponentSelectionText");
+            q.g(materialTextView3, "binding.selectComponentSelectionText");
             materialTextView3.setVisibility(0);
             FlexboxLayout flexboxLayout2 = bind.selectComponentSelectionsRoot;
-            q.f(flexboxLayout2, "binding.selectComponentSelectionsRoot");
+            q.g(flexboxLayout2, "binding.selectComponentSelectionsRoot");
             flexboxLayout2.setVisibility(8);
             bind.selectComponentSelectionText.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
             U = r.U(selectedItems);
@@ -210,30 +210,30 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
                 bind.selectComponentSelectionText.setText(selectItem.getLabel());
                 if (selectItem.getEmoji() != null) {
                     SimpleDraweeSpanTextView simpleDraweeSpanTextView = bind.selectComponentSelectionIcon;
-                    q.f(simpleDraweeSpanTextView, "binding.selectComponentSelectionIcon");
+                    q.g(simpleDraweeSpanTextView, "binding.selectComponentSelectionIcon");
                     ComponentViewKt.setEmojiOrHide(simpleDraweeSpanTextView, selectItem.getEmoji());
                 } else {
                     if (selectItem instanceof SearchableSelectItem) {
                         SearchableSelectItem searchableSelectItem = (SearchableSelectItem) selectItem;
                         if (searchableSelectItem.getIconSrc() != null) {
                             SimpleDraweeSpanTextView simpleDraweeSpanTextView2 = bind.selectComponentSelectionIcon;
-                            q.f(simpleDraweeSpanTextView2, "binding.selectComponentSelectionIcon");
+                            q.g(simpleDraweeSpanTextView2, "binding.selectComponentSelectionIcon");
                             setImage(simpleDraweeSpanTextView2, searchableSelectItem.getIconSrc(), searchableSelectItem.getIconColor(), searchableSelectItem.getType() == SelectOptionType.USER.getSerialNumber());
                             SimpleDraweeSpanTextView simpleDraweeSpanTextView3 = bind.selectComponentSelectionIcon;
-                            q.f(simpleDraweeSpanTextView3, "binding.selectComponentSelectionIcon");
+                            q.g(simpleDraweeSpanTextView3, "binding.selectComponentSelectionIcon");
                             simpleDraweeSpanTextView3.setVisibility(0);
                         }
                     }
                     SimpleDraweeSpanTextView simpleDraweeSpanTextView4 = bind.selectComponentSelectionIcon;
-                    q.f(simpleDraweeSpanTextView4, "binding.selectComponentSelectionIcon");
+                    q.g(simpleDraweeSpanTextView4, "binding.selectComponentSelectionIcon");
                     simpleDraweeSpanTextView4.setVisibility(8);
                 }
             }
         } else {
             FlexboxLayout flexboxLayout3 = bind.selectComponentSelectionsRoot;
-            q.f(flexboxLayout3, "binding.selectComponentSelectionsRoot");
+            q.g(flexboxLayout3, "binding.selectComponentSelectionsRoot");
             MaterialTextView materialTextView4 = bind.selectComponentSelectionText;
-            q.f(materialTextView4, "binding.selectComponentSelectionText");
+            q.g(materialTextView4, "binding.selectComponentSelectionText");
             materialTextView4.setVisibility(8);
             flexboxLayout3.setVisibility(0);
             setSelectedOptions(flexboxLayout3, selectedItems);
@@ -241,17 +241,17 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
         boolean z11 = component.getState() == ActionComponentState.DISABLED || component.getDisabled();
         boolean z12 = component.getState() == ActionComponentState.LOADING;
         ProgressBar progressBar = bind.selectComponentLoading;
-        q.f(progressBar, "binding.selectComponentLoading");
+        q.g(progressBar, "binding.selectComponentLoading");
         progressBar.setVisibility(z12 ^ true ? 4 : 0);
         SimpleDraweeView simpleDraweeView2 = bind.selectComponentChevron;
-        q.f(simpleDraweeView2, "binding.selectComponentChevron");
+        q.g(simpleDraweeView2, "binding.selectComponentChevron");
         if (!z12) {
             i10 = 0;
         }
         simpleDraweeView2.setVisibility(i10);
         bind.getRoot().setAlpha(z11 ? 0.3f : 1.0f);
         SelectComponentView root3 = bind.getRoot();
-        q.f(root3, "binding.root");
+        q.g(root3, "binding.root");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(root3, false, new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {

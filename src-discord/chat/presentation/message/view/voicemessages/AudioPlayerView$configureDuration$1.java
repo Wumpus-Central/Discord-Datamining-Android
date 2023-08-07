@@ -28,14 +28,14 @@ public final class AudioPlayerView$configureDuration$1 extends s implements Func
     @Override 
     public   Unit invoke(RenderContext renderContext) {
         invoke2(renderContext);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(RenderContext i18nFormat) {
         String timeRemainingAccessibilityText;
         String timeRemainingAccessibilityText2;
-        q.g(i18nFormat, "$this$i18nFormat");
+        q.h(i18nFormat, "$this$i18nFormat");
         Map<String, String> args = i18nFormat.getArgs();
         timeRemainingAccessibilityText = this.this$0.timeRemainingAccessibilityText(this.$durationSecs);
         args.put("duration", timeRemainingAccessibilityText);

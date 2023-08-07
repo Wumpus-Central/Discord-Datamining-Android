@@ -25,7 +25,7 @@ final class OverlayMenuBubbleDialog$setData$5 extends s implements Function0<Uni
     public final void invoke2() {
         MobileVoiceOverlay.Companion companion = MobileVoiceOverlay.Companion;
         Context context = this.this$0.getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         MobileVoiceOverlay.Companion.startHeadlessTask$default(companion, context, "SelectAudioSource", null, 4, null);
         this.this$0.getOnDialogClosed().invoke(this.this$0);
     }

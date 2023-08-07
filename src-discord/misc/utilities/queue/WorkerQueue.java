@@ -29,15 +29,15 @@ public final class WorkerQueue<T> {
         Object obj;
         Object T;
         Object f02;
-        q.g(onWorkerActive, "onWorkerActive");
+        q.h(onWorkerActive, "onWorkerActive");
         if (z10) {
             T t11 = this.currWorker;
-            if (t11 == null || q.b(t11, t10)) {
+            if (t11 == null || q.c(t11, t10)) {
                 this.currWorker = t10;
             } else {
                 this.nextWorkers.add(t10);
             }
-        } else if (q.b(this.currWorker, t10)) {
+        } else if (q.c(this.currWorker, t10)) {
             if (this.popFromEnd) {
                 f02 = r.f0(this.nextWorkers);
                 obj = (T) f02;
@@ -53,7 +53,7 @@ public final class WorkerQueue<T> {
         } else {
             this.nextWorkers.remove(t10);
         }
-        return q.b(this.currWorker, t10);
+        return q.c(this.currWorker, t10);
     }
 
     public  WorkerQueue(boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {

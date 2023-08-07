@@ -135,7 +135,7 @@ public final class ListOperationsBuilder {
     }
 
     public final void add(ListOperation newOperation) {
-        q.g(newOperation, "newOperation");
+        q.h(newOperation, "newOperation");
         if (this.listOperations.isEmpty()) {
             this.listOperations.add(newOperation);
         } else if (newOperation instanceof ListOperation.Insert) {

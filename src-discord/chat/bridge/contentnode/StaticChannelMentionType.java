@@ -1,7 +1,7 @@
 package com.discord.chat.bridge.contentnode;
 
-import ff.n;
-import ff.p;
+import jf.n;
+import jf.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -10,9 +10,9 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
-import pi.f;
-import ri.e;
-import ri.g;
+import ti.f;
+import vi.e;
+import vi.g;
 
 @f(with = Serializer.class)
 @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u000e\n\u0002\b\n\b\u0087\u0001\u0018\u0000 \u000b2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0002\u000b\fB\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\n¨\u0006\r"}, d2 = {"Lcom/discord/chat/bridge/contentnode/StaticChannelMentionType;", "", "channelId", "", "(Ljava/lang/String;ILjava/lang/String;)V", "getChannelId", "()Ljava/lang/String;", "Home", "Customize", "Browse", "Unknown", "Companion", "Serializer", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -43,7 +43,7 @@ public enum StaticChannelMentionType {
 
         public final StaticChannelMentionType fromValue(String channelId) {
             StaticChannelMentionType staticChannelMentionType;
-            q.g(channelId, "channelId");
+            q.h(channelId, "channelId");
             StaticChannelMentionType[] values = StaticChannelMentionType.values();
             int length = values.length;
             int i10 = 0;
@@ -53,7 +53,7 @@ public enum StaticChannelMentionType {
                     break;
                 }
                 staticChannelMentionType = values[i10];
-                if (q.b(staticChannelMentionType.getChannelId(), channelId)) {
+                if (q.c(staticChannelMentionType.getChannelId(), channelId)) {
                     break;
                 }
                 i10++;
@@ -79,18 +79,18 @@ public enum StaticChannelMentionType {
 
         @Override 
         public SerialDescriptor getDescriptor() {
-            return g.a("StaticChannelMentionType", e.i.f25647a);
+            return g.a("StaticChannelMentionType", e.i.f29047a);
         }
 
         @Override 
         public StaticChannelMentionType deserialize(Decoder decoder) {
-            q.g(decoder, "decoder");
+            q.h(decoder, "decoder");
             return StaticChannelMentionType.Companion.fromValue(decoder.n());
         }
 
         public void serialize(Encoder encoder, StaticChannelMentionType value) {
-            q.g(encoder, "encoder");
-            q.g(value, "value");
+            q.h(encoder, "encoder");
+            q.h(value, "value");
             encoder.F(value.getChannelId());
         }
     }

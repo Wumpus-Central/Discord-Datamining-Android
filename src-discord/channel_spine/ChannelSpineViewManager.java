@@ -16,20 +16,20 @@ public final class ChannelSpineViewManager extends SimpleViewManager<ChannelSpin
 
     @ReactProp(name = "numRows")
     public final void numRows(ChannelSpineView view, int i10) {
-        q.g(view, "view");
+        q.h(view, "view");
         ChannelSpineViewManagerImpl.INSTANCE.numRows(view, i10);
     }
 
     @ReactProp(name = "rowHeight")
     public final void rowHeight(ChannelSpineView view, float f10) {
-        q.g(view, "view");
+        q.h(view, "view");
         ChannelSpineViewManagerImpl.INSTANCE.rowHeight(view, f10);
     }
 
     
     @Override 
     public ChannelSpineView createViewInstance(ThemedReactContext reactContext) {
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         return ChannelSpineViewManagerImpl.INSTANCE.createViewInstance(reactContext);
     }
 }

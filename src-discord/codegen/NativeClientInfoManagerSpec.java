@@ -7,7 +7,14 @@ import com.facebook.react.turbomodule.core.interfaces.TurboModule;
 
 
 public abstract class NativeClientInfoManagerSpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
+    public static final String NAME = "RTNClientInfoManager";
+
     public NativeClientInfoManagerSpec(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);
+    }
+
+    @Override 
+    public String getName() {
+        return "RTNClientInfoManager";
     }
 }

@@ -9,7 +9,7 @@ import kotlin.jvm.internal.q;
 
 public final class DebugRowLoggerKt {
     public static final FileOutputStream outputStream(File file, boolean z10) {
-        q.g(file, "<this>");
+        q.h(file, "<this>");
         return new FileOutputStream(file, z10);
     }
 }

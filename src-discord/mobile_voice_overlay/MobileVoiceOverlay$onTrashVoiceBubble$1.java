@@ -27,26 +27,26 @@ final class MobileVoiceOverlay$onTrashVoiceBubble$1 extends s implements Functio
     @Override 
     public   Unit invoke(OverlayVoiceBubble overlayVoiceBubble) {
         invoke2(overlayVoiceBubble);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(OverlayVoiceBubble voiceBubble) {
-        q.g(voiceBubble, "voiceBubble");
+        q.h(voiceBubble, "voiceBubble");
         voiceBubble.moveToAnchorPoint();
         Animator invoke$lambda$2 = AnimatorInflater.loadAnimator(voiceBubble.getContext(), R.animator.fade_out);
         final MobileVoiceOverlay mobileVoiceOverlay = this.this$0;
         invoke$lambda$2.setTarget(voiceBubble);
-        q.f(invoke$lambda$2, "invoke$lambda$2");
+        q.g(invoke$lambda$2, "invoke$lambda$2");
         invoke$lambda$2.addListener(new Animator.AnimatorListener() { 
             @Override 
             public void onAnimationCancel(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationEnd(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
                 if (ThreadUtilsKt.isOnMainThread()) {
                     MobileVoiceOverlay.invokeJs$default(MobileVoiceOverlay.this, "onLayoutTrashed", null, 2, null);
                     return;
@@ -63,12 +63,12 @@ final class MobileVoiceOverlay$onTrashVoiceBubble$1 extends s implements Functio
 
             @Override 
             public void onAnimationRepeat(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
 
             @Override 
             public void onAnimationStart(Animator animator) {
-                q.g(animator, "animator");
+                q.h(animator, "animator");
             }
         });
         invoke$lambda$2.start();

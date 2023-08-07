@@ -8,7 +8,7 @@ import com.discord.reactevents.ReactEvents;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import ff.x;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
@@ -23,13 +23,13 @@ public final class NearbyHelperModule extends ReactContextBaseJavaModule {
     
     public NearbyHelperModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.reactContext = reactContext;
     }
 
     @ReactMethod
     public final void addListener(String type) {
-        q.g(type, "type");
+        q.h(type, "type");
     }
 
     @Override 
@@ -47,7 +47,7 @@ public final class NearbyHelperModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void publishNearbyMessage(String message) {
-        q.g(message, "message");
+        q.h(message, "message");
         this.manager.setOutboundMessage(message);
     }
 
@@ -57,7 +57,7 @@ public final class NearbyHelperModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void setupNearbyPermission(String apiKey) {
-        q.g(apiKey, "apiKey");
+        q.h(apiKey, "apiKey");
     }
 
     @ReactMethod

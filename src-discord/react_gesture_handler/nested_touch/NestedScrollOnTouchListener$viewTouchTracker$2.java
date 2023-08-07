@@ -25,13 +25,13 @@ public final class NestedScrollOnTouchListener$viewTouchTracker$2 extends s impl
     @Override 
     public   Unit invoke(View view) {
         invoke2(view);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(View view) {
         Function1<? super MotionEvent, Unit> function1;
-        q.g(view, "view");
+        q.h(view, "view");
         Function2<View, Function1<? super MotionEvent, Unit>, Unit> onRemoveNativeEventListener = NestedScrollOnTouchListener.Companion.getOnRemoveNativeEventListener();
         if (onRemoveNativeEventListener != null) {
             function1 = this.this$0.onSupplementalMotionEventReceived;

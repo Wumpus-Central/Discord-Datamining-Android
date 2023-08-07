@@ -2,7 +2,7 @@ package com.discord.chat.presentation.message.view.voicemessages;
 
 import com.discord.chat.presentation.message.view.voicemessages.AudioPlayerManager;
 import com.discord.misc.utilities.coroutines.CoroutineViewUtilsKt;
-import ff.t;
+import jf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -17,7 +17,7 @@ import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
 import kotlinx.coroutines.l;
-import lf.d;
+import pf.d;
 
 
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "mediaViewAttached", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
@@ -46,7 +46,7 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20679a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
         }
 
         @Override 
@@ -69,7 +69,7 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
                         AudioPlayerViewState audioPlayerViewState2;
                         AudioPlayerViewState audioPlayerViewState3;
                         audioPlayerViewState = AudioPlayerView.this.state;
-                        if (!q.b(audioSource, audioPlayerViewState.getAudioSource())) {
+                        if (!q.c(audioSource, audioPlayerViewState.getAudioSource())) {
                             AudioPlayerView audioPlayerView2 = AudioPlayerView.this;
                             audioPlayerViewState2 = audioPlayerView2.state;
                             audioPlayerView2.configurePlayButton(audioPlayerViewState2);
@@ -77,7 +77,7 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
                             audioPlayerViewState3 = audioPlayerView3.state;
                             audioPlayerView3.toggleDurationEmitter(audioPlayerViewState3.shouldEmitDuration$chat_release());
                         }
-                        return Unit.f20679a;
+                        return Unit.f21025a;
                     }
                 };
                 this.label = 1;
@@ -89,7 +89,7 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            return Unit.f20679a;
+            return Unit.f21025a;
         }
     }
 
@@ -103,7 +103,7 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
     @Override 
     public   Unit invoke(Boolean bool) {
         invoke(bool.booleanValue());
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     public final void invoke(boolean z10) {
@@ -121,6 +121,6 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
         }
         AudioPlayerView audioPlayerView2 = this.this$0;
         audioPlayerViewState = audioPlayerView2.state;
-        AudioPlayerView.setState$default(audioPlayerView2, AudioPlayerViewState.m327copyP6IPuNM$default(audioPlayerViewState, null, null, z10, 3, null), false, 2, null);
+        AudioPlayerView.setState$default(audioPlayerView2, AudioPlayerViewState.m328copyP6IPuNM$default(audioPlayerViewState, null, null, z10, 3, null), false, 2, null);
     }
 }

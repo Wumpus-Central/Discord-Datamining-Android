@@ -24,7 +24,7 @@ public final class AudioPlayerView$setUploadProgress$hideOverlayBackground$1 ext
     
     public final void invoke2() {
         LinearLayout linearLayout = this.this$0.getBinding().uploadOverlayBackground;
-        q.f(linearLayout, "binding.uploadOverlayBackground");
+        q.g(linearLayout, "binding.uploadOverlayBackground");
         linearLayout.setVisibility(8);
         this.this$0.uploadFinished = true;
     }

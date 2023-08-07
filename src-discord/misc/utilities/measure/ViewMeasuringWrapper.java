@@ -25,8 +25,8 @@ public final class ViewMeasuringWrapper<T extends View> extends FrameLayout {
     
     public ViewMeasuringWrapper(T view, Function3<? super View, ? super Integer, ? super Integer, Unit> onMeasured) {
         super(view.getContext());
-        q.g(view, "view");
-        q.g(onMeasured, "onMeasured");
+        q.h(view, "view");
+        q.h(onMeasured, "onMeasured");
         this.view = view;
         this.onMeasured = onMeasured;
         addView(view);
@@ -34,7 +34,7 @@ public final class ViewMeasuringWrapper<T extends View> extends FrameLayout {
 
     
     public static final void runnable$lambda$0(ViewMeasuringWrapper this$0) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         ViewMeasureExtensionsKt.measureAndLayout(this$0);
     }
 

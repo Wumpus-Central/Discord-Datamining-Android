@@ -7,6 +7,7 @@ import android.graphics.PorterDuffColorFilter;
 import android.net.Uri;
 import android.text.style.AbsoluteSizeSpan;
 import android.text.style.LeadingMarginSpan;
+import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.R;
 import com.discord.chat.bridge.contentnode.CommandMentionContentNode;
 import com.discord.chat.bridge.contentnode.ContentNode;
@@ -26,6 +27,7 @@ import com.discord.span.utilities.spannable.BulletSpan;
 import com.discord.span.utilities.spannable.OrderedListBulletSpan;
 import com.discord.span.utilities.spannable.VerticalPaddingSpan;
 import com.discord.theme.DiscordTheme;
+import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.controller.a;
 import com.facebook.drawee.drawable.ScalingUtils;
@@ -147,25 +149,25 @@ public final class TextUtilsKt {
     }
 
     public static final void appendImage(DraweeSpanStringBuilder draweeSpanStringBuilder, Context context, RenderContext rc2, String imageUrl, int i10, int i11, Integer num, float f10, float f11) {
-        q.g(draweeSpanStringBuilder, "<this>");
-        q.g(context, "context");
-        q.g(rc2, "rc");
-        q.g(imageUrl, "imageUrl");
+        q.h(draweeSpanStringBuilder, "<this>");
+        q.h(context, "context");
+        q.h(rc2, "rc");
+        q.h(imageUrl, "imageUrl");
         int length = draweeSpanStringBuilder.length();
         draweeSpanStringBuilder.append((char) 8203);
         a c10 = c.g().D(ImageRequestBuilder.s(Uri.parse(ReactAssetUtilsKt.getReactImageUrl(context, imageUrl))).a()).build();
-        q.f(c10, "newDraweeControllerBuild…build())\n        .build()");
-        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f7409e);
+        q.g(c10, "newDraweeControllerBuild…build())\n        .build()");
+        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f7622e);
         com.facebook.drawee.generic.a a10 = com.facebook.drawee.generic.a.a(f10);
         a10.r(f11);
-        a10.u(a.EnumC0112a.BITMAP_ONLY);
+        a10.u(a.EnumC0109a.BITMAP_ONLY);
         w10.K(a10);
         if (rc2.spoilerIsHidden()) {
             w10.v(new PorterDuffColorFilter(rc2.getTheme().getSpoilerHiddenBackground(), PorterDuff.Mode.SRC_IN));
         } else if (num != null) {
             w10.v(new PorterDuffColorFilter(num.intValue(), PorterDuff.Mode.SRC_IN));
         }
-        q.f(w10, "newInstance(context.reso…)\n            }\n        }");
+        q.g(w10, "newInstance(context.reso…)\n            }\n        }");
         draweeSpanStringBuilder.j(context, w10.a(), c10, length, i10, i11, false, 2);
     }
 
@@ -178,16 +180,16 @@ public final class TextUtilsKt {
     }
 
     public static final float getBaselineHeight(Paint.FontMetrics fontMetrics) {
-        q.g(fontMetrics, "fontMetrics");
+        q.h(fontMetrics, "fontMetrics");
         return fontMetrics.descent - fontMetrics.ascent;
     }
 
     private static final float getIconPaddingMultiplier(String str) {
         boolean z10;
-        if (q.b(str, "post")) {
+        if (q.c(str, "post")) {
             z10 = true;
         } else {
-            z10 = q.b(str, "forum");
+            z10 = q.c(str, "forum");
         }
         if (z10) {
             return 0.2f;
@@ -228,28 +230,32 @@ public final class TextUtilsKt {
     }
 
     public static final DraweeSpanStringBuilder toSpannable(StructurableText structurableText, Context context, String containerId, boolean z10, boolean z11, boolean z12, Function1<? super LinkContentNode, Unit> onLinkClicked, Function1<? super LinkContentNode, Unit> onLongTapLink, Function3<? super String, ? super String, ? super String, Unit> onTapChannel, Function4<? super String, ? super String, ? super String, ? super String, Unit> onLongPressChannel, Function2<? super String, ? super String, Unit> onTapMention, Function1<? super CommandMentionContentNode, Unit> onTapCommand, Function1<? super CommandMentionContentNode, Unit> onLongPressCommand, Function1<? super String, Unit> onTapTimestamp, Function1<? super EmojiContentNode, Unit> onTapEmoji, Function1<? super LinkContentNode, LinkStyle> linkStyle, Function0<Unit> onTapSpoiler, boolean z13, DiscordTheme theme, float f10) {
-        q.g(structurableText, "<this>");
-        q.g(context, "context");
-        q.g(containerId, "containerId");
-        q.g(onLinkClicked, "onLinkClicked");
-        q.g(onLongTapLink, "onLongTapLink");
-        q.g(onTapChannel, "onTapChannel");
-        q.g(onLongPressChannel, "onLongPressChannel");
-        q.g(onTapMention, "onTapMention");
-        q.g(onTapCommand, "onTapCommand");
-        q.g(onLongPressCommand, "onLongPressCommand");
-        q.g(onTapTimestamp, "onTapTimestamp");
-        q.g(onTapEmoji, "onTapEmoji");
-        q.g(linkStyle, "linkStyle");
-        q.g(onTapSpoiler, "onTapSpoiler");
-        q.g(theme, "theme");
+        q.h(structurableText, "<this>");
+        q.h(context, "context");
+        q.h(containerId, "containerId");
+        q.h(onLinkClicked, "onLinkClicked");
+        q.h(onLongTapLink, "onLongTapLink");
+        q.h(onTapChannel, "onTapChannel");
+        q.h(onLongPressChannel, "onLongPressChannel");
+        q.h(onTapMention, "onTapMention");
+        q.h(onTapCommand, "onTapCommand");
+        q.h(onLongPressCommand, "onLongPressCommand");
+        q.h(onTapTimestamp, "onTapTimestamp");
+        q.h(onTapEmoji, "onTapEmoji");
+        q.h(linkStyle, "linkStyle");
+        q.h(onTapSpoiler, "onTapSpoiler");
+        q.h(theme, "theme");
         if (structurableText instanceof AnnotatedStructurableText) {
             return toSpannable$default(((AnnotatedStructurableText) structurableText).getContent(), new RenderContext(context, containerId, onLinkClicked, onLongTapLink, linkStyle, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, z10, z11, z12, z13, null, 0, null, null, null, theme, f10, null, 20840448, null), null, 2, null);
         }
         if (structurableText instanceof PrimitiveStructurableText) {
             return new DraweeSpanStringBuilder(((PrimitiveStructurableText) structurableText).getContent());
         }
-        throw new ff.q();
+        throw new jf.q();
+    }
+
+    public static  DraweeSpanStringBuilder toSpannable$default(StructurableText structurableText, Context context, String str, boolean z10, boolean z11, boolean z12, Function1 function1, Function1 function12, Function3 function3, Function4 function4, Function2 function2, Function1 function13, Function1 function14, Function1 function15, Function1 function16, Function1 function17, Function0 function0, boolean z13, DiscordTheme discordTheme, float f10, int i10, Object obj) {
+        return toSpannable(structurableText, context, str, z10, z11, z12, (i10 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : function1, (i10 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : function12, (i10 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : function3, (i10 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : function4, (i10 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : function2, (i10 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : function13, (i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : function14, (i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : function15, (i10 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : function16, (i10 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : function17, (32768 & i10) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : function0, (65536 & i10) != 0 ? false : z13, (131072 & i10) != 0 ? ThemeManagerKt.getTheme() : discordTheme, (i10 & 262144) != 0 ? -1.0f : f10);
     }
 
     

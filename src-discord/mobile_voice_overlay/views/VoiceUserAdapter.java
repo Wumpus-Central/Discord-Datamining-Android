@@ -30,21 +30,21 @@ public final class VoiceUserAdapter extends RecyclerView.Adapter<VoiceUserViewHo
 
     @SuppressLint({"NotifyDataSetChanged"})
     public final void setData(List<MobileVoiceOverlayDataUser> data) {
-        q.g(data, "data");
+        q.h(data, "data");
         this.data = data;
         notifyDataSetChanged();
     }
 
     public void onBindViewHolder(VoiceUserViewHolder holder, int i10) {
-        q.g(holder, "holder");
+        q.h(holder, "holder");
         holder.bind(this.data.get(i10));
     }
 
     @Override 
     public VoiceUserViewHolder onCreateViewHolder(ViewGroup parent, int i10) {
-        q.g(parent, "parent");
+        q.h(parent, "parent");
         Context context = parent.getContext();
-        q.f(context, "parent.context");
+        q.g(context, "parent.context");
         return new VoiceUserViewHolder(new OverlayVoiceBubble(context));
     }
 }

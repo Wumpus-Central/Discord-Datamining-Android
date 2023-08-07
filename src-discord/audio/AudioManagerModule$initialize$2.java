@@ -25,14 +25,14 @@ final class AudioManagerModule$initialize$2 extends s implements Function1<Disco
     @Override 
     public   Unit invoke(DiscordAudioManager.DeviceTypes deviceTypes) {
         invoke2(deviceTypes);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(DiscordAudioManager.DeviceTypes device) {
         ReactEvents reactEvents;
         ReactApplicationContext reactApplicationContext;
-        q.g(device, "device");
+        q.h(device, "device");
         reactEvents = this.this$0.reactEvents;
         reactApplicationContext = this.this$0.reactContext;
         reactEvents.emitModuleEvent(reactApplicationContext, new AudioManagerAudioDeviceChanged(device));

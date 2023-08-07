@@ -11,12 +11,12 @@ import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
-import pi.n;
-import qi.a;
-import si.a2;
-import si.f0;
+import ti.n;
+import ui.a;
+import wi.a2;
+import wi.f0;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/reactevents/VoiceMessagePlaybackFailedData.$serializer", "Lsi/f0;", "Lcom/discord/chat/reactevents/VoiceMessagePlaybackFailedData;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/reactevents/VoiceMessagePlaybackFailedData.$serializer", "Lwi/f0;", "Lcom/discord/chat/reactevents/VoiceMessagePlaybackFailedData;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
 
 public final class VoiceMessagePlaybackFailedData$$serializer implements f0<VoiceMessagePlaybackFailedData> {
     public static final VoiceMessagePlaybackFailedData$$serializer INSTANCE;
@@ -36,7 +36,7 @@ public final class VoiceMessagePlaybackFailedData$$serializer implements f0<Voic
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, a.u(a2.f26246a)};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, a.u(a2.f29540a)};
     }
 
     @Override 
@@ -44,13 +44,13 @@ public final class VoiceMessagePlaybackFailedData$$serializer implements f0<Voic
         int i10;
         Object obj;
         Object obj2;
-        q.g(decoder, "decoder");
+        q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
         c c10 = decoder.c(descriptor2);
         String str = null;
         if (c10.y()) {
             obj2 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
-            obj = c10.v(descriptor2, 1, a2.f26246a, null);
+            obj = c10.v(descriptor2, 1, a2.f29540a, null);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -65,7 +65,7 @@ public final class VoiceMessagePlaybackFailedData$$serializer implements f0<Voic
                     obj2 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, obj2);
                     i10 |= 1;
                 } else if (x10 == 1) {
-                    obj3 = c10.v(descriptor2, 1, a2.f26246a, obj3);
+                    obj3 = c10.v(descriptor2, 1, a2.f29540a, obj3);
                     i10 |= 2;
                 } else {
                     throw new n(x10);
@@ -76,7 +76,7 @@ public final class VoiceMessagePlaybackFailedData$$serializer implements f0<Voic
         c10.b(descriptor2);
         MessageId messageId = (MessageId) obj2;
         if (messageId != null) {
-            str = messageId.m600unboximpl();
+            str = messageId.m601unboximpl();
         }
         return new VoiceMessagePlaybackFailedData(i10, str, (String) obj, null, null);
     }
@@ -87,8 +87,8 @@ public final class VoiceMessagePlaybackFailedData$$serializer implements f0<Voic
     }
 
     public void serialize(Encoder encoder, VoiceMessagePlaybackFailedData value) {
-        q.g(encoder, "encoder");
-        q.g(value, "value");
+        q.h(encoder, "encoder");
+        q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
         CompositeEncoder c10 = encoder.c(descriptor2);
         VoiceMessagePlaybackFailedData.write$Self(value, c10, descriptor2);

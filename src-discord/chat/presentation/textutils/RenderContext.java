@@ -56,22 +56,22 @@ public final class RenderContext {
 
     
     public RenderContext(Context context, String containerId, Function1<? super LinkContentNode, Unit> onTapLink, Function1<? super LinkContentNode, Unit> onLongTapLink, Function1<? super LinkContentNode, LinkStyle> linkStyle, Function3<? super String, ? super String, ? super String, Unit> onTapChannel, Function4<? super String, ? super String, ? super String, ? super String, Unit> onLongPressChannel, Function2<? super String, ? super String, Unit> onTapMention, Function1<? super CommandMentionContentNode, Unit> onTapCommand, Function1<? super CommandMentionContentNode, Unit> onLongPressCommand, Function0<Unit> onTapSpoiler, Function1<? super String, Unit> onTapTimestamp, Function1<? super EmojiContentNode, Unit> onTapEmoji, boolean z10, boolean z11, boolean z12, boolean z13, SpoilerState spoilerState, int i10, Long l10, Long l11, Insets insets, DiscordTheme theme, float f10, Integer num) {
-        q.g(context, "context");
-        q.g(containerId, "containerId");
-        q.g(onTapLink, "onTapLink");
-        q.g(onLongTapLink, "onLongTapLink");
-        q.g(linkStyle, "linkStyle");
-        q.g(onTapChannel, "onTapChannel");
-        q.g(onLongPressChannel, "onLongPressChannel");
-        q.g(onTapMention, "onTapMention");
-        q.g(onTapCommand, "onTapCommand");
-        q.g(onLongPressCommand, "onLongPressCommand");
-        q.g(onTapSpoiler, "onTapSpoiler");
-        q.g(onTapTimestamp, "onTapTimestamp");
-        q.g(onTapEmoji, "onTapEmoji");
-        q.g(spoilerState, "spoilerState");
-        q.g(insets, "insets");
-        q.g(theme, "theme");
+        q.h(context, "context");
+        q.h(containerId, "containerId");
+        q.h(onTapLink, "onTapLink");
+        q.h(onLongTapLink, "onLongTapLink");
+        q.h(linkStyle, "linkStyle");
+        q.h(onTapChannel, "onTapChannel");
+        q.h(onLongPressChannel, "onLongPressChannel");
+        q.h(onTapMention, "onTapMention");
+        q.h(onTapCommand, "onTapCommand");
+        q.h(onLongPressCommand, "onLongPressCommand");
+        q.h(onTapSpoiler, "onTapSpoiler");
+        q.h(onTapTimestamp, "onTapTimestamp");
+        q.h(onTapEmoji, "onTapEmoji");
+        q.h(spoilerState, "spoilerState");
+        q.h(insets, "insets");
+        q.h(theme, "theme");
         this.context = context;
         this.containerId = containerId;
         this.onTapLink = onTapLink;
@@ -204,22 +204,22 @@ public final class RenderContext {
     }
 
     public final RenderContext copy(Context context, String containerId, Function1<? super LinkContentNode, Unit> onTapLink, Function1<? super LinkContentNode, Unit> onLongTapLink, Function1<? super LinkContentNode, LinkStyle> linkStyle, Function3<? super String, ? super String, ? super String, Unit> onTapChannel, Function4<? super String, ? super String, ? super String, ? super String, Unit> onLongPressChannel, Function2<? super String, ? super String, Unit> onTapMention, Function1<? super CommandMentionContentNode, Unit> onTapCommand, Function1<? super CommandMentionContentNode, Unit> onLongPressCommand, Function0<Unit> onTapSpoiler, Function1<? super String, Unit> onTapTimestamp, Function1<? super EmojiContentNode, Unit> onTapEmoji, boolean z10, boolean z11, boolean z12, boolean z13, SpoilerState spoilerState, int i10, Long l10, Long l11, Insets insets, DiscordTheme theme, float f10, Integer num) {
-        q.g(context, "context");
-        q.g(containerId, "containerId");
-        q.g(onTapLink, "onTapLink");
-        q.g(onLongTapLink, "onLongTapLink");
-        q.g(linkStyle, "linkStyle");
-        q.g(onTapChannel, "onTapChannel");
-        q.g(onLongPressChannel, "onLongPressChannel");
-        q.g(onTapMention, "onTapMention");
-        q.g(onTapCommand, "onTapCommand");
-        q.g(onLongPressCommand, "onLongPressCommand");
-        q.g(onTapSpoiler, "onTapSpoiler");
-        q.g(onTapTimestamp, "onTapTimestamp");
-        q.g(onTapEmoji, "onTapEmoji");
-        q.g(spoilerState, "spoilerState");
-        q.g(insets, "insets");
-        q.g(theme, "theme");
+        q.h(context, "context");
+        q.h(containerId, "containerId");
+        q.h(onTapLink, "onTapLink");
+        q.h(onLongTapLink, "onLongTapLink");
+        q.h(linkStyle, "linkStyle");
+        q.h(onTapChannel, "onTapChannel");
+        q.h(onLongPressChannel, "onLongPressChannel");
+        q.h(onTapMention, "onTapMention");
+        q.h(onTapCommand, "onTapCommand");
+        q.h(onLongPressCommand, "onLongPressCommand");
+        q.h(onTapSpoiler, "onTapSpoiler");
+        q.h(onTapTimestamp, "onTapTimestamp");
+        q.h(onTapEmoji, "onTapEmoji");
+        q.h(spoilerState, "spoilerState");
+        q.h(insets, "insets");
+        q.h(theme, "theme");
         return new RenderContext(context, containerId, onTapLink, onLongTapLink, linkStyle, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, z10, z11, z12, z13, spoilerState, i10, l10, l11, insets, theme, f10, num);
     }
 
@@ -231,7 +231,7 @@ public final class RenderContext {
             return false;
         }
         RenderContext renderContext = (RenderContext) obj;
-        return q.b(this.context, renderContext.context) && q.b(this.containerId, renderContext.containerId) && q.b(this.onTapLink, renderContext.onTapLink) && q.b(this.onLongTapLink, renderContext.onLongTapLink) && q.b(this.linkStyle, renderContext.linkStyle) && q.b(this.onTapChannel, renderContext.onTapChannel) && q.b(this.onLongPressChannel, renderContext.onLongPressChannel) && q.b(this.onTapMention, renderContext.onTapMention) && q.b(this.onTapCommand, renderContext.onTapCommand) && q.b(this.onLongPressCommand, renderContext.onLongPressCommand) && q.b(this.onTapSpoiler, renderContext.onTapSpoiler) && q.b(this.onTapTimestamp, renderContext.onTapTimestamp) && q.b(this.onTapEmoji, renderContext.onTapEmoji) && this.animateEmoji == renderContext.animateEmoji && this.shouldShowRoleDot == renderContext.shouldShowRoleDot && this.shouldShowRoleOnName == renderContext.shouldShowRoleOnName && this.singleLine == renderContext.singleLine && this.spoilerState == renderContext.spoilerState && this.listNestedLevel == renderContext.listNestedLevel && q.b(this.listOrderedIndex, renderContext.listOrderedIndex) && q.b(this.listLargestOrderedIndex, renderContext.listLargestOrderedIndex) && q.b(this.insets, renderContext.insets) && q.b(this.theme, renderContext.theme) && Float.compare(this.baselineHeight, renderContext.baselineHeight) == 0 && q.b(this.emojiSizeOverride, renderContext.emojiSizeOverride);
+        return q.c(this.context, renderContext.context) && q.c(this.containerId, renderContext.containerId) && q.c(this.onTapLink, renderContext.onTapLink) && q.c(this.onLongTapLink, renderContext.onLongTapLink) && q.c(this.linkStyle, renderContext.linkStyle) && q.c(this.onTapChannel, renderContext.onTapChannel) && q.c(this.onLongPressChannel, renderContext.onLongPressChannel) && q.c(this.onTapMention, renderContext.onTapMention) && q.c(this.onTapCommand, renderContext.onTapCommand) && q.c(this.onLongPressCommand, renderContext.onLongPressCommand) && q.c(this.onTapSpoiler, renderContext.onTapSpoiler) && q.c(this.onTapTimestamp, renderContext.onTapTimestamp) && q.c(this.onTapEmoji, renderContext.onTapEmoji) && this.animateEmoji == renderContext.animateEmoji && this.shouldShowRoleDot == renderContext.shouldShowRoleDot && this.shouldShowRoleOnName == renderContext.shouldShowRoleOnName && this.singleLine == renderContext.singleLine && this.spoilerState == renderContext.spoilerState && this.listNestedLevel == renderContext.listNestedLevel && q.c(this.listOrderedIndex, renderContext.listOrderedIndex) && q.c(this.listLargestOrderedIndex, renderContext.listLargestOrderedIndex) && q.c(this.insets, renderContext.insets) && q.c(this.theme, renderContext.theme) && Float.compare(this.baselineHeight, renderContext.baselineHeight) == 0 && q.c(this.emojiSizeOverride, renderContext.emojiSizeOverride);
     }
 
     public final boolean getAnimateEmoji() {
@@ -420,7 +420,7 @@ public final class RenderContext {
     }
 
     public final RenderContext updateInsets(Function1<? super Insets, Insets> update) {
-        q.g(update, "update");
+        q.h(update, "update");
         return copy$default(this, null, null, null, null, null, null, null, null, null, null, null, null, null, false, false, false, false, null, 0, null, null, update.invoke(this.insets), null, 0.0f, null, 31457279, null);
     }
 

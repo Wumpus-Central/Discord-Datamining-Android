@@ -39,7 +39,7 @@ public final class EmbeddedActivityMessageView extends ConstraintLayout {
     
     public EmbeddedActivityMessageView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  EmbeddedActivityMessageView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -48,14 +48,14 @@ public final class EmbeddedActivityMessageView extends ConstraintLayout {
 
     public final void setItem(EmbeddedActivityChatListItem item, View.OnClickListener onJoinButtonClickListener, View.OnClickListener onDismissClickListener) {
         int s10;
-        q.g(item, "item");
-        q.g(onJoinButtonClickListener, "onJoinButtonClickListener");
-        q.g(onDismissClickListener, "onDismissClickListener");
+        q.h(item, "item");
+        q.h(onJoinButtonClickListener, "onJoinButtonClickListener");
+        q.h(onDismissClickListener, "onDismissClickListener");
         this.binding.message.setText(item.getContent());
         this.binding.joinButton.setText(item.getButtonText());
         this.binding.joinButton.setOnClickButtonListener(onJoinButtonClickListener);
         SimpleDraweeView simpleDraweeView = this.binding.dismiss;
-        q.f(simpleDraweeView, "binding.dismiss");
+        q.g(simpleDraweeView, "binding.dismiss");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView, false, onDismissClickListener, 1, null);
         this.binding.dismiss.setContentDescription(item.getDismissButtonAccessibilityLabel());
         OverlappingCirclesView overlappingCirclesView = this.binding.participants;
@@ -71,25 +71,25 @@ public final class EmbeddedActivityMessageView extends ConstraintLayout {
     
     public EmbeddedActivityMessageView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         EmbeddedActivityMessageViewBinding inflate = EmbeddedActivityMessageViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         ConstraintLayout constraintLayout = inflate.card;
-        q.f(constraintLayout, "binding.card");
+        q.g(constraintLayout, "binding.card");
         AddSystemMessageCardStyleKt.addSystemMessageCardStyle(constraintLayout);
         SimpleDraweeView _init_$lambda$0 = inflate.icon;
-        q.f(_init_$lambda$0, "_init_$lambda$0");
+        q.g(_init_$lambda$0, "_init_$lambda$0");
         ReactAssetUtilsKt.setReactAsset(_init_$lambda$0, ReactAsset.Activity);
         ColorUtilsKt.setTintColor(_init_$lambda$0, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
         TextView _init_$lambda$1 = inflate.message;
-        q.f(_init_$lambda$1, "_init_$lambda$1");
+        q.g(_init_$lambda$1, "_init_$lambda$1");
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$1, 16.0f);
         DiscordFont discordFont = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$1, discordFont);
         _init_$lambda$1.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
         SimpleDraweeView _init_$lambda$2 = inflate.dismiss;
-        q.f(_init_$lambda$2, "_init_$lambda$2");
+        q.g(_init_$lambda$2, "_init_$lambda$2");
         ReactAssetUtilsKt.setReactAsset(_init_$lambda$2, ReactAsset.Close);
         ColorUtilsKt.setTintColor(_init_$lambda$2, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
         I18nUtilsKt.i18nContentDescription$default(_init_$lambda$2, I18nMessage.DISMISS, (Function1) null, 2, (Object) null);

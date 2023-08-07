@@ -11,7 +11,7 @@ public final class ErrorContentNode extends ContentNode {
     
     public ErrorContentNode(Throwable throwable) {
         super(null);
-        q.g(throwable, "throwable");
+        q.h(throwable, "throwable");
         this.throwable = throwable;
     }
 
@@ -27,7 +27,7 @@ public final class ErrorContentNode extends ContentNode {
     }
 
     public final ErrorContentNode copy(Throwable throwable) {
-        q.g(throwable, "throwable");
+        q.h(throwable, "throwable");
         return new ErrorContentNode(throwable);
     }
 
@@ -35,7 +35,7 @@ public final class ErrorContentNode extends ContentNode {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof ErrorContentNode) && q.b(this.throwable, ((ErrorContentNode) obj).throwable);
+        return (obj instanceof ErrorContentNode) && q.c(this.throwable, ((ErrorContentNode) obj).throwable);
     }
 
     public final Throwable getThrowable() {

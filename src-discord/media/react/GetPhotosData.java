@@ -4,10 +4,10 @@ import com.discord.media.utils.ContentResolverMedia;
 import com.discord.react.utilities.NativeArrayExtensionsKt;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.facebook.react.bridge.WritableNativeMap;
-import ff.x;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.k;
@@ -33,7 +33,7 @@ public final class GetPhotosData {
     }
 
     public GetPhotosData(List<ContentResolverMedia> edges) {
-        q.g(edges, "edges");
+        q.h(edges, "edges");
         this.edges = edges;
     }
 

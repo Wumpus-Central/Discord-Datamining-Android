@@ -45,7 +45,7 @@ public final class AddReactionView extends LinearLayout {
     
     public AddReactionView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  AddReactionView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -60,7 +60,7 @@ public final class AddReactionView extends LinearLayout {
         Integer num;
         Integer reactionBackgroundColor;
         Integer reactionTextColor;
-        q.g(addReactionLabel, "addReactionLabel");
+        q.h(addReactionLabel, "addReactionLabel");
         TextView textView = this.binding.addReactionText;
         textView.setText(addReactionLabel);
         if (addReactionLabel.length() == 0) {
@@ -85,7 +85,7 @@ public final class AddReactionView extends LinearLayout {
         } else {
             reactAsset = ReactAsset.AddReaction;
         }
-        q.f(it, "it");
+        q.g(it, "it");
         ReactAssetUtilsKt.setReactAsset(it, reactAsset);
         if (reactionsTheme == null || (reactionBackgroundColor = reactionsTheme.getReactionBackgroundColor()) == null) {
             i11 = ThemeManagerKt.getTheme().getBackgroundSecondary();
@@ -104,9 +104,9 @@ public final class AddReactionView extends LinearLayout {
     
     public AddReactionView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         AddReactionViewBinding inflate = AddReactionViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         setOrientation(0);
         setGravity(16);
@@ -116,13 +116,13 @@ public final class AddReactionView extends LinearLayout {
         setPadding(horiz_padding, i10, companion.getHORIZ_PADDING(), i10);
         ViewBackgroundUtilsKt.setBackgroundRectangle$default(this, ThemeManagerKt.getTheme().getBackgroundSecondary(), companion.getCORNER_RADIUS(), null, 0, 12, null);
         TextView it = inflate.addReactionText;
-        q.f(it, "it");
+        q.g(it, "it");
         DiscordFontUtilsKt.setDiscordFont(it, DiscordFont.PrimarySemibold);
         SetTextSizeSpKt.setTextSizeSp(it, 14.0f, 14.0f);
         it.setTextColor(ThemeManagerKt.getTheme().getTextMuted());
         it.setPadding(companion.getHORIZ_PADDING(), 0, companion.getHORIZ_PADDING(), 0);
         SimpleDraweeView it2 = inflate.addReactionImage;
-        q.f(it2, "it");
+        q.g(it2, "it");
         ReactAssetUtilsKt.setReactAsset(it2, ReactAsset.AddReaction);
         ColorUtilsKt.setTintColor(it2, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
         it2.setScaleType(ImageView.ScaleType.FIT_CENTER);

@@ -14,16 +14,16 @@ public final class AttachedViewCoroutineScope implements CoroutineScope {
     private final  CoroutineScope $$delegate_0 = MainImmediateScopeKt.MainImmediateScope();
 
     public AttachedViewCoroutineScope(View view) {
-        q.g(view, "view");
+        q.h(view, "view");
         view.addOnAttachStateChangeListener(new View.OnAttachStateChangeListener() { 
             @Override 
             public void onViewAttachedToWindow(View view2) {
-                q.g(view2, "view");
+                q.h(view2, "view");
             }
 
             @Override 
             public void onViewDetachedFromWindow(View view2) {
-                q.g(view2, "view");
+                q.h(view2, "view");
                 AttachedViewCoroutineScope attachedViewCoroutineScope = AttachedViewCoroutineScope.this;
                 AttachedViewCoroutineScope.cancelAllWork$default(attachedViewCoroutineScope, view2 + " detached from window", null, 2, null);
             }
@@ -38,7 +38,7 @@ public final class AttachedViewCoroutineScope implements CoroutineScope {
     }
 
     public final void cancelAllWork(String message, Throwable th2) {
-        q.g(message, "message");
+        q.h(message, "message");
         x1.e(getCoroutineContext(), j1.a(message, th2));
     }
 

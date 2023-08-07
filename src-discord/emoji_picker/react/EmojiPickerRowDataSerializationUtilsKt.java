@@ -5,9 +5,9 @@ import com.discord.react.utilities.NativeArrayExtensionsKt;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
-import gf.p;
 import java.util.ArrayList;
 import java.util.Iterator;
+import kf.p;
 import kotlin.Metadata;
 import kotlin.collections.k;
 import kotlin.jvm.internal.q;
@@ -19,7 +19,7 @@ public final class EmojiPickerRowDataSerializationUtilsKt {
     public static final EmojiPickerRow deserializeEmojiPickerRowData(ReadableMap data) {
         int s10;
         EmojiPickerRow.Emoji emoji;
-        q.g(data, "data");
+        q.h(data, "data");
         int i10 = data.getInt("rowContentWidth");
         int i11 = data.getInt("rowContentPaddingVertical");
         int i12 = data.getInt("itemSize");
@@ -33,7 +33,7 @@ public final class EmojiPickerRowDataSerializationUtilsKt {
             if (!nonNullArray.isNull(nextInt)) {
                 ReadableMap emojiRaw = nonNullArray.getMap(nextInt);
                 String string = emojiRaw.getString("emojiId");
-                q.f(emojiRaw, "emojiRaw");
+                q.g(emojiRaw, "emojiRaw");
                 emoji = new EmojiPickerRow.Emoji(string, NativeMapExtensionsKt.getNonNullString(emojiRaw, "emojiName"), NativeMapExtensionsKt.getNonNullString(emojiRaw, "emojiUrl"), NativeMapExtensionsKt.getBoolean(emojiRaw, "disabled", false));
             } else {
                 emoji = null;

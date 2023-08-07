@@ -45,8 +45,8 @@ public final class SystemMessageItem extends ChatListItem {
     }
 
     public final SystemMessageItem copy(Message message, MessageContext messageContext, BackgroundHighlight backgroundHighlight) {
-        q.g(message, "message");
-        q.g(messageContext, "messageContext");
+        q.h(message, "message");
+        q.h(messageContext, "messageContext");
         return new SystemMessageItem(message, messageContext, backgroundHighlight);
     }
 
@@ -58,7 +58,7 @@ public final class SystemMessageItem extends ChatListItem {
             return false;
         }
         SystemMessageItem systemMessageItem = (SystemMessageItem) obj;
-        return q.b(this.message, systemMessageItem.message) && q.b(this.messageContext, systemMessageItem.messageContext) && q.b(this.backgroundHighlight, systemMessageItem.backgroundHighlight);
+        return q.c(this.message, systemMessageItem.message) && q.c(this.messageContext, systemMessageItem.messageContext) && q.c(this.backgroundHighlight, systemMessageItem.backgroundHighlight);
     }
 
     public final BackgroundHighlight getBackgroundHighlight() {
@@ -88,9 +88,9 @@ public final class SystemMessageItem extends ChatListItem {
 
     
     public SystemMessageItem(Message message, MessageContext messageContext, BackgroundHighlight backgroundHighlight) {
-        super(message.m16getId3Eiw7ao(), null);
-        q.g(message, "message");
-        q.g(messageContext, "messageContext");
+        super(message.m17getId3Eiw7ao(), null);
+        q.h(message, "message");
+        q.h(messageContext, "messageContext");
         this.message = message;
         this.messageContext = messageContext;
         this.backgroundHighlight = backgroundHighlight;

@@ -15,12 +15,12 @@ public final class TimestampViewHolder extends MessagePartViewHolder {
     
     public TimestampViewHolder(TextView timestampView) {
         super(timestampView, null);
-        q.g(timestampView, "timestampView");
+        q.h(timestampView, "timestampView");
         this.timestampView = timestampView;
     }
 
     public final void bind(TimestampMessageAccessory timestampItem) {
-        q.g(timestampItem, "timestampItem");
+        q.h(timestampItem, "timestampItem");
         this.timestampView.setText(timestampItem.getTimestamp());
         SetTextSizeSpKt.setTextSizeSp(this.timestampView, 12.0f);
         this.timestampView.setTextColor(timestampItem.getTextColor());

@@ -33,13 +33,13 @@ public final class QRScanner extends FrameLayout implements d, h {
     
     public QRScanner(Context context) {
         this(context, null, 0, 6, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     
     public QRScanner(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  QRScanner(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -48,7 +48,7 @@ public final class QRScanner extends FrameLayout implements d, h {
 
     
     public static final void runnable$lambda$0(QRScanner this$0) {
-        q.g(this$0, "this$0");
+        q.h(this$0, "this$0");
         ViewMeasureExtensionsKt.measureAndLayout(this$0);
     }
 
@@ -68,7 +68,7 @@ public final class QRScanner extends FrameLayout implements d, h {
 
     @Override 
     public void onDecoded(Result result) {
-        q.g(result, "result");
+        q.h(result, "result");
         String f10 = result.f();
         if (f10 == null || !URLUtil.isValidUrl(f10)) {
             this.onCodeNotFound.invoke();
@@ -85,7 +85,7 @@ public final class QRScanner extends FrameLayout implements d, h {
 
     @Override 
     public void onError(Throwable thrown) {
-        q.g(thrown, "thrown");
+        q.h(thrown, "thrown");
         CrashReporting.INSTANCE.captureException(thrown);
         this.onCodeNotFound.invoke();
     }
@@ -97,21 +97,21 @@ public final class QRScanner extends FrameLayout implements d, h {
     }
 
     public final void setOnCodeFound(Function1<? super String, Unit> function1) {
-        q.g(function1, "<set-?>");
+        q.h(function1, "<set-?>");
         this.onCodeFound = function1;
     }
 
     public final void setOnCodeNotFound(Function0<Unit> function0) {
-        q.g(function0, "<set-?>");
+        q.h(function0, "<set-?>");
         this.onCodeNotFound = function0;
     }
 
     
     public QRScanner(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        q.g(context, "context");
+        q.h(context, "context");
         QrScannerBinding inflate = QrScannerBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(LayoutInflater.from(context), this)");
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         CodeScanner codeScanner = new CodeScanner(context, inflate.qrScanner);
         this.codeScanner = codeScanner;
@@ -125,7 +125,7 @@ public final class QRScanner extends FrameLayout implements d, h {
         this.onCodeNotFound = QRScanner$onCodeNotFound$1.INSTANCE;
         inflate.getRoot().setBackgroundColor(-16777216);
         CodeScannerView codeScannerView = inflate.qrScanner;
-        q.f(codeScannerView, "binding.qrScanner");
+        q.g(codeScannerView, "binding.qrScanner");
         codeScannerView.setVisibility(0);
         inflate.qrScanner.setFrameColor(ColorUtilsKt.getColorCompat(context, R.color.brand));
         codeScanner.a0(-1);

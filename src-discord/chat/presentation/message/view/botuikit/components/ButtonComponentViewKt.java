@@ -60,10 +60,10 @@ public final class ButtonComponentViewKt {
     
     public static final void setSecondaryColor(Button button) {
         Context context = button.getContext();
-        q.f(context, "context");
+        q.g(context, "context");
         int themeColor = ColorUtilsKt.getThemeColor(context, R.color.primary_400, R.color.primary_500);
         Context context2 = button.getContext();
-        q.f(context2, "context");
+        q.g(context2, "context");
         ButtonBackgroundUtilsKt.setBackgroundColors(button, themeColor, Integer.valueOf(ColorUtilsKt.getThemeColor(context2, R.color.primary_light_500_alpha_20, R.color.primary_dark_500_alpha_20)));
     }
 

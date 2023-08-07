@@ -13,8 +13,8 @@ import kotlin.jvm.internal.q;
 
 public final class ForegroundServiceUtilsKt {
     public static final void startForegroundCompat(Service service, int i10, Notification notification) {
-        q.g(service, "<this>");
-        q.g(notification, "notification");
+        q.h(service, "<this>");
+        q.h(notification, "notification");
         if (Build.VERSION.SDK_INT >= 29) {
             service.startForeground(i10, notification, 32);
         } else {
@@ -24,8 +24,8 @@ public final class ForegroundServiceUtilsKt {
 
     public static final ComponentName startForegroundServiceCompat(Context context, Intent serviceIntent) {
         ComponentName startForegroundService;
-        q.g(context, "<this>");
-        q.g(serviceIntent, "serviceIntent");
+        q.h(context, "<this>");
+        q.h(serviceIntent, "serviceIntent");
         if (Build.VERSION.SDK_INT < 26) {
             return context.startService(serviceIntent);
         }

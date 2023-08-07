@@ -14,8 +14,8 @@ public final class DispatchedEvent extends Event<DispatchedEvent> {
     
     public DispatchedEvent(int i10, int i11, String eventName, ReactEvent payload) {
         super(i10, i11);
-        q.g(eventName, "eventName");
-        q.g(payload, "payload");
+        q.h(eventName, "eventName");
+        q.h(payload, "payload");
         this.eventName = eventName;
         this.payload = payload;
     }

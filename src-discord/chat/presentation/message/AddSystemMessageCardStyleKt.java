@@ -12,7 +12,7 @@ import kotlin.jvm.internal.q;
 
 public final class AddSystemMessageCardStyleKt {
     public static final void addSystemMessageCardStyle(View view) {
-        q.g(view, "<this>");
+        q.h(view, "<this>");
         view.setPaddingRelative(view.getPaddingStart(), SizeUtilsKt.getDpToPx(8), view.getPaddingEnd(), SizeUtilsKt.getDpToPx(8));
         ViewBackgroundUtilsKt.setBackgroundRectangle$default(view, ColorUtilsKt.getColorCompat(view, GetEmbedBackgroundColorKt.getEmbedBackgroundColor()), SizeUtilsKt.getDpToPx(8), null, 0, 12, null);
     }

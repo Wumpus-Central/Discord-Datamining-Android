@@ -20,7 +20,7 @@ import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import tf.c;
+import xf.c;
 
 @Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001:\u0002\u001d\u001eB\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0006J\u001a\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u000f2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015H\u0002J\u0018\u0010\u0016\u001a\u00020\u00122\u0006\u0010\u0017\u001a\u00020\n2\u0006\u0010\u0018\u001a\u00020\u000fH\u0002J\u0012\u0010\u0019\u001a\u00020\u00122\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015H\u0002J\u000e\u0010\u001a\u001a\u00020\u00122\u0006\u0010\u001b\u001a\u00020\u001cR\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0012\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u000bR\u0010\u0010\f\u001a\u0004\u0018\u00010\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u0010¨\u0006\u001f"}, d2 = {"Lcom/discord/reactions/BurstReactionView;", "Landroid/widget/LinearLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "binding", "Lcom/discord/reactions/databinding/ReactionViewBinding;", "currentCount", "", "Ljava/lang/Integer;", "currentEmojiId", "", "currentShouldAnimate", "", "Ljava/lang/Boolean;", "configureBackground", "", "isMe", "palette", "Lcom/discord/reactions/BurstReactionView$BurstColorPalette;", "configureCount", "count", "animate", "configureTextColor", "setReaction", "reaction", "Lcom/discord/reactions/ReactionView$Reaction;", "BurstColorPalette", "ThemedBurstColorPalette", "reactions_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -53,7 +53,7 @@ public final class BurstReactionView extends LinearLayout {
     
     public BurstReactionView(Context context) {
         this(context, null, 2, null);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 
     public  BurstReactionView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -86,7 +86,7 @@ public final class BurstReactionView extends LinearLayout {
             i10 = num.intValue();
         } else if (z10) {
             Context context = getContext();
-            q.f(context, "context");
+            q.g(context, "context");
             i10 = ColorUtilsKt.getColorCompat(context, R.color.brand_new_500_alpha_20);
         } else {
             i10 = ThemeManagerKt.getTheme().getBackgroundSecondary();
@@ -96,7 +96,7 @@ public final class BurstReactionView extends LinearLayout {
                 i11 = num2.intValue();
             } else {
                 Context context2 = getContext();
-                q.f(context2, "context");
+                q.g(context2, "context");
                 i11 = ColorUtilsKt.getColorCompat(context2, R.color.brand_560);
             }
             num3 = Integer.valueOf(i11);
@@ -156,9 +156,9 @@ public final class BurstReactionView extends LinearLayout {
     
     public BurstReactionView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        q.g(context, "context");
+        q.h(context, "context");
         ReactionViewBinding inflate = ReactionViewBinding.inflate(LayoutInflater.from(context), this);
-        q.f(inflate, "inflate(\n        LayoutI…ext),\n        this,\n    )");
+        q.g(inflate, "inflate(\n        LayoutI…ext),\n        this,\n    )");
         this.binding = inflate;
         setOrientation(0);
         setGravity(16);
@@ -166,17 +166,17 @@ public final class BurstReactionView extends LinearLayout {
         setMinimumWidth(companion.getMINIMUM_WIDTH());
         setPadding(companion.getHORIZ_PADDING(), 0, companion.getHORIZ_PADDING(), 0);
         TextView textView = inflate.reactionCount1;
-        q.f(textView, "binding.reactionCount1");
+        q.g(textView, "binding.reactionCount1");
         DiscordFont discordFont = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(textView, discordFont);
         TextView textView2 = inflate.reactionCount1;
-        q.f(textView2, "binding.reactionCount1");
+        q.g(textView2, "binding.reactionCount1");
         SetTextSizeSpKt.setTextSizeSp(textView2, 14.0f, 14.0f);
         TextView textView3 = inflate.reactionCount2;
-        q.f(textView3, "binding.reactionCount2");
+        q.g(textView3, "binding.reactionCount2");
         DiscordFontUtilsKt.setDiscordFont(textView3, discordFont);
         TextView textView4 = inflate.reactionCount2;
-        q.f(textView4, "binding.reactionCount2");
+        q.g(textView4, "binding.reactionCount2");
         SetTextSizeSpKt.setTextSizeSp(textView4, 14.0f, 14.0f);
         inflate.reactionCountSwitcher.setMeasureAllChildren(false);
     }

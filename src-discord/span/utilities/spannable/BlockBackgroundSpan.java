@@ -39,9 +39,9 @@ public final class BlockBackgroundSpan implements LineBackgroundSpan {
 
     @Override 
     public void drawBackground(Canvas canvas, Paint paint, int i10, int i11, int i12, int i13, int i14, CharSequence text, int i15, int i16, int i17) {
-        q.g(canvas, "canvas");
-        q.g(paint, "paint");
-        q.g(text, "text");
+        q.h(canvas, "canvas");
+        q.h(paint, "paint");
+        q.h(text, "text");
         if (text instanceof Spanned) {
             Spanned spanned = (Spanned) text;
             if (spanned.getSpanStart(this) == i15) {

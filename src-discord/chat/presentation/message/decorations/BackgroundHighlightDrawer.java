@@ -24,7 +24,7 @@ public final class BackgroundHighlightDrawer extends HighlightedMessageDrawer {
 
         public final Integer invoke(ChatListItem it) {
             BackgroundHighlight backgroundHighlight;
-            q.g(it, "it");
+            q.h(it, "it");
             backgroundHighlight = BackgroundHighlightDecorationKt.getBackgroundHighlight(it);
             if (backgroundHighlight != null) {
                 return backgroundHighlight.getBackgroundColor();
@@ -45,7 +45,7 @@ public final class BackgroundHighlightDrawer extends HighlightedMessageDrawer {
 
         public final Integer invoke(ChatListItem it) {
             BackgroundHighlight backgroundHighlight;
-            q.g(it, "it");
+            q.h(it, "it");
             backgroundHighlight = BackgroundHighlightDecorationKt.getBackgroundHighlight(it);
             if (backgroundHighlight != null) {
                 return backgroundHighlight.getGutterColor();
@@ -66,7 +66,7 @@ public final class BackgroundHighlightDrawer extends HighlightedMessageDrawer {
 
         public final Boolean invoke(ChatListItem it) {
             BackgroundHighlight backgroundHighlight;
-            q.g(it, "it");
+            q.h(it, "it");
             backgroundHighlight = BackgroundHighlightDecorationKt.getBackgroundHighlight(it);
             return Boolean.valueOf(backgroundHighlight != null);
         }
@@ -75,6 +75,6 @@ public final class BackgroundHighlightDrawer extends HighlightedMessageDrawer {
     
     public BackgroundHighlightDrawer(Context context) {
         super(context, AnonymousClass1.INSTANCE, AnonymousClass2.INSTANCE, AnonymousClass3.INSTANCE);
-        q.g(context, "context");
+        q.h(context, "context");
     }
 }

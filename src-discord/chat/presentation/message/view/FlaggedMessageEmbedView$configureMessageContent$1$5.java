@@ -18,12 +18,12 @@ final class FlaggedMessageEmbedView$configureMessageContent$1$5 extends s implem
     @Override 
     public   Unit invoke(String str, String str2) {
         invoke2(str, str2);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String str, String str2) {
-        q.g(str, "<anonymous parameter 0>");
-        q.g(str2, "<anonymous parameter 1>");
+        q.h(str, "<anonymous parameter 0>");
+        q.h(str2, "<anonymous parameter 1>");
     }
 }

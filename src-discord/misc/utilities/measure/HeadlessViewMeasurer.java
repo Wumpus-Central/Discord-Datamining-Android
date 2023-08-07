@@ -13,7 +13,7 @@ public final class HeadlessViewMeasurer<T extends View> {
     private T shadowView;
 
     public HeadlessViewMeasurer(Class<T> clazz) {
-        q.g(clazz, "clazz");
+        q.h(clazz, "clazz");
         this.clazz = clazz;
     }
 
@@ -91,7 +91,7 @@ public final class HeadlessViewMeasurer<T extends View> {
                 return false;
             }
             MeasureBounds measureBounds = (MeasureBounds) obj;
-            return q.b(this.widthPx, measureBounds.widthPx) && q.b(this.heightPx, measureBounds.heightPx);
+            return q.c(this.widthPx, measureBounds.widthPx) && q.c(this.heightPx, measureBounds.heightPx);
         }
 
         public final Integer getHeightPx() {

@@ -8,7 +8,7 @@ import kotlin.jvm.internal.q;
 
 public final class SetTextSizeSpKt {
     public static final void setTextSizeSp(TextView textView, float f10) {
-        q.g(textView, "<this>");
+        q.h(textView, "<this>");
         textView.setTextSize(2, f10);
     }
 
@@ -20,7 +20,7 @@ public final class SetTextSizeSpKt {
     }
 
     public static final void setTextSizeSp(TextView textView, float f10, float f11) {
-        q.g(textView, "<this>");
+        q.h(textView, "<this>");
         float f12 = textView.getContext().getResources().getConfiguration().fontScale;
         float f13 = f10 / f12;
         setTextSizeSp(textView, f13 * Math.min(f12, f11 / f13));

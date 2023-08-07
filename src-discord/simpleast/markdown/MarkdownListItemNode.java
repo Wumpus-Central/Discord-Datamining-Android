@@ -18,7 +18,7 @@ public class MarkdownListItemNode<R> extends Node<R> {
     
     public MarkdownListItemNode(Function0<? extends BulletSpan> bulletSpanProvider) {
         super(null, 1, null);
-        q.g(bulletSpanProvider, "bulletSpanProvider");
+        q.h(bulletSpanProvider, "bulletSpanProvider");
         this.bulletSpanProvider = bulletSpanProvider;
     }
 
@@ -28,7 +28,7 @@ public class MarkdownListItemNode<R> extends Node<R> {
 
     @Override 
     public void render(SpannableStringBuilder builder, R r10) {
-        q.g(builder, "builder");
+        q.h(builder, "builder");
         int length = builder.length();
         Collection<Node<R>> children = getChildren();
         if (children != null) {

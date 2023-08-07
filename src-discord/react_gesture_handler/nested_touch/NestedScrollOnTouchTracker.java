@@ -49,7 +49,7 @@ public final class NestedScrollOnTouchTracker {
 
     
     public NestedScrollOnTouchTracker(Context context, View.OnClickListener onClickListener, View.OnLongClickListener onLongClickListener, Function1<? super View, Unit> function1, Function1<? super View, Unit> function12) {
-        q.g(context, "context");
+        q.h(context, "context");
         this.onClickListener = onClickListener;
         this.onLongClickListener = onLongClickListener;
         this.onTrackingStart = function1;

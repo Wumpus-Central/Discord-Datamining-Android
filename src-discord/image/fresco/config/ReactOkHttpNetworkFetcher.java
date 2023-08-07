@@ -26,7 +26,7 @@ public class ReactOkHttpNetworkFetcher extends OkHttpNetworkFetcher {
     public ReactOkHttpNetworkFetcher(OkHttpClient okHttpClient) {
         super(okHttpClient);
         this.mOkHttpClient = okHttpClient;
-        this.mCancellationExecutor = okHttpClient.r().d();
+        this.mCancellationExecutor = okHttpClient.q().d();
     }
 
     private Map<String, String> getHeaders(ReadableMap readableMap) {
@@ -44,12 +44,12 @@ public class ReactOkHttpNetworkFetcher extends OkHttpNetworkFetcher {
 
     @Override 
     public void fetch(OkHttpNetworkFetcher.OkHttpNetworkFetchState okHttpNetworkFetchState, NetworkFetcher.Callback callback) {
-        okHttpNetworkFetchState.f7809f = SystemClock.elapsedRealtime();
+        okHttpNetworkFetchState.f8022f = SystemClock.elapsedRealtime();
         Uri g10 = okHttpNetworkFetchState.g();
         Map<String, String> headers = okHttpNetworkFetchState.b().d() instanceof ReactNetworkImageRequest ? getHeaders(((ReactNetworkImageRequest) okHttpNetworkFetchState.b().d()).getHeaders()) : null;
         if (headers == null) {
             headers = Collections.emptyMap();
         }
-        fetchWithRequest(okHttpNetworkFetchState, callback, new Request.Builder().c(new CacheControl.a().e().a()).l(g10.toString()).f(Headers.h(headers)).d().b());
+        fetchWithRequest(okHttpNetworkFetchState, callback, new Request.Builder().c(new CacheControl.a().e().a()).l(g10.toString()).f(Headers.i(headers)).d().b());
     }
 }

@@ -12,9 +12,9 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableArray;
-import ff.x;
 import java.util.ArrayList;
 import java.util.List;
+import jf.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -30,13 +30,13 @@ public final class BillingManagerModule extends ReactContextBaseJavaModule {
     
     public BillingManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.billingManager = new BillingManager(ClientInfo.INSTANCE.isProdBuild(), new BillingManagerModule$billingManager$1(this, reactContext), new BillingManagerModule$billingManager$2(this, reactContext), new BillingManagerModule$billingManager$3(this, reactContext));
     }
 
     private final void getSkus(BillingManager billingManager, ReadableArray readableArray, SkuType skuType, Promise promise) {
         ArrayList<Object> arrayList = readableArray.toArrayList();
-        q.f(arrayList, "skuIds.toArrayList()");
+        q.g(arrayList, "skuIds.toArrayList()");
         List<String> arrayList2 = new ArrayList<>();
         for (Object obj : arrayList) {
             if (obj instanceof String) {
@@ -45,13 +45,13 @@ public final class BillingManagerModule extends ReactContextBaseJavaModule {
         }
         Function1<? super Exception, Unit> billingManagerModule$getSkus$1 = new BillingManagerModule$getSkus$1(promise);
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         billingManager.getSkus(arrayList2, skuType, promise, billingManagerModule$getSkus$1, reactApplicationContext);
     }
 
     @ReactMethod
     public final void addListener(String type) {
-        q.g(type, "type");
+        q.h(type, "type");
     }
 
     @ReactMethod
@@ -61,15 +61,15 @@ public final class BillingManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void consumePurchase(String purchaseToken, Promise promise) {
-        q.g(purchaseToken, "purchaseToken");
-        q.g(promise, "promise");
+        q.h(purchaseToken, "purchaseToken");
+        q.h(promise, "promise");
         this.billingManager.consumePurchase(purchaseToken, new BillingManagerModule$consumePurchase$1(promise), new BillingManagerModule$consumePurchase$2(promise));
     }
 
     @ReactMethod
     public final void getIAPSkus(ReadableArray skuIds, Promise promise) {
-        q.g(skuIds, "skuIds");
-        q.g(promise, "promise");
+        q.h(skuIds, "skuIds");
+        q.h(promise, "promise");
         getSkus(this.billingManager, skuIds, SkuType.IAP, promise);
     }
 
@@ -80,14 +80,14 @@ public final class BillingManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void getSubscriptionSkus(ReadableArray skuIds, Promise promise) {
-        q.g(skuIds, "skuIds");
-        q.g(promise, "promise");
+        q.h(skuIds, "skuIds");
+        q.h(promise, "promise");
         getSkus(this.billingManager, skuIds, SkuType.SUBSCRIPTIONS, promise);
     }
 
     @ReactMethod
     public final void loadPurchases(Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         this.billingManager.loadPurchases(new BillingManagerModule$loadPurchases$1(promise), new BillingManagerModule$loadPurchases$2(promise));
     }
 
@@ -95,15 +95,15 @@ public final class BillingManagerModule extends ReactContextBaseJavaModule {
     public final void open() {
         BillingManager billingManager = this.billingManager;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         billingManager.open(reactApplicationContext);
     }
 
     @ReactMethod
     public final void purchase(String skuId, String userId, Promise promise) {
-        q.g(skuId, "skuId");
-        q.g(userId, "userId");
-        q.g(promise, "promise");
+        q.h(skuId, "skuId");
+        q.h(userId, "userId");
+        q.h(promise, "promise");
         this.billingManager.purchase(getCurrentActivity(), skuId, SkuType.IAP, userId, (r22 & 16) != 0 ? null : null, (r22 & 32) != 0 ? null : null, (r22 & 64) != 0 ? null : null, new BillingManagerModule$purchase$1(promise), new BillingManagerModule$purchase$2(promise));
     }
 
@@ -113,9 +113,9 @@ public final class BillingManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void subscribe(String skuId, String userId, String str, String str2, String str3, Promise promise) {
-        q.g(skuId, "skuId");
-        q.g(userId, "userId");
-        q.g(promise, "promise");
+        q.h(skuId, "skuId");
+        q.h(userId, "userId");
+        q.h(promise, "promise");
         this.billingManager.purchase(getCurrentActivity(), skuId, SkuType.SUBSCRIPTIONS, userId, str, str2, str3, new BillingManagerModule$subscribe$1(promise), new BillingManagerModule$subscribe$2(promise));
     }
 }

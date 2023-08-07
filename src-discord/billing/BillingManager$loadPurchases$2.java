@@ -19,11 +19,11 @@ public final class BillingManager$loadPurchases$2 extends s implements Function1
     @Override 
     public   Unit invoke(Exception exc) {
         invoke2(exc);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(Exception it) {
-        q.g(it, "it");
+        q.h(it, "it");
     }
 }

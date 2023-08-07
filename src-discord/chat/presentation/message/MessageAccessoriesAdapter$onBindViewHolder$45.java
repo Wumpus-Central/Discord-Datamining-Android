@@ -21,13 +21,13 @@ public  class MessageAccessoriesAdapter$onBindViewHolder$45 extends n implements
 
     @Override 
     public   Unit invoke(GuildId guildId, ChannelId channelId, ChannelId channelId2, MessageId messageId) {
-        m206invokekUTrps(guildId.m588unboximpl(), channelId.m575unboximpl(), channelId2.m575unboximpl(), messageId.m600unboximpl());
-        return Unit.f20679a;
+        m207invokekUTrps(guildId.m589unboximpl(), channelId.m576unboximpl(), channelId2.m576unboximpl(), messageId.m601unboximpl());
+        return Unit.f21025a;
     }
 
     
-    public final void m206invokekUTrps(long j10, long j11, long j12, String p32) {
-        q.g(p32, "p3");
-        ((ChatEventHandler) this.receiver).mo168onTapPostPreviewEmbedkUTrps(j10, j11, j12, p32);
+    public final void m207invokekUTrps(long j10, long j11, long j12, String p32) {
+        q.h(p32, "p3");
+        ((ChatEventHandler) this.receiver).mo169onTapPostPreviewEmbedkUTrps(j10, j11, j12, p32);
     }
 }

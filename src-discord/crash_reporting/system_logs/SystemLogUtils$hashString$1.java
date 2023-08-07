@@ -17,7 +17,7 @@ final class SystemLogUtils$hashString$1 extends s implements Function1<Byte, Cha
 
     public final CharSequence invoke(byte b10) {
         String format = String.format("%02X", Arrays.copyOf(new Object[]{Byte.valueOf(b10)}, 1));
-        q.f(format, "format(this, *args)");
+        q.g(format, "format(this, *args)");
         return format;
     }
 

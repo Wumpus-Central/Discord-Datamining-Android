@@ -21,7 +21,7 @@ public final class SoLoaderUtils {
     }
 
     public final void init(Context context, boolean z10) {
-        q.g(context, "context");
+        q.h(context, "context");
         SoLoader.l(context, z10);
     }
 }

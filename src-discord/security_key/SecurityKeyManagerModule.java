@@ -29,13 +29,13 @@ public final class SecurityKeyManagerModule extends ReactContextBaseJavaModule {
     
     public SecurityKeyManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
     }
 
     
     public final void reject(String str) {
         Promise promise = this.currentPromise;
-        q.d(promise);
+        q.e(promise);
         promise.reject("failed", str);
         this.currentPromise = null;
     }
@@ -43,15 +43,15 @@ public final class SecurityKeyManagerModule extends ReactContextBaseJavaModule {
     
     public final void resolve(String str) {
         Promise promise = this.currentPromise;
-        q.d(promise);
+        q.e(promise);
         promise.resolve(str);
         this.currentPromise = null;
     }
 
     @ReactMethod
     public final void authenticate(String data, Promise promise) {
-        q.g(data, "data");
-        q.g(promise, "promise");
+        q.h(data, "data");
+        q.h(promise, "promise");
         if (this.currentPromise != null) {
             promise.reject("failed", "already running");
             return;
@@ -79,8 +79,8 @@ public final class SecurityKeyManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void register(String data, Promise promise) {
-        q.g(data, "data");
-        q.g(promise, "promise");
+        q.h(data, "data");
+        q.h(promise, "promise");
         if (this.currentPromise != null) {
             promise.reject("failed", "already running");
             return;

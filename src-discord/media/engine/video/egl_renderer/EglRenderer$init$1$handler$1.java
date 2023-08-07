@@ -23,19 +23,19 @@ public final class EglRenderer$init$1$handler$1 extends s implements Function1<E
     @Override 
     public   Unit invoke(Exception exc) {
         invoke2(exc);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(Exception ex) {
         Object obj;
-        q.g(ex, "ex");
+        q.h(ex, "ex");
         Logging.e("EglRenderer", "Exception on EglRenderer thread", ex);
         obj = this.this$0.handlerLock;
         EglRenderer eglRenderer = this.this$0;
         synchronized (obj) {
             eglRenderer.renderThreadHandler = null;
-            Unit unit = Unit.f20679a;
+            Unit unit = Unit.f21025a;
         }
     }
 }

@@ -4,9 +4,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 import com.discord.crash_reporting.CrashReporting;
-import ff.x;
-import gf.u;
 import java.util.Map;
+import jf.x;
+import kf.u;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
@@ -15,7 +15,7 @@ import kotlin.jvm.internal.q;
 public final class PortalViewContextUtilsKt {
     public static final void removeFromParent(View view) {
         Map e10;
-        q.g(view, "<this>");
+        q.h(view, "<this>");
         ViewParent parent = view.getParent();
         if (parent != null) {
             if (!(parent instanceof ViewGroup)) {
@@ -30,7 +30,7 @@ public final class PortalViewContextUtilsKt {
         if (view.getParent() != null) {
             CrashReporting crashReporting = CrashReporting.INSTANCE;
             String simpleName = PortalViewContextManager.INSTANCE.getClass().getSimpleName();
-            q.f(simpleName, "PortalViewContextManager.javaClass.simpleName");
+            q.g(simpleName, "PortalViewContextManager.javaClass.simpleName");
             e10 = u.e(x.a("parentView", view.getParent().getClass().getSimpleName()));
             CrashReporting.addBreadcrumb$default(crashReporting, simpleName, e10, null, 4, null);
         }

@@ -21,22 +21,22 @@ public final class VideoAttachmentViewHolder extends MessagePartViewHolder {
     
     public VideoAttachmentViewHolder(VideoAttachmentView view, ChatEventHandler eventHandler) {
         super(view, null);
-        q.g(view, "view");
-        q.g(eventHandler, "eventHandler");
+        q.h(view, "view");
+        q.h(eventHandler, "eventHandler");
         this.view = view;
         this.eventHandler = eventHandler;
     }
 
     public final void bind(VideoAttachmentMessageAccessory videoAttachmentItem, int i10, int i11, int i12, Function1<? super Double, Unit> onClicked, View.OnLongClickListener onLongClickListener, SpoilerConfig spoilerConfig, double d10, boolean z10, boolean z11, boolean z12, Float f10) {
-        q.g(videoAttachmentItem, "videoAttachmentItem");
-        q.g(onClicked, "onClicked");
+        q.h(videoAttachmentItem, "videoAttachmentItem");
+        q.h(onClicked, "onClicked");
         Attachment attachment = videoAttachmentItem.getAttachment();
         String uploaderId = attachment.getUploaderId();
         String uploaderItemId = attachment.getUploaderItemId();
         VideoAttachmentViewHolder$bind$onCancelUpload$1 videoAttachmentViewHolder$bind$onCancelUpload$1 = new VideoAttachmentViewHolder$bind$onCancelUpload$1(uploaderId, uploaderItemId, this);
         VideoAttachmentView videoAttachmentView = this.view;
         String videoUrl = attachment.getVideoUrl();
-        q.d(videoUrl);
+        q.e(videoUrl);
         videoAttachmentView.setContent(videoUrl, attachment.getUrl(), attachment.getWidth(), attachment.getHeight(), i10, i11, i12, attachment.isSpoiler(), spoilerConfig, d10, z10, attachment.getProgress(), z12, videoAttachmentViewHolder$bind$onCancelUpload$1, new UploadContext(uploaderId, uploaderItemId), f10);
         this.view.setDescription(attachment.getDescription(), attachment.getHint());
         boolean z13 = true;

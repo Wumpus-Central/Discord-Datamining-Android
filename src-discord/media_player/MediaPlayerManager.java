@@ -21,10 +21,10 @@ public final class MediaPlayerManager {
 
     public final synchronized MediaPlayer acquire(Context context, double d10) {
         boolean z10;
-        q.g(context, "context");
+        q.h(context, "context");
         if (acquiredPlayerMap.get(Double.valueOf(d10)) != null) {
             MediaPlayer mediaPlayer = acquiredPlayerMap.get(Double.valueOf(d10));
-            q.d(mediaPlayer);
+            q.e(mediaPlayer);
             return mediaPlayer;
         }
         ArrayBlockingQueue<MediaPlayer> arrayBlockingQueue = playerPool;
@@ -44,9 +44,9 @@ public final class MediaPlayerManager {
         MediaPlayer it = take;
         Double valueOf = Double.valueOf(d10);
         Map<Double, MediaPlayer> map = acquiredPlayerMap;
-        q.f(it, "it");
+        q.g(it, "it");
         map.put(valueOf, it);
-        q.f(take, "playerPool.take().also {…erMap[key] = it\n        }");
+        q.g(take, "playerPool.take().also {…erMap[key] = it\n        }");
         return take;
     }
 

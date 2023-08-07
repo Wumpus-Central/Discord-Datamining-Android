@@ -20,7 +20,7 @@ public final class RLottieImageView$rLottieStateManager$4 extends s implements F
     }
 
     public final Boolean invoke(RLottieImageView.Config it) {
-        q.g(it, "it");
+        q.h(it, "it");
         return Boolean.valueOf(this.this$0.isAttachedToWindow());
     }
 }

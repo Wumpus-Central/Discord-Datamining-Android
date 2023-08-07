@@ -14,7 +14,7 @@ import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReadableMap;
-import ff.n;
+import jf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -40,7 +40,7 @@ public final class MobileVoiceOverlayManagerModule extends NativeMobileVoiceOver
         }
 
         public final NativeModule create(ReactApplicationContext reactContext) {
-            q.g(reactContext, "reactContext");
+            q.h(reactContext, "reactContext");
             return new MobileVoiceOverlayManagerModule(reactContext);
         }
     }
@@ -49,7 +49,7 @@ public final class MobileVoiceOverlayManagerModule extends NativeMobileVoiceOver
     public MobileVoiceOverlayManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
         Lazy b10;
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         b10 = n.b(new MobileVoiceOverlayManagerModule$mobileVoiceOverlay$2(this));
         this.mobileVoiceOverlay$delegate = b10;
     }
@@ -61,10 +61,10 @@ public final class MobileVoiceOverlayManagerModule extends NativeMobileVoiceOver
 
     @Override 
     public void enableOverlay(final Promise promise) {
-        q.g(promise, "promise");
+        q.h(promise, "promise");
         WindowUtils windowUtils = WindowUtils.INSTANCE;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        q.f(reactApplicationContext, "reactApplicationContext");
+        q.g(reactApplicationContext, "reactApplicationContext");
         if (windowUtils.canDrawOverlay(reactApplicationContext)) {
             promise.resolve(Boolean.TRUE);
             return;
@@ -80,7 +80,7 @@ public final class MobileVoiceOverlayManagerModule extends NativeMobileVoiceOver
                     Promise promise2 = promise;
                     WindowUtils windowUtils2 = WindowUtils.INSTANCE;
                     reactApplicationContext3 = MobileVoiceOverlayManagerModule.this.getReactApplicationContext();
-                    q.f(reactApplicationContext3, "reactApplicationContext");
+                    q.g(reactApplicationContext3, "reactApplicationContext");
                     promise2.resolve(Boolean.valueOf(windowUtils2.canDrawOverlay(reactApplicationContext3)));
                 }
             }
@@ -96,7 +96,7 @@ public final class MobileVoiceOverlayManagerModule extends NativeMobileVoiceOver
 
     @Override 
     public String getName() {
-        return NAME;
+        return "RTNMobileVoiceOverlay";
     }
 
     @Override 

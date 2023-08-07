@@ -15,18 +15,18 @@ public final class QueryProductDetailsParams {
     }
 
     public final com.android.billingclient.api.QueryProductDetailsParams create(ProductType productType, List<String> productIds) {
-        q.g(productType, "productType");
-        q.g(productIds, "productIds");
+        q.h(productType, "productType");
+        q.h(productIds, "productIds");
         ArrayList arrayList = new ArrayList();
         for (String str : productIds) {
             QueryProductDetailsParams.b a10 = QueryProductDetailsParams.b.a().b(str).c(productType.getRawProductType()).a();
-            q.f(a10, "newBuilder()\n           …                 .build()");
+            q.g(a10, "newBuilder()\n           …                 .build()");
             arrayList.add(a10);
         }
         QueryProductDetailsParams.a b10 = com.android.billingclient.api.QueryProductDetailsParams.a().b(arrayList);
-        q.f(b10, "newBuilder().setProductList(productList)");
+        q.g(b10, "newBuilder().setProductList(productList)");
         com.android.billingclient.api.QueryProductDetailsParams a11 = b10.a();
-        q.f(a11, "params.build()");
+        q.g(a11, "params.build()");
         return a11;
     }
 }

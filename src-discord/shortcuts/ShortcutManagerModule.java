@@ -31,7 +31,7 @@ public final class ShortcutManagerModule extends ReactContextBaseJavaModule {
     
     public ShortcutManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        q.g(reactContext, "reactContext");
+        q.h(reactContext, "reactContext");
         this.reactContext = reactContext;
     }
 

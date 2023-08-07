@@ -25,8 +25,8 @@ public class StyleNode<RC, T> extends Node.Parent<RC> {
         }
 
         public final <RC, T> StyleNode<RC, T> wrapText(String content, List<? extends T> styles) {
-            q.g(content, "content");
-            q.g(styles, "styles");
+            q.h(content, "content");
+            q.h(styles, "styles");
             StyleNode<RC, T> styleNode = new StyleNode<>(styles);
             styleNode.addChild(new TextNode(content));
             return styleNode;
@@ -47,8 +47,8 @@ public class StyleNode<RC, T> extends Node.Parent<RC> {
         
         public TextStyledNode(String content, SpanProvider<RC> stylesProvider) {
             super(content);
-            q.g(content, "content");
-            q.g(stylesProvider, "stylesProvider");
+            q.h(content, "content");
+            q.h(stylesProvider, "stylesProvider");
             this.stylesProvider = stylesProvider;
         }
 
@@ -58,7 +58,7 @@ public class StyleNode<RC, T> extends Node.Parent<RC> {
 
         @Override 
         public void render(SpannableStringBuilder builder, RC rc2) {
-            q.g(builder, "builder");
+            q.h(builder, "builder");
             int length = builder.length();
             super.render(builder, rc2);
             Iterator<?> it = this.stylesProvider.get(rc2).iterator();
@@ -72,7 +72,7 @@ public class StyleNode<RC, T> extends Node.Parent<RC> {
     
     public StyleNode(List<? extends T> styles) {
         super(new Node[0]);
-        q.g(styles, "styles");
+        q.h(styles, "styles");
         this.styles = styles;
     }
 
@@ -86,7 +86,7 @@ public class StyleNode<RC, T> extends Node.Parent<RC> {
 
     @Override 
     public void render(SpannableStringBuilder builder, RC rc2) {
-        q.g(builder, "builder");
+        q.h(builder, "builder");
         int length = builder.length();
         super.render(builder, rc2);
         for (T t10 : this.styles) {

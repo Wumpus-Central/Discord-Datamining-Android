@@ -8,10 +8,12 @@ public final class BuildConfig {
     public static final String FLAVOR = "canary";
     public static final String INTEGRATION_TEST_PASSWORD = "null";
     public static final String INTEGRATION_TEST_USERNAME = "null";
+    public static final boolean IS_HERMES_ENABLED = true;
+    public static final boolean IS_NEW_ARCHITECTURE_ENABLED = false;
     public static final String MAIN_MODULE = "index.native";
-    public static final String USER_AGENT = "Discord-Android/191200";
-    public static final int VERSION_CODE = 191200;
-    public static final String VERSION_NAME = "191.0 - Alpha";
-    public static final String VERSION_NAME_RNA = "191.0";
+    public static final String USER_AGENT = "Discord-Android/192200";
+    public static final int VERSION_CODE = 192200;
+    public static final String VERSION_NAME = "192.0 - Alpha";
+    public static final String VERSION_NAME_RNA = "192.0";
     public static final Boolean logTTIMetrics = Boolean.FALSE;
 }

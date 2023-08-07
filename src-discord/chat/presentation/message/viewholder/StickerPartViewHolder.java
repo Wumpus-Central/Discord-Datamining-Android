@@ -36,7 +36,7 @@ public abstract class StickerPartViewHolder extends MessagePartViewHolder {
     
     public StickerPartViewHolder(View view) {
         super(view, null);
-        q.g(view, "view");
+        q.h(view, "view");
         view.setLayoutParams(new RecyclerView.i(SizeUtilsKt.getDpToPx(160), SizeUtilsKt.getDpToPx(160)));
         int i10 = DEFAULT_STICKER_PADDING_PX;
         view.setPadding(i10, i10, i10, i10);

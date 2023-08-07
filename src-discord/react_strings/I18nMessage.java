@@ -69,7 +69,7 @@ public enum I18nMessage {
     UPLOAD_COMPLETE;
 
     public final String format$react_strings_release(Context context) {
-        q.g(context, "context");
+        q.h(context, "context");
         return I18nCache.INSTANCE.get(context, this);
     }
 }

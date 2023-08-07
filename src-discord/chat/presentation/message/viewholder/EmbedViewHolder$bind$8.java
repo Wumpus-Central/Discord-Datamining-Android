@@ -18,13 +18,13 @@ import kotlin.jvm.internal.q;
     @Override 
     public   Unit invoke(String str, String str2) {
         invoke2(str, str2);
-        return Unit.f20679a;
+        return Unit.f21025a;
     }
 
     
     public final void invoke2(String p02, String p12) {
-        q.g(p02, "p0");
-        q.g(p12, "p1");
+        q.h(p02, "p0");
+        q.h(p12, "p1");
         ((ChatEventHandler) this.receiver).onTapMention(p02, p12);
     }
 }
