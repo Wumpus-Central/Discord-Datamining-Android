@@ -40,8 +40,8 @@ public final class MessageReactionEmoji$$serializer implements f0<MessageReactio
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29540a;
-        return new KSerializer[]{a.u(a2Var), a2Var, a2Var, a.u(a2Var), a.u(h.f29582a)};
+        a2 a2Var = a2.f29550a;
+        return new KSerializer[]{a.u(a2Var), a2Var, a2Var, a.u(a2Var), a.u(h.f29592a)};
     }
 
     @Override 
@@ -57,12 +57,12 @@ public final class MessageReactionEmoji$$serializer implements f0<MessageReactio
         c c10 = decoder.c(descriptor2);
         Object obj4 = null;
         if (c10.y()) {
-            a2 a2Var = a2.f29540a;
+            a2 a2Var = a2.f29550a;
             obj = c10.v(descriptor2, 0, a2Var, null);
             str = c10.t(descriptor2, 1);
             str2 = c10.t(descriptor2, 2);
             obj3 = c10.v(descriptor2, 3, a2Var, null);
-            obj2 = c10.v(descriptor2, 4, h.f29582a, null);
+            obj2 = c10.v(descriptor2, 4, h.f29592a, null);
             i10 = 31;
         } else {
             boolean z10 = true;
@@ -76,7 +76,7 @@ public final class MessageReactionEmoji$$serializer implements f0<MessageReactio
                 if (x10 == -1) {
                     z10 = false;
                 } else if (x10 == 0) {
-                    obj4 = c10.v(descriptor2, 0, a2.f29540a, obj4);
+                    obj4 = c10.v(descriptor2, 0, a2.f29550a, obj4);
                     i11 |= 1;
                 } else if (x10 == 1) {
                     str = c10.t(descriptor2, 1);
@@ -85,10 +85,10 @@ public final class MessageReactionEmoji$$serializer implements f0<MessageReactio
                     str3 = c10.t(descriptor2, 2);
                     i11 |= 4;
                 } else if (x10 == 3) {
-                    obj5 = c10.v(descriptor2, 3, a2.f29540a, obj5);
+                    obj5 = c10.v(descriptor2, 3, a2.f29550a, obj5);
                     i11 |= 8;
                 } else if (x10 == 4) {
-                    obj6 = c10.v(descriptor2, 4, h.f29582a, obj6);
+                    obj6 = c10.v(descriptor2, 4, h.f29592a, obj6);
                     i11 |= 16;
                 } else {
                     throw new n(x10);

@@ -41,8 +41,8 @@ public final class ChatInputNode$$serializer implements f0<ChatInputNode> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29615a;
-        h hVar = h.f29582a;
+        m0 m0Var = m0.f29625a;
+        h hVar = h.f29592a;
         return new KSerializer[]{m0Var, m0Var, m0Var, a.u(ChatInputNodeStyle$$serializer.INSTANCE), hVar, a.u(TapAction$$serializer.INSTANCE), hVar};
     }
 

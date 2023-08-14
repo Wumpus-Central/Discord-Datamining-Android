@@ -81,7 +81,7 @@ public final class Attachment implements SpoilerableData {
         Integer num;
         Integer num2 = null;
         try {
-            s.a aVar = s.f20093l;
+            s.a aVar = s.f20094l;
             String value = new UrlQuerySanitizer(this.url).getValue(str);
             if (value != null) {
                 q.g(value, "getValue(paramName)");
@@ -91,7 +91,7 @@ public final class Attachment implements SpoilerableData {
             }
             obj = s.b(num);
         } catch (Throwable th2) {
-            s.a aVar2 = s.f20093l;
+            s.a aVar2 = s.f20094l;
             obj = s.b(jf.t.a(th2));
         }
         if (!s.g(obj)) {

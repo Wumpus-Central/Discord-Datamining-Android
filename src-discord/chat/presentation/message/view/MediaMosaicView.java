@@ -15,6 +15,7 @@ import com.discord.chat.presentation.message.messagepart.ImageAttachmentMessageA
 import com.discord.chat.presentation.message.messagepart.MessageAccessory;
 import com.discord.chat.presentation.message.messagepart.VideoAttachmentMessageAccessory;
 import com.discord.chat.presentation.message.viewholder.ImageAttachmentViewHolder;
+import com.discord.chat.presentation.message.viewholder.ImageAttachmentViewHolder$bind$1;
 import com.discord.chat.presentation.message.viewholder.MessagePartViewHolder;
 import com.discord.chat.presentation.message.viewholder.VideoAttachmentViewHolder;
 import com.discord.misc.utilities.view.ViewClippingUtilsKt;
@@ -59,7 +60,7 @@ public final class MediaMosaicView extends GridLayout {
             final ImageAttachmentMessageAccessory imageAttachmentMessageAccessory = (ImageAttachmentMessageAccessory) messageAccessory;
             ImageAttachmentViewHolder imageAttachmentViewHolder = (ImageAttachmentViewHolder) messagePartViewHolder;
             Attachment attachment = imageAttachmentMessageAccessory.getAttachment();
-            View.OnClickListener b0Var = new View.OnClickListener() { 
+            View.OnClickListener c0Var = new View.OnClickListener() { 
                 @Override 
                 public final void onClick(View view) {
                     MediaMosaicView.bindAttachmentHolder$lambda$1(MediaMosaicView.this, imageAttachmentMessageAccessory, messagePartViewHolder, view);
@@ -72,7 +73,7 @@ public final class MediaMosaicView extends GridLayout {
             if (spoilerAttributes != null) {
                 spoilerConfig = spoilerAttributes.configure(new MediaMosaicView$bindAttachmentHolder$2(this, imageAttachmentMessageAccessory));
             }
-            imageAttachmentViewHolder.bind(attachment, i10, i11, radiusPx, resizeMode, b0Var, onLongClick, spoilerConfig, true, imageAttachmentMessageAccessory.getAttachmentsOpacity());
+            imageAttachmentViewHolder.m346bindNlw0kPk(attachment, i10, i11, radiusPx, resizeMode, c0Var, onLongClick, spoilerConfig, true, imageAttachmentMessageAccessory.getAttachmentsOpacity(), false, true, imageAttachmentMessageAccessory.getRemixButtonIconColor(), imageAttachmentMessageAccessory.getRemixButtonBackgroundColor(), imageAttachmentMessageAccessory.mo220getMessageId3Eiw7ao(), (r35 & 32768) != 0 ? ImageAttachmentViewHolder$bind$1.INSTANCE : null);
         } else if (messagePartViewHolder instanceof VideoAttachmentViewHolder) {
             q.f(messageAccessory, "null cannot be cast to non-null type com.discord.chat.presentation.message.messagepart.VideoAttachmentMessageAccessory");
             VideoAttachmentMessageAccessory videoAttachmentMessageAccessory = (VideoAttachmentMessageAccessory) messageAccessory;

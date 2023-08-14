@@ -39,7 +39,7 @@ public final class NotificationMessage$$serializer implements f0<NotificationMes
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        t tVar = t.f21584a;
+        t tVar = t.f21597a;
         return new KSerializer[]{new f(Sticker$$serializer.INSTANCE), a.u(tVar), new f(tVar)};
     }
 
@@ -55,7 +55,7 @@ public final class NotificationMessage$$serializer implements f0<NotificationMes
         Object obj4 = null;
         if (c10.y()) {
             obj3 = c10.m(descriptor2, 0, new f(Sticker$$serializer.INSTANCE), null);
-            t tVar = t.f21584a;
+            t tVar = t.f21597a;
             obj = c10.v(descriptor2, 1, tVar, null);
             obj2 = c10.m(descriptor2, 2, new f(tVar), null);
             i10 = 7;
@@ -72,10 +72,10 @@ public final class NotificationMessage$$serializer implements f0<NotificationMes
                     obj4 = c10.m(descriptor2, 0, new f(Sticker$$serializer.INSTANCE), obj4);
                     i11 |= 1;
                 } else if (x10 == 1) {
-                    obj5 = c10.v(descriptor2, 1, t.f21584a, obj5);
+                    obj5 = c10.v(descriptor2, 1, t.f21597a, obj5);
                     i11 |= 2;
                 } else if (x10 == 2) {
-                    obj6 = c10.m(descriptor2, 2, new f(t.f21584a), obj6);
+                    obj6 = c10.m(descriptor2, 2, new f(t.f21597a), obj6);
                     i11 |= 4;
                 } else {
                     throw new n(x10);

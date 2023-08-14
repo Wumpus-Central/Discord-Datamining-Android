@@ -200,7 +200,7 @@ public final class BundleUpdater {
             q.h(output, "output");
             q.h(serialDesc, "serialDesc");
             output.s(serialDesc, 0, self.name);
-            output.h(serialDesc, 1, new wi.f(a2.f29540a), self.tags);
+            output.h(serialDesc, 1, new wi.f(a2.f29550a), self.tags);
         }
 
         public final String component1() {

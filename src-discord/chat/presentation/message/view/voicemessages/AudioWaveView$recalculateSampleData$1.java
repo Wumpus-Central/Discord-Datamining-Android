@@ -9,8 +9,8 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.a1;
 import kotlinx.coroutines.j;
-import kotlinx.coroutines.y0;
 import pf.d;
 
 
@@ -47,7 +47,7 @@ public final class AudioWaveView$recalculateSampleData$1 extends k implements Fu
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super byte[]> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
         }
 
         @Override 
@@ -76,7 +76,7 @@ public final class AudioWaveView$recalculateSampleData$1 extends k implements Fu
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioWaveView$recalculateSampleData$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
+        return ((AudioWaveView$recalculateSampleData$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
     }
 
     @Override 
@@ -88,7 +88,7 @@ public final class AudioWaveView$recalculateSampleData$1 extends k implements Fu
         if (i10 == 0) {
             t.b(obj);
             AudioWaveView audioWaveView2 = this.this$0;
-            CoroutineDispatcher a10 = y0.a();
+            CoroutineDispatcher a10 = a1.a();
             AnonymousClass1 r32 = new AnonymousClass1(this.$originalSampleData, this.$numChunks, null);
             this.L$0 = audioWaveView2;
             this.label = 1;
@@ -106,6 +106,6 @@ public final class AudioWaveView$recalculateSampleData$1 extends k implements Fu
         }
         audioWaveView.setDownSampleData((byte[]) obj);
         this.this$0.invalidate();
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 }

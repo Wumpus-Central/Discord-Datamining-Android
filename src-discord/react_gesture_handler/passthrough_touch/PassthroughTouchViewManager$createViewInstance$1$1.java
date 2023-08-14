@@ -34,6 +34,6 @@ public final class PassthroughTouchViewManager$createViewInstance$1$1 extends s 
     public final void invoke2() {
         ReactEvents reactEvents;
         reactEvents = this.this$0.reactEvents;
-        reactEvents.emitEvent(this.$eventDispatcher.f21052k, this.$reactContext, this.$this_apply, new OnTouchDownData());
+        reactEvents.emitEvent(this.$eventDispatcher.f21063k, this.$reactContext, this.$this_apply, new OnTouchDownData());
     }
 }

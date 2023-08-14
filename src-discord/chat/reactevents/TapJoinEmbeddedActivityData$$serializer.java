@@ -32,7 +32,7 @@ public final class TapJoinEmbeddedActivityData$$serializer implements f0<TapJoin
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f29540a};
+        return new KSerializer[]{a2.f29550a};
     }
 
     @Override 

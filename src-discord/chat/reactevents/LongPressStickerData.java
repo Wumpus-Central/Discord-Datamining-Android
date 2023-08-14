@@ -27,18 +27,18 @@ public final class LongPressStickerData implements ReactEvent {
     }
 
     
-    public static  LongPressStickerData m359copyntcYbpo$default(LongPressStickerData longPressStickerData, String str, Sticker sticker, int i10, Object obj) {
+    public static  LongPressStickerData m367copyntcYbpo$default(LongPressStickerData longPressStickerData, String str, Sticker sticker, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = longPressStickerData.messageId;
         }
         if ((i10 & 2) != 0) {
             sticker = longPressStickerData.sticker;
         }
-        return longPressStickerData.m361copyntcYbpo(str, sticker);
+        return longPressStickerData.m369copyntcYbpo(str, sticker);
     }
 
     
-    public final String m360component13Eiw7ao() {
+    public final String m368component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -47,7 +47,7 @@ public final class LongPressStickerData implements ReactEvent {
     }
 
     
-    public final LongPressStickerData m361copyntcYbpo(String messageId, Sticker sticker) {
+    public final LongPressStickerData m369copyntcYbpo(String messageId, Sticker sticker) {
         q.h(messageId, "messageId");
         q.h(sticker, "sticker");
         return new LongPressStickerData(messageId, sticker, null);
@@ -61,11 +61,11 @@ public final class LongPressStickerData implements ReactEvent {
             return false;
         }
         LongPressStickerData longPressStickerData = (LongPressStickerData) obj;
-        return MessageId.m597equalsimpl0(this.messageId, longPressStickerData.messageId) && q.c(this.sticker, longPressStickerData.sticker);
+        return MessageId.m609equalsimpl0(this.messageId, longPressStickerData.messageId) && q.c(this.sticker, longPressStickerData.sticker);
     }
 
     
-    public final String m362getMessageId3Eiw7ao() {
+    public final String m370getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -74,7 +74,7 @@ public final class LongPressStickerData implements ReactEvent {
     }
 
     public int hashCode() {
-        return (MessageId.m598hashCodeimpl(this.messageId) * 31) + this.sticker.hashCode();
+        return (MessageId.m610hashCodeimpl(this.messageId) * 31) + this.sticker.hashCode();
     }
 
     @Override 
@@ -83,7 +83,7 @@ public final class LongPressStickerData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m599toStringimpl(this.messageId);
+        String str = MessageId.m611toStringimpl(this.messageId);
         Sticker sticker = this.sticker;
         return "LongPressStickerData(messageId=" + str + ", sticker=" + sticker + ")";
     }

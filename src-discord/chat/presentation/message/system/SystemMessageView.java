@@ -203,31 +203,15 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
     }
 
     private final List<MessageAccessory> generateMessageAccessories(Message message, MessageContext messageContext) {
-        int i10;
         Message message2;
         List<MessageReaction> reactions;
-        int i11;
         this.accessories.clear();
         Integer constrainedWidth = message.getConstrainedWidth();
-        if (constrainedWidth != null) {
-            i10 = constrainedWidth.intValue();
-        } else {
-            i10 = getResources().getDisplayMetrics().widthPixels;
-        }
+        int intValue = constrainedWidth != null ? constrainedWidth.intValue() : getResources().getDisplayMetrics().widthPixels;
         StructurableText content = message.getContent();
         boolean z10 = false;
         if (content != null) {
-            ArrayList<MessageAccessory> arrayList = this.accessories;
-            String str = message.m17getId3Eiw7ao();
-            boolean shouldAnimateEmoji = MessageKt.shouldAnimateEmoji(message);
-            boolean shouldShowRoleDot = message.getShouldShowRoleDot();
-            boolean shouldShowRoleOnName = message.getShouldShowRoleOnName();
-            if (message.getTimestamp() != null) {
-                i11 = 0;
-            } else {
-                i11 = getResources().getDimensionPixelSize(R.dimen.message_accessories_vertical_spacing);
-            }
-            arrayList.add(new MessageContentAccessory(str, content, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, i11, ThemeManagerKt.getTheme().getTextNormal(), ThemeManagerKt.getTheme().getTextNormal(), DiscordFont.PrimaryNormal, 16, true, i10, null, null, null, 24576, null));
+            this.accessories.add(new MessageContentAccessory(message.m17getId3Eiw7ao(), content, MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), message.getTimestamp() != null ? 0 : getResources().getDimensionPixelSize(R.dimen.message_accessories_vertical_spacing), ThemeManagerKt.getTheme().getTextNormal(), ThemeManagerKt.getTheme().getTextNormal(), DiscordFont.PrimaryNormal, 16, true, intValue, null, null, null, 24576, null));
         }
         String timestamp = message.getTimestamp();
         if (timestamp != null) {
@@ -237,13 +221,13 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         if (totalMonthsSubscribed == null || totalMonthsSubscribed.intValue() > 1) {
             message2 = message;
         } else {
-            ArrayList<MessageAccessory> arrayList2 = this.accessories;
-            String str2 = message.m17getId3Eiw7ao();
+            ArrayList<MessageAccessory> arrayList = this.accessories;
+            String str = message.m17getId3Eiw7ao();
             String username = message.getUsername();
             Context context = this.binding.getRoot().getContext();
             q.g(context, "binding.root.context");
             message2 = message;
-            arrayList2.add(new RoleSubscriptionPurchaseAccessory(str2, username, MessageKt.avatarUrl(message2, context), i10, null));
+            arrayList.add(new RoleSubscriptionPurchaseAccessory(str, username, MessageKt.avatarUrl(message2, context), intValue, null));
         }
         Sticker sticker = message.getSticker();
         if (sticker != null) {
@@ -339,7 +323,7 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         }
         Function4<MessageId, ChannelId, Integer, MediaType, Unit> onMessageLongPressed = eventHandler.getOnMessageLongPressed();
         if (onMessageLongPressed != null) {
-            onMessageLongPressed.invoke(MessageId.m593boximpl(message.m17getId3Eiw7ao()), ChannelId.m567boximpl(message.m15getChannelIdo4g7jtM()), null, null);
+            onMessageLongPressed.invoke(MessageId.m605boximpl(message.m17getId3Eiw7ao()), ChannelId.m579boximpl(message.m15getChannelIdo4g7jtM()), null, null);
         }
         return true;
     }
@@ -379,7 +363,7 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         q.g(simpleDraweeView2, "binding.icon");
         ColorUtilsKt.setTintColor(simpleDraweeView2, Integer.valueOf(intValue));
         List<MessageAccessory> generateMessageAccessories = generateMessageAccessories(message, context);
-        this.binding.accessoriesView.m211setAccessoriesRC8ZMxU(message.m17getId3Eiw7ao(), message.m15getChannelIdo4g7jtM(), message.m16getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, null);
+        this.binding.accessoriesView.m213setAccessoriesRC8ZMxU(message.m17getId3Eiw7ao(), message.m15getChannelIdo4g7jtM(), message.m16getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, null);
         MessageAccessoriesView messageAccessoriesView = this.binding.accessoriesView;
         q.g(messageAccessoriesView, "binding.accessoriesView");
         if (!generateMessageAccessories.isEmpty()) {

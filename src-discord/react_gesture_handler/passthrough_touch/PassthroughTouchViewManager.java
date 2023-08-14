@@ -53,7 +53,7 @@ public final class PassthroughTouchViewManager extends ViewGroupManager<Passthro
         q.h(reactContext, "reactContext");
         PassthroughTouchViewGroup passthroughTouchViewGroup = new PassthroughTouchViewGroup(reactContext);
         Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
-        ref$ObjectRef.f21052k = UIManagerHelper.getEventDispatcherForReactTag(reactContext, passthroughTouchViewGroup.getId());
+        ref$ObjectRef.f21063k = UIManagerHelper.getEventDispatcherForReactTag(reactContext, passthroughTouchViewGroup.getId());
         passthroughTouchViewGroup.setOnTouchDown(new PassthroughTouchViewManager$createViewInstance$1$1(this, ref$ObjectRef, reactContext, passthroughTouchViewGroup));
         return passthroughTouchViewGroup;
     }

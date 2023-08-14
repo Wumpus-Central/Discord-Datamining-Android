@@ -159,7 +159,7 @@ public final class ThreadEmbedView extends ConstraintLayout {
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$3, DiscordFont.PrimaryMedium);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$3, 14.0f);
         _init_$lambda$3.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
-        setBackgroundTintList(ColorStateList.valueOf(ThemeManagerKt.getTheme().getBackgroundSecondary()));
+        setBackgroundTintList(ColorStateList.valueOf(ThemeManagerKt.getTheme().getBgBaseSecondary()));
         ViewBackgroundUtilsKt.setBackgroundRectangle$default(this, -1, SizeUtilsKt.getDpToPx(4), null, 0, 12, null);
         RippleUtilsKt.addRipple(this, true, SizeUtilsKt.getDpToPx(4));
         setPadding(SizeUtilsKt.getDpToPx(12), SizeUtilsKt.getDpToPx(8), SizeUtilsKt.getDpToPx(12), SizeUtilsKt.getDpToPx(8));

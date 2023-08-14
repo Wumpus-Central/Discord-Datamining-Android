@@ -29,7 +29,7 @@ public final class MediaView$registerForPortal$2 extends s implements Function1<
     @Override 
     public   Unit invoke(View view) {
         invoke2(view);
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 
     

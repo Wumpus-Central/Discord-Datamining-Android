@@ -27,14 +27,14 @@ public final class FlaggedMessageActionBarViewHolder extends MessagePartViewHold
     public static final void bind$lambda$0(Function2 onTapAutoModerationActions, String messageId, long j10, View view) {
         q.h(onTapAutoModerationActions, "$onTapAutoModerationActions");
         q.h(messageId, "$messageId");
-        onTapAutoModerationActions.invoke(MessageId.m593boximpl(messageId), ChannelId.m567boximpl(j10));
+        onTapAutoModerationActions.invoke(MessageId.m605boximpl(messageId), ChannelId.m579boximpl(j10));
     }
 
     
     public static final void bind$lambda$1(Function2 onTapAutoModerationFeedback, String messageId, long j10, View view) {
         q.h(onTapAutoModerationFeedback, "$onTapAutoModerationFeedback");
         q.h(messageId, "$messageId");
-        onTapAutoModerationFeedback.invoke(MessageId.m593boximpl(messageId), ChannelId.m567boximpl(j10));
+        onTapAutoModerationFeedback.invoke(MessageId.m605boximpl(messageId), ChannelId.m579boximpl(j10));
     }
 
     public final void bind(FlaggedMessageActionBarAccessory messageActionBarAccessory, final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationActions, final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationFeedback) {
@@ -43,7 +43,7 @@ public final class FlaggedMessageActionBarViewHolder extends MessagePartViewHold
         q.h(onTapAutoModerationFeedback, "onTapAutoModerationFeedback");
         AutoModerationContext autoModerationContext = messageActionBarAccessory.getAutoModerationContext();
         final long j10 = messageActionBarAccessory.getMessage().m15getChannelIdo4g7jtM();
-        final String str = messageActionBarAccessory.mo218getMessageId3Eiw7ao();
+        final String str = messageActionBarAccessory.getMessage().m17getId3Eiw7ao();
         this.actionBarView.setActions(autoModerationContext, new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {

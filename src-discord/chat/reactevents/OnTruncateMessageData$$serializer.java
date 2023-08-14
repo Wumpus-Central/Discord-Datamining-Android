@@ -63,7 +63,7 @@ public final class OnTruncateMessageData$$serializer implements f0<OnTruncateMes
         }
         c10.b(descriptor2);
         MessageId messageId = (MessageId) obj;
-        return new OnTruncateMessageData(i10, messageId != null ? messageId.m601unboximpl() : null, null, null);
+        return new OnTruncateMessageData(i10, messageId != null ? messageId.m613unboximpl() : null, null, null);
     }
 
     @Override 

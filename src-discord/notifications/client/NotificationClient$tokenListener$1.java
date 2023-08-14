@@ -18,7 +18,7 @@ final class NotificationClient$tokenListener$1 extends s implements Function1<St
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 
     

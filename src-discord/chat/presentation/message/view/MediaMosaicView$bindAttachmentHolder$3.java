@@ -29,7 +29,7 @@ public final class MediaMosaicView$bindAttachmentHolder$3 extends s implements F
     @Override 
     public   Unit invoke(Double d10) {
         invoke2(d10);
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 
     

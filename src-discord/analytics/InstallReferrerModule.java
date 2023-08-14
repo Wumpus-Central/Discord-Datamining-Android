@@ -10,8 +10,8 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Ref$ObjectRef;
 import kotlin.jvm.internal.q;
-import kotlinx.coroutines.k0;
 import kotlinx.coroutines.l;
+import kotlinx.coroutines.m0;
 
 @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u0018\u0000 \u000b2\u00020\u0001:\u0001\u000bB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0007J\b\u0010\t\u001a\u00020\nH\u0016¨\u0006\f"}, d2 = {"Lcom/discord/analytics/InstallReferrerModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "context", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "get", "", BaseJavaModule.METHOD_TYPE_PROMISE, "Lcom/facebook/react/bridge/Promise;", "getName", "", "Companion", "analytics_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -42,13 +42,13 @@ public final class InstallReferrerModule extends ReactContextBaseJavaModule {
         q.h(promise, "promise");
         SharedPreferences sharedPreferences = getReactApplicationContext().getSharedPreferences("InstallReferrer", 0);
         Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
-        ref$ObjectRef.f21052k = sharedPreferences.getString("referrer", null);
+        ref$ObjectRef.f21063k = sharedPreferences.getString("referrer", null);
         int i10 = sharedPreferences.getInt("attempts", 0);
-        Object obj = ref$ObjectRef.f21052k;
+        Object obj = ref$ObjectRef.f21063k;
         if (obj != null) {
             promise.resolve(obj);
         } else if (i10 < 10) {
-            l.d(k0.b(), null, null, new InstallReferrerModule$get$1(new Ref$ObjectRef(), this, ref$ObjectRef, sharedPreferences, promise, i10, null), 3, null);
+            l.d(m0.b(), null, null, new InstallReferrerModule$get$1(new Ref$ObjectRef(), this, ref$ObjectRef, sharedPreferences, promise, i10, null), 3, null);
         } else {
             promise.resolve(null);
         }

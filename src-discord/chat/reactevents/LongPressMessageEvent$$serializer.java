@@ -36,8 +36,8 @@ public final class LongPressMessageEvent$$serializer implements f0<LongPressMess
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29540a;
-        return new KSerializer[]{a2Var, a2Var, m0.f29615a, a2Var};
+        a2 a2Var = a2.f29550a;
+        return new KSerializer[]{a2Var, a2Var, m0.f29625a, a2Var};
     }
 
     @Override 

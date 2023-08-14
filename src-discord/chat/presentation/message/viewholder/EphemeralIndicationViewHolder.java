@@ -23,6 +23,6 @@ public final class EphemeralIndicationViewHolder extends MessagePartViewHolder {
 
     public final void bind(EphemeralIndicationMessageAccessory ephemeralAccessory) {
         q.h(ephemeralAccessory, "ephemeralAccessory");
-        this.ephemeralIndicationView.m309setEphemeralIndicationAFFcxXc(ephemeralAccessory.mo218getMessageId3Eiw7ao(), ephemeralAccessory.getEphemeralIndication(), new EphemeralIndicationViewHolder$bind$1$1(this.eventHandler), new EphemeralIndicationViewHolder$bind$1$2(this, ephemeralAccessory));
+        this.ephemeralIndicationView.m311setEphemeralIndicationAFFcxXc(ephemeralAccessory.mo220getMessageId3Eiw7ao(), ephemeralAccessory.getEphemeralIndication(), new EphemeralIndicationViewHolder$bind$1$1(this.eventHandler), new EphemeralIndicationViewHolder$bind$1$2(this, ephemeralAccessory));
     }
 }

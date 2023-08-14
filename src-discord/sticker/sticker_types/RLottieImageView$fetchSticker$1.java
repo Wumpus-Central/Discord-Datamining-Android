@@ -18,11 +18,11 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
-import kotlinx.coroutines.f2;
+import kotlinx.coroutines.a1;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
+import kotlinx.coroutines.h2;
 import kotlinx.coroutines.j;
-import kotlinx.coroutines.y0;
 import pf.d;
 
 
@@ -55,7 +55,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
         }
 
         @Override 
@@ -64,7 +64,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             if (this.label == 0) {
                 t.b(obj);
                 this.this$0.clearAnimation();
-                return Unit.f21025a;
+                return Unit.f21036a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -84,7 +84,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((RLottieImageView$fetchSticker$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
+        return ((RLottieImageView$fetchSticker$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
     }
 
     @Override 
@@ -94,7 +94,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
         int i10 = this.label;
         if (i10 == 0) {
             t.b(obj);
-            f2 c10 = y0.c();
+            h2 c10 = a1.c();
             AnonymousClass1 r12 = new AnonymousClass1(this.this$0, null);
             this.label = 1;
             if (j.g(c10, r12, this) == d10) {
@@ -104,7 +104,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             t.b(obj);
         } else if (i10 == 2) {
             t.b(obj);
-            return Unit.f21025a;
+            return Unit.f21036a;
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -143,7 +143,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                 }
 
                 public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                    return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
+                    return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
                 }
 
                 @Override 
@@ -198,7 +198,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                 }
 
                 public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                    return ((C01042) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
+                    return ((C01042) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
                 }
 
                 @Override 
@@ -223,15 +223,15 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                 Object d11;
                 Object d12;
                 if (downloadState instanceof DownloadState.Completed) {
-                    Object g10 = j.g(y0.c(), new AnonymousClass1(RLottieImageView.this, downloadState, config, null), continuation);
+                    Object g10 = j.g(a1.c(), new AnonymousClass1(RLottieImageView.this, downloadState, config, null), continuation);
                     d12 = d.d();
-                    return g10 == d12 ? g10 : Unit.f21025a;
+                    return g10 == d12 ? g10 : Unit.f21036a;
                 } else if (!(downloadState instanceof DownloadState.Failure)) {
-                    return Unit.f21025a;
+                    return Unit.f21036a;
                 } else {
-                    Object g11 = j.g(y0.c(), new C01042(RLottieImageView.this, null), continuation);
+                    Object g11 = j.g(a1.c(), new C01042(RLottieImageView.this, null), continuation);
                     d11 = d.d();
-                    return g11 == d11 ? g11 : Unit.f21025a;
+                    return g11 == d11 ? g11 : Unit.f21036a;
                 }
             }
         };
@@ -239,6 +239,6 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
         if (downloadFile$default.collect(flowCollector, this) == d10) {
             return d10;
         }
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 }

@@ -22,7 +22,7 @@ final class MediaPlayerManagerModule$setLoopPlayback$1 extends s implements Func
     @Override 
     public   Unit invoke(SimpleExoPlayer simpleExoPlayer) {
         invoke2(simpleExoPlayer);
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 
     

@@ -7,11 +7,16 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Parcelable;
+import androidx.core.content.pm.ShortcutInfoCompat;
+import androidx.core.content.pm.b;
 import androidx.core.os.e;
 import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.discord.share.intent.GetFileNameKt;
+import com.discord.shortcuts.ShortcutData;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import jf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
@@ -20,12 +25,13 @@ import kotlin.collections.k;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
-@Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0080\b\u0018\u0000 \u001b2\u00020\u0001:\u0002\u001a\u001bB%\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\bJ\t\u0010\u000e\u001a\u00020\u0003HÆ\u0003J\u000f\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005HÆ\u0003J\u000b\u0010\u0010\u001a\u0004\u0018\u00010\u0003HÆ\u0003J/\u0010\u0011\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\u000e\b\u0002\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0003HÆ\u0001J\u0013\u0010\u0012\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0015\u001a\u00020\u0016HÖ\u0001J\u0006\u0010\u0017\u001a\u00020\u0018J\t\u0010\u0019\u001a\u00020\u0003HÖ\u0001R\u0017\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\f¨\u0006\u001c"}, d2 = {"Lcom/discord/share/ShareProps;", "", "text", "", "attachments", "", "Lcom/discord/share/ShareProps$Attachment;", "targetChannelId", "(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;)V", "getAttachments", "()Ljava/util/List;", "getTargetChannelId", "()Ljava/lang/String;", "getText", "component1", "component2", "component3", "copy", "equals", "", "other", "hashCode", "", "toBundle", "Landroid/os/Bundle;", "toString", "Attachment", "Companion", "share_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0080\b\u0018\u0000 \u001e2\u00020\u0001:\u0002\u001d\u001eB/\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\tJ\t\u0010\u0010\u001a\u00020\u0003HÆ\u0003J\u000f\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005HÆ\u0003J\u000b\u0010\u0012\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010\u0013\u001a\u0004\u0018\u00010\u0003HÆ\u0003J;\u0010\u0014\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\u000e\b\u0002\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0003HÆ\u0001J\u0013\u0010\u0015\u001a\u00020\u00162\b\u0010\u0017\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0018\u001a\u00020\u0019HÖ\u0001J\u0006\u0010\u001a\u001a\u00020\u001bJ\t\u0010\u001c\u001a\u00020\u0003HÖ\u0001R\u0017\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0013\u0010\b\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\rR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\r¨\u0006\u001f"}, d2 = {"Lcom/discord/share/ShareProps;", "", "text", "", "attachments", "", "Lcom/discord/share/ShareProps$Attachment;", "targetChannelId", "targetUserId", "(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V", "getAttachments", "()Ljava/util/List;", "getTargetChannelId", "()Ljava/lang/String;", "getTargetUserId", "getText", "component1", "component2", "component3", "component4", "copy", "equals", "", "other", "hashCode", "", "toBundle", "Landroid/os/Bundle;", "toString", "Attachment", "Companion", "share_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
 public final class ShareProps {
     public static final Companion Companion = new Companion(null);
     private final List<Attachment> attachments;
     private final String targetChannelId;
+    private final String targetUserId;
     private final String text;
 
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\f\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B\u001f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\u0006J\t\u0010\u000b\u001a\u00020\u0003HÆ\u0003J\t\u0010\f\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\r\u001a\u0004\u0018\u00010\u0003HÆ\u0003J)\u0010\u000e\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0003HÆ\u0001J\u0013\u0010\u000f\u001a\u00020\u00102\b\u0010\u0011\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0012\u001a\u00020\u0013HÖ\u0001J\u0006\u0010\u0014\u001a\u00020\u0015J\t\u0010\u0016\u001a\u00020\u0003HÖ\u0001R\u0013\u0010\u0005\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\bR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\b¨\u0006\u0017"}, d2 = {"Lcom/discord/share/ShareProps$Attachment;", "", ZeroconfModule.KEY_SERVICE_NAME, "", "uri", "mimeType", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getMimeType", "()Ljava/lang/String;", "getName", "getUri", "component1", "component2", "component3", "copy", "equals", "", "other", "hashCode", "", "toBundle", "Landroid/os/Bundle;", "toString", "share_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -136,10 +142,39 @@ public final class ShareProps {
         }
 
         public final ShareProps createShareProps(Intent intent, Context context) {
-            int s10;
             String str;
+            int s10;
+            Object obj;
+            Intent h10;
+            ShortcutData shortcutIntentData;
+            Map<String, String> data;
             q.h(intent, "<this>");
             q.h(context, "context");
+            String str2 = null;
+            if (Build.VERSION.SDK_INT >= 29) {
+                str = intent.getStringExtra("android.intent.extra.shortcut.ID");
+            } else {
+                str = null;
+            }
+            if (str != null) {
+                List<ShortcutInfoCompat> f10 = b.f(context, 10);
+                q.g(f10, "getShortcuts(\n          …YNAMIC,\n                )");
+                Iterator<T> it = f10.iterator();
+                while (true) {
+                    if (!it.hasNext()) {
+                        obj = null;
+                        break;
+                    }
+                    obj = it.next();
+                    if (q.c(((ShortcutInfoCompat) obj).g(), str)) {
+                        break;
+                    }
+                }
+                ShortcutInfoCompat shortcutInfoCompat = (ShortcutInfoCompat) obj;
+                if (!(shortcutInfoCompat == null || (h10 = shortcutInfoCompat.h()) == null || (shortcutIntentData = ShortcutData.Companion.getShortcutIntentData(h10)) == null || (data = shortcutIntentData.getData()) == null)) {
+                    str2 = data.get("receiving_user_id");
+                }
+            }
             String stringExtra = intent.getStringExtra("android.intent.extra.TEXT");
             if (stringExtra == null) {
                 stringExtra = "";
@@ -155,25 +190,21 @@ public final class ShareProps {
                 q.g(uri2, "uri.toString()");
                 arrayList.add(new Attachment(fileName, uri2, context.getContentResolver().getType(uri)));
             }
-            if (Build.VERSION.SDK_INT >= 29) {
-                str = intent.getStringExtra("android.intent.extra.shortcut.ID");
-            } else {
-                str = null;
-            }
-            return new ShareProps(stringExtra, arrayList, str);
+            return new ShareProps(stringExtra, arrayList, str, str2);
         }
     }
 
-    public ShareProps(String text, List<Attachment> attachments, String str) {
+    public ShareProps(String text, List<Attachment> attachments, String str, String str2) {
         q.h(text, "text");
         q.h(attachments, "attachments");
         this.text = text;
         this.attachments = attachments;
         this.targetChannelId = str;
+        this.targetUserId = str2;
     }
 
     
-    public static  ShareProps copy$default(ShareProps shareProps, String str, List list, String str2, int i10, Object obj) {
+    public static  ShareProps copy$default(ShareProps shareProps, String str, List list, String str2, String str3, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = shareProps.text;
         }
@@ -183,7 +214,10 @@ public final class ShareProps {
         if ((i10 & 4) != 0) {
             str2 = shareProps.targetChannelId;
         }
-        return shareProps.copy(str, list, str2);
+        if ((i10 & 8) != 0) {
+            str3 = shareProps.targetUserId;
+        }
+        return shareProps.copy(str, list, str2, str3);
     }
 
     public final String component1() {
@@ -198,10 +232,14 @@ public final class ShareProps {
         return this.targetChannelId;
     }
 
-    public final ShareProps copy(String text, List<Attachment> attachments, String str) {
+    public final String component4() {
+        return this.targetUserId;
+    }
+
+    public final ShareProps copy(String text, List<Attachment> attachments, String str, String str2) {
         q.h(text, "text");
         q.h(attachments, "attachments");
-        return new ShareProps(text, attachments, str);
+        return new ShareProps(text, attachments, str, str2);
     }
 
     public boolean equals(Object obj) {
@@ -212,7 +250,7 @@ public final class ShareProps {
             return false;
         }
         ShareProps shareProps = (ShareProps) obj;
-        return q.c(this.text, shareProps.text) && q.c(this.attachments, shareProps.attachments) && q.c(this.targetChannelId, shareProps.targetChannelId);
+        return q.c(this.text, shareProps.text) && q.c(this.attachments, shareProps.attachments) && q.c(this.targetChannelId, shareProps.targetChannelId) && q.c(this.targetUserId, shareProps.targetUserId);
     }
 
     public final List<Attachment> getAttachments() {
@@ -223,6 +261,10 @@ public final class ShareProps {
         return this.targetChannelId;
     }
 
+    public final String getTargetUserId() {
+        return this.targetUserId;
+    }
+
     public final String getText() {
         return this.text;
     }
@@ -230,12 +272,18 @@ public final class ShareProps {
     public int hashCode() {
         int hashCode = ((this.text.hashCode() * 31) + this.attachments.hashCode()) * 31;
         String str = this.targetChannelId;
-        return hashCode + (str == null ? 0 : str.hashCode());
+        int i10 = 0;
+        int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
+        String str2 = this.targetUserId;
+        if (str2 != null) {
+            i10 = str2.hashCode();
+        }
+        return hashCode2 + i10;
     }
 
     public final Bundle toBundle() {
         int s10;
-        Pair[] pairArr = new Pair[3];
+        Pair[] pairArr = new Pair[4];
         pairArr[0] = x.a("text", this.text);
         List<Attachment> list = this.attachments;
         s10 = k.s(list, 10);
@@ -245,6 +293,7 @@ public final class ShareProps {
         }
         pairArr[1] = x.a("attachments", arrayList.toArray(new Bundle[0]));
         pairArr[2] = x.a("targetChannelId", this.targetChannelId);
+        pairArr[3] = x.a("targetUserId", this.targetUserId);
         return e.a(pairArr);
     }
 
@@ -252,6 +301,7 @@ public final class ShareProps {
         String str = this.text;
         List<Attachment> list = this.attachments;
         String str2 = this.targetChannelId;
-        return "ShareProps(text=" + str + ", attachments=" + list + ", targetChannelId=" + str2 + ")";
+        String str3 = this.targetUserId;
+        return "ShareProps(text=" + str + ", attachments=" + list + ", targetChannelId=" + str2 + ", targetUserId=" + str3 + ")";
     }
 }

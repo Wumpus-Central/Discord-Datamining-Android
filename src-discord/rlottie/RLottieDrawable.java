@@ -336,7 +336,6 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
     public void draw(Canvas canvas) {
         int i10;
         View view;
-        int i11;
         q.i(canvas, "canvas");
         if (this.nativePtr != 0 && !this.destroyWhenDone) {
             long elapsedRealtime = SystemClock.elapsedRealtime();
@@ -358,12 +357,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
                         }
                         Integer num = hashMap.get(Integer.valueOf(this.currentFrame - 1));
                         if (!(num == null || (view = this.currentParentView) == null)) {
-                            if (num.intValue() == 1) {
-                                i11 = 0;
-                            } else {
-                                i11 = 3;
-                            }
-                            view.performHapticFeedback(i11, 2);
+                            view.performHapticFeedback(num.intValue() == 1 ? 0 : 3, 2);
                         }
                     }
                     this.backgroundBitmap = this.renderingBitmap;
@@ -1089,7 +1083,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
             while (true) {
                 byte[] bArr = buffer;
                 int read = openRawResource.read(bArr, 0, bArr.length);
-                e0Var.f21058k = read;
+                e0Var.f21069k = read;
                 if (read <= 0) {
                     break;
                 }
@@ -1099,10 +1093,10 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
                     System.arraycopy(bArr2, 0, bArr3, 0, i13);
                     readBuffer = bArr3;
                 }
-                System.arraycopy(bArr, 0, readBuffer, i13, e0Var.f21058k);
-                i13 += e0Var.f21058k;
+                System.arraycopy(bArr, 0, readBuffer, i13, e0Var.f21069k);
+                i13 += e0Var.f21069k;
             }
-            String str = new String(readBuffer, 0, i13, d.f24672b);
+            String str = new String(readBuffer, 0, i13, d.f24685b);
             openRawResource.close();
             this.width = i11;
             this.height = i12;

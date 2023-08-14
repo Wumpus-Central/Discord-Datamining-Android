@@ -19,7 +19,7 @@ final class FlaggedMessageEmbedView$configureMessageContent$1$6 extends s implem
     @Override 
     public   Unit invoke(CommandMentionContentNode commandMentionContentNode) {
         invoke2(commandMentionContentNode);
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 
     

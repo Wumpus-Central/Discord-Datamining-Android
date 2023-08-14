@@ -55,26 +55,26 @@ public final class VoiceMessagePlaybackFailedData implements ReactEvent {
     }
 
     
-    public static  VoiceMessagePlaybackFailedData m435copyntcYbpo$default(VoiceMessagePlaybackFailedData voiceMessagePlaybackFailedData, String str, String str2, int i10, Object obj) {
+    public static  VoiceMessagePlaybackFailedData m447copyntcYbpo$default(VoiceMessagePlaybackFailedData voiceMessagePlaybackFailedData, String str, String str2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = voiceMessagePlaybackFailedData.messageId;
         }
         if ((i10 & 2) != 0) {
             str2 = voiceMessagePlaybackFailedData.errorMessage;
         }
-        return voiceMessagePlaybackFailedData.m437copyntcYbpo(str, str2);
+        return voiceMessagePlaybackFailedData.m449copyntcYbpo(str, str2);
     }
 
     public static final void write$Self(VoiceMessagePlaybackFailedData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.h(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m593boximpl(self.messageId));
-        output.z(serialDesc, 1, a2.f29540a, self.errorMessage);
+        output.h(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m605boximpl(self.messageId));
+        output.z(serialDesc, 1, a2.f29550a, self.errorMessage);
     }
 
     
-    public final String m436component13Eiw7ao() {
+    public final String m448component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -83,7 +83,7 @@ public final class VoiceMessagePlaybackFailedData implements ReactEvent {
     }
 
     
-    public final VoiceMessagePlaybackFailedData m437copyntcYbpo(String messageId, String str) {
+    public final VoiceMessagePlaybackFailedData m449copyntcYbpo(String messageId, String str) {
         q.h(messageId, "messageId");
         return new VoiceMessagePlaybackFailedData(messageId, str, null);
     }
@@ -96,7 +96,7 @@ public final class VoiceMessagePlaybackFailedData implements ReactEvent {
             return false;
         }
         VoiceMessagePlaybackFailedData voiceMessagePlaybackFailedData = (VoiceMessagePlaybackFailedData) obj;
-        return MessageId.m597equalsimpl0(this.messageId, voiceMessagePlaybackFailedData.messageId) && q.c(this.errorMessage, voiceMessagePlaybackFailedData.errorMessage);
+        return MessageId.m609equalsimpl0(this.messageId, voiceMessagePlaybackFailedData.messageId) && q.c(this.errorMessage, voiceMessagePlaybackFailedData.errorMessage);
     }
 
     public final String getErrorMessage() {
@@ -104,12 +104,12 @@ public final class VoiceMessagePlaybackFailedData implements ReactEvent {
     }
 
     
-    public final String m438getMessageId3Eiw7ao() {
+    public final String m450getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        int i10 = MessageId.m598hashCodeimpl(this.messageId) * 31;
+        int i10 = MessageId.m610hashCodeimpl(this.messageId) * 31;
         String str = this.errorMessage;
         return i10 + (str == null ? 0 : str.hashCode());
     }
@@ -120,7 +120,7 @@ public final class VoiceMessagePlaybackFailedData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m599toStringimpl(this.messageId);
+        String str = MessageId.m611toStringimpl(this.messageId);
         String str2 = this.errorMessage;
         return "VoiceMessagePlaybackFailedData(messageId=" + str + ", errorMessage=" + str2 + ")";
     }

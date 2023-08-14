@@ -625,6 +625,8 @@
     <dimen name="notification_top_pad">10.0dip</dimen>
     <dimen name="notification_top_pad_large_text">5.0dip</dimen>
     <dimen name="overlay_safe_margin">16.0dip</dimen>
+    <dimen name="remix_button_container_size">40.0dip</dimen>
+    <dimen name="remix_button_size">22.0dip</dimen>
     <dimen name="spacing_12">12.0dip</dimen>
     <dimen name="spacing_16">16.0dip</dimen>
     <dimen name="spacing_24">24.0dip</dimen>

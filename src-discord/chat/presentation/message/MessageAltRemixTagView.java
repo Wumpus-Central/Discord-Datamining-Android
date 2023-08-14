@@ -49,11 +49,11 @@ public final class MessageAltRemixTagView extends FrameLayout {
     public static final void configureTagView_e2j04IU$lambda$0(ChatEventHandler eventHandler, String messageId, long j10, String str, View view) {
         q.h(eventHandler, "$eventHandler");
         q.h(messageId, "$messageId");
-        eventHandler.mo177onTapTagEqy5D80(messageId, j10, str);
+        eventHandler.mo178onTapTagEqy5D80(messageId, j10, str);
     }
 
     
-    public final void m212configureTagViewe2j04IU(String str, Integer num, Integer num2, final ChatEventHandler eventHandler, final String messageId, final long j10, final String str2) {
+    public final void m214configureTagViewe2j04IU(String str, Integer num, Integer num2, final ChatEventHandler eventHandler, final String messageId, final long j10, final String str2) {
         int i10;
         int i11;
         q.h(eventHandler, "eventHandler");

@@ -37,7 +37,7 @@ public final class RoleSubscriptionOnClick$$serializer implements f0<RoleSubscri
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29540a;
+        a2 a2Var = a2.f29550a;
         return new KSerializer[]{a2Var, a2Var, a.u(a2Var), a.u(a2Var), a.u(a2Var)};
     }
 
@@ -56,7 +56,7 @@ public final class RoleSubscriptionOnClick$$serializer implements f0<RoleSubscri
         if (c10.y()) {
             str2 = c10.t(descriptor2, 0);
             str = c10.t(descriptor2, 1);
-            a2 a2Var = a2.f29540a;
+            a2 a2Var = a2.f29550a;
             obj = c10.v(descriptor2, 2, a2Var, null);
             obj3 = c10.v(descriptor2, 3, a2Var, null);
             obj2 = c10.v(descriptor2, 4, a2Var, null);
@@ -79,13 +79,13 @@ public final class RoleSubscriptionOnClick$$serializer implements f0<RoleSubscri
                     str4 = c10.t(descriptor2, 1);
                     i11 |= 2;
                 } else if (x10 == 2) {
-                    obj4 = c10.v(descriptor2, 2, a2.f29540a, obj4);
+                    obj4 = c10.v(descriptor2, 2, a2.f29550a, obj4);
                     i11 |= 4;
                 } else if (x10 == 3) {
-                    obj5 = c10.v(descriptor2, 3, a2.f29540a, obj5);
+                    obj5 = c10.v(descriptor2, 3, a2.f29550a, obj5);
                     i11 |= 8;
                 } else if (x10 == 4) {
-                    obj6 = c10.v(descriptor2, 4, a2.f29540a, obj6);
+                    obj6 = c10.v(descriptor2, 4, a2.f29550a, obj6);
                     i11 |= 16;
                 } else {
                     throw new n(x10);

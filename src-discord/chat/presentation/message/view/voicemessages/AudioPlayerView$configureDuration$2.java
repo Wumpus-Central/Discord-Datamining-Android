@@ -26,7 +26,7 @@ public final class AudioPlayerView$configureDuration$2 extends s implements Func
     @Override 
     public   Unit invoke(RenderContext renderContext) {
         invoke2(renderContext);
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 
     

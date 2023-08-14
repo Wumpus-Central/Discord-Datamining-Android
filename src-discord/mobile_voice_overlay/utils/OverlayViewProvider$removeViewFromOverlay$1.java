@@ -19,7 +19,7 @@ final class OverlayViewProvider$removeViewFromOverlay$1 extends s implements Fun
     @Override 
     public   Unit invoke(Object obj) {
         invoke((OverlayView) obj);
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 
     

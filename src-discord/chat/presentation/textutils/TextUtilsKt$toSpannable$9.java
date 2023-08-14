@@ -20,7 +20,7 @@ public final class TextUtilsKt$toSpannable$9 extends s implements Function1<Emoj
     @Override 
     public   Unit invoke(EmojiContentNode emojiContentNode) {
         invoke2(emojiContentNode);
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 
     

@@ -11,12 +11,12 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class ChatListItem {
 
     
-    private final String f7153id;
+    private final String f7155id;
     private final Lazy recyclerItemId$delegate;
 
     private ChatListItem(String str) {
         Lazy a10;
-        this.f7153id = str;
+        this.f7155id = str;
         a10 = n.a(p.NONE, new ChatListItem$recyclerItemId$2(this));
         this.recyclerItemId$delegate = a10;
     }
@@ -26,7 +26,7 @@ public abstract class ChatListItem {
     }
 
     public String getId() {
-        return this.f7153id;
+        return this.f7155id;
     }
 
     public final long getRecyclerItemId() {

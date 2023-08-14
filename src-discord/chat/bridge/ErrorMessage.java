@@ -19,7 +19,7 @@ public final class ErrorMessage extends MessageBase {
     public static final Companion Companion = new Companion(null);
 
     
-    private final String f7099id;
+    private final String f7101id;
     private final String stackTrace;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/chat/bridge/ErrorMessage$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/ErrorMessage;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -43,7 +43,7 @@ public final class ErrorMessage extends MessageBase {
         if (3 != (i10 & 3)) {
             n1.b(i10, 3, ErrorMessage$$serializer.INSTANCE.getDescriptor());
         }
-        this.f7099id = str;
+        this.f7101id = str;
         this.stackTrace = str2;
     }
 
@@ -58,7 +58,7 @@ public final class ErrorMessage extends MessageBase {
     
     public static  ErrorMessage m3copyntcYbpo$default(ErrorMessage errorMessage, String str, String str2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = errorMessage.f7099id;
+            str = errorMessage.f7101id;
         }
         if ((i10 & 2) != 0) {
             str2 = errorMessage.stackTrace;
@@ -71,13 +71,13 @@ public final class ErrorMessage extends MessageBase {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         MessageBase.write$Self(self, output, serialDesc);
-        output.h(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m593boximpl(self.f7099id));
+        output.h(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m605boximpl(self.f7101id));
         output.s(serialDesc, 1, self.stackTrace);
     }
 
     
     public final String m4component13Eiw7ao() {
-        return this.f7099id;
+        return this.f7101id;
     }
 
     public final String component2() {
@@ -99,12 +99,12 @@ public final class ErrorMessage extends MessageBase {
             return false;
         }
         ErrorMessage errorMessage = (ErrorMessage) obj;
-        return MessageId.m597equalsimpl0(this.f7099id, errorMessage.f7099id) && q.c(this.stackTrace, errorMessage.stackTrace);
+        return MessageId.m609equalsimpl0(this.f7101id, errorMessage.f7101id) && q.c(this.stackTrace, errorMessage.stackTrace);
     }
 
     
     public final String m6getId3Eiw7ao() {
-        return this.f7099id;
+        return this.f7101id;
     }
 
     public final String getStackTrace() {
@@ -112,18 +112,18 @@ public final class ErrorMessage extends MessageBase {
     }
 
     public int hashCode() {
-        return (MessageId.m598hashCodeimpl(this.f7099id) * 31) + this.stackTrace.hashCode();
+        return (MessageId.m610hashCodeimpl(this.f7101id) * 31) + this.stackTrace.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m599toStringimpl(this.f7099id);
+        String str = MessageId.m611toStringimpl(this.f7101id);
         String str2 = this.stackTrace;
         return "ErrorMessage(id=" + str + ", stackTrace=" + str2 + ")";
     }
 
     private ErrorMessage(String str, String str2) {
         super(null);
-        this.f7099id = str;
+        this.f7101id = str;
         this.stackTrace = str2;
     }
 }

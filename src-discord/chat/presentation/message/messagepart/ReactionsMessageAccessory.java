@@ -31,8 +31,8 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
     }
 
     
-    public final String m282component13Eiw7ao() {
-        return mo218getMessageId3Eiw7ao();
+    public final String m284component13Eiw7ao() {
+        return mo220getMessageId3Eiw7ao();
     }
 
     public final List<MessageReaction> component2() {
@@ -68,7 +68,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
     }
 
     
-    public final ReactionsMessageAccessory m283copyIwdeaXA(String messageId, List<MessageReaction> reactions, boolean z10, boolean z11, String addReactionLabel, String addNewReactionAccessibilityLabel, String addNewBurstReactionAccessibilityLabel, ReactionsTheme reactionsTheme, DiscordTheme discordTheme) {
+    public final ReactionsMessageAccessory m285copyIwdeaXA(String messageId, List<MessageReaction> reactions, boolean z10, boolean z11, String addReactionLabel, String addNewReactionAccessibilityLabel, String addNewBurstReactionAccessibilityLabel, ReactionsTheme reactionsTheme, DiscordTheme discordTheme) {
         q.h(messageId, "messageId");
         q.h(reactions, "reactions");
         q.h(addReactionLabel, "addReactionLabel");
@@ -85,7 +85,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
             return false;
         }
         ReactionsMessageAccessory reactionsMessageAccessory = (ReactionsMessageAccessory) obj;
-        return MessageId.m597equalsimpl0(mo218getMessageId3Eiw7ao(), reactionsMessageAccessory.mo218getMessageId3Eiw7ao()) && q.c(this.reactions, reactionsMessageAccessory.reactions) && this.canAddNewReactions == reactionsMessageAccessory.canAddNewReactions && this.canAddNewBurstReactions == reactionsMessageAccessory.canAddNewBurstReactions && q.c(this.addReactionLabel, reactionsMessageAccessory.addReactionLabel) && q.c(this.addNewReactionAccessibilityLabel, reactionsMessageAccessory.addNewReactionAccessibilityLabel) && q.c(this.addNewBurstReactionAccessibilityLabel, reactionsMessageAccessory.addNewBurstReactionAccessibilityLabel) && q.c(this.reactionsTheme, reactionsMessageAccessory.reactionsTheme) && q.c(this.theme, reactionsMessageAccessory.theme);
+        return MessageId.m609equalsimpl0(mo220getMessageId3Eiw7ao(), reactionsMessageAccessory.mo220getMessageId3Eiw7ao()) && q.c(this.reactions, reactionsMessageAccessory.reactions) && this.canAddNewReactions == reactionsMessageAccessory.canAddNewReactions && this.canAddNewBurstReactions == reactionsMessageAccessory.canAddNewBurstReactions && q.c(this.addReactionLabel, reactionsMessageAccessory.addReactionLabel) && q.c(this.addNewReactionAccessibilityLabel, reactionsMessageAccessory.addNewReactionAccessibilityLabel) && q.c(this.addNewBurstReactionAccessibilityLabel, reactionsMessageAccessory.addNewBurstReactionAccessibilityLabel) && q.c(this.reactionsTheme, reactionsMessageAccessory.reactionsTheme) && q.c(this.theme, reactionsMessageAccessory.theme);
     }
 
     public final String getAddNewBurstReactionAccessibilityLabel() {
@@ -110,7 +110,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
 
     @Override 
     
-    public String mo218getMessageId3Eiw7ao() {
+    public String mo220getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -127,7 +127,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int i10 = ((MessageId.m598hashCodeimpl(mo218getMessageId3Eiw7ao()) * 31) + this.reactions.hashCode()) * 31;
+        int i10 = ((MessageId.m610hashCodeimpl(mo220getMessageId3Eiw7ao()) * 31) + this.reactions.hashCode()) * 31;
         boolean z10 = this.canAddNewReactions;
         int i11 = 1;
         if (z10) {
@@ -153,7 +153,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m599toStringimpl(mo218getMessageId3Eiw7ao());
+        String str = MessageId.m611toStringimpl(mo220getMessageId3Eiw7ao());
         List<MessageReaction> list = this.reactions;
         boolean z10 = this.canAddNewReactions;
         boolean z11 = this.canAddNewBurstReactions;

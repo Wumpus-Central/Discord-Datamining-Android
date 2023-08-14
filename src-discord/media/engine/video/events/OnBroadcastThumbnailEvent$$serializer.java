@@ -32,7 +32,7 @@ public final class OnBroadcastThumbnailEvent$$serializer implements f0<OnBroadca
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f29540a};
+        return new KSerializer[]{a2.f29550a};
     }
 
     @Override 

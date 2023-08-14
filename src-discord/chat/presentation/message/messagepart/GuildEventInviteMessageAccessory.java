@@ -31,9 +31,9 @@ public final class GuildEventInviteMessageAccessory extends MessageAccessory {
     }
 
     
-    public static  GuildEventInviteMessageAccessory m254copyLdU2QRA$default(GuildEventInviteMessageAccessory guildEventInviteMessageAccessory, String str, int i10, GuildEventInviteEmbedImpl guildEventInviteEmbedImpl, boolean z10, boolean z11, boolean z12, int i11, Object obj) {
+    public static  GuildEventInviteMessageAccessory m256copyLdU2QRA$default(GuildEventInviteMessageAccessory guildEventInviteMessageAccessory, String str, int i10, GuildEventInviteEmbedImpl guildEventInviteEmbedImpl, boolean z10, boolean z11, boolean z12, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = guildEventInviteMessageAccessory.mo218getMessageId3Eiw7ao();
+            str = guildEventInviteMessageAccessory.mo220getMessageId3Eiw7ao();
         }
         if ((i11 & 2) != 0) {
             i10 = guildEventInviteMessageAccessory.codedLinkIndex;
@@ -50,12 +50,12 @@ public final class GuildEventInviteMessageAccessory extends MessageAccessory {
         if ((i11 & 32) != 0) {
             z12 = guildEventInviteMessageAccessory.shouldShowRoleOnName;
         }
-        return guildEventInviteMessageAccessory.m256copyLdU2QRA(str, i10, guildEventInviteEmbedImpl, z10, z11, z12);
+        return guildEventInviteMessageAccessory.m258copyLdU2QRA(str, i10, guildEventInviteEmbedImpl, z10, z11, z12);
     }
 
     
-    public final String m255component13Eiw7ao() {
-        return mo218getMessageId3Eiw7ao();
+    public final String m257component13Eiw7ao() {
+        return mo220getMessageId3Eiw7ao();
     }
 
     public final int component2() {
@@ -79,7 +79,7 @@ public final class GuildEventInviteMessageAccessory extends MessageAccessory {
     }
 
     
-    public final GuildEventInviteMessageAccessory m256copyLdU2QRA(String messageId, int i10, GuildEventInviteEmbedImpl invite, boolean z10, boolean z11, boolean z12) {
+    public final GuildEventInviteMessageAccessory m258copyLdU2QRA(String messageId, int i10, GuildEventInviteEmbedImpl invite, boolean z10, boolean z11, boolean z12) {
         q.h(messageId, "messageId");
         q.h(invite, "invite");
         return new GuildEventInviteMessageAccessory(messageId, i10, invite, z10, z11, z12, null);
@@ -93,7 +93,7 @@ public final class GuildEventInviteMessageAccessory extends MessageAccessory {
             return false;
         }
         GuildEventInviteMessageAccessory guildEventInviteMessageAccessory = (GuildEventInviteMessageAccessory) obj;
-        return MessageId.m597equalsimpl0(mo218getMessageId3Eiw7ao(), guildEventInviteMessageAccessory.mo218getMessageId3Eiw7ao()) && this.codedLinkIndex == guildEventInviteMessageAccessory.codedLinkIndex && q.c(this.invite, guildEventInviteMessageAccessory.invite) && this.shouldAnimateEmoji == guildEventInviteMessageAccessory.shouldAnimateEmoji && this.shouldShowRoleDot == guildEventInviteMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == guildEventInviteMessageAccessory.shouldShowRoleOnName;
+        return MessageId.m609equalsimpl0(mo220getMessageId3Eiw7ao(), guildEventInviteMessageAccessory.mo220getMessageId3Eiw7ao()) && this.codedLinkIndex == guildEventInviteMessageAccessory.codedLinkIndex && q.c(this.invite, guildEventInviteMessageAccessory.invite) && this.shouldAnimateEmoji == guildEventInviteMessageAccessory.shouldAnimateEmoji && this.shouldShowRoleDot == guildEventInviteMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == guildEventInviteMessageAccessory.shouldShowRoleOnName;
     }
 
     public final int getCodedLinkIndex() {
@@ -106,7 +106,7 @@ public final class GuildEventInviteMessageAccessory extends MessageAccessory {
 
     @Override 
     
-    public String mo218getMessageId3Eiw7ao() {
+    public String mo220getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -123,7 +123,7 @@ public final class GuildEventInviteMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int i10 = ((((MessageId.m598hashCodeimpl(mo218getMessageId3Eiw7ao()) * 31) + this.codedLinkIndex) * 31) + this.invite.hashCode()) * 31;
+        int i10 = ((((MessageId.m610hashCodeimpl(mo220getMessageId3Eiw7ao()) * 31) + this.codedLinkIndex) * 31) + this.invite.hashCode()) * 31;
         boolean z10 = this.shouldAnimateEmoji;
         int i11 = 1;
         if (z10) {
@@ -149,7 +149,7 @@ public final class GuildEventInviteMessageAccessory extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m599toStringimpl(mo218getMessageId3Eiw7ao());
+        String str = MessageId.m611toStringimpl(mo220getMessageId3Eiw7ao());
         int i10 = this.codedLinkIndex;
         GuildEventInviteEmbedImpl guildEventInviteEmbedImpl = this.invite;
         boolean z10 = this.shouldAnimateEmoji;

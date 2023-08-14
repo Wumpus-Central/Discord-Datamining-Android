@@ -27,12 +27,12 @@ final class EmbedView$setFields$onLinkClickedWithMessageId$1 extends s implement
     @Override 
     public   Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 
     
     public final void invoke2(LinkContentNode node) {
         q.h(node, "node");
-        this.$onLinkClicked.invoke(MessageId.m593boximpl(this.$messageId), node);
+        this.$onLinkClicked.invoke(MessageId.m605boximpl(this.$messageId), node);
     }
 }

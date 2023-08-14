@@ -8,11 +8,11 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class MessageBundleItem extends ChatListItem {
 
     
-    private final String f7155id;
+    private final String f7157id;
 
     private MessageBundleItem(String str) {
         super(str, null);
-        this.f7155id = str;
+        this.f7157id = str;
     }
 
     public  MessageBundleItem(String str, DefaultConstructorMarker defaultConstructorMarker) {
@@ -21,6 +21,6 @@ public abstract class MessageBundleItem extends ChatListItem {
 
     @Override 
     public String getId() {
-        return this.f7155id;
+        return this.f7157id;
     }
 }

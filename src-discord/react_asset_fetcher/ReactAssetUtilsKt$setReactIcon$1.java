@@ -11,8 +11,8 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.a1;
 import kotlinx.coroutines.j;
-import kotlinx.coroutines.y0;
 import pf.d;
 
 
@@ -39,7 +39,7 @@ public final class ReactAssetUtilsKt$setReactIcon$1 extends k implements Functio
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ReactAssetUtilsKt$setReactIcon$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
+        return ((ReactAssetUtilsKt$setReactIcon$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
     }
 
     @Override 
@@ -52,7 +52,7 @@ public final class ReactAssetUtilsKt$setReactIcon$1 extends k implements Functio
             t.b(obj);
             MaterialButton materialButton2 = this.$this_setReactIcon;
             String str = this.$assetUrl;
-            CoroutineDispatcher b10 = y0.b();
+            CoroutineDispatcher b10 = a1.b();
             ReactAssetUtilsKt$setReactIcon$1$1$1 reactAssetUtilsKt$setReactIcon$1$1$1 = new ReactAssetUtilsKt$setReactIcon$1$1$1(materialButton2, str, null);
             this.L$0 = materialButton2;
             this.label = 1;
@@ -69,6 +69,6 @@ public final class ReactAssetUtilsKt$setReactIcon$1 extends k implements Functio
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
         materialButton.setIcon((Drawable) obj);
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 }

@@ -47,60 +47,60 @@ public final class SilentNotificationManager {
     }
 
     
-    private final int m547getNumAccumulatedMessagesForChannelR7gqayM(long j10) {
-        return this.sharedPrefs.getInt(m551toMessageCountKeyR7gqayM(j10), 0);
+    private final int m559getNumAccumulatedMessagesForChannelR7gqayM(long j10) {
+        return this.sharedPrefs.getInt(m563toMessageCountKeyR7gqayM(j10), 0);
     }
 
     
-    private final long m548lastMessagedReceivedAgoInMinsR7gqayM(long j10) {
-        long j11 = this.sharedPrefs.getLong(ChannelId.m574toStringimpl(j10), 0L);
+    private final long m560lastMessagedReceivedAgoInMinsR7gqayM(long j10) {
+        long j11 = this.sharedPrefs.getLong(ChannelId.m586toStringimpl(j10), 0L);
         return TimeUnit.MILLISECONDS.toMinutes(System.currentTimeMillis() - j11);
     }
 
     
-    private final void m549setLastMessageReceivedForChannelLJLSWy8(long j10, long j11) {
+    private final void m561setLastMessageReceivedForChannelLJLSWy8(long j10, long j11) {
         SharedPreferences sharedPrefs = this.sharedPrefs;
         q.g(sharedPrefs, "sharedPrefs");
         SharedPreferences.Editor editor = sharedPrefs.edit();
         q.g(editor, "editor");
-        editor.putLong(ChannelId.m574toStringimpl(j10), j11);
+        editor.putLong(ChannelId.m586toStringimpl(j10), j11);
         editor.apply();
     }
 
     private final void setMessageReceivedForChannel(NotificationData notificationData) {
-        ChannelId channelId = notificationData.m534getChannelIdqMVnFVQ();
+        ChannelId channelId = notificationData.m546getChannelIdqMVnFVQ();
         if (channelId != null) {
-            long j10 = channelId.m576unboximpl();
-            m550setNumAccumulatedMessagesForChannelLJLSWy8(j10, m547getNumAccumulatedMessagesForChannelR7gqayM(j10) + 1);
-            m552updateLastMessageReceivedForChannelR7gqayM(j10);
+            long j10 = channelId.m588unboximpl();
+            m562setNumAccumulatedMessagesForChannelLJLSWy8(j10, m559getNumAccumulatedMessagesForChannelR7gqayM(j10) + 1);
+            m564updateLastMessageReceivedForChannelR7gqayM(j10);
         }
     }
 
     
-    private final void m550setNumAccumulatedMessagesForChannelLJLSWy8(long j10, int i10) {
+    private final void m562setNumAccumulatedMessagesForChannelLJLSWy8(long j10, int i10) {
         SharedPreferences sharedPrefs = this.sharedPrefs;
         q.g(sharedPrefs, "sharedPrefs");
         SharedPreferences.Editor editor = sharedPrefs.edit();
         q.g(editor, "editor");
-        editor.putInt(m551toMessageCountKeyR7gqayM(j10), i10);
+        editor.putInt(m563toMessageCountKeyR7gqayM(j10), i10);
         editor.apply();
     }
 
     
-    private final String m551toMessageCountKeyR7gqayM(long j10) {
-        String str = ChannelId.m574toStringimpl(j10);
+    private final String m563toMessageCountKeyR7gqayM(long j10) {
+        String str = ChannelId.m586toStringimpl(j10);
         return str + "_num";
     }
 
     
-    private final void m552updateLastMessageReceivedForChannelR7gqayM(long j10) {
-        m549setLastMessageReceivedForChannelLJLSWy8(j10, System.currentTimeMillis());
+    private final void m564updateLastMessageReceivedForChannelR7gqayM(long j10) {
+        m561setLastMessageReceivedForChannelLJLSWy8(j10, System.currentTimeMillis());
     }
 
     public final void handleAcks(NotificationData notificationData) {
         q.h(notificationData, "notificationData");
         for (ChannelId channelId : notificationData.getAckChannelIds()) {
-            m550setNumAccumulatedMessagesForChannelLJLSWy8(channelId.m576unboximpl(), 0);
+            m562setNumAccumulatedMessagesForChannelLJLSWy8(channelId.m588unboximpl(), 0);
         }
     }
 
@@ -123,14 +123,14 @@ public final class SilentNotificationManager {
         if (!q.c(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || ((channelType = notificationData.getChannelType()) != null && channelType.intValue() == 1)) {
             return true;
         }
-        ChannelId channelId = notificationData.m534getChannelIdqMVnFVQ();
+        ChannelId channelId = notificationData.m546getChannelIdqMVnFVQ();
         if (channelId != null) {
-            long j10 = channelId.m576unboximpl();
-            if (m547getNumAccumulatedMessagesForChannelR7gqayM(j10) < 3) {
+            long j10 = channelId.m588unboximpl();
+            if (m559getNumAccumulatedMessagesForChannelR7gqayM(j10) < 3) {
                 return true;
             }
-            if (m548lastMessagedReceivedAgoInMinsR7gqayM(j10) >= 15) {
-                m550setNumAccumulatedMessagesForChannelLJLSWy8(j10, 0);
+            if (m560lastMessagedReceivedAgoInMinsR7gqayM(j10) >= 15) {
+                m562setNumAccumulatedMessagesForChannelLJLSWy8(j10, 0);
                 return true;
             }
         }

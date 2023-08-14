@@ -84,7 +84,7 @@ public final class MessageBundleAdapter extends b<List<? extends MessageBundleIt
                     if (num != null) {
                         i13 += num.intValue();
                         if (i13 > floatValue) {
-                            this.onTruncateMessage.invoke(MessageId.m593boximpl(MessageId.m594constructorimpl(((MessageBundleItem) ((List) this.items).get(i12)).getId())));
+                            this.onTruncateMessage.invoke(MessageId.m605boximpl(MessageId.m606constructorimpl(((MessageBundleItem) ((List) this.items).get(i12)).getId())));
                             return;
                         } else {
                             i11++;

@@ -47,9 +47,9 @@ public final class Summary$$serializer implements f0<Summary> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29540a;
+        a2 a2Var = a2.f29550a;
         MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
-        return new KSerializer[]{a2Var, a2Var, a2Var, new f(UserId$$serializer.INSTANCE), messageId$$serializer, messageId$$serializer, m0.f29615a, ChannelId$$serializer.INSTANCE};
+        return new KSerializer[]{a2Var, a2Var, a2Var, new f(UserId$$serializer.INSTANCE), messageId$$serializer, messageId$$serializer, m0.f29625a, ChannelId$$serializer.INSTANCE};
     }
 
     @Override 
@@ -140,7 +140,7 @@ public final class Summary$$serializer implements f0<Summary> {
         c10.b(descriptor2);
         MessageId messageId = (MessageId) obj;
         MessageId messageId2 = (MessageId) obj3;
-        return new Summary(i12, str3, str2, str, (List) obj2, messageId != null ? messageId.m601unboximpl() : null, messageId2 != null ? messageId2.m601unboximpl() : null, i10, (ChannelId) obj4, null, null);
+        return new Summary(i12, str3, str2, str, (List) obj2, messageId != null ? messageId.m613unboximpl() : null, messageId2 != null ? messageId2.m613unboximpl() : null, i10, (ChannelId) obj4, null, null);
     }
 
     @Override 

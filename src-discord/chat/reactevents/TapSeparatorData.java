@@ -84,7 +84,7 @@ public final class TapSeparatorData implements ReactEvent {
         if (str2 != null) {
             nativeMapOf2.putString("context", str2);
         }
-        Unit unit = Unit.f21025a;
+        Unit unit = Unit.f21036a;
         pairArr[0] = x.a("action", nativeMapOf2);
         return NativeMapExtensionsKt.nativeMapOf(pairArr);
     }

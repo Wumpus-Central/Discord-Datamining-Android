@@ -58,7 +58,7 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Fun
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaManagerModule$resolveToMediaFilePath$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
+        return ((MediaManagerModule$resolveToMediaFilePath$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
     }
 
     @Override 
@@ -83,7 +83,7 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Fun
                 VideoCompressionQuality videoCompressionQuality = this.$videoCompressionQuality;
                 boolean z11 = this.$isLowQuality;
                 Promise promise2 = this.$promise;
-                s.a aVar = s.f20093l;
+                s.a aVar = s.f20094l;
                 mediaResolver2 = mediaManagerModule.mediaResolver;
                 q.g(inputUri, "inputUri");
                 if (z11) {
@@ -106,9 +106,9 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Fun
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             promise.resolve(((Uri) obj3).toString());
-            obj2 = s.b(Unit.f21025a);
+            obj2 = s.b(Unit.f21036a);
         } catch (Throwable th2) {
-            s.a aVar2 = s.f20093l;
+            s.a aVar2 = s.f20094l;
             obj2 = s.b(t.a(th2));
         }
         boolean z12 = this.$canCancelCompression;
@@ -133,6 +133,6 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Fun
             crashReporting.captureException(e10);
             promise3.reject(e10);
         }
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 }

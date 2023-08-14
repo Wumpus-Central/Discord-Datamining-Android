@@ -54,7 +54,7 @@ public final class MobileVoiceOverlay {
             q.h(context, "context");
             q.h(taskName, "taskName");
             q.h(taskParams, "taskParams");
-            HeadlessTasks.Companion.startHeadlessTask(context, taskName, (r18 & 4) != 0 ? HeadlessTasks.TASK_TIMEOUT_DEFAULT : 0L, (r18 & 8) != 0, (r18 & 16) != 0 ? new Bundle() : taskParams, (r18 & 32) != 0 ? false : false);
+            HeadlessTasks.Companion.startHeadlessTask$default(HeadlessTasks.Companion, context, taskName, 0L, false, taskParams, false, 12, null);
         }
     }
 

@@ -32,7 +32,7 @@ public final class UserSearchTransformedUser {
     private final String globalName;
 
     
-    private final String f7459id;
+    private final String f7463id;
     private final Boolean isBot;
     private final Boolean isFriend;
     private final Map<String, String> nicknames;
@@ -70,7 +70,7 @@ public final class UserSearchTransformedUser {
 
         @Override 
         public SerialDescriptor getDescriptor() {
-            return g.a("UserSearchTransformedUser", e.i.f29047a);
+            return g.a("UserSearchTransformedUser", e.i.f29057a);
         }
 
         @Override 
@@ -143,7 +143,7 @@ public final class UserSearchTransformedUser {
         q.h(id2, "id");
         q.h(username, "username");
         q.h(nicknames, "nicknames");
-        this.f7459id = id2;
+        this.f7463id = id2;
         this.username = username;
         this.isBot = bool;
         this.isFriend = bool2;
@@ -155,7 +155,7 @@ public final class UserSearchTransformedUser {
     
     public static  UserSearchTransformedUser copy$default(UserSearchTransformedUser userSearchTransformedUser, String str, String str2, Boolean bool, Boolean bool2, String str3, String str4, Map map, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = userSearchTransformedUser.f7459id;
+            str = userSearchTransformedUser.f7463id;
         }
         if ((i10 & 2) != 0) {
             str2 = userSearchTransformedUser.username;
@@ -179,7 +179,7 @@ public final class UserSearchTransformedUser {
     }
 
     public final String component1() {
-        return this.f7459id;
+        return this.f7463id;
     }
 
     public final String component2() {
@@ -221,7 +221,7 @@ public final class UserSearchTransformedUser {
             return false;
         }
         UserSearchTransformedUser userSearchTransformedUser = (UserSearchTransformedUser) obj;
-        return q.c(this.f7459id, userSearchTransformedUser.f7459id) && q.c(this.username, userSearchTransformedUser.username) && q.c(this.isBot, userSearchTransformedUser.isBot) && q.c(this.isFriend, userSearchTransformedUser.isFriend) && q.c(this.friendNickname, userSearchTransformedUser.friendNickname) && q.c(this.globalName, userSearchTransformedUser.globalName) && q.c(this.nicknames, userSearchTransformedUser.nicknames);
+        return q.c(this.f7463id, userSearchTransformedUser.f7463id) && q.c(this.username, userSearchTransformedUser.username) && q.c(this.isBot, userSearchTransformedUser.isBot) && q.c(this.isFriend, userSearchTransformedUser.isFriend) && q.c(this.friendNickname, userSearchTransformedUser.friendNickname) && q.c(this.globalName, userSearchTransformedUser.globalName) && q.c(this.nicknames, userSearchTransformedUser.nicknames);
     }
 
     public final String getFriendNickname() {
@@ -233,7 +233,7 @@ public final class UserSearchTransformedUser {
     }
 
     public final String getId() {
-        return this.f7459id;
+        return this.f7463id;
     }
 
     public final Map<String, String> getNicknames() {
@@ -245,7 +245,7 @@ public final class UserSearchTransformedUser {
     }
 
     public int hashCode() {
-        int hashCode = ((this.f7459id.hashCode() * 31) + this.username.hashCode()) * 31;
+        int hashCode = ((this.f7463id.hashCode() * 31) + this.username.hashCode()) * 31;
         Boolean bool = this.isBot;
         int i10 = 0;
         int hashCode2 = (hashCode + (bool == null ? 0 : bool.hashCode())) * 31;
@@ -269,7 +269,7 @@ public final class UserSearchTransformedUser {
     }
 
     public String toString() {
-        String str = this.f7459id;
+        String str = this.f7463id;
         String str2 = this.username;
         Boolean bool = this.isBot;
         Boolean bool2 = this.isFriend;

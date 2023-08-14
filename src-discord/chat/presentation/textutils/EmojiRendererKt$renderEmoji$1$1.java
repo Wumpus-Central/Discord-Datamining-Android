@@ -25,7 +25,7 @@ final class EmojiRendererKt$renderEmoji$1$1 extends s implements Function1<Gener
     @Override 
     public   Unit invoke(GenericDraweeHierarchyBuilder genericDraweeHierarchyBuilder) {
         invoke2(genericDraweeHierarchyBuilder);
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 
     

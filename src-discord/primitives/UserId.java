@@ -38,13 +38,13 @@ public final class UserId implements SnowflakePrimitive {
     public static final class Creator implements Parcelable.Creator<UserId> {
         @Override 
         public   UserId createFromParcel(Parcel parcel) {
-            return UserId.m631boximpl(m643createFromParcelPmcOV3I(parcel));
+            return UserId.m643boximpl(m655createFromParcelPmcOV3I(parcel));
         }
 
         
-        public final long m643createFromParcelPmcOV3I(Parcel parcel) {
+        public final long m655createFromParcelPmcOV3I(Parcel parcel) {
             q.h(parcel, "parcel");
-            return UserId.m632constructorimpl(parcel.readLong());
+            return UserId.m644constructorimpl(parcel.readLong());
         }
 
         
@@ -59,58 +59,58 @@ public final class UserId implements SnowflakePrimitive {
     }
 
     
-    public static final  UserId m631boximpl(long j10) {
+    public static final  UserId m643boximpl(long j10) {
         return new UserId(j10);
     }
 
     
-    public static long m632constructorimpl(long j10) {
+    public static long m644constructorimpl(long j10) {
         return j10;
     }
 
     
-    public static int m633describeContentsimpl(long j10) {
+    public static int m645describeContentsimpl(long j10) {
         return 0;
     }
 
     
-    public static boolean m634equalsimpl(long j10, Object obj) {
-        return (obj instanceof UserId) && j10 == ((UserId) obj).m640unboximpl();
+    public static boolean m646equalsimpl(long j10, Object obj) {
+        return (obj instanceof UserId) && j10 == ((UserId) obj).m652unboximpl();
     }
 
     
-    public static final boolean m635equalsimpl0(long j10, long j11) {
+    public static final boolean m647equalsimpl0(long j10, long j11) {
         return j10 == j11;
     }
 
     
-    public static int m636hashCodeimpl(long j10) {
+    public static int m648hashCodeimpl(long j10) {
         return b.a(j10);
     }
 
     
-    public static boolean m637isValidimpl(long j10) {
+    public static boolean m649isValidimpl(long j10) {
         return j10 > 0;
     }
 
     
-    public static String m638toStringimpl(long j10) {
+    public static String m650toStringimpl(long j10) {
         return String.valueOf(j10);
     }
 
     
-    public static void m639writeToParcelimpl(long j10, Parcel out, int i10) {
+    public static void m651writeToParcelimpl(long j10, Parcel out, int i10) {
         q.h(out, "out");
         out.writeLong(j10);
     }
 
     @Override 
     public int describeContents() {
-        return m633describeContentsimpl(this.snowflake);
+        return m645describeContentsimpl(this.snowflake);
     }
 
     public boolean equals(Object obj) {
-        return m634equalsimpl(this.snowflake, obj);
+        return m646equalsimpl(this.snowflake, obj);
     }
 
     @Override 
@@ -119,26 +119,26 @@ public final class UserId implements SnowflakePrimitive {
     }
 
     public int hashCode() {
-        return m636hashCodeimpl(this.snowflake);
+        return m648hashCodeimpl(this.snowflake);
     }
 
     @Override 
     public boolean isValid() {
-        return m637isValidimpl(this.snowflake);
+        return m649isValidimpl(this.snowflake);
     }
 
     public String toString() {
-        return m638toStringimpl(this.snowflake);
+        return m650toStringimpl(this.snowflake);
     }
 
     
-    public final  long m640unboximpl() {
+    public final  long m652unboximpl() {
         return this.snowflake;
     }
 
     @Override 
     public void writeToParcel(Parcel out, int i10) {
         q.h(out, "out");
-        m639writeToParcelimpl(this.snowflake, out, i10);
+        m651writeToParcelimpl(this.snowflake, out, i10);
     }
 }

@@ -24,7 +24,7 @@ public final class BlurViewPackage implements ReactPackage {
     public List<ViewManager<?, ?>> createViewManagers(ReactApplicationContext reactContext) {
         List<ViewManager<?, ?>> n10;
         q.h(reactContext, "reactContext");
-        n10 = j.n(new BlurViewManager());
+        n10 = j.n(new BlurViewManager(), new BlurViewTargetManager());
         return n10;
     }
 }

@@ -170,6 +170,6 @@ public final class GenericAction implements NotificationAction {
         for (Map.Entry<String, String> entry : this.data.entrySet()) {
             bundle.putString(entry.getKey(), entry.getValue());
         }
-        companion.startHeadlessTask(context, str, (r18 & 4) != 0 ? HeadlessTasks.TASK_TIMEOUT_DEFAULT : 0L, (r18 & 8) != 0, (r18 & 16) != 0 ? new Bundle() : bundle, (r18 & 32) != 0 ? false : z10);
+        HeadlessTasks.Companion.startHeadlessTask$default(companion, context, str, 0L, false, bundle, z10, 12, null);
     }
 }

@@ -52,6 +52,7 @@ public final class CreateAttachmentAccessoryKt {
         boolean z11;
         boolean z12;
         boolean z13;
+        boolean z14;
         FileAttachmentMessageAccessory fileAttachmentMessageAccessory;
         q.h(attachment, "<this>");
         q.h(message, "message");
@@ -67,7 +68,14 @@ public final class CreateAttachmentAccessoryKt {
             } else {
                 z10 = false;
             }
-            return new ImageAttachmentMessageAccessory(str, i10, attachment, i11, i12, forAttachment, onLongClickListener, z10, message.getAttachmentsOpacity(), null);
+            Float attachmentsOpacity = message.getAttachmentsOpacity();
+            Boolean showRemixButton = message.getShowRemixButton();
+            if (showRemixButton != null) {
+                z11 = showRemixButton.booleanValue();
+            } else {
+                z11 = false;
+            }
+            return new ImageAttachmentMessageAccessory(str, i10, attachment, i11, i12, forAttachment, onLongClickListener, z10, attachmentsOpacity, z11, false, message.getRemixButtonIconColor(), message.getRemixButtonBackgroundColor(), null);
         } else if (i13 != 2) {
             if (i13 == 3) {
                 fileAttachmentMessageAccessory = new FileAttachmentMessageAccessory(str, i10, attachment, forAttachment, attachment.getUploaderId(), attachment.getUploaderItemId(), message.getAttachmentsOpacity(), null);
@@ -82,22 +90,22 @@ public final class CreateAttachmentAccessoryKt {
         } else {
             Boolean useAttachmentGridLayout2 = message.getUseAttachmentGridLayout();
             if (useAttachmentGridLayout2 != null) {
-                z11 = useAttachmentGridLayout2.booleanValue();
-            } else {
-                z11 = false;
-            }
-            Boolean useAttachmentUploadPreview = message.getUseAttachmentUploadPreview();
-            if (useAttachmentUploadPreview != null) {
-                z12 = useAttachmentUploadPreview.booleanValue();
+                z12 = useAttachmentGridLayout2.booleanValue();
             } else {
                 z12 = false;
             }
-            if (!z12 || attachment.getProgress() == null) {
-                z13 = false;
+            Boolean useAttachmentUploadPreview = message.getUseAttachmentUploadPreview();
+            if (useAttachmentUploadPreview != null) {
+                z13 = useAttachmentUploadPreview.booleanValue();
             } else {
-                z13 = true;
+                z13 = false;
             }
-            return new VideoAttachmentMessageAccessory(str, i10, attachment, i11, i12, forAttachment, onLongClickListener, z11, z13, message.getAttachmentsOpacity(), null);
+            if (!z13 || attachment.getProgress() == null) {
+                z14 = false;
+            } else {
+                z14 = true;
+            }
+            return new VideoAttachmentMessageAccessory(str, i10, attachment, i11, i12, forAttachment, onLongClickListener, z12, z14, message.getAttachmentsOpacity(), null);
         }
     }
 }

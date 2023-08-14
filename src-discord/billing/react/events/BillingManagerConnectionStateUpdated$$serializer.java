@@ -32,7 +32,7 @@ public final class BillingManagerConnectionStateUpdated$$serializer implements f
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f29615a};
+        return new KSerializer[]{m0.f29625a};
     }
 
     @Override 

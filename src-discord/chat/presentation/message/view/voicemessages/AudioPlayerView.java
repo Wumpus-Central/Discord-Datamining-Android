@@ -95,8 +95,8 @@ public final class AudioPlayerView extends FrameLayout {
 
             public final float secondsSinceStart(long j10) {
                 Comparable e10;
-                a.C0358a aVar = a.f25061l;
-                e10 = j.e(a.f(c.t(System.currentTimeMillis() - j10, d.MILLISECONDS)), a.f(a.f25061l.b()));
+                a.C0358a aVar = a.f25071l;
+                e10 = j.e(a.f(c.t(System.currentTimeMillis() - j10, d.MILLISECONDS)), a.f(a.f25071l.b()));
                 return (float) a.F(((a) e10).K(), d.SECONDS);
             }
         }
@@ -338,7 +338,7 @@ public final class AudioPlayerView extends FrameLayout {
                 this.startTimeMS = null;
                 Listener listener = this.listener;
                 if (listener != null) {
-                    a.C0358a aVar = a.f25061l;
+                    a.C0358a aVar = a.f25071l;
                     listener.voiceMessagePlaybackEnded((float) a.F(c.t(longValue, d.MILLISECONDS), d.SECONDS), secondsSinceStart);
                 }
             }
@@ -361,7 +361,7 @@ public final class AudioPlayerView extends FrameLayout {
             this.startTimeMS = Long.valueOf(System.currentTimeMillis());
             Listener listener = this.listener;
             if (listener != null) {
-                a.C0358a aVar = a.f25061l;
+                a.C0358a aVar = a.f25071l;
                 listener.voiceMessagePlaybackStarted((float) a.F(c.t(longValue, d.MILLISECONDS), d.SECONDS));
             }
         }
@@ -440,7 +440,7 @@ public final class AudioPlayerView extends FrameLayout {
     }
 
     private final int toSeconds(long j10) {
-        a.C0358a aVar = a.f25061l;
+        a.C0358a aVar = a.f25071l;
         return (int) Math.ceil(a.F(c.t(j10, d.MILLISECONDS), d.SECONDS));
     }
 
@@ -450,7 +450,7 @@ public final class AudioPlayerView extends FrameLayout {
         Job job = this.durationJob;
         if (job != null) {
             Job.a.a(job, null, 1, null);
-            Unit unit = Unit.f21025a;
+            Unit unit = Unit.f21036a;
         }
         this.durationJob = null;
         if (z10) {
@@ -500,7 +500,7 @@ public final class AudioPlayerView extends FrameLayout {
     }
 
     
-    public final void m327setSourceUrlntcYbpo(String messageId, String str) {
+    public final void m332setSourceUrlntcYbpo(String messageId, String str) {
         q.h(messageId, "messageId");
         this.binding.wave.setEnabled(false);
         if (!q.c(str, this.state.getSourceUrl())) {
@@ -535,7 +535,7 @@ public final class AudioPlayerView extends FrameLayout {
         Context context = getContext();
         q.g(context, "context");
         paint.setColor(ColorUtilsKt.getColorCompat(context, 17170445));
-        Unit unit = Unit.f21025a;
+        Unit unit = Unit.f21036a;
         attachmentUploadOverlayView.configureProgressView(valueOf, shapeDrawable, Integer.valueOf(SizeUtilsKt.getDpToPx(16)), Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()), Integer.valueOf(SizeUtilsKt.getDpToPx(29)), Integer.valueOf(ThemeManagerKt.getTheme().getBackgroundModifierAccent()));
         this.binding.uploadOverlay.configureCompleteView(Integer.valueOf(SizeUtilsKt.getDpToPx(32)), Integer.valueOf(SizeUtilsKt.getDpToPx(19)));
         if (z10 && !this.uploadFinished) {

@@ -13,7 +13,7 @@ public final class BlockedGroupChatListItem extends ChatListItem {
     private final List<ChatListItem> content;
 
     
-    private final String f7152id;
+    private final String f7154id;
     private final boolean isRevealed;
     private final String text;
     private final int textColor;
@@ -26,7 +26,7 @@ public final class BlockedGroupChatListItem extends ChatListItem {
         q.h(id2, "id");
         q.h(content, "content");
         this.text = text;
-        this.f7152id = id2;
+        this.f7154id = id2;
         this.textColor = i10;
         this.backgroundColor = i11;
         this.borderColor = i12;
@@ -120,7 +120,7 @@ public final class BlockedGroupChatListItem extends ChatListItem {
 
     @Override 
     public String getId() {
-        return this.f7152id;
+        return this.f7154id;
     }
 
     public final String getText() {

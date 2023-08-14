@@ -24,9 +24,9 @@ public final class ShortcutUtilsKt {
         q.h(builder, "<this>");
         q.h(context, "context");
         q.h(shortcutInfo, "shortcutInfo");
-        builder.W(shortcutInfo.f());
-        builder.O(new g(shortcutInfo.f()));
-        b.f(context, shortcutInfo);
+        builder.W(shortcutInfo.g());
+        builder.O(new g(shortcutInfo.g()));
+        b.g(context, shortcutInfo);
         return builder;
     }
 

@@ -79,7 +79,7 @@ public enum StaticChannelMentionType {
 
         @Override 
         public SerialDescriptor getDescriptor() {
-            return g.a("StaticChannelMentionType", e.i.f29047a);
+            return g.a("StaticChannelMentionType", e.i.f29057a);
         }
 
         @Override 

@@ -42,6 +42,6 @@ public final class ShortcutManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void handleLogout() {
-        b.g(this.reactContext);
+        b.h(this.reactContext);
     }
 }

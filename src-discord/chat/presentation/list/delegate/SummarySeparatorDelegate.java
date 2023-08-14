@@ -32,7 +32,7 @@ public final class SummarySeparatorDelegate extends BaseChatListItemDelegate<Sum
         } else {
             str = item.getSummary().m140getEndId3Eiw7ao();
         }
-        this$0.getEventHandler().mo175onTapSummarysekaTiM(item.getSummary().m139getChannelIdo4g7jtM(), str, item.getSummary().getId());
+        this$0.getEventHandler().mo176onTapSummarysekaTiM(item.getSummary().m139getChannelIdo4g7jtM(), str, item.getSummary().getId());
     }
 
     
@@ -45,7 +45,7 @@ public final class SummarySeparatorDelegate extends BaseChatListItemDelegate<Sum
         } else {
             str = item.getSummary().m141getStartId3Eiw7ao();
         }
-        this$0.getEventHandler().mo176onTapSummaryJumpsekaTiM(item.getSummary().m139getChannelIdo4g7jtM(), str, item.getSummary().getId());
+        this$0.getEventHandler().mo177onTapSummaryJumpsekaTiM(item.getSummary().m139getChannelIdo4g7jtM(), str, item.getSummary().getId());
     }
 
     @Override 

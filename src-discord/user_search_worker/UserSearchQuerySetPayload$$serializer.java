@@ -45,8 +45,8 @@ public final class UserSearchQuerySetPayload$$serializer implements f0<UserSearc
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29540a;
-        return new KSerializer[]{a2Var, a.u(UserSearchQuerySetFilters$$serializer.INSTANCE), a.u(new f(a2Var)), a.u(new f(a2Var)), new r0(a2Var, x.f29661a), m0.f29615a};
+        a2 a2Var = a2.f29550a;
+        return new KSerializer[]{a2Var, a.u(UserSearchQuerySetFilters$$serializer.INSTANCE), a.u(new f(a2Var)), a.u(new f(a2Var)), new r0(a2Var, x.f29671a), m0.f29625a};
     }
 
     @Override 
@@ -65,10 +65,10 @@ public final class UserSearchQuerySetPayload$$serializer implements f0<UserSearc
         if (c10.y()) {
             str = c10.t(descriptor2, 0);
             obj = c10.v(descriptor2, 1, UserSearchQuerySetFilters$$serializer.INSTANCE, null);
-            a2 a2Var = a2.f29540a;
+            a2 a2Var = a2.f29550a;
             obj2 = c10.v(descriptor2, 2, new f(a2Var), null);
             obj4 = c10.v(descriptor2, 3, new f(a2Var), null);
-            obj3 = c10.m(descriptor2, 4, new r0(a2Var, x.f29661a), null);
+            obj3 = c10.m(descriptor2, 4, new r0(a2Var, x.f29671a), null);
             i10 = c10.k(descriptor2, 5);
             i11 = 63;
         } else {
@@ -95,15 +95,15 @@ public final class UserSearchQuerySetPayload$$serializer implements f0<UserSearc
                         i14 |= 2;
                         i12 = 5;
                     case 2:
-                        obj6 = c10.v(descriptor2, 2, new f(a2.f29540a), obj6);
+                        obj6 = c10.v(descriptor2, 2, new f(a2.f29550a), obj6);
                         i14 |= 4;
                         i12 = 5;
                     case 3:
-                        obj7 = c10.v(descriptor2, 3, new f(a2.f29540a), obj7);
+                        obj7 = c10.v(descriptor2, 3, new f(a2.f29550a), obj7);
                         i14 |= 8;
                         i12 = 5;
                     case 4:
-                        obj8 = c10.m(descriptor2, 4, new r0(a2.f29540a, x.f29661a), obj8);
+                        obj8 = c10.m(descriptor2, 4, new r0(a2.f29550a, x.f29671a), obj8);
                         i14 |= 16;
                         i12 = 5;
                     case 5:

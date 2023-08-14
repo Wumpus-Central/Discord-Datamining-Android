@@ -9,9 +9,9 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.a1;
 import kotlinx.coroutines.j;
-import kotlinx.coroutines.t0;
-import kotlinx.coroutines.y0;
+import kotlinx.coroutines.v0;
 import pf.d;
 
 
@@ -40,7 +40,7 @@ public final class AudioPlayerView$reset$2 extends k implements Function2<Corout
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
         }
 
         @Override 
@@ -51,7 +51,7 @@ public final class AudioPlayerView$reset$2 extends k implements Function2<Corout
             if (i10 == 0) {
                 t.b(obj);
                 this.label = 1;
-                if (t0.a(500L, this) == d10) {
+                if (v0.a(500L, this) == d10) {
                     return d10;
                 }
             } else if (i10 == 1) {
@@ -59,7 +59,7 @@ public final class AudioPlayerView$reset$2 extends k implements Function2<Corout
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            return Unit.f21025a;
+            return Unit.f21036a;
         }
     }
 
@@ -76,7 +76,7 @@ public final class AudioPlayerView$reset$2 extends k implements Function2<Corout
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioPlayerView$reset$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
+        return ((AudioPlayerView$reset$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
     }
 
     @Override 
@@ -88,7 +88,7 @@ public final class AudioPlayerView$reset$2 extends k implements Function2<Corout
         int i10 = this.label;
         if (i10 == 0) {
             t.b(obj);
-            CoroutineDispatcher a10 = y0.a();
+            CoroutineDispatcher a10 = a1.a();
             AnonymousClass1 r12 = new AnonymousClass1(null);
             this.label = 1;
             if (j.g(a10, r12, this) == d10) {
@@ -107,6 +107,6 @@ public final class AudioPlayerView$reset$2 extends k implements Function2<Corout
         audioPlayerViewState2 = audioPlayerView2.state;
         audioPlayerView2.configureAudioWave(audioPlayerViewState2);
         this.this$0.getBinding().wave.reset();
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 }

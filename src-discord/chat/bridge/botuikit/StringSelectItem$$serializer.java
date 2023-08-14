@@ -39,8 +39,8 @@ public final class StringSelectItem$$serializer implements f0<StringSelectItem> 
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29540a;
-        return new KSerializer[]{a2Var, a2Var, a.u(ComponentEmoji$$serializer.INSTANCE), a.u(a2Var), a.u(h.f29582a)};
+        a2 a2Var = a2.f29550a;
+        return new KSerializer[]{a2Var, a2Var, a.u(ComponentEmoji$$serializer.INSTANCE), a.u(a2Var), a.u(h.f29592a)};
     }
 
     @Override 
@@ -59,8 +59,8 @@ public final class StringSelectItem$$serializer implements f0<StringSelectItem> 
             str2 = c10.t(descriptor2, 0);
             str = c10.t(descriptor2, 1);
             obj = c10.v(descriptor2, 2, ComponentEmoji$$serializer.INSTANCE, null);
-            obj3 = c10.v(descriptor2, 3, a2.f29540a, null);
-            obj2 = c10.v(descriptor2, 4, h.f29582a, null);
+            obj3 = c10.v(descriptor2, 3, a2.f29550a, null);
+            obj2 = c10.v(descriptor2, 4, h.f29592a, null);
             i10 = 31;
         } else {
             boolean z10 = true;
@@ -83,10 +83,10 @@ public final class StringSelectItem$$serializer implements f0<StringSelectItem> 
                     obj4 = c10.v(descriptor2, 2, ComponentEmoji$$serializer.INSTANCE, obj4);
                     i11 |= 4;
                 } else if (x10 == 3) {
-                    obj5 = c10.v(descriptor2, 3, a2.f29540a, obj5);
+                    obj5 = c10.v(descriptor2, 3, a2.f29550a, obj5);
                     i11 |= 8;
                 } else if (x10 == 4) {
-                    obj6 = c10.v(descriptor2, 4, h.f29582a, obj6);
+                    obj6 = c10.v(descriptor2, 4, h.f29592a, obj6);
                     i11 |= 16;
                 } else {
                     throw new n(x10);

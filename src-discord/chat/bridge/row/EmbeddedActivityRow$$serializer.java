@@ -42,8 +42,8 @@ public final class EmbeddedActivityRow$$serializer implements f0<EmbeddedActivit
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29540a;
-        return new KSerializer[]{m0.f29615a, ChangeType.Serializer.INSTANCE, a2Var, new f(a2Var), a2Var, a2Var, a2Var};
+        a2 a2Var = a2.f29550a;
+        return new KSerializer[]{m0.f29625a, ChangeType.Serializer.INSTANCE, a2Var, new f(a2Var), a2Var, a2Var, a2Var};
     }
 
     @Override 
@@ -64,7 +64,7 @@ public final class EmbeddedActivityRow$$serializer implements f0<EmbeddedActivit
             i10 = c10.k(descriptor2, 0);
             obj = c10.m(descriptor2, 1, ChangeType.Serializer.INSTANCE, null);
             str4 = c10.t(descriptor2, 2);
-            obj2 = c10.m(descriptor2, 3, new f(a2.f29540a), null);
+            obj2 = c10.m(descriptor2, 3, new f(a2.f29550a), null);
             str3 = c10.t(descriptor2, 4);
             str2 = c10.t(descriptor2, 5);
             str = c10.t(descriptor2, 6);
@@ -98,7 +98,7 @@ public final class EmbeddedActivityRow$$serializer implements f0<EmbeddedActivit
                         i14 |= 4;
                         i12 = 6;
                     case 3:
-                        obj4 = c10.m(descriptor2, 3, new f(a2.f29540a), obj4);
+                        obj4 = c10.m(descriptor2, 3, new f(a2.f29550a), obj4);
                         i14 |= 8;
                         i12 = 6;
                     case 4:

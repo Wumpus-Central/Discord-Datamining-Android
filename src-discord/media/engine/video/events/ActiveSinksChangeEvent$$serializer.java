@@ -35,7 +35,7 @@ public final class ActiveSinksChangeEvent$$serializer implements f0<ActiveSinksC
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f29540a, h.f29582a};
+        return new KSerializer[]{a2.f29550a, h.f29592a};
     }
 
     @Override 

@@ -13,14 +13,14 @@ import kotlin.jvm.internal.q;
 
 public final class AnimatableUnderlayBorders {
     private float borderBottomRightRadius;
+    private int borderColor;
     private final float[] borderRadiusRadii;
     private final float[] borderStrokeRadiusRadii;
+    private float borderWidth;
     private final Path path = new Path();
     private float borderTopLeftRadius = SizeUtilsKt.getDpToPx(0);
     private float borderTopRightRadius = SizeUtilsKt.getDpToPx(0);
     private float borderBottomLeftRadius = SizeUtilsKt.getDpToPx(0);
-    private int borderColor = -16777216;
-    private float borderWidth = 5.0f;
 
     public AnimatableUnderlayBorders() {
         float dpToPx = SizeUtilsKt.getDpToPx(0);
@@ -29,7 +29,8 @@ public final class AnimatableUnderlayBorders {
         float f11 = this.borderTopRightRadius;
         float f12 = this.borderBottomLeftRadius;
         this.borderRadiusRadii = new float[]{f10, f10, f11, f11, dpToPx, dpToPx, f12, f12};
-        this.borderStrokeRadiusRadii = new float[]{f10 - 5.0f, f10 - 5.0f, f11 - 5.0f, f11 - 5.0f, dpToPx - 5.0f, dpToPx - 5.0f, f12 - 5.0f, f12 - 5.0f};
+        float f13 = this.borderWidth;
+        this.borderStrokeRadiusRadii = new float[]{f10 - f13, f10 - f13, f11 - f13, f11 - f13, dpToPx - f13, dpToPx - f13, f12 - f13, f12 - f13};
     }
 
     public final void drawBorderStroke$animatable_underlay_release(Canvas canvas, Paint paint, RectF pathRect) {

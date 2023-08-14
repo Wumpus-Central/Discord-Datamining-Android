@@ -18,7 +18,7 @@ public  class DiscordAudioManager$bluetoothBroadcastReceiver$4 extends n impleme
     @Override 
     public   Unit invoke(BluetoothDevice bluetoothDevice) {
         invoke2(bluetoothDevice);
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 
     

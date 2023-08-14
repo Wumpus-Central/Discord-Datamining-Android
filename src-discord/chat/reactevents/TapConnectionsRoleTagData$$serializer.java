@@ -35,7 +35,7 @@ public final class TapConnectionsRoleTagData$$serializer implements f0<TapConnec
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29540a;
+        a2 a2Var = a2.f29550a;
         return new KSerializer[]{a2Var, a2Var, a2Var, a2Var};
     }
 

@@ -137,7 +137,7 @@ public final class AudioWaveView extends View {
         CHUNK_SPACING = dpToPx2;
         int i10 = dpToPx + dpToPx2;
         CHUNK_SIZE = i10;
-        a.C0358a aVar = a.f25061l;
+        a.C0358a aVar = a.f25071l;
         MIN_WIDTH = i10 * 5;
     }
 
@@ -320,7 +320,6 @@ public final class AudioWaveView extends View {
     @Override 
     protected void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
         int i14;
-        int c10;
         boolean z11;
         super.onLayout(z10, i10, i11, i12, i13);
         if (z10) {
@@ -332,8 +331,7 @@ public final class AudioWaveView extends View {
                 i14 = 0;
             }
             int i16 = this.numChunks;
-            c10 = ag.j.c((getWidth() / i15) + i14, 5);
-            setNumChunks(c10);
+            setNumChunks(ag.j.c((getWidth() / i15) + i14, 5));
             if (i16 != this.numChunks) {
                 z11 = true;
             } else {

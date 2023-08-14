@@ -36,7 +36,7 @@ final class ChatModule$clearRows$1 extends k implements Function2<ChatListManage
     }
 
     public final Object invoke(ChatListManager chatListManager, Continuation<? super Unit> continuation) {
-        return ((ChatModule$clearRows$1) create(chatListManager, continuation)).invokeSuspend(Unit.f21025a);
+        return ((ChatModule$clearRows$1) create(chatListManager, continuation)).invokeSuspend(Unit.f21036a);
     }
 
     @Override 
@@ -48,7 +48,7 @@ final class ChatModule$clearRows$1 extends k implements Function2<ChatListManage
             rowUpdateLoggerFor = this.this$0.rowUpdateLoggerFor(this.$tag);
             rowUpdateLoggerFor.logRowsClear();
             ((ChatListManager) this.L$0).clearRows();
-            return Unit.f21025a;
+            return Unit.f21036a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

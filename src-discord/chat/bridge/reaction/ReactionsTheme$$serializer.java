@@ -39,7 +39,7 @@ public final class ReactionsTheme$$serializer implements f0<ReactionsTheme> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29615a;
+        m0 m0Var = m0.f29625a;
         return new KSerializer[]{a.u(m0Var), a.u(m0Var), a.u(m0Var), a.u(m0Var), a.u(m0Var), a.u(m0Var)};
     }
 
@@ -58,7 +58,7 @@ public final class ReactionsTheme$$serializer implements f0<ReactionsTheme> {
         int i11 = 5;
         Object obj7 = null;
         if (c10.y()) {
-            m0 m0Var = m0.f29615a;
+            m0 m0Var = m0.f29625a;
             obj2 = c10.v(descriptor2, 0, m0Var, null);
             obj3 = c10.v(descriptor2, 1, m0Var, null);
             obj4 = c10.v(descriptor2, 2, m0Var, null);
@@ -81,23 +81,23 @@ public final class ReactionsTheme$$serializer implements f0<ReactionsTheme> {
                         z10 = false;
                         i11 = 5;
                     case 0:
-                        obj7 = c10.v(descriptor2, 0, m0.f29615a, obj7);
+                        obj7 = c10.v(descriptor2, 0, m0.f29625a, obj7);
                         i12 |= 1;
                         i11 = 5;
                     case 1:
-                        obj8 = c10.v(descriptor2, 1, m0.f29615a, obj8);
+                        obj8 = c10.v(descriptor2, 1, m0.f29625a, obj8);
                         i12 |= 2;
                     case 2:
-                        obj9 = c10.v(descriptor2, 2, m0.f29615a, obj9);
+                        obj9 = c10.v(descriptor2, 2, m0.f29625a, obj9);
                         i12 |= 4;
                     case 3:
-                        obj = c10.v(descriptor2, 3, m0.f29615a, obj);
+                        obj = c10.v(descriptor2, 3, m0.f29625a, obj);
                         i12 |= 8;
                     case 4:
-                        obj10 = c10.v(descriptor2, 4, m0.f29615a, obj10);
+                        obj10 = c10.v(descriptor2, 4, m0.f29625a, obj10);
                         i12 |= 16;
                     case 5:
-                        obj11 = c10.v(descriptor2, i11, m0.f29615a, obj11);
+                        obj11 = c10.v(descriptor2, i11, m0.f29625a, obj11);
                         i12 |= 32;
                     default:
                         throw new n(x10);

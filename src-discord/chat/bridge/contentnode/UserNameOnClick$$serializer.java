@@ -41,7 +41,7 @@ public final class UserNameOnClick$$serializer implements f0<UserNameOnClick> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f29540a, UserId$$serializer.INSTANCE, a.u(ChannelId$$serializer.INSTANCE), a.u(m0.f29615a)};
+        return new KSerializer[]{a2.f29550a, UserId$$serializer.INSTANCE, a.u(ChannelId$$serializer.INSTANCE), a.u(m0.f29625a)};
     }
 
     @Override 
@@ -59,7 +59,7 @@ public final class UserNameOnClick$$serializer implements f0<UserNameOnClick> {
             str = c10.t(descriptor2, 0);
             obj = c10.m(descriptor2, 1, UserId$$serializer.INSTANCE, null);
             obj2 = c10.v(descriptor2, 2, ChannelId$$serializer.INSTANCE, null);
-            obj3 = c10.v(descriptor2, 3, m0.f29615a, null);
+            obj3 = c10.v(descriptor2, 3, m0.f29625a, null);
             i10 = 15;
         } else {
             boolean z10 = true;
@@ -81,7 +81,7 @@ public final class UserNameOnClick$$serializer implements f0<UserNameOnClick> {
                     obj5 = c10.v(descriptor2, 2, ChannelId$$serializer.INSTANCE, obj5);
                     i11 |= 4;
                 } else if (x10 == 3) {
-                    obj6 = c10.v(descriptor2, 3, m0.f29615a, obj6);
+                    obj6 = c10.v(descriptor2, 3, m0.f29625a, obj6);
                     i11 |= 8;
                 } else {
                     throw new n(x10);

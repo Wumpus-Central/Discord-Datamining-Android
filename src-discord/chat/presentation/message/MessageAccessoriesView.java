@@ -102,7 +102,7 @@ public final class MessageAccessoriesView extends RecyclerView {
     }
 
     
-    public final void m211setAccessoriesRC8ZMxU(String messageId, long j10, GuildId guildId, List<? extends MessageAccessory> items, ChatEventHandler eventHandler, ComponentProvider componentProvider) {
+    public final void m213setAccessoriesRC8ZMxU(String messageId, long j10, GuildId guildId, List<? extends MessageAccessory> items, ChatEventHandler eventHandler, ComponentProvider componentProvider) {
         MessageAccessoriesView$defaultItemAnimator$1 messageAccessoriesView$defaultItemAnimator$1;
         q.h(messageId, "messageId");
         q.h(items, "items");
@@ -131,7 +131,7 @@ public final class MessageAccessoriesView extends RecyclerView {
         threadSpineItemDecoration.setShowThreadSpine(z10);
         this.accessoriesAdapter.setEventHandler(eventHandler);
         this.accessoriesAdapter.setComponentProvider(componentProvider);
-        this.accessoriesAdapter.m198setItemsbo5iIEc(messageId, j10, guildId, items);
+        this.accessoriesAdapter.m199setItemsbo5iIEc(messageId, j10, guildId, items);
     }
 
     public final void setOnCurrentContentViewChanged(Function1<? super MessageContentView, Unit> onViewChanged) {

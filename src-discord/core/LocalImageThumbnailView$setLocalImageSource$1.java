@@ -23,9 +23,9 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
-import kotlinx.coroutines.f2;
+import kotlinx.coroutines.a1;
+import kotlinx.coroutines.h2;
 import kotlinx.coroutines.j;
-import kotlinx.coroutines.y0;
 import pf.d;
 
 
@@ -66,7 +66,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
         }
 
         @Override 
@@ -85,7 +85,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
                     imageView = this.this$0.imageView;
                     imageView.setImageBitmap(this.$bitmap);
                 }
-                return Unit.f21025a;
+                return Unit.f21036a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -114,7 +114,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
+            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
         }
 
         @Override 
@@ -127,7 +127,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
                 LocalImageThumbnailView localImageThumbnailView = this.this$0;
                 simpleDraweeView = localImageThumbnailView.simpleDraweeView;
                 localImageThumbnailView.loadDefaultBitmap(simpleDraweeView, this.$uri);
-                return Unit.f21025a;
+                return Unit.f21036a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -149,7 +149,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((LocalImageThumbnailView$setLocalImageSource$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
+        return ((LocalImageThumbnailView$setLocalImageSource$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
     }
 
     @Override 
@@ -191,7 +191,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
                 } else {
                     z10 = false;
                 }
-                f2 c10 = y0.c();
+                h2 c10 = a1.c();
                 LocalImageThumbnailView localImageThumbnailView = this.this$0;
                 if (z10) {
                     z11 = true;
@@ -214,13 +214,13 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
             CrashReporting crashReporting = CrashReporting.INSTANCE;
             k10 = v.k(x.a("exception", e10.toString()), x.a("url", this.$uri.toString()));
             CrashReporting.addBreadcrumb$default(crashReporting, "DCDLocalImageThumbnail - Failed to load thumbnail", k10, null, 4, null);
-            f2 c11 = y0.c();
+            h2 c11 = a1.c();
             AnonymousClass2 r13 = new AnonymousClass2(this.this$0, this.$uri, null);
             this.label = 2;
             if (j.g(c11, r13, this) == d10) {
                 return d10;
             }
         }
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 }

@@ -7,12 +7,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.R;
 import com.discord.chat.bridge.contentnode.LinkContentNode;
 import com.discord.chat.bridge.forums.PostSharePrompt;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.databinding.ForumPostActionBarViewBinding;
+import com.discord.chat.presentation.root.ChatView;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
 import com.discord.core.DCDButton;
 import com.discord.fonts.DiscordFont;
@@ -27,6 +29,7 @@ import com.discord.react_strings.I18nUtilsKt;
 import com.discord.reactions.AddReactionView;
 import com.discord.reactions.ReactionView;
 import com.discord.reactions.ReactionsView;
+import com.discord.reactions.ReactionsView$setReactions$3;
 import com.discord.ripple.RippleUtilsKt;
 import com.discord.theme.ThemeManagerKt;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
@@ -68,10 +71,17 @@ public final class ForumPostActionBarView extends ConstraintLayout {
         reactionsView.setVisibility(0);
         ReactionsView reactionsView2 = this.binding.reactionsView;
         q.g(reactionsView2, "binding.reactionsView");
-        reactionsView2.setReactions(str, list, false, false, "", "", "", reactionsTheme, (r32 & 256) != 0 ? 
-        
-        
-        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.ForumPostActionBarView.setReactions(java.lang.String, java.util.List, com.discord.reactions.ReactionView$ReactionsTheme, android.view.View$OnClickListener, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1):void");
+        reactionsView2.setReactions(str, list, false, false, "", "", "", reactionsTheme, (r32 & 256) != 0 ? new View.OnClickListener() { 
+            @Override 
+            public final void onClick(View view) {
+                ReactionsView.setReactions$lambda$0(view);
+            }
+        } : onClickListener, (r32 & 512) != 0 ? new View.OnClickListener() { 
+            @Override 
+            public final void onClick(View view) {
+                ReactionsView.setReactions$lambda$1(view);
+            }
+        } : null, function1, (r32 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? ReactionsView$setReactions$3.INSTANCE : function12, (r32 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? null : null, (r32 & 8192) != 0 ? false : ChatView.Companion.getAreChatAnimationsEnabled());
     }
 
     
@@ -83,7 +93,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     }
 
     
-    private final void m312setSharePromptLdU2QRA(String str, PostSharePrompt postSharePrompt, View.OnClickListener onClickListener, String str2, View.OnClickListener onClickListener2, Function2<? super MessageId, ? super LinkContentNode, Unit> function2) {
+    private final void m314setSharePromptLdU2QRA(String str, PostSharePrompt postSharePrompt, View.OnClickListener onClickListener, String str2, View.OnClickListener onClickListener2, Function2<? super MessageId, ? super LinkContentNode, Unit> function2) {
         boolean z10;
         int i10;
         ConstraintLayout constraintLayout = this.binding.sharePromptContainer;
@@ -128,7 +138,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     }
 
     
-    public final void m313configureCgeVRR0(String messageId, int i10, boolean z10, String str, String followLabel, String str2, String shareLabel, List<? extends ReactionView.Reaction> list, ReactionView.Reaction reaction, boolean z11, String addNewReactionAccessibilityLabel, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, View.OnClickListener onTapFollowForumPost, View.OnClickListener onTapShareForumPost, View.OnClickListener onTapReactionOverflow, PostSharePrompt postSharePrompt, View.OnClickListener onDismissSharePromptClick, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
+    public final void m315configureCgeVRR0(String messageId, int i10, boolean z10, String str, String followLabel, String str2, String shareLabel, List<? extends ReactionView.Reaction> list, ReactionView.Reaction reaction, boolean z11, String addNewReactionAccessibilityLabel, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, View.OnClickListener onTapFollowForumPost, View.OnClickListener onTapShareForumPost, View.OnClickListener onTapReactionOverflow, PostSharePrompt postSharePrompt, View.OnClickListener onDismissSharePromptClick, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
         boolean z12;
         Object obj;
         int i11;
@@ -158,7 +168,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
                 reactionsView.setVisibility(8);
             } else {
                 d10 = i.d(reaction);
-                setReactions$default(this, MessageId.m599toStringimpl(messageId), d10, reactionsTheme, onAddReactionClick, onReactionClick, null, 32, null);
+                setReactions$default(this, MessageId.m611toStringimpl(messageId), d10, reactionsTheme, onAddReactionClick, onReactionClick, null, 32, null);
             }
             i11 = 2;
             obj = null;
@@ -171,7 +181,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
             ReactionsView reactionsView2 = this.binding.reactionsView;
             q.g(reactionsView2, "binding.reactionsView");
             reactionsView2.setVisibility(0);
-            setReactions(MessageId.m599toStringimpl(messageId), v02, reactionsTheme, onAddReactionClick, onReactionClick, onReactionLongPress);
+            setReactions(MessageId.m611toStringimpl(messageId), v02, reactionsTheme, onAddReactionClick, onReactionClick, onReactionLongPress);
             int max = Math.max(list.size() - i13, 0);
             DCDButton configure_CgeVRR0$lambda$7 = this.binding.otherReactionsCount;
             q.g(configure_CgeVRR0$lambda$7, "configure_CgeVRR0$lambda$7");
@@ -229,7 +239,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
             int i17 = z12 ? 1 : 0;
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configure_CgeVRR0$lambda$10, false, onAddReactionClick, i14, obj);
         }
-        m312setSharePromptLdU2QRA(messageId, postSharePrompt, onTapShareForumPost, str2, onDismissSharePromptClick, onLinkClicked);
+        m314setSharePromptLdU2QRA(messageId, postSharePrompt, onTapShareForumPost, str2, onDismissSharePromptClick, onLinkClicked);
     }
 
     

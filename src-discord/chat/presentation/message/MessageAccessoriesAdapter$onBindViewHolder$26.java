@@ -1,7 +1,6 @@
 package com.discord.chat.presentation.message;
 
 import com.discord.chat.presentation.events.ChatEventHandler;
-import com.discord.primitives.ChannelId;
 import com.discord.reactions.ReactionView;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -25,14 +24,13 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$26 extends s imple
     @Override 
     public   Unit invoke(ReactionView.Reaction reaction) {
         invoke2(reaction);
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 
     
     public final void invoke2(ReactionView.Reaction reaction) {
         ChatEventHandler chatEventHandler;
         String str;
-        ChannelId channelId;
         q.h(reaction, "reaction");
         chatEventHandler = this.this$0.eventHandler;
         if (chatEventHandler == null) {
@@ -41,8 +39,6 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$26 extends s imple
         }
         str = this.this$0.messageId;
         q.e(str);
-        channelId = this.this$0.channelId;
-        q.e(channelId);
-        chatEventHandler.mo152onLongPressReactionEqy5D80(str, channelId.m576unboximpl(), reaction);
+        ChatEventHandler.DefaultImpls.m188onTapReactionu7_MRrM$default(chatEventHandler, str, reaction, null, 4, null);
     }
 }

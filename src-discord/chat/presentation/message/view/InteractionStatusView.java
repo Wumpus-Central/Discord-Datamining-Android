@@ -40,7 +40,7 @@ public final class InteractionStatusView extends ConstraintLayout {
     }
 
     
-    public final void m315setInteractionStatusntcYbpo(String messageId, InteractionStatus interactionStatus) {
+    public final void m320setInteractionStatusntcYbpo(String messageId, InteractionStatus interactionStatus) {
         int i10;
         int i11;
         q.h(messageId, "messageId");

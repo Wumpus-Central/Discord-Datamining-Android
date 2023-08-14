@@ -55,6 +55,7 @@ public final class ThemeModule extends NativeThemeManagerSpec {
     
     
     
+    
     @Override 
     
     public void updateTheme(java.lang.String r4) {

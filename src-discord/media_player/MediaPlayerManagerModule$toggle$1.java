@@ -30,7 +30,7 @@ public final class MediaPlayerManagerModule$toggle$1 extends s implements Functi
     @Override 
     public   Unit invoke(SimpleExoPlayer simpleExoPlayer) {
         invoke2(simpleExoPlayer);
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 
     

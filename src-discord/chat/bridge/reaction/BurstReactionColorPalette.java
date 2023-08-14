@@ -68,7 +68,7 @@ public final class BurstReactionColorPalette implements BurstReactionView.BurstC
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        a2 a2Var = a2.f29540a;
+        a2 a2Var = a2.f29550a;
         output.z(serialDesc, 0, a2Var, self.getBackgroundColor());
         output.z(serialDesc, 1, a2Var, self.getAccentColor());
         output.z(serialDesc, 2, a2Var, self.getHighlightColor());

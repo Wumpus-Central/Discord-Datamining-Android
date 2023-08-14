@@ -15,10 +15,10 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.a1;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
 import kotlinx.coroutines.j;
-import kotlinx.coroutines.y0;
 import pf.d;
 
 
@@ -48,7 +48,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileAttachmentView$setContent$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
+        return ((FileAttachmentView$setContent$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
     }
 
     @Override 
@@ -88,7 +88,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
                     }
 
                     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                        return ((C01001) create(coroutineScope, continuation)).invokeSuspend(Unit.f21025a);
+                        return ((C01001) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
                     }
 
                     @Override 
@@ -117,7 +117,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
                                 i11 = 8;
                             }
                             simpleDraweeView.setVisibility(i11);
-                            return Unit.f21025a;
+                            return Unit.f21036a;
                         }
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
@@ -130,9 +130,9 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
 
                 public final Object emit(DownloadState downloadState, Continuation<? super Unit> continuation) {
                     Object d11;
-                    Object g10 = j.g(y0.c(), new C01001(downloadState, FileAttachmentView.this, null), continuation);
+                    Object g10 = j.g(a1.c(), new C01001(downloadState, FileAttachmentView.this, null), continuation);
                     d11 = d.d();
-                    return g10 == d11 ? g10 : Unit.f21025a;
+                    return g10 == d11 ? g10 : Unit.f21036a;
                 }
             };
             this.label = 1;
@@ -144,6 +144,6 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 }

@@ -70,7 +70,7 @@ public final class LoadedReferencedMessage extends ReferencedMessage {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 1, a2.f29540a, self.systemContent);
+            output.z(serialDesc, 1, a2.f29550a, self.systemContent);
         }
     }
 

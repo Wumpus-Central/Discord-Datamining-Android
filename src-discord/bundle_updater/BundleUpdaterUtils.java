@@ -50,7 +50,7 @@ public final class BundleUpdaterUtils {
         BufferedSource d10 = ak.m.d(ak.m.k(file));
         try {
             j a10 = j.f695n.a(ak.m.b());
-            d10.o0(a10);
+            d10.q0(a10);
             th = null;
             return a10.a().m();
         } finally {

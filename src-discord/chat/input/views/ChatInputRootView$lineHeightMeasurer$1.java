@@ -22,7 +22,7 @@ final class ChatInputRootView$lineHeightMeasurer$1 extends s implements Function
     @Override 
     public   Unit invoke(Integer num) {
         invoke(num.intValue());
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 
     public final void invoke(int i10) {

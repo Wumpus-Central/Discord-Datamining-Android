@@ -25,7 +25,7 @@ public final class NearbyHelperModule$manager$3 extends s implements Function1<S
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f21025a;
+        return Unit.f21036a;
     }
 
     

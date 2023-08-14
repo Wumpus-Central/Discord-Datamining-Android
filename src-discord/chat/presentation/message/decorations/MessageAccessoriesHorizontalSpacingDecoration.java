@@ -4,6 +4,7 @@ import android.graphics.Rect;
 import android.view.View;
 import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.presentation.message.view.ForumPostActionBarView;
+import com.discord.chat.presentation.message.view.ImageAttachmentView;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
@@ -24,7 +25,7 @@ public final class MessageAccessoriesHorizontalSpacingDecoration extends Recycle
         q.h(view, "view");
         q.h(parent, "parent");
         q.h(state, "state");
-        if (!(view instanceof ForumPostActionBarView)) {
+        if (!(view instanceof ForumPostActionBarView) && !(view instanceof ImageAttachmentView)) {
             outRect.left = this.leftMarginPx;
             outRect.right = this.rightMarginPx;
         }

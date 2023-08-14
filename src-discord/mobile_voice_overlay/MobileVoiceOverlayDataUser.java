@@ -42,7 +42,7 @@ public final class MobileVoiceOverlayDataUser {
         if (15 != (i10 & 15)) {
             n1.b(i10, 15, MobileVoiceOverlayDataUser$$serializer.INSTANCE.getDescriptor());
         }
-        this.userId = userId.m640unboximpl();
+        this.userId = userId.m652unboximpl();
         this.avatar = str;
         this.speaking = z10;
         this.discriminator = i11;
@@ -57,7 +57,7 @@ public final class MobileVoiceOverlayDataUser {
     }
 
     
-    public static  MobileVoiceOverlayDataUser m478copyASSxI_0$default(MobileVoiceOverlayDataUser mobileVoiceOverlayDataUser, long j10, String str, boolean z10, int i10, int i11, Object obj) {
+    public static  MobileVoiceOverlayDataUser m490copyASSxI_0$default(MobileVoiceOverlayDataUser mobileVoiceOverlayDataUser, long j10, String str, boolean z10, int i10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             j10 = mobileVoiceOverlayDataUser.userId;
         }
@@ -70,21 +70,21 @@ public final class MobileVoiceOverlayDataUser {
         if ((i11 & 8) != 0) {
             i10 = mobileVoiceOverlayDataUser.discriminator;
         }
-        return mobileVoiceOverlayDataUser.m480copyASSxI_0(j10, str, z10, i10);
+        return mobileVoiceOverlayDataUser.m492copyASSxI_0(j10, str, z10, i10);
     }
 
     public static final void write$Self(MobileVoiceOverlayDataUser self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.h(serialDesc, 0, UserId$$serializer.INSTANCE, UserId.m631boximpl(self.userId));
-        output.z(serialDesc, 1, a2.f29540a, self.avatar);
+        output.h(serialDesc, 0, UserId$$serializer.INSTANCE, UserId.m643boximpl(self.userId));
+        output.z(serialDesc, 1, a2.f29550a, self.avatar);
         output.r(serialDesc, 2, self.speaking);
         output.q(serialDesc, 3, self.discriminator);
     }
 
     
-    public final long m479component1re6GcUE() {
+    public final long m491component1re6GcUE() {
         return this.userId;
     }
 
@@ -101,7 +101,7 @@ public final class MobileVoiceOverlayDataUser {
     }
 
     
-    public final MobileVoiceOverlayDataUser m480copyASSxI_0(long j10, String str, boolean z10, int i10) {
+    public final MobileVoiceOverlayDataUser m492copyASSxI_0(long j10, String str, boolean z10, int i10) {
         return new MobileVoiceOverlayDataUser(j10, str, z10, i10, null);
     }
 
@@ -113,7 +113,7 @@ public final class MobileVoiceOverlayDataUser {
             return false;
         }
         MobileVoiceOverlayDataUser mobileVoiceOverlayDataUser = (MobileVoiceOverlayDataUser) obj;
-        return UserId.m635equalsimpl0(this.userId, mobileVoiceOverlayDataUser.userId) && q.c(this.avatar, mobileVoiceOverlayDataUser.avatar) && this.speaking == mobileVoiceOverlayDataUser.speaking && this.discriminator == mobileVoiceOverlayDataUser.discriminator;
+        return UserId.m647equalsimpl0(this.userId, mobileVoiceOverlayDataUser.userId) && q.c(this.avatar, mobileVoiceOverlayDataUser.avatar) && this.speaking == mobileVoiceOverlayDataUser.speaking && this.discriminator == mobileVoiceOverlayDataUser.discriminator;
     }
 
     public final String getAvatar() {
@@ -129,12 +129,12 @@ public final class MobileVoiceOverlayDataUser {
     }
 
     
-    public final long m481getUserIdre6GcUE() {
+    public final long m493getUserIdre6GcUE() {
         return this.userId;
     }
 
     public int hashCode() {
-        int i10 = UserId.m636hashCodeimpl(this.userId) * 31;
+        int i10 = UserId.m648hashCodeimpl(this.userId) * 31;
         String str = this.avatar;
         int hashCode = (i10 + (str == null ? 0 : str.hashCode())) * 31;
         boolean z10 = this.speaking;
@@ -148,7 +148,7 @@ public final class MobileVoiceOverlayDataUser {
     }
 
     public String toString() {
-        String str = UserId.m638toStringimpl(this.userId);
+        String str = UserId.m650toStringimpl(this.userId);
         String str2 = this.avatar;
         boolean z10 = this.speaking;
         int i10 = this.discriminator;
