@@ -52,7 +52,7 @@ public final class OnLongPressStickerEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.stickerId);
+        output.x(serialDesc, 0, self.stickerId);
     }
 
     public final String component1() {

@@ -68,13 +68,13 @@ public final class UnicodeEmojiContentNode extends EmojiContentNode {
         q.h(serialDesc, "serialDesc");
         EmojiContentNode.write$Self(self, output, serialDesc);
         boolean z10 = false;
-        output.s(serialDesc, 0, self.content);
-        output.s(serialDesc, 1, self.surrogate);
-        if (output.w(serialDesc, 2) || self.getJumboable()) {
+        output.x(serialDesc, 0, self.content);
+        output.x(serialDesc, 1, self.surrogate);
+        if (output.z(serialDesc, 2) || self.getJumboable()) {
             z10 = true;
         }
         if (z10) {
-            output.r(serialDesc, 2, self.getJumboable());
+            output.w(serialDesc, 2, self.getJumboable());
         }
     }
 

@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import com.discord.chat.R;
 import com.discord.chat.presentation.message.MessageAccessoriesView;
 import com.facebook.drawee.view.SimpleDraweeView;
-import v0.a;
+import u0.a;
 
 
 public final class SystemMessageViewBinding {

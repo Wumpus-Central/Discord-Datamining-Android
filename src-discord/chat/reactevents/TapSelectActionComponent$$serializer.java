@@ -37,7 +37,7 @@ public final class TapSelectActionComponent$$serializer implements f0<TapSelectA
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, w0.f29666a, SelectComponent.Companion.serializer()};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, w0.f29871a, SelectComponent.Companion.serializer()};
     }
 
     @Override 
@@ -48,12 +48,12 @@ public final class TapSelectActionComponent$$serializer implements f0<TapSelectA
         Object obj2;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         String str = null;
-        if (c10.y()) {
-            obj2 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
-            j10 = c10.h(descriptor2, 1);
-            obj = c10.m(descriptor2, 2, SelectComponent.Companion.serializer(), null);
+        if (b10.p()) {
+            obj2 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
+            j10 = b10.f(descriptor2, 1);
+            obj = b10.y(descriptor2, 2, SelectComponent.Companion.serializer(), null);
             i10 = 7;
         } else {
             long j11 = 0;
@@ -62,30 +62,30 @@ public final class TapSelectActionComponent$$serializer implements f0<TapSelectA
             obj2 = null;
             Object obj3 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    obj2 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, obj2);
+                } else if (o10 == 0) {
+                    obj2 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, obj2);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    j11 = c10.h(descriptor2, 1);
+                } else if (o10 == 1) {
+                    j11 = b10.f(descriptor2, 1);
                     i11 |= 2;
-                } else if (x10 == 2) {
-                    obj3 = c10.m(descriptor2, 2, SelectComponent.Companion.serializer(), obj3);
+                } else if (o10 == 2) {
+                    obj3 = b10.y(descriptor2, 2, SelectComponent.Companion.serializer(), obj3);
                     i11 |= 4;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             obj = obj3;
             i10 = i11;
             j10 = j11;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
         if (messageId != null) {
-            str = messageId.m613unboximpl();
+            str = messageId.m615unboximpl();
         }
         return new TapSelectActionComponent(i10, str, j10, (SelectComponent) obj, null, null);
     }
@@ -99,9 +99,9 @@ public final class TapSelectActionComponent$$serializer implements f0<TapSelectA
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        TapSelectActionComponent.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        TapSelectActionComponent.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

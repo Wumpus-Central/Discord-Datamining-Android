@@ -123,45 +123,45 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
         q.h(serialDesc, "serialDesc");
         MentionContentNode.write$Self(self, output, serialDesc);
         boolean z14 = false;
-        if (!output.w(serialDesc, 0) && self.channelId == null) {
+        if (!output.z(serialDesc, 0) && self.channelId == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, ChannelId$$serializer.INSTANCE, self.channelId);
+            output.B(serialDesc, 0, ChannelId$$serializer.INSTANCE, self.channelId);
         }
-        if (!output.w(serialDesc, 1) && self.userId == null) {
+        if (!output.z(serialDesc, 1) && self.userId == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 1, UserId$$serializer.INSTANCE, self.userId);
+            output.B(serialDesc, 1, UserId$$serializer.INSTANCE, self.userId);
         }
-        if (!output.w(serialDesc, 2) && self.roleColor == 0) {
+        if (!output.z(serialDesc, 2) && self.roleColor == 0) {
             z12 = false;
         } else {
             z12 = true;
         }
         if (z12) {
-            output.q(serialDesc, 2, self.roleColor);
+            output.v(serialDesc, 2, self.roleColor);
         }
-        if (!output.w(serialDesc, 3) && self.guildId == null) {
+        if (!output.z(serialDesc, 3) && self.guildId == null) {
             z13 = false;
         } else {
             z13 = true;
         }
         if (z13) {
-            output.z(serialDesc, 3, GuildId$$serializer.INSTANCE, self.guildId);
+            output.B(serialDesc, 3, GuildId$$serializer.INSTANCE, self.guildId);
         }
-        if (output.w(serialDesc, 4) || self.roleId != null) {
+        if (output.z(serialDesc, 4) || self.roleId != null) {
             z14 = true;
         }
         if (z14) {
-            output.z(serialDesc, 4, RoleId$$serializer.INSTANCE, self.roleId);
+            output.B(serialDesc, 4, RoleId$$serializer.INSTANCE, self.roleId);
         }
-        output.h(serialDesc, 5, new wi.f(ContentNodeSerializer.INSTANCE), self.getContent());
+        output.o(serialDesc, 5, new wi.f(ContentNodeSerializer.INSTANCE), self.getContent());
     }
 
     
@@ -241,14 +241,14 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     public int hashCode() {
         ChannelId channelId = this.channelId;
         int i10 = 0;
-        int i11 = (channelId == null ? 0 : ChannelId.m584hashCodeimpl(channelId.m588unboximpl())) * 31;
+        int i11 = (channelId == null ? 0 : ChannelId.m586hashCodeimpl(channelId.m590unboximpl())) * 31;
         UserId userId = this.userId;
-        int i12 = (((i11 + (userId == null ? 0 : UserId.m648hashCodeimpl(userId.m652unboximpl()))) * 31) + this.roleColor) * 31;
+        int i12 = (((i11 + (userId == null ? 0 : UserId.m650hashCodeimpl(userId.m654unboximpl()))) * 31) + this.roleColor) * 31;
         GuildId guildId = this.guildId;
-        int i13 = (i12 + (guildId == null ? 0 : GuildId.m597hashCodeimpl(guildId.m601unboximpl()))) * 31;
+        int i13 = (i12 + (guildId == null ? 0 : GuildId.m599hashCodeimpl(guildId.m603unboximpl()))) * 31;
         RoleId roleId = this.roleId;
         if (roleId != null) {
-            i10 = RoleId.m622hashCodeimpl(roleId.m626unboximpl());
+            i10 = RoleId.m624hashCodeimpl(roleId.m628unboximpl());
         }
         return ((i13 + i10) * 31) + getContent().hashCode();
     }

@@ -115,83 +115,83 @@ public final class LinkContext {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z19 = false;
-        if (!output.w(serialDesc, 0) && self.usernameOnClick == null) {
+        if (!output.z(serialDesc, 0) && self.usernameOnClick == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, UserNameOnClick$$serializer.INSTANCE, self.usernameOnClick);
+            output.B(serialDesc, 0, UserNameOnClick$$serializer.INSTANCE, self.usernameOnClick);
         }
-        if (!output.w(serialDesc, 1) && self.otherUsernameOnClick == null) {
+        if (!output.z(serialDesc, 1) && self.otherUsernameOnClick == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 1, UserNameOnClick$$serializer.INSTANCE, self.otherUsernameOnClick);
+            output.B(serialDesc, 1, UserNameOnClick$$serializer.INSTANCE, self.otherUsernameOnClick);
         }
-        if (!output.w(serialDesc, 2) && self.commandNameOnClick == null) {
+        if (!output.z(serialDesc, 2) && self.commandNameOnClick == null) {
             z12 = false;
         } else {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 2, CommandOnClick$$serializer.INSTANCE, self.commandNameOnClick);
+            output.B(serialDesc, 2, CommandOnClick$$serializer.INSTANCE, self.commandNameOnClick);
         }
-        if (!output.w(serialDesc, 3) && self.actorHook == null) {
+        if (!output.z(serialDesc, 3) && self.actorHook == null) {
             z13 = false;
         } else {
             z13 = true;
         }
         if (z13) {
-            output.z(serialDesc, 3, ActorHook$$serializer.INSTANCE, self.actorHook);
+            output.B(serialDesc, 3, ActorHook$$serializer.INSTANCE, self.actorHook);
         }
-        if (!output.w(serialDesc, 4) && self.threadOnClick == null) {
+        if (!output.z(serialDesc, 4) && self.threadOnClick == null) {
             z14 = false;
         } else {
             z14 = true;
         }
         if (z14) {
-            output.z(serialDesc, 4, ThreadOnClick$$serializer.INSTANCE, self.threadOnClick);
+            output.B(serialDesc, 4, ThreadOnClick$$serializer.INSTANCE, self.threadOnClick);
         }
-        if (!output.w(serialDesc, 5) && self.pinsOnClick == null) {
+        if (!output.z(serialDesc, 5) && self.pinsOnClick == null) {
             z15 = false;
         } else {
             z15 = true;
         }
         if (z15) {
-            output.z(serialDesc, 5, PinsOnClick$$serializer.INSTANCE, self.pinsOnClick);
+            output.B(serialDesc, 5, PinsOnClick$$serializer.INSTANCE, self.pinsOnClick);
         }
-        if (!output.w(serialDesc, 6) && self.webhookNameOnClick == null) {
+        if (!output.z(serialDesc, 6) && self.webhookNameOnClick == null) {
             z16 = false;
         } else {
             z16 = true;
         }
         if (z16) {
-            output.z(serialDesc, 6, WebhookNameOnClick$$serializer.INSTANCE, self.webhookNameOnClick);
+            output.B(serialDesc, 6, WebhookNameOnClick$$serializer.INSTANCE, self.webhookNameOnClick);
         }
-        if (!output.w(serialDesc, 7) && self.handleDelete == null) {
+        if (!output.z(serialDesc, 7) && self.handleDelete == null) {
             z17 = false;
         } else {
             z17 = true;
         }
         if (z17) {
-            output.z(serialDesc, 7, HandleDelete$$serializer.INSTANCE, self.handleDelete);
+            output.B(serialDesc, 7, HandleDelete$$serializer.INSTANCE, self.handleDelete);
         }
-        if (!output.w(serialDesc, 8) && self.roleSubscriptionOnClick == null) {
+        if (!output.z(serialDesc, 8) && self.roleSubscriptionOnClick == null) {
             z18 = false;
         } else {
             z18 = true;
         }
         if (z18) {
-            output.z(serialDesc, 8, RoleSubscriptionOnClick$$serializer.INSTANCE, self.roleSubscriptionOnClick);
+            output.B(serialDesc, 8, RoleSubscriptionOnClick$$serializer.INSTANCE, self.roleSubscriptionOnClick);
         }
-        if (output.w(serialDesc, 9) || self.handleMessage != null) {
+        if (output.z(serialDesc, 9) || self.handleMessage != null) {
             z19 = true;
         }
         if (z19) {
-            output.z(serialDesc, 9, HandleMessage$$serializer.INSTANCE, self.handleMessage);
+            output.B(serialDesc, 9, HandleMessage$$serializer.INSTANCE, self.handleMessage);
         }
     }
 

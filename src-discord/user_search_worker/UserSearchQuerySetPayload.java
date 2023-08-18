@@ -96,31 +96,31 @@ public final class UserSearchQuerySetPayload {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z12 = false;
-        output.s(serialDesc, 0, self.query);
-        if (!output.w(serialDesc, 1) && self.filters == null) {
+        output.x(serialDesc, 0, self.query);
+        if (!output.z(serialDesc, 1) && self.filters == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 1, UserSearchQuerySetFilters$$serializer.INSTANCE, self.filters);
+            output.B(serialDesc, 1, UserSearchQuerySetFilters$$serializer.INSTANCE, self.filters);
         }
-        if (!output.w(serialDesc, 2) && self.blacklist == null) {
+        if (!output.z(serialDesc, 2) && self.blacklist == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 2, new wi.f(a2.f29550a), self.blacklist);
+            output.B(serialDesc, 2, new wi.f(a2.f29755a), self.blacklist);
         }
-        if (output.w(serialDesc, 3) || self.whitelist != null) {
+        if (output.z(serialDesc, 3) || self.whitelist != null) {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 3, new wi.f(a2.f29550a), self.whitelist);
+            output.B(serialDesc, 3, new wi.f(a2.f29755a), self.whitelist);
         }
-        output.h(serialDesc, 4, new r0(a2.f29550a, x.f29671a), self.boosters);
-        output.q(serialDesc, 5, self.limit);
+        output.o(serialDesc, 4, new r0(a2.f29755a, x.f29876a), self.boosters);
+        output.v(serialDesc, 5, self.limit);
     }
 
     public final String component1() {

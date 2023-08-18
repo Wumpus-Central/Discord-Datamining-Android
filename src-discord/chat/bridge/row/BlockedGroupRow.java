@@ -69,19 +69,19 @@ public final class BlockedGroupRow extends Row {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z10 = false;
-        output.q(serialDesc, 0, self.getIndex());
-        output.h(serialDesc, 1, ChangeType.Serializer.INSTANCE, self.getChangeType());
-        output.q(serialDesc, 2, self.color);
-        output.q(serialDesc, 3, self.borderColor);
-        output.q(serialDesc, 4, self.backgroundColor);
-        output.s(serialDesc, 5, self.text);
-        output.r(serialDesc, 6, self.revealed);
-        output.h(serialDesc, 7, BlockedGroupButton$$serializer.INSTANCE, self.button);
-        if (output.w(serialDesc, 8) || self.content != null) {
+        output.v(serialDesc, 0, self.getIndex());
+        output.o(serialDesc, 1, ChangeType.Serializer.INSTANCE, self.getChangeType());
+        output.v(serialDesc, 2, self.color);
+        output.v(serialDesc, 3, self.borderColor);
+        output.v(serialDesc, 4, self.backgroundColor);
+        output.x(serialDesc, 5, self.text);
+        output.w(serialDesc, 6, self.revealed);
+        output.o(serialDesc, 7, BlockedGroupButton$$serializer.INSTANCE, self.button);
+        if (output.z(serialDesc, 8) || self.content != null) {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 8, new wi.f(BlockedGroupContent$$serializer.INSTANCE), self.content);
+            output.B(serialDesc, 8, new wi.f(BlockedGroupContent$$serializer.INSTANCE), self.content);
         }
     }
 

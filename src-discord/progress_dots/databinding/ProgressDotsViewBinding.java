@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.discord.progress_dots.ProgressDot;
 import com.discord.progress_dots.R;
-import v0.a;
+import u0.a;
 
 
 public final class ProgressDotsViewBinding {

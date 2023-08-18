@@ -38,8 +38,8 @@ public final class PingTimeoutCallbackEvent$$serializer implements f0<PingTimeou
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29625a;
-        return new KSerializer[]{m0Var, a2.f29550a, m0Var, m0Var, m0Var};
+        m0 m0Var = m0.f29830a;
+        return new KSerializer[]{m0Var, a2.f29755a, m0Var, m0Var, m0Var};
     }
 
     @Override 
@@ -52,13 +52,13 @@ public final class PingTimeoutCallbackEvent$$serializer implements f0<PingTimeou
         int i14;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            i13 = c10.k(descriptor2, 0);
-            str = c10.t(descriptor2, 1);
-            i12 = c10.k(descriptor2, 2);
-            i11 = c10.k(descriptor2, 3);
-            i10 = c10.k(descriptor2, 4);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            i13 = b10.i(descriptor2, 0);
+            str = b10.m(descriptor2, 1);
+            i12 = b10.i(descriptor2, 2);
+            i11 = b10.i(descriptor2, 3);
+            i10 = b10.i(descriptor2, 4);
             i14 = 31;
         } else {
             String str2 = null;
@@ -69,26 +69,26 @@ public final class PingTimeoutCallbackEvent$$serializer implements f0<PingTimeou
             int i18 = 0;
             int i19 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    i15 = c10.k(descriptor2, 0);
+                } else if (o10 == 0) {
+                    i15 = b10.i(descriptor2, 0);
                     i19 |= 1;
-                } else if (x10 == 1) {
-                    str2 = c10.t(descriptor2, 1);
+                } else if (o10 == 1) {
+                    str2 = b10.m(descriptor2, 1);
                     i19 |= 2;
-                } else if (x10 == 2) {
-                    i18 = c10.k(descriptor2, 2);
+                } else if (o10 == 2) {
+                    i18 = b10.i(descriptor2, 2);
                     i19 |= 4;
-                } else if (x10 == 3) {
-                    i16 = c10.k(descriptor2, 3);
+                } else if (o10 == 3) {
+                    i16 = b10.i(descriptor2, 3);
                     i19 |= 8;
-                } else if (x10 == 4) {
-                    i17 = c10.k(descriptor2, 4);
+                } else if (o10 == 4) {
+                    i17 = b10.i(descriptor2, 4);
                     i19 |= 16;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i13 = i15;
@@ -98,7 +98,7 @@ public final class PingTimeoutCallbackEvent$$serializer implements f0<PingTimeou
             str = str2;
             i14 = i19;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new PingTimeoutCallbackEvent(i14, i13, str, i12, i11, i10, null);
     }
 
@@ -111,9 +111,9 @@ public final class PingTimeoutCallbackEvent$$serializer implements f0<PingTimeou
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        PingTimeoutCallbackEvent.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        PingTimeoutCallbackEvent.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

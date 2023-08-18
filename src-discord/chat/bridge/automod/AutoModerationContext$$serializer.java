@@ -42,7 +42,7 @@ public final class AutoModerationContext$$serializer implements f0<AutoModeratio
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
+        a2 a2Var = a2.f29755a;
         return new KSerializer[]{a2Var, a2Var, a.u(a2Var), a.u(a2Var), a.u(a2Var), a2Var, a2Var, FlaggedMessageEmbed$$serializer.INSTANCE, a.u(AutoModerationNotification$$serializer.INSTANCE)};
     }
 
@@ -60,20 +60,20 @@ public final class AutoModerationContext$$serializer implements f0<AutoModeratio
         Object obj5;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i11 = 7;
         String str5 = null;
-        if (c10.y()) {
-            str4 = c10.t(descriptor2, 0);
-            str3 = c10.t(descriptor2, 1);
-            a2 a2Var = a2.f29550a;
-            obj = c10.v(descriptor2, 2, a2Var, null);
-            obj4 = c10.v(descriptor2, 3, a2Var, null);
-            obj2 = c10.v(descriptor2, 4, a2Var, null);
-            str = c10.t(descriptor2, 5);
-            str2 = c10.t(descriptor2, 6);
-            obj5 = c10.m(descriptor2, 7, FlaggedMessageEmbed$$serializer.INSTANCE, null);
-            obj3 = c10.v(descriptor2, 8, AutoModerationNotification$$serializer.INSTANCE, null);
+        if (b10.p()) {
+            str4 = b10.m(descriptor2, 0);
+            str3 = b10.m(descriptor2, 1);
+            a2 a2Var = a2.f29755a;
+            obj = b10.n(descriptor2, 2, a2Var, null);
+            obj4 = b10.n(descriptor2, 3, a2Var, null);
+            obj2 = b10.n(descriptor2, 4, a2Var, null);
+            str = b10.m(descriptor2, 5);
+            str2 = b10.m(descriptor2, 6);
+            obj5 = b10.y(descriptor2, 7, FlaggedMessageEmbed$$serializer.INSTANCE, null);
+            obj3 = b10.n(descriptor2, 8, AutoModerationNotification$$serializer.INSTANCE, null);
             i10 = 511;
         } else {
             boolean z10 = true;
@@ -87,53 +87,53 @@ public final class AutoModerationContext$$serializer implements f0<AutoModeratio
             str = null;
             String str7 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z10 = false;
                         break;
                     case 0:
-                        str5 = c10.t(descriptor2, 0);
+                        str5 = b10.m(descriptor2, 0);
                         i12 |= 1;
                         i11 = 7;
                         break;
                     case 1:
-                        str6 = c10.t(descriptor2, 1);
+                        str6 = b10.m(descriptor2, 1);
                         i12 |= 2;
                         i11 = 7;
                         break;
                     case 2:
-                        obj = c10.v(descriptor2, 2, a2.f29550a, obj);
+                        obj = b10.n(descriptor2, 2, a2.f29755a, obj);
                         i12 |= 4;
                         i11 = 7;
                         break;
                     case 3:
-                        obj8 = c10.v(descriptor2, 3, a2.f29550a, obj8);
+                        obj8 = b10.n(descriptor2, 3, a2.f29755a, obj8);
                         i12 |= 8;
                         i11 = 7;
                         continue;
                     case 4:
-                        obj2 = c10.v(descriptor2, 4, a2.f29550a, obj2);
+                        obj2 = b10.n(descriptor2, 4, a2.f29755a, obj2);
                         i12 |= 16;
                         break;
                     case 5:
-                        str = c10.t(descriptor2, 5);
+                        str = b10.m(descriptor2, 5);
                         i12 |= 32;
                         break;
                     case 6:
-                        str7 = c10.t(descriptor2, 6);
+                        str7 = b10.m(descriptor2, 6);
                         i12 |= 64;
                         break;
                     case 7:
-                        obj7 = c10.m(descriptor2, i11, FlaggedMessageEmbed$$serializer.INSTANCE, obj7);
+                        obj7 = b10.y(descriptor2, i11, FlaggedMessageEmbed$$serializer.INSTANCE, obj7);
                         i12 |= 128;
                         break;
                     case 8:
-                        obj6 = c10.v(descriptor2, 8, AutoModerationNotification$$serializer.INSTANCE, obj6);
+                        obj6 = b10.n(descriptor2, 8, AutoModerationNotification$$serializer.INSTANCE, obj6);
                         i12 |= 256;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             i10 = i12;
@@ -144,7 +144,7 @@ public final class AutoModerationContext$$serializer implements f0<AutoModeratio
             obj4 = obj8;
             str2 = str7;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new AutoModerationContext(i10, str4, str3, (String) obj, (String) obj4, (String) obj2, str, str2, (FlaggedMessageEmbed) obj5, (AutoModerationNotification) obj3, (SerializationConstructorMarker) null);
     }
 
@@ -157,9 +157,9 @@ public final class AutoModerationContext$$serializer implements f0<AutoModeratio
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        AutoModerationContext.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        AutoModerationContext.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

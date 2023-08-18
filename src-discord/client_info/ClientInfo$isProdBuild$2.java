@@ -5,7 +5,7 @@ import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.q;
 import kotlin.jvm.internal.s;
-import ni.v;
+import kotlin.text.p;
 
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"<anonymous>", "", "invoke", "()Ljava/lang/Boolean;"}, k = 3, mv = {1, 8, 0}, xi = 48)
 
@@ -30,14 +30,14 @@ final class ClientInfo$isProdBuild$2 extends s implements Function0<Boolean> {
                 q.z("flavor");
                 str = null;
             }
-            M = v.M(str, "beta", false, 2, null);
+            M = p.M(str, "beta", false, 2, null);
             if (!M) {
                 str2 = ClientInfo.flavor;
                 if (str2 == null) {
                     q.z("flavor");
                     str2 = null;
                 }
-                M2 = v.M(str2, BuildConfig.FLAVOR, false, 2, null);
+                M2 = p.M(str2, BuildConfig.FLAVOR, false, 2, null);
                 if (!M2) {
                     z10 = true;
                 }

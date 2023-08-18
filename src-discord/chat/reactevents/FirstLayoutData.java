@@ -54,8 +54,8 @@ public final class FirstLayoutData implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, self.firstVisibleMessageIndex);
-        output.q(serialDesc, 1, self.lastVisibleMessageIndex);
+        output.v(serialDesc, 0, self.firstVisibleMessageIndex);
+        output.v(serialDesc, 1, self.lastVisibleMessageIndex);
     }
 
     public final int component1() {

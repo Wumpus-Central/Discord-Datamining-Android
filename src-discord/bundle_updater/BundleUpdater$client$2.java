@@ -2,6 +2,7 @@ package com.discord.bundle_updater;
 
 import android.webkit.CookieManager;
 import com.discord.resource_usage.DeviceResourceUsageRecorder;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import kotlin.Metadata;
@@ -9,7 +10,7 @@ import kotlin.collections.r;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.q;
 import kotlin.jvm.internal.s;
-import lj.k;
+import okhttp3.Cookie;
 import okhttp3.CookieJar;
 import okhttp3.HttpUrl;
 import okhttp3.Interceptor;
@@ -35,16 +36,29 @@ public final class BundleUpdater$client$2 extends s implements Function0<OkHttpC
         final BundleUpdater bundleUpdater = this.this$0;
         OkHttpClient.Builder O = builder.f(new CookieJar() { 
             @Override 
-            public List<k> loadForRequest(HttpUrl url) {
+            public List<Cookie> loadForRequest(HttpUrl url) {
                 CookieManager cookieManager;
+                List<Cookie> D0;
                 q.h(url, "url");
                 cookieManager = BundleUpdater.this.getCookieManager();
                 q.g(cookieManager, "cookieManager");
-                return CookieValidatorKt.getCookiesForUrl(cookieManager, url.toString());
+                List<Cookie> cookiesForUrl = CookieValidatorKt.getCookiesForUrl(cookieManager, url.toString());
+                ArrayList arrayList = new ArrayList();
+                for (Object obj : cookiesForUrl) {
+                    if (!q.c(((Cookie) obj).e(), "buildOverride")) {
+                        arrayList.add(obj);
+                    }
+                }
+                D0 = r.D0(arrayList);
+                Cookie buildOverrideCookie = BundleUpdater.this.getBuildOverrideCookie();
+                if (buildOverrideCookie != null) {
+                    D0.add(buildOverrideCookie);
+                }
+                return D0;
             }
 
             @Override 
-            public void saveFromResponse(HttpUrl url, List<k> cookies) {
+            public void saveFromResponse(HttpUrl url, List<Cookie> cookies) {
                 CookieManager cookieManager;
                 String c02;
                 q.h(url, "url");

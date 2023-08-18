@@ -22,7 +22,7 @@ final class MessageViewAccessibilityDelegate$getReferencedMessageLabel$1 extends
     @Override 
     public   Unit invoke(RenderContext renderContext) {
         invoke2(renderContext);
-        return Unit.f21036a;
+        return Unit.f21210a;
     }
 
     

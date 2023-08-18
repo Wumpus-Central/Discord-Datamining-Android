@@ -73,11 +73,11 @@ public final class PingCallbackEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, self.connectionId);
-        output.q(serialDesc, 1, self.ping);
-        output.s(serialDesc, 2, self.server);
-        output.q(serialDesc, 3, self.port);
-        output.q(serialDesc, 4, self.seq);
+        output.v(serialDesc, 0, self.connectionId);
+        output.v(serialDesc, 1, self.ping);
+        output.x(serialDesc, 2, self.server);
+        output.v(serialDesc, 3, self.port);
+        output.v(serialDesc, 4, self.seq);
     }
 
     public final int component1() {

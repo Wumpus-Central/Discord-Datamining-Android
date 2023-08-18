@@ -70,10 +70,10 @@ public final class ContactName {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        a2 a2Var = a2.f29550a;
-        output.z(serialDesc, 0, a2Var, self.displayName);
-        output.z(serialDesc, 1, a2Var, self.givenName);
-        output.z(serialDesc, 2, a2Var, self.familyName);
+        a2 a2Var = a2.f29755a;
+        output.B(serialDesc, 0, a2Var, self.displayName);
+        output.B(serialDesc, 1, a2Var, self.givenName);
+        output.B(serialDesc, 2, a2Var, self.familyName);
     }
 
     public final String component1() {

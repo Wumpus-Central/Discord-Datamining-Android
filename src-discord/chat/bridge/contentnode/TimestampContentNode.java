@@ -63,9 +63,9 @@ public final class TimestampContentNode extends ContentNode {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.D(serialDesc, 0, self.timestamp);
-        output.s(serialDesc, 1, self.full);
-        output.s(serialDesc, 2, self.formatted);
+        output.E(serialDesc, 0, self.timestamp);
+        output.x(serialDesc, 1, self.full);
+        output.x(serialDesc, 2, self.formatted);
     }
 
     public final long component1() {

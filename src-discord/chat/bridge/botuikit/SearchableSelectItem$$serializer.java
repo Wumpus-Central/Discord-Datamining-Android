@@ -40,8 +40,8 @@ public final class SearchableSelectItem$$serializer implements f0<SearchableSele
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        m0 m0Var = m0.f29625a;
+        a2 a2Var = a2.f29755a;
+        m0 m0Var = m0.f29830a;
         return new KSerializer[]{a2Var, a2Var, a.u(ComponentEmoji$$serializer.INSTANCE), m0Var, a.u(a2Var), a.u(m0Var)};
     }
 
@@ -56,14 +56,14 @@ public final class SearchableSelectItem$$serializer implements f0<SearchableSele
         Object obj3;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            str2 = c10.t(descriptor2, 0);
-            str = c10.t(descriptor2, 1);
-            obj = c10.v(descriptor2, 2, ComponentEmoji$$serializer.INSTANCE, null);
-            i10 = c10.k(descriptor2, 3);
-            obj2 = c10.v(descriptor2, 4, a2.f29550a, null);
-            obj3 = c10.v(descriptor2, 5, m0.f29625a, null);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            str2 = b10.m(descriptor2, 0);
+            str = b10.m(descriptor2, 1);
+            obj = b10.n(descriptor2, 2, ComponentEmoji$$serializer.INSTANCE, null);
+            i10 = b10.i(descriptor2, 3);
+            obj2 = b10.n(descriptor2, 4, a2.f29755a, null);
+            obj3 = b10.n(descriptor2, 5, m0.f29830a, null);
             i11 = 63;
         } else {
             boolean z10 = true;
@@ -75,37 +75,37 @@ public final class SearchableSelectItem$$serializer implements f0<SearchableSele
             Object obj6 = null;
             int i13 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z10 = false;
                         continue;
                     case 0:
-                        str3 = c10.t(descriptor2, 0);
+                        str3 = b10.m(descriptor2, 0);
                         i13 |= 1;
                         continue;
                     case 1:
-                        str4 = c10.t(descriptor2, 1);
+                        str4 = b10.m(descriptor2, 1);
                         i13 |= 2;
                         break;
                     case 2:
-                        obj4 = c10.v(descriptor2, 2, ComponentEmoji$$serializer.INSTANCE, obj4);
+                        obj4 = b10.n(descriptor2, 2, ComponentEmoji$$serializer.INSTANCE, obj4);
                         i13 |= 4;
                         break;
                     case 3:
-                        i12 = c10.k(descriptor2, 3);
+                        i12 = b10.i(descriptor2, 3);
                         i13 |= 8;
                         break;
                     case 4:
-                        obj5 = c10.v(descriptor2, 4, a2.f29550a, obj5);
+                        obj5 = b10.n(descriptor2, 4, a2.f29755a, obj5);
                         i13 |= 16;
                         break;
                     case 5:
-                        obj6 = c10.v(descriptor2, 5, m0.f29625a, obj6);
+                        obj6 = b10.n(descriptor2, 5, m0.f29830a, obj6);
                         i13 |= 32;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             obj = obj4;
@@ -116,7 +116,7 @@ public final class SearchableSelectItem$$serializer implements f0<SearchableSele
             str2 = str3;
             i11 = i13;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new SearchableSelectItem(i11, str2, str, (ComponentEmoji) obj, i10, (String) obj2, (Integer) obj3, (SerializationConstructorMarker) null);
     }
 
@@ -129,9 +129,9 @@ public final class SearchableSelectItem$$serializer implements f0<SearchableSele
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        SearchableSelectItem.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        SearchableSelectItem.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

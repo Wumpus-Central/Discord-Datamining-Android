@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.TreeMap;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
-import ni.v;
+import kotlin.text.p;
 
 @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\b\u0004\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\t\u001a\u00020\u00052\u0006\u0010\n\u001a\u00020\bJ\u000e\u0010\u000b\u001a\u00020\u00052\u0006\u0010\n\u001a\u00020\bR\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u00050\u0007X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, d2 = {"Lcom/discord/chat/presentation/textutils/NumericUtils;", "", "()V", "letters", "", "", "romanNumeralMap", "Ljava/util/TreeMap;", "", "toLetter", "number", "toRomanNumeral", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -18,7 +18,7 @@ public final class NumericUtils {
     static {
         List z02;
         boolean z10;
-        z02 = v.z0("abcdefghijklmnopqrstuvwxyz", new String[]{""}, false, 0, 6, null);
+        z02 = p.z0("abcdefghijklmnopqrstuvwxyz", new String[]{""}, false, 0, 6, null);
         ArrayList arrayList = new ArrayList();
         for (Object obj : z02) {
             if (((String) obj).length() == 0) {

@@ -5,7 +5,7 @@ import java.util.Locale;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import ni.v;
+import kotlin.text.p;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0007\b\u0086\u0001\u0018\u0000 \u00072\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\u0007B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006¨\u0006\b"}, d2 = {"Lcom/discord/permissions/NativePermissionStatus;", "", "(Ljava/lang/String;I)V", "AUTHORIZED", "DENIED", "RESTRICTED", "UNDETERMINED", "Companion", "permissions_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -56,19 +56,19 @@ public enum NativePermissionStatus {
             } else {
                 throw new IllegalStateException(("Unknown authorization result: " + obj).toString());
             }
-            M = v.M(str, NativePermissionStatus.ANDROID_PERMISSION_GRANTED, false, 2, null);
+            M = p.M(str, NativePermissionStatus.ANDROID_PERMISSION_GRANTED, false, 2, null);
             if (M) {
                 String lowerCase = "AUTHORIZED".toLowerCase(Locale.ROOT);
                 q.g(lowerCase, "this as java.lang.String).toLowerCase(Locale.ROOT)");
                 return lowerCase;
             }
-            M2 = v.M(str, NativePermissionStatus.ANDROID_PERMISSION_DENIED, false, 2, null);
+            M2 = p.M(str, NativePermissionStatus.ANDROID_PERMISSION_DENIED, false, 2, null);
             if (M2) {
                 String lowerCase2 = "DENIED".toLowerCase(Locale.ROOT);
                 q.g(lowerCase2, "this as java.lang.String).toLowerCase(Locale.ROOT)");
                 return lowerCase2;
             }
-            M3 = v.M(str, NativePermissionStatus.ANDROID_PERMISSION_NEVER_ASK_AGAIN, false, 2, null);
+            M3 = p.M(str, NativePermissionStatus.ANDROID_PERMISSION_NEVER_ASK_AGAIN, false, 2, null);
             if (M3) {
                 String lowerCase3 = "DENIED".toLowerCase(Locale.ROOT);
                 q.g(lowerCase3, "this as java.lang.String).toLowerCase(Locale.ROOT)");

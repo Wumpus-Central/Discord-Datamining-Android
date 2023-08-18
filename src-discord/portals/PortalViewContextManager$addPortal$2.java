@@ -19,7 +19,7 @@ final class PortalViewContextManager$addPortal$2 extends s implements Function1<
     @Override 
     public   Unit invoke(View view) {
         invoke2(view);
-        return Unit.f21036a;
+        return Unit.f21210a;
     }
 
     

@@ -52,7 +52,7 @@ public final class UserSearchQueryClearData extends UserSearchData {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.uuid);
+        output.x(serialDesc, 0, self.uuid);
     }
 
     public final String component1() {

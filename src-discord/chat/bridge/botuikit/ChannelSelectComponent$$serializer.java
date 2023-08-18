@@ -52,9 +52,9 @@ public final class ChannelSelectComponent$$serializer implements f0<ChannelSelec
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29625a;
-        a2 a2Var = a2.f29550a;
-        return new KSerializer[]{a.u(new f(SearchableSelectItem$$serializer.INSTANCE)), m0Var, new f(m0Var), a2Var, a2Var, a.u(a2Var), a.u(a2Var), m0Var, m0Var, h.f29592a, ActionComponentState.Serializer.INSTANCE, a.u(new f(m0Var))};
+        m0 m0Var = m0.f29830a;
+        a2 a2Var = a2.f29755a;
+        return new KSerializer[]{a.u(new f(SearchableSelectItem$$serializer.INSTANCE)), m0Var, new f(m0Var), a2Var, a2Var, a.u(a2Var), a.u(a2Var), m0Var, m0Var, h.f29797a, ActionComponentState.Serializer.INSTANCE, a.u(new f(m0Var))};
     }
 
     @Override 
@@ -74,26 +74,26 @@ public final class ChannelSelectComponent$$serializer implements f0<ChannelSelec
         Object obj6;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i14 = 10;
         int i15 = 9;
         int i16 = 7;
         int i17 = 0;
-        if (c10.y()) {
-            obj6 = c10.v(descriptor2, 0, new f(SearchableSelectItem$$serializer.INSTANCE), null);
-            i12 = c10.k(descriptor2, 1);
-            m0 m0Var = m0.f29625a;
-            obj = c10.m(descriptor2, 2, new f(m0Var), null);
-            str2 = c10.t(descriptor2, 3);
-            str = c10.t(descriptor2, 4);
-            a2 a2Var = a2.f29550a;
-            obj2 = c10.v(descriptor2, 5, a2Var, null);
-            obj4 = c10.v(descriptor2, 6, a2Var, null);
-            i11 = c10.k(descriptor2, 7);
-            i10 = c10.k(descriptor2, 8);
-            z10 = c10.s(descriptor2, 9);
-            obj3 = c10.m(descriptor2, 10, ActionComponentState.Serializer.INSTANCE, null);
-            obj5 = c10.v(descriptor2, 11, new f(m0Var), null);
+        if (b10.p()) {
+            obj6 = b10.n(descriptor2, 0, new f(SearchableSelectItem$$serializer.INSTANCE), null);
+            i12 = b10.i(descriptor2, 1);
+            m0 m0Var = m0.f29830a;
+            obj = b10.y(descriptor2, 2, new f(m0Var), null);
+            str2 = b10.m(descriptor2, 3);
+            str = b10.m(descriptor2, 4);
+            a2 a2Var = a2.f29755a;
+            obj2 = b10.n(descriptor2, 5, a2Var, null);
+            obj4 = b10.n(descriptor2, 6, a2Var, null);
+            i11 = b10.i(descriptor2, 7);
+            i10 = b10.i(descriptor2, 8);
+            z10 = b10.C(descriptor2, 9);
+            obj3 = b10.y(descriptor2, 10, ActionComponentState.Serializer.INSTANCE, null);
+            obj5 = b10.n(descriptor2, 11, new f(m0Var), null);
             i13 = 4095;
         } else {
             int i18 = 11;
@@ -111,78 +111,78 @@ public final class ChannelSelectComponent$$serializer implements f0<ChannelSelec
             String str4 = null;
             boolean z12 = false;
             while (z11) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z11 = false;
                         i14 = 10;
                         i15 = 9;
                         break;
                     case 0:
-                        obj9 = c10.v(descriptor2, 0, new f(SearchableSelectItem$$serializer.INSTANCE), obj9);
+                        obj9 = b10.n(descriptor2, 0, new f(SearchableSelectItem$$serializer.INSTANCE), obj9);
                         i17 |= 1;
                         i18 = 11;
                         i14 = 10;
                         i15 = 9;
                         break;
                     case 1:
-                        i19 = c10.k(descriptor2, 1);
+                        i19 = b10.i(descriptor2, 1);
                         i17 |= 2;
                         i18 = 11;
                         i14 = 10;
                         break;
                     case 2:
-                        obj = c10.m(descriptor2, 2, new f(m0.f29625a), obj);
+                        obj = b10.y(descriptor2, 2, new f(m0.f29830a), obj);
                         i17 |= 4;
                         i18 = 11;
                         i14 = 10;
                         break;
                     case 3:
-                        str3 = c10.t(descriptor2, 3);
+                        str3 = b10.m(descriptor2, 3);
                         i17 |= 8;
                         i18 = 11;
                         break;
                     case 4:
-                        str4 = c10.t(descriptor2, 4);
+                        str4 = b10.m(descriptor2, 4);
                         i17 |= 16;
                         i18 = 11;
                         break;
                     case 5:
-                        obj2 = c10.v(descriptor2, 5, a2.f29550a, obj2);
+                        obj2 = b10.n(descriptor2, 5, a2.f29755a, obj2);
                         i17 |= 32;
                         i18 = 11;
                         break;
                     case 6:
-                        obj8 = c10.v(descriptor2, 6, a2.f29550a, obj8);
+                        obj8 = b10.n(descriptor2, 6, a2.f29755a, obj8);
                         i17 |= 64;
                         i18 = 11;
                         continue;
                     case 7:
-                        i11 = c10.k(descriptor2, i16);
+                        i11 = b10.i(descriptor2, i16);
                         i17 |= 128;
                         break;
                     case 8:
-                        i10 = c10.k(descriptor2, 8);
+                        i10 = b10.i(descriptor2, 8);
                         i17 |= 256;
                         i16 = 7;
                         break;
                     case 9:
-                        z12 = c10.s(descriptor2, i15);
+                        z12 = b10.C(descriptor2, i15);
                         i17 |= 512;
                         i16 = 7;
                         break;
                     case 10:
-                        obj3 = c10.m(descriptor2, i14, ActionComponentState.Serializer.INSTANCE, obj3);
+                        obj3 = b10.y(descriptor2, i14, ActionComponentState.Serializer.INSTANCE, obj3);
                         i17 |= 1024;
                         i16 = 7;
                         break;
                     case 11:
-                        obj7 = c10.v(descriptor2, i18, new f(m0.f29625a), obj7);
+                        obj7 = b10.n(descriptor2, i18, new f(m0.f29830a), obj7);
                         i17 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         i16 = 7;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             i12 = i19;
@@ -194,7 +194,7 @@ public final class ChannelSelectComponent$$serializer implements f0<ChannelSelec
             str2 = str3;
             str = str4;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new ChannelSelectComponent(i13, (List) obj6, i12, (List) obj, str2, str, (String) obj2, (String) obj4, i11, i10, z10, (ActionComponentState) obj3, (List) obj5, null);
     }
 
@@ -207,9 +207,9 @@ public final class ChannelSelectComponent$$serializer implements f0<ChannelSelec
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        ChannelSelectComponent.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        ChannelSelectComponent.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

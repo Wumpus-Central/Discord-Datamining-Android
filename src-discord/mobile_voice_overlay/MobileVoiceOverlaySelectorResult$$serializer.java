@@ -40,7 +40,7 @@ public final class MobileVoiceOverlaySelectorResult$$serializer implements f0<Mo
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
+        a2 a2Var = a2.f29755a;
         return new KSerializer[]{GuildId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a2Var, a2Var, a2Var};
     }
 
@@ -54,14 +54,14 @@ public final class MobileVoiceOverlaySelectorResult$$serializer implements f0<Mo
         Object obj2;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         Object obj3 = null;
-        if (c10.y()) {
-            obj2 = c10.m(descriptor2, 0, GuildId$$serializer.INSTANCE, null);
-            obj = c10.m(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
-            str3 = c10.t(descriptor2, 2);
-            str2 = c10.t(descriptor2, 3);
-            str = c10.t(descriptor2, 4);
+        if (b10.p()) {
+            obj2 = b10.y(descriptor2, 0, GuildId$$serializer.INSTANCE, null);
+            obj = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
+            str3 = b10.m(descriptor2, 2);
+            str2 = b10.m(descriptor2, 3);
+            str = b10.m(descriptor2, 4);
             i10 = 31;
         } else {
             boolean z10 = true;
@@ -71,26 +71,26 @@ public final class MobileVoiceOverlaySelectorResult$$serializer implements f0<Mo
             String str5 = null;
             String str6 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    obj3 = c10.m(descriptor2, 0, GuildId$$serializer.INSTANCE, obj3);
+                } else if (o10 == 0) {
+                    obj3 = b10.y(descriptor2, 0, GuildId$$serializer.INSTANCE, obj3);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    obj4 = c10.m(descriptor2, 1, ChannelId$$serializer.INSTANCE, obj4);
+                } else if (o10 == 1) {
+                    obj4 = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, obj4);
                     i11 |= 2;
-                } else if (x10 == 2) {
-                    str4 = c10.t(descriptor2, 2);
+                } else if (o10 == 2) {
+                    str4 = b10.m(descriptor2, 2);
                     i11 |= 4;
-                } else if (x10 == 3) {
-                    str5 = c10.t(descriptor2, 3);
+                } else if (o10 == 3) {
+                    str5 = b10.m(descriptor2, 3);
                     i11 |= 8;
-                } else if (x10 == 4) {
-                    str6 = c10.t(descriptor2, 4);
+                } else if (o10 == 4) {
+                    str6 = b10.m(descriptor2, 4);
                     i11 |= 16;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i10 = i11;
@@ -100,7 +100,7 @@ public final class MobileVoiceOverlaySelectorResult$$serializer implements f0<Mo
             str2 = str5;
             str = str6;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new MobileVoiceOverlaySelectorResult(i10, (GuildId) obj2, (ChannelId) obj, str3, str2, str, null, null);
     }
 
@@ -113,9 +113,9 @@ public final class MobileVoiceOverlaySelectorResult$$serializer implements f0<Mo
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        MobileVoiceOverlaySelectorResult.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        MobileVoiceOverlaySelectorResult.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

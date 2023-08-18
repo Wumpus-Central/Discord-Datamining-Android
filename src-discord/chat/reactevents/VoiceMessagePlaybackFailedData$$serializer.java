@@ -36,7 +36,7 @@ public final class VoiceMessagePlaybackFailedData$$serializer implements f0<Voic
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, a.u(a2.f29550a)};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, a.u(a2.f29755a)};
     }
 
     @Override 
@@ -46,11 +46,11 @@ public final class VoiceMessagePlaybackFailedData$$serializer implements f0<Voic
         Object obj2;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         String str = null;
-        if (c10.y()) {
-            obj2 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
-            obj = c10.v(descriptor2, 1, a2.f29550a, null);
+        if (b10.p()) {
+            obj2 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
+            obj = b10.n(descriptor2, 1, a2.f29755a, null);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -58,25 +58,25 @@ public final class VoiceMessagePlaybackFailedData$$serializer implements f0<Voic
             obj2 = null;
             Object obj3 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    obj2 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, obj2);
+                } else if (o10 == 0) {
+                    obj2 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, obj2);
                     i10 |= 1;
-                } else if (x10 == 1) {
-                    obj3 = c10.v(descriptor2, 1, a2.f29550a, obj3);
+                } else if (o10 == 1) {
+                    obj3 = b10.n(descriptor2, 1, a2.f29755a, obj3);
                     i10 |= 2;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             obj = obj3;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
         if (messageId != null) {
-            str = messageId.m613unboximpl();
+            str = messageId.m615unboximpl();
         }
         return new VoiceMessagePlaybackFailedData(i10, str, (String) obj, null, null);
     }
@@ -90,9 +90,9 @@ public final class VoiceMessagePlaybackFailedData$$serializer implements f0<Voic
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        VoiceMessagePlaybackFailedData.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        VoiceMessagePlaybackFailedData.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

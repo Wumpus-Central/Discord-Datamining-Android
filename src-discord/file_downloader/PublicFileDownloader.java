@@ -69,9 +69,9 @@ public final class PublicFileDownloader {
     public final boolean onFileDownloaded(ProducerScope<? super DownloadState> producerScope, DownloadManager downloadManager, long j10, String str) {
         try {
             if (downloadManager.query(new DownloadManager.Query().setFilterById(j10)).moveToFirst()) {
-                producerScope.h(new DownloadState.Completed(new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), str)));
+                producerScope.d(new DownloadState.Completed(new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), str)));
             } else {
-                producerScope.h(new DownloadState.Failure(new IllegalStateException(new FileNotFoundException())));
+                producerScope.d(new DownloadState.Failure(new IllegalStateException(new FileNotFoundException())));
             }
             th = null;
             return x.a.a(producerScope, th, 1, th);

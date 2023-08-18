@@ -26,7 +26,7 @@ public final class MessageSerializer implements KSerializer<MessageBase> {
 
     @Override 
     public SerialDescriptor getDescriptor() {
-        return g.a("Message", e.i.f29057a);
+        return g.a("Message", e.i.f29349a);
     }
 
     @Override 
@@ -34,11 +34,11 @@ public final class MessageSerializer implements KSerializer<MessageBase> {
         String b10;
         q.h(decoder, "decoder");
         try {
-            return (MessageBase) decoder.C(Message.Companion.serializer());
+            return (MessageBase) decoder.G(Message.Companion.serializer());
         } catch (Exception e10) {
             CrashReporting.INSTANCE.captureException(e10);
             UUID randomUUID = UUID.randomUUID();
-            String str = MessageId.m606constructorimpl("RENDERING_ERROR_" + randomUUID);
+            String str = MessageId.m608constructorimpl("RENDERING_ERROR_" + randomUUID);
             b10 = f.b(e10);
             return new ErrorMessage(str, b10, null);
         }

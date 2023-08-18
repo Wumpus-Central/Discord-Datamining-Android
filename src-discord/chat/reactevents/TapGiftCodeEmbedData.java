@@ -52,7 +52,7 @@ public final class TapGiftCodeEmbedData implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.giftCode);
+        output.x(serialDesc, 0, self.giftCode);
     }
 
     public final String component1() {

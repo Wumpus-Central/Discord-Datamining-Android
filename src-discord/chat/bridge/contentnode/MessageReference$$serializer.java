@@ -47,35 +47,35 @@ public final class MessageReference$$serializer implements f0<MessageReference> 
         Object obj2;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         Object obj3 = null;
-        if (c10.y()) {
-            obj2 = c10.m(descriptor2, 0, ChannelId$$serializer.INSTANCE, null);
-            obj = c10.v(descriptor2, 1, GuildId$$serializer.INSTANCE, null);
+        if (b10.p()) {
+            obj2 = b10.y(descriptor2, 0, ChannelId$$serializer.INSTANCE, null);
+            obj = b10.n(descriptor2, 1, GuildId$$serializer.INSTANCE, null);
             i10 = 3;
         } else {
             boolean z10 = true;
             int i11 = 0;
             Object obj4 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    obj3 = c10.m(descriptor2, 0, ChannelId$$serializer.INSTANCE, obj3);
+                } else if (o10 == 0) {
+                    obj3 = b10.y(descriptor2, 0, ChannelId$$serializer.INSTANCE, obj3);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    obj4 = c10.v(descriptor2, 1, GuildId$$serializer.INSTANCE, obj4);
+                } else if (o10 == 1) {
+                    obj4 = b10.n(descriptor2, 1, GuildId$$serializer.INSTANCE, obj4);
                     i11 |= 2;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             obj = obj4;
             i10 = i11;
             obj2 = obj3;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new MessageReference(i10, (ChannelId) obj2, (GuildId) obj, null, null);
     }
 
@@ -88,9 +88,9 @@ public final class MessageReference$$serializer implements f0<MessageReference> 
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        MessageReference.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        MessageReference.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

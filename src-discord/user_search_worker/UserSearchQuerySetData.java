@@ -57,8 +57,8 @@ public final class UserSearchQuerySetData extends UserSearchData {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.uuid);
-        output.h(serialDesc, 1, UserSearchQuerySetPayload$$serializer.INSTANCE, self.payload);
+        output.x(serialDesc, 0, self.uuid);
+        output.o(serialDesc, 1, UserSearchQuerySetPayload$$serializer.INSTANCE, self.payload);
     }
 
     public final String component1() {

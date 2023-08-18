@@ -40,7 +40,7 @@ public final class MediaResolver$copyToFile$2 extends k implements Function2<Cor
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Uri> continuation) {
-        return ((MediaResolver$copyToFile$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
+        return ((MediaResolver$copyToFile$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21210a);
     }
 
     @Override 
@@ -64,7 +64,7 @@ public final class MediaResolver$copyToFile$2 extends k implements Function2<Cor
                 try {
                     q.g(inputStream, "inputStream");
                     FileUtilsKt.writeTo(inputStream, file);
-                    Unit unit = Unit.f21036a;
+                    Unit unit = Unit.f21210a;
                     th = null;
                 } finally {
                     try {

@@ -62,13 +62,13 @@ public final class OnFocusEvent implements ReactEvent {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z10 = false;
-        output.q(serialDesc, 0, self.start);
-        output.q(serialDesc, 1, self.end);
-        if (output.w(serialDesc, 2) || self.target != 0) {
+        output.v(serialDesc, 0, self.start);
+        output.v(serialDesc, 1, self.end);
+        if (output.z(serialDesc, 2) || self.target != 0) {
             z10 = true;
         }
         if (z10) {
-            output.q(serialDesc, 2, self.target);
+            output.v(serialDesc, 2, self.target);
         }
     }
 

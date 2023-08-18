@@ -55,8 +55,8 @@ public final class ThreadOnClick {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.action);
-        output.s(serialDesc, 1, self.threadId);
+        output.x(serialDesc, 0, self.action);
+        output.x(serialDesc, 1, self.threadId);
     }
 
     public final String component1() {

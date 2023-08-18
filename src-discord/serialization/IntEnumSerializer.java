@@ -30,9 +30,9 @@ public class IntEnumSerializer<T extends IntEnum> implements KSerializer<T> {
         List A;
         q.h(type, "type");
         this.f1default = t10;
-        String e10 = type.e();
-        q.e(e10);
-        this.serialName = e10;
+        String l10 = type.l();
+        q.e(l10);
+        this.serialName = l10;
         Object[] enumConstants = a.b(type).getEnumConstants();
         q.e(enumConstants);
         T[] tArr = (T[]) ((IntEnum[]) enumConstants);
@@ -44,7 +44,7 @@ public class IntEnumSerializer<T extends IntEnum> implements KSerializer<T> {
         }
         Integer[] numArr = (Integer[]) arrayList.toArray(new Integer[0]);
         this.choicesNumbers = numArr;
-        this.descriptor = g.a(this.serialName, e.f.f29054a);
+        this.descriptor = g.a(this.serialName, e.f.f29346a);
         if (numArr.length == this.choices.length) {
             A = f.A(numArr);
             if (!(A.size() == numArr.length ? true : z10)) {
@@ -86,14 +86,14 @@ public class IntEnumSerializer<T extends IntEnum> implements KSerializer<T> {
         O = f.O(this.choices, value);
         if (O != -1 || (t10 = this.f1default) == null) {
             if (O != -1) {
-                encoder.x(this.choicesNumbers[O].intValue());
+                encoder.A(this.choicesNumbers[O].intValue());
                 return;
             }
             String str = this.serialName;
             T[] tArr = this.choices;
             throw new IllegalStateException((value + " is not a valid enum " + str + ", choices are " + tArr).toString());
         }
-        encoder.x(t10.getSerialNumber());
+        encoder.A(t10.getSerialNumber());
     }
 
     public  IntEnumSerializer(KClass kClass, IntEnum intEnum, int i10, DefaultConstructorMarker defaultConstructorMarker) {

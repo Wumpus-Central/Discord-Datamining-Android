@@ -10,8 +10,8 @@ import kotlin.coroutines.jvm.internal.e;
 import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.q;
+import kotlin.text.o;
 import kotlinx.coroutines.CoroutineScope;
-import ni.u;
 import pf.d;
 
 
@@ -35,7 +35,7 @@ public final class MediaResolver$checkFreeSpace$2 extends k implements Function2
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaResolver$checkFreeSpace$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
+        return ((MediaResolver$checkFreeSpace$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21210a);
     }
 
     @Override 
@@ -62,7 +62,7 @@ public final class MediaResolver$checkFreeSpace$2 extends k implements Function2
                         if (file4.isFile()) {
                             String name = file4.getName();
                             q.g(name, "cacheItem.name");
-                            H = u.H(name, "temp_", false, 2, null);
+                            H = o.H(name, "temp_", false, 2, null);
                             if (H && file4.lastModified() < half_day_millis) {
                                 file4.delete();
                             }
@@ -78,7 +78,7 @@ public final class MediaResolver$checkFreeSpace$2 extends k implements Function2
                     }
                 }
             }
-            return Unit.f21036a;
+            return Unit.f21210a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

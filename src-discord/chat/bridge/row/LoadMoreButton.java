@@ -82,22 +82,22 @@ public final class LoadMoreButton {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z11 = false;
-        output.h(serialDesc, 0, LoadingAction$$serializer.INSTANCE, self.action);
-        output.s(serialDesc, 1, self.text);
-        output.q(serialDesc, 2, self.backgroundColor);
-        if (!output.w(serialDesc, 3) && self.cornerRadius == null) {
+        output.o(serialDesc, 0, LoadingAction$$serializer.INSTANCE, self.action);
+        output.x(serialDesc, 1, self.text);
+        output.v(serialDesc, 2, self.backgroundColor);
+        if (!output.z(serialDesc, 3) && self.cornerRadius == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 3, m0.f29625a, self.cornerRadius);
+            output.B(serialDesc, 3, m0.f29830a, self.cornerRadius);
         }
-        if (output.w(serialDesc, 4) || self.color != null) {
+        if (output.z(serialDesc, 4) || self.color != null) {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 4, m0.f29625a, self.color);
+            output.B(serialDesc, 4, m0.f29830a, self.color);
         }
     }
 

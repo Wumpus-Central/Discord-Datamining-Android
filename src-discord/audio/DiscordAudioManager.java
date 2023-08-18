@@ -339,7 +339,7 @@ public final class DiscordAudioManager {
         setSpeakerphoneOn(z10);
         synchronized (this.instanceLock) {
             setActiveAudioDevice(deviceTypes);
-            Unit unit = Unit.f21036a;
+            Unit unit = Unit.f21210a;
         }
         Log.i$default(Log.INSTANCE, TAG, "Activated device: " + deviceTypes, (Throwable) null, 4, (Object) null);
     }
@@ -430,7 +430,7 @@ public final class DiscordAudioManager {
                     arrayList.add(audioDevice);
                 }
                 setAudioDevices(arrayList);
-                Unit unit = Unit.f21036a;
+                Unit unit = Unit.f21210a;
             }
         } else if (i10 == 2) {
             updateDeviceActivation();
@@ -536,7 +536,7 @@ public final class DiscordAudioManager {
                         arrayList.add(audioDevice);
                     }
                     setAudioDevices(arrayList);
-                    Unit unit = Unit.f21036a;
+                    Unit unit = Unit.f21210a;
                 }
                 activateDefaultDevice(this.audioDevices);
             }
@@ -568,7 +568,7 @@ public final class DiscordAudioManager {
                     arrayList.add(audioDevice2);
                 }
                 setAudioDevices(arrayList);
-                Unit unit = Unit.f21036a;
+                Unit unit = Unit.f21210a;
             }
         } else if (wiredHeadsetState instanceof WiredHeadsetState.PluggedIn) {
             synchronized (this.instanceLock) {
@@ -587,7 +587,7 @@ public final class DiscordAudioManager {
                     arrayList2.add(audioDevice);
                 }
                 setAudioDevices(arrayList2);
-                Unit unit2 = Unit.f21036a;
+                Unit unit2 = Unit.f21210a;
             }
         }
         updateDeviceActivation();
@@ -611,7 +611,7 @@ public final class DiscordAudioManager {
         };
         synchronized (this.instanceLock) {
             this.audioFocusListener = iVar;
-            Unit unit = Unit.f21036a;
+            Unit unit = Unit.f21210a;
         }
     }
 
@@ -685,7 +685,7 @@ public final class DiscordAudioManager {
         }
         synchronized (this.instanceLock) {
             this.inDiscordRequestedCommunicationMode = z10;
-            Unit unit = Unit.f21036a;
+            Unit unit = Unit.f21210a;
         }
     }
 
@@ -916,7 +916,7 @@ public final class DiscordAudioManager {
             activateDevice(DeviceTypes.INVALID);
             synchronized (this.instanceLock) {
                 this.requestedAudioDevice = DeviceTypes.DEFAULT;
-                Unit unit = Unit.f21036a;
+                Unit unit = Unit.f21210a;
             }
             setCommunicationModeOnInternal(false);
             releaseAudioFocus();
@@ -951,7 +951,7 @@ public final class DiscordAudioManager {
         if (deviceType == deviceTypes) {
             synchronized (this.instanceLock) {
                 this.requestedAudioDevice = deviceTypes;
-                Unit unit = Unit.f21036a;
+                Unit unit = Unit.f21210a;
             }
             activateDefaultDevice(arrayList);
             return true;
@@ -963,7 +963,7 @@ public final class DiscordAudioManager {
             if (!z10) {
                 synchronized (this.instanceLock) {
                     this.requestedAudioDevice = deviceType;
-                    Unit unit2 = Unit.f21036a;
+                    Unit unit2 = Unit.f21210a;
                 }
                 activateDevice(deviceType);
                 return true;
@@ -999,7 +999,7 @@ public final class DiscordAudioManager {
     public static final class AudioDevice {
 
         
-        private final String f7054id;
+        private final String f7195id;
         private final boolean isAvailable;
         private final String name;
         private final DeviceTypes type;
@@ -1012,7 +1012,7 @@ public final class DiscordAudioManager {
             q.h(type, "type");
             this.type = type;
             this.isAvailable = z10;
-            this.f7054id = str;
+            this.f7195id = str;
             this.name = str2;
         }
 
@@ -1024,7 +1024,7 @@ public final class DiscordAudioManager {
                 z10 = audioDevice.isAvailable;
             }
             if ((i10 & 4) != 0) {
-                str = audioDevice.f7054id;
+                str = audioDevice.f7195id;
             }
             if ((i10 & 8) != 0) {
                 str2 = audioDevice.name;
@@ -1041,7 +1041,7 @@ public final class DiscordAudioManager {
         }
 
         public final String component3() {
-            return this.f7054id;
+            return this.f7195id;
         }
 
         public final String component4() {
@@ -1061,11 +1061,11 @@ public final class DiscordAudioManager {
                 return false;
             }
             AudioDevice audioDevice = (AudioDevice) obj;
-            return this.type == audioDevice.type && this.isAvailable == audioDevice.isAvailable && q.c(this.f7054id, audioDevice.f7054id) && q.c(this.name, audioDevice.name);
+            return this.type == audioDevice.type && this.isAvailable == audioDevice.isAvailable && q.c(this.f7195id, audioDevice.f7195id) && q.c(this.name, audioDevice.name);
         }
 
         public final String getId() {
-            return this.f7054id;
+            return this.f7195id;
         }
 
         public final String getName() {
@@ -1086,7 +1086,7 @@ public final class DiscordAudioManager {
             int i11 = z10 ? 1 : 0;
             int i12 = z10 ? 1 : 0;
             int i13 = (hashCode + i10) * 31;
-            String str = this.f7054id;
+            String str = this.f7195id;
             int i14 = 0;
             int hashCode2 = (i13 + (str == null ? 0 : str.hashCode())) * 31;
             String str2 = this.name;
@@ -1103,7 +1103,7 @@ public final class DiscordAudioManager {
         public String toString() {
             DeviceTypes deviceTypes = this.type;
             boolean z10 = this.isAvailable;
-            String str = this.f7054id;
+            String str = this.f7195id;
             String str2 = this.name;
             return "AudioDevice(type=" + deviceTypes + ", isAvailable=" + z10 + ", id=" + str + ", name=" + str2 + ")";
         }

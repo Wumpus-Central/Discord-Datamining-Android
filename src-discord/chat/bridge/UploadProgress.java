@@ -64,17 +64,17 @@ public final class UploadProgress {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.headerText);
-        output.q(serialDesc, 1, self.headerColor);
-        output.q(serialDesc, 2, self.backgroundColor);
-        output.m(serialDesc, 3, self.progress);
-        output.s(serialDesc, 4, self.fileId);
-        output.s(serialDesc, 5, self.fileType);
-        output.q(serialDesc, 6, self.progressTrackColor);
-        output.q(serialDesc, 7, self.progressStartColor);
-        output.q(serialDesc, 8, self.progressEndColor);
-        output.q(serialDesc, 9, self.iconTintColor);
-        output.q(serialDesc, 10, self.closeTintColor);
+        output.x(serialDesc, 0, self.headerText);
+        output.v(serialDesc, 1, self.headerColor);
+        output.v(serialDesc, 2, self.backgroundColor);
+        output.r(serialDesc, 3, self.progress);
+        output.x(serialDesc, 4, self.fileId);
+        output.x(serialDesc, 5, self.fileType);
+        output.v(serialDesc, 6, self.progressTrackColor);
+        output.v(serialDesc, 7, self.progressStartColor);
+        output.v(serialDesc, 8, self.progressEndColor);
+        output.v(serialDesc, 9, self.iconTintColor);
+        output.v(serialDesc, 10, self.closeTintColor);
     }
 
     public final String component1() {

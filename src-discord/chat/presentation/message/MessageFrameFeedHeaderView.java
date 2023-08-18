@@ -109,35 +109,35 @@ public final class MessageFrameFeedHeaderView extends ConstraintLayout {
             q.h(output, "output");
             q.h(serialDesc, "serialDesc");
             boolean z13 = false;
-            if (!output.w(serialDesc, 0) && self.channelIconURL == null) {
+            if (!output.z(serialDesc, 0) && self.channelIconURL == null) {
                 z10 = false;
             } else {
                 z10 = true;
             }
             if (z10) {
-                output.z(serialDesc, 0, a2.f29550a, self.channelIconURL);
+                output.B(serialDesc, 0, a2.f29755a, self.channelIconURL);
             }
-            if (!output.w(serialDesc, 1) && self.chatIconURL == null) {
+            if (!output.z(serialDesc, 1) && self.chatIconURL == null) {
                 z11 = false;
             } else {
                 z11 = true;
             }
             if (z11) {
-                output.z(serialDesc, 1, a2.f29550a, self.chatIconURL);
+                output.B(serialDesc, 1, a2.f29755a, self.chatIconURL);
             }
-            if (!output.w(serialDesc, 2) && self.avatarURLs == null) {
+            if (!output.z(serialDesc, 2) && self.avatarURLs == null) {
                 z12 = false;
             } else {
                 z12 = true;
             }
             if (z12) {
-                output.z(serialDesc, 2, new wi.f(a2.f29550a), self.avatarURLs);
+                output.B(serialDesc, 2, new wi.f(a2.f29755a), self.avatarURLs);
             }
-            if (output.w(serialDesc, 3) || self.channelName != null) {
+            if (output.z(serialDesc, 3) || self.channelName != null) {
                 z13 = true;
             }
             if (z13) {
-                output.z(serialDesc, 3, a2.f29550a, self.channelName);
+                output.B(serialDesc, 3, a2.f29755a, self.channelName);
             }
         }
 

@@ -31,7 +31,7 @@ import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.i;
 import kotlin.jvm.internal.q;
-import ni.v;
+import kotlin.text.p;
 
 @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001c\u0010\u000f\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00050\u00060\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0002J \u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0017\u001a\u00020\u0005H\u0002J\u001e\u0010\u0018\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0017\u001a\u00020\u0005R0\u0010\u0003\u001a\u001e\u0012\u0004\u0012\u00020\u0005\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00050\u0006\u0012\u0004\u0012\u00020\u00010\u0004j\u0002`\u00078BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\b\u0010\tR6\u0010\n\u001a*\u0012\u0004\u0012\u00020\f\u0012 \u0012\u001e\u0012\u0004\u0012\u00020\u0005\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00050\u0006\u0012\u0004\u0012\u00020\u00010\u0004j\u0002`\u00070\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00050\u000eX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0019"}, d2 = {"Lcom/discord/chat/presentation/textutils/CodeStyle;", "", "()V", "parser", "Lcom/discord/simpleast/core/parser/Parser;", "Lcom/discord/chat/presentation/textutils/RenderContext;", "Lcom/discord/simpleast/core/node/Node;", "Lcom/discord/chat/presentation/textutils/CodeParser;", "getParser", "()Lcom/discord/simpleast/core/parser/Parser;", "parsers", "", "", "staticCodeStyles", "Lcom/discord/simpleast/code/CodeStyleProviders;", "generateAst", "", "node", "Lcom/discord/chat/bridge/contentnode/CodeBlockContentNode;", "renderCode", "", "builder", "Lcom/facebook/drawee/span/DraweeSpanStringBuilder;", "rc", "renderCodeBlock", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -106,16 +106,16 @@ public final class CodeStyle {
         CharSequence V02;
         List list;
         List d10;
-        V0 = v.V0(codeBlockContentNode.getLang());
+        V0 = p.V0(codeBlockContentNode.getLang());
         String obj = V0.toString();
-        V02 = v.V0(codeBlockContentNode.getContent());
+        V02 = p.V0(codeBlockContentNode.getContent());
         String obj2 = V02.toString();
         String str = "```" + obj + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE + obj2 + "\n```";
         try {
-            s.a aVar = s.f20094l;
-            list = s.b(Parser.parse$default(getParser(), str, Unit.f21036a, null, 4, null));
+            s.a aVar = s.f20299k;
+            list = s.b(Parser.parse$default(getParser(), str, Unit.f21210a, null, 4, null));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f20094l;
+            s.a aVar2 = s.f20299k;
             list = s.b(t.a(th2));
         }
         d10 = i.d(new TextNode(obj2));

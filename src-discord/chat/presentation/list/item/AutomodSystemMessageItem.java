@@ -96,7 +96,7 @@ public final class AutomodSystemMessageItem extends ChatListItem {
 
     
     public AutomodSystemMessageItem(Message message, MessageContext messageContext, boolean z10) {
-        super(MessageId.m611toStringimpl(message.m17getId3Eiw7ao()), null);
+        super(MessageId.m613toStringimpl(message.m17getId3Eiw7ao()), null);
         q.h(message, "message");
         q.h(messageContext, "messageContext");
         this.message = message;

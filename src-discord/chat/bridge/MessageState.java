@@ -79,13 +79,13 @@ public enum MessageState {
 
         @Override 
         public SerialDescriptor getDescriptor() {
-            return g.a("MessageState", e.i.f29057a);
+            return g.a("MessageState", e.i.f29349a);
         }
 
         @Override 
         public MessageState deserialize(Decoder decoder) {
             q.h(decoder, "decoder");
-            return MessageState.Companion.fromValue(decoder.n());
+            return MessageState.Companion.fromValue(decoder.z());
         }
 
         public void serialize(Encoder encoder, MessageState value) {

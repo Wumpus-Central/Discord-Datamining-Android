@@ -93,35 +93,35 @@ public final class EmbedField {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z13 = false;
-        if (!output.w(serialDesc, 0) && self.rawName == null) {
+        if (!output.z(serialDesc, 0) && self.rawName == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, a2.f29550a, self.rawName);
+            output.B(serialDesc, 0, a2.f29755a, self.rawName);
         }
-        if (!output.w(serialDesc, 1) && self.rawValue == null) {
+        if (!output.z(serialDesc, 1) && self.rawValue == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 1, a2.f29550a, self.rawValue);
+            output.B(serialDesc, 1, a2.f29755a, self.rawValue);
         }
-        if (!output.w(serialDesc, 2) && self.name == null) {
+        if (!output.z(serialDesc, 2) && self.name == null) {
             z12 = false;
         } else {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 2, StructurableTextSerializer.INSTANCE, self.name);
+            output.B(serialDesc, 2, StructurableTextSerializer.INSTANCE, self.name);
         }
-        if (output.w(serialDesc, 3) || self.value != null) {
+        if (output.z(serialDesc, 3) || self.value != null) {
             z13 = true;
         }
         if (z13) {
-            output.z(serialDesc, 3, StructurableTextSerializer.INSTANCE, self.value);
+            output.B(serialDesc, 3, StructurableTextSerializer.INSTANCE, self.value);
         }
     }
 

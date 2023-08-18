@@ -42,8 +42,8 @@ public final class EmbeddedActivityRow$$serializer implements f0<EmbeddedActivit
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        return new KSerializer[]{m0.f29625a, ChangeType.Serializer.INSTANCE, a2Var, new f(a2Var), a2Var, a2Var, a2Var};
+        a2 a2Var = a2.f29755a;
+        return new KSerializer[]{m0.f29830a, ChangeType.Serializer.INSTANCE, a2Var, new f(a2Var), a2Var, a2Var, a2Var};
     }
 
     @Override 
@@ -58,16 +58,16 @@ public final class EmbeddedActivityRow$$serializer implements f0<EmbeddedActivit
         Object obj2;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i12 = 6;
-        if (c10.y()) {
-            i10 = c10.k(descriptor2, 0);
-            obj = c10.m(descriptor2, 1, ChangeType.Serializer.INSTANCE, null);
-            str4 = c10.t(descriptor2, 2);
-            obj2 = c10.m(descriptor2, 3, new f(a2.f29550a), null);
-            str3 = c10.t(descriptor2, 4);
-            str2 = c10.t(descriptor2, 5);
-            str = c10.t(descriptor2, 6);
+        if (b10.p()) {
+            i10 = b10.i(descriptor2, 0);
+            obj = b10.y(descriptor2, 1, ChangeType.Serializer.INSTANCE, null);
+            str4 = b10.m(descriptor2, 2);
+            obj2 = b10.y(descriptor2, 3, new f(a2.f29755a), null);
+            str3 = b10.m(descriptor2, 4);
+            str2 = b10.m(descriptor2, 5);
+            str = b10.m(descriptor2, 6);
             i11 = 127;
         } else {
             boolean z10 = true;
@@ -80,38 +80,38 @@ public final class EmbeddedActivityRow$$serializer implements f0<EmbeddedActivit
             String str8 = null;
             int i14 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z10 = false;
                         i12 = 6;
                     case 0:
-                        i13 = c10.k(descriptor2, 0);
+                        i13 = b10.i(descriptor2, 0);
                         i14 |= 1;
                         i12 = 6;
                     case 1:
-                        obj3 = c10.m(descriptor2, 1, ChangeType.Serializer.INSTANCE, obj3);
+                        obj3 = b10.y(descriptor2, 1, ChangeType.Serializer.INSTANCE, obj3);
                         i14 |= 2;
                         i12 = 6;
                     case 2:
-                        str5 = c10.t(descriptor2, 2);
+                        str5 = b10.m(descriptor2, 2);
                         i14 |= 4;
                         i12 = 6;
                     case 3:
-                        obj4 = c10.m(descriptor2, 3, new f(a2.f29550a), obj4);
+                        obj4 = b10.y(descriptor2, 3, new f(a2.f29755a), obj4);
                         i14 |= 8;
                         i12 = 6;
                     case 4:
-                        str6 = c10.t(descriptor2, 4);
+                        str6 = b10.m(descriptor2, 4);
                         i14 |= 16;
                     case 5:
-                        str7 = c10.t(descriptor2, 5);
+                        str7 = b10.m(descriptor2, 5);
                         i14 |= 32;
                     case 6:
-                        str8 = c10.t(descriptor2, i12);
+                        str8 = b10.m(descriptor2, i12);
                         i14 |= 64;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             obj = obj3;
@@ -123,7 +123,7 @@ public final class EmbeddedActivityRow$$serializer implements f0<EmbeddedActivit
             str4 = str5;
             i10 = i13;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new EmbeddedActivityRow(i11, i10, (ChangeType) obj, str4, (List) obj2, str3, str2, str, null);
     }
 
@@ -136,9 +136,9 @@ public final class EmbeddedActivityRow$$serializer implements f0<EmbeddedActivit
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        EmbeddedActivityRow.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        EmbeddedActivityRow.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

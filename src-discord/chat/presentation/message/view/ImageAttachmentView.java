@@ -136,11 +136,11 @@ public final class ImageAttachmentView extends ConstraintLayout {
 
     
     
-    public static  void m317maybeShowRemixButtoncUe2JkQ$default(ImageAttachmentView imageAttachmentView, boolean z10, boolean z11, Integer num, Integer num2, String str, Function1 function1, int i10, Object obj) {
+    public static  void m319maybeShowRemixButtoncUe2JkQ$default(ImageAttachmentView imageAttachmentView, boolean z10, boolean z11, Integer num, Integer num2, String str, Function1 function1, int i10, Object obj) {
         if ((i10 & 32) != 0) {
             function1 = ImageAttachmentView$maybeShowRemixButton$1.INSTANCE;
         }
-        imageAttachmentView.m318maybeShowRemixButtoncUe2JkQ(z10, z11, num, num2, str, function1);
+        imageAttachmentView.m320maybeShowRemixButtoncUe2JkQ(z10, z11, num, num2, str, function1);
     }
 
     
@@ -148,7 +148,7 @@ public final class ImageAttachmentView extends ConstraintLayout {
         MessageId messageId;
         q.h(onTapRemix, "$onTapRemix");
         if (str != null) {
-            messageId = MessageId.m605boximpl(str);
+            messageId = MessageId.m607boximpl(str);
         } else {
             messageId = null;
         }
@@ -160,7 +160,7 @@ public final class ImageAttachmentView extends ConstraintLayout {
     }
 
     
-    public final void m318maybeShowRemixButtoncUe2JkQ(boolean z10, boolean z11, Integer num, Integer num2, final String str, final Function1<? super MessageId, Unit> onTapRemix) {
+    public final void m320maybeShowRemixButtoncUe2JkQ(boolean z10, boolean z11, Integer num, Integer num2, final String str, final Function1<? super MessageId, Unit> onTapRemix) {
         int i10;
         int i11;
         q.h(onTapRemix, "onTapRemix");

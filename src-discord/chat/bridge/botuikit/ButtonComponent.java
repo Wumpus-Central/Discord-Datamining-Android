@@ -56,7 +56,7 @@ public final class ButtonComponent extends Component {
         }
         this.type = i11;
         this.indices = list;
-        this.applicationId = applicationId.m575unboximpl();
+        this.applicationId = applicationId.m577unboximpl();
         if ((i10 & 8) == 0) {
             this.customId = null;
         } else {
@@ -103,49 +103,49 @@ public final class ButtonComponent extends Component {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z14 = false;
-        output.q(serialDesc, 0, self.getType());
-        output.h(serialDesc, 1, new wi.f(m0.f29625a), self.getIndices());
-        output.h(serialDesc, 2, ApplicationId$$serializer.INSTANCE, ApplicationId.m566boximpl(self.applicationId));
-        if (!output.w(serialDesc, 3) && self.customId == null) {
+        output.v(serialDesc, 0, self.getType());
+        output.o(serialDesc, 1, new wi.f(m0.f29830a), self.getIndices());
+        output.o(serialDesc, 2, ApplicationId$$serializer.INSTANCE, ApplicationId.m568boximpl(self.applicationId));
+        if (!output.z(serialDesc, 3) && self.customId == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 3, a2.f29550a, self.customId);
+            output.B(serialDesc, 3, a2.f29755a, self.customId);
         }
-        if (!output.w(serialDesc, 4) && self.label == null) {
+        if (!output.z(serialDesc, 4) && self.label == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 4, a2.f29550a, self.label);
+            output.B(serialDesc, 4, a2.f29755a, self.label);
         }
-        output.h(serialDesc, 5, ButtonStyle.Serializer.INSTANCE, self.style);
-        if (!output.w(serialDesc, 6) && !self.disabled) {
+        output.o(serialDesc, 5, ButtonStyle.Serializer.INSTANCE, self.style);
+        if (!output.z(serialDesc, 6) && !self.disabled) {
             z12 = false;
         } else {
             z12 = true;
         }
         if (z12) {
-            output.r(serialDesc, 6, self.disabled);
+            output.w(serialDesc, 6, self.disabled);
         }
-        if (!output.w(serialDesc, 7) && self.emoji == null) {
+        if (!output.z(serialDesc, 7) && self.emoji == null) {
             z13 = false;
         } else {
             z13 = true;
         }
         if (z13) {
-            output.z(serialDesc, 7, ComponentEmoji$$serializer.INSTANCE, self.emoji);
+            output.B(serialDesc, 7, ComponentEmoji$$serializer.INSTANCE, self.emoji);
         }
-        if (output.w(serialDesc, 8) || self.url != null) {
+        if (output.z(serialDesc, 8) || self.url != null) {
             z14 = true;
         }
         if (z14) {
-            output.z(serialDesc, 8, a2.f29550a, self.url);
+            output.B(serialDesc, 8, a2.f29755a, self.url);
         }
-        output.h(serialDesc, 9, ActionComponentState.Serializer.INSTANCE, self.state);
+        output.o(serialDesc, 9, ActionComponentState.Serializer.INSTANCE, self.state);
     }
 
     public final int component1() {
@@ -205,7 +205,7 @@ public final class ButtonComponent extends Component {
             return false;
         }
         ButtonComponent buttonComponent = (ButtonComponent) obj;
-        return getType() == buttonComponent.getType() && q.c(getIndices(), buttonComponent.getIndices()) && ApplicationId.m570equalsimpl0(this.applicationId, buttonComponent.applicationId) && q.c(this.customId, buttonComponent.customId) && q.c(this.label, buttonComponent.label) && this.style == buttonComponent.style && this.disabled == buttonComponent.disabled && q.c(this.emoji, buttonComponent.emoji) && q.c(this.url, buttonComponent.url) && this.state == buttonComponent.state;
+        return getType() == buttonComponent.getType() && q.c(getIndices(), buttonComponent.getIndices()) && ApplicationId.m572equalsimpl0(this.applicationId, buttonComponent.applicationId) && q.c(this.customId, buttonComponent.customId) && q.c(this.label, buttonComponent.label) && this.style == buttonComponent.style && this.disabled == buttonComponent.disabled && q.c(this.emoji, buttonComponent.emoji) && q.c(this.url, buttonComponent.url) && this.state == buttonComponent.state;
     }
 
     
@@ -252,7 +252,7 @@ public final class ButtonComponent extends Component {
     }
 
     public int hashCode() {
-        int type = ((((getType() * 31) + getIndices().hashCode()) * 31) + ApplicationId.m571hashCodeimpl(this.applicationId)) * 31;
+        int type = ((((getType() * 31) + getIndices().hashCode()) * 31) + ApplicationId.m573hashCodeimpl(this.applicationId)) * 31;
         String str = this.customId;
         int i10 = 0;
         int hashCode = (type + (str == null ? 0 : str.hashCode())) * 31;
@@ -278,7 +278,7 @@ public final class ButtonComponent extends Component {
     public String toString() {
         int type = getType();
         List<Integer> indices = getIndices();
-        String str = ApplicationId.m573toStringimpl(this.applicationId);
+        String str = ApplicationId.m575toStringimpl(this.applicationId);
         String str2 = this.customId;
         String str3 = this.label;
         ButtonStyle buttonStyle = this.style;

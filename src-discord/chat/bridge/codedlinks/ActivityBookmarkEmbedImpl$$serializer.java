@@ -78,9 +78,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29625a;
-        a2 a2Var = a2.f29550a;
-        h hVar = h.f29592a;
+        m0 m0Var = m0.f29830a;
+        a2 a2Var = a2.f29755a;
+        h hVar = h.f29797a;
         return new KSerializer[]{m0Var, m0Var, m0Var, a.u(a2Var), a.u(InviteType.Serializer.INSTANCE), a.u(m0Var), a.u(m0Var), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(hVar), a.u(hVar), a.u(m0Var), a.u(m0Var), a.u(hVar), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(m0Var), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(a2Var), ApplicationId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, CodedLinkExtendedType.Serializer.INSTANCE, new f(a2Var), a.u(a2Var), a2Var};
     }
 
@@ -122,45 +122,45 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
         Object obj29;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i14 = 0;
-        if (c10.y()) {
-            i13 = c10.k(descriptor2, 0);
-            i12 = c10.k(descriptor2, 1);
-            i10 = c10.k(descriptor2, 2);
-            a2 a2Var = a2.f29550a;
-            obj14 = c10.v(descriptor2, 3, a2Var, null);
-            obj25 = c10.v(descriptor2, 4, InviteType.Serializer.INSTANCE, null);
-            m0 m0Var = m0.f29625a;
-            obj24 = c10.v(descriptor2, 5, m0Var, null);
-            obj23 = c10.v(descriptor2, 6, m0Var, null);
-            obj22 = c10.v(descriptor2, 7, m0Var, null);
-            obj21 = c10.v(descriptor2, 8, a2Var, null);
-            obj20 = c10.v(descriptor2, 9, a2Var, null);
-            obj19 = c10.v(descriptor2, 10, m0Var, null);
-            h hVar = h.f29592a;
-            obj15 = c10.v(descriptor2, 11, hVar, null);
-            obj16 = c10.v(descriptor2, 12, hVar, null);
-            obj17 = c10.v(descriptor2, 13, m0Var, null);
-            obj18 = c10.v(descriptor2, 14, m0Var, null);
-            obj29 = c10.v(descriptor2, 15, hVar, null);
-            obj10 = c10.v(descriptor2, 16, m0Var, null);
-            obj28 = c10.v(descriptor2, 17, a2Var, null);
-            obj27 = c10.v(descriptor2, 18, a2Var, null);
-            obj26 = c10.v(descriptor2, 19, a2Var, null);
-            obj6 = c10.v(descriptor2, 20, m0Var, null);
-            obj5 = c10.v(descriptor2, 21, m0Var, null);
-            obj4 = c10.v(descriptor2, 22, m0Var, null);
-            obj13 = c10.v(descriptor2, 23, a2Var, null);
-            obj12 = c10.v(descriptor2, 24, a2Var, null);
-            obj11 = c10.v(descriptor2, 25, m0Var, null);
-            obj3 = c10.v(descriptor2, 26, a2Var, null);
-            obj9 = c10.m(descriptor2, 27, ApplicationId$$serializer.INSTANCE, null);
-            obj8 = c10.m(descriptor2, 28, ChannelId$$serializer.INSTANCE, null);
-            obj7 = c10.m(descriptor2, 29, CodedLinkExtendedType.Serializer.INSTANCE, null);
-            obj2 = c10.m(descriptor2, 30, new f(a2Var), null);
-            obj = c10.v(descriptor2, 31, a2Var, null);
-            str = c10.t(descriptor2, 32);
+        if (b10.p()) {
+            i13 = b10.i(descriptor2, 0);
+            i12 = b10.i(descriptor2, 1);
+            i10 = b10.i(descriptor2, 2);
+            a2 a2Var = a2.f29755a;
+            obj14 = b10.n(descriptor2, 3, a2Var, null);
+            obj25 = b10.n(descriptor2, 4, InviteType.Serializer.INSTANCE, null);
+            m0 m0Var = m0.f29830a;
+            obj24 = b10.n(descriptor2, 5, m0Var, null);
+            obj23 = b10.n(descriptor2, 6, m0Var, null);
+            obj22 = b10.n(descriptor2, 7, m0Var, null);
+            obj21 = b10.n(descriptor2, 8, a2Var, null);
+            obj20 = b10.n(descriptor2, 9, a2Var, null);
+            obj19 = b10.n(descriptor2, 10, m0Var, null);
+            h hVar = h.f29797a;
+            obj15 = b10.n(descriptor2, 11, hVar, null);
+            obj16 = b10.n(descriptor2, 12, hVar, null);
+            obj17 = b10.n(descriptor2, 13, m0Var, null);
+            obj18 = b10.n(descriptor2, 14, m0Var, null);
+            obj29 = b10.n(descriptor2, 15, hVar, null);
+            obj10 = b10.n(descriptor2, 16, m0Var, null);
+            obj28 = b10.n(descriptor2, 17, a2Var, null);
+            obj27 = b10.n(descriptor2, 18, a2Var, null);
+            obj26 = b10.n(descriptor2, 19, a2Var, null);
+            obj6 = b10.n(descriptor2, 20, m0Var, null);
+            obj5 = b10.n(descriptor2, 21, m0Var, null);
+            obj4 = b10.n(descriptor2, 22, m0Var, null);
+            obj13 = b10.n(descriptor2, 23, a2Var, null);
+            obj12 = b10.n(descriptor2, 24, a2Var, null);
+            obj11 = b10.n(descriptor2, 25, m0Var, null);
+            obj3 = b10.n(descriptor2, 26, a2Var, null);
+            obj9 = b10.y(descriptor2, 27, ApplicationId$$serializer.INSTANCE, null);
+            obj8 = b10.y(descriptor2, 28, ChannelId$$serializer.INSTANCE, null);
+            obj7 = b10.y(descriptor2, 29, CodedLinkExtendedType.Serializer.INSTANCE, null);
+            obj2 = b10.y(descriptor2, 30, new f(a2Var), null);
+            obj = b10.n(descriptor2, 31, a2Var, null);
+            str = b10.m(descriptor2, 32);
             i14 = -1;
             i11 = 1;
         } else {
@@ -201,8 +201,8 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
             boolean z10 = true;
             int i18 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         i18 = i18;
                         obj39 = obj39;
@@ -214,7 +214,7 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj45 = obj45;
                         obj46 = obj46;
                         z10 = false;
-                        Unit unit = Unit.f21036a;
+                        Unit unit = Unit.f21210a;
                         break;
                     case 0:
                         i18 = i18;
@@ -226,9 +226,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj44 = obj44;
                         obj45 = obj45;
                         obj46 = obj46;
-                        i16 = c10.k(descriptor2, 0);
+                        i16 = b10.i(descriptor2, 0);
                         i14 |= 1;
-                        Unit unit2 = Unit.f21036a;
+                        Unit unit2 = Unit.f21210a;
                         break;
                     case 1:
                         i18 = i18;
@@ -240,9 +240,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj44 = obj44;
                         obj45 = obj45;
                         obj46 = obj46;
-                        i17 = c10.k(descriptor2, 1);
+                        i17 = b10.i(descriptor2, 1);
                         i14 |= 2;
-                        Unit unit3 = Unit.f21036a;
+                        Unit unit3 = Unit.f21210a;
                         break;
                     case 2:
                         obj40 = obj40;
@@ -251,9 +251,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj43 = obj43;
                         obj44 = obj44;
                         obj45 = obj45;
-                        i18 = c10.k(descriptor2, 2);
+                        i18 = b10.i(descriptor2, 2);
                         i14 |= 4;
-                        Unit unit4 = Unit.f21036a;
+                        Unit unit4 = Unit.f21210a;
                         obj46 = obj46;
                         obj39 = obj39;
                         break;
@@ -267,9 +267,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj44 = obj44;
                         obj45 = obj45;
                         obj46 = obj46;
-                        obj33 = c10.v(descriptor2, 3, a2.f29550a, obj33);
+                        obj33 = b10.n(descriptor2, 3, a2.f29755a, obj33);
                         i14 |= 8;
-                        Unit unit5 = Unit.f21036a;
+                        Unit unit5 = Unit.f21210a;
                         break;
                     case 4:
                         i18 = i18;
@@ -281,9 +281,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj44 = obj44;
                         obj45 = obj45;
                         obj46 = obj46;
-                        obj30 = c10.v(descriptor2, 4, InviteType.Serializer.INSTANCE, obj30);
+                        obj30 = b10.n(descriptor2, 4, InviteType.Serializer.INSTANCE, obj30);
                         i14 |= 16;
-                        Unit unit6 = Unit.f21036a;
+                        Unit unit6 = Unit.f21210a;
                         break;
                     case 5:
                         i18 = i18;
@@ -295,9 +295,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj44 = obj44;
                         obj45 = obj45;
                         obj46 = obj46;
-                        obj31 = c10.v(descriptor2, 5, m0.f29625a, obj31);
+                        obj31 = b10.n(descriptor2, 5, m0.f29830a, obj31);
                         i14 |= 32;
-                        Unit unit7 = Unit.f21036a;
+                        Unit unit7 = Unit.f21210a;
                         break;
                     case 6:
                         i18 = i18;
@@ -309,9 +309,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj44 = obj44;
                         obj45 = obj45;
                         obj46 = obj46;
-                        obj38 = c10.v(descriptor2, 6, m0.f29625a, obj38);
+                        obj38 = b10.n(descriptor2, 6, m0.f29830a, obj38);
                         i14 |= 64;
-                        Unit unit8 = Unit.f21036a;
+                        Unit unit8 = Unit.f21210a;
                         break;
                     case 7:
                         i18 = i18;
@@ -323,9 +323,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj44 = obj44;
                         obj45 = obj45;
                         obj46 = obj46;
-                        obj37 = c10.v(descriptor2, 7, m0.f29625a, obj37);
+                        obj37 = b10.n(descriptor2, 7, m0.f29830a, obj37);
                         i14 |= 128;
-                        Unit unit9 = Unit.f21036a;
+                        Unit unit9 = Unit.f21210a;
                         break;
                     case 8:
                         i18 = i18;
@@ -337,9 +337,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj44 = obj44;
                         obj45 = obj45;
                         obj46 = obj46;
-                        obj36 = c10.v(descriptor2, 8, a2.f29550a, obj36);
+                        obj36 = b10.n(descriptor2, 8, a2.f29755a, obj36);
                         i14 |= 256;
-                        Unit unit10 = Unit.f21036a;
+                        Unit unit10 = Unit.f21210a;
                         break;
                     case 9:
                         i18 = i18;
@@ -351,9 +351,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj44 = obj44;
                         obj45 = obj45;
                         obj46 = obj46;
-                        obj32 = c10.v(descriptor2, 9, a2.f29550a, obj32);
+                        obj32 = b10.n(descriptor2, 9, a2.f29755a, obj32);
                         i14 |= 512;
-                        Unit unit11 = Unit.f21036a;
+                        Unit unit11 = Unit.f21210a;
                         break;
                     case 10:
                         i18 = i18;
@@ -365,9 +365,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj44 = obj44;
                         obj45 = obj45;
                         obj46 = obj46;
-                        obj35 = c10.v(descriptor2, 10, m0.f29625a, obj35);
+                        obj35 = b10.n(descriptor2, 10, m0.f29830a, obj35);
                         i14 |= 1024;
-                        Unit unit12 = Unit.f21036a;
+                        Unit unit12 = Unit.f21210a;
                         break;
                     case 11:
                         i18 = i18;
@@ -379,9 +379,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj44 = obj44;
                         obj45 = obj45;
                         obj46 = obj46;
-                        obj34 = c10.v(descriptor2, 11, h.f29592a, obj34);
+                        obj34 = b10.n(descriptor2, 11, h.f29797a, obj34);
                         i14 |= RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit13 = Unit.f21036a;
+                        Unit unit13 = Unit.f21210a;
                         break;
                     case 12:
                         obj41 = obj41;
@@ -390,9 +390,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj44 = obj44;
                         obj45 = obj45;
                         obj40 = obj40;
-                        obj39 = c10.v(descriptor2, 12, h.f29592a, obj39);
+                        obj39 = b10.n(descriptor2, 12, h.f29797a, obj39);
                         i14 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-                        Unit unit14 = Unit.f21036a;
+                        Unit unit14 = Unit.f21210a;
                         i18 = i18;
                         obj46 = obj46;
                         break;
@@ -404,9 +404,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj45 = obj45;
                         obj46 = obj46;
                         obj41 = obj41;
-                        obj40 = c10.v(descriptor2, 13, m0.f29625a, obj40);
+                        obj40 = b10.n(descriptor2, 13, m0.f29830a, obj40);
                         i14 |= 8192;
-                        Unit unit15 = Unit.f21036a;
+                        Unit unit15 = Unit.f21210a;
                         obj39 = obj39;
                         break;
                     case 14:
@@ -416,9 +416,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj45 = obj45;
                         obj46 = obj46;
                         obj42 = obj42;
-                        obj41 = c10.v(descriptor2, 14, m0.f29625a, obj41);
+                        obj41 = b10.n(descriptor2, 14, m0.f29830a, obj41);
                         i14 |= 16384;
-                        Unit unit16 = Unit.f21036a;
+                        Unit unit16 = Unit.f21210a;
                         obj40 = obj40;
                         obj39 = obj39;
                         break;
@@ -428,9 +428,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj45 = obj45;
                         obj46 = obj46;
                         obj43 = obj43;
-                        obj42 = c10.v(descriptor2, 15, h.f29592a, obj42);
+                        obj42 = b10.n(descriptor2, 15, h.f29797a, obj42);
                         i14 |= 32768;
-                        Unit unit17 = Unit.f21036a;
+                        Unit unit17 = Unit.f21210a;
                         obj40 = obj40;
                         obj41 = obj41;
                         obj39 = obj39;
@@ -440,9 +440,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj45 = obj45;
                         obj46 = obj46;
                         obj44 = obj44;
-                        obj43 = c10.v(descriptor2, 16, m0.f29625a, obj43);
+                        obj43 = b10.n(descriptor2, 16, m0.f29830a, obj43);
                         i14 |= 65536;
-                        Unit unit18 = Unit.f21036a;
+                        Unit unit18 = Unit.f21210a;
                         obj40 = obj40;
                         obj41 = obj41;
                         obj42 = obj42;
@@ -452,9 +452,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         i18 = i18;
                         obj46 = obj46;
                         obj45 = obj45;
-                        obj44 = c10.v(descriptor2, 17, a2.f29550a, obj44);
+                        obj44 = b10.n(descriptor2, 17, a2.f29755a, obj44);
                         i14 |= 131072;
-                        Unit unit19 = Unit.f21036a;
+                        Unit unit19 = Unit.f21210a;
                         obj40 = obj40;
                         obj41 = obj41;
                         obj42 = obj42;
@@ -464,9 +464,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                     case 18:
                         i18 = i18;
                         obj46 = obj46;
-                        obj45 = c10.v(descriptor2, 18, a2.f29550a, obj45);
+                        obj45 = b10.n(descriptor2, 18, a2.f29755a, obj45);
                         i14 |= 262144;
-                        Unit unit20 = Unit.f21036a;
+                        Unit unit20 = Unit.f21210a;
                         obj40 = obj40;
                         obj41 = obj41;
                         obj42 = obj42;
@@ -475,9 +475,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj39 = obj39;
                         break;
                     case 19:
-                        obj46 = c10.v(descriptor2, 19, a2.f29550a, obj46);
+                        obj46 = b10.n(descriptor2, 19, a2.f29755a, obj46);
                         i14 |= 524288;
-                        Unit unit21 = Unit.f21036a;
+                        Unit unit21 = Unit.f21210a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -490,9 +490,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         break;
                     case 20:
                         i18 = i18;
-                        obj47 = c10.v(descriptor2, 20, m0.f29625a, obj47);
+                        obj47 = b10.n(descriptor2, 20, m0.f29830a, obj47);
                         i14 |= 1048576;
-                        Unit unit22 = Unit.f21036a;
+                        Unit unit22 = Unit.f21210a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -503,9 +503,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         break;
                     case 21:
                         i18 = i18;
-                        obj5 = c10.v(descriptor2, 21, m0.f29625a, obj5);
+                        obj5 = b10.n(descriptor2, 21, m0.f29830a, obj5);
                         i14 |= 2097152;
-                        Unit unit23 = Unit.f21036a;
+                        Unit unit23 = Unit.f21210a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -516,9 +516,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         break;
                     case 22:
                         i18 = i18;
-                        obj4 = c10.v(descriptor2, 22, m0.f29625a, obj4);
+                        obj4 = b10.n(descriptor2, 22, m0.f29830a, obj4);
                         i14 |= 4194304;
-                        Unit unit24 = Unit.f21036a;
+                        Unit unit24 = Unit.f21210a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -529,9 +529,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         break;
                     case 23:
                         i18 = i18;
-                        obj48 = c10.v(descriptor2, 23, a2.f29550a, obj48);
+                        obj48 = b10.n(descriptor2, 23, a2.f29755a, obj48);
                         i14 |= 8388608;
-                        Unit unit25 = Unit.f21036a;
+                        Unit unit25 = Unit.f21210a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -542,9 +542,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         break;
                     case 24:
                         i18 = i18;
-                        obj49 = c10.v(descriptor2, 24, a2.f29550a, obj49);
+                        obj49 = b10.n(descriptor2, 24, a2.f29755a, obj49);
                         i14 |= 16777216;
-                        Unit unit26 = Unit.f21036a;
+                        Unit unit26 = Unit.f21210a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -555,9 +555,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         break;
                     case 25:
                         i18 = i18;
-                        obj50 = c10.v(descriptor2, 25, m0.f29625a, obj50);
+                        obj50 = b10.n(descriptor2, 25, m0.f29830a, obj50);
                         i14 |= 33554432;
-                        Unit unit27 = Unit.f21036a;
+                        Unit unit27 = Unit.f21210a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -568,9 +568,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         break;
                     case 26:
                         i18 = i18;
-                        obj3 = c10.v(descriptor2, 26, a2.f29550a, obj3);
+                        obj3 = b10.n(descriptor2, 26, a2.f29755a, obj3);
                         i14 |= 67108864;
-                        Unit unit28 = Unit.f21036a;
+                        Unit unit28 = Unit.f21210a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -581,9 +581,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         break;
                     case 27:
                         i18 = i18;
-                        obj51 = c10.m(descriptor2, 27, ApplicationId$$serializer.INSTANCE, obj51);
+                        obj51 = b10.y(descriptor2, 27, ApplicationId$$serializer.INSTANCE, obj51);
                         i14 |= 134217728;
-                        Unit unit29 = Unit.f21036a;
+                        Unit unit29 = Unit.f21210a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -594,9 +594,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         break;
                     case 28:
                         i18 = i18;
-                        obj52 = c10.m(descriptor2, 28, ChannelId$$serializer.INSTANCE, obj52);
+                        obj52 = b10.y(descriptor2, 28, ChannelId$$serializer.INSTANCE, obj52);
                         i14 |= 268435456;
-                        Unit unit30 = Unit.f21036a;
+                        Unit unit30 = Unit.f21210a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -607,9 +607,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         break;
                     case 29:
                         i18 = i18;
-                        obj53 = c10.m(descriptor2, 29, CodedLinkExtendedType.Serializer.INSTANCE, obj53);
+                        obj53 = b10.y(descriptor2, 29, CodedLinkExtendedType.Serializer.INSTANCE, obj53);
                         i14 |= 536870912;
-                        Unit unit31 = Unit.f21036a;
+                        Unit unit31 = Unit.f21210a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -620,9 +620,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         break;
                     case 30:
                         i18 = i18;
-                        obj2 = c10.m(descriptor2, 30, new f(a2.f29550a), obj2);
+                        obj2 = b10.y(descriptor2, 30, new f(a2.f29755a), obj2);
                         i14 |= 1073741824;
-                        Unit unit32 = Unit.f21036a;
+                        Unit unit32 = Unit.f21210a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -633,9 +633,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         break;
                     case 31:
                         i18 = i18;
-                        obj = c10.v(descriptor2, 31, a2.f29550a, obj);
+                        obj = b10.n(descriptor2, 31, a2.f29755a, obj);
                         i14 |= Integer.MIN_VALUE;
-                        Unit unit33 = Unit.f21036a;
+                        Unit unit33 = Unit.f21210a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -645,9 +645,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj45 = obj45;
                         break;
                     case 32:
-                        str2 = c10.t(descriptor2, i15);
+                        str2 = b10.m(descriptor2, i15);
                         i11 |= 1;
-                        Unit unit34 = Unit.f21036a;
+                        Unit unit34 = Unit.f21210a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -657,7 +657,7 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
                         obj45 = obj45;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
                 i15 = 32;
             }
@@ -690,7 +690,7 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
             obj21 = obj36;
             obj22 = obj37;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new ActivityBookmarkEmbedImpl(i14, i11, i13, i12, i10, (String) obj14, (InviteType) obj25, (Integer) obj24, (Integer) obj23, (Integer) obj22, (String) obj21, (String) obj20, (Integer) obj19, (Boolean) obj15, (Boolean) obj16, (Integer) obj17, (Integer) obj18, (Boolean) obj29, (Integer) obj10, (String) obj28, (String) obj27, (String) obj26, (Integer) obj6, (Integer) obj5, (Integer) obj4, (String) obj13, (String) obj12, (Integer) obj11, (String) obj3, (ApplicationId) obj9, (ChannelId) obj8, (CodedLinkExtendedType) obj7, (List) obj2, (String) obj, str, null, null);
     }
 
@@ -703,9 +703,9 @@ public final class ActivityBookmarkEmbedImpl$$serializer implements f0<ActivityB
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        ActivityBookmarkEmbedImpl.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        ActivityBookmarkEmbedImpl.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

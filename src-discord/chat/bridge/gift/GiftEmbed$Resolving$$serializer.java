@@ -40,8 +40,8 @@ public final class GiftEmbed$Resolving$$serializer implements f0<GiftEmbed.Resol
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29625a;
-        return new KSerializer[]{a2.f29550a, m0Var, m0Var, m0Var, m0Var, m0Var};
+        m0 m0Var = m0.f29830a;
+        return new KSerializer[]{a2.f29755a, m0Var, m0Var, m0Var, m0Var, m0Var};
     }
 
     @Override 
@@ -55,14 +55,14 @@ public final class GiftEmbed$Resolving$$serializer implements f0<GiftEmbed.Resol
         int i15;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            str = c10.t(descriptor2, 0);
-            i14 = c10.k(descriptor2, 1);
-            i13 = c10.k(descriptor2, 2);
-            i12 = c10.k(descriptor2, 3);
-            i11 = c10.k(descriptor2, 4);
-            i10 = c10.k(descriptor2, 5);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            str = b10.m(descriptor2, 0);
+            i14 = b10.i(descriptor2, 1);
+            i13 = b10.i(descriptor2, 2);
+            i12 = b10.i(descriptor2, 3);
+            i11 = b10.i(descriptor2, 4);
+            i10 = b10.i(descriptor2, 5);
             i15 = 63;
         } else {
             String str2 = null;
@@ -74,37 +74,37 @@ public final class GiftEmbed$Resolving$$serializer implements f0<GiftEmbed.Resol
             int i20 = 0;
             int i21 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z10 = false;
                         continue;
                     case 0:
-                        str2 = c10.t(descriptor2, 0);
+                        str2 = b10.m(descriptor2, 0);
                         i21 |= 1;
                         continue;
                     case 1:
-                        i20 = c10.k(descriptor2, 1);
+                        i20 = b10.i(descriptor2, 1);
                         i21 |= 2;
                         break;
                     case 2:
-                        i19 = c10.k(descriptor2, 2);
+                        i19 = b10.i(descriptor2, 2);
                         i21 |= 4;
                         break;
                     case 3:
-                        i17 = c10.k(descriptor2, 3);
+                        i17 = b10.i(descriptor2, 3);
                         i21 |= 8;
                         break;
                     case 4:
-                        i18 = c10.k(descriptor2, 4);
+                        i18 = b10.i(descriptor2, 4);
                         i21 |= 16;
                         break;
                     case 5:
-                        i16 = c10.k(descriptor2, 5);
+                        i16 = b10.i(descriptor2, 5);
                         i21 |= 32;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             i10 = i16;
@@ -115,7 +115,7 @@ public final class GiftEmbed$Resolving$$serializer implements f0<GiftEmbed.Resol
             i13 = i19;
             i14 = i20;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new GiftEmbed.Resolving(i15, str, i14, i13, i12, i11, i10, null);
     }
 
@@ -128,9 +128,9 @@ public final class GiftEmbed$Resolving$$serializer implements f0<GiftEmbed.Resol
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        GiftEmbed.Resolving.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        GiftEmbed.Resolving.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

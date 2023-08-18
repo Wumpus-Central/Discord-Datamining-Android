@@ -103,12 +103,14 @@ public final class OverlappingCirclesView extends LinearLayout {
             q.g(u0.a(this, new Runnable() { 
                 @Override 
                 public final void run() {
+                    int c10;
                     View view = this;
                     OverlappingCirclesView.OverflowItem overflowItem = this;
                     ViewGroup.LayoutParams layoutParams = overflowItem.getLayoutParams();
                     if (layoutParams != null) {
                         LinearLayout.LayoutParams layoutParams2 = (LinearLayout.LayoutParams) layoutParams;
-                        layoutParams2.width = j.c(view.getWidth(), view.getHeight());
+                        c10 = j.c(view.getWidth(), view.getHeight());
+                        layoutParams2.width = c10;
                         overflowItem.setLayoutParams(layoutParams2);
                         return;
                     }
@@ -228,12 +230,20 @@ public final class OverlappingCirclesView extends LinearLayout {
     }
 
     public final void setItems(List<OverlappingItem> items) {
+        boolean z10;
         List v02;
+        boolean z11;
+        boolean z12;
         View view;
+        boolean z13;
         String str;
         q.h(items, "items");
         removeAllViews();
-        boolean z10 = items.size() > this.maxItems;
+        if (items.size() > this.maxItems) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
         int min = Math.min(items.size(), this.maxItems) - 1;
         int i10 = this.maxItems;
         if (z10) {
@@ -242,12 +252,21 @@ public final class OverlappingCirclesView extends LinearLayout {
         v02 = r.v0(items, i10);
         int i11 = 0;
         for (Object obj : v02) {
-            i11++;
+            int i12 = i11 + 1;
             if (i11 < 0) {
                 kotlin.collections.j.r();
             }
             OverlappingItem overlappingItem = (OverlappingItem) obj;
-            boolean z11 = (i11 != min) || z10;
+            if (i11 != min) {
+                z11 = true;
+            } else {
+                z11 = false;
+            }
+            if (z11 || z10) {
+                z12 = true;
+            } else {
+                z12 = false;
+            }
             if (overlappingItem.getImageUri() != null) {
                 if (URLUtil.isValidUrl(overlappingItem.getImageUri())) {
                     str = overlappingItem.getImageUri();
@@ -261,21 +280,27 @@ public final class OverlappingCirclesView extends LinearLayout {
                 }
                 Context context3 = getContext();
                 q.g(context3, "context");
-                view = new OverlappingClippedItem(context3, str, z11, this.overlapPx, this.separatorSizePx, this.imageLoadingColorDrawable);
+                view = new OverlappingClippedItem(context3, str, z12, this.overlapPx, this.separatorSizePx, this.imageLoadingColorDrawable);
             } else {
                 Context context4 = getContext();
                 int backgroundAccent = ThemeManagerKt.getTheme().getBackgroundAccent();
-                int i12 = this.overlapPx;
-                int i13 = this.separatorSizePx;
-                int i14 = getLayoutParams().height;
+                int i13 = this.overlapPx;
+                int i14 = this.separatorSizePx;
+                int i15 = getLayoutParams().height;
                 q.g(context4, "context");
-                view = new PlaceholderItem(context4, backgroundAccent, z11, i12, i13, i14);
+                view = new PlaceholderItem(context4, backgroundAccent, z12, i13, i14, i15);
             }
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(getLayoutParams().height, getLayoutParams().height);
             if (i11 > 0) {
+                z13 = true;
+            } else {
+                z13 = false;
+            }
+            if (z13) {
                 layoutParams.setMarginStart(this.overlapNegativeMargin);
             }
             addView(view, layoutParams);
+            i11 = i12;
         }
         if (z10) {
             Context context5 = getContext();
@@ -283,7 +308,7 @@ public final class OverlappingCirclesView extends LinearLayout {
             View overflowItem = new OverflowItem(context5, items.size() - i10, this.overflowTextSizePx, this.overflowTextColor, this.overflowBgColor, getLayoutParams().height);
             LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(-2, -1);
             layoutParams2.setMarginStart(this.overlapNegativeMargin);
-            Unit unit = Unit.f21036a;
+            Unit unit = Unit.f21210a;
             addView(overflowItem, layoutParams2);
         }
     }
@@ -291,6 +316,7 @@ public final class OverlappingCirclesView extends LinearLayout {
     
     public OverlappingCirclesView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
+        int c10;
         q.h(context, "context");
         this.maxItems = 3;
         this.overlapPx = SizeUtilsKt.getDpToPx(4);
@@ -305,7 +331,8 @@ public final class OverlappingCirclesView extends LinearLayout {
         q.g(OverlappingCirclesView, "OverlappingCirclesView");
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, OverlappingCirclesView, 0, 0);
         q.g(obtainStyledAttributes, "obtainStyledAttributes(s…efStyleAttr, defStyleRes)");
-        this.maxItems = j.c(obtainStyledAttributes.getInt(R.styleable.OverlappingCirclesView_oc_maxItems, this.maxItems), 0);
+        c10 = j.c(obtainStyledAttributes.getInt(R.styleable.OverlappingCirclesView_oc_maxItems, this.maxItems), 0);
+        this.maxItems = c10;
         this.overlapPx = obtainStyledAttributes.getDimensionPixelSize(R.styleable.OverlappingCirclesView_oc_overlap, this.overlapPx);
         this.separatorSizePx = obtainStyledAttributes.getDimensionPixelSize(R.styleable.OverlappingCirclesView_oc_separation, this.separatorSizePx);
         this.imageLoadingColor = obtainStyledAttributes.getColor(R.styleable.OverlappingCirclesView_oc_circleBgColor, this.imageLoadingColor);

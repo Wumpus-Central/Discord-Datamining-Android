@@ -52,7 +52,7 @@ public final class InlineCodeContentNode extends ContentNode {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.content);
+        output.x(serialDesc, 0, self.content);
     }
 
     public final String component1() {

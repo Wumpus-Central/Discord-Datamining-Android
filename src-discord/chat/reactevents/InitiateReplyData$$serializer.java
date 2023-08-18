@@ -46,11 +46,11 @@ public final class InitiateReplyData$$serializer implements f0<InitiateReplyData
         Object obj2;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         String str = null;
-        if (c10.y()) {
-            obj2 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
-            obj = c10.m(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
+        if (b10.p()) {
+            obj2 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
+            obj = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -58,25 +58,25 @@ public final class InitiateReplyData$$serializer implements f0<InitiateReplyData
             obj2 = null;
             Object obj3 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    obj2 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, obj2);
+                } else if (o10 == 0) {
+                    obj2 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, obj2);
                     i10 |= 1;
-                } else if (x10 == 1) {
-                    obj3 = c10.m(descriptor2, 1, ChannelId$$serializer.INSTANCE, obj3);
+                } else if (o10 == 1) {
+                    obj3 = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, obj3);
                     i10 |= 2;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             obj = obj3;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
         if (messageId != null) {
-            str = messageId.m613unboximpl();
+            str = messageId.m615unboximpl();
         }
         return new InitiateReplyData(i10, str, (ChannelId) obj, null, null);
     }
@@ -90,9 +90,9 @@ public final class InitiateReplyData$$serializer implements f0<InitiateReplyData
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        InitiateReplyData.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        InitiateReplyData.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

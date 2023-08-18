@@ -68,10 +68,10 @@ public final class FirstFrameCallbackEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, self.connectionId);
-        output.s(serialDesc, 1, self.userId);
-        output.D(serialDesc, 2, self.ssrc);
-        output.s(serialDesc, 3, self.streamId);
+        output.v(serialDesc, 0, self.connectionId);
+        output.x(serialDesc, 1, self.userId);
+        output.E(serialDesc, 2, self.ssrc);
+        output.x(serialDesc, 3, self.streamId);
     }
 
     public final int component1() {

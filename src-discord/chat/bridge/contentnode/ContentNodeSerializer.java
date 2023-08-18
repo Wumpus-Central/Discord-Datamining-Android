@@ -21,7 +21,7 @@ public final class ContentNodeSerializer implements KSerializer<ContentNode> {
 
     @Override 
     public SerialDescriptor getDescriptor() {
-        return g.a("ContentNode", e.i.f29057a);
+        return g.a("ContentNode", e.i.f29349a);
     }
 
     @Override 
@@ -29,11 +29,11 @@ public final class ContentNodeSerializer implements KSerializer<ContentNode> {
         q.h(decoder, "decoder");
         try {
             if (decoder instanceof kotlinx.serialization.json.e) {
-                JsonElement i10 = ((kotlinx.serialization.json.e) decoder).i();
-                if (i10 instanceof JsonPrimitive) {
-                    return new TextContentNode(((JsonPrimitive) i10).a());
+                JsonElement g10 = ((kotlinx.serialization.json.e) decoder).g();
+                if (g10 instanceof JsonPrimitive) {
+                    return new TextContentNode(((JsonPrimitive) g10).a());
                 }
-                return (ContentNode) ((kotlinx.serialization.json.e) decoder).d().d(ContentNodeKt.access$getSealedClassSerializer$p(), i10);
+                return (ContentNode) ((kotlinx.serialization.json.e) decoder).d().d(ContentNodeKt.access$getSealedClassSerializer$p(), g10);
             }
             throw new IllegalArgumentException("Failed requirement.".toString());
         } catch (Exception e10) {

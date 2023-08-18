@@ -31,13 +31,20 @@ public final class ShortcutUtilsKt {
     }
 
     public static final ShortcutInfoCompat createShortcut(Context context, String id2, CharSequence label, CharSequence longLabel, Bitmap bitmap, List<? extends Person> persons, Intent intent, int i10) {
+        IconCompat iconCompat;
         q.h(context, "<this>");
         q.h(id2, "id");
         q.h(label, "label");
         q.h(longLabel, "longLabel");
         q.h(persons, "persons");
         q.h(intent, "intent");
-        ShortcutInfoCompat a10 = new ShortcutInfoCompat.b(context, id2).h(new g(id2)).m(label).i(longLabel).e(bitmap != null ? IconCompat.i(bitmap) : null).f(intent).l(i10).j(true).c(getShareCategories()).k((Person[]) persons.toArray(new Person[0])).a();
+        ShortcutInfoCompat.b i11 = new ShortcutInfoCompat.b(context, id2).h(new g(id2)).m(label).i(longLabel);
+        if (bitmap != null) {
+            iconCompat = IconCompat.i(bitmap);
+        } else {
+            iconCompat = null;
+        }
+        ShortcutInfoCompat a10 = i11.e(iconCompat).f(intent).l(i10).j(true).c(getShareCategories()).k((Person[]) persons.toArray(new Person[0])).a();
         q.g(a10, "Builder(this, id)\n      …Array())\n        .build()");
         return a10;
     }

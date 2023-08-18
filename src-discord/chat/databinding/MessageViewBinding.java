@@ -18,7 +18,7 @@ import com.discord.chat.presentation.message.RoleDotView;
 import com.discord.chat.presentation.message.RoleIconView;
 import com.discord.chat.presentation.message.ThreadStarterMessageHeaderView;
 import com.facebook.drawee.view.SimpleDraweeView;
-import v0.a;
+import u0.a;
 
 
 public final class MessageViewBinding {

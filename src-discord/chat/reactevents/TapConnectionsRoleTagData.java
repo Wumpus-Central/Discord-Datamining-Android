@@ -67,10 +67,10 @@ public final class TapConnectionsRoleTagData implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.userId);
-        output.s(serialDesc, 1, self.guildId);
-        output.s(serialDesc, 2, self.channelId);
-        output.s(serialDesc, 3, self.roleId);
+        output.x(serialDesc, 0, self.userId);
+        output.x(serialDesc, 1, self.guildId);
+        output.x(serialDesc, 2, self.channelId);
+        output.x(serialDesc, 3, self.roleId);
     }
 
     public final String component1() {

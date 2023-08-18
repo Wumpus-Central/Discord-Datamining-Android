@@ -59,8 +59,8 @@ public final class HeadingContentNode extends ContentNode {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, self.level);
-        output.h(serialDesc, 1, new wi.f(ContentNodeSerializer.INSTANCE), self.content);
+        output.v(serialDesc, 0, self.level);
+        output.o(serialDesc, 1, new wi.f(ContentNodeSerializer.INSTANCE), self.content);
     }
 
     public final int component1() {

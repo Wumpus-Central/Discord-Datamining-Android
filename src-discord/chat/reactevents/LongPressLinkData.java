@@ -53,7 +53,7 @@ public final class LongPressLinkData implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.z(serialDesc, 0, a2.f29550a, self.url);
+        output.B(serialDesc, 0, a2.f29755a, self.url);
     }
 
     public final String component1() {

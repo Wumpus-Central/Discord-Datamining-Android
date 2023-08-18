@@ -49,7 +49,7 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
         this.messageId = str;
         this.totalDurationSecs = f10;
         this.endDurationSecs = f11;
-        this.senderUserId = userId.m652unboximpl();
+        this.senderUserId = userId.m654unboximpl();
         this.durationListeningSecs = f12;
     }
 
@@ -62,7 +62,7 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
     }
 
     
-    public static  VoiceMessagePlaybackEndedData m441copyHuwN0RY$default(VoiceMessagePlaybackEndedData voiceMessagePlaybackEndedData, String str, float f10, float f11, long j10, float f12, int i10, Object obj) {
+    public static  VoiceMessagePlaybackEndedData m443copyHuwN0RY$default(VoiceMessagePlaybackEndedData voiceMessagePlaybackEndedData, String str, float f10, float f11, long j10, float f12, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = voiceMessagePlaybackEndedData.messageId;
         }
@@ -78,22 +78,22 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
         if ((i10 & 16) != 0) {
             f12 = voiceMessagePlaybackEndedData.durationListeningSecs;
         }
-        return voiceMessagePlaybackEndedData.m444copyHuwN0RY(str, f10, f11, j10, f12);
+        return voiceMessagePlaybackEndedData.m446copyHuwN0RY(str, f10, f11, j10, f12);
     }
 
     public static final void write$Self(VoiceMessagePlaybackEndedData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.h(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m605boximpl(self.messageId));
-        output.m(serialDesc, 1, self.totalDurationSecs);
-        output.m(serialDesc, 2, self.endDurationSecs);
-        output.h(serialDesc, 3, UserId$$serializer.INSTANCE, UserId.m643boximpl(self.senderUserId));
-        output.m(serialDesc, 4, self.durationListeningSecs);
+        output.o(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m607boximpl(self.messageId));
+        output.r(serialDesc, 1, self.totalDurationSecs);
+        output.r(serialDesc, 2, self.endDurationSecs);
+        output.o(serialDesc, 3, UserId$$serializer.INSTANCE, UserId.m645boximpl(self.senderUserId));
+        output.r(serialDesc, 4, self.durationListeningSecs);
     }
 
     
-    public final String m442component13Eiw7ao() {
+    public final String m444component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -106,7 +106,7 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
     }
 
     
-    public final long m443component4re6GcUE() {
+    public final long m445component4re6GcUE() {
         return this.senderUserId;
     }
 
@@ -115,7 +115,7 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
     }
 
     
-    public final VoiceMessagePlaybackEndedData m444copyHuwN0RY(String messageId, float f10, float f11, long j10, float f12) {
+    public final VoiceMessagePlaybackEndedData m446copyHuwN0RY(String messageId, float f10, float f11, long j10, float f12) {
         q.h(messageId, "messageId");
         return new VoiceMessagePlaybackEndedData(messageId, f10, f11, j10, f12, null);
     }
@@ -128,7 +128,7 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
             return false;
         }
         VoiceMessagePlaybackEndedData voiceMessagePlaybackEndedData = (VoiceMessagePlaybackEndedData) obj;
-        return MessageId.m609equalsimpl0(this.messageId, voiceMessagePlaybackEndedData.messageId) && Float.compare(this.totalDurationSecs, voiceMessagePlaybackEndedData.totalDurationSecs) == 0 && Float.compare(this.endDurationSecs, voiceMessagePlaybackEndedData.endDurationSecs) == 0 && UserId.m647equalsimpl0(this.senderUserId, voiceMessagePlaybackEndedData.senderUserId) && Float.compare(this.durationListeningSecs, voiceMessagePlaybackEndedData.durationListeningSecs) == 0;
+        return MessageId.m611equalsimpl0(this.messageId, voiceMessagePlaybackEndedData.messageId) && Float.compare(this.totalDurationSecs, voiceMessagePlaybackEndedData.totalDurationSecs) == 0 && Float.compare(this.endDurationSecs, voiceMessagePlaybackEndedData.endDurationSecs) == 0 && UserId.m649equalsimpl0(this.senderUserId, voiceMessagePlaybackEndedData.senderUserId) && Float.compare(this.durationListeningSecs, voiceMessagePlaybackEndedData.durationListeningSecs) == 0;
     }
 
     public final float getDurationListeningSecs() {
@@ -140,12 +140,12 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
     }
 
     
-    public final String m445getMessageId3Eiw7ao() {
+    public final String m447getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     
-    public final long m446getSenderUserIdre6GcUE() {
+    public final long m448getSenderUserIdre6GcUE() {
         return this.senderUserId;
     }
 
@@ -154,7 +154,7 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
     }
 
     public int hashCode() {
-        return (((((((MessageId.m610hashCodeimpl(this.messageId) * 31) + Float.floatToIntBits(this.totalDurationSecs)) * 31) + Float.floatToIntBits(this.endDurationSecs)) * 31) + UserId.m648hashCodeimpl(this.senderUserId)) * 31) + Float.floatToIntBits(this.durationListeningSecs);
+        return (((((((MessageId.m612hashCodeimpl(this.messageId) * 31) + Float.floatToIntBits(this.totalDurationSecs)) * 31) + Float.floatToIntBits(this.endDurationSecs)) * 31) + UserId.m650hashCodeimpl(this.senderUserId)) * 31) + Float.floatToIntBits(this.durationListeningSecs);
     }
 
     @Override 
@@ -163,10 +163,10 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m611toStringimpl(this.messageId);
+        String str = MessageId.m613toStringimpl(this.messageId);
         float f10 = this.totalDurationSecs;
         float f11 = this.endDurationSecs;
-        String str2 = UserId.m650toStringimpl(this.senderUserId);
+        String str2 = UserId.m652toStringimpl(this.senderUserId);
         float f12 = this.durationListeningSecs;
         return "VoiceMessagePlaybackEndedData(messageId=" + str + ", totalDurationSecs=" + f10 + ", endDurationSecs=" + f11 + ", senderUserId=" + str2 + ", durationListeningSecs=" + f12 + ")";
     }

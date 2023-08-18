@@ -18,12 +18,12 @@ final class ImageAttachmentView$maybeShowRemixButton$1 extends s implements Func
 
     @Override 
     public   Unit invoke(MessageId messageId) {
-        m319invoke1xi1bu0(messageId.m613unboximpl());
-        return Unit.f21036a;
+        m321invoke1xi1bu0(messageId.m615unboximpl());
+        return Unit.f21210a;
     }
 
     
-    public final void m319invoke1xi1bu0(String str) {
+    public final void m321invoke1xi1bu0(String str) {
         q.h(str, "<anonymous parameter 0>");
     }
 }

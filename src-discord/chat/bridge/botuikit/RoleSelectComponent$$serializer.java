@@ -50,9 +50,9 @@ public final class RoleSelectComponent$$serializer implements f0<RoleSelectCompo
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29625a;
-        a2 a2Var = a2.f29550a;
-        return new KSerializer[]{a.u(new f(SearchableSelectItem$$serializer.INSTANCE)), m0Var, new f(m0Var), a2Var, a2Var, a.u(a2Var), a.u(a2Var), m0Var, m0Var, h.f29592a, ActionComponentState.Serializer.INSTANCE};
+        m0 m0Var = m0.f29830a;
+        a2 a2Var = a2.f29755a;
+        return new KSerializer[]{a.u(new f(SearchableSelectItem$$serializer.INSTANCE)), m0Var, new f(m0Var), a2Var, a2Var, a.u(a2Var), a.u(a2Var), m0Var, m0Var, h.f29797a, ActionComponentState.Serializer.INSTANCE};
     }
 
     @Override 
@@ -72,24 +72,24 @@ public final class RoleSelectComponent$$serializer implements f0<RoleSelectCompo
         char c10;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c11 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i14 = 10;
         int i15 = 9;
         int i16 = 7;
         int i17 = 0;
-        if (c11.y()) {
-            obj5 = c11.v(descriptor2, 0, new f(SearchableSelectItem$$serializer.INSTANCE), null);
-            i12 = c11.k(descriptor2, 1);
-            obj = c11.m(descriptor2, 2, new f(m0.f29625a), null);
-            str2 = c11.t(descriptor2, 3);
-            str = c11.t(descriptor2, 4);
-            a2 a2Var = a2.f29550a;
-            obj2 = c11.v(descriptor2, 5, a2Var, null);
-            obj3 = c11.v(descriptor2, 6, a2Var, null);
-            i11 = c11.k(descriptor2, 7);
-            i10 = c11.k(descriptor2, 8);
-            z10 = c11.s(descriptor2, 9);
-            obj4 = c11.m(descriptor2, 10, ActionComponentState.Serializer.INSTANCE, null);
+        if (b10.p()) {
+            obj5 = b10.n(descriptor2, 0, new f(SearchableSelectItem$$serializer.INSTANCE), null);
+            i12 = b10.i(descriptor2, 1);
+            obj = b10.y(descriptor2, 2, new f(m0.f29830a), null);
+            str2 = b10.m(descriptor2, 3);
+            str = b10.m(descriptor2, 4);
+            a2 a2Var = a2.f29755a;
+            obj2 = b10.n(descriptor2, 5, a2Var, null);
+            obj3 = b10.n(descriptor2, 6, a2Var, null);
+            i11 = b10.i(descriptor2, 7);
+            i10 = b10.i(descriptor2, 8);
+            z10 = b10.C(descriptor2, 9);
+            obj4 = b10.y(descriptor2, 10, ActionComponentState.Serializer.INSTANCE, null);
             i13 = 2047;
         } else {
             boolean z11 = true;
@@ -105,59 +105,59 @@ public final class RoleSelectComponent$$serializer implements f0<RoleSelectCompo
             String str4 = null;
             int i20 = 0;
             while (z11) {
-                int x10 = c11.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z11 = false;
                         i15 = 9;
                         i16 = 7;
                     case 0:
-                        obj8 = c11.v(descriptor2, 0, new f(SearchableSelectItem$$serializer.INSTANCE), obj8);
+                        obj8 = b10.n(descriptor2, 0, new f(SearchableSelectItem$$serializer.INSTANCE), obj8);
                         i17 |= 1;
                         i14 = 10;
                         i15 = 9;
                         i16 = 7;
                     case 1:
-                        i19 = c11.k(descriptor2, 1);
+                        i19 = b10.i(descriptor2, 1);
                         i17 |= 2;
                         i14 = 10;
                         i15 = 9;
                     case 2:
-                        obj = c11.m(descriptor2, 2, new f(m0.f29625a), obj);
+                        obj = b10.y(descriptor2, 2, new f(m0.f29830a), obj);
                         i17 |= 4;
                         i14 = 10;
                         i15 = 9;
                     case 3:
-                        str3 = c11.t(descriptor2, 3);
+                        str3 = b10.m(descriptor2, 3);
                         i17 |= 8;
                         i14 = 10;
                     case 4:
                         c10 = 5;
-                        str4 = c11.t(descriptor2, 4);
+                        str4 = b10.m(descriptor2, 4);
                         i17 |= 16;
                         i14 = 10;
                     case 5:
                         c10 = 5;
-                        obj2 = c11.v(descriptor2, 5, a2.f29550a, obj2);
+                        obj2 = b10.n(descriptor2, 5, a2.f29755a, obj2);
                         i17 |= 32;
                         i14 = 10;
                     case 6:
-                        obj6 = c11.v(descriptor2, 6, a2.f29550a, obj6);
+                        obj6 = b10.n(descriptor2, 6, a2.f29755a, obj6);
                         i17 |= 64;
                     case 7:
-                        i20 = c11.k(descriptor2, i16);
+                        i20 = b10.i(descriptor2, i16);
                         i17 |= 128;
                     case 8:
-                        i18 = c11.k(descriptor2, 8);
+                        i18 = b10.i(descriptor2, 8);
                         i17 |= 256;
                     case 9:
-                        z12 = c11.s(descriptor2, i15);
+                        z12 = b10.C(descriptor2, i15);
                         i17 |= 512;
                     case 10:
-                        obj7 = c11.m(descriptor2, i14, ActionComponentState.Serializer.INSTANCE, obj7);
+                        obj7 = b10.y(descriptor2, i14, ActionComponentState.Serializer.INSTANCE, obj7);
                         i17 |= 1024;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             obj3 = obj6;
@@ -171,7 +171,7 @@ public final class RoleSelectComponent$$serializer implements f0<RoleSelectCompo
             z10 = z12;
             obj5 = obj8;
         }
-        c11.b(descriptor2);
+        b10.c(descriptor2);
         return new RoleSelectComponent(i13, (List) obj5, i12, (List) obj, str2, str, (String) obj2, (String) obj3, i11, i10, z10, (ActionComponentState) obj4, null);
     }
 
@@ -184,9 +184,9 @@ public final class RoleSelectComponent$$serializer implements f0<RoleSelectCompo
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        RoleSelectComponent.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        RoleSelectComponent.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

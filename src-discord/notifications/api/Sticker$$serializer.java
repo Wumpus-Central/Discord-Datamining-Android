@@ -50,8 +50,8 @@ public final class Sticker$$serializer implements f0<Sticker> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        return new KSerializer[]{StickerId$$serializer.INSTANCE, a2Var, a.u(w0.f29666a), a.u(GuildId$$serializer.INSTANCE), a2Var, StickerFormatType.Serializer.INSTANCE, a2Var, StickerType.Serializer.INSTANCE, a.u(h.f29592a)};
+        a2 a2Var = a2.f29755a;
+        return new KSerializer[]{StickerId$$serializer.INSTANCE, a2Var, a.u(w0.f29871a), a.u(GuildId$$serializer.INSTANCE), a2Var, StickerFormatType.Serializer.INSTANCE, a2Var, StickerType.Serializer.INSTANCE, a.u(h.f29797a)};
     }
 
     @Override 
@@ -68,20 +68,20 @@ public final class Sticker$$serializer implements f0<Sticker> {
         Object obj6;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i11 = 7;
         int i12 = 6;
         Object obj7 = null;
-        if (c10.y()) {
-            obj6 = c10.m(descriptor2, 0, StickerId$$serializer.INSTANCE, null);
-            str3 = c10.t(descriptor2, 1);
-            obj = c10.v(descriptor2, 2, w0.f29666a, null);
-            obj4 = c10.v(descriptor2, 3, GuildId$$serializer.INSTANCE, null);
-            str2 = c10.t(descriptor2, 4);
-            obj2 = c10.m(descriptor2, 5, StickerFormatType.Serializer.INSTANCE, null);
-            str = c10.t(descriptor2, 6);
-            obj5 = c10.m(descriptor2, 7, StickerType.Serializer.INSTANCE, null);
-            obj3 = c10.v(descriptor2, 8, h.f29592a, null);
+        if (b10.p()) {
+            obj6 = b10.y(descriptor2, 0, StickerId$$serializer.INSTANCE, null);
+            str3 = b10.m(descriptor2, 1);
+            obj = b10.n(descriptor2, 2, w0.f29871a, null);
+            obj4 = b10.n(descriptor2, 3, GuildId$$serializer.INSTANCE, null);
+            str2 = b10.m(descriptor2, 4);
+            obj2 = b10.y(descriptor2, 5, StickerFormatType.Serializer.INSTANCE, null);
+            str = b10.m(descriptor2, 6);
+            obj5 = b10.y(descriptor2, 7, StickerType.Serializer.INSTANCE, null);
+            obj3 = b10.n(descriptor2, 8, h.f29797a, null);
             i10 = 511;
         } else {
             boolean z10 = true;
@@ -95,55 +95,55 @@ public final class Sticker$$serializer implements f0<Sticker> {
             String str5 = null;
             String str6 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z10 = false;
                         i12 = 6;
                         break;
                     case 0:
-                        obj7 = c10.m(descriptor2, 0, StickerId$$serializer.INSTANCE, obj7);
+                        obj7 = b10.y(descriptor2, 0, StickerId$$serializer.INSTANCE, obj7);
                         i13 |= 1;
                         i11 = 7;
                         i12 = 6;
                         break;
                     case 1:
-                        str4 = c10.t(descriptor2, 1);
+                        str4 = b10.m(descriptor2, 1);
                         i13 |= 2;
                         i11 = 7;
                         break;
                     case 2:
-                        obj = c10.v(descriptor2, 2, w0.f29666a, obj);
+                        obj = b10.n(descriptor2, 2, w0.f29871a, obj);
                         i13 |= 4;
                         i11 = 7;
                         break;
                     case 3:
-                        obj9 = c10.v(descriptor2, 3, GuildId$$serializer.INSTANCE, obj9);
+                        obj9 = b10.n(descriptor2, 3, GuildId$$serializer.INSTANCE, obj9);
                         i13 |= 8;
                         i11 = 7;
                         continue;
                     case 4:
-                        str5 = c10.t(descriptor2, 4);
+                        str5 = b10.m(descriptor2, 4);
                         i13 |= 16;
                         break;
                     case 5:
-                        obj2 = c10.m(descriptor2, 5, StickerFormatType.Serializer.INSTANCE, obj2);
+                        obj2 = b10.y(descriptor2, 5, StickerFormatType.Serializer.INSTANCE, obj2);
                         i13 |= 32;
                         break;
                     case 6:
-                        str6 = c10.t(descriptor2, i12);
+                        str6 = b10.m(descriptor2, i12);
                         i13 |= 64;
                         break;
                     case 7:
-                        obj8 = c10.m(descriptor2, i11, StickerType.Serializer.INSTANCE, obj8);
+                        obj8 = b10.y(descriptor2, i11, StickerType.Serializer.INSTANCE, obj8);
                         i13 |= 128;
                         break;
                     case 8:
-                        obj3 = c10.v(descriptor2, 8, h.f29592a, obj3);
+                        obj3 = b10.n(descriptor2, 8, h.f29797a, obj3);
                         i13 |= 256;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             i10 = i13;
@@ -154,7 +154,7 @@ public final class Sticker$$serializer implements f0<Sticker> {
             str2 = str5;
             str = str6;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new Sticker(i10, (StickerId) obj6, str3, (Long) obj, (GuildId) obj4, str2, (StickerFormatType) obj2, str, (StickerType) obj5, (Boolean) obj3, null, null);
     }
 
@@ -167,9 +167,9 @@ public final class Sticker$$serializer implements f0<Sticker> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        Sticker.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        Sticker.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

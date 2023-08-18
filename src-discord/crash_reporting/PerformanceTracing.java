@@ -19,7 +19,8 @@ import kotlin.collections.r;
 import kotlin.collections.w;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import ni.u;
+import kotlin.text.o;
+import kotlin.text.p;
 
 @Metadata(d1 = {"\u0000z\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010$\n\u0000\n\u0002\u0010\"\n\u0002\b\b\u0018\u0000 72\u00020\u0001:\u0003789B\u0007¢\u0006\u0004\b5\u00106J\b\u0010\u0003\u001a\u00020\u0002H\u0002J\u0010\u0010\u0006\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0002J\u0010\u0010\u0007\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0002J\u0010\u0010\n\u001a\u00020\u00022\u0006\u0010\t\u001a\u00020\bH\u0002J\u0010\u0010\r\u001a\u00020\b2\u0006\u0010\f\u001a\u00020\u000bH\u0002J\u001c\u0010\u0010\u001a\u0004\u0018\u00010\u000b2\u0006\u0010\u000e\u001a\u00020\b2\b\u0010\u000f\u001a\u0004\u0018\u00010\bH\u0002J\u0012\u0010\u0011\u001a\u0004\u0018\u00010\b2\u0006\u0010\t\u001a\u00020\u000bH\u0002J\u0006\u0010\u0012\u001a\u00020\u0002J\u0006\u0010\u0013\u001a\u00020\u0002J\u000e\u0010\u0014\u001a\u00020\u00022\u0006\u0010\t\u001a\u00020\u000bJ\u0018\u0010\u0014\u001a\u00020\u00022\u0006\u0010\t\u001a\u00020\b2\b\u0010\u000f\u001a\u0004\u0018\u00010\bJ$\u0010\u0018\u001a\u00020\u00022\b\u0010\t\u001a\u0004\u0018\u00010\u00152\b\u0010\u000f\u001a\u0004\u0018\u00010\b2\u0006\u0010\u0017\u001a\u00020\u0016H\u0016R \u0010\u001b\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u001a0\u00198\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001b\u0010\u001cR \u0010\u001e\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u001d0\u00198\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001e\u0010\u001cR \u0010 \u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u001f0\u00198\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b \u0010\u001cR\u0018\u0010!\u001a\u0004\u0018\u00010\u001d8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b!\u0010\"R\u0018\u0010#\u001a\u0004\u0018\u00010\u001d8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b#\u0010\"R\u0016\u0010%\u001a\u00020$8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b%\u0010&R\u0018\u0010(\u001a\u0004\u0018\u00010'8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b(\u0010)R\u001a\u0010+\u001a\b\u0012\u0004\u0012\u00020'0*8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b+\u0010,R\u0016\u0010.\u001a\u00020-8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b.\u0010/R \u00101\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b008\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b1\u0010\u001cR\u001a\u00103\u001a\b\u0012\u0004\u0012\u00020\b028\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b3\u00104¨\u0006:"}, d2 = {"Lcom/discord/crash_reporting/PerformanceTracing;", "Lcom/facebook/react/bridge/ReactMarker$MarkerListener;", "", "startNativeModuleInit", "Lcom/discord/crash_reporting/TraceTransaction;", "transaction", "startTransaction", "stopTransaction", "", "marker", "checkAndSetInitSection", "Lcom/discord/crash_reporting/PerformanceTracing$TransactionMarker;", "transactionMarker", "getMarkerName", ZeroconfModule.KEY_SERVICE_NAME, "tag", "getMarker", "getParentSpanName", ViewProps.START, "stop", "logSpanForTransaction", "Lcom/facebook/react/bridge/ReactMarkerConstants;", "", "instanceKey", "logMarker", "", "Lio/sentry/w0;", "ongoingTransactions", "Ljava/util/Map;", "Lio/sentry/ISpan;", "ongoingSpans", "", "spanStarts", "lastNativeModuleSetupStart", "Lio/sentry/ISpan;", "lastProcessPackage", "", "stopped", "Z", "Lcom/discord/crash_reporting/PackageProcessTimings;", "currentProcessPackage", "Lcom/discord/crash_reporting/PackageProcessTimings;", "", "processPackageTimings", "Ljava/util/List;", "Lcom/discord/crash_reporting/StartupInitSection;", "startupInitSection", "Lcom/discord/crash_reporting/StartupInitSection;", "", "startupRootEventsTree", "", "wildcardEventNames", "Ljava/util/Set;", "<init>", "()V", "Companion", "MarkerEnd", "TransactionMarker", "crash_reporting_release"}, k = 1, mv = {1, 8, 0})
 
@@ -203,16 +204,16 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
         boolean s11;
         String q02;
         String q03;
-        s10 = u.s(str, "_START", false, 2, null);
+        s10 = o.s(str, "_START", false, 2, null);
         if (s10) {
-            q03 = ni.v.q0(str, "_START");
+            q03 = p.q0(str, "_START");
             return new TransactionMarker(q03, str2, MarkerEnd.START);
         }
-        s11 = u.s(str, "_END", false, 2, null);
+        s11 = o.s(str, "_END", false, 2, null);
         if (!s11) {
             return null;
         }
-        q02 = ni.v.q0(str, "_END");
+        q02 = p.q0(str, "_END");
         return new TransactionMarker(q02, str2, MarkerEnd.END);
     }
 
@@ -260,7 +261,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
     private final void stopTransaction(TraceTransaction traceTransaction) {
         w0 w0Var = this.ongoingTransactions.get(traceTransaction);
         if (w0Var != null) {
-            w0Var.h();
+            w0Var.c();
         }
         this.ongoingTransactions.remove(traceTransaction);
     }
@@ -277,7 +278,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
         if (str2 != null) {
             logSpanForTransaction(str2, str);
         }
-        u10 = u.u(str2, "CONTENT_APPEARED", false, 2, null);
+        u10 = o.u(str2, "CONTENT_APPEARED", false, 2, null);
         if (u10) {
             stop();
         }
@@ -297,12 +298,12 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
         if (marker.getMarkerEnd() == MarkerEnd.START) {
             if (this.startupInitSection == StartupInitSection.NativeModuleSetup && q.c(marker.getName(), "NATIVE_MODULE_SETUP") && (iSpan3 = this.lastNativeModuleSetupStart) != null) {
                 if (iSpan3 != null) {
-                    iSpan3.h();
+                    iSpan3.c();
                 }
                 this.lastNativeModuleSetupStart = null;
             }
             if (q.c(marker.getName(), "RUN_JS_BUNDLE") && (iSpan2 = this.ongoingSpans.get("PRE_RUN_JS_BUNDLE")) != null) {
-                iSpan2.h();
+                iSpan2.c();
             }
             if (q.c(marker.getName(), "PROCESS_PACKAGE_MODULE")) {
                 iSpan = this.lastProcessPackage;
@@ -312,14 +313,14 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
             if (iSpan == null) {
                 boolean z10 = false;
                 if (parentSpanName != null) {
-                    s10 = u.s(parentSpanName, "~", false, 2, null);
+                    s10 = o.s(parentSpanName, "~", false, 2, null);
                     if (s10) {
                         z10 = true;
                     }
                 }
                 if (z10) {
                     ISpan iSpan4 = this.ongoingSpans.get(this.startupRootEventsTree.get(parentSpanName));
-                    if (!(iSpan4 == null || (iSpan = iSpan4.m(markerName)) == null)) {
+                    if (!(iSpan4 == null || (iSpan = iSpan4.f(markerName)) == null)) {
                         this.ongoingSpans.put(parentSpanName, iSpan);
                         this.spanStarts.put(parentSpanName, Long.valueOf(System.currentTimeMillis()));
                     }
@@ -327,12 +328,12 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
                 }
             }
             if (iSpan != null) {
-                ISpan m10 = iSpan.m(markerName);
-                q.g(m10, "parentSpan.startChild(markerName)");
-                this.ongoingSpans.put(markerName, m10);
+                ISpan f10 = iSpan.f(markerName);
+                q.g(f10, "parentSpan.startChild(markerName)");
+                this.ongoingSpans.put(markerName, f10);
                 this.spanStarts.put(markerName, Long.valueOf(System.currentTimeMillis()));
                 if (q.c(marker.getName(), "PROCESS_PACKAGE")) {
-                    this.lastProcessPackage = m10;
+                    this.lastProcessPackage = f10;
                     PackageProcessTimings packageProcessTimings2 = new PackageProcessTimings();
                     this.currentProcessPackage = packageProcessTimings2;
                     this.processPackageTimings.add(packageProcessTimings2);
@@ -348,7 +349,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
         } else {
             ISpan iSpan5 = this.ongoingSpans.get(markerName);
             if (iSpan5 != null) {
-                iSpan5.h();
+                iSpan5.c();
                 this.ongoingSpans.remove(markerName);
                 if (q.c(marker.getName(), "PROCESS_PACKAGE")) {
                     PackageProcessTimings packageProcessTimings3 = this.currentProcessPackage;

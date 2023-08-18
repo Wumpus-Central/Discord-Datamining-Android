@@ -49,7 +49,7 @@ public final class OnZoomChangedEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.m(serialDesc, 0, self.zoomScale);
+        output.r(serialDesc, 0, self.zoomScale);
     }
 
     public final float component1() {

@@ -79,13 +79,13 @@ public enum StaticChannelMentionType {
 
         @Override 
         public SerialDescriptor getDescriptor() {
-            return g.a("StaticChannelMentionType", e.i.f29057a);
+            return g.a("StaticChannelMentionType", e.i.f29349a);
         }
 
         @Override 
         public StaticChannelMentionType deserialize(Decoder decoder) {
             q.h(decoder, "decoder");
-            return StaticChannelMentionType.Companion.fromValue(decoder.n());
+            return StaticChannelMentionType.Companion.fromValue(decoder.z());
         }
 
         public void serialize(Encoder encoder, StaticChannelMentionType value) {

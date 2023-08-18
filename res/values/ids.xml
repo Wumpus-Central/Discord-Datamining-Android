@@ -113,6 +113,7 @@
     <item type="id" name="button" />
     <item type="id" name="buttonPanel" />
     <item type="id" name="button_container" />
+    <item type="id" name="button_wrapper" />
     <item type="id" name="cancel_action" />
     <item type="id" name="cancel_button" />
     <item type="id" name="card" />
@@ -706,6 +707,7 @@
     <item type="id" name="view_tag_instance_handle" />
     <item type="id" name="view_tag_native_id" />
     <item type="id" name="view_tree_lifecycle_owner" />
+    <item type="id" name="view_tree_on_back_pressed_dispatcher_owner" />
     <item type="id" name="view_tree_saved_state_registry_owner" />
     <item type="id" name="view_tree_view_model_store_owner" />
     <item type="id" name="visible_removing_fragment_view_tag" />

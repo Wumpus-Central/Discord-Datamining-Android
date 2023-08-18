@@ -6,11 +6,12 @@ import com.discord.chat.bridge.spoiler.SpoilerableData;
 import com.facebook.react.uimanager.ViewProps;
 import java.util.regex.Pattern;
 import jf.s;
+import jf.t;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
+import kotlin.text.n;
 import kotlinx.serialization.KSerializer;
-import ni.t;
 import ti.f;
 
 @f
@@ -81,18 +82,18 @@ public final class Attachment implements SpoilerableData {
         Integer num;
         Integer num2 = null;
         try {
-            s.a aVar = s.f20094l;
+            s.a aVar = s.f20299k;
             String value = new UrlQuerySanitizer(this.url).getValue(str);
             if (value != null) {
                 q.g(value, "getValue(paramName)");
-                num = t.m(value);
+                num = n.m(value);
             } else {
                 num = null;
             }
             obj = s.b(num);
         } catch (Throwable th2) {
-            s.a aVar2 = s.f20094l;
-            obj = s.b(jf.t.a(th2));
+            s.a aVar2 = s.f20299k;
+            obj = s.b(t.a(th2));
         }
         if (!s.g(obj)) {
             num2 = obj;

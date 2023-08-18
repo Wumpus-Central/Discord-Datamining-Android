@@ -123,23 +123,23 @@ public final class CommandOnClick {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z15 = false;
-        if (!output.w(serialDesc, 0) && self.action == null) {
+        if (!output.z(serialDesc, 0) && self.action == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, a2.f29550a, self.action);
+            output.B(serialDesc, 0, a2.f29755a, self.action);
         }
-        if (!output.w(serialDesc, 1) && self.userId == null) {
+        if (!output.z(serialDesc, 1) && self.userId == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 1, UserId$$serializer.INSTANCE, self.userId);
+            output.B(serialDesc, 1, UserId$$serializer.INSTANCE, self.userId);
         }
-        if (!output.w(serialDesc, 2) && self.messageId == null) {
+        if (!output.z(serialDesc, 2) && self.messageId == null) {
             z12 = false;
         } else {
             z12 = true;
@@ -148,33 +148,33 @@ public final class CommandOnClick {
             MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
             String str = self.messageId;
             if (str != null) {
-                messageId = MessageId.m605boximpl(str);
+                messageId = MessageId.m607boximpl(str);
             } else {
                 messageId = null;
             }
-            output.z(serialDesc, 2, messageId$$serializer, messageId);
+            output.B(serialDesc, 2, messageId$$serializer, messageId);
         }
-        if (!output.w(serialDesc, 3) && self.applicationUserId == null) {
+        if (!output.z(serialDesc, 3) && self.applicationUserId == null) {
             z13 = false;
         } else {
             z13 = true;
         }
         if (z13) {
-            output.z(serialDesc, 3, UserId$$serializer.INSTANCE, self.applicationUserId);
+            output.B(serialDesc, 3, UserId$$serializer.INSTANCE, self.applicationUserId);
         }
-        if (!output.w(serialDesc, 4) && self.messageType == null) {
+        if (!output.z(serialDesc, 4) && self.messageType == null) {
             z14 = false;
         } else {
             z14 = true;
         }
         if (z14) {
-            output.z(serialDesc, 4, MessageType.Serializer.INSTANCE, self.messageType);
+            output.B(serialDesc, 4, MessageType.Serializer.INSTANCE, self.messageType);
         }
-        if (output.w(serialDesc, 5) || self.messageChannelId != null) {
+        if (output.z(serialDesc, 5) || self.messageChannelId != null) {
             z15 = true;
         }
         if (z15) {
-            output.z(serialDesc, 5, ChannelId$$serializer.INSTANCE, self.messageChannelId);
+            output.B(serialDesc, 5, ChannelId$$serializer.INSTANCE, self.messageChannelId);
         }
     }
 
@@ -252,16 +252,16 @@ public final class CommandOnClick {
         int i10 = 0;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;
         UserId userId = this.userId;
-        int i11 = (hashCode + (userId == null ? 0 : UserId.m648hashCodeimpl(userId.m652unboximpl()))) * 31;
+        int i11 = (hashCode + (userId == null ? 0 : UserId.m650hashCodeimpl(userId.m654unboximpl()))) * 31;
         String str2 = this.messageId;
-        int i12 = (i11 + (str2 == null ? 0 : MessageId.m610hashCodeimpl(str2))) * 31;
+        int i12 = (i11 + (str2 == null ? 0 : MessageId.m612hashCodeimpl(str2))) * 31;
         UserId userId2 = this.applicationUserId;
-        int i13 = (i12 + (userId2 == null ? 0 : UserId.m648hashCodeimpl(userId2.m652unboximpl()))) * 31;
+        int i13 = (i12 + (userId2 == null ? 0 : UserId.m650hashCodeimpl(userId2.m654unboximpl()))) * 31;
         MessageType messageType = this.messageType;
         int hashCode2 = (i13 + (messageType == null ? 0 : messageType.hashCode())) * 31;
         ChannelId channelId = this.messageChannelId;
         if (channelId != null) {
-            i10 = ChannelId.m584hashCodeimpl(channelId.m588unboximpl());
+            i10 = ChannelId.m586hashCodeimpl(channelId.m590unboximpl());
         }
         return hashCode2 + i10;
     }
@@ -270,7 +270,7 @@ public final class CommandOnClick {
         String str = this.action;
         UserId userId = this.userId;
         String str2 = this.messageId;
-        String str3 = str2 == null ? "null" : MessageId.m611toStringimpl(str2);
+        String str3 = str2 == null ? "null" : MessageId.m613toStringimpl(str2);
         UserId userId2 = this.applicationUserId;
         MessageType messageType = this.messageType;
         ChannelId channelId = this.messageChannelId;

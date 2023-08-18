@@ -211,6 +211,10 @@
     <color name="blur_fallback_pressed_dark">#f51a1b1e</color>
     <color name="blur_fallback_pressed_darker">#f5262732</color>
     <color name="blur_fallback_pressed_light">#f5383a40</color>
+    <color name="border_faint_amoled">#0f6b6e87</color>
+    <color name="border_faint_dark">#08ffffff</color>
+    <color name="border_faint_darker">#0f6b6e87</color>
+    <color name="border_faint_light">#0a000000</color>
     <color name="border_strong_amoled">#336b6e87</color>
     <color name="border_strong_dark">#29ffffff</color>
     <color name="border_strong_darker">#2e6b6e87</color>
@@ -283,6 +287,14 @@
     <color name="button_outline_primary_background_light">#00ffffff</color>
     <color name="call_notification_answer_color">#ff1d873b</color>
     <color name="call_notification_decline_color">#ffd93025</color>
+    <color name="card_gradient_bg_amoled">#b3000000</color>
+    <color name="card_gradient_bg_dark">#b3000000</color>
+    <color name="card_gradient_bg_darker">#b3000000</color>
+    <color name="card_gradient_bg_light">#b3ffffff</color>
+    <color name="card_gradient_pressed_bg_amoled">#80000000</color>
+    <color name="card_gradient_pressed_bg_dark">#80000000</color>
+    <color name="card_gradient_pressed_bg_darker">#80000000</color>
+    <color name="card_gradient_pressed_bg_light">#80ffffff</color>
     <color name="cardview_dark_background">#ff424242</color>
     <color name="cardview_light_background">#ffffffff</color>
     <color name="cardview_shadow_end_color">#03000000</color>
@@ -497,6 +509,8 @@
     <color name="input_background_darker">#990f1015</color>
     <color name="input_background_light">#14000000</color>
     <color name="input_placeholder_text_dark">#ff87898c</color>
+    <color name="input_pressed_background_darker">#00000000</color>
+    <color name="input_pressed_background_light">#1f000000</color>
     <color name="legacy_android_blur_overlay_default_amoled">#80232428</color>
     <color name="legacy_android_blur_overlay_default_dark">#80232428</color>
     <color name="legacy_android_blur_overlay_default_darker">#80232428</color>
@@ -782,6 +796,10 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
+    <color name="profile_gradient_card_background_amoled">#b3000000</color>
+    <color name="profile_gradient_card_background_dark">#b3000000</color>
+    <color name="profile_gradient_card_background_darker">#b3000000</color>
+    <color name="profile_gradient_card_background_light">#b3ffffff</color>
     <color name="profile_gradient_message_input_border_amoled">#7a4e5058</color>
     <color name="profile_gradient_message_input_border_dark">#7a4e5058</color>
     <color name="profile_gradient_message_input_border_darker">#7a4e5058</color>

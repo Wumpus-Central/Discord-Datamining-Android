@@ -55,7 +55,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21210a);
         }
 
         @Override 
@@ -64,7 +64,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             if (this.label == 0) {
                 t.b(obj);
                 this.this$0.clearAnimation();
-                return Unit.f21036a;
+                return Unit.f21210a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -84,7 +84,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((RLottieImageView$fetchSticker$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
+        return ((RLottieImageView$fetchSticker$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21210a);
     }
 
     @Override 
@@ -104,7 +104,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             t.b(obj);
         } else if (i10 == 2) {
             t.b(obj);
-            return Unit.f21036a;
+            return Unit.f21210a;
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -143,7 +143,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                 }
 
                 public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                    return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
+                    return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21210a);
                 }
 
                 @Override 
@@ -182,23 +182,23 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             @e(c = "com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$2$2", f = "RLottieImageView.kt", l = {}, m = "invokeSuspend")
             
             
-            public static final class C01042 extends k implements Function2<CoroutineScope, Continuation<? super Boolean>, Object> {
+            public static final class C01122 extends k implements Function2<CoroutineScope, Continuation<? super Boolean>, Object> {
                 int label;
                 final  RLottieImageView this$0;
 
                 
-                C01042(RLottieImageView rLottieImageView, Continuation<? super C01042> continuation) {
+                C01122(RLottieImageView rLottieImageView, Continuation<? super C01122> continuation) {
                     super(2, continuation);
                     this.this$0 = rLottieImageView;
                 }
 
                 @Override 
                 public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-                    return new C01042(this.this$0, continuation);
+                    return new C01122(this.this$0, continuation);
                 }
 
                 public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                    return ((C01042) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
+                    return ((C01122) create(coroutineScope, continuation)).invokeSuspend(Unit.f21210a);
                 }
 
                 @Override 
@@ -225,13 +225,13 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                 if (downloadState instanceof DownloadState.Completed) {
                     Object g10 = j.g(a1.c(), new AnonymousClass1(RLottieImageView.this, downloadState, config, null), continuation);
                     d12 = d.d();
-                    return g10 == d12 ? g10 : Unit.f21036a;
+                    return g10 == d12 ? g10 : Unit.f21210a;
                 } else if (!(downloadState instanceof DownloadState.Failure)) {
-                    return Unit.f21036a;
+                    return Unit.f21210a;
                 } else {
-                    Object g11 = j.g(a1.c(), new C01042(RLottieImageView.this, null), continuation);
+                    Object g11 = j.g(a1.c(), new C01122(RLottieImageView.this, null), continuation);
                     d11 = d.d();
-                    return g11 == d11 ? g11 : Unit.f21036a;
+                    return g11 == d11 ? g11 : Unit.f21210a;
                 }
             }
         };
@@ -239,6 +239,6 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
         if (downloadFile$default.collect(flowCollector, this) == d10) {
             return d10;
         }
-        return Unit.f21036a;
+        return Unit.f21210a;
     }
 }

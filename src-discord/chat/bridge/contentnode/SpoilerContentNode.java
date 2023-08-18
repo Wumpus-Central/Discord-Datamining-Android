@@ -62,12 +62,12 @@ public final class SpoilerContentNode extends ContentNode implements Spoilerable
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z10 = false;
-        output.h(serialDesc, 0, new wi.f(ContentNodeSerializer.INSTANCE), self.content);
-        if (output.w(serialDesc, 1) || !q.c(self.getSpoilerOrNull(), "")) {
+        output.o(serialDesc, 0, new wi.f(ContentNodeSerializer.INSTANCE), self.content);
+        if (output.z(serialDesc, 1) || !q.c(self.getSpoilerOrNull(), "")) {
             z10 = true;
         }
         if (z10) {
-            output.s(serialDesc, 1, self.getSpoilerOrNull());
+            output.x(serialDesc, 1, self.getSpoilerOrNull());
         }
     }
 

@@ -27,14 +27,14 @@ final class BillingManager$getSkusWithRetry$1$1$listener$1 extends s implements 
     @Override 
     public   Unit invoke(BillingResult billingResult, List<? extends SkuDetails> list) {
         invoke2(billingResult, list);
-        return Unit.f21036a;
+        return Unit.f21210a;
     }
 
     
     public final void invoke2(BillingResult billingResult, List<? extends SkuDetails> skuDetails) {
         q.h(billingResult, "billingResult");
         q.h(skuDetails, "skuDetails");
-        if (!this.$deferred.h0(new BillingManager.SkuDetailsResponse(billingResult, skuDetails))) {
+        if (!this.$deferred.V(new BillingManager.SkuDetailsResponse(billingResult, skuDetails))) {
             Log.i$default(Log.INSTANCE, "getSkusWithRetry", "CompletableDeferred completed multiple times, indicating multiple callbacks from querySkuDetailsAsync", (Throwable) null, 4, (Object) null);
         }
     }

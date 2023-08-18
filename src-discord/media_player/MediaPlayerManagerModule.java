@@ -66,7 +66,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
         z b10 = s2.b(null, 1, null);
         ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor();
         q.g(newSingleThreadExecutor, "newSingleThreadExecutor()");
-        this.scope = m0.a(b10.u(o1.a(newSingleThreadExecutor)));
+        this.scope = m0.a(b10.e0(o1.a(newSingleThreadExecutor)));
     }
 
     
@@ -165,7 +165,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             return null;
         }
         Job.a.a(remove, null, 1, null);
-        return Unit.f21036a;
+        return Unit.f21210a;
     }
 
     @ReactMethod

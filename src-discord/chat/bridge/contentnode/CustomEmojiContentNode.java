@@ -20,7 +20,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     private final String frozenSrc;
 
     
-    private final long f7106id;
+    private final long f7248id;
     private final boolean jumboable;
     private final String src;
 
@@ -45,7 +45,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
         if (15 != (i10 & 15)) {
             n1.b(i10, 15, CustomEmojiContentNode$$serializer.INSTANCE.getDescriptor());
         }
-        this.f7106id = j10;
+        this.f7248id = j10;
         this.alt = str;
         this.src = str2;
         this.frozenSrc = str3;
@@ -58,7 +58,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
 
     public static  CustomEmojiContentNode copy$default(CustomEmojiContentNode customEmojiContentNode, long j10, String str, String str2, String str3, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            j10 = customEmojiContentNode.f7106id;
+            j10 = customEmojiContentNode.f7248id;
         }
         if ((i10 & 2) != 0) {
             str = customEmojiContentNode.alt;
@@ -81,20 +81,20 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
         q.h(serialDesc, "serialDesc");
         EmojiContentNode.write$Self(self, output, serialDesc);
         boolean z10 = false;
-        output.D(serialDesc, 0, self.f7106id);
-        output.s(serialDesc, 1, self.alt);
-        output.s(serialDesc, 2, self.src);
-        output.s(serialDesc, 3, self.frozenSrc);
-        if (output.w(serialDesc, 4) || self.getJumboable()) {
+        output.E(serialDesc, 0, self.f7248id);
+        output.x(serialDesc, 1, self.alt);
+        output.x(serialDesc, 2, self.src);
+        output.x(serialDesc, 3, self.frozenSrc);
+        if (output.z(serialDesc, 4) || self.getJumboable()) {
             z10 = true;
         }
         if (z10) {
-            output.r(serialDesc, 4, self.getJumboable());
+            output.w(serialDesc, 4, self.getJumboable());
         }
     }
 
     public final long component1() {
-        return this.f7106id;
+        return this.f7248id;
     }
 
     public final String component2() {
@@ -128,7 +128,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
             return false;
         }
         CustomEmojiContentNode customEmojiContentNode = (CustomEmojiContentNode) obj;
-        return this.f7106id == customEmojiContentNode.f7106id && q.c(this.alt, customEmojiContentNode.alt) && q.c(this.src, customEmojiContentNode.src) && q.c(this.frozenSrc, customEmojiContentNode.frozenSrc) && getJumboable() == customEmojiContentNode.getJumboable();
+        return this.f7248id == customEmojiContentNode.f7248id && q.c(this.alt, customEmojiContentNode.alt) && q.c(this.src, customEmojiContentNode.src) && q.c(this.frozenSrc, customEmojiContentNode.frozenSrc) && getJumboable() == customEmojiContentNode.getJumboable();
     }
 
     public final String getAlt() {
@@ -140,7 +140,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     }
 
     public final long getId() {
-        return this.f7106id;
+        return this.f7248id;
     }
 
     @Override 
@@ -153,7 +153,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     }
 
     public int hashCode() {
-        int a10 = ((((((b.a(this.f7106id) * 31) + this.alt.hashCode()) * 31) + this.src.hashCode()) * 31) + this.frozenSrc.hashCode()) * 31;
+        int a10 = ((((((b.a(this.f7248id) * 31) + this.alt.hashCode()) * 31) + this.src.hashCode()) * 31) + this.frozenSrc.hashCode()) * 31;
         boolean jumboable = getJumboable();
         if (jumboable) {
             jumboable = true;
@@ -165,7 +165,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     }
 
     public String toString() {
-        long j10 = this.f7106id;
+        long j10 = this.f7248id;
         String str = this.alt;
         String str2 = this.src;
         String str3 = this.frozenSrc;
@@ -183,7 +183,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
         q.h(alt, "alt");
         q.h(src, "src");
         q.h(frozenSrc, "frozenSrc");
-        this.f7106id = j10;
+        this.f7248id = j10;
         this.alt = alt;
         this.src = src;
         this.frozenSrc = frozenSrc;

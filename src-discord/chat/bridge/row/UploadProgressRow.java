@@ -70,10 +70,10 @@ public final class UploadProgressRow extends Row {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, self.getIndex());
-        output.h(serialDesc, 1, ChangeType.Serializer.INSTANCE, self.getChangeType());
-        output.h(serialDesc, 2, Message$$serializer.INSTANCE, self.message);
-        output.s(serialDesc, 3, self.fileId);
+        output.v(serialDesc, 0, self.getIndex());
+        output.o(serialDesc, 1, ChangeType.Serializer.INSTANCE, self.getChangeType());
+        output.o(serialDesc, 2, Message$$serializer.INSTANCE, self.message);
+        output.x(serialDesc, 3, self.fileId);
     }
 
     public final int component1() {

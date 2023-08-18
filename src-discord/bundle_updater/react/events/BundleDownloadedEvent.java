@@ -52,7 +52,7 @@ public final class BundleDownloadedEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.r(serialDesc, 0, self.versionRequired);
+        output.w(serialDesc, 0, self.versionRequired);
     }
 
     public final boolean component1() {

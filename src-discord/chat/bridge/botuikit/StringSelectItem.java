@@ -92,29 +92,29 @@ public final class StringSelectItem extends SelectItem {
         q.h(serialDesc, "serialDesc");
         SelectItem.write$Self(self, output, serialDesc);
         boolean z12 = false;
-        output.s(serialDesc, 0, self.getLabel());
-        output.s(serialDesc, 1, self.getValue());
-        if (!output.w(serialDesc, 2) && self.getEmoji() == null) {
+        output.x(serialDesc, 0, self.getLabel());
+        output.x(serialDesc, 1, self.getValue());
+        if (!output.z(serialDesc, 2) && self.getEmoji() == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 2, ComponentEmoji$$serializer.INSTANCE, self.getEmoji());
+            output.B(serialDesc, 2, ComponentEmoji$$serializer.INSTANCE, self.getEmoji());
         }
-        if (!output.w(serialDesc, 3) && self.description == null) {
+        if (!output.z(serialDesc, 3) && self.description == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 3, a2.f29550a, self.description);
+            output.B(serialDesc, 3, a2.f29755a, self.description);
         }
-        if (output.w(serialDesc, 4) || !q.c(self.f0default, Boolean.FALSE)) {
+        if (output.z(serialDesc, 4) || !q.c(self.f0default, Boolean.FALSE)) {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 4, h.f29592a, self.f0default);
+            output.B(serialDesc, 4, h.f29797a, self.f0default);
         }
     }
 

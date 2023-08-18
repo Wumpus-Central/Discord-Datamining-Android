@@ -43,7 +43,7 @@ public final class KvMessageEntry$$serializer implements f0<KvMessageEntry> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        t tVar = t.f21597a;
+        t tVar = t.f21790a;
         return new KSerializer[]{new f(tVar), new f(tVar), tVar, MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE};
     }
 
@@ -57,14 +57,14 @@ public final class KvMessageEntry$$serializer implements f0<KvMessageEntry> {
         Object obj5;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            t tVar = t.f21597a;
-            obj5 = c10.m(descriptor2, 0, new f(tVar), null);
-            obj = c10.m(descriptor2, 1, new f(tVar), null);
-            obj2 = c10.m(descriptor2, 2, tVar, null);
-            obj4 = c10.m(descriptor2, 3, MessageId$$serializer.INSTANCE, null);
-            obj3 = c10.m(descriptor2, 4, ChannelId$$serializer.INSTANCE, null);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            t tVar = t.f21790a;
+            obj5 = b10.y(descriptor2, 0, new f(tVar), null);
+            obj = b10.y(descriptor2, 1, new f(tVar), null);
+            obj2 = b10.y(descriptor2, 2, tVar, null);
+            obj4 = b10.y(descriptor2, 3, MessageId$$serializer.INSTANCE, null);
+            obj3 = b10.y(descriptor2, 4, ChannelId$$serializer.INSTANCE, null);
             i10 = 31;
         } else {
             boolean z10 = true;
@@ -75,26 +75,26 @@ public final class KvMessageEntry$$serializer implements f0<KvMessageEntry> {
             Object obj8 = null;
             Object obj9 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    obj5 = c10.m(descriptor2, 0, new f(t.f21597a), obj5);
+                } else if (o10 == 0) {
+                    obj5 = b10.y(descriptor2, 0, new f(t.f21790a), obj5);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    obj9 = c10.m(descriptor2, 1, new f(t.f21597a), obj9);
+                } else if (o10 == 1) {
+                    obj9 = b10.y(descriptor2, 1, new f(t.f21790a), obj9);
                     i11 |= 2;
-                } else if (x10 == 2) {
-                    obj8 = c10.m(descriptor2, 2, t.f21597a, obj8);
+                } else if (o10 == 2) {
+                    obj8 = b10.y(descriptor2, 2, t.f21790a, obj8);
                     i11 |= 4;
-                } else if (x10 == 3) {
-                    obj6 = c10.m(descriptor2, 3, MessageId$$serializer.INSTANCE, obj6);
+                } else if (o10 == 3) {
+                    obj6 = b10.y(descriptor2, 3, MessageId$$serializer.INSTANCE, obj6);
                     i11 |= 8;
-                } else if (x10 == 4) {
-                    obj7 = c10.m(descriptor2, 4, ChannelId$$serializer.INSTANCE, obj7);
+                } else if (o10 == 4) {
+                    obj7 = b10.y(descriptor2, 4, ChannelId$$serializer.INSTANCE, obj7);
                     i11 |= 16;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             obj4 = obj6;
@@ -103,9 +103,9 @@ public final class KvMessageEntry$$serializer implements f0<KvMessageEntry> {
             obj = obj9;
             i10 = i11;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         MessageId messageId = (MessageId) obj4;
-        return new KvMessageEntry(i10, (List) obj5, (List) obj, (JsonObject) obj2, messageId != null ? messageId.m613unboximpl() : null, (ChannelId) obj3, null, null);
+        return new KvMessageEntry(i10, (List) obj5, (List) obj, (JsonObject) obj2, messageId != null ? messageId.m615unboximpl() : null, (ChannelId) obj3, null, null);
     }
 
     @Override 
@@ -117,9 +117,9 @@ public final class KvMessageEntry$$serializer implements f0<KvMessageEntry> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        KvMessageEntry.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        KvMessageEntry.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

@@ -57,8 +57,8 @@ public final class LongPressAvatarData implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.messageId);
-        output.s(serialDesc, 1, self.userId);
+        output.x(serialDesc, 0, self.messageId);
+        output.x(serialDesc, 1, self.userId);
     }
 
     public final String component1() {

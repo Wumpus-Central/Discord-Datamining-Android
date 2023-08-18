@@ -80,40 +80,40 @@ public final class AutoModerationContext {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z13 = false;
-        output.s(serialDesc, 0, self.headerText);
-        output.s(serialDesc, 1, self.headerBadgeText);
-        if (!output.w(serialDesc, 2) && self.ruleDisplayText == null) {
+        output.x(serialDesc, 0, self.headerText);
+        output.x(serialDesc, 1, self.headerBadgeText);
+        if (!output.z(serialDesc, 2) && self.ruleDisplayText == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 2, a2.f29550a, self.ruleDisplayText);
+            output.B(serialDesc, 2, a2.f29755a, self.ruleDisplayText);
         }
-        if (!output.w(serialDesc, 3) && self.keywordDisplayText == null) {
+        if (!output.z(serialDesc, 3) && self.keywordDisplayText == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 3, a2.f29550a, self.keywordDisplayText);
+            output.B(serialDesc, 3, a2.f29755a, self.keywordDisplayText);
         }
-        if (!output.w(serialDesc, 4) && self.actionsIconURL == null) {
+        if (!output.z(serialDesc, 4) && self.actionsIconURL == null) {
             z12 = false;
         } else {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 4, a2.f29550a, self.actionsIconURL);
+            output.B(serialDesc, 4, a2.f29755a, self.actionsIconURL);
         }
-        output.s(serialDesc, 5, self.actionsText);
-        output.s(serialDesc, 6, self.feedbackText);
-        output.h(serialDesc, 7, FlaggedMessageEmbed$$serializer.INSTANCE, self.message);
-        if (output.w(serialDesc, 8) || self.notification != null) {
+        output.x(serialDesc, 5, self.actionsText);
+        output.x(serialDesc, 6, self.feedbackText);
+        output.o(serialDesc, 7, FlaggedMessageEmbed$$serializer.INSTANCE, self.message);
+        if (output.z(serialDesc, 8) || self.notification != null) {
             z13 = true;
         }
         if (z13) {
-            output.z(serialDesc, 8, AutoModerationNotification$$serializer.INSTANCE, self.notification);
+            output.B(serialDesc, 8, AutoModerationNotification$$serializer.INSTANCE, self.notification);
         }
     }
 

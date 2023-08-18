@@ -52,7 +52,7 @@ public final class ThreadEmbedMessage {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.h(serialDesc, 0, Message$$serializer.INSTANCE, self.message);
+        output.o(serialDesc, 0, Message$$serializer.INSTANCE, self.message);
     }
 
     public final Message component1() {

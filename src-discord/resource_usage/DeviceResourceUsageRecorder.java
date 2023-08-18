@@ -54,8 +54,8 @@ public final class DeviceResourceUsageRecorder {
             requestStats.setNumRequests(requestStats.getNumRequests() + 1);
             if (e.b(b10) && a10 != null) {
                 BufferedSource source = a10.source();
-                source.i(Long.MAX_VALUE);
-                requestStats.setBytesReceived(requestStats.getBytesReceived() + source.e().size());
+                source.g(Long.MAX_VALUE);
+                requestStats.setBytesReceived(requestStats.getBytesReceived() + source.d().size());
             }
             return b10;
         }

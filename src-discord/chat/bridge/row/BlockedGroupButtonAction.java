@@ -55,8 +55,8 @@ public final class BlockedGroupButtonAction {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.type);
-        output.s(serialDesc, 1, self.context);
+        output.x(serialDesc, 0, self.type);
+        output.x(serialDesc, 1, self.context);
     }
 
     public final String component1() {

@@ -65,12 +65,12 @@ public final class LoadedReferencedMessage extends ReferencedMessage {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z10 = false;
-        output.h(serialDesc, 0, Message$$serializer.INSTANCE, self.message);
-        if (output.w(serialDesc, 1) || self.systemContent != null) {
+        output.o(serialDesc, 0, Message$$serializer.INSTANCE, self.message);
+        if (output.z(serialDesc, 1) || self.systemContent != null) {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 1, a2.f29550a, self.systemContent);
+            output.B(serialDesc, 1, a2.f29755a, self.systemContent);
         }
     }
 

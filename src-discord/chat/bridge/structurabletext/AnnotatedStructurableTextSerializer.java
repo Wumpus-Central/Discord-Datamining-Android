@@ -16,7 +16,7 @@ import wi.f;
 
 public final class AnnotatedStructurableTextSerializer implements KSerializer<AnnotatedStructurableText> {
     public static final AnnotatedStructurableTextSerializer INSTANCE = new AnnotatedStructurableTextSerializer();
-    private static final SerialDescriptor descriptor = g.a("AnnotatedStructurableText", e.i.f29057a);
+    private static final SerialDescriptor descriptor = g.a("AnnotatedStructurableText", e.i.f29349a);
 
     private AnnotatedStructurableTextSerializer() {
     }
@@ -29,7 +29,7 @@ public final class AnnotatedStructurableTextSerializer implements KSerializer<An
     @Override 
     public AnnotatedStructurableText deserialize(Decoder decoder) {
         q.h(decoder, "decoder");
-        return new AnnotatedStructurableText((List) decoder.C(new f(ContentNodeSerializer.INSTANCE)));
+        return new AnnotatedStructurableText((List) decoder.G(new f(ContentNodeSerializer.INSTANCE)));
     }
 
     public void serialize(Encoder encoder, AnnotatedStructurableText value) {

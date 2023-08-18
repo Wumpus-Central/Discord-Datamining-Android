@@ -72,11 +72,11 @@ public final class PostSharePrompt {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.title);
-        output.h(serialDesc, 1, StructurableTextSerializer.INSTANCE, self.subtitle);
-        output.s(serialDesc, 2, self.cta);
-        output.s(serialDesc, 3, self.icon);
-        output.s(serialDesc, 4, self.closeIcon);
+        output.x(serialDesc, 0, self.title);
+        output.o(serialDesc, 1, StructurableTextSerializer.INSTANCE, self.subtitle);
+        output.x(serialDesc, 2, self.cta);
+        output.x(serialDesc, 3, self.icon);
+        output.x(serialDesc, 4, self.closeIcon);
     }
 
     public final String component1() {

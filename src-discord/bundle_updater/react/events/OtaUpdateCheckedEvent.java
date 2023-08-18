@@ -62,7 +62,7 @@ public final class OtaUpdateCheckedEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.h(serialDesc, 0, new wi.f(BundleUpdater$OtaMetric$$serializer.INSTANCE), self.metrics);
+        output.o(serialDesc, 0, new wi.f(BundleUpdater$OtaMetric$$serializer.INSTANCE), self.metrics);
     }
 
     public final List<BundleUpdater.OtaMetric> component1() {

@@ -54,7 +54,7 @@ public final class ParagraphContentNode extends ContentNode {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.h(serialDesc, 0, new wi.f(ContentNodeSerializer.INSTANCE), self.content);
+        output.o(serialDesc, 0, new wi.f(ContentNodeSerializer.INSTANCE), self.content);
     }
 
     public final List<ContentNode> component1() {

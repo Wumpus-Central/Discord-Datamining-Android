@@ -57,8 +57,8 @@ public final class ValueChangeEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.value);
-        output.q(serialDesc, 1, self.selectedSegmentIndex);
+        output.x(serialDesc, 0, self.value);
+        output.v(serialDesc, 1, self.selectedSegmentIndex);
     }
 
     public final String component1() {

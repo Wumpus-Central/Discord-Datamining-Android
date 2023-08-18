@@ -95,7 +95,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     
     public void mo151onLongPressAvatarx5gers8(String messageId, long j10) {
         q.h(messageId, "messageId");
-        this.emitReactEvent.invoke(new LongPressAvatarData(MessageId.m611toStringimpl(messageId), UserId.m650toStringimpl(j10)));
+        this.emitReactEvent.invoke(new LongPressAvatarData(MessageId.m613toStringimpl(messageId), UserId.m652toStringimpl(j10)));
     }
 
     @Override 
@@ -121,7 +121,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     
     public void mo153onLongPressUsernamex5gers8(String messageId, long j10) {
         q.h(messageId, "messageId");
-        this.emitReactEvent.invoke(new LongPressUsernameData(MessageId.m611toStringimpl(messageId), UserId.m650toStringimpl(j10)));
+        this.emitReactEvent.invoke(new LongPressUsernameData(MessageId.m613toStringimpl(messageId), UserId.m652toStringimpl(j10)));
     }
 
     @Override 
@@ -171,28 +171,28 @@ public class ChatViewEventHandler implements ChatEventHandler {
     @Override 
     
     public void mo156onTapActivityBookmarkEmbeduU1mFKc(long j10, long j11) {
-        this.emitReactEvent.invoke(new TapActivityBookmarkEmbedData(ApplicationId.m573toStringimpl(j10), ChannelId.m586toStringimpl(j11)));
+        this.emitReactEvent.invoke(new TapActivityBookmarkEmbedData(ApplicationId.m575toStringimpl(j10), ChannelId.m588toStringimpl(j11)));
     }
 
     @Override 
     
     public void mo157onTapAutoModerationActionspfaIj0E(String messageId, long j10) {
         q.h(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapAutoModerationActionsData(MessageId.m611toStringimpl(messageId), ChannelId.m586toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapAutoModerationActionsData(MessageId.m613toStringimpl(messageId), ChannelId.m588toStringimpl(j10)));
     }
 
     @Override 
     
     public void mo158onTapAutoModerationFeedbackpfaIj0E(String messageId, long j10) {
         q.h(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapAutoModerationFeedbackData(MessageId.m611toStringimpl(messageId), ChannelId.m586toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapAutoModerationFeedbackData(MessageId.m613toStringimpl(messageId), ChannelId.m588toStringimpl(j10)));
     }
 
     @Override 
     
     public void mo159onTapAvatarx5gers8(String messageId, long j10) {
         q.h(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapAvatarData(MessageId.m611toStringimpl(messageId), UserId.m650toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapAvatarData(MessageId.m613toStringimpl(messageId), UserId.m652toStringimpl(j10)));
     }
 
     @Override 
@@ -267,7 +267,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     
     public void mo163onTapFollowForumPostpfaIj0E(String messageId, long j10) {
         q.h(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapFollowForumPost(MessageId.m611toStringimpl(messageId), ChannelId.m586toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapFollowForumPost(MessageId.m613toStringimpl(messageId), ChannelId.m588toStringimpl(j10)));
     }
 
     @Override 
@@ -288,7 +288,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
         q.h(messageId, "messageId");
         q.h(type, "type");
         q.h(viewResizeMode, "viewResizeMode");
-        this.emitReactEvent.invoke(new TapImageData(MessageId.m611toStringimpl(messageId), i10, type, new TapImageData.Layout(i11, i12, i13, i14, viewResizeMode), d10, num));
+        this.emitReactEvent.invoke(new TapImageData(MessageId.m613toStringimpl(messageId), i10, type, new TapImageData.Layout(i11, i12, i13, i14, viewResizeMode), d10, num));
     }
 
     @Override 
@@ -339,7 +339,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     
     public void mo168onTapMessageReply0eiqbug(long j10, String originId) {
         q.h(originId, "originId");
-        this.emitReactEvent.invoke(new TapMessageReplyData(ChannelId.m586toStringimpl(j10), MessageId.m611toStringimpl(originId)));
+        this.emitReactEvent.invoke(new TapMessageReplyData(ChannelId.m588toStringimpl(j10), MessageId.m613toStringimpl(originId)));
     }
 
     @Override 
@@ -351,7 +351,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     
     public void mo169onTapPostPreviewEmbedkUTrps(long j10, long j11, long j12, String messageId) {
         q.h(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapPostPreviewEmbedData(GuildId.m599toStringimpl(j10), ChannelId.m586toStringimpl(j11), ChannelId.m586toStringimpl(j12), messageId, null));
+        this.emitReactEvent.invoke(new TapPostPreviewEmbedData(GuildId.m601toStringimpl(j10), ChannelId.m588toStringimpl(j11), ChannelId.m588toStringimpl(j12), messageId, null));
     }
 
     @Override 
@@ -365,7 +365,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     
     public void mo171onTapReactionOverflowpfaIj0E(String messageId, long j10) {
         q.h(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapReactionOverflow(MessageId.m611toStringimpl(messageId), ChannelId.m586toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapReactionOverflow(MessageId.m613toStringimpl(messageId), ChannelId.m588toStringimpl(j10)));
     }
 
     @Override 
@@ -400,7 +400,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     @Override 
     
     public void mo175onTapShareForumPostmgk6anA(long j10, long j11) {
-        this.emitReactEvent.invoke(new TapShareForumPost(ChannelId.m586toStringimpl(j10), GuildId.m599toStringimpl(j11)));
+        this.emitReactEvent.invoke(new TapShareForumPost(ChannelId.m588toStringimpl(j10), GuildId.m601toStringimpl(j11)));
     }
 
     @Override 
@@ -414,7 +414,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     public void mo176onTapSummarysekaTiM(long j10, String messageId, String summaryId) {
         q.h(messageId, "messageId");
         q.h(summaryId, "summaryId");
-        this.emitReactEvent.invoke(new TapSummaryData(ChannelId.m586toStringimpl(j10), MessageId.m611toStringimpl(messageId), summaryId));
+        this.emitReactEvent.invoke(new TapSummaryData(ChannelId.m588toStringimpl(j10), MessageId.m613toStringimpl(messageId), summaryId));
     }
 
     @Override 
@@ -422,7 +422,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     public void mo177onTapSummaryJumpsekaTiM(long j10, String messageId, String summaryId) {
         q.h(messageId, "messageId");
         q.h(summaryId, "summaryId");
-        this.emitReactEvent.invoke(new TapSummaryJumpData(ChannelId.m586toStringimpl(j10), MessageId.m611toStringimpl(messageId), summaryId));
+        this.emitReactEvent.invoke(new TapSummaryJumpData(ChannelId.m588toStringimpl(j10), MessageId.m613toStringimpl(messageId), summaryId));
     }
 
     @Override 
@@ -454,7 +454,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     
     public void mo180onTapToggleBlockedMessages1xi1bu0(String messageId) {
         q.h(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapSeparatorData("toggle", MessageId.m611toStringimpl(messageId)));
+        this.emitReactEvent.invoke(new TapSeparatorData("toggle", MessageId.m613toStringimpl(messageId)));
     }
 
     @Override 
@@ -467,7 +467,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     
     public void mo181onTapUsernamex5gers8(String messageId, long j10) {
         q.h(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapUsernameData(MessageId.m611toStringimpl(messageId), UserId.m650toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapUsernameData(MessageId.m613toStringimpl(messageId), UserId.m652toStringimpl(j10)));
     }
 
     @Override 

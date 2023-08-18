@@ -100,38 +100,38 @@ public final class ChatInputNode {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z13 = false;
-        output.q(serialDesc, 0, self.type);
-        output.q(serialDesc, 1, self.location);
-        output.q(serialDesc, 2, self.length);
-        if (!output.w(serialDesc, 3) && self.style == null) {
+        output.v(serialDesc, 0, self.type);
+        output.v(serialDesc, 1, self.location);
+        output.v(serialDesc, 2, self.length);
+        if (!output.z(serialDesc, 3) && self.style == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 3, ChatInputNodeStyle$$serializer.INSTANCE, self.style);
+            output.B(serialDesc, 3, ChatInputNodeStyle$$serializer.INSTANCE, self.style);
         }
-        if (!output.w(serialDesc, 4) && !self.deleteNodeOnBackspace) {
+        if (!output.z(serialDesc, 4) && !self.deleteNodeOnBackspace) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.r(serialDesc, 4, self.deleteNodeOnBackspace);
+            output.w(serialDesc, 4, self.deleteNodeOnBackspace);
         }
-        if (!output.w(serialDesc, 5) && self.tapAction == null) {
+        if (!output.z(serialDesc, 5) && self.tapAction == null) {
             z12 = false;
         } else {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 5, TapAction$$serializer.INSTANCE, self.tapAction);
+            output.B(serialDesc, 5, TapAction$$serializer.INSTANCE, self.tapAction);
         }
-        if (output.w(serialDesc, 6) || self.editDisabled) {
+        if (output.z(serialDesc, 6) || self.editDisabled) {
             z13 = true;
         }
         if (z13) {
-            output.r(serialDesc, 6, self.editDisabled);
+            output.w(serialDesc, 6, self.editDisabled);
         }
     }
 

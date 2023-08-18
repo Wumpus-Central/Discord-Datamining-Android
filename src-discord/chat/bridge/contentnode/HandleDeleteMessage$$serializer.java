@@ -40,7 +40,7 @@ public final class HandleDeleteMessage$$serializer implements f0<HandleDeleteMes
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a.u(a2.f29550a), HandleDeleteMessageAuthor$$serializer.INSTANCE};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a.u(a2.f29755a), HandleDeleteMessageAuthor$$serializer.INSTANCE};
     }
 
     @Override 
@@ -52,13 +52,13 @@ public final class HandleDeleteMessage$$serializer implements f0<HandleDeleteMes
         Object obj4;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         String str = null;
-        if (c10.y()) {
-            obj4 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
-            obj = c10.m(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
-            obj2 = c10.v(descriptor2, 2, a2.f29550a, null);
-            obj3 = c10.m(descriptor2, 3, HandleDeleteMessageAuthor$$serializer.INSTANCE, null);
+        if (b10.p()) {
+            obj4 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
+            obj = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
+            obj2 = b10.n(descriptor2, 2, a2.f29755a, null);
+            obj3 = b10.y(descriptor2, 3, HandleDeleteMessageAuthor$$serializer.INSTANCE, null);
             i10 = 15;
         } else {
             boolean z10 = true;
@@ -68,23 +68,23 @@ public final class HandleDeleteMessage$$serializer implements f0<HandleDeleteMes
             Object obj6 = null;
             Object obj7 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    obj4 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, obj4);
+                } else if (o10 == 0) {
+                    obj4 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, obj4);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    obj7 = c10.m(descriptor2, 1, ChannelId$$serializer.INSTANCE, obj7);
+                } else if (o10 == 1) {
+                    obj7 = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, obj7);
                     i11 |= 2;
-                } else if (x10 == 2) {
-                    obj6 = c10.v(descriptor2, 2, a2.f29550a, obj6);
+                } else if (o10 == 2) {
+                    obj6 = b10.n(descriptor2, 2, a2.f29755a, obj6);
                     i11 |= 4;
-                } else if (x10 == 3) {
-                    obj5 = c10.m(descriptor2, 3, HandleDeleteMessageAuthor$$serializer.INSTANCE, obj5);
+                } else if (o10 == 3) {
+                    obj5 = b10.y(descriptor2, 3, HandleDeleteMessageAuthor$$serializer.INSTANCE, obj5);
                     i11 |= 8;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             obj3 = obj5;
@@ -92,10 +92,10 @@ public final class HandleDeleteMessage$$serializer implements f0<HandleDeleteMes
             obj = obj7;
             i10 = i11;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         MessageId messageId = (MessageId) obj4;
         if (messageId != null) {
-            str = messageId.m613unboximpl();
+            str = messageId.m615unboximpl();
         }
         return new HandleDeleteMessage(i10, str, (ChannelId) obj, (String) obj2, (HandleDeleteMessageAuthor) obj3, null, null);
     }
@@ -109,9 +109,9 @@ public final class HandleDeleteMessage$$serializer implements f0<HandleDeleteMes
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        HandleDeleteMessage.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        HandleDeleteMessage.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

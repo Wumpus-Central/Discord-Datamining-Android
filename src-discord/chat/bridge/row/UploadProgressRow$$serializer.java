@@ -39,7 +39,7 @@ public final class UploadProgressRow$$serializer implements f0<UploadProgressRow
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f29625a, ChangeType.Serializer.INSTANCE, Message$$serializer.INSTANCE, a2.f29550a};
+        return new KSerializer[]{m0.f29830a, ChangeType.Serializer.INSTANCE, Message$$serializer.INSTANCE, a2.f29755a};
     }
 
     @Override 
@@ -51,12 +51,12 @@ public final class UploadProgressRow$$serializer implements f0<UploadProgressRow
         Object obj2;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            i10 = c10.k(descriptor2, 0);
-            obj = c10.m(descriptor2, 1, ChangeType.Serializer.INSTANCE, null);
-            obj2 = c10.m(descriptor2, 2, Message$$serializer.INSTANCE, null);
-            str = c10.t(descriptor2, 3);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            i10 = b10.i(descriptor2, 0);
+            obj = b10.y(descriptor2, 1, ChangeType.Serializer.INSTANCE, null);
+            obj2 = b10.y(descriptor2, 2, Message$$serializer.INSTANCE, null);
+            str = b10.m(descriptor2, 3);
             i11 = 15;
         } else {
             boolean z10 = true;
@@ -66,23 +66,23 @@ public final class UploadProgressRow$$serializer implements f0<UploadProgressRow
             String str2 = null;
             int i13 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    i12 = c10.k(descriptor2, 0);
+                } else if (o10 == 0) {
+                    i12 = b10.i(descriptor2, 0);
                     i13 |= 1;
-                } else if (x10 == 1) {
-                    obj3 = c10.m(descriptor2, 1, ChangeType.Serializer.INSTANCE, obj3);
+                } else if (o10 == 1) {
+                    obj3 = b10.y(descriptor2, 1, ChangeType.Serializer.INSTANCE, obj3);
                     i13 |= 2;
-                } else if (x10 == 2) {
-                    obj4 = c10.m(descriptor2, 2, Message$$serializer.INSTANCE, obj4);
+                } else if (o10 == 2) {
+                    obj4 = b10.y(descriptor2, 2, Message$$serializer.INSTANCE, obj4);
                     i13 |= 4;
-                } else if (x10 == 3) {
-                    str2 = c10.t(descriptor2, 3);
+                } else if (o10 == 3) {
+                    str2 = b10.m(descriptor2, 3);
                     i13 |= 8;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i10 = i12;
@@ -91,7 +91,7 @@ public final class UploadProgressRow$$serializer implements f0<UploadProgressRow
             obj2 = obj4;
             str = str2;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new UploadProgressRow(i11, i10, (ChangeType) obj, (Message) obj2, str, null);
     }
 
@@ -104,9 +104,9 @@ public final class UploadProgressRow$$serializer implements f0<UploadProgressRow
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        UploadProgressRow.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        UploadProgressRow.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

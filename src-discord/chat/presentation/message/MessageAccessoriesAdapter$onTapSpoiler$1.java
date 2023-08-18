@@ -24,7 +24,7 @@ public final class MessageAccessoriesAdapter$onTapSpoiler$1 extends s implements
     @Override 
     public   Unit invoke(MessagePartViewHolder messagePartViewHolder) {
         invoke2(messagePartViewHolder);
-        return Unit.f21036a;
+        return Unit.f21210a;
     }
 
     

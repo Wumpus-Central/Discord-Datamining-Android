@@ -44,8 +44,8 @@ public final class GiftEmbed$Resolved$Invalid$$serializer implements f0<GiftEmbe
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        m0 m0Var = m0.f29625a;
+        a2 a2Var = a2.f29755a;
+        m0 m0Var = m0.f29830a;
         return new KSerializer[]{a2Var, m0Var, m0Var, m0Var, a2Var, a2Var, m0Var, a2Var, m0Var, m0Var};
     }
 
@@ -64,19 +64,19 @@ public final class GiftEmbed$Resolved$Invalid$$serializer implements f0<GiftEmbe
         int i16;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i17 = 0;
-        if (c10.y()) {
-            str4 = c10.t(descriptor2, 0);
-            i15 = c10.k(descriptor2, 1);
-            i14 = c10.k(descriptor2, 2);
-            i13 = c10.k(descriptor2, 3);
-            str3 = c10.t(descriptor2, 4);
-            str2 = c10.t(descriptor2, 5);
-            i12 = c10.k(descriptor2, 6);
-            str = c10.t(descriptor2, 7);
-            i11 = c10.k(descriptor2, 8);
-            i10 = c10.k(descriptor2, 9);
+        if (b10.p()) {
+            str4 = b10.m(descriptor2, 0);
+            i15 = b10.i(descriptor2, 1);
+            i14 = b10.i(descriptor2, 2);
+            i13 = b10.i(descriptor2, 3);
+            str3 = b10.m(descriptor2, 4);
+            str2 = b10.m(descriptor2, 5);
+            i12 = b10.i(descriptor2, 6);
+            str = b10.m(descriptor2, 7);
+            i11 = b10.i(descriptor2, 8);
+            i10 = b10.i(descriptor2, 9);
             i16 = 1023;
         } else {
             String str5 = null;
@@ -91,53 +91,53 @@ public final class GiftEmbed$Resolved$Invalid$$serializer implements f0<GiftEmbe
             int i21 = 0;
             int i22 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z10 = false;
                         break;
                     case 0:
-                        str5 = c10.t(descriptor2, 0);
+                        str5 = b10.m(descriptor2, 0);
                         i17 |= 1;
                         continue;
                     case 1:
-                        i22 = c10.k(descriptor2, 1);
+                        i22 = b10.i(descriptor2, 1);
                         i17 |= 2;
                         continue;
                     case 2:
-                        i21 = c10.k(descriptor2, 2);
+                        i21 = b10.i(descriptor2, 2);
                         i17 |= 4;
                         break;
                     case 3:
-                        i13 = c10.k(descriptor2, 3);
+                        i13 = b10.i(descriptor2, 3);
                         i17 |= 8;
                         break;
                     case 4:
-                        str8 = c10.t(descriptor2, 4);
+                        str8 = b10.m(descriptor2, 4);
                         i17 |= 16;
                         break;
                     case 5:
-                        str7 = c10.t(descriptor2, 5);
+                        str7 = b10.m(descriptor2, 5);
                         i17 |= 32;
                         break;
                     case 6:
-                        i19 = c10.k(descriptor2, 6);
+                        i19 = b10.i(descriptor2, 6);
                         i17 |= 64;
                         break;
                     case 7:
-                        str6 = c10.t(descriptor2, 7);
+                        str6 = b10.m(descriptor2, 7);
                         i17 |= 128;
                         break;
                     case 8:
-                        i20 = c10.k(descriptor2, 8);
+                        i20 = b10.i(descriptor2, 8);
                         i17 |= 256;
                         break;
                     case 9:
-                        i18 = c10.k(descriptor2, 9);
+                        i18 = b10.i(descriptor2, 9);
                         i17 |= 512;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             i10 = i18;
@@ -151,7 +151,7 @@ public final class GiftEmbed$Resolved$Invalid$$serializer implements f0<GiftEmbe
             str = str6;
             str4 = str5;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new GiftEmbed.Resolved.Invalid(i16, str4, i15, i14, i13, str3, str2, i12, str, i11, i10, null);
     }
 
@@ -164,9 +164,9 @@ public final class GiftEmbed$Resolved$Invalid$$serializer implements f0<GiftEmbe
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        GiftEmbed.Resolved.Invalid.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        GiftEmbed.Resolved.Invalid.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

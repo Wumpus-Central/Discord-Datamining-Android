@@ -94,35 +94,35 @@ public final class LongPressChannelData implements ReactEvent {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z13 = false;
-        if (!output.w(serialDesc, 0) && self.guildId == null) {
+        if (!output.z(serialDesc, 0) && self.guildId == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, a2.f29550a, self.guildId);
+            output.B(serialDesc, 0, a2.f29755a, self.guildId);
         }
-        if (!output.w(serialDesc, 1) && self.channelId == null) {
+        if (!output.z(serialDesc, 1) && self.channelId == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 1, a2.f29550a, self.channelId);
+            output.B(serialDesc, 1, a2.f29755a, self.channelId);
         }
-        if (!output.w(serialDesc, 2) && self.messageId == null) {
+        if (!output.z(serialDesc, 2) && self.messageId == null) {
             z12 = false;
         } else {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 2, a2.f29550a, self.messageId);
+            output.B(serialDesc, 2, a2.f29755a, self.messageId);
         }
-        if (output.w(serialDesc, 3) || self.originalLink != null) {
+        if (output.z(serialDesc, 3) || self.originalLink != null) {
             z13 = true;
         }
         if (z13) {
-            output.z(serialDesc, 3, a2.f29550a, self.originalLink);
+            output.B(serialDesc, 3, a2.f29755a, self.originalLink);
         }
     }
 

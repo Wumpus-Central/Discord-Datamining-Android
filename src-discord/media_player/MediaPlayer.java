@@ -192,7 +192,7 @@ public final class MediaPlayer {
         q.h(dataSourceFactory, "dataSourceFactory");
         this.exoPlayer = exoPlayer;
         this.dataSourceFactory = dataSourceFactory;
-        exoPlayer.q(new Player.a() { 
+        exoPlayer.K(new Player.a() { 
             @Override 
             public   void onEvents(Player player, Player.Events events) {
                 o.a(this, player, events);
@@ -218,7 +218,7 @@ public final class MediaPlayer {
                 o.e(this, z10);
                 if (z10) {
                     MediaPlayer.this.setEvent(Event.StartedPlaying.INSTANCE);
-                } else if (MediaPlayer.this.exoPlayer.C() != 4) {
+                } else if (MediaPlayer.this.exoPlayer.P() != 4) {
                     MediaPlayer.this.setEvent(Event.Paused.INSTANCE);
                 }
             }
@@ -471,9 +471,9 @@ public final class MediaPlayer {
                 q.h(eventTime, "eventTime");
                 q.h(loadEventInfo, "loadEventInfo");
                 q.h(mediaLoadData, "mediaLoadData");
-                if (!loadEventInfo.f9393d.isEmpty()) {
+                if (!loadEventInfo.f9541d.isEmpty()) {
                     DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9396g);
+                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9544g);
                 }
             }
 
@@ -482,9 +482,9 @@ public final class MediaPlayer {
                 q.h(eventTime, "eventTime");
                 q.h(loadEventInfo, "loadEventInfo");
                 q.h(mediaLoadData, "mediaLoadData");
-                if (!loadEventInfo.f9393d.isEmpty()) {
+                if (!loadEventInfo.f9541d.isEmpty()) {
                     DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9396g);
+                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9544g);
                 }
             }
 
@@ -494,9 +494,9 @@ public final class MediaPlayer {
                 q.h(loadEventInfo, "loadEventInfo");
                 q.h(mediaLoadData, "mediaLoadData");
                 q.h(error, "error");
-                if (!loadEventInfo.f9393d.isEmpty()) {
+                if (!loadEventInfo.f9541d.isEmpty()) {
                     DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9396g);
+                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9544g);
                 }
             }
 
@@ -691,7 +691,7 @@ public final class MediaPlayer {
     }
 
     public final long currentPositionMs() {
-        return this.exoPlayer.X();
+        return this.exoPlayer.Y();
     }
 
     public final float currentPositionPercentage() {
@@ -715,11 +715,11 @@ public final class MediaPlayer {
     }
 
     public final boolean hasEnded() {
-        return this.exoPlayer.C() == 4;
+        return this.exoPlayer.P() == 4;
     }
 
     public final boolean hasError() {
-        return this.exoPlayer.v() != null;
+        return this.exoPlayer.m() != null;
     }
 
     public final boolean isMuted() {
@@ -727,15 +727,15 @@ public final class MediaPlayer {
     }
 
     public final boolean isPlaying() {
-        return this.exoPlayer.D();
+        return this.exoPlayer.Q();
     }
 
     public final void pause() {
-        this.exoPlayer.w(false);
+        this.exoPlayer.n(false);
     }
 
     public final void play() {
-        this.exoPlayer.w(true);
+        this.exoPlayer.n(true);
     }
 
     public final void preparePlayer(MediaSource mediaSource, boolean z10, boolean z11, long j10, MediaPlayerView mediaPlayerView, MediaPlayerView.ControlView controlView) {
@@ -750,8 +750,8 @@ public final class MediaPlayer {
         SimpleExoPlayer simpleExoPlayer = this.exoPlayer;
         simpleExoPlayer.X0(c10);
         simpleExoPlayer.c0(j10);
-        simpleExoPlayer.H(z11 ? 1 : 0);
-        simpleExoPlayer.d();
+        simpleExoPlayer.S(z11 ? 1 : 0);
+        simpleExoPlayer.c();
         if (mediaPlayerView != null) {
             mediaPlayerView.setPlayer$media_player_release(this.exoPlayer);
         }
@@ -765,7 +765,7 @@ public final class MediaPlayer {
 
     public final void reset() {
         seekTo(0L);
-        this.exoPlayer.w(false);
+        this.exoPlayer.n(false);
     }
 
     public final void seekTo(long j10) {
@@ -792,6 +792,6 @@ public final class MediaPlayer {
     }
 
     public final boolean shouldPlay() {
-        return this.exoPlayer.h();
+        return this.exoPlayer.F();
     }
 }

@@ -47,7 +47,7 @@ public final class MediaEngine$setBroadcastThumbnailParams$1$1 extends s impleme
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21210a);
         }
 
         @Override 
@@ -70,7 +70,7 @@ public final class MediaEngine$setBroadcastThumbnailParams$1$1 extends s impleme
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             this.$callback.invoke((String) obj);
-            return Unit.f21036a;
+            return Unit.f21210a;
         }
     }
 
@@ -86,7 +86,7 @@ public final class MediaEngine$setBroadcastThumbnailParams$1$1 extends s impleme
     @Override 
     public   Unit invoke(Bitmap bitmap) {
         invoke2(bitmap);
-        return Unit.f21036a;
+        return Unit.f21210a;
     }
 
     

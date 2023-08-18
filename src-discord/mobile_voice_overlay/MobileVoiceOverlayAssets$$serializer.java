@@ -42,7 +42,7 @@ public final class MobileVoiceOverlayAssets$$serializer implements f0<MobileVoic
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
+        a2 a2Var = a2.f29755a;
         return new KSerializer[]{a2Var, a2Var, a2Var, a2Var, a2Var, a2Var, a2Var, a2Var, a2Var, a2Var, a2Var};
     }
 
@@ -62,20 +62,20 @@ public final class MobileVoiceOverlayAssets$$serializer implements f0<MobileVoic
         int i10;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i11 = 0;
-        if (c10.y()) {
-            str11 = c10.t(descriptor2, 0);
-            str10 = c10.t(descriptor2, 1);
-            str9 = c10.t(descriptor2, 2);
-            str8 = c10.t(descriptor2, 3);
-            str7 = c10.t(descriptor2, 4);
-            str6 = c10.t(descriptor2, 5);
-            str5 = c10.t(descriptor2, 6);
-            str4 = c10.t(descriptor2, 7);
-            str3 = c10.t(descriptor2, 8);
-            str2 = c10.t(descriptor2, 9);
-            str = c10.t(descriptor2, 10);
+        if (b10.p()) {
+            str11 = b10.m(descriptor2, 0);
+            str10 = b10.m(descriptor2, 1);
+            str9 = b10.m(descriptor2, 2);
+            str8 = b10.m(descriptor2, 3);
+            str7 = b10.m(descriptor2, 4);
+            str6 = b10.m(descriptor2, 5);
+            str5 = b10.m(descriptor2, 6);
+            str4 = b10.m(descriptor2, 7);
+            str3 = b10.m(descriptor2, 8);
+            str2 = b10.m(descriptor2, 9);
+            str = b10.m(descriptor2, 10);
             i10 = 2047;
         } else {
             String str12 = null;
@@ -91,57 +91,57 @@ public final class MobileVoiceOverlayAssets$$serializer implements f0<MobileVoic
             String str22 = null;
             boolean z10 = true;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z10 = false;
                         break;
                     case 0:
-                        str12 = c10.t(descriptor2, 0);
+                        str12 = b10.m(descriptor2, 0);
                         i11 |= 1;
                         continue;
                     case 1:
-                        str22 = c10.t(descriptor2, 1);
+                        str22 = b10.m(descriptor2, 1);
                         i11 |= 2;
                         continue;
                     case 2:
-                        str21 = c10.t(descriptor2, 2);
+                        str21 = b10.m(descriptor2, 2);
                         i11 |= 4;
                         break;
                     case 3:
-                        str18 = c10.t(descriptor2, 3);
+                        str18 = b10.m(descriptor2, 3);
                         i11 |= 8;
                         break;
                     case 4:
-                        str20 = c10.t(descriptor2, 4);
+                        str20 = b10.m(descriptor2, 4);
                         i11 |= 16;
                         break;
                     case 5:
-                        str17 = c10.t(descriptor2, 5);
+                        str17 = b10.m(descriptor2, 5);
                         i11 |= 32;
                         break;
                     case 6:
-                        str16 = c10.t(descriptor2, 6);
+                        str16 = b10.m(descriptor2, 6);
                         i11 |= 64;
                         break;
                     case 7:
-                        str15 = c10.t(descriptor2, 7);
+                        str15 = b10.m(descriptor2, 7);
                         i11 |= 128;
                         break;
                     case 8:
-                        str19 = c10.t(descriptor2, 8);
+                        str19 = b10.m(descriptor2, 8);
                         i11 |= 256;
                         break;
                     case 9:
-                        str14 = c10.t(descriptor2, 9);
+                        str14 = b10.m(descriptor2, 9);
                         i11 |= 512;
                         break;
                     case 10:
-                        str13 = c10.t(descriptor2, 10);
+                        str13 = b10.m(descriptor2, 10);
                         i11 |= 1024;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             str = str13;
@@ -157,7 +157,7 @@ public final class MobileVoiceOverlayAssets$$serializer implements f0<MobileVoic
             str5 = str16;
             str9 = str21;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new MobileVoiceOverlayAssets(i10, str11, str10, str9, str8, str7, str6, str5, str4, str3, str2, str, null);
     }
 
@@ -170,9 +170,9 @@ public final class MobileVoiceOverlayAssets$$serializer implements f0<MobileVoic
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        MobileVoiceOverlayAssets.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        MobileVoiceOverlayAssets.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

@@ -7,7 +7,7 @@ import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import com.discord.chat.R;
 import com.facebook.drawee.view.SimpleDraweeView;
-import v0.a;
+import u0.a;
 
 
 public final class ComponentFailedLabelViewBinding {

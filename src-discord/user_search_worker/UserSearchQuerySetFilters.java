@@ -81,27 +81,27 @@ public final class UserSearchQuerySetFilters {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z12 = false;
-        if (!output.w(serialDesc, 0) && self.guild == null) {
+        if (!output.z(serialDesc, 0) && self.guild == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, a2.f29550a, self.guild);
+            output.B(serialDesc, 0, a2.f29755a, self.guild);
         }
-        if (!output.w(serialDesc, 1) && self.friends == null) {
+        if (!output.z(serialDesc, 1) && self.friends == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 1, h.f29592a, self.friends);
+            output.B(serialDesc, 1, h.f29797a, self.friends);
         }
-        if (output.w(serialDesc, 2) || self.strict != null) {
+        if (output.z(serialDesc, 2) || self.strict != null) {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 2, h.f29592a, self.strict);
+            output.B(serialDesc, 2, h.f29797a, self.strict);
         }
     }
 

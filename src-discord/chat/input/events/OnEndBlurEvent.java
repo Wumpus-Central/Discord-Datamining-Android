@@ -52,7 +52,7 @@ public final class OnEndBlurEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.text);
+        output.x(serialDesc, 0, self.text);
     }
 
     public final String component1() {

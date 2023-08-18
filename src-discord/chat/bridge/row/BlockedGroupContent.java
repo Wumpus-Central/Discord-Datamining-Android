@@ -55,7 +55,7 @@ public final class BlockedGroupContent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.h(serialDesc, 0, MessageSerializer.INSTANCE, self.message);
+        output.o(serialDesc, 0, MessageSerializer.INSTANCE, self.message);
     }
 
     public final MessageBase component1() {

@@ -40,7 +40,7 @@ public final class BulletListContentNode$$serializer implements f0<BulletListCon
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a.u(w0.f29666a), h.f29592a, new f(new f(ContentNodeSerializer.INSTANCE))};
+        return new KSerializer[]{a.u(w0.f29871a), h.f29797a, new f(new f(ContentNodeSerializer.INSTANCE))};
     }
 
     @Override 
@@ -51,11 +51,11 @@ public final class BulletListContentNode$$serializer implements f0<BulletListCon
         Object obj2;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            obj2 = c10.v(descriptor2, 0, w0.f29666a, null);
-            z10 = c10.s(descriptor2, 1);
-            obj = c10.m(descriptor2, 2, new f(new f(ContentNodeSerializer.INSTANCE)), null);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            obj2 = b10.n(descriptor2, 0, w0.f29871a, null);
+            z10 = b10.C(descriptor2, 1);
+            obj = b10.y(descriptor2, 2, new f(new f(ContentNodeSerializer.INSTANCE)), null);
             i10 = 7;
         } else {
             boolean z11 = true;
@@ -64,20 +64,20 @@ public final class BulletListContentNode$$serializer implements f0<BulletListCon
             Object obj4 = null;
             int i11 = 0;
             while (z11) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z11 = false;
-                } else if (x10 == 0) {
-                    obj3 = c10.v(descriptor2, 0, w0.f29666a, obj3);
+                } else if (o10 == 0) {
+                    obj3 = b10.n(descriptor2, 0, w0.f29871a, obj3);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    z12 = c10.s(descriptor2, 1);
+                } else if (o10 == 1) {
+                    z12 = b10.C(descriptor2, 1);
                     i11 |= 2;
-                } else if (x10 == 2) {
-                    obj4 = c10.m(descriptor2, 2, new f(new f(ContentNodeSerializer.INSTANCE)), obj4);
+                } else if (o10 == 2) {
+                    obj4 = b10.y(descriptor2, 2, new f(new f(ContentNodeSerializer.INSTANCE)), obj4);
                     i11 |= 4;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i10 = i11;
@@ -85,7 +85,7 @@ public final class BulletListContentNode$$serializer implements f0<BulletListCon
             z10 = z12;
             obj2 = obj3;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new BulletListContentNode(i10, (Long) obj2, z10, (List) obj, (SerializationConstructorMarker) null);
     }
 
@@ -98,9 +98,9 @@ public final class BulletListContentNode$$serializer implements f0<BulletListCon
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        BulletListContentNode.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        BulletListContentNode.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

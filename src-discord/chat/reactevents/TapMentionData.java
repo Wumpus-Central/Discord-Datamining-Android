@@ -57,8 +57,8 @@ public final class TapMentionData implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.userId);
-        output.s(serialDesc, 1, self.channelId);
+        output.x(serialDesc, 0, self.userId);
+        output.x(serialDesc, 1, self.channelId);
     }
 
     public final String component1() {

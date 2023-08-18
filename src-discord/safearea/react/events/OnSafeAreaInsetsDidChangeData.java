@@ -70,11 +70,11 @@ public final class OnSafeAreaInsetsDidChangeData implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.m(serialDesc, 0, self.top);
-        output.m(serialDesc, 1, self.bottom);
-        output.m(serialDesc, 2, self.left);
-        output.m(serialDesc, 3, self.right);
-        output.m(serialDesc, 4, self.imeInsetsBottom);
+        output.r(serialDesc, 0, self.top);
+        output.r(serialDesc, 1, self.bottom);
+        output.r(serialDesc, 2, self.left);
+        output.r(serialDesc, 3, self.right);
+        output.r(serialDesc, 4, self.imeInsetsBottom);
     }
 
     public final float component1() {

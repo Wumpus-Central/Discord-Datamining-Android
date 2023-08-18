@@ -56,7 +56,7 @@ public final class NearbyManager extends b {
         this.onFoundUser = onFoundUser;
         this.onLostUser = onLostUser;
         this.onError = onError;
-        SubscribeOptions a10 = new SubscribeOptions.a().b(i.f6282s).a();
+        SubscribeOptions a10 = new SubscribeOptions.a().b(i.f6421r).a();
         q.g(a10, "Builder()\n        .setSt…DEFAULT)\n        .build()");
         this.subscribeOptions = a10;
     }
@@ -64,13 +64,13 @@ public final class NearbyManager extends b {
     public final void disableNearby(Context context) {
         q.h(context, "context");
         d a10 = a.a(context);
-        a10.b(this.statusCallback);
+        a10.a(this.statusCallback);
         Message message = this.outboundMessage;
         if (message == null) {
             q.z("outboundMessage");
             message = null;
         }
-        a10.a(message);
+        a10.c(message);
         a10.f(this);
     }
 
@@ -83,7 +83,7 @@ public final class NearbyManager extends b {
         }
         d a10 = a.a(context);
         a10.e(this.statusCallback);
-        a10.d(message);
+        a10.b(message);
         a10.g(this, this.subscribeOptions);
     }
 
@@ -92,9 +92,9 @@ public final class NearbyManager extends b {
         q.h(message, "message");
         super.onFound(message);
         Function1<String, Unit> function1 = this.onFoundUser;
-        byte[] p10 = message.p();
-        q.g(p10, "message.content");
-        function1.invoke(new String(p10, ni.d.f24685b));
+        byte[] l10 = message.l();
+        q.g(l10, "message.content");
+        function1.invoke(new String(l10, ni.a.f24903b));
     }
 
     @Override 
@@ -102,14 +102,14 @@ public final class NearbyManager extends b {
         q.h(message, "message");
         super.onLost(message);
         Function1<String, Unit> function1 = this.onLostUser;
-        byte[] p10 = message.p();
-        q.g(p10, "message.content");
-        function1.invoke(new String(p10, ni.d.f24685b));
+        byte[] l10 = message.l();
+        q.g(l10, "message.content");
+        function1.invoke(new String(l10, ni.a.f24903b));
     }
 
     public final void setOutboundMessage(String message) {
         q.h(message, "message");
-        byte[] bytes = message.getBytes(ni.d.f24685b);
+        byte[] bytes = message.getBytes(ni.a.f24903b);
         q.g(bytes, "this as java.lang.String).getBytes(charset)");
         this.outboundMessage = new Message(bytes);
     }

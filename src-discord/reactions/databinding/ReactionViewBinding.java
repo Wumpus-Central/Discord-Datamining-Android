@@ -7,7 +7,7 @@ import android.widget.TextSwitcher;
 import android.widget.TextView;
 import com.discord.reactions.R;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
-import v0.a;
+import u0.a;
 
 
 public final class ReactionViewBinding {

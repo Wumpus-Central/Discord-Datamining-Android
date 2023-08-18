@@ -10,7 +10,7 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.s;
-import ni.v;
+import kotlin.text.p;
 
 
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "crash", "Lcom/discord/crash_reporting/system_logs/SystemLogUtils$Tombstone;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
@@ -31,7 +31,7 @@ public final class SystemLogReport$reportLastCrash$1 extends s implements Functi
     @Override 
     public   Unit invoke(SystemLogUtils.Tombstone tombstone) {
         invoke2(tombstone);
-        return Unit.f21036a;
+        return Unit.f21210a;
     }
 
     
@@ -40,7 +40,7 @@ public final class SystemLogReport$reportLastCrash$1 extends s implements Functi
         List<String> z02;
         if (tombstone != null) {
             Context context = this.$context;
-            z02 = v.z0(tombstone.getText(), new String[]{ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE}, false, 0, 6, null);
+            z02 = p.z0(tombstone.getText(), new String[]{ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE}, false, 0, 6, null);
             for (String str : z02) {
                 SystemLogReport.INSTANCE.recordBreadcrumb(str, "Tombstone");
             }

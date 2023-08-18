@@ -16,8 +16,8 @@ public final class FileUtilsKt {
         q.h(outputFile, "outputFile");
         th = null;
         try {
-            m.c(n.g(outputFile, false, 1, th)).Y(m.l(inputStream));
-            Unit unit = Unit.f21036a;
+            m.c(n.g(outputFile, false, 1, th)).O(m.l(inputStream));
+            Unit unit = Unit.f21210a;
             return outputFile;
         } finally {
             try {

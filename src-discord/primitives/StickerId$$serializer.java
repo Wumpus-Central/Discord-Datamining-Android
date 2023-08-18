@@ -29,18 +29,18 @@ public final class StickerId$$serializer implements f0<StickerId> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f29666a};
+        return new KSerializer[]{w0.f29871a};
     }
 
     @Override 
     public   Object deserialize(Decoder decoder) {
-        return StickerId.m630boximpl(m640deserializeaEuejx8(decoder));
+        return StickerId.m632boximpl(m642deserializeaEuejx8(decoder));
     }
 
     
-    public long m640deserializeaEuejx8(Decoder decoder) {
+    public long m642deserializeaEuejx8(Decoder decoder) {
         q.h(decoder, "decoder");
-        return StickerId.m631constructorimpl(decoder.z(getDescriptor()).r());
+        return StickerId.m633constructorimpl(decoder.q(getDescriptor()).l());
     }
 
     @Override 
@@ -50,15 +50,15 @@ public final class StickerId$$serializer implements f0<StickerId> {
 
     @Override 
     public   void serialize(Encoder encoder, Object obj) {
-        m641serializePw5X2A(encoder, ((StickerId) obj).m639unboximpl());
+        m643serializePw5X2A(encoder, ((StickerId) obj).m641unboximpl());
     }
 
     
-    public void m641serializePw5X2A(Encoder encoder, long j10) {
+    public void m643serializePw5X2A(Encoder encoder, long j10) {
         q.h(encoder, "encoder");
-        Encoder y10 = encoder.y(getDescriptor());
-        if (y10 != null) {
-            y10.C(j10);
+        Encoder j11 = encoder.j(getDescriptor());
+        if (j11 != null) {
+            j11.k(j10);
         }
     }
 

@@ -81,22 +81,22 @@ public final class ChannelNameContentNode extends ContentNode {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z11 = false;
-        if (!output.w(serialDesc, 0) && self.channelType == null) {
+        if (!output.z(serialDesc, 0) && self.channelType == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, ChannelType.Serializer.INSTANCE, self.channelType);
+            output.B(serialDesc, 0, ChannelType.Serializer.INSTANCE, self.channelType);
         }
-        output.s(serialDesc, 1, self.iconType);
-        if (output.w(serialDesc, 2) || self.icon != null) {
+        output.x(serialDesc, 1, self.iconType);
+        if (output.z(serialDesc, 2) || self.icon != null) {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 2, a2.f29550a, self.icon);
+            output.B(serialDesc, 2, a2.f29755a, self.icon);
         }
-        output.h(serialDesc, 3, new wi.f(ContentNodeSerializer.INSTANCE), self.content);
+        output.o(serialDesc, 3, new wi.f(ContentNodeSerializer.INSTANCE), self.content);
     }
 
     public final ChannelType component1() {

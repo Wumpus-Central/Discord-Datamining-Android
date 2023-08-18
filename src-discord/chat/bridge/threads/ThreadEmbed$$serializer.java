@@ -40,8 +40,8 @@ public final class ThreadEmbed$$serializer implements f0<ThreadEmbed> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        return new KSerializer[]{a2Var, a2Var, a.u(a2Var), a.u(h.f29592a), a.u(a2Var), a.u(ThreadEmbedMessage$$serializer.INSTANCE)};
+        a2 a2Var = a2.f29755a;
+        return new KSerializer[]{a2Var, a2Var, a.u(a2Var), a.u(h.f29797a), a.u(a2Var), a.u(ThreadEmbedMessage$$serializer.INSTANCE)};
     }
 
     @Override 
@@ -55,16 +55,16 @@ public final class ThreadEmbed$$serializer implements f0<ThreadEmbed> {
         Object obj4;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         String str3 = null;
-        if (c10.y()) {
-            str2 = c10.t(descriptor2, 0);
-            str = c10.t(descriptor2, 1);
-            a2 a2Var = a2.f29550a;
-            obj = c10.v(descriptor2, 2, a2Var, null);
-            obj3 = c10.v(descriptor2, 3, h.f29592a, null);
-            obj2 = c10.v(descriptor2, 4, a2Var, null);
-            obj4 = c10.v(descriptor2, 5, ThreadEmbedMessage$$serializer.INSTANCE, null);
+        if (b10.p()) {
+            str2 = b10.m(descriptor2, 0);
+            str = b10.m(descriptor2, 1);
+            a2 a2Var = a2.f29755a;
+            obj = b10.n(descriptor2, 2, a2Var, null);
+            obj3 = b10.n(descriptor2, 3, h.f29797a, null);
+            obj2 = b10.n(descriptor2, 4, a2Var, null);
+            obj4 = b10.n(descriptor2, 5, ThreadEmbedMessage$$serializer.INSTANCE, null);
             i10 = 63;
         } else {
             boolean z10 = true;
@@ -75,37 +75,37 @@ public final class ThreadEmbed$$serializer implements f0<ThreadEmbed> {
             Object obj7 = null;
             Object obj8 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z10 = false;
                         continue;
                     case 0:
-                        str3 = c10.t(descriptor2, 0);
+                        str3 = b10.m(descriptor2, 0);
                         i11 |= 1;
                         continue;
                     case 1:
-                        str4 = c10.t(descriptor2, 1);
+                        str4 = b10.m(descriptor2, 1);
                         i11 |= 2;
                         break;
                     case 2:
-                        obj5 = c10.v(descriptor2, 2, a2.f29550a, obj5);
+                        obj5 = b10.n(descriptor2, 2, a2.f29755a, obj5);
                         i11 |= 4;
                         break;
                     case 3:
-                        obj6 = c10.v(descriptor2, 3, h.f29592a, obj6);
+                        obj6 = b10.n(descriptor2, 3, h.f29797a, obj6);
                         i11 |= 8;
                         break;
                     case 4:
-                        obj7 = c10.v(descriptor2, 4, a2.f29550a, obj7);
+                        obj7 = b10.n(descriptor2, 4, a2.f29755a, obj7);
                         i11 |= 16;
                         break;
                     case 5:
-                        obj8 = c10.v(descriptor2, 5, ThreadEmbedMessage$$serializer.INSTANCE, obj8);
+                        obj8 = b10.n(descriptor2, 5, ThreadEmbedMessage$$serializer.INSTANCE, obj8);
                         i11 |= 32;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             obj = obj5;
@@ -116,7 +116,7 @@ public final class ThreadEmbed$$serializer implements f0<ThreadEmbed> {
             str = str4;
             i10 = i11;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new ThreadEmbed(i10, str2, str, (String) obj, (Boolean) obj3, (String) obj2, (ThreadEmbedMessage) obj4, (SerializationConstructorMarker) null);
     }
 
@@ -129,9 +129,9 @@ public final class ThreadEmbed$$serializer implements f0<ThreadEmbed> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        ThreadEmbed.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        ThreadEmbed.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

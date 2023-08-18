@@ -24,7 +24,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
     private final String displayName;
 
     
-    private final String f7110id;
+    private final String f7252id;
     private final String name;
     private final String src;
 
@@ -55,9 +55,9 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         this.src = str2;
         this.displayName = str3;
         if ((i10 & 8) == 0) {
-            this.f7110id = null;
+            this.f7252id = null;
         } else {
-            this.f7110id = str4;
+            this.f7252id = str4;
         }
         if ((i10 & 16) == 0) {
             this.animated = null;
@@ -92,29 +92,29 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z12 = false;
-        if (!output.w(serialDesc, 0) && self.getName() == null) {
+        if (!output.z(serialDesc, 0) && self.getName() == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, a2.f29550a, self.getName());
+            output.B(serialDesc, 0, a2.f29755a, self.getName());
         }
-        output.s(serialDesc, 1, self.getSrc());
-        output.s(serialDesc, 2, self.getDisplayName());
-        if (!output.w(serialDesc, 3) && self.getId() == null) {
+        output.x(serialDesc, 1, self.getSrc());
+        output.x(serialDesc, 2, self.getDisplayName());
+        if (!output.z(serialDesc, 3) && self.getId() == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 3, a2.f29550a, self.getId());
+            output.B(serialDesc, 3, a2.f29755a, self.getId());
         }
-        if (output.w(serialDesc, 4) || self.getAnimated() != null) {
+        if (output.z(serialDesc, 4) || self.getAnimated() != null) {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 4, h.f29592a, self.getAnimated());
+            output.B(serialDesc, 4, h.f29797a, self.getAnimated());
         }
     }
 
@@ -172,7 +172,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
 
     @Override 
     public String getId() {
-        return this.f7110id;
+        return this.f7252id;
     }
 
     @Override 
@@ -219,7 +219,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         this.name = str;
         this.src = src;
         this.displayName = displayName;
-        this.f7110id = str2;
+        this.f7252id = str2;
         this.animated = bool;
     }
 

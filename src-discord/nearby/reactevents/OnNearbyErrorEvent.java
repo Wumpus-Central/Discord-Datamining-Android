@@ -52,7 +52,7 @@ public final class OnNearbyErrorEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.body);
+        output.x(serialDesc, 0, self.body);
     }
 
     public final String component1() {

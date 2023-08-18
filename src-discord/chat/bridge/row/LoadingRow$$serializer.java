@@ -37,7 +37,7 @@ public final class LoadingRow$$serializer implements f0<LoadingRow> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f29625a, ChangeType.Serializer.INSTANCE, LoadMoreButton$$serializer.INSTANCE, h.f29592a};
+        return new KSerializer[]{m0.f29830a, ChangeType.Serializer.INSTANCE, LoadMoreButton$$serializer.INSTANCE, h.f29797a};
     }
 
     @Override 
@@ -49,12 +49,12 @@ public final class LoadingRow$$serializer implements f0<LoadingRow> {
         Object obj2;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            i10 = c10.k(descriptor2, 0);
-            obj = c10.m(descriptor2, 1, ChangeType.Serializer.INSTANCE, null);
-            obj2 = c10.m(descriptor2, 2, LoadMoreButton$$serializer.INSTANCE, null);
-            z10 = c10.s(descriptor2, 3);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            i10 = b10.i(descriptor2, 0);
+            obj = b10.y(descriptor2, 1, ChangeType.Serializer.INSTANCE, null);
+            obj2 = b10.y(descriptor2, 2, LoadMoreButton$$serializer.INSTANCE, null);
+            z10 = b10.C(descriptor2, 3);
             i11 = 15;
         } else {
             boolean z11 = true;
@@ -64,23 +64,23 @@ public final class LoadingRow$$serializer implements f0<LoadingRow> {
             Object obj4 = null;
             boolean z12 = false;
             while (z11) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z11 = false;
-                } else if (x10 == 0) {
-                    i12 = c10.k(descriptor2, 0);
+                } else if (o10 == 0) {
+                    i12 = b10.i(descriptor2, 0);
                     i13 |= 1;
-                } else if (x10 == 1) {
-                    obj3 = c10.m(descriptor2, 1, ChangeType.Serializer.INSTANCE, obj3);
+                } else if (o10 == 1) {
+                    obj3 = b10.y(descriptor2, 1, ChangeType.Serializer.INSTANCE, obj3);
                     i13 |= 2;
-                } else if (x10 == 2) {
-                    obj4 = c10.m(descriptor2, 2, LoadMoreButton$$serializer.INSTANCE, obj4);
+                } else if (o10 == 2) {
+                    obj4 = b10.y(descriptor2, 2, LoadMoreButton$$serializer.INSTANCE, obj4);
                     i13 |= 4;
-                } else if (x10 == 3) {
-                    z12 = c10.s(descriptor2, 3);
+                } else if (o10 == 3) {
+                    z12 = b10.C(descriptor2, 3);
                     i13 |= 8;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i10 = i12;
@@ -89,7 +89,7 @@ public final class LoadingRow$$serializer implements f0<LoadingRow> {
             obj = obj3;
             obj2 = obj4;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new LoadingRow(i11, i10, (ChangeType) obj, (LoadMoreButton) obj2, z10, null);
     }
 
@@ -102,9 +102,9 @@ public final class LoadingRow$$serializer implements f0<LoadingRow> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        LoadingRow.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        LoadingRow.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

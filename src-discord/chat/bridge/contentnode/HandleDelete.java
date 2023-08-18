@@ -55,8 +55,8 @@ public final class HandleDelete {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.action);
-        output.h(serialDesc, 1, HandleDeleteMessage$$serializer.INSTANCE, self.message);
+        output.x(serialDesc, 0, self.action);
+        output.o(serialDesc, 1, HandleDeleteMessage$$serializer.INSTANCE, self.message);
     }
 
     public final String component1() {

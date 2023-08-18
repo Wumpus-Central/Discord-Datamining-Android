@@ -23,19 +23,19 @@ public final class InteractionStatusMessageAccessory extends MessageAccessory {
     }
 
     
-    public static  InteractionStatusMessageAccessory m268copyntcYbpo$default(InteractionStatusMessageAccessory interactionStatusMessageAccessory, String str, InteractionStatus interactionStatus, int i10, Object obj) {
+    public static  InteractionStatusMessageAccessory m270copyntcYbpo$default(InteractionStatusMessageAccessory interactionStatusMessageAccessory, String str, InteractionStatus interactionStatus, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = interactionStatusMessageAccessory.mo220getMessageId3Eiw7ao();
+            str = interactionStatusMessageAccessory.mo222getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             interactionStatus = interactionStatusMessageAccessory.interactionStatus;
         }
-        return interactionStatusMessageAccessory.m270copyntcYbpo(str, interactionStatus);
+        return interactionStatusMessageAccessory.m272copyntcYbpo(str, interactionStatus);
     }
 
     
-    public final String m269component13Eiw7ao() {
-        return mo220getMessageId3Eiw7ao();
+    public final String m271component13Eiw7ao() {
+        return mo222getMessageId3Eiw7ao();
     }
 
     public final InteractionStatus component2() {
@@ -43,7 +43,7 @@ public final class InteractionStatusMessageAccessory extends MessageAccessory {
     }
 
     
-    public final InteractionStatusMessageAccessory m270copyntcYbpo(String messageId, InteractionStatus interactionStatus) {
+    public final InteractionStatusMessageAccessory m272copyntcYbpo(String messageId, InteractionStatus interactionStatus) {
         q.h(messageId, "messageId");
         q.h(interactionStatus, "interactionStatus");
         return new InteractionStatusMessageAccessory(messageId, interactionStatus, null);
@@ -57,7 +57,7 @@ public final class InteractionStatusMessageAccessory extends MessageAccessory {
             return false;
         }
         InteractionStatusMessageAccessory interactionStatusMessageAccessory = (InteractionStatusMessageAccessory) obj;
-        return MessageId.m609equalsimpl0(mo220getMessageId3Eiw7ao(), interactionStatusMessageAccessory.mo220getMessageId3Eiw7ao()) && q.c(this.interactionStatus, interactionStatusMessageAccessory.interactionStatus);
+        return MessageId.m611equalsimpl0(mo222getMessageId3Eiw7ao(), interactionStatusMessageAccessory.mo222getMessageId3Eiw7ao()) && q.c(this.interactionStatus, interactionStatusMessageAccessory.interactionStatus);
     }
 
     public final InteractionStatus getInteractionStatus() {
@@ -66,16 +66,16 @@ public final class InteractionStatusMessageAccessory extends MessageAccessory {
 
     @Override 
     
-    public String mo220getMessageId3Eiw7ao() {
+    public String mo222getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (MessageId.m610hashCodeimpl(mo220getMessageId3Eiw7ao()) * 31) + this.interactionStatus.hashCode();
+        return (MessageId.m612hashCodeimpl(mo222getMessageId3Eiw7ao()) * 31) + this.interactionStatus.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m611toStringimpl(mo220getMessageId3Eiw7ao());
+        String str = MessageId.m613toStringimpl(mo222getMessageId3Eiw7ao());
         InteractionStatus interactionStatus = this.interactionStatus;
         return "InteractionStatusMessageAccessory(messageId=" + str + ", interactionStatus=" + interactionStatus + ")";
     }

@@ -50,9 +50,9 @@ public final class ButtonComponent$$serializer implements f0<ButtonComponent> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29625a;
-        a2 a2Var = a2.f29550a;
-        return new KSerializer[]{m0Var, new f(m0Var), ApplicationId$$serializer.INSTANCE, a.u(a2Var), a.u(a2Var), ButtonStyle.Serializer.INSTANCE, h.f29592a, a.u(ComponentEmoji$$serializer.INSTANCE), a.u(a2Var), ActionComponentState.Serializer.INSTANCE};
+        m0 m0Var = m0.f29830a;
+        a2 a2Var = a2.f29755a;
+        return new KSerializer[]{m0Var, new f(m0Var), ApplicationId$$serializer.INSTANCE, a.u(a2Var), a.u(a2Var), ButtonStyle.Serializer.INSTANCE, h.f29797a, a.u(ComponentEmoji$$serializer.INSTANCE), a.u(a2Var), ActionComponentState.Serializer.INSTANCE};
     }
 
     @Override 
@@ -71,21 +71,21 @@ public final class ButtonComponent$$serializer implements f0<ButtonComponent> {
         char c10;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c11 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i12 = 9;
         int i13 = 8;
-        if (c11.y()) {
-            i10 = c11.k(descriptor2, 0);
-            obj = c11.m(descriptor2, 1, new f(m0.f29625a), null);
-            obj3 = c11.m(descriptor2, 2, ApplicationId$$serializer.INSTANCE, null);
-            a2 a2Var = a2.f29550a;
-            obj2 = c11.v(descriptor2, 3, a2Var, null);
-            obj4 = c11.v(descriptor2, 4, a2Var, null);
-            obj8 = c11.m(descriptor2, 5, ButtonStyle.Serializer.INSTANCE, null);
-            z10 = c11.s(descriptor2, 6);
-            obj6 = c11.v(descriptor2, 7, ComponentEmoji$$serializer.INSTANCE, null);
-            obj5 = c11.v(descriptor2, 8, a2Var, null);
-            obj7 = c11.m(descriptor2, 9, ActionComponentState.Serializer.INSTANCE, null);
+        if (b10.p()) {
+            i10 = b10.i(descriptor2, 0);
+            obj = b10.y(descriptor2, 1, new f(m0.f29830a), null);
+            obj3 = b10.y(descriptor2, 2, ApplicationId$$serializer.INSTANCE, null);
+            a2 a2Var = a2.f29755a;
+            obj2 = b10.n(descriptor2, 3, a2Var, null);
+            obj4 = b10.n(descriptor2, 4, a2Var, null);
+            obj8 = b10.y(descriptor2, 5, ButtonStyle.Serializer.INSTANCE, null);
+            z10 = b10.C(descriptor2, 6);
+            obj6 = b10.n(descriptor2, 7, ComponentEmoji$$serializer.INSTANCE, null);
+            obj5 = b10.n(descriptor2, 8, a2Var, null);
+            obj7 = b10.y(descriptor2, 9, ActionComponentState.Serializer.INSTANCE, null);
             i11 = 1023;
         } else {
             boolean z11 = true;
@@ -101,60 +101,60 @@ public final class ButtonComponent$$serializer implements f0<ButtonComponent> {
             Object obj14 = null;
             z10 = false;
             while (z11) {
-                int x10 = c11.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z11 = false;
                         i12 = 9;
                         i13 = 8;
                     case 0:
-                        i14 = c11.k(descriptor2, 0);
+                        i14 = b10.i(descriptor2, 0);
                         i15 |= 1;
                         i12 = 9;
                         i13 = 8;
                     case 1:
-                        obj = c11.m(descriptor2, 1, new f(m0.f29625a), obj);
+                        obj = b10.y(descriptor2, 1, new f(m0.f29830a), obj);
                         i15 |= 2;
                         i12 = 9;
                         i13 = 8;
                     case 2:
-                        obj14 = c11.m(descriptor2, 2, ApplicationId$$serializer.INSTANCE, obj14);
+                        obj14 = b10.y(descriptor2, 2, ApplicationId$$serializer.INSTANCE, obj14);
                         i15 |= 4;
                         i12 = 9;
                         i13 = 8;
                     case 3:
-                        obj2 = c11.v(descriptor2, 3, a2.f29550a, obj2);
+                        obj2 = b10.n(descriptor2, 3, a2.f29755a, obj2);
                         i15 |= 8;
                         i12 = 9;
                         i13 = 8;
                     case 4:
-                        obj13 = c11.v(descriptor2, 4, a2.f29550a, obj13);
+                        obj13 = b10.n(descriptor2, 4, a2.f29755a, obj13);
                         i15 |= 16;
                         i12 = 9;
                         i13 = 8;
                     case 5:
-                        obj11 = c11.m(descriptor2, 5, ButtonStyle.Serializer.INSTANCE, obj11);
+                        obj11 = b10.y(descriptor2, 5, ButtonStyle.Serializer.INSTANCE, obj11);
                         i15 |= 32;
                         i12 = 9;
                         i13 = 8;
                     case 6:
                         c10 = 7;
-                        z10 = c11.s(descriptor2, 6);
+                        z10 = b10.C(descriptor2, 6);
                         i15 |= 64;
                         i12 = 9;
                     case 7:
                         c10 = 7;
-                        obj12 = c11.v(descriptor2, 7, ComponentEmoji$$serializer.INSTANCE, obj12);
+                        obj12 = b10.n(descriptor2, 7, ComponentEmoji$$serializer.INSTANCE, obj12);
                         i15 |= 128;
                         i12 = 9;
                     case 8:
-                        obj10 = c11.v(descriptor2, i13, a2.f29550a, obj10);
+                        obj10 = b10.n(descriptor2, i13, a2.f29755a, obj10);
                         i15 |= 256;
                     case 9:
-                        obj9 = c11.m(descriptor2, i12, ActionComponentState.Serializer.INSTANCE, obj9);
+                        obj9 = b10.y(descriptor2, i12, ActionComponentState.Serializer.INSTANCE, obj9);
                         i15 |= 512;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             obj7 = obj9;
@@ -166,7 +166,7 @@ public final class ButtonComponent$$serializer implements f0<ButtonComponent> {
             i10 = i14;
             obj8 = obj11;
         }
-        c11.b(descriptor2);
+        b10.c(descriptor2);
         return new ButtonComponent(i11, i10, (List) obj, (ApplicationId) obj3, (String) obj2, (String) obj4, (ButtonStyle) obj8, z10, (ComponentEmoji) obj6, (String) obj5, (ActionComponentState) obj7, null, null);
     }
 
@@ -179,9 +179,9 @@ public final class ButtonComponent$$serializer implements f0<ButtonComponent> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        ButtonComponent.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        ButtonComponent.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

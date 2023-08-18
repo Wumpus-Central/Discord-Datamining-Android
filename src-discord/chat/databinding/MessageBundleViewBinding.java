@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import com.discord.chat.R;
 import com.discord.chat.presentation.list.messagebundling.MessageBundleRecyclerView;
 import com.discord.chat.presentation.message.MessageFrameFeedHeaderView;
-import v0.a;
+import u0.a;
 
 
 public final class MessageBundleViewBinding {

@@ -55,7 +55,7 @@ public final class UserSearchUpdateUsersData extends UserSearchData {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.h(serialDesc, 0, new wi.f(UserSearchTransformedUser.Serializer.INSTANCE), self.payload);
+        output.o(serialDesc, 0, new wi.f(UserSearchTransformedUser.Serializer.INSTANCE), self.payload);
     }
 
     public final List<UserSearchTransformedUser> component1() {

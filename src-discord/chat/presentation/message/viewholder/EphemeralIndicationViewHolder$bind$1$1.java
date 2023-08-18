@@ -20,12 +20,12 @@ public  class EphemeralIndicationViewHolder$bind$1$1 extends n implements Functi
 
     @Override 
     public   Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
-        m342invokentcYbpo(messageId.m613unboximpl(), linkContentNode);
-        return Unit.f21036a;
+        m344invokentcYbpo(messageId.m615unboximpl(), linkContentNode);
+        return Unit.f21210a;
     }
 
     
-    public final void m342invokentcYbpo(String p02, LinkContentNode p12) {
+    public final void m344invokentcYbpo(String p02, LinkContentNode p12) {
         q.h(p02, "p0");
         q.h(p12, "p1");
         ((ChatEventHandler) this.receiver).mo149onLinkClickedntcYbpo(p02, p12);

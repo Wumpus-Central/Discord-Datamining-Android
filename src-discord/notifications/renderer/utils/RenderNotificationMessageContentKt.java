@@ -8,8 +8,8 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 import kotlin.text.MatchResult;
 import kotlin.text.Regex;
-import ni.f;
-import ni.v;
+import kotlin.text.p;
+import ni.b;
 
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u001a\u000e\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0001¨\u0006\u0003"}, d2 = {"renderNotificationMessageContent", "", "content", "notification_renderer_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 
@@ -30,12 +30,12 @@ public final class RenderNotificationMessageContentKt {
             if (c10 == null) {
                 return content;
             }
-            f fVar = c10.c().get(1);
-            q.e(fVar);
-            String a10 = fVar.a();
-            f fVar2 = c10.c().get(2);
-            if (fVar2 != null) {
-                str = fVar2.a();
+            b bVar = c10.d().get(1);
+            q.e(bVar);
+            String a10 = bVar.a();
+            b bVar2 = c10.d().get(2);
+            if (bVar2 != null) {
+                str = bVar2.a();
             }
             Date date = new Date(Long.parseLong(a10) * ((long) RNCWebViewManager.COMMAND_CLEAR_FORM_DATA));
             if (q.c(str, "R")) {
@@ -77,9 +77,9 @@ public final class RenderNotificationMessageContentKt {
                 formatted = dateFormat.format(date);
             }
             q.g(formatted, "formatted");
-            t02 = v.t0(content, c10.d().a(), c10.d().c() + 1, formatted);
+            t02 = p.t0(content, c10.c().a(), c10.c().h() + 1, formatted);
             content = t02.toString();
-            t03 = v.t0(i10, c10.d().a(), c10.d().c() + 1, formatted);
+            t03 = p.t0(i10, c10.c().a(), c10.c().h() + 1, formatted);
             i10 = t03.toString();
         }
     }

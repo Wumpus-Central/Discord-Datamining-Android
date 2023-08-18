@@ -38,8 +38,8 @@ public final class ConnectionsRoleTag$$serializer implements f0<ConnectionsRoleT
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        m0 m0Var = m0.f29625a;
+        a2 a2Var = a2.f29755a;
+        m0 m0Var = m0.f29830a;
         return new KSerializer[]{a2Var, a2Var, m0Var, m0Var};
     }
 
@@ -52,12 +52,12 @@ public final class ConnectionsRoleTag$$serializer implements f0<ConnectionsRoleT
         int i12;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            str2 = c10.t(descriptor2, 0);
-            str = c10.t(descriptor2, 1);
-            i11 = c10.k(descriptor2, 2);
-            i10 = c10.k(descriptor2, 3);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            str2 = b10.m(descriptor2, 0);
+            str = b10.m(descriptor2, 1);
+            i11 = b10.i(descriptor2, 2);
+            i10 = b10.i(descriptor2, 3);
             i12 = 15;
         } else {
             String str3 = null;
@@ -67,23 +67,23 @@ public final class ConnectionsRoleTag$$serializer implements f0<ConnectionsRoleT
             int i14 = 0;
             int i15 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    str3 = c10.t(descriptor2, 0);
+                } else if (o10 == 0) {
+                    str3 = b10.m(descriptor2, 0);
                     i15 |= 1;
-                } else if (x10 == 1) {
-                    str4 = c10.t(descriptor2, 1);
+                } else if (o10 == 1) {
+                    str4 = b10.m(descriptor2, 1);
                     i15 |= 2;
-                } else if (x10 == 2) {
-                    i14 = c10.k(descriptor2, 2);
+                } else if (o10 == 2) {
+                    i14 = b10.i(descriptor2, 2);
                     i15 |= 4;
-                } else if (x10 == 3) {
-                    i13 = c10.k(descriptor2, 3);
+                } else if (o10 == 3) {
+                    i13 = b10.i(descriptor2, 3);
                     i15 |= 8;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             str2 = str3;
@@ -92,7 +92,7 @@ public final class ConnectionsRoleTag$$serializer implements f0<ConnectionsRoleT
             str = str4;
             i12 = i15;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new ConnectionsRoleTag(i12, str2, str, i11, i10, null);
     }
 
@@ -105,9 +105,9 @@ public final class ConnectionsRoleTag$$serializer implements f0<ConnectionsRoleT
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        ConnectionsRoleTag.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        ConnectionsRoleTag.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

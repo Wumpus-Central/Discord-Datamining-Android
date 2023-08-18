@@ -35,7 +35,7 @@ public final class DeleteRow$$serializer implements f0<DeleteRow> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f29625a, ChangeType.Serializer.INSTANCE};
+        return new KSerializer[]{m0.f29830a, ChangeType.Serializer.INSTANCE};
     }
 
     @Override 
@@ -45,10 +45,10 @@ public final class DeleteRow$$serializer implements f0<DeleteRow> {
         int i11;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            i11 = c10.k(descriptor2, 0);
-            obj = c10.m(descriptor2, 1, ChangeType.Serializer.INSTANCE, null);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            i11 = b10.i(descriptor2, 0);
+            obj = b10.y(descriptor2, 1, ChangeType.Serializer.INSTANCE, null);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -56,23 +56,23 @@ public final class DeleteRow$$serializer implements f0<DeleteRow> {
             int i12 = 0;
             Object obj2 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    i11 = c10.k(descriptor2, 0);
+                } else if (o10 == 0) {
+                    i11 = b10.i(descriptor2, 0);
                     i12 |= 1;
-                } else if (x10 == 1) {
-                    obj2 = c10.m(descriptor2, 1, ChangeType.Serializer.INSTANCE, obj2);
+                } else if (o10 == 1) {
+                    obj2 = b10.y(descriptor2, 1, ChangeType.Serializer.INSTANCE, obj2);
                     i12 |= 2;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             obj = obj2;
             i10 = i12;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new DeleteRow(i10, i11, (ChangeType) obj, (SerializationConstructorMarker) null);
     }
 
@@ -85,9 +85,9 @@ public final class DeleteRow$$serializer implements f0<DeleteRow> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        DeleteRow.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        DeleteRow.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

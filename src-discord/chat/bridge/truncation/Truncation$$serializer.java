@@ -40,8 +40,8 @@ public final class Truncation$$serializer implements f0<Truncation> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29625a;
-        return new KSerializer[]{m0Var, a2.f29550a, a.u(m0Var), a.u(h.f29592a)};
+        m0 m0Var = m0.f29830a;
+        return new KSerializer[]{m0Var, a2.f29755a, a.u(m0Var), a.u(h.f29797a)};
     }
 
     @Override 
@@ -53,12 +53,12 @@ public final class Truncation$$serializer implements f0<Truncation> {
         Object obj2;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            i10 = c10.k(descriptor2, 0);
-            str = c10.t(descriptor2, 1);
-            obj = c10.v(descriptor2, 2, m0.f29625a, null);
-            obj2 = c10.v(descriptor2, 3, h.f29592a, null);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            i10 = b10.i(descriptor2, 0);
+            str = b10.m(descriptor2, 1);
+            obj = b10.n(descriptor2, 2, m0.f29830a, null);
+            obj2 = b10.n(descriptor2, 3, h.f29797a, null);
             i11 = 15;
         } else {
             boolean z10 = true;
@@ -68,23 +68,23 @@ public final class Truncation$$serializer implements f0<Truncation> {
             Object obj4 = null;
             int i13 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    i12 = c10.k(descriptor2, 0);
+                } else if (o10 == 0) {
+                    i12 = b10.i(descriptor2, 0);
                     i13 |= 1;
-                } else if (x10 == 1) {
-                    str2 = c10.t(descriptor2, 1);
+                } else if (o10 == 1) {
+                    str2 = b10.m(descriptor2, 1);
                     i13 |= 2;
-                } else if (x10 == 2) {
-                    obj3 = c10.v(descriptor2, 2, m0.f29625a, obj3);
+                } else if (o10 == 2) {
+                    obj3 = b10.n(descriptor2, 2, m0.f29830a, obj3);
                     i13 |= 4;
-                } else if (x10 == 3) {
-                    obj4 = c10.v(descriptor2, 3, h.f29592a, obj4);
+                } else if (o10 == 3) {
+                    obj4 = b10.n(descriptor2, 3, h.f29797a, obj4);
                     i13 |= 8;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i10 = i12;
@@ -93,7 +93,7 @@ public final class Truncation$$serializer implements f0<Truncation> {
             obj = obj3;
             obj2 = obj4;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new Truncation(i11, i10, str, (Integer) obj, (Boolean) obj2, (SerializationConstructorMarker) null);
     }
 
@@ -106,9 +106,9 @@ public final class Truncation$$serializer implements f0<Truncation> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        Truncation.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        Truncation.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

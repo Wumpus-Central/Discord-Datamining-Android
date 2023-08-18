@@ -12,8 +12,8 @@ import kotlin.coroutines.jvm.internal.e;
 import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.q;
+import kotlin.text.o;
 import kotlinx.coroutines.CoroutineScope;
-import ni.u;
 import pf.d;
 import tf.b;
 import tf.c;
@@ -42,7 +42,7 @@ final class FileManagerModule$readFile$1 extends k implements Function2<Coroutin
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileManagerModule$readFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
+        return ((FileManagerModule$readFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21210a);
     }
 
     @Override 
@@ -59,13 +59,13 @@ final class FileManagerModule$readFile$1 extends k implements Function2<Coroutin
                     this.$promise.resolve(Base64.encodeToString(c10, 2));
                 } else {
                     Promise promise = this.$promise;
-                    q10 = u.q(c10);
+                    q10 = o.q(c10);
                     promise.resolve(q10);
                 }
             } catch (Throwable th2) {
                 this.$promise.reject(th2);
             }
-            return Unit.f21036a;
+            return Unit.f21210a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

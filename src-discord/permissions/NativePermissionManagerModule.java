@@ -13,13 +13,14 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.modules.permissions.PermissionsModule;
 import java.util.List;
+import java.util.Locale;
 import kotlin.Metadata;
 import kotlin.collections.j;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @ReactModule(name = "NativePermissionManager")
-@Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0010\b\u0007\u0018\u0000 \u001d2\u00020\u0001:\u0001\u001dB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\t\u001a\u00020\nH\u0016J\u0010\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u000f\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0010\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0011\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0012\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0013\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0014\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0015\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0016\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0017\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0018\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0019\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u001a\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u001b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u001c\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007R\u0014\u0010\u0005\u001a\u00020\u00068BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\b¨\u0006\u001e"}, d2 = {"Lcom/discord/permissions/NativePermissionManagerModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "permissionsModule", "Lcom/facebook/react/modules/permissions/PermissionsModule;", "getPermissionsModule", "()Lcom/facebook/react/modules/permissions/PermissionsModule;", "getName", "", "getNotificationAuthorizationStatus", "", BaseJavaModule.METHOD_TYPE_PROMISE, "Lcom/facebook/react/bridge/Promise;", "hasBluetoothAuthorization", "hasCameraAuthorization", "hasContactAuthorization", "hasExternalStorageAuthorization", "hasMicrophoneAuthorization", "hasModifyAudioAuthorization", "hasPhotoAuthorization", "requestBluetoothAuthorization", "requestCameraAuthorization", "requestContactsAuthorization", "requestExternalStorageAuthorization", "requestMicrophoneAuthorization", "requestModifyAudioAuthorization", "requestPhotoAuthorization", "Companion", "permissions_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0011\b\u0007\u0018\u0000 \u001e2\u00020\u0001:\u0001\u001eB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\t\u001a\u00020\nH\u0016J\u0010\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u000f\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0010\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0011\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0012\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0013\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0014\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0015\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0016\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0017\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0018\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0019\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u001a\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u001b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u001c\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u001d\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0007R\u0014\u0010\u0005\u001a\u00020\u00068BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\b¨\u0006\u001f"}, d2 = {"Lcom/discord/permissions/NativePermissionManagerModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "permissionsModule", "Lcom/facebook/react/modules/permissions/PermissionsModule;", "getPermissionsModule", "()Lcom/facebook/react/modules/permissions/PermissionsModule;", "getName", "", "getNotificationAuthorizationStatus", "", BaseJavaModule.METHOD_TYPE_PROMISE, "Lcom/facebook/react/bridge/Promise;", "hasBluetoothAuthorization", "hasCameraAuthorization", "hasContactAuthorization", "hasExternalStorageAuthorization", "hasMicrophoneAuthorization", "hasModifyAudioAuthorization", "hasPhotoAuthorization", "requestBluetoothAuthorization", "requestCameraAuthorization", "requestContactsAuthorization", "requestExternalStorageAuthorization", "requestMicrophoneAuthorization", "requestModifyAudioAuthorization", "requestNotificationAuthorization", "requestPhotoAuthorization", "Companion", "permissions_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
 public final class NativePermissionManagerModule extends ReactContextBaseJavaModule {
     public static final Companion Companion = new Companion(null);
@@ -152,6 +153,18 @@ public final class NativePermissionManagerModule extends ReactContextBaseJavaMod
     public final void requestModifyAudioAuthorization(Promise promise) {
         q.h(promise, "promise");
         getPermissionsModule().requestPermission("android.permission.MODIFY_AUDIO_SETTINGS", Companion.transformRequestResult(promise));
+    }
+
+    @ReactMethod
+    public final void requestNotificationAuthorization(Promise promise) {
+        q.h(promise, "promise");
+        if (Build.VERSION.SDK_INT >= 33) {
+            getPermissionsModule().requestPermission("android.permission.POST_NOTIFICATIONS", Companion.transformRequestResult(promise));
+            return;
+        }
+        String lowerCase = "AUTHORIZED".toLowerCase(Locale.ROOT);
+        q.g(lowerCase, "this as java.lang.String).toLowerCase(Locale.ROOT)");
+        promise.resolve(lowerCase);
     }
 
     @ReactMethod

@@ -39,7 +39,7 @@ public final class NotificationMessage$$serializer implements f0<NotificationMes
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        t tVar = t.f21597a;
+        t tVar = t.f21790a;
         return new KSerializer[]{new f(Sticker$$serializer.INSTANCE), a.u(tVar), new f(tVar)};
     }
 
@@ -51,13 +51,13 @@ public final class NotificationMessage$$serializer implements f0<NotificationMes
         Object obj3;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         Object obj4 = null;
-        if (c10.y()) {
-            obj3 = c10.m(descriptor2, 0, new f(Sticker$$serializer.INSTANCE), null);
-            t tVar = t.f21597a;
-            obj = c10.v(descriptor2, 1, tVar, null);
-            obj2 = c10.m(descriptor2, 2, new f(tVar), null);
+        if (b10.p()) {
+            obj3 = b10.y(descriptor2, 0, new f(Sticker$$serializer.INSTANCE), null);
+            t tVar = t.f21790a;
+            obj = b10.n(descriptor2, 1, tVar, null);
+            obj2 = b10.y(descriptor2, 2, new f(tVar), null);
             i10 = 7;
         } else {
             boolean z10 = true;
@@ -65,20 +65,20 @@ public final class NotificationMessage$$serializer implements f0<NotificationMes
             Object obj5 = null;
             Object obj6 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    obj4 = c10.m(descriptor2, 0, new f(Sticker$$serializer.INSTANCE), obj4);
+                } else if (o10 == 0) {
+                    obj4 = b10.y(descriptor2, 0, new f(Sticker$$serializer.INSTANCE), obj4);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    obj5 = c10.v(descriptor2, 1, t.f21597a, obj5);
+                } else if (o10 == 1) {
+                    obj5 = b10.n(descriptor2, 1, t.f21790a, obj5);
                     i11 |= 2;
-                } else if (x10 == 2) {
-                    obj6 = c10.m(descriptor2, 2, new f(t.f21597a), obj6);
+                } else if (o10 == 2) {
+                    obj6 = b10.y(descriptor2, 2, new f(t.f21790a), obj6);
                     i11 |= 4;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             obj = obj5;
@@ -86,7 +86,7 @@ public final class NotificationMessage$$serializer implements f0<NotificationMes
             i10 = i11;
             obj3 = obj4;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new NotificationMessage(i10, (List) obj3, (JsonObject) obj, (List) obj2, (SerializationConstructorMarker) null);
     }
 
@@ -99,9 +99,9 @@ public final class NotificationMessage$$serializer implements f0<NotificationMes
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        NotificationMessage.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        NotificationMessage.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

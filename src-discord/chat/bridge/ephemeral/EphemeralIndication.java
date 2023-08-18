@@ -62,9 +62,9 @@ public final class EphemeralIndication {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.h(serialDesc, 0, StructurableTextSerializer.INSTANCE, self.content);
-        output.s(serialDesc, 1, self.helpArticleLink);
-        output.s(serialDesc, 2, self.helpButtonAccessibilityLabel);
+        output.o(serialDesc, 0, StructurableTextSerializer.INSTANCE, self.content);
+        output.x(serialDesc, 1, self.helpArticleLink);
+        output.x(serialDesc, 2, self.helpButtonAccessibilityLabel);
     }
 
     public final StructurableText component1() {

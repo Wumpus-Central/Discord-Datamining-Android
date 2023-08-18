@@ -35,7 +35,7 @@ public final class WebhookNameOnClick$$serializer implements f0<WebhookNameOnCli
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f29550a, a.u(MessageReference$$serializer.INSTANCE)};
+        return new KSerializer[]{a2.f29755a, a.u(MessageReference$$serializer.INSTANCE)};
     }
 
     @Override 
@@ -45,10 +45,10 @@ public final class WebhookNameOnClick$$serializer implements f0<WebhookNameOnCli
         String str;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            str = c10.t(descriptor2, 0);
-            obj = c10.v(descriptor2, 1, MessageReference$$serializer.INSTANCE, null);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            str = b10.m(descriptor2, 0);
+            obj = b10.n(descriptor2, 1, MessageReference$$serializer.INSTANCE, null);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -56,23 +56,23 @@ public final class WebhookNameOnClick$$serializer implements f0<WebhookNameOnCli
             str = null;
             Object obj2 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    str = c10.t(descriptor2, 0);
+                } else if (o10 == 0) {
+                    str = b10.m(descriptor2, 0);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    obj2 = c10.v(descriptor2, 1, MessageReference$$serializer.INSTANCE, obj2);
+                } else if (o10 == 1) {
+                    obj2 = b10.n(descriptor2, 1, MessageReference$$serializer.INSTANCE, obj2);
                     i11 |= 2;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             obj = obj2;
             i10 = i11;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new WebhookNameOnClick(i10, str, (MessageReference) obj, (SerializationConstructorMarker) null);
     }
 
@@ -85,9 +85,9 @@ public final class WebhookNameOnClick$$serializer implements f0<WebhookNameOnCli
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        WebhookNameOnClick.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        WebhookNameOnClick.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

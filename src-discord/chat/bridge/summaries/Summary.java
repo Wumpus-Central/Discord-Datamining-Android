@@ -27,7 +27,7 @@ public final class Summary {
     private final String endId;
 
     
-    private final String f7114id;
+    private final String f7256id;
     private final List<UserId> people;
     private final String startId;
     private final String summShort;
@@ -52,14 +52,14 @@ public final class Summary {
         if (255 != (i10 & 255)) {
             n1.b(i10, 255, Summary$$serializer.INSTANCE.getDescriptor());
         }
-        this.f7114id = str;
+        this.f7256id = str;
         this.topic = str2;
         this.summShort = str3;
         this.people = list;
         this.startId = str4;
         this.endId = str5;
         this.count = i11;
-        this.channelId = channelId.m588unboximpl();
+        this.channelId = channelId.m590unboximpl();
     }
 
     public  Summary(int i10, String str, String str2, String str3, List list, String str4, String str5, int i11, ChannelId channelId, SerializationConstructorMarker serializationConstructorMarker, DefaultConstructorMarker defaultConstructorMarker) {
@@ -74,19 +74,19 @@ public final class Summary {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.f7114id);
-        output.s(serialDesc, 1, self.topic);
-        output.s(serialDesc, 2, self.summShort);
-        output.h(serialDesc, 3, new wi.f(UserId$$serializer.INSTANCE), self.people);
+        output.x(serialDesc, 0, self.f7256id);
+        output.x(serialDesc, 1, self.topic);
+        output.x(serialDesc, 2, self.summShort);
+        output.o(serialDesc, 3, new wi.f(UserId$$serializer.INSTANCE), self.people);
         MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
-        output.h(serialDesc, 4, messageId$$serializer, MessageId.m605boximpl(self.startId));
-        output.h(serialDesc, 5, messageId$$serializer, MessageId.m605boximpl(self.endId));
-        output.q(serialDesc, 6, self.count);
-        output.h(serialDesc, 7, ChannelId$$serializer.INSTANCE, ChannelId.m579boximpl(self.channelId));
+        output.o(serialDesc, 4, messageId$$serializer, MessageId.m607boximpl(self.startId));
+        output.o(serialDesc, 5, messageId$$serializer, MessageId.m607boximpl(self.endId));
+        output.v(serialDesc, 6, self.count);
+        output.o(serialDesc, 7, ChannelId$$serializer.INSTANCE, ChannelId.m581boximpl(self.channelId));
     }
 
     public final String component1() {
-        return this.f7114id;
+        return this.f7256id;
     }
 
     public final String component2() {
@@ -139,7 +139,7 @@ public final class Summary {
             return false;
         }
         Summary summary = (Summary) obj;
-        return q.c(this.f7114id, summary.f7114id) && q.c(this.topic, summary.topic) && q.c(this.summShort, summary.summShort) && q.c(this.people, summary.people) && MessageId.m609equalsimpl0(this.startId, summary.startId) && MessageId.m609equalsimpl0(this.endId, summary.endId) && this.count == summary.count && ChannelId.m583equalsimpl0(this.channelId, summary.channelId);
+        return q.c(this.f7256id, summary.f7256id) && q.c(this.topic, summary.topic) && q.c(this.summShort, summary.summShort) && q.c(this.people, summary.people) && MessageId.m611equalsimpl0(this.startId, summary.startId) && MessageId.m611equalsimpl0(this.endId, summary.endId) && this.count == summary.count && ChannelId.m585equalsimpl0(this.channelId, summary.channelId);
     }
 
     
@@ -157,7 +157,7 @@ public final class Summary {
     }
 
     public final String getId() {
-        return this.f7114id;
+        return this.f7256id;
     }
 
     public final List<UserId> getPeople() {
@@ -178,23 +178,23 @@ public final class Summary {
     }
 
     public int hashCode() {
-        return (((((((((((((this.f7114id.hashCode() * 31) + this.topic.hashCode()) * 31) + this.summShort.hashCode()) * 31) + this.people.hashCode()) * 31) + MessageId.m610hashCodeimpl(this.startId)) * 31) + MessageId.m610hashCodeimpl(this.endId)) * 31) + this.count) * 31) + ChannelId.m584hashCodeimpl(this.channelId);
+        return (((((((((((((this.f7256id.hashCode() * 31) + this.topic.hashCode()) * 31) + this.summShort.hashCode()) * 31) + this.people.hashCode()) * 31) + MessageId.m612hashCodeimpl(this.startId)) * 31) + MessageId.m612hashCodeimpl(this.endId)) * 31) + this.count) * 31) + ChannelId.m586hashCodeimpl(this.channelId);
     }
 
     public String toString() {
-        String str = this.f7114id;
+        String str = this.f7256id;
         String str2 = this.topic;
         String str3 = this.summShort;
         List<UserId> list = this.people;
-        String str4 = MessageId.m611toStringimpl(this.startId);
-        String str5 = MessageId.m611toStringimpl(this.endId);
+        String str4 = MessageId.m613toStringimpl(this.startId);
+        String str5 = MessageId.m613toStringimpl(this.endId);
         int i10 = this.count;
-        String str6 = ChannelId.m586toStringimpl(this.channelId);
+        String str6 = ChannelId.m588toStringimpl(this.channelId);
         return "Summary(id=" + str + ", topic=" + str2 + ", summShort=" + str3 + ", people=" + list + ", startId=" + str4 + ", endId=" + str5 + ", count=" + i10 + ", channelId=" + str6 + ")";
     }
 
     private Summary(String str, String str2, String str3, List<UserId> list, String str4, String str5, int i10, long j10) {
-        this.f7114id = str;
+        this.f7256id = str;
         this.topic = str2;
         this.summShort = str3;
         this.people = list;

@@ -69,7 +69,7 @@ public final class DCDButton extends FrameLayout {
         if (num != null) {
             this.button.setStrokeColor(ColorStateList.valueOf(num.intValue()));
             this.button.setStrokeWidth(SizeUtilsKt.getDpToPx(1));
-            unit = Unit.f21036a;
+            unit = Unit.f21210a;
         } else {
             unit = null;
         }

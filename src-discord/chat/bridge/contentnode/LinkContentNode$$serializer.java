@@ -41,8 +41,8 @@ public final class LinkContentNode$$serializer implements f0<LinkContentNode> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        return new KSerializer[]{new f(ContentNodeSerializer.INSTANCE), a2Var, a.u(LinkContext$$serializer.INSTANCE), a2Var, h.f29592a};
+        a2 a2Var = a2.f29755a;
+        return new KSerializer[]{new f(ContentNodeSerializer.INSTANCE), a2Var, a.u(LinkContext$$serializer.INSTANCE), a2Var, h.f29797a};
     }
 
     @Override 
@@ -55,13 +55,13 @@ public final class LinkContentNode$$serializer implements f0<LinkContentNode> {
         Object obj2;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            obj2 = c10.m(descriptor2, 0, new f(ContentNodeSerializer.INSTANCE), null);
-            str2 = c10.t(descriptor2, 1);
-            obj = c10.v(descriptor2, 2, LinkContext$$serializer.INSTANCE, null);
-            str = c10.t(descriptor2, 3);
-            z10 = c10.s(descriptor2, 4);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            obj2 = b10.y(descriptor2, 0, new f(ContentNodeSerializer.INSTANCE), null);
+            str2 = b10.m(descriptor2, 1);
+            obj = b10.n(descriptor2, 2, LinkContext$$serializer.INSTANCE, null);
+            str = b10.m(descriptor2, 3);
+            z10 = b10.C(descriptor2, 4);
             i10 = 31;
         } else {
             boolean z11 = true;
@@ -72,26 +72,26 @@ public final class LinkContentNode$$serializer implements f0<LinkContentNode> {
             String str4 = null;
             int i11 = 0;
             while (z11) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z11 = false;
-                } else if (x10 == 0) {
-                    obj3 = c10.m(descriptor2, 0, new f(ContentNodeSerializer.INSTANCE), obj3);
+                } else if (o10 == 0) {
+                    obj3 = b10.y(descriptor2, 0, new f(ContentNodeSerializer.INSTANCE), obj3);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    str3 = c10.t(descriptor2, 1);
+                } else if (o10 == 1) {
+                    str3 = b10.m(descriptor2, 1);
                     i11 |= 2;
-                } else if (x10 == 2) {
-                    obj4 = c10.v(descriptor2, 2, LinkContext$$serializer.INSTANCE, obj4);
+                } else if (o10 == 2) {
+                    obj4 = b10.n(descriptor2, 2, LinkContext$$serializer.INSTANCE, obj4);
                     i11 |= 4;
-                } else if (x10 == 3) {
-                    str4 = c10.t(descriptor2, 3);
+                } else if (o10 == 3) {
+                    str4 = b10.m(descriptor2, 3);
                     i11 |= 8;
-                } else if (x10 == 4) {
-                    z12 = c10.s(descriptor2, 4);
+                } else if (o10 == 4) {
+                    z12 = b10.C(descriptor2, 4);
                     i11 |= 16;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i10 = i11;
@@ -101,7 +101,7 @@ public final class LinkContentNode$$serializer implements f0<LinkContentNode> {
             z10 = z12;
             obj2 = obj3;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new LinkContentNode(i10, (List) obj2, str2, (LinkContext) obj, str, z10, null);
     }
 
@@ -114,9 +114,9 @@ public final class LinkContentNode$$serializer implements f0<LinkContentNode> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        LinkContentNode.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        LinkContentNode.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

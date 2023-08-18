@@ -241,7 +241,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.h(part, "$part");
         q.h(this$0, "this$0");
         q.h(holder, "$holder");
-        this$0.m198onMediaClickedl3ndGo(holder, part.mo220getMessageId3Eiw7ao(), ((ImageAttachmentMessageAccessory) part).getAttachmentIndex(), "attachment", null, null, ViewResizeMode.Fill);
+        this$0.m200onMediaClickedl3ndGo(holder, part.mo222getMessageId3Eiw7ao(), ((ImageAttachmentMessageAccessory) part).getAttachmentIndex(), "attachment", null, null, ViewResizeMode.Fill);
     }
 
     
@@ -282,7 +282,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.e(str);
         ChannelId channelId = this$0.channelId;
         q.e(channelId);
-        chatEventHandler.mo163onTapFollowForumPostpfaIj0E(str, channelId.m588unboximpl());
+        chatEventHandler.mo163onTapFollowForumPostpfaIj0E(str, channelId.m590unboximpl());
     }
 
     
@@ -295,10 +295,10 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         ChannelId channelId = this$0.channelId;
         q.e(channelId);
-        long j10 = channelId.m588unboximpl();
+        long j10 = channelId.m590unboximpl();
         GuildId guildId = this$0.guildId;
         q.e(guildId);
-        chatEventHandler.mo175onTapShareForumPostmgk6anA(j10, guildId.m601unboximpl());
+        chatEventHandler.mo175onTapShareForumPostmgk6anA(j10, guildId.m603unboximpl());
     }
 
     
@@ -326,7 +326,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.e(str);
         ChannelId channelId = this$0.channelId;
         q.e(channelId);
-        chatEventHandler.mo171onTapReactionOverflowpfaIj0E(str, channelId.m588unboximpl());
+        chatEventHandler.mo171onTapReactionOverflowpfaIj0E(str, channelId.m590unboximpl());
     }
 
     
@@ -345,7 +345,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
 
     
     
-    public final void m198onMediaClickedl3ndGo(MessagePartViewHolder messagePartViewHolder, String str, int i10, String str2, Double d10, Integer num, ViewResizeMode viewResizeMode) {
+    public final void m200onMediaClickedl3ndGo(MessagePartViewHolder messagePartViewHolder, String str, int i10, String str2, Double d10, Integer num, ViewResizeMode viewResizeMode) {
         View itemView = messagePartViewHolder.itemView;
         q.g(itemView, "itemView");
         Point locationInWindow = ViewLocationUtilsKt.getLocationInWindow(itemView);
@@ -490,11 +490,11 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
 
     @SuppressLint({"NotifyDataSetChanged"})
     
-    public final void m199setItemsbo5iIEc(String messageId, long j10, GuildId guildId, List<? extends MessageAccessory> items) {
+    public final void m201setItemsbo5iIEc(String messageId, long j10, GuildId guildId, List<? extends MessageAccessory> items) {
         q.h(messageId, "messageId");
         q.h(items, "items");
         this.messageId = messageId;
-        this.channelId = ChannelId.m579boximpl(j10);
+        this.channelId = ChannelId.m581boximpl(j10);
         this.guildId = guildId;
         if (ChatView.Companion.getAreChatAnimationsEnabled()) {
             List<? extends MessageAccessory> list = this.items;
@@ -631,7 +631,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             boolean showRemixButton = imageAttachmentMessageAccessory.getShowRemixButton();
             Integer remixButtonIconColor = imageAttachmentMessageAccessory.getRemixButtonIconColor();
             Integer remixButtonBackgroundColor = imageAttachmentMessageAccessory.getRemixButtonBackgroundColor();
-            String str = messageAccessory.mo220getMessageId3Eiw7ao();
+            String str = messageAccessory.mo222getMessageId3Eiw7ao();
             ChatEventHandler chatEventHandler18 = this.eventHandler;
             if (chatEventHandler18 == null) {
                 q.z("eventHandler");
@@ -639,7 +639,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             } else {
                 chatEventHandler4 = chatEventHandler18;
             }
-            imageAttachmentViewHolder.m346bindNlw0kPk(attachment, width, dimensionPixelSize2, radiusPx2, resizeMode, bVar, onLongClick2, configure, useNewAltTextButton, attachmentsOpacity, showRemixButton, false, remixButtonIconColor, remixButtonBackgroundColor, str, new MessageAccessoriesAdapter$onBindViewHolder$19(chatEventHandler4));
+            imageAttachmentViewHolder.m348bindNlw0kPk(attachment, width, dimensionPixelSize2, radiusPx2, resizeMode, bVar, onLongClick2, configure, useNewAltTextButton, attachmentsOpacity, showRemixButton, false, remixButtonIconColor, remixButtonBackgroundColor, str, new MessageAccessoriesAdapter$onBindViewHolder$19(chatEventHandler4));
         } else if (messageAccessory instanceof VideoAttachmentMessageAccessory) {
             VideoAttachmentViewHolder videoAttachmentViewHolder = (VideoAttachmentViewHolder) holder;
             VideoAttachmentMessageAccessory videoAttachmentMessageAccessory = (VideoAttachmentMessageAccessory) messageAccessory;
@@ -665,9 +665,9 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             }
             uploadProgressViewHolder.bind(uploadProgress, chatEventHandler3);
         } else if (messageAccessory instanceof ReactionsMessageAccessory) {
-            String str2 = messageAccessory.mo220getMessageId3Eiw7ao();
+            String str2 = messageAccessory.mo222getMessageId3Eiw7ao();
             ReactionsMessageAccessory reactionsMessageAccessory = (ReactionsMessageAccessory) messageAccessory;
-            ((ReactionsViewHolder) holder).m351bindJJXpD5M(str2, reactionsMessageAccessory.getReactions(), reactionsMessageAccessory.getCanAddNewReactions(), reactionsMessageAccessory.getCanAddNewBurstReactions(), reactionsMessageAccessory.getAddReactionLabel(), reactionsMessageAccessory.getAddNewReactionAccessibilityLabel(), reactionsMessageAccessory.getAddNewBurstReactionAccessibilityLabel(), reactionsMessageAccessory.getReactionsTheme(), new View.OnClickListener() { 
+            ((ReactionsViewHolder) holder).m353bindJJXpD5M(str2, reactionsMessageAccessory.getReactions(), reactionsMessageAccessory.getCanAddNewReactions(), reactionsMessageAccessory.getCanAddNewBurstReactions(), reactionsMessageAccessory.getAddReactionLabel(), reactionsMessageAccessory.getAddNewReactionAccessibilityLabel(), reactionsMessageAccessory.getAddNewBurstReactionAccessibilityLabel(), reactionsMessageAccessory.getReactionsTheme(), new View.OnClickListener() { 
                 @Override 
                 public final void onClick(View view) {
                     MessageAccessoriesAdapter.onBindViewHolder$lambda$1(MessageAccessoriesAdapter.this, view);
@@ -833,7 +833,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         } else {
             throw new jf.q();
         }
-        ForceExhaustiveKt.forceExhaustive(Unit.f21036a);
+        ForceExhaustiveKt.forceExhaustive(Unit.f21210a);
     }
 
     @Override 

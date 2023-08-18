@@ -57,9 +57,9 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        m0 m0Var = m0.f29625a;
-        h hVar = h.f29592a;
+        a2 a2Var = a2.f29755a;
+        m0 m0Var = m0.f29830a;
+        h hVar = h.f29797a;
         return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a.u(GuildId$$serializer.INSTANCE), a.u(UserId$$serializer.INSTANCE), a.u(StructurableTextSerializer.INSTANCE), a.u(a2Var), a.u(a2Var), m0Var, a.u(m0Var), hVar, a.u(a2Var), a.u(hVar)};
     }
 
@@ -80,26 +80,26 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
         Object obj10;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i12 = 10;
         int i13 = 9;
         int i14 = 7;
         int i15 = 6;
         Object obj11 = null;
-        if (c10.y()) {
-            obj10 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
-            obj = c10.m(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
-            obj2 = c10.v(descriptor2, 2, GuildId$$serializer.INSTANCE, null);
-            obj5 = c10.v(descriptor2, 3, UserId$$serializer.INSTANCE, null);
-            obj3 = c10.v(descriptor2, 4, StructurableTextSerializer.INSTANCE, null);
-            a2 a2Var = a2.f29550a;
-            obj6 = c10.v(descriptor2, 5, a2Var, null);
-            obj7 = c10.v(descriptor2, 6, a2Var, null);
-            i10 = c10.k(descriptor2, 7);
-            obj9 = c10.v(descriptor2, 8, m0.f29625a, null);
-            z10 = c10.s(descriptor2, 9);
-            obj8 = c10.v(descriptor2, 10, a2Var, null);
-            obj4 = c10.v(descriptor2, 11, h.f29592a, null);
+        if (b10.p()) {
+            obj10 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
+            obj = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
+            obj2 = b10.n(descriptor2, 2, GuildId$$serializer.INSTANCE, null);
+            obj5 = b10.n(descriptor2, 3, UserId$$serializer.INSTANCE, null);
+            obj3 = b10.n(descriptor2, 4, StructurableTextSerializer.INSTANCE, null);
+            a2 a2Var = a2.f29755a;
+            obj6 = b10.n(descriptor2, 5, a2Var, null);
+            obj7 = b10.n(descriptor2, 6, a2Var, null);
+            i10 = b10.i(descriptor2, 7);
+            obj9 = b10.n(descriptor2, 8, m0.f29830a, null);
+            z10 = b10.C(descriptor2, 9);
+            obj8 = b10.n(descriptor2, 10, a2Var, null);
+            obj4 = b10.n(descriptor2, 11, h.f29797a, null);
             i11 = 4095;
         } else {
             int i16 = 11;
@@ -117,8 +117,8 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
             Object obj19 = null;
             Object obj20 = null;
             while (z11) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z11 = false;
                         i16 = 11;
@@ -128,7 +128,7 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
                         i15 = 6;
                         break;
                     case 0:
-                        obj12 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, obj12);
+                        obj12 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, obj12);
                         i17 |= 1;
                         i16 = 11;
                         i12 = 10;
@@ -137,7 +137,7 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
                         i15 = 6;
                         break;
                     case 1:
-                        obj20 = c10.m(descriptor2, 1, ChannelId$$serializer.INSTANCE, obj20);
+                        obj20 = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, obj20);
                         i17 |= 2;
                         i16 = 11;
                         i12 = 10;
@@ -146,7 +146,7 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
                         i15 = 6;
                         break;
                     case 2:
-                        obj19 = c10.v(descriptor2, 2, GuildId$$serializer.INSTANCE, obj19);
+                        obj19 = b10.n(descriptor2, 2, GuildId$$serializer.INSTANCE, obj19);
                         i17 |= 4;
                         i16 = 11;
                         i12 = 10;
@@ -154,49 +154,49 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
                         i14 = 7;
                         break;
                     case 3:
-                        obj17 = c10.v(descriptor2, 3, UserId$$serializer.INSTANCE, obj17);
+                        obj17 = b10.n(descriptor2, 3, UserId$$serializer.INSTANCE, obj17);
                         i17 |= 8;
                         i16 = 11;
                         i12 = 10;
                         i13 = 9;
                         break;
                     case 4:
-                        obj18 = c10.v(descriptor2, 4, StructurableTextSerializer.INSTANCE, obj18);
+                        obj18 = b10.n(descriptor2, 4, StructurableTextSerializer.INSTANCE, obj18);
                         i17 |= 16;
                         i16 = 11;
                         i12 = 10;
                         break;
                     case 5:
-                        obj14 = c10.v(descriptor2, 5, a2.f29550a, obj14);
+                        obj14 = b10.n(descriptor2, 5, a2.f29755a, obj14);
                         i17 |= 32;
                         i16 = 11;
                         continue;
                     case 6:
-                        obj15 = c10.v(descriptor2, i15, a2.f29550a, obj15);
+                        obj15 = b10.n(descriptor2, i15, a2.f29755a, obj15);
                         i17 |= 64;
                         break;
                     case 7:
-                        i18 = c10.k(descriptor2, i14);
+                        i18 = b10.i(descriptor2, i14);
                         i17 |= 128;
                         break;
                     case 8:
-                        obj11 = c10.v(descriptor2, 8, m0.f29625a, obj11);
+                        obj11 = b10.n(descriptor2, 8, m0.f29830a, obj11);
                         i17 |= 256;
                         break;
                     case 9:
-                        z12 = c10.s(descriptor2, i13);
+                        z12 = b10.C(descriptor2, i13);
                         i17 |= 512;
                         break;
                     case 10:
-                        obj16 = c10.v(descriptor2, i12, a2.f29550a, obj16);
+                        obj16 = b10.n(descriptor2, i12, a2.f29755a, obj16);
                         i17 |= 1024;
                         break;
                     case 11:
-                        obj13 = c10.v(descriptor2, i16, h.f29592a, obj13);
+                        obj13 = b10.n(descriptor2, i16, h.f29797a, obj13);
                         i17 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             obj4 = obj13;
@@ -213,9 +213,9 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
             obj10 = obj12;
             obj9 = obj11;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         MessageId messageId = (MessageId) obj10;
-        return new FlaggedMessageEmbed(i11, messageId != null ? messageId.m613unboximpl() : null, (ChannelId) obj, (GuildId) obj2, (UserId) obj5, (StructurableText) obj3, (String) obj6, (String) obj7, i10, (Integer) obj9, z10, (String) obj8, (Boolean) obj4, null, null);
+        return new FlaggedMessageEmbed(i11, messageId != null ? messageId.m615unboximpl() : null, (ChannelId) obj, (GuildId) obj2, (UserId) obj5, (StructurableText) obj3, (String) obj6, (String) obj7, i10, (Integer) obj9, z10, (String) obj8, (Boolean) obj4, null, null);
     }
 
     @Override 
@@ -227,9 +227,9 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        FlaggedMessageEmbed.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        FlaggedMessageEmbed.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

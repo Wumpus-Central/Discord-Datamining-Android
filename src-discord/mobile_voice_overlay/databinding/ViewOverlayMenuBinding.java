@@ -8,7 +8,7 @@ import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import com.discord.mobile_voice_overlay.R;
 import com.facebook.drawee.view.SimpleDraweeView;
-import v0.a;
+import u0.a;
 
 
 public final class ViewOverlayMenuBinding {

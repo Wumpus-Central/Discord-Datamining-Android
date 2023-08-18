@@ -41,7 +41,7 @@ public final class ChannelMentionContentNode$$serializer implements f0<ChannelMe
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
+        a2 a2Var = a2.f29755a;
         ContentNodeSerializer contentNodeSerializer = ContentNodeSerializer.INSTANCE;
         return new KSerializer[]{a2Var, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(new f(contentNodeSerializer)), a.u(new f(contentNodeSerializer))};
     }
@@ -57,18 +57,18 @@ public final class ChannelMentionContentNode$$serializer implements f0<ChannelMe
         Object obj5;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         boolean z10 = true;
         String str2 = null;
-        if (c10.y()) {
-            str = c10.t(descriptor2, 0);
-            a2 a2Var = a2.f29550a;
-            obj = c10.v(descriptor2, 1, a2Var, null);
-            obj2 = c10.v(descriptor2, 2, a2Var, null);
-            obj4 = c10.v(descriptor2, 3, a2Var, null);
+        if (b10.p()) {
+            str = b10.m(descriptor2, 0);
+            a2 a2Var = a2.f29755a;
+            obj = b10.n(descriptor2, 1, a2Var, null);
+            obj2 = b10.n(descriptor2, 2, a2Var, null);
+            obj4 = b10.n(descriptor2, 3, a2Var, null);
             ContentNodeSerializer contentNodeSerializer = ContentNodeSerializer.INSTANCE;
-            obj3 = c10.v(descriptor2, 4, new f(contentNodeSerializer), null);
-            obj5 = c10.v(descriptor2, 5, new f(contentNodeSerializer), null);
+            obj3 = b10.n(descriptor2, 4, new f(contentNodeSerializer), null);
+            obj5 = b10.n(descriptor2, 5, new f(contentNodeSerializer), null);
             i10 = 63;
         } else {
             boolean z11 = true;
@@ -79,44 +79,44 @@ public final class ChannelMentionContentNode$$serializer implements f0<ChannelMe
             Object obj9 = null;
             Object obj10 = null;
             while (z11) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z11 = false;
                         z10 = z10;
                         continue;
                     case 0:
-                        str2 = c10.t(descriptor2, 0);
+                        str2 = b10.m(descriptor2, 0);
                         i11 |= 1;
                         z10 = z10;
                         continue;
                     case 1:
-                        obj6 = c10.v(descriptor2, 1, a2.f29550a, obj6);
+                        obj6 = b10.n(descriptor2, 1, a2.f29755a, obj6);
                         i11 |= 2;
                         z10 = true;
                         break;
                     case 2:
-                        obj7 = c10.v(descriptor2, 2, a2.f29550a, obj7);
+                        obj7 = b10.n(descriptor2, 2, a2.f29755a, obj7);
                         i11 |= 4;
                         z10 = true;
                         break;
                     case 3:
-                        obj8 = c10.v(descriptor2, 3, a2.f29550a, obj8);
+                        obj8 = b10.n(descriptor2, 3, a2.f29755a, obj8);
                         i11 |= 8;
                         z10 = true;
                         break;
                     case 4:
-                        obj9 = c10.v(descriptor2, 4, new f(ContentNodeSerializer.INSTANCE), obj9);
+                        obj9 = b10.n(descriptor2, 4, new f(ContentNodeSerializer.INSTANCE), obj9);
                         i11 |= 16;
                         z10 = true;
                         break;
                     case 5:
-                        obj10 = c10.v(descriptor2, 5, new f(ContentNodeSerializer.INSTANCE), obj10);
+                        obj10 = b10.n(descriptor2, 5, new f(ContentNodeSerializer.INSTANCE), obj10);
                         i11 |= 32;
                         z10 = true;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             obj = obj6;
@@ -127,7 +127,7 @@ public final class ChannelMentionContentNode$$serializer implements f0<ChannelMe
             i10 = i11;
             str = str2;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new ChannelMentionContentNode(i10, str, (String) obj, (String) obj2, (String) obj4, (List) obj3, (List) obj5, (SerializationConstructorMarker) null);
     }
 
@@ -140,9 +140,9 @@ public final class ChannelMentionContentNode$$serializer implements f0<ChannelMe
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        ChannelMentionContentNode.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        ChannelMentionContentNode.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

@@ -78,21 +78,21 @@ public final class Truncation {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z11 = false;
-        output.q(serialDesc, 0, self.numberOfLines);
-        output.s(serialDesc, 1, self.seeMoreLabel);
-        if (!output.w(serialDesc, 2) && self.seeMoreLabelColor == null) {
+        output.v(serialDesc, 0, self.numberOfLines);
+        output.x(serialDesc, 1, self.seeMoreLabel);
+        if (!output.z(serialDesc, 2) && self.seeMoreLabelColor == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 2, m0.f29625a, self.seeMoreLabelColor);
+            output.B(serialDesc, 2, m0.f29830a, self.seeMoreLabelColor);
         }
-        if (output.w(serialDesc, 3) || self.forceShow != null) {
+        if (output.z(serialDesc, 3) || self.forceShow != null) {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 3, h.f29592a, self.forceShow);
+            output.B(serialDesc, 3, h.f29797a, self.forceShow);
         }
     }
 

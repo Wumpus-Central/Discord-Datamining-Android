@@ -49,7 +49,7 @@ public final class AudioManagerMediaVolumeChanged implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, self.volume);
+        output.v(serialDesc, 0, self.volume);
     }
 
     public final int component1() {

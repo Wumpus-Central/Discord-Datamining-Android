@@ -97,12 +97,12 @@ public final class ContactsDataEntry {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.contactMethod);
-        output.s(serialDesc, 1, self.contactMethodLabel);
-        output.s(serialDesc, 2, self.contactMethodType);
-        output.h(serialDesc, 3, new v1(f0.b(ContactName.class), ContactName$$serializer.INSTANCE), self.contactNames);
-        output.r(serialDesc, 4, self.hasImageData);
-        output.h(serialDesc, 5, new v1(f0.b(String.class), a2.f29550a), self.deviceContactIds);
+        output.x(serialDesc, 0, self.contactMethod);
+        output.x(serialDesc, 1, self.contactMethodLabel);
+        output.x(serialDesc, 2, self.contactMethodType);
+        output.o(serialDesc, 3, new v1(f0.b(ContactName.class), ContactName$$serializer.INSTANCE), self.contactNames);
+        output.w(serialDesc, 4, self.hasImageData);
+        output.o(serialDesc, 5, new v1(f0.b(String.class), a2.f29755a), self.deviceContactIds);
     }
 
     public final String component1() {

@@ -52,7 +52,7 @@ public final class TapShowAltTextData implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.description);
+        output.x(serialDesc, 0, self.description);
     }
 
     public final String component1() {

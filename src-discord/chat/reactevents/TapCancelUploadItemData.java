@@ -57,8 +57,8 @@ public final class TapCancelUploadItemData implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.uploaderId);
-        output.s(serialDesc, 1, self.itemId);
+        output.x(serialDesc, 0, self.uploaderId);
+        output.x(serialDesc, 1, self.itemId);
     }
 
     public final String component1() {

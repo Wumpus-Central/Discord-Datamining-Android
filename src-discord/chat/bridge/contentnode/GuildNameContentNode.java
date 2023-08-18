@@ -73,20 +73,20 @@ public final class GuildNameContentNode extends ContentNode {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z11 = false;
-        if (!output.w(serialDesc, 0) && self.guildId == null) {
+        if (!output.z(serialDesc, 0) && self.guildId == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, a2.f29550a, self.guildId);
+            output.B(serialDesc, 0, a2.f29755a, self.guildId);
         }
-        output.s(serialDesc, 1, self.content);
-        if (output.w(serialDesc, 2) || self.icon != null) {
+        output.x(serialDesc, 1, self.content);
+        if (output.z(serialDesc, 2) || self.icon != null) {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 2, a2.f29550a, self.icon);
+            output.B(serialDesc, 2, a2.f29755a, self.icon);
         }
     }
 

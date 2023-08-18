@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import com.discord.chat.R;
 import com.discord.chat.presentation.message.view.botuikit.components.ActionRowComponentView;
 import com.google.android.flexbox.FlexboxLayout;
-import v0.a;
+import u0.a;
 
 
 public final class MessageComponentActionRowViewBinding {

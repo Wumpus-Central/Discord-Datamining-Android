@@ -10,7 +10,7 @@ import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.google.android.flexbox.FlexboxLayout;
 import com.google.android.material.textview.MaterialTextView;
-import v0.a;
+import u0.a;
 
 
 public final class MessageComponentSelectViewBinding {

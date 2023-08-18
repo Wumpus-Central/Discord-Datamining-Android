@@ -35,7 +35,7 @@ public final class PinsOnClick$$serializer implements f0<PinsOnClick> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f29550a, ChannelId$$serializer.INSTANCE};
+        return new KSerializer[]{a2.f29755a, ChannelId$$serializer.INSTANCE};
     }
 
     @Override 
@@ -45,35 +45,35 @@ public final class PinsOnClick$$serializer implements f0<PinsOnClick> {
         Object obj;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         String str2 = null;
-        if (c10.y()) {
-            str = c10.t(descriptor2, 0);
-            obj = c10.m(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
+        if (b10.p()) {
+            str = b10.m(descriptor2, 0);
+            obj = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
             i10 = 3;
         } else {
             boolean z10 = true;
             int i11 = 0;
             Object obj2 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    str2 = c10.t(descriptor2, 0);
+                } else if (o10 == 0) {
+                    str2 = b10.m(descriptor2, 0);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    obj2 = c10.m(descriptor2, 1, ChannelId$$serializer.INSTANCE, obj2);
+                } else if (o10 == 1) {
+                    obj2 = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, obj2);
                     i11 |= 2;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i10 = i11;
             str = str2;
             obj = obj2;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new PinsOnClick(i10, str, (ChannelId) obj, null, null);
     }
 
@@ -86,9 +86,9 @@ public final class PinsOnClick$$serializer implements f0<PinsOnClick> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        PinsOnClick.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        PinsOnClick.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

@@ -1171,10 +1171,16 @@
         <enum name="centerInside" value="7" />
     </attr>
     <attr name="lottieAnimationViewStyle" format="reference" />
+    <attr name="lottie_asyncUpdates">
+        <enum name="automatic" value="0" />
+        <enum name="enabled" value="1" />
+        <enum name="disabled" value="2" />
+    </attr>
     <attr name="lottie_autoPlay" format="boolean" />
     <attr name="lottie_cacheComposition" format="boolean" />
     <attr name="lottie_clipToCompositionBounds" format="boolean" />
     <attr name="lottie_colorFilter" format="color" />
+    <attr name="lottie_defaultFontFileExtension" format="string" />
     <attr name="lottie_enableMergePathsForKitKatAndAbove" format="boolean" />
     <attr name="lottie_fallbackRes" format="reference" />
     <attr name="lottie_fileName" format="string" />
@@ -1195,6 +1201,7 @@
     </attr>
     <attr name="lottie_speed" format="float" />
     <attr name="lottie_url" format="string" />
+    <attr name="lottie_useCompositionFrameRate" format="boolean" />
     <attr name="marginHorizontal" format="dimension" />
     <attr name="marginLeftSystemWindowInsets" format="boolean" />
     <attr name="marginRightSystemWindowInsets" format="boolean" />

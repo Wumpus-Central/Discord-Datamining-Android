@@ -68,10 +68,10 @@ public final class OnSelectionOrTextChangeEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, self.start);
-        output.q(serialDesc, 1, self.end);
-        output.s(serialDesc, 2, self.text);
-        output.s(serialDesc, 3, self.editId);
+        output.v(serialDesc, 0, self.start);
+        output.v(serialDesc, 1, self.end);
+        output.x(serialDesc, 2, self.text);
+        output.x(serialDesc, 3, self.editId);
     }
 
     public final int component1() {

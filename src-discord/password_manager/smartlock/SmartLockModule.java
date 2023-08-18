@@ -69,7 +69,7 @@ public final class SmartLockModule extends ReactContextBaseJavaModule {
     }
 
     private final void requestCredentials() {
-        a a10 = new a.C0145a().c(true).b(DISCORD_ACCOUNT_IDENTITY).a();
+        a a10 = new a.C0153a().c(true).b(DISCORD_ACCOUNT_IDENTITY).a();
         q.g(a10, "Builder()\n            .s…ITY)\n            .build()");
         this.credentialsClient.D(a10).b(new d() { 
             @Override 

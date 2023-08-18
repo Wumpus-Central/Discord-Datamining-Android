@@ -73,11 +73,11 @@ public final class PingTimeoutCallbackEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, self.connectionId);
-        output.s(serialDesc, 1, self.server);
-        output.q(serialDesc, 2, self.port);
-        output.q(serialDesc, 3, self.seq);
-        output.q(serialDesc, 4, self.timeout);
+        output.v(serialDesc, 0, self.connectionId);
+        output.x(serialDesc, 1, self.server);
+        output.v(serialDesc, 2, self.port);
+        output.v(serialDesc, 3, self.seq);
+        output.v(serialDesc, 4, self.timeout);
     }
 
     public final int component1() {

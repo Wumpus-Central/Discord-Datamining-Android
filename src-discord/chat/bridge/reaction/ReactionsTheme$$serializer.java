@@ -39,7 +39,7 @@ public final class ReactionsTheme$$serializer implements f0<ReactionsTheme> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29625a;
+        m0 m0Var = m0.f29830a;
         return new KSerializer[]{a.u(m0Var), a.u(m0Var), a.u(m0Var), a.u(m0Var), a.u(m0Var), a.u(m0Var)};
     }
 
@@ -54,17 +54,17 @@ public final class ReactionsTheme$$serializer implements f0<ReactionsTheme> {
         Object obj6;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i11 = 5;
         Object obj7 = null;
-        if (c10.y()) {
-            m0 m0Var = m0.f29625a;
-            obj2 = c10.v(descriptor2, 0, m0Var, null);
-            obj3 = c10.v(descriptor2, 1, m0Var, null);
-            obj4 = c10.v(descriptor2, 2, m0Var, null);
-            obj = c10.v(descriptor2, 3, m0Var, null);
-            obj5 = c10.v(descriptor2, 4, m0Var, null);
-            obj6 = c10.v(descriptor2, 5, m0Var, null);
+        if (b10.p()) {
+            m0 m0Var = m0.f29830a;
+            obj2 = b10.n(descriptor2, 0, m0Var, null);
+            obj3 = b10.n(descriptor2, 1, m0Var, null);
+            obj4 = b10.n(descriptor2, 2, m0Var, null);
+            obj = b10.n(descriptor2, 3, m0Var, null);
+            obj5 = b10.n(descriptor2, 4, m0Var, null);
+            obj6 = b10.n(descriptor2, 5, m0Var, null);
             i10 = 63;
         } else {
             boolean z10 = true;
@@ -75,32 +75,32 @@ public final class ReactionsTheme$$serializer implements f0<ReactionsTheme> {
             Object obj10 = null;
             Object obj11 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z10 = false;
                         i11 = 5;
                     case 0:
-                        obj7 = c10.v(descriptor2, 0, m0.f29625a, obj7);
+                        obj7 = b10.n(descriptor2, 0, m0.f29830a, obj7);
                         i12 |= 1;
                         i11 = 5;
                     case 1:
-                        obj8 = c10.v(descriptor2, 1, m0.f29625a, obj8);
+                        obj8 = b10.n(descriptor2, 1, m0.f29830a, obj8);
                         i12 |= 2;
                     case 2:
-                        obj9 = c10.v(descriptor2, 2, m0.f29625a, obj9);
+                        obj9 = b10.n(descriptor2, 2, m0.f29830a, obj9);
                         i12 |= 4;
                     case 3:
-                        obj = c10.v(descriptor2, 3, m0.f29625a, obj);
+                        obj = b10.n(descriptor2, 3, m0.f29830a, obj);
                         i12 |= 8;
                     case 4:
-                        obj10 = c10.v(descriptor2, 4, m0.f29625a, obj10);
+                        obj10 = b10.n(descriptor2, 4, m0.f29830a, obj10);
                         i12 |= 16;
                     case 5:
-                        obj11 = c10.v(descriptor2, i11, m0.f29625a, obj11);
+                        obj11 = b10.n(descriptor2, i11, m0.f29830a, obj11);
                         i12 |= 32;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             i10 = i12;
@@ -110,7 +110,7 @@ public final class ReactionsTheme$$serializer implements f0<ReactionsTheme> {
             obj5 = obj10;
             obj6 = obj11;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new ReactionsTheme(i10, (Integer) obj2, (Integer) obj3, (Integer) obj4, (Integer) obj, (Integer) obj5, (Integer) obj6, (SerializationConstructorMarker) null);
     }
 
@@ -123,9 +123,9 @@ public final class ReactionsTheme$$serializer implements f0<ReactionsTheme> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        ReactionsTheme.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        ReactionsTheme.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

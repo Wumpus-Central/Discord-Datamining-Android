@@ -63,12 +63,12 @@ public final class DeleteRow extends Row {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z10 = false;
-        output.q(serialDesc, 0, self.getIndex());
-        if (output.w(serialDesc, 1) || self.getChangeType() != ChangeType.DELETE) {
+        output.v(serialDesc, 0, self.getIndex());
+        if (output.z(serialDesc, 1) || self.getChangeType() != ChangeType.DELETE) {
             z10 = true;
         }
         if (z10) {
-            output.h(serialDesc, 1, ChangeType.Serializer.INSTANCE, self.getChangeType());
+            output.o(serialDesc, 1, ChangeType.Serializer.INSTANCE, self.getChangeType());
         }
     }
 

@@ -53,7 +53,7 @@ public final class ContactSyncPayloadEntry {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.friendId);
+        output.x(serialDesc, 0, self.friendId);
     }
 
     public final String component1() {

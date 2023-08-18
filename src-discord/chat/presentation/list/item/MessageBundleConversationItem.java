@@ -11,7 +11,7 @@ public final class MessageBundleConversationItem extends MessageBundleItem {
 
     
     public MessageBundleConversationItem(MessageItem messageItem) {
-        super(MessageId.m611toStringimpl(messageItem.getMessage().m17getId3Eiw7ao()), null);
+        super(MessageId.m613toStringimpl(messageItem.getMessage().m17getId3Eiw7ao()), null);
         q.h(messageItem, "messageItem");
         this.messageItem = messageItem;
     }

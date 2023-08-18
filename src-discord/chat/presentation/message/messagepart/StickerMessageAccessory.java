@@ -24,19 +24,19 @@ public final class StickerMessageAccessory extends MessageAccessory {
     }
 
     
-    public static  StickerMessageAccessory m289copyntcYbpo$default(StickerMessageAccessory stickerMessageAccessory, String str, Sticker sticker, int i10, Object obj) {
+    public static  StickerMessageAccessory m291copyntcYbpo$default(StickerMessageAccessory stickerMessageAccessory, String str, Sticker sticker, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = stickerMessageAccessory.mo220getMessageId3Eiw7ao();
+            str = stickerMessageAccessory.mo222getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             sticker = stickerMessageAccessory.sticker;
         }
-        return stickerMessageAccessory.m291copyntcYbpo(str, sticker);
+        return stickerMessageAccessory.m293copyntcYbpo(str, sticker);
     }
 
     
-    public final String m290component13Eiw7ao() {
-        return mo220getMessageId3Eiw7ao();
+    public final String m292component13Eiw7ao() {
+        return mo222getMessageId3Eiw7ao();
     }
 
     public final Sticker component2() {
@@ -44,7 +44,7 @@ public final class StickerMessageAccessory extends MessageAccessory {
     }
 
     
-    public final StickerMessageAccessory m291copyntcYbpo(String messageId, Sticker sticker) {
+    public final StickerMessageAccessory m293copyntcYbpo(String messageId, Sticker sticker) {
         q.h(messageId, "messageId");
         q.h(sticker, "sticker");
         return new StickerMessageAccessory(messageId, sticker, null);
@@ -58,12 +58,12 @@ public final class StickerMessageAccessory extends MessageAccessory {
             return false;
         }
         StickerMessageAccessory stickerMessageAccessory = (StickerMessageAccessory) obj;
-        return MessageId.m609equalsimpl0(mo220getMessageId3Eiw7ao(), stickerMessageAccessory.mo220getMessageId3Eiw7ao()) && q.c(this.sticker, stickerMessageAccessory.sticker);
+        return MessageId.m611equalsimpl0(mo222getMessageId3Eiw7ao(), stickerMessageAccessory.mo222getMessageId3Eiw7ao()) && q.c(this.sticker, stickerMessageAccessory.sticker);
     }
 
     @Override 
     
-    public String mo220getMessageId3Eiw7ao() {
+    public String mo222getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -72,11 +72,11 @@ public final class StickerMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (MessageId.m610hashCodeimpl(mo220getMessageId3Eiw7ao()) * 31) + this.sticker.hashCode();
+        return (MessageId.m612hashCodeimpl(mo222getMessageId3Eiw7ao()) * 31) + this.sticker.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m611toStringimpl(mo220getMessageId3Eiw7ao());
+        String str = MessageId.m613toStringimpl(mo222getMessageId3Eiw7ao());
         Sticker sticker = this.sticker;
         return "StickerMessageAccessory(messageId=" + str + ", sticker=" + sticker + ")";
     }

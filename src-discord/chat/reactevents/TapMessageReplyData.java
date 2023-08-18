@@ -57,8 +57,8 @@ public final class TapMessageReplyData implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.channelId);
-        output.s(serialDesc, 1, self.originId);
+        output.x(serialDesc, 0, self.channelId);
+        output.x(serialDesc, 1, self.originId);
     }
 
     public final String component1() {

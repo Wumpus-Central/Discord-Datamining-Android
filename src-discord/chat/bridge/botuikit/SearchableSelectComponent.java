@@ -62,11 +62,11 @@ public abstract class SearchableSelectComponent extends SelectComponent {
         q.h(serialDesc, "serialDesc");
         SelectComponent.write$Self(self, output, serialDesc);
         boolean z10 = true;
-        if (!output.w(serialDesc, 0) && self.selectedOptions == null) {
+        if (!output.z(serialDesc, 0) && self.selectedOptions == null) {
             z10 = false;
         }
         if (z10) {
-            output.z(serialDesc, 0, new wi.f(SearchableSelectItem$$serializer.INSTANCE), self.selectedOptions);
+            output.B(serialDesc, 0, new wi.f(SearchableSelectItem$$serializer.INSTANCE), self.selectedOptions);
         }
     }
 

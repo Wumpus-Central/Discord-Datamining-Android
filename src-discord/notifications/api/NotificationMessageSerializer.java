@@ -26,7 +26,7 @@ public final class NotificationMessageSerializer implements KSerializer<Notifica
     @Override 
     public NotificationMessage deserialize(Decoder decoder) {
         q.h(decoder, "decoder");
-        return (NotificationMessage) json.b(NotificationMessage.Companion.serializer(), decoder.n());
+        return (NotificationMessage) json.b(NotificationMessage.Companion.serializer(), decoder.z());
     }
 
     public void serialize(Encoder encoder, NotificationMessage value) {

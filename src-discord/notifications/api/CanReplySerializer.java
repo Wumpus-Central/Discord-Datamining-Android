@@ -19,7 +19,7 @@ public final class CanReplySerializer implements KSerializer<Boolean> {
 
     @Override 
     public SerialDescriptor getDescriptor() {
-        return a.A(c.f21066a).getDescriptor();
+        return a.A(c.f21240a).getDescriptor();
     }
 
     @Override 
@@ -30,7 +30,7 @@ public final class CanReplySerializer implements KSerializer<Boolean> {
     @Override 
     public Boolean deserialize(Decoder decoder) {
         q.h(decoder, "decoder");
-        return Boolean.valueOf(q.c(decoder.n(), "can_reply"));
+        return Boolean.valueOf(q.c(decoder.z(), "can_reply"));
     }
 
     public void serialize(Encoder encoder, boolean z10) {

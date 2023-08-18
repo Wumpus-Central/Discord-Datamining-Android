@@ -41,7 +41,7 @@ public final class ExecutedCommand$$serializer implements f0<ExecutedCommand> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{UserId$$serializer.INSTANCE, m0.f29625a, a.u(a2.f29550a), AnnotatedStructurableTextSerializer.INSTANCE};
+        return new KSerializer[]{UserId$$serializer.INSTANCE, m0.f29830a, a.u(a2.f29755a), AnnotatedStructurableTextSerializer.INSTANCE};
     }
 
     @Override 
@@ -53,12 +53,12 @@ public final class ExecutedCommand$$serializer implements f0<ExecutedCommand> {
         Object obj3;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            obj3 = c10.m(descriptor2, 0, UserId$$serializer.INSTANCE, null);
-            i10 = c10.k(descriptor2, 1);
-            obj = c10.v(descriptor2, 2, a2.f29550a, null);
-            obj2 = c10.m(descriptor2, 3, AnnotatedStructurableTextSerializer.INSTANCE, null);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            obj3 = b10.y(descriptor2, 0, UserId$$serializer.INSTANCE, null);
+            i10 = b10.i(descriptor2, 1);
+            obj = b10.n(descriptor2, 2, a2.f29755a, null);
+            obj2 = b10.y(descriptor2, 3, AnnotatedStructurableTextSerializer.INSTANCE, null);
             i11 = 15;
         } else {
             boolean z10 = true;
@@ -68,23 +68,23 @@ public final class ExecutedCommand$$serializer implements f0<ExecutedCommand> {
             Object obj6 = null;
             int i13 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    obj4 = c10.m(descriptor2, 0, UserId$$serializer.INSTANCE, obj4);
+                } else if (o10 == 0) {
+                    obj4 = b10.y(descriptor2, 0, UserId$$serializer.INSTANCE, obj4);
                     i13 |= 1;
-                } else if (x10 == 1) {
-                    i12 = c10.k(descriptor2, 1);
+                } else if (o10 == 1) {
+                    i12 = b10.i(descriptor2, 1);
                     i13 |= 2;
-                } else if (x10 == 2) {
-                    obj5 = c10.v(descriptor2, 2, a2.f29550a, obj5);
+                } else if (o10 == 2) {
+                    obj5 = b10.n(descriptor2, 2, a2.f29755a, obj5);
                     i13 |= 4;
-                } else if (x10 == 3) {
-                    obj6 = c10.m(descriptor2, 3, AnnotatedStructurableTextSerializer.INSTANCE, obj6);
+                } else if (o10 == 3) {
+                    obj6 = b10.y(descriptor2, 3, AnnotatedStructurableTextSerializer.INSTANCE, obj6);
                     i13 |= 8;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i11 = i13;
@@ -93,7 +93,7 @@ public final class ExecutedCommand$$serializer implements f0<ExecutedCommand> {
             i10 = i12;
             obj3 = obj4;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new ExecutedCommand(i11, (UserId) obj3, i10, (String) obj, (AnnotatedStructurableText) obj2, null, null);
     }
 
@@ -106,9 +106,9 @@ public final class ExecutedCommand$$serializer implements f0<ExecutedCommand> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        ExecutedCommand.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        ExecutedCommand.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

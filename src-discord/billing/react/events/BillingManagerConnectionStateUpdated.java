@@ -49,7 +49,7 @@ public final class BillingManagerConnectionStateUpdated implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, self.connectionState);
+        output.v(serialDesc, 0, self.connectionState);
     }
 
     public final int component1() {

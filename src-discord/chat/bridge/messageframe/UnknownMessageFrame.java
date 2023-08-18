@@ -53,7 +53,7 @@ public final class UnknownMessageFrame extends MessageFrame {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.h(serialDesc, 0, MessageFrameType.Serializer.INSTANCE, self.getType());
+        output.o(serialDesc, 0, MessageFrameType.Serializer.INSTANCE, self.getType());
     }
 
     public final MessageFrameType component1() {

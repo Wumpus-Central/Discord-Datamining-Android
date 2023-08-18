@@ -1,8 +1,8 @@
 package com.discord.bridge;
 
-import b1.a;
+import a1.a;
 import be.f;
-import com.airbnb.android.react.lottie.b;
+import com.airbnb.android.react.lottie.h;
 import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.discord.avatar.react.AvatarPackage;
 import com.discord.blur.BlurViewPackage;
@@ -23,6 +23,7 @@ import com.reactnative.ivpusic.imagepicker.e;
 import com.reactnativecommunity.webview.e1;
 import com.swmansion.reanimated.ReanimatedPackage;
 import com.swmansion.rnscreens.i;
+import ee.b;
 import io.sentry.react.m;
 import java.util.ArrayList;
 import kotlin.Metadata;
@@ -47,16 +48,16 @@ public final class DCDPackageList extends PackageList {
         packages.add(new w3.a());
         packages.add(new e());
         packages.add(new com.BV.LinearGradient.a());
-        packages.add(new b());
+        packages.add(new h());
         packages.add(new f());
         packages.add(new com.github.yamill.orientation.a() { 
         });
         packages.add(new com.reactnativecommunity.slider.e());
-        packages.add(new a2.c());
+        packages.add(new z1.c());
         packages.add(new ReanimatedPackage());
         packages.add(new e1());
         packages.add(new com.henninghall.date_picker.a());
-        packages.add(new ee.b());
+        packages.add(new b());
         packages.add(new ie.a());
         packages.add(new ek.a());
         packages.add(new com.mkuczera.a());
@@ -66,7 +67,7 @@ public final class DCDPackageList extends PackageList {
         packages.add(new SvgPackage());
         packages.add(GetSkiaPackageKt.getSkiaPackage());
         packages.add(new com.reactnativepagerview.b());
-        packages.add(new x1.c());
+        packages.add(new w1.c());
         packages.add(new ge.e());
         DCDModuleProvider dCDModuleProvider = DCDModuleProvider.INSTANCE;
         packages.add(dCDModuleProvider.getLegacyPackageForModule(DCDPackageList$getPackages$2.INSTANCE));
@@ -142,15 +143,16 @@ public final class DCDPackageList extends PackageList {
         packages.add(dCDModuleProvider.getLegacyPackageForModuleWithViewManager(DCDPackageList$getPackages$68.INSTANCE, DCDPackageList$getPackages$69.INSTANCE));
         packages.add(dCDModuleProvider.getLegacyPackageForModuleWithViewManager(null, DCDPackageList$getPackages$70.INSTANCE));
         packages.add(dCDModuleProvider.getLegacyPackageForModuleWithViewManager(null, DCDPackageList$getPackages$71.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNAudioRouteEmitter", DCDPackageList$getPackages$72.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNDeviceManager", DCDPackageList$getPackages$73.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNDeviceLocaleManager", DCDPackageList$getPackages$74.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNFileManager", DCDPackageList$getPackages$75.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNClientInfoManager", DCDPackageList$getPackages$76.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNKeyboardManager", DCDPackageList$getPackages$77.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNHeartbeatKeyProvider", DCDPackageList$getPackages$78.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNThemeManager", DCDPackageList$getPackages$79.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNMobileVoiceOverlay", DCDPackageList$getPackages$80.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNAppIconManager", DCDPackageList$getPackages$72.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNAudioRouteEmitter", DCDPackageList$getPackages$73.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNDeviceManager", DCDPackageList$getPackages$74.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNDeviceLocaleManager", DCDPackageList$getPackages$75.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNFileManager", DCDPackageList$getPackages$76.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNClientInfoManager", DCDPackageList$getPackages$77.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNKeyboardManager", DCDPackageList$getPackages$78.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNHeartbeatKeyProvider", DCDPackageList$getPackages$79.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNThemeManager", DCDPackageList$getPackages$80.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule("RTNMobileVoiceOverlay", DCDPackageList$getPackages$81.INSTANCE));
         q.g(packages, "packages");
         return packages;
     }

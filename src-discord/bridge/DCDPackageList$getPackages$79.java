@@ -1,6 +1,6 @@
 package com.discord.bridge;
 
-import com.discord.theme.ThemeModule;
+import com.discord.cache.HeartbeatKeyProviderModule;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import kotlin.Metadata;
@@ -19,6 +19,6 @@ final class DCDPackageList$getPackages$79 extends s implements Function1<ReactAp
 
     public final NativeModule invoke(ReactApplicationContext it) {
         q.h(it, "it");
-        return ThemeModule.Companion.create(it);
+        return HeartbeatKeyProviderModule.Companion.create(it);
     }
 }

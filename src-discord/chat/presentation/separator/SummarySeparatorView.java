@@ -1,14 +1,17 @@
 package com.discord.chat.presentation.separator;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.R;
 import com.discord.chat.databinding.SeparatorSummaryViewBinding;
+import com.discord.chat.presentation.separator.SummarySeparatorView;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.misc.utilities.size.SizeUtilsKt;
@@ -39,6 +42,32 @@ public final class SummarySeparatorView extends ConstraintLayout {
         this(context, (i10 & 2) != 0 ? null : attributeSet);
     }
 
+    
+    public static final void lambda$2$lambda$1(SeparatorSummaryViewBinding this_with, View view) {
+        boolean z10;
+        q.h(this_with, "$this_with");
+        SimpleDraweeView jumpButton = this_with.jumpButton;
+        q.g(jumpButton, "jumpButton");
+        boolean z11 = true;
+        if (jumpButton.getVisibility() == 0) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        if (z10) {
+            this_with.jumpButton.performClick();
+            return;
+        }
+        SimpleDraweeView moreButton = this_with.moreButton;
+        q.g(moreButton, "moreButton");
+        if (moreButton.getVisibility() != 0) {
+            z11 = false;
+        }
+        if (z11) {
+            this_with.moreButton.performClick();
+        }
+    }
+
     public final void setDividerColor(int i10) {
         SeparatorSummaryViewBinding separatorSummaryViewBinding = this.binding;
         SimpleDraweeView indicatorTop = separatorSummaryViewBinding.indicatorTop;
@@ -61,12 +90,16 @@ public final class SummarySeparatorView extends ConstraintLayout {
             separatorSummaryViewBinding.indicatorBottom.setVisibility(8);
             separatorSummaryViewBinding.jumpButton.setVisibility(0);
             separatorSummaryViewBinding.moreButton.setVisibility(8);
+            separatorSummaryViewBinding.topGuideline.setGuidelineBegin(SizeUtilsKt.getDpToPx(4));
+            separatorSummaryViewBinding.bottomGuideline.setGuidelineEnd(0);
             return;
         }
         separatorSummaryViewBinding.indicatorTop.setVisibility(8);
         separatorSummaryViewBinding.indicatorBottom.setVisibility(0);
         separatorSummaryViewBinding.jumpButton.setVisibility(8);
         separatorSummaryViewBinding.moreButton.setVisibility(0);
+        separatorSummaryViewBinding.topGuideline.setGuidelineBegin(0);
+        separatorSummaryViewBinding.bottomGuideline.setGuidelineEnd(SizeUtilsKt.getDpToPx(4));
     }
 
     public final void setJumpToBottomHandler(View.OnClickListener onJumpToBottom) {
@@ -93,17 +126,19 @@ public final class SummarySeparatorView extends ConstraintLayout {
     public SummarySeparatorView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         q.h(context, "context");
-        SeparatorSummaryViewBinding inflate = SeparatorSummaryViewBinding.inflate(LayoutInflater.from(context), this);
+        final SeparatorSummaryViewBinding inflate = SeparatorSummaryViewBinding.inflate(LayoutInflater.from(context), this);
         q.g(inflate, "inflate(\n        LayoutI…ext),\n        this,\n    )");
         this.binding = inflate;
         View root = inflate.getRoot();
         q.g(root, "root");
-        root.setPaddingRelative(context.getResources().getDimensionPixelSize(R.dimen.message_divider_margin_start), root.getPaddingTop(), context.getResources().getDimensionPixelSize(R.dimen.message_divider_margin_end), root.getPaddingBottom());
-        TextView lambda$1$lambda$0 = inflate.middleText;
-        q.g(lambda$1$lambda$0, "lambda$1$lambda$0");
-        ViewClippingUtilsKt.clipToRoundedRectangle(lambda$1$lambda$0, SizeUtilsKt.getDpToPx(4));
-        DiscordFontUtilsKt.setDiscordFont(lambda$1$lambda$0, DiscordFont.PrimarySemibold);
-        SetTextSizeSpKt.setTextSizeSp(lambda$1$lambda$0, 12.0f);
+        Resources resources = context.getResources();
+        int i10 = R.dimen.message_divider_margin_horiz;
+        root.setPaddingRelative(resources.getDimensionPixelSize(i10), root.getPaddingTop(), context.getResources().getDimensionPixelSize(i10), root.getPaddingBottom());
+        TextView lambda$2$lambda$0 = inflate.middleText;
+        q.g(lambda$2$lambda$0, "lambda$2$lambda$0");
+        ViewClippingUtilsKt.clipToRoundedRectangle(lambda$2$lambda$0, SizeUtilsKt.getDpToPx(4));
+        DiscordFontUtilsKt.setDiscordFont(lambda$2$lambda$0, DiscordFont.PrimarySemibold);
+        SetTextSizeSpKt.setTextSizeSp(lambda$2$lambda$0, 12.0f);
         SimpleDraweeView indicatorTop = inflate.indicatorTop;
         q.g(indicatorTop, "indicatorTop");
         ReactAssetUtilsKt.setReactAsset(indicatorTop, ReactAsset.SummaryIndicatorStart);
@@ -125,5 +160,13 @@ public final class SummarySeparatorView extends ConstraintLayout {
         SimpleDraweeView moreButton2 = inflate.moreButton;
         q.g(moreButton2, "moreButton");
         ColorUtilsKt.setTintColor(moreButton2, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
+        FrameLayout buttonWrapper = inflate.buttonWrapper;
+        q.g(buttonWrapper, "buttonWrapper");
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(buttonWrapper, false, new View.OnClickListener() { 
+            @Override 
+            public final void onClick(View view) {
+                SummarySeparatorView.lambda$2$lambda$1(SeparatorSummaryViewBinding.this, view);
+            }
+        }, 1, null);
     }
 }

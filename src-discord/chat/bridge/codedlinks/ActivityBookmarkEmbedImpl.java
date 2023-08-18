@@ -201,8 +201,8 @@ public final class ActivityBookmarkEmbedImpl extends CodedLinkEmbed implements A
         } else {
             this.titleText = str9;
         }
-        this.applicationId = applicationId.m575unboximpl();
-        this.channelId = channelId.m588unboximpl();
+        this.applicationId = applicationId.m577unboximpl();
+        this.channelId = channelId.m590unboximpl();
         this.extendedType = (536870912 & i10) == 0 ? CodedLinkExtendedType.ACTIVITY_BOOKMARK : codedLinkExtendedType;
         this.participantAvatarUris = list;
         if ((i10 & Integer.MIN_VALUE) == 0) {
@@ -226,93 +226,93 @@ public final class ActivityBookmarkEmbedImpl extends CodedLinkEmbed implements A
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z10 = false;
-        output.q(serialDesc, 0, self.getBackgroundColor());
-        output.q(serialDesc, 1, self.getBorderColor());
-        output.q(serialDesc, 2, self.getHeaderColor());
-        a2 a2Var = a2.f29550a;
-        output.z(serialDesc, 3, a2Var, self.getHeaderText());
-        if (output.w(serialDesc, 4) || self.getType() != null) {
-            output.z(serialDesc, 4, InviteType.Serializer.INSTANCE, self.getType());
+        output.v(serialDesc, 0, self.getBackgroundColor());
+        output.v(serialDesc, 1, self.getBorderColor());
+        output.v(serialDesc, 2, self.getHeaderColor());
+        a2 a2Var = a2.f29755a;
+        output.B(serialDesc, 3, a2Var, self.getHeaderText());
+        if (output.z(serialDesc, 4) || self.getType() != null) {
+            output.B(serialDesc, 4, InviteType.Serializer.INSTANCE, self.getType());
         }
-        if (output.w(serialDesc, 5) || self.getAcceptLabelBackgroundColor() != null) {
-            output.z(serialDesc, 5, m0.f29625a, self.getAcceptLabelBackgroundColor());
+        if (output.z(serialDesc, 5) || self.getAcceptLabelBackgroundColor() != null) {
+            output.B(serialDesc, 5, m0.f29830a, self.getAcceptLabelBackgroundColor());
         }
-        if (output.w(serialDesc, 6) || self.getAcceptLabelBorderColor() != null) {
-            output.z(serialDesc, 6, m0.f29625a, self.getAcceptLabelBorderColor());
+        if (output.z(serialDesc, 6) || self.getAcceptLabelBorderColor() != null) {
+            output.B(serialDesc, 6, m0.f29830a, self.getAcceptLabelBorderColor());
         }
-        if (output.w(serialDesc, 7) || self.getAcceptLabelColor() != null) {
-            output.z(serialDesc, 7, m0.f29625a, self.getAcceptLabelColor());
+        if (output.z(serialDesc, 7) || self.getAcceptLabelColor() != null) {
+            output.B(serialDesc, 7, m0.f29830a, self.getAcceptLabelColor());
         }
-        if (output.w(serialDesc, 8) || self.getAcceptLabelText() != null) {
-            output.z(serialDesc, 8, a2Var, self.getAcceptLabelText());
+        if (output.z(serialDesc, 8) || self.getAcceptLabelText() != null) {
+            output.B(serialDesc, 8, a2Var, self.getAcceptLabelText());
         }
-        if (output.w(serialDesc, 9) || self.getBodyText() != null) {
-            output.z(serialDesc, 9, a2Var, self.getBodyText());
+        if (output.z(serialDesc, 9) || self.getBodyText() != null) {
+            output.B(serialDesc, 9, a2Var, self.getBodyText());
         }
-        if (output.w(serialDesc, 10) || self.getBodyTextColor() != null) {
-            output.z(serialDesc, 10, m0.f29625a, self.getBodyTextColor());
+        if (output.z(serialDesc, 10) || self.getBodyTextColor() != null) {
+            output.B(serialDesc, 10, m0.f29830a, self.getBodyTextColor());
         }
-        if (output.w(serialDesc, 11) || self.getCanBeAccepted() != null) {
-            output.z(serialDesc, 11, h.f29592a, self.getCanBeAccepted());
+        if (output.z(serialDesc, 11) || self.getCanBeAccepted() != null) {
+            output.B(serialDesc, 11, h.f29797a, self.getCanBeAccepted());
         }
-        if (output.w(serialDesc, 12) || self.getEmbedCanBeTapped() != null) {
-            output.z(serialDesc, 12, h.f29592a, self.getEmbedCanBeTapped());
+        if (output.z(serialDesc, 12) || self.getEmbedCanBeTapped() != null) {
+            output.B(serialDesc, 12, h.f29797a, self.getEmbedCanBeTapped());
         }
-        if (output.w(serialDesc, 13) || self.getResolvingGradientEnd() != null) {
-            output.z(serialDesc, 13, m0.f29625a, self.getResolvingGradientEnd());
+        if (output.z(serialDesc, 13) || self.getResolvingGradientEnd() != null) {
+            output.B(serialDesc, 13, m0.f29830a, self.getResolvingGradientEnd());
         }
-        if (output.w(serialDesc, 14) || self.getResolvingGradientStart() != null) {
-            output.z(serialDesc, 14, m0.f29625a, self.getResolvingGradientStart());
+        if (output.z(serialDesc, 14) || self.getResolvingGradientStart() != null) {
+            output.B(serialDesc, 14, m0.f29830a, self.getResolvingGradientStart());
         }
-        if (output.w(serialDesc, 15) || self.getSplashHasRadialGradient() != null) {
-            output.z(serialDesc, 15, h.f29592a, self.getSplashHasRadialGradient());
+        if (output.z(serialDesc, 15) || self.getSplashHasRadialGradient() != null) {
+            output.B(serialDesc, 15, h.f29797a, self.getSplashHasRadialGradient());
         }
-        if (output.w(serialDesc, 16) || self.getSplashOpacity() != null) {
-            output.z(serialDesc, 16, m0.f29625a, self.getSplashOpacity());
+        if (output.z(serialDesc, 16) || self.getSplashOpacity() != null) {
+            output.B(serialDesc, 16, m0.f29830a, self.getSplashOpacity());
         }
-        if (output.w(serialDesc, 17) || self.getSplashUrl() != null) {
-            output.z(serialDesc, 17, a2Var, self.getSplashUrl());
+        if (output.z(serialDesc, 17) || self.getSplashUrl() != null) {
+            output.B(serialDesc, 17, a2Var, self.getSplashUrl());
         }
-        if (output.w(serialDesc, 18) || self.getInviteSplash() != null) {
-            output.z(serialDesc, 18, a2Var, self.getInviteSplash());
+        if (output.z(serialDesc, 18) || self.getInviteSplash() != null) {
+            output.B(serialDesc, 18, a2Var, self.getInviteSplash());
         }
-        if (output.w(serialDesc, 19) || self.getSubtitle() != null) {
-            output.z(serialDesc, 19, a2Var, self.getSubtitle());
+        if (output.z(serialDesc, 19) || self.getSubtitle() != null) {
+            output.B(serialDesc, 19, a2Var, self.getSubtitle());
         }
-        if (output.w(serialDesc, 20) || self.getSubtitleColor() != null) {
-            output.z(serialDesc, 20, m0.f29625a, self.getSubtitleColor());
+        if (output.z(serialDesc, 20) || self.getSubtitleColor() != null) {
+            output.B(serialDesc, 20, m0.f29830a, self.getSubtitleColor());
         }
-        if (output.w(serialDesc, 21) || self.getThumbnailBackgroundColor() != null) {
-            output.z(serialDesc, 21, m0.f29625a, self.getThumbnailBackgroundColor());
+        if (output.z(serialDesc, 21) || self.getThumbnailBackgroundColor() != null) {
+            output.B(serialDesc, 21, m0.f29830a, self.getThumbnailBackgroundColor());
         }
-        if (output.w(serialDesc, 22) || self.getThumbnailCornerRadius() != null) {
-            output.z(serialDesc, 22, m0.f29625a, self.getThumbnailCornerRadius());
+        if (output.z(serialDesc, 22) || self.getThumbnailCornerRadius() != null) {
+            output.B(serialDesc, 22, m0.f29830a, self.getThumbnailCornerRadius());
         }
-        if (output.w(serialDesc, 23) || self.getThumbnailText() != null) {
-            output.z(serialDesc, 23, a2Var, self.getThumbnailText());
+        if (output.z(serialDesc, 23) || self.getThumbnailText() != null) {
+            output.B(serialDesc, 23, a2Var, self.getThumbnailText());
         }
-        if (output.w(serialDesc, 24) || self.getThumbnailUrl() != null) {
-            output.z(serialDesc, 24, a2Var, self.getThumbnailUrl());
+        if (output.z(serialDesc, 24) || self.getThumbnailUrl() != null) {
+            output.B(serialDesc, 24, a2Var, self.getThumbnailUrl());
         }
-        if (output.w(serialDesc, 25) || self.getTitleColor() != null) {
-            output.z(serialDesc, 25, m0.f29625a, self.getTitleColor());
+        if (output.z(serialDesc, 25) || self.getTitleColor() != null) {
+            output.B(serialDesc, 25, m0.f29830a, self.getTitleColor());
         }
-        if (output.w(serialDesc, 26) || self.getTitleText() != null) {
-            output.z(serialDesc, 26, a2Var, self.getTitleText());
+        if (output.z(serialDesc, 26) || self.getTitleText() != null) {
+            output.B(serialDesc, 26, a2Var, self.getTitleText());
         }
-        output.h(serialDesc, 27, ApplicationId$$serializer.INSTANCE, ApplicationId.m566boximpl(self.mo33getApplicationIdVavddsQ()));
-        output.h(serialDesc, 28, ChannelId$$serializer.INSTANCE, ChannelId.m579boximpl(self.mo34getChannelIdo4g7jtM()));
-        if (output.w(serialDesc, 29) || self.getExtendedType() != CodedLinkExtendedType.ACTIVITY_BOOKMARK) {
-            output.h(serialDesc, 29, CodedLinkExtendedType.Serializer.INSTANCE, self.getExtendedType());
+        output.o(serialDesc, 27, ApplicationId$$serializer.INSTANCE, ApplicationId.m568boximpl(self.mo33getApplicationIdVavddsQ()));
+        output.o(serialDesc, 28, ChannelId$$serializer.INSTANCE, ChannelId.m581boximpl(self.mo34getChannelIdo4g7jtM()));
+        if (output.z(serialDesc, 29) || self.getExtendedType() != CodedLinkExtendedType.ACTIVITY_BOOKMARK) {
+            output.o(serialDesc, 29, CodedLinkExtendedType.Serializer.INSTANCE, self.getExtendedType());
         }
-        output.h(serialDesc, 30, new wi.f(a2Var), self.getParticipantAvatarUris());
-        if (output.w(serialDesc, 31) || self.getDescription() != null) {
+        output.o(serialDesc, 30, new wi.f(a2Var), self.getParticipantAvatarUris());
+        if (output.z(serialDesc, 31) || self.getDescription() != null) {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 31, a2Var, self.getDescription());
+            output.B(serialDesc, 31, a2Var, self.getDescription());
         }
-        output.s(serialDesc, 32, self.getParticipantsText());
+        output.x(serialDesc, 32, self.getParticipantsText());
     }
 
     public final int component1() {
@@ -465,7 +465,7 @@ public final class ActivityBookmarkEmbedImpl extends CodedLinkEmbed implements A
             return false;
         }
         ActivityBookmarkEmbedImpl activityBookmarkEmbedImpl = (ActivityBookmarkEmbedImpl) obj;
-        return getBackgroundColor() == activityBookmarkEmbedImpl.getBackgroundColor() && getBorderColor() == activityBookmarkEmbedImpl.getBorderColor() && getHeaderColor() == activityBookmarkEmbedImpl.getHeaderColor() && q.c(getHeaderText(), activityBookmarkEmbedImpl.getHeaderText()) && getType() == activityBookmarkEmbedImpl.getType() && q.c(getAcceptLabelBackgroundColor(), activityBookmarkEmbedImpl.getAcceptLabelBackgroundColor()) && q.c(getAcceptLabelBorderColor(), activityBookmarkEmbedImpl.getAcceptLabelBorderColor()) && q.c(getAcceptLabelColor(), activityBookmarkEmbedImpl.getAcceptLabelColor()) && q.c(getAcceptLabelText(), activityBookmarkEmbedImpl.getAcceptLabelText()) && q.c(getBodyText(), activityBookmarkEmbedImpl.getBodyText()) && q.c(getBodyTextColor(), activityBookmarkEmbedImpl.getBodyTextColor()) && q.c(getCanBeAccepted(), activityBookmarkEmbedImpl.getCanBeAccepted()) && q.c(getEmbedCanBeTapped(), activityBookmarkEmbedImpl.getEmbedCanBeTapped()) && q.c(getResolvingGradientEnd(), activityBookmarkEmbedImpl.getResolvingGradientEnd()) && q.c(getResolvingGradientStart(), activityBookmarkEmbedImpl.getResolvingGradientStart()) && q.c(getSplashHasRadialGradient(), activityBookmarkEmbedImpl.getSplashHasRadialGradient()) && q.c(getSplashOpacity(), activityBookmarkEmbedImpl.getSplashOpacity()) && q.c(getSplashUrl(), activityBookmarkEmbedImpl.getSplashUrl()) && q.c(getInviteSplash(), activityBookmarkEmbedImpl.getInviteSplash()) && q.c(getSubtitle(), activityBookmarkEmbedImpl.getSubtitle()) && q.c(getSubtitleColor(), activityBookmarkEmbedImpl.getSubtitleColor()) && q.c(getThumbnailBackgroundColor(), activityBookmarkEmbedImpl.getThumbnailBackgroundColor()) && q.c(getThumbnailCornerRadius(), activityBookmarkEmbedImpl.getThumbnailCornerRadius()) && q.c(getThumbnailText(), activityBookmarkEmbedImpl.getThumbnailText()) && q.c(getThumbnailUrl(), activityBookmarkEmbedImpl.getThumbnailUrl()) && q.c(getTitleColor(), activityBookmarkEmbedImpl.getTitleColor()) && q.c(getTitleText(), activityBookmarkEmbedImpl.getTitleText()) && ApplicationId.m570equalsimpl0(mo33getApplicationIdVavddsQ(), activityBookmarkEmbedImpl.mo33getApplicationIdVavddsQ()) && ChannelId.m583equalsimpl0(mo34getChannelIdo4g7jtM(), activityBookmarkEmbedImpl.mo34getChannelIdo4g7jtM()) && getExtendedType() == activityBookmarkEmbedImpl.getExtendedType() && q.c(getParticipantAvatarUris(), activityBookmarkEmbedImpl.getParticipantAvatarUris()) && q.c(getDescription(), activityBookmarkEmbedImpl.getDescription()) && q.c(getParticipantsText(), activityBookmarkEmbedImpl.getParticipantsText());
+        return getBackgroundColor() == activityBookmarkEmbedImpl.getBackgroundColor() && getBorderColor() == activityBookmarkEmbedImpl.getBorderColor() && getHeaderColor() == activityBookmarkEmbedImpl.getHeaderColor() && q.c(getHeaderText(), activityBookmarkEmbedImpl.getHeaderText()) && getType() == activityBookmarkEmbedImpl.getType() && q.c(getAcceptLabelBackgroundColor(), activityBookmarkEmbedImpl.getAcceptLabelBackgroundColor()) && q.c(getAcceptLabelBorderColor(), activityBookmarkEmbedImpl.getAcceptLabelBorderColor()) && q.c(getAcceptLabelColor(), activityBookmarkEmbedImpl.getAcceptLabelColor()) && q.c(getAcceptLabelText(), activityBookmarkEmbedImpl.getAcceptLabelText()) && q.c(getBodyText(), activityBookmarkEmbedImpl.getBodyText()) && q.c(getBodyTextColor(), activityBookmarkEmbedImpl.getBodyTextColor()) && q.c(getCanBeAccepted(), activityBookmarkEmbedImpl.getCanBeAccepted()) && q.c(getEmbedCanBeTapped(), activityBookmarkEmbedImpl.getEmbedCanBeTapped()) && q.c(getResolvingGradientEnd(), activityBookmarkEmbedImpl.getResolvingGradientEnd()) && q.c(getResolvingGradientStart(), activityBookmarkEmbedImpl.getResolvingGradientStart()) && q.c(getSplashHasRadialGradient(), activityBookmarkEmbedImpl.getSplashHasRadialGradient()) && q.c(getSplashOpacity(), activityBookmarkEmbedImpl.getSplashOpacity()) && q.c(getSplashUrl(), activityBookmarkEmbedImpl.getSplashUrl()) && q.c(getInviteSplash(), activityBookmarkEmbedImpl.getInviteSplash()) && q.c(getSubtitle(), activityBookmarkEmbedImpl.getSubtitle()) && q.c(getSubtitleColor(), activityBookmarkEmbedImpl.getSubtitleColor()) && q.c(getThumbnailBackgroundColor(), activityBookmarkEmbedImpl.getThumbnailBackgroundColor()) && q.c(getThumbnailCornerRadius(), activityBookmarkEmbedImpl.getThumbnailCornerRadius()) && q.c(getThumbnailText(), activityBookmarkEmbedImpl.getThumbnailText()) && q.c(getThumbnailUrl(), activityBookmarkEmbedImpl.getThumbnailUrl()) && q.c(getTitleColor(), activityBookmarkEmbedImpl.getTitleColor()) && q.c(getTitleText(), activityBookmarkEmbedImpl.getTitleText()) && ApplicationId.m572equalsimpl0(mo33getApplicationIdVavddsQ(), activityBookmarkEmbedImpl.mo33getApplicationIdVavddsQ()) && ChannelId.m585equalsimpl0(mo34getChannelIdo4g7jtM(), activityBookmarkEmbedImpl.mo34getChannelIdo4g7jtM()) && getExtendedType() == activityBookmarkEmbedImpl.getExtendedType() && q.c(getParticipantAvatarUris(), activityBookmarkEmbedImpl.getParticipantAvatarUris()) && q.c(getDescription(), activityBookmarkEmbedImpl.getDescription()) && q.c(getParticipantsText(), activityBookmarkEmbedImpl.getParticipantsText());
     }
 
     @Override 
@@ -637,7 +637,7 @@ public final class ActivityBookmarkEmbedImpl extends CodedLinkEmbed implements A
 
     public int hashCode() {
         int i10 = 0;
-        int backgroundColor = ((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((getBackgroundColor() * 31) + getBorderColor()) * 31) + getHeaderColor()) * 31) + (getHeaderText() == null ? 0 : getHeaderText().hashCode())) * 31) + (getType() == null ? 0 : getType().hashCode())) * 31) + (getAcceptLabelBackgroundColor() == null ? 0 : getAcceptLabelBackgroundColor().hashCode())) * 31) + (getAcceptLabelBorderColor() == null ? 0 : getAcceptLabelBorderColor().hashCode())) * 31) + (getAcceptLabelColor() == null ? 0 : getAcceptLabelColor().hashCode())) * 31) + (getAcceptLabelText() == null ? 0 : getAcceptLabelText().hashCode())) * 31) + (getBodyText() == null ? 0 : getBodyText().hashCode())) * 31) + (getBodyTextColor() == null ? 0 : getBodyTextColor().hashCode())) * 31) + (getCanBeAccepted() == null ? 0 : getCanBeAccepted().hashCode())) * 31) + (getEmbedCanBeTapped() == null ? 0 : getEmbedCanBeTapped().hashCode())) * 31) + (getResolvingGradientEnd() == null ? 0 : getResolvingGradientEnd().hashCode())) * 31) + (getResolvingGradientStart() == null ? 0 : getResolvingGradientStart().hashCode())) * 31) + (getSplashHasRadialGradient() == null ? 0 : getSplashHasRadialGradient().hashCode())) * 31) + (getSplashOpacity() == null ? 0 : getSplashOpacity().hashCode())) * 31) + (getSplashUrl() == null ? 0 : getSplashUrl().hashCode())) * 31) + (getInviteSplash() == null ? 0 : getInviteSplash().hashCode())) * 31) + (getSubtitle() == null ? 0 : getSubtitle().hashCode())) * 31) + (getSubtitleColor() == null ? 0 : getSubtitleColor().hashCode())) * 31) + (getThumbnailBackgroundColor() == null ? 0 : getThumbnailBackgroundColor().hashCode())) * 31) + (getThumbnailCornerRadius() == null ? 0 : getThumbnailCornerRadius().hashCode())) * 31) + (getThumbnailText() == null ? 0 : getThumbnailText().hashCode())) * 31) + (getThumbnailUrl() == null ? 0 : getThumbnailUrl().hashCode())) * 31) + (getTitleColor() == null ? 0 : getTitleColor().hashCode())) * 31) + (getTitleText() == null ? 0 : getTitleText().hashCode())) * 31) + ApplicationId.m571hashCodeimpl(mo33getApplicationIdVavddsQ())) * 31) + ChannelId.m584hashCodeimpl(mo34getChannelIdo4g7jtM())) * 31) + getExtendedType().hashCode()) * 31) + getParticipantAvatarUris().hashCode()) * 31;
+        int backgroundColor = ((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((getBackgroundColor() * 31) + getBorderColor()) * 31) + getHeaderColor()) * 31) + (getHeaderText() == null ? 0 : getHeaderText().hashCode())) * 31) + (getType() == null ? 0 : getType().hashCode())) * 31) + (getAcceptLabelBackgroundColor() == null ? 0 : getAcceptLabelBackgroundColor().hashCode())) * 31) + (getAcceptLabelBorderColor() == null ? 0 : getAcceptLabelBorderColor().hashCode())) * 31) + (getAcceptLabelColor() == null ? 0 : getAcceptLabelColor().hashCode())) * 31) + (getAcceptLabelText() == null ? 0 : getAcceptLabelText().hashCode())) * 31) + (getBodyText() == null ? 0 : getBodyText().hashCode())) * 31) + (getBodyTextColor() == null ? 0 : getBodyTextColor().hashCode())) * 31) + (getCanBeAccepted() == null ? 0 : getCanBeAccepted().hashCode())) * 31) + (getEmbedCanBeTapped() == null ? 0 : getEmbedCanBeTapped().hashCode())) * 31) + (getResolvingGradientEnd() == null ? 0 : getResolvingGradientEnd().hashCode())) * 31) + (getResolvingGradientStart() == null ? 0 : getResolvingGradientStart().hashCode())) * 31) + (getSplashHasRadialGradient() == null ? 0 : getSplashHasRadialGradient().hashCode())) * 31) + (getSplashOpacity() == null ? 0 : getSplashOpacity().hashCode())) * 31) + (getSplashUrl() == null ? 0 : getSplashUrl().hashCode())) * 31) + (getInviteSplash() == null ? 0 : getInviteSplash().hashCode())) * 31) + (getSubtitle() == null ? 0 : getSubtitle().hashCode())) * 31) + (getSubtitleColor() == null ? 0 : getSubtitleColor().hashCode())) * 31) + (getThumbnailBackgroundColor() == null ? 0 : getThumbnailBackgroundColor().hashCode())) * 31) + (getThumbnailCornerRadius() == null ? 0 : getThumbnailCornerRadius().hashCode())) * 31) + (getThumbnailText() == null ? 0 : getThumbnailText().hashCode())) * 31) + (getThumbnailUrl() == null ? 0 : getThumbnailUrl().hashCode())) * 31) + (getTitleColor() == null ? 0 : getTitleColor().hashCode())) * 31) + (getTitleText() == null ? 0 : getTitleText().hashCode())) * 31) + ApplicationId.m573hashCodeimpl(mo33getApplicationIdVavddsQ())) * 31) + ChannelId.m586hashCodeimpl(mo34getChannelIdo4g7jtM())) * 31) + getExtendedType().hashCode()) * 31) + getParticipantAvatarUris().hashCode()) * 31;
         if (getDescription() != null) {
             i10 = getDescription().hashCode();
         }
@@ -672,8 +672,8 @@ public final class ActivityBookmarkEmbedImpl extends CodedLinkEmbed implements A
         String thumbnailUrl = getThumbnailUrl();
         Integer titleColor = getTitleColor();
         String titleText = getTitleText();
-        String str = ApplicationId.m573toStringimpl(mo33getApplicationIdVavddsQ());
-        String str2 = ChannelId.m586toStringimpl(mo34getChannelIdo4g7jtM());
+        String str = ApplicationId.m575toStringimpl(mo33getApplicationIdVavddsQ());
+        String str2 = ChannelId.m588toStringimpl(mo34getChannelIdo4g7jtM());
         CodedLinkExtendedType extendedType = getExtendedType();
         List<String> participantAvatarUris = getParticipantAvatarUris();
         String description = getDescription();

@@ -265,7 +265,7 @@ public final class SwipeHelper extends ChatListCallback {
                     SpringAnimation springAnimation3;
                     q.h(animator, "animator");
                     SwipeHelper swipeHelper = SwipeHelper.this;
-                    SpringAnimation springAnimation4 = new SpringAnimation(new f0.b(r2 * 300.0f));
+                    SpringAnimation springAnimation4 = new SpringAnimation(new d0.b(r2 * 300.0f));
                     springAnimation4.t(new b().d(0.2f).f(200.0f));
                     final SwipeHelper swipeHelper2 = SwipeHelper.this;
                     final RecyclerView recyclerView2 = recyclerView;

@@ -35,8 +35,8 @@ public final class UserSpeakingEvent$$serializer implements f0<UserSpeakingEvent
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29625a;
-        return new KSerializer[]{m0Var, a2.f29550a, m0Var};
+        m0 m0Var = m0.f29830a;
+        return new KSerializer[]{m0Var, a2.f29755a, m0Var};
     }
 
     @Override 
@@ -47,11 +47,11 @@ public final class UserSpeakingEvent$$serializer implements f0<UserSpeakingEvent
         int i12;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            i11 = c10.k(descriptor2, 0);
-            str = c10.t(descriptor2, 1);
-            i10 = c10.k(descriptor2, 2);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            i11 = b10.i(descriptor2, 0);
+            str = b10.m(descriptor2, 1);
+            i10 = b10.i(descriptor2, 2);
             i12 = 7;
         } else {
             String str2 = null;
@@ -60,20 +60,20 @@ public final class UserSpeakingEvent$$serializer implements f0<UserSpeakingEvent
             int i14 = 0;
             int i15 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    i13 = c10.k(descriptor2, 0);
+                } else if (o10 == 0) {
+                    i13 = b10.i(descriptor2, 0);
                     i15 |= 1;
-                } else if (x10 == 1) {
-                    str2 = c10.t(descriptor2, 1);
+                } else if (o10 == 1) {
+                    str2 = b10.m(descriptor2, 1);
                     i15 |= 2;
-                } else if (x10 == 2) {
-                    i14 = c10.k(descriptor2, 2);
+                } else if (o10 == 2) {
+                    i14 = b10.i(descriptor2, 2);
                     i15 |= 4;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i11 = i13;
@@ -81,7 +81,7 @@ public final class UserSpeakingEvent$$serializer implements f0<UserSpeakingEvent
             str = str2;
             i12 = i15;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new UserSpeakingEvent(i12, i11, str, i10, null);
     }
 
@@ -94,9 +94,9 @@ public final class UserSpeakingEvent$$serializer implements f0<UserSpeakingEvent
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        UserSpeakingEvent.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        UserSpeakingEvent.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

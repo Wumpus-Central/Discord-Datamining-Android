@@ -19,7 +19,7 @@ public final class IntervalEvent implements ReactEvent {
     public static final Companion Companion = new Companion(null);
 
     
-    private final int f7461id;
+    private final int f7603id;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/timers/reactevents/IntervalEvent$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/timers/reactevents/IntervalEvent;", "react_timers_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     
@@ -37,12 +37,12 @@ public final class IntervalEvent implements ReactEvent {
     }
 
     public IntervalEvent(int i10) {
-        this.f7461id = i10;
+        this.f7603id = i10;
     }
 
     public static  IntervalEvent copy$default(IntervalEvent intervalEvent, int i10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            i10 = intervalEvent.f7461id;
+            i10 = intervalEvent.f7603id;
         }
         return intervalEvent.copy(i10);
     }
@@ -51,11 +51,11 @@ public final class IntervalEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, self.f7461id);
+        output.v(serialDesc, 0, self.f7603id);
     }
 
     public final int component1() {
-        return this.f7461id;
+        return this.f7603id;
     }
 
     public final IntervalEvent copy(int i10) {
@@ -66,15 +66,15 @@ public final class IntervalEvent implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof IntervalEvent) && this.f7461id == ((IntervalEvent) obj).f7461id;
+        return (obj instanceof IntervalEvent) && this.f7603id == ((IntervalEvent) obj).f7603id;
     }
 
     public final int getId() {
-        return this.f7461id;
+        return this.f7603id;
     }
 
     public int hashCode() {
-        return this.f7461id;
+        return this.f7603id;
     }
 
     @Override 
@@ -83,7 +83,7 @@ public final class IntervalEvent implements ReactEvent {
     }
 
     public String toString() {
-        int i10 = this.f7461id;
+        int i10 = this.f7603id;
         return "IntervalEvent(id=" + i10 + ")";
     }
 
@@ -91,6 +91,6 @@ public final class IntervalEvent implements ReactEvent {
         if (1 != (i10 & 1)) {
             n1.b(i10, 1, IntervalEvent$$serializer.INSTANCE.getDescriptor());
         }
-        this.f7461id = i11;
+        this.f7603id = i11;
     }
 }

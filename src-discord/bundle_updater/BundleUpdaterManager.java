@@ -17,6 +17,7 @@ import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.bridge.WritableNativeMap;
 import com.jakewharton.processphoenix.ProcessPhoenix;
 import java.lang.reflect.Field;
 import jf.x;
@@ -27,7 +28,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
 
-@Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\b\u0018\u0000 #2\u00020\u0001:\u0001#B\u000f\u0012\u0006\u0010\u001a\u001a\u00020\u0019¢\u0006\u0004\b!\u0010\"J\u0016\u0010\u0006\u001a\u00020\u0005*\u00020\u00022\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003H\u0002J\b\u0010\u0007\u001a\u00020\u0005H\u0002J\b\u0010\b\u001a\u00020\u0005H\u0002J\u001c\u0010\f\u001a\u00020\u00052\u0012\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00050\tH\u0002J\b\u0010\r\u001a\u00020\u0003H\u0016J\u0010\u0010\u0010\u001a\u00020\u00052\u0006\u0010\u000f\u001a\u00020\u000eH\u0007J\u0010\u0010\u0011\u001a\u00020\u00052\u0006\u0010\u000f\u001a\u00020\u000eH\u0007J\b\u0010\u0012\u001a\u00020\u0005H\u0007J\b\u0010\u0013\u001a\u00020\u0005H\u0007J\u0010\u0010\u0015\u001a\u00020\u00052\u0006\u0010\u0014\u001a\u00020\u0003H\u0007J\u0010\u0010\u0018\u001a\u00020\u00052\u0006\u0010\u0017\u001a\u00020\u0016H\u0007R\u0014\u0010\u001a\u001a\u00020\u00198\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001a\u0010\u001bR\u0014\u0010\u001d\u001a\u00020\u001c8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001d\u0010\u001eR\u0018\u0010\u001f\u001a\u0004\u0018\u00010\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001f\u0010 ¨\u0006$"}, d2 = {"Lcom/discord/bundle_updater/BundleUpdaterManager;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "Lcom/facebook/react/ReactInstanceManager;", "", "bundleLocation", "", "setJSBundle", "showSpinnerView", "removeSpinnerView", "Lkotlin/Function1;", "Landroid/view/ViewGroup;", "callback", "runOnActivity", "getName", "Lcom/facebook/react/bridge/Promise;", BaseJavaModule.METHOD_TYPE_PROMISE, "getInitialBundleDownloaded", "getInitialOtaUpdateChecked", "checkForUpdateAndReload", "reload", "type", "addListener", "", "count", "removeListeners", "Lcom/facebook/react/bridge/ReactApplicationContext;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "Lcom/discord/reactevents/ReactEvents;", "reactEvents", "Lcom/discord/reactevents/ReactEvents;", "progressLayout", "Landroid/view/ViewGroup;", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "Companion", "bundle_updater_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\b\u0018\u0000 (2\u00020\u0001:\u0001(B\u000f\u0012\u0006\u0010\u001f\u001a\u00020\u001e¢\u0006\u0004\b&\u0010'J\u0016\u0010\u0006\u001a\u00020\u0005*\u00020\u00022\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003H\u0002J\b\u0010\u0007\u001a\u00020\u0005H\u0002J\b\u0010\b\u001a\u00020\u0005H\u0002J\u001c\u0010\f\u001a\u00020\u00052\u0012\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00050\tH\u0002J\b\u0010\r\u001a\u00020\u0003H\u0016J\u0010\u0010\u0010\u001a\u00020\u00052\u0006\u0010\u000f\u001a\u00020\u000eH\u0007J\u0010\u0010\u0011\u001a\u00020\u00052\u0006\u0010\u000f\u001a\u00020\u000eH\u0007J\b\u0010\u0012\u001a\u00020\u0005H\u0007J\b\u0010\u0013\u001a\u00020\u0005H\u0007J\u0010\u0010\u0015\u001a\u00020\u00052\u0006\u0010\u0014\u001a\u00020\u0003H\u0007J\u0010\u0010\u0016\u001a\u00020\u00052\u0006\u0010\u000f\u001a\u00020\u000eH\u0007J\u0010\u0010\u0017\u001a\u00020\u00052\u0006\u0010\u000f\u001a\u00020\u000eH\u0007J\u0010\u0010\u0018\u001a\u00020\u00052\u0006\u0010\u000f\u001a\u00020\u000eH\u0007J\u0010\u0010\u001a\u001a\u00020\u00052\u0006\u0010\u0019\u001a\u00020\u0003H\u0007J\u0010\u0010\u001d\u001a\u00020\u00052\u0006\u0010\u001c\u001a\u00020\u001bH\u0007R\u0014\u0010\u001f\u001a\u00020\u001e8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001f\u0010 R\u0014\u0010\"\u001a\u00020!8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\"\u0010#R\u0018\u0010$\u001a\u0004\u0018\u00010\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b$\u0010%¨\u0006)"}, d2 = {"Lcom/discord/bundle_updater/BundleUpdaterManager;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "Lcom/facebook/react/ReactInstanceManager;", "", "bundleLocation", "", "setJSBundle", "showSpinnerView", "removeSpinnerView", "Lkotlin/Function1;", "Landroid/view/ViewGroup;", "callback", "runOnActivity", "getName", "Lcom/facebook/react/bridge/Promise;", BaseJavaModule.METHOD_TYPE_PROMISE, "getInitialBundleDownloaded", "getInitialOtaUpdateChecked", "checkForUpdateAndReload", "reload", "type", "addListener", "getOtaRootPath", "getManifestInfo", "getBuildOverrideCookieContents", "cookieHeader", "setBuildOverrideCookieHeader", "", "count", "removeListeners", "Lcom/facebook/react/bridge/ReactApplicationContext;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "Lcom/discord/reactevents/ReactEvents;", "reactEvents", "Lcom/discord/reactevents/ReactEvents;", "progressLayout", "Landroid/view/ViewGroup;", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "Companion", "bundle_updater_release"}, k = 1, mv = {1, 8, 0})
 
 public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
     private static final String BUNDLE_DOWNLOADED = "BundleDownloaded";
@@ -140,6 +141,19 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public final void getBuildOverrideCookieContents(Promise promise) {
+        WritableNativeMap writableNativeMap;
+        q.h(promise, "promise");
+        BuildOverrideCookieContents parseBuildOverrideCookie = CookieValidator.INSTANCE.parseBuildOverrideCookie(BundleUpdater.Companion.instance().getBuildOverrideCookie());
+        if (parseBuildOverrideCookie != null) {
+            writableNativeMap = parseBuildOverrideCookie.toNativeMap();
+        } else {
+            writableNativeMap = null;
+        }
+        promise.resolve(writableNativeMap);
+    }
+
+    @ReactMethod
     public final void getInitialBundleDownloaded(Promise promise) {
         q.h(promise, "promise");
         promise.resolve(new BundleDownloadedEvent(BundleUpdater.Companion.instance().isVersionRequired()).serialize());
@@ -151,9 +165,21 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
         promise.resolve(new OtaUpdateCheckedEvent(BundleUpdater.Companion.instance().getOtaMetrics()).serialize());
     }
 
+    @ReactMethod
+    public final void getManifestInfo(Promise promise) {
+        q.h(promise, "promise");
+        promise.resolve(BundleUpdater.Companion.instance().manifestInfo().toNativeMap());
+    }
+
     @Override 
     public String getName() {
         return "BundleUpdaterManager";
+    }
+
+    @ReactMethod
+    public final void getOtaRootPath(Promise promise) {
+        q.h(promise, "promise");
+        promise.resolve(BundleUpdater.Companion.instance().getOtasRootDirectory().getAbsolutePath());
     }
 
     @ReactMethod
@@ -163,5 +189,11 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void removeListeners(int i10) {
+    }
+
+    @ReactMethod
+    public final void setBuildOverrideCookieHeader(String cookieHeader) {
+        q.h(cookieHeader, "cookieHeader");
+        BundleUpdater.Companion.instance().setBuildOverrideCookieHeader(cookieHeader);
     }
 }

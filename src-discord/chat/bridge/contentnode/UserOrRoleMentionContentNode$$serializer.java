@@ -48,7 +48,7 @@ public final class UserOrRoleMentionContentNode$$serializer implements f0<UserOr
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a.u(ChannelId$$serializer.INSTANCE), a.u(UserId$$serializer.INSTANCE), m0.f29625a, a.u(GuildId$$serializer.INSTANCE), a.u(RoleId$$serializer.INSTANCE), new f(ContentNodeSerializer.INSTANCE)};
+        return new KSerializer[]{a.u(ChannelId$$serializer.INSTANCE), a.u(UserId$$serializer.INSTANCE), m0.f29830a, a.u(GuildId$$serializer.INSTANCE), a.u(RoleId$$serializer.INSTANCE), new f(ContentNodeSerializer.INSTANCE)};
     }
 
     @Override 
@@ -62,16 +62,16 @@ public final class UserOrRoleMentionContentNode$$serializer implements f0<UserOr
         Object obj5;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i12 = 5;
         boolean z10 = true;
-        if (c10.y()) {
-            obj5 = c10.v(descriptor2, 0, ChannelId$$serializer.INSTANCE, null);
-            obj = c10.v(descriptor2, 1, UserId$$serializer.INSTANCE, null);
-            i10 = c10.k(descriptor2, 2);
-            obj3 = c10.v(descriptor2, 3, GuildId$$serializer.INSTANCE, null);
-            obj2 = c10.v(descriptor2, 4, RoleId$$serializer.INSTANCE, null);
-            obj4 = c10.m(descriptor2, 5, new f(ContentNodeSerializer.INSTANCE), null);
+        if (b10.p()) {
+            obj5 = b10.n(descriptor2, 0, ChannelId$$serializer.INSTANCE, null);
+            obj = b10.n(descriptor2, 1, UserId$$serializer.INSTANCE, null);
+            i10 = b10.i(descriptor2, 2);
+            obj3 = b10.n(descriptor2, 3, GuildId$$serializer.INSTANCE, null);
+            obj2 = b10.n(descriptor2, 4, RoleId$$serializer.INSTANCE, null);
+            obj4 = b10.y(descriptor2, 5, new f(ContentNodeSerializer.INSTANCE), null);
             i11 = 63;
         } else {
             boolean z11 = true;
@@ -83,38 +83,38 @@ public final class UserOrRoleMentionContentNode$$serializer implements f0<UserOr
             Object obj9 = null;
             int i14 = 0;
             while (z11) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z11 = false;
                         i12 = 5;
                     case 0:
-                        obj6 = c10.v(descriptor2, 0, ChannelId$$serializer.INSTANCE, obj6);
+                        obj6 = b10.n(descriptor2, 0, ChannelId$$serializer.INSTANCE, obj6);
                         i14 |= 1;
                         z10 = z10;
                         i12 = 5;
                     case 1:
-                        obj = c10.v(descriptor2, 1, UserId$$serializer.INSTANCE, obj);
+                        obj = b10.n(descriptor2, 1, UserId$$serializer.INSTANCE, obj);
                         i14 |= 2;
                         z10 = true;
                     case 2:
-                        i13 = c10.k(descriptor2, 2);
+                        i13 = b10.i(descriptor2, 2);
                         i14 |= 4;
                         z10 = true;
                     case 3:
-                        obj7 = c10.v(descriptor2, 3, GuildId$$serializer.INSTANCE, obj7);
+                        obj7 = b10.n(descriptor2, 3, GuildId$$serializer.INSTANCE, obj7);
                         i14 |= 8;
                         z10 = true;
                     case 4:
-                        obj8 = c10.v(descriptor2, 4, RoleId$$serializer.INSTANCE, obj8);
+                        obj8 = b10.n(descriptor2, 4, RoleId$$serializer.INSTANCE, obj8);
                         i14 |= 16;
                         z10 = true;
                     case 5:
-                        obj9 = c10.m(descriptor2, i12, new f(ContentNodeSerializer.INSTANCE), obj9);
+                        obj9 = b10.y(descriptor2, i12, new f(ContentNodeSerializer.INSTANCE), obj9);
                         i14 |= 32;
                         z10 = true;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             i11 = i14;
@@ -124,7 +124,7 @@ public final class UserOrRoleMentionContentNode$$serializer implements f0<UserOr
             i10 = i13;
             obj5 = obj6;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new UserOrRoleMentionContentNode(i11, (ChannelId) obj5, (UserId) obj, i10, (GuildId) obj3, (RoleId) obj2, (List) obj4, null, null);
     }
 
@@ -137,9 +137,9 @@ public final class UserOrRoleMentionContentNode$$serializer implements f0<UserOr
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        UserOrRoleMentionContentNode.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        UserOrRoleMentionContentNode.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

@@ -54,8 +54,8 @@ public final class OnVoiceEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.m(serialDesc, 0, self.level);
-        output.q(serialDesc, 1, self.speaking);
+        output.r(serialDesc, 0, self.level);
+        output.v(serialDesc, 1, self.speaking);
     }
 
     public final float component1() {

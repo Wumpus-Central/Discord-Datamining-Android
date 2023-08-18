@@ -36,7 +36,7 @@ public final class BackgroundHighlight$$serializer implements f0<BackgroundHighl
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29625a;
+        m0 m0Var = m0.f29830a;
         return new KSerializer[]{a.u(m0Var), a.u(m0Var)};
     }
 
@@ -47,11 +47,11 @@ public final class BackgroundHighlight$$serializer implements f0<BackgroundHighl
         Object obj2;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            m0 m0Var = m0.f29625a;
-            obj = c10.v(descriptor2, 0, m0Var, null);
-            obj2 = c10.v(descriptor2, 1, m0Var, null);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            m0 m0Var = m0.f29830a;
+            obj = b10.n(descriptor2, 0, m0Var, null);
+            obj2 = b10.n(descriptor2, 1, m0Var, null);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -59,23 +59,23 @@ public final class BackgroundHighlight$$serializer implements f0<BackgroundHighl
             obj2 = null;
             Object obj3 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    obj3 = c10.v(descriptor2, 0, m0.f29625a, obj3);
+                } else if (o10 == 0) {
+                    obj3 = b10.n(descriptor2, 0, m0.f29830a, obj3);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    obj2 = c10.v(descriptor2, 1, m0.f29625a, obj2);
+                } else if (o10 == 1) {
+                    obj2 = b10.n(descriptor2, 1, m0.f29830a, obj2);
                     i11 |= 2;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i10 = i11;
             obj = obj3;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new BackgroundHighlight(i10, (Integer) obj, (Integer) obj2, (SerializationConstructorMarker) null);
     }
 
@@ -88,9 +88,9 @@ public final class BackgroundHighlight$$serializer implements f0<BackgroundHighl
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        BackgroundHighlight.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        BackgroundHighlight.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

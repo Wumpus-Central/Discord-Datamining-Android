@@ -68,10 +68,10 @@ public final class LoadingRow extends Row {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, self.getIndex());
-        output.h(serialDesc, 1, ChangeType.Serializer.INSTANCE, self.getChangeType());
-        output.h(serialDesc, 2, LoadMoreButton$$serializer.INSTANCE, self.button);
-        output.r(serialDesc, 3, self.isLoading);
+        output.v(serialDesc, 0, self.getIndex());
+        output.o(serialDesc, 1, ChangeType.Serializer.INSTANCE, self.getChangeType());
+        output.o(serialDesc, 2, LoadMoreButton$$serializer.INSTANCE, self.button);
+        output.w(serialDesc, 3, self.isLoading);
     }
 
     public final int component1() {

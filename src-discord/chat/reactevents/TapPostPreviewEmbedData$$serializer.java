@@ -37,7 +37,7 @@ public final class TapPostPreviewEmbedData$$serializer implements f0<TapPostPrev
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
+        a2 a2Var = a2.f29755a;
         return new KSerializer[]{a2Var, a2Var, a2Var, MessageId$$serializer.INSTANCE};
     }
 
@@ -50,13 +50,13 @@ public final class TapPostPreviewEmbedData$$serializer implements f0<TapPostPrev
         Object obj;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         String str4 = null;
-        if (c10.y()) {
-            str3 = c10.t(descriptor2, 0);
-            str2 = c10.t(descriptor2, 1);
-            str = c10.t(descriptor2, 2);
-            obj = c10.m(descriptor2, 3, MessageId$$serializer.INSTANCE, null);
+        if (b10.p()) {
+            str3 = b10.m(descriptor2, 0);
+            str2 = b10.m(descriptor2, 1);
+            str = b10.m(descriptor2, 2);
+            obj = b10.y(descriptor2, 3, MessageId$$serializer.INSTANCE, null);
             i10 = 15;
         } else {
             boolean z10 = true;
@@ -66,23 +66,23 @@ public final class TapPostPreviewEmbedData$$serializer implements f0<TapPostPrev
             String str6 = null;
             String str7 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    str5 = c10.t(descriptor2, 0);
+                } else if (o10 == 0) {
+                    str5 = b10.m(descriptor2, 0);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    str7 = c10.t(descriptor2, 1);
+                } else if (o10 == 1) {
+                    str7 = b10.m(descriptor2, 1);
                     i11 |= 2;
-                } else if (x10 == 2) {
-                    str6 = c10.t(descriptor2, 2);
+                } else if (o10 == 2) {
+                    str6 = b10.m(descriptor2, 2);
                     i11 |= 4;
-                } else if (x10 == 3) {
-                    obj2 = c10.m(descriptor2, 3, MessageId$$serializer.INSTANCE, obj2);
+                } else if (o10 == 3) {
+                    obj2 = b10.y(descriptor2, 3, MessageId$$serializer.INSTANCE, obj2);
                     i11 |= 8;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             str3 = str5;
@@ -91,10 +91,10 @@ public final class TapPostPreviewEmbedData$$serializer implements f0<TapPostPrev
             str2 = str7;
             i10 = i11;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         MessageId messageId = (MessageId) obj;
         if (messageId != null) {
-            str4 = messageId.m613unboximpl();
+            str4 = messageId.m615unboximpl();
         }
         return new TapPostPreviewEmbedData(i10, str3, str2, str, str4, null, null);
     }
@@ -108,9 +108,9 @@ public final class TapPostPreviewEmbedData$$serializer implements f0<TapPostPrev
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        TapPostPreviewEmbedData.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        TapPostPreviewEmbedData.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

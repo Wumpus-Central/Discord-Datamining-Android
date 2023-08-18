@@ -53,8 +53,8 @@ public final class BackgroundStyle {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, self.backgroundColor);
-        output.q(serialDesc, 1, self.cornerRadius);
+        output.v(serialDesc, 0, self.backgroundColor);
+        output.v(serialDesc, 1, self.cornerRadius);
     }
 
     public final int component1() {

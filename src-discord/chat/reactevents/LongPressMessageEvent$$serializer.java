@@ -36,8 +36,8 @@ public final class LongPressMessageEvent$$serializer implements f0<LongPressMess
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        return new KSerializer[]{a2Var, a2Var, m0.f29625a, a2Var};
+        a2 a2Var = a2.f29755a;
+        return new KSerializer[]{a2Var, a2Var, m0.f29830a, a2Var};
     }
 
     @Override 
@@ -49,12 +49,12 @@ public final class LongPressMessageEvent$$serializer implements f0<LongPressMess
         int i11;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            str3 = c10.t(descriptor2, 0);
-            str2 = c10.t(descriptor2, 1);
-            i10 = c10.k(descriptor2, 2);
-            str = c10.t(descriptor2, 3);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            str3 = b10.m(descriptor2, 0);
+            str2 = b10.m(descriptor2, 1);
+            i10 = b10.i(descriptor2, 2);
+            str = b10.m(descriptor2, 3);
             i11 = 15;
         } else {
             String str4 = null;
@@ -64,23 +64,23 @@ public final class LongPressMessageEvent$$serializer implements f0<LongPressMess
             int i12 = 0;
             int i13 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    str4 = c10.t(descriptor2, 0);
+                } else if (o10 == 0) {
+                    str4 = b10.m(descriptor2, 0);
                     i13 |= 1;
-                } else if (x10 == 1) {
-                    str6 = c10.t(descriptor2, 1);
+                } else if (o10 == 1) {
+                    str6 = b10.m(descriptor2, 1);
                     i13 |= 2;
-                } else if (x10 == 2) {
-                    i12 = c10.k(descriptor2, 2);
+                } else if (o10 == 2) {
+                    i12 = b10.i(descriptor2, 2);
                     i13 |= 4;
-                } else if (x10 == 3) {
-                    str5 = c10.t(descriptor2, 3);
+                } else if (o10 == 3) {
+                    str5 = b10.m(descriptor2, 3);
                     i13 |= 8;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             str3 = str4;
@@ -89,7 +89,7 @@ public final class LongPressMessageEvent$$serializer implements f0<LongPressMess
             str2 = str6;
             i11 = i13;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new LongPressMessageEvent(i11, str3, str2, i10, str, null);
     }
 
@@ -102,9 +102,9 @@ public final class LongPressMessageEvent$$serializer implements f0<LongPressMess
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        LongPressMessageEvent.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        LongPressMessageEvent.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

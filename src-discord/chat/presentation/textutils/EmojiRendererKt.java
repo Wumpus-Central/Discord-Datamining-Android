@@ -12,7 +12,7 @@ import com.discord.span.utilities.spannable.EmojiAccessibilitySpan;
 import com.facebook.drawee.span.DraweeSpanStringBuilder;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
-import ni.u;
+import kotlin.text.o;
 
 @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a\u001e\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007\u001a\n\u0010\b\u001a\u00020\t*\u00020\u0005¨\u0006\n"}, d2 = {"renderEmoji", "", "builder", "Lcom/facebook/drawee/span/DraweeSpanStringBuilder;", "emoji", "Lcom/discord/chat/bridge/contentnode/EmojiContentNode;", "rc", "Lcom/discord/chat/presentation/textutils/RenderContext;", "renderable", "Lcom/discord/emoji/RenderableEmoji;", "chat_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 
@@ -56,7 +56,7 @@ public final class EmojiRendererKt {
             RenderableEmoji.Companion companion = RenderableEmoji.Companion;
             CustomEmojiContentNode customEmojiContentNode = (CustomEmojiContentNode) emojiContentNode;
             long id2 = customEmojiContentNode.getId();
-            w10 = u.w(customEmojiContentNode.getSrc());
+            w10 = o.w(customEmojiContentNode.getSrc());
             boolean z10 = true;
             if (!(!w10) || q.c(customEmojiContentNode.getSrc(), customEmojiContentNode.getFrozenSrc())) {
                 z10 = false;

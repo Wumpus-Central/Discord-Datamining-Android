@@ -41,29 +41,29 @@ public final class TapRemixData$$serializer implements f0<TapRemixData> {
         Object obj;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i10 = 1;
-        if (c10.y()) {
-            obj = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
+        if (b10.p()) {
+            obj = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
         } else {
             int i11 = 0;
             obj = null;
             while (i10 != 0) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     i10 = 0;
-                } else if (x10 == 0) {
-                    obj = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, obj);
+                } else if (o10 == 0) {
+                    obj = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, obj);
                     i11 |= 1;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i10 = i11;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         MessageId messageId = (MessageId) obj;
-        return new TapRemixData(i10, messageId != null ? messageId.m613unboximpl() : null, null, null);
+        return new TapRemixData(i10, messageId != null ? messageId.m615unboximpl() : null, null, null);
     }
 
     @Override 
@@ -75,9 +75,9 @@ public final class TapRemixData$$serializer implements f0<TapRemixData> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        TapRemixData.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        TapRemixData.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

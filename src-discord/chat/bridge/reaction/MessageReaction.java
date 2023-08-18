@@ -23,7 +23,7 @@ public final class MessageReaction implements ReactionView.Reaction {
     private final boolean isMeBurst;
 
     
-    private final boolean f7109me;
+    private final boolean f7251me;
     private final ThemedBurstReactionColorPalette themedBurstColors;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/chat/bridge/reaction/MessageReaction$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/reaction/MessageReaction;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -46,7 +46,7 @@ public final class MessageReaction implements ReactionView.Reaction {
             n1.b(i10, 11, MessageReaction$$serializer.INSTANCE.getDescriptor());
         }
         this.count = i11;
-        this.f7109me = z10;
+        this.f7251me = z10;
         if ((i10 & 4) == 0) {
             this.isMeBurst = false;
         } else {
@@ -75,7 +75,7 @@ public final class MessageReaction implements ReactionView.Reaction {
             i10 = messageReaction.getCount();
         }
         if ((i12 & 2) != 0) {
-            z10 = messageReaction.f7109me;
+            z10 = messageReaction.f7251me;
         }
         if ((i12 & 4) != 0) {
             z11 = messageReaction.isMeBurst();
@@ -106,38 +106,38 @@ public final class MessageReaction implements ReactionView.Reaction {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z13 = false;
-        output.q(serialDesc, 0, self.getCount());
-        output.r(serialDesc, 1, self.f7109me);
-        if (!output.w(serialDesc, 2) && !self.isMeBurst()) {
+        output.v(serialDesc, 0, self.getCount());
+        output.w(serialDesc, 1, self.f7251me);
+        if (!output.z(serialDesc, 2) && !self.isMeBurst()) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.r(serialDesc, 2, self.isMeBurst());
+            output.w(serialDesc, 2, self.isMeBurst());
         }
-        output.h(serialDesc, 3, MessageReactionEmoji$$serializer.INSTANCE, self.getEmoji());
-        if (!output.w(serialDesc, 4) && self.getBurstCount() == 0) {
+        output.o(serialDesc, 3, MessageReactionEmoji$$serializer.INSTANCE, self.getEmoji());
+        if (!output.z(serialDesc, 4) && self.getBurstCount() == 0) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.q(serialDesc, 4, self.getBurstCount());
+            output.v(serialDesc, 4, self.getBurstCount());
         }
-        if (!output.w(serialDesc, 5) && self.getThemedBurstColors() == null) {
+        if (!output.z(serialDesc, 5) && self.getThemedBurstColors() == null) {
             z12 = false;
         } else {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 5, ThemedBurstReactionColorPalette$$serializer.INSTANCE, self.getThemedBurstColors());
+            output.B(serialDesc, 5, ThemedBurstReactionColorPalette$$serializer.INSTANCE, self.getThemedBurstColors());
         }
-        if (output.w(serialDesc, 6) || self.isMe() != self.f7109me) {
+        if (output.z(serialDesc, 6) || self.isMe() != self.f7251me) {
             z13 = true;
         }
         if (z13) {
-            output.r(serialDesc, 6, self.isMe());
+            output.w(serialDesc, 6, self.isMe());
         }
     }
 
@@ -146,7 +146,7 @@ public final class MessageReaction implements ReactionView.Reaction {
     }
 
     public final boolean component2() {
-        return this.f7109me;
+        return this.f7251me;
     }
 
     public final boolean component3() {
@@ -178,7 +178,7 @@ public final class MessageReaction implements ReactionView.Reaction {
             return false;
         }
         MessageReaction messageReaction = (MessageReaction) obj;
-        return getCount() == messageReaction.getCount() && this.f7109me == messageReaction.f7109me && isMeBurst() == messageReaction.isMeBurst() && q.c(getEmoji(), messageReaction.getEmoji()) && getBurstCount() == messageReaction.getBurstCount() && q.c(getThemedBurstColors(), messageReaction.getThemedBurstColors());
+        return getCount() == messageReaction.getCount() && this.f7251me == messageReaction.f7251me && isMeBurst() == messageReaction.isMeBurst() && q.c(getEmoji(), messageReaction.getEmoji()) && getBurstCount() == messageReaction.getBurstCount() && q.c(getThemedBurstColors(), messageReaction.getThemedBurstColors());
     }
 
     @Override 
@@ -197,12 +197,12 @@ public final class MessageReaction implements ReactionView.Reaction {
     }
 
     public final boolean getMe() {
-        return this.f7109me;
+        return this.f7251me;
     }
 
     public int hashCode() {
         int count = getCount() * 31;
-        boolean z10 = this.f7109me;
+        boolean z10 = this.f7251me;
         int i10 = 1;
         if (z10) {
             z10 = true;
@@ -235,7 +235,7 @@ public final class MessageReaction implements ReactionView.Reaction {
 
     public String toString() {
         int count = getCount();
-        boolean z10 = this.f7109me;
+        boolean z10 = this.f7251me;
         boolean isMeBurst = isMeBurst();
         MessageReactionEmoji emoji = getEmoji();
         int burstCount = getBurstCount();
@@ -246,7 +246,7 @@ public final class MessageReaction implements ReactionView.Reaction {
     public MessageReaction(int i10, boolean z10, boolean z11, MessageReactionEmoji emoji, int i11, ThemedBurstReactionColorPalette themedBurstReactionColorPalette) {
         q.h(emoji, "emoji");
         this.count = i10;
-        this.f7109me = z10;
+        this.f7251me = z10;
         this.isMeBurst = z11;
         this.emoji = emoji;
         this.burstCount = i11;

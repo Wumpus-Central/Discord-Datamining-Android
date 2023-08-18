@@ -173,61 +173,61 @@ public final class WebAuthn {
             this.reject.invoke("credential data missing");
             return;
         }
-        o p10 = o.p(bArr);
-        if (p10.u() instanceof h) {
+        o l10 = o.l(bArr);
+        if (l10.w() instanceof h) {
             Function1<String, Unit> function1 = this.reject;
-            i u10 = p10.u();
-            q.f(u10, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorErrorResponse");
-            String t10 = ((h) u10).t();
-            q.e(t10);
-            function1.invoke(t10);
+            i w10 = l10.w();
+            q.f(w10, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorErrorResponse");
+            String v10 = ((h) w10).v();
+            q.e(v10);
+            function1.invoke(v10);
         } else if (i10 == 4001) {
-            byte[] t11 = p10.t();
-            q.g(t11, "credential.rawId");
-            String base64 = toBase64(t11);
-            i u11 = p10.u();
-            q.f(u11, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorAttestationResponse");
-            g gVar = (g) u11;
+            byte[] v11 = l10.v();
+            q.g(v11, "credential.rawId");
+            String base64 = toBase64(v11);
+            i w11 = l10.w();
+            q.f(w11, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorAttestationResponse");
+            g gVar = (g) w11;
             JSONObject jSONObject = new JSONObject();
             jSONObject.put("id", base64);
             jSONObject.put("rawId", base64);
             jSONObject.put("type", u.PUBLIC_KEY.toString());
             JSONObject jSONObject2 = new JSONObject();
-            byte[] p11 = gVar.p();
-            q.g(p11, "response.clientDataJSON");
-            jSONObject2.put("clientDataJSON", toBase64(p11));
-            byte[] q10 = gVar.q();
-            q.g(q10, "response.attestationObject");
-            jSONObject2.put("attestationObject", toBase64(q10));
+            byte[] l11 = gVar.l();
+            q.g(l11, "response.clientDataJSON");
+            jSONObject2.put("clientDataJSON", toBase64(l11));
+            byte[] s10 = gVar.s();
+            q.g(s10, "response.attestationObject");
+            jSONObject2.put("attestationObject", toBase64(s10));
             jSONObject.put("response", jSONObject2);
             Function1<String, Unit> function12 = this.resolve;
             String jSONObject3 = jSONObject.toString();
             q.g(jSONObject3, "obj.toString()");
             function12.invoke(jSONObject3);
         } else if (i10 == REQUEST_CODE_AUTHENTICATE) {
-            byte[] t12 = p10.t();
-            q.g(t12, "credential.rawId");
-            String base642 = toBase64(t12);
-            i u12 = p10.u();
-            q.f(u12, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorAssertionResponse");
-            m9.f fVar = (m9.f) u12;
+            byte[] v12 = l10.v();
+            q.g(v12, "credential.rawId");
+            String base642 = toBase64(v12);
+            i w12 = l10.w();
+            q.f(w12, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorAssertionResponse");
+            m9.f fVar = (m9.f) w12;
             JSONObject jSONObject4 = new JSONObject();
             jSONObject4.put("id", base642);
             jSONObject4.put("rawId", base642);
             jSONObject4.put("type", u.PUBLIC_KEY.toString());
             JSONObject jSONObject5 = new JSONObject();
-            byte[] p12 = fVar.p();
-            q.g(p12, "response.clientDataJSON");
-            jSONObject5.put("clientDataJSON", toBase64(p12));
-            byte[] q11 = fVar.q();
-            q.g(q11, "response.authenticatorData");
-            jSONObject5.put("authenticatorData", toBase64(q11));
-            byte[] u13 = fVar.u();
-            q.g(u13, "response.signature");
-            jSONObject5.put("signature", toBase64(u13));
-            byte[] x10 = fVar.x();
-            if (x10 != null) {
-                jSONObject5.put("userHandle", toBase64(x10));
+            byte[] l12 = fVar.l();
+            q.g(l12, "response.clientDataJSON");
+            jSONObject5.put("clientDataJSON", toBase64(l12));
+            byte[] s11 = fVar.s();
+            q.g(s11, "response.authenticatorData");
+            jSONObject5.put("authenticatorData", toBase64(s11));
+            byte[] w13 = fVar.w();
+            q.g(w13, "response.signature");
+            jSONObject5.put("signature", toBase64(w13));
+            byte[] B = fVar.B();
+            if (B != null) {
+                jSONObject5.put("userHandle", toBase64(B));
             }
             jSONObject4.put("response", jSONObject5);
             Function1<String, Unit> function13 = this.resolve;

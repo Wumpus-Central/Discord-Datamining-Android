@@ -60,12 +60,12 @@ public final class WebhookNameOnClick {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z10 = false;
-        output.s(serialDesc, 0, self.action);
-        if (output.w(serialDesc, 1) || self.messageReference != null) {
+        output.x(serialDesc, 0, self.action);
+        if (output.z(serialDesc, 1) || self.messageReference != null) {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 1, MessageReference$$serializer.INSTANCE, self.messageReference);
+            output.B(serialDesc, 1, MessageReference$$serializer.INSTANCE, self.messageReference);
         }
     }
 

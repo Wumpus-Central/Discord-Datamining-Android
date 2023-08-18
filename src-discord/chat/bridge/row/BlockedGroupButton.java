@@ -50,7 +50,7 @@ public final class BlockedGroupButton {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.h(serialDesc, 0, BlockedGroupButtonAction$$serializer.INSTANCE, self.action);
+        output.o(serialDesc, 0, BlockedGroupButtonAction$$serializer.INSTANCE, self.action);
     }
 
     public final BlockedGroupButtonAction component1() {

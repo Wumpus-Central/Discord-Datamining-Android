@@ -49,7 +49,7 @@ public final class BillingManagerDowngradeCommand implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, self.downgradeCommand);
+        output.v(serialDesc, 0, self.downgradeCommand);
     }
 
     public final int component1() {

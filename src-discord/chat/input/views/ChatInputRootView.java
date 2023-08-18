@@ -14,7 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.RelativeLayout;
-import androidx.core.util.h;
+import androidx.core.util.g;
 import androidx.core.view.ContentInfoCompat;
 import androidx.core.view.s0;
 import androidx.core.view.w0;
@@ -104,7 +104,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
         @Override 
         public   Unit invoke(Integer num, Integer num2) {
             invoke(num.intValue(), num2.intValue());
-            return Unit.f21036a;
+            return Unit.f21210a;
         }
 
         public final void invoke(int i10, int i11) {
@@ -253,7 +253,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
         q.h(context, "$context");
         q.h(view, "<anonymous parameter 0>");
         q.h(payload, "payload");
-        Pair<ContentInfoCompat, ContentInfoCompat> i10 = payload.i(new h() { 
+        Pair<ContentInfoCompat, ContentInfoCompat> i10 = payload.i(new g() { 
             @Override 
             public final boolean test(Object obj) {
                 boolean lambda$3$lambda$1;

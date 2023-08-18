@@ -63,17 +63,17 @@ public final class MobileVoiceOverlayAssets {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.useSpeaker);
-        output.s(serialDesc, 1, self.mute);
-        output.s(serialDesc, 2, self.disconnectFromVoice);
-        output.s(serialDesc, 3, self.getInvite);
-        output.s(serialDesc, 4, self.switchChannels);
-        output.s(serialDesc, 5, self.openDiscord);
-        output.s(serialDesc, 6, self.inviteLinkCopied);
-        output.s(serialDesc, 7, self.channelSelect);
-        output.s(serialDesc, 8, self.closeWindow);
-        output.s(serialDesc, 9, self.searchChannels);
-        output.s(serialDesc, 10, self.noResults);
+        output.x(serialDesc, 0, self.useSpeaker);
+        output.x(serialDesc, 1, self.mute);
+        output.x(serialDesc, 2, self.disconnectFromVoice);
+        output.x(serialDesc, 3, self.getInvite);
+        output.x(serialDesc, 4, self.switchChannels);
+        output.x(serialDesc, 5, self.openDiscord);
+        output.x(serialDesc, 6, self.inviteLinkCopied);
+        output.x(serialDesc, 7, self.channelSelect);
+        output.x(serialDesc, 8, self.closeWindow);
+        output.x(serialDesc, 9, self.searchChannels);
+        output.x(serialDesc, 10, self.noResults);
     }
 
     public final String component1() {

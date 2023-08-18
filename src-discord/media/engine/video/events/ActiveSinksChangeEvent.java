@@ -58,8 +58,8 @@ public final class ActiveSinksChangeEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.streamId);
-        output.r(serialDesc, 1, self.active);
+        output.x(serialDesc, 0, self.streamId);
+        output.w(serialDesc, 1, self.active);
     }
 
     public final String component1() {

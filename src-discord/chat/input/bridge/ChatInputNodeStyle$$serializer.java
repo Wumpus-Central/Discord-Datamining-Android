@@ -40,7 +40,7 @@ public final class ChatInputNodeStyle$$serializer implements f0<ChatInputNodeSty
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29625a;
+        m0 m0Var = m0.f29830a;
         return new KSerializer[]{a.u(m0Var), m0Var, a.u(BackgroundStyle$$serializer.INSTANCE), a.u(ChatInputNodeFontWeight.Companion.serializer())};
     }
 
@@ -53,12 +53,12 @@ public final class ChatInputNodeStyle$$serializer implements f0<ChatInputNodeSty
         Object obj3;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            obj3 = c10.v(descriptor2, 0, m0.f29625a, null);
-            i10 = c10.k(descriptor2, 1);
-            obj = c10.v(descriptor2, 2, BackgroundStyle$$serializer.INSTANCE, null);
-            obj2 = c10.v(descriptor2, 3, ChatInputNodeFontWeight.Companion.serializer(), null);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            obj3 = b10.n(descriptor2, 0, m0.f29830a, null);
+            i10 = b10.i(descriptor2, 1);
+            obj = b10.n(descriptor2, 2, BackgroundStyle$$serializer.INSTANCE, null);
+            obj2 = b10.n(descriptor2, 3, ChatInputNodeFontWeight.Companion.serializer(), null);
             i11 = 15;
         } else {
             boolean z10 = true;
@@ -68,23 +68,23 @@ public final class ChatInputNodeStyle$$serializer implements f0<ChatInputNodeSty
             Object obj6 = null;
             int i13 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    obj4 = c10.v(descriptor2, 0, m0.f29625a, obj4);
+                } else if (o10 == 0) {
+                    obj4 = b10.n(descriptor2, 0, m0.f29830a, obj4);
                     i13 |= 1;
-                } else if (x10 == 1) {
-                    i12 = c10.k(descriptor2, 1);
+                } else if (o10 == 1) {
+                    i12 = b10.i(descriptor2, 1);
                     i13 |= 2;
-                } else if (x10 == 2) {
-                    obj5 = c10.v(descriptor2, 2, BackgroundStyle$$serializer.INSTANCE, obj5);
+                } else if (o10 == 2) {
+                    obj5 = b10.n(descriptor2, 2, BackgroundStyle$$serializer.INSTANCE, obj5);
                     i13 |= 4;
-                } else if (x10 == 3) {
-                    obj6 = c10.v(descriptor2, 3, ChatInputNodeFontWeight.Companion.serializer(), obj6);
+                } else if (o10 == 3) {
+                    obj6 = b10.n(descriptor2, 3, ChatInputNodeFontWeight.Companion.serializer(), obj6);
                     i13 |= 8;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i11 = i13;
@@ -93,7 +93,7 @@ public final class ChatInputNodeStyle$$serializer implements f0<ChatInputNodeSty
             i10 = i12;
             obj3 = obj4;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new ChatInputNodeStyle(i11, (Integer) obj3, i10, (BackgroundStyle) obj, (ChatInputNodeFontWeight) obj2, (SerializationConstructorMarker) null);
     }
 
@@ -106,9 +106,9 @@ public final class ChatInputNodeStyle$$serializer implements f0<ChatInputNodeSty
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        ChatInputNodeStyle.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        ChatInputNodeStyle.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

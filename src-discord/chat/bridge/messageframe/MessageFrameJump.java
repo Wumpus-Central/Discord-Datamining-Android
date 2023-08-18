@@ -74,20 +74,20 @@ public final class MessageFrameJump extends MessageFrame {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z11 = false;
-        output.h(serialDesc, 0, MessageFrameType.Serializer.INSTANCE, self.getType());
-        if (!output.w(serialDesc, 1) && self.guildName == null) {
+        output.o(serialDesc, 0, MessageFrameType.Serializer.INSTANCE, self.getType());
+        if (!output.z(serialDesc, 1) && self.guildName == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 1, a2.f29550a, self.guildName);
+            output.B(serialDesc, 1, a2.f29755a, self.guildName);
         }
-        if (output.w(serialDesc, 2) || self.channelName != null) {
+        if (output.z(serialDesc, 2) || self.channelName != null) {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 2, a2.f29550a, self.channelName);
+            output.B(serialDesc, 2, a2.f29755a, self.channelName);
         }
     }
 

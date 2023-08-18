@@ -59,7 +59,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21210a);
         }
 
         @Override 
@@ -69,8 +69,8 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
             int i10 = this.label;
             if (i10 == 0) {
                 t.b(obj);
-                a.C0358a aVar = a.f25071l;
-                final Flow<Unit> flow = IntervalFlowKt.m481intervalFlowQTBD994(c.s(1, oi.d.SECONDS), a.f25071l.b());
+                a.C0365a aVar = a.f25329k;
+                final Flow<Unit> flow = IntervalFlowKt.m483intervalFlowQTBD994(c.s(1, oi.d.SECONDS), a.f25329k.b());
                 final long j10 = this.$start;
                 Flow f10 = kotlinx.coroutines.flow.d.f(new Flow<a>() { 
 
@@ -125,7 +125,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                         if (collect == d11) {
                             return collect;
                         }
-                        return Unit.f21036a;
+                        return Unit.f21210a;
                     }
                 }, a1.a());
                 final CallSystemMessageView callSystemMessageView = this.this$0;
@@ -133,24 +133,24 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                 FlowCollector flowCollector = new FlowCollector() { 
                     @Override 
                     public   Object emit(Object obj2, Continuation continuation) {
-                        return m307emitVtjQ1oo(((a) obj2).K(), continuation);
+                        return m309emitVtjQ1oo(((a) obj2).K(), continuation);
                     }
 
                     
-                    public final Object m307emitVtjQ1oo(long j11, Continuation<? super Unit> continuation) {
+                    public final Object m309emitVtjQ1oo(long j11, Continuation<? super Unit> continuation) {
                         CallSystemMessageViewBinding callSystemMessageViewBinding;
                         CallSystemMessageView callSystemMessageView2 = CallSystemMessageView.this;
                         Message message2 = message;
-                        long p10 = a.p(j11);
+                        long n10 = a.n(j11);
+                        int r10 = a.r(j11);
                         int t10 = a.t(j11);
-                        int v10 = a.v(j11);
-                        a.u(j11);
+                        a.s(j11);
                         callSystemMessageViewBinding = callSystemMessageView2.binding;
                         TextView textView = callSystemMessageViewBinding.info;
-                        String format = String.format("%02d:%02d:%02d%s", Arrays.copyOf(new Object[]{b.d(p10), b.c(t10), b.c(v10), message2.getDescription()}, 4));
+                        String format = String.format("%02d:%02d:%02d%s", Arrays.copyOf(new Object[]{b.d(n10), b.c(r10), b.c(t10), message2.getDescription()}, 4));
                         q.g(format, "format(this, *args)");
                         textView.setText(format);
-                        return Unit.f21036a;
+                        return Unit.f21210a;
                     }
                 };
                 this.label = 1;
@@ -162,7 +162,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            return Unit.f21036a;
+            return Unit.f21210a;
         }
     }
 
@@ -181,7 +181,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((CallSystemMessageView$setMessage$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
+        return ((CallSystemMessageView$setMessage$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21210a);
     }
 
     @Override 
@@ -203,6 +203,6 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f21036a;
+        return Unit.f21210a;
     }
 }

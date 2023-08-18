@@ -95,30 +95,30 @@ public final class SearchableSelectItem extends SelectItem {
         q.h(serialDesc, "serialDesc");
         SelectItem.write$Self(self, output, serialDesc);
         boolean z12 = false;
-        output.s(serialDesc, 0, self.getLabel());
-        output.s(serialDesc, 1, self.getValue());
-        if (!output.w(serialDesc, 2) && self.getEmoji() == null) {
+        output.x(serialDesc, 0, self.getLabel());
+        output.x(serialDesc, 1, self.getValue());
+        if (!output.z(serialDesc, 2) && self.getEmoji() == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 2, ComponentEmoji$$serializer.INSTANCE, self.getEmoji());
+            output.B(serialDesc, 2, ComponentEmoji$$serializer.INSTANCE, self.getEmoji());
         }
-        output.q(serialDesc, 3, self.type);
-        if (!output.w(serialDesc, 4) && self.iconSrc == null) {
+        output.v(serialDesc, 3, self.type);
+        if (!output.z(serialDesc, 4) && self.iconSrc == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 4, a2.f29550a, self.iconSrc);
+            output.B(serialDesc, 4, a2.f29755a, self.iconSrc);
         }
-        if (output.w(serialDesc, 5) || self.iconColor != null) {
+        if (output.z(serialDesc, 5) || self.iconColor != null) {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 5, m0.f29625a, self.iconColor);
+            output.B(serialDesc, 5, m0.f29830a, self.iconColor);
         }
     }
 

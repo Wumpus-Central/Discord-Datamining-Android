@@ -5,12 +5,24 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.R;
 import com.discord.chat.bridge.contentnode.LinkContentNode;
 import com.discord.chat.bridge.feedback.SurveyIndication;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.databinding.SurveyActionViewBinding;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.image.fresco.SimpleDraweeSpanTextViewUtilsKt;
@@ -52,7 +64,8 @@ public final class SurveyIndicationView extends ConstraintLayout {
     }
 
     
-    public final void m326setSurveyIndicationu7_MRrM(String messageId, SurveyIndication surveyIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
+    public final void m328setSurveyIndicationu7_MRrM(String messageId, SurveyIndication surveyIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
+        DraweeSpanStringBuilder spannable;
         q.h(messageId, "messageId");
         q.h(surveyIndication, "surveyIndication");
         q.h(onLinkClicked, "onLinkClicked");
@@ -67,9 +80,9 @@ public final class SurveyIndicationView extends ConstraintLayout {
         SurveyIndicationView$setSurveyIndication$1$1 surveyIndicationView$setSurveyIndication$1$1 = new SurveyIndicationView$setSurveyIndication$1$1(onLinkClicked, messageId);
         Paint.FontMetrics fontMetrics = setSurveyIndication_u7_MRrM$lambda$2.getPaint().getFontMetrics();
         q.g(fontMetrics, "paint.fontMetrics");
-        DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context, messageId, false, false, false, surveyIndicationView$setSurveyIndication$1$1, null, null, null, null, null, null, null, null, null, null, false, null, TextUtilsKt.getBaselineHeight(fontMetrics), 262080, null);
-        SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(setSurveyIndication_u7_MRrM$lambda$2));
-        SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setSurveyIndication_u7_MRrM$lambda$2, spannable$default);
+        spannable = TextUtilsKt.toSpannable(content, context, messageId, false, false, false, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : surveyIndicationView$setSurveyIndication$1$1, (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (65536 & r42) != 0 ? false : false, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : TextUtilsKt.getBaselineHeight(fontMetrics));
+        SpannableExtensionsKt.coverWithSpan(spannable, new BackgroundSpanDrawer(setSurveyIndication_u7_MRrM$lambda$2));
+        SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setSurveyIndication_u7_MRrM$lambda$2, spannable);
         NestedScrollOnTouchUtilsKt.enableNestedSpanClickListener$default(setSurveyIndication_u7_MRrM$lambda$2, false, 1, null);
     }
 

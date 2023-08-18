@@ -42,27 +42,27 @@ public final class UserSearchUpdateUsersData$$serializer implements f0<UserSearc
         Object obj;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i10 = 1;
-        if (c10.y()) {
-            obj = c10.m(descriptor2, 0, new f(UserSearchTransformedUser.Serializer.INSTANCE), null);
+        if (b10.p()) {
+            obj = b10.y(descriptor2, 0, new f(UserSearchTransformedUser.Serializer.INSTANCE), null);
         } else {
             int i11 = 0;
             obj = null;
             while (i10 != 0) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     i10 = 0;
-                } else if (x10 == 0) {
-                    obj = c10.m(descriptor2, 0, new f(UserSearchTransformedUser.Serializer.INSTANCE), obj);
+                } else if (o10 == 0) {
+                    obj = b10.y(descriptor2, 0, new f(UserSearchTransformedUser.Serializer.INSTANCE), obj);
                     i11 |= 1;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i10 = i11;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new UserSearchUpdateUsersData(i10, (List) obj, null);
     }
 
@@ -75,9 +75,9 @@ public final class UserSearchUpdateUsersData$$serializer implements f0<UserSearc
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        UserSearchUpdateUsersData.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        UserSearchUpdateUsersData.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

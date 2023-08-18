@@ -85,42 +85,42 @@ public final class ActivityInviteEmbed {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z13 = false;
-        if (!output.w(serialDesc, 0) && self.coverImage == null) {
+        if (!output.z(serialDesc, 0) && self.coverImage == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, a2.f29550a, self.coverImage);
+            output.B(serialDesc, 0, a2.f29755a, self.coverImage);
         }
-        output.r(serialDesc, 1, self.isListening);
-        output.s(serialDesc, 2, self.headerText);
-        output.s(serialDesc, 3, self.partyStatus);
-        if (!output.w(serialDesc, 4) && self.avatarsToRender == null) {
+        output.w(serialDesc, 1, self.isListening);
+        output.x(serialDesc, 2, self.headerText);
+        output.x(serialDesc, 3, self.partyStatus);
+        if (!output.z(serialDesc, 4) && self.avatarsToRender == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 4, new wi.f(a.u(a2.f29550a)), self.avatarsToRender);
+            output.B(serialDesc, 4, new wi.f(a.u(a2.f29755a)), self.avatarsToRender);
         }
-        output.q(serialDesc, 5, self.maxPartySize);
-        if (!output.w(serialDesc, 6) && self.name == null) {
+        output.v(serialDesc, 5, self.maxPartySize);
+        if (!output.z(serialDesc, 6) && self.name == null) {
             z12 = false;
         } else {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 6, a2.f29550a, self.name);
+            output.B(serialDesc, 6, a2.f29755a, self.name);
         }
-        if (output.w(serialDesc, 7) || self.subtext != null) {
+        if (output.z(serialDesc, 7) || self.subtext != null) {
             z13 = true;
         }
         if (z13) {
-            output.z(serialDesc, 7, a2.f29550a, self.subtext);
+            output.B(serialDesc, 7, a2.f29755a, self.subtext);
         }
-        output.r(serialDesc, 8, self.joinable);
-        output.s(serialDesc, 9, self.ctaText);
+        output.w(serialDesc, 8, self.joinable);
+        output.x(serialDesc, 9, self.ctaText);
     }
 
     public final String component1() {

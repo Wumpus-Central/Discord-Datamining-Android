@@ -101,38 +101,38 @@ public final class ChannelMentionContentNode extends MentionContentNode {
         q.h(serialDesc, "serialDesc");
         MentionContentNode.write$Self(self, output, serialDesc);
         boolean z13 = false;
-        output.s(serialDesc, 0, self.channelId);
-        if (!output.w(serialDesc, 1) && self.guildId == null) {
+        output.x(serialDesc, 0, self.channelId);
+        if (!output.z(serialDesc, 1) && self.guildId == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 1, a2.f29550a, self.guildId);
+            output.B(serialDesc, 1, a2.f29755a, self.guildId);
         }
-        if (!output.w(serialDesc, 2) && self.messageId == null) {
+        if (!output.z(serialDesc, 2) && self.messageId == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 2, a2.f29550a, self.messageId);
+            output.B(serialDesc, 2, a2.f29755a, self.messageId);
         }
-        if (!output.w(serialDesc, 3) && self.originalLink == null) {
+        if (!output.z(serialDesc, 3) && self.originalLink == null) {
             z12 = false;
         } else {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 3, a2.f29550a, self.originalLink);
+            output.B(serialDesc, 3, a2.f29755a, self.originalLink);
         }
-        if (output.w(serialDesc, 4) || self.inContent != null) {
+        if (output.z(serialDesc, 4) || self.inContent != null) {
             z13 = true;
         }
         if (z13) {
-            output.z(serialDesc, 4, new wi.f(ContentNodeSerializer.INSTANCE), self.inContent);
+            output.B(serialDesc, 4, new wi.f(ContentNodeSerializer.INSTANCE), self.inContent);
         }
-        output.z(serialDesc, 5, new wi.f(ContentNodeSerializer.INSTANCE), self.getContent());
+        output.B(serialDesc, 5, new wi.f(ContentNodeSerializer.INSTANCE), self.getContent());
     }
 
     public final String component1() {

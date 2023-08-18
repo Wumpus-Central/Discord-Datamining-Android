@@ -79,21 +79,21 @@ public final class ChatInputNodeStyle {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z11 = false;
-        if (!output.w(serialDesc, 0) && self.fontSize == null) {
+        if (!output.z(serialDesc, 0) && self.fontSize == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, m0.f29625a, self.fontSize);
+            output.B(serialDesc, 0, m0.f29830a, self.fontSize);
         }
-        output.q(serialDesc, 1, self.color);
-        output.z(serialDesc, 2, BackgroundStyle$$serializer.INSTANCE, self.backgroundStyle);
-        if (output.w(serialDesc, 3) || self.fontWeight != null) {
+        output.v(serialDesc, 1, self.color);
+        output.B(serialDesc, 2, BackgroundStyle$$serializer.INSTANCE, self.backgroundStyle);
+        if (output.z(serialDesc, 3) || self.fontWeight != null) {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 3, ChatInputNodeFontWeight.Companion.serializer(), self.fontWeight);
+            output.B(serialDesc, 3, ChatInputNodeFontWeight.Companion.serializer(), self.fontWeight);
         }
     }
 

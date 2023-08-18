@@ -82,23 +82,23 @@ public final class RoleIcon {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z11 = false;
-        if (!output.w(serialDesc, 0) && self.source == null) {
+        if (!output.z(serialDesc, 0) && self.source == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, a2.f29550a, self.source);
+            output.B(serialDesc, 0, a2.f29755a, self.source);
         }
-        if (output.w(serialDesc, 1) || self.unicodeEmoji != null) {
+        if (output.z(serialDesc, 1) || self.unicodeEmoji != null) {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 1, a2.f29550a, self.unicodeEmoji);
+            output.B(serialDesc, 1, a2.f29755a, self.unicodeEmoji);
         }
-        output.s(serialDesc, 2, self.name);
-        output.q(serialDesc, 3, self.size);
-        output.s(serialDesc, 4, self.alt);
+        output.x(serialDesc, 2, self.name);
+        output.v(serialDesc, 3, self.size);
+        output.x(serialDesc, 4, self.alt);
     }
 
     public final String component1() {

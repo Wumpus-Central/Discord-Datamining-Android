@@ -19,7 +19,7 @@ final class ChatInputManagerModule$json$1 extends s implements Function1<JsonBui
     @Override 
     public   Unit invoke(JsonBuilder jsonBuilder) {
         invoke2(jsonBuilder);
-        return Unit.f21036a;
+        return Unit.f21210a;
     }
 
     

@@ -62,9 +62,9 @@ public final class TapSummaryData implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.channelId);
-        output.s(serialDesc, 1, self.messageId);
-        output.s(serialDesc, 2, self.summaryId);
+        output.x(serialDesc, 0, self.channelId);
+        output.x(serialDesc, 1, self.messageId);
+        output.x(serialDesc, 2, self.summaryId);
     }
 
     public final String component1() {

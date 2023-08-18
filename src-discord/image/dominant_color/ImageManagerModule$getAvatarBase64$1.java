@@ -24,7 +24,7 @@ final class ImageManagerModule$getAvatarBase64$1 extends s implements Function1<
     @Override 
     public   Unit invoke(Bitmap bitmap) {
         invoke2(bitmap);
-        return Unit.f21036a;
+        return Unit.f21210a;
     }
 
     

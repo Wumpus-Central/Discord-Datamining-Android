@@ -54,7 +54,7 @@ public final class TapTimestampEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.timestamp);
+        output.x(serialDesc, 0, self.timestamp);
     }
 
     public final String component1() {

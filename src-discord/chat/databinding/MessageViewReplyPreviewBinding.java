@@ -10,7 +10,7 @@ import com.discord.chat.R;
 import com.discord.chat.presentation.message.RoleDotView;
 import com.discord.chat.presentation.message.view.MessageContentView;
 import com.facebook.drawee.view.SimpleDraweeView;
-import v0.a;
+import u0.a;
 
 
 public final class MessageViewReplyPreviewBinding {

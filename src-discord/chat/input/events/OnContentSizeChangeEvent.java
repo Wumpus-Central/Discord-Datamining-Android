@@ -54,8 +54,8 @@ public final class OnContentSizeChangeEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, self.width);
-        output.q(serialDesc, 1, self.height);
+        output.v(serialDesc, 0, self.width);
+        output.v(serialDesc, 1, self.height);
     }
 
     public final int component1() {

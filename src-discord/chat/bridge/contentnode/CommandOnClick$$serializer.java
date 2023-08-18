@@ -46,7 +46,7 @@ public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
     @Override 
     public KSerializer<?>[] childSerializers() {
         UserId$$serializer userId$$serializer = UserId$$serializer.INSTANCE;
-        return new KSerializer[]{a.u(a2.f29550a), a.u(userId$$serializer), a.u(MessageId$$serializer.INSTANCE), a.u(userId$$serializer), a.u(MessageType.Serializer.INSTANCE), a.u(ChannelId$$serializer.INSTANCE)};
+        return new KSerializer[]{a.u(a2.f29755a), a.u(userId$$serializer), a.u(MessageId$$serializer.INSTANCE), a.u(userId$$serializer), a.u(MessageType.Serializer.INSTANCE), a.u(ChannelId$$serializer.INSTANCE)};
     }
 
     @Override 
@@ -60,15 +60,15 @@ public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
         Object obj6;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            obj6 = c10.v(descriptor2, 0, a2.f29550a, null);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            obj6 = b10.n(descriptor2, 0, a2.f29755a, null);
             UserId$$serializer userId$$serializer = UserId$$serializer.INSTANCE;
-            obj = c10.v(descriptor2, 1, userId$$serializer, null);
-            obj2 = c10.v(descriptor2, 2, MessageId$$serializer.INSTANCE, null);
-            obj4 = c10.v(descriptor2, 3, userId$$serializer, null);
-            obj3 = c10.v(descriptor2, 4, MessageType.Serializer.INSTANCE, null);
-            obj5 = c10.v(descriptor2, 5, ChannelId$$serializer.INSTANCE, null);
+            obj = b10.n(descriptor2, 1, userId$$serializer, null);
+            obj2 = b10.n(descriptor2, 2, MessageId$$serializer.INSTANCE, null);
+            obj4 = b10.n(descriptor2, 3, userId$$serializer, null);
+            obj3 = b10.n(descriptor2, 4, MessageType.Serializer.INSTANCE, null);
+            obj5 = b10.n(descriptor2, 5, ChannelId$$serializer.INSTANCE, null);
             i10 = 63;
         } else {
             boolean z10 = true;
@@ -80,37 +80,37 @@ public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
             Object obj10 = null;
             Object obj11 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z10 = false;
                         break;
                     case 0:
-                        obj6 = c10.v(descriptor2, 0, a2.f29550a, obj6);
+                        obj6 = b10.n(descriptor2, 0, a2.f29755a, obj6);
                         i11 |= 1;
                         break;
                     case 1:
-                        obj11 = c10.v(descriptor2, 1, UserId$$serializer.INSTANCE, obj11);
+                        obj11 = b10.n(descriptor2, 1, UserId$$serializer.INSTANCE, obj11);
                         i11 |= 2;
                         break;
                     case 2:
-                        obj10 = c10.v(descriptor2, 2, MessageId$$serializer.INSTANCE, obj10);
+                        obj10 = b10.n(descriptor2, 2, MessageId$$serializer.INSTANCE, obj10);
                         i11 |= 4;
                         break;
                     case 3:
-                        obj8 = c10.v(descriptor2, 3, UserId$$serializer.INSTANCE, obj8);
+                        obj8 = b10.n(descriptor2, 3, UserId$$serializer.INSTANCE, obj8);
                         i11 |= 8;
                         break;
                     case 4:
-                        obj9 = c10.v(descriptor2, 4, MessageType.Serializer.INSTANCE, obj9);
+                        obj9 = b10.n(descriptor2, 4, MessageType.Serializer.INSTANCE, obj9);
                         i11 |= 16;
                         break;
                     case 5:
-                        obj7 = c10.v(descriptor2, 5, ChannelId$$serializer.INSTANCE, obj7);
+                        obj7 = b10.n(descriptor2, 5, ChannelId$$serializer.INSTANCE, obj7);
                         i11 |= 32;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             obj5 = obj7;
@@ -120,9 +120,9 @@ public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
             obj = obj11;
             i10 = i11;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
-        return new CommandOnClick(i10, (String) obj6, (UserId) obj, messageId != null ? messageId.m613unboximpl() : null, (UserId) obj4, (MessageType) obj3, (ChannelId) obj5, null, null);
+        return new CommandOnClick(i10, (String) obj6, (UserId) obj, messageId != null ? messageId.m615unboximpl() : null, (UserId) obj4, (MessageType) obj3, (ChannelId) obj5, null, null);
     }
 
     @Override 
@@ -134,9 +134,9 @@ public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        CommandOnClick.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        CommandOnClick.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

@@ -53,7 +53,7 @@ public final class MessageAltRemixTagView extends FrameLayout {
     }
 
     
-    public final void m214configureTagViewe2j04IU(String str, Integer num, Integer num2, final ChatEventHandler eventHandler, final String messageId, final long j10, final String str2) {
+    public final void m216configureTagViewe2j04IU(String str, Integer num, Integer num2, final ChatEventHandler eventHandler, final String messageId, final long j10, final String str2) {
         int i10;
         int i11;
         q.h(eventHandler, "eventHandler");

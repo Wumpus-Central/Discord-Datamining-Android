@@ -62,7 +62,7 @@ public final class MessageTagView extends FrameLayout {
     }
 
     
-    public final void m215configureTagVieweCJZyo(String str, Boolean bool, Integer num, Integer num2, String str2, final ChatEventHandler eventHandler, final String messageId, final long j10, final String str3) {
+    public final void m217configureTagVieweCJZyo(String str, Boolean bool, Integer num, Integer num2, String str2, final ChatEventHandler eventHandler, final String messageId, final long j10, final String str3) {
         int i10;
         q.h(eventHandler, "eventHandler");
         q.h(messageId, "messageId");

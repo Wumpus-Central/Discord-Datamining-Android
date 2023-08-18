@@ -58,8 +58,8 @@ public final class InteractionStatus {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.h(serialDesc, 0, InteractionStatusViewState.Serializer.INSTANCE, self.state);
-        output.h(serialDesc, 1, StructurableTextSerializer.INSTANCE, self.text);
+        output.o(serialDesc, 0, InteractionStatusViewState.Serializer.INSTANCE, self.state);
+        output.o(serialDesc, 1, StructurableTextSerializer.INSTANCE, self.text);
     }
 
     public final InteractionStatusViewState component1() {

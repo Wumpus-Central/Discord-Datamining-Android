@@ -67,10 +67,10 @@ public final class LongPressMessageEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.messageId);
-        output.s(serialDesc, 1, self.channelId);
-        output.q(serialDesc, 2, self.mediaIndex);
-        output.s(serialDesc, 3, self.mediaType);
+        output.x(serialDesc, 0, self.messageId);
+        output.x(serialDesc, 1, self.channelId);
+        output.v(serialDesc, 2, self.mediaIndex);
+        output.x(serialDesc, 3, self.mediaType);
     }
 
     public final String component1() {

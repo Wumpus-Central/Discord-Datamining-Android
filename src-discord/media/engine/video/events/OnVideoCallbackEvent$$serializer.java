@@ -38,8 +38,8 @@ public final class OnVideoCallbackEvent$$serializer implements f0<OnVideoCallbac
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        return new KSerializer[]{m0.f29625a, a2Var, w0.f29666a, a2Var, a2Var};
+        a2 a2Var = a2.f29755a;
+        return new KSerializer[]{m0.f29830a, a2Var, w0.f29871a, a2Var, a2Var};
     }
 
     @Override 
@@ -52,13 +52,13 @@ public final class OnVideoCallbackEvent$$serializer implements f0<OnVideoCallbac
         int i11;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            i10 = c10.k(descriptor2, 0);
-            str3 = c10.t(descriptor2, 1);
-            j10 = c10.h(descriptor2, 2);
-            str2 = c10.t(descriptor2, 3);
-            str = c10.t(descriptor2, 4);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            i10 = b10.i(descriptor2, 0);
+            str3 = b10.m(descriptor2, 1);
+            j10 = b10.f(descriptor2, 2);
+            str2 = b10.m(descriptor2, 3);
+            str = b10.m(descriptor2, 4);
             i11 = 31;
         } else {
             String str4 = null;
@@ -69,26 +69,26 @@ public final class OnVideoCallbackEvent$$serializer implements f0<OnVideoCallbac
             String str6 = null;
             int i13 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    i13 = c10.k(descriptor2, 0);
+                } else if (o10 == 0) {
+                    i13 = b10.i(descriptor2, 0);
                     i12 |= 1;
-                } else if (x10 == 1) {
-                    str4 = c10.t(descriptor2, 1);
+                } else if (o10 == 1) {
+                    str4 = b10.m(descriptor2, 1);
                     i12 |= 2;
-                } else if (x10 == 2) {
-                    j11 = c10.h(descriptor2, 2);
+                } else if (o10 == 2) {
+                    j11 = b10.f(descriptor2, 2);
                     i12 |= 4;
-                } else if (x10 == 3) {
-                    str5 = c10.t(descriptor2, 3);
+                } else if (o10 == 3) {
+                    str5 = b10.m(descriptor2, 3);
                     i12 |= 8;
-                } else if (x10 == 4) {
-                    str6 = c10.t(descriptor2, 4);
+                } else if (o10 == 4) {
+                    str6 = b10.m(descriptor2, 4);
                     i12 |= 16;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i10 = i13;
@@ -98,7 +98,7 @@ public final class OnVideoCallbackEvent$$serializer implements f0<OnVideoCallbac
             str3 = str4;
             j10 = j11;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new OnVideoCallbackEvent(i11, i10, str3, j10, str2, str, null);
     }
 
@@ -111,9 +111,9 @@ public final class OnVideoCallbackEvent$$serializer implements f0<OnVideoCallbac
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        OnVideoCallbackEvent.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        OnVideoCallbackEvent.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

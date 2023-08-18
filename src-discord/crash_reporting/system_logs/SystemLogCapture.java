@@ -9,9 +9,8 @@ import java.io.InputStreamReader;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import nf.a;
-import ni.d;
-import ni.v;
+import kotlin.text.p;
+import ni.a;
 
 @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u0000 \u000e2\u00020\u0001:\u0001\u000eB\u0005¢\u0006\u0002\u0010\u0002J\u0012\u0010\u0006\u001a\u00020\u00072\n\u0010\b\u001a\u00060\tj\u0002`\nJ\b\u0010\u000b\u001a\u00020\u0007H\u0002J\u0006\u0010\f\u001a\u00020\rR\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000f"}, d2 = {"Lcom/discord/crash_reporting/system_logs/SystemLogCapture;", "", "()V", "buffer", "Lcom/discord/crash_reporting/system_logs/FixedSizeLineBuffer;", "tombstoneBuffer", "appendOutput", "", "sb", "Ljava/lang/StringBuilder;", "Lkotlin/text/StringBuilder;", ViewProps.START, "startThread", "Ljava/lang/Thread;", "Companion", "crash_reporting_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -33,7 +32,7 @@ public final class SystemLogCapture {
         public final boolean shouldIncludeLogLine$crash_reporting_release(String line) {
             boolean M;
             q.h(line, "line");
-            M = v.M(line, "chatty  : uid=", false, 2, null);
+            M = p.M(line, "chatty  : uid=", false, 2, null);
             return !M;
         }
     }
@@ -52,7 +51,7 @@ public final class SystemLogCapture {
                     process = new ProcessBuilder(SystemLogUtils.logcatPath).redirectErrorStream(true).start();
                     InputStream inputStream = process.getInputStream();
                     q.g(inputStream, "logcatProcess.inputStream");
-                    InputStreamReader inputStreamReader = new InputStreamReader(inputStream, d.f24685b);
+                    InputStreamReader inputStreamReader = new InputStreamReader(inputStream, a.f24903b);
                     if (inputStreamReader instanceof BufferedReader) {
                         bufferedReader = (BufferedReader) inputStreamReader;
                     } else {
@@ -102,6 +101,6 @@ public final class SystemLogCapture {
     }
 
     public final Thread startThread() {
-        return a.b(true, true, null, SystemLogCapture.class.getSimpleName(), 0, new SystemLogCapture$startThread$1(this), 20, null);
+        return nf.a.b(true, true, null, SystemLogCapture.class.getSimpleName(), 0, new SystemLogCapture$startThread$1(this), 20, null);
     }
 }

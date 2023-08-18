@@ -36,7 +36,7 @@ public final class EmbedFooter$$serializer implements f0<EmbedFooter> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
+        a2 a2Var = a2.f29755a;
         return new KSerializer[]{a.u(a2Var), a.u(a2Var), a.u(a2Var)};
     }
 
@@ -48,13 +48,13 @@ public final class EmbedFooter$$serializer implements f0<EmbedFooter> {
         Object obj3;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         Object obj4 = null;
-        if (c10.y()) {
-            a2 a2Var = a2.f29550a;
-            obj2 = c10.v(descriptor2, 0, a2Var, null);
-            obj = c10.v(descriptor2, 1, a2Var, null);
-            obj3 = c10.v(descriptor2, 2, a2Var, null);
+        if (b10.p()) {
+            a2 a2Var = a2.f29755a;
+            obj2 = b10.n(descriptor2, 0, a2Var, null);
+            obj = b10.n(descriptor2, 1, a2Var, null);
+            obj3 = b10.n(descriptor2, 2, a2Var, null);
             i10 = 7;
         } else {
             boolean z10 = true;
@@ -62,27 +62,27 @@ public final class EmbedFooter$$serializer implements f0<EmbedFooter> {
             obj = null;
             Object obj5 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    obj4 = c10.v(descriptor2, 0, a2.f29550a, obj4);
+                } else if (o10 == 0) {
+                    obj4 = b10.n(descriptor2, 0, a2.f29755a, obj4);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    obj = c10.v(descriptor2, 1, a2.f29550a, obj);
+                } else if (o10 == 1) {
+                    obj = b10.n(descriptor2, 1, a2.f29755a, obj);
                     i11 |= 2;
-                } else if (x10 == 2) {
-                    obj5 = c10.v(descriptor2, 2, a2.f29550a, obj5);
+                } else if (o10 == 2) {
+                    obj5 = b10.n(descriptor2, 2, a2.f29755a, obj5);
                     i11 |= 4;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i10 = i11;
             obj2 = obj4;
             obj3 = obj5;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new EmbedFooter(i10, (String) obj2, (String) obj, (String) obj3, (SerializationConstructorMarker) null);
     }
 
@@ -95,9 +95,9 @@ public final class EmbedFooter$$serializer implements f0<EmbedFooter> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        EmbedFooter.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        EmbedFooter.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

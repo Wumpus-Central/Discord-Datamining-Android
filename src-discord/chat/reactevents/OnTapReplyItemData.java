@@ -52,27 +52,27 @@ public final class OnTapReplyItemData implements ReactEvent {
     }
 
     
-    public static  OnTapReplyItemData m371copy1xi1bu0$default(OnTapReplyItemData onTapReplyItemData, String str, int i10, Object obj) {
+    public static  OnTapReplyItemData m373copy1xi1bu0$default(OnTapReplyItemData onTapReplyItemData, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = onTapReplyItemData.messageId;
         }
-        return onTapReplyItemData.m373copy1xi1bu0(str);
+        return onTapReplyItemData.m375copy1xi1bu0(str);
     }
 
     public static final void write$Self(OnTapReplyItemData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.h(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m605boximpl(self.messageId));
+        output.o(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m607boximpl(self.messageId));
     }
 
     
-    public final String m372component13Eiw7ao() {
+    public final String m374component13Eiw7ao() {
         return this.messageId;
     }
 
     
-    public final OnTapReplyItemData m373copy1xi1bu0(String messageId) {
+    public final OnTapReplyItemData m375copy1xi1bu0(String messageId) {
         q.h(messageId, "messageId");
         return new OnTapReplyItemData(messageId, null);
     }
@@ -81,16 +81,16 @@ public final class OnTapReplyItemData implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof OnTapReplyItemData) && MessageId.m609equalsimpl0(this.messageId, ((OnTapReplyItemData) obj).messageId);
+        return (obj instanceof OnTapReplyItemData) && MessageId.m611equalsimpl0(this.messageId, ((OnTapReplyItemData) obj).messageId);
     }
 
     
-    public final String m374getMessageId3Eiw7ao() {
+    public final String m376getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return MessageId.m610hashCodeimpl(this.messageId);
+        return MessageId.m612hashCodeimpl(this.messageId);
     }
 
     @Override 
@@ -99,7 +99,7 @@ public final class OnTapReplyItemData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m611toStringimpl(this.messageId);
+        String str = MessageId.m613toStringimpl(this.messageId);
         return "OnTapReplyItemData(messageId=" + str + ")";
     }
 

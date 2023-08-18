@@ -41,8 +41,8 @@ public final class ChatScrollPositionEvent$$serializer implements f0<ChatScrollP
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        h hVar = h.f29592a;
-        m0 m0Var = m0.f29625a;
+        h hVar = h.f29797a;
+        m0 m0Var = m0.f29830a;
         return new KSerializer[]{hVar, hVar, hVar, hVar, hVar, hVar, hVar, m0Var, m0Var};
     }
 
@@ -60,18 +60,18 @@ public final class ChatScrollPositionEvent$$serializer implements f0<ChatScrollP
         int i12;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i13 = 0;
-        if (c10.y()) {
-            z16 = c10.s(descriptor2, 0);
-            z15 = c10.s(descriptor2, 1);
-            z14 = c10.s(descriptor2, 2);
-            z13 = c10.s(descriptor2, 3);
-            z12 = c10.s(descriptor2, 4);
-            z11 = c10.s(descriptor2, 5);
-            z10 = c10.s(descriptor2, 6);
-            i11 = c10.k(descriptor2, 7);
-            i10 = c10.k(descriptor2, 8);
+        if (b10.p()) {
+            z16 = b10.C(descriptor2, 0);
+            z15 = b10.C(descriptor2, 1);
+            z14 = b10.C(descriptor2, 2);
+            z13 = b10.C(descriptor2, 3);
+            z12 = b10.C(descriptor2, 4);
+            z11 = b10.C(descriptor2, 5);
+            z10 = b10.C(descriptor2, 6);
+            i11 = b10.i(descriptor2, 7);
+            i10 = b10.i(descriptor2, 8);
             i12 = 511;
         } else {
             boolean z17 = true;
@@ -85,49 +85,49 @@ public final class ChatScrollPositionEvent$$serializer implements f0<ChatScrollP
             boolean z22 = false;
             boolean z23 = false;
             while (z17) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z17 = false;
                         break;
                     case 0:
-                        z18 = c10.s(descriptor2, 0);
+                        z18 = b10.C(descriptor2, 0);
                         i13 |= 1;
                         continue;
                     case 1:
-                        z23 = c10.s(descriptor2, 1);
+                        z23 = b10.C(descriptor2, 1);
                         i13 |= 2;
                         continue;
                     case 2:
-                        z22 = c10.s(descriptor2, 2);
+                        z22 = b10.C(descriptor2, 2);
                         i13 |= 4;
                         break;
                     case 3:
-                        z21 = c10.s(descriptor2, 3);
+                        z21 = b10.C(descriptor2, 3);
                         i13 |= 8;
                         break;
                     case 4:
-                        z12 = c10.s(descriptor2, 4);
+                        z12 = b10.C(descriptor2, 4);
                         i13 |= 16;
                         break;
                     case 5:
-                        z20 = c10.s(descriptor2, 5);
+                        z20 = b10.C(descriptor2, 5);
                         i13 |= 32;
                         break;
                     case 6:
-                        z19 = c10.s(descriptor2, 6);
+                        z19 = b10.C(descriptor2, 6);
                         i13 |= 64;
                         break;
                     case 7:
-                        i14 = c10.k(descriptor2, 7);
+                        i14 = b10.i(descriptor2, 7);
                         i13 |= 128;
                         break;
                     case 8:
-                        i15 = c10.k(descriptor2, 8);
+                        i15 = b10.i(descriptor2, 8);
                         i13 |= 256;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             i11 = i14;
@@ -140,7 +140,7 @@ public final class ChatScrollPositionEvent$$serializer implements f0<ChatScrollP
             z10 = z19;
             z16 = z18;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new ChatScrollPositionEvent(i12, z16, z15, z14, z13, z12, z11, z10, i11, i10, null);
     }
 
@@ -153,9 +153,9 @@ public final class ChatScrollPositionEvent$$serializer implements f0<ChatScrollP
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        ChatScrollPositionEvent.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        ChatScrollPositionEvent.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

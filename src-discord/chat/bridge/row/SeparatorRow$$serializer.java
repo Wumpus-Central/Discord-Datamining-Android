@@ -47,9 +47,9 @@ public final class SeparatorRow$$serializer implements f0<SeparatorRow> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29625a;
-        a2 a2Var = a2.f29550a;
-        h hVar = h.f29592a;
+        m0 m0Var = m0.f29830a;
+        a2 a2Var = a2.f29755a;
+        h hVar = h.f29797a;
         return new KSerializer[]{ChangeType.Serializer.INSTANCE, m0Var, a2Var, a2Var, m0Var, a.u(hVar), a.u(hVar), a.u(Summary$$serializer.INSTANCE)};
     }
 
@@ -66,19 +66,19 @@ public final class SeparatorRow$$serializer implements f0<SeparatorRow> {
         Object obj4;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i13 = 7;
         int i14 = 6;
-        if (c10.y()) {
-            obj4 = c10.m(descriptor2, 0, ChangeType.Serializer.INSTANCE, null);
-            i11 = c10.k(descriptor2, 1);
-            str2 = c10.t(descriptor2, 2);
-            str = c10.t(descriptor2, 3);
-            i10 = c10.k(descriptor2, 4);
-            h hVar = h.f29592a;
-            obj = c10.v(descriptor2, 5, hVar, null);
-            obj2 = c10.v(descriptor2, 6, hVar, null);
-            obj3 = c10.v(descriptor2, 7, Summary$$serializer.INSTANCE, null);
+        if (b10.p()) {
+            obj4 = b10.y(descriptor2, 0, ChangeType.Serializer.INSTANCE, null);
+            i11 = b10.i(descriptor2, 1);
+            str2 = b10.m(descriptor2, 2);
+            str = b10.m(descriptor2, 3);
+            i10 = b10.i(descriptor2, 4);
+            h hVar = h.f29797a;
+            obj = b10.n(descriptor2, 5, hVar, null);
+            obj2 = b10.n(descriptor2, 6, hVar, null);
+            obj3 = b10.n(descriptor2, 7, Summary$$serializer.INSTANCE, null);
             i12 = 255;
         } else {
             boolean z10 = true;
@@ -92,48 +92,48 @@ public final class SeparatorRow$$serializer implements f0<SeparatorRow> {
             Object obj8 = null;
             int i17 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z10 = false;
                         i14 = 6;
                         break;
                     case 0:
-                        obj7 = c10.m(descriptor2, 0, ChangeType.Serializer.INSTANCE, obj7);
+                        obj7 = b10.y(descriptor2, 0, ChangeType.Serializer.INSTANCE, obj7);
                         i16 |= 1;
                         i13 = 7;
                         i14 = 6;
                         break;
                     case 1:
-                        i17 = c10.k(descriptor2, 1);
+                        i17 = b10.i(descriptor2, 1);
                         i16 |= 2;
                         break;
                     case 2:
-                        str3 = c10.t(descriptor2, 2);
+                        str3 = b10.m(descriptor2, 2);
                         i16 |= 4;
                         break;
                     case 3:
-                        str4 = c10.t(descriptor2, 3);
+                        str4 = b10.m(descriptor2, 3);
                         i16 |= 8;
                         break;
                     case 4:
-                        i15 = c10.k(descriptor2, 4);
+                        i15 = b10.i(descriptor2, 4);
                         i16 |= 16;
                         break;
                     case 5:
-                        obj8 = c10.v(descriptor2, 5, h.f29592a, obj8);
+                        obj8 = b10.n(descriptor2, 5, h.f29797a, obj8);
                         i16 |= 32;
                         break;
                     case 6:
-                        obj6 = c10.v(descriptor2, i14, h.f29592a, obj6);
+                        obj6 = b10.n(descriptor2, i14, h.f29797a, obj6);
                         i16 |= 64;
                         break;
                     case 7:
-                        obj5 = c10.v(descriptor2, i13, Summary$$serializer.INSTANCE, obj5);
+                        obj5 = b10.n(descriptor2, i13, Summary$$serializer.INSTANCE, obj5);
                         i16 |= 128;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             obj3 = obj5;
@@ -146,7 +146,7 @@ public final class SeparatorRow$$serializer implements f0<SeparatorRow> {
             i10 = i15;
             obj4 = obj7;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new SeparatorRow(i12, (ChangeType) obj4, i11, str2, str, i10, (Boolean) obj, (Boolean) obj2, (Summary) obj3, (SerializationConstructorMarker) null);
     }
 
@@ -159,9 +159,9 @@ public final class SeparatorRow$$serializer implements f0<SeparatorRow> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        SeparatorRow.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        SeparatorRow.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

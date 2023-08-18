@@ -51,7 +51,7 @@ public final class EmbedProvider {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.name);
+        output.x(serialDesc, 0, self.name);
     }
 
     public final String component1() {

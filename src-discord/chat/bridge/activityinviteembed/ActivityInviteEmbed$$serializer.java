@@ -48,9 +48,9 @@ public final class ActivityInviteEmbed$$serializer implements f0<ActivityInviteE
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        h hVar = h.f29592a;
-        return new KSerializer[]{a.u(a2Var), hVar, a2Var, a2Var, a.u(new f(a.u(a2Var))), m0.f29625a, a.u(a2Var), a.u(a2Var), hVar, a2Var};
+        a2 a2Var = a2.f29755a;
+        h hVar = h.f29797a;
+        return new KSerializer[]{a.u(a2Var), hVar, a2Var, a2Var, a.u(new f(a.u(a2Var))), m0.f29830a, a.u(a2Var), a.u(a2Var), hVar, a2Var};
     }
 
     @Override 
@@ -69,22 +69,22 @@ public final class ActivityInviteEmbed$$serializer implements f0<ActivityInviteE
         char c10;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c11 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i12 = 9;
         int i13 = 7;
         int i14 = 6;
-        if (c11.y()) {
-            a2 a2Var = a2.f29550a;
-            obj = c11.v(descriptor2, 0, a2Var, null);
-            z11 = c11.s(descriptor2, 1);
-            str3 = c11.t(descriptor2, 2);
-            str2 = c11.t(descriptor2, 3);
-            obj2 = c11.v(descriptor2, 4, new f(a.u(a2Var)), null);
-            i10 = c11.k(descriptor2, 5);
-            obj3 = c11.v(descriptor2, 6, a2Var, null);
-            obj4 = c11.v(descriptor2, 7, a2Var, null);
-            z10 = c11.s(descriptor2, 8);
-            str = c11.t(descriptor2, 9);
+        if (b10.p()) {
+            a2 a2Var = a2.f29755a;
+            obj = b10.n(descriptor2, 0, a2Var, null);
+            z11 = b10.C(descriptor2, 1);
+            str3 = b10.m(descriptor2, 2);
+            str2 = b10.m(descriptor2, 3);
+            obj2 = b10.n(descriptor2, 4, new f(a.u(a2Var)), null);
+            i10 = b10.i(descriptor2, 5);
+            obj3 = b10.n(descriptor2, 6, a2Var, null);
+            obj4 = b10.n(descriptor2, 7, a2Var, null);
+            z10 = b10.C(descriptor2, 8);
+            str = b10.m(descriptor2, 9);
             i11 = 1023;
         } else {
             boolean z12 = true;
@@ -100,53 +100,53 @@ public final class ActivityInviteEmbed$$serializer implements f0<ActivityInviteE
             Object obj8 = null;
             int i16 = 0;
             while (z12) {
-                int x10 = c11.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z12 = false;
                         i13 = 7;
                         i14 = 6;
                     case 0:
-                        obj7 = c11.v(descriptor2, 0, a2.f29550a, obj7);
+                        obj7 = b10.n(descriptor2, 0, a2.f29755a, obj7);
                         i15 |= 1;
                         i12 = 9;
                         i13 = 7;
                         i14 = 6;
                     case 1:
-                        z14 = c11.s(descriptor2, 1);
+                        z14 = b10.C(descriptor2, 1);
                         i15 |= 2;
                         i12 = 9;
                     case 2:
                         c10 = 3;
-                        str4 = c11.t(descriptor2, 2);
+                        str4 = b10.m(descriptor2, 2);
                         i15 |= 4;
                         i12 = 9;
                     case 3:
                         c10 = 3;
-                        str5 = c11.t(descriptor2, 3);
+                        str5 = b10.m(descriptor2, 3);
                         i15 |= 8;
                         i12 = 9;
                     case 4:
-                        obj8 = c11.v(descriptor2, 4, new f(a.u(a2.f29550a)), obj8);
+                        obj8 = b10.n(descriptor2, 4, new f(a.u(a2.f29755a)), obj8);
                         i15 |= 16;
                         i12 = 9;
                     case 5:
-                        i16 = c11.k(descriptor2, 5);
+                        i16 = b10.i(descriptor2, 5);
                         i15 |= 32;
                     case 6:
-                        obj6 = c11.v(descriptor2, i14, a2.f29550a, obj6);
+                        obj6 = b10.n(descriptor2, i14, a2.f29755a, obj6);
                         i15 |= 64;
                     case 7:
-                        obj5 = c11.v(descriptor2, i13, a2.f29550a, obj5);
+                        obj5 = b10.n(descriptor2, i13, a2.f29755a, obj5);
                         i15 |= 128;
                     case 8:
-                        z13 = c11.s(descriptor2, 8);
+                        z13 = b10.C(descriptor2, 8);
                         i15 |= 256;
                     case 9:
-                        str6 = c11.t(descriptor2, i12);
+                        str6 = b10.m(descriptor2, i12);
                         i15 |= 512;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             obj2 = obj8;
@@ -161,7 +161,7 @@ public final class ActivityInviteEmbed$$serializer implements f0<ActivityInviteE
             obj4 = obj5;
             i10 = i16;
         }
-        c11.b(descriptor2);
+        b10.c(descriptor2);
         return new ActivityInviteEmbed(i11, (String) obj, z11, str3, str2, (List) obj2, i10, (String) obj3, (String) obj4, z10, str, (SerializationConstructorMarker) null);
     }
 
@@ -174,9 +174,9 @@ public final class ActivityInviteEmbed$$serializer implements f0<ActivityInviteE
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        ActivityInviteEmbed.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        ActivityInviteEmbed.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

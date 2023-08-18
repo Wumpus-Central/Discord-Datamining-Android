@@ -50,7 +50,7 @@ public final class LoadingAction {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.h(serialDesc, 0, LoadingActionType.Companion.serializer(), self.type);
+        output.o(serialDesc, 0, LoadingActionType.Companion.serializer(), self.type);
     }
 
     public final LoadingActionType component1() {

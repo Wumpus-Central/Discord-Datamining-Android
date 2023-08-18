@@ -35,8 +35,8 @@ public final class MediaPlayerProgress$$serializer implements f0<MediaPlayerProg
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        w0 w0Var = w0.f29666a;
-        return new KSerializer[]{x.f29671a, w0Var, w0Var};
+        w0 w0Var = w0.f29871a;
+        return new KSerializer[]{x.f29876a, w0Var, w0Var};
     }
 
     @Override 
@@ -47,11 +47,11 @@ public final class MediaPlayerProgress$$serializer implements f0<MediaPlayerProg
         int i10;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            d10 = c10.A(descriptor2, 0);
-            j11 = c10.h(descriptor2, 1);
-            j10 = c10.h(descriptor2, 2);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            d10 = b10.F(descriptor2, 0);
+            j11 = b10.f(descriptor2, 1);
+            j10 = b10.f(descriptor2, 2);
             i10 = 7;
         } else {
             double d11 = 0.0d;
@@ -60,20 +60,20 @@ public final class MediaPlayerProgress$$serializer implements f0<MediaPlayerProg
             int i11 = 0;
             long j13 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    d11 = c10.A(descriptor2, 0);
+                } else if (o10 == 0) {
+                    d11 = b10.F(descriptor2, 0);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    j13 = c10.h(descriptor2, 1);
+                } else if (o10 == 1) {
+                    j13 = b10.f(descriptor2, 1);
                     i11 |= 2;
-                } else if (x10 == 2) {
-                    j12 = c10.h(descriptor2, 2);
+                } else if (o10 == 2) {
+                    j12 = b10.f(descriptor2, 2);
                     i11 |= 4;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i10 = i11;
@@ -81,7 +81,7 @@ public final class MediaPlayerProgress$$serializer implements f0<MediaPlayerProg
             j10 = j12;
             j11 = j13;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new MediaPlayerProgress(i10, d10, j11, j10, null);
     }
 
@@ -94,9 +94,9 @@ public final class MediaPlayerProgress$$serializer implements f0<MediaPlayerProg
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        MediaPlayerProgress.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        MediaPlayerProgress.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

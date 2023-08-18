@@ -51,7 +51,7 @@ public final class Transcoder {
         Object d10;
         c10 = c.c(continuation);
         final p pVar = new p(c10, 1);
-        pVar.C();
+        pVar.B();
         final MediaTransformer mediaTransformer = new MediaTransformer(context);
         cancelCallbacks.put(str, new Transcoder$convertCompress$3$1(mediaTransformer, str));
         mediaTransformer.h(str, discordVideoMediaSource.getInputUri(), discordVideoMediaSource.getOutputUri(), discordVideoMediaSource.getVideoFormat(), discordVideoMediaSource.getAudioFormat(), new a() { 
@@ -72,7 +72,7 @@ public final class Transcoder {
                 function1.invoke(Float.valueOf(1.0f));
                 Transcoder.cancelCallbacks.remove(str);
                 CancellableContinuation<Uri> cancellableContinuation = pVar;
-                s.a aVar = s.f20094l;
+                s.a aVar = s.f20299k;
                 cancellableContinuation.resumeWith(s.b(discordVideoMediaSource.getOutputUri()));
             }
 
@@ -82,7 +82,7 @@ public final class Transcoder {
                 mediaTransformer.e();
                 Transcoder.cancelCallbacks.remove(str);
                 CancellableContinuation<Uri> cancellableContinuation = pVar;
-                s.a aVar = s.f20094l;
+                s.a aVar = s.f20299k;
                 if (th2 == null) {
                     th2 = new Throwable("Unknown transcoding error");
                 }
@@ -101,7 +101,7 @@ public final class Transcoder {
                 function1.invoke(Float.valueOf(0.0f));
             }
         }, null);
-        pVar.n(new Transcoder$convertCompress$3$3(str));
+        pVar.l(new Transcoder$convertCompress$3$3(str));
         Object y10 = pVar.y();
         d10 = d.d();
         if (y10 == d10) {

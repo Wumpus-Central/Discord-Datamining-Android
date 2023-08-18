@@ -50,11 +50,11 @@ public final class ConnectionsRoleTagView extends FrameLayout {
     public static final void configureConnectionsRoleTag_uESh2Cg$lambda$0(ChatEventHandler eventHandler, UserId userId, GuildId guildId, ChannelId channelId, ConnectionsRoleTag connectionsRoleTag, View view) {
         q.h(eventHandler, "$eventHandler");
         q.h(connectionsRoleTag, "$connectionsRoleTag");
-        eventHandler.onTapConnectionsRoleTag(UserId.m650toStringimpl(userId.m652unboximpl()), GuildId.m599toStringimpl(guildId.m601unboximpl()), ChannelId.m586toStringimpl(channelId.m588unboximpl()), connectionsRoleTag.getId());
+        eventHandler.onTapConnectionsRoleTag(UserId.m652toStringimpl(userId.m654unboximpl()), GuildId.m601toStringimpl(guildId.m603unboximpl()), ChannelId.m588toStringimpl(channelId.m590unboximpl()), connectionsRoleTag.getId());
     }
 
     
-    public final void m196configureConnectionsRoleTaguESh2Cg(final UserId userId, final GuildId guildId, final ChannelId channelId, final ConnectionsRoleTag connectionsRoleTag, final ChatEventHandler eventHandler) {
+    public final void m198configureConnectionsRoleTaguESh2Cg(final UserId userId, final GuildId guildId, final ChannelId channelId, final ConnectionsRoleTag connectionsRoleTag, final ChatEventHandler eventHandler) {
         q.h(connectionsRoleTag, "connectionsRoleTag");
         q.h(eventHandler, "eventHandler");
         ImageView imageView = this.binding.verifiedCheckIconBackground;

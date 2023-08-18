@@ -85,35 +85,35 @@ public final class UserSelectComponent extends SearchableSelectComponent {
         q.h(serialDesc, "serialDesc");
         SearchableSelectComponent.write$Self((SearchableSelectComponent) self, output, serialDesc);
         boolean z12 = true;
-        output.q(serialDesc, 1, self.getType());
-        output.h(serialDesc, 2, new wi.f(m0.f29625a), self.getIndices());
-        output.s(serialDesc, 3, self.getApplicationId());
-        output.s(serialDesc, 4, self.getCustomId());
-        if (!output.w(serialDesc, 5) && self.getPlaceholder() == null) {
+        output.v(serialDesc, 1, self.getType());
+        output.o(serialDesc, 2, new wi.f(m0.f29830a), self.getIndices());
+        output.x(serialDesc, 3, self.getApplicationId());
+        output.x(serialDesc, 4, self.getCustomId());
+        if (!output.z(serialDesc, 5) && self.getPlaceholder() == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 5, a2.f29550a, self.getPlaceholder());
+            output.B(serialDesc, 5, a2.f29755a, self.getPlaceholder());
         }
-        if (!output.w(serialDesc, 6) && self.getAccessibilityLabel() == null) {
+        if (!output.z(serialDesc, 6) && self.getAccessibilityLabel() == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 6, a2.f29550a, self.getAccessibilityLabel());
+            output.B(serialDesc, 6, a2.f29755a, self.getAccessibilityLabel());
         }
-        output.q(serialDesc, 7, self.getMinValues());
-        output.q(serialDesc, 8, self.getMaxValues());
-        if (!output.w(serialDesc, 9) && !self.getDisabled()) {
+        output.v(serialDesc, 7, self.getMinValues());
+        output.v(serialDesc, 8, self.getMaxValues());
+        if (!output.z(serialDesc, 9) && !self.getDisabled()) {
             z12 = false;
         }
         if (z12) {
-            output.r(serialDesc, 9, self.getDisabled());
+            output.w(serialDesc, 9, self.getDisabled());
         }
-        output.h(serialDesc, 10, ActionComponentState.Serializer.INSTANCE, self.getState());
+        output.o(serialDesc, 10, ActionComponentState.Serializer.INSTANCE, self.getState());
     }
 
     public final int component1() {

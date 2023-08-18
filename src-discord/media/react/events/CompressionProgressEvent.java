@@ -57,8 +57,8 @@ public final class CompressionProgressEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.uri);
-        output.q(serialDesc, 1, self.progress);
+        output.x(serialDesc, 0, self.uri);
+        output.v(serialDesc, 1, self.progress);
     }
 
     public final String component1() {

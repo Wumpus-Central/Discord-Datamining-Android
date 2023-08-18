@@ -57,16 +57,16 @@ public enum StickerFormatType {
 
         @Override 
         public SerialDescriptor getDescriptor() {
-            return g.a("StickerFormatType", e.f.f29054a);
+            return g.a("StickerFormatType", e.f.f29346a);
         }
 
         @Override 
         public StickerFormatType deserialize(Decoder decoder) {
             StickerFormatType[] values;
             q.h(decoder, "decoder");
-            int j10 = decoder.j();
+            int h10 = decoder.h();
             for (StickerFormatType stickerFormatType : StickerFormatType.values()) {
-                if (stickerFormatType.getIntType() == j10) {
+                if (stickerFormatType.getIntType() == h10) {
                     return stickerFormatType;
                 }
             }
@@ -76,7 +76,7 @@ public enum StickerFormatType {
         public void serialize(Encoder encoder, StickerFormatType value) {
             q.h(encoder, "encoder");
             q.h(value, "value");
-            encoder.x(value.getIntType());
+            encoder.A(value.getIntType());
         }
     }
 

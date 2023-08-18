@@ -97,37 +97,37 @@ public final class ThreadEmbed {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z13 = false;
-        output.s(serialDesc, 0, self.title);
-        output.s(serialDesc, 1, self.messageCountLabel);
-        if (!output.w(serialDesc, 2) && self.messagePreviewString == null) {
+        output.x(serialDesc, 0, self.title);
+        output.x(serialDesc, 1, self.messageCountLabel);
+        if (!output.z(serialDesc, 2) && self.messagePreviewString == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 2, a2.f29550a, self.messagePreviewString);
+            output.B(serialDesc, 2, a2.f29755a, self.messagePreviewString);
         }
-        if (!output.w(serialDesc, 3) && self.archived == null) {
+        if (!output.z(serialDesc, 3) && self.archived == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 3, h.f29592a, self.archived);
+            output.B(serialDesc, 3, h.f29797a, self.archived);
         }
-        if (!output.w(serialDesc, 4) && self.archivedIconUrl == null) {
+        if (!output.z(serialDesc, 4) && self.archivedIconUrl == null) {
             z12 = false;
         } else {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 4, a2.f29550a, self.archivedIconUrl);
+            output.B(serialDesc, 4, a2.f29755a, self.archivedIconUrl);
         }
-        if (output.w(serialDesc, 5) || self.referencedMessage != null) {
+        if (output.z(serialDesc, 5) || self.referencedMessage != null) {
             z13 = true;
         }
         if (z13) {
-            output.z(serialDesc, 5, ThreadEmbedMessage$$serializer.INSTANCE, self.referencedMessage);
+            output.B(serialDesc, 5, ThreadEmbedMessage$$serializer.INSTANCE, self.referencedMessage);
         }
     }
 

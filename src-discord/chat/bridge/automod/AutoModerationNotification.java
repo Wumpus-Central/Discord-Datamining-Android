@@ -81,28 +81,28 @@ public final class AutoModerationNotification {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z12 = false;
-        output.s(serialDesc, 0, self.header);
-        if (!output.w(serialDesc, 1) && self.severity == null) {
+        output.x(serialDesc, 0, self.header);
+        if (!output.z(serialDesc, 1) && self.severity == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 1, a2.f29550a, self.severity);
+            output.B(serialDesc, 1, a2.f29755a, self.severity);
         }
-        if (!output.w(serialDesc, 2) && self.startTime == null) {
+        if (!output.z(serialDesc, 2) && self.startTime == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 2, a2.f29550a, self.startTime);
+            output.B(serialDesc, 2, a2.f29755a, self.startTime);
         }
-        if (output.w(serialDesc, 3) || self.body != null) {
+        if (output.z(serialDesc, 3) || self.body != null) {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 3, a2.f29550a, self.body);
+            output.B(serialDesc, 3, a2.f29755a, self.body);
         }
     }
 

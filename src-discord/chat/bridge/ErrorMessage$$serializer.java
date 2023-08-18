@@ -35,7 +35,7 @@ public final class ErrorMessage$$serializer implements f0<ErrorMessage> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, a2.f29550a};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, a2.f29755a};
     }
 
     @Override 
@@ -45,11 +45,11 @@ public final class ErrorMessage$$serializer implements f0<ErrorMessage> {
         Object obj;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         String str2 = null;
-        if (c10.y()) {
-            obj = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
-            str = c10.t(descriptor2, 1);
+        if (b10.p()) {
+            obj = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
+            str = b10.m(descriptor2, 1);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -57,25 +57,25 @@ public final class ErrorMessage$$serializer implements f0<ErrorMessage> {
             obj = null;
             String str3 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    obj = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, obj);
+                } else if (o10 == 0) {
+                    obj = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, obj);
                     i10 |= 1;
-                } else if (x10 == 1) {
-                    str3 = c10.t(descriptor2, 1);
+                } else if (o10 == 1) {
+                    str3 = b10.m(descriptor2, 1);
                     i10 |= 2;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             str = str3;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         MessageId messageId = (MessageId) obj;
         if (messageId != null) {
-            str2 = messageId.m613unboximpl();
+            str2 = messageId.m615unboximpl();
         }
         return new ErrorMessage(i10, str2, str, null, null);
     }
@@ -89,9 +89,9 @@ public final class ErrorMessage$$serializer implements f0<ErrorMessage> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        ErrorMessage.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        ErrorMessage.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

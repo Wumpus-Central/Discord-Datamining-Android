@@ -38,7 +38,7 @@ public final class DirectReplyUser$$serializer implements f0<DirectReplyUser> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
+        a2 a2Var = a2.f29755a;
         return new KSerializer[]{UserId$$serializer.INSTANCE, a.u(a2Var), a.u(a2Var), a.u(a2Var)};
     }
 
@@ -51,14 +51,14 @@ public final class DirectReplyUser$$serializer implements f0<DirectReplyUser> {
         Object obj4;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         Object obj5 = null;
-        if (c10.y()) {
-            obj4 = c10.m(descriptor2, 0, UserId$$serializer.INSTANCE, null);
-            a2 a2Var = a2.f29550a;
-            obj = c10.v(descriptor2, 1, a2Var, null);
-            obj2 = c10.v(descriptor2, 2, a2Var, null);
-            obj3 = c10.v(descriptor2, 3, a2Var, null);
+        if (b10.p()) {
+            obj4 = b10.y(descriptor2, 0, UserId$$serializer.INSTANCE, null);
+            a2 a2Var = a2.f29755a;
+            obj = b10.n(descriptor2, 1, a2Var, null);
+            obj2 = b10.n(descriptor2, 2, a2Var, null);
+            obj3 = b10.n(descriptor2, 3, a2Var, null);
             i10 = 15;
         } else {
             boolean z10 = true;
@@ -67,23 +67,23 @@ public final class DirectReplyUser$$serializer implements f0<DirectReplyUser> {
             Object obj7 = null;
             Object obj8 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    obj5 = c10.m(descriptor2, 0, UserId$$serializer.INSTANCE, obj5);
+                } else if (o10 == 0) {
+                    obj5 = b10.y(descriptor2, 0, UserId$$serializer.INSTANCE, obj5);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    obj6 = c10.v(descriptor2, 1, a2.f29550a, obj6);
+                } else if (o10 == 1) {
+                    obj6 = b10.n(descriptor2, 1, a2.f29755a, obj6);
                     i11 |= 2;
-                } else if (x10 == 2) {
-                    obj7 = c10.v(descriptor2, 2, a2.f29550a, obj7);
+                } else if (o10 == 2) {
+                    obj7 = b10.n(descriptor2, 2, a2.f29755a, obj7);
                     i11 |= 4;
-                } else if (x10 == 3) {
-                    obj8 = c10.v(descriptor2, 3, a2.f29550a, obj8);
+                } else if (o10 == 3) {
+                    obj8 = b10.n(descriptor2, 3, a2.f29755a, obj8);
                     i11 |= 8;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             obj = obj6;
@@ -92,7 +92,7 @@ public final class DirectReplyUser$$serializer implements f0<DirectReplyUser> {
             i10 = i11;
             obj4 = obj5;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new DirectReplyUser(i10, (UserId) obj4, (String) obj, (String) obj2, (String) obj3, null, null);
     }
 
@@ -105,9 +105,9 @@ public final class DirectReplyUser$$serializer implements f0<DirectReplyUser> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        DirectReplyUser.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        DirectReplyUser.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

@@ -57,7 +57,7 @@ public final class TapCopyText implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.h(serialDesc, 0, new c(f0.b(CharSequence.class), new Annotation[0]), self.text);
+        output.o(serialDesc, 0, new c(f0.b(CharSequence.class), new Annotation[0]), self.text);
     }
 
     public final CharSequence component1() {

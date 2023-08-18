@@ -63,8 +63,8 @@ public final class ThemedBurstReactionColorPalette implements BurstReactionView.
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         BurstReactionColorPalette$$serializer burstReactionColorPalette$$serializer = BurstReactionColorPalette$$serializer.INSTANCE;
-        output.h(serialDesc, 0, burstReactionColorPalette$$serializer, self.getLight());
-        output.h(serialDesc, 1, burstReactionColorPalette$$serializer, self.getDark());
+        output.o(serialDesc, 0, burstReactionColorPalette$$serializer, self.getLight());
+        output.o(serialDesc, 1, burstReactionColorPalette$$serializer, self.getDark());
     }
 
     public final BurstReactionColorPalette component1() {

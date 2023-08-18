@@ -69,10 +69,10 @@ public final class LongPressCommandData implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.channelId);
-        output.s(serialDesc, 1, self.commandId);
-        output.s(serialDesc, 2, self.commandName);
-        output.s(serialDesc, 3, self.commandKey);
+        output.x(serialDesc, 0, self.channelId);
+        output.x(serialDesc, 1, self.commandId);
+        output.x(serialDesc, 2, self.commandName);
+        output.x(serialDesc, 3, self.commandKey);
     }
 
     public final String component1() {
@@ -156,7 +156,7 @@ public final class LongPressCommandData implements ReactEvent {
 
     
     public LongPressCommandData(CommandMentionContentNode node) {
-        this(ChannelId.m586toStringimpl(node.m46getChannelIdo4g7jtM()), node.getCommandId(), node.getCommandName(), node.getCommandKey());
+        this(ChannelId.m588toStringimpl(node.m46getChannelIdo4g7jtM()), node.getCommandId(), node.getCommandName(), node.getCommandKey());
         q.h(node, "node");
     }
 }

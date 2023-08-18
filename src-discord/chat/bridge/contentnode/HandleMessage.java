@@ -66,13 +66,13 @@ public final class HandleMessage {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z10 = false;
-        output.s(serialDesc, 0, self.action);
-        output.h(serialDesc, 1, HandleSurveyMessage$$serializer.INSTANCE, self.message);
-        if (output.w(serialDesc, 2) || self.notificationType != null) {
+        output.x(serialDesc, 0, self.action);
+        output.o(serialDesc, 1, HandleSurveyMessage$$serializer.INSTANCE, self.message);
+        if (output.z(serialDesc, 2) || self.notificationType != null) {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 2, a2.f29550a, self.notificationType);
+            output.B(serialDesc, 2, a2.f29755a, self.notificationType);
         }
     }
 

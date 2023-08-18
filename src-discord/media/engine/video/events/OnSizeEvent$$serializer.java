@@ -33,7 +33,7 @@ public final class OnSizeEvent$$serializer implements f0<OnSizeEvent> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29625a;
+        m0 m0Var = m0.f29830a;
         return new KSerializer[]{m0Var, m0Var};
     }
 
@@ -44,10 +44,10 @@ public final class OnSizeEvent$$serializer implements f0<OnSizeEvent> {
         int i12;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            i12 = c10.k(descriptor2, 0);
-            i11 = c10.k(descriptor2, 1);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            i12 = b10.i(descriptor2, 0);
+            i11 = b10.i(descriptor2, 1);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -55,23 +55,23 @@ public final class OnSizeEvent$$serializer implements f0<OnSizeEvent> {
             int i13 = 0;
             int i14 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    i12 = c10.k(descriptor2, 0);
+                } else if (o10 == 0) {
+                    i12 = b10.i(descriptor2, 0);
                     i14 |= 1;
-                } else if (x10 == 1) {
-                    i13 = c10.k(descriptor2, 1);
+                } else if (o10 == 1) {
+                    i13 = b10.i(descriptor2, 1);
                     i14 |= 2;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i11 = i13;
             i10 = i14;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new OnSizeEvent(i10, i12, i11, null);
     }
 
@@ -84,9 +84,9 @@ public final class OnSizeEvent$$serializer implements f0<OnSizeEvent> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        OnSizeEvent.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        OnSizeEvent.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

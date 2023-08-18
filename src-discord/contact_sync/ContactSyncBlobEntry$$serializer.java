@@ -38,8 +38,8 @@ public final class ContactSyncBlobEntry$$serializer implements f0<ContactSyncBlo
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        return new KSerializer[]{a2Var, a2Var, h.f29592a, a2Var, a2Var, a2Var};
+        a2 a2Var = a2.f29755a;
+        return new KSerializer[]{a2Var, a2Var, h.f29797a, a2Var, a2Var, a2Var};
     }
 
     @Override 
@@ -53,14 +53,14 @@ public final class ContactSyncBlobEntry$$serializer implements f0<ContactSyncBlo
         int i10;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            str5 = c10.t(descriptor2, 0);
-            str4 = c10.t(descriptor2, 1);
-            z10 = c10.s(descriptor2, 2);
-            str3 = c10.t(descriptor2, 3);
-            str2 = c10.t(descriptor2, 4);
-            str = c10.t(descriptor2, 5);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            str5 = b10.m(descriptor2, 0);
+            str4 = b10.m(descriptor2, 1);
+            z10 = b10.C(descriptor2, 2);
+            str3 = b10.m(descriptor2, 3);
+            str2 = b10.m(descriptor2, 4);
+            str = b10.m(descriptor2, 5);
             i10 = 63;
         } else {
             String str6 = null;
@@ -72,37 +72,37 @@ public final class ContactSyncBlobEntry$$serializer implements f0<ContactSyncBlo
             boolean z12 = false;
             int i11 = 0;
             while (z11) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z11 = false;
                         continue;
                     case 0:
-                        str6 = c10.t(descriptor2, 0);
+                        str6 = b10.m(descriptor2, 0);
                         i11 |= 1;
                         continue;
                     case 1:
-                        str10 = c10.t(descriptor2, 1);
+                        str10 = b10.m(descriptor2, 1);
                         i11 |= 2;
                         break;
                     case 2:
-                        z12 = c10.s(descriptor2, 2);
+                        z12 = b10.C(descriptor2, 2);
                         i11 |= 4;
                         break;
                     case 3:
-                        str8 = c10.t(descriptor2, 3);
+                        str8 = b10.m(descriptor2, 3);
                         i11 |= 8;
                         break;
                     case 4:
-                        str9 = c10.t(descriptor2, 4);
+                        str9 = b10.m(descriptor2, 4);
                         i11 |= 16;
                         break;
                     case 5:
-                        str7 = c10.t(descriptor2, 5);
+                        str7 = b10.m(descriptor2, 5);
                         i11 |= 32;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             str = str7;
@@ -113,7 +113,7 @@ public final class ContactSyncBlobEntry$$serializer implements f0<ContactSyncBlo
             z10 = z12;
             str4 = str10;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new ContactSyncBlobEntry(i10, str5, str4, z10, str3, str2, str, null);
     }
 
@@ -126,9 +126,9 @@ public final class ContactSyncBlobEntry$$serializer implements f0<ContactSyncBlo
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        ContactSyncBlobEntry.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        ContactSyncBlobEntry.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

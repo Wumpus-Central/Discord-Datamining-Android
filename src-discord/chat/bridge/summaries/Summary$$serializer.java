@@ -47,9 +47,9 @@ public final class Summary$$serializer implements f0<Summary> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
+        a2 a2Var = a2.f29755a;
         MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
-        return new KSerializer[]{a2Var, a2Var, a2Var, new f(UserId$$serializer.INSTANCE), messageId$$serializer, messageId$$serializer, m0.f29625a, ChannelId$$serializer.INSTANCE};
+        return new KSerializer[]{a2Var, a2Var, a2Var, new f(UserId$$serializer.INSTANCE), messageId$$serializer, messageId$$serializer, m0.f29830a, ChannelId$$serializer.INSTANCE};
     }
 
     @Override 
@@ -65,20 +65,20 @@ public final class Summary$$serializer implements f0<Summary> {
         boolean z10;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i11 = 7;
         int i12 = 0;
         Object obj5 = null;
-        if (c10.y()) {
-            str3 = c10.t(descriptor2, 0);
-            str2 = c10.t(descriptor2, 1);
-            str = c10.t(descriptor2, 2);
-            obj2 = c10.m(descriptor2, 3, new f(UserId$$serializer.INSTANCE), null);
+        if (b10.p()) {
+            str3 = b10.m(descriptor2, 0);
+            str2 = b10.m(descriptor2, 1);
+            str = b10.m(descriptor2, 2);
+            obj2 = b10.y(descriptor2, 3, new f(UserId$$serializer.INSTANCE), null);
             MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
-            obj = c10.m(descriptor2, 4, messageId$$serializer, null);
-            obj3 = c10.m(descriptor2, 5, messageId$$serializer, null);
-            i10 = c10.k(descriptor2, 6);
-            obj4 = c10.m(descriptor2, 7, ChannelId$$serializer.INSTANCE, null);
+            obj = b10.y(descriptor2, 4, messageId$$serializer, null);
+            obj3 = b10.y(descriptor2, 5, messageId$$serializer, null);
+            i10 = b10.i(descriptor2, 6);
+            obj4 = b10.y(descriptor2, 7, ChannelId$$serializer.INSTANCE, null);
             i12 = 255;
         } else {
             boolean z11 = true;
@@ -90,42 +90,42 @@ public final class Summary$$serializer implements f0<Summary> {
             String str5 = null;
             String str6 = null;
             while (z11) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z11 = false;
                     case 0:
                         z10 = true;
-                        str4 = c10.t(descriptor2, 0);
+                        str4 = b10.m(descriptor2, 0);
                         i12 |= 1;
                         i11 = 7;
                     case 1:
                         z10 = true;
-                        str6 = c10.t(descriptor2, 1);
+                        str6 = b10.m(descriptor2, 1);
                         i12 |= 2;
                         i11 = 7;
                     case 2:
-                        str5 = c10.t(descriptor2, 2);
+                        str5 = b10.m(descriptor2, 2);
                         i12 |= 4;
                         i11 = 7;
                     case 3:
-                        obj8 = c10.m(descriptor2, 3, new f(UserId$$serializer.INSTANCE), obj8);
+                        obj8 = b10.y(descriptor2, 3, new f(UserId$$serializer.INSTANCE), obj8);
                         i12 |= 8;
                         i11 = 7;
                     case 4:
-                        obj5 = c10.m(descriptor2, 4, MessageId$$serializer.INSTANCE, obj5);
+                        obj5 = b10.y(descriptor2, 4, MessageId$$serializer.INSTANCE, obj5);
                         i12 |= 16;
                     case 5:
-                        obj7 = c10.m(descriptor2, 5, MessageId$$serializer.INSTANCE, obj7);
+                        obj7 = b10.y(descriptor2, 5, MessageId$$serializer.INSTANCE, obj7);
                         i12 |= 32;
                     case 6:
-                        i13 = c10.k(descriptor2, 6);
+                        i13 = b10.i(descriptor2, 6);
                         i12 |= 64;
                     case 7:
-                        obj6 = c10.m(descriptor2, i11, ChannelId$$serializer.INSTANCE, obj6);
+                        obj6 = b10.y(descriptor2, i11, ChannelId$$serializer.INSTANCE, obj6);
                         i12 |= 128;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             obj = obj5;
@@ -137,10 +137,10 @@ public final class Summary$$serializer implements f0<Summary> {
             str2 = str6;
             str3 = str4;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         MessageId messageId = (MessageId) obj;
         MessageId messageId2 = (MessageId) obj3;
-        return new Summary(i12, str3, str2, str, (List) obj2, messageId != null ? messageId.m613unboximpl() : null, messageId2 != null ? messageId2.m613unboximpl() : null, i10, (ChannelId) obj4, null, null);
+        return new Summary(i12, str3, str2, str, (List) obj2, messageId != null ? messageId.m615unboximpl() : null, messageId2 != null ? messageId2.m615unboximpl() : null, i10, (ChannelId) obj4, null, null);
     }
 
     @Override 
@@ -152,9 +152,9 @@ public final class Summary$$serializer implements f0<Summary> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        Summary.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        Summary.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

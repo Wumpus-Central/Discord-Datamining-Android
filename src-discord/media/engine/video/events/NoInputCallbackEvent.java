@@ -52,7 +52,7 @@ public final class NoInputCallbackEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.r(serialDesc, 0, self.input);
+        output.w(serialDesc, 0, self.input);
     }
 
     public final boolean component1() {

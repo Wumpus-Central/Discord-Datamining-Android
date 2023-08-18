@@ -76,21 +76,21 @@ public final class BulletListContentNode extends ContentNode {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z11 = false;
-        if (!output.w(serialDesc, 0) && self.start == null) {
+        if (!output.z(serialDesc, 0) && self.start == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, w0.f29666a, self.start);
+            output.B(serialDesc, 0, w0.f29871a, self.start);
         }
-        if (output.w(serialDesc, 1) || self.ordered) {
+        if (output.z(serialDesc, 1) || self.ordered) {
             z11 = true;
         }
         if (z11) {
-            output.r(serialDesc, 1, self.ordered);
+            output.w(serialDesc, 1, self.ordered);
         }
-        output.h(serialDesc, 2, new wi.f(new wi.f(ContentNodeSerializer.INSTANCE)), self.items);
+        output.o(serialDesc, 2, new wi.f(new wi.f(ContentNodeSerializer.INSTANCE)), self.items);
     }
 
     public final Long component1() {

@@ -57,8 +57,8 @@ public final class TapRoleIconData implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.roleName);
-        output.s(serialDesc, 1, self.roleIconSource);
+        output.x(serialDesc, 0, self.roleName);
+        output.x(serialDesc, 1, self.roleIconSource);
     }
 
     public final String component1() {

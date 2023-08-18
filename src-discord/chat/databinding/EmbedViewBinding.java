@@ -12,7 +12,7 @@ import com.discord.chat.presentation.message.view.EmbedViewResizingMediaView;
 import com.discord.chat.presentation.message.view.SpoilerView;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
-import v0.a;
+import u0.a;
 
 
 public final class EmbedViewBinding {

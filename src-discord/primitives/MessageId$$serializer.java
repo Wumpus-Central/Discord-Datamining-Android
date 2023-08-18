@@ -29,18 +29,18 @@ public final class MessageId$$serializer implements f0<MessageId> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f29550a};
+        return new KSerializer[]{a2.f29755a};
     }
 
     @Override 
     public   Object deserialize(Decoder decoder) {
-        return MessageId.m605boximpl(m614deserializeMpY7Jxs(decoder));
+        return MessageId.m607boximpl(m616deserializeMpY7Jxs(decoder));
     }
 
     
-    public String m614deserializeMpY7Jxs(Decoder decoder) {
+    public String m616deserializeMpY7Jxs(Decoder decoder) {
         q.h(decoder, "decoder");
-        return MessageId.m606constructorimpl(decoder.z(getDescriptor()).n());
+        return MessageId.m608constructorimpl(decoder.q(getDescriptor()).z());
     }
 
     @Override 
@@ -50,16 +50,16 @@ public final class MessageId$$serializer implements f0<MessageId> {
 
     @Override 
     public   void serialize(Encoder encoder, Object obj) {
-        m615serializeAyv7vGE(encoder, ((MessageId) obj).m613unboximpl());
+        m617serializeAyv7vGE(encoder, ((MessageId) obj).m615unboximpl());
     }
 
     
-    public void m615serializeAyv7vGE(Encoder encoder, String value) {
+    public void m617serializeAyv7vGE(Encoder encoder, String value) {
         q.h(encoder, "encoder");
         q.h(value, "value");
-        Encoder y10 = encoder.y(getDescriptor());
-        if (y10 != null) {
-            y10.F(value);
+        Encoder j10 = encoder.j(getDescriptor());
+        if (j10 != null) {
+            j10.F(value);
         }
     }
 

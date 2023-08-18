@@ -71,19 +71,19 @@ public final class BackgroundHighlight {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z11 = false;
-        if (!output.w(serialDesc, 0) && self.backgroundColor == null) {
+        if (!output.z(serialDesc, 0) && self.backgroundColor == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, m0.f29625a, self.backgroundColor);
+            output.B(serialDesc, 0, m0.f29830a, self.backgroundColor);
         }
-        if (output.w(serialDesc, 1) || self.gutterColor != null) {
+        if (output.z(serialDesc, 1) || self.gutterColor != null) {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 1, m0.f29625a, self.gutterColor);
+            output.B(serialDesc, 1, m0.f29830a, self.gutterColor);
         }
     }
 

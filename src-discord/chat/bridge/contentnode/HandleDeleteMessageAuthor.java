@@ -50,7 +50,7 @@ public final class HandleDeleteMessageAuthor {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.username);
+        output.x(serialDesc, 0, self.username);
     }
 
     public final String component1() {

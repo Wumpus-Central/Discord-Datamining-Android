@@ -36,16 +36,16 @@ public final class OnTouchDownData$$serializer implements f0<OnTouchDownData> {
     public OnTouchDownData deserialize(Decoder decoder) {
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (!c10.y()) {
+        c b10 = decoder.b(descriptor2);
+        if (!b10.p()) {
             for (boolean z10 = true; z10; z10 = false) {
-                int x10 = c10.x(descriptor2);
-                if (x10 != -1) {
-                    throw new n(x10);
+                int o10 = b10.o(descriptor2);
+                if (o10 != -1) {
+                    throw new n(o10);
                 }
             }
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new OnTouchDownData(0, null);
     }
 
@@ -58,9 +58,9 @@ public final class OnTouchDownData$$serializer implements f0<OnTouchDownData> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        OnTouchDownData.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        OnTouchDownData.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

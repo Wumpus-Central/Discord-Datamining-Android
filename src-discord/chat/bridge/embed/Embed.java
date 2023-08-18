@@ -8,9 +8,9 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
+import kotlin.text.o;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import ni.u;
 import org.webrtc.MediaStreamTrack;
 import ti.f;
 import wi.n1;
@@ -194,7 +194,7 @@ public final class Embed implements SpoilerableData {
         if ((i10 & 67108864) == 0) {
             String str11 = this.spoiler;
             if (str11 != null) {
-                w10 = u.w(str11);
+                w10 = o.w(str11);
                 if (!w10) {
                     str10 = str11;
                 }
@@ -559,7 +559,7 @@ public final class Embed implements SpoilerableData {
         this.backgroundColor = num4;
         String str9 = null;
         if (str7 != null) {
-            w10 = u.w(str7);
+            w10 = o.w(str7);
             if (!w10) {
                 str9 = str7;
             }

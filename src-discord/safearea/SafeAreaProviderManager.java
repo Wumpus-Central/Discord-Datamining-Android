@@ -129,7 +129,7 @@ public final class SafeAreaProviderManager extends ViewGroupManager<SafeAreaProv
         float leftDp = safeAreaEdgeInsets.getLeftDp();
         float rightDp = safeAreaEdgeInsets.getRightDp();
         if (insets != null) {
-            f10 = SizeUtilsKt.getPxToDp(insets.f2744d);
+            f10 = SizeUtilsKt.getPxToDp(insets.f2823d);
         } else {
             f10 = DEFAULT_IME_INSETS_BOTTOM;
         }

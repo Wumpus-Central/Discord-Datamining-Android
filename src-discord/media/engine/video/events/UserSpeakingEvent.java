@@ -62,9 +62,9 @@ public final class UserSpeakingEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, self.connectionId);
-        output.s(serialDesc, 1, self.userId);
-        output.q(serialDesc, 2, self.isSpeaking);
+        output.v(serialDesc, 0, self.connectionId);
+        output.x(serialDesc, 1, self.userId);
+        output.v(serialDesc, 2, self.isSpeaking);
     }
 
     public final int component1() {

@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import com.discord.chat.R;
-import v0.a;
+import u0.a;
 
 
 public final class ConnectionsRoleTagViewBinding {

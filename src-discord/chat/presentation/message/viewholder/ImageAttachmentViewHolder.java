@@ -31,7 +31,7 @@ public final class ImageAttachmentViewHolder extends MessagePartViewHolder {
     }
 
     
-    public final void m346bindNlw0kPk(Attachment attachment, int i10, int i11, int i12, MediaContainingViewResizer.ResizeMode resizeMode, View.OnClickListener onClicked, View.OnLongClickListener onLongClickListener, SpoilerConfig spoilerConfig, boolean z10, Float f10, boolean z11, boolean z12, Integer num, Integer num2, String str, Function1<? super MessageId, Unit> onTapRemix) {
+    public final void m348bindNlw0kPk(Attachment attachment, int i10, int i11, int i12, MediaContainingViewResizer.ResizeMode resizeMode, View.OnClickListener onClicked, View.OnLongClickListener onLongClickListener, SpoilerConfig spoilerConfig, boolean z10, Float f10, boolean z11, boolean z12, Integer num, Integer num2, String str, Function1<? super MessageId, Unit> onTapRemix) {
         q.h(attachment, "attachment");
         q.h(resizeMode, "resizeMode");
         q.h(onClicked, "onClicked");
@@ -51,7 +51,7 @@ public final class ImageAttachmentViewHolder extends MessagePartViewHolder {
             z13 = true;
         }
         imageAttachmentView.showDescription(z13, attachment.getDescription());
-        this.view.m318maybeShowRemixButtoncUe2JkQ(z11, attachment.isSpoiler(), num, num2, str, onTapRemix);
+        this.view.m320maybeShowRemixButtoncUe2JkQ(z11, attachment.isSpoiler(), num, num2, str, onTapRemix);
         this.view.updateMarginStart(z11, attachment.isSpoiler(), z12);
         this.view.setRole(attachment.getRole());
     }

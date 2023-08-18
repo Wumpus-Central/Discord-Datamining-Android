@@ -32,7 +32,7 @@ public final class NoInputCallbackEvent$$serializer implements f0<NoInputCallbac
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{h.f29592a};
+        return new KSerializer[]{h.f29797a};
     }
 
     @Override 
@@ -40,27 +40,27 @@ public final class NoInputCallbackEvent$$serializer implements f0<NoInputCallbac
         boolean z10;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i10 = 1;
-        if (c10.y()) {
-            z10 = c10.s(descriptor2, 0);
+        if (b10.p()) {
+            z10 = b10.C(descriptor2, 0);
         } else {
             z10 = false;
             int i11 = 0;
             while (i10 != 0) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     i10 = 0;
-                } else if (x10 == 0) {
-                    z10 = c10.s(descriptor2, 0);
+                } else if (o10 == 0) {
+                    z10 = b10.C(descriptor2, 0);
                     i11 |= 1;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i10 = i11;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new NoInputCallbackEvent(i10, z10, null);
     }
 
@@ -73,9 +73,9 @@ public final class NoInputCallbackEvent$$serializer implements f0<NoInputCallbac
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        NoInputCallbackEvent.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        NoInputCallbackEvent.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

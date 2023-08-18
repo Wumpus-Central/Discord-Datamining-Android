@@ -45,8 +45,8 @@ public final class ForumPostActions$$serializer implements f0<ForumPostActions> 
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        return new KSerializer[]{m0.f29625a, h.f29592a, a.u(a2Var), a2Var, a.u(a2Var), a2Var, a.u(MessageReaction$$serializer.INSTANCE), a.u(PostSharePrompt$$serializer.INSTANCE)};
+        a2 a2Var = a2.f29755a;
+        return new KSerializer[]{m0.f29830a, h.f29797a, a.u(a2Var), a2Var, a.u(a2Var), a2Var, a.u(MessageReaction$$serializer.INSTANCE), a.u(PostSharePrompt$$serializer.INSTANCE)};
     }
 
     @Override 
@@ -63,18 +63,18 @@ public final class ForumPostActions$$serializer implements f0<ForumPostActions> 
         char c10;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c11 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i12 = 7;
-        if (c11.y()) {
-            i10 = c11.k(descriptor2, 0);
-            z10 = c11.s(descriptor2, 1);
-            a2 a2Var = a2.f29550a;
-            obj = c11.v(descriptor2, 2, a2Var, null);
-            str2 = c11.t(descriptor2, 3);
-            obj2 = c11.v(descriptor2, 4, a2Var, null);
-            str = c11.t(descriptor2, 5);
-            obj3 = c11.v(descriptor2, 6, MessageReaction$$serializer.INSTANCE, null);
-            obj4 = c11.v(descriptor2, 7, PostSharePrompt$$serializer.INSTANCE, null);
+        if (b10.p()) {
+            i10 = b10.i(descriptor2, 0);
+            z10 = b10.C(descriptor2, 1);
+            a2 a2Var = a2.f29755a;
+            obj = b10.n(descriptor2, 2, a2Var, null);
+            str2 = b10.m(descriptor2, 3);
+            obj2 = b10.n(descriptor2, 4, a2Var, null);
+            str = b10.m(descriptor2, 5);
+            obj3 = b10.n(descriptor2, 6, MessageReaction$$serializer.INSTANCE, null);
+            obj4 = b10.n(descriptor2, 7, PostSharePrompt$$serializer.INSTANCE, null);
             i11 = 255;
         } else {
             boolean z11 = true;
@@ -88,41 +88,41 @@ public final class ForumPostActions$$serializer implements f0<ForumPostActions> 
             Object obj8 = null;
             boolean z12 = false;
             while (z11) {
-                int x10 = c11.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z11 = false;
                     case 0:
-                        i13 = c11.k(descriptor2, 0);
+                        i13 = b10.i(descriptor2, 0);
                         i14 |= 1;
                         i12 = 7;
                     case 1:
                         c10 = 2;
-                        z12 = c11.s(descriptor2, 1);
+                        z12 = b10.C(descriptor2, 1);
                         i14 |= 2;
                         i12 = 7;
                     case 2:
                         c10 = 2;
-                        obj6 = c11.v(descriptor2, 2, a2.f29550a, obj6);
+                        obj6 = b10.n(descriptor2, 2, a2.f29755a, obj6);
                         i14 |= 4;
                         i12 = 7;
                     case 3:
-                        str2 = c11.t(descriptor2, 3);
+                        str2 = b10.m(descriptor2, 3);
                         i14 |= 8;
                     case 4:
-                        obj7 = c11.v(descriptor2, 4, a2.f29550a, obj7);
+                        obj7 = b10.n(descriptor2, 4, a2.f29755a, obj7);
                         i14 |= 16;
                     case 5:
-                        str = c11.t(descriptor2, 5);
+                        str = b10.m(descriptor2, 5);
                         i14 |= 32;
                     case 6:
-                        obj8 = c11.v(descriptor2, 6, MessageReaction$$serializer.INSTANCE, obj8);
+                        obj8 = b10.n(descriptor2, 6, MessageReaction$$serializer.INSTANCE, obj8);
                         i14 |= 64;
                     case 7:
-                        obj5 = c11.v(descriptor2, i12, PostSharePrompt$$serializer.INSTANCE, obj5);
+                        obj5 = b10.n(descriptor2, i12, PostSharePrompt$$serializer.INSTANCE, obj5);
                         i14 |= 128;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             obj4 = obj5;
@@ -133,7 +133,7 @@ public final class ForumPostActions$$serializer implements f0<ForumPostActions> 
             z10 = z12;
             i10 = i13;
         }
-        c11.b(descriptor2);
+        b10.c(descriptor2);
         return new ForumPostActions(i11, i10, z10, (String) obj, str2, (String) obj2, str, (MessageReaction) obj3, (PostSharePrompt) obj4, (SerializationConstructorMarker) null);
     }
 
@@ -146,9 +146,9 @@ public final class ForumPostActions$$serializer implements f0<ForumPostActions> 
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        ForumPostActions.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        ForumPostActions.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

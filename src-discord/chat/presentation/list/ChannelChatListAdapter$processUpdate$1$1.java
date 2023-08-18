@@ -31,7 +31,7 @@ public final class ChannelChatListAdapter$processUpdate$1$1 extends k implements
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChannelChatListAdapter$processUpdate$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21036a);
+        return ((ChannelChatListAdapter$processUpdate$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21210a);
     }
 
     @Override 
@@ -41,7 +41,7 @@ public final class ChannelChatListAdapter$processUpdate$1$1 extends k implements
             t.b(obj);
             this.this$0.isProcessingUpdate = false;
             this.this$0.processNextUpdate();
-            return Unit.f21036a;
+            return Unit.f21210a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

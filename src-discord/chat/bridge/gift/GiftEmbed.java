@@ -87,16 +87,16 @@ public interface GiftEmbed {
                 q.h(self, "self");
                 q.h(output, "output");
                 q.h(serialDesc, "serialDesc");
-                output.s(serialDesc, 0, self.getHeaderText());
-                output.q(serialDesc, 1, self.getHeaderColor());
-                output.q(serialDesc, 2, self.getBackgroundColor());
-                output.q(serialDesc, 3, self.getThumbnailCornerRadius());
-                output.s(serialDesc, 4, self.getThumbnailUrl());
-                output.s(serialDesc, 5, self.getTitleText());
-                output.q(serialDesc, 6, self.getTitleColor());
-                output.s(serialDesc, 7, self.getSubtitle());
-                output.q(serialDesc, 8, self.getSubtitleColor());
-                output.q(serialDesc, 9, self.thumbnailBackgroundColor);
+                output.x(serialDesc, 0, self.getHeaderText());
+                output.v(serialDesc, 1, self.getHeaderColor());
+                output.v(serialDesc, 2, self.getBackgroundColor());
+                output.v(serialDesc, 3, self.getThumbnailCornerRadius());
+                output.x(serialDesc, 4, self.getThumbnailUrl());
+                output.x(serialDesc, 5, self.getTitleText());
+                output.v(serialDesc, 6, self.getTitleColor());
+                output.x(serialDesc, 7, self.getSubtitle());
+                output.v(serialDesc, 8, self.getSubtitleColor());
+                output.v(serialDesc, 9, self.thumbnailBackgroundColor);
             }
 
             public final String component1() {
@@ -340,64 +340,64 @@ public interface GiftEmbed {
                 q.h(output, "output");
                 q.h(serialDesc, "serialDesc");
                 boolean z15 = false;
-                output.s(serialDesc, 0, self.getHeaderText());
-                output.q(serialDesc, 1, self.getHeaderColor());
-                output.q(serialDesc, 2, self.getBackgroundColor());
-                output.q(serialDesc, 3, self.getThumbnailCornerRadius());
-                if (!output.w(serialDesc, 4) && self.getThumbnailUrl() == null) {
+                output.x(serialDesc, 0, self.getHeaderText());
+                output.v(serialDesc, 1, self.getHeaderColor());
+                output.v(serialDesc, 2, self.getBackgroundColor());
+                output.v(serialDesc, 3, self.getThumbnailCornerRadius());
+                if (!output.z(serialDesc, 4) && self.getThumbnailUrl() == null) {
                     z10 = false;
                 } else {
                     z10 = true;
                 }
                 if (z10) {
-                    output.z(serialDesc, 4, a2.f29550a, self.getThumbnailUrl());
+                    output.B(serialDesc, 4, a2.f29755a, self.getThumbnailUrl());
                 }
-                if (!output.w(serialDesc, 5) && self.getTitleText() == null) {
+                if (!output.z(serialDesc, 5) && self.getTitleText() == null) {
                     z11 = false;
                 } else {
                     z11 = true;
                 }
                 if (z11) {
-                    output.z(serialDesc, 5, a2.f29550a, self.getTitleText());
+                    output.B(serialDesc, 5, a2.f29755a, self.getTitleText());
                 }
-                output.q(serialDesc, 6, self.getTitleColor());
-                if (!output.w(serialDesc, 7) && self.getSubtitle() == null) {
+                output.v(serialDesc, 6, self.getTitleColor());
+                if (!output.z(serialDesc, 7) && self.getSubtitle() == null) {
                     z12 = false;
                 } else {
                     z12 = true;
                 }
                 if (z12) {
-                    output.z(serialDesc, 7, a2.f29550a, self.getSubtitle());
+                    output.B(serialDesc, 7, a2.f29755a, self.getSubtitle());
                 }
-                output.q(serialDesc, 8, self.getSubtitleColor());
-                if (!output.w(serialDesc, 9) && self.bodyText == null) {
+                output.v(serialDesc, 8, self.getSubtitleColor());
+                if (!output.z(serialDesc, 9) && self.bodyText == null) {
                     z13 = false;
                 } else {
                     z13 = true;
                 }
                 if (z13) {
-                    output.z(serialDesc, 9, a2.f29550a, self.bodyText);
+                    output.B(serialDesc, 9, a2.f29755a, self.bodyText);
                 }
-                output.q(serialDesc, 10, self.bodyTextColor);
-                if (!output.w(serialDesc, 11) && self.acceptLabelText == null) {
+                output.v(serialDesc, 10, self.bodyTextColor);
+                if (!output.z(serialDesc, 11) && self.acceptLabelText == null) {
                     z14 = false;
                 } else {
                     z14 = true;
                 }
                 if (z14) {
-                    output.z(serialDesc, 11, a2.f29550a, self.acceptLabelText);
+                    output.B(serialDesc, 11, a2.f29755a, self.acceptLabelText);
                 }
-                output.q(serialDesc, 12, self.acceptLabelColor);
-                output.q(serialDesc, 13, self.acceptLabelBackgroundColor);
-                if (output.w(serialDesc, 14) || self.splashUrl != null) {
+                output.v(serialDesc, 12, self.acceptLabelColor);
+                output.v(serialDesc, 13, self.acceptLabelBackgroundColor);
+                if (output.z(serialDesc, 14) || self.splashUrl != null) {
                     z15 = true;
                 }
                 if (z15) {
-                    output.z(serialDesc, 14, a2.f29550a, self.splashUrl);
+                    output.B(serialDesc, 14, a2.f29755a, self.splashUrl);
                 }
-                output.m(serialDesc, 15, self.splashOpacity);
-                output.r(serialDesc, 16, self.canBeAccepted);
-                output.s(serialDesc, 17, self.giftCode);
+                output.r(serialDesc, 15, self.splashOpacity);
+                output.w(serialDesc, 16, self.canBeAccepted);
+                output.x(serialDesc, 17, self.giftCode);
             }
 
             public final String component1() {
@@ -718,12 +718,12 @@ public interface GiftEmbed {
             q.h(self, "self");
             q.h(output, "output");
             q.h(serialDesc, "serialDesc");
-            output.s(serialDesc, 0, self.getHeaderText());
-            output.q(serialDesc, 1, self.getHeaderColor());
-            output.q(serialDesc, 2, self.getBackgroundColor());
-            output.q(serialDesc, 3, self.getThumbnailCornerRadius());
-            output.q(serialDesc, 4, self.resolvingGradientStart);
-            output.q(serialDesc, 5, self.resolvingGradientEnd);
+            output.x(serialDesc, 0, self.getHeaderText());
+            output.v(serialDesc, 1, self.getHeaderColor());
+            output.v(serialDesc, 2, self.getBackgroundColor());
+            output.v(serialDesc, 3, self.getThumbnailCornerRadius());
+            output.v(serialDesc, 4, self.resolvingGradientStart);
+            output.v(serialDesc, 5, self.resolvingGradientEnd);
         }
 
         public final String component1() {

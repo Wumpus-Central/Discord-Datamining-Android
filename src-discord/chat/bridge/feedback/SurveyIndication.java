@@ -57,8 +57,8 @@ public final class SurveyIndication {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.h(serialDesc, 0, StructurableTextSerializer.INSTANCE, self.content);
-        output.s(serialDesc, 1, self.feedbackIconUrl);
+        output.o(serialDesc, 0, StructurableTextSerializer.INSTANCE, self.content);
+        output.x(serialDesc, 1, self.feedbackIconUrl);
     }
 
     public final StructurableText component1() {

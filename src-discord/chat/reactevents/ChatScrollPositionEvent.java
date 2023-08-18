@@ -61,15 +61,15 @@ public final class ChatScrollPositionEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.r(serialDesc, 0, self.isAtBottom);
-        output.r(serialDesc, 1, self.isNearBottom);
-        output.r(serialDesc, 2, self.isNearTop);
-        output.r(serialDesc, 3, self.dragging);
-        output.r(serialDesc, 4, self.decelerating);
-        output.r(serialDesc, 5, self.shouldShowJumpToPresent);
-        output.r(serialDesc, 6, self.isFirstMessageVisible);
-        output.q(serialDesc, 7, self.firstVisibleMessageIndex);
-        output.q(serialDesc, 8, self.lastVisibleMessageIndex);
+        output.w(serialDesc, 0, self.isAtBottom);
+        output.w(serialDesc, 1, self.isNearBottom);
+        output.w(serialDesc, 2, self.isNearTop);
+        output.w(serialDesc, 3, self.dragging);
+        output.w(serialDesc, 4, self.decelerating);
+        output.w(serialDesc, 5, self.shouldShowJumpToPresent);
+        output.w(serialDesc, 6, self.isFirstMessageVisible);
+        output.v(serialDesc, 7, self.firstVisibleMessageIndex);
+        output.v(serialDesc, 8, self.lastVisibleMessageIndex);
     }
 
     public final boolean component1() {

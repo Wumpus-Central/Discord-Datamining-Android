@@ -111,51 +111,51 @@ public final class ReactionsTheme implements ReactionView.ReactionsTheme {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z15 = false;
-        if (!output.w(serialDesc, 0) && self.getReactionBackgroundColor() == null) {
+        if (!output.z(serialDesc, 0) && self.getReactionBackgroundColor() == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, m0.f29625a, self.getReactionBackgroundColor());
+            output.B(serialDesc, 0, m0.f29830a, self.getReactionBackgroundColor());
         }
-        if (!output.w(serialDesc, 1) && self.getReactionBorderColor() == null) {
+        if (!output.z(serialDesc, 1) && self.getReactionBorderColor() == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 1, m0.f29625a, self.getReactionBorderColor());
+            output.B(serialDesc, 1, m0.f29830a, self.getReactionBorderColor());
         }
-        if (!output.w(serialDesc, 2) && self.getReactionTextColor() == null) {
+        if (!output.z(serialDesc, 2) && self.getReactionTextColor() == null) {
             z12 = false;
         } else {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 2, m0.f29625a, self.getReactionTextColor());
+            output.B(serialDesc, 2, m0.f29830a, self.getReactionTextColor());
         }
-        if (!output.w(serialDesc, 3) && self.getActiveReactionBackgroundColor() == null) {
+        if (!output.z(serialDesc, 3) && self.getActiveReactionBackgroundColor() == null) {
             z13 = false;
         } else {
             z13 = true;
         }
         if (z13) {
-            output.z(serialDesc, 3, m0.f29625a, self.getActiveReactionBackgroundColor());
+            output.B(serialDesc, 3, m0.f29830a, self.getActiveReactionBackgroundColor());
         }
-        if (!output.w(serialDesc, 4) && self.getActiveReactionBorderColor() == null) {
+        if (!output.z(serialDesc, 4) && self.getActiveReactionBorderColor() == null) {
             z14 = false;
         } else {
             z14 = true;
         }
         if (z14) {
-            output.z(serialDesc, 4, m0.f29625a, self.getActiveReactionBorderColor());
+            output.B(serialDesc, 4, m0.f29830a, self.getActiveReactionBorderColor());
         }
-        if (output.w(serialDesc, 5) || self.getActiveReactionTextColor() != null) {
+        if (output.z(serialDesc, 5) || self.getActiveReactionTextColor() != null) {
             z15 = true;
         }
         if (z15) {
-            output.z(serialDesc, 5, m0.f29625a, self.getActiveReactionTextColor());
+            output.B(serialDesc, 5, m0.f29830a, self.getActiveReactionTextColor());
         }
     }
 

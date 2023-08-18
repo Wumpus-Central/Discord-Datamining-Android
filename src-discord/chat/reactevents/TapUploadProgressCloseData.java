@@ -52,7 +52,7 @@ public final class TapUploadProgressCloseData implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.fileId);
+        output.x(serialDesc, 0, self.fileId);
     }
 
     public final String component1() {

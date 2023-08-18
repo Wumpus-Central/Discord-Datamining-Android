@@ -6,7 +6,7 @@ import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.view.View;
 import android.widget.ImageView;
-import androidx.core.widget.h;
+import androidx.core.widget.g;
 import com.discord.theme.DiscordTheme;
 import com.discord.theme.ThemeManagerKt;
 import com.facebook.drawee.view.SimpleDraweeView;
@@ -52,7 +52,7 @@ public final class ColorUtilsKt {
 
     public static final void setTintColor(ImageView imageView, Integer num) {
         q.h(imageView, "<this>");
-        h.c(imageView, num != null ? ColorStateList.valueOf(num.intValue()) : null);
+        g.c(imageView, num != null ? ColorStateList.valueOf(num.intValue()) : null);
     }
 
     public static final int getColorCompat(View view, int i10) {

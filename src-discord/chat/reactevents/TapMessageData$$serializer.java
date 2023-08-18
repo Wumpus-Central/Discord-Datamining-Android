@@ -33,7 +33,7 @@ public final class TapMessageData$$serializer implements f0<TapMessageData> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
+        a2 a2Var = a2.f29755a;
         return new KSerializer[]{a2Var, a2Var};
     }
 
@@ -44,10 +44,10 @@ public final class TapMessageData$$serializer implements f0<TapMessageData> {
         String str2;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            str2 = c10.t(descriptor2, 0);
-            str = c10.t(descriptor2, 1);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            str2 = b10.m(descriptor2, 0);
+            str = b10.m(descriptor2, 1);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -55,23 +55,23 @@ public final class TapMessageData$$serializer implements f0<TapMessageData> {
             str2 = null;
             String str3 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    str2 = c10.t(descriptor2, 0);
+                } else if (o10 == 0) {
+                    str2 = b10.m(descriptor2, 0);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    str3 = c10.t(descriptor2, 1);
+                } else if (o10 == 1) {
+                    str3 = b10.m(descriptor2, 1);
                     i11 |= 2;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             str = str3;
             i10 = i11;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new TapMessageData(i10, str2, str, null);
     }
 
@@ -84,9 +84,9 @@ public final class TapMessageData$$serializer implements f0<TapMessageData> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        TapMessageData.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        TapMessageData.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

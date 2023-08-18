@@ -41,8 +41,8 @@ public final class ChatInputNode$$serializer implements f0<ChatInputNode> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29625a;
-        h hVar = h.f29592a;
+        m0 m0Var = m0.f29830a;
+        h hVar = h.f29797a;
         return new KSerializer[]{m0Var, m0Var, m0Var, a.u(ChatInputNodeStyle$$serializer.INSTANCE), hVar, a.u(TapAction$$serializer.INSTANCE), hVar};
     }
 
@@ -58,15 +58,15 @@ public final class ChatInputNode$$serializer implements f0<ChatInputNode> {
         Object obj2;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            i12 = c10.k(descriptor2, 0);
-            i11 = c10.k(descriptor2, 1);
-            i10 = c10.k(descriptor2, 2);
-            obj = c10.v(descriptor2, 3, ChatInputNodeStyle$$serializer.INSTANCE, null);
-            z11 = c10.s(descriptor2, 4);
-            obj2 = c10.v(descriptor2, 5, TapAction$$serializer.INSTANCE, null);
-            z10 = c10.s(descriptor2, 6);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            i12 = b10.i(descriptor2, 0);
+            i11 = b10.i(descriptor2, 1);
+            i10 = b10.i(descriptor2, 2);
+            obj = b10.n(descriptor2, 3, ChatInputNodeStyle$$serializer.INSTANCE, null);
+            z11 = b10.C(descriptor2, 4);
+            obj2 = b10.n(descriptor2, 5, TapAction$$serializer.INSTANCE, null);
+            z10 = b10.C(descriptor2, 6);
             i13 = 127;
         } else {
             boolean z12 = true;
@@ -79,41 +79,41 @@ public final class ChatInputNode$$serializer implements f0<ChatInputNode> {
             Object obj4 = null;
             boolean z14 = false;
             while (z12) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z12 = false;
                         break;
                     case 0:
-                        i14 = c10.k(descriptor2, 0);
+                        i14 = b10.i(descriptor2, 0);
                         i17 |= 1;
                         continue;
                     case 1:
-                        i16 = c10.k(descriptor2, 1);
+                        i16 = b10.i(descriptor2, 1);
                         i17 |= 2;
                         continue;
                     case 2:
-                        i15 = c10.k(descriptor2, 2);
+                        i15 = b10.i(descriptor2, 2);
                         i17 |= 4;
                         break;
                     case 3:
-                        obj3 = c10.v(descriptor2, 3, ChatInputNodeStyle$$serializer.INSTANCE, obj3);
+                        obj3 = b10.n(descriptor2, 3, ChatInputNodeStyle$$serializer.INSTANCE, obj3);
                         i17 |= 8;
                         break;
                     case 4:
-                        z13 = c10.s(descriptor2, 4);
+                        z13 = b10.C(descriptor2, 4);
                         i17 |= 16;
                         break;
                     case 5:
-                        obj4 = c10.v(descriptor2, 5, TapAction$$serializer.INSTANCE, obj4);
+                        obj4 = b10.n(descriptor2, 5, TapAction$$serializer.INSTANCE, obj4);
                         i17 |= 32;
                         break;
                     case 6:
-                        z14 = c10.s(descriptor2, 6);
+                        z14 = b10.C(descriptor2, 6);
                         i17 |= 64;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             obj2 = obj4;
@@ -125,7 +125,7 @@ public final class ChatInputNode$$serializer implements f0<ChatInputNode> {
             i10 = i15;
             i11 = i16;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new ChatInputNode(i13, i12, i11, i10, (ChatInputNodeStyle) obj, z11, (TapAction) obj2, z10, (SerializationConstructorMarker) null);
     }
 
@@ -138,9 +138,9 @@ public final class ChatInputNode$$serializer implements f0<ChatInputNode> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        ChatInputNode.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        ChatInputNode.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

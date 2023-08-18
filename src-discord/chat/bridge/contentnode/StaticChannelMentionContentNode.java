@@ -83,14 +83,14 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
         q.h(serialDesc, "serialDesc");
         MentionContentNode.write$Self(self, output, serialDesc);
         boolean z10 = false;
-        output.h(serialDesc, 0, StaticChannelMentionType.Serializer.INSTANCE, self.channelId);
-        if (output.w(serialDesc, 1) || self.guildId != null) {
+        output.o(serialDesc, 0, StaticChannelMentionType.Serializer.INSTANCE, self.channelId);
+        if (output.z(serialDesc, 1) || self.guildId != null) {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 1, GuildId$$serializer.INSTANCE, self.guildId);
+            output.B(serialDesc, 1, GuildId$$serializer.INSTANCE, self.guildId);
         }
-        output.h(serialDesc, 2, new wi.f(ContentNodeSerializer.INSTANCE), self.getContent());
+        output.o(serialDesc, 2, new wi.f(ContentNodeSerializer.INSTANCE), self.getContent());
     }
 
     public final StaticChannelMentionType component1() {
@@ -141,7 +141,7 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
     public int hashCode() {
         int hashCode = this.channelId.hashCode() * 31;
         GuildId guildId = this.guildId;
-        return ((hashCode + (guildId == null ? 0 : GuildId.m597hashCodeimpl(guildId.m601unboximpl()))) * 31) + getContent().hashCode();
+        return ((hashCode + (guildId == null ? 0 : GuildId.m599hashCodeimpl(guildId.m603unboximpl()))) * 31) + getContent().hashCode();
     }
 
     public String toString() {

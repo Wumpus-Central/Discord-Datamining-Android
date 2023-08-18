@@ -100,6 +100,10 @@ public final class BlurView extends a implements BlurViewAPI {
         Companion.updateListener$blur_release(blurView$blurTargetChangeListener$1, true, new AnonymousClass1());
     }
 
+    public static final  void access$maybeUpdate(BlurView blurView) {
+        blurView.maybeUpdate();
+    }
+
     
     public final void maybeUpdate() {
         ViewGroup viewRef;
@@ -107,7 +111,7 @@ public final class BlurView extends a implements BlurViewAPI {
         if (target != null && this.blurViewPropertiesDirty) {
             if (!q.c(this.blurTarget.get(), target)) {
                 this.blurTarget = new WeakReference<>(target);
-                setupWith(target.getViewRef()).c(target.getViewRef().getBackground());
+                setupWith(target.getViewRef()).d(target.getViewRef().getBackground());
             }
             maybeUpdateBlurEnabled();
             Companion companion = Companion;

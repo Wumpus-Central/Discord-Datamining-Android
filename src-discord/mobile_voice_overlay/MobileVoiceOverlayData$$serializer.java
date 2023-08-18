@@ -51,9 +51,9 @@ public final class MobileVoiceOverlayData$$serializer implements f0<MobileVoiceO
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        h hVar = h.f29592a;
-        return new KSerializer[]{new f(MobileVoiceOverlayDataUser$$serializer.INSTANCE), m0.f29625a, a.u(GuildId$$serializer.INSTANCE), ChannelId$$serializer.INSTANCE, a2Var, a2Var, hVar, hVar, ConnectionQuality.Companion.serializer(), hVar, new f(MobileVoiceOverlaySelectorResult$$serializer.INSTANCE)};
+        a2 a2Var = a2.f29755a;
+        h hVar = h.f29797a;
+        return new KSerializer[]{new f(MobileVoiceOverlayDataUser$$serializer.INSTANCE), m0.f29830a, a.u(GuildId$$serializer.INSTANCE), ChannelId$$serializer.INSTANCE, a2Var, a2Var, hVar, hVar, ConnectionQuality.Companion.serializer(), hVar, new f(MobileVoiceOverlaySelectorResult$$serializer.INSTANCE)};
     }
 
     @Override 
@@ -72,24 +72,24 @@ public final class MobileVoiceOverlayData$$serializer implements f0<MobileVoiceO
         Object obj5;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i12 = 10;
         int i13 = 9;
         int i14 = 7;
         int i15 = 6;
         int i16 = 0;
-        if (c10.y()) {
-            obj5 = c10.m(descriptor2, 0, new f(MobileVoiceOverlayDataUser$$serializer.INSTANCE), null);
-            i10 = c10.k(descriptor2, 1);
-            obj = c10.v(descriptor2, 2, GuildId$$serializer.INSTANCE, null);
-            obj3 = c10.m(descriptor2, 3, ChannelId$$serializer.INSTANCE, null);
-            str2 = c10.t(descriptor2, 4);
-            str = c10.t(descriptor2, 5);
-            z12 = c10.s(descriptor2, 6);
-            z11 = c10.s(descriptor2, 7);
-            obj2 = c10.m(descriptor2, 8, ConnectionQuality.Companion.serializer(), null);
-            z10 = c10.s(descriptor2, 9);
-            obj4 = c10.m(descriptor2, 10, new f(MobileVoiceOverlaySelectorResult$$serializer.INSTANCE), null);
+        if (b10.p()) {
+            obj5 = b10.y(descriptor2, 0, new f(MobileVoiceOverlayDataUser$$serializer.INSTANCE), null);
+            i10 = b10.i(descriptor2, 1);
+            obj = b10.n(descriptor2, 2, GuildId$$serializer.INSTANCE, null);
+            obj3 = b10.y(descriptor2, 3, ChannelId$$serializer.INSTANCE, null);
+            str2 = b10.m(descriptor2, 4);
+            str = b10.m(descriptor2, 5);
+            z12 = b10.C(descriptor2, 6);
+            z11 = b10.C(descriptor2, 7);
+            obj2 = b10.y(descriptor2, 8, ConnectionQuality.Companion.serializer(), null);
+            z10 = b10.C(descriptor2, 9);
+            obj4 = b10.y(descriptor2, 10, new f(MobileVoiceOverlaySelectorResult$$serializer.INSTANCE), null);
             i11 = 2047;
         } else {
             boolean z13 = true;
@@ -105,73 +105,73 @@ public final class MobileVoiceOverlayData$$serializer implements f0<MobileVoiceO
             str = null;
             boolean z16 = false;
             while (z13) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z13 = false;
                         i13 = 9;
                         i14 = 7;
                         break;
                     case 0:
-                        obj10 = c10.m(descriptor2, 0, new f(MobileVoiceOverlayDataUser$$serializer.INSTANCE), obj10);
+                        obj10 = b10.y(descriptor2, 0, new f(MobileVoiceOverlayDataUser$$serializer.INSTANCE), obj10);
                         i16 |= 1;
                         i12 = 10;
                         i13 = 9;
                         i14 = 7;
                         break;
                     case 1:
-                        i17 = c10.k(descriptor2, 1);
+                        i17 = b10.i(descriptor2, 1);
                         i16 |= 2;
                         i12 = 10;
                         i13 = 9;
                         break;
                     case 2:
-                        obj9 = c10.v(descriptor2, 2, GuildId$$serializer.INSTANCE, obj9);
+                        obj9 = b10.n(descriptor2, 2, GuildId$$serializer.INSTANCE, obj9);
                         i16 |= 4;
                         i12 = 10;
                         i13 = 9;
                         break;
                     case 3:
-                        obj8 = c10.m(descriptor2, 3, ChannelId$$serializer.INSTANCE, obj8);
+                        obj8 = b10.y(descriptor2, 3, ChannelId$$serializer.INSTANCE, obj8);
                         i16 |= 8;
                         i12 = 10;
                         i13 = 9;
                         break;
                     case 4:
-                        str3 = c10.t(descriptor2, 4);
+                        str3 = b10.m(descriptor2, 4);
                         i16 |= 16;
                         i12 = 10;
                         break;
                     case 5:
-                        str = c10.t(descriptor2, 5);
+                        str = b10.m(descriptor2, 5);
                         i16 |= 32;
                         break;
                     case 6:
-                        z15 = c10.s(descriptor2, i15);
+                        z15 = b10.C(descriptor2, i15);
                         i16 |= 64;
                         break;
                     case 7:
-                        z16 = c10.s(descriptor2, i14);
+                        z16 = b10.C(descriptor2, i14);
                         i16 |= 128;
                         i15 = 6;
                         break;
                     case 8:
-                        obj6 = c10.m(descriptor2, 8, ConnectionQuality.Companion.serializer(), obj6);
+                        obj6 = b10.y(descriptor2, 8, ConnectionQuality.Companion.serializer(), obj6);
                         i16 |= 256;
                         i15 = 6;
                         break;
                     case 9:
-                        z14 = c10.s(descriptor2, i13);
+                        z14 = b10.C(descriptor2, i13);
                         i16 |= 512;
                         i15 = 6;
                         break;
                     case 10:
-                        obj7 = c10.m(descriptor2, i12, new f(MobileVoiceOverlaySelectorResult$$serializer.INSTANCE), obj7);
+                        obj7 = b10.y(descriptor2, i12, new f(MobileVoiceOverlaySelectorResult$$serializer.INSTANCE), obj7);
                         i16 |= 1024;
                         i15 = 6;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             obj2 = obj6;
@@ -186,7 +186,7 @@ public final class MobileVoiceOverlayData$$serializer implements f0<MobileVoiceO
             z10 = z14;
             obj5 = obj10;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new MobileVoiceOverlayData(i11, (List) obj5, i10, (GuildId) obj, (ChannelId) obj3, str2, str, z12, z11, (ConnectionQuality) obj2, z10, (List) obj4, null, null);
     }
 
@@ -199,9 +199,9 @@ public final class MobileVoiceOverlayData$$serializer implements f0<MobileVoiceO
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        MobileVoiceOverlayData.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        MobileVoiceOverlayData.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

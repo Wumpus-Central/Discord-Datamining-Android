@@ -42,9 +42,9 @@ public final class EmbedThumbnail$$serializer implements f0<EmbedThumbnail> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        m0 m0Var = m0.f29625a;
-        h hVar = h.f29592a;
+        a2 a2Var = a2.f29755a;
+        m0 m0Var = m0.f29830a;
+        h hVar = h.f29797a;
         return new KSerializer[]{a2Var, a.u(a2Var), a.u(a2Var), m0Var, m0Var, a.u(hVar), a.u(hVar), a2Var};
     }
 
@@ -61,19 +61,19 @@ public final class EmbedThumbnail$$serializer implements f0<EmbedThumbnail> {
         Object obj4;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i13 = 7;
-        if (c10.y()) {
-            str2 = c10.t(descriptor2, 0);
-            a2 a2Var = a2.f29550a;
-            obj = c10.v(descriptor2, 1, a2Var, null);
-            obj2 = c10.v(descriptor2, 2, a2Var, null);
-            i11 = c10.k(descriptor2, 3);
-            i10 = c10.k(descriptor2, 4);
-            h hVar = h.f29592a;
-            obj3 = c10.v(descriptor2, 5, hVar, null);
-            obj4 = c10.v(descriptor2, 6, hVar, null);
-            str = c10.t(descriptor2, 7);
+        if (b10.p()) {
+            str2 = b10.m(descriptor2, 0);
+            a2 a2Var = a2.f29755a;
+            obj = b10.n(descriptor2, 1, a2Var, null);
+            obj2 = b10.n(descriptor2, 2, a2Var, null);
+            i11 = b10.i(descriptor2, 3);
+            i10 = b10.i(descriptor2, 4);
+            h hVar = h.f29797a;
+            obj3 = b10.n(descriptor2, 5, hVar, null);
+            obj4 = b10.n(descriptor2, 6, hVar, null);
+            str = b10.m(descriptor2, 7);
             i12 = 255;
         } else {
             boolean z10 = true;
@@ -87,48 +87,48 @@ public final class EmbedThumbnail$$serializer implements f0<EmbedThumbnail> {
             Object obj8 = null;
             int i16 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z10 = false;
                         break;
                     case 0:
-                        str3 = c10.t(descriptor2, 0);
+                        str3 = b10.m(descriptor2, 0);
                         i15 |= 1;
                         i13 = 7;
                         break;
                     case 1:
-                        obj6 = c10.v(descriptor2, 1, a2.f29550a, obj6);
+                        obj6 = b10.n(descriptor2, 1, a2.f29755a, obj6);
                         i15 |= 2;
                         i13 = 7;
                         break;
                     case 2:
-                        obj7 = c10.v(descriptor2, 2, a2.f29550a, obj7);
+                        obj7 = b10.n(descriptor2, 2, a2.f29755a, obj7);
                         i15 |= 4;
                         i13 = 7;
                         continue;
                     case 3:
-                        i14 = c10.k(descriptor2, 3);
+                        i14 = b10.i(descriptor2, 3);
                         i15 |= 8;
                         break;
                     case 4:
-                        i16 = c10.k(descriptor2, 4);
+                        i16 = b10.i(descriptor2, 4);
                         i15 |= 16;
                         break;
                     case 5:
-                        obj8 = c10.v(descriptor2, 5, h.f29592a, obj8);
+                        obj8 = b10.n(descriptor2, 5, h.f29797a, obj8);
                         i15 |= 32;
                         break;
                     case 6:
-                        obj5 = c10.v(descriptor2, 6, h.f29592a, obj5);
+                        obj5 = b10.n(descriptor2, 6, h.f29797a, obj5);
                         i15 |= 64;
                         break;
                     case 7:
-                        str4 = c10.t(descriptor2, i13);
+                        str4 = b10.m(descriptor2, i13);
                         i15 |= 128;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             obj4 = obj5;
@@ -141,7 +141,7 @@ public final class EmbedThumbnail$$serializer implements f0<EmbedThumbnail> {
             i10 = i16;
             str2 = str3;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new EmbedThumbnail(i12, str2, (String) obj, (String) obj2, i11, i10, (Boolean) obj3, (Boolean) obj4, str, null);
     }
 
@@ -154,9 +154,9 @@ public final class EmbedThumbnail$$serializer implements f0<EmbedThumbnail> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        EmbedThumbnail.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        EmbedThumbnail.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

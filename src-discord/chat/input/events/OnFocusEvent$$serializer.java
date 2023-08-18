@@ -37,7 +37,7 @@ public final class OnFocusEvent$$serializer implements f0<OnFocusEvent> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29625a;
+        m0 m0Var = m0.f29830a;
         return new KSerializer[]{m0Var, m0Var, m0Var};
     }
 
@@ -49,11 +49,11 @@ public final class OnFocusEvent$$serializer implements f0<OnFocusEvent> {
         int i13;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            i12 = c10.k(descriptor2, 0);
-            i11 = c10.k(descriptor2, 1);
-            i10 = c10.k(descriptor2, 2);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            i12 = b10.i(descriptor2, 0);
+            i11 = b10.i(descriptor2, 1);
+            i10 = b10.i(descriptor2, 2);
             i13 = 7;
         } else {
             boolean z10 = true;
@@ -62,20 +62,20 @@ public final class OnFocusEvent$$serializer implements f0<OnFocusEvent> {
             int i16 = 0;
             int i17 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    i14 = c10.k(descriptor2, 0);
+                } else if (o10 == 0) {
+                    i14 = b10.i(descriptor2, 0);
                     i17 |= 1;
-                } else if (x10 == 1) {
-                    i16 = c10.k(descriptor2, 1);
+                } else if (o10 == 1) {
+                    i16 = b10.i(descriptor2, 1);
                     i17 |= 2;
-                } else if (x10 == 2) {
-                    i15 = c10.k(descriptor2, 2);
+                } else if (o10 == 2) {
+                    i15 = b10.i(descriptor2, 2);
                     i17 |= 4;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             i12 = i14;
@@ -83,7 +83,7 @@ public final class OnFocusEvent$$serializer implements f0<OnFocusEvent> {
             i11 = i16;
             i13 = i17;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new OnFocusEvent(i13, i12, i11, i10, (SerializationConstructorMarker) null);
     }
 
@@ -96,9 +96,9 @@ public final class OnFocusEvent$$serializer implements f0<OnFocusEvent> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        OnFocusEvent.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        OnFocusEvent.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

@@ -80,39 +80,39 @@ public final class ForumPostActions {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z13 = false;
-        output.q(serialDesc, 0, self.numDisplayedReactions);
-        output.r(serialDesc, 1, self.isFollowing);
-        if (!output.w(serialDesc, 2) && self.followIcon == null) {
+        output.v(serialDesc, 0, self.numDisplayedReactions);
+        output.w(serialDesc, 1, self.isFollowing);
+        if (!output.z(serialDesc, 2) && self.followIcon == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 2, a2.f29550a, self.followIcon);
+            output.B(serialDesc, 2, a2.f29755a, self.followIcon);
         }
-        output.s(serialDesc, 3, self.followLabel);
-        if (!output.w(serialDesc, 4) && self.shareIcon == null) {
+        output.x(serialDesc, 3, self.followLabel);
+        if (!output.z(serialDesc, 4) && self.shareIcon == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 4, a2.f29550a, self.shareIcon);
+            output.B(serialDesc, 4, a2.f29755a, self.shareIcon);
         }
-        output.s(serialDesc, 5, self.shareLabel);
-        if (!output.w(serialDesc, 6) && self.defaultReaction == null) {
+        output.x(serialDesc, 5, self.shareLabel);
+        if (!output.z(serialDesc, 6) && self.defaultReaction == null) {
             z12 = false;
         } else {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 6, MessageReaction$$serializer.INSTANCE, self.defaultReaction);
+            output.B(serialDesc, 6, MessageReaction$$serializer.INSTANCE, self.defaultReaction);
         }
-        if (output.w(serialDesc, 7) || self.sharePrompt != null) {
+        if (output.z(serialDesc, 7) || self.sharePrompt != null) {
             z13 = true;
         }
         if (z13) {
-            output.z(serialDesc, 7, PostSharePrompt$$serializer.INSTANCE, self.sharePrompt);
+            output.B(serialDesc, 7, PostSharePrompt$$serializer.INSTANCE, self.sharePrompt);
         }
     }
 

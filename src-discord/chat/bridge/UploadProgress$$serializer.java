@@ -45,9 +45,9 @@ public final class UploadProgress$$serializer implements f0<UploadProgress> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        m0 m0Var = m0.f29625a;
-        return new KSerializer[]{a2Var, m0Var, m0Var, e0.f29575a, a2Var, a2Var, m0Var, m0Var, m0Var, m0Var, m0Var};
+        a2 a2Var = a2.f29755a;
+        m0 m0Var = m0.f29830a;
+        return new KSerializer[]{a2Var, m0Var, m0Var, e0.f29780a, a2Var, a2Var, m0Var, m0Var, m0Var, m0Var, m0Var};
     }
 
     @Override 
@@ -66,20 +66,20 @@ public final class UploadProgress$$serializer implements f0<UploadProgress> {
         int i17;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i18 = 0;
-        if (c10.y()) {
-            str3 = c10.t(descriptor2, 0);
-            i16 = c10.k(descriptor2, 1);
-            i15 = c10.k(descriptor2, 2);
-            f10 = c10.G(descriptor2, 3);
-            str2 = c10.t(descriptor2, 4);
-            str = c10.t(descriptor2, 5);
-            i14 = c10.k(descriptor2, 6);
-            i13 = c10.k(descriptor2, 7);
-            i12 = c10.k(descriptor2, 8);
-            i11 = c10.k(descriptor2, 9);
-            i10 = c10.k(descriptor2, 10);
+        if (b10.p()) {
+            str3 = b10.m(descriptor2, 0);
+            i16 = b10.i(descriptor2, 1);
+            i15 = b10.i(descriptor2, 2);
+            f10 = b10.u(descriptor2, 3);
+            str2 = b10.m(descriptor2, 4);
+            str = b10.m(descriptor2, 5);
+            i14 = b10.i(descriptor2, 6);
+            i13 = b10.i(descriptor2, 7);
+            i12 = b10.i(descriptor2, 8);
+            i11 = b10.i(descriptor2, 9);
+            i10 = b10.i(descriptor2, 10);
             i17 = 2047;
         } else {
             String str4 = null;
@@ -95,57 +95,57 @@ public final class UploadProgress$$serializer implements f0<UploadProgress> {
             int i24 = 0;
             int i25 = 0;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z10 = false;
                         break;
                     case 0:
-                        str4 = c10.t(descriptor2, 0);
+                        str4 = b10.m(descriptor2, 0);
                         i18 |= 1;
                         continue;
                     case 1:
-                        i24 = c10.k(descriptor2, 1);
+                        i24 = b10.i(descriptor2, 1);
                         i18 |= 2;
                         continue;
                     case 2:
-                        i23 = c10.k(descriptor2, 2);
+                        i23 = b10.i(descriptor2, 2);
                         i18 |= 4;
                         break;
                     case 3:
-                        f11 = c10.G(descriptor2, 3);
+                        f11 = b10.u(descriptor2, 3);
                         i18 |= 8;
                         break;
                     case 4:
-                        str6 = c10.t(descriptor2, 4);
+                        str6 = b10.m(descriptor2, 4);
                         i18 |= 16;
                         break;
                     case 5:
-                        str5 = c10.t(descriptor2, 5);
+                        str5 = b10.m(descriptor2, 5);
                         i18 |= 32;
                         break;
                     case 6:
-                        i21 = c10.k(descriptor2, 6);
+                        i21 = b10.i(descriptor2, 6);
                         i18 |= 64;
                         break;
                     case 7:
-                        i20 = c10.k(descriptor2, 7);
+                        i20 = b10.i(descriptor2, 7);
                         i18 |= 128;
                         break;
                     case 8:
-                        i22 = c10.k(descriptor2, 8);
+                        i22 = b10.i(descriptor2, 8);
                         i18 |= 256;
                         break;
                     case 9:
-                        i19 = c10.k(descriptor2, 9);
+                        i19 = b10.i(descriptor2, 9);
                         i18 |= 512;
                         break;
                     case 10:
-                        i25 = c10.k(descriptor2, 10);
+                        i25 = b10.i(descriptor2, 10);
                         i18 |= 1024;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             i10 = i25;
@@ -161,7 +161,7 @@ public final class UploadProgress$$serializer implements f0<UploadProgress> {
             i14 = i21;
             i15 = i23;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new UploadProgress(i17, str3, i16, i15, f10, str2, str, i14, i13, i12, i11, i10, null);
     }
 
@@ -174,9 +174,9 @@ public final class UploadProgress$$serializer implements f0<UploadProgress> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        UploadProgress.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        UploadProgress.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

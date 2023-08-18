@@ -71,12 +71,12 @@ public final class RoleSubscriptionOnClick {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.action);
-        output.s(serialDesc, 1, self.guildId);
-        a2 a2Var = a2.f29550a;
-        output.z(serialDesc, 2, a2Var, self.messageId);
-        output.z(serialDesc, 3, a2Var, self.channelId);
-        output.z(serialDesc, 4, a2Var, self.roleSubscriptionListingId);
+        output.x(serialDesc, 0, self.action);
+        output.x(serialDesc, 1, self.guildId);
+        a2 a2Var = a2.f29755a;
+        output.B(serialDesc, 2, a2Var, self.messageId);
+        output.B(serialDesc, 3, a2Var, self.channelId);
+        output.B(serialDesc, 4, a2Var, self.roleSubscriptionListingId);
     }
 
     public final String component1() {

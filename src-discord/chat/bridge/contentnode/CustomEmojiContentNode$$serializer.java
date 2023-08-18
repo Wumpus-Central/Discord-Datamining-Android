@@ -39,8 +39,8 @@ public final class CustomEmojiContentNode$$serializer implements f0<CustomEmojiC
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        return new KSerializer[]{w0.f29666a, a2Var, a2Var, a2Var, h.f29592a};
+        a2 a2Var = a2.f29755a;
+        return new KSerializer[]{w0.f29871a, a2Var, a2Var, a2Var, h.f29797a};
     }
 
     @Override 
@@ -53,13 +53,13 @@ public final class CustomEmojiContentNode$$serializer implements f0<CustomEmojiC
         int i10;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        if (c10.y()) {
-            j10 = c10.h(descriptor2, 0);
-            str3 = c10.t(descriptor2, 1);
-            str2 = c10.t(descriptor2, 2);
-            str = c10.t(descriptor2, 3);
-            z10 = c10.s(descriptor2, 4);
+        c b10 = decoder.b(descriptor2);
+        if (b10.p()) {
+            j10 = b10.f(descriptor2, 0);
+            str3 = b10.m(descriptor2, 1);
+            str2 = b10.m(descriptor2, 2);
+            str = b10.m(descriptor2, 3);
+            z10 = b10.C(descriptor2, 4);
             i10 = 31;
         } else {
             long j11 = 0;
@@ -70,26 +70,26 @@ public final class CustomEmojiContentNode$$serializer implements f0<CustomEmojiC
             String str6 = null;
             boolean z12 = false;
             while (z11) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z11 = false;
-                } else if (x10 == 0) {
-                    j11 = c10.h(descriptor2, 0);
+                } else if (o10 == 0) {
+                    j11 = b10.f(descriptor2, 0);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    str4 = c10.t(descriptor2, 1);
+                } else if (o10 == 1) {
+                    str4 = b10.m(descriptor2, 1);
                     i11 |= 2;
-                } else if (x10 == 2) {
-                    str5 = c10.t(descriptor2, 2);
+                } else if (o10 == 2) {
+                    str5 = b10.m(descriptor2, 2);
                     i11 |= 4;
-                } else if (x10 == 3) {
-                    str6 = c10.t(descriptor2, 3);
+                } else if (o10 == 3) {
+                    str6 = b10.m(descriptor2, 3);
                     i11 |= 8;
-                } else if (x10 == 4) {
-                    z12 = c10.s(descriptor2, 4);
+                } else if (o10 == 4) {
+                    z12 = b10.C(descriptor2, 4);
                     i11 |= 16;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             str3 = str4;
@@ -99,7 +99,7 @@ public final class CustomEmojiContentNode$$serializer implements f0<CustomEmojiC
             i10 = i11;
             j10 = j11;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new CustomEmojiContentNode(i10, j10, str3, str2, str, z10, (SerializationConstructorMarker) null);
     }
 
@@ -112,9 +112,9 @@ public final class CustomEmojiContentNode$$serializer implements f0<CustomEmojiC
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        CustomEmojiContentNode.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        CustomEmojiContentNode.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

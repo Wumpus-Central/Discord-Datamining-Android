@@ -39,7 +39,7 @@ public final class VoiceMessagePlaybackStartedData$$serializer implements f0<Voi
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        e0 e0Var = e0.f29575a;
+        e0 e0Var = e0.f29780a;
         return new KSerializer[]{MessageId$$serializer.INSTANCE, e0Var, e0Var, UserId$$serializer.INSTANCE};
     }
 
@@ -52,13 +52,13 @@ public final class VoiceMessagePlaybackStartedData$$serializer implements f0<Voi
         Object obj2;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         String str = null;
-        if (c10.y()) {
-            obj2 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
-            f11 = c10.G(descriptor2, 1);
-            f10 = c10.G(descriptor2, 2);
-            obj = c10.m(descriptor2, 3, UserId$$serializer.INSTANCE, null);
+        if (b10.p()) {
+            obj2 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
+            f11 = b10.u(descriptor2, 1);
+            f10 = b10.u(descriptor2, 2);
+            obj = b10.y(descriptor2, 3, UserId$$serializer.INSTANCE, null);
             i10 = 15;
         } else {
             float f12 = 0.0f;
@@ -68,23 +68,23 @@ public final class VoiceMessagePlaybackStartedData$$serializer implements f0<Voi
             obj2 = null;
             Object obj3 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                if (x10 == -1) {
+                int o10 = b10.o(descriptor2);
+                if (o10 == -1) {
                     z10 = false;
-                } else if (x10 == 0) {
-                    obj2 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, obj2);
+                } else if (o10 == 0) {
+                    obj2 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, obj2);
                     i11 |= 1;
-                } else if (x10 == 1) {
-                    f13 = c10.G(descriptor2, 1);
+                } else if (o10 == 1) {
+                    f13 = b10.u(descriptor2, 1);
                     i11 |= 2;
-                } else if (x10 == 2) {
-                    f12 = c10.G(descriptor2, 2);
+                } else if (o10 == 2) {
+                    f12 = b10.u(descriptor2, 2);
                     i11 |= 4;
-                } else if (x10 == 3) {
-                    obj3 = c10.m(descriptor2, 3, UserId$$serializer.INSTANCE, obj3);
+                } else if (o10 == 3) {
+                    obj3 = b10.y(descriptor2, 3, UserId$$serializer.INSTANCE, obj3);
                     i11 |= 8;
                 } else {
-                    throw new n(x10);
+                    throw new n(o10);
                 }
             }
             obj = obj3;
@@ -92,10 +92,10 @@ public final class VoiceMessagePlaybackStartedData$$serializer implements f0<Voi
             i10 = i11;
             f11 = f13;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
         if (messageId != null) {
-            str = messageId.m613unboximpl();
+            str = messageId.m615unboximpl();
         }
         return new VoiceMessagePlaybackStartedData(i10, str, f11, f10, (UserId) obj, null, null);
     }
@@ -109,9 +109,9 @@ public final class VoiceMessagePlaybackStartedData$$serializer implements f0<Voi
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        VoiceMessagePlaybackStartedData.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        VoiceMessagePlaybackStartedData.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

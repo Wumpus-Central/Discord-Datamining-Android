@@ -36,13 +36,13 @@ public final class MessageId implements Parcelable {
     public static final class Creator implements Parcelable.Creator<MessageId> {
         @Override 
         public   MessageId createFromParcel(Parcel parcel) {
-            return MessageId.m605boximpl(m616createFromParcelMpY7Jxs(parcel));
+            return MessageId.m607boximpl(m618createFromParcelMpY7Jxs(parcel));
         }
 
         
-        public final String m616createFromParcelMpY7Jxs(Parcel parcel) {
+        public final String m618createFromParcelMpY7Jxs(Parcel parcel) {
             q.h(parcel, "parcel");
-            return MessageId.m606constructorimpl(parcel.readString());
+            return MessageId.m608constructorimpl(parcel.readString());
         }
 
         
@@ -57,54 +57,54 @@ public final class MessageId implements Parcelable {
     }
 
     
-    public static final  MessageId m605boximpl(String str) {
+    public static final  MessageId m607boximpl(String str) {
         return new MessageId(str);
     }
 
     
-    public static String m606constructorimpl(String value) {
+    public static String m608constructorimpl(String value) {
         q.h(value, "value");
         return value;
     }
 
     
-    public static int m607describeContentsimpl(String str) {
+    public static int m609describeContentsimpl(String str) {
         return 0;
     }
 
     
-    public static boolean m608equalsimpl(String str, Object obj) {
-        return (obj instanceof MessageId) && q.c(str, ((MessageId) obj).m613unboximpl());
+    public static boolean m610equalsimpl(String str, Object obj) {
+        return (obj instanceof MessageId) && q.c(str, ((MessageId) obj).m615unboximpl());
     }
 
     
-    public static final boolean m609equalsimpl0(String str, String str2) {
+    public static final boolean m611equalsimpl0(String str, String str2) {
         return q.c(str, str2);
     }
 
     
-    public static int m610hashCodeimpl(String str) {
+    public static int m612hashCodeimpl(String str) {
         return str.hashCode();
     }
 
     
-    public static String m611toStringimpl(String str) {
+    public static String m613toStringimpl(String str) {
         return str;
     }
 
     
-    public static void m612writeToParcelimpl(String str, Parcel out, int i10) {
+    public static void m614writeToParcelimpl(String str, Parcel out, int i10) {
         q.h(out, "out");
         out.writeString(str);
     }
 
     @Override 
     public int describeContents() {
-        return m607describeContentsimpl(this.value);
+        return m609describeContentsimpl(this.value);
     }
 
     public boolean equals(Object obj) {
-        return m608equalsimpl(this.value, obj);
+        return m610equalsimpl(this.value, obj);
     }
 
     public final String getValue() {
@@ -112,21 +112,21 @@ public final class MessageId implements Parcelable {
     }
 
     public int hashCode() {
-        return m610hashCodeimpl(this.value);
+        return m612hashCodeimpl(this.value);
     }
 
     public String toString() {
-        return m611toStringimpl(this.value);
+        return m613toStringimpl(this.value);
     }
 
     
-    public final  String m613unboximpl() {
+    public final  String m615unboximpl() {
         return this.value;
     }
 
     @Override 
     public void writeToParcel(Parcel out, int i10) {
         q.h(out, "out");
-        m612writeToParcelimpl(this.value, out, i10);
+        m614writeToParcelimpl(this.value, out, i10);
     }
 }

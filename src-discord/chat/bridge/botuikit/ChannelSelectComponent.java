@@ -89,43 +89,43 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
         q.h(serialDesc, "serialDesc");
         SearchableSelectComponent.write$Self((SearchableSelectComponent) self, output, serialDesc);
         boolean z13 = true;
-        output.q(serialDesc, 1, self.getType());
-        m0 m0Var = m0.f29625a;
-        output.h(serialDesc, 2, new wi.f(m0Var), self.getIndices());
-        output.s(serialDesc, 3, self.getApplicationId());
-        output.s(serialDesc, 4, self.getCustomId());
-        if (!output.w(serialDesc, 5) && self.getPlaceholder() == null) {
+        output.v(serialDesc, 1, self.getType());
+        m0 m0Var = m0.f29830a;
+        output.o(serialDesc, 2, new wi.f(m0Var), self.getIndices());
+        output.x(serialDesc, 3, self.getApplicationId());
+        output.x(serialDesc, 4, self.getCustomId());
+        if (!output.z(serialDesc, 5) && self.getPlaceholder() == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 5, a2.f29550a, self.getPlaceholder());
+            output.B(serialDesc, 5, a2.f29755a, self.getPlaceholder());
         }
-        if (!output.w(serialDesc, 6) && self.getAccessibilityLabel() == null) {
+        if (!output.z(serialDesc, 6) && self.getAccessibilityLabel() == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 6, a2.f29550a, self.getAccessibilityLabel());
+            output.B(serialDesc, 6, a2.f29755a, self.getAccessibilityLabel());
         }
-        output.q(serialDesc, 7, self.getMinValues());
-        output.q(serialDesc, 8, self.getMaxValues());
-        if (!output.w(serialDesc, 9) && !self.getDisabled()) {
+        output.v(serialDesc, 7, self.getMinValues());
+        output.v(serialDesc, 8, self.getMaxValues());
+        if (!output.z(serialDesc, 9) && !self.getDisabled()) {
             z12 = false;
         } else {
             z12 = true;
         }
         if (z12) {
-            output.r(serialDesc, 9, self.getDisabled());
+            output.w(serialDesc, 9, self.getDisabled());
         }
-        output.h(serialDesc, 10, ActionComponentState.Serializer.INSTANCE, self.getState());
-        if (!output.w(serialDesc, 11) && self.channelTypes == null) {
+        output.o(serialDesc, 10, ActionComponentState.Serializer.INSTANCE, self.getState());
+        if (!output.z(serialDesc, 11) && self.channelTypes == null) {
             z13 = false;
         }
         if (z13) {
-            output.z(serialDesc, 11, new wi.f(m0Var), self.channelTypes);
+            output.B(serialDesc, 11, new wi.f(m0Var), self.channelTypes);
         }
     }
 

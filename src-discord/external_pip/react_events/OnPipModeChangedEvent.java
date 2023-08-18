@@ -52,7 +52,7 @@ public final class OnPipModeChangedEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.r(serialDesc, 0, self.isInPipMode);
+        output.w(serialDesc, 0, self.isInPipMode);
     }
 
     public final boolean component1() {

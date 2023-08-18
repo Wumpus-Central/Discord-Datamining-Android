@@ -60,21 +60,21 @@ public final class LinkContext$$serializer implements f0<LinkContext> {
         Object obj9;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
+        c b10 = decoder.b(descriptor2);
         int i11 = 9;
         Object obj10 = null;
-        if (c10.y()) {
+        if (b10.p()) {
             UserNameOnClick$$serializer userNameOnClick$$serializer = UserNameOnClick$$serializer.INSTANCE;
-            obj10 = c10.v(descriptor2, 0, userNameOnClick$$serializer, null);
-            obj9 = c10.v(descriptor2, 1, userNameOnClick$$serializer, null);
-            obj = c10.v(descriptor2, 2, CommandOnClick$$serializer.INSTANCE, null);
-            obj4 = c10.v(descriptor2, 3, ActorHook$$serializer.INSTANCE, null);
-            obj2 = c10.v(descriptor2, 4, ThreadOnClick$$serializer.INSTANCE, null);
-            obj5 = c10.v(descriptor2, 5, PinsOnClick$$serializer.INSTANCE, null);
-            obj6 = c10.v(descriptor2, 6, WebhookNameOnClick$$serializer.INSTANCE, null);
-            obj7 = c10.v(descriptor2, 7, HandleDelete$$serializer.INSTANCE, null);
-            obj3 = c10.v(descriptor2, 8, RoleSubscriptionOnClick$$serializer.INSTANCE, null);
-            obj8 = c10.v(descriptor2, 9, HandleMessage$$serializer.INSTANCE, null);
+            obj10 = b10.n(descriptor2, 0, userNameOnClick$$serializer, null);
+            obj9 = b10.n(descriptor2, 1, userNameOnClick$$serializer, null);
+            obj = b10.n(descriptor2, 2, CommandOnClick$$serializer.INSTANCE, null);
+            obj4 = b10.n(descriptor2, 3, ActorHook$$serializer.INSTANCE, null);
+            obj2 = b10.n(descriptor2, 4, ThreadOnClick$$serializer.INSTANCE, null);
+            obj5 = b10.n(descriptor2, 5, PinsOnClick$$serializer.INSTANCE, null);
+            obj6 = b10.n(descriptor2, 6, WebhookNameOnClick$$serializer.INSTANCE, null);
+            obj7 = b10.n(descriptor2, 7, HandleDelete$$serializer.INSTANCE, null);
+            obj3 = b10.n(descriptor2, 8, RoleSubscriptionOnClick$$serializer.INSTANCE, null);
+            obj8 = b10.n(descriptor2, 9, HandleMessage$$serializer.INSTANCE, null);
             i10 = 1023;
         } else {
             boolean z10 = true;
@@ -89,62 +89,62 @@ public final class LinkContext$$serializer implements f0<LinkContext> {
             Object obj18 = null;
             Object obj19 = null;
             while (z10) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z10 = false;
                         i11 = 9;
                         break;
                     case 0:
-                        obj10 = c10.v(descriptor2, 0, UserNameOnClick$$serializer.INSTANCE, obj10);
+                        obj10 = b10.n(descriptor2, 0, UserNameOnClick$$serializer.INSTANCE, obj10);
                         i12 |= 1;
                         i11 = 9;
                         break;
                     case 1:
-                        obj18 = c10.v(descriptor2, 1, UserNameOnClick$$serializer.INSTANCE, obj18);
+                        obj18 = b10.n(descriptor2, 1, UserNameOnClick$$serializer.INSTANCE, obj18);
                         i12 |= 2;
                         i11 = 9;
                         break;
                     case 2:
-                        obj19 = c10.v(descriptor2, 2, CommandOnClick$$serializer.INSTANCE, obj19);
+                        obj19 = b10.n(descriptor2, 2, CommandOnClick$$serializer.INSTANCE, obj19);
                         i12 |= 4;
                         i11 = 9;
                         break;
                     case 3:
-                        obj17 = c10.v(descriptor2, 3, ActorHook$$serializer.INSTANCE, obj17);
+                        obj17 = b10.n(descriptor2, 3, ActorHook$$serializer.INSTANCE, obj17);
                         i12 |= 8;
                         i11 = 9;
                         break;
                     case 4:
-                        obj16 = c10.v(descriptor2, 4, ThreadOnClick$$serializer.INSTANCE, obj16);
+                        obj16 = b10.n(descriptor2, 4, ThreadOnClick$$serializer.INSTANCE, obj16);
                         i12 |= 16;
                         i11 = 9;
                         break;
                     case 5:
-                        obj15 = c10.v(descriptor2, 5, PinsOnClick$$serializer.INSTANCE, obj15);
+                        obj15 = b10.n(descriptor2, 5, PinsOnClick$$serializer.INSTANCE, obj15);
                         i12 |= 32;
                         i11 = 9;
                         break;
                     case 6:
-                        obj13 = c10.v(descriptor2, 6, WebhookNameOnClick$$serializer.INSTANCE, obj13);
+                        obj13 = b10.n(descriptor2, 6, WebhookNameOnClick$$serializer.INSTANCE, obj13);
                         i12 |= 64;
                         i11 = 9;
                         break;
                     case 7:
-                        obj14 = c10.v(descriptor2, 7, HandleDelete$$serializer.INSTANCE, obj14);
+                        obj14 = b10.n(descriptor2, 7, HandleDelete$$serializer.INSTANCE, obj14);
                         i12 |= 128;
                         i11 = 9;
                         continue;
                     case 8:
-                        obj12 = c10.v(descriptor2, 8, RoleSubscriptionOnClick$$serializer.INSTANCE, obj12);
+                        obj12 = b10.n(descriptor2, 8, RoleSubscriptionOnClick$$serializer.INSTANCE, obj12);
                         i12 |= 256;
                         break;
                     case 9:
-                        obj11 = c10.v(descriptor2, i11, HandleMessage$$serializer.INSTANCE, obj11);
+                        obj11 = b10.n(descriptor2, i11, HandleMessage$$serializer.INSTANCE, obj11);
                         i12 |= 512;
                         break;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             obj8 = obj11;
@@ -158,7 +158,7 @@ public final class LinkContext$$serializer implements f0<LinkContext> {
             i10 = i12;
             obj9 = obj18;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new LinkContext(i10, (UserNameOnClick) obj10, (UserNameOnClick) obj9, (CommandOnClick) obj, (ActorHook) obj4, (ThreadOnClick) obj2, (PinsOnClick) obj5, (WebhookNameOnClick) obj6, (HandleDelete) obj7, (RoleSubscriptionOnClick) obj3, (HandleMessage) obj8, (SerializationConstructorMarker) null);
     }
 
@@ -171,9 +171,9 @@ public final class LinkContext$$serializer implements f0<LinkContext> {
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        LinkContext.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        LinkContext.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

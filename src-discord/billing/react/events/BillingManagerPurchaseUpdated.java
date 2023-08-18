@@ -51,9 +51,9 @@ public final class BillingManagerPurchaseUpdated implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.purchaseToken);
-        output.s(serialDesc, 1, self.packageName);
-        output.s(serialDesc, 2, self.sku);
+        output.x(serialDesc, 0, self.purchaseToken);
+        output.x(serialDesc, 1, self.packageName);
+        output.x(serialDesc, 2, self.sku);
     }
 
     public BillingManagerPurchaseUpdated(String purchaseToken, String packageName, String sku) {

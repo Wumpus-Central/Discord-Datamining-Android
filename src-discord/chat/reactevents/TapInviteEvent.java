@@ -68,11 +68,11 @@ public final class TapInviteEvent implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.messageId);
-        output.q(serialDesc, 1, self.index);
-        h hVar = h.f29592a;
-        output.z(serialDesc, 2, hVar, self.primary);
-        output.z(serialDesc, 3, hVar, self.secondary);
+        output.x(serialDesc, 0, self.messageId);
+        output.v(serialDesc, 1, self.index);
+        h hVar = h.f29797a;
+        output.B(serialDesc, 2, hVar, self.primary);
+        output.B(serialDesc, 3, hVar, self.secondary);
     }
 
     public final String component1() {

@@ -62,11 +62,11 @@ public final class TextContentNode extends ContentNode {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z10 = true;
-        if (!output.w(serialDesc, 0) && self.content == null) {
+        if (!output.z(serialDesc, 0) && self.content == null) {
             z10 = false;
         }
         if (z10) {
-            output.z(serialDesc, 0, a2.f29550a, self.content);
+            output.B(serialDesc, 0, a2.f29755a, self.content);
         }
     }
 

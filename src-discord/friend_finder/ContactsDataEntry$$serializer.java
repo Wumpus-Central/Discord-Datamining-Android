@@ -39,8 +39,8 @@ public final class ContactsDataEntry$$serializer implements f0<ContactsDataEntry
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29550a;
-        return new KSerializer[]{a2Var, a2Var, a2Var, new v1(kotlin.jvm.internal.f0.b(ContactName.class), ContactName$$serializer.INSTANCE), h.f29592a, new v1(kotlin.jvm.internal.f0.b(String.class), a2Var)};
+        a2 a2Var = a2.f29755a;
+        return new KSerializer[]{a2Var, a2Var, a2Var, new v1(kotlin.jvm.internal.f0.b(ContactName.class), ContactName$$serializer.INSTANCE), h.f29797a, new v1(kotlin.jvm.internal.f0.b(String.class), a2Var)};
     }
 
     @Override 
@@ -54,16 +54,16 @@ public final class ContactsDataEntry$$serializer implements f0<ContactsDataEntry
         Object obj2;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c c10 = decoder.c(descriptor2);
-        char c11 = 3;
+        c b10 = decoder.b(descriptor2);
+        char c10 = 3;
         int i11 = 2;
-        if (c10.y()) {
-            str3 = c10.t(descriptor2, 0);
-            str2 = c10.t(descriptor2, 1);
-            str = c10.t(descriptor2, 2);
-            obj = c10.m(descriptor2, 3, new v1(kotlin.jvm.internal.f0.b(ContactName.class), ContactName$$serializer.INSTANCE), null);
-            z10 = c10.s(descriptor2, 4);
-            obj2 = c10.m(descriptor2, 5, new v1(kotlin.jvm.internal.f0.b(String.class), a2.f29550a), null);
+        if (b10.p()) {
+            str3 = b10.m(descriptor2, 0);
+            str2 = b10.m(descriptor2, 1);
+            str = b10.m(descriptor2, 2);
+            obj = b10.y(descriptor2, 3, new v1(kotlin.jvm.internal.f0.b(ContactName.class), ContactName$$serializer.INSTANCE), null);
+            z10 = b10.C(descriptor2, 4);
+            obj2 = b10.y(descriptor2, 5, new v1(kotlin.jvm.internal.f0.b(String.class), a2.f29755a), null);
             i10 = 63;
         } else {
             boolean z11 = true;
@@ -75,44 +75,44 @@ public final class ContactsDataEntry$$serializer implements f0<ContactsDataEntry
             Object obj4 = null;
             boolean z12 = false;
             while (z11) {
-                int x10 = c10.x(descriptor2);
-                switch (x10) {
+                int o10 = b10.o(descriptor2);
+                switch (o10) {
                     case -1:
                         z11 = false;
-                        c11 = c11;
+                        c10 = c10;
                         i11 = i11;
                     case 0:
-                        c11 = c11;
+                        c10 = c10;
                         i11 = i11;
-                        str3 = c10.t(descriptor2, 0);
+                        str3 = b10.m(descriptor2, 0);
                         i12 |= 1;
                     case 1:
-                        c11 = c11;
+                        c10 = c10;
                         i11 = i11;
-                        str2 = c10.t(descriptor2, 1);
+                        str2 = b10.m(descriptor2, 1);
                         i12 |= 2;
                     case 2:
-                        c11 = c11;
+                        c10 = c10;
                         i11 = i11;
-                        str = c10.t(descriptor2, i11);
+                        str = b10.m(descriptor2, i11);
                         i12 |= 4;
                     case 3:
-                        obj3 = c10.m(descriptor2, 3, new v1(kotlin.jvm.internal.f0.b(ContactName.class), ContactName$$serializer.INSTANCE), obj3);
+                        obj3 = b10.y(descriptor2, 3, new v1(kotlin.jvm.internal.f0.b(ContactName.class), ContactName$$serializer.INSTANCE), obj3);
                         i12 |= 8;
-                        c11 = 3;
+                        c10 = 3;
                         i11 = 2;
                     case 4:
-                        z12 = c10.s(descriptor2, 4);
+                        z12 = b10.C(descriptor2, 4);
                         i12 |= 16;
-                        c11 = 3;
+                        c10 = 3;
                         i11 = 2;
                     case 5:
-                        obj4 = c10.m(descriptor2, 5, new v1(kotlin.jvm.internal.f0.b(String.class), a2.f29550a), obj4);
+                        obj4 = b10.y(descriptor2, 5, new v1(kotlin.jvm.internal.f0.b(String.class), a2.f29755a), obj4);
                         i12 |= 32;
-                        c11 = 3;
+                        c10 = 3;
                         i11 = 2;
                     default:
-                        throw new n(x10);
+                        throw new n(o10);
                 }
             }
             obj2 = obj4;
@@ -120,7 +120,7 @@ public final class ContactsDataEntry$$serializer implements f0<ContactsDataEntry
             obj = obj3;
             i10 = i12;
         }
-        c10.b(descriptor2);
+        b10.c(descriptor2);
         return new ContactsDataEntry(i10, str3, str2, str, (ContactName[]) obj, z10, (String[]) obj2, null);
     }
 
@@ -133,9 +133,9 @@ public final class ContactsDataEntry$$serializer implements f0<ContactsDataEntry
         q.h(encoder, "encoder");
         q.h(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder c10 = encoder.c(descriptor2);
-        ContactsDataEntry.write$Self(value, c10, descriptor2);
-        c10.b(descriptor2);
+        CompositeEncoder b10 = encoder.b(descriptor2);
+        ContactsDataEntry.write$Self(value, b10, descriptor2);
+        b10.c(descriptor2);
     }
 
     @Override 

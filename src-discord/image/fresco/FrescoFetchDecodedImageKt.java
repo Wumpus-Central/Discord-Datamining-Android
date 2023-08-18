@@ -33,10 +33,10 @@ public final class FrescoFetchDecodedImageKt {
         q.h(context, "<this>");
         q.h(onDecodedImage, "onDecodedImage");
         try {
-            s.a aVar = s.f20094l;
+            s.a aVar = s.f20299k;
             obj = s.b(Uri.parse(str));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f20094l;
+            s.a aVar2 = s.f20299k;
             obj = s.b(t.a(th2));
         }
         if (s.g(obj)) {
@@ -71,7 +71,7 @@ public final class FrescoFetchDecodedImageKt {
         if (postProcessor != null) {
             basePostprocessor = postProcessor.create();
         }
-        c.a().d(s10.A(basePostprocessor).a(), context).g(new b() { 
+        c.a().d(s10.A(basePostprocessor).a(), context).d(new b() { 
             @Override 
             protected void onFailureImpl(DataSource<CloseableReference<v4.c>> dataSource) {
                 q.h(dataSource, "dataSource");
@@ -82,7 +82,7 @@ public final class FrescoFetchDecodedImageKt {
             protected void onNewResultImpl(Bitmap bitmap) {
                 onDecodedImage.invoke(bitmap);
             }
-        }, executorSupplier.a());
+        }, executorSupplier.d());
     }
 
     public static  Object fetchDecodedImage$default(Context context, String str, PostProcessor postProcessor, boolean z10, Continuation continuation, int i10, Object obj) {
@@ -108,10 +108,10 @@ public final class FrescoFetchDecodedImageKt {
     public static final Object fetchDecodedImage(Context context, String str, PostProcessor postProcessor, boolean z10, Continuation<? super Bitmap> continuation) {
         Object obj;
         try {
-            s.a aVar = s.f20094l;
+            s.a aVar = s.f20299k;
             obj = s.b(Uri.parse(str));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f20094l;
+            s.a aVar2 = s.f20299k;
             obj = s.b(t.a(th2));
         }
         if (s.g(obj)) {
@@ -125,7 +125,7 @@ public final class FrescoFetchDecodedImageKt {
         Object d10;
         c10 = pf.c.c(continuation);
         final p pVar = new p(c10, 1);
-        pVar.C();
+        pVar.B();
         BasePostprocessor basePostprocessor = null;
         if (uri == null) {
             pVar.resumeWith(s.b(null));
@@ -135,7 +135,7 @@ public final class FrescoFetchDecodedImageKt {
                 basePostprocessor = postProcessor.create();
             }
             DataSource<CloseableReference<v4.c>> d11 = c.a().d(s10.A(basePostprocessor).a(), context);
-            d11.g(new b() { 
+            d11.d(new b() { 
                 @Override 
                 protected void onFailureImpl(DataSource<CloseableReference<v4.c>> dataSource) {
                     q.h(dataSource, "dataSource");
@@ -145,14 +145,14 @@ public final class FrescoFetchDecodedImageKt {
                 @Override 
                 protected void onNewResultImpl(Bitmap bitmap) {
                     CancellableContinuation<Bitmap> cancellableContinuation = pVar;
-                    s.a aVar = s.f20094l;
+                    s.a aVar = s.f20299k;
                     if (z10 && bitmap != null) {
                         bitmap = Bitmap.createBitmap(bitmap);
                     }
                     cancellableContinuation.resumeWith(s.b(bitmap));
                 }
-            }, executorSupplier.a());
-            pVar.n(new FrescoFetchDecodedImageKt$fetchDecodedImage$6$1(d11));
+            }, executorSupplier.d());
+            pVar.l(new FrescoFetchDecodedImageKt$fetchDecodedImage$6$1(d11));
         }
         Object y10 = pVar.y();
         d10 = d.d();

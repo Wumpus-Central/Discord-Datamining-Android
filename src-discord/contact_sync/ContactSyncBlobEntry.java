@@ -90,12 +90,12 @@ public final class ContactSyncBlobEntry {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.phone);
-        output.s(serialDesc, 1, self.unencryptedName);
-        output.r(serialDesc, 2, self.hasImageData);
-        output.s(serialDesc, 3, self.deviceContactId);
-        output.s(serialDesc, 4, self.givenName);
-        output.s(serialDesc, 5, self.familyName);
+        output.x(serialDesc, 0, self.phone);
+        output.x(serialDesc, 1, self.unencryptedName);
+        output.w(serialDesc, 2, self.hasImageData);
+        output.x(serialDesc, 3, self.deviceContactId);
+        output.x(serialDesc, 4, self.givenName);
+        output.x(serialDesc, 5, self.familyName);
     }
 
     public final String component1() {
