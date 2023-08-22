@@ -20,7 +20,7 @@ public  class EmbedViewHolder$bind$2 extends n implements Function3<MessageId, S
     @Override 
     public   Unit invoke(MessageId messageId, String str, String str2) {
         m340invokeu7_MRrM(messageId.m615unboximpl(), str, str2);
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     

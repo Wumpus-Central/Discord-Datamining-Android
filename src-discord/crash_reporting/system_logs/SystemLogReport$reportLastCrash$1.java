@@ -31,7 +31,7 @@ public final class SystemLogReport$reportLastCrash$1 extends s implements Functi
     @Override 
     public   Unit invoke(SystemLogUtils.Tombstone tombstone) {
         invoke2(tombstone);
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     

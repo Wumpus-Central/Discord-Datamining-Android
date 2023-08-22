@@ -26,7 +26,7 @@ public final class CookieValidatorKt {
         z02 = p.z0(cookie, new String[]{"; "}, false, 0, 6, null);
         ArrayList arrayList = new ArrayList();
         for (String str : z02) {
-            Cookie c10 = Cookie.f25439n.c(HttpUrl.f25471l.d(url), str);
+            Cookie c10 = Cookie.f25442n.c(HttpUrl.f25474l.d(url), str);
             if (c10 != null) {
                 arrayList.add(c10);
             }

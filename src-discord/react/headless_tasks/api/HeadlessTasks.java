@@ -33,34 +33,6 @@ public final class HeadlessTasks {
             this();
         }
 
-        public static  void startHeadlessTask$default(Companion companion, Context context, String str, long j10, boolean z10, Bundle bundle, boolean z11, int i10, Object obj) {
-            long j11;
-            boolean z12;
-            Bundle bundle2;
-            boolean z13;
-            if ((i10 & 4) != 0) {
-                j11 = 5000;
-            } else {
-                j11 = j10;
-            }
-            if ((i10 & 8) != 0) {
-                z12 = true;
-            } else {
-                z12 = z10;
-            }
-            if ((i10 & 16) != 0) {
-                bundle2 = new Bundle();
-            } else {
-                bundle2 = bundle;
-            }
-            if ((i10 & 32) != 0) {
-                z13 = false;
-            } else {
-                z13 = z11;
-            }
-            companion.startHeadlessTask(context, str, j11, z12, bundle2, z13);
-        }
-
         private final Intent toIntent(Context context, String str, long j10, boolean z10, Bundle bundle) {
             Intent intent = new Intent(context, HeadlessTasks.SERVICE_CLASS);
             intent.putExtra(HeadlessTasks.TASK_KEY, true);
@@ -103,7 +75,7 @@ public final class HeadlessTasks {
     }
 
     static {
-        int i10 = HeadlessTasksService.f7568j;
+        int i10 = HeadlessTasksService.f7571j;
     }
 
     public HeadlessTasks(HeadlessJsTaskConfig taskConfig) {

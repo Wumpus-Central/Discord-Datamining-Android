@@ -35,7 +35,7 @@ public final class FrescoConfigKt {
         }).c()));
         x.b n10 = x.n();
         z a10 = l.a();
-        ImagePipelineConfig K = P.Q(new y(n10.n(new z(a10.f30843b, a10.f30842a * 2, a10.f30844c)).m())).N(true).L().t(true).K();
+        ImagePipelineConfig K = P.Q(new y(n10.n(new z(a10.f30846b, a10.f30845a * 2, a10.f30847c)).m())).N(true).L().t(true).K();
         q.g(K, "getDefaultConfigBuilder(…ns(true)\n        .build()");
         return K;
     }

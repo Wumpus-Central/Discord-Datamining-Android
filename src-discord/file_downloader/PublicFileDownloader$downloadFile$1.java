@@ -49,8 +49,8 @@ public final class PublicFileDownloader$downloadFile$1 extends k implements Func
         @Override 
         
         public final void invoke2() {
-            PublicFileDownloader.onDownloadListeners.remove(Long.valueOf(this.$downloadId.f21236j));
-            PublicFileDownloader.INSTANCE.onFileDownloaded(this.$$this$callbackFlow, this.$manager, this.$downloadId.f21236j, this.$fileName);
+            PublicFileDownloader.onDownloadListeners.remove(Long.valueOf(this.$downloadId.f21239j));
+            PublicFileDownloader.INSTANCE.onFileDownloaded(this.$$this$callbackFlow, this.$manager, this.$downloadId.f21239j, this.$fileName);
         }
     }
 
@@ -70,7 +70,7 @@ public final class PublicFileDownloader$downloadFile$1 extends k implements Func
         @Override 
         
         public final void invoke2() {
-            PublicFileDownloader.onDownloadListeners.remove(Long.valueOf(this.$downloadId.f21236j));
+            PublicFileDownloader.onDownloadListeners.remove(Long.valueOf(this.$downloadId.f21239j));
         }
     }
 
@@ -92,7 +92,7 @@ public final class PublicFileDownloader$downloadFile$1 extends k implements Func
     }
 
     public final Object invoke(ProducerScope<? super DownloadState> producerScope, Continuation<? super Unit> continuation) {
-        return ((PublicFileDownloader$downloadFile$1) create(producerScope, continuation)).invokeSuspend(Unit.f21210a);
+        return ((PublicFileDownloader$downloadFile$1) create(producerScope, continuation)).invokeSuspend(Unit.f21213a);
     }
 
     

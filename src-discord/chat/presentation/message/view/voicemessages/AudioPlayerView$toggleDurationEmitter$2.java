@@ -42,7 +42,7 @@ public final class AudioPlayerView$toggleDurationEmitter$2 extends k implements 
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21210a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21213a);
         }
 
         @Override 
@@ -61,7 +61,7 @@ public final class AudioPlayerView$toggleDurationEmitter$2 extends k implements 
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            return Unit.f21210a;
+            return Unit.f21213a;
         }
     }
 
@@ -80,7 +80,7 @@ public final class AudioPlayerView$toggleDurationEmitter$2 extends k implements 
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioPlayerView$toggleDurationEmitter$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21210a);
+        return ((AudioPlayerView$toggleDurationEmitter$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21213a);
     }
 
     @Override 
@@ -114,6 +114,6 @@ public final class AudioPlayerView$toggleDurationEmitter$2 extends k implements 
                 return d10;
             }
         }
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 }

@@ -7,6 +7,7 @@ import com.facebook.react.bridge.BaseJavaModule;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
+import java.util.ArrayList;
 import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -43,19 +44,36 @@ public final class AppIconManagerModule extends NativeAppIconManagerSpec {
     @Override 
     public void getAvailableIcons(Promise promise) {
         q.h(promise, "promise");
-        promise.resolve(NativeArrayExtensionsKt.nativeArrayOf(NativeMapExtensionsKt.nativeMapOf(x.a("id", "default"))));
+        AppIcon[] availableIcons = AppIconUtil.INSTANCE.getAvailableIcons();
+        ArrayList arrayList = new ArrayList(availableIcons.length);
+        int length = availableIcons.length;
+        for (int i10 = 0; i10 < length; i10++) {
+            arrayList.add(NativeMapExtensionsKt.nativeMapOf(x.a("id", availableIcons[i10].getId())));
+        }
+        promise.resolve(NativeArrayExtensionsKt.toNativeArray(arrayList));
     }
 
     @Override 
     public void getCurrentIcon(Promise promise) {
         q.h(promise, "promise");
-        promise.resolve(NativeMapExtensionsKt.nativeMapOf(x.a("id", "default")));
+        AppIconUtil appIconUtil = AppIconUtil.INSTANCE;
+        ReactApplicationContext reactApplicationContext = getReactApplicationContext();
+        q.g(reactApplicationContext, "reactApplicationContext");
+        promise.resolve(NativeMapExtensionsKt.nativeMapOf(x.a("id", appIconUtil.getCurrentAppIcon(reactApplicationContext).getId())));
     }
 
     @Override 
     public void setIcon(String id2, Promise promise) {
         q.h(id2, "id");
         q.h(promise, "promise");
-        promise.resolve(Boolean.TRUE);
+        try {
+            AppIconUtil appIconUtil = AppIconUtil.INSTANCE;
+            ReactApplicationContext reactApplicationContext = getReactApplicationContext();
+            q.g(reactApplicationContext, "reactApplicationContext");
+            appIconUtil.setAppIcon(reactApplicationContext, id2);
+            promise.resolve(Boolean.TRUE);
+        } catch (Exception e10) {
+            promise.reject(e10);
+        }
     }
 }

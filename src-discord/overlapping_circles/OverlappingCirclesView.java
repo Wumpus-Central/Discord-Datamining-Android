@@ -78,26 +78,14 @@ public final class OverlappingCirclesView extends LinearLayout {
         
         public OverflowItem(Context context, int i10, int i11, int i12, int i13, int i14) {
             super(context);
-            int i15;
-            int i16;
             q.h(context, "context");
             DiscordFontUtilsKt.setDiscordFont(this, DiscordFont.PrimaryBold);
             setTextSize(0, i11);
             setTextColor(i12);
             setText("+" + i10);
             setGravity(17);
-            int i17 = (SizeUtilsKt.getPxToDp(i14) > 20.0f ? 1 : (SizeUtilsKt.getPxToDp(i14) == 20.0f ? 0 : -1));
-            if (i17 > 0) {
-                i15 = SizeUtilsKt.getDpToPx(8);
-            } else {
-                i15 = SizeUtilsKt.getDpToPx(4);
-            }
-            if (i17 > 0) {
-                i16 = SizeUtilsKt.getDpToPx(8);
-            } else {
-                i16 = SizeUtilsKt.getDpToPx(4);
-            }
-            setPadding(i15, 0, i16, 0);
+            int i15 = (SizeUtilsKt.getPxToDp(i14) > 20.0f ? 1 : (SizeUtilsKt.getPxToDp(i14) == 20.0f ? 0 : -1));
+            setPadding(i15 > 0 ? SizeUtilsKt.getDpToPx(8) : SizeUtilsKt.getDpToPx(4), 0, i15 > 0 ? SizeUtilsKt.getDpToPx(8) : SizeUtilsKt.getDpToPx(4), 0);
             setBackgroundColor(i13);
             ViewClippingUtilsKt.clipToCircle(this);
             q.g(u0.a(this, new Runnable() { 
@@ -308,7 +296,7 @@ public final class OverlappingCirclesView extends LinearLayout {
             View overflowItem = new OverflowItem(context5, items.size() - i10, this.overflowTextSizePx, this.overflowTextColor, this.overflowBgColor, getLayoutParams().height);
             LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(-2, -1);
             layoutParams2.setMarginStart(this.overlapNegativeMargin);
-            Unit unit = Unit.f21210a;
+            Unit unit = Unit.f21213a;
             addView(overflowItem, layoutParams2);
         }
     }

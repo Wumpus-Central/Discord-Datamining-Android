@@ -108,7 +108,7 @@ public final class EmbedFooter {
             z10 = true;
         }
         if (z10) {
-            output.B(serialDesc, 0, a2.f29755a, self.iconURL);
+            output.B(serialDesc, 0, a2.f29758a, self.iconURL);
         }
         if (!output.z(serialDesc, 1) && self.iconProxyURL == null) {
             z11 = false;
@@ -116,13 +116,13 @@ public final class EmbedFooter {
             z11 = true;
         }
         if (z11) {
-            output.B(serialDesc, 1, a2.f29755a, self.iconProxyURL);
+            output.B(serialDesc, 1, a2.f29758a, self.iconProxyURL);
         }
         if (output.z(serialDesc, 2) || self.content != null) {
             z12 = true;
         }
         if (z12) {
-            output.B(serialDesc, 2, a2.f29755a, self.content);
+            output.B(serialDesc, 2, a2.f29758a, self.content);
         }
     }
 

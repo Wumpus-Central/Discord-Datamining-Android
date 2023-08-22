@@ -1,6 +1,7 @@
 package com.discord.chat.presentation.message.view;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.content.res.Configuration;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.GradientDrawable;
@@ -9,6 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.TextView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.R;
 import com.discord.chat.databinding.MediaViewBinding;
 import com.discord.chat.presentation.message.view.media.ViewAttachedListener;
@@ -30,6 +34,7 @@ import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.react.uimanager.ThemedReactContext;
+import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -38,10 +43,14 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.l;
 
-@Metadata(d1 = {"\u0000\u0086\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\u0010\u0006\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0016\u0018\u00002\u00020\u0001B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\b\u0010)\u001a\u00020*H\u0014J\u0012\u0010+\u001a\u00020*2\b\u0010,\u001a\u0004\u0018\u00010-H\u0014J\u0010\u0010.\u001a\u00020*2\u0006\u0010/\u001a\u00020\u0012H\u0016J\b\u00100\u001a\u00020*H\u0002J\b\u00101\u001a\u00020*H\u0002J$\u00102\u001a\u000e\u0012\u0004\u0012\u00020\u001a\u0012\u0004\u0012\u00020\u001c032\u0006\u0010 \u001a\u00020!2\u0006\u00104\u001a\u00020\u0012H\u0002J\b\u00105\u001a\u00020*H\u0002J\b\u00106\u001a\u00020*H\u0002J\u0081\u0001\u00107\u001a\u00020*2\n\b\u0002\u0010 \u001a\u0004\u0018\u00010!2\b\b\u0002\u0010\"\u001a\u00020\u00122\b\b\u0002\u0010$\u001a\u00020\u00122\b\b\u0002\u0010#\u001a\u00020\u00122\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00182\b\b\u0002\u0010%\u001a\u00020\u00122\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\b\b\u0002\u0010\u0011\u001a\u00020\u00122\b\b\u0002\u0010\u0016\u001a\u00020\u00122\b\b\u0002\u0010\u0013\u001a\u00020\u0012¢\u0006\u0002\u00108J(\u00109\u001a\u00020*2\u0016\u0010:\u001a\u0012\u0012\u0006\u0012\u0004\u0018\u00010<\u0012\u0004\u0012\u00020*\u0018\u00010;2\b\u0010=\u001a\u0004\u0018\u00010>J\u0010\u0010?\u001a\u00020*2\u0006\u00101\u001a\u00020\u0012H\u0002R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u000b\u001a\u00020\fX\u0082\u0004¢\u0006\b\n\u0000\u0012\u0004\b\r\u0010\u000eR\u0010\u0010\u000f\u001a\u0004\u0018\u00010\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u0014\u001a\u0004\u0018\u00010\u0007X\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u0015R\u000e\u0010\u0016\u001a\u00020\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0017\u001a\u0004\u0018\u00010\u0018X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0019\u001a\u0004\u0018\u00010\u001aX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u001b\u001a\u0004\u0018\u00010\u001cX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u001d\u001a\u0004\u0018\u00010\u001eX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010 \u001a\u0004\u0018\u00010!X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\"\u001a\u00020\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010#\u001a\u00020\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010$\u001a\u00020\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010%\u001a\u00020\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u0018\u0010&\u001a\u00020\u0012*\u00020!8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b'\u0010(¨\u0006@"}, d2 = {"Lcom/discord/chat/presentation/message/view/MediaView;", "Landroid/widget/FrameLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "attachStateChangeListener", "Lcom/discord/chat/presentation/message/view/media/ViewAttachedListener;", "binding", "Lcom/discord/chat/databinding/MediaViewBinding;", "getBinding$annotations", "()V", "managerModule", "Lcom/discord/media_player/MediaPlayerManagerModule;", "mediaCanPlayInline", "", "mediaHidePlayButton", "mediaOrientation", "Ljava/lang/Integer;", "mediaPlayThirdParty", "mediaPlaybackState", "Lcom/discord/media_player/MediaPlayer$Event;", "mediaPlayer", "Lcom/discord/media_player/MediaPlayer;", "mediaPlayerView", "Lcom/discord/media_player/MediaPlayerView;", "mediaPortalEvent", "Lcom/discord/portals/PortalViewContextManager$Event;", "mediaShouldResume", "mediaSource", "Lcom/discord/media_player/MediaSource;", "mediaViewDetached", "mediaViewFocused", "mediaViewScrolling", "mediaVolumeOn", "shouldShowGifIndicator", "getShouldShowGifIndicator", "(Lcom/discord/media_player/MediaSource;)Z", "onAttachedToWindow", "", "onConfigurationChanged", "newConfig", "Landroid/content/res/Configuration;", "onWindowFocusChanged", "hasWindowFocus", "pause", "play", "prepareMediaPlayer", "Lkotlin/Pair;", "loopMedia", "registerForPortal", "releasePlayer", "setMediaData", "(Lcom/discord/media_player/MediaSource;ZZZLcom/discord/media_player/MediaPlayer$Event;ZLjava/lang/Integer;Lcom/discord/portals/PortalViewContextManager$Event;ZZZ)V", "setOnMediaClickListeners", "onClickListener", "Lkotlin/Function1;", "", "onLongClickListener", "Landroid/view/View$OnLongClickListener;", "togglePortalControl", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000\u0096\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\u0010\u0006\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\b\u0016\u0018\u00002\u00020\u0001B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\b\u0010/\u001a\u000200H\u0014J\u0012\u00101\u001a\u0002002\b\u00102\u001a\u0004\u0018\u000103H\u0014J\u0010\u00104\u001a\u0002002\u0006\u00105\u001a\u00020\u0019H\u0016J\b\u00106\u001a\u000200H\u0002J\b\u00107\u001a\u000200H\u0002J$\u00108\u001a\u000e\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u00020\"092\u0006\u0010&\u001a\u00020'2\u0006\u0010:\u001a\u00020\u0019H\u0002J\b\u0010;\u001a\u000200H\u0002J\b\u0010<\u001a\u000200H\u0002J±\u0001\u0010=\u001a\u0002002\n\b\u0002\u0010&\u001a\u0004\u0018\u00010'2\b\b\u0002\u0010(\u001a\u00020\u00192\b\b\u0002\u0010*\u001a\u00020\u00192\b\b\u0002\u0010)\u001a\u00020\u00192\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\b\b\u0002\u0010+\u001a\u00020\u00192\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010#\u001a\u0004\u0018\u00010$2\b\b\u0002\u0010\u0018\u001a\u00020\u00192\b\b\u0002\u0010\u001c\u001a\u00020\u00192\b\b\u0002\u0010\u001a\u001a\u00020\u00192\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00102\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010>J(\u0010?\u001a\u0002002\u0016\u0010@\u001a\u0012\u0012\u0006\u0012\u0004\u0018\u00010B\u0012\u0004\u0012\u000200\u0018\u00010A2\b\u0010C\u001a\u0004\u0018\u00010DJ=\u0010E\u001a\u0002002\u0006\u0010F\u001a\u00020\u00192\b\u0010G\u001a\u0004\u0018\u00010\u00102\b\u0010H\u001a\u0004\u0018\u00010\u000e2\b\u0010I\u001a\u0004\u0018\u00010\u00072\b\u0010J\u001a\u0004\u0018\u00010\u0007H\u0002¢\u0006\u0002\u0010KJ\u0010\u0010L\u001a\u0002002\u0006\u00107\u001a\u00020\u0019H\u0002R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u0012\u0010\u000b\u001a\u0004\u0018\u00010\u0007X\u0082\u000e¢\u0006\u0004\n\u0002\u0010\fR\u0010\u0010\r\u001a\u0004\u0018\u00010\u000eX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u000f\u001a\u0004\u0018\u00010\u0010X\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u0011\u001a\u0004\u0018\u00010\u0007X\u0082\u000e¢\u0006\u0004\n\u0002\u0010\fR\u0014\u0010\u0012\u001a\u00020\u0013X\u0082\u0004¢\u0006\b\n\u0000\u0012\u0004\b\u0014\u0010\u0015R\u0010\u0010\u0016\u001a\u0004\u0018\u00010\u0017X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u0019X\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u001b\u001a\u0004\u0018\u00010\u0007X\u0082\u000e¢\u0006\u0004\n\u0002\u0010\fR\u000e\u0010\u001c\u001a\u00020\u0019X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u001d\u001a\u0004\u0018\u00010\u001eX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u001f\u001a\u0004\u0018\u00010 X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010!\u001a\u0004\u0018\u00010\"X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010#\u001a\u0004\u0018\u00010$X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010%\u001a\u00020\u0019X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010&\u001a\u0004\u0018\u00010'X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010(\u001a\u00020\u0019X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010)\u001a\u00020\u0019X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010*\u001a\u00020\u0019X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010+\u001a\u00020\u0019X\u0082\u000e¢\u0006\u0002\n\u0000R\u0018\u0010,\u001a\u00020\u0019*\u00020'8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b-\u0010.¨\u0006M"}, d2 = {"Lcom/discord/chat/presentation/message/view/MediaView;", "Landroid/widget/FrameLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "attachStateChangeListener", "Lcom/discord/chat/presentation/message/view/media/ViewAttachedListener;", "attachmentTagBackgroundColor", "Ljava/lang/Integer;", "attachmentTagIcon", "Lcom/discord/react_asset_fetcher/ReactAsset;", "attachmentTagText", "", "attachmentTagTextColor", "binding", "Lcom/discord/chat/databinding/MediaViewBinding;", "getBinding$annotations", "()V", "managerModule", "Lcom/discord/media_player/MediaPlayerManagerModule;", "mediaCanPlayInline", "", "mediaHidePlayButton", "mediaOrientation", "mediaPlayThirdParty", "mediaPlaybackState", "Lcom/discord/media_player/MediaPlayer$Event;", "mediaPlayer", "Lcom/discord/media_player/MediaPlayer;", "mediaPlayerView", "Lcom/discord/media_player/MediaPlayerView;", "mediaPortalEvent", "Lcom/discord/portals/PortalViewContextManager$Event;", "mediaShouldResume", "mediaSource", "Lcom/discord/media_player/MediaSource;", "mediaViewDetached", "mediaViewFocused", "mediaViewScrolling", "mediaVolumeOn", "shouldShowGifIndicator", "getShouldShowGifIndicator", "(Lcom/discord/media_player/MediaSource;)Z", "onAttachedToWindow", "", "onConfigurationChanged", "newConfig", "Landroid/content/res/Configuration;", "onWindowFocusChanged", "hasWindowFocus", "pause", "play", "prepareMediaPlayer", "Lkotlin/Pair;", "loopMedia", "registerForPortal", "releasePlayer", "setMediaData", "(Lcom/discord/media_player/MediaSource;ZZZLcom/discord/media_player/MediaPlayer$Event;ZLjava/lang/Integer;Lcom/discord/portals/PortalViewContextManager$Event;ZZZLjava/lang/String;Lcom/discord/react_asset_fetcher/ReactAsset;Ljava/lang/Integer;Ljava/lang/Integer;)V", "setOnMediaClickListeners", "onClickListener", "Lkotlin/Function1;", "", "onLongClickListener", "Landroid/view/View$OnLongClickListener;", "setupTag", "isTagVisible", "content", "icon", ViewProps.BACKGROUND_COLOR, "textColor", "(ZLjava/lang/String;Lcom/discord/react_asset_fetcher/ReactAsset;Ljava/lang/Integer;Ljava/lang/Integer;)V", "togglePortalControl", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
 public class MediaView extends FrameLayout {
     private final ViewAttachedListener attachStateChangeListener;
+    private Integer attachmentTagBackgroundColor;
+    private ReactAsset attachmentTagIcon;
+    private String attachmentTagText;
+    private Integer attachmentTagTextColor;
     private final MediaViewBinding binding;
     private final MediaPlayerManagerModule managerModule;
     private boolean mediaCanPlayInline;
@@ -177,7 +186,7 @@ public class MediaView extends FrameLayout {
         MediaPlayer mediaPlayer = this.mediaPlayer;
         if (mediaPlayer != null) {
             mediaPlayer.reset();
-            Unit unit = Unit.f21210a;
+            Unit unit = Unit.f21213a;
             this.mediaPlayer = null;
         }
         MediaPlayerView mediaPlayerView = this.mediaPlayerView;
@@ -186,9 +195,9 @@ public class MediaView extends FrameLayout {
         }
     }
 
-    public static  void setMediaData$default(MediaView mediaView, MediaSource mediaSource, boolean z10, boolean z11, boolean z12, MediaPlayer.Event event, boolean z13, Integer num, PortalViewContextManager.Event event2, boolean z14, boolean z15, boolean z16, int i10, Object obj) {
+    public static  void setMediaData$default(MediaView mediaView, MediaSource mediaSource, boolean z10, boolean z11, boolean z12, MediaPlayer.Event event, boolean z13, Integer num, PortalViewContextManager.Event event2, boolean z14, boolean z15, boolean z16, String str, ReactAsset reactAsset, Integer num2, Integer num3, int i10, Object obj) {
         if (obj == null) {
-            mediaView.setMediaData((i10 & 1) != 0 ? mediaView.mediaSource : mediaSource, (i10 & 2) != 0 ? mediaView.mediaViewDetached : z10, (i10 & 4) != 0 ? mediaView.mediaViewScrolling : z11, (i10 & 8) != 0 ? mediaView.mediaViewFocused : z12, (i10 & 16) != 0 ? mediaView.mediaPlaybackState : event, (i10 & 32) != 0 ? mediaView.mediaVolumeOn : z13, (i10 & 64) != 0 ? mediaView.mediaOrientation : num, (i10 & 128) != 0 ? mediaView.mediaPortalEvent : event2, (i10 & 256) != 0 ? mediaView.mediaCanPlayInline : z14, (i10 & 512) != 0 ? mediaView.mediaPlayThirdParty : z15, (i10 & 1024) != 0 ? mediaView.mediaHidePlayButton : z16);
+            mediaView.setMediaData((i10 & 1) != 0 ? mediaView.mediaSource : mediaSource, (i10 & 2) != 0 ? mediaView.mediaViewDetached : z10, (i10 & 4) != 0 ? mediaView.mediaViewScrolling : z11, (i10 & 8) != 0 ? mediaView.mediaViewFocused : z12, (i10 & 16) != 0 ? mediaView.mediaPlaybackState : event, (i10 & 32) != 0 ? mediaView.mediaVolumeOn : z13, (i10 & 64) != 0 ? mediaView.mediaOrientation : num, (i10 & 128) != 0 ? mediaView.mediaPortalEvent : event2, (i10 & 256) != 0 ? mediaView.mediaCanPlayInline : z14, (i10 & 512) != 0 ? mediaView.mediaPlayThirdParty : z15, (i10 & 1024) != 0 ? mediaView.mediaHidePlayButton : z16, (i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? mediaView.attachmentTagText : str, (i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? mediaView.attachmentTagIcon : reactAsset, (i10 & 8192) != 0 ? mediaView.attachmentTagBackgroundColor : num2, (i10 & 16384) != 0 ? mediaView.attachmentTagTextColor : num3);
             return;
         }
         throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setMediaData");
@@ -245,6 +254,50 @@ public class MediaView extends FrameLayout {
         function1.invoke(d10);
     }
 
+    private final void setupTag(boolean z10, String str, ReactAsset reactAsset, Integer num, Integer num2) {
+        int i10;
+        boolean z11;
+        int i11;
+        ConstraintLayout setupTag$lambda$8 = this.binding.attachmentTag;
+        q.g(setupTag$lambda$8, "setupTag$lambda$8");
+        if (z10) {
+            i10 = 0;
+        } else {
+            i10 = 8;
+        }
+        setupTag$lambda$8.setVisibility(i10);
+        if (num != null) {
+            setupTag$lambda$8.setBackgroundTintList(ColorStateList.valueOf(num.intValue()));
+        }
+        ConstraintLayout constraintLayout = this.binding.attachmentTag;
+        q.g(constraintLayout, "binding.attachmentTag");
+        if (constraintLayout.getVisibility() == 0) {
+            z11 = true;
+        } else {
+            z11 = false;
+        }
+        if (z11) {
+            if (num2 != null) {
+                i11 = num2.intValue();
+            } else {
+                i11 = R.color.white_500;
+            }
+            SimpleDraweeView setupTag$lambda$9 = this.binding.attachmentTagIcon;
+            if (reactAsset != null) {
+                q.g(setupTag$lambda$9, "setupTag$lambda$9");
+                setupTag$lambda$9.setVisibility(0);
+                ReactAssetUtilsKt.setReactAsset(setupTag$lambda$9, reactAsset);
+                ColorUtilsKt.setTintColor(setupTag$lambda$9, Integer.valueOf(i11));
+            } else {
+                q.g(setupTag$lambda$9, "setupTag$lambda$9");
+                setupTag$lambda$9.setVisibility(8);
+            }
+            TextView textView = this.binding.attachmentTagText;
+            textView.setTextColor(i11);
+            textView.setText(str);
+        }
+    }
+
     private final void togglePortalControl(boolean z10) {
         Double portal;
         MediaSource mediaSource = this.mediaSource;
@@ -272,13 +325,13 @@ public class MediaView extends FrameLayout {
         } else {
             num = null;
         }
-        setMediaData$default(this, null, false, false, false, null, false, num, null, false, false, false, 1983, null);
+        setMediaData$default(this, null, false, false, false, null, false, num, null, false, false, false, null, null, null, null, 32703, null);
     }
 
     @Override 
     public void onWindowFocusChanged(boolean z10) {
         super.onWindowFocusChanged(z10);
-        setMediaData$default(this, null, false, false, z10, null, false, null, null, false, false, false, 2039, null);
+        setMediaData$default(this, null, false, false, z10, null, false, null, null, false, false, false, null, null, null, null, 32759, null);
     }
 
     
@@ -315,9 +368,12 @@ public class MediaView extends FrameLayout {
     
     
     
-    public final void setMediaData(final com.discord.media_player.MediaSource r23, boolean r24, boolean r25, boolean r26, com.discord.media_player.MediaPlayer.Event r27, final boolean r28, java.lang.Integer r29, com.discord.portals.PortalViewContextManager.Event r30, boolean r31, boolean r32, boolean r33) {
+    
+    
+    
+    public final void setMediaData(final com.discord.media_player.MediaSource r25, boolean r26, boolean r27, boolean r28, com.discord.media_player.MediaPlayer.Event r29, final boolean r30, java.lang.Integer r31, com.discord.portals.PortalViewContextManager.Event r32, boolean r33, boolean r34, boolean r35, java.lang.String r36, com.discord.react_asset_fetcher.ReactAsset r37, java.lang.Integer r38, java.lang.Integer r39) {
         
-        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.MediaView.setMediaData(com.discord.media_player.MediaSource, boolean, boolean, boolean, com.discord.media_player.MediaPlayer$Event, boolean, java.lang.Integer, com.discord.portals.PortalViewContextManager$Event, boolean, boolean, boolean):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.MediaView.setMediaData(com.discord.media_player.MediaSource, boolean, boolean, boolean, com.discord.media_player.MediaPlayer$Event, boolean, java.lang.Integer, com.discord.portals.PortalViewContextManager$Event, boolean, boolean, boolean, java.lang.String, com.discord.react_asset_fetcher.ReactAsset, java.lang.Integer, java.lang.Integer):void");
     }
 
     public final void setOnMediaClickListeners(final Function1<? super Double, Unit> function1, View.OnLongClickListener onLongClickListener) {

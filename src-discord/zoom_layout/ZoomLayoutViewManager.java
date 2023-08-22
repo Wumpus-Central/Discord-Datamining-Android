@@ -70,7 +70,7 @@ public final class ZoomLayoutViewManager extends ViewGroupManager<ZoomLayoutFixe
         q.h(reactContext, "reactContext");
         final ZoomLayoutFixed zoomLayoutFixed = new ZoomLayoutFixed(reactContext, null, 0, 6, null);
         final Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
-        ref$ObjectRef.f21237j = UIManagerHelper.getEventDispatcherForReactTag(reactContext, zoomLayoutFixed.getId());
+        ref$ObjectRef.f21240j = UIManagerHelper.getEventDispatcherForReactTag(reactContext, zoomLayoutFixed.getId());
         zoomLayoutFixed.setOverScrollHorizontal(false);
         zoomLayoutFixed.setOverScrollVertical(false);
         zoomLayoutFixed.setOverPinchable(false);
@@ -84,7 +84,7 @@ public final class ZoomLayoutViewManager extends ViewGroupManager<ZoomLayoutFixe
             public void onUpdate(ZoomEngine engine, Matrix matrix) {
                 q.h(engine, "engine");
                 q.h(matrix, "matrix");
-                ZoomLayoutViewManager.this.getReactEvents$zoom_layout_release().emitEvent(ref$ObjectRef.f21237j, reactContext, zoomLayoutFixed, new OnZoomChangedEvent(zoomLayoutFixed.getZoom()));
+                ZoomLayoutViewManager.this.getReactEvents$zoom_layout_release().emitEvent(ref$ObjectRef.f21240j, reactContext, zoomLayoutFixed, new OnZoomChangedEvent(zoomLayoutFixed.getZoom()));
             }
         });
         return zoomLayoutFixed;

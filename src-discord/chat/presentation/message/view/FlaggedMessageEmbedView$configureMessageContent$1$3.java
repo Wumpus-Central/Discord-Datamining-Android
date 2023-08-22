@@ -18,7 +18,7 @@ final class FlaggedMessageEmbedView$configureMessageContent$1$3 extends s implem
     @Override 
     public   Unit invoke(String str, String str2, String str3) {
         invoke2(str, str2, str3);
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     

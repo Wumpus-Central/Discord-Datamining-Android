@@ -72,7 +72,6 @@
         </provider>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode" android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.discord.main.MainActivity" android:supportsPictureInPicture="true" android:windowSoftInputMode="adjustResize">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
             <intent-filter android:autoVerify="true">
@@ -143,6 +142,24 @@
             </intent-filter>
             <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
         </activity>
+        <activity-alias android:enabled="true" android:exported="true" android:name="com.discord.main.MainDefault" android:targetActivity="com.discord.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_inverted" android:name="com.discord.main.MainBrandInverted" android:roundIcon="@mipmap/brand_inverted_round" android:targetActivity="com.discord.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_inverted_yellow" android:name="com.discord.main.MainBrandInvertedYellow" android:roundIcon="@mipmap/brand_inverted_yellow_round" android:targetActivity="com.discord.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
         <service android:foregroundServiceType="camera|mediaProjection|microphone|phoneCall" android:name="com.discord.foreground_service.ForegroundService"/>
         <service android:exported="false" android:name="com.discord.notifications.fcm.MessagingService">
             <intent-filter>

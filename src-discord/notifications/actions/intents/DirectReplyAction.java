@@ -194,7 +194,7 @@ public final class DirectReplyAction implements NotificationAction {
             bundle.putInt("channelType", num.intValue());
         }
         bundle.putString("guildName", this.guildName);
-        HeadlessTasks.Companion.startHeadlessTask$default(companion, context, "DirectReply", 0L, false, bundle, true, 12, null);
+        companion.startHeadlessTask(context, "DirectReply", (r18 & 4) != 0 ? HeadlessTasks.TASK_TIMEOUT_DEFAULT : 0L, (r18 & 8) != 0, (r18 & 16) != 0 ? new Bundle() : bundle, (r18 & 32) != 0 ? false : true);
     }
 
     @Override 

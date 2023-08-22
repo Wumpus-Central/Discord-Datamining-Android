@@ -57,9 +57,9 @@ public final class GiftEmbed$Resolved$Valid$$serializer implements f0<GiftEmbed.
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29755a;
-        m0 m0Var = m0.f29830a;
-        return new KSerializer[]{a2Var, m0Var, m0Var, m0Var, a.u(a2Var), a.u(a2Var), m0Var, a.u(a2Var), m0Var, a.u(a2Var), m0Var, a.u(a2Var), m0Var, m0Var, a.u(a2Var), e0.f29780a, h.f29797a, a2Var};
+        a2 a2Var = a2.f29758a;
+        m0 m0Var = m0.f29833a;
+        return new KSerializer[]{a2Var, m0Var, m0Var, m0Var, a.u(a2Var), a.u(a2Var), m0Var, a.u(a2Var), m0Var, a.u(a2Var), m0Var, a.u(a2Var), m0Var, m0Var, a.u(a2Var), e0.f29783a, h.f29800a, a2Var};
     }
 
     @Override 
@@ -93,7 +93,7 @@ public final class GiftEmbed$Resolved$Valid$$serializer implements f0<GiftEmbed.
             i17 = b10.i(descriptor2, 1);
             i16 = b10.i(descriptor2, 2);
             i15 = b10.i(descriptor2, 3);
-            a2 a2Var = a2.f29755a;
+            a2 a2Var = a2.f29758a;
             obj4 = b10.n(descriptor2, 4, a2Var, null);
             obj5 = b10.n(descriptor2, 5, a2Var, null);
             i14 = b10.i(descriptor2, 6);
@@ -158,12 +158,12 @@ public final class GiftEmbed$Resolved$Valid$$serializer implements f0<GiftEmbed.
                         i19 = 8;
                         i20 = 17;
                     case 4:
-                        obj4 = b10.n(descriptor2, 4, a2.f29755a, obj4);
+                        obj4 = b10.n(descriptor2, 4, a2.f29758a, obj4);
                         i21 |= 16;
                         i19 = 8;
                         i20 = 17;
                     case 5:
-                        obj7 = b10.n(descriptor2, 5, a2.f29755a, obj7);
+                        obj7 = b10.n(descriptor2, 5, a2.f29758a, obj7);
                         i21 |= 32;
                         i19 = 8;
                         i20 = 17;
@@ -175,7 +175,7 @@ public final class GiftEmbed$Resolved$Valid$$serializer implements f0<GiftEmbed.
                         i20 = 17;
                     case 7:
                         c10 = 7;
-                        obj8 = b10.n(descriptor2, 7, a2.f29755a, obj8);
+                        obj8 = b10.n(descriptor2, 7, a2.f29758a, obj8);
                         i21 |= 128;
                         i19 = 8;
                         i20 = 17;
@@ -184,7 +184,7 @@ public final class GiftEmbed$Resolved$Valid$$serializer implements f0<GiftEmbed.
                         i21 |= 256;
                         i20 = 17;
                     case 9:
-                        obj10 = b10.n(descriptor2, 9, a2.f29755a, obj10);
+                        obj10 = b10.n(descriptor2, 9, a2.f29758a, obj10);
                         i21 |= 512;
                         i19 = 8;
                         i20 = 17;
@@ -194,7 +194,7 @@ public final class GiftEmbed$Resolved$Valid$$serializer implements f0<GiftEmbed.
                         i19 = 8;
                         i20 = 17;
                     case 11:
-                        obj11 = b10.n(descriptor2, 11, a2.f29755a, obj11);
+                        obj11 = b10.n(descriptor2, 11, a2.f29758a, obj11);
                         i21 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         i19 = 8;
                         i20 = 17;
@@ -209,7 +209,7 @@ public final class GiftEmbed$Resolved$Valid$$serializer implements f0<GiftEmbed.
                         i19 = 8;
                         i20 = 17;
                     case 14:
-                        obj9 = b10.n(descriptor2, 14, a2.f29755a, obj9);
+                        obj9 = b10.n(descriptor2, 14, a2.f29758a, obj9);
                         i21 |= 16384;
                         i19 = 8;
                         i20 = 17;

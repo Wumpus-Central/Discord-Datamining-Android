@@ -20,7 +20,7 @@ public final class BuildOverrideCookieBuild {
     public static final Companion Companion = new Companion(null);
 
     
-    private final String f7226id;
+    private final String f7227id;
     private final String type;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/bundle_updater/BuildOverrideCookieBuild$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/bundle_updater/BuildOverrideCookieBuild;", "bundle_updater_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -43,7 +43,7 @@ public final class BuildOverrideCookieBuild {
             n1.b(i10, 3, BuildOverrideCookieBuild$$serializer.INSTANCE.getDescriptor());
         }
         this.type = str;
-        this.f7226id = str2;
+        this.f7227id = str2;
     }
 
     public static  BuildOverrideCookieBuild copy$default(BuildOverrideCookieBuild buildOverrideCookieBuild, String str, String str2, int i10, Object obj) {
@@ -51,7 +51,7 @@ public final class BuildOverrideCookieBuild {
             str = buildOverrideCookieBuild.type;
         }
         if ((i10 & 2) != 0) {
-            str2 = buildOverrideCookieBuild.f7226id;
+            str2 = buildOverrideCookieBuild.f7227id;
         }
         return buildOverrideCookieBuild.copy(str, str2);
     }
@@ -61,7 +61,7 @@ public final class BuildOverrideCookieBuild {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         output.x(serialDesc, 0, self.type);
-        output.x(serialDesc, 1, self.f7226id);
+        output.x(serialDesc, 1, self.f7227id);
     }
 
     public final String component1() {
@@ -69,7 +69,7 @@ public final class BuildOverrideCookieBuild {
     }
 
     public final String component2() {
-        return this.f7226id;
+        return this.f7227id;
     }
 
     public final BuildOverrideCookieBuild copy(String type, String id2) {
@@ -86,11 +86,11 @@ public final class BuildOverrideCookieBuild {
             return false;
         }
         BuildOverrideCookieBuild buildOverrideCookieBuild = (BuildOverrideCookieBuild) obj;
-        return q.c(this.type, buildOverrideCookieBuild.type) && q.c(this.f7226id, buildOverrideCookieBuild.f7226id);
+        return q.c(this.type, buildOverrideCookieBuild.type) && q.c(this.f7227id, buildOverrideCookieBuild.f7227id);
     }
 
     public final String getId() {
-        return this.f7226id;
+        return this.f7227id;
     }
 
     public final String getType() {
@@ -98,16 +98,16 @@ public final class BuildOverrideCookieBuild {
     }
 
     public int hashCode() {
-        return (this.type.hashCode() * 31) + this.f7226id.hashCode();
+        return (this.type.hashCode() * 31) + this.f7227id.hashCode();
     }
 
     public final WritableNativeMap toNativeMap() {
-        return NativeMapExtensionsKt.nativeMapOf(x.a("type", this.type), x.a("id", this.f7226id));
+        return NativeMapExtensionsKt.nativeMapOf(x.a("type", this.type), x.a("id", this.f7227id));
     }
 
     public String toString() {
         String str = this.type;
-        String str2 = this.f7226id;
+        String str2 = this.f7227id;
         return "BuildOverrideCookieBuild(type=" + str + ", id=" + str2 + ")";
     }
 
@@ -115,6 +115,6 @@ public final class BuildOverrideCookieBuild {
         q.h(type, "type");
         q.h(id2, "id");
         this.type = type;
-        this.f7226id = id2;
+        this.f7227id = id2;
     }
 }

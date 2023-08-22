@@ -20,7 +20,7 @@ public final class TextUtilsKt$toSpannable$6 extends s implements Function1<Comm
     @Override 
     public   Unit invoke(CommandMentionContentNode commandMentionContentNode) {
         invoke2(commandMentionContentNode);
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     

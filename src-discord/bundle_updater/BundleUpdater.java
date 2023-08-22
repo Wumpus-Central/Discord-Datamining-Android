@@ -283,7 +283,7 @@ public final class BundleUpdater {
             q.h(output, "output");
             q.h(serialDesc, "serialDesc");
             output.x(serialDesc, 0, self.name);
-            output.o(serialDesc, 1, new wi.f(a2.f29755a), self.tags);
+            output.o(serialDesc, 1, new wi.f(a2.f29758a), self.tags);
         }
 
         public final String component1() {
@@ -581,23 +581,14 @@ public final class BundleUpdater {
 
     
     private final OtaResult downloadOtaFiles(final String str, final AppManifest appManifest, String str2) {
-        AppManifest appManifest2;
         final String D;
         boolean M;
         ArrayList arrayList;
         final Patch patch;
-        File file;
-        File file2;
         ArrayList arrayList2;
         Future<?> future;
-        AppManifest manifestFromAsset = BundleUpdaterUtilsKt.getManifestFromAsset(this.assetManager, "manifest.json");
         Object obj = null;
-        if (str != null) {
-            appManifest2 = BundleUpdaterUtils.INSTANCE.getManifestFromFile(otaFile(str, "manifest.json"));
-        } else {
-            appManifest2 = null;
-        }
-        List<Pair<String, AssetStatus>> compareJSONData = BundleUpdaterUtils.INSTANCE.compareJSONData(manifestFromAsset, appManifest2, appManifest);
+        List<Pair<String, AssetStatus>> compareJSONData = BundleUpdaterUtils.INSTANCE.compareJSONData(BundleUpdaterUtilsKt.getManifestFromAsset(this.assetManager, "manifest.json"), str != null ? BundleUpdaterUtils.INSTANCE.getManifestFromFile(otaFile(str, "manifest.json")) : null, appManifest);
         CrashReporting crashReporting = CrashReporting.INSTANCE;
         CrashReporting.addBreadcrumb$default(crashReporting, TAG + " - Found " + compareJSONData.size() + " files to copy or download...", null, null, 6, null);
         if (compareJSONData.isEmpty()) {
@@ -608,7 +599,7 @@ public final class BundleUpdater {
         Uri build = BASE_OTA_URI.buildUpon().appendPath("assets").appendPath("android").appendPath(str2).build();
         ArrayList<Future> arrayList3 = new ArrayList();
         Iterator<T> it = compareJSONData.iterator();
-        File file3 = null;
+        File file = null;
         while (it.hasNext()) {
             Pair pair = (Pair) it.next();
             final String str3 = (String) pair.a();
@@ -645,17 +636,13 @@ public final class BundleUpdater {
             }
             final File otaTempFile3 = otaTempFile(D);
             final File otaFile = otaFile(str2, D);
-            if (M) {
-                file = otaFile;
-            } else {
-                file = file3;
-            }
+            File file2 = M ? otaFile : file;
             if (otaFile.exists()) {
-                file2 = file;
+                file = file2;
                 arrayList2 = arrayList;
                 future = null;
             } else {
-                file2 = file;
+                file = file2;
                 arrayList2 = arrayList;
                 future = this.executor.submit(new Runnable() { 
                     @Override 
@@ -668,19 +655,15 @@ public final class BundleUpdater {
                 arrayList2.add(future);
             }
             arrayList3 = arrayList2;
-            file3 = file2;
             obj = null;
         }
         for (Future future2 : arrayList3) {
             future2.get();
         }
-        setBundleLocation(file3);
+        setBundleLocation(file);
         setInProgressOtaCommit(null);
         CrashReporting.addBreadcrumb$default(CrashReporting.INSTANCE, TAG + " - Done downloading OTA...", null, null, 6, null);
-        if (confirmUpdate) {
-            return OtaResult.SUCCESS_WITH_VERSION_REQUIRED;
-        }
-        return OtaResult.SUCCESS;
+        return confirmUpdate ? OtaResult.SUCCESS_WITH_VERSION_REQUIRED : OtaResult.SUCCESS;
     }
 
     public static final void downloadOtaFiles$lambda$18$lambda$17(AssetStatus assetStatus, BundleUpdater this$0, String str, String localFileString, File tempAsset, Uri uri, AppManifest newManifest, String fileString, Patch patch, File dstAsset) {
@@ -892,7 +875,7 @@ public final class BundleUpdater {
     }
 
     public final Cookie getBuildOverrideCookie() {
-        return Cookie.f25439n.c(BASE_OTA_URL, getBuildOverrideCookieHeader());
+        return Cookie.f25442n.c(BASE_OTA_URL, getBuildOverrideCookieHeader());
     }
 
     public final String getBuildOverrideCookieHeader() {

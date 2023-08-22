@@ -29,7 +29,7 @@ public final class MessageId$$serializer implements f0<MessageId> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f29755a};
+        return new KSerializer[]{a2.f29758a};
     }
 
     @Override 

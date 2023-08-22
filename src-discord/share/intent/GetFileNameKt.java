@@ -20,10 +20,10 @@ public final class GetFileNameKt {
         q.h(uri, "uri");
         String[] strArr = {"_display_name"};
         try {
-            s.a aVar = s.f20299k;
+            s.a aVar = s.f20302k;
             obj = s.b(contentResolver.query(uri, strArr, null, null, null));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f20299k;
+            s.a aVar2 = s.f20302k;
             obj = s.b(t.a(th2));
         }
         String str2 = null;

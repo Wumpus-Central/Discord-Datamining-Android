@@ -53,22 +53,6 @@ public final class PortalViewContextManager {
     private PortalViewContextManager() {
     }
 
-    public static  void addPortal$default(PortalViewContextManager portalViewContextManager, double d10, View view, Function1 function1, Function1 function12, Function1 function13, Function1 function14, int i10, Object obj) {
-        PortalViewContextManager$addPortal$1 portalViewContextManager$addPortal$1;
-        PortalViewContextManager$addPortal$2 portalViewContextManager$addPortal$2;
-        if ((i10 & 8) != 0) {
-            portalViewContextManager$addPortal$1 = PortalViewContextManager$addPortal$1.INSTANCE;
-        } else {
-            portalViewContextManager$addPortal$1 = function12;
-        }
-        if ((i10 & 16) != 0) {
-            portalViewContextManager$addPortal$2 = PortalViewContextManager$addPortal$2.INSTANCE;
-        } else {
-            portalViewContextManager$addPortal$2 = function13;
-        }
-        portalViewContextManager.addPortal(d10, view, function1, portalViewContextManager$addPortal$1, portalViewContextManager$addPortal$2, function14);
-    }
-
     public final void addPortal(double d10, View view, Function1<? super View, Unit> removeViewFromParent, Function1<? super View, Unit> onViewAddedToPortal, Function1<? super View, Unit> onViewRemovedFromPortal, Function1<? super View, Unit> returnViewToParent) {
         kotlin.jvm.internal.q.h(view, "view");
         kotlin.jvm.internal.q.h(removeViewFromParent, "removeViewFromParent");

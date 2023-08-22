@@ -20,7 +20,7 @@ public  class MessageAccessoriesAdapter$onCreateViewHolder$3 extends n implement
     @Override 
     public   Unit invoke(MessageId messageId) {
         m214invoke1xi1bu0(messageId.m615unboximpl());
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     

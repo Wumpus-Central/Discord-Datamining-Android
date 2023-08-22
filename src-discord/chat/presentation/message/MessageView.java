@@ -574,6 +574,8 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     }
 
     public final void setMessage(final Message message, MessageContext messageContext, MessageFrame messageFrame, ChatEventHandler eventHandler, ComponentProvider componentProvider, Function0<? extends ChainPart> onChainPart, boolean z10, boolean z11, boolean z12) {
+        boolean z13;
+        View.OnClickListener onClickListener;
         q.h(message, "message");
         q.h(messageContext, "messageContext");
         q.h(eventHandler, "eventHandler");
@@ -601,7 +603,14 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         }
         configureAuthor(message, eventHandler, chainPart);
         configureDivider(messageContext.getShowDivider());
-        this.binding.threadStarterHeader.configure(message.getThreadStarterMessageHeader(), message.getReferencedMessage() != null);
+        String threadStarterMessageHeader = message.getThreadStarterMessageHeader();
+        ThreadStarterMessageHeaderView threadStarterMessageHeaderView = this.binding.threadStarterHeader;
+        if (message.getReferencedMessage() != null) {
+            z13 = true;
+        } else {
+            z13 = false;
+        }
+        threadStarterMessageHeaderView.configure(threadStarterMessageHeader, z13);
         MessageHighlightHeader messageHighlightHeader = this.binding.highlightHeader;
         q.g(messageHighlightHeader, "binding.highlightHeader");
         if (z11) {
@@ -619,12 +628,16 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         }
         final Function2<MessageId, ChannelId, Unit> onMessageTapped = eventHandler.getOnMessageTapped();
         View.OnLongClickListener onLongClickListener = null;
-        View.OnClickListener mVar = onMessageTapped != null ? new View.OnClickListener() { 
-            @Override 
-            public final void onClick(View view) {
-                MessageView.setMessage$lambda$1$lambda$0(Function2.this, message, view);
-            }
-        } : null;
+        if (onMessageTapped != null) {
+            onClickListener = new View.OnClickListener() { 
+                @Override 
+                public final void onClick(View view) {
+                    MessageView.setMessage$lambda$1$lambda$0(Function2.this, message, view);
+                }
+            };
+        } else {
+            onClickListener = null;
+        }
         final Function4<MessageId, ChannelId, Integer, MediaType, Unit> onMessageLongPressed = eventHandler.getOnMessageLongPressed();
         if (onMessageLongPressed != null) {
             onLongClickListener = new View.OnLongClickListener() { 
@@ -636,14 +649,14 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
                 }
             };
         }
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested(this, true, mVar);
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested(this, true, onClickListener);
         NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested(this, true, onLongClickListener);
         List<MessageAccessory> generateMessageAccessories = generateMessageAccessories(message, messageContext, messageFrame, eventHandler.getOnMessageLongPressed());
         this.binding.accessoriesView.m215setAccessoriesRC8ZMxU(message.m17getId3Eiw7ao(), message.m15getChannelIdo4g7jtM(), message.m16getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, componentProvider);
         configureAccessoriesMargin(generateMessageAccessories);
         configureCommunicationDisabled(q.c(message.getCommunicationDisabled(), Boolean.TRUE), chainPart);
         configureSuppressNotifications(MessageFlagKt.hasMessageFlag(Long.valueOf(message.getFlags()), MessageFlag.SUPPRESS_NOTIFICATIONS), eventHandler, chainPart);
-        this.binding.accessoriesView.setOnCurrentContentViewChanged(new MessageView$setMessage$4(this, message, mVar, onLongClickListener));
+        this.binding.accessoriesView.setOnCurrentContentViewChanged(new MessageView$setMessage$4(this, message, onClickListener, onLongClickListener));
     }
 
     @Override 

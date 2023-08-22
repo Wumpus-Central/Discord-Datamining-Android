@@ -33,7 +33,7 @@ public final class BuildOverrideCookieBuild$$serializer implements f0<BuildOverr
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29755a;
+        a2 a2Var = a2.f29758a;
         return new KSerializer[]{a2Var, a2Var};
     }
 

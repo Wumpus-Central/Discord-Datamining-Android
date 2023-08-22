@@ -68,10 +68,17 @@ public final class ChatView extends ReactViewGroup {
 
     
     public static final void attachPortalViewToChatList$lambda$5(View portalView, ChatView this$0, View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
+        boolean z10;
+        Pair<Integer, Integer> pair;
         q.h(portalView, "$portalView");
         q.h(this$0, "this$0");
-        boolean z10 = true;
-        if (portalView.getMeasuredHeight() > 0 && portalView.getMeasuredWidth() > 0) {
+        boolean z11 = true;
+        if (portalView.getMeasuredHeight() <= 0 || portalView.getMeasuredWidth() <= 0) {
+            z10 = false;
+        } else {
+            z10 = true;
+        }
+        if (z10) {
             ChatListView chatListView = this$0.chatList;
             ChatListView chatListView2 = null;
             if (chatListView == null) {
@@ -80,9 +87,13 @@ public final class ChatView extends ReactViewGroup {
             }
             if (!chatListView.isComputingLayout()) {
                 if (portalView.getMeasuredWidth() == portalView.getLayoutParams().width && portalView.getMeasuredHeight() == portalView.getLayoutParams().height) {
-                    z10 = false;
+                    z11 = false;
                 }
-                Pair<Integer, Integer> a10 = z10 ? x.a(Integer.valueOf(portalView.getMeasuredWidth()), Integer.valueOf(portalView.getMeasuredHeight())) : null;
+                if (z11) {
+                    pair = x.a(Integer.valueOf(portalView.getMeasuredWidth()), Integer.valueOf(portalView.getMeasuredHeight()));
+                } else {
+                    pair = null;
+                }
                 if (portalView.getParent() instanceof ChatView) {
                     ViewParent parent = portalView.getParent();
                     q.f(parent, "null cannot be cast to non-null type android.view.ViewGroup");
@@ -94,7 +105,7 @@ public final class ChatView extends ReactViewGroup {
                 } else {
                     chatListView2 = chatListView3;
                 }
-                chatListView2.setPortalView(portalView, a10);
+                chatListView2.setPortalView(portalView, pair);
             }
         }
     }

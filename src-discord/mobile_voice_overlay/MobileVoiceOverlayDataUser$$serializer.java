@@ -40,7 +40,7 @@ public final class MobileVoiceOverlayDataUser$$serializer implements f0<MobileVo
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{UserId$$serializer.INSTANCE, a.u(a2.f29755a), h.f29797a, m0.f29830a};
+        return new KSerializer[]{UserId$$serializer.INSTANCE, a.u(a2.f29758a), h.f29800a, m0.f29833a};
     }
 
     @Override 
@@ -55,7 +55,7 @@ public final class MobileVoiceOverlayDataUser$$serializer implements f0<MobileVo
         c b10 = decoder.b(descriptor2);
         if (b10.p()) {
             obj2 = b10.y(descriptor2, 0, UserId$$serializer.INSTANCE, null);
-            obj = b10.n(descriptor2, 1, a2.f29755a, null);
+            obj = b10.n(descriptor2, 1, a2.f29758a, null);
             z10 = b10.C(descriptor2, 2);
             i10 = b10.i(descriptor2, 3);
             i11 = 15;
@@ -74,7 +74,7 @@ public final class MobileVoiceOverlayDataUser$$serializer implements f0<MobileVo
                     obj3 = b10.y(descriptor2, 0, UserId$$serializer.INSTANCE, obj3);
                     i13 |= 1;
                 } else if (o10 == 1) {
-                    obj4 = b10.n(descriptor2, 1, a2.f29755a, obj4);
+                    obj4 = b10.n(descriptor2, 1, a2.f29758a, obj4);
                     i13 |= 2;
                 } else if (o10 == 2) {
                     z10 = b10.C(descriptor2, 2);

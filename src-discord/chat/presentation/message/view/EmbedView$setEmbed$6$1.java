@@ -22,7 +22,7 @@ final class EmbedView$setEmbed$6$1 extends s implements Function1<Double, Unit> 
     @Override 
     public   Unit invoke(Double d10) {
         invoke2(d10);
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     

@@ -25,7 +25,7 @@ public final class ChatViewEventHandler$onMessageTapped$1 extends s implements F
     @Override 
     public   Unit invoke(MessageId messageId, ChannelId channelId) {
         m356invokepfaIj0E(messageId.m615unboximpl(), channelId.m590unboximpl());
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     

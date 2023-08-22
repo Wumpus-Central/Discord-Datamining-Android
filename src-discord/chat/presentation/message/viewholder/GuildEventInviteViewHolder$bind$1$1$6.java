@@ -19,7 +19,7 @@ import kotlin.jvm.internal.q;
     @Override 
     public   Unit invoke(CommandMentionContentNode commandMentionContentNode) {
         invoke2(commandMentionContentNode);
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     

@@ -25,7 +25,7 @@ public final class ImageAttachmentView$setContent$2 extends s implements Functio
     @Override 
     public   Unit invoke(PipelineDraweeControllerBuilder pipelineDraweeControllerBuilder) {
         invoke2(pipelineDraweeControllerBuilder);
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     

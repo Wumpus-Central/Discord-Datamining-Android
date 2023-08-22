@@ -79,6 +79,9 @@
     <item type="id" name="alt_text_container" />
     <item type="id" name="alt_text_label" />
     <item type="id" name="ampm" />
+    <item type="id" name="attachment_tag" />
+    <item type="id" name="attachment_tag_icon" />
+    <item type="id" name="attachment_tag_text" />
     <item type="id" name="author_avatar" />
     <item type="id" name="author_avatar_decoration" />
     <item type="id" name="author_container" />

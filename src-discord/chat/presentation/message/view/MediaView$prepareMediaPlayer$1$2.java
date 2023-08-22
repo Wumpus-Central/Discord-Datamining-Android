@@ -21,10 +21,10 @@ public final class MediaView$prepareMediaPlayer$1$2 extends s implements Functio
     @Override 
     public   Unit invoke(Float f10) {
         invoke(f10.floatValue());
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     public final void invoke(float f10) {
-        MediaView.setMediaData$default(this.this$0, null, false, false, false, null, f10 > 0.0f, null, null, false, false, false, 2015, null);
+        MediaView.setMediaData$default(this.this$0, null, false, false, false, null, f10 > 0.0f, null, null, false, false, false, null, null, null, null, 32735, null);
     }
 }

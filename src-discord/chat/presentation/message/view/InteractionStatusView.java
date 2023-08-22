@@ -6,22 +6,10 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.bridge.interaction.InteractionStatus;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.databinding.InteractionStatusViewBinding;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.misc.utilities.view.ViewUtilsKt;
 import com.discord.progress_dots.ProgressDots;
 import com.discord.react_asset_fetcher.ReactAsset;
@@ -54,7 +42,6 @@ public final class InteractionStatusView extends ConstraintLayout {
     
     public final void m322setInteractionStatusntcYbpo(String messageId, InteractionStatus interactionStatus) {
         int i10;
-        DraweeSpanStringBuilder spannable;
         int i11;
         q.h(messageId, "messageId");
         q.h(interactionStatus, "interactionStatus");
@@ -80,9 +67,9 @@ public final class InteractionStatusView extends ConstraintLayout {
         q.g(context, "context");
         Paint.FontMetrics fontMetrics = setInteractionStatus_ntcYbpo$lambda$2.getPaint().getFontMetrics();
         q.g(fontMetrics, "paint.fontMetrics");
-        spannable = TextUtilsKt.toSpannable(text, context, messageId, false, false, false, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : null, (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (65536 & r42) != 0 ? false : false, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : TextUtilsKt.getBaselineHeight(fontMetrics));
-        SpannableExtensionsKt.coverWithSpan(spannable, new BackgroundSpanDrawer(setInteractionStatus_ntcYbpo$lambda$2));
-        ViewUtilsKt.setOptionalText(setInteractionStatus_ntcYbpo$lambda$2, spannable);
+        DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(text, context, messageId, false, false, false, null, null, null, null, null, null, null, null, null, null, null, false, null, TextUtilsKt.getBaselineHeight(fontMetrics), 262112, null);
+        SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(setInteractionStatus_ntcYbpo$lambda$2));
+        ViewUtilsKt.setOptionalText(setInteractionStatus_ntcYbpo$lambda$2, spannable$default);
         if (interactionStatus.isFailed()) {
             i11 = ThemeManagerKt.getTheme().getTextDanger();
         } else {

@@ -52,9 +52,9 @@ public final class ChannelSelectComponent$$serializer implements f0<ChannelSelec
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29830a;
-        a2 a2Var = a2.f29755a;
-        return new KSerializer[]{a.u(new f(SearchableSelectItem$$serializer.INSTANCE)), m0Var, new f(m0Var), a2Var, a2Var, a.u(a2Var), a.u(a2Var), m0Var, m0Var, h.f29797a, ActionComponentState.Serializer.INSTANCE, a.u(new f(m0Var))};
+        m0 m0Var = m0.f29833a;
+        a2 a2Var = a2.f29758a;
+        return new KSerializer[]{a.u(new f(SearchableSelectItem$$serializer.INSTANCE)), m0Var, new f(m0Var), a2Var, a2Var, a.u(a2Var), a.u(a2Var), m0Var, m0Var, h.f29800a, ActionComponentState.Serializer.INSTANCE, a.u(new f(m0Var))};
     }
 
     @Override 
@@ -82,11 +82,11 @@ public final class ChannelSelectComponent$$serializer implements f0<ChannelSelec
         if (b10.p()) {
             obj6 = b10.n(descriptor2, 0, new f(SearchableSelectItem$$serializer.INSTANCE), null);
             i12 = b10.i(descriptor2, 1);
-            m0 m0Var = m0.f29830a;
+            m0 m0Var = m0.f29833a;
             obj = b10.y(descriptor2, 2, new f(m0Var), null);
             str2 = b10.m(descriptor2, 3);
             str = b10.m(descriptor2, 4);
-            a2 a2Var = a2.f29755a;
+            a2 a2Var = a2.f29758a;
             obj2 = b10.n(descriptor2, 5, a2Var, null);
             obj4 = b10.n(descriptor2, 6, a2Var, null);
             i11 = b10.i(descriptor2, 7);
@@ -132,7 +132,7 @@ public final class ChannelSelectComponent$$serializer implements f0<ChannelSelec
                         i14 = 10;
                         break;
                     case 2:
-                        obj = b10.y(descriptor2, 2, new f(m0.f29830a), obj);
+                        obj = b10.y(descriptor2, 2, new f(m0.f29833a), obj);
                         i17 |= 4;
                         i18 = 11;
                         i14 = 10;
@@ -148,12 +148,12 @@ public final class ChannelSelectComponent$$serializer implements f0<ChannelSelec
                         i18 = 11;
                         break;
                     case 5:
-                        obj2 = b10.n(descriptor2, 5, a2.f29755a, obj2);
+                        obj2 = b10.n(descriptor2, 5, a2.f29758a, obj2);
                         i17 |= 32;
                         i18 = 11;
                         break;
                     case 6:
-                        obj8 = b10.n(descriptor2, 6, a2.f29755a, obj8);
+                        obj8 = b10.n(descriptor2, 6, a2.f29758a, obj8);
                         i17 |= 64;
                         i18 = 11;
                         continue;
@@ -177,7 +177,7 @@ public final class ChannelSelectComponent$$serializer implements f0<ChannelSelec
                         i16 = 7;
                         break;
                     case 11:
-                        obj7 = b10.n(descriptor2, i18, new f(m0.f29830a), obj7);
+                        obj7 = b10.n(descriptor2, i18, new f(m0.f29833a), obj7);
                         i17 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         i16 = 7;
                         break;

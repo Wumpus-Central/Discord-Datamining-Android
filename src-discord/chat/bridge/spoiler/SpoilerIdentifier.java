@@ -11,7 +11,7 @@ public final class SpoilerIdentifier {
     public static final Companion Companion = new Companion(null);
 
     
-    private final String f7254id;
+    private final String f7255id;
 
     @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J.\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0004\b\u000b\u0010\f\u0082\u0002\u000f\n\u0002\b!\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006\r"}, d2 = {"Lcom/discord/chat/bridge/spoiler/SpoilerIdentifier$Companion;", "", "()V", "forNode", "Lcom/discord/chat/bridge/spoiler/SpoilerIdentifier;", "node", "Lcom/discord/chat/bridge/contentnode/SpoilerContentNode;", "containerId", "", "index", "", "forNode-2sfwrmE", "(Lcom/discord/chat/bridge/contentnode/SpoilerContentNode;Ljava/lang/String;I)Ljava/lang/String;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     
@@ -33,7 +33,7 @@ public final class SpoilerIdentifier {
     }
 
     private  SpoilerIdentifier(String str) {
-        this.f7254id = str;
+        this.f7255id = str;
     }
 
     
@@ -68,23 +68,23 @@ public final class SpoilerIdentifier {
     }
 
     public boolean equals(Object obj) {
-        return m125equalsimpl(this.f7254id, obj);
+        return m125equalsimpl(this.f7255id, obj);
     }
 
     public final String getId() {
-        return this.f7254id;
+        return this.f7255id;
     }
 
     public int hashCode() {
-        return m127hashCodeimpl(this.f7254id);
+        return m127hashCodeimpl(this.f7255id);
     }
 
     public String toString() {
-        return m128toStringimpl(this.f7254id);
+        return m128toStringimpl(this.f7255id);
     }
 
     
     public final  String m129unboximpl() {
-        return this.f7254id;
+        return this.f7255id;
     }
 }

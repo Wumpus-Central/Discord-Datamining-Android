@@ -37,7 +37,7 @@ public final class AppManifest$$serializer implements f0<AppManifest> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29755a;
+        a2 a2Var = a2.f29758a;
         return new KSerializer[]{AppManifestMetadata$$serializer.INSTANCE, new r0(a2Var, a2Var), new r0(a2Var, a2Var)};
     }
 
@@ -53,7 +53,7 @@ public final class AppManifest$$serializer implements f0<AppManifest> {
         Object obj4 = null;
         if (b10.p()) {
             obj3 = b10.y(descriptor2, 0, AppManifestMetadata$$serializer.INSTANCE, null);
-            a2 a2Var = a2.f29755a;
+            a2 a2Var = a2.f29758a;
             obj = b10.y(descriptor2, 1, new r0(a2Var, a2Var), null);
             obj2 = b10.y(descriptor2, 2, new r0(a2Var, a2Var), null);
             i10 = 7;
@@ -70,11 +70,11 @@ public final class AppManifest$$serializer implements f0<AppManifest> {
                     obj4 = b10.y(descriptor2, 0, AppManifestMetadata$$serializer.INSTANCE, obj4);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    a2 a2Var2 = a2.f29755a;
+                    a2 a2Var2 = a2.f29758a;
                     obj5 = b10.y(descriptor2, 1, new r0(a2Var2, a2Var2), obj5);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    a2 a2Var3 = a2.f29755a;
+                    a2 a2Var3 = a2.f29758a;
                     obj6 = b10.y(descriptor2, 2, new r0(a2Var3, a2Var3), obj6);
                     i11 |= 4;
                 } else {

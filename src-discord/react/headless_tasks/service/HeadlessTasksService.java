@@ -11,7 +11,7 @@ import kotlin.Metadata;
 public final class HeadlessTasksService extends HeadlessJsTaskService {
 
     
-    public static final  int f7568j = 0;
+    public static final  int f7571j = 0;
 
     @Override 
     protected HeadlessJsTaskConfig getTaskConfig(Intent intent) {

@@ -37,7 +37,7 @@ public final class ChatListView$sync$1 extends k implements Function2<CoroutineS
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatListView$sync$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21210a);
+        return ((ChatListView$sync$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21213a);
     }
 
     @Override 
@@ -49,7 +49,7 @@ public final class ChatListView$sync$1 extends k implements Function2<CoroutineS
         if (i10 == 0) {
             t.b(obj);
             final Ref$BooleanRef ref$BooleanRef = new Ref$BooleanRef();
-            ref$BooleanRef.f21235j = true;
+            ref$BooleanRef.f21238j = true;
             dataSource = this.this$0.dataSource;
             if (dataSource == null) {
                 q.z("dataSource");
@@ -64,13 +64,13 @@ public final class ChatListView$sync$1 extends k implements Function2<CoroutineS
                 }
 
                 public final Object emit(ChatListUpdate chatListUpdate, Continuation<? super Unit> continuation) {
-                    if (Ref$BooleanRef.this.f21235j) {
+                    if (Ref$BooleanRef.this.f21238j) {
                         chatListView.onChatListUpdate(ChatListUpdate.copy$default(chatListUpdate, null, null, null, 3, null));
-                        Ref$BooleanRef.this.f21235j = false;
+                        Ref$BooleanRef.this.f21238j = false;
                     } else {
                         chatListView.onChatListUpdate(chatListUpdate);
                     }
-                    return Unit.f21210a;
+                    return Unit.f21213a;
                 }
             };
             this.label = 1;
@@ -82,6 +82,6 @@ public final class ChatListView$sync$1 extends k implements Function2<CoroutineS
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 }

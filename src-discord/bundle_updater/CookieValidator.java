@@ -39,12 +39,12 @@ public final class CookieValidator {
             return null;
         }
         String base64String = URLDecoder.decode(str, "UTF-8");
-        ByteString.a aVar = ByteString.f25634n;
+        ByteString.a aVar = ByteString.f25637n;
         q.g(base64String, "base64String");
         ByteString a10 = aVar.a(base64String);
         if (!(a10 == null || (C = a10.C()) == null)) {
             try {
-                Json.a aVar2 = Json.f21732d;
+                Json.a aVar2 = Json.f21735d;
                 JsonElement g10 = aVar2.g(C);
                 JsonElement jsonElement = (JsonElement) g.m(g10).get("$meta");
                 if (jsonElement == null) {
@@ -63,7 +63,7 @@ public final class CookieValidator {
                 LinkedHashMap linkedHashMap2 = new LinkedHashMap(d10);
                 for (Map.Entry entry2 : linkedHashMap.entrySet()) {
                     Object key = entry2.getKey();
-                    Json.a aVar3 = Json.f21732d;
+                    Json.a aVar3 = Json.f21735d;
                     aVar3.a();
                     linkedHashMap2.put(key, (BuildOverrideCookieBuild) aVar3.d(BuildOverrideCookieBuild.Companion.serializer(), (JsonElement) entry2.getValue()));
                 }

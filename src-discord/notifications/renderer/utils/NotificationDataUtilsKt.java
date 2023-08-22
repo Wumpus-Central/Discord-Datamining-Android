@@ -105,7 +105,7 @@ public final class NotificationDataUtilsKt {
         if (z10) {
             v10 = v.v(notificationDataMap);
             v10.put("type", NotificationData.TYPE_CALL_CONNECT);
-            Unit unit = Unit.f21210a;
+            Unit unit = Unit.f21213a;
             pendingIntent = getButtonPendingIntent(notificationData, context, v10);
         } else {
             pendingIntent = NotificationAction.DefaultImpls.toPendingIntent$default(new DismissCallAction(getTag(notificationData), j10, null), context, 0, false, 6, null);
@@ -391,7 +391,7 @@ public final class NotificationDataUtilsKt {
                     CrashReporting.INSTANCE.captureMessage("Failed to derive push message", e10);
                 }
             } else {
-                JsonElement g10 = Json.f21732d.g(str);
+                JsonElement g10 = Json.f21735d.g(str);
                 h11 = j.h();
                 JsonObject author2 = message.getAuthor();
                 q.e(author2);

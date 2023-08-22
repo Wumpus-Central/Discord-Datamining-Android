@@ -3,22 +3,33 @@ package com.discord.device;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Build;
 import android.view.Window;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 import androidx.core.view.r2;
+import com.discord.misc.utilities.size.SizeUtilsKt;
+import com.discord.react.utilities.NativeArrayExtensionsKt;
+import com.discord.react_activities.ReactRootView;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.bridge.ReadableArray;
+import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.UiThreadUtil;
 import com.facebook.react.uimanager.ViewProps;
+import java.util.ArrayList;
+import java.util.Iterator;
+import kf.p;
 import kotlin.Metadata;
 import kotlin.Unit;
+import kotlin.collections.k;
 import kotlin.jvm.internal.q;
+import kotlin.ranges.IntRange;
 
-@Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0005\u001a\u00020\u0006H\u0016J\u000f\u0010\u0007\u001a\u0004\u0018\u00010\bH\u0007¢\u0006\u0002\u0010\tJ\u000f\u0010\n\u001a\u0004\u0018\u00010\bH\u0007¢\u0006\u0002\u0010\tJ\b\u0010\u000b\u001a\u00020\bH\u0007J\u0018\u0010\f\u001a\u00020\b2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0002J\u0010\u0010\u0011\u001a\u00020\b2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0012\u001a\u00020\b2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\f\u0010\u0007\u001a\u00020\b*\u00020\u0013H\u0002J\f\u0010\u0014\u001a\u00020\b*\u00020\u0013H\u0002J\f\u0010\u0015\u001a\u00020\b*\u00020\u0013H\u0003¨\u0006\u0016"}, d2 = {"Lcom/discord/device/DeviceSettingsManagerModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "getName", "", "openAccessibilitySettings", "", "()Lkotlin/Unit;", "openNotificationSettings", "openPrivacySettings", "setInsetsVisible", ViewProps.VISIBLE, "", "insetType", "", "setNavigationBarVisible", "setStatusBarVisible", "Landroid/content/Context;", "openApplicationDetailSettings", "openApplicationNotificationSettings", "device_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0005\u001a\u00020\u0006H\u0016J\u000f\u0010\u0007\u001a\u0004\u0018\u00010\bH\u0007¢\u0006\u0002\u0010\tJ\u000f\u0010\n\u001a\u0004\u0018\u00010\bH\u0007¢\u0006\u0002\u0010\tJ\b\u0010\u000b\u001a\u00020\bH\u0007J\u0018\u0010\f\u001a\u00020\b2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0002J\u0010\u0010\u0011\u001a\u00020\b2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0012\u001a\u00020\b2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0013\u001a\u00020\b2\u0006\u0010\u0014\u001a\u00020\u0015H\u0007J\f\u0010\u0007\u001a\u00020\b*\u00020\u0016H\u0002J\f\u0010\u0017\u001a\u00020\b*\u00020\u0016H\u0002J\f\u0010\u0018\u001a\u00020\b*\u00020\u0016H\u0003¨\u0006\u0019"}, d2 = {"Lcom/discord/device/DeviceSettingsManagerModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "getName", "", "openAccessibilitySettings", "", "()Lkotlin/Unit;", "openNotificationSettings", "openPrivacySettings", "setInsetsVisible", ViewProps.VISIBLE, "", "insetType", "", "setNavigationBarVisible", "setStatusBarVisible", "setSystemGestureExclusionRects", "rects", "Lcom/facebook/react/bridge/ReadableArray;", "Landroid/content/Context;", "openApplicationDetailSettings", "openApplicationNotificationSettings", "device_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
 public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModule {
     
@@ -41,13 +52,13 @@ public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModul
         UiThreadUtil.runOnUiThread(new Runnable() { 
             @Override 
             public final void run() {
-                DeviceSettingsManagerModule.setInsetsVisible$lambda$0(DeviceSettingsManagerModule.this, z10, i10);
+                DeviceSettingsManagerModule.setInsetsVisible$lambda$3(DeviceSettingsManagerModule.this, z10, i10);
             }
         });
     }
 
     
-    public static final void setInsetsVisible$lambda$0(DeviceSettingsManagerModule this$0, boolean z10, int i10) {
+    public static final void setInsetsVisible$lambda$3(DeviceSettingsManagerModule this$0, boolean z10, int i10) {
         Window window;
         q.h(this$0, "this$0");
         Activity currentActivity = this$0.getReactApplicationContext().getCurrentActivity();
@@ -68,6 +79,25 @@ public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModul
         }
     }
 
+    
+    public static final void setSystemGestureExclusionRects$lambda$2(DeviceSettingsManagerModule this$0, ReadableArray rects) {
+        int s10;
+        q.h(this$0, "this$0");
+        q.h(rects, "$rects");
+        ReactRootView.Companion companion = ReactRootView.Companion;
+        ReactApplicationContext reactApplicationContext = this$0.getReactApplicationContext();
+        q.g(reactApplicationContext, "reactApplicationContext");
+        IntRange sizeRange = NativeArrayExtensionsKt.sizeRange(rects);
+        s10 = k.s(sizeRange, 10);
+        ArrayList arrayList = new ArrayList(s10);
+        Iterator<Integer> it = sizeRange.iterator();
+        while (it.hasNext()) {
+            ReadableMap map = rects.getMap(((p) it).nextInt());
+            arrayList.add(new Rect(SizeUtilsKt.getDpToPx(map.getInt(ViewProps.LEFT)), SizeUtilsKt.getDpToPx(map.getInt(ViewProps.TOP)), SizeUtilsKt.getDpToPx(map.getInt(ViewProps.RIGHT)), SizeUtilsKt.getDpToPx(map.getInt(ViewProps.BOTTOM))));
+        }
+        companion.setSystemGestureExclusionRects(reactApplicationContext, arrayList);
+    }
+
     @Override 
     public String getName() {
         return "DeviceSettingsManager";
@@ -80,7 +110,7 @@ public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModul
             return null;
         }
         openAccessibilitySettings(currentActivity);
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     @ReactMethod
@@ -91,14 +121,14 @@ public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModul
                 return null;
             }
             openApplicationNotificationSettings(currentActivity);
-            return Unit.f21210a;
+            return Unit.f21213a;
         }
         Activity currentActivity2 = getReactApplicationContext().getCurrentActivity();
         if (currentActivity2 == null) {
             return null;
         }
         openApplicationDetailSettings(currentActivity2);
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     @ReactMethod
@@ -116,6 +146,17 @@ public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModul
     @ReactMethod
     public final void setStatusBarVisible(boolean z10) {
         setInsetsVisible(z10, WindowInsetsCompat.m.f());
+    }
+
+    @ReactMethod
+    public final void setSystemGestureExclusionRects(final ReadableArray rects) {
+        q.h(rects, "rects");
+        UiThreadUtil.runOnUiThread(new Runnable() { 
+            @Override 
+            public final void run() {
+                DeviceSettingsManagerModule.setSystemGestureExclusionRects$lambda$2(DeviceSettingsManagerModule.this, rects);
+            }
+        });
     }
 
     private final void openAccessibilitySettings(Context context) {

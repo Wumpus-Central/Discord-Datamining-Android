@@ -19,7 +19,7 @@ final class ImageAttachmentView$maybeShowRemixButton$1 extends s implements Func
     @Override 
     public   Unit invoke(MessageId messageId) {
         m321invoke1xi1bu0(messageId.m615unboximpl());
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     

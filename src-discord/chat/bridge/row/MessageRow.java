@@ -157,152 +157,62 @@ public final class MessageRow extends Row {
     }
 
     public static final void write$Self(MessageRow self, CompositeEncoder output, SerialDescriptor serialDesc) {
-        boolean z10;
-        boolean z11;
-        boolean z12;
-        boolean z13;
-        boolean z14;
-        boolean z15;
-        boolean z16;
-        boolean z17;
-        boolean z18;
-        boolean z19;
-        boolean z20;
-        boolean z21;
-        boolean z22;
-        boolean z23;
-        boolean z24;
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        boolean z25 = false;
+        boolean z10 = false;
         output.v(serialDesc, 0, self.getIndex());
         output.o(serialDesc, 1, ChangeType.Serializer.INSTANCE, self.getChangeType());
-        if (!output.z(serialDesc, 2) && self.jumped == null) {
-            z10 = false;
-        } else {
-            z10 = true;
+        if (output.z(serialDesc, 2) || self.jumped != null) {
+            output.B(serialDesc, 2, h.f29800a, self.jumped);
         }
-        if (z10) {
-            output.B(serialDesc, 2, h.f29797a, self.jumped);
-        }
-        if (!output.z(serialDesc, 3) && self.highlightJumpedOnceOnly == null) {
-            z11 = false;
-        } else {
-            z11 = true;
-        }
-        if (z11) {
-            output.B(serialDesc, 3, h.f29797a, self.highlightJumpedOnceOnly);
+        if (output.z(serialDesc, 3) || self.highlightJumpedOnceOnly != null) {
+            output.B(serialDesc, 3, h.f29800a, self.highlightJumpedOnceOnly);
         }
         output.o(serialDesc, 4, MessageSerializer.INSTANCE, self.message);
-        if (!output.z(serialDesc, 5) && self.scrollTo == null) {
-            z12 = false;
-        } else {
-            z12 = true;
+        if (output.z(serialDesc, 5) || self.scrollTo != null) {
+            output.B(serialDesc, 5, h.f29800a, self.scrollTo);
         }
-        if (z12) {
-            output.B(serialDesc, 5, h.f29797a, self.scrollTo);
+        if (output.z(serialDesc, 6) || self.animated != null) {
+            output.B(serialDesc, 6, h.f29800a, self.animated);
         }
-        if (!output.z(serialDesc, 6) && self.animated == null) {
-            z13 = false;
-        } else {
-            z13 = true;
+        if (output.z(serialDesc, 7) || self.canAddNewReactions != null) {
+            output.B(serialDesc, 7, h.f29800a, self.canAddNewReactions);
         }
-        if (z13) {
-            output.B(serialDesc, 6, h.f29797a, self.animated);
+        if (output.z(serialDesc, 8) || self.addReactionLabel != null) {
+            output.B(serialDesc, 8, a2.f29758a, self.addReactionLabel);
         }
-        if (!output.z(serialDesc, 7) && self.canAddNewReactions == null) {
-            z14 = false;
-        } else {
-            z14 = true;
+        if (output.z(serialDesc, 9) || self.addNewReactionAccessibilityLabel != null) {
+            output.B(serialDesc, 9, a2.f29758a, self.addNewReactionAccessibilityLabel);
         }
-        if (z14) {
-            output.B(serialDesc, 7, h.f29797a, self.canAddNewReactions);
+        if (output.z(serialDesc, 10) || self.addNewBurstReactionAccessibilityLabel != null) {
+            output.B(serialDesc, 10, a2.f29758a, self.addNewBurstReactionAccessibilityLabel);
         }
-        if (!output.z(serialDesc, 8) && self.addReactionLabel == null) {
-            z15 = false;
-        } else {
-            z15 = true;
-        }
-        if (z15) {
-            output.B(serialDesc, 8, a2.f29755a, self.addReactionLabel);
-        }
-        if (!output.z(serialDesc, 9) && self.addNewReactionAccessibilityLabel == null) {
-            z16 = false;
-        } else {
-            z16 = true;
-        }
-        if (z16) {
-            output.B(serialDesc, 9, a2.f29755a, self.addNewReactionAccessibilityLabel);
-        }
-        if (!output.z(serialDesc, 10) && self.addNewBurstReactionAccessibilityLabel == null) {
-            z17 = false;
-        } else {
-            z17 = true;
-        }
-        if (z17) {
-            output.B(serialDesc, 10, a2.f29755a, self.addNewBurstReactionAccessibilityLabel);
-        }
-        if (!output.z(serialDesc, 11) && self.reactionsTheme == null) {
-            z18 = false;
-        } else {
-            z18 = true;
-        }
-        if (z18) {
+        if (output.z(serialDesc, 11) || self.reactionsTheme != null) {
             output.B(serialDesc, 11, ReactionsTheme$$serializer.INSTANCE, self.reactionsTheme);
         }
-        if (!output.z(serialDesc, 12) && !self.isHighlight) {
-            z19 = false;
-        } else {
-            z19 = true;
-        }
-        if (z19) {
+        if (output.z(serialDesc, 12) || self.isHighlight) {
             output.w(serialDesc, 12, self.isHighlight);
         }
-        if (!output.z(serialDesc, 13) && !self.renderContentOnly) {
-            z20 = false;
-        } else {
-            z20 = true;
-        }
-        if (z20) {
+        if (output.z(serialDesc, 13) || self.renderContentOnly) {
             output.w(serialDesc, 13, self.renderContentOnly);
         }
-        if (!output.z(serialDesc, 14) && self.messageFrame == null) {
-            z21 = false;
-        } else {
-            z21 = true;
-        }
-        if (z21) {
+        if (output.z(serialDesc, 14) || self.messageFrame != null) {
             output.B(serialDesc, 14, MessageFrameSerializer.INSTANCE, self.messageFrame);
         }
-        if (!output.z(serialDesc, 15) && self.reactTag == null) {
-            z22 = false;
-        } else {
-            z22 = true;
+        if (output.z(serialDesc, 15) || self.reactTag != null) {
+            output.B(serialDesc, 15, m0.f29833a, self.reactTag);
         }
-        if (z22) {
-            output.B(serialDesc, 15, m0.f29830a, self.reactTag);
-        }
-        if (!output.z(serialDesc, 16) && self.truncation == null) {
-            z23 = false;
-        } else {
-            z23 = true;
-        }
-        if (z23) {
+        if (output.z(serialDesc, 16) || self.truncation != null) {
             output.B(serialDesc, 16, Truncation$$serializer.INSTANCE, self.truncation);
         }
-        if (!output.z(serialDesc, 17) && self.backgroundHighlight == null) {
-            z24 = false;
-        } else {
-            z24 = true;
-        }
-        if (z24) {
+        if (output.z(serialDesc, 17) || self.backgroundHighlight != null) {
             output.B(serialDesc, 17, BackgroundHighlight$$serializer.INSTANCE, self.backgroundHighlight);
         }
         if (output.z(serialDesc, 18) || self.enableSwipeToReply) {
-            z25 = true;
+            z10 = true;
         }
-        if (z25) {
+        if (z10) {
             output.w(serialDesc, 18, self.enableSwipeToReply);
         }
     }

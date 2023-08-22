@@ -20,7 +20,7 @@ public  class EmbeddedActivityInviteViewHolder$bind$1$10 extends n implements Fu
     @Override 
     public   Unit invoke(MessageId messageId) {
         m343invoke1xi1bu0(messageId.m615unboximpl());
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     

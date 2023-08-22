@@ -34,7 +34,7 @@ public final class BackgroundStyle$$serializer implements f0<BackgroundStyle> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29830a;
+        m0 m0Var = m0.f29833a;
         return new KSerializer[]{m0Var, m0Var};
     }
 

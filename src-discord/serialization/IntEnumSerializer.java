@@ -44,7 +44,7 @@ public class IntEnumSerializer<T extends IntEnum> implements KSerializer<T> {
         }
         Integer[] numArr = (Integer[]) arrayList.toArray(new Integer[0]);
         this.choicesNumbers = numArr;
-        this.descriptor = g.a(this.serialName, e.f.f29346a);
+        this.descriptor = g.a(this.serialName, e.f.f29349a);
         if (numArr.length == this.choices.length) {
             A = f.A(numArr);
             if (!(A.size() == numArr.length ? true : z10)) {

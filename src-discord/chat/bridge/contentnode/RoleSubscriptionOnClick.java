@@ -73,7 +73,7 @@ public final class RoleSubscriptionOnClick {
         q.h(serialDesc, "serialDesc");
         output.x(serialDesc, 0, self.action);
         output.x(serialDesc, 1, self.guildId);
-        a2 a2Var = a2.f29755a;
+        a2 a2Var = a2.f29758a;
         output.B(serialDesc, 2, a2Var, self.messageId);
         output.B(serialDesc, 3, a2Var, self.channelId);
         output.B(serialDesc, 4, a2Var, self.roleSubscriptionListingId);

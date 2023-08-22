@@ -28,6 +28,7 @@ public final class VideoAttachmentViewHolder extends MessagePartViewHolder {
     }
 
     public final void bind(VideoAttachmentMessageAccessory videoAttachmentItem, int i10, int i11, int i12, Function1<? super Double, Unit> onClicked, View.OnLongClickListener onLongClickListener, SpoilerConfig spoilerConfig, double d10, boolean z10, boolean z11, boolean z12, Float f10) {
+        boolean z13;
         q.h(videoAttachmentItem, "videoAttachmentItem");
         q.h(onClicked, "onClicked");
         Attachment attachment = videoAttachmentItem.getAttachment();
@@ -37,15 +38,21 @@ public final class VideoAttachmentViewHolder extends MessagePartViewHolder {
         VideoAttachmentView videoAttachmentView = this.view;
         String videoUrl = attachment.getVideoUrl();
         q.e(videoUrl);
-        videoAttachmentView.setContent(videoUrl, attachment.getUrl(), attachment.getWidth(), attachment.getHeight(), i10, i11, i12, attachment.isSpoiler(), spoilerConfig, d10, z10, attachment.getProgress(), z12, videoAttachmentViewHolder$bind$onCancelUpload$1, new UploadContext(uploaderId, uploaderItemId), f10);
+        videoAttachmentView.setContent(videoUrl, attachment.getUrl(), attachment.getWidth(), attachment.getHeight(), i10, i11, i12, attachment.isSpoiler(), spoilerConfig, d10, z10, attachment.getProgress(), z12, videoAttachmentViewHolder$bind$onCancelUpload$1, new UploadContext(uploaderId, uploaderItemId), f10, attachment.getAttachmentTagText(), attachment.getAttachmentTagIcon(), attachment.getAttachmentTagBackgroundColor(), attachment.getAttachmentTagTextColor());
         this.view.setDescription(attachment.getDescription(), attachment.getHint());
-        boolean z13 = true;
-        this.view.showAltTextButton(z11 && attachment.getShowDescription(), attachment.getDescription(), new VideoAttachmentViewHolder$bind$1(this.eventHandler));
         VideoAttachmentView videoAttachmentView2 = this.view;
-        if (z11 || !attachment.getShowDescription()) {
+        boolean z14 = true;
+        if (!z11 || !attachment.getShowDescription()) {
             z13 = false;
+        } else {
+            z13 = true;
         }
-        videoAttachmentView2.showDescription(z13, attachment.getDescription());
+        videoAttachmentView2.showAltTextButton(z13, attachment.getDescription(), new VideoAttachmentViewHolder$bind$1(this.eventHandler));
+        VideoAttachmentView videoAttachmentView3 = this.view;
+        if (z11 || !attachment.getShowDescription()) {
+            z14 = false;
+        }
+        videoAttachmentView3.showDescription(z14, attachment.getDescription());
         this.view.setRole(attachment.getRole());
         this.view.setOnMediaClickListeners(onClicked, onLongClickListener);
     }

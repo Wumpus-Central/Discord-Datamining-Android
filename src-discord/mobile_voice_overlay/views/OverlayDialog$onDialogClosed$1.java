@@ -18,7 +18,7 @@ final class OverlayDialog$onDialogClosed$1 extends s implements Function1<Overla
     @Override 
     public   Unit invoke(OverlayDialog overlayDialog) {
         invoke2(overlayDialog);
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     

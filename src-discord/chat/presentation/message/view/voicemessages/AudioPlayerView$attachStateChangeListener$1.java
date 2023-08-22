@@ -46,7 +46,7 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21210a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21213a);
         }
 
         @Override 
@@ -77,7 +77,7 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
                             audioPlayerViewState3 = audioPlayerView3.state;
                             audioPlayerView3.toggleDurationEmitter(audioPlayerViewState3.shouldEmitDuration$chat_release());
                         }
-                        return Unit.f21210a;
+                        return Unit.f21213a;
                     }
                 };
                 this.label = 1;
@@ -89,7 +89,7 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            return Unit.f21210a;
+            return Unit.f21213a;
         }
     }
 
@@ -103,7 +103,7 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
     @Override 
     public   Unit invoke(Boolean bool) {
         invoke(bool.booleanValue());
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     public final void invoke(boolean z10) {

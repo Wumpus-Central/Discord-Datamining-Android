@@ -21,14 +21,14 @@ public final class MediaView$attachStateChangeListener$1 extends s implements Fu
     @Override 
     public   Unit invoke(Boolean bool) {
         invoke(bool.booleanValue());
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     public final void invoke(boolean z10) {
         if (z10) {
-            MediaView.setMediaData$default(this.this$0, null, false, false, false, null, false, null, null, false, false, false, 2045, null);
+            MediaView.setMediaData$default(this.this$0, null, false, false, false, null, false, null, null, false, false, false, null, null, null, null, 32765, null);
         } else {
-            MediaView.setMediaData$default(this.this$0, null, true, false, false, null, false, null, null, false, false, false, 2041, null);
+            MediaView.setMediaData$default(this.this$0, null, true, false, false, null, false, null, null, false, false, false, null, null, null, null, 32761, null);
         }
     }
 }

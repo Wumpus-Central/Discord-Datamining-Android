@@ -3,6 +3,7 @@ package com.discord.notifications.client;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
+import android.os.Bundle;
 import android.os.Parcelable;
 import androidx.core.content.e;
 import com.discord.crash_reporting.CrashReporting;
@@ -122,13 +123,13 @@ public final class NotificationClient {
                                 }
                                 String str5 = ChannelId.m588toStringimpl(channelId.m590unboximpl());
                                 String str6 = MessageId.m613toStringimpl(str2);
-                                Json.a aVar = Json.f21732d;
+                                Json.a aVar = Json.f21735d;
                                 aVar.a();
                                 DiscordMobileApi.putMessage(str4, str, str5, str6, aVar.c(KvMessageEntry.Companion.serializer(), kvMessage));
                             }
                         }
                         if (updateAndComputeIfShouldRunBackgroundSync(context)) {
-                            HeadlessTasks.Companion.startHeadlessTask$default(HeadlessTasks.Companion, context, "BackgroundSync", 30000L, false, null, true, 24, null);
+                            HeadlessTasks.Companion.startHeadlessTask(context, "BackgroundSync", (r18 & 4) != 0 ? HeadlessTasks.TASK_TIMEOUT_DEFAULT : 30000L, (r18 & 8) != 0, (r18 & 16) != 0 ? new Bundle() : null, (r18 & 32) != 0 ? false : true);
                         }
                     }
                 } catch (Exception e10) {
@@ -252,7 +253,7 @@ public final class NotificationClient {
     public final void onNotificationReceived(Context context, Map<String, String> data) {
         q.h(context, "context");
         q.h(data, "data");
-        showNotification(context, (NotificationData) a.f31563b.d(NotificationData.Companion.serializer(), data), data, true);
+        showNotification(context, (NotificationData) a.f31566b.d(NotificationData.Companion.serializer(), data), data, true);
     }
 
     public final void setActive(boolean z10) {

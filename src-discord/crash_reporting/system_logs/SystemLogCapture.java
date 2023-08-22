@@ -51,7 +51,7 @@ public final class SystemLogCapture {
                     process = new ProcessBuilder(SystemLogUtils.logcatPath).redirectErrorStream(true).start();
                     InputStream inputStream = process.getInputStream();
                     q.g(inputStream, "logcatProcess.inputStream");
-                    InputStreamReader inputStreamReader = new InputStreamReader(inputStream, a.f24903b);
+                    InputStreamReader inputStreamReader = new InputStreamReader(inputStream, a.f24906b);
                     if (inputStreamReader instanceof BufferedReader) {
                         bufferedReader = (BufferedReader) inputStreamReader;
                     } else {

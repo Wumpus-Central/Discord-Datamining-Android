@@ -30,7 +30,7 @@ public final class StickerPickerRowViewManager$createViewInstance$1$2 extends s 
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     

@@ -38,8 +38,8 @@ public final class BurstReactionColorPalette$$serializer implements f0<BurstReac
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29755a;
-        return new KSerializer[]{a.u(a2Var), a.u(a2Var), a.u(a2Var), e0.f29780a};
+        a2 a2Var = a2.f29758a;
+        return new KSerializer[]{a.u(a2Var), a.u(a2Var), a.u(a2Var), e0.f29783a};
     }
 
     @Override 
@@ -53,7 +53,7 @@ public final class BurstReactionColorPalette$$serializer implements f0<BurstReac
         SerialDescriptor descriptor2 = getDescriptor();
         c b10 = decoder.b(descriptor2);
         if (b10.p()) {
-            a2 a2Var = a2.f29755a;
+            a2 a2Var = a2.f29758a;
             obj = b10.n(descriptor2, 0, a2Var, null);
             obj2 = b10.n(descriptor2, 1, a2Var, null);
             obj3 = b10.n(descriptor2, 2, a2Var, null);
@@ -71,13 +71,13 @@ public final class BurstReactionColorPalette$$serializer implements f0<BurstReac
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    obj4 = b10.n(descriptor2, 0, a2.f29755a, obj4);
+                    obj4 = b10.n(descriptor2, 0, a2.f29758a, obj4);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    obj5 = b10.n(descriptor2, 1, a2.f29755a, obj5);
+                    obj5 = b10.n(descriptor2, 1, a2.f29758a, obj5);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    obj6 = b10.n(descriptor2, 2, a2.f29755a, obj6);
+                    obj6 = b10.n(descriptor2, 2, a2.f29758a, obj6);
                     i11 |= 4;
                 } else if (o10 == 3) {
                     f11 = b10.u(descriptor2, 3);

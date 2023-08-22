@@ -128,7 +128,7 @@ public final class BuildOverrideCookieMeta {
             z10 = true;
         }
         if (z10) {
-            output.B(serialDesc, 0, a2.f29755a, self.expiresAt);
+            output.B(serialDesc, 0, a2.f29758a, self.expiresAt);
         }
         if (!output.z(serialDesc, 1) && self.releaseChannel == null) {
             z11 = false;
@@ -136,7 +136,7 @@ public final class BuildOverrideCookieMeta {
             z11 = true;
         }
         if (z11) {
-            output.B(serialDesc, 1, a2.f29755a, self.releaseChannel);
+            output.B(serialDesc, 1, a2.f29758a, self.releaseChannel);
         }
         if (!output.z(serialDesc, 2) && self.validForUserIds == null) {
             z12 = false;
@@ -144,7 +144,7 @@ public final class BuildOverrideCookieMeta {
             z12 = true;
         }
         if (z12) {
-            output.B(serialDesc, 2, new wi.f(a2.f29755a), self.validForUserIds);
+            output.B(serialDesc, 2, new wi.f(a2.f29758a), self.validForUserIds);
         }
         if (!output.z(serialDesc, 3) && self.allowedVersions == null) {
             z13 = false;
@@ -152,7 +152,7 @@ public final class BuildOverrideCookieMeta {
             z13 = true;
         }
         if (z13) {
-            output.B(serialDesc, 3, new wi.f(a2.f29755a), self.allowedVersions);
+            output.B(serialDesc, 3, new wi.f(a2.f29758a), self.allowedVersions);
         }
         if (!output.z(serialDesc, 4) && self.allowLoggedOut == null) {
             z14 = false;
@@ -160,13 +160,13 @@ public final class BuildOverrideCookieMeta {
             z14 = true;
         }
         if (z14) {
-            output.B(serialDesc, 4, h.f29797a, self.allowLoggedOut);
+            output.B(serialDesc, 4, h.f29800a, self.allowLoggedOut);
         }
         if (output.z(serialDesc, 5) || self.experiments != null) {
             z15 = true;
         }
         if (z15) {
-            output.B(serialDesc, 5, new r0(a2.f29755a, m0.f29830a), self.experiments);
+            output.B(serialDesc, 5, new r0(a2.f29758a, m0.f29833a), self.experiments);
         }
     }
 

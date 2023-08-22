@@ -109,7 +109,7 @@ public final class DismissCallAction implements NotificationAction {
         HeadlessTasks.Companion companion = HeadlessTasks.Companion;
         Bundle bundle = new Bundle();
         bundle.putString("channelId", String.valueOf(this.channelId));
-        HeadlessTasks.Companion.startHeadlessTask$default(companion, context, "DismissCallAction", 0L, false, bundle, true, 12, null);
+        companion.startHeadlessTask(context, "DismissCallAction", (r18 & 4) != 0 ? HeadlessTasks.TASK_TIMEOUT_DEFAULT : 0L, (r18 & 8) != 0, (r18 & 16) != 0 ? new Bundle() : bundle, (r18 & 32) != 0 ? false : true);
     }
 
     @Override 

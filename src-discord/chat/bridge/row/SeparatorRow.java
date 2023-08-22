@@ -24,7 +24,7 @@ public final class SeparatorRow extends Row {
     private final int color;
 
     
-    private final String f7253id;
+    private final String f7254id;
     private final int index;
     private final Boolean isBeforeContent;
     private final Boolean scrollTo;
@@ -55,7 +55,7 @@ public final class SeparatorRow extends Row {
         this.changeType = changeType;
         this.index = i11;
         this.text = str;
-        this.f7253id = str2;
+        this.f7254id = str2;
         this.color = i12;
         if ((i10 & 32) == 0) {
             this.scrollTo = null;
@@ -84,7 +84,7 @@ public final class SeparatorRow extends Row {
         output.o(serialDesc, 0, ChangeType.Serializer.INSTANCE, self.getChangeType());
         output.v(serialDesc, 1, self.getIndex());
         output.x(serialDesc, 2, self.text);
-        output.x(serialDesc, 3, self.f7253id);
+        output.x(serialDesc, 3, self.f7254id);
         output.v(serialDesc, 4, self.color);
         if (!output.z(serialDesc, 5) && self.scrollTo == null) {
             z10 = false;
@@ -92,7 +92,7 @@ public final class SeparatorRow extends Row {
             z10 = true;
         }
         if (z10) {
-            output.B(serialDesc, 5, h.f29797a, self.scrollTo);
+            output.B(serialDesc, 5, h.f29800a, self.scrollTo);
         }
         if (!output.z(serialDesc, 6) && self.isBeforeContent == null) {
             z11 = false;
@@ -100,7 +100,7 @@ public final class SeparatorRow extends Row {
             z11 = true;
         }
         if (z11) {
-            output.B(serialDesc, 6, h.f29797a, self.isBeforeContent);
+            output.B(serialDesc, 6, h.f29800a, self.isBeforeContent);
         }
         if (output.z(serialDesc, 7) || self.summary != null) {
             z12 = true;
@@ -123,7 +123,7 @@ public final class SeparatorRow extends Row {
     }
 
     public final String component4() {
-        return this.f7253id;
+        return this.f7254id;
     }
 
     public final int component5() {
@@ -157,7 +157,7 @@ public final class SeparatorRow extends Row {
             return false;
         }
         SeparatorRow separatorRow = (SeparatorRow) obj;
-        return getChangeType() == separatorRow.getChangeType() && getIndex() == separatorRow.getIndex() && q.c(this.text, separatorRow.text) && q.c(this.f7253id, separatorRow.f7253id) && this.color == separatorRow.color && q.c(this.scrollTo, separatorRow.scrollTo) && q.c(this.isBeforeContent, separatorRow.isBeforeContent) && q.c(this.summary, separatorRow.summary);
+        return getChangeType() == separatorRow.getChangeType() && getIndex() == separatorRow.getIndex() && q.c(this.text, separatorRow.text) && q.c(this.f7254id, separatorRow.f7254id) && this.color == separatorRow.color && q.c(this.scrollTo, separatorRow.scrollTo) && q.c(this.isBeforeContent, separatorRow.isBeforeContent) && q.c(this.summary, separatorRow.summary);
     }
 
     @Override 
@@ -170,7 +170,7 @@ public final class SeparatorRow extends Row {
     }
 
     public final String getId() {
-        return this.f7253id;
+        return this.f7254id;
     }
 
     @Override 
@@ -191,7 +191,7 @@ public final class SeparatorRow extends Row {
     }
 
     public int hashCode() {
-        int hashCode = ((((((((getChangeType().hashCode() * 31) + getIndex()) * 31) + this.text.hashCode()) * 31) + this.f7253id.hashCode()) * 31) + this.color) * 31;
+        int hashCode = ((((((((getChangeType().hashCode() * 31) + getIndex()) * 31) + this.text.hashCode()) * 31) + this.f7254id.hashCode()) * 31) + this.color) * 31;
         Boolean bool = this.scrollTo;
         int i10 = 0;
         int hashCode2 = (hashCode + (bool == null ? 0 : bool.hashCode())) * 31;
@@ -212,7 +212,7 @@ public final class SeparatorRow extends Row {
         ChangeType changeType = getChangeType();
         int index = getIndex();
         String str = this.text;
-        String str2 = this.f7253id;
+        String str2 = this.f7254id;
         int i10 = this.color;
         Boolean bool = this.scrollTo;
         Boolean bool2 = this.isBeforeContent;
@@ -233,7 +233,7 @@ public final class SeparatorRow extends Row {
         this.changeType = changeType;
         this.index = i10;
         this.text = text;
-        this.f7253id = id2;
+        this.f7254id = id2;
         this.color = i11;
         this.scrollTo = bool;
         this.isBeforeContent = bool2;

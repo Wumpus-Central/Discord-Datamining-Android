@@ -42,7 +42,7 @@ public final class MobileVoiceOverlayAssets$$serializer implements f0<MobileVoic
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29755a;
+        a2 a2Var = a2.f29758a;
         return new KSerializer[]{a2Var, a2Var, a2Var, a2Var, a2Var, a2Var, a2Var, a2Var, a2Var, a2Var, a2Var};
     }
 

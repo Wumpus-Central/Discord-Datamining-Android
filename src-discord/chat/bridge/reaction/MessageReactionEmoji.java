@@ -24,7 +24,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
     private final String displayName;
 
     
-    private final String f7252id;
+    private final String f7253id;
     private final String name;
     private final String src;
 
@@ -55,9 +55,9 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         this.src = str2;
         this.displayName = str3;
         if ((i10 & 8) == 0) {
-            this.f7252id = null;
+            this.f7253id = null;
         } else {
-            this.f7252id = str4;
+            this.f7253id = str4;
         }
         if ((i10 & 16) == 0) {
             this.animated = null;
@@ -98,7 +98,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
             z10 = true;
         }
         if (z10) {
-            output.B(serialDesc, 0, a2.f29755a, self.getName());
+            output.B(serialDesc, 0, a2.f29758a, self.getName());
         }
         output.x(serialDesc, 1, self.getSrc());
         output.x(serialDesc, 2, self.getDisplayName());
@@ -108,13 +108,13 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
             z11 = true;
         }
         if (z11) {
-            output.B(serialDesc, 3, a2.f29755a, self.getId());
+            output.B(serialDesc, 3, a2.f29758a, self.getId());
         }
         if (output.z(serialDesc, 4) || self.getAnimated() != null) {
             z12 = true;
         }
         if (z12) {
-            output.B(serialDesc, 4, h.f29797a, self.getAnimated());
+            output.B(serialDesc, 4, h.f29800a, self.getAnimated());
         }
     }
 
@@ -172,7 +172,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
 
     @Override 
     public String getId() {
-        return this.f7252id;
+        return this.f7253id;
     }
 
     @Override 
@@ -219,7 +219,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         this.name = str;
         this.src = src;
         this.displayName = displayName;
-        this.f7252id = str2;
+        this.f7253id = str2;
         this.animated = bool;
     }
 

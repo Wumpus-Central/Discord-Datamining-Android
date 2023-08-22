@@ -60,7 +60,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         private final String fileName;
 
         
-        private final long f7225id;
+        private final long f7226id;
         private final String path;
         private final String relativePath;
         private final Uri uri;
@@ -69,7 +69,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
             q.h(fileName, "fileName");
             q.h(relativePath, "relativePath");
             q.h(uri, "uri");
-            this.f7225id = j10;
+            this.f7226id = j10;
             this.fileName = fileName;
             this.relativePath = relativePath;
             this.uri = uri;
@@ -78,7 +78,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public final long component1() {
-            return this.f7225id;
+            return this.f7226id;
         }
 
         public final String component2() {
@@ -112,7 +112,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
                 return false;
             }
             ScreenshotData screenshotData = (ScreenshotData) obj;
-            return this.f7225id == screenshotData.f7225id && q.c(this.fileName, screenshotData.fileName) && q.c(this.relativePath, screenshotData.relativePath) && q.c(this.uri, screenshotData.uri) && this.dateAdded == screenshotData.dateAdded;
+            return this.f7226id == screenshotData.f7226id && q.c(this.fileName, screenshotData.fileName) && q.c(this.relativePath, screenshotData.relativePath) && q.c(this.uri, screenshotData.uri) && this.dateAdded == screenshotData.dateAdded;
         }
 
         public final long getDateAdded() {
@@ -124,7 +124,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public final long getId() {
-            return this.f7225id;
+            return this.f7226id;
         }
 
         public final String getPath() {
@@ -140,11 +140,11 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public int hashCode() {
-            return (((((((b.a(this.f7225id) * 31) + this.fileName.hashCode()) * 31) + this.relativePath.hashCode()) * 31) + this.uri.hashCode()) * 31) + b.a(this.dateAdded);
+            return (((((((b.a(this.f7226id) * 31) + this.fileName.hashCode()) * 31) + this.relativePath.hashCode()) * 31) + this.uri.hashCode()) * 31) + b.a(this.dateAdded);
         }
 
         public String toString() {
-            long j10 = this.f7225id;
+            long j10 = this.f7226id;
             String str = this.fileName;
             String str2 = this.relativePath;
             Uri uri = this.uri;

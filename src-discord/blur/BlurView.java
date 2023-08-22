@@ -100,10 +100,6 @@ public final class BlurView extends a implements BlurViewAPI {
         Companion.updateListener$blur_release(blurView$blurTargetChangeListener$1, true, new AnonymousClass1());
     }
 
-    public static final  void access$maybeUpdate(BlurView blurView) {
-        blurView.maybeUpdate();
-    }
-
     
     public final void maybeUpdate() {
         ViewGroup viewRef;

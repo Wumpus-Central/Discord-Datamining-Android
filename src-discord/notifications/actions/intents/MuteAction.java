@@ -75,7 +75,7 @@ public final class MuteAction implements NotificationAction {
             bundle.putString("guildId", String.valueOf(guildId.m603unboximpl()));
         }
         bundle.putString("channelId", String.valueOf(this.channelId));
-        HeadlessTasks.Companion.startHeadlessTask$default(companion, context, "MuteAction", 0L, false, bundle, true, 12, null);
+        companion.startHeadlessTask(context, "MuteAction", (r18 & 4) != 0 ? HeadlessTasks.TASK_TIMEOUT_DEFAULT : 0L, (r18 & 8) != 0, (r18 & 16) != 0 ? new Bundle() : bundle, (r18 & 32) != 0 ? false : true);
     }
 
     @Override 

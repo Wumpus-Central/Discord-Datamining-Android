@@ -21,7 +21,7 @@ public final class ConnectionsRoleTag {
     private final int iconColor;
 
     
-    private final String f7247id;
+    private final String f7248id;
     private final String name;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/chat/bridge/connectionsroletag/ConnectionsRoleTag$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/connectionsroletag/ConnectionsRoleTag;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -43,7 +43,7 @@ public final class ConnectionsRoleTag {
         if (15 != (i10 & 15)) {
             n1.b(i10, 15, ConnectionsRoleTag$$serializer.INSTANCE.getDescriptor());
         }
-        this.f7247id = str;
+        this.f7248id = str;
         this.name = str2;
         this.backgroundColor = i11;
         this.iconColor = i12;
@@ -51,7 +51,7 @@ public final class ConnectionsRoleTag {
 
     public static  ConnectionsRoleTag copy$default(ConnectionsRoleTag connectionsRoleTag, String str, String str2, int i10, int i11, int i12, Object obj) {
         if ((i12 & 1) != 0) {
-            str = connectionsRoleTag.f7247id;
+            str = connectionsRoleTag.f7248id;
         }
         if ((i12 & 2) != 0) {
             str2 = connectionsRoleTag.name;
@@ -69,14 +69,14 @@ public final class ConnectionsRoleTag {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.x(serialDesc, 0, self.f7247id);
+        output.x(serialDesc, 0, self.f7248id);
         output.x(serialDesc, 1, self.name);
         output.v(serialDesc, 2, self.backgroundColor);
         output.v(serialDesc, 3, self.iconColor);
     }
 
     public final String component1() {
-        return this.f7247id;
+        return this.f7248id;
     }
 
     public final String component2() {
@@ -105,7 +105,7 @@ public final class ConnectionsRoleTag {
             return false;
         }
         ConnectionsRoleTag connectionsRoleTag = (ConnectionsRoleTag) obj;
-        return q.c(this.f7247id, connectionsRoleTag.f7247id) && q.c(this.name, connectionsRoleTag.name) && this.backgroundColor == connectionsRoleTag.backgroundColor && this.iconColor == connectionsRoleTag.iconColor;
+        return q.c(this.f7248id, connectionsRoleTag.f7248id) && q.c(this.name, connectionsRoleTag.name) && this.backgroundColor == connectionsRoleTag.backgroundColor && this.iconColor == connectionsRoleTag.iconColor;
     }
 
     public final int getBackgroundColor() {
@@ -117,7 +117,7 @@ public final class ConnectionsRoleTag {
     }
 
     public final String getId() {
-        return this.f7247id;
+        return this.f7248id;
     }
 
     public final String getName() {
@@ -125,11 +125,11 @@ public final class ConnectionsRoleTag {
     }
 
     public int hashCode() {
-        return (((((this.f7247id.hashCode() * 31) + this.name.hashCode()) * 31) + this.backgroundColor) * 31) + this.iconColor;
+        return (((((this.f7248id.hashCode() * 31) + this.name.hashCode()) * 31) + this.backgroundColor) * 31) + this.iconColor;
     }
 
     public String toString() {
-        String str = this.f7247id;
+        String str = this.f7248id;
         String str2 = this.name;
         int i10 = this.backgroundColor;
         int i11 = this.iconColor;
@@ -139,7 +139,7 @@ public final class ConnectionsRoleTag {
     public ConnectionsRoleTag(String id2, String name, int i10, int i11) {
         q.h(id2, "id");
         q.h(name, "name");
-        this.f7247id = id2;
+        this.f7248id = id2;
         this.name = name;
         this.backgroundColor = i10;
         this.iconColor = i11;

@@ -32,7 +32,7 @@ public final class TapGiftCodeEmbedData$$serializer implements f0<TapGiftCodeEmb
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f29755a};
+        return new KSerializer[]{a2.f29758a};
     }
 
     @Override 

@@ -250,6 +250,8 @@
     <color name="brand_830">#ff141738</color>
     <color name="brand_860">#ff0d0f24</color>
     <color name="brand_900">#ff04050c</color>
+    <color name="brand_inverted_background">#ffffffff</color>
+    <color name="brand_inverted_yellow_background">#ffffffff</color>
     <color name="brand_new_360_alpha_20">#33949cf7</color>
     <color name="brand_new_360_alpha_25">#40949cf7</color>
     <color name="brand_new_500_alpha_20">#335865f2</color>

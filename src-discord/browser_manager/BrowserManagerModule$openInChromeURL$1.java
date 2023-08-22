@@ -22,7 +22,7 @@ final class BrowserManagerModule$openInChromeURL$1 extends s implements Function
     @Override 
     public   Unit invoke(Exception exc) {
         invoke2(exc);
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     

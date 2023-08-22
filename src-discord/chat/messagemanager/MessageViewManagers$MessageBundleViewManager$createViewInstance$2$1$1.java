@@ -31,7 +31,7 @@ public final class MessageViewManagers$MessageBundleViewManager$createViewInstan
     @Override 
     public   Unit invoke(MessageId messageId) {
         m146invoke1xi1bu0(messageId.m615unboximpl());
-        return Unit.f21210a;
+        return Unit.f21213a;
     }
 
     
