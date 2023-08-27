@@ -33,6 +33,6 @@ public final class TextUtilsKt$toSpannable$12$click$6 extends s implements Funct
     
     public final void invoke2(View it) {
         q.h(it, "it");
-        this.$rc.getOnTapChannel().invoke(((StaticChannelMentionContentNode) this.$contentNode).getChannelId().getChannelId(), String.valueOf(((StaticChannelMentionContentNode) this.$contentNode).m86getGuildIdqOKuAAo()), null);
+        this.$rc.getOnTapChannel().invoke(((StaticChannelMentionContentNode) this.$contentNode).getChannelId().getChannelId(), String.valueOf(((StaticChannelMentionContentNode) this.$contentNode).m94getGuildIdqOKuAAo()), null);
     }
 }

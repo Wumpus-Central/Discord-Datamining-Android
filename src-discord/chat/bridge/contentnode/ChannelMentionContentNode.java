@@ -108,7 +108,7 @@ public final class ChannelMentionContentNode extends MentionContentNode {
             z10 = true;
         }
         if (z10) {
-            output.B(serialDesc, 1, a2.f29758a, self.guildId);
+            output.B(serialDesc, 1, a2.f29762a, self.guildId);
         }
         if (!output.z(serialDesc, 2) && self.messageId == null) {
             z11 = false;
@@ -116,7 +116,7 @@ public final class ChannelMentionContentNode extends MentionContentNode {
             z11 = true;
         }
         if (z11) {
-            output.B(serialDesc, 2, a2.f29758a, self.messageId);
+            output.B(serialDesc, 2, a2.f29762a, self.messageId);
         }
         if (!output.z(serialDesc, 3) && self.originalLink == null) {
             z12 = false;
@@ -124,7 +124,7 @@ public final class ChannelMentionContentNode extends MentionContentNode {
             z12 = true;
         }
         if (z12) {
-            output.B(serialDesc, 3, a2.f29758a, self.originalLink);
+            output.B(serialDesc, 3, a2.f29762a, self.originalLink);
         }
         if (output.z(serialDesc, 4) || self.inContent != null) {
             z13 = true;

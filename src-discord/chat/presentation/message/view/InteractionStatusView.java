@@ -2,6 +2,7 @@ package com.discord.chat.presentation.message.view;
 
 import android.content.Context;
 import android.graphics.Paint;
+import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.TextView;
@@ -40,7 +41,7 @@ public final class InteractionStatusView extends ConstraintLayout {
     }
 
     
-    public final void m322setInteractionStatusntcYbpo(String messageId, InteractionStatus interactionStatus) {
+    public final void m330setInteractionStatusntcYbpo(String messageId, InteractionStatus interactionStatus) {
         int i10;
         int i11;
         q.h(messageId, "messageId");
@@ -64,10 +65,13 @@ public final class InteractionStatusView extends ConstraintLayout {
         q.g(setInteractionStatus_ntcYbpo$lambda$2, "setInteractionStatus_ntcYbpo$lambda$2");
         StructurableText text = interactionStatus.getText();
         Context context = setInteractionStatus_ntcYbpo$lambda$2.getContext();
-        q.g(context, "context");
         Paint.FontMetrics fontMetrics = setInteractionStatus_ntcYbpo$lambda$2.getPaint().getFontMetrics();
         q.g(fontMetrics, "paint.fontMetrics");
-        DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(text, context, messageId, false, false, false, null, null, null, null, null, null, null, null, null, null, null, false, null, TextUtilsKt.getBaselineHeight(fontMetrics), 262112, null);
+        float baselineHeight = TextUtilsKt.getBaselineHeight(fontMetrics);
+        TextPaint paint = setInteractionStatus_ntcYbpo$lambda$2.getPaint();
+        q.g(context, "context");
+        q.g(paint, "paint");
+        DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(text, context, messageId, false, false, false, paint, null, null, null, null, null, null, null, null, null, null, null, false, null, baselineHeight, 524224, null);
         SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(setInteractionStatus_ntcYbpo$lambda$2));
         ViewUtilsKt.setOptionalText(setInteractionStatus_ntcYbpo$lambda$2, spannable$default);
         if (interactionStatus.isFailed()) {

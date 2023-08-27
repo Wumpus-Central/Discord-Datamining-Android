@@ -34,6 +34,6 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$20 extends s imple
 
     
     public final void invoke2(Double d10) {
-        this.this$0.m200onMediaClickedl3ndGo(this.$holder, this.$part.mo222getMessageId3Eiw7ao(), ((VideoAttachmentMessageAccessory) this.$part).getIndex(), "attachment", d10, null, ViewResizeMode.Fill);
+        this.this$0.m208onMediaClickedl3ndGo(this.$holder, this.$part.mo230getMessageId3Eiw7ao(), ((VideoAttachmentMessageAccessory) this.$part).getIndex(), "attachment", d10, null, ViewResizeMode.Fill);
     }
 }

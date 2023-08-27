@@ -34,7 +34,7 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$23 extends s imple
         Double valueOf;
         q.h(attachment, "attachment");
         q.h(attachmentViewHolder, "attachmentViewHolder");
-        String str = attachment.mo222getMessageId3Eiw7ao();
+        String str = attachment.mo230getMessageId3Eiw7ao();
         if (attachment instanceof ImageAttachmentMessageAccessory) {
             valueOf = null;
         } else if (attachment instanceof VideoAttachmentMessageAccessory) {
@@ -42,6 +42,6 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$23 extends s imple
         } else {
             throw new IllegalStateException(("Unsupported accessory: " + attachment).toString());
         }
-        this.this$0.m200onMediaClickedl3ndGo(attachmentViewHolder, str, i10, "attachment", valueOf, null, ViewResizeMode.Cover);
+        this.this$0.m208onMediaClickedl3ndGo(attachmentViewHolder, str, i10, "attachment", valueOf, null, ViewResizeMode.Cover);
     }
 }

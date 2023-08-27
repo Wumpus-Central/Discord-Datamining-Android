@@ -29,18 +29,18 @@ public final class MessageId$$serializer implements f0<MessageId> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f29758a};
+        return new KSerializer[]{a2.f29762a};
     }
 
     @Override 
     public   Object deserialize(Decoder decoder) {
-        return MessageId.m607boximpl(m616deserializeMpY7Jxs(decoder));
+        return MessageId.m615boximpl(m624deserializeMpY7Jxs(decoder));
     }
 
     
-    public String m616deserializeMpY7Jxs(Decoder decoder) {
+    public String m624deserializeMpY7Jxs(Decoder decoder) {
         q.h(decoder, "decoder");
-        return MessageId.m608constructorimpl(decoder.q(getDescriptor()).z());
+        return MessageId.m616constructorimpl(decoder.q(getDescriptor()).z());
     }
 
     @Override 
@@ -50,11 +50,11 @@ public final class MessageId$$serializer implements f0<MessageId> {
 
     @Override 
     public   void serialize(Encoder encoder, Object obj) {
-        m617serializeAyv7vGE(encoder, ((MessageId) obj).m615unboximpl());
+        m625serializeAyv7vGE(encoder, ((MessageId) obj).m623unboximpl());
     }
 
     
-    public void m617serializeAyv7vGE(Encoder encoder, String value) {
+    public void m625serializeAyv7vGE(Encoder encoder, String value) {
         q.h(encoder, "encoder");
         q.h(value, "value");
         Encoder j10 = encoder.j(getDescriptor());

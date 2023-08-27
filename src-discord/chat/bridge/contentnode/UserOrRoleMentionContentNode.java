@@ -91,7 +91,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
 
     
     
-    public static  UserOrRoleMentionContentNode m93copyDZRaReU$default(UserOrRoleMentionContentNode userOrRoleMentionContentNode, ChannelId channelId, UserId userId, int i10, GuildId guildId, RoleId roleId, List list, int i11, Object obj) {
+    public static  UserOrRoleMentionContentNode m101copyDZRaReU$default(UserOrRoleMentionContentNode userOrRoleMentionContentNode, ChannelId channelId, UserId userId, int i10, GuildId guildId, RoleId roleId, List list, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             channelId = userOrRoleMentionContentNode.channelId;
         }
@@ -110,7 +110,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
         if ((i11 & 32) != 0) {
             list = userOrRoleMentionContentNode.getContent();
         }
-        return userOrRoleMentionContentNode.m98copyDZRaReU(channelId, userId, i10, guildId, roleId, list);
+        return userOrRoleMentionContentNode.m106copyDZRaReU(channelId, userId, i10, guildId, roleId, list);
     }
 
     public static final void write$Self(UserOrRoleMentionContentNode self, CompositeEncoder output, SerialDescriptor serialDesc) {
@@ -165,12 +165,12 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     
-    public final ChannelId m94component1qMVnFVQ() {
+    public final ChannelId m102component1qMVnFVQ() {
         return this.channelId;
     }
 
     
-    public final UserId m95component2wUX8bhU() {
+    public final UserId m103component2wUX8bhU() {
         return this.userId;
     }
 
@@ -179,12 +179,12 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     
-    public final GuildId m96component4qOKuAAo() {
+    public final GuildId m104component4qOKuAAo() {
         return this.guildId;
     }
 
     
-    public final RoleId m97component5fYaclRY() {
+    public final RoleId m105component5fYaclRY() {
         return this.roleId;
     }
 
@@ -193,7 +193,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     
-    public final UserOrRoleMentionContentNode m98copyDZRaReU(ChannelId channelId, UserId userId, int i10, GuildId guildId, RoleId roleId, List<? extends ContentNode> content) {
+    public final UserOrRoleMentionContentNode m106copyDZRaReU(ChannelId channelId, UserId userId, int i10, GuildId guildId, RoleId roleId, List<? extends ContentNode> content) {
         q.h(content, "content");
         return new UserOrRoleMentionContentNode(channelId, userId, i10, guildId, roleId, content, null);
     }
@@ -210,7 +210,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     
-    public final ChannelId m99getChannelIdqMVnFVQ() {
+    public final ChannelId m107getChannelIdqMVnFVQ() {
         return this.channelId;
     }
 
@@ -220,7 +220,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     
-    public final GuildId m100getGuildIdqOKuAAo() {
+    public final GuildId m108getGuildIdqOKuAAo() {
         return this.guildId;
     }
 
@@ -229,26 +229,26 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     
-    public final RoleId m101getRoleIdfYaclRY() {
+    public final RoleId m109getRoleIdfYaclRY() {
         return this.roleId;
     }
 
     
-    public final UserId m102getUserIdwUX8bhU() {
+    public final UserId m110getUserIdwUX8bhU() {
         return this.userId;
     }
 
     public int hashCode() {
         ChannelId channelId = this.channelId;
         int i10 = 0;
-        int i11 = (channelId == null ? 0 : ChannelId.m586hashCodeimpl(channelId.m590unboximpl())) * 31;
+        int i11 = (channelId == null ? 0 : ChannelId.m594hashCodeimpl(channelId.m598unboximpl())) * 31;
         UserId userId = this.userId;
-        int i12 = (((i11 + (userId == null ? 0 : UserId.m650hashCodeimpl(userId.m654unboximpl()))) * 31) + this.roleColor) * 31;
+        int i12 = (((i11 + (userId == null ? 0 : UserId.m658hashCodeimpl(userId.m662unboximpl()))) * 31) + this.roleColor) * 31;
         GuildId guildId = this.guildId;
-        int i13 = (i12 + (guildId == null ? 0 : GuildId.m599hashCodeimpl(guildId.m603unboximpl()))) * 31;
+        int i13 = (i12 + (guildId == null ? 0 : GuildId.m607hashCodeimpl(guildId.m611unboximpl()))) * 31;
         RoleId roleId = this.roleId;
         if (roleId != null) {
-            i10 = RoleId.m624hashCodeimpl(roleId.m628unboximpl());
+            i10 = RoleId.m632hashCodeimpl(roleId.m636unboximpl());
         }
         return ((i13 + i10) * 31) + getContent().hashCode();
     }

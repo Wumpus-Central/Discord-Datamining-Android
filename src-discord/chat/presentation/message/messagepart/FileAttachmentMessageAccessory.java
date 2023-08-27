@@ -30,9 +30,9 @@ public final class FileAttachmentMessageAccessory extends MessageAccessory {
     }
 
     
-    public static  FileAttachmentMessageAccessory m243copydB0bEw$default(FileAttachmentMessageAccessory fileAttachmentMessageAccessory, String str, int i10, Attachment attachment, SpoilerAttributes spoilerAttributes, String str2, String str3, Float f10, int i11, Object obj) {
+    public static  FileAttachmentMessageAccessory m251copydB0bEw$default(FileAttachmentMessageAccessory fileAttachmentMessageAccessory, String str, int i10, Attachment attachment, SpoilerAttributes spoilerAttributes, String str2, String str3, Float f10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = fileAttachmentMessageAccessory.mo222getMessageId3Eiw7ao();
+            str = fileAttachmentMessageAccessory.mo230getMessageId3Eiw7ao();
         }
         if ((i11 & 2) != 0) {
             i10 = fileAttachmentMessageAccessory.attachmentIndex;
@@ -52,12 +52,12 @@ public final class FileAttachmentMessageAccessory extends MessageAccessory {
         if ((i11 & 64) != 0) {
             f10 = fileAttachmentMessageAccessory.attachmentsOpacity;
         }
-        return fileAttachmentMessageAccessory.m245copydB0bEw(str, i10, attachment, spoilerAttributes, str2, str3, f10);
+        return fileAttachmentMessageAccessory.m253copydB0bEw(str, i10, attachment, spoilerAttributes, str2, str3, f10);
     }
 
     
-    public final String m244component13Eiw7ao() {
-        return mo222getMessageId3Eiw7ao();
+    public final String m252component13Eiw7ao() {
+        return mo230getMessageId3Eiw7ao();
     }
 
     public final int component2() {
@@ -85,7 +85,7 @@ public final class FileAttachmentMessageAccessory extends MessageAccessory {
     }
 
     
-    public final FileAttachmentMessageAccessory m245copydB0bEw(String messageId, int i10, Attachment attachment, SpoilerAttributes spoilerAttributes, String str, String str2, Float f10) {
+    public final FileAttachmentMessageAccessory m253copydB0bEw(String messageId, int i10, Attachment attachment, SpoilerAttributes spoilerAttributes, String str, String str2, Float f10) {
         q.h(messageId, "messageId");
         q.h(attachment, "attachment");
         return new FileAttachmentMessageAccessory(messageId, i10, attachment, spoilerAttributes, str, str2, f10, null);
@@ -99,7 +99,7 @@ public final class FileAttachmentMessageAccessory extends MessageAccessory {
             return false;
         }
         FileAttachmentMessageAccessory fileAttachmentMessageAccessory = (FileAttachmentMessageAccessory) obj;
-        return MessageId.m611equalsimpl0(mo222getMessageId3Eiw7ao(), fileAttachmentMessageAccessory.mo222getMessageId3Eiw7ao()) && this.attachmentIndex == fileAttachmentMessageAccessory.attachmentIndex && q.c(this.attachment, fileAttachmentMessageAccessory.attachment) && q.c(this.spoilerAttributes, fileAttachmentMessageAccessory.spoilerAttributes) && q.c(this.uploaderId, fileAttachmentMessageAccessory.uploaderId) && q.c(this.uploaderItemId, fileAttachmentMessageAccessory.uploaderItemId) && q.c(this.attachmentsOpacity, fileAttachmentMessageAccessory.attachmentsOpacity);
+        return MessageId.m619equalsimpl0(mo230getMessageId3Eiw7ao(), fileAttachmentMessageAccessory.mo230getMessageId3Eiw7ao()) && this.attachmentIndex == fileAttachmentMessageAccessory.attachmentIndex && q.c(this.attachment, fileAttachmentMessageAccessory.attachment) && q.c(this.spoilerAttributes, fileAttachmentMessageAccessory.spoilerAttributes) && q.c(this.uploaderId, fileAttachmentMessageAccessory.uploaderId) && q.c(this.uploaderItemId, fileAttachmentMessageAccessory.uploaderItemId) && q.c(this.attachmentsOpacity, fileAttachmentMessageAccessory.attachmentsOpacity);
     }
 
     public final Attachment getAttachment() {
@@ -116,7 +116,7 @@ public final class FileAttachmentMessageAccessory extends MessageAccessory {
 
     @Override 
     
-    public String mo222getMessageId3Eiw7ao() {
+    public String mo230getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -133,7 +133,7 @@ public final class FileAttachmentMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int i10 = ((((MessageId.m612hashCodeimpl(mo222getMessageId3Eiw7ao()) * 31) + this.attachmentIndex) * 31) + this.attachment.hashCode()) * 31;
+        int i10 = ((((MessageId.m620hashCodeimpl(mo230getMessageId3Eiw7ao()) * 31) + this.attachmentIndex) * 31) + this.attachment.hashCode()) * 31;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         int i11 = 0;
         int hashCode = (i10 + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode())) * 31;
@@ -149,7 +149,7 @@ public final class FileAttachmentMessageAccessory extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m613toStringimpl(mo222getMessageId3Eiw7ao());
+        String str = MessageId.m621toStringimpl(mo230getMessageId3Eiw7ao());
         int i10 = this.attachmentIndex;
         Attachment attachment = this.attachment;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;

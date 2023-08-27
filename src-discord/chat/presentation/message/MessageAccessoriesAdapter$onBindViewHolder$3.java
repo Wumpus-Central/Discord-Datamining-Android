@@ -34,6 +34,6 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$3 extends s implem
 
     
     public final void invoke2(Double d10, Integer num) {
-        this.this$0.m200onMediaClickedl3ndGo(this.$holder, this.$part.mo222getMessageId3Eiw7ao(), ((EmbedMessageAccessory) this.$part).getIndex(), "embed", d10, num, ViewResizeMode.Fill);
+        this.this$0.m208onMediaClickedl3ndGo(this.$holder, this.$part.mo230getMessageId3Eiw7ao(), ((EmbedMessageAccessory) this.$part).getIndex(), "embed", d10, num, ViewResizeMode.Fill);
     }
 }

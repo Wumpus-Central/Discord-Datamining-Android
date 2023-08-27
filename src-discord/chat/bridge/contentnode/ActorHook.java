@@ -40,7 +40,7 @@ public final class ActorHook {
             n1.b(i10, 3, ActorHook$$serializer.INSTANCE.getDescriptor());
         }
         this.action = str;
-        this.userId = userId.m654unboximpl();
+        this.userId = userId.m662unboximpl();
     }
 
     public  ActorHook(int i10, String str, UserId userId, SerializationConstructorMarker serializationConstructorMarker, DefaultConstructorMarker defaultConstructorMarker) {
@@ -52,14 +52,14 @@ public final class ActorHook {
     }
 
     
-    public static  ActorHook m39copy2YFG4pU$default(ActorHook actorHook, String str, long j10, int i10, Object obj) {
+    public static  ActorHook m47copy2YFG4pU$default(ActorHook actorHook, String str, long j10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = actorHook.action;
         }
         if ((i10 & 2) != 0) {
             j10 = actorHook.userId;
         }
-        return actorHook.m41copy2YFG4pU(str, j10);
+        return actorHook.m49copy2YFG4pU(str, j10);
     }
 
     public static final void write$Self(ActorHook self, CompositeEncoder output, SerialDescriptor serialDesc) {
@@ -67,7 +67,7 @@ public final class ActorHook {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         output.x(serialDesc, 0, self.action);
-        output.o(serialDesc, 1, UserId$$serializer.INSTANCE, UserId.m645boximpl(self.userId));
+        output.o(serialDesc, 1, UserId$$serializer.INSTANCE, UserId.m653boximpl(self.userId));
     }
 
     public final String component1() {
@@ -75,12 +75,12 @@ public final class ActorHook {
     }
 
     
-    public final long m40component2re6GcUE() {
+    public final long m48component2re6GcUE() {
         return this.userId;
     }
 
     
-    public final ActorHook m41copy2YFG4pU(String action, long j10) {
+    public final ActorHook m49copy2YFG4pU(String action, long j10) {
         q.h(action, "action");
         return new ActorHook(action, j10, null);
     }
@@ -93,7 +93,7 @@ public final class ActorHook {
             return false;
         }
         ActorHook actorHook = (ActorHook) obj;
-        return q.c(this.action, actorHook.action) && UserId.m649equalsimpl0(this.userId, actorHook.userId);
+        return q.c(this.action, actorHook.action) && UserId.m657equalsimpl0(this.userId, actorHook.userId);
     }
 
     public final String getAction() {
@@ -101,17 +101,17 @@ public final class ActorHook {
     }
 
     
-    public final long m42getUserIdre6GcUE() {
+    public final long m50getUserIdre6GcUE() {
         return this.userId;
     }
 
     public int hashCode() {
-        return (this.action.hashCode() * 31) + UserId.m650hashCodeimpl(this.userId);
+        return (this.action.hashCode() * 31) + UserId.m658hashCodeimpl(this.userId);
     }
 
     public String toString() {
         String str = this.action;
-        String str2 = UserId.m652toStringimpl(this.userId);
+        String str2 = UserId.m660toStringimpl(this.userId);
         return "ActorHook(action=" + str + ", userId=" + str2 + ")";
     }
 

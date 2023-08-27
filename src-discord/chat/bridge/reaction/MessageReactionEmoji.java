@@ -98,7 +98,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
             z10 = true;
         }
         if (z10) {
-            output.B(serialDesc, 0, a2.f29758a, self.getName());
+            output.B(serialDesc, 0, a2.f29762a, self.getName());
         }
         output.x(serialDesc, 1, self.getSrc());
         output.x(serialDesc, 2, self.getDisplayName());
@@ -108,13 +108,13 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
             z11 = true;
         }
         if (z11) {
-            output.B(serialDesc, 3, a2.f29758a, self.getId());
+            output.B(serialDesc, 3, a2.f29762a, self.getId());
         }
         if (output.z(serialDesc, 4) || self.getAnimated() != null) {
             z12 = true;
         }
         if (z12) {
-            output.B(serialDesc, 4, h.f29800a, self.getAnimated());
+            output.B(serialDesc, 4, h.f29804a, self.getAnimated());
         }
     }
 

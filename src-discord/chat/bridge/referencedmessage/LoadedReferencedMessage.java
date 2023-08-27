@@ -70,7 +70,7 @@ public final class LoadedReferencedMessage extends ReferencedMessage {
             z10 = true;
         }
         if (z10) {
-            output.B(serialDesc, 1, a2.f29758a, self.systemContent);
+            output.B(serialDesc, 1, a2.f29762a, self.systemContent);
         }
     }
 

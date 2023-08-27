@@ -1,7 +1,7 @@
 package com.discord.bundle_updater;
 
 import com.discord.bundle_updater.BundleUpdater;
-import com.discord.bundle_updater.react.events.OtaUpdateCheckedEvent;
+import com.discord.bundle_updater.react.events.OtaCheckAttemptEvent;
 import com.discord.reactevents.ReactEvents;
 import com.facebook.react.bridge.ReactApplicationContext;
 import java.util.List;
@@ -25,17 +25,17 @@ final class BundleUpdaterManager$addListener$2 extends s implements Function1<Li
 
     @Override 
     public   Unit invoke(List<? extends BundleUpdater.OtaMetric> list) {
-        invoke2((List<BundleUpdater.OtaMetric>) list);
+        invoke2(list);
         return Unit.f21213a;
     }
 
     
-    public final void invoke2(List<BundleUpdater.OtaMetric> metrics) {
+    public final void invoke2(List<? extends BundleUpdater.OtaMetric> metrics) {
         ReactEvents reactEvents;
         ReactApplicationContext reactApplicationContext;
         q.h(metrics, "metrics");
         reactEvents = this.this$0.reactEvents;
         reactApplicationContext = this.this$0.reactContext;
-        reactEvents.emitModuleEvent(reactApplicationContext, new OtaUpdateCheckedEvent(metrics));
+        reactEvents.emitModuleEvent(reactApplicationContext, new OtaCheckAttemptEvent(metrics));
     }
 }

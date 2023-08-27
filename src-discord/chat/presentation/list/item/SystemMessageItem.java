@@ -88,7 +88,7 @@ public final class SystemMessageItem extends ChatListItem {
 
     
     public SystemMessageItem(Message message, MessageContext messageContext, BackgroundHighlight backgroundHighlight) {
-        super(message.m17getId3Eiw7ao(), null);
+        super(message.m25getId3Eiw7ao(), null);
         q.h(message, "message");
         q.h(messageContext, "messageContext");
         this.message = message;

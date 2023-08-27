@@ -32,7 +32,7 @@ public final class OnLongPressStickerEvent$$serializer implements f0<OnLongPress
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f29758a};
+        return new KSerializer[]{a2.f29762a};
     }
 
     @Override 

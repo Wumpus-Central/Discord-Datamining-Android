@@ -40,7 +40,7 @@ public final class BSDiff {
     }
 
     static {
-        byte[] bytes = "MBSDIF43".getBytes(a.f24906b);
+        byte[] bytes = "MBSDIF43".getBytes(a.f24911b);
         q.g(bytes, "this as java.lang.String).getBytes(charset)");
         BSDIFF_CONFIG_MAGIC = bytes;
     }

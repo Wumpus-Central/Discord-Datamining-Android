@@ -178,7 +178,7 @@ public final class SystemLogUtils {
     private final String hashString(String str) {
         String Z;
         MessageDigest instance = MessageDigest.getInstance("SHA-1");
-        byte[] bytes = str.getBytes(a.f24906b);
+        byte[] bytes = str.getBytes(a.f24911b);
         q.g(bytes, "this as java.lang.String).getBytes(charset)");
         byte[] bytes2 = instance.digest(bytes);
         q.g(bytes2, "bytes");

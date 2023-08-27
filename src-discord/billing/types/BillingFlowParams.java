@@ -22,7 +22,7 @@ public final class BillingFlowParams {
 
     private final String getObfuscatedUserId(String str) {
         MessageDigest instance = MessageDigest.getInstance("SHA-256");
-        byte[] bytes = str.getBytes(a.f24906b);
+        byte[] bytes = str.getBytes(a.f24911b);
         q.g(bytes, "this as java.lang.String).getBytes(charset)");
         byte[] digest = instance.digest(bytes);
         q.g(digest, "getInstance(\"SHA-256\")\n …est(userId.toByteArray())");
@@ -144,9 +144,8 @@ public final class BillingFlowParams {
         Object obj;
         Object obj2;
         Object obj3;
-        Object obj4;
         boolean z10;
-        Object obj5;
+        Object obj4;
         q.h(productDetails, "productDetails");
         q.h(productId, "productId");
         q.h(userId, "userId");
@@ -163,68 +162,56 @@ public final class BillingFlowParams {
             }
         }
         ProductDetails productDetails2 = (ProductDetails) obj;
-        Iterator<T> it2 = productDetails.iterator();
-        while (true) {
-            if (!it2.hasNext()) {
-                obj2 = null;
-                break;
+        if (productDetails2 != null) {
+            Iterator<T> it2 = productDetails.iterator();
+            while (true) {
+                if (!it2.hasNext()) {
+                    obj2 = null;
+                    break;
+                }
+                obj2 = it2.next();
+                if (q.c(((ProductDetails) obj2).c(), str)) {
+                    break;
+                }
             }
-            obj2 = it2.next();
-            if (q.c(((ProductDetails) obj2).c(), str)) {
-                break;
+            ProductDetails productDetails3 = (ProductDetails) obj2;
+            if (str != null && productDetails3 == null) {
+                return null;
             }
-        }
-        ProductDetails productDetails3 = (ProductDetails) obj2;
-        ArrayList arrayList = new ArrayList();
-        if (productDetails2 == null || (str != null && productDetails3 == null)) {
-            return null;
-        }
-        Iterator<T> it3 = productDetails.iterator();
-        while (true) {
-            if (!it3.hasNext()) {
-                obj3 = null;
-                break;
-            }
-            obj3 = it3.next();
-            if (q.c(((ProductDetails) obj3).c(), productId)) {
-                break;
-            }
-        }
-        ProductDetails productDetails4 = (ProductDetails) obj3;
-        if (productDetails4 != null) {
-            BillingFlowParams.b.a c10 = BillingFlowParams.b.a().c(productDetails4);
-            q.g(c10, "newBuilder()\n           …uctDetails(productDetail)");
-            if (q.c(productDetails4.d(), "subs")) {
+            ArrayList arrayList = new ArrayList();
+            BillingFlowParams.b.a c10 = BillingFlowParams.b.a().c(productDetails2);
+            q.g(c10, "newBuilder()\n           …etails(newProductDetails)");
+            if (q.c(productDetails2.d(), "subs")) {
                 if (str3 != null) {
-                    List<ProductDetails.d> e10 = productDetails4.e();
+                    List<ProductDetails.d> e10 = productDetails2.e();
                     if (e10 != null) {
-                        Iterator<T> it4 = e10.iterator();
+                        Iterator<T> it3 = e10.iterator();
                         while (true) {
-                            if (!it4.hasNext()) {
-                                obj5 = null;
+                            if (!it3.hasNext()) {
+                                obj4 = null;
                                 break;
                             }
-                            obj5 = it4.next();
-                            if (q.c(((ProductDetails.d) obj5).a(), str3)) {
+                            obj4 = it3.next();
+                            if (q.c(((ProductDetails.d) obj4).a(), str3)) {
                                 break;
                             }
                         }
-                        ProductDetails.d dVar = (ProductDetails.d) obj5;
+                        ProductDetails.d dVar = (ProductDetails.d) obj4;
                         if (dVar != null) {
                             str4 = dVar.b();
                         }
                     }
                 } else {
-                    List<ProductDetails.d> e11 = productDetails4.e();
+                    List<ProductDetails.d> e11 = productDetails2.e();
                     if (e11 != null) {
-                        Iterator<T> it5 = e11.iterator();
+                        Iterator<T> it4 = e11.iterator();
                         while (true) {
-                            if (!it5.hasNext()) {
-                                obj4 = null;
+                            if (!it4.hasNext()) {
+                                obj3 = null;
                                 break;
                             }
-                            obj4 = it5.next();
-                            if (((ProductDetails.d) obj4).a() == null) {
+                            obj3 = it4.next();
+                            if (((ProductDetails.d) obj3).a() == null) {
                                 z10 = true;
                                 continue;
                             } else {
@@ -235,7 +222,7 @@ public final class BillingFlowParams {
                                 break;
                             }
                         }
-                        ProductDetails.d dVar2 = (ProductDetails.d) obj4;
+                        ProductDetails.d dVar2 = (ProductDetails.d) obj3;
                         if (dVar2 != null) {
                             str4 = dVar2.b();
                         }
@@ -244,7 +231,7 @@ public final class BillingFlowParams {
                 if (str4 != null) {
                     c10.b(str4);
                 } else {
-                    throw new AssertionError("Could not find offer token for productId: " + productDetails4.c() + " offerId: " + str3);
+                    throw new AssertionError("Could not find offer token for productId: " + productDetails2.c() + " offerId: " + str3);
                 }
             }
             BillingFlowParams.b a10 = c10.a();

@@ -62,13 +62,13 @@ public final class DirectReplyMessage {
             Json json = DirectReplyMessage.json;
             json.a();
             DirectReplyMessage directReplyMessage = (DirectReplyMessage) json.b(DirectReplyMessage.Companion.serializer(), data);
-            String str = directReplyMessage.m520getId3Eiw7ao();
+            String str = directReplyMessage.m528getId3Eiw7ao();
             Integer type = directReplyMessage.getType();
             String content = directReplyMessage.getContent();
-            long j10 = directReplyMessage.m519getChannelIdo4g7jtM();
+            long j10 = directReplyMessage.m527getChannelIdo4g7jtM();
             Integer channelType = directReplyMessage.getChannelType();
             h10 = j.h();
-            long j11 = directReplyMessage.getAuthor().m524getIdre6GcUE();
+            long j11 = directReplyMessage.getAuthor().m532getIdre6GcUE();
             String username = directReplyMessage.getAuthor().getUsername();
             if (username == null) {
                 username = "";
@@ -80,7 +80,7 @@ public final class DirectReplyMessage {
                 num = null;
             }
             String avatar = directReplyMessage.getAuthor().getAvatar();
-            return new NotificationData(NotificationData.TYPE_MESSAGE_CREATE, str, (Integer) null, (String) null, type, content, (Long) null, channelType, directReplyMessage.getChannelName(), ChannelId.m581boximpl(j10), (String) null, (String) null, (ChannelId) null, (String) null, h10, UserId.m645boximpl(j11), username, (String) null, num, avatar, (String) null, (Integer) null, (GuildId) null, directReplyMessage.getGuildName(), (String) null, (Integer) null, (String) null, (ApplicationId) null, (String) null, (String) null, (NotificationMessage) null, (String) null, (Integer) null, true, true, (String) null, (String) null, (String) null, (String) null, (String) null, (String) null, (Boolean) null, (String) null, -9290676, 2041, (DefaultConstructorMarker) null);
+            return new NotificationData(NotificationData.TYPE_MESSAGE_CREATE, str, (Integer) null, (String) null, type, content, (Long) null, channelType, directReplyMessage.getChannelName(), ChannelId.m589boximpl(j10), (String) null, (String) null, (ChannelId) null, (String) null, h10, UserId.m653boximpl(j11), username, (String) null, num, avatar, (String) null, (Integer) null, (GuildId) null, directReplyMessage.getGuildName(), (String) null, (Integer) null, (String) null, (ApplicationId) null, (String) null, (String) null, (NotificationMessage) null, (String) null, (Integer) null, true, true, (String) null, (String) null, (String) null, (String) null, (String) null, (String) null, (Boolean) null, (String) null, -9290676, 2041, (DefaultConstructorMarker) null);
         }
     }
 
@@ -89,7 +89,7 @@ public final class DirectReplyMessage {
             n1.b(i10, 7, DirectReplyMessage$$serializer.INSTANCE.getDescriptor());
         }
         this.f7561id = str;
-        this.channelId = channelId.m590unboximpl();
+        this.channelId = channelId.m598unboximpl();
         this.author = directReplyUser;
         if ((i10 & 8) == 0) {
             this.content = null;
@@ -127,7 +127,7 @@ public final class DirectReplyMessage {
     }
 
     
-    public static  void m515getChannelIdo4g7jtM$annotations() {
+    public static  void m523getChannelIdo4g7jtM$annotations() {
     }
 
     public static final void write$Self(DirectReplyMessage self, CompositeEncoder output, SerialDescriptor serialDesc) {
@@ -139,8 +139,8 @@ public final class DirectReplyMessage {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z14 = false;
-        output.o(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m607boximpl(self.f7561id));
-        output.o(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m581boximpl(self.channelId));
+        output.o(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m615boximpl(self.f7561id));
+        output.o(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m589boximpl(self.channelId));
         output.o(serialDesc, 2, DirectReplyUser$$serializer.INSTANCE, self.author);
         if (!output.z(serialDesc, 3) && self.content == null) {
             z10 = false;
@@ -148,7 +148,7 @@ public final class DirectReplyMessage {
             z10 = true;
         }
         if (z10) {
-            output.B(serialDesc, 3, a2.f29758a, self.content);
+            output.B(serialDesc, 3, a2.f29762a, self.content);
         }
         if (!output.z(serialDesc, 4) && self.type == null) {
             z11 = false;
@@ -156,7 +156,7 @@ public final class DirectReplyMessage {
             z11 = true;
         }
         if (z11) {
-            output.B(serialDesc, 4, m0.f29833a, self.type);
+            output.B(serialDesc, 4, m0.f29837a, self.type);
         }
         if (!output.z(serialDesc, 5) && self.channelType == null) {
             z12 = false;
@@ -164,7 +164,7 @@ public final class DirectReplyMessage {
             z12 = true;
         }
         if (z12) {
-            output.B(serialDesc, 5, m0.f29833a, self.channelType);
+            output.B(serialDesc, 5, m0.f29837a, self.channelType);
         }
         if (!output.z(serialDesc, 6) && self.channelName == null) {
             z13 = false;
@@ -172,23 +172,23 @@ public final class DirectReplyMessage {
             z13 = true;
         }
         if (z13) {
-            output.B(serialDesc, 6, a2.f29758a, self.channelName);
+            output.B(serialDesc, 6, a2.f29762a, self.channelName);
         }
         if (output.z(serialDesc, 7) || self.guildName != null) {
             z14 = true;
         }
         if (z14) {
-            output.B(serialDesc, 7, a2.f29758a, self.guildName);
+            output.B(serialDesc, 7, a2.f29762a, self.guildName);
         }
     }
 
     
-    public final String m516component13Eiw7ao() {
+    public final String m524component13Eiw7ao() {
         return this.f7561id;
     }
 
     
-    public final long m517component2o4g7jtM() {
+    public final long m525component2o4g7jtM() {
         return this.channelId;
     }
 
@@ -217,7 +217,7 @@ public final class DirectReplyMessage {
     }
 
     
-    public final DirectReplyMessage m518copy_6Dih7Q(String id2, long j10, DirectReplyUser author, String str, Integer num, Integer num2, String str2, String str3) {
+    public final DirectReplyMessage m526copy_6Dih7Q(String id2, long j10, DirectReplyUser author, String str, Integer num, Integer num2, String str2, String str3) {
         q.h(id2, "id");
         q.h(author, "author");
         return new DirectReplyMessage(id2, j10, author, str, num, num2, str2, str3, null);
@@ -231,7 +231,7 @@ public final class DirectReplyMessage {
             return false;
         }
         DirectReplyMessage directReplyMessage = (DirectReplyMessage) obj;
-        return MessageId.m611equalsimpl0(this.f7561id, directReplyMessage.f7561id) && ChannelId.m585equalsimpl0(this.channelId, directReplyMessage.channelId) && q.c(this.author, directReplyMessage.author) && q.c(this.content, directReplyMessage.content) && q.c(this.type, directReplyMessage.type) && q.c(this.channelType, directReplyMessage.channelType) && q.c(this.channelName, directReplyMessage.channelName) && q.c(this.guildName, directReplyMessage.guildName);
+        return MessageId.m619equalsimpl0(this.f7561id, directReplyMessage.f7561id) && ChannelId.m593equalsimpl0(this.channelId, directReplyMessage.channelId) && q.c(this.author, directReplyMessage.author) && q.c(this.content, directReplyMessage.content) && q.c(this.type, directReplyMessage.type) && q.c(this.channelType, directReplyMessage.channelType) && q.c(this.channelName, directReplyMessage.channelName) && q.c(this.guildName, directReplyMessage.guildName);
     }
 
     public final DirectReplyUser getAuthor() {
@@ -239,7 +239,7 @@ public final class DirectReplyMessage {
     }
 
     
-    public final long m519getChannelIdo4g7jtM() {
+    public final long m527getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
@@ -260,7 +260,7 @@ public final class DirectReplyMessage {
     }
 
     
-    public final String m520getId3Eiw7ao() {
+    public final String m528getId3Eiw7ao() {
         return this.f7561id;
     }
 
@@ -269,7 +269,7 @@ public final class DirectReplyMessage {
     }
 
     public int hashCode() {
-        int i10 = ((((MessageId.m612hashCodeimpl(this.f7561id) * 31) + ChannelId.m586hashCodeimpl(this.channelId)) * 31) + this.author.hashCode()) * 31;
+        int i10 = ((((MessageId.m620hashCodeimpl(this.f7561id) * 31) + ChannelId.m594hashCodeimpl(this.channelId)) * 31) + this.author.hashCode()) * 31;
         String str = this.content;
         int i11 = 0;
         int hashCode = (i10 + (str == null ? 0 : str.hashCode())) * 31;
@@ -287,8 +287,8 @@ public final class DirectReplyMessage {
     }
 
     public String toString() {
-        String str = MessageId.m613toStringimpl(this.f7561id);
-        String str2 = ChannelId.m588toStringimpl(this.channelId);
+        String str = MessageId.m621toStringimpl(this.f7561id);
+        String str2 = ChannelId.m596toStringimpl(this.channelId);
         DirectReplyUser directReplyUser = this.author;
         String str3 = this.content;
         Integer num = this.type;

@@ -234,7 +234,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
                 roleIconView2.setVisibility(8);
             }
             if (message.getConnectionsRoleTag() != null) {
-                this.binding.connectionsRoleTag.m198configureConnectionsRoleTaguESh2Cg(message.m14getAuthorIdwUX8bhU(), message.m16getGuildIdqOKuAAo(), ChannelId.m581boximpl(message.m15getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
+                this.binding.connectionsRoleTag.m206configureConnectionsRoleTaguESh2Cg(message.m22getAuthorIdwUX8bhU(), message.m24getGuildIdqOKuAAo(), ChannelId.m589boximpl(message.m23getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
                 ConnectionsRoleTagView connectionsRoleTagView = this.binding.connectionsRoleTag;
                 q.g(connectionsRoleTagView, "binding.connectionsRoleTag");
                 connectionsRoleTagView.setVisibility(0);
@@ -256,7 +256,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
                 MessageTagView messageTagView2 = this.binding.messageTagView;
                 q.g(messageTagView2, "binding.messageTagView");
                 messageTagView2.setVisibility(0);
-                this.binding.messageTagView.m217configureTagVieweCJZyo(message.getTagText(), message.getTagVerified(), message.getTagTextColor(), message.getTagBackgroundColor(), message.getOpTagText(), chatEventHandler, message.m17getId3Eiw7ao(), message.m15getChannelIdo4g7jtM(), message.getTagType());
+                this.binding.messageTagView.m225configureTagVieweCJZyo(message.getTagText(), message.getTagVerified(), message.getTagTextColor(), message.getTagBackgroundColor(), message.getOpTagText(), chatEventHandler, message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.getTagType());
                 MessageAltRemixTagView messageAltRemixTagView2 = this.binding.messageAltRemixTagView;
                 q.g(messageAltRemixTagView2, "binding.messageAltRemixTagView");
                 messageAltRemixTagView2.setVisibility(8);
@@ -264,7 +264,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
                 MessageAltRemixTagView messageAltRemixTagView3 = this.binding.messageAltRemixTagView;
                 q.g(messageAltRemixTagView3, "binding.messageAltRemixTagView");
                 messageAltRemixTagView3.setVisibility(0);
-                this.binding.messageAltRemixTagView.m216configureTagViewe2j04IU(message.getTagText(), message.getTagTextColor(), message.getTagBackgroundColor(), chatEventHandler, message.m17getId3Eiw7ao(), message.m15getChannelIdo4g7jtM(), message.getTagType());
+                this.binding.messageAltRemixTagView.m224configureTagViewe2j04IU(message.getTagText(), message.getTagTextColor(), message.getTagBackgroundColor(), chatEventHandler, message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.getTagType());
                 MessageTagView messageTagView3 = this.binding.messageTagView;
                 q.g(messageTagView3, "binding.messageTagView");
                 messageTagView3.setVisibility(8);
@@ -303,18 +303,18 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     public static final void configureAuthor$lambda$28$lambda$26(Message message, ChatEventHandler eventHandler, View view) {
         q.h(message, "$message");
         q.h(eventHandler, "$eventHandler");
-        if (message.m14getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo159onTapAvatarx5gers8(message.m17getId3Eiw7ao(), message.m14getAuthorIdwUX8bhU().m654unboximpl());
+        if (message.m22getAuthorIdwUX8bhU() != null) {
+            eventHandler.mo167onTapAvatarx5gers8(message.m25getId3Eiw7ao(), message.m22getAuthorIdwUX8bhU().m662unboximpl());
         }
     }
 
     public static final boolean configureAuthor$lambda$28$lambda$27(Message message, ChatEventHandler eventHandler, View view) {
         q.h(message, "$message");
         q.h(eventHandler, "$eventHandler");
-        if (message.m14getAuthorIdwUX8bhU() == null) {
+        if (message.m22getAuthorIdwUX8bhU() == null) {
             return true;
         }
-        eventHandler.mo151onLongPressAvatarx5gers8(message.m17getId3Eiw7ao(), message.m14getAuthorIdwUX8bhU().m654unboximpl());
+        eventHandler.mo159onLongPressAvatarx5gers8(message.m25getId3Eiw7ao(), message.m22getAuthorIdwUX8bhU().m662unboximpl());
         return true;
     }
 
@@ -338,18 +338,18 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     public static final void configureAuthorClickListeners$lambda$4(Message message, ChatEventHandler eventHandler, View view) {
         q.h(message, "$message");
         q.h(eventHandler, "$eventHandler");
-        if (message.m14getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo181onTapUsernamex5gers8(message.m17getId3Eiw7ao(), message.m14getAuthorIdwUX8bhU().m654unboximpl());
+        if (message.m22getAuthorIdwUX8bhU() != null) {
+            eventHandler.mo189onTapUsernamex5gers8(message.m25getId3Eiw7ao(), message.m22getAuthorIdwUX8bhU().m662unboximpl());
         }
     }
 
     public static final boolean configureAuthorClickListeners$lambda$5(Message message, ChatEventHandler eventHandler, View view) {
         q.h(message, "$message");
         q.h(eventHandler, "$eventHandler");
-        if (message.m14getAuthorIdwUX8bhU() == null) {
+        if (message.m22getAuthorIdwUX8bhU() == null) {
             return true;
         }
-        eventHandler.mo153onLongPressUsernamex5gers8(message.m17getId3Eiw7ao(), message.m14getAuthorIdwUX8bhU().m654unboximpl());
+        eventHandler.mo161onLongPressUsernamex5gers8(message.m25getId3Eiw7ao(), message.m22getAuthorIdwUX8bhU().m662unboximpl());
         return true;
     }
 
@@ -477,7 +477,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     public static final boolean generateMessageAccessories$getLongClickListener$lambda$7$lambda$6(Function4 function4, Message message, int i10, MediaType mediaType, View view) {
         q.h(message, "$message");
         q.h(mediaType, "$mediaType");
-        function4.invoke(MessageId.m607boximpl(message.m17getId3Eiw7ao()), ChannelId.m581boximpl(message.m15getChannelIdo4g7jtM()), Integer.valueOf(i10), mediaType);
+        function4.invoke(MessageId.m615boximpl(message.m25getId3Eiw7ao()), ChannelId.m589boximpl(message.m23getChannelIdo4g7jtM()), Integer.valueOf(i10), mediaType);
         return true;
     }
 
@@ -530,13 +530,13 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     public static final void setMessage$lambda$1$lambda$0(Function2 onMessageTapped, Message message, View view) {
         q.h(onMessageTapped, "$onMessageTapped");
         q.h(message, "$message");
-        onMessageTapped.invoke(MessageId.m607boximpl(message.m17getId3Eiw7ao()), ChannelId.m581boximpl(message.m15getChannelIdo4g7jtM()));
+        onMessageTapped.invoke(MessageId.m615boximpl(message.m25getId3Eiw7ao()), ChannelId.m589boximpl(message.m23getChannelIdo4g7jtM()));
     }
 
     public static final boolean setMessage$lambda$3$lambda$2(Function4 it, Message message, View view) {
         q.h(it, "$it");
         q.h(message, "$message");
-        it.invoke(MessageId.m607boximpl(message.m17getId3Eiw7ao()), ChannelId.m581boximpl(message.m15getChannelIdo4g7jtM()), null, null);
+        it.invoke(MessageId.m615boximpl(message.m25getId3Eiw7ao()), ChannelId.m589boximpl(message.m23getChannelIdo4g7jtM()), null, null);
         return true;
     }
 
@@ -622,7 +622,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             q.g(messageViewReplyPreview, "binding.replyPreview");
             MessageViewReplyPreview.configureReply$default(messageViewReplyPreview, message.getReferencedMessage(), false, new MessageView$setMessage$3(eventHandler, message), 2, null);
         } else if (message.getExecutedCommand() != null) {
-            this.binding.replyPreview.m218configureExecutedCommandLdU2QRA(message.m17getId3Eiw7ao(), message.getExecutedCommand(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), eventHandler);
+            this.binding.replyPreview.m226configureExecutedCommandLdU2QRA(message.m25getId3Eiw7ao(), message.getExecutedCommand(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), eventHandler);
         } else {
             this.binding.replyPreview.clear();
         }
@@ -652,7 +652,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested(this, true, onClickListener);
         NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested(this, true, onLongClickListener);
         List<MessageAccessory> generateMessageAccessories = generateMessageAccessories(message, messageContext, messageFrame, eventHandler.getOnMessageLongPressed());
-        this.binding.accessoriesView.m215setAccessoriesRC8ZMxU(message.m17getId3Eiw7ao(), message.m15getChannelIdo4g7jtM(), message.m16getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, componentProvider);
+        this.binding.accessoriesView.m223setAccessoriesRC8ZMxU(message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.m24getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, componentProvider);
         configureAccessoriesMargin(generateMessageAccessories);
         configureCommunicationDisabled(q.c(message.getCommunicationDisabled(), Boolean.TRUE), chainPart);
         configureSuppressNotifications(MessageFlagKt.hasMessageFlag(Long.valueOf(message.getFlags()), MessageFlag.SUPPRESS_NOTIFICATIONS), eventHandler, chainPart);

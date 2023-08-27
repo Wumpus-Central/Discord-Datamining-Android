@@ -32,6 +32,6 @@ final class MessageContentView$truncate$1 extends s implements Function1<View, U
     
     public final void invoke2(View it) {
         q.h(it, "it");
-        this.$onTapSeeMore.invoke(MessageId.m607boximpl(this.$messageId));
+        this.$onTapSeeMore.invoke(MessageId.m615boximpl(this.$messageId));
     }
 }

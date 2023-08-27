@@ -3,6 +3,7 @@ package com.discord.chat.presentation.list.messagebundling;
 import android.content.Context;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -69,19 +70,20 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
     public static final void configure$lambda$7$lambda$5(ChatEventHandler eventHandler, Message message, View view) {
         q.h(eventHandler, "$eventHandler");
         q.h(message, "$message");
-        ChatEventHandler.DefaultImpls.m188onTapReactionu7_MRrM$default(eventHandler, message.m17getId3Eiw7ao(), null, null, 4, null);
+        ChatEventHandler.DefaultImpls.m196onTapReactionu7_MRrM$default(eventHandler, message.m25getId3Eiw7ao(), null, null, 4, null);
     }
 
     
     public static final void configure$lambda$7$lambda$6(ChatEventHandler eventHandler, Message message, View view) {
         q.h(eventHandler, "$eventHandler");
         q.h(message, "$message");
-        eventHandler.mo170onTapReactionu7_MRrM(message.m17getId3Eiw7ao(), null, Boolean.TRUE);
+        eventHandler.mo178onTapReactionu7_MRrM(message.m25getId3Eiw7ao(), null, Boolean.TRUE);
     }
 
     public final void configure(MessageItem messageItem, final ChatEventHandler eventHandler) {
         DraweeSpanStringBuilder draweeSpanStringBuilder;
-        boolean z10;
+        int i10;
+        int i11;
         q.h(messageItem, "messageItem");
         q.h(eventHandler, "eventHandler");
         final Message message = messageItem.getMessage();
@@ -92,21 +94,23 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
         TextView configure$lambda$1 = this.binding.replyAuthorName;
         q.g(configure$lambda$1, "configure$lambda$1");
         ViewUtilsKt.setOptionalText(configure$lambda$1, message.getUsername());
-        int i10 = 0;
         configure$lambda$1.setTextColor(MessageKt.usernameColor$default(message, 0, 1, null));
         if (message.getContent() != null) {
             TextView textView = this.binding.replyAuthorName;
             q.g(textView, "binding.replyAuthorName");
             StructurableText content = message.getContent();
             Context context2 = getContext();
-            q.g(context2, "context");
-            String str = message.m17getId3Eiw7ao();
+            String str = message.m25getId3Eiw7ao();
             boolean shouldAnimateEmoji = MessageKt.shouldAnimateEmoji(message);
             boolean shouldShowRoleDot = message.getShouldShowRoleDot();
             boolean shouldShowRoleOnName = message.getShouldShowRoleOnName();
             Paint.FontMetrics fontMetrics = this.binding.replyText.getPaint().getFontMetrics();
             q.g(fontMetrics, "binding.replyText.paint.fontMetrics");
-            DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context2, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, null, null, null, null, null, null, null, null, null, null, null, true, null, TextUtilsKt.getBaselineHeight(fontMetrics), 196576, null);
+            float baselineHeight = TextUtilsKt.getBaselineHeight(fontMetrics);
+            TextPaint paint = this.binding.replyText.getPaint();
+            q.g(context2, "context");
+            q.g(paint, "paint");
+            DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context2, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, paint, null, null, null, null, null, null, null, null, null, null, null, true, null, baselineHeight, 393152, null);
             MessageContentView messageContentView = this.binding.replyText;
             q.g(messageContentView, "binding.replyText");
             SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(messageContentView));
@@ -120,7 +124,10 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
         }
         MessageContentView messageContentView2 = this.binding.replyText;
         messageContentView2.setDraweeSpanStringBuilder(draweeSpanStringBuilder);
-        if (messageContentView2.isLaidOut() && messageContentView2.getWidth() > 0) {
+        if (!messageContentView2.isLaidOut() || messageContentView2.getWidth() <= 0) {
+            i10 = 0;
+        } else {
+            i10 = 0;
             messageContentView2.measure(View.MeasureSpec.makeMeasureSpec(messageContentView2.getWidth(), Integer.MIN_VALUE), View.MeasureSpec.makeMeasureSpec(0, 0));
             messageContentView2.getLineBounds(0, this.replyTextLineBounds);
             TextView textView3 = this.binding.replyAuthorName;
@@ -136,7 +143,7 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
         }
         ReactionsView configure$lambda$7 = this.binding.reactionsView;
         q.g(configure$lambda$7, "configure$lambda$7");
-        String str2 = message.m17getId3Eiw7ao();
+        String str2 = message.m25getId3Eiw7ao();
         List<MessageReaction> reactions = message.getReactions();
         if (reactions == null) {
             reactions = j.h();
@@ -164,11 +171,11 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
         }, new MessageBundleConversationView$configure$3$3(eventHandler, message), (r32 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? ReactionsView$setReactions$3.INSTANCE : null, (r32 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? null : ThemeManagerKt.getTheme(), (r32 & 8192) != 0 ? false : ChatView.Companion.getAreChatAnimationsEnabled());
         List<MessageReaction> reactions2 = message.getReactions();
         if (reactions2 == null || reactions2.isEmpty()) {
-            z10 = true;
+            i11 = 1;
         } else {
-            z10 = false;
+            i11 = i10;
         }
-        if (!(!z10)) {
+        if ((i11 ^ 1) == 0) {
             i10 = 8;
         }
         configure$lambda$7.setVisibility(i10);

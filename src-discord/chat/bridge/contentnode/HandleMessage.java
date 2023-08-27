@@ -72,7 +72,7 @@ public final class HandleMessage {
             z10 = true;
         }
         if (z10) {
-            output.B(serialDesc, 2, a2.f29758a, self.notificationType);
+            output.B(serialDesc, 2, a2.f29762a, self.notificationType);
         }
     }
 

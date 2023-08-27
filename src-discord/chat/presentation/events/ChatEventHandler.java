@@ -25,45 +25,45 @@ public interface ChatEventHandler {
     
     public static final class DefaultImpls {
         
-        public static  void m186onLinkClickedu7_MRrM$default(ChatEventHandler chatEventHandler, String str, String str2, String str3, int i10, Object obj) {
+        public static  void m194onLinkClickedu7_MRrM$default(ChatEventHandler chatEventHandler, String str, String str2, String str3, int i10, Object obj) {
             if (obj == null) {
                 if ((i10 & 4) != 0) {
                     str3 = null;
                 }
-                chatEventHandler.mo150onLinkClickedu7_MRrM(str, str2, str3);
+                chatEventHandler.mo158onLinkClickedu7_MRrM(str, str2, str3);
                 return;
             }
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: onLinkClicked-u7_MRrM");
         }
 
         
-        public static  void m187onTapButtonActionComponentNkFJqEg$default(ChatEventHandler chatEventHandler, String str, long j10, String str2, long j11, int[] iArr, int i10, Object obj) {
+        public static  void m195onTapButtonActionComponentNkFJqEg$default(ChatEventHandler chatEventHandler, String str, long j10, String str2, long j11, int[] iArr, int i10, Object obj) {
             if (obj == null) {
-                chatEventHandler.mo160onTapButtonActionComponentNkFJqEg(str, (i10 & 2) != 0 ? 0L : j10, str2, j11, iArr);
+                chatEventHandler.mo168onTapButtonActionComponentNkFJqEg(str, (i10 & 2) != 0 ? 0L : j10, str2, j11, iArr);
                 return;
             }
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: onTapButtonActionComponent-NkFJqEg");
         }
 
         
-        public static  void m188onTapReactionu7_MRrM$default(ChatEventHandler chatEventHandler, String str, ReactionView.Reaction reaction, Boolean bool, int i10, Object obj) {
+        public static  void m196onTapReactionu7_MRrM$default(ChatEventHandler chatEventHandler, String str, ReactionView.Reaction reaction, Boolean bool, int i10, Object obj) {
             if (obj == null) {
                 if ((i10 & 4) != 0) {
                     bool = Boolean.FALSE;
                 }
-                chatEventHandler.mo170onTapReactionu7_MRrM(str, reaction, bool);
+                chatEventHandler.mo178onTapReactionu7_MRrM(str, reaction, bool);
                 return;
             }
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: onTapReaction-u7_MRrM");
         }
 
         
-        public static  void m189onTapSelectActionComponentu7_MRrM$default(ChatEventHandler chatEventHandler, String str, long j10, SelectComponent selectComponent, int i10, Object obj) {
+        public static  void m197onTapSelectActionComponentu7_MRrM$default(ChatEventHandler chatEventHandler, String str, long j10, SelectComponent selectComponent, int i10, Object obj) {
             if (obj == null) {
                 if ((i10 & 2) != 0) {
                     j10 = 0;
                 }
-                chatEventHandler.mo174onTapSelectActionComponentu7_MRrM(str, j10, selectComponent);
+                chatEventHandler.mo182onTapSelectActionComponentu7_MRrM(str, j10, selectComponent);
                 return;
             }
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: onTapSelectActionComponent-u7_MRrM");
@@ -86,20 +86,20 @@ public interface ChatEventHandler {
 
         @Override 
         
-        public void mo148onInitiateReplypfaIj0E(String messageId, long j10) {
+        public void mo156onInitiateReplypfaIj0E(String messageId, long j10) {
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo149onLinkClickedntcYbpo(String messageId, LinkContentNode node) {
+        public void mo157onLinkClickedntcYbpo(String messageId, LinkContentNode node) {
             q.h(messageId, "messageId");
             q.h(node, "node");
         }
 
         @Override 
         
-        public void mo150onLinkClickedu7_MRrM(String messageId, String url, String str) {
+        public void mo158onLinkClickedu7_MRrM(String messageId, String url, String str) {
             q.h(messageId, "messageId");
             q.h(url, "url");
         }
@@ -111,7 +111,7 @@ public interface ChatEventHandler {
 
         @Override 
         
-        public void mo151onLongPressAvatarx5gers8(String messageId, long j10) {
+        public void mo159onLongPressAvatarx5gers8(String messageId, long j10) {
             q.h(messageId, "messageId");
         }
 
@@ -127,13 +127,13 @@ public interface ChatEventHandler {
 
         @Override 
         
-        public void mo152onLongPressReactionEqy5D80(String messageId, long j10, ReactionView.Reaction reaction) {
+        public void mo160onLongPressReactionEqy5D80(String messageId, long j10, ReactionView.Reaction reaction) {
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo153onLongPressUsernamex5gers8(String messageId, long j10) {
+        public void mo161onLongPressUsernamex5gers8(String messageId, long j10) {
             q.h(messageId, "messageId");
         }
 
@@ -144,51 +144,51 @@ public interface ChatEventHandler {
 
         @Override 
         
-        public void mo154onStickerClickedAyv7vGE(Sticker sticker, String messageId) {
+        public void mo162onStickerClickedAyv7vGE(Sticker sticker, String messageId) {
             q.h(sticker, "sticker");
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo155onStickerLongClickedAyv7vGE(Sticker sticker, String messageId) {
+        public void mo163onStickerLongClickedAyv7vGE(Sticker sticker, String messageId) {
             q.h(sticker, "sticker");
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo156onTapActivityBookmarkEmbeduU1mFKc(long j10, long j11) {
+        public void mo164onTapActivityBookmarkEmbeduU1mFKc(long j10, long j11) {
         }
 
         @Override 
         
-        public void mo157onTapAutoModerationActionspfaIj0E(String messageId, long j10) {
+        public void mo165onTapAutoModerationActionspfaIj0E(String messageId, long j10) {
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo158onTapAutoModerationFeedbackpfaIj0E(String messageId, long j10) {
+        public void mo166onTapAutoModerationFeedbackpfaIj0E(String messageId, long j10) {
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo159onTapAvatarx5gers8(String messageId, long j10) {
+        public void mo167onTapAvatarx5gers8(String messageId, long j10) {
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo160onTapButtonActionComponentNkFJqEg(String messageId, long j10, String str, long j11, int[] indices) {
+        public void mo168onTapButtonActionComponentNkFJqEg(String messageId, long j10, String str, long j11, int[] indices) {
             q.h(messageId, "messageId");
             q.h(indices, "indices");
         }
 
         @Override 
         
-        public void mo161onTapCallpfaIj0E(String messageId, long j10) {
+        public void mo169onTapCallpfaIj0E(String messageId, long j10) {
             q.h(messageId, "messageId");
         }
 
@@ -228,7 +228,7 @@ public interface ChatEventHandler {
 
         @Override 
         
-        public void mo162onTapDismissMediaPostSharePrompt1xi1bu0(String messageId) {
+        public void mo170onTapDismissMediaPostSharePrompt1xi1bu0(String messageId) {
             q.h(messageId, "messageId");
         }
 
@@ -239,7 +239,7 @@ public interface ChatEventHandler {
 
         @Override 
         
-        public void mo163onTapFollowForumPostpfaIj0E(String messageId, long j10) {
+        public void mo171onTapFollowForumPostpfaIj0E(String messageId, long j10) {
             q.h(messageId, "messageId");
         }
 
@@ -255,7 +255,7 @@ public interface ChatEventHandler {
 
         @Override 
         
-        public void mo164onTapImagea6FnOk(String messageId, int i10, String type, int i11, int i12, int i13, int i14, ViewResizeMode viewResizeMode, Double d10, Integer num) {
+        public void mo172onTapImagea6FnOk(String messageId, int i10, String type, int i11, int i12, int i13, int i14, ViewResizeMode viewResizeMode, Double d10, Integer num) {
             q.h(messageId, "messageId");
             q.h(type, "type");
             q.h(viewResizeMode, "viewResizeMode");
@@ -263,19 +263,19 @@ public interface ChatEventHandler {
 
         @Override 
         
-        public void mo165onTapInviteEmbedAFFcxXc(String messageId, int i10, Boolean bool, Boolean bool2) {
+        public void mo173onTapInviteEmbedAFFcxXc(String messageId, int i10, Boolean bool, Boolean bool2) {
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo166onTapInviteToSpeak1xi1bu0(String messageId) {
+        public void mo174onTapInviteToSpeak1xi1bu0(String messageId) {
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo167onTapJoinActivity1xi1bu0(String messageId) {
+        public void mo175onTapJoinActivity1xi1bu0(String messageId) {
             q.h(messageId, "messageId");
         }
 
@@ -300,7 +300,7 @@ public interface ChatEventHandler {
 
         @Override 
         
-        public void mo168onTapMessageReply0eiqbug(long j10, String originId) {
+        public void mo176onTapMessageReply0eiqbug(long j10, String originId) {
             q.h(originId, "originId");
         }
 
@@ -310,25 +310,25 @@ public interface ChatEventHandler {
 
         @Override 
         
-        public void mo169onTapPostPreviewEmbedkUTrps(long j10, long j11, long j12, String messageId) {
+        public void mo177onTapPostPreviewEmbedkUTrps(long j10, long j11, long j12, String messageId) {
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo170onTapReactionu7_MRrM(String messageId, ReactionView.Reaction reaction, Boolean bool) {
+        public void mo178onTapReactionu7_MRrM(String messageId, ReactionView.Reaction reaction, Boolean bool) {
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo171onTapReactionOverflowpfaIj0E(String messageId, long j10) {
+        public void mo179onTapReactionOverflowpfaIj0E(String messageId, long j10) {
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo172onTapRemix1xi1bu0(String messageId) {
+        public void mo180onTapRemix1xi1bu0(String messageId) {
             q.h(messageId, "messageId");
         }
 
@@ -340,20 +340,20 @@ public interface ChatEventHandler {
 
         @Override 
         
-        public void mo173onTapSeeMore1xi1bu0(String messageId) {
+        public void mo181onTapSeeMore1xi1bu0(String messageId) {
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo174onTapSelectActionComponentu7_MRrM(String messageId, long j10, SelectComponent selectComponent) {
+        public void mo182onTapSelectActionComponentu7_MRrM(String messageId, long j10, SelectComponent selectComponent) {
             q.h(messageId, "messageId");
             q.h(selectComponent, "selectComponent");
         }
 
         @Override 
         
-        public void mo175onTapShareForumPostmgk6anA(long j10, long j11) {
+        public void mo183onTapShareForumPostmgk6anA(long j10, long j11) {
         }
 
         @Override 
@@ -363,14 +363,14 @@ public interface ChatEventHandler {
 
         @Override 
         
-        public void mo176onTapSummarysekaTiM(long j10, String messageId, String summaryId) {
+        public void mo184onTapSummarysekaTiM(long j10, String messageId, String summaryId) {
             q.h(messageId, "messageId");
             q.h(summaryId, "summaryId");
         }
 
         @Override 
         
-        public void mo177onTapSummaryJumpsekaTiM(long j10, String messageId, String summaryId) {
+        public void mo185onTapSummaryJumpsekaTiM(long j10, String messageId, String summaryId) {
             q.h(messageId, "messageId");
             q.h(summaryId, "summaryId");
         }
@@ -381,13 +381,13 @@ public interface ChatEventHandler {
 
         @Override 
         
-        public void mo178onTapTagEqy5D80(String messageId, long j10, String str) {
+        public void mo186onTapTagEqy5D80(String messageId, long j10, String str) {
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo179onTapThreadEmbed1xi1bu0(String messageId) {
+        public void mo187onTapThreadEmbed1xi1bu0(String messageId) {
             q.h(messageId, "messageId");
         }
 
@@ -398,7 +398,7 @@ public interface ChatEventHandler {
 
         @Override 
         
-        public void mo180onTapToggleBlockedMessages1xi1bu0(String messageId) {
+        public void mo188onTapToggleBlockedMessages1xi1bu0(String messageId) {
             q.h(messageId, "messageId");
         }
 
@@ -409,32 +409,32 @@ public interface ChatEventHandler {
 
         @Override 
         
-        public void mo181onTapUsernamex5gers8(String messageId, long j10) {
+        public void mo189onTapUsernamex5gers8(String messageId, long j10) {
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo182onWelcomeReplyClickedAyv7vGE(Sticker sticker, String messageId) {
+        public void mo190onWelcomeReplyClickedAyv7vGE(Sticker sticker, String messageId) {
             q.h(sticker, "sticker");
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo183voiceMessagePlaybackEndedHuwN0RY(String messageId, float f10, float f11, long j10, float f12) {
+        public void mo191voiceMessagePlaybackEndedHuwN0RY(String messageId, float f10, float f11, long j10, float f12) {
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo184voiceMessagePlaybackFailedntcYbpo(String messageId, String str) {
+        public void mo192voiceMessagePlaybackFailedntcYbpo(String messageId, String str) {
             q.h(messageId, "messageId");
         }
 
         @Override 
         
-        public void mo185voiceMessagePlaybackStartedOuNwOLg(String messageId, float f10, float f11, long j10) {
+        public void mo193voiceMessagePlaybackStartedOuNwOLg(String messageId, float f10, float f11, long j10) {
             q.h(messageId, "messageId");
         }
 
@@ -456,54 +456,54 @@ public interface ChatEventHandler {
     void onFirstLayout(int i10, int i11);
 
     
-    void mo148onInitiateReplypfaIj0E(String str, long j10);
+    void mo156onInitiateReplypfaIj0E(String str, long j10);
 
     
-    void mo149onLinkClickedntcYbpo(String str, LinkContentNode linkContentNode);
+    void mo157onLinkClickedntcYbpo(String str, LinkContentNode linkContentNode);
 
     
-    void mo150onLinkClickedu7_MRrM(String str, String str2, String str3);
+    void mo158onLinkClickedu7_MRrM(String str, String str2, String str3);
 
     void onLinkLongClicked(LinkContentNode linkContentNode);
 
     
-    void mo151onLongPressAvatarx5gers8(String str, long j10);
+    void mo159onLongPressAvatarx5gers8(String str, long j10);
 
     void onLongPressChannel(String str, String str2, String str3, String str4);
 
     void onLongPressCommand(CommandMentionContentNode commandMentionContentNode);
 
     
-    void mo152onLongPressReactionEqy5D80(String str, long j10, ReactionView.Reaction reaction);
+    void mo160onLongPressReactionEqy5D80(String str, long j10, ReactionView.Reaction reaction);
 
     
-    void mo153onLongPressUsernamex5gers8(String str, long j10);
+    void mo161onLongPressUsernamex5gers8(String str, long j10);
 
     void onScrollStateChanged(ScrollState scrollState);
 
     
-    void mo154onStickerClickedAyv7vGE(Sticker sticker, String str);
+    void mo162onStickerClickedAyv7vGE(Sticker sticker, String str);
 
     
-    void mo155onStickerLongClickedAyv7vGE(Sticker sticker, String str);
+    void mo163onStickerLongClickedAyv7vGE(Sticker sticker, String str);
 
     
-    void mo156onTapActivityBookmarkEmbeduU1mFKc(long j10, long j11);
+    void mo164onTapActivityBookmarkEmbeduU1mFKc(long j10, long j11);
 
     
-    void mo157onTapAutoModerationActionspfaIj0E(String str, long j10);
+    void mo165onTapAutoModerationActionspfaIj0E(String str, long j10);
 
     
-    void mo158onTapAutoModerationFeedbackpfaIj0E(String str, long j10);
+    void mo166onTapAutoModerationFeedbackpfaIj0E(String str, long j10);
 
     
-    void mo159onTapAvatarx5gers8(String str, long j10);
+    void mo167onTapAvatarx5gers8(String str, long j10);
 
     
-    void mo160onTapButtonActionComponentNkFJqEg(String str, long j10, String str2, long j11, int[] iArr);
+    void mo168onTapButtonActionComponentNkFJqEg(String str, long j10, String str2, long j11, int[] iArr);
 
     
-    void mo161onTapCallpfaIj0E(String str, long j10);
+    void mo169onTapCallpfaIj0E(String str, long j10);
 
     void onTapCancelUploadItem(String str, String str2);
 
@@ -518,28 +518,28 @@ public interface ChatEventHandler {
     void onTapDismissEmbeddedActivity(String str);
 
     
-    void mo162onTapDismissMediaPostSharePrompt1xi1bu0(String str);
+    void mo170onTapDismissMediaPostSharePrompt1xi1bu0(String str);
 
     void onTapEmoji(EmojiContentNode emojiContentNode);
 
     
-    void mo163onTapFollowForumPostpfaIj0E(String str, long j10);
+    void mo171onTapFollowForumPostpfaIj0E(String str, long j10);
 
     void onTapGiftCodeAccept(String str);
 
     void onTapGiftCodeEmbed(String str);
 
     
-    void mo164onTapImagea6FnOk(String str, int i10, String str2, int i11, int i12, int i13, int i14, ViewResizeMode viewResizeMode, Double d10, Integer num);
+    void mo172onTapImagea6FnOk(String str, int i10, String str2, int i11, int i12, int i13, int i14, ViewResizeMode viewResizeMode, Double d10, Integer num);
 
     
-    void mo165onTapInviteEmbedAFFcxXc(String str, int i10, Boolean bool, Boolean bool2);
+    void mo173onTapInviteEmbedAFFcxXc(String str, int i10, Boolean bool, Boolean bool2);
 
     
-    void mo166onTapInviteToSpeak1xi1bu0(String str);
+    void mo174onTapInviteToSpeak1xi1bu0(String str);
 
     
-    void mo167onTapJoinActivity1xi1bu0(String str);
+    void mo175onTapJoinActivity1xi1bu0(String str);
 
     void onTapJoinEmbeddedActivity(String str);
 
@@ -550,68 +550,68 @@ public interface ChatEventHandler {
     void onTapMention(String str, String str2);
 
     
-    void mo168onTapMessageReply0eiqbug(long j10, String str);
+    void mo176onTapMessageReply0eiqbug(long j10, String str);
 
     void onTapOpTag();
 
     
-    void mo169onTapPostPreviewEmbedkUTrps(long j10, long j11, long j12, String str);
+    void mo177onTapPostPreviewEmbedkUTrps(long j10, long j11, long j12, String str);
 
     
-    void mo170onTapReactionu7_MRrM(String str, ReactionView.Reaction reaction, Boolean bool);
+    void mo178onTapReactionu7_MRrM(String str, ReactionView.Reaction reaction, Boolean bool);
 
     
-    void mo171onTapReactionOverflowpfaIj0E(String str, long j10);
+    void mo179onTapReactionOverflowpfaIj0E(String str, long j10);
 
     
-    void mo172onTapRemix1xi1bu0(String str);
+    void mo180onTapRemix1xi1bu0(String str);
 
     void onTapRoleIcon(String str, String str2);
 
     
-    void mo173onTapSeeMore1xi1bu0(String str);
+    void mo181onTapSeeMore1xi1bu0(String str);
 
     
-    void mo174onTapSelectActionComponentu7_MRrM(String str, long j10, SelectComponent selectComponent);
+    void mo182onTapSelectActionComponentu7_MRrM(String str, long j10, SelectComponent selectComponent);
 
     
-    void mo175onTapShareForumPostmgk6anA(long j10, long j11);
+    void mo183onTapShareForumPostmgk6anA(long j10, long j11);
 
     void onTapShowAltText(String str);
 
     
-    void mo176onTapSummarysekaTiM(long j10, String str, String str2);
+    void mo184onTapSummarysekaTiM(long j10, String str, String str2);
 
     
-    void mo177onTapSummaryJumpsekaTiM(long j10, String str, String str2);
+    void mo185onTapSummaryJumpsekaTiM(long j10, String str, String str2);
 
     void onTapSuppressNotificationsIcon();
 
     
-    void mo178onTapTagEqy5D80(String str, long j10, String str2);
+    void mo186onTapTagEqy5D80(String str, long j10, String str2);
 
     
-    void mo179onTapThreadEmbed1xi1bu0(String str);
+    void mo187onTapThreadEmbed1xi1bu0(String str);
 
     void onTapTimestamp(String str);
 
     
-    void mo180onTapToggleBlockedMessages1xi1bu0(String str);
+    void mo188onTapToggleBlockedMessages1xi1bu0(String str);
 
     void onTapUploadProgressClose(String str);
 
     
-    void mo181onTapUsernamex5gers8(String str, long j10);
+    void mo189onTapUsernamex5gers8(String str, long j10);
 
     
-    void mo182onWelcomeReplyClickedAyv7vGE(Sticker sticker, String str);
+    void mo190onWelcomeReplyClickedAyv7vGE(Sticker sticker, String str);
 
     
-    void mo183voiceMessagePlaybackEndedHuwN0RY(String str, float f10, float f11, long j10, float f12);
+    void mo191voiceMessagePlaybackEndedHuwN0RY(String str, float f10, float f11, long j10, float f12);
 
     
-    void mo184voiceMessagePlaybackFailedntcYbpo(String str, String str2);
+    void mo192voiceMessagePlaybackFailedntcYbpo(String str, String str2);
 
     
-    void mo185voiceMessagePlaybackStartedOuNwOLg(String str, float f10, float f11, long j10);
+    void mo193voiceMessagePlaybackStartedOuNwOLg(String str, float f10, float f11, long j10);
 }

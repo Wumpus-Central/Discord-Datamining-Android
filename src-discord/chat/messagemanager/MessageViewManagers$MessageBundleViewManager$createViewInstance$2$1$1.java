@@ -30,16 +30,16 @@ public final class MessageViewManagers$MessageBundleViewManager$createViewInstan
 
     @Override 
     public   Unit invoke(MessageId messageId) {
-        m146invoke1xi1bu0(messageId.m615unboximpl());
+        m154invoke1xi1bu0(messageId.m623unboximpl());
         return Unit.f21213a;
     }
 
     
-    public final void m146invoke1xi1bu0(String messageId) {
+    public final void m154invoke1xi1bu0(String messageId) {
         q.h(messageId, "messageId");
         MessageViewManagers.MessageBundleViewManager messageBundleViewManager = this.this$0;
         Context context = this.$this_apply.getContext();
         q.g(context, "context");
-        messageBundleViewManager.m145emitOnTruncateMessageJPrav84(context, this.$wrapper.getId(), messageId);
+        messageBundleViewManager.m153emitOnTruncateMessageJPrav84(context, this.$wrapper.getId(), messageId);
     }
 }

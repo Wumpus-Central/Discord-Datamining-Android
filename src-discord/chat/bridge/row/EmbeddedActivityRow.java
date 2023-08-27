@@ -89,7 +89,7 @@ public final class EmbeddedActivityRow extends Row {
         output.v(serialDesc, 0, self.getIndex());
         output.o(serialDesc, 1, ChangeType.Serializer.INSTANCE, self.getChangeType());
         output.x(serialDesc, 2, self.content);
-        output.o(serialDesc, 3, new wi.f(a2.f29758a), self.avatarUrls);
+        output.o(serialDesc, 3, new wi.f(a2.f29762a), self.avatarUrls);
         output.x(serialDesc, 4, self.buttonText);
         output.x(serialDesc, 5, self.embeddedActivityKey);
         output.x(serialDesc, 6, self.dismissButtonAccessibilityLabel);

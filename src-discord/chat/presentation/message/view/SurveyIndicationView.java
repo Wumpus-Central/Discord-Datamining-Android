@@ -2,6 +2,7 @@ package com.discord.chat.presentation.message.view;
 
 import android.content.Context;
 import android.graphics.Paint;
+import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -52,7 +53,7 @@ public final class SurveyIndicationView extends ConstraintLayout {
     }
 
     
-    public final void m328setSurveyIndicationu7_MRrM(String messageId, SurveyIndication surveyIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
+    public final void m336setSurveyIndicationu7_MRrM(String messageId, SurveyIndication surveyIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
         q.h(messageId, "messageId");
         q.h(surveyIndication, "surveyIndication");
         q.h(onLinkClicked, "onLinkClicked");
@@ -63,11 +64,13 @@ public final class SurveyIndicationView extends ConstraintLayout {
         q.g(setSurveyIndication_u7_MRrM$lambda$2, "setSurveyIndication_u7_MRrM$lambda$2");
         StructurableText content = surveyIndication.getContent();
         Context context = setSurveyIndication_u7_MRrM$lambda$2.getContext();
-        q.g(context, "context");
-        SurveyIndicationView$setSurveyIndication$1$1 surveyIndicationView$setSurveyIndication$1$1 = new SurveyIndicationView$setSurveyIndication$1$1(onLinkClicked, messageId);
         Paint.FontMetrics fontMetrics = setSurveyIndication_u7_MRrM$lambda$2.getPaint().getFontMetrics();
         q.g(fontMetrics, "paint.fontMetrics");
-        DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context, messageId, false, false, false, surveyIndicationView$setSurveyIndication$1$1, null, null, null, null, null, null, null, null, null, null, false, null, TextUtilsKt.getBaselineHeight(fontMetrics), 262080, null);
+        float baselineHeight = TextUtilsKt.getBaselineHeight(fontMetrics);
+        TextPaint paint = this.binding.chatListAdapterItemTextFeedback.getPaint();
+        q.g(context, "context");
+        q.g(paint, "paint");
+        DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context, messageId, false, false, false, paint, new SurveyIndicationView$setSurveyIndication$1$1(onLinkClicked, messageId), null, null, null, null, null, null, null, null, null, null, false, null, baselineHeight, 524160, null);
         SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(setSurveyIndication_u7_MRrM$lambda$2));
         SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setSurveyIndication_u7_MRrM$lambda$2, spannable$default);
         NestedScrollOnTouchUtilsKt.enableNestedSpanClickListener$default(setSurveyIndication_u7_MRrM$lambda$2, false, 1, null);

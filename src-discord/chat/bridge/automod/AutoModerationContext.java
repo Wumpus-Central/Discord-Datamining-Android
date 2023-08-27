@@ -88,7 +88,7 @@ public final class AutoModerationContext {
             z10 = true;
         }
         if (z10) {
-            output.B(serialDesc, 2, a2.f29758a, self.ruleDisplayText);
+            output.B(serialDesc, 2, a2.f29762a, self.ruleDisplayText);
         }
         if (!output.z(serialDesc, 3) && self.keywordDisplayText == null) {
             z11 = false;
@@ -96,7 +96,7 @@ public final class AutoModerationContext {
             z11 = true;
         }
         if (z11) {
-            output.B(serialDesc, 3, a2.f29758a, self.keywordDisplayText);
+            output.B(serialDesc, 3, a2.f29762a, self.keywordDisplayText);
         }
         if (!output.z(serialDesc, 4) && self.actionsIconURL == null) {
             z12 = false;
@@ -104,7 +104,7 @@ public final class AutoModerationContext {
             z12 = true;
         }
         if (z12) {
-            output.B(serialDesc, 4, a2.f29758a, self.actionsIconURL);
+            output.B(serialDesc, 4, a2.f29762a, self.actionsIconURL);
         }
         output.x(serialDesc, 5, self.actionsText);
         output.x(serialDesc, 6, self.feedbackText);

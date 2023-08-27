@@ -45,9 +45,9 @@ public final class UploadProgress$$serializer implements f0<UploadProgress> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29758a;
-        m0 m0Var = m0.f29833a;
-        return new KSerializer[]{a2Var, m0Var, m0Var, e0.f29783a, a2Var, a2Var, m0Var, m0Var, m0Var, m0Var, m0Var};
+        a2 a2Var = a2.f29762a;
+        m0 m0Var = m0.f29837a;
+        return new KSerializer[]{a2Var, m0Var, m0Var, e0.f29787a, a2Var, a2Var, m0Var, m0Var, m0Var, m0Var, m0Var};
     }
 
     @Override 

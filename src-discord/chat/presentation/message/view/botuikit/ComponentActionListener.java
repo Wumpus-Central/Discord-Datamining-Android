@@ -8,7 +8,7 @@ import kotlin.Metadata;
 
 public interface ComponentActionListener {
     
-    void mo329onTapButtonActionComponenty43Yjpg(String str, long j10, List<Integer> list);
+    void mo337onTapButtonActionComponenty43Yjpg(String str, long j10, List<Integer> list);
 
     void onTapSelectActionComponent(SelectComponent selectComponent);
 

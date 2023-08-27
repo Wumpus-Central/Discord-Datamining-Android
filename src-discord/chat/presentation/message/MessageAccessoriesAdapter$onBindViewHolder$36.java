@@ -43,6 +43,6 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$36 extends s imple
         q.e(str);
         channelId = this.this$0.channelId;
         q.e(channelId);
-        chatEventHandler.mo152onLongPressReactionEqy5D80(str, channelId.m590unboximpl(), reaction);
+        chatEventHandler.mo160onLongPressReactionEqy5D80(str, channelId.m598unboximpl(), reaction);
     }
 }

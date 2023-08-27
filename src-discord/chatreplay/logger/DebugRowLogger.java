@@ -40,7 +40,7 @@ public final class DebugRowLogger implements RowLogger {
         boolean w10;
         w10 = o.w(str);
         if (!w10) {
-            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(DebugRowLoggerKt.outputStream(this.replayFile, true), a.f24906b);
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(DebugRowLoggerKt.outputStream(this.replayFile, true), a.f24911b);
             try {
                 outputStreamWriter.write(str + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
                 outputStreamWriter.flush();
@@ -70,7 +70,7 @@ public final class DebugRowLogger implements RowLogger {
     private final void writeJson() {
         Ref$BooleanRef ref$BooleanRef = new Ref$BooleanRef();
         FileOutputStream fileOutputStream = new FileOutputStream(this.jsonFile);
-        Charset charset = a.f24906b;
+        Charset charset = a.f24911b;
         OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream, charset);
         try {
             outputStreamWriter.write("[\n");

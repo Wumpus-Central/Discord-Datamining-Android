@@ -24,14 +24,14 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
     public static final void bind$lambda$1$lambda$0(Function1 onTapThreadEmbed, ThreadEmbedMessageAccessory threadItem, View view) {
         q.h(onTapThreadEmbed, "$onTapThreadEmbed");
         q.h(threadItem, "$threadItem");
-        onTapThreadEmbed.invoke(MessageId.m607boximpl(threadItem.mo222getMessageId3Eiw7ao()));
+        onTapThreadEmbed.invoke(MessageId.m615boximpl(threadItem.mo230getMessageId3Eiw7ao()));
     }
 
     
     
     
     
-    public final void bind(final com.discord.chat.presentation.message.messagepart.ThreadEmbedMessageAccessory r34, final kotlin.jvm.functions.Function1<? super com.discord.primitives.MessageId, kotlin.Unit> r35) {
+    public final void bind(final com.discord.chat.presentation.message.messagepart.ThreadEmbedMessageAccessory r35, final kotlin.jvm.functions.Function1<? super com.discord.primitives.MessageId, kotlin.Unit> r36) {
         
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.viewholder.ThreadEmbedViewHolder.bind(com.discord.chat.presentation.message.messagepart.ThreadEmbedMessageAccessory, kotlin.jvm.functions.Function1):void");
     }

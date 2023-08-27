@@ -45,8 +45,8 @@ public final class BuildOverrideCookieMeta$$serializer implements f0<BuildOverri
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29758a;
-        return new KSerializer[]{a.u(a2Var), a.u(a2Var), a.u(new f(a2Var)), a.u(new f(a2Var)), a.u(h.f29800a), a.u(new r0(a2Var, m0.f29833a))};
+        a2 a2Var = a2.f29762a;
+        return new KSerializer[]{a.u(a2Var), a.u(a2Var), a.u(new f(a2Var)), a.u(new f(a2Var)), a.u(h.f29804a), a.u(new r0(a2Var, m0.f29837a))};
     }
 
     @Override 
@@ -66,13 +66,13 @@ public final class BuildOverrideCookieMeta$$serializer implements f0<BuildOverri
         boolean z10 = true;
         Object obj7 = null;
         if (b10.p()) {
-            a2 a2Var = a2.f29758a;
+            a2 a2Var = a2.f29762a;
             obj2 = b10.n(descriptor2, 0, a2Var, null);
             obj3 = b10.n(descriptor2, 1, a2Var, null);
             obj4 = b10.n(descriptor2, 2, new f(a2Var), null);
             obj = b10.n(descriptor2, 3, new f(a2Var), null);
-            obj5 = b10.n(descriptor2, 4, h.f29800a, null);
-            obj6 = b10.n(descriptor2, 5, new r0(a2Var, m0.f29833a), null);
+            obj5 = b10.n(descriptor2, 4, h.f29804a, null);
+            obj6 = b10.n(descriptor2, 5, new r0(a2Var, m0.f29837a), null);
             i10 = 63;
         } else {
             boolean z11 = true;
@@ -89,33 +89,33 @@ public final class BuildOverrideCookieMeta$$serializer implements f0<BuildOverri
                         z11 = false;
                         i11 = 5;
                     case 0:
-                        obj7 = b10.n(descriptor2, 0, a2.f29758a, obj7);
+                        obj7 = b10.n(descriptor2, 0, a2.f29762a, obj7);
                         i12 |= 1;
                         c10 = c10;
                         z10 = z10;
                         i11 = 5;
                     case 1:
-                        obj8 = b10.n(descriptor2, 1, a2.f29758a, obj8);
+                        obj8 = b10.n(descriptor2, 1, a2.f29762a, obj8);
                         i12 |= 2;
                         c10 = c10;
                         z10 = true;
                     case 2:
-                        obj9 = b10.n(descriptor2, 2, new f(a2.f29758a), obj9);
+                        obj9 = b10.n(descriptor2, 2, new f(a2.f29762a), obj9);
                         i12 |= 4;
                         c10 = 2;
                         z10 = true;
                     case 3:
-                        obj = b10.n(descriptor2, 3, new f(a2.f29758a), obj);
+                        obj = b10.n(descriptor2, 3, new f(a2.f29762a), obj);
                         i12 |= 8;
                         c10 = 2;
                         z10 = true;
                     case 4:
-                        obj10 = b10.n(descriptor2, 4, h.f29800a, obj10);
+                        obj10 = b10.n(descriptor2, 4, h.f29804a, obj10);
                         i12 |= 16;
                         c10 = 2;
                         z10 = true;
                     case 5:
-                        obj11 = b10.n(descriptor2, i11, new r0(a2.f29758a, m0.f29833a), obj11);
+                        obj11 = b10.n(descriptor2, i11, new r0(a2.f29762a, m0.f29837a), obj11);
                         i12 |= 32;
                         c10 = 2;
                         z10 = true;

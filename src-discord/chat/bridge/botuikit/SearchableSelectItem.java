@@ -112,13 +112,13 @@ public final class SearchableSelectItem extends SelectItem {
             z11 = true;
         }
         if (z11) {
-            output.B(serialDesc, 4, a2.f29758a, self.iconSrc);
+            output.B(serialDesc, 4, a2.f29762a, self.iconSrc);
         }
         if (output.z(serialDesc, 5) || self.iconColor != null) {
             z12 = true;
         }
         if (z12) {
-            output.B(serialDesc, 5, m0.f29833a, self.iconColor);
+            output.B(serialDesc, 5, m0.f29837a, self.iconColor);
         }
     }
 

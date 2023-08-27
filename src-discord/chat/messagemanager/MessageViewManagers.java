@@ -147,7 +147,7 @@ public final class MessageViewManagers {
 
         
         
-        public final void m144emitOnTapReplyAyv7vGE(View view, String str) {
+        public final void m152emitOnTapReplyAyv7vGE(View view, String str) {
             ReactEvents reactEvents = this.reactEvents;
             Context context = view.getContext();
             q.f(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
@@ -163,7 +163,7 @@ public final class MessageViewManagers {
 
         
         
-        public final void m145emitOnTruncateMessageJPrav84(Context context, int i10, String str) {
+        public final void m153emitOnTruncateMessageJPrav84(Context context, int i10, String str) {
             this.reactEvents.emitEvent(context, new OnTruncateMessageData(str, null), i10);
         }
 

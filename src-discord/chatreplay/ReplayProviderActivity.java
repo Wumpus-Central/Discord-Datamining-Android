@@ -54,7 +54,7 @@ public final class ReplayProviderActivity extends Activity {
             q.h(intent, "intent");
             String stringExtra = intent.getStringExtra(ReplayProviderActivity.INTENT_EXTRA_REPLAYS_LIST);
             q.e(stringExtra);
-            Json.a aVar = Json.f21735d;
+            Json.a aVar = Json.f21740d;
             aVar.a();
             return (List) aVar.b(new f(Replay$$serializer.INSTANCE), stringExtra);
         }
@@ -132,7 +132,7 @@ public final class ReplayProviderActivity extends Activity {
         if (q.c(getIntent().getAction(), "com.discord.GET_REPLAY_LIST")) {
             List<Replay> replaysList = getReplaysList();
             Intent intent = new Intent();
-            Json.a aVar = Json.f21735d;
+            Json.a aVar = Json.f21740d;
             aVar.a();
             intent.putExtra(INTENT_EXTRA_REPLAYS_LIST, aVar.c(new f(Replay$$serializer.INSTANCE), replaysList));
             setResult(-1, intent);

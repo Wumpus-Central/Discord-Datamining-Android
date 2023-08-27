@@ -40,7 +40,7 @@ public final class MessageFrameFeedHeaderView$MessageBundleHeader$$serializer im
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29758a;
+        a2 a2Var = a2.f29762a;
         return new KSerializer[]{a.u(a2Var), a.u(a2Var), a.u(new f(a2Var)), a.u(a2Var)};
     }
 
@@ -56,7 +56,7 @@ public final class MessageFrameFeedHeaderView$MessageBundleHeader$$serializer im
         c b10 = decoder.b(descriptor2);
         Object obj5 = null;
         if (b10.p()) {
-            a2 a2Var = a2.f29758a;
+            a2 a2Var = a2.f29762a;
             obj2 = b10.n(descriptor2, 0, a2Var, null);
             obj3 = b10.n(descriptor2, 1, a2Var, null);
             obj = b10.n(descriptor2, 2, new f(a2Var), null);
@@ -73,16 +73,16 @@ public final class MessageFrameFeedHeaderView$MessageBundleHeader$$serializer im
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    obj5 = b10.n(descriptor2, 0, a2.f29758a, obj5);
+                    obj5 = b10.n(descriptor2, 0, a2.f29762a, obj5);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    obj6 = b10.n(descriptor2, 1, a2.f29758a, obj6);
+                    obj6 = b10.n(descriptor2, 1, a2.f29762a, obj6);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    obj = b10.n(descriptor2, 2, new f(a2.f29758a), obj);
+                    obj = b10.n(descriptor2, 2, new f(a2.f29762a), obj);
                     i11 |= 4;
                 } else if (o10 == 3) {
-                    obj7 = b10.n(descriptor2, 3, a2.f29758a, obj7);
+                    obj7 = b10.n(descriptor2, 3, a2.f29762a, obj7);
                     i11 |= 8;
                 } else {
                     throw new n(o10);

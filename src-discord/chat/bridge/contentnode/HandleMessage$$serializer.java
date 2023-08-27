@@ -36,7 +36,7 @@ public final class HandleMessage$$serializer implements f0<HandleMessage> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29758a;
+        a2 a2Var = a2.f29762a;
         return new KSerializer[]{a2Var, HandleSurveyMessage$$serializer.INSTANCE, a.u(a2Var)};
     }
 
@@ -53,7 +53,7 @@ public final class HandleMessage$$serializer implements f0<HandleMessage> {
         if (b10.p()) {
             str = b10.m(descriptor2, 0);
             obj = b10.y(descriptor2, 1, HandleSurveyMessage$$serializer.INSTANCE, null);
-            obj2 = b10.n(descriptor2, 2, a2.f29758a, null);
+            obj2 = b10.n(descriptor2, 2, a2.f29762a, null);
             i10 = 7;
         } else {
             boolean z10 = true;
@@ -71,7 +71,7 @@ public final class HandleMessage$$serializer implements f0<HandleMessage> {
                     obj3 = b10.y(descriptor2, 1, HandleSurveyMessage$$serializer.INSTANCE, obj3);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    obj4 = b10.n(descriptor2, 2, a2.f29758a, obj4);
+                    obj4 = b10.n(descriptor2, 2, a2.f29762a, obj4);
                     i11 |= 4;
                 } else {
                     throw new n(o10);

@@ -76,7 +76,7 @@ final class SamsungModule$finishSamsungAuthorization$1$1$1 extends k implements 
                 arrayList.add(((String) entry.getKey()) + "=" + ((String) entry.getValue()));
             }
             c02 = r.c0(arrayList, "&", null, null, 0, null, null, 62, null);
-            this.this$0.handleSamsungCallback(this.$client.b(new Request.Builder().h(RequestBody.Companion.b(c02, MediaType.f25496g.a("application/x-www-form-urlencoded"))).l(queryParameter).b()).execute());
+            this.this$0.handleSamsungCallback(this.$client.b(new Request.Builder().h(RequestBody.Companion.b(c02, MediaType.f25500g.a("application/x-www-form-urlencoded"))).l(queryParameter).b()).execute());
             SamsungModule.resolveConnection$default(this.this$0, null, 1, null);
             return Unit.f21213a;
         }

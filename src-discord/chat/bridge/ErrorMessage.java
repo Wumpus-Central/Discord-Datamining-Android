@@ -56,14 +56,14 @@ public final class ErrorMessage extends MessageBase {
     }
 
     
-    public static  ErrorMessage m3copyntcYbpo$default(ErrorMessage errorMessage, String str, String str2, int i10, Object obj) {
+    public static  ErrorMessage m11copyntcYbpo$default(ErrorMessage errorMessage, String str, String str2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = errorMessage.f7244id;
         }
         if ((i10 & 2) != 0) {
             str2 = errorMessage.stackTrace;
         }
-        return errorMessage.m5copyntcYbpo(str, str2);
+        return errorMessage.m13copyntcYbpo(str, str2);
     }
 
     public static final void write$Self(ErrorMessage self, CompositeEncoder output, SerialDescriptor serialDesc) {
@@ -71,12 +71,12 @@ public final class ErrorMessage extends MessageBase {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         MessageBase.write$Self(self, output, serialDesc);
-        output.o(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m607boximpl(self.f7244id));
+        output.o(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m615boximpl(self.f7244id));
         output.x(serialDesc, 1, self.stackTrace);
     }
 
     
-    public final String m4component13Eiw7ao() {
+    public final String m12component13Eiw7ao() {
         return this.f7244id;
     }
 
@@ -85,7 +85,7 @@ public final class ErrorMessage extends MessageBase {
     }
 
     
-    public final ErrorMessage m5copyntcYbpo(String id2, String stackTrace) {
+    public final ErrorMessage m13copyntcYbpo(String id2, String stackTrace) {
         q.h(id2, "id");
         q.h(stackTrace, "stackTrace");
         return new ErrorMessage(id2, stackTrace, null);
@@ -99,11 +99,11 @@ public final class ErrorMessage extends MessageBase {
             return false;
         }
         ErrorMessage errorMessage = (ErrorMessage) obj;
-        return MessageId.m611equalsimpl0(this.f7244id, errorMessage.f7244id) && q.c(this.stackTrace, errorMessage.stackTrace);
+        return MessageId.m619equalsimpl0(this.f7244id, errorMessage.f7244id) && q.c(this.stackTrace, errorMessage.stackTrace);
     }
 
     
-    public final String m6getId3Eiw7ao() {
+    public final String m14getId3Eiw7ao() {
         return this.f7244id;
     }
 
@@ -112,11 +112,11 @@ public final class ErrorMessage extends MessageBase {
     }
 
     public int hashCode() {
-        return (MessageId.m612hashCodeimpl(this.f7244id) * 31) + this.stackTrace.hashCode();
+        return (MessageId.m620hashCodeimpl(this.f7244id) * 31) + this.stackTrace.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m613toStringimpl(this.f7244id);
+        String str = MessageId.m621toStringimpl(this.f7244id);
         String str2 = this.stackTrace;
         return "ErrorMessage(id=" + str + ", stackTrace=" + str2 + ")";
     }

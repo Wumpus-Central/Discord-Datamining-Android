@@ -38,8 +38,8 @@ public final class TapInviteEvent$$serializer implements f0<TapInviteEvent> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        h hVar = h.f29800a;
-        return new KSerializer[]{a2.f29758a, m0.f29833a, a.u(hVar), a.u(hVar)};
+        h hVar = h.f29804a;
+        return new KSerializer[]{a2.f29762a, m0.f29837a, a.u(hVar), a.u(hVar)};
     }
 
     @Override 
@@ -55,7 +55,7 @@ public final class TapInviteEvent$$serializer implements f0<TapInviteEvent> {
         if (b10.p()) {
             str = b10.m(descriptor2, 0);
             i10 = b10.i(descriptor2, 1);
-            h hVar = h.f29800a;
+            h hVar = h.f29804a;
             obj = b10.n(descriptor2, 2, hVar, null);
             obj2 = b10.n(descriptor2, 3, hVar, null);
             i11 = 15;
@@ -77,10 +77,10 @@ public final class TapInviteEvent$$serializer implements f0<TapInviteEvent> {
                     i12 = b10.i(descriptor2, 1);
                     i13 |= 2;
                 } else if (o10 == 2) {
-                    obj3 = b10.n(descriptor2, 2, h.f29800a, obj3);
+                    obj3 = b10.n(descriptor2, 2, h.f29804a, obj3);
                     i13 |= 4;
                 } else if (o10 == 3) {
-                    obj4 = b10.n(descriptor2, 3, h.f29800a, obj4);
+                    obj4 = b10.n(descriptor2, 3, h.f29804a, obj4);
                     i13 |= 8;
                 } else {
                     throw new n(o10);

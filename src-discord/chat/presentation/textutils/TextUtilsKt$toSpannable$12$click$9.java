@@ -31,7 +31,7 @@ final class TextUtilsKt$toSpannable$12$click$9 extends s implements Function1<Vi
     
     public final void invoke2(View it) {
         q.h(it, "it");
-        SpoilerManager.INSTANCE.m133markRevealedV2PEE7g(this.$id);
+        SpoilerManager.INSTANCE.m141markRevealedV2PEE7g(this.$id);
         this.$rc.getOnTapSpoiler().invoke();
     }
 }

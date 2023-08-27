@@ -38,8 +38,8 @@ public final class PingTimeoutCallbackEvent$$serializer implements f0<PingTimeou
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29833a;
-        return new KSerializer[]{m0Var, a2.f29758a, m0Var, m0Var, m0Var};
+        m0 m0Var = m0.f29837a;
+        return new KSerializer[]{m0Var, a2.f29762a, m0Var, m0Var, m0Var};
     }
 
     @Override 

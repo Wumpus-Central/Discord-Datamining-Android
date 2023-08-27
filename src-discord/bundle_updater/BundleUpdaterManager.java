@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import com.discord.bundle_updater.react.events.BundleDownloadedEvent;
-import com.discord.bundle_updater.react.events.OtaUpdateCheckedEvent;
+import com.discord.bundle_updater.react.events.OtaCheckAttemptEvent;
 import com.discord.misc.utilities.activity.ActivityExtensionsKt;
 import com.discord.reactevents.ReactEvents;
 import com.discord.theme.ThemeManagerKt;
@@ -36,7 +36,7 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
     private static final String OTA_UPDATE_CHECKED = "OtaUpdateChecked";
     private ViewGroup progressLayout;
     private final ReactApplicationContext reactContext;
-    private final ReactEvents reactEvents = new ReactEvents(x.a(BUNDLE_DOWNLOADED, f0.b(BundleDownloadedEvent.class)), x.a(OTA_UPDATE_CHECKED, f0.b(OtaUpdateCheckedEvent.class)));
+    private final ReactEvents reactEvents = new ReactEvents(x.a(BUNDLE_DOWNLOADED, f0.b(BundleDownloadedEvent.class)), x.a(OTA_UPDATE_CHECKED, f0.b(OtaCheckAttemptEvent.class)));
 
     @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u0006"}, d2 = {"Lcom/discord/bundle_updater/BundleUpdaterManager$Companion;", "", "()V", "BUNDLE_DOWNLOADED", "", "OTA_UPDATE_CHECKED", "bundle_updater_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     
@@ -162,7 +162,7 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
     @ReactMethod
     public final void getInitialOtaUpdateChecked(Promise promise) {
         q.h(promise, "promise");
-        promise.resolve(new OtaUpdateCheckedEvent(BundleUpdater.Companion.instance().getOtaMetrics()).serialize());
+        promise.resolve(new OtaCheckAttemptEvent(BundleUpdater.Companion.instance().getOtaMetrics()).serialize());
     }
 
     @ReactMethod

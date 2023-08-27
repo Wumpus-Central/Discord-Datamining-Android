@@ -27,13 +27,13 @@ public final class MessageViewManagers$MessageBundleViewManager$setData$1$3 exte
 
     @Override 
     public   Unit invoke(MessageId messageId) {
-        m147invoke1xi1bu0(messageId.m615unboximpl());
+        m155invoke1xi1bu0(messageId.m623unboximpl());
         return Unit.f21213a;
     }
 
     
-    public final void m147invoke1xi1bu0(String messageId) {
+    public final void m155invoke1xi1bu0(String messageId) {
         q.h(messageId, "messageId");
-        this.this$0.m144emitOnTapReplyAyv7vGE(this.$wrappedView, messageId);
+        this.this$0.m152emitOnTapReplyAyv7vGE(this.$wrappedView, messageId);
     }
 }

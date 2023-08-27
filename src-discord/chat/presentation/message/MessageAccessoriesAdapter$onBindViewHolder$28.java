@@ -40,6 +40,6 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$28 extends s imple
             q.z("eventHandler");
             chatEventHandler = null;
         }
-        chatEventHandler.mo154onStickerClickedAyv7vGE(((StickerMessageAccessory) this.$part).getSticker(), this.$part.mo222getMessageId3Eiw7ao());
+        chatEventHandler.mo162onStickerClickedAyv7vGE(((StickerMessageAccessory) this.$part).getSticker(), this.$part.mo230getMessageId3Eiw7ao());
     }
 }

@@ -41,7 +41,7 @@ public final class MessageReference {
         if (1 != (i10 & 1)) {
             n1.b(i10, 1, MessageReference$$serializer.INSTANCE.getDescriptor());
         }
-        this.channelId = channelId.m590unboximpl();
+        this.channelId = channelId.m598unboximpl();
         if ((i10 & 2) == 0) {
             this.guildId = null;
         } else {
@@ -58,22 +58,22 @@ public final class MessageReference {
     }
 
     
-    public static  MessageReference m71copy2_zTmBg$default(MessageReference messageReference, long j10, GuildId guildId, int i10, Object obj) {
+    public static  MessageReference m79copy2_zTmBg$default(MessageReference messageReference, long j10, GuildId guildId, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             j10 = messageReference.channelId;
         }
         if ((i10 & 2) != 0) {
             guildId = messageReference.guildId;
         }
-        return messageReference.m76copy2_zTmBg(j10, guildId);
+        return messageReference.m84copy2_zTmBg(j10, guildId);
     }
 
     
-    public static  void m72getChannelIdo4g7jtM$annotations() {
+    public static  void m80getChannelIdo4g7jtM$annotations() {
     }
 
     
-    public static  void m73getGuildIdqOKuAAo$annotations() {
+    public static  void m81getGuildIdqOKuAAo$annotations() {
     }
 
     public static final void write$Self(MessageReference self, CompositeEncoder output, SerialDescriptor serialDesc) {
@@ -81,7 +81,7 @@ public final class MessageReference {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z10 = false;
-        output.o(serialDesc, 0, ChannelId$$serializer.INSTANCE, ChannelId.m581boximpl(self.channelId));
+        output.o(serialDesc, 0, ChannelId$$serializer.INSTANCE, ChannelId.m589boximpl(self.channelId));
         if (output.z(serialDesc, 1) || self.guildId != null) {
             z10 = true;
         }
@@ -91,17 +91,17 @@ public final class MessageReference {
     }
 
     
-    public final long m74component1o4g7jtM() {
+    public final long m82component1o4g7jtM() {
         return this.channelId;
     }
 
     
-    public final GuildId m75component2qOKuAAo() {
+    public final GuildId m83component2qOKuAAo() {
         return this.guildId;
     }
 
     
-    public final MessageReference m76copy2_zTmBg(long j10, GuildId guildId) {
+    public final MessageReference m84copy2_zTmBg(long j10, GuildId guildId) {
         return new MessageReference(j10, guildId, null);
     }
 
@@ -113,27 +113,27 @@ public final class MessageReference {
             return false;
         }
         MessageReference messageReference = (MessageReference) obj;
-        return ChannelId.m585equalsimpl0(this.channelId, messageReference.channelId) && q.c(this.guildId, messageReference.guildId);
+        return ChannelId.m593equalsimpl0(this.channelId, messageReference.channelId) && q.c(this.guildId, messageReference.guildId);
     }
 
     
-    public final long m77getChannelIdo4g7jtM() {
+    public final long m85getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
     
-    public final GuildId m78getGuildIdqOKuAAo() {
+    public final GuildId m86getGuildIdqOKuAAo() {
         return this.guildId;
     }
 
     public int hashCode() {
-        int i10 = ChannelId.m586hashCodeimpl(this.channelId) * 31;
+        int i10 = ChannelId.m594hashCodeimpl(this.channelId) * 31;
         GuildId guildId = this.guildId;
-        return i10 + (guildId == null ? 0 : GuildId.m599hashCodeimpl(guildId.m603unboximpl()));
+        return i10 + (guildId == null ? 0 : GuildId.m607hashCodeimpl(guildId.m611unboximpl()));
     }
 
     public String toString() {
-        String str = ChannelId.m588toStringimpl(this.channelId);
+        String str = ChannelId.m596toStringimpl(this.channelId);
         GuildId guildId = this.guildId;
         return "MessageReference(channelId=" + str + ", guildId=" + guildId + ")";
     }

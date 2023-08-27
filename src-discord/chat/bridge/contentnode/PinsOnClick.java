@@ -40,7 +40,7 @@ public final class PinsOnClick {
             n1.b(i10, 3, PinsOnClick$$serializer.INSTANCE.getDescriptor());
         }
         this.action = str;
-        this.messageChannelId = channelId.m590unboximpl();
+        this.messageChannelId = channelId.m598unboximpl();
     }
 
     public  PinsOnClick(int i10, String str, ChannelId channelId, SerializationConstructorMarker serializationConstructorMarker, DefaultConstructorMarker defaultConstructorMarker) {
@@ -52,14 +52,14 @@ public final class PinsOnClick {
     }
 
     
-    public static  PinsOnClick m79copymJqaSGE$default(PinsOnClick pinsOnClick, String str, long j10, int i10, Object obj) {
+    public static  PinsOnClick m87copymJqaSGE$default(PinsOnClick pinsOnClick, String str, long j10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = pinsOnClick.action;
         }
         if ((i10 & 2) != 0) {
             j10 = pinsOnClick.messageChannelId;
         }
-        return pinsOnClick.m81copymJqaSGE(str, j10);
+        return pinsOnClick.m89copymJqaSGE(str, j10);
     }
 
     public static final void write$Self(PinsOnClick self, CompositeEncoder output, SerialDescriptor serialDesc) {
@@ -67,7 +67,7 @@ public final class PinsOnClick {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         output.x(serialDesc, 0, self.action);
-        output.o(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m581boximpl(self.messageChannelId));
+        output.o(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m589boximpl(self.messageChannelId));
     }
 
     public final String component1() {
@@ -75,12 +75,12 @@ public final class PinsOnClick {
     }
 
     
-    public final long m80component2o4g7jtM() {
+    public final long m88component2o4g7jtM() {
         return this.messageChannelId;
     }
 
     
-    public final PinsOnClick m81copymJqaSGE(String action, long j10) {
+    public final PinsOnClick m89copymJqaSGE(String action, long j10) {
         q.h(action, "action");
         return new PinsOnClick(action, j10, null);
     }
@@ -93,7 +93,7 @@ public final class PinsOnClick {
             return false;
         }
         PinsOnClick pinsOnClick = (PinsOnClick) obj;
-        return q.c(this.action, pinsOnClick.action) && ChannelId.m585equalsimpl0(this.messageChannelId, pinsOnClick.messageChannelId);
+        return q.c(this.action, pinsOnClick.action) && ChannelId.m593equalsimpl0(this.messageChannelId, pinsOnClick.messageChannelId);
     }
 
     public final String getAction() {
@@ -101,17 +101,17 @@ public final class PinsOnClick {
     }
 
     
-    public final long m82getMessageChannelIdo4g7jtM() {
+    public final long m90getMessageChannelIdo4g7jtM() {
         return this.messageChannelId;
     }
 
     public int hashCode() {
-        return (this.action.hashCode() * 31) + ChannelId.m586hashCodeimpl(this.messageChannelId);
+        return (this.action.hashCode() * 31) + ChannelId.m594hashCodeimpl(this.messageChannelId);
     }
 
     public String toString() {
         String str = this.action;
-        String str2 = ChannelId.m588toStringimpl(this.messageChannelId);
+        String str2 = ChannelId.m596toStringimpl(this.messageChannelId);
         return "PinsOnClick(action=" + str + ", messageChannelId=" + str2 + ")";
     }
 

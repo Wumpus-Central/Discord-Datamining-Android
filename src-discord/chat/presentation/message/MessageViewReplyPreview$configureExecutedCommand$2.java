@@ -31,6 +31,6 @@ final class MessageViewReplyPreview$configureExecutedCommand$2 extends s impleme
     
     public final void invoke2(LinkContentNode it) {
         q.h(it, "it");
-        this.$eventHandler.mo149onLinkClickedntcYbpo(this.$messageId, it);
+        this.$eventHandler.mo157onLinkClickedntcYbpo(this.$messageId, it);
     }
 }

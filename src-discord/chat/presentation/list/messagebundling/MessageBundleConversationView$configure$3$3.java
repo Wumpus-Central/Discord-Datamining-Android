@@ -33,6 +33,6 @@ public final class MessageBundleConversationView$configure$3$3 extends s impleme
     
     public final void invoke2(ReactionView.Reaction it) {
         q.h(it, "it");
-        ChatEventHandler.DefaultImpls.m188onTapReactionu7_MRrM$default(this.$eventHandler, this.$message.m17getId3Eiw7ao(), it, null, 4, null);
+        ChatEventHandler.DefaultImpls.m196onTapReactionu7_MRrM$default(this.$eventHandler, this.$message.m25getId3Eiw7ao(), it, null, 4, null);
     }
 }

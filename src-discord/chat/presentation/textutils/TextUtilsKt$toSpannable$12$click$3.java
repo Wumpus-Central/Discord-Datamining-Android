@@ -34,6 +34,6 @@ public final class TextUtilsKt$toSpannable$12$click$3 extends s implements Funct
     
     public final void invoke2(View it) {
         q.h(it, "it");
-        this.$rc.getOnTapMention().invoke(UserId.m652toStringimpl(((UserOrRoleMentionContentNode) this.$contentNode).m102getUserIdwUX8bhU().m654unboximpl()), String.valueOf(((UserOrRoleMentionContentNode) this.$contentNode).m99getChannelIdqMVnFVQ()));
+        this.$rc.getOnTapMention().invoke(UserId.m660toStringimpl(((UserOrRoleMentionContentNode) this.$contentNode).m110getUserIdwUX8bhU().m662unboximpl()), String.valueOf(((UserOrRoleMentionContentNode) this.$contentNode).m107getChannelIdqMVnFVQ()));
     }
 }

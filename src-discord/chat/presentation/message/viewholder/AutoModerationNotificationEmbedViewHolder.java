@@ -26,22 +26,22 @@ public final class AutoModerationNotificationEmbedViewHolder extends MessagePart
     public static final void bind$lambda$0(Function2 onTapAutoModerationActions, String messageId, long j10, View view) {
         q.h(onTapAutoModerationActions, "$onTapAutoModerationActions");
         q.h(messageId, "$messageId");
-        onTapAutoModerationActions.invoke(MessageId.m607boximpl(messageId), ChannelId.m581boximpl(j10));
+        onTapAutoModerationActions.invoke(MessageId.m615boximpl(messageId), ChannelId.m589boximpl(j10));
     }
 
     
     public static final void bind$lambda$1(Function2 onTapAutoModerationFeedback, String messageId, long j10, View view) {
         q.h(onTapAutoModerationFeedback, "$onTapAutoModerationFeedback");
         q.h(messageId, "$messageId");
-        onTapAutoModerationFeedback.invoke(MessageId.m607boximpl(messageId), ChannelId.m581boximpl(j10));
+        onTapAutoModerationFeedback.invoke(MessageId.m615boximpl(messageId), ChannelId.m589boximpl(j10));
     }
 
     public final void bind(AutoModerationNotificationEmbedAccessory notificationEmbedAccessory, final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationActions, final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationFeedback) {
         q.h(notificationEmbedAccessory, "notificationEmbedAccessory");
         q.h(onTapAutoModerationActions, "onTapAutoModerationActions");
         q.h(onTapAutoModerationFeedback, "onTapAutoModerationFeedback");
-        final long j10 = notificationEmbedAccessory.getMessage().m15getChannelIdo4g7jtM();
-        final String str = notificationEmbedAccessory.getMessage().m17getId3Eiw7ao();
+        final long j10 = notificationEmbedAccessory.getMessage().m23getChannelIdo4g7jtM();
+        final String str = notificationEmbedAccessory.getMessage().m25getId3Eiw7ao();
         this.notificationEmbedView.configure(notificationEmbedAccessory.getModerationContext(), new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {

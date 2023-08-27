@@ -98,6 +98,10 @@ public final class ConnectionInfo {
     }
 
     public String toString() {
-        return "ConnectionInfo(isConnected=" + this.isConnected + ", protocol=" + this.protocol + ", localAddress=" + this.localAddress + ", localPort=" + this.localPort + ')';
+        boolean z10 = this.isConnected;
+        String str = this.protocol;
+        String str2 = this.localAddress;
+        int i10 = this.localPort;
+        return "ConnectionInfo(isConnected=" + z10 + ", protocol=" + str + ", localAddress=" + str2 + ", localPort=" + i10 + ")";
     }
 }

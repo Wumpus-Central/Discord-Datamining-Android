@@ -1102,7 +1102,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
                 System.arraycopy(bArr, 0, readBuffer, i13, e0Var.f21246j);
                 i13 += e0Var.f21246j;
             }
-            String str = new String(readBuffer, 0, i13, a.f24906b);
+            String str = new String(readBuffer, 0, i13, a.f24911b);
             openRawResource.close();
             this.width = i11;
             this.height = i12;

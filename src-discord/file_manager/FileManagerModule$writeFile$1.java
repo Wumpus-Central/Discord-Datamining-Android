@@ -104,7 +104,7 @@ final class FileManagerModule$writeFile$1 extends k implements Function2<Corouti
                     c.a(fileOutputStream, null);
                 } else {
                     FileOutputStream fileOutputStream2 = new FileOutputStream(file);
-                    byte[] bytes = this.$data.getBytes(a.f24906b);
+                    byte[] bytes = this.$data.getBytes(a.f24911b);
                     q.g(bytes, "this as java.lang.String).getBytes(charset)");
                     fileOutputStream2.write(bytes);
                     Unit unit2 = Unit.f21213a;

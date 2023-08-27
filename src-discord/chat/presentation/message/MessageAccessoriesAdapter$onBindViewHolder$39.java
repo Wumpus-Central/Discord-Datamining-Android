@@ -39,6 +39,6 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$39 extends s imple
         }
         str = this.this$0.messageId;
         q.e(str);
-        chatEventHandler.mo150onLinkClickedu7_MRrM(str, url, filename);
+        chatEventHandler.mo158onLinkClickedu7_MRrM(str, url, filename);
     }
 }

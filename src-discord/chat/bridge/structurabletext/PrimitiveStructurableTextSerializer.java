@@ -13,7 +13,7 @@ import vi.g;
 
 public final class PrimitiveStructurableTextSerializer implements KSerializer<PrimitiveStructurableText> {
     public static final PrimitiveStructurableTextSerializer INSTANCE = new PrimitiveStructurableTextSerializer();
-    private static final SerialDescriptor descriptor = g.a("PrimitiveStructurableText", e.i.f29352a);
+    private static final SerialDescriptor descriptor = g.a("PrimitiveStructurableText", e.i.f29356a);
 
     private PrimitiveStructurableTextSerializer() {
     }

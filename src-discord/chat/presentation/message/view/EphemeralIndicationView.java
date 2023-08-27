@@ -2,6 +2,7 @@ package com.discord.chat.presentation.message.view;
 
 import android.content.Context;
 import android.graphics.Paint;
+import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -62,7 +63,7 @@ public final class EphemeralIndicationView extends ConstraintLayout {
     }
 
     
-    public final void m313setEphemeralIndicationAFFcxXc(String messageId, final EphemeralIndication ephemeralIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, final Function1<? super String, Unit> onHelpArticleClicked) {
+    public final void m321setEphemeralIndicationAFFcxXc(String messageId, final EphemeralIndication ephemeralIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, final Function1<? super String, Unit> onHelpArticleClicked) {
         q.h(messageId, "messageId");
         q.h(ephemeralIndication, "ephemeralIndication");
         q.h(onLinkClicked, "onLinkClicked");
@@ -79,11 +80,13 @@ public final class EphemeralIndicationView extends ConstraintLayout {
         q.g(setEphemeralIndication_AFFcxXc$lambda$6, "setEphemeralIndication_AFFcxXc$lambda$6");
         StructurableText content = ephemeralIndication.getContent();
         Context context = setEphemeralIndication_AFFcxXc$lambda$6.getContext();
-        q.g(context, "context");
-        EphemeralIndicationView$setEphemeralIndication$2$1 ephemeralIndicationView$setEphemeralIndication$2$1 = new EphemeralIndicationView$setEphemeralIndication$2$1(onLinkClicked, messageId);
         Paint.FontMetrics fontMetrics = setEphemeralIndication_AFFcxXc$lambda$6.getPaint().getFontMetrics();
         q.g(fontMetrics, "paint.fontMetrics");
-        DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context, messageId, false, false, false, ephemeralIndicationView$setEphemeralIndication$2$1, null, null, null, null, null, null, null, null, null, null, false, null, TextUtilsKt.getBaselineHeight(fontMetrics), 262080, null);
+        float baselineHeight = TextUtilsKt.getBaselineHeight(fontMetrics);
+        TextPaint paint = setEphemeralIndication_AFFcxXc$lambda$6.getPaint();
+        q.g(context, "context");
+        q.g(paint, "paint");
+        DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context, messageId, false, false, false, paint, new EphemeralIndicationView$setEphemeralIndication$2$1(onLinkClicked, messageId), null, null, null, null, null, null, null, null, null, null, false, null, baselineHeight, 524160, null);
         SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(setEphemeralIndication_AFFcxXc$lambda$6));
         SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setEphemeralIndication_AFFcxXc$lambda$6, spannable$default);
         NestedScrollOnTouchUtilsKt.enableNestedSpanClickListener$default(setEphemeralIndication_AFFcxXc$lambda$6, false, 1, null);

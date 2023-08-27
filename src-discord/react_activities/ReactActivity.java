@@ -83,7 +83,7 @@ public abstract class ReactActivity extends com.facebook.react.ReactActivity {
     public void onConfigurationChanged(Configuration newConfig) {
         q.h(newConfig, "newConfig");
         super.onConfigurationChanged(newConfig);
-        b.f27022m.a(this, newConfig);
+        b.f27026m.a(this, newConfig);
     }
 
     @Override 

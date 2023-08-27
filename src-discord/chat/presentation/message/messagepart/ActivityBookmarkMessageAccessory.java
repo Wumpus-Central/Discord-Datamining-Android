@@ -27,9 +27,9 @@ public final class ActivityBookmarkMessageAccessory extends MessageAccessory {
     }
 
     
-    public static  ActivityBookmarkMessageAccessory m219copyAFFcxXc$default(ActivityBookmarkMessageAccessory activityBookmarkMessageAccessory, String str, int i10, ActivityBookmarkEmbedImpl activityBookmarkEmbedImpl, int i11, int i12, Object obj) {
+    public static  ActivityBookmarkMessageAccessory m227copyAFFcxXc$default(ActivityBookmarkMessageAccessory activityBookmarkMessageAccessory, String str, int i10, ActivityBookmarkEmbedImpl activityBookmarkEmbedImpl, int i11, int i12, Object obj) {
         if ((i12 & 1) != 0) {
-            str = activityBookmarkMessageAccessory.mo222getMessageId3Eiw7ao();
+            str = activityBookmarkMessageAccessory.mo230getMessageId3Eiw7ao();
         }
         if ((i12 & 2) != 0) {
             i10 = activityBookmarkMessageAccessory.codedLinkIndex;
@@ -40,12 +40,12 @@ public final class ActivityBookmarkMessageAccessory extends MessageAccessory {
         if ((i12 & 8) != 0) {
             i11 = activityBookmarkMessageAccessory.constrainedWidth;
         }
-        return activityBookmarkMessageAccessory.m221copyAFFcxXc(str, i10, activityBookmarkEmbedImpl, i11);
+        return activityBookmarkMessageAccessory.m229copyAFFcxXc(str, i10, activityBookmarkEmbedImpl, i11);
     }
 
     
-    public final String m220component13Eiw7ao() {
-        return mo222getMessageId3Eiw7ao();
+    public final String m228component13Eiw7ao() {
+        return mo230getMessageId3Eiw7ao();
     }
 
     public final int component2() {
@@ -61,7 +61,7 @@ public final class ActivityBookmarkMessageAccessory extends MessageAccessory {
     }
 
     
-    public final ActivityBookmarkMessageAccessory m221copyAFFcxXc(String messageId, int i10, ActivityBookmarkEmbedImpl activityBookmarkEmbed, int i11) {
+    public final ActivityBookmarkMessageAccessory m229copyAFFcxXc(String messageId, int i10, ActivityBookmarkEmbedImpl activityBookmarkEmbed, int i11) {
         q.h(messageId, "messageId");
         q.h(activityBookmarkEmbed, "activityBookmarkEmbed");
         return new ActivityBookmarkMessageAccessory(messageId, i10, activityBookmarkEmbed, i11, null);
@@ -75,7 +75,7 @@ public final class ActivityBookmarkMessageAccessory extends MessageAccessory {
             return false;
         }
         ActivityBookmarkMessageAccessory activityBookmarkMessageAccessory = (ActivityBookmarkMessageAccessory) obj;
-        return MessageId.m611equalsimpl0(mo222getMessageId3Eiw7ao(), activityBookmarkMessageAccessory.mo222getMessageId3Eiw7ao()) && this.codedLinkIndex == activityBookmarkMessageAccessory.codedLinkIndex && q.c(this.activityBookmarkEmbed, activityBookmarkMessageAccessory.activityBookmarkEmbed) && this.constrainedWidth == activityBookmarkMessageAccessory.constrainedWidth;
+        return MessageId.m619equalsimpl0(mo230getMessageId3Eiw7ao(), activityBookmarkMessageAccessory.mo230getMessageId3Eiw7ao()) && this.codedLinkIndex == activityBookmarkMessageAccessory.codedLinkIndex && q.c(this.activityBookmarkEmbed, activityBookmarkMessageAccessory.activityBookmarkEmbed) && this.constrainedWidth == activityBookmarkMessageAccessory.constrainedWidth;
     }
 
     public final ActivityBookmarkEmbedImpl getActivityBookmarkEmbed() {
@@ -92,16 +92,16 @@ public final class ActivityBookmarkMessageAccessory extends MessageAccessory {
 
     @Override 
     
-    public String mo222getMessageId3Eiw7ao() {
+    public String mo230getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((((MessageId.m612hashCodeimpl(mo222getMessageId3Eiw7ao()) * 31) + this.codedLinkIndex) * 31) + this.activityBookmarkEmbed.hashCode()) * 31) + this.constrainedWidth;
+        return (((((MessageId.m620hashCodeimpl(mo230getMessageId3Eiw7ao()) * 31) + this.codedLinkIndex) * 31) + this.activityBookmarkEmbed.hashCode()) * 31) + this.constrainedWidth;
     }
 
     public String toString() {
-        String str = MessageId.m613toStringimpl(mo222getMessageId3Eiw7ao());
+        String str = MessageId.m621toStringimpl(mo230getMessageId3Eiw7ao());
         int i10 = this.codedLinkIndex;
         ActivityBookmarkEmbedImpl activityBookmarkEmbedImpl = this.activityBookmarkEmbed;
         int i11 = this.constrainedWidth;

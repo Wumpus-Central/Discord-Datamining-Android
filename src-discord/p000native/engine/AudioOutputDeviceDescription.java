@@ -66,6 +66,8 @@ public final class AudioOutputDeviceDescription {
     }
 
     public String toString() {
-        return "AudioOutputDeviceDescription(name=" + this.name + ", guid=" + this.guid + ')';
+        String str = this.name;
+        String str2 = this.guid;
+        return "AudioOutputDeviceDescription(name=" + str + ", guid=" + str2 + ")";
     }
 }

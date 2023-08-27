@@ -2,6 +2,7 @@ package com.discord.chat.presentation.message.view;
 
 import android.content.Context;
 import android.graphics.Paint;
+import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -93,7 +94,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     }
 
     
-    private final void m316setSharePromptLdU2QRA(String str, PostSharePrompt postSharePrompt, View.OnClickListener onClickListener, String str2, View.OnClickListener onClickListener2, Function2<? super MessageId, ? super LinkContentNode, Unit> function2) {
+    private final void m324setSharePromptLdU2QRA(String str, PostSharePrompt postSharePrompt, View.OnClickListener onClickListener, String str2, View.OnClickListener onClickListener2, Function2<? super MessageId, ? super LinkContentNode, Unit> function2) {
         boolean z10;
         int i10;
         ConstraintLayout constraintLayout = this.binding.sharePromptContainer;
@@ -128,17 +129,19 @@ public final class ForumPostActionBarView extends ConstraintLayout {
             q.g(setSharePrompt_LdU2QRA$lambda$13, "setSharePrompt_LdU2QRA$lambda$13");
             StructurableText subtitle = postSharePrompt.getSubtitle();
             Context context = setSharePrompt_LdU2QRA$lambda$13.getContext();
-            q.g(context, "context");
-            ForumPostActionBarView$setSharePrompt$3$1 forumPostActionBarView$setSharePrompt$3$1 = new ForumPostActionBarView$setSharePrompt$3$1(function2, str);
             Paint.FontMetrics fontMetrics = setSharePrompt_LdU2QRA$lambda$13.getPaint().getFontMetrics();
             q.g(fontMetrics, "paint.fontMetrics");
-            SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setSharePrompt_LdU2QRA$lambda$13, TextUtilsKt.toSpannable$default(subtitle, context, str, false, false, false, forumPostActionBarView$setSharePrompt$3$1, null, null, null, null, null, null, null, null, null, null, false, null, TextUtilsKt.getBaselineHeight(fontMetrics), 262080, null));
+            float baselineHeight = TextUtilsKt.getBaselineHeight(fontMetrics);
+            TextPaint paint = setSharePrompt_LdU2QRA$lambda$13.getPaint();
+            q.g(context, "context");
+            q.g(paint, "paint");
+            SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setSharePrompt_LdU2QRA$lambda$13, TextUtilsKt.toSpannable$default(subtitle, context, str, false, false, false, paint, new ForumPostActionBarView$setSharePrompt$3$1(function2, str), null, null, null, null, null, null, null, null, null, null, false, null, baselineHeight, 524160, null));
             NestedScrollOnTouchUtilsKt.enableNestedSpanClickListener$default(setSharePrompt_LdU2QRA$lambda$13, false, 1, null);
         }
     }
 
     
-    public final void m317configureCgeVRR0(String messageId, int i10, boolean z10, String str, String followLabel, String str2, String shareLabel, List<? extends ReactionView.Reaction> list, ReactionView.Reaction reaction, boolean z11, String addNewReactionAccessibilityLabel, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, View.OnClickListener onTapFollowForumPost, View.OnClickListener onTapShareForumPost, View.OnClickListener onTapReactionOverflow, PostSharePrompt postSharePrompt, View.OnClickListener onDismissSharePromptClick, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
+    public final void m325configureCgeVRR0(String messageId, int i10, boolean z10, String str, String followLabel, String str2, String shareLabel, List<? extends ReactionView.Reaction> list, ReactionView.Reaction reaction, boolean z11, String addNewReactionAccessibilityLabel, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, View.OnClickListener onTapFollowForumPost, View.OnClickListener onTapShareForumPost, View.OnClickListener onTapReactionOverflow, PostSharePrompt postSharePrompt, View.OnClickListener onDismissSharePromptClick, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
         boolean z12;
         Object obj;
         int i11;
@@ -168,7 +171,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
                 reactionsView.setVisibility(8);
             } else {
                 d10 = i.d(reaction);
-                setReactions$default(this, MessageId.m613toStringimpl(messageId), d10, reactionsTheme, onAddReactionClick, onReactionClick, null, 32, null);
+                setReactions$default(this, MessageId.m621toStringimpl(messageId), d10, reactionsTheme, onAddReactionClick, onReactionClick, null, 32, null);
             }
             i11 = 2;
             obj = null;
@@ -181,7 +184,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
             ReactionsView reactionsView2 = this.binding.reactionsView;
             q.g(reactionsView2, "binding.reactionsView");
             reactionsView2.setVisibility(0);
-            setReactions(MessageId.m613toStringimpl(messageId), v02, reactionsTheme, onAddReactionClick, onReactionClick, onReactionLongPress);
+            setReactions(MessageId.m621toStringimpl(messageId), v02, reactionsTheme, onAddReactionClick, onReactionClick, onReactionLongPress);
             int max = Math.max(list.size() - i13, 0);
             DCDButton configure_CgeVRR0$lambda$7 = this.binding.otherReactionsCount;
             q.g(configure_CgeVRR0$lambda$7, "configure_CgeVRR0$lambda$7");
@@ -239,7 +242,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
             int i17 = z12 ? 1 : 0;
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configure_CgeVRR0$lambda$10, false, onAddReactionClick, i14, obj);
         }
-        m316setSharePromptLdU2QRA(messageId, postSharePrompt, onTapShareForumPost, str2, onDismissSharePromptClick, onLinkClicked);
+        m324setSharePromptLdU2QRA(messageId, postSharePrompt, onTapShareForumPost, str2, onDismissSharePromptClick, onLinkClicked);
     }
 
     

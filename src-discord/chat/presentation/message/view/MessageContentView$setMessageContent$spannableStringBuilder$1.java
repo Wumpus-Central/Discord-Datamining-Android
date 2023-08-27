@@ -33,6 +33,6 @@ final class MessageContentView$setMessageContent$spannableStringBuilder$1 extend
     
     public final void invoke2(LinkContentNode node) {
         q.h(node, "node");
-        this.$onTapLink.invoke(MessageId.m607boximpl(this.$messageId), node);
+        this.$onTapLink.invoke(MessageId.m615boximpl(this.$messageId), node);
     }
 }

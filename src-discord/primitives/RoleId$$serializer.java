@@ -29,18 +29,18 @@ public final class RoleId$$serializer implements f0<RoleId> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f29874a};
+        return new KSerializer[]{w0.f29878a};
     }
 
     @Override 
     public   Object deserialize(Decoder decoder) {
-        return RoleId.m619boximpl(m629deserializeK4NZIAs(decoder));
+        return RoleId.m627boximpl(m637deserializeK4NZIAs(decoder));
     }
 
     
-    public long m629deserializeK4NZIAs(Decoder decoder) {
+    public long m637deserializeK4NZIAs(Decoder decoder) {
         q.h(decoder, "decoder");
-        return RoleId.m620constructorimpl(decoder.q(getDescriptor()).l());
+        return RoleId.m628constructorimpl(decoder.q(getDescriptor()).l());
     }
 
     @Override 
@@ -50,11 +50,11 @@ public final class RoleId$$serializer implements f0<RoleId> {
 
     @Override 
     public   void serialize(Encoder encoder, Object obj) {
-        m630serializeNFBmNZw(encoder, ((RoleId) obj).m628unboximpl());
+        m638serializeNFBmNZw(encoder, ((RoleId) obj).m636unboximpl());
     }
 
     
-    public void m630serializeNFBmNZw(Encoder encoder, long j10) {
+    public void m638serializeNFBmNZw(Encoder encoder, long j10) {
         q.h(encoder, "encoder");
         Encoder j11 = encoder.j(getDescriptor());
         if (j11 != null) {

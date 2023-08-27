@@ -34,7 +34,7 @@ public final class MediaPlayerPause$$serializer implements f0<MediaPlayerPause> 
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{x.f29879a, h.f29800a};
+        return new KSerializer[]{x.f29883a, h.f29804a};
     }
 
     @Override 

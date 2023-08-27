@@ -5,6 +5,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.text.SpannableStringBuilder;
+import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -73,7 +74,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
         q.h(eventHandler, "$eventHandler");
         q.h(messageId, "$messageId");
         q.h(executedCommand, "$executedCommand");
-        eventHandler.mo159onTapAvatarx5gers8(messageId, executedCommand.m106getUserIdre6GcUE());
+        eventHandler.mo167onTapAvatarx5gers8(messageId, executedCommand.m114getUserIdre6GcUE());
     }
 
     public static  void configureReply$default(MessageViewReplyPreview messageViewReplyPreview, ReferencedMessage referencedMessage, boolean z10, Function0 function0, int i10, Object obj) {
@@ -101,7 +102,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
     }
 
     
-    public final void m218configureExecutedCommandLdU2QRA(final String messageId, final ExecutedCommand executedCommand, boolean z10, boolean z11, boolean z12, final ChatEventHandler eventHandler) {
+    public final void m226configureExecutedCommandLdU2QRA(final String messageId, final ExecutedCommand executedCommand, boolean z10, boolean z11, boolean z12, final ChatEventHandler eventHandler) {
         q.h(messageId, "messageId");
         q.h(executedCommand, "executedCommand");
         q.h(eventHandler, "eventHandler");
@@ -140,8 +141,10 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
         Paint.FontMetrics fontMetrics = this.binding.replyText.getPaint().getFontMetrics();
         q.g(fontMetrics, "binding.replyText.paint.fontMetrics");
         float baselineHeight = TextUtilsKt.getBaselineHeight(fontMetrics);
+        TextPaint paint = this.binding.replyText.getPaint();
         q.g(context, "context");
-        DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context, messageId, z10, z11, z12, new MessageViewReplyPreview$configureExecutedCommand$2(eventHandler, messageId), null, null, null, null, new MessageViewReplyPreview$configureExecutedCommand$3(eventHandler), new MessageViewReplyPreview$configureExecutedCommand$4(eventHandler), null, null, new MessageViewReplyPreview$configureExecutedCommand$5(executedCommand), null, false, null, baselineHeight, 242624, null);
+        q.g(paint, "paint");
+        DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context, messageId, z10, z11, z12, paint, new MessageViewReplyPreview$configureExecutedCommand$2(eventHandler, messageId), null, null, null, null, new MessageViewReplyPreview$configureExecutedCommand$3(eventHandler), new MessageViewReplyPreview$configureExecutedCommand$4(eventHandler), null, null, new MessageViewReplyPreview$configureExecutedCommand$5(executedCommand), null, false, null, baselineHeight, 485248, null);
         MessageContentView messageContentView3 = this.binding.replyText;
         q.g(messageContentView3, "binding.replyText");
         SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(messageContentView3));
@@ -187,7 +190,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
             Context context = getContext();
             q.g(context, "context");
             String avatarUrl = MessageKt.avatarUrl(message, context);
-            if (avatarUrl == null || message.getUsername() == null || message.m14getAuthorIdwUX8bhU() == null) {
+            if (avatarUrl == null || message.getUsername() == null || message.m22getAuthorIdwUX8bhU() == null) {
                 SimpleDraweeView simpleDraweeView = this.binding.replyAuthorAvatar;
                 q.g(simpleDraweeView, "binding.replyAuthorAvatar");
                 simpleDraweeView.setVisibility(8);
@@ -224,14 +227,17 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
                 q.g(linearLayout3, "binding.replyLeadingViews");
                 StructurableText content = message.getContent();
                 Context context2 = getContext();
-                q.g(context2, "context");
-                String str = message.m17getId3Eiw7ao();
+                String str = message.m25getId3Eiw7ao();
                 boolean shouldAnimateEmoji = MessageKt.shouldAnimateEmoji(message);
                 boolean shouldShowRoleDot = message.getShouldShowRoleDot();
                 boolean shouldShowRoleOnName = message.getShouldShowRoleOnName();
                 Paint.FontMetrics fontMetrics = this.binding.replyText.getPaint().getFontMetrics();
                 q.g(fontMetrics, "binding.replyText.paint.fontMetrics");
-                DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context2, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, null, null, null, null, null, null, null, null, null, null, null, true, null, TextUtilsKt.getBaselineHeight(fontMetrics), 196576, null);
+                float baselineHeight = TextUtilsKt.getBaselineHeight(fontMetrics);
+                TextPaint paint = this.binding.replyText.getPaint();
+                q.g(context2, "context");
+                q.g(paint, "paint");
+                DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context2, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, paint, null, null, null, null, null, null, null, null, null, null, null, true, null, baselineHeight, 393152, null);
                 MessageContentView messageContentView4 = this.binding.replyText;
                 q.g(messageContentView4, "binding.replyText");
                 SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(messageContentView4));

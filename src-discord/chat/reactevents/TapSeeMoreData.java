@@ -52,27 +52,27 @@ public final class TapSeeMoreData implements ReactEvent {
     }
 
     
-    public static  TapSeeMoreData m421copy1xi1bu0$default(TapSeeMoreData tapSeeMoreData, String str, int i10, Object obj) {
+    public static  TapSeeMoreData m429copy1xi1bu0$default(TapSeeMoreData tapSeeMoreData, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapSeeMoreData.messageId;
         }
-        return tapSeeMoreData.m423copy1xi1bu0(str);
+        return tapSeeMoreData.m431copy1xi1bu0(str);
     }
 
     public static final void write$Self(TapSeeMoreData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.o(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m607boximpl(self.messageId));
+        output.o(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m615boximpl(self.messageId));
     }
 
     
-    public final String m422component13Eiw7ao() {
+    public final String m430component13Eiw7ao() {
         return this.messageId;
     }
 
     
-    public final TapSeeMoreData m423copy1xi1bu0(String messageId) {
+    public final TapSeeMoreData m431copy1xi1bu0(String messageId) {
         q.h(messageId, "messageId");
         return new TapSeeMoreData(messageId, null);
     }
@@ -81,16 +81,16 @@ public final class TapSeeMoreData implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof TapSeeMoreData) && MessageId.m611equalsimpl0(this.messageId, ((TapSeeMoreData) obj).messageId);
+        return (obj instanceof TapSeeMoreData) && MessageId.m619equalsimpl0(this.messageId, ((TapSeeMoreData) obj).messageId);
     }
 
     
-    public final String m424getMessageId3Eiw7ao() {
+    public final String m432getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return MessageId.m612hashCodeimpl(this.messageId);
+        return MessageId.m620hashCodeimpl(this.messageId);
     }
 
     @Override 
@@ -99,7 +99,7 @@ public final class TapSeeMoreData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m613toStringimpl(this.messageId);
+        String str = MessageId.m621toStringimpl(this.messageId);
         return "TapSeeMoreData(messageId=" + str + ")";
     }
 

@@ -49,14 +49,14 @@ public final class MessageContentViewHolder extends MessagePartViewHolder {
         SetTextSizeSpKt.setTextSizeSp(this.messageContentView, messageContentItem.getTextSizeSp());
         MessageContentView messageContentView = this.messageContentView;
         StructurableText messageContent = messageContentItem.getMessageContent();
-        String str = messageContentItem.mo222getMessageId3Eiw7ao();
+        String str = messageContentItem.mo230getMessageId3Eiw7ao();
         boolean shouldAnimateEmoji = messageContentItem.getShouldAnimateEmoji();
         boolean shouldShowRoleDot = messageContentItem.getShouldShowRoleDot();
         boolean shouldShowRoleOnName = messageContentItem.getShouldShowRoleOnName();
         int bottomSpacingPx = messageContentItem.getBottomSpacingPx();
         String editedLabel = messageContentItem.getEditedLabel();
         Truncation truncation = messageContentItem.getTruncation();
-        messageContentView.m325setMessageContent2i9KL1s(messageContent, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, onLinkClicked, onLinkLongClicked, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, onTapSeeMore, new MessageContentViewHolder$bind$1(messageContentItem), bottomSpacingPx, messageContentItem.getConstrainedWidth(), editedLabel, truncation, messageContentItem.getTheme());
+        messageContentView.m333setMessageContent2i9KL1s(messageContent, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, onLinkClicked, onLinkLongClicked, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, onTapSeeMore, new MessageContentViewHolder$bind$1(messageContentItem), bottomSpacingPx, messageContentItem.getConstrainedWidth(), editedLabel, truncation, messageContentItem.getTheme());
     }
 
     public final MessageContentView getMessageContentView() {

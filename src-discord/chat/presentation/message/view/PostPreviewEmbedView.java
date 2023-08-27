@@ -2,6 +2,7 @@ package com.discord.chat.presentation.message.view;
 
 import android.content.Context;
 import android.graphics.Paint;
+import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -79,14 +80,17 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
     }
 
     
-    private final void m326setFooterAyv7vGE(StructurableText structurableText, String str) {
+    private final void m334setFooterAyv7vGE(StructurableText structurableText, String str) {
         SimpleDraweeSpanTextView setFooter_Ayv7vGE$lambda$4 = this.binding.footer;
         q.g(setFooter_Ayv7vGE$lambda$4, "setFooter_Ayv7vGE$lambda$4");
         Context context = setFooter_Ayv7vGE$lambda$4.getContext();
-        q.g(context, "context");
         Paint.FontMetrics fontMetrics = setFooter_Ayv7vGE$lambda$4.getPaint().getFontMetrics();
         q.g(fontMetrics, "paint.fontMetrics");
-        ViewUtilsKt.setOptionalText(setFooter_Ayv7vGE$lambda$4, TextUtilsKt.toSpannable$default(structurableText, context, str, false, false, true, null, null, null, null, null, null, null, null, null, null, null, true, null, TextUtilsKt.getBaselineHeight(fontMetrics), 196576, null));
+        float baselineHeight = TextUtilsKt.getBaselineHeight(fontMetrics);
+        TextPaint paint = setFooter_Ayv7vGE$lambda$4.getPaint();
+        q.g(context, "context");
+        q.g(paint, "paint");
+        ViewUtilsKt.setOptionalText(setFooter_Ayv7vGE$lambda$4, TextUtilsKt.toSpannable$default(structurableText, context, str, false, false, true, paint, null, null, null, null, null, null, null, null, null, null, null, true, null, baselineHeight, 393152, null));
         NestedScrollOnTouchUtilsKt.enableNestedSpanClickListener$default(setFooter_Ayv7vGE$lambda$4, false, 1, null);
     }
 
@@ -122,7 +126,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
     }
 
     
-    public final void m327setPostPreviewEmbedOGpb6Gk(String title, String str, String ctaCopy, int i10, StructurableText footer, String messageId, String str2, String str3, String str4, String str5, View.OnClickListener onButtonClickListener, boolean z10, SpoilerConfig spoilerConfig) {
+    public final void m335setPostPreviewEmbedOGpb6Gk(String title, String str, String ctaCopy, int i10, StructurableText footer, String messageId, String str2, String str3, String str4, String str5, View.OnClickListener onButtonClickListener, boolean z10, SpoilerConfig spoilerConfig) {
         q.h(title, "title");
         q.h(ctaCopy, "ctaCopy");
         q.h(footer, "footer");
@@ -132,7 +136,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
         setButtonColor(i10);
         setTitle(title);
         setSubtitle(str);
-        m326setFooterAyv7vGE(footer, messageId);
+        m334setFooterAyv7vGE(footer, messageId);
         setCoverImage(str2, str3, str5);
         setCoverImageButtonText(str4);
         this.binding.cta.setOnClickButtonListener(onButtonClickListener);

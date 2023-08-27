@@ -11,7 +11,7 @@ public final class InviteToSpeakAccessory extends MessageAccessory {
 
     
     public InviteToSpeakAccessory(Message message) {
-        super(message.m17getId3Eiw7ao(), "invite to speak", null);
+        super(message.m25getId3Eiw7ao(), "invite to speak", null);
         q.h(message, "message");
         this.message = message;
     }

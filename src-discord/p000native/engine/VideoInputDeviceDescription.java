@@ -81,6 +81,9 @@ public final class VideoInputDeviceDescription {
     }
 
     public String toString() {
-        return "VideoInputDeviceDescription(name=" + this.name + ", guid=" + this.guid + ", facing=" + this.facing + ')';
+        String str = this.name;
+        String str2 = this.guid;
+        VideoInputDeviceFacing videoInputDeviceFacing = this.facing;
+        return "VideoInputDeviceDescription(name=" + str + ", guid=" + str2 + ", facing=" + videoInputDeviceFacing + ")";
     }
 }

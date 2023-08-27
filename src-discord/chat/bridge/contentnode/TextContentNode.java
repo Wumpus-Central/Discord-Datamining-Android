@@ -66,7 +66,7 @@ public final class TextContentNode extends ContentNode {
             z10 = false;
         }
         if (z10) {
-            output.B(serialDesc, 0, a2.f29758a, self.content);
+            output.B(serialDesc, 0, a2.f29762a, self.content);
         }
     }
 

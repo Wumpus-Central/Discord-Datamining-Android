@@ -48,7 +48,7 @@ public final class InviteToSpeakView extends LinearLayout {
     public static final void setProps$lambda$1(Function1 onInviteToSpeakClicked, Message message, View view) {
         q.h(onInviteToSpeakClicked, "$onInviteToSpeakClicked");
         q.h(message, "$message");
-        onInviteToSpeakClicked.invoke(MessageId.m607boximpl(message.m17getId3Eiw7ao()));
+        onInviteToSpeakClicked.invoke(MessageId.m615boximpl(message.m25getId3Eiw7ao()));
     }
 
     public final void setProps(final Message message, final Function1<? super MessageId, Unit> onInviteToSpeakClicked) {

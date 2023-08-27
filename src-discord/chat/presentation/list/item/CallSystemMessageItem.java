@@ -12,7 +12,7 @@ public final class CallSystemMessageItem extends ChatListItem {
 
     
     public CallSystemMessageItem(Message message) {
-        super(message.m17getId3Eiw7ao(), null);
+        super(message.m25getId3Eiw7ao(), null);
         q.h(message, "message");
         this.message = message;
         if (!MessageKt.isCallMessage(message)) {

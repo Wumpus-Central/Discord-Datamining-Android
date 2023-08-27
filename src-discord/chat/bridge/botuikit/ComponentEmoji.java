@@ -100,7 +100,7 @@ public final class ComponentEmoji {
             z10 = true;
         }
         if (z10) {
-            output.B(serialDesc, 0, a2.f29758a, self.f7247id);
+            output.B(serialDesc, 0, a2.f29762a, self.f7247id);
         }
         output.x(serialDesc, 1, self.name);
         if (!output.z(serialDesc, 2) && self.src == null) {
@@ -109,7 +109,7 @@ public final class ComponentEmoji {
             z11 = true;
         }
         if (z11) {
-            output.B(serialDesc, 2, a2.f29758a, self.src);
+            output.B(serialDesc, 2, a2.f29762a, self.src);
         }
         if (!output.z(serialDesc, 3) && !self.animated) {
             z12 = false;
@@ -123,7 +123,7 @@ public final class ComponentEmoji {
             z13 = true;
         }
         if (z13) {
-            output.B(serialDesc, 4, a2.f29758a, self.surrogates);
+            output.B(serialDesc, 4, a2.f29762a, self.surrogates);
         }
     }
 

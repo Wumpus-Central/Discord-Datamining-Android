@@ -121,6 +121,6 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
         }
         AudioPlayerView audioPlayerView2 = this.this$0;
         audioPlayerViewState = audioPlayerView2.state;
-        AudioPlayerView.setState$default(audioPlayerView2, AudioPlayerViewState.m335copyP6IPuNM$default(audioPlayerViewState, null, null, z10, 3, null), false, 2, null);
+        AudioPlayerView.setState$default(audioPlayerView2, AudioPlayerViewState.m343copyP6IPuNM$default(audioPlayerViewState, null, null, z10, 3, null), false, 2, null);
     }
 }
