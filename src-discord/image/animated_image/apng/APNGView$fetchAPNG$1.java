@@ -44,7 +44,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((APNGView$fetchAPNG$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21213a);
+        return ((APNGView$fetchAPNG$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21215a);
     }
 
     @Override 
@@ -71,7 +71,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     
@@ -87,14 +87,14 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
         @e(c = "com.discord.image.animated_image.apng.APNGView$fetchAPNG$1$1$1", f = "APNGView.kt", l = {}, m = "invokeSuspend")
         
         
-        public static final class C01101 extends k implements Function2<CoroutineScope, Continuation<? super Boolean>, Object> {
+        public static final class C01111 extends k implements Function2<CoroutineScope, Continuation<? super Boolean>, Object> {
             final  APNGView.Config $config;
             final  ApngDrawable $drawable;
             int label;
             final  APNGView this$0;
 
             
-            C01101(APNGView aPNGView, ApngDrawable apngDrawable, APNGView.Config config, Continuation<? super C01101> continuation) {
+            C01111(APNGView aPNGView, ApngDrawable apngDrawable, APNGView.Config config, Continuation<? super C01111> continuation) {
                 super(2, continuation);
                 this.this$0 = aPNGView;
                 this.$drawable = apngDrawable;
@@ -103,11 +103,11 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
 
             @Override 
             public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-                return new C01101(this.this$0, this.$drawable, this.$config, continuation);
+                return new C01111(this.this$0, this.$drawable, this.$config, continuation);
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                return ((C01101) create(coroutineScope, continuation)).invokeSuspend(Unit.f21213a);
+                return ((C01111) create(coroutineScope, continuation)).invokeSuspend(Unit.f21215a);
             }
 
             @Override 
@@ -147,7 +147,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21213a);
+                return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21215a);
             }
 
             @Override 
@@ -184,7 +184,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                return ((AnonymousClass3) create(coroutineScope, continuation)).invokeSuspend(Unit.f21213a);
+                return ((AnonymousClass3) create(coroutineScope, continuation)).invokeSuspend(Unit.f21215a);
             }
 
             @Override 

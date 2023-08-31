@@ -12,15 +12,15 @@ import kotlin.jvm.internal.s;
 @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
 
 final class TimersModule$setInterval$1 extends s implements Function0<Unit> {
-    final  int $id;
+    final  double $id;
     final  TimersModule this$0;
 
     
     
-    public TimersModule$setInterval$1(TimersModule timersModule, int i10) {
+    public TimersModule$setInterval$1(TimersModule timersModule, double d10) {
         super(0);
         this.this$0 = timersModule;
-        this.$id = i10;
+        this.$id = d10;
     }
 
     @Override 
@@ -31,6 +31,6 @@ final class TimersModule$setInterval$1 extends s implements Function0<Unit> {
         reactEvents = this.this$0.reactEvents;
         reactApplicationContext = this.this$0.getReactApplicationContext();
         q.g(reactApplicationContext, "reactApplicationContext");
-        reactEvents.emitModuleEvent(reactApplicationContext, new IntervalEvent(this.$id));
+        reactEvents.emitModuleEvent(reactApplicationContext, new IntervalEvent((int) this.$id));
     }
 }

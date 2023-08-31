@@ -23,7 +23,7 @@ public final class MessageAccessoriesAdapter$onCreateViewHolder$1 extends s impl
     @Override 
     public   Unit invoke(MessagePartViewHolder messagePartViewHolder) {
         invoke2(messagePartViewHolder);
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     

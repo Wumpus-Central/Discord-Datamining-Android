@@ -30,7 +30,7 @@ public final class ChatListHighlightItemAtPositionKt$animateBackgroundColor$1 ex
     @Override 
     public   Unit invoke(Animator animator) {
         invoke2(animator);
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     

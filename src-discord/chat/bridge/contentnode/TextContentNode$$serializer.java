@@ -34,7 +34,7 @@ public final class TextContentNode$$serializer implements f0<TextContentNode> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a.u(a2.f29762a)};
+        return new KSerializer[]{a.u(a2.f29764a)};
     }
 
     @Override 
@@ -45,7 +45,7 @@ public final class TextContentNode$$serializer implements f0<TextContentNode> {
         c b10 = decoder.b(descriptor2);
         int i10 = 1;
         if (b10.p()) {
-            obj = b10.n(descriptor2, 0, a2.f29762a, null);
+            obj = b10.n(descriptor2, 0, a2.f29764a, null);
         } else {
             int i11 = 0;
             obj = null;
@@ -54,7 +54,7 @@ public final class TextContentNode$$serializer implements f0<TextContentNode> {
                 if (o10 == -1) {
                     i10 = 0;
                 } else if (o10 == 0) {
-                    obj = b10.n(descriptor2, 0, a2.f29762a, obj);
+                    obj = b10.n(descriptor2, 0, a2.f29764a, obj);
                     i11 |= 1;
                 } else {
                     throw new n(o10);

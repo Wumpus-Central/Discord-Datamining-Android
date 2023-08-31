@@ -18,6 +18,7 @@ import com.discord.chat.bridge.MessageType;
 import com.discord.chat.bridge.activityinviteembed.ActivityInviteEmbed;
 import com.discord.chat.bridge.automod.AutoModerationContext;
 import com.discord.chat.bridge.automod.FlaggedMessageEmbed;
+import com.discord.chat.bridge.channelprompt.ChannelPromptData;
 import com.discord.chat.bridge.connectionsroletag.ConnectionsRoleTag;
 import com.discord.chat.bridge.ephemeral.EphemeralIndication;
 import com.discord.chat.bridge.executedcommand.ExecutedCommand;
@@ -89,7 +90,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         q.g(context, "context");
         simpleDraweeView.setImageURI(MessageKt.avatarUrl(message, context));
         this.binding.authorName.setText(message.getUsername());
-        this.binding.messageTagView.m225configureTagVieweCJZyo(autoModerationContext.getHeaderBadgeText(), Boolean.FALSE, null, null, null, chatEventHandler, message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.getTagType());
+        this.binding.messageTagView.m227configureTagVieweCJZyo(autoModerationContext.getHeaderBadgeText(), Boolean.FALSE, null, null, null, chatEventHandler, message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.getTagType());
         this.binding.automodMessageContextHeader.setText(autoModerationContext.getHeaderText());
         this.binding.timestamp.setText(message.getTimestamp());
         TextView configureAuthor$lambda$8 = this.binding.automodMessageChannel;
@@ -123,10 +124,10 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         String str;
         q.h(eventHandler, "$eventHandler");
         q.h(automodContext, "$automodContext");
-        String str2 = ChannelId.m596toStringimpl(automodContext.getMessage().m33getChannelIdo4g7jtM());
+        String str2 = ChannelId.m598toStringimpl(automodContext.getMessage().m33getChannelIdo4g7jtM());
         GuildId guildId = automodContext.getMessage().m34getGuildIdqOKuAAo();
         if (guildId != null) {
-            str = GuildId.m609toStringimpl(guildId.m611unboximpl());
+            str = GuildId.m611toStringimpl(guildId.m613unboximpl());
         } else {
             str = null;
         }
@@ -195,7 +196,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         } else {
             z10 = false;
         }
-        Message message3 = new Message(messageType, str, (String) null, j10, guildId, (MessageState) null, userId, 0L, (String) null, (Float) null, (String) null, username, Integer.valueOf(usernameColor), roleColor, shouldShowRoleDot, false, (Integer) null, avatarURL, (String) null, (List) null, (List) null, (Float) null, content, (List) null, (List) null, (Boolean) null, (List) null, (List) null, message.getRoleIcon(), (ConnectionsRoleTag) null, (ThreadEmbed) null, false, (Boolean) null, (Boolean) null, (ReferencedMessage) null, (ExecutedCommand) null, (List) null, (String) null, Boolean.valueOf(z10), (String) null, (Boolean) null, (Integer) null, (Integer) null, (String) null, (String) null, (Boolean) null, (Integer) null, (Integer) null, (EphemeralIndication) null, (SurveyIndication) null, (InteractionStatus) null, (Boolean) null, (Boolean) null, (Boolean) null, (String) null, (String) null, (List) null, (Boolean) null, (Boolean) null, (Long) null, (Sticker) null, (String) null, (String) null, (Boolean) null, (ActivityInviteEmbed) null, false, (ForumPostActions) null, autoModerationContext, (List) null, (GiftEmbed) null, (Integer) null, (String) null, (List) null, 1874692004, -65, 503, (DefaultConstructorMarker) null);
+        Message message3 = new Message(messageType, str, (String) null, j10, guildId, (MessageState) null, userId, 0L, (String) null, (Float) null, (String) null, username, Integer.valueOf(usernameColor), roleColor, shouldShowRoleDot, false, (Integer) null, avatarURL, (String) null, (List) null, (List) null, (Float) null, content, (List) null, (List) null, (Boolean) null, (List) null, (List) null, message.getRoleIcon(), (ConnectionsRoleTag) null, (ThreadEmbed) null, false, (Boolean) null, (Boolean) null, (ReferencedMessage) null, (ExecutedCommand) null, (List) null, (String) null, Boolean.valueOf(z10), (String) null, (Boolean) null, (Integer) null, (Integer) null, (String) null, (String) null, (Boolean) null, (Integer) null, (Integer) null, (EphemeralIndication) null, (SurveyIndication) null, (InteractionStatus) null, (Boolean) null, (Boolean) null, (Boolean) null, (String) null, (String) null, (List) null, (Boolean) null, (Boolean) null, (Long) null, (Sticker) null, (String) null, (String) null, (Boolean) null, (ActivityInviteEmbed) null, false, (ForumPostActions) null, autoModerationContext, (List) null, (GiftEmbed) null, (Integer) null, (List) null, (ChannelPromptData) null, 1874692004, -65, 503, (DefaultConstructorMarker) null);
         if (autoModerationContext.getNotification() != null) {
             this.accessories.add(new AutoModerationNotificationEmbedAccessory(message3.m25getId3Eiw7ao(), message, autoModerationContext, null));
         } else {
@@ -266,7 +267,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
             }
             threadStarterMessageHeaderView.configure(threadStarterMessageHeader, z11);
             this.binding.replyPreview.clear();
-            this.binding.accessoriesView.m223setAccessoriesRC8ZMxU(message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.m24getGuildIdqOKuAAo(), generateMessageAccessories(message, messageContext), eventHandler, componentProvider);
+            this.binding.accessoriesView.m225setAccessoriesRC8ZMxU(message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.m24getGuildIdqOKuAAo(), generateMessageAccessories(message, messageContext), eventHandler, componentProvider);
         }
     }
 

@@ -25,6 +25,17 @@ import com.discord.chat.presentation.root.ChatView;
 import com.discord.chat.presentation.root.MessageContext;
 import com.discord.chat.presentation.spine.SpineParentMessage;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.misc.utilities.view.ViewClippingUtilsKt;
@@ -70,20 +81,21 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
     public static final void configure$lambda$7$lambda$5(ChatEventHandler eventHandler, Message message, View view) {
         q.h(eventHandler, "$eventHandler");
         q.h(message, "$message");
-        ChatEventHandler.DefaultImpls.m196onTapReactionu7_MRrM$default(eventHandler, message.m25getId3Eiw7ao(), null, null, 4, null);
+        ChatEventHandler.DefaultImpls.m197onTapReactionu7_MRrM$default(eventHandler, message.m25getId3Eiw7ao(), null, null, 4, null);
     }
 
     
     public static final void configure$lambda$7$lambda$6(ChatEventHandler eventHandler, Message message, View view) {
         q.h(eventHandler, "$eventHandler");
         q.h(message, "$message");
-        eventHandler.mo178onTapReactionu7_MRrM(message.m25getId3Eiw7ao(), null, Boolean.TRUE);
+        eventHandler.mo179onTapReactionu7_MRrM(message.m25getId3Eiw7ao(), null, Boolean.TRUE);
     }
 
     public final void configure(MessageItem messageItem, final ChatEventHandler eventHandler) {
         DraweeSpanStringBuilder draweeSpanStringBuilder;
         int i10;
         int i11;
+        DraweeSpanStringBuilder spannable;
         q.h(messageItem, "messageItem");
         q.h(eventHandler, "eventHandler");
         final Message message = messageItem.getMessage();
@@ -110,11 +122,11 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
             TextPaint paint = this.binding.replyText.getPaint();
             q.g(context2, "context");
             q.g(paint, "paint");
-            DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context2, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, paint, null, null, null, null, null, null, null, null, null, null, null, true, null, baselineHeight, 393152, null);
+            spannable = TextUtilsKt.toSpannable(content, context2, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, paint, (r44 & 64) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : null, (r44 & 128) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r44 & 256) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r44 & 512) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r44 & 1024) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r44 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r44 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r44 & 8192) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r44 & 16384) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (32768 & r44) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (65536 & r44) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (131072 & r44) != 0 ? false : true, (262144 & r44) != 0 ? ThemeManagerKt.getTheme() : null, (r44 & 524288) != 0 ? -1.0f : baselineHeight);
             MessageContentView messageContentView = this.binding.replyText;
             q.g(messageContentView, "binding.replyText");
-            SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(messageContentView));
-            draweeSpanStringBuilder = ReplyUtilsKt.createReplyContent(textView, spannable$default);
+            SpannableExtensionsKt.coverWithSpan(spannable, new BackgroundSpanDrawer(messageContentView));
+            draweeSpanStringBuilder = ReplyUtilsKt.createReplyContent(textView, spannable);
         } else {
             TextView textView2 = this.binding.replyAuthorName;
             q.g(textView2, "binding.replyAuthorName");

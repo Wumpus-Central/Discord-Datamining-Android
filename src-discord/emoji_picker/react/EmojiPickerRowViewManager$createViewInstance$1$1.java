@@ -4,7 +4,6 @@ import com.discord.emoji_picker.EmojiPickerRowView;
 import com.discord.emoji_picker.react_events.OnPressEmojiEvent;
 import com.discord.reactevents.ReactEvents;
 import com.facebook.react.uimanager.ThemedReactContext;
-import com.facebook.react.uimanager.events.EventDispatcher;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -15,17 +14,15 @@ import kotlin.jvm.internal.s;
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "emojiName", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
 
 public final class EmojiPickerRowViewManager$createViewInstance$1$1 extends s implements Function1<String, Unit> {
-    final  EventDispatcher $eventDispatcher;
     final  ThemedReactContext $reactContext;
     final  EmojiPickerRowView $view;
     final  EmojiPickerRowViewManager this$0;
 
     
     
-    public EmojiPickerRowViewManager$createViewInstance$1$1(EmojiPickerRowViewManager emojiPickerRowViewManager, EventDispatcher eventDispatcher, ThemedReactContext themedReactContext, EmojiPickerRowView emojiPickerRowView) {
+    public EmojiPickerRowViewManager$createViewInstance$1$1(EmojiPickerRowViewManager emojiPickerRowViewManager, ThemedReactContext themedReactContext, EmojiPickerRowView emojiPickerRowView) {
         super(1);
         this.this$0 = emojiPickerRowViewManager;
-        this.$eventDispatcher = eventDispatcher;
         this.$reactContext = themedReactContext;
         this.$view = emojiPickerRowView;
     }
@@ -33,7 +30,7 @@ public final class EmojiPickerRowViewManager$createViewInstance$1$1 extends s im
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     
@@ -41,6 +38,6 @@ public final class EmojiPickerRowViewManager$createViewInstance$1$1 extends s im
         ReactEvents reactEvents;
         q.h(emojiName, "emojiName");
         reactEvents = this.this$0.reactEvents;
-        reactEvents.emitEvent(this.$eventDispatcher, this.$reactContext, this.$view, new OnPressEmojiEvent(emojiName));
+        reactEvents.emitEvent(this.$reactContext, this.$view, new OnPressEmojiEvent(emojiName));
     }
 }

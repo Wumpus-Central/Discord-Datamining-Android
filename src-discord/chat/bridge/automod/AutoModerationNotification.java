@@ -88,7 +88,7 @@ public final class AutoModerationNotification {
             z10 = true;
         }
         if (z10) {
-            output.B(serialDesc, 1, a2.f29762a, self.severity);
+            output.B(serialDesc, 1, a2.f29764a, self.severity);
         }
         if (!output.z(serialDesc, 2) && self.startTime == null) {
             z11 = false;
@@ -96,13 +96,13 @@ public final class AutoModerationNotification {
             z11 = true;
         }
         if (z11) {
-            output.B(serialDesc, 2, a2.f29762a, self.startTime);
+            output.B(serialDesc, 2, a2.f29764a, self.startTime);
         }
         if (output.z(serialDesc, 3) || self.body != null) {
             z12 = true;
         }
         if (z12) {
-            output.B(serialDesc, 3, a2.f29762a, self.body);
+            output.B(serialDesc, 3, a2.f29764a, self.body);
         }
     }
 

@@ -32,7 +32,7 @@ public final class TimerEvent$$serializer implements f0<TimerEvent> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f29837a};
+        return new KSerializer[]{m0.f29839a};
     }
 
     @Override 

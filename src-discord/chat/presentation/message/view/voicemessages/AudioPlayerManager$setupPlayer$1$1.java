@@ -28,7 +28,7 @@ public final class AudioPlayerManager$setupPlayer$1$1 extends s implements Funct
     @Override 
     public   Unit invoke(MediaPlayer.Event event) {
         invoke2(event);
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     

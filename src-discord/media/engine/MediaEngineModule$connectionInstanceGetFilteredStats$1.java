@@ -22,7 +22,7 @@ final class MediaEngineModule$connectionInstanceGetFilteredStats$1 extends s imp
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     

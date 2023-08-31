@@ -1,6 +1,6 @@
 package com.discord.bridge;
 
-import com.discord.channel_spine.ChannelSpineViewManager;
+import com.discord.clip.ClipViewManager;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.LayoutShadowNode;
 import com.facebook.react.uimanager.ViewManager;
@@ -20,6 +20,6 @@ final class DCDPackageList$getPackages$56 extends s implements Function1<ReactAp
 
     public final ViewManager<?, LayoutShadowNode> invoke(ReactApplicationContext it) {
         q.h(it, "it");
-        return new ChannelSpineViewManager();
+        return new ClipViewManager();
     }
 }

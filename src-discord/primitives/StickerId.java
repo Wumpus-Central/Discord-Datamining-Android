@@ -38,13 +38,13 @@ public final class StickerId implements SnowflakePrimitive {
     public static final class Creator implements Parcelable.Creator<StickerId> {
         @Override 
         public   StickerId createFromParcel(Parcel parcel) {
-            return StickerId.m640boximpl(m652createFromParcelaEuejx8(parcel));
+            return StickerId.m642boximpl(m654createFromParcelaEuejx8(parcel));
         }
 
         
-        public final long m652createFromParcelaEuejx8(Parcel parcel) {
+        public final long m654createFromParcelaEuejx8(Parcel parcel) {
             q.h(parcel, "parcel");
-            return StickerId.m641constructorimpl(parcel.readLong());
+            return StickerId.m643constructorimpl(parcel.readLong());
         }
 
         
@@ -59,58 +59,58 @@ public final class StickerId implements SnowflakePrimitive {
     }
 
     
-    public static final  StickerId m640boximpl(long j10) {
+    public static final  StickerId m642boximpl(long j10) {
         return new StickerId(j10);
     }
 
     
-    public static long m641constructorimpl(long j10) {
+    public static long m643constructorimpl(long j10) {
         return j10;
     }
 
     
-    public static int m642describeContentsimpl(long j10) {
+    public static int m644describeContentsimpl(long j10) {
         return 0;
     }
 
     
-    public static boolean m643equalsimpl(long j10, Object obj) {
-        return (obj instanceof StickerId) && j10 == ((StickerId) obj).m649unboximpl();
+    public static boolean m645equalsimpl(long j10, Object obj) {
+        return (obj instanceof StickerId) && j10 == ((StickerId) obj).m651unboximpl();
     }
 
     
-    public static final boolean m644equalsimpl0(long j10, long j11) {
+    public static final boolean m646equalsimpl0(long j10, long j11) {
         return j10 == j11;
     }
 
     
-    public static int m645hashCodeimpl(long j10) {
+    public static int m647hashCodeimpl(long j10) {
         return b.a(j10);
     }
 
     
-    public static boolean m646isValidimpl(long j10) {
+    public static boolean m648isValidimpl(long j10) {
         return j10 > 0;
     }
 
     
-    public static String m647toStringimpl(long j10) {
+    public static String m649toStringimpl(long j10) {
         return String.valueOf(j10);
     }
 
     
-    public static void m648writeToParcelimpl(long j10, Parcel out, int i10) {
+    public static void m650writeToParcelimpl(long j10, Parcel out, int i10) {
         q.h(out, "out");
         out.writeLong(j10);
     }
 
     @Override 
     public int describeContents() {
-        return m642describeContentsimpl(this.snowflake);
+        return m644describeContentsimpl(this.snowflake);
     }
 
     public boolean equals(Object obj) {
-        return m643equalsimpl(this.snowflake, obj);
+        return m645equalsimpl(this.snowflake, obj);
     }
 
     @Override 
@@ -119,26 +119,26 @@ public final class StickerId implements SnowflakePrimitive {
     }
 
     public int hashCode() {
-        return m645hashCodeimpl(this.snowflake);
+        return m647hashCodeimpl(this.snowflake);
     }
 
     @Override 
     public boolean isValid() {
-        return m646isValidimpl(this.snowflake);
+        return m648isValidimpl(this.snowflake);
     }
 
     public String toString() {
-        return m647toStringimpl(this.snowflake);
+        return m649toStringimpl(this.snowflake);
     }
 
     
-    public final  long m649unboximpl() {
+    public final  long m651unboximpl() {
         return this.snowflake;
     }
 
     @Override 
     public void writeToParcel(Parcel out, int i10) {
         q.h(out, "out");
-        m648writeToParcelimpl(this.snowflake, out, i10);
+        m650writeToParcelimpl(this.snowflake, out, i10);
     }
 }

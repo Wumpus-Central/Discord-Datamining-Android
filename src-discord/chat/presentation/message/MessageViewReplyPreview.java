@@ -16,6 +16,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.view.a;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.w0;
+import androidx.recyclerview.widget.RecyclerView;
 import com.discord.SetTextSizeSpKt;
 import com.discord.channel_spine.ChannelSpineView;
 import com.discord.chat.R;
@@ -33,6 +34,17 @@ import com.discord.chat.presentation.message.utils.ReplyUtilsKt;
 import com.discord.chat.presentation.message.view.MessageContentView;
 import com.discord.chat.presentation.spine.SpineParentMessage;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.misc.utilities.view.ViewBackgroundUtilsKt;
@@ -102,7 +114,8 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
     }
 
     
-    public final void m226configureExecutedCommandLdU2QRA(final String messageId, final ExecutedCommand executedCommand, boolean z10, boolean z11, boolean z12, final ChatEventHandler eventHandler) {
+    public final void m228configureExecutedCommandLdU2QRA(final String messageId, final ExecutedCommand executedCommand, boolean z10, boolean z11, boolean z12, final ChatEventHandler eventHandler) {
+        DraweeSpanStringBuilder spannable;
         q.h(messageId, "messageId");
         q.h(executedCommand, "executedCommand");
         q.h(eventHandler, "eventHandler");
@@ -144,12 +157,12 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
         TextPaint paint = this.binding.replyText.getPaint();
         q.g(context, "context");
         q.g(paint, "paint");
-        DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context, messageId, z10, z11, z12, paint, new MessageViewReplyPreview$configureExecutedCommand$2(eventHandler, messageId), null, null, null, null, new MessageViewReplyPreview$configureExecutedCommand$3(eventHandler), new MessageViewReplyPreview$configureExecutedCommand$4(eventHandler), null, null, new MessageViewReplyPreview$configureExecutedCommand$5(executedCommand), null, false, null, baselineHeight, 485248, null);
+        spannable = TextUtilsKt.toSpannable(content, context, messageId, z10, z11, z12, paint, (r44 & 64) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : new MessageViewReplyPreview$configureExecutedCommand$2(eventHandler, messageId), (r44 & 128) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r44 & 256) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r44 & 512) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r44 & 1024) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r44 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : new MessageViewReplyPreview$configureExecutedCommand$3(eventHandler), (r44 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : new MessageViewReplyPreview$configureExecutedCommand$4(eventHandler), (r44 & 8192) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r44 & 16384) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (32768 & r44) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : new MessageViewReplyPreview$configureExecutedCommand$5(executedCommand), (65536 & r44) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (131072 & r44) != 0 ? false : false, (262144 & r44) != 0 ? ThemeManagerKt.getTheme() : null, (r44 & 524288) != 0 ? -1.0f : baselineHeight);
         MessageContentView messageContentView3 = this.binding.replyText;
         q.g(messageContentView3, "binding.replyText");
-        SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(messageContentView3));
-        Unit unit = Unit.f21213a;
-        messageContentView2.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(linearLayout2, spannable$default));
+        SpannableExtensionsKt.coverWithSpan(spannable, new BackgroundSpanDrawer(messageContentView3));
+        Unit unit = Unit.f21215a;
+        messageContentView2.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(linearLayout2, spannable));
         MessageContentView messageContentView4 = this.binding.replyText;
         q.g(messageContentView4, "binding.replyText");
         NestedScrollOnTouchUtilsKt.enableNestedSpanClickListener(messageContentView4, true);
@@ -157,6 +170,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
     }
 
     public final void configureReply(ReferencedMessage reply, boolean z10, final Function0<Unit> onClick) {
+        DraweeSpanStringBuilder spannable;
         q.h(reply, "reply");
         q.h(onClick, "onClick");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(this, false, new View.OnClickListener() { 
@@ -237,12 +251,12 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
                 TextPaint paint = this.binding.replyText.getPaint();
                 q.g(context2, "context");
                 q.g(paint, "paint");
-                DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context2, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, paint, null, null, null, null, null, null, null, null, null, null, null, true, null, baselineHeight, 393152, null);
+                spannable = TextUtilsKt.toSpannable(content, context2, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, paint, (r44 & 64) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : null, (r44 & 128) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r44 & 256) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r44 & 512) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r44 & 1024) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r44 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r44 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r44 & 8192) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r44 & 16384) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (32768 & r44) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (65536 & r44) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (131072 & r44) != 0 ? false : true, (262144 & r44) != 0 ? ThemeManagerKt.getTheme() : null, (r44 & 524288) != 0 ? -1.0f : baselineHeight);
                 MessageContentView messageContentView4 = this.binding.replyText;
                 q.g(messageContentView4, "binding.replyText");
-                SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(messageContentView4));
-                Unit unit = Unit.f21213a;
-                messageContentView3.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(linearLayout3, spannable$default));
+                SpannableExtensionsKt.coverWithSpan(spannable, new BackgroundSpanDrawer(messageContentView4));
+                Unit unit = Unit.f21215a;
+                messageContentView3.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(linearLayout3, spannable));
             } else {
                 this.binding.replyText.setText((CharSequence) null);
             }

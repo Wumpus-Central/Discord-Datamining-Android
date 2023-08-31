@@ -27,14 +27,14 @@ public final class TapStickerData implements ReactEvent {
     }
 
     
-    public static  TapStickerData m437copyAyv7vGE$default(TapStickerData tapStickerData, Sticker sticker, String str, int i10, Object obj) {
+    public static  TapStickerData m439copyAyv7vGE$default(TapStickerData tapStickerData, Sticker sticker, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             sticker = tapStickerData.sticker;
         }
         if ((i10 & 2) != 0) {
             str = tapStickerData.messageId;
         }
-        return tapStickerData.m439copyAyv7vGE(sticker, str);
+        return tapStickerData.m441copyAyv7vGE(sticker, str);
     }
 
     public final Sticker component1() {
@@ -42,12 +42,12 @@ public final class TapStickerData implements ReactEvent {
     }
 
     
-    public final String m438component23Eiw7ao() {
+    public final String m440component23Eiw7ao() {
         return this.messageId;
     }
 
     
-    public final TapStickerData m439copyAyv7vGE(Sticker sticker, String messageId) {
+    public final TapStickerData m441copyAyv7vGE(Sticker sticker, String messageId) {
         q.h(sticker, "sticker");
         q.h(messageId, "messageId");
         return new TapStickerData(sticker, messageId, null);
@@ -61,11 +61,11 @@ public final class TapStickerData implements ReactEvent {
             return false;
         }
         TapStickerData tapStickerData = (TapStickerData) obj;
-        return q.c(this.sticker, tapStickerData.sticker) && MessageId.m619equalsimpl0(this.messageId, tapStickerData.messageId);
+        return q.c(this.sticker, tapStickerData.sticker) && MessageId.m621equalsimpl0(this.messageId, tapStickerData.messageId);
     }
 
     
-    public final String m440getMessageId3Eiw7ao() {
+    public final String m442getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -74,7 +74,7 @@ public final class TapStickerData implements ReactEvent {
     }
 
     public int hashCode() {
-        return (this.sticker.hashCode() * 31) + MessageId.m620hashCodeimpl(this.messageId);
+        return (this.sticker.hashCode() * 31) + MessageId.m622hashCodeimpl(this.messageId);
     }
 
     @Override 
@@ -84,7 +84,7 @@ public final class TapStickerData implements ReactEvent {
 
     public String toString() {
         Sticker sticker = this.sticker;
-        String str = MessageId.m621toStringimpl(this.messageId);
+        String str = MessageId.m623toStringimpl(this.messageId);
         return "TapStickerData(sticker=" + sticker + ", messageId=" + str + ")";
     }
 }

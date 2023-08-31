@@ -32,7 +32,7 @@ public final class OnNearbyMessageLostEvent$$serializer implements f0<OnNearbyMe
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f29762a};
+        return new KSerializer[]{a2.f29764a};
     }
 
     @Override 

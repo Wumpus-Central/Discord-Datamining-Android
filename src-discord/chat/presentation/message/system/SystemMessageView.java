@@ -19,6 +19,7 @@ import com.discord.chat.bridge.threads.ThreadEmbed;
 import com.discord.chat.databinding.SystemMessageViewBinding;
 import com.discord.chat.presentation.events.ChatEventHandler;
 import com.discord.chat.presentation.message.MessageAccessoriesView;
+import com.discord.chat.presentation.message.messagepart.ChannelPromptActionsAccessory;
 import com.discord.chat.presentation.message.messagepart.EphemeralIndicationMessageAccessory;
 import com.discord.chat.presentation.message.messagepart.InviteToSpeakAccessory;
 import com.discord.chat.presentation.message.messagepart.MessageAccessory;
@@ -256,6 +257,9 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         if (message.getType() == MessageType.STAGE_RAISE_HAND && q.c(message.getShowInviteToSpeakButton(), Boolean.TRUE)) {
             this.accessories.add(new InviteToSpeakAccessory(message2));
         }
+        if (message.getType() == MessageType.GUILD_DEADCHAT_REVIVE_PROMPT) {
+            this.accessories.add(new ChannelPromptActionsAccessory(message2));
+        }
         if (message.getReactions() != null && (!reactions.isEmpty())) {
             z10 = true;
         }
@@ -344,7 +348,7 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         }
         Function4<MessageId, ChannelId, Integer, MediaType, Unit> onMessageLongPressed = eventHandler.getOnMessageLongPressed();
         if (onMessageLongPressed != null) {
-            onMessageLongPressed.invoke(MessageId.m615boximpl(message.m25getId3Eiw7ao()), ChannelId.m589boximpl(message.m23getChannelIdo4g7jtM()), null, null);
+            onMessageLongPressed.invoke(MessageId.m617boximpl(message.m25getId3Eiw7ao()), ChannelId.m591boximpl(message.m23getChannelIdo4g7jtM()), null, null);
         }
         return true;
     }
@@ -384,7 +388,7 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         q.g(simpleDraweeView2, "binding.icon");
         ColorUtilsKt.setTintColor(simpleDraweeView2, Integer.valueOf(intValue));
         List<MessageAccessory> generateMessageAccessories = generateMessageAccessories(message, context);
-        this.binding.accessoriesView.m223setAccessoriesRC8ZMxU(message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.m24getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, null);
+        this.binding.accessoriesView.m225setAccessoriesRC8ZMxU(message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.m24getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, null);
         MessageAccessoriesView messageAccessoriesView = this.binding.accessoriesView;
         q.g(messageAccessoriesView, "binding.accessoriesView");
         if (!generateMessageAccessories.isEmpty()) {

@@ -48,8 +48,8 @@ public final class BlockedGroupRow$$serializer implements f0<BlockedGroupRow> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29837a;
-        return new KSerializer[]{m0Var, ChangeType.Serializer.INSTANCE, m0Var, m0Var, m0Var, a2.f29762a, h.f29804a, BlockedGroupButton$$serializer.INSTANCE, a.u(new f(BlockedGroupContent$$serializer.INSTANCE))};
+        m0 m0Var = m0.f29839a;
+        return new KSerializer[]{m0Var, ChangeType.Serializer.INSTANCE, m0Var, m0Var, m0Var, a2.f29764a, h.f29806a, BlockedGroupButton$$serializer.INSTANCE, a.u(new f(BlockedGroupContent$$serializer.INSTANCE))};
     }
 
     @Override 

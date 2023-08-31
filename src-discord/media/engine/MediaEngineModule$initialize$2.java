@@ -22,7 +22,7 @@ final class MediaEngineModule$initialize$2 extends s implements Function2<Float,
     @Override 
     public   Unit invoke(Float f10, Integer num) {
         invoke(f10.floatValue(), num.intValue());
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     public final void invoke(float f10, int i10) {

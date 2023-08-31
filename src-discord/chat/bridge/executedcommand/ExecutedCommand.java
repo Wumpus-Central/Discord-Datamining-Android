@@ -44,7 +44,7 @@ public final class ExecutedCommand {
         if (11 != (i10 & 11)) {
             n1.b(i10, 11, ExecutedCommand$$serializer.INSTANCE.getDescriptor());
         }
-        this.userId = userId.m662unboximpl();
+        this.userId = userId.m664unboximpl();
         this.usernameColor = i11;
         if ((i10 & 4) == 0) {
             this.avatarURL = null;
@@ -84,13 +84,13 @@ public final class ExecutedCommand {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z10 = false;
-        output.o(serialDesc, 0, UserId$$serializer.INSTANCE, UserId.m653boximpl(self.userId));
+        output.o(serialDesc, 0, UserId$$serializer.INSTANCE, UserId.m655boximpl(self.userId));
         output.v(serialDesc, 1, self.usernameColor);
         if (output.z(serialDesc, 2) || self.avatarURL != null) {
             z10 = true;
         }
         if (z10) {
-            output.B(serialDesc, 2, a2.f29762a, self.avatarURL);
+            output.B(serialDesc, 2, a2.f29764a, self.avatarURL);
         }
         output.o(serialDesc, 3, AnnotatedStructurableTextSerializer.INSTANCE, self.content);
     }
@@ -126,7 +126,7 @@ public final class ExecutedCommand {
             return false;
         }
         ExecutedCommand executedCommand = (ExecutedCommand) obj;
-        return UserId.m657equalsimpl0(this.userId, executedCommand.userId) && this.usernameColor == executedCommand.usernameColor && q.c(this.avatarURL, executedCommand.avatarURL) && q.c(this.content, executedCommand.content);
+        return UserId.m659equalsimpl0(this.userId, executedCommand.userId) && this.usernameColor == executedCommand.usernameColor && q.c(this.avatarURL, executedCommand.avatarURL) && q.c(this.content, executedCommand.content);
     }
 
     public final String getAvatarURL() {
@@ -147,13 +147,13 @@ public final class ExecutedCommand {
     }
 
     public int hashCode() {
-        int i10 = ((UserId.m658hashCodeimpl(this.userId) * 31) + this.usernameColor) * 31;
+        int i10 = ((UserId.m660hashCodeimpl(this.userId) * 31) + this.usernameColor) * 31;
         String str = this.avatarURL;
         return ((i10 + (str == null ? 0 : str.hashCode())) * 31) + this.content.hashCode();
     }
 
     public String toString() {
-        String str = UserId.m660toStringimpl(this.userId);
+        String str = UserId.m662toStringimpl(this.userId);
         int i10 = this.usernameColor;
         String str2 = this.avatarURL;
         AnnotatedStructurableText annotatedStructurableText = this.content;

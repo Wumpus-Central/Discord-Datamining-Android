@@ -62,7 +62,7 @@ public final class ContactSyncSerializerKt {
             return null;
         }
         nativePermissionManagerModule.hasContactAuthorization(new PromiseWrapper(promise, ContactSyncSerializerKt$serializeHasContactPermissionsResult$1.INSTANCE, null, 4, null));
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     public static final void serializeSyncContactResult(ReactContext reactContext, Callback callback) {
@@ -73,9 +73,9 @@ public final class ContactSyncSerializerKt {
             Map<String, ContactSyncBlobEntry> contactsMap = ContactSyncProvider.INSTANCE.getContactsMap(reactContext);
             Object[] objArr = new Object[3];
             objArr[0] = null;
-            Json.a aVar = Json.f21740d;
+            Json.a aVar = Json.f21742d;
             aVar.a();
-            objArr[1] = aVar.c(new r0(a2.f29762a, ContactSyncBlobEntry$$serializer.INSTANCE), contactsMap);
+            objArr[1] = aVar.c(new r0(a2.f29764a, ContactSyncBlobEntry$$serializer.INSTANCE), contactsMap);
             Collection<ContactSyncBlobEntry> values = contactsMap.values();
             s10 = k.s(values, 10);
             ArrayList arrayList = new ArrayList(s10);

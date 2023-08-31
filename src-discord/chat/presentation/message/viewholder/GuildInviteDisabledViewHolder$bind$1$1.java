@@ -26,12 +26,12 @@ public final class GuildInviteDisabledViewHolder$bind$1$1 extends s implements F
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     
     public final void invoke2(String it) {
         q.h(it, "it");
-        ChatEventHandler.DefaultImpls.m194onLinkClickedu7_MRrM$default(this.this$0.getEventHandler(), this.$inviteAccessory.mo230getMessageId3Eiw7ao(), it, null, 4, null);
+        ChatEventHandler.DefaultImpls.m195onLinkClickedu7_MRrM$default(this.this$0.getEventHandler(), this.$inviteAccessory.mo232getMessageId3Eiw7ao(), it, null, 4, null);
     }
 }

@@ -21,7 +21,7 @@ final class MediaEngineModule$speedTestConnectionInstanceGetNetworkOverhead$1 ex
     @Override 
     public   Unit invoke(Integer num) {
         invoke(num.intValue());
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     public final void invoke(int i10) {

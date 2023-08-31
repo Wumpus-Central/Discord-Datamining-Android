@@ -52,27 +52,27 @@ public final class OnTruncateMessageData implements ReactEvent {
     }
 
     
-    public static  OnTruncateMessageData m385copy1xi1bu0$default(OnTruncateMessageData onTruncateMessageData, String str, int i10, Object obj) {
+    public static  OnTruncateMessageData m387copy1xi1bu0$default(OnTruncateMessageData onTruncateMessageData, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = onTruncateMessageData.messageId;
         }
-        return onTruncateMessageData.m387copy1xi1bu0(str);
+        return onTruncateMessageData.m389copy1xi1bu0(str);
     }
 
     public static final void write$Self(OnTruncateMessageData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.o(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m615boximpl(self.messageId));
+        output.o(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m617boximpl(self.messageId));
     }
 
     
-    public final String m386component13Eiw7ao() {
+    public final String m388component13Eiw7ao() {
         return this.messageId;
     }
 
     
-    public final OnTruncateMessageData m387copy1xi1bu0(String messageId) {
+    public final OnTruncateMessageData m389copy1xi1bu0(String messageId) {
         q.h(messageId, "messageId");
         return new OnTruncateMessageData(messageId, null);
     }
@@ -81,16 +81,16 @@ public final class OnTruncateMessageData implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof OnTruncateMessageData) && MessageId.m619equalsimpl0(this.messageId, ((OnTruncateMessageData) obj).messageId);
+        return (obj instanceof OnTruncateMessageData) && MessageId.m621equalsimpl0(this.messageId, ((OnTruncateMessageData) obj).messageId);
     }
 
     
-    public final String m388getMessageId3Eiw7ao() {
+    public final String m390getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return MessageId.m620hashCodeimpl(this.messageId);
+        return MessageId.m622hashCodeimpl(this.messageId);
     }
 
     @Override 
@@ -99,7 +99,7 @@ public final class OnTruncateMessageData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m621toStringimpl(this.messageId);
+        String str = MessageId.m623toStringimpl(this.messageId);
         return "OnTruncateMessageData(messageId=" + str + ")";
     }
 

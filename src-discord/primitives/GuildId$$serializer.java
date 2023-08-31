@@ -29,18 +29,18 @@ public final class GuildId$$serializer implements f0<GuildId> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f29878a};
+        return new KSerializer[]{w0.f29880a};
     }
 
     @Override 
     public   Object deserialize(Decoder decoder) {
-        return GuildId.m602boximpl(m612deserializehCFrBxw(decoder));
+        return GuildId.m604boximpl(m614deserializehCFrBxw(decoder));
     }
 
     
-    public long m612deserializehCFrBxw(Decoder decoder) {
+    public long m614deserializehCFrBxw(Decoder decoder) {
         q.h(decoder, "decoder");
-        return GuildId.m603constructorimpl(decoder.q(getDescriptor()).l());
+        return GuildId.m605constructorimpl(decoder.q(getDescriptor()).l());
     }
 
     @Override 
@@ -50,11 +50,11 @@ public final class GuildId$$serializer implements f0<GuildId> {
 
     @Override 
     public   void serialize(Encoder encoder, Object obj) {
-        m613serializejkIi_8I(encoder, ((GuildId) obj).m611unboximpl());
+        m615serializejkIi_8I(encoder, ((GuildId) obj).m613unboximpl());
     }
 
     
-    public void m613serializejkIi_8I(Encoder encoder, long j10) {
+    public void m615serializejkIi_8I(Encoder encoder, long j10) {
         q.h(encoder, "encoder");
         Encoder j11 = encoder.j(getDescriptor());
         if (j11 != null) {

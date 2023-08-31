@@ -14,7 +14,7 @@ public interface ReactEvent {
     
     public static final class DefaultImpls {
         public static WritableMap serialize(ReactEvent reactEvent) {
-            return NativeMapExtensionsKt.toNativeMap(a.f31570b.e(j.b(reactEvent.getClass()), reactEvent));
+            return NativeMapExtensionsKt.toNativeMap(a.f31572b.e(j.b(reactEvent.getClass()), reactEvent));
         }
     }
 

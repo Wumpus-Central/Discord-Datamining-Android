@@ -35,7 +35,7 @@ public final class ResultViewHolder extends RecyclerView.ViewHolder {
         q.h(this$0, "this$0");
         MobileVoiceOverlaySelectorResult mobileVoiceOverlaySelectorResult = this$0.result;
         if (mobileVoiceOverlaySelectorResult != null) {
-            this$0.onChannelSelected.invoke(ChannelId.m589boximpl(mobileVoiceOverlaySelectorResult.m508getChannelIdo4g7jtM()));
+            this$0.onChannelSelected.invoke(ChannelId.m591boximpl(mobileVoiceOverlaySelectorResult.m510getChannelIdo4g7jtM()));
         }
     }
 

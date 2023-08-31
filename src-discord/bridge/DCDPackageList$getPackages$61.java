@@ -1,6 +1,6 @@
 package com.discord.bridge;
 
-import com.discord.modules.keycommands.KeyCommandsViewManagerModule;
+import com.discord.core.LocalImageThumbnailViewManager;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.LayoutShadowNode;
 import com.facebook.react.uimanager.ViewManager;
@@ -20,6 +20,6 @@ final class DCDPackageList$getPackages$61 extends s implements Function1<ReactAp
 
     public final ViewManager<?, LayoutShadowNode> invoke(ReactApplicationContext it) {
         q.h(it, "it");
-        return new KeyCommandsViewManagerModule.KeyCommandsView();
+        return new LocalImageThumbnailViewManager();
     }
 }

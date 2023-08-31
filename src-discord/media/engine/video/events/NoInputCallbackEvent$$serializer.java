@@ -32,7 +32,7 @@ public final class NoInputCallbackEvent$$serializer implements f0<NoInputCallbac
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{h.f29804a};
+        return new KSerializer[]{h.f29806a};
     }
 
     @Override 

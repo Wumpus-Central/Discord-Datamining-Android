@@ -6,7 +6,6 @@ import com.discord.zoom_layout.reactevents.OnZoomChangedEvent;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.uimanager.ThemedReactContext;
-import com.facebook.react.uimanager.UIManagerHelper;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.uimanager.ViewManagerDelegate;
 import com.facebook.react.uimanager.annotations.ReactProp;
@@ -17,7 +16,6 @@ import java.util.Map;
 import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Ref$ObjectRef;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
 
@@ -64,13 +62,10 @@ public final class ZoomLayoutViewManager extends ViewGroupManager<ZoomLayoutFixe
     }
 
     
-    
     @Override 
     public ZoomLayoutFixed createViewInstance(final ThemedReactContext reactContext) {
         q.h(reactContext, "reactContext");
         final ZoomLayoutFixed zoomLayoutFixed = new ZoomLayoutFixed(reactContext, null, 0, 6, null);
-        final Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
-        ref$ObjectRef.f21240j = UIManagerHelper.getEventDispatcherForReactTag(reactContext, zoomLayoutFixed.getId());
         zoomLayoutFixed.setOverScrollHorizontal(false);
         zoomLayoutFixed.setOverScrollVertical(false);
         zoomLayoutFixed.setOverPinchable(false);
@@ -84,7 +79,7 @@ public final class ZoomLayoutViewManager extends ViewGroupManager<ZoomLayoutFixe
             public void onUpdate(ZoomEngine engine, Matrix matrix) {
                 q.h(engine, "engine");
                 q.h(matrix, "matrix");
-                ZoomLayoutViewManager.this.getReactEvents$zoom_layout_release().emitEvent(ref$ObjectRef.f21240j, reactContext, zoomLayoutFixed, new OnZoomChangedEvent(zoomLayoutFixed.getZoom()));
+                ZoomLayoutViewManager.this.getReactEvents$zoom_layout_release().emitEvent(reactContext, zoomLayoutFixed, new OnZoomChangedEvent(zoomLayoutFixed.getZoom()));
             }
         });
         return zoomLayoutFixed;

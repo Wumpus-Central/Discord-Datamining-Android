@@ -34,7 +34,7 @@ public final class MediaPlayerMuteStateChanged$$serializer implements f0<MediaPl
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{x.f29883a, h.f29804a};
+        return new KSerializer[]{x.f29885a, h.f29806a};
     }
 
     @Override 

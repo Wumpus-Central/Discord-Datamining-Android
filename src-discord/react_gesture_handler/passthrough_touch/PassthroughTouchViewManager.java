@@ -4,7 +4,6 @@ import com.discord.react_gesture_handler.passthrough_touch.events.OnTouchDownDat
 import com.discord.reactevents.ReactEvents;
 import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.uimanager.ThemedReactContext;
-import com.facebook.react.uimanager.UIManagerHelper;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.viewmanagers.PassthroughTouchViewManagerDelegate;
 import com.facebook.react.viewmanagers.PassthroughTouchViewManagerInterface;
@@ -12,7 +11,6 @@ import java.util.Map;
 import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Ref$ObjectRef;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
 
@@ -47,14 +45,11 @@ public final class PassthroughTouchViewManager extends ViewGroupManager<Passthro
     }
 
     
-    
     @Override 
     public PassthroughTouchViewGroup createViewInstance(ThemedReactContext reactContext) {
         q.h(reactContext, "reactContext");
         PassthroughTouchViewGroup passthroughTouchViewGroup = new PassthroughTouchViewGroup(reactContext);
-        Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
-        ref$ObjectRef.f21240j = UIManagerHelper.getEventDispatcherForReactTag(reactContext, passthroughTouchViewGroup.getId());
-        passthroughTouchViewGroup.setOnTouchDown(new PassthroughTouchViewManager$createViewInstance$1$1(this, ref$ObjectRef, reactContext, passthroughTouchViewGroup));
+        passthroughTouchViewGroup.setOnTouchDown(new PassthroughTouchViewManager$createViewInstance$1$1(this, reactContext, passthroughTouchViewGroup));
         return passthroughTouchViewGroup;
     }
 

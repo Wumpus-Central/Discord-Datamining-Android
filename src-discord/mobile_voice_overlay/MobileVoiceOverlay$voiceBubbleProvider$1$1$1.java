@@ -30,7 +30,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1$1$1 extends s implem
     @Override 
     public   Unit invoke(OverlayMenuBubbleDialog overlayMenuBubbleDialog) {
         invoke2(overlayMenuBubbleDialog);
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     

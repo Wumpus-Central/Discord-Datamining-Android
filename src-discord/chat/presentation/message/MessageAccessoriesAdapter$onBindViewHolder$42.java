@@ -20,12 +20,12 @@ public  class MessageAccessoriesAdapter$onBindViewHolder$42 extends n implements
 
     @Override 
     public   Unit invoke(MessageId messageId, ChannelId channelId) {
-        m215invokepfaIj0E(messageId.m623unboximpl(), channelId.m598unboximpl());
-        return Unit.f21213a;
+        m216invokepfaIj0E(messageId.m625unboximpl(), channelId.m600unboximpl());
+        return Unit.f21215a;
     }
 
     
-    public final void m215invokepfaIj0E(String p02, long j10) {
+    public final void m216invokepfaIj0E(String p02, long j10) {
         q.h(p02, "p0");
         ((ChatEventHandler) this.receiver).mo166onTapAutoModerationFeedbackpfaIj0E(p02, j10);
     }

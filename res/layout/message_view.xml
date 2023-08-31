@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merge android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.discord.chat.presentation.list.MaskedShadowView android:id="@id/shadow_view" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
     <com.discord.chat.presentation.message.MessageFrameHeaderView android:id="@id/message_frame_header" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
     <androidx.constraintlayout.widget.Barrier android:id="@id/message_header_barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" app:barrierDirection="bottom" app:constraint_referenced_ids="message_frame_header" />
     <include layout="@layout/message_start_guideline" />

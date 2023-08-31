@@ -40,11 +40,11 @@ public final class DebugRowLogger implements RowLogger {
         boolean w10;
         w10 = o.w(str);
         if (!w10) {
-            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(DebugRowLoggerKt.outputStream(this.replayFile, true), a.f24911b);
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(DebugRowLoggerKt.outputStream(this.replayFile, true), a.f24913b);
             try {
                 outputStreamWriter.write(str + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
                 outputStreamWriter.flush();
-                Unit unit = Unit.f21213a;
+                Unit unit = Unit.f21215a;
                 c.a(outputStreamWriter, null);
                 writeJson();
             } catch (Throwable th2) {
@@ -70,14 +70,14 @@ public final class DebugRowLogger implements RowLogger {
     private final void writeJson() {
         Ref$BooleanRef ref$BooleanRef = new Ref$BooleanRef();
         FileOutputStream fileOutputStream = new FileOutputStream(this.jsonFile);
-        Charset charset = a.f24911b;
+        Charset charset = a.f24913b;
         OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream, charset);
         try {
             outputStreamWriter.write("[\n");
             tf.q.c(new InputStreamReader(new FileInputStream(this.replayFile), charset), new DebugRowLogger$writeJson$1$1(ref$BooleanRef, outputStreamWriter));
             outputStreamWriter.write("\n]");
             outputStreamWriter.flush();
-            Unit unit = Unit.f21213a;
+            Unit unit = Unit.f21215a;
             th = null;
         } finally {
             try {

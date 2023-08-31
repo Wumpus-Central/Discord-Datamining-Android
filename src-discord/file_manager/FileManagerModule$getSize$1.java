@@ -44,7 +44,7 @@ final class FileManagerModule$getSize$1 extends k implements Function2<Coroutine
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileManagerModule$getSize$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21213a);
+        return ((FileManagerModule$getSize$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21215a);
     }
 
     @Override 
@@ -61,7 +61,7 @@ final class FileManagerModule$getSize$1 extends k implements Function2<Coroutine
             String str = this.$uri;
             Promise promise = this.$promise;
             try {
-                s.a aVar = s.f20302k;
+                s.a aVar = s.f20304k;
                 reactApplicationContext = fileManagerModule.getReactApplicationContext();
                 ParcelFileDescriptor openFileDescriptor = reactApplicationContext.getContentResolver().openFileDescriptor(Uri.parse(str), "r");
                 if (openFileDescriptor != null) {
@@ -76,18 +76,18 @@ final class FileManagerModule$getSize$1 extends k implements Function2<Coroutine
                     z10 = false;
                 }
             } catch (Throwable th2) {
-                s.a aVar2 = s.f20302k;
+                s.a aVar2 = s.f20304k;
                 obj2 = s.b(t.a(th2));
             }
             if (z10) {
                 promise.resolve(b.b(j10));
-                obj2 = s.b(Unit.f21213a);
+                obj2 = s.b(Unit.f21215a);
                 Promise promise2 = this.$promise;
                 Throwable e10 = s.e(obj2);
                 if (e10 != null) {
                     promise2.reject(e10);
                 }
-                return Unit.f21213a;
+                return Unit.f21215a;
             }
             throw new IllegalArgumentException("Failed requirement.".toString());
         } else {

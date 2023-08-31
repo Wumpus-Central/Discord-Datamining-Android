@@ -19,6 +19,7 @@ import com.discord.chat.bridge.messageframe.MessageFrame;
 import com.discord.chat.bridge.messageframe.UnknownMessageFrame;
 import com.discord.chat.databinding.MessageViewBinding;
 import com.discord.chat.presentation.events.ChatEventHandler;
+import com.discord.chat.presentation.list.MaskedShadowView;
 import com.discord.chat.presentation.list.SwipeReplyInitiator;
 import com.discord.chat.presentation.message.messagepart.MessageAccessory;
 import com.discord.chat.presentation.message.messagepart.MessageContentAccessory;
@@ -52,7 +53,7 @@ import kotlin.jvm.functions.Function4;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
-@Metadata(d1 = {"\u0000ª\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u0004:\u0001TB\u001d\b\u0007\u0012\u0006\u0010O\u001a\u00020N\u0012\n\b\u0002\u0010Q\u001a\u0004\u0018\u00010P¢\u0006\u0004\bR\u0010SJ\u0010\u0010\b\u001a\u00020\u00072\u0006\u0010\u0006\u001a\u00020\u0005H\u0002J\u001c\u0010\u000e\u001a\u00020\u0007*\u00020\t2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\fH\u0002J]\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u001b0\u001a2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\u0010\u001a\u00020\u000f2\b\u0010\u0012\u001a\u0004\u0018\u00010\u001120\u0010\u0019\u001a,\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u0015\u0012\u0006\u0012\u0004\u0018\u00010\u0016\u0012\u0006\u0012\u0004\u0018\u00010\u0017\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u0013j\u0004\u0018\u0001`\u0018H\u0002ø\u0001\u0000J \u0010\u001f\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\f2\u0006\u0010\u001e\u001a\u00020\u001dH\u0002J\u0016\u0010!\u001a\u00020\u00072\f\u0010 \u001a\b\u0012\u0004\u0012\u00020\u001b0\u001aH\u0002J\u0018\u0010#\u001a\u00020\u00072\u0006\u0010\"\u001a\u00020\u00052\u0006\u0010\u001e\u001a\u00020\u001dH\u0002J \u0010%\u001a\u00020\u00072\u0006\u0010$\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\f2\u0006\u0010\u001e\u001a\u00020\u001dH\u0002J\u0010\u0010(\u001a\u00020\u00052\u0006\u0010'\u001a\u00020&H\u0016J\u0010\u0010*\u001a\u00020\u00072\u0006\u0010)\u001a\u00020\u0005H\u0016Jf\u00102\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\u0010\u001a\u00020\u000f2\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00112\b\b\u0002\u0010\r\u001a\u00020\f2\n\b\u0002\u0010,\u001a\u0004\u0018\u00010+2\u000e\b\u0002\u0010.\u001a\b\u0012\u0004\u0012\u00020\u001d0-2\b\b\u0002\u0010/\u001a\u00020\u00052\b\b\u0002\u00100\u001a\u00020\u00052\b\b\u0002\u00101\u001a\u00020\u0005J\u000e\u00105\u001a\u00020\u00072\u0006\u00104\u001a\u000203J\u000f\u00106\u001a\u00020\u0016H\u0016¢\u0006\u0004\b6\u00107R\u0014\u00109\u001a\u0002088\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b9\u0010:R\u001c\u0010.\u001a\b\u0012\u0004\u0012\u00020\u001d0-8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b.\u0010;R\u0016\u0010/\u001a\u00020\u00058\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b/\u0010<R(\u0010=\u001a\b\u0012\u0004\u0012\u00020\u00070-8\u0016@\u0016X\u0096\u000e¢\u0006\u0012\n\u0004\b=\u0010;\u001a\u0004\b>\u0010?\"\u0004\b@\u0010AR\"\u0010B\u001a\u00020\u00058\u0016@\u0016X\u0096\u000e¢\u0006\u0012\n\u0004\bB\u0010<\u001a\u0004\bC\u0010D\"\u0004\bE\u0010FR&\u0010I\u001a\u0012\u0012\u0004\u0012\u00020\u001b0Gj\b\u0012\u0004\u0012\u00020\u001b`H8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bI\u0010JR\u0014\u0010M\u001a\u00020\t8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bK\u0010L\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006U"}, d2 = {"Lcom/discord/chat/presentation/message/MessageView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "Lcom/discord/recycler_view/decorations/VerticalSpacingItemDecoration$SpacingProviderView;", "Lcom/discord/chat/presentation/spine/SpineParentMessage;", "Lcom/discord/chat/presentation/list/SwipeReplyInitiator;", "", "showDivider", "", "configureDivider", "Landroid/view/View;", "Lcom/discord/chat/bridge/Message;", "message", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "eventHandler", "configureAuthorClickListeners", "Lcom/discord/chat/presentation/root/MessageContext;", "messageContext", "Lcom/discord/chat/bridge/messageframe/MessageFrame;", "messageFrame", "Lkotlin/Function4;", "Lcom/discord/primitives/MessageId;", "Lcom/discord/primitives/ChannelId;", "", "Lcom/discord/chat/bridge/MediaType;", "Lcom/discord/chat/presentation/events/MessageLongPress;", "onLongClick", "", "Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;", "generateMessageAccessories", "Lcom/discord/chat/presentation/message/MessageView$ChainPart;", "chainPart", "configureAuthor", "items", "configureAccessoriesMargin", "isCommunicationDisabled", "configureCommunicationDisabled", "isSuppressNotifications", "configureSuppressNotifications", "Landroid/view/MotionEvent;", "ev", "onInterceptTouchEvent", "pressed", "setPressed", "Lcom/discord/chat/presentation/message/view/botuikit/ComponentProvider;", "componentProvider", "Lkotlin/Function0;", "onChainPart", "allowChildGestures", "isHighlight", "renderContentOnly", "setMessage", "Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;", "recycledViewPool", "setAccessoriesRecycledViewPool", "spacingPxOverride", "()Ljava/lang/Integer;", "Lcom/discord/chat/databinding/MessageViewBinding;", "binding", "Lcom/discord/chat/databinding/MessageViewBinding;", "Lkotlin/jvm/functions/Function0;", "Z", "onInitiateReply", "getOnInitiateReply", "()Lkotlin/jvm/functions/Function0;", "setOnInitiateReply", "(Lkotlin/jvm/functions/Function0;)V", "enableSwipeToReply", "getEnableSwipeToReply", "()Z", "setEnableSwipeToReply", "(Z)V", "Ljava/util/ArrayList;", "Lkotlin/collections/ArrayList;", "accessories", "Ljava/util/ArrayList;", "getSpineOriginView", "()Landroid/view/View;", "spineOriginView", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "ChainPart", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u0000²\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u0004:\u0001]B\u001d\b\u0007\u0012\u0006\u0010X\u001a\u00020W\u0012\n\b\u0002\u0010Z\u001a\u0004\u0018\u00010Y¢\u0006\u0004\b[\u0010\\J\u0010\u0010\b\u001a\u00020\u00072\u0006\u0010\u0006\u001a\u00020\u0005H\u0002J\u001c\u0010\u000e\u001a\u00020\u0007*\u00020\t2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\fH\u0002J]\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u001b0\u001a2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\u0010\u001a\u00020\u000f2\b\u0010\u0012\u001a\u0004\u0018\u00010\u001120\u0010\u0019\u001a,\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u0015\u0012\u0006\u0012\u0004\u0018\u00010\u0016\u0012\u0006\u0012\u0004\u0018\u00010\u0017\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u0013j\u0004\u0018\u0001`\u0018H\u0002ø\u0001\u0000J \u0010\u001f\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\f2\u0006\u0010\u001e\u001a\u00020\u001dH\u0002J\u0016\u0010!\u001a\u00020\u00072\f\u0010 \u001a\b\u0012\u0004\u0012\u00020\u001b0\u001aH\u0002J\u0018\u0010#\u001a\u00020\u00072\u0006\u0010\"\u001a\u00020\u00052\u0006\u0010\u001e\u001a\u00020\u001dH\u0002J \u0010%\u001a\u00020\u00072\u0006\u0010$\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\f2\u0006\u0010\u001e\u001a\u00020\u001dH\u0002J\u0010\u0010(\u001a\u00020\u00052\u0006\u0010'\u001a\u00020&H\u0016J\b\u0010)\u001a\u00020\u0007H\u0016J\b\u0010*\u001a\u00020\u0007H\u0016J\u0010\u0010,\u001a\u00020\u00072\u0006\u0010+\u001a\u00020\u0005H\u0016Jf\u00104\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\u0010\u001a\u00020\u000f2\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00112\b\b\u0002\u0010\r\u001a\u00020\f2\n\b\u0002\u0010.\u001a\u0004\u0018\u00010-2\u000e\b\u0002\u00100\u001a\b\u0012\u0004\u0012\u00020\u001d0/2\b\b\u0002\u00101\u001a\u00020\u00052\b\b\u0002\u00102\u001a\u00020\u00052\b\b\u0002\u00103\u001a\u00020\u0005J\u000e\u00107\u001a\u00020\u00072\u0006\u00106\u001a\u000205J\u000f\u00108\u001a\u00020\u0016H\u0016¢\u0006\u0004\b8\u00109R\u0014\u0010;\u001a\u00020:8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b;\u0010<R\"\u0010>\u001a\u00020=8\u0016@\u0016X\u0096.¢\u0006\u0012\n\u0004\b>\u0010?\u001a\u0004\b@\u0010A\"\u0004\bB\u0010CR\u001c\u00100\u001a\b\u0012\u0004\u0012\u00020\u001d0/8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b0\u0010DR\u0016\u00101\u001a\u00020\u00058\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b1\u0010ER(\u0010F\u001a\b\u0012\u0004\u0012\u00020\u00070/8\u0016@\u0016X\u0096\u000e¢\u0006\u0012\n\u0004\bF\u0010D\u001a\u0004\bG\u0010H\"\u0004\bI\u0010JR\"\u0010K\u001a\u00020\u00058\u0016@\u0016X\u0096\u000e¢\u0006\u0012\n\u0004\bK\u0010E\u001a\u0004\bL\u0010M\"\u0004\bN\u0010OR&\u0010R\u001a\u0012\u0012\u0004\u0012\u00020\u001b0Pj\b\u0012\u0004\u0012\u00020\u001b`Q8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bR\u0010SR\u0014\u0010V\u001a\u00020\t8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bT\u0010U\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006^"}, d2 = {"Lcom/discord/chat/presentation/message/MessageView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "Lcom/discord/recycler_view/decorations/VerticalSpacingItemDecoration$SpacingProviderView;", "Lcom/discord/chat/presentation/spine/SpineParentMessage;", "Lcom/discord/chat/presentation/list/SwipeReplyInitiator;", "", "showDivider", "", "configureDivider", "Landroid/view/View;", "Lcom/discord/chat/bridge/Message;", "message", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "eventHandler", "configureAuthorClickListeners", "Lcom/discord/chat/presentation/root/MessageContext;", "messageContext", "Lcom/discord/chat/bridge/messageframe/MessageFrame;", "messageFrame", "Lkotlin/Function4;", "Lcom/discord/primitives/MessageId;", "Lcom/discord/primitives/ChannelId;", "", "Lcom/discord/chat/bridge/MediaType;", "Lcom/discord/chat/presentation/events/MessageLongPress;", "onLongClick", "", "Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;", "generateMessageAccessories", "Lcom/discord/chat/presentation/message/MessageView$ChainPart;", "chainPart", "configureAuthor", "items", "configureAccessoriesMargin", "isCommunicationDisabled", "configureCommunicationDisabled", "isSuppressNotifications", "configureSuppressNotifications", "Landroid/view/MotionEvent;", "ev", "onInterceptTouchEvent", "onSwipeStart", "onSwipeEnd", "pressed", "setPressed", "Lcom/discord/chat/presentation/message/view/botuikit/ComponentProvider;", "componentProvider", "Lkotlin/Function0;", "onChainPart", "allowChildGestures", "isHighlight", "renderContentOnly", "setMessage", "Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;", "recycledViewPool", "setAccessoriesRecycledViewPool", "spacingPxOverride", "()Ljava/lang/Integer;", "Lcom/discord/chat/databinding/MessageViewBinding;", "binding", "Lcom/discord/chat/databinding/MessageViewBinding;", "Lcom/discord/chat/presentation/list/MaskedShadowView;", "shadowView", "Lcom/discord/chat/presentation/list/MaskedShadowView;", "getShadowView", "()Lcom/discord/chat/presentation/list/MaskedShadowView;", "setShadowView", "(Lcom/discord/chat/presentation/list/MaskedShadowView;)V", "Lkotlin/jvm/functions/Function0;", "Z", "onInitiateReply", "getOnInitiateReply", "()Lkotlin/jvm/functions/Function0;", "setOnInitiateReply", "(Lkotlin/jvm/functions/Function0;)V", "enableSwipeToReply", "getEnableSwipeToReply", "()Z", "setEnableSwipeToReply", "(Z)V", "Ljava/util/ArrayList;", "Lkotlin/collections/ArrayList;", "accessories", "Ljava/util/ArrayList;", "getSpineOriginView", "()Landroid/view/View;", "spineOriginView", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "ChainPart", "chat_release"}, k = 1, mv = {1, 8, 0})
 
 public final class MessageView extends ConstraintLayout implements VerticalSpacingItemDecoration.SpacingProviderView, SpineParentMessage, SwipeReplyInitiator {
     private ArrayList<MessageAccessory> accessories;
@@ -61,6 +62,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     private boolean enableSwipeToReply;
     private Function0<? extends ChainPart> onChainPart;
     private Function0<Unit> onInitiateReply;
+    public MaskedShadowView shadowView;
 
     @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0006\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006¨\u0006\u0007"}, d2 = {"Lcom/discord/chat/presentation/message/MessageView$ChainPart;", "", "(Ljava/lang/String;I)V", "ONLY", "START", "MIDDLE", "END", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     
@@ -234,7 +236,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
                 roleIconView2.setVisibility(8);
             }
             if (message.getConnectionsRoleTag() != null) {
-                this.binding.connectionsRoleTag.m206configureConnectionsRoleTaguESh2Cg(message.m22getAuthorIdwUX8bhU(), message.m24getGuildIdqOKuAAo(), ChannelId.m589boximpl(message.m23getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
+                this.binding.connectionsRoleTag.m207configureConnectionsRoleTaguESh2Cg(message.m22getAuthorIdwUX8bhU(), message.m24getGuildIdqOKuAAo(), ChannelId.m591boximpl(message.m23getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
                 ConnectionsRoleTagView connectionsRoleTagView = this.binding.connectionsRoleTag;
                 q.g(connectionsRoleTagView, "binding.connectionsRoleTag");
                 connectionsRoleTagView.setVisibility(0);
@@ -256,7 +258,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
                 MessageTagView messageTagView2 = this.binding.messageTagView;
                 q.g(messageTagView2, "binding.messageTagView");
                 messageTagView2.setVisibility(0);
-                this.binding.messageTagView.m225configureTagVieweCJZyo(message.getTagText(), message.getTagVerified(), message.getTagTextColor(), message.getTagBackgroundColor(), message.getOpTagText(), chatEventHandler, message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.getTagType());
+                this.binding.messageTagView.m227configureTagVieweCJZyo(message.getTagText(), message.getTagVerified(), message.getTagTextColor(), message.getTagBackgroundColor(), message.getOpTagText(), chatEventHandler, message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.getTagType());
                 MessageAltRemixTagView messageAltRemixTagView2 = this.binding.messageAltRemixTagView;
                 q.g(messageAltRemixTagView2, "binding.messageAltRemixTagView");
                 messageAltRemixTagView2.setVisibility(8);
@@ -264,7 +266,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
                 MessageAltRemixTagView messageAltRemixTagView3 = this.binding.messageAltRemixTagView;
                 q.g(messageAltRemixTagView3, "binding.messageAltRemixTagView");
                 messageAltRemixTagView3.setVisibility(0);
-                this.binding.messageAltRemixTagView.m224configureTagViewe2j04IU(message.getTagText(), message.getTagTextColor(), message.getTagBackgroundColor(), chatEventHandler, message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.getTagType());
+                this.binding.messageAltRemixTagView.m226configureTagViewe2j04IU(message.getTagText(), message.getTagTextColor(), message.getTagBackgroundColor(), chatEventHandler, message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.getTagType());
                 MessageTagView messageTagView3 = this.binding.messageTagView;
                 q.g(messageTagView3, "binding.messageTagView");
                 messageTagView3.setVisibility(8);
@@ -304,7 +306,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         q.h(message, "$message");
         q.h(eventHandler, "$eventHandler");
         if (message.m22getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo167onTapAvatarx5gers8(message.m25getId3Eiw7ao(), message.m22getAuthorIdwUX8bhU().m662unboximpl());
+            eventHandler.mo167onTapAvatarx5gers8(message.m25getId3Eiw7ao(), message.m22getAuthorIdwUX8bhU().m664unboximpl());
         }
     }
 
@@ -314,7 +316,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         if (message.m22getAuthorIdwUX8bhU() == null) {
             return true;
         }
-        eventHandler.mo159onLongPressAvatarx5gers8(message.m25getId3Eiw7ao(), message.m22getAuthorIdwUX8bhU().m662unboximpl());
+        eventHandler.mo159onLongPressAvatarx5gers8(message.m25getId3Eiw7ao(), message.m22getAuthorIdwUX8bhU().m664unboximpl());
         return true;
     }
 
@@ -339,7 +341,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         q.h(message, "$message");
         q.h(eventHandler, "$eventHandler");
         if (message.m22getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo189onTapUsernamex5gers8(message.m25getId3Eiw7ao(), message.m22getAuthorIdwUX8bhU().m662unboximpl());
+            eventHandler.mo190onTapUsernamex5gers8(message.m25getId3Eiw7ao(), message.m22getAuthorIdwUX8bhU().m664unboximpl());
         }
     }
 
@@ -349,7 +351,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         if (message.m22getAuthorIdwUX8bhU() == null) {
             return true;
         }
-        eventHandler.mo161onLongPressUsernamex5gers8(message.m25getId3Eiw7ao(), message.m22getAuthorIdwUX8bhU().m662unboximpl());
+        eventHandler.mo161onLongPressUsernamex5gers8(message.m25getId3Eiw7ao(), message.m22getAuthorIdwUX8bhU().m664unboximpl());
         return true;
     }
 
@@ -477,7 +479,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     public static final boolean generateMessageAccessories$getLongClickListener$lambda$7$lambda$6(Function4 function4, Message message, int i10, MediaType mediaType, View view) {
         q.h(message, "$message");
         q.h(mediaType, "$mediaType");
-        function4.invoke(MessageId.m615boximpl(message.m25getId3Eiw7ao()), ChannelId.m589boximpl(message.m23getChannelIdo4g7jtM()), Integer.valueOf(i10), mediaType);
+        function4.invoke(MessageId.m617boximpl(message.m25getId3Eiw7ao()), ChannelId.m591boximpl(message.m23getChannelIdo4g7jtM()), Integer.valueOf(i10), mediaType);
         return true;
     }
 
@@ -530,13 +532,13 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     public static final void setMessage$lambda$1$lambda$0(Function2 onMessageTapped, Message message, View view) {
         q.h(onMessageTapped, "$onMessageTapped");
         q.h(message, "$message");
-        onMessageTapped.invoke(MessageId.m615boximpl(message.m25getId3Eiw7ao()), ChannelId.m589boximpl(message.m23getChannelIdo4g7jtM()));
+        onMessageTapped.invoke(MessageId.m617boximpl(message.m25getId3Eiw7ao()), ChannelId.m591boximpl(message.m23getChannelIdo4g7jtM()));
     }
 
     public static final boolean setMessage$lambda$3$lambda$2(Function4 it, Message message, View view) {
         q.h(it, "$it");
         q.h(message, "$message");
-        it.invoke(MessageId.m615boximpl(message.m25getId3Eiw7ao()), ChannelId.m589boximpl(message.m23getChannelIdo4g7jtM()), null, null);
+        it.invoke(MessageId.m617boximpl(message.m25getId3Eiw7ao()), ChannelId.m591boximpl(message.m23getChannelIdo4g7jtM()), null, null);
         return true;
     }
 
@@ -551,6 +553,16 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     }
 
     @Override 
+    public MaskedShadowView getShadowView() {
+        MaskedShadowView maskedShadowView = this.shadowView;
+        if (maskedShadowView != null) {
+            return maskedShadowView;
+        }
+        q.z("shadowView");
+        return null;
+    }
+
+    @Override 
     public View getSpineOriginView() {
         SimpleDraweeView simpleDraweeView = this.binding.authorAvatar;
         q.g(simpleDraweeView, "binding.authorAvatar");
@@ -561,6 +573,20 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         q.h(ev, "ev");
         return !this.allowChildGestures;
+    }
+
+    @Override 
+    public void onSwipeEnd() {
+        setClipChildren(true);
+        setClipToPadding(true);
+        getShadowView().setVisibility(4);
+    }
+
+    @Override 
+    public void onSwipeStart() {
+        setClipChildren(false);
+        setClipToPadding(false);
+        getShadowView().setVisibility(0);
     }
 
     public final void setAccessoriesRecycledViewPool(RecyclerView.RecycledViewPool recycledViewPool) {
@@ -622,7 +648,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             q.g(messageViewReplyPreview, "binding.replyPreview");
             MessageViewReplyPreview.configureReply$default(messageViewReplyPreview, message.getReferencedMessage(), false, new MessageView$setMessage$3(eventHandler, message), 2, null);
         } else if (message.getExecutedCommand() != null) {
-            this.binding.replyPreview.m226configureExecutedCommandLdU2QRA(message.m25getId3Eiw7ao(), message.getExecutedCommand(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), eventHandler);
+            this.binding.replyPreview.m228configureExecutedCommandLdU2QRA(message.m25getId3Eiw7ao(), message.getExecutedCommand(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), eventHandler);
         } else {
             this.binding.replyPreview.clear();
         }
@@ -652,7 +678,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested(this, true, onClickListener);
         NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested(this, true, onLongClickListener);
         List<MessageAccessory> generateMessageAccessories = generateMessageAccessories(message, messageContext, messageFrame, eventHandler.getOnMessageLongPressed());
-        this.binding.accessoriesView.m223setAccessoriesRC8ZMxU(message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.m24getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, componentProvider);
+        this.binding.accessoriesView.m225setAccessoriesRC8ZMxU(message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.m24getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, componentProvider);
         configureAccessoriesMargin(generateMessageAccessories);
         configureCommunicationDisabled(q.c(message.getCommunicationDisabled(), Boolean.TRUE), chainPart);
         configureSuppressNotifications(MessageFlagKt.hasMessageFlag(Long.valueOf(message.getFlags()), MessageFlag.SUPPRESS_NOTIFICATIONS), eventHandler, chainPart);
@@ -668,6 +694,12 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     @Override 
     public void setPressed(boolean z10) {
         super.setPressed(z10 && (isClickable() || isFocusable()));
+    }
+
+    @Override 
+    public void setShadowView(MaskedShadowView maskedShadowView) {
+        q.h(maskedShadowView, "<set-?>");
+        this.shadowView = maskedShadowView;
     }
 
     @Override 
@@ -710,6 +742,10 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         q.g(simpleDraweeView, "binding.authorAvatar");
         ViewClippingUtilsKt.clipToCircle(simpleDraweeView);
         inflate.messageHeaderDivider.setBackgroundColor(ColorUtilsKt.getThemeColor(context, R.color.message_divider_light, R.color.message_divider_dark));
+        MaskedShadowView maskedShadowView = inflate.shadowView;
+        q.g(maskedShadowView, "binding.shadowView");
+        setShadowView(maskedShadowView);
+        getShadowView().setVisibility(4);
         this.onChainPart = MessageView$onChainPart$1.INSTANCE;
         this.allowChildGestures = true;
         this.onInitiateReply = MessageView$onInitiateReply$1.INSTANCE;

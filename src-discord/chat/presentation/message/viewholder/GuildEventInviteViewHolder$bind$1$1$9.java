@@ -19,7 +19,7 @@ import kotlin.jvm.internal.q;
     @Override 
     public   Unit invoke(EmojiContentNode emojiContentNode) {
         invoke2(emojiContentNode);
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     

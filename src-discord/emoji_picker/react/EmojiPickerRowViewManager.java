@@ -8,9 +8,7 @@ import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
-import com.facebook.react.uimanager.UIManagerHelper;
 import com.facebook.react.uimanager.annotations.ReactProp;
-import com.facebook.react.uimanager.events.EventDispatcher;
 import com.facebook.react.viewmanagers.EmojiPickerRowViewManagerInterface;
 import java.util.Map;
 import jf.x;
@@ -53,9 +51,8 @@ public final class EmojiPickerRowViewManager extends SimpleViewManager<EmojiPick
     public EmojiPickerRowView createViewInstance(ThemedReactContext reactContext) {
         q.h(reactContext, "reactContext");
         EmojiPickerRowView emojiPickerRowView = new EmojiPickerRowView(reactContext);
-        EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag(reactContext, emojiPickerRowView.getId());
-        emojiPickerRowView.setOnPressEmoji(new EmojiPickerRowViewManager$createViewInstance$1$1(this, eventDispatcherForReactTag, reactContext, emojiPickerRowView));
-        emojiPickerRowView.setOnLongPressEmoji(new EmojiPickerRowViewManager$createViewInstance$1$2(this, eventDispatcherForReactTag, reactContext, emojiPickerRowView));
+        emojiPickerRowView.setOnPressEmoji(new EmojiPickerRowViewManager$createViewInstance$1$1(this, reactContext, emojiPickerRowView));
+        emojiPickerRowView.setOnLongPressEmoji(new EmojiPickerRowViewManager$createViewInstance$1$2(this, reactContext, emojiPickerRowView));
         return emojiPickerRowView;
     }
 

@@ -40,8 +40,8 @@ public final class MessageReaction$$serializer implements f0<MessageReaction> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29837a;
-        h hVar = h.f29804a;
+        m0 m0Var = m0.f29839a;
+        h hVar = h.f29806a;
         return new KSerializer[]{m0Var, hVar, hVar, MessageReactionEmoji$$serializer.INSTANCE, m0Var, a.u(ThemedBurstReactionColorPalette$$serializer.INSTANCE), hVar};
     }
 

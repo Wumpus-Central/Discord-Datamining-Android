@@ -26,9 +26,9 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
     }
 
     
-    public static  FlaggedMessageActionBarAccessory m254copyu7_MRrM$default(FlaggedMessageActionBarAccessory flaggedMessageActionBarAccessory, String str, Message message, AutoModerationContext autoModerationContext, int i10, Object obj) {
+    public static  FlaggedMessageActionBarAccessory m256copyu7_MRrM$default(FlaggedMessageActionBarAccessory flaggedMessageActionBarAccessory, String str, Message message, AutoModerationContext autoModerationContext, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = flaggedMessageActionBarAccessory.mo230getMessageId3Eiw7ao();
+            str = flaggedMessageActionBarAccessory.mo232getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             message = flaggedMessageActionBarAccessory.message;
@@ -36,12 +36,12 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
         if ((i10 & 4) != 0) {
             autoModerationContext = flaggedMessageActionBarAccessory.autoModerationContext;
         }
-        return flaggedMessageActionBarAccessory.m256copyu7_MRrM(str, message, autoModerationContext);
+        return flaggedMessageActionBarAccessory.m258copyu7_MRrM(str, message, autoModerationContext);
     }
 
     
-    public final String m255component13Eiw7ao() {
-        return mo230getMessageId3Eiw7ao();
+    public final String m257component13Eiw7ao() {
+        return mo232getMessageId3Eiw7ao();
     }
 
     public final Message component2() {
@@ -53,7 +53,7 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
     }
 
     
-    public final FlaggedMessageActionBarAccessory m256copyu7_MRrM(String messageId, Message message, AutoModerationContext autoModerationContext) {
+    public final FlaggedMessageActionBarAccessory m258copyu7_MRrM(String messageId, Message message, AutoModerationContext autoModerationContext) {
         q.h(messageId, "messageId");
         q.h(message, "message");
         q.h(autoModerationContext, "autoModerationContext");
@@ -68,7 +68,7 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
             return false;
         }
         FlaggedMessageActionBarAccessory flaggedMessageActionBarAccessory = (FlaggedMessageActionBarAccessory) obj;
-        return MessageId.m619equalsimpl0(mo230getMessageId3Eiw7ao(), flaggedMessageActionBarAccessory.mo230getMessageId3Eiw7ao()) && q.c(this.message, flaggedMessageActionBarAccessory.message) && q.c(this.autoModerationContext, flaggedMessageActionBarAccessory.autoModerationContext);
+        return MessageId.m621equalsimpl0(mo232getMessageId3Eiw7ao(), flaggedMessageActionBarAccessory.mo232getMessageId3Eiw7ao()) && q.c(this.message, flaggedMessageActionBarAccessory.message) && q.c(this.autoModerationContext, flaggedMessageActionBarAccessory.autoModerationContext);
     }
 
     public final AutoModerationContext getAutoModerationContext() {
@@ -81,16 +81,16 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
 
     @Override 
     
-    public String mo230getMessageId3Eiw7ao() {
+    public String mo232getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((MessageId.m620hashCodeimpl(mo230getMessageId3Eiw7ao()) * 31) + this.message.hashCode()) * 31) + this.autoModerationContext.hashCode();
+        return (((MessageId.m622hashCodeimpl(mo232getMessageId3Eiw7ao()) * 31) + this.message.hashCode()) * 31) + this.autoModerationContext.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m621toStringimpl(mo230getMessageId3Eiw7ao());
+        String str = MessageId.m623toStringimpl(mo232getMessageId3Eiw7ao());
         Message message = this.message;
         AutoModerationContext autoModerationContext = this.autoModerationContext;
         return "FlaggedMessageActionBarAccessory(messageId=" + str + ", message=" + message + ", autoModerationContext=" + autoModerationContext + ")";

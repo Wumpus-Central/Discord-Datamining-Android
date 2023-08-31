@@ -37,7 +37,7 @@ public final class LoadingRow$$serializer implements f0<LoadingRow> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f29837a, ChangeType.Serializer.INSTANCE, LoadMoreButton$$serializer.INSTANCE, h.f29804a};
+        return new KSerializer[]{m0.f29839a, ChangeType.Serializer.INSTANCE, LoadMoreButton$$serializer.INSTANCE, h.f29806a};
     }
 
     @Override 

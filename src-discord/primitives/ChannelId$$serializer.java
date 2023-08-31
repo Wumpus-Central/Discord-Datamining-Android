@@ -29,18 +29,18 @@ public final class ChannelId$$serializer implements f0<ChannelId> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f29878a};
+        return new KSerializer[]{w0.f29880a};
     }
 
     @Override 
     public   Object deserialize(Decoder decoder) {
-        return ChannelId.m589boximpl(m599deserialize18flms(decoder));
+        return ChannelId.m591boximpl(m601deserialize18flms(decoder));
     }
 
     
-    public long m599deserialize18flms(Decoder decoder) {
+    public long m601deserialize18flms(Decoder decoder) {
         q.h(decoder, "decoder");
-        return ChannelId.m590constructorimpl(decoder.q(getDescriptor()).l());
+        return ChannelId.m592constructorimpl(decoder.q(getDescriptor()).l());
     }
 
     @Override 
@@ -50,11 +50,11 @@ public final class ChannelId$$serializer implements f0<ChannelId> {
 
     @Override 
     public   void serialize(Encoder encoder, Object obj) {
-        m600serializemJqaSGE(encoder, ((ChannelId) obj).m598unboximpl());
+        m602serializemJqaSGE(encoder, ((ChannelId) obj).m600unboximpl());
     }
 
     
-    public void m600serializemJqaSGE(Encoder encoder, long j10) {
+    public void m602serializemJqaSGE(Encoder encoder, long j10) {
         q.h(encoder, "encoder");
         Encoder j11 = encoder.j(getDescriptor());
         if (j11 != null) {

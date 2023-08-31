@@ -27,7 +27,7 @@ public final class DismissCallAction implements NotificationAction {
         @Override 
         public final DismissCallAction createFromParcel(Parcel parcel) {
             q.h(parcel, "parcel");
-            return new DismissCallAction(parcel.readString(), ((ChannelId) parcel.readParcelable(DismissCallAction.class.getClassLoader())).m598unboximpl(), null);
+            return new DismissCallAction(parcel.readString(), ((ChannelId) parcel.readParcelable(DismissCallAction.class.getClassLoader())).m600unboximpl(), null);
         }
 
         
@@ -47,19 +47,19 @@ public final class DismissCallAction implements NotificationAction {
     }
 
     
-    private final long m515component2o4g7jtM() {
+    private final long m517component2o4g7jtM() {
         return this.channelId;
     }
 
     
-    public static  DismissCallAction m516copymJqaSGE$default(DismissCallAction dismissCallAction, String str, long j10, int i10, Object obj) {
+    public static  DismissCallAction m518copymJqaSGE$default(DismissCallAction dismissCallAction, String str, long j10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = dismissCallAction.getTag();
         }
         if ((i10 & 2) != 0) {
             j10 = dismissCallAction.channelId;
         }
-        return dismissCallAction.m517copymJqaSGE(str, j10);
+        return dismissCallAction.m519copymJqaSGE(str, j10);
     }
 
     public final String component1() {
@@ -67,7 +67,7 @@ public final class DismissCallAction implements NotificationAction {
     }
 
     
-    public final DismissCallAction m517copymJqaSGE(String tag, long j10) {
+    public final DismissCallAction m519copymJqaSGE(String tag, long j10) {
         q.h(tag, "tag");
         return new DismissCallAction(tag, j10, null);
     }
@@ -85,7 +85,7 @@ public final class DismissCallAction implements NotificationAction {
             return false;
         }
         DismissCallAction dismissCallAction = (DismissCallAction) obj;
-        return q.c(getTag(), dismissCallAction.getTag()) && ChannelId.m593equalsimpl0(this.channelId, dismissCallAction.channelId);
+        return q.c(getTag(), dismissCallAction.getTag()) && ChannelId.m595equalsimpl0(this.channelId, dismissCallAction.channelId);
     }
 
     @Override 
@@ -99,7 +99,7 @@ public final class DismissCallAction implements NotificationAction {
     }
 
     public int hashCode() {
-        return (getTag().hashCode() * 31) + ChannelId.m594hashCodeimpl(this.channelId);
+        return (getTag().hashCode() * 31) + ChannelId.m596hashCodeimpl(this.channelId);
     }
 
     @Override 
@@ -124,7 +124,7 @@ public final class DismissCallAction implements NotificationAction {
 
     public String toString() {
         String tag = getTag();
-        String str = ChannelId.m596toStringimpl(this.channelId);
+        String str = ChannelId.m598toStringimpl(this.channelId);
         return "DismissCallAction(tag=" + tag + ", channelId=" + str + ")";
     }
 
@@ -132,6 +132,6 @@ public final class DismissCallAction implements NotificationAction {
     public void writeToParcel(Parcel out, int i10) {
         q.h(out, "out");
         out.writeString(this.tag);
-        out.writeParcelable(ChannelId.m589boximpl(this.channelId), i10);
+        out.writeParcelable(ChannelId.m591boximpl(this.channelId), i10);
     }
 }

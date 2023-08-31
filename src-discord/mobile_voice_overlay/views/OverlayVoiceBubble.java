@@ -60,7 +60,7 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
         IconUrlUtils iconUrlUtils = IconUrlUtils.INSTANCE;
         Context context = getContext();
         q.g(context, "context");
-        str = iconUrlUtils.m490getForUser_fRzTXg(context, UserId.m653boximpl(user.m503getUserIdre6GcUE()), user.getAvatar(), (r16 & 8) != 0 ? null : Integer.valueOf(user.getDiscriminator()), (r16 & 16) != 0 ? false : false, (r16 & 32) != 0 ? null : null);
+        str = iconUrlUtils.m492getForUser_fRzTXg(context, UserId.m655boximpl(user.m505getUserIdre6GcUE()), user.getAvatar(), (r16 & 8) != 0 ? null : Integer.valueOf(user.getDiscriminator()), (r16 & 16) != 0 ? false : false, (r16 & 32) != 0 ? null : null);
         simpleDraweeView.setImageURI(str);
         if (user.getSpeaking()) {
             fadeActive();
@@ -89,8 +89,8 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
         }
         super.onConfigurationChanged(configuration);
         OverlayBubbleWrap.animateToCoordinate$default(this, i10, getWindowLayoutParams().y, null, 4, null);
-        getSpringAnimationX().u();
-        getSpringAnimationY().u();
+        getSpringAnimationX().t();
+        getSpringAnimationY().t();
     }
 
     @Override 

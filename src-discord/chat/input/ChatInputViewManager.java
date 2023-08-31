@@ -13,7 +13,6 @@ import com.discord.keyboard.KeyboardManager;
 import com.discord.reactevents.ReactEvents;
 import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.uimanager.ThemedReactContext;
-import com.facebook.react.uimanager.UIManagerHelper;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.viewmanagers.DCDChatInputManagerDelegate;
@@ -23,7 +22,6 @@ import java.util.Map;
 import jf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Ref$ObjectRef;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
 
@@ -77,50 +75,48 @@ public final class ChatInputViewManager extends ViewGroupManager<ChatInputRootVi
     }
 
     
-    
     @Override 
     public ChatInputRootView createViewInstance(final ThemedReactContext reactContext) {
         q.h(reactContext, "reactContext");
         final ChatInputRootView chatInputRootView = new ChatInputRootView(reactContext, null, 0, 6, null);
-        final Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
-        ref$ObjectRef.f21240j = UIManagerHelper.getEventDispatcherForReactTag(reactContext, chatInputRootView.getId());
         chatInputRootView.setListener(new ChatInputRootView.ChatInputListener() { 
             @Override 
             public void onContentSizeChange(int i10, int i11) {
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f21240j, reactContext, chatInputRootView, new OnContentSizeChangeEvent(i10, i11));
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(reactContext, chatInputRootView, new OnContentSizeChangeEvent(i10, i11));
             }
 
             @Override 
             public void onEndBlur(String text) {
                 q.h(text, "text");
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f21240j, reactContext, chatInputRootView, new OnEndBlurEvent(text));
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(reactContext, chatInputRootView, new OnEndBlurEvent(text));
             }
 
             @Override 
             public void onFocus(int i10, int i11) {
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f21240j, reactContext, chatInputRootView, new OnFocusEvent(i10, i11, 0, 4, (DefaultConstructorMarker) null));
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(reactContext, chatInputRootView, new OnFocusEvent(i10, i11, 0, 4, (DefaultConstructorMarker) null));
             }
 
             @Override 
             public void onImageInserted(Uri uri) {
                 q.h(uri, "uri");
+                ReactEvents reactEvents$chat_input_release = ChatInputViewManager.this.getReactEvents$chat_input_release();
                 ThemedReactContext themedReactContext = reactContext;
                 ChatInputRootView chatInputRootView2 = chatInputRootView;
                 String uri2 = uri.toString();
                 q.g(uri2, "uri.toString()");
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f21240j, themedReactContext, chatInputRootView2, new OnPasteImageEvent(uri2, reactContext.getContentResolver().getType(uri)));
+                reactEvents$chat_input_release.emitEvent(themedReactContext, chatInputRootView2, new OnPasteImageEvent(uri2, reactContext.getContentResolver().getType(uri)));
             }
 
             @Override 
             public void onRequestSend() {
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f21240j, reactContext, chatInputRootView, new OnRequestSendEvent());
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(reactContext, chatInputRootView, new OnRequestSendEvent());
             }
 
             @Override 
             public void onTextOrSelectionChanged(int i10, int i11, String text, String editId) {
                 q.h(text, "text");
                 q.h(editId, "editId");
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f21240j, reactContext, chatInputRootView, new OnSelectionOrTextChangeEvent(i10, i11, text, editId));
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(reactContext, chatInputRootView, new OnSelectionOrTextChangeEvent(i10, i11, text, editId));
             }
         });
         KeyboardManager.INSTANCE.addKeyboardListener(chatInputRootView);

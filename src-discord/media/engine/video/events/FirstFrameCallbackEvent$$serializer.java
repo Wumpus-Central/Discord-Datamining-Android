@@ -37,8 +37,8 @@ public final class FirstFrameCallbackEvent$$serializer implements f0<FirstFrameC
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29762a;
-        return new KSerializer[]{m0.f29837a, a2Var, w0.f29878a, a2Var};
+        a2 a2Var = a2.f29764a;
+        return new KSerializer[]{m0.f29839a, a2Var, w0.f29880a, a2Var};
     }
 
     @Override 

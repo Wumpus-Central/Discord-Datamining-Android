@@ -1,5 +1,6 @@
 package com.discord.theme.utils;
 
+import ag.j;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -17,7 +18,7 @@ import kotlin.text.MatchResult;
 import kotlin.text.Regex;
 import xf.c;
 
-@Metadata(d1 = {"\u0000F\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\u001a\u0010\u0002\u001a\u00020\u00032\b\b\u0001\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0005\u001a\u00020\u0006H\u0007\u001a\u0012\u0010\u0007\u001a\u00020\u00032\b\u0010\b\u001a\u0004\u0018\u00010\tH\u0007\u001a\u0016\u0010\n\u001a\u00020\u0003*\u00020\u000b2\b\b\u0001\u0010\f\u001a\u00020\u0003H\u0007\u001a\u0016\u0010\n\u001a\u00020\u0003*\u00020\r2\b\b\u0001\u0010\u000e\u001a\u00020\u0003H\u0007\u001a \u0010\u000f\u001a\u00020\u0003*\u00020\u000b2\b\b\u0001\u0010\u0010\u001a\u00020\u00032\b\b\u0001\u0010\u0011\u001a\u00020\u0003H\u0007\u001a(\u0010\u000f\u001a\u00020\u0003*\u00020\u000b2\b\b\u0001\u0010\u0010\u001a\u00020\u00032\b\b\u0001\u0010\u0011\u001a\u00020\u00032\u0006\u0010\u0012\u001a\u00020\u0013H\u0007\u001a\u001b\u0010\u0014\u001a\u00020\u0015*\u00020\u00162\n\b\u0001\u0010\u0017\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\u0018\u001a\u001b\u0010\u0014\u001a\u00020\u0015*\u00020\u00192\n\b\u0001\u0010\u0017\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\u001a\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001b"}, d2 = {"rgbaPattern", "Lkotlin/text/Regex;", "argbWithAdjustedAlpha", "", ViewProps.COLOR, "alpha", "", "rgbaToArgb", "rgbaString", "", "getColorCompat", "Landroid/content/Context;", "id", "Landroid/view/View;", "colorRes", "getThemeColor", "lightColorRes", "darkColorRes", "theme", "Lcom/discord/theme/DiscordTheme;", "setTintColor", "", "Landroid/widget/ImageView;", "colorInt", "(Landroid/widget/ImageView;Ljava/lang/Integer;)V", "Lcom/facebook/drawee/view/SimpleDraweeView;", "(Lcom/facebook/drawee/view/SimpleDraweeView;Ljava/lang/Integer;)V", "theme_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000F\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\b\b\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\u001a\u0010\u0002\u001a\u00020\u00032\b\b\u0001\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0005\u001a\u00020\u0006H\u0007\u001a8\u0010\u0007\u001a\u00020\u00032\b\b\u0001\u0010\b\u001a\u00020\u00032\b\b\u0001\u0010\t\u001a\u00020\u00032\u0006\u0010\n\u001a\u00020\u00062\b\b\u0002\u0010\u000b\u001a\u00020\u00062\b\b\u0002\u0010\f\u001a\u00020\u0006H\u0007\u001a\u0012\u0010\r\u001a\u00020\u00032\b\u0010\u000e\u001a\u0004\u0018\u00010\u000fH\u0007\u001a\u0016\u0010\u0010\u001a\u00020\u0003*\u00020\u00112\b\b\u0001\u0010\u0012\u001a\u00020\u0003H\u0007\u001a\u0016\u0010\u0010\u001a\u00020\u0003*\u00020\u00132\b\b\u0001\u0010\u0014\u001a\u00020\u0003H\u0007\u001a \u0010\u0015\u001a\u00020\u0003*\u00020\u00112\b\b\u0001\u0010\u0016\u001a\u00020\u00032\b\b\u0001\u0010\u0017\u001a\u00020\u0003H\u0007\u001a(\u0010\u0015\u001a\u00020\u0003*\u00020\u00112\b\b\u0001\u0010\u0016\u001a\u00020\u00032\b\b\u0001\u0010\u0017\u001a\u00020\u00032\u0006\u0010\u0018\u001a\u00020\u0019H\u0007\u001a\u001b\u0010\u001a\u001a\u00020\u001b*\u00020\u001c2\n\b\u0001\u0010\u001d\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\u001e\u001a\u001b\u0010\u001a\u001a\u00020\u001b*\u00020\u001f2\n\b\u0001\u0010\u001d\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010 \"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006!"}, d2 = {"rgbaPattern", "Lkotlin/text/Regex;", "argbWithAdjustedAlpha", "", ViewProps.COLOR, "alpha", "", "interpolateColors", "colorA", "colorB", "t", "minT", "maxT", "rgbaToArgb", "rgbaString", "", "getColorCompat", "Landroid/content/Context;", "id", "Landroid/view/View;", "colorRes", "getThemeColor", "lightColorRes", "darkColorRes", "theme", "Lcom/discord/theme/DiscordTheme;", "setTintColor", "", "Landroid/widget/ImageView;", "colorInt", "(Landroid/widget/ImageView;Ljava/lang/Integer;)V", "Lcom/facebook/drawee/view/SimpleDraweeView;", "(Lcom/facebook/drawee/view/SimpleDraweeView;Ljava/lang/Integer;)V", "theme_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 
 public final class ColorUtilsKt {
     private static final Regex rgbaPattern = new Regex("rgba\\((\\d+),\\s*(\\d+),\\s*(\\d+),\\s*(\\d+(?:\\.\\d*)?|\\.\\d+)\\)");
@@ -36,6 +37,43 @@ public final class ColorUtilsKt {
     public static final int getThemeColor(Context context, int i10, int i11) {
         q.h(context, "<this>");
         return getThemeColor(context, i10, i11, ThemeManagerKt.getTheme());
+    }
+
+    public static final int interpolateColors(int i10, int i11, float f10, float f11, float f12) {
+        int j10;
+        int j11;
+        int j12;
+        int j13;
+        if (f10 <= f11) {
+            return i10;
+        }
+        if (f10 >= f12) {
+            return i11;
+        }
+        int red = Color.red(i10);
+        int green = Color.green(i10);
+        int blue = Color.blue(i10);
+        int alpha = Color.alpha(i10);
+        int red2 = Color.red(i11);
+        int green2 = Color.green(i11);
+        int blue2 = Color.blue(i11);
+        int alpha2 = Color.alpha(i11);
+        float f13 = (f10 - f11) / (f12 - f11);
+        j10 = j.j((int) (red + ((red2 - red) * f13)), 0, 255);
+        j11 = j.j((int) (green + ((green2 - green) * f13)), 0, 255);
+        j12 = j.j((int) (blue + ((blue2 - blue) * f13)), 0, 255);
+        j13 = j.j((int) (alpha + ((alpha2 - alpha) * f13)), 0, 255);
+        return Color.argb(j13, j10, j11, j12);
+    }
+
+    public static  int interpolateColors$default(int i10, int i11, float f10, float f11, float f12, int i12, Object obj) {
+        if ((i12 & 8) != 0) {
+            f11 = 0.0f;
+        }
+        if ((i12 & 16) != 0) {
+            f12 = 1.0f;
+        }
+        return interpolateColors(i10, i11, f10, f11, f12);
     }
 
     public static final int rgbaToArgb(String str) {

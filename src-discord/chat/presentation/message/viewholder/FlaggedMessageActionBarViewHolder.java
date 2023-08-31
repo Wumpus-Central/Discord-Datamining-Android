@@ -27,14 +27,14 @@ public final class FlaggedMessageActionBarViewHolder extends MessagePartViewHold
     public static final void bind$lambda$0(Function2 onTapAutoModerationActions, String messageId, long j10, View view) {
         q.h(onTapAutoModerationActions, "$onTapAutoModerationActions");
         q.h(messageId, "$messageId");
-        onTapAutoModerationActions.invoke(MessageId.m615boximpl(messageId), ChannelId.m589boximpl(j10));
+        onTapAutoModerationActions.invoke(MessageId.m617boximpl(messageId), ChannelId.m591boximpl(j10));
     }
 
     
     public static final void bind$lambda$1(Function2 onTapAutoModerationFeedback, String messageId, long j10, View view) {
         q.h(onTapAutoModerationFeedback, "$onTapAutoModerationFeedback");
         q.h(messageId, "$messageId");
-        onTapAutoModerationFeedback.invoke(MessageId.m615boximpl(messageId), ChannelId.m589boximpl(j10));
+        onTapAutoModerationFeedback.invoke(MessageId.m617boximpl(messageId), ChannelId.m591boximpl(j10));
     }
 
     public final void bind(FlaggedMessageActionBarAccessory messageActionBarAccessory, final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationActions, final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationFeedback) {

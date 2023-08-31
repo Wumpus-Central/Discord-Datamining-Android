@@ -7,7 +7,6 @@ import android.graphics.PorterDuffColorFilter;
 import android.net.Uri;
 import android.text.style.AbsoluteSizeSpan;
 import android.text.style.LeadingMarginSpan;
-import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.R;
 import com.discord.chat.bridge.contentnode.CommandMentionContentNode;
 import com.discord.chat.bridge.contentnode.ContentNode;
@@ -27,7 +26,6 @@ import com.discord.span.utilities.spannable.BulletSpan;
 import com.discord.span.utilities.spannable.OrderedListBulletSpan;
 import com.discord.span.utilities.spannable.VerticalPaddingSpan;
 import com.discord.theme.DiscordTheme;
-import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.controller.a;
 import com.facebook.drawee.drawable.ScalingUtils;
@@ -160,7 +158,7 @@ public final class TextUtilsKt {
         GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f7771e);
         com.facebook.drawee.generic.a a10 = com.facebook.drawee.generic.a.a(f10);
         a10.r(f11);
-        a10.u(a.EnumC0117a.BITMAP_ONLY);
+        a10.u(a.EnumC0118a.BITMAP_ONLY);
         w10.K(a10);
         if (rc2.spoilerIsHidden()) {
             w10.v(new PorterDuffColorFilter(rc2.getTheme().getSpoilerHiddenBackground(), PorterDuff.Mode.SRC_IN));
@@ -253,10 +251,6 @@ public final class TextUtilsKt {
             return new DraweeSpanStringBuilder(((PrimitiveStructurableText) structurableText).getContent());
         }
         throw new jf.q();
-    }
-
-    public static  DraweeSpanStringBuilder toSpannable$default(StructurableText structurableText, Context context, String str, boolean z10, boolean z11, boolean z12, Paint paint, Function1 function1, Function1 function12, Function3 function3, Function4 function4, Function2 function2, Function1 function13, Function1 function14, Function1 function15, Function1 function16, Function1 function17, Function0 function0, boolean z13, DiscordTheme discordTheme, float f10, int i10, Object obj) {
-        return toSpannable(structurableText, context, str, z10, z11, z12, paint, (i10 & 64) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : function1, (i10 & 128) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : function12, (i10 & 256) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : function3, (i10 & 512) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : function4, (i10 & 1024) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : function2, (i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : function13, (i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : function14, (i10 & 8192) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : function15, (i10 & 16384) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : function16, (32768 & i10) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : function17, (65536 & i10) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : function0, (131072 & i10) != 0 ? false : z13, (262144 & i10) != 0 ? ThemeManagerKt.getTheme() : discordTheme, (i10 & 524288) != 0 ? -1.0f : f10);
     }
 
     

@@ -94,7 +94,7 @@ public final class ChannelNameContentNode extends ContentNode {
             z11 = true;
         }
         if (z11) {
-            output.B(serialDesc, 2, a2.f29762a, self.icon);
+            output.B(serialDesc, 2, a2.f29764a, self.icon);
         }
         output.o(serialDesc, 3, new wi.f(ContentNodeSerializer.INSTANCE), self.content);
     }

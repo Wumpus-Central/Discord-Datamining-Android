@@ -8,11 +8,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.bridge.spoiler.SpoilerConfig;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.databinding.PostPreviewEmbedViewBinding;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.core.DCDButton;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
@@ -21,6 +33,7 @@ import com.discord.misc.utilities.view.ViewClippingUtilsKt;
 import com.discord.misc.utilities.view.ViewUtilsKt;
 import com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchUtilsKt;
 import com.discord.theme.ThemeManagerKt;
+import com.facebook.drawee.span.DraweeSpanStringBuilder;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import kotlin.Metadata;
@@ -80,7 +93,8 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
     }
 
     
-    private final void m334setFooterAyv7vGE(StructurableText structurableText, String str) {
+    private final void m336setFooterAyv7vGE(StructurableText structurableText, String str) {
+        DraweeSpanStringBuilder spannable;
         SimpleDraweeSpanTextView setFooter_Ayv7vGE$lambda$4 = this.binding.footer;
         q.g(setFooter_Ayv7vGE$lambda$4, "setFooter_Ayv7vGE$lambda$4");
         Context context = setFooter_Ayv7vGE$lambda$4.getContext();
@@ -90,7 +104,8 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
         TextPaint paint = setFooter_Ayv7vGE$lambda$4.getPaint();
         q.g(context, "context");
         q.g(paint, "paint");
-        ViewUtilsKt.setOptionalText(setFooter_Ayv7vGE$lambda$4, TextUtilsKt.toSpannable$default(structurableText, context, str, false, false, true, paint, null, null, null, null, null, null, null, null, null, null, null, true, null, baselineHeight, 393152, null));
+        spannable = TextUtilsKt.toSpannable(structurableText, context, str, false, false, true, paint, (r44 & 64) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : null, (r44 & 128) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r44 & 256) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r44 & 512) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r44 & 1024) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r44 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r44 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r44 & 8192) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r44 & 16384) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (32768 & r44) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (65536 & r44) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (131072 & r44) != 0 ? false : true, (262144 & r44) != 0 ? ThemeManagerKt.getTheme() : null, (r44 & 524288) != 0 ? -1.0f : baselineHeight);
+        ViewUtilsKt.setOptionalText(setFooter_Ayv7vGE$lambda$4, spannable);
         NestedScrollOnTouchUtilsKt.enableNestedSpanClickListener$default(setFooter_Ayv7vGE$lambda$4, false, 1, null);
     }
 
@@ -126,7 +141,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
     }
 
     
-    public final void m335setPostPreviewEmbedOGpb6Gk(String title, String str, String ctaCopy, int i10, StructurableText footer, String messageId, String str2, String str3, String str4, String str5, View.OnClickListener onButtonClickListener, boolean z10, SpoilerConfig spoilerConfig) {
+    public final void m337setPostPreviewEmbedOGpb6Gk(String title, String str, String ctaCopy, int i10, StructurableText footer, String messageId, String str2, String str3, String str4, String str5, View.OnClickListener onButtonClickListener, boolean z10, SpoilerConfig spoilerConfig) {
         q.h(title, "title");
         q.h(ctaCopy, "ctaCopy");
         q.h(footer, "footer");
@@ -136,7 +151,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
         setButtonColor(i10);
         setTitle(title);
         setSubtitle(str);
-        m334setFooterAyv7vGE(footer, messageId);
+        m336setFooterAyv7vGE(footer, messageId);
         setCoverImage(str2, str3, str5);
         setCoverImageButtonText(str4);
         this.binding.cta.setOnClickButtonListener(onButtonClickListener);

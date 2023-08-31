@@ -40,8 +40,8 @@ public final class ComponentEmoji$$serializer implements f0<ComponentEmoji> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29762a;
-        return new KSerializer[]{a.u(a2Var), a2Var, a.u(a2Var), h.f29804a, a.u(a2Var)};
+        a2 a2Var = a2.f29764a;
+        return new KSerializer[]{a.u(a2Var), a2Var, a.u(a2Var), h.f29806a, a.u(a2Var)};
     }
 
     @Override 
@@ -56,7 +56,7 @@ public final class ComponentEmoji$$serializer implements f0<ComponentEmoji> {
         SerialDescriptor descriptor2 = getDescriptor();
         c b10 = decoder.b(descriptor2);
         if (b10.p()) {
-            a2 a2Var = a2.f29762a;
+            a2 a2Var = a2.f29764a;
             obj = b10.n(descriptor2, 0, a2Var, null);
             str = b10.m(descriptor2, 1);
             obj2 = b10.n(descriptor2, 2, a2Var, null);
@@ -76,19 +76,19 @@ public final class ComponentEmoji$$serializer implements f0<ComponentEmoji> {
                 if (o10 == -1) {
                     z11 = false;
                 } else if (o10 == 0) {
-                    obj4 = b10.n(descriptor2, 0, a2.f29762a, obj4);
+                    obj4 = b10.n(descriptor2, 0, a2.f29764a, obj4);
                     i11 |= 1;
                 } else if (o10 == 1) {
                     str2 = b10.m(descriptor2, 1);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    obj5 = b10.n(descriptor2, 2, a2.f29762a, obj5);
+                    obj5 = b10.n(descriptor2, 2, a2.f29764a, obj5);
                     i11 |= 4;
                 } else if (o10 == 3) {
                     z12 = b10.C(descriptor2, 3);
                     i11 |= 8;
                 } else if (o10 == 4) {
-                    obj6 = b10.n(descriptor2, 4, a2.f29762a, obj6);
+                    obj6 = b10.n(descriptor2, 4, a2.f29764a, obj6);
                     i11 |= 16;
                 } else {
                     throw new n(o10);

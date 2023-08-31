@@ -50,9 +50,9 @@ public final class RoleSelectComponent$$serializer implements f0<RoleSelectCompo
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29837a;
-        a2 a2Var = a2.f29762a;
-        return new KSerializer[]{a.u(new f(SearchableSelectItem$$serializer.INSTANCE)), m0Var, new f(m0Var), a2Var, a2Var, a.u(a2Var), a.u(a2Var), m0Var, m0Var, h.f29804a, ActionComponentState.Serializer.INSTANCE};
+        m0 m0Var = m0.f29839a;
+        a2 a2Var = a2.f29764a;
+        return new KSerializer[]{a.u(new f(SearchableSelectItem$$serializer.INSTANCE)), m0Var, new f(m0Var), a2Var, a2Var, a.u(a2Var), a.u(a2Var), m0Var, m0Var, h.f29806a, ActionComponentState.Serializer.INSTANCE};
     }
 
     @Override 
@@ -80,10 +80,10 @@ public final class RoleSelectComponent$$serializer implements f0<RoleSelectCompo
         if (b10.p()) {
             obj5 = b10.n(descriptor2, 0, new f(SearchableSelectItem$$serializer.INSTANCE), null);
             i12 = b10.i(descriptor2, 1);
-            obj = b10.y(descriptor2, 2, new f(m0.f29837a), null);
+            obj = b10.y(descriptor2, 2, new f(m0.f29839a), null);
             str2 = b10.m(descriptor2, 3);
             str = b10.m(descriptor2, 4);
-            a2 a2Var = a2.f29762a;
+            a2 a2Var = a2.f29764a;
             obj2 = b10.n(descriptor2, 5, a2Var, null);
             obj3 = b10.n(descriptor2, 6, a2Var, null);
             i11 = b10.i(descriptor2, 7);
@@ -123,7 +123,7 @@ public final class RoleSelectComponent$$serializer implements f0<RoleSelectCompo
                         i14 = 10;
                         i15 = 9;
                     case 2:
-                        obj = b10.y(descriptor2, 2, new f(m0.f29837a), obj);
+                        obj = b10.y(descriptor2, 2, new f(m0.f29839a), obj);
                         i17 |= 4;
                         i14 = 10;
                         i15 = 9;
@@ -138,11 +138,11 @@ public final class RoleSelectComponent$$serializer implements f0<RoleSelectCompo
                         i14 = 10;
                     case 5:
                         c10 = 5;
-                        obj2 = b10.n(descriptor2, 5, a2.f29762a, obj2);
+                        obj2 = b10.n(descriptor2, 5, a2.f29764a, obj2);
                         i17 |= 32;
                         i14 = 10;
                     case 6:
-                        obj6 = b10.n(descriptor2, 6, a2.f29762a, obj6);
+                        obj6 = b10.n(descriptor2, 6, a2.f29764a, obj6);
                         i17 |= 64;
                     case 7:
                         i20 = b10.i(descriptor2, i16);

@@ -22,7 +22,7 @@ final class SpoilerAttributes$configure$3$1 extends s implements Function1<Spoil
     @Override 
     public   Unit invoke(SpoilerIdentifier spoilerIdentifier) {
         m130invokeV2PEE7g(spoilerIdentifier.m137unboximpl());
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     

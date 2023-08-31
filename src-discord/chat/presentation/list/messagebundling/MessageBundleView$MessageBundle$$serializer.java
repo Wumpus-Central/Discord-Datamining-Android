@@ -46,7 +46,7 @@ public final class MessageBundleView$MessageBundle$$serializer implements f0<Mes
     @Override 
     public KSerializer<?>[] childSerializers() {
         MessageRow$$serializer messageRow$$serializer = MessageRow$$serializer.INSTANCE;
-        return new KSerializer[]{a.u(MessageFrameFeedHeaderView$MessageBundleHeader$$serializer.INSTANCE), new f(messageRow$$serializer), a.u(e0.f29787a), new f(messageRow$$serializer), a.u(a2.f29762a)};
+        return new KSerializer[]{a.u(MessageFrameFeedHeaderView$MessageBundleHeader$$serializer.INSTANCE), new f(messageRow$$serializer), a.u(e0.f29789a), new f(messageRow$$serializer), a.u(a2.f29764a)};
     }
 
     @Override 
@@ -65,9 +65,9 @@ public final class MessageBundleView$MessageBundle$$serializer implements f0<Mes
             obj5 = b10.n(descriptor2, 0, MessageFrameFeedHeaderView$MessageBundleHeader$$serializer.INSTANCE, null);
             MessageRow$$serializer messageRow$$serializer = MessageRow$$serializer.INSTANCE;
             obj = b10.y(descriptor2, 1, new f(messageRow$$serializer), null);
-            obj2 = b10.n(descriptor2, 2, e0.f29787a, null);
+            obj2 = b10.n(descriptor2, 2, e0.f29789a, null);
             obj4 = b10.y(descriptor2, 3, new f(messageRow$$serializer), null);
-            obj3 = b10.n(descriptor2, 4, a2.f29762a, null);
+            obj3 = b10.n(descriptor2, 4, a2.f29764a, null);
             i10 = 31;
         } else {
             boolean z10 = true;
@@ -87,13 +87,13 @@ public final class MessageBundleView$MessageBundle$$serializer implements f0<Mes
                     obj7 = b10.y(descriptor2, 1, new f(MessageRow$$serializer.INSTANCE), obj7);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    obj8 = b10.n(descriptor2, 2, e0.f29787a, obj8);
+                    obj8 = b10.n(descriptor2, 2, e0.f29789a, obj8);
                     i11 |= 4;
                 } else if (o10 == 3) {
                     obj9 = b10.y(descriptor2, 3, new f(MessageRow$$serializer.INSTANCE), obj9);
                     i11 |= 8;
                 } else if (o10 == 4) {
-                    obj10 = b10.n(descriptor2, 4, a2.f29762a, obj10);
+                    obj10 = b10.n(descriptor2, 4, a2.f29764a, obj10);
                     i11 |= 16;
                 } else {
                     throw new n(o10);

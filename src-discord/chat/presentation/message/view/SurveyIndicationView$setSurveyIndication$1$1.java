@@ -27,12 +27,12 @@ final class SurveyIndicationView$setSurveyIndication$1$1 extends s implements Fu
     @Override 
     public   Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     
     public final void invoke2(LinkContentNode node) {
         q.h(node, "node");
-        this.$onLinkClicked.invoke(MessageId.m615boximpl(this.$messageId), node);
+        this.$onLinkClicked.invoke(MessageId.m617boximpl(this.$messageId), node);
     }
 }

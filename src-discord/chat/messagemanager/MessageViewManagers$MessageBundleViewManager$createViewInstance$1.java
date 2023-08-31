@@ -29,6 +29,6 @@ public final class MessageViewManagers$MessageBundleViewManager$createViewInstan
     @Override 
     public   Unit invoke(View view, Integer num, Integer num2) {
         invoke(view, num.intValue(), num2.intValue());
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 }

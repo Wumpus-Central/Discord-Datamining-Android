@@ -27,8 +27,8 @@ public final class MessageViewManagers$MessageBundleViewManager$setData$1$3 exte
 
     @Override 
     public   Unit invoke(MessageId messageId) {
-        m155invoke1xi1bu0(messageId.m623unboximpl());
-        return Unit.f21213a;
+        m155invoke1xi1bu0(messageId.m625unboximpl());
+        return Unit.f21215a;
     }
 
     

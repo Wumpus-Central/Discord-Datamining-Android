@@ -40,8 +40,8 @@ public final class LoadMoreButton$$serializer implements f0<LoadMoreButton> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29837a;
-        return new KSerializer[]{LoadingAction$$serializer.INSTANCE, a2.f29762a, m0Var, a.u(m0Var), a.u(m0Var)};
+        m0 m0Var = m0.f29839a;
+        return new KSerializer[]{LoadingAction$$serializer.INSTANCE, a2.f29764a, m0Var, a.u(m0Var), a.u(m0Var)};
     }
 
     @Override 
@@ -59,7 +59,7 @@ public final class LoadMoreButton$$serializer implements f0<LoadMoreButton> {
             obj3 = b10.y(descriptor2, 0, LoadingAction$$serializer.INSTANCE, null);
             str = b10.m(descriptor2, 1);
             i10 = b10.i(descriptor2, 2);
-            m0 m0Var = m0.f29837a;
+            m0 m0Var = m0.f29839a;
             obj2 = b10.n(descriptor2, 3, m0Var, null);
             obj = b10.n(descriptor2, 4, m0Var, null);
             i11 = 31;
@@ -85,10 +85,10 @@ public final class LoadMoreButton$$serializer implements f0<LoadMoreButton> {
                     i12 = b10.i(descriptor2, 2);
                     i13 |= 4;
                 } else if (o10 == 3) {
-                    obj5 = b10.n(descriptor2, 3, m0.f29837a, obj5);
+                    obj5 = b10.n(descriptor2, 3, m0.f29839a, obj5);
                     i13 |= 8;
                 } else if (o10 == 4) {
-                    obj6 = b10.n(descriptor2, 4, m0.f29837a, obj6);
+                    obj6 = b10.n(descriptor2, 4, m0.f29839a, obj6);
                     i13 |= 16;
                 } else {
                     throw new n(o10);

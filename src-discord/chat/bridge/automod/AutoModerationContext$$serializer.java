@@ -42,7 +42,7 @@ public final class AutoModerationContext$$serializer implements f0<AutoModeratio
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29762a;
+        a2 a2Var = a2.f29764a;
         return new KSerializer[]{a2Var, a2Var, a.u(a2Var), a.u(a2Var), a.u(a2Var), a2Var, a2Var, FlaggedMessageEmbed$$serializer.INSTANCE, a.u(AutoModerationNotification$$serializer.INSTANCE)};
     }
 
@@ -66,7 +66,7 @@ public final class AutoModerationContext$$serializer implements f0<AutoModeratio
         if (b10.p()) {
             str4 = b10.m(descriptor2, 0);
             str3 = b10.m(descriptor2, 1);
-            a2 a2Var = a2.f29762a;
+            a2 a2Var = a2.f29764a;
             obj = b10.n(descriptor2, 2, a2Var, null);
             obj4 = b10.n(descriptor2, 3, a2Var, null);
             obj2 = b10.n(descriptor2, 4, a2Var, null);
@@ -103,17 +103,17 @@ public final class AutoModerationContext$$serializer implements f0<AutoModeratio
                         i11 = 7;
                         break;
                     case 2:
-                        obj = b10.n(descriptor2, 2, a2.f29762a, obj);
+                        obj = b10.n(descriptor2, 2, a2.f29764a, obj);
                         i12 |= 4;
                         i11 = 7;
                         break;
                     case 3:
-                        obj8 = b10.n(descriptor2, 3, a2.f29762a, obj8);
+                        obj8 = b10.n(descriptor2, 3, a2.f29764a, obj8);
                         i12 |= 8;
                         i11 = 7;
                         continue;
                     case 4:
-                        obj2 = b10.n(descriptor2, 4, a2.f29762a, obj2);
+                        obj2 = b10.n(descriptor2, 4, a2.f29764a, obj2);
                         i12 |= 16;
                         break;
                     case 5:

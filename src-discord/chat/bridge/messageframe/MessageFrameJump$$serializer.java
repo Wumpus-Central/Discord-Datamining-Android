@@ -37,7 +37,7 @@ public final class MessageFrameJump$$serializer implements f0<MessageFrameJump> 
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29762a;
+        a2 a2Var = a2.f29764a;
         return new KSerializer[]{MessageFrameType.Serializer.INSTANCE, a.u(a2Var), a.u(a2Var)};
     }
 
@@ -53,7 +53,7 @@ public final class MessageFrameJump$$serializer implements f0<MessageFrameJump> 
         Object obj4 = null;
         if (b10.p()) {
             obj3 = b10.y(descriptor2, 0, MessageFrameType.Serializer.INSTANCE, null);
-            a2 a2Var = a2.f29762a;
+            a2 a2Var = a2.f29764a;
             obj = b10.n(descriptor2, 1, a2Var, null);
             obj2 = b10.n(descriptor2, 2, a2Var, null);
             i10 = 7;
@@ -70,10 +70,10 @@ public final class MessageFrameJump$$serializer implements f0<MessageFrameJump> 
                     obj4 = b10.y(descriptor2, 0, MessageFrameType.Serializer.INSTANCE, obj4);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    obj5 = b10.n(descriptor2, 1, a2.f29762a, obj5);
+                    obj5 = b10.n(descriptor2, 1, a2.f29764a, obj5);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    obj6 = b10.n(descriptor2, 2, a2.f29762a, obj6);
+                    obj6 = b10.n(descriptor2, 2, a2.f29764a, obj6);
                     i11 |= 4;
                 } else {
                     throw new n(o10);

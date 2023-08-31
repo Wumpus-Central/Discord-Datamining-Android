@@ -39,8 +39,8 @@ public final class ContactsDataEntry$$serializer implements f0<ContactsDataEntry
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29762a;
-        return new KSerializer[]{a2Var, a2Var, a2Var, new v1(kotlin.jvm.internal.f0.b(ContactName.class), ContactName$$serializer.INSTANCE), h.f29804a, new v1(kotlin.jvm.internal.f0.b(String.class), a2Var)};
+        a2 a2Var = a2.f29764a;
+        return new KSerializer[]{a2Var, a2Var, a2Var, new v1(kotlin.jvm.internal.f0.b(ContactName.class), ContactName$$serializer.INSTANCE), h.f29806a, new v1(kotlin.jvm.internal.f0.b(String.class), a2Var)};
     }
 
     @Override 
@@ -63,7 +63,7 @@ public final class ContactsDataEntry$$serializer implements f0<ContactsDataEntry
             str = b10.m(descriptor2, 2);
             obj = b10.y(descriptor2, 3, new v1(kotlin.jvm.internal.f0.b(ContactName.class), ContactName$$serializer.INSTANCE), null);
             z10 = b10.C(descriptor2, 4);
-            obj2 = b10.y(descriptor2, 5, new v1(kotlin.jvm.internal.f0.b(String.class), a2.f29762a), null);
+            obj2 = b10.y(descriptor2, 5, new v1(kotlin.jvm.internal.f0.b(String.class), a2.f29764a), null);
             i10 = 63;
         } else {
             boolean z11 = true;
@@ -107,7 +107,7 @@ public final class ContactsDataEntry$$serializer implements f0<ContactsDataEntry
                         c10 = 3;
                         i11 = 2;
                     case 5:
-                        obj4 = b10.y(descriptor2, 5, new v1(kotlin.jvm.internal.f0.b(String.class), a2.f29762a), obj4);
+                        obj4 = b10.y(descriptor2, 5, new v1(kotlin.jvm.internal.f0.b(String.class), a2.f29764a), obj4);
                         i12 |= 32;
                         c10 = 3;
                         i11 = 2;

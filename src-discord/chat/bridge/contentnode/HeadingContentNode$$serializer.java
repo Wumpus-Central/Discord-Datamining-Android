@@ -35,7 +35,7 @@ public final class HeadingContentNode$$serializer implements f0<HeadingContentNo
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f29837a, new f(ContentNodeSerializer.INSTANCE)};
+        return new KSerializer[]{m0.f29839a, new f(ContentNodeSerializer.INSTANCE)};
     }
 
     @Override 

@@ -40,7 +40,7 @@ public final class VoiceMessagePlaybackEndedData$$serializer implements f0<Voice
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        e0 e0Var = e0.f29787a;
+        e0 e0Var = e0.f29789a;
         return new KSerializer[]{MessageId$$serializer.INSTANCE, e0Var, e0Var, UserId$$serializer.INSTANCE, e0Var};
     }
 
@@ -100,7 +100,7 @@ public final class VoiceMessagePlaybackEndedData$$serializer implements f0<Voice
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
-        return new VoiceMessagePlaybackEndedData(i10, messageId != null ? messageId.m623unboximpl() : null, f12, f11, (UserId) obj, f10, null, null);
+        return new VoiceMessagePlaybackEndedData(i10, messageId != null ? messageId.m625unboximpl() : null, f12, f11, (UserId) obj, f10, null, null);
     }
 
     @Override 

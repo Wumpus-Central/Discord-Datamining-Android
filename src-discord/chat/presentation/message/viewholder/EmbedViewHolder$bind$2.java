@@ -19,12 +19,12 @@ public  class EmbedViewHolder$bind$2 extends n implements Function3<MessageId, S
 
     @Override 
     public   Unit invoke(MessageId messageId, String str, String str2) {
-        m348invokeu7_MRrM(messageId.m623unboximpl(), str, str2);
-        return Unit.f21213a;
+        m350invokeu7_MRrM(messageId.m625unboximpl(), str, str2);
+        return Unit.f21215a;
     }
 
     
-    public final void m348invokeu7_MRrM(String p02, String p12, String str) {
+    public final void m350invokeu7_MRrM(String p02, String p12, String str) {
         q.h(p02, "p0");
         q.h(p12, "p1");
         ((ChatEventHandler) this.receiver).mo158onLinkClickedu7_MRrM(p02, p12, str);

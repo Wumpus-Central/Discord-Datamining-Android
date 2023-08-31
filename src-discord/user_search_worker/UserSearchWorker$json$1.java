@@ -19,7 +19,7 @@ final class UserSearchWorker$json$1 extends s implements Function1<JsonBuilder, 
     @Override 
     public   Unit invoke(JsonBuilder jsonBuilder) {
         invoke2(jsonBuilder);
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     

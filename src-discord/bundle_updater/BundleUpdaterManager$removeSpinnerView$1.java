@@ -23,7 +23,7 @@ public final class BundleUpdaterManager$removeSpinnerView$1 extends s implements
     @Override 
     public   Unit invoke(ViewGroup viewGroup) {
         invoke2(viewGroup);
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     

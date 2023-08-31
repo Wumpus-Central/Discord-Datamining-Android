@@ -27,12 +27,12 @@ public final class MessageBundleConversationView$configure$3$3 extends s impleme
     @Override 
     public   Unit invoke(ReactionView.Reaction reaction) {
         invoke2(reaction);
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     
     public final void invoke2(ReactionView.Reaction it) {
         q.h(it, "it");
-        ChatEventHandler.DefaultImpls.m196onTapReactionu7_MRrM$default(this.$eventHandler, this.$message.m25getId3Eiw7ao(), it, null, 4, null);
+        ChatEventHandler.DefaultImpls.m197onTapReactionu7_MRrM$default(this.$eventHandler, this.$message.m25getId3Eiw7ao(), it, null, 4, null);
     }
 }

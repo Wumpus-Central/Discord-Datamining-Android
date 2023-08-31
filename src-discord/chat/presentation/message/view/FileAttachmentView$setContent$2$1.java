@@ -48,7 +48,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileAttachmentView$setContent$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21213a);
+        return ((FileAttachmentView$setContent$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21215a);
     }
 
     @Override 
@@ -70,13 +70,13 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
                 @e(c = "com.discord.chat.presentation.message.view.FileAttachmentView$setContent$2$1$1$1", f = "FileAttachmentView.kt", l = {}, m = "invokeSuspend")
                 
                 
-                public static final class C01081 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+                public static final class C01091 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
                     final  DownloadState $downloadState;
                     int label;
                     final  FileAttachmentView this$0;
 
                     
-                    C01081(DownloadState downloadState, FileAttachmentView fileAttachmentView, Continuation<? super C01081> continuation) {
+                    C01091(DownloadState downloadState, FileAttachmentView fileAttachmentView, Continuation<? super C01091> continuation) {
                         super(2, continuation);
                         this.$downloadState = downloadState;
                         this.this$0 = fileAttachmentView;
@@ -84,11 +84,11 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
 
                     @Override 
                     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-                        return new C01081(this.$downloadState, this.this$0, continuation);
+                        return new C01091(this.$downloadState, this.this$0, continuation);
                     }
 
                     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                        return ((C01081) create(coroutineScope, continuation)).invokeSuspend(Unit.f21213a);
+                        return ((C01091) create(coroutineScope, continuation)).invokeSuspend(Unit.f21215a);
                     }
 
                     @Override 
@@ -117,7 +117,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
                                 i11 = 8;
                             }
                             simpleDraweeView.setVisibility(i11);
-                            return Unit.f21213a;
+                            return Unit.f21215a;
                         }
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
@@ -130,9 +130,9 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
 
                 public final Object emit(DownloadState downloadState, Continuation<? super Unit> continuation) {
                     Object d11;
-                    Object g10 = j.g(a1.c(), new C01081(downloadState, FileAttachmentView.this, null), continuation);
+                    Object g10 = j.g(a1.c(), new C01091(downloadState, FileAttachmentView.this, null), continuation);
                     d11 = d.d();
-                    return g10 == d11 ? g10 : Unit.f21213a;
+                    return g10 == d11 ? g10 : Unit.f21215a;
                 }
             };
             this.label = 1;
@@ -144,6 +144,6 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 }

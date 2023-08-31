@@ -36,8 +36,8 @@ public final class UnicodeEmojiContentNode$$serializer implements f0<UnicodeEmoj
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29762a;
-        return new KSerializer[]{a2Var, a2Var, h.f29804a};
+        a2 a2Var = a2.f29764a;
+        return new KSerializer[]{a2Var, a2Var, h.f29806a};
     }
 
     @Override 

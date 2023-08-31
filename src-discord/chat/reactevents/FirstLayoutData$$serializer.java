@@ -33,7 +33,7 @@ public final class FirstLayoutData$$serializer implements f0<FirstLayoutData> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f29837a;
+        m0 m0Var = m0.f29839a;
         return new KSerializer[]{m0Var, m0Var};
     }
 

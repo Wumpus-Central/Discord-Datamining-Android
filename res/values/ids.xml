@@ -117,6 +117,7 @@
     <item type="id" name="buttonPanel" />
     <item type="id" name="button_container" />
     <item type="id" name="button_wrapper" />
+    <item type="id" name="camera_button" />
     <item type="id" name="cancel_action" />
     <item type="id" name="cancel_button" />
     <item type="id" name="card" />
@@ -186,6 +187,7 @@
     <item type="id" name="edittext_dropdown_editable" />
     <item type="id" name="edittext_dropdown_noneditable" />
     <item type="id" name="emoji" />
+    <item type="id" name="emoji_button" />
     <item type="id" name="empty_end" />
     <item type="id" name="empty_results" />
     <item type="id" name="empty_start" />
@@ -573,6 +575,7 @@
     <item type="id" name="selectedSegmentBg" />
     <item type="id" name="selection_type" />
     <item type="id" name="separator_dot" />
+    <item type="id" name="shadow_view" />
     <item type="id" name="share_button" />
     <item type="id" name="share_prompt_close_button" />
     <item type="id" name="share_prompt_container" />

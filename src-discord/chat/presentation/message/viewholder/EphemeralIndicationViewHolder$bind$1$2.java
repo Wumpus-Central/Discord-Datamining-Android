@@ -26,7 +26,7 @@ public final class EphemeralIndicationViewHolder$bind$1$2 extends s implements F
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f21213a;
+        return Unit.f21215a;
     }
 
     
@@ -34,6 +34,6 @@ public final class EphemeralIndicationViewHolder$bind$1$2 extends s implements F
         ChatEventHandler chatEventHandler;
         q.h(it, "it");
         chatEventHandler = this.this$0.eventHandler;
-        ChatEventHandler.DefaultImpls.m194onLinkClickedu7_MRrM$default(chatEventHandler, this.$ephemeralAccessory.mo230getMessageId3Eiw7ao(), it, null, 4, null);
+        ChatEventHandler.DefaultImpls.m195onLinkClickedu7_MRrM$default(chatEventHandler, this.$ephemeralAccessory.mo232getMessageId3Eiw7ao(), it, null, 4, null);
     }
 }

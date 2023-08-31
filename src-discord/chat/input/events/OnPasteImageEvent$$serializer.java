@@ -34,7 +34,7 @@ public final class OnPasteImageEvent$$serializer implements f0<OnPasteImageEvent
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f29762a;
+        a2 a2Var = a2.f29764a;
         return new KSerializer[]{a2Var, a.u(a2Var)};
     }
 
@@ -48,7 +48,7 @@ public final class OnPasteImageEvent$$serializer implements f0<OnPasteImageEvent
         c b10 = decoder.b(descriptor2);
         if (b10.p()) {
             str = b10.m(descriptor2, 0);
-            obj = b10.n(descriptor2, 1, a2.f29762a, null);
+            obj = b10.n(descriptor2, 1, a2.f29764a, null);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -63,7 +63,7 @@ public final class OnPasteImageEvent$$serializer implements f0<OnPasteImageEvent
                     str = b10.m(descriptor2, 0);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    obj2 = b10.n(descriptor2, 1, a2.f29762a, obj2);
+                    obj2 = b10.n(descriptor2, 1, a2.f29764a, obj2);
                     i11 |= 2;
                 } else {
                     throw new n(o10);

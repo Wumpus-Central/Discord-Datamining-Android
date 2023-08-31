@@ -13,10 +13,10 @@ public final class MediaFormatUtilsKt {
         Object obj;
         q.h(mediaFormat, "<this>");
         try {
-            s.a aVar = s.f20302k;
+            s.a aVar = s.f20304k;
             obj = s.b(mediaFormat.getString("mime"));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f20302k;
+            s.a aVar2 = s.f20304k;
             obj = s.b(t.a(th2));
         }
         if (s.g(obj)) {

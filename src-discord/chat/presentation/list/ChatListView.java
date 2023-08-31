@@ -190,6 +190,6 @@ public final class ChatListView extends RecyclerView {
         addScrollStateListener();
         configureRecycledViewPoolSizes();
         setItemAnimator(defaultItemAnimator);
-        new ChatListItemTouchHelper(new SwipeHelper(context)).attachToRecyclerView(this);
+        new ChatListItemTouchHelper(new SwipeHelper(context, new ChatListView$swipeHelper$1(this), new ChatListView$swipeHelper$2(this))).attachToRecyclerView(this);
     }
 }

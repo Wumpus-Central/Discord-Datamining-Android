@@ -20,7 +20,7 @@ public final class ComponentEmoji {
     private final boolean animated;
 
     
-    private final String f7247id;
+    private final String f7245id;
     private final String name;
     private final String src;
     private final String surrogates;
@@ -45,9 +45,9 @@ public final class ComponentEmoji {
             n1.b(i10, 2, ComponentEmoji$$serializer.INSTANCE.getDescriptor());
         }
         if ((i10 & 1) == 0) {
-            this.f7247id = null;
+            this.f7245id = null;
         } else {
-            this.f7247id = str;
+            this.f7245id = str;
         }
         this.name = str2;
         if ((i10 & 4) == 0) {
@@ -69,7 +69,7 @@ public final class ComponentEmoji {
 
     public static  ComponentEmoji copy$default(ComponentEmoji componentEmoji, String str, String str2, String str3, boolean z10, String str4, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = componentEmoji.f7247id;
+            str = componentEmoji.f7245id;
         }
         if ((i10 & 2) != 0) {
             str2 = componentEmoji.name;
@@ -94,13 +94,13 @@ public final class ComponentEmoji {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z13 = false;
-        if (!output.z(serialDesc, 0) && self.f7247id == null) {
+        if (!output.z(serialDesc, 0) && self.f7245id == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.B(serialDesc, 0, a2.f29762a, self.f7247id);
+            output.B(serialDesc, 0, a2.f29764a, self.f7245id);
         }
         output.x(serialDesc, 1, self.name);
         if (!output.z(serialDesc, 2) && self.src == null) {
@@ -109,7 +109,7 @@ public final class ComponentEmoji {
             z11 = true;
         }
         if (z11) {
-            output.B(serialDesc, 2, a2.f29762a, self.src);
+            output.B(serialDesc, 2, a2.f29764a, self.src);
         }
         if (!output.z(serialDesc, 3) && !self.animated) {
             z12 = false;
@@ -123,12 +123,12 @@ public final class ComponentEmoji {
             z13 = true;
         }
         if (z13) {
-            output.B(serialDesc, 4, a2.f29762a, self.surrogates);
+            output.B(serialDesc, 4, a2.f29764a, self.surrogates);
         }
     }
 
     public final String component1() {
-        return this.f7247id;
+        return this.f7245id;
     }
 
     public final String component2() {
@@ -160,7 +160,7 @@ public final class ComponentEmoji {
             return false;
         }
         ComponentEmoji componentEmoji = (ComponentEmoji) obj;
-        return q.c(this.f7247id, componentEmoji.f7247id) && q.c(this.name, componentEmoji.name) && q.c(this.src, componentEmoji.src) && this.animated == componentEmoji.animated && q.c(this.surrogates, componentEmoji.surrogates);
+        return q.c(this.f7245id, componentEmoji.f7245id) && q.c(this.name, componentEmoji.name) && q.c(this.src, componentEmoji.src) && this.animated == componentEmoji.animated && q.c(this.surrogates, componentEmoji.surrogates);
     }
 
     public final boolean getAnimated() {
@@ -168,7 +168,7 @@ public final class ComponentEmoji {
     }
 
     public final String getId() {
-        return this.f7247id;
+        return this.f7245id;
     }
 
     public final String getName() {
@@ -184,7 +184,7 @@ public final class ComponentEmoji {
     }
 
     public int hashCode() {
-        String str = this.f7247id;
+        String str = this.f7245id;
         int i10 = 0;
         int hashCode = (((str == null ? 0 : str.hashCode()) * 31) + this.name.hashCode()) * 31;
         String str2 = this.src;
@@ -205,7 +205,7 @@ public final class ComponentEmoji {
     }
 
     public String toString() {
-        String str = this.f7247id;
+        String str = this.f7245id;
         String str2 = this.name;
         String str3 = this.src;
         boolean z10 = this.animated;
@@ -215,7 +215,7 @@ public final class ComponentEmoji {
 
     public ComponentEmoji(String str, String name, String str2, boolean z10, String str3) {
         q.h(name, "name");
-        this.f7247id = str;
+        this.f7245id = str;
         this.name = name;
         this.src = str2;
         this.animated = z10;
