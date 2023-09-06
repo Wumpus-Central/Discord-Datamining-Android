@@ -17,7 +17,7 @@ import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.modules.appstate.AppStateModule;
 import com.facebook.react.uimanager.ViewProps;
 import java.util.Map;
-import jf.x;
+import kf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;

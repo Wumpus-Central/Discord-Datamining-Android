@@ -38,7 +38,7 @@ public final class VideoAttachmentViewHolder extends MessagePartViewHolder {
         VideoAttachmentView videoAttachmentView = this.view;
         String videoUrl = attachment.getVideoUrl();
         q.e(videoUrl);
-        videoAttachmentView.setContent(videoUrl, attachment.getUrl(), attachment.getWidth(), attachment.getHeight(), i10, i11, i12, attachment.isSpoiler(), spoilerConfig, d10, z10, attachment.getProgress(), z12, videoAttachmentViewHolder$bind$onCancelUpload$1, new UploadContext(uploaderId, uploaderItemId), f10, attachment.getAttachmentTagText(), attachment.getAttachmentTagIcon(), attachment.getAttachmentTagBackgroundColor(), attachment.getAttachmentTagTextColor());
+        videoAttachmentView.setContent(videoUrl, attachment.getUrl(), attachment.getWidth(), attachment.getHeight(), i10, i11, i12, attachment.isSpoiler(), spoilerConfig, d10, z10, attachment.getProgress(), z12, videoAttachmentViewHolder$bind$onCancelUpload$1, new UploadContext(uploaderId, uploaderItemId), f10, attachment.getAttachmentTagText(), attachment.getAttachmentTagIcon(), attachment.getAttachmentTagBackgroundColor(), attachment.getAttachmentTagTextColor(), attachment.getObscure(), attachment.getObscureDescription());
         this.view.setDescription(attachment.getDescription(), attachment.getHint());
         VideoAttachmentView videoAttachmentView2 = this.view;
         boolean z14 = true;

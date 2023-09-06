@@ -16,13 +16,13 @@ import io.sentry.t2;
 import java.io.File;
 import java.util.List;
 import java.util.Map;
-import jf.f;
-import kf.v;
+import kf.f;
 import kotlin.Metadata;
 import kotlin.collections.i;
 import kotlin.jvm.internal.Ref$ObjectRef;
 import kotlin.jvm.internal.q;
 import kotlin.text.p;
+import lf.v;
 
 @Metadata(d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010$\n\u0002\b\u0003\n\u0002\u0010\u0003\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0006\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\bÆ\u0002\u0018\u00002\u00020\u0001:\u0001\"B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J0\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u00042\u0014\b\u0002\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\u000f2\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0004J\u000e\u0010\u0011\u001a\u00020\f2\u0006\u0010\u0012\u001a\u00020\u0013J\u001a\u0010\u0014\u001a\u00020\f2\u0006\u0010\u0015\u001a\u00020\u00042\n\u0010\u0016\u001a\u00060\u0017j\u0002`\u0018J \u0010\u0014\u001a\u00020\f2\u0006\u0010\u0015\u001a\u00020\u00042\u0006\u0010\u0019\u001a\u00020\u00042\b\b\u0002\u0010\u001a\u001a\u00020\u001bJ\u000e\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fJ\u0006\u0010 \u001a\u00020\u001dJ\u000e\u0010!\u001a\u00020\f2\u0006\u0010\u001e\u001a\u00020\u001fR\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R$\u0010\b\u001a\u0004\u0018\u00010\u00072\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007@BX\u0086\u000e¢\u0006\n\n\u0002\u0010\n\u001a\u0004\b\b\u0010\t¨\u0006#"}, d2 = {"Lcom/discord/crash_reporting/CrashReporting;", "", "()V", "TAG_APP_VERSION", "", "TAG_BUILD_NUMBER", "<set-?>", "", "isCrashedLastRun", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "addBreadcrumb", "", "breadcrumbMessage", "breadcrumbData", "", "breadcrumbCategory", "captureException", "throwable", "", "captureMessage", "tag", "exception", "Ljava/lang/Exception;", "Lkotlin/Exception;", "message", "errorLevel", "Lcom/discord/crash_reporting/CrashReporting$ErrorLevel;", "getSampleRate", "", "context", "Landroid/content/Context;", "getTracingSampleRate", "init", "ErrorLevel", "crash_reporting_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -94,7 +94,7 @@ public final class CrashReporting {
         } else if (i10 == 2) {
             m4Var = m4.WARNING;
         } else {
-            throw new jf.q();
+            throw new kf.q();
         }
         d3.i(message, m4Var);
     }
@@ -103,18 +103,18 @@ public final class CrashReporting {
         q.h(dsn, "$dsn");
         q.h(context, "$context");
         q.h(options, "options");
-        options.setDsn((String) dsn.f21242j);
+        options.setDsn((String) dsn.f21463j);
         ClientInfo clientInfo = ClientInfo.INSTANCE;
         options.setEnvironment(clientInfo.getReleaseChannel());
         options.setDist(clientInfo.getVersionCode());
-        options.setRelease("discord_android@195.7.0-2+195207");
+        options.setRelease("discord_android@196.1.0-2+196201");
         File cacheDir = context.getCacheDir();
         options.setCacheDirPath(cacheDir + "/sentry");
         options.setEnableActivityLifecycleTracingAutoFinish(false);
         options.setEnableAutoActivityLifecycleTracing(false);
         options.setTracesSampleRate(Double.valueOf(INSTANCE.getTracingSampleRate()));
         options.setSampleRate(Double.valueOf(d10));
-        options.setProguardUuid("44a730b6-6be6-48d6-8409-6409a48eaa2e");
+        options.setProguardUuid("6002b5b8-ba28-4a44-8ae5-0c5af8f5d599");
         options.setTag(TAG_BUILD_NUMBER, clientInfo.getVersionCode());
         options.setTag(TAG_APP_VERSION, clientInfo.getVersionName());
     }
@@ -199,7 +199,7 @@ public final class CrashReporting {
             } else {
                 t10 = "https:
             }
-            ref$ObjectRef.f21242j = t10;
+            ref$ObjectRef.f21463j = t10;
             final double sampleRate = getSampleRate(context);
             m1.f(context, new d3.a() { 
                 @Override 

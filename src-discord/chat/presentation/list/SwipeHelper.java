@@ -1,6 +1,5 @@
 package com.discord.chat.presentation.list;
 
-import ag.j;
 import android.animation.Animator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
@@ -21,6 +20,7 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.PathInterpolator;
 import androidx.core.content.res.h;
 import androidx.recyclerview.widget.RecyclerView;
+import bg.j;
 import com.discord.chat.R;
 import com.discord.device.DeviceAccessibilityModule;
 import com.discord.misc.utilities.size.SizeUtilsKt;

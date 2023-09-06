@@ -38,11 +38,11 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.a1;
 import kotlinx.coroutines.l;
 import kotlinx.coroutines.p1;
-import s1.a;
-import s1.b;
 import s1.c;
 import s1.d;
 import s1.e;
+import s1.g;
+import s1.h;
 
 @Metadata(d1 = {"\u0000\u0091\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0012\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u000b*\u0001G\b\u0000\u0018\u00002\u00020\u0001:\u0004QRSTBW\u0012\u0006\u00106\u001a\u00020\b\u0012\u0012\u00109\u001a\u000e\u0012\u0004\u0012\u000208\u0012\u0004\u0012\u00020\r0\u0015\u0012\u001e\u0010>\u001a\u001a\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\r0=\u0012\u0012\u0010B\u001a\u000e\u0012\u0004\u0012\u000208\u0012\u0004\u0012\u00020\r0\u0015¢\u0006\u0004\bO\u0010PJ\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0010\u0010\t\u001a\u00020\b2\u0006\u0010\u0007\u001a\u00020\u0006H\u0002J \u0010\u000e\u001a\u00020\r2\u0006\u0010\u0007\u001a\u00020\u00062\u000e\u0010\f\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\nH\u0002JF\u0010\u0019\u001a\u00020\r2\f\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u000f0\n2\u0006\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u0014\u001a\u00020\u00132\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u00152\u0006\u0010\u0003\u001a\u00020\u0002H\u0002JF\u0010\u001a\u001a\u00020\r2\f\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u000f0\n2\u0006\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u0014\u001a\u00020\u00132\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u00152\u0006\u0010\u0003\u001a\u00020\u0002H\u0002Jf\u0010#\u001a\u00020\r2\u0006\u0010\u001c\u001a\u00020\u001b2\u0006\u0010\u001d\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u001e\u001a\u00020\u000f2\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u000f2\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u000f2\f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\r0!2\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u0015H\u0002Jr\u0010)\u001a\u00020\r2\u0006\u0010\u001c\u001a\u00020\u001b2\u0006\u0010$\u001a\u00020\u000f2\u0006\u0010&\u001a\u00020%2\u0006\u0010\u001e\u001a\u00020\u000f2\n\b\u0002\u0010'\u001a\u0004\u0018\u00010\u000f2\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u000f2\n\b\u0002\u0010(\u001a\u0004\u0018\u00010\u000f2\f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\r0!2\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u0015H\u0002J\b\u0010*\u001a\u00020\rH\u0002J\b\u0010+\u001a\u00020\bH\u0002J\u0010\u0010-\u001a\u00020\r2\u0006\u0010,\u001a\u00020\u000bH\u0002J\f\u0010.\u001a\u00020\b*\u00020\u0006H\u0002J%\u00100\u001a\u00020\r*\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u00152\u0006\u0010/\u001a\u00020\u000fH\u0082\u0002J\u000e\u00101\u001a\u00020\r2\u0006\u0010\u0003\u001a\u00020\u0002J\u0006\u00102\u001a\u00020\rJD\u00103\u001a\u00020\r2\f\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u000f0\n2\u0006\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u0014\u001a\u00020\u00132\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u00152\u0006\u0010\u0003\u001a\u00020\u0002Jr\u0010,\u001a\u00020\r2\b\u0010\u001c\u001a\u0004\u0018\u00010\u001b2\u0006\u0010\u001d\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u001e\u001a\u00020\u000f2\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u000f2\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u000f2\n\b\u0002\u0010(\u001a\u0004\u0018\u00010\u000f2\f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\r0!2\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u0015J4\u00104\u001a\u00020\r2\u0006\u0010 \u001a\u00020\u000f2\f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\r0!2\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u0015J0\u00105\u001a\u00020\r2\u000e\b\u0002\u0010\"\u001a\b\u0012\u0004\u0012\u00020\r0!2\u0018\b\u0002\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u0015R\u0014\u00106\u001a\u00020\b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b6\u00107R#\u00109\u001a\u000e\u0012\u0004\u0012\u000208\u0012\u0004\u0012\u00020\r0\u00158\u0006¢\u0006\f\n\u0004\b9\u0010:\u001a\u0004\b;\u0010<R/\u0010>\u001a\u001a\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\r0=8\u0006¢\u0006\f\n\u0004\b>\u0010?\u001a\u0004\b@\u0010AR#\u0010B\u001a\u000e\u0012\u0004\u0012\u000208\u0012\u0004\u0012\u00020\r0\u00158\u0006¢\u0006\f\n\u0004\bB\u0010:\u001a\u0004\bC\u0010<R\u0016\u0010E\u001a\u00020D8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\bE\u0010FR\u0014\u0010H\u001a\u00020G8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bH\u0010IR\u001a\u0010K\u001a\u00020J8\u0002X\u0082\u0004¢\u0006\f\n\u0004\bK\u0010L\u0012\u0004\bM\u0010N¨\u0006U"}, d2 = {"Lcom/discord/billing/BillingManager;", "", "Lcom/facebook/react/bridge/ReactApplicationContext;", "context", "Lkotlinx/coroutines/CoroutineScope;", "getCoroutineScope", "Lcom/android/billingclient/api/BillingResult;", "billingResult", "", "isRetryableError", "", "Lcom/android/billingclient/api/Purchase;", "purchases", "", "handlePurchases", "", "skuIds", "Lcom/discord/billing/types/SkuType;", "skuType", "Lcom/facebook/react/bridge/Promise;", "reactPromise", "Lkotlin/Function1;", "Ljava/lang/Exception;", "Lkotlin/Exception;", "onError", "getSkusWithRetry", "getProductsWithRetry", "Landroid/app/Activity;", "activity", "skuId", "userId", "oldSkuId", "purchaseToken", "Lkotlin/Function0;", "onSuccess", "purchaseWithSkuDetails", "productId", "Lcom/discord/billing/types/ProductType;", "productType", "oldProductId", "offerId", "purchaseWithProductDetails", "reconnect", "isBillingClientReady", "purchase", "verifyPurchase", "isNotOk", "errorMessage", "invoke", "open", "close", "getSkus", "consumePurchase", "loadPurchases", "isProdBuild", "Z", "", "onConnectionUpdated", "Lkotlin/jvm/functions/Function1;", "getOnConnectionUpdated", "()Lkotlin/jvm/functions/Function1;", "Lkotlin/Function3;", "onPurchaseUpdated", "Lkotlin/jvm/functions/Function3;", "getOnPurchaseUpdated", "()Lkotlin/jvm/functions/Function3;", "onDowngradeCommand", "getOnDowngradeCommand", "Lcom/android/billingclient/api/BillingClient;", "billingClient", "Lcom/android/billingclient/api/BillingClient;", "com/discord/billing/BillingManager$billingClientStateListener$1", "billingClientStateListener", "Lcom/discord/billing/BillingManager$billingClientStateListener$1;", "Lcom/discord/misc/utilities/backoff/ExponentialBackoff;", "backoff", "Lcom/discord/misc/utilities/backoff/ExponentialBackoff;", "getBackoff$annotations", "()V", "<init>", "(ZLkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function1;)V", "ConnectionState", "DowngradeCommand", "ProductDetailsResponse", "SkuDetailsResponse", "billing_release"}, k = 1, mv = {1, 8, 0})
 
@@ -52,7 +52,7 @@ public final class BillingManager {
     private final Function1<Integer, Unit> onConnectionUpdated;
     private final Function1<Integer, Unit> onDowngradeCommand;
     private final Function3<String, String, String, Unit> onPurchaseUpdated;
-    private final BillingManager$billingClientStateListener$1 billingClientStateListener = new a() { 
+    private final BillingManager$billingClientStateListener$1 billingClientStateListener = new c() { 
         @Override 
         public void onBillingServiceDisconnected() {
             BillingClient billingClient;
@@ -62,7 +62,7 @@ public final class BillingManager {
                 q.z("billingClient");
                 billingClient = null;
             }
-            if (!billingClient.d()) {
+            if (!billingClient.e()) {
                 BillingManager.this.reconnect();
             }
         }
@@ -83,7 +83,7 @@ public final class BillingManager {
             BillingManager.loadPurchases$default(BillingManager.this, null, null, 3, null);
         }
     };
-    private final ExponentialBackoff backoff = new ExponentialBackoff(p1.f21573j, 1000, 300000, 10);
+    private final ExponentialBackoff backoff = new ExponentialBackoff(p1.f21794j, 1000, 300000, 10);
 
     
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\b\n\u0002\b\b\b\u0082\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\n¨\u0006\u000b"}, d2 = {"Lcom/discord/billing/BillingManager$ConnectionState;", "", "value", "", "(Ljava/lang/String;II)V", "getValue", "()I", "DISCONNECTED", "CONNECTING", "CONNECTED", "ERROR", "billing_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -280,8 +280,8 @@ public final class BillingManager {
         q.h(billingResult, "billingResult");
         q.h(str, "<anonymous parameter 1>");
         if (this$0.isNotOk(billingResult)) {
-            int a10 = billingResult.a();
-            this$0.invoke(onError, "Consume purchase, bad response: " + a10);
+            int b10 = billingResult.b();
+            this$0.invoke(onError, "Consume purchase, bad response: " + b10);
             return;
         }
         onSuccess.invoke();
@@ -306,7 +306,7 @@ public final class BillingManager {
             return iVar;
         }
         CrashReporting.addBreadcrumb$default(CrashReporting.INSTANCE, "Can't get lifecycleScope for billing client, defaulting to GlobalScope but API might be backing off while the app is background", null, null, 6, null);
-        return p1.f21573j;
+        return p1.f21794j;
     }
 
     private final void getProductsWithRetry(List<String> list, SkuType skuType, Promise promise, Function1<? super Exception, Unit> function1, ReactApplicationContext reactApplicationContext) {
@@ -399,7 +399,7 @@ public final class BillingManager {
                 q.z("billingClient");
                 billingClient = null;
             }
-            if (billingClient.d()) {
+            if (billingClient.e()) {
                 return true;
             }
         }
@@ -408,7 +408,7 @@ public final class BillingManager {
 
     
     public final boolean isNotOk(BillingResult billingResult) {
-        return billingResult.a() != 0;
+        return billingResult.b() != 0;
     }
 
     
@@ -418,7 +418,7 @@ public final class BillingManager {
             return false;
         }
         i10 = w.i(6, -1, 2);
-        if (i10.contains(Integer.valueOf(billingResult.a()))) {
+        if (i10.contains(Integer.valueOf(billingResult.b()))) {
             return true;
         }
         return false;
@@ -446,7 +446,7 @@ public final class BillingManager {
         }
         QueryProductDetailsParams queryProductDetailsParams = QueryProductDetailsParams.INSTANCE;
         m10 = j.m(str, str3);
-        billingClient.g(queryProductDetailsParams.create(productType, m10), new ProductDetailsResponseListener() { 
+        billingClient.h(queryProductDetailsParams.create(productType, m10), new ProductDetailsResponseListener() { 
             @Override 
             public final void a(BillingResult billingResult, List list) {
                 BillingManager.purchaseWithProductDetails$lambda$6(BillingManager.this, function1, str, str3, str4, str2, str5, activity, function0, ref$BooleanRef, billingResult, list);
@@ -466,12 +466,12 @@ public final class BillingManager {
         q.h(billingResult, "billingResult");
         q.h(productDetails, "productDetails");
         synchronized (this$0) {
-            if (!completed.f21240j) {
-                completed.f21240j = true;
-                Unit unit = Unit.f21215a;
+            if (!completed.f21461j) {
+                completed.f21461j = true;
+                Unit unit = Unit.f21436a;
                 if (this$0.isNotOk(billingResult)) {
-                    int a10 = billingResult.a();
-                    this$0.invoke(onError, "Purchase failed, bad code: " + a10);
+                    int b10 = billingResult.b();
+                    this$0.invoke(onError, "Purchase failed, bad code: " + b10);
                     return;
                 }
                 try {
@@ -485,7 +485,7 @@ public final class BillingManager {
                         q.z("billingClient");
                         billingClient = null;
                     }
-                    billingClient.e(activity, createWithProductDetails);
+                    billingClient.f(activity, createWithProductDetails);
                     onSuccess.invoke();
                 } catch (AssertionError e10) {
                     String message = e10.getMessage();
@@ -507,7 +507,7 @@ public final class BillingManager {
         }
         SkuDetailsParams skuDetailsParams = SkuDetailsParams.INSTANCE;
         m10 = j.m(str, str3);
-        billingClient.i(skuDetailsParams.create(skuType, m10), new SkuDetailsResponseListener() { 
+        billingClient.l(skuDetailsParams.create(skuType, m10), new SkuDetailsResponseListener() { 
             @Override 
             public final void a(BillingResult billingResult, List list) {
                 BillingManager.purchaseWithSkuDetails$lambda$4(BillingManager.this, function1, str, str3, str4, str2, activity, function0, ref$BooleanRef, billingResult, list);
@@ -526,12 +526,12 @@ public final class BillingManager {
         q.h(completed, "$completed");
         q.h(billingResult, "billingResult");
         synchronized (this$0) {
-            if (!completed.f21240j) {
-                completed.f21240j = true;
-                Unit unit = Unit.f21215a;
+            if (!completed.f21461j) {
+                completed.f21461j = true;
+                Unit unit = Unit.f21436a;
                 if (this$0.isNotOk(billingResult)) {
-                    int a10 = billingResult.a();
-                    this$0.invoke(onError, "Purchase failed, bad code: " + a10);
+                    int b10 = billingResult.b();
+                    this$0.invoke(onError, "Purchase failed, bad code: " + b10);
                     return;
                 }
                 BillingFlowParams create = com.discord.billing.types.BillingFlowParams.INSTANCE.create(list, skuId, str, str2, userId);
@@ -544,7 +544,7 @@ public final class BillingManager {
                     q.z("billingClient");
                     billingClient = null;
                 }
-                billingClient.e(activity, create);
+                billingClient.f(activity, create);
                 onSuccess.invoke();
             }
         }
@@ -560,17 +560,17 @@ public final class BillingManager {
     }
 
     private final void verifyPurchase(Purchase purchase) {
-        if (purchase.c() == 1 && !purchase.g()) {
-            ArrayList<String> f10 = purchase.f();
-            q.g(f10, "purchase.skus");
-            for (String sku : f10) {
+        if (purchase.g() == 1 && !purchase.l()) {
+            ArrayList<String> k10 = purchase.k();
+            q.g(k10, "purchase.skus");
+            for (String sku : k10) {
                 Function3<String, String, String, Unit> function3 = this.onPurchaseUpdated;
-                String d10 = purchase.d();
-                q.g(d10, "purchase.purchaseToken");
-                String b10 = purchase.b();
-                q.g(b10, "purchase.packageName");
+                String i10 = purchase.i();
+                q.g(i10, "purchase.purchaseToken");
+                String e10 = purchase.e();
+                q.g(e10, "purchase.packageName");
                 q.g(sku, "sku");
-                function3.invoke(d10, b10, sku);
+                function3.invoke(i10, e10, sku);
             }
         }
     }
@@ -582,7 +582,7 @@ public final class BillingManager {
                 q.z("billingClient");
                 billingClient = null;
             }
-            billingClient.b();
+            billingClient.c();
             this.backoff.cancel();
             return;
         }
@@ -597,14 +597,14 @@ public final class BillingManager {
             invoke(onError, "Consume purchase, billing connection is not ready.");
             return;
         }
-        b a10 = b.b().b(purchaseToken).a();
+        d a10 = d.b().b(purchaseToken).a();
         q.g(a10, "newBuilder()\n           …\n                .build()");
         BillingClient billingClient = this.billingClient;
         if (billingClient == null) {
             q.z("billingClient");
             billingClient = null;
         }
-        billingClient.a(a10, new c() { 
+        billingClient.b(a10, new e() { 
             @Override 
             public final void a(BillingResult billingResult, String str) {
                 BillingManager.consumePurchase$lambda$0(BillingManager.this, onError, onSuccess, billingResult, str);
@@ -639,9 +639,9 @@ public final class BillingManager {
             q.z("billingClient");
             billingClient = null;
         }
-        BillingResult c10 = billingClient.c("fff");
-        q.g(c10, "billingClient.isFeatureS…tureType.PRODUCT_DETAILS)");
-        if (isNotOk(c10)) {
+        BillingResult d10 = billingClient.d("fff");
+        q.g(d10, "billingClient.isFeatureS…tureType.PRODUCT_DETAILS)");
+        if (isNotOk(d10)) {
             getSkusWithRetry(skuIds, skuType, reactPromise, onError, context);
         } else {
             getProductsWithRetry(skuIds, skuType, reactPromise, onError, context);
@@ -661,7 +661,7 @@ public final class BillingManager {
             q.z("billingClient");
             billingClient = null;
         }
-        billingClient.h("inapp", new d() { 
+        billingClient.j("inapp", new g() { 
             @Override 
             public final void a(BillingResult billingResult, List list) {
                 BillingManager.this.handlePurchases(billingResult, list);
@@ -673,7 +673,7 @@ public final class BillingManager {
         } else {
             billingClient2 = billingClient3;
         }
-        billingClient2.h("subs", new d() { 
+        billingClient2.j("subs", new g() { 
             @Override 
             public final void a(BillingResult billingResult, List list) {
                 BillingManager.this.handlePurchases(billingResult, list);
@@ -684,9 +684,9 @@ public final class BillingManager {
 
     public final void open(ReactApplicationContext context) {
         q.h(context, "context");
-        BillingClient a10 = BillingClient.f(context).b().c(new e() { 
+        BillingClient a10 = BillingClient.g(context).b().c(new h() { 
             @Override 
-            public final void a(BillingResult billingResult, List list) {
+            public final void onPurchasesUpdated(BillingResult billingResult, List list) {
                 BillingManager.this.handlePurchases(billingResult, list);
             }
         }).a();
@@ -697,7 +697,7 @@ public final class BillingManager {
             q.z("billingClient");
             a10 = null;
         }
-        if (!a10.d()) {
+        if (!a10.e()) {
             try {
                 BillingClient billingClient2 = this.billingClient;
                 if (billingClient2 == null) {
@@ -705,7 +705,7 @@ public final class BillingManager {
                 } else {
                     billingClient = billingClient2;
                 }
-                billingClient.j(this.billingClientStateListener);
+                billingClient.m(this.billingClientStateListener);
                 this.onConnectionUpdated.invoke(Integer.valueOf(ConnectionState.CONNECTING.getValue()));
             } catch (Exception unused) {
                 this.onConnectionUpdated.invoke(Integer.valueOf(ConnectionState.ERROR.getValue()));
@@ -729,9 +729,9 @@ public final class BillingManager {
                 q.z("billingClient");
                 billingClient = null;
             }
-            BillingResult c10 = billingClient.c("fff");
-            q.g(c10, "billingClient.isFeatureS…tureType.PRODUCT_DETAILS)");
-            if (!isNotOk(c10)) {
+            BillingResult d10 = billingClient.d("fff");
+            q.g(d10, "billingClient.isFeatureS…tureType.PRODUCT_DETAILS)");
+            if (!isNotOk(d10)) {
                 purchaseWithProductDetails(activity, skuId, ProductType.valueOf(skuType.name()), userId, str, str2, str3, onSuccess, onError);
             } else if (str3 != null) {
                 invoke(onError, "Purchase failed, offerId passed for device not supported");

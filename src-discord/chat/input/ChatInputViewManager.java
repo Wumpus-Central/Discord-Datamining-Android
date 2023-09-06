@@ -19,7 +19,7 @@ import com.facebook.react.viewmanagers.DCDChatInputManagerDelegate;
 import com.facebook.react.viewmanagers.DCDChatInputManagerInterface;
 import com.facebook.react.views.textinput.ReactTextInputShadowNode;
 import java.util.Map;
-import jf.x;
+import kf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;

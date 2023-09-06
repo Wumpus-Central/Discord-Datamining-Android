@@ -17,17 +17,6 @@ import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.databinding.ForumPostActionBarViewBinding;
 import com.discord.chat.presentation.root.ChatView;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.core.DCDButton;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
@@ -44,7 +33,6 @@ import com.discord.reactions.ReactionsView;
 import com.discord.reactions.ReactionsView$setReactions$3;
 import com.discord.ripple.RippleUtilsKt;
 import com.discord.theme.ThemeManagerKt;
-import com.facebook.drawee.span.DraweeSpanStringBuilder;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import java.util.List;
@@ -109,7 +97,6 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     private final void m326setSharePromptLdU2QRA(String str, PostSharePrompt postSharePrompt, View.OnClickListener onClickListener, String str2, View.OnClickListener onClickListener2, Function2<? super MessageId, ? super LinkContentNode, Unit> function2) {
         boolean z10;
         int i10;
-        DraweeSpanStringBuilder spannable;
         ConstraintLayout constraintLayout = this.binding.sharePromptContainer;
         q.g(constraintLayout, "binding.sharePromptContainer");
         if (postSharePrompt != null) {
@@ -148,8 +135,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
             TextPaint paint = setSharePrompt_LdU2QRA$lambda$13.getPaint();
             q.g(context, "context");
             q.g(paint, "paint");
-            spannable = TextUtilsKt.toSpannable(subtitle, context, str, false, false, false, paint, (r44 & 64) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : new ForumPostActionBarView$setSharePrompt$3$1(function2, str), (r44 & 128) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r44 & 256) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r44 & 512) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r44 & 1024) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r44 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r44 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r44 & 8192) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r44 & 16384) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (32768 & r44) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (65536 & r44) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (131072 & r44) != 0 ? false : false, (262144 & r44) != 0 ? ThemeManagerKt.getTheme() : null, (r44 & 524288) != 0 ? -1.0f : baselineHeight);
-            SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setSharePrompt_LdU2QRA$lambda$13, spannable);
+            SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setSharePrompt_LdU2QRA$lambda$13, TextUtilsKt.toSpannable$default(subtitle, context, str, false, false, false, paint, new ForumPostActionBarView$setSharePrompt$3$1(function2, str), null, null, null, null, null, null, null, null, null, null, false, null, baselineHeight, 524160, null));
             NestedScrollOnTouchUtilsKt.enableNestedSpanClickListener$default(setSharePrompt_LdU2QRA$lambda$13, false, 1, null);
         }
     }

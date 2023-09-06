@@ -23,7 +23,7 @@ public final class BundleUpdaterManager$showSpinnerView$2 extends s implements F
     @Override 
     public   Unit invoke(ViewGroup viewGroup) {
         invoke2(viewGroup);
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

@@ -24,7 +24,7 @@ final class MediaEngineModule$createVoiceConnectionWithOptions$1 extends s imple
     @Override 
     public   Unit invoke(String str, Map<String, ? extends Object> map) {
         invoke2(str, map);
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

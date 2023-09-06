@@ -80,7 +80,7 @@ public final class CreateAttachmentAccessoryKt {
             if (i13 == 3) {
                 fileAttachmentMessageAccessory = new FileAttachmentMessageAccessory(str, i10, attachment, forAttachment, attachment.getUploaderId(), attachment.getUploaderItemId(), message.getAttachmentsOpacity(), null);
             } else if (i13 != 4) {
-                throw new jf.q();
+                throw new kf.q();
             } else if (MessageFlagKt.hasMessageFlag(Long.valueOf(message.getFlags()), MessageFlag.IS_VOICE_MESSAGE)) {
                 return new AudioAttachmentMessageAccessory(str, message.m22getAuthorIdwUX8bhU(), i10, attachment, message.getAttachmentsOpacity(), null);
             } else {

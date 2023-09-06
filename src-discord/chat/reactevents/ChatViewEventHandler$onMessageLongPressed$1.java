@@ -26,7 +26,7 @@ public final class ChatViewEventHandler$onMessageLongPressed$1 extends s impleme
     @Override 
     public   Unit invoke(MessageId messageId, ChannelId channelId, Integer num, MediaType mediaType) {
         m365invoke8a0ehIg(messageId.m625unboximpl(), channelId.m600unboximpl(), num, mediaType);
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

@@ -1,10 +1,10 @@
 package com.discord.security_key;
 
-import ag.j;
 import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.util.Base64;
+import bg.j;
 import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.google.android.gms.tasks.Task;
 import com.reactnativecommunity.webview.RNCWebViewManager;
@@ -14,13 +14,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import k9.a;
-import kf.p;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import kotlin.ranges.IntRange;
+import lf.p;
 import m9.b;
 import m9.g;
 import m9.h;
@@ -173,61 +173,61 @@ public final class WebAuthn {
             this.reject.invoke("credential data missing");
             return;
         }
-        o l10 = o.l(bArr);
-        if (l10.w() instanceof h) {
+        o r10 = o.r(bArr);
+        if (r10.z() instanceof h) {
             Function1<String, Unit> function1 = this.reject;
-            i w10 = l10.w();
-            q.f(w10, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorErrorResponse");
-            String v10 = ((h) w10).v();
-            q.e(v10);
-            function1.invoke(v10);
+            i z10 = r10.z();
+            q.f(z10, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorErrorResponse");
+            String w10 = ((h) z10).w();
+            q.e(w10);
+            function1.invoke(w10);
         } else if (i10 == 4001) {
-            byte[] v11 = l10.v();
-            q.g(v11, "credential.rawId");
-            String base64 = toBase64(v11);
-            i w11 = l10.w();
-            q.f(w11, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorAttestationResponse");
-            g gVar = (g) w11;
+            byte[] w11 = r10.w();
+            q.g(w11, "credential.rawId");
+            String base64 = toBase64(w11);
+            i z11 = r10.z();
+            q.f(z11, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorAttestationResponse");
+            g gVar = (g) z11;
             JSONObject jSONObject = new JSONObject();
             jSONObject.put("id", base64);
             jSONObject.put("rawId", base64);
             jSONObject.put("type", u.PUBLIC_KEY.toString());
             JSONObject jSONObject2 = new JSONObject();
-            byte[] l11 = gVar.l();
-            q.g(l11, "response.clientDataJSON");
-            jSONObject2.put("clientDataJSON", toBase64(l11));
-            byte[] s10 = gVar.s();
-            q.g(s10, "response.attestationObject");
-            jSONObject2.put("attestationObject", toBase64(s10));
+            byte[] r11 = gVar.r();
+            q.g(r11, "response.clientDataJSON");
+            jSONObject2.put("clientDataJSON", toBase64(r11));
+            byte[] t10 = gVar.t();
+            q.g(t10, "response.attestationObject");
+            jSONObject2.put("attestationObject", toBase64(t10));
             jSONObject.put("response", jSONObject2);
             Function1<String, Unit> function12 = this.resolve;
             String jSONObject3 = jSONObject.toString();
             q.g(jSONObject3, "obj.toString()");
             function12.invoke(jSONObject3);
         } else if (i10 == REQUEST_CODE_AUTHENTICATE) {
-            byte[] v12 = l10.v();
-            q.g(v12, "credential.rawId");
-            String base642 = toBase64(v12);
-            i w12 = l10.w();
-            q.f(w12, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorAssertionResponse");
-            m9.f fVar = (m9.f) w12;
+            byte[] w12 = r10.w();
+            q.g(w12, "credential.rawId");
+            String base642 = toBase64(w12);
+            i z12 = r10.z();
+            q.f(z12, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorAssertionResponse");
+            m9.f fVar = (m9.f) z12;
             JSONObject jSONObject4 = new JSONObject();
             jSONObject4.put("id", base642);
             jSONObject4.put("rawId", base642);
             jSONObject4.put("type", u.PUBLIC_KEY.toString());
             JSONObject jSONObject5 = new JSONObject();
-            byte[] l12 = fVar.l();
-            q.g(l12, "response.clientDataJSON");
-            jSONObject5.put("clientDataJSON", toBase64(l12));
-            byte[] s11 = fVar.s();
-            q.g(s11, "response.authenticatorData");
-            jSONObject5.put("authenticatorData", toBase64(s11));
-            byte[] w13 = fVar.w();
-            q.g(w13, "response.signature");
-            jSONObject5.put("signature", toBase64(w13));
-            byte[] B = fVar.B();
-            if (B != null) {
-                jSONObject5.put("userHandle", toBase64(B));
+            byte[] r12 = fVar.r();
+            q.g(r12, "response.clientDataJSON");
+            jSONObject5.put("clientDataJSON", toBase64(r12));
+            byte[] t11 = fVar.t();
+            q.g(t11, "response.authenticatorData");
+            jSONObject5.put("authenticatorData", toBase64(t11));
+            byte[] z13 = fVar.z();
+            q.g(z13, "response.signature");
+            jSONObject5.put("signature", toBase64(z13));
+            byte[] C = fVar.C();
+            if (C != null) {
+                jSONObject5.put("userHandle", toBase64(C));
             }
             jSONObject4.put("response", jSONObject5);
             Function1<String, Unit> function13 = this.resolve;
@@ -253,7 +253,7 @@ public final class WebAuthn {
         q10 = j.q(0, jSONArray.length());
         Iterator<Integer> it = q10.iterator();
         while (it.hasNext()) {
-            JSONObject jSONObject2 = jSONArray.getJSONObject(((kf.p) it).nextInt());
+            JSONObject jSONObject2 = jSONArray.getJSONObject(((lf.p) it).nextInt());
             arrayList.add(new r(jSONObject2.getString("type"), jSONObject2.getInt("alg")));
         }
         aVar.e(arrayList);

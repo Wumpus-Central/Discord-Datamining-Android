@@ -22,7 +22,7 @@ public  class MessageAccessoriesAdapter$onBindViewHolder$46 extends n implements
     @Override 
     public   Unit invoke(GuildId guildId, ChannelId channelId, ChannelId channelId2, MessageId messageId) {
         m220invokekUTrps(guildId.m613unboximpl(), channelId.m600unboximpl(), channelId2.m600unboximpl(), messageId.m625unboximpl());
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

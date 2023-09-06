@@ -21,7 +21,7 @@ import com.discord.theme.ThemeManagerKt;
 import com.facebook.drawee.span.DraweeSpanStringBuilder;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
-import jf.n;
+import kf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;

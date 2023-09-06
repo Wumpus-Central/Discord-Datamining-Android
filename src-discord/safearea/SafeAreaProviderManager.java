@@ -12,7 +12,7 @@ import com.facebook.react.viewmanagers.SafeAreaViewManagerDelegate;
 import com.facebook.react.viewmanagers.SafeAreaViewManagerInterface;
 import com.th3rdwave.safeareacontext.SafeAreaProvider;
 import java.util.Map;
-import jf.x;
+import kf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;
@@ -129,7 +129,7 @@ public final class SafeAreaProviderManager extends ViewGroupManager<SafeAreaProv
         float leftDp = safeAreaEdgeInsets.getLeftDp();
         float rightDp = safeAreaEdgeInsets.getRightDp();
         if (insets != null) {
-            f10 = SizeUtilsKt.getPxToDp(insets.f2823d);
+            f10 = SizeUtilsKt.getPxToDp(insets.f2943d);
         } else {
             f10 = DEFAULT_IME_INSETS_BOTTOM;
         }

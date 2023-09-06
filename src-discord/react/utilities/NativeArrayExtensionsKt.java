@@ -1,6 +1,6 @@
 package com.discord.react.utilities;
 
-import ag.j;
+import bg.j;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.ReadableNativeArray;

@@ -69,8 +69,8 @@ public abstract class ListOperation {
             q.h(range, "range");
             this.range = range;
             this.first = range.a();
-            this.last = range.h();
-            this.count = (range.h() - range.a()) + 1;
+            this.last = range.e();
+            this.count = (range.e() - range.a()) + 1;
         }
 
         public static  ChangeRange copy$default(ChangeRange changeRange, IntRange intRange, int i10, Object obj) {
@@ -182,8 +182,8 @@ public abstract class ListOperation {
             q.h(range, "range");
             this.range = range;
             this.first = range.a();
-            this.last = range.h();
-            this.count = (range.h() - range.a()) + 1;
+            this.last = range.e();
+            this.count = (range.e() - range.a()) + 1;
         }
 
         public static  InsertRange copy$default(InsertRange insertRange, IntRange intRange, int i10, Object obj) {
@@ -295,8 +295,8 @@ public abstract class ListOperation {
             q.h(range, "range");
             this.range = range;
             this.first = range.a();
-            this.last = range.h();
-            this.count = (range.h() - range.a()) + 1;
+            this.last = range.e();
+            this.count = (range.e() - range.a()) + 1;
         }
 
         public static  RemoveRange copy$default(RemoveRange removeRange, IntRange intRange, int i10, Object obj) {

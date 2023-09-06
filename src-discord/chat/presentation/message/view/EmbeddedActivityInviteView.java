@@ -191,7 +191,7 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
         if (structurableText != null) {
             MessageContentView messageContentView2 = this.binding.itemSubtitle;
             q.g(messageContentView2, "binding.itemSubtitle");
-            messageContentView2.m335setMessageContent2i9KL1s(structurableText, messageId, false, false, false, onTapLink, onLongTapLink, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, onTapSeeMore, (i12 & 65536) != 0 ? MessageContentView$setMessageContent$1.INSTANCE : null, 0, 0, (i12 & 524288) != 0 ? null : null, (i12 & 1048576) != 0 ? null : null, (i12 & 2097152) != 0 ? ThemeManagerKt.getTheme() : null);
+            messageContentView2.m335setMessageContent2i9KL1s(structurableText, messageId, false, false, false, onTapLink, onLongTapLink, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, onTapSeeMore, (r47 & 65536) != 0 ? MessageContentView$setMessageContent$1.INSTANCE : null, 0, 0, (r47 & 524288) != 0 ? null : null, (r47 & 1048576) != 0 ? null : null, (r47 & 2097152) != 0 ? ThemeManagerKt.getTheme() : null);
         }
     }
 

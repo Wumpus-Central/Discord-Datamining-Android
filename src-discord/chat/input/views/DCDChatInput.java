@@ -79,9 +79,9 @@ public final class DCDChatInput extends AppCompatEditText {
         if (!z11) {
             return false;
         }
-        boolean z12 = isEnterHeldDown.f21240j;
+        boolean z12 = isEnterHeldDown.f21461j;
         if (event.getAction() == 0) {
-            isEnterHeldDown.f21240j = true;
+            isEnterHeldDown.f21461j = true;
             if (event.hasModifiers(1)) {
                 return false;
             }
@@ -91,7 +91,7 @@ public final class DCDChatInput extends AppCompatEditText {
             return true;
         }
         if (event.getAction() == 1) {
-            isEnterHeldDown.f21240j = false;
+            isEnterHeldDown.f21461j = false;
         }
         return false;
     }

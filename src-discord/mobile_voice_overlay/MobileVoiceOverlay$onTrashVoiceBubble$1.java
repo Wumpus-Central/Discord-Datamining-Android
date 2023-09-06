@@ -27,7 +27,7 @@ final class MobileVoiceOverlay$onTrashVoiceBubble$1 extends s implements Functio
     @Override 
     public   Unit invoke(OverlayVoiceBubble overlayVoiceBubble) {
         invoke2(overlayVoiceBubble);
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

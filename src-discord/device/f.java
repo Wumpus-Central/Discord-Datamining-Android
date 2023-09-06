@@ -1,5 +1,5 @@
 package com.discord.device;
 
 
-public final  class c {
+public final  class f {
 }

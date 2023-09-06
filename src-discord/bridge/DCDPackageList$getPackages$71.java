@@ -1,6 +1,6 @@
 package com.discord.bridge;
 
-import com.discord.app_icon.AppIconManagerModule;
+import com.discord.audio.AudioRouteEmitterModule;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import kotlin.Metadata;
@@ -19,6 +19,6 @@ final class DCDPackageList$getPackages$71 extends s implements Function1<ReactAp
 
     public final NativeModule invoke(ReactApplicationContext it) {
         q.h(it, "it");
-        return AppIconManagerModule.Companion.create(it);
+        return AudioRouteEmitterModule.Companion.create(it);
     }
 }

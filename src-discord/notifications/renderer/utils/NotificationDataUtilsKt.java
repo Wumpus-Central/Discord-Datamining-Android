@@ -43,8 +43,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-import jf.x;
-import kf.v;
+import kf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -58,6 +57,7 @@ import kotlinx.serialization.json.JsonObject;
 import kotlinx.serialization.json.f;
 import kotlinx.serialization.json.g;
 import kotlinx.serialization.json.s;
+import lf.v;
 
 @Metadata(d1 = {"\u0000|\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\r\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a,\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u00052\u0006\u0010\u0007\u001a\u00020\u0006H\u0002\u001a/\u0010\b\u001a\u00020\t2\u0006\u0010\u0002\u001a\u00020\u00032\b\u0010\n\u001a\u0004\u0018\u00010\u000b2\b\u0010\f\u001a\u0004\u0018\u00010\u0006H\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0002\b\r\u001a\n\u0010\u000e\u001a\u00020\u000f*\u00020\u0010\u001a(\u0010\u0011\u001a\u00020\u0001*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u0005H\u0000\u001a0\u0010\u0012\u001a\u0004\u0018\u00010\u0013*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u00152\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u0005\u001a\u0016\u0010\u0016\u001a\u0004\u0018\u00010\t*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a(\u0010\u0017\u001a\u00020\u0001*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u0005H\u0000\u001a\u000e\u0010\u0018\u001a\u0004\u0018\u00010\t*\u00020\u0010H\u0000\u001a\u0014\u0010\u0019\u001a\u00020\u0001*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0016\u0010\u001a\u001a\u0004\u0018\u00010\u0013*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u0010\u001b\u001a\u00020\u0006*\u00020\u0010H\u0000\u001a\u0014\u0010\u001c\u001a\u00020\u0006*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0014\u0010\u001d\u001a\u00020\u0006*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0016\u0010\u001e\u001a\u0004\u0018\u00010\u001f*\u00020\u00102\b\u0010 \u001a\u0004\u0018\u00010\u0006\u001a\u0016\u0010!\u001a\u0004\u0018\u00010\u0013*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u0010\"\u001a\u00020\u0006*\u00020\u0010H\u0000\u001a\f\u0010#\u001a\u00020$*\u00020\u0010H\u0000\u001a\u0016\u0010%\u001a\u00020&*\u00020\u00102\b\u0010'\u001a\u0004\u0018\u00010(H\u0000\u001a\u0018\u0010)\u001a\u0004\u0018\u00010&*\u00020\u00102\b\u0010'\u001a\u0004\u0018\u00010(H\u0000\u001a<\u0010*\u001a\u00020+*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u00052\b\u0010'\u001a\u0004\u0018\u00010(2\b\u0010,\u001a\u0004\u0018\u00010(H\u0000\u001a\f\u0010-\u001a\u00020.*\u00020\u0010H\u0000\u001a\u0016\u0010/\u001a\u0004\u0018\u000100*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\n\u00101\u001a\u00020\u0006*\u00020\u0010\u001a\u001c\u00102\u001a\u0004\u0018\u00010\u0013*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u00103\u001a\u00020.\u001a\u0014\u00104\u001a\u00020\t*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u00105\u001a\u00020\u0015*\u00020\u0010H\u0000\u001a\f\u00106\u001a\u00020\u0015*\u00020\u0010H\u0000\u001a\u0016\u00107\u001a\u0004\u0018\u00010\t*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u00108\u001a\u00020\u0015*\u00020\u0010H\u0000\u001a\f\u00109\u001a\u00020:*\u00020(H\u0002\u001a\u0012\u0010;\u001a\u00020\u000f*\u00020\u00102\u0006\u0010<\u001a\u00020\u000f\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006="}, d2 = {"getPendingIntent", "Landroid/app/PendingIntent;", "context", "Landroid/content/Context;", "notificationDataMap", "", "", "tag", "getSystemMessageUserJoin", "", "userId", "Lcom/discord/primitives/UserId;", "userName", "getSystemMessageUserJoin-_NT-lnE", "getAuthor", "Lkotlinx/serialization/json/JsonObject;", "Lcom/discord/notifications/api/NotificationData;", "getButtonPendingIntent", "getCallAction", "Landroidx/core/app/NotificationCompat$Action;", "isAcceptAction", "", "getContent", "getContentPendingIntent", "getConversationTitle", "getDeletePendingIntent", "getDirectReplyAction", "getGroupKey", "getIconUrl", "getIconUrlForAvatar", "getKvMessage", "Lcom/discord/notifications/api/KvMessageEntry;", "rawMessage", "getMarkAsReadAction", "getNotificationCategory", "getSendTime", "", "getSender", "Landroidx/core/app/Person;", "icon", "Landroid/graphics/Bitmap;", "getSenderForMessageNotification", "getShortcutInfo", "Landroidx/core/content/pm/ShortcutInfoCompat;", "avatar", "getSmallIcon", "", "getSound", "Landroid/net/Uri;", "getTag", "getTimedMuteAction", "numMessages", "getTitle", "isConversation", "isGroupConversation", "renderMessageContent", "shouldUseBigText", "toIconCompat", "Landroidx/core/graphics/drawable/IconCompat;", "toNotificationMessage", "author", "notification_renderer_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 
@@ -105,7 +105,7 @@ public final class NotificationDataUtilsKt {
         if (z10) {
             v10 = v.v(notificationDataMap);
             v10.put("type", NotificationData.TYPE_CALL_CONNECT);
-            Unit unit = Unit.f21215a;
+            Unit unit = Unit.f21436a;
             pendingIntent = getButtonPendingIntent(notificationData, context, v10);
         } else {
             pendingIntent = NotificationAction.DefaultImpls.toPendingIntent$default(new DismissCallAction(getTag(notificationData), j10, null), context, 0, false, 6, null);
@@ -391,7 +391,7 @@ public final class NotificationDataUtilsKt {
                     CrashReporting.INSTANCE.captureException(e10);
                 }
             } else {
-                JsonElement g10 = Json.f21742d.g(str);
+                JsonElement g10 = Json.f21963d.g(str);
                 h11 = j.h();
                 JsonObject author2 = message.getAuthor();
                 q.e(author2);

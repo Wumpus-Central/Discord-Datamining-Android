@@ -20,7 +20,7 @@ final class FlaggedMessageEmbedView$configureMessageContent$1$1 extends s implem
     @Override 
     public   Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
         m324invokentcYbpo(messageId.m625unboximpl(), linkContentNode);
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

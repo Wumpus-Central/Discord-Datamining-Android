@@ -21,7 +21,7 @@ public  class SurveyIndicationViewHolder$bind$1$1 extends n implements Function2
     @Override 
     public   Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
         m364invokentcYbpo(messageId.m625unboximpl(), linkContentNode);
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

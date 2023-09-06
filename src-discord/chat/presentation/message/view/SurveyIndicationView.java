@@ -6,24 +6,12 @@ import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.R;
 import com.discord.chat.bridge.contentnode.LinkContentNode;
 import com.discord.chat.bridge.feedback.SurveyIndication;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.databinding.SurveyActionViewBinding;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.image.fresco.SimpleDraweeSpanTextViewUtilsKt;
@@ -66,7 +54,6 @@ public final class SurveyIndicationView extends ConstraintLayout {
 
     
     public final void m338setSurveyIndicationu7_MRrM(String messageId, SurveyIndication surveyIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
-        DraweeSpanStringBuilder spannable;
         q.h(messageId, "messageId");
         q.h(surveyIndication, "surveyIndication");
         q.h(onLinkClicked, "onLinkClicked");
@@ -83,9 +70,9 @@ public final class SurveyIndicationView extends ConstraintLayout {
         TextPaint paint = this.binding.chatListAdapterItemTextFeedback.getPaint();
         q.g(context, "context");
         q.g(paint, "paint");
-        spannable = TextUtilsKt.toSpannable(content, context, messageId, false, false, false, paint, (r44 & 64) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : new SurveyIndicationView$setSurveyIndication$1$1(onLinkClicked, messageId), (r44 & 128) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r44 & 256) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r44 & 512) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r44 & 1024) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r44 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r44 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r44 & 8192) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r44 & 16384) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (32768 & r44) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (65536 & r44) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (131072 & r44) != 0 ? false : false, (262144 & r44) != 0 ? ThemeManagerKt.getTheme() : null, (r44 & 524288) != 0 ? -1.0f : baselineHeight);
-        SpannableExtensionsKt.coverWithSpan(spannable, new BackgroundSpanDrawer(setSurveyIndication_u7_MRrM$lambda$2));
-        SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setSurveyIndication_u7_MRrM$lambda$2, spannable);
+        DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context, messageId, false, false, false, paint, new SurveyIndicationView$setSurveyIndication$1$1(onLinkClicked, messageId), null, null, null, null, null, null, null, null, null, null, false, null, baselineHeight, 524160, null);
+        SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(setSurveyIndication_u7_MRrM$lambda$2));
+        SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setSurveyIndication_u7_MRrM$lambda$2, spannable$default);
         NestedScrollOnTouchUtilsKt.enableNestedSpanClickListener$default(setSurveyIndication_u7_MRrM$lambda$2, false, 1, null);
     }
 

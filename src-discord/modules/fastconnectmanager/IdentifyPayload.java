@@ -5,11 +5,9 @@ import com.discord.logging.Log;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import jf.s;
-import jf.t;
-import jf.x;
-import kf.u;
-import kf.v;
+import kf.s;
+import kf.t;
+import kf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.j;
@@ -18,6 +16,8 @@ import kotlinx.serialization.json.Json;
 import kotlinx.serialization.json.JsonElement;
 import kotlinx.serialization.json.JsonObject;
 import kotlinx.serialization.json.g;
+import lf.u;
+import lf.v;
 
 @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J!\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00042\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\u0002\u0010\tJ$\u0010\n\u001a\u00020\u000b*\u00020\u000b2\f\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u00040\r2\b\u0010\u000e\u001a\u0004\u0018\u00010\u000bH\u0002¨\u0006\u000f"}, d2 = {"Lcom/discord/modules/fastconnectmanager/IdentifyPayload;", "", "()V", "withGuildVersions", "", "json", "versions", "", "Lcom/discord/app_database/GuildVersion;", "(Ljava/lang/String;[Lcom/discord/app_database/GuildVersion;)Ljava/lang/String;", "put", "Lkotlinx/serialization/json/JsonObject;", "path", "", "value", "app_canaryRelease"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -65,10 +65,10 @@ public final class IdentifyPayload {
         q.h(json, "json");
         q.h(versions, "versions");
         try {
-            s.a aVar = s.f20304k;
-            obj = s.b(Json.f21742d.g(json));
+            s.a aVar = s.f21214k;
+            obj = s.b(Json.f21963d.g(json));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f20304k;
+            s.a aVar2 = s.f21214k;
             obj = s.b(t.a(th2));
         }
         if (s.g(obj)) {
@@ -79,7 +79,7 @@ public final class IdentifyPayload {
             JsonObject jsonObject = (JsonObject) jsonElement;
             k10 = j.k("d", "client_state", "guild_versions");
             d10 = u.d(versions.length);
-            c10 = ag.j.c(d10, 16);
+            c10 = bg.j.c(d10, 16);
             LinkedHashMap linkedHashMap = new LinkedHashMap(c10);
             for (GuildVersion guildVersion : versions) {
                 Pair a10 = x.a(guildVersion.getId(), g.c(Long.valueOf(guildVersion.getVersion())));

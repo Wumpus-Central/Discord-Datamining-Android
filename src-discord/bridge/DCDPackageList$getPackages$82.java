@@ -1,6 +1,6 @@
 package com.discord.bridge;
 
-import com.discord.timers.TimersModule;
+import com.discord.modules.savedappconstants.SavedAppConstantsModule;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import kotlin.Metadata;
@@ -19,6 +19,6 @@ final class DCDPackageList$getPackages$82 extends s implements Function1<ReactAp
 
     public final NativeModule invoke(ReactApplicationContext it) {
         q.h(it, "it");
-        return TimersModule.Companion.create(it);
+        return SavedAppConstantsModule.Companion.create(it);
     }
 }

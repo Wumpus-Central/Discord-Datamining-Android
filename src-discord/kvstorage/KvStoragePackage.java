@@ -1,4 +1,4 @@
-package com.discord.kvstorage.reactnative;
+package com.discord.kvstorage;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;

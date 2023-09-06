@@ -19,7 +19,7 @@ public  class DiscordAudioManager$audioManagerBroadcastReceiver$2 extends n impl
     @Override 
     public   Unit invoke(ScoAudioState.Update update) {
         invoke2(update);
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

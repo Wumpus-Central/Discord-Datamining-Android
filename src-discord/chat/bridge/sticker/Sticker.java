@@ -10,9 +10,9 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import ti.f;
-import wi.m0;
-import wi.n1;
+import ui.f;
+import xi.m0;
+import xi.n1;
 
 @f
 @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u001d\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 :2\u00020\u0001:\u00029:Bg\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0001\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\t\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u000e\u001a\u00020\u0003\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010¢\u0006\u0002\u0010\u0011BM\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\t\u0012\u0006\u0010\u000b\u001a\u00020\t\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u000e\u001a\u00020\u0003¢\u0006\u0002\u0010\u0012J\t\u0010#\u001a\u00020\u0005HÆ\u0003J\t\u0010$\u001a\u00020\u0007HÆ\u0003J\t\u0010%\u001a\u00020\tHÆ\u0003J\t\u0010&\u001a\u00020\tHÆ\u0003J\t\u0010'\u001a\u00020\tHÆ\u0003J\u0010\u0010(\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u001aJ\u0010\u0010)\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u001aJ\t\u0010*\u001a\u00020\u0003HÆ\u0003Jb\u0010+\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\t2\b\b\u0002\u0010\u000b\u001a\u00020\t2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u000e\u001a\u00020\u0003HÆ\u0001¢\u0006\u0002\u0010,J\u0013\u0010-\u001a\u00020.2\b\u0010/\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00100\u001a\u00020\u0003HÖ\u0001J\t\u00101\u001a\u00020\tHÖ\u0001J!\u00102\u001a\u0002032\u0006\u00104\u001a\u00020\u00002\u0006\u00105\u001a\u0002062\u0006\u00107\u001a\u000208HÇ\u0001R\u0011\u0010\n\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u001c\u0010\u0006\u001a\u00020\u00078\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u0015\u0010\u0016\u001a\u0004\b\u0017\u0010\u0018R\u0015\u0010\r\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\u001b\u001a\u0004\b\u0019\u0010\u001aR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u0011\u0010\b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u0014R\u0011\u0010\u000e\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010 R\u0011\u0010\u000b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\u0014R\u0015\u0010\f\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\u001b\u001a\u0004\b\"\u0010\u001a¨\u0006;"}, d2 = {"Lcom/discord/chat/bridge/sticker/Sticker;", "", "seen1", "", "id", "", "formatType", "Lcom/discord/chat/bridge/sticker/StickerFormatType;", ZeroconfModule.KEY_SERVICE_NAME, "", "asset", "url", "width", "height", "renderMode", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IJLcom/discord/chat/bridge/sticker/StickerFormatType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;ILkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(JLcom/discord/chat/bridge/sticker/StickerFormatType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;I)V", "getAsset", "()Ljava/lang/String;", "getFormatType$annotations", "()V", "getFormatType", "()Lcom/discord/chat/bridge/sticker/StickerFormatType;", "getHeight", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getId", "()J", "getName", "getRenderMode", "()I", "getUrl", "getWidth", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "copy", "(JLcom/discord/chat/bridge/sticker/StickerFormatType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;I)Lcom/discord/chat/bridge/sticker/Sticker;", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -24,7 +24,7 @@ public final class Sticker {
     private final Integer height;
 
     
-    private final long f7254id;
+    private final long f7247id;
     private final String name;
     private final int renderMode;
     private final String url;
@@ -49,7 +49,7 @@ public final class Sticker {
         if (159 != (i10 & 159)) {
             n1.b(i10, 159, Sticker$$serializer.INSTANCE.getDescriptor());
         }
-        this.f7254id = j10;
+        this.f7247id = j10;
         this.formatType = stickerFormatType;
         this.name = str;
         this.asset = str2;
@@ -76,30 +76,30 @@ public final class Sticker {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z11 = false;
-        output.E(serialDesc, 0, self.f7254id);
-        output.o(serialDesc, 1, StickerFormatType.StickerFormatTypeSerializer.INSTANCE, self.formatType);
-        output.x(serialDesc, 2, self.name);
-        output.x(serialDesc, 3, self.asset);
-        output.x(serialDesc, 4, self.url);
+        output.E(serialDesc, 0, self.f7247id);
+        output.h(serialDesc, 1, StickerFormatType.StickerFormatTypeSerializer.INSTANCE, self.formatType);
+        output.y(serialDesc, 2, self.name);
+        output.y(serialDesc, 3, self.asset);
+        output.y(serialDesc, 4, self.url);
         if (!output.z(serialDesc, 5) && self.width == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.B(serialDesc, 5, m0.f29839a, self.width);
+            output.e(serialDesc, 5, m0.f30643a, self.width);
         }
         if (output.z(serialDesc, 6) || self.height != null) {
             z11 = true;
         }
         if (z11) {
-            output.B(serialDesc, 6, m0.f29839a, self.height);
+            output.e(serialDesc, 6, m0.f30643a, self.height);
         }
-        output.v(serialDesc, 7, self.renderMode);
+        output.w(serialDesc, 7, self.renderMode);
     }
 
     public final long component1() {
-        return this.f7254id;
+        return this.f7247id;
     }
 
     public final StickerFormatType component2() {
@@ -146,7 +146,7 @@ public final class Sticker {
             return false;
         }
         Sticker sticker = (Sticker) obj;
-        return this.f7254id == sticker.f7254id && this.formatType == sticker.formatType && q.c(this.name, sticker.name) && q.c(this.asset, sticker.asset) && q.c(this.url, sticker.url) && q.c(this.width, sticker.width) && q.c(this.height, sticker.height) && this.renderMode == sticker.renderMode;
+        return this.f7247id == sticker.f7247id && this.formatType == sticker.formatType && q.c(this.name, sticker.name) && q.c(this.asset, sticker.asset) && q.c(this.url, sticker.url) && q.c(this.width, sticker.width) && q.c(this.height, sticker.height) && this.renderMode == sticker.renderMode;
     }
 
     public final String getAsset() {
@@ -162,7 +162,7 @@ public final class Sticker {
     }
 
     public final long getId() {
-        return this.f7254id;
+        return this.f7247id;
     }
 
     public final String getName() {
@@ -182,7 +182,7 @@ public final class Sticker {
     }
 
     public int hashCode() {
-        int a10 = ((((((((b.a(this.f7254id) * 31) + this.formatType.hashCode()) * 31) + this.name.hashCode()) * 31) + this.asset.hashCode()) * 31) + this.url.hashCode()) * 31;
+        int a10 = ((((((((b.a(this.f7247id) * 31) + this.formatType.hashCode()) * 31) + this.name.hashCode()) * 31) + this.asset.hashCode()) * 31) + this.url.hashCode()) * 31;
         Integer num = this.width;
         int i10 = 0;
         int hashCode = (a10 + (num == null ? 0 : num.hashCode())) * 31;
@@ -194,7 +194,7 @@ public final class Sticker {
     }
 
     public String toString() {
-        long j10 = this.f7254id;
+        long j10 = this.f7247id;
         StickerFormatType stickerFormatType = this.formatType;
         String str = this.name;
         String str2 = this.asset;
@@ -210,7 +210,7 @@ public final class Sticker {
         q.h(name, "name");
         q.h(asset, "asset");
         q.h(url, "url");
-        this.f7254id = j10;
+        this.f7247id = j10;
         this.formatType = formatType;
         this.name = name;
         this.asset = asset;

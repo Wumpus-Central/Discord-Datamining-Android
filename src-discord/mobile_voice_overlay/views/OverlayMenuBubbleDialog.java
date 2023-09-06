@@ -138,7 +138,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         animatorSet.setStartDelay(getResources().getInteger(17694720));
         Animator loadAnimator = AnimatorInflater.loadAnimator(this.binding.overlayMenu.getContext(), R.animator.overlay_slide_down_fade_out);
         loadAnimator.setTarget(this.binding.overlayMenu);
-        Unit unit = Unit.f21215a;
+        Unit unit = Unit.f21436a;
         Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), R.animator.overlay_slide_up_fade_out);
         loadAnimator2.setTarget(this.binding.overlayHeader);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
@@ -163,7 +163,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         AnimatorSet animatorSet = new AnimatorSet();
         Animator loadAnimator = AnimatorInflater.loadAnimator(this.binding.overlayMenu.getContext(), R.animator.overlay_slide_up_fade_in);
         loadAnimator.setTarget(this.binding.overlayMenu);
-        Unit unit = Unit.f21215a;
+        Unit unit = Unit.f21436a;
         Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), R.animator.overlay_slide_down_fade_in);
         loadAnimator2.setTarget(this.binding.overlayHeader);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
@@ -197,7 +197,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         if (users.size() < 2) {
             list = j.h();
         } else {
-            q10 = ag.j.q(1, users.size());
+            q10 = bg.j.q(1, users.size());
             list = r.s0(users, q10);
         }
         this.adapter.setData(list);

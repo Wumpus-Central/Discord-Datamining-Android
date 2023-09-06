@@ -3,7 +3,7 @@ package com.discord.analytics;
 import android.content.SharedPreferences;
 import com.android.installreferrer.api.InstallReferrerClient;
 import com.facebook.react.bridge.Promise;
-import jf.t;
+import kf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -13,7 +13,7 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Ref$ObjectRef;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.x2;
-import pf.d;
+import qf.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.analytics.InstallReferrerModule$get$1", f = "InstallReferrerModule.kt", l = {35}, m = "invokeSuspend")
@@ -65,7 +65,7 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21215a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21436a);
         }
 
         
@@ -99,7 +99,7 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((InstallReferrerModule$get$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21215a);
+        return ((InstallReferrerModule$get$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21436a);
     }
 
     @Override 
@@ -119,6 +119,6 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 }

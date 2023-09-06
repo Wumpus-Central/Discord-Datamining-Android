@@ -27,7 +27,7 @@ final class EphemeralIndicationView$setEphemeralIndication$2$1 extends s impleme
     @Override 
     public   Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

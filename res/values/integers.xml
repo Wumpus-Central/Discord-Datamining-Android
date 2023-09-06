@@ -13,6 +13,7 @@
     <integer name="exo_media_button_opacity_percentage_enabled">100</integer>
     <integer name="google_play_services_version">12451000</integer>
     <integer name="hide_password_duration">320</integer>
+    <integer name="image_fade_duration">300</integer>
     <integer name="m3_btn_anim_delay_ms">100</integer>
     <integer name="m3_btn_anim_duration_ms">100</integer>
     <integer name="m3_card_anim_delay_ms">75</integer>

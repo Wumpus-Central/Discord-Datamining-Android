@@ -2,7 +2,7 @@ package com.discord.client_info;
 
 import android.content.Context;
 import java.util.Locale;
-import jf.n;
+import kf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
@@ -17,9 +17,9 @@ public final class ClientInfo {
     public static String otaManifestETag = null;
     public static String otaVersion = null;
     public static String packageName = null;
-    public static final String proguardUUID = "44a730b6-6be6-48d6-8409-6409a48eaa2e";
+    public static final String proguardUUID = "6002b5b8-ba28-4a44-8ae5-0c5af8f5d599";
     public static final String sentryDsn = "https:
-    public static final String sentryRelease = "discord_android@195.7.0-2+195207";
+    public static final String sentryRelease = "discord_android@196.1.0-2+196201";
     public static final String sentryStaffDsn = "https:
     public static String versionCode;
     public static String versionName;

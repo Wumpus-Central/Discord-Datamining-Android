@@ -21,7 +21,7 @@ import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-import jf.x;
+import kf.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -165,7 +165,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             return null;
         }
         Job.a.a(remove, null, 1, null);
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     @ReactMethod

@@ -31,7 +31,7 @@ import kotlin.collections.k;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import xf.c;
+import yf.c;
 
 @Metadata(d1 = {"\u0000¸\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0007\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0018\u0002\n\u0002\b\u0016\u0018\u0000 \u0092\u00012\u00020\u0001:\b\u0093\u0001\u0094\u0001\u0092\u0001\u0095\u0001BS\u0012\u0006\u00107\u001a\u000206\u0012\u0018\u0010:\u001a\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00160\u0015\u0012\u0004\u0012\u00020\u000409\u0012\u0012\u0010>\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u000409\u0012\u0012\u0010A\u001a\u000e\u0012\u0004\u0012\u00020@\u0012\u0004\u0012\u00020\u000409¢\u0006\u0006\b\u0090\u0001\u0010\u0091\u0001J\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\b\u0010\u0006\u001a\u00020\u0002H\u0002J\b\u0010\u0007\u001a\u00020\u0004H\u0002J\b\u0010\b\u001a\u00020\u0004H\u0002J\b\u0010\t\u001a\u00020\u0004H\u0002J\u0010\u0010\f\u001a\u00020\u00022\u0006\u0010\u000b\u001a\u00020\nH\u0002J\u0010\u0010\r\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\b\u0010\u000e\u001a\u00020\u0004H\u0003J\b\u0010\u000f\u001a\u00020\u0002H\u0002J\b\u0010\u0010\u001a\u00020\u0004H\u0002J\u0010\u0010\u0011\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0010\u0010\u0012\u001a\u00020\u00042\u0006\u0010\u000b\u001a\u00020\nH\u0002J\b\u0010\u0013\u001a\u00020\u0004H\u0002J\b\u0010\u0014\u001a\u00020\u0004H\u0002J\u0016\u0010\u0018\u001a\u00020\u00042\f\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\u00160\u0015H\u0002J\b\u0010\u0019\u001a\u00020\u0004H\u0002J\u0010\u0010\u001c\u001a\u00020\u00042\u0006\u0010\u001b\u001a\u00020\u001aH\u0003J\u0010\u0010\u001f\u001a\u00020\u00042\u0006\u0010\u001e\u001a\u00020\u001dH\u0003J\u0012\u0010!\u001a\u00020\u00042\b\u0010\u000b\u001a\u0004\u0018\u00010 H\u0003J\u0012\u0010$\u001a\u00020\u00042\b\u0010#\u001a\u0004\u0018\u00010\"H\u0003J\u0010\u0010'\u001a\u00020\u00042\u0006\u0010&\u001a\u00020%H\u0003J\u0010\u0010*\u001a\u00020\u00042\u0006\u0010)\u001a\u00020(H\u0003J\u000e\u0010,\u001a\u00020\u00022\u0006\u0010+\u001a\u00020\nJ\u0006\u0010-\u001a\u00020\u0004J\u0006\u0010.\u001a\u00020\u0004J\u000e\u0010/\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002J\u0010\u00102\u001a\u00020\u00042\b\b\u0001\u00101\u001a\u000200J\u000f\u00105\u001a\u00020\u0004H\u0001¢\u0006\u0004\b3\u00104R\u0014\u00107\u001a\u0002068\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b7\u00108R)\u0010:\u001a\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00160\u0015\u0012\u0004\u0012\u00020\u0004098\u0006¢\u0006\f\n\u0004\b:\u0010;\u001a\u0004\b<\u0010=R#\u0010>\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u0004098\u0006¢\u0006\f\n\u0004\b>\u0010;\u001a\u0004\b?\u0010=R#\u0010A\u001a\u000e\u0012\u0004\u0012\u00020@\u0012\u0004\u0012\u00020\u0004098\u0006¢\u0006\f\n\u0004\bA\u0010;\u001a\u0004\bB\u0010=R\u0014\u0010D\u001a\u00020C8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bD\u0010ER\u0014\u0010F\u001a\u00020\u00028\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bF\u0010GR\u0014\u0010H\u001a\u00020\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bH\u0010IR\u0014\u0010K\u001a\u00020J8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bK\u0010LR \u0010N\u001a\u00020M8\u0000X\u0081\u0004¢\u0006\u0012\n\u0004\bN\u0010O\u0012\u0004\bR\u00104\u001a\u0004\bP\u0010QR \u0010T\u001a\u00020S8\u0000X\u0081\u0004¢\u0006\u0012\n\u0004\bT\u0010U\u0012\u0004\bX\u00104\u001a\u0004\bV\u0010WR*\u0010Y\u001a\u0004\u0018\u00010\"8\u0000@\u0000X\u0081\u000e¢\u0006\u0018\n\u0004\bY\u0010Z\u0012\u0004\b_\u00104\u001a\u0004\b[\u0010\\\"\u0004\b]\u0010^R(\u0010a\u001a\u00020`8\u0000@\u0000X\u0081\u000e¢\u0006\u0018\n\u0004\ba\u0010b\u0012\u0004\bg\u00104\u001a\u0004\bc\u0010d\"\u0004\be\u0010fR*\u0010i\u001a\u0004\u0018\u00010h8\u0000@\u0000X\u0081\u000e¢\u0006\u0018\n\u0004\bi\u0010j\u0012\u0004\bo\u00104\u001a\u0004\bk\u0010l\"\u0004\bm\u0010nR\u0018\u0010q\u001a\u0004\u0018\u00010p8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bq\u0010rR6\u0010t\u001a\b\u0012\u0004\u0012\u00020\u00160\u00152\f\u0010s\u001a\b\u0012\u0004\u0012\u00020\u00160\u00158\u0006@BX\u0086\u000e¢\u0006\u0012\n\u0004\bt\u0010u\u001a\u0004\bv\u0010w\"\u0004\bx\u0010yR*\u0010z\u001a\u00020\n2\u0006\u0010s\u001a\u00020\n8\u0006@BX\u0086\u000e¢\u0006\u0012\n\u0004\bz\u0010{\u001a\u0004\b|\u0010}\"\u0004\b~\u0010\u007fR\u001c\u0010\u0081\u0001\u001a\u0005\u0018\u00010\u0080\u00018\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u0081\u0001\u0010\u0082\u0001R1\u0010\u0083\u0001\u001a\u00020@2\u0006\u0010s\u001a\u00020@8\u0006@BX\u0086\u000e¢\u0006\u0018\n\u0006\b\u0083\u0001\u0010\u0084\u0001\u001a\u0006\b\u0085\u0001\u0010\u0086\u0001\"\u0006\b\u0087\u0001\u0010\u0088\u0001R\u001c\u0010\u0089\u0001\u001a\u00020@8\u0006¢\u0006\u0010\n\u0006\b\u0089\u0001\u0010\u0084\u0001\u001a\u0006\b\u008a\u0001\u0010\u0086\u0001R\u0018\u0010\u008b\u0001\u001a\u00020\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u008b\u0001\u0010{R\u0018\u0010\u008c\u0001\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u008c\u0001\u0010GR\u0018\u0010\u008d\u0001\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u008d\u0001\u0010GR\u0018\u0010\u008e\u0001\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u008e\u0001\u0010GR\u0018\u0010\u008f\u0001\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u008f\u0001\u0010G¨\u0006\u0096\u0001"}, d2 = {"Lcom/discord/audio/DiscordAudioManager;", "", "", ViewProps.ON, "", "setCommunicationModeOnInternal", "requestAudioFocus", "releaseAudioFocus", "startObservingVolumeChanges", "stopObservingVolumeChanges", "Lcom/discord/audio/DiscordAudioManager$DeviceTypes;", "device", "isValidOutputDevice", "setMicrophoneMute", "refreshBluetoothHeadset", "hasWiredHeadset", "registerAudioFocusListener", "setSpeakerphoneOn", "activateDevice", "startBluetoothSco", "stopBluetoothSco", "", "Lcom/discord/audio/DiscordAudioManager$AudioDevice;", "devices", "activateDefaultDevice", "updateDeviceActivation", "Lcom/discord/audio/enums/BluetoothProfileConnectionState$Update;", "connectionState", "onHeadsetConnectionStateUpdate", "Lcom/discord/audio/enums/BluetoothHeadsetAudioState$Update;", "audioState", "onHeadsetAudioStateUpdate", "Landroid/bluetooth/BluetoothDevice;", "onActiveDeviceUpdate", "Landroid/bluetooth/BluetoothHeadset;", "bluetoothHeadset", "onHeadsetProxyConnectionUpdate", "Lcom/discord/audio/enums/WiredHeadsetState;", "wiredHeadsetState", "onWiredHeadsetPlug", "Lcom/discord/audio/enums/ScoAudioState$Update;", "scoAudioStateUpdate", "onScoAudioStateUpdate", "deviceType", "setDevice", "makeEarpieceUnavailable", "resetEarpieceAvailability", "setCommunicationModeOn", "", "ratio", "setMediaVolume", "registerHandlers$audio_release", "()V", "registerHandlers", "Landroid/content/Context;", "context", "Landroid/content/Context;", "Lkotlin/Function1;", "onAudioDevicesUpdated", "Lkotlin/jvm/functions/Function1;", "getOnAudioDevicesUpdated", "()Lkotlin/jvm/functions/Function1;", "onActiveAudioDeviceChanged", "getOnActiveAudioDeviceChanged", "", "onCurrentMediaVolumeChanged", "getOnCurrentMediaVolumeChanged", "Landroid/media/AudioManager;", "audioManager", "Landroid/media/AudioManager;", "hasEarpiece", "Z", "instanceLock", "Ljava/lang/Object;", "Lcom/discord/async_init/AsyncInitThreadChecker;", "asyncInitThreadChecker", "Lcom/discord/async_init/AsyncInitThreadChecker;", "Lcom/discord/audio/bluetooth/BluetoothBroadcastReceiver;", "bluetoothBroadcastReceiver", "Lcom/discord/audio/bluetooth/BluetoothBroadcastReceiver;", "getBluetoothBroadcastReceiver$audio_release", "()Lcom/discord/audio/bluetooth/BluetoothBroadcastReceiver;", "getBluetoothBroadcastReceiver$audio_release$annotations", "Lcom/discord/audio/AudioManagerBroadcastReceiver;", "audioManagerBroadcastReceiver", "Lcom/discord/audio/AudioManagerBroadcastReceiver;", "getAudioManagerBroadcastReceiver$audio_release", "()Lcom/discord/audio/AudioManagerBroadcastReceiver;", "getAudioManagerBroadcastReceiver$audio_release$annotations", "bluetoothHeadsetProfileProxy", "Landroid/bluetooth/BluetoothHeadset;", "getBluetoothHeadsetProfileProxy$audio_release", "()Landroid/bluetooth/BluetoothHeadset;", "setBluetoothHeadsetProfileProxy$audio_release", "(Landroid/bluetooth/BluetoothHeadset;)V", "getBluetoothHeadsetProfileProxy$audio_release$annotations", "Lcom/discord/audio/DiscordAudioManager$BluetoothScoState;", "bluetoothScoState", "Lcom/discord/audio/DiscordAudioManager$BluetoothScoState;", "getBluetoothScoState$audio_release", "()Lcom/discord/audio/DiscordAudioManager$BluetoothScoState;", "setBluetoothScoState$audio_release", "(Lcom/discord/audio/DiscordAudioManager$BluetoothScoState;)V", "getBluetoothScoState$audio_release$annotations", "Landroid/media/AudioManager$OnAudioFocusChangeListener;", "audioFocusListener", "Landroid/media/AudioManager$OnAudioFocusChangeListener;", "getAudioFocusListener$audio_release", "()Landroid/media/AudioManager$OnAudioFocusChangeListener;", "setAudioFocusListener$audio_release", "(Landroid/media/AudioManager$OnAudioFocusChangeListener;)V", "getAudioFocusListener$audio_release$annotations", "Landroid/media/AudioFocusRequest;", "audioFocusRequest", "Landroid/media/AudioFocusRequest;", "value", "audioDevices", "Ljava/util/List;", "getAudioDevices", "()Ljava/util/List;", "setAudioDevices", "(Ljava/util/List;)V", "activeAudioDevice", "Lcom/discord/audio/DiscordAudioManager$DeviceTypes;", "getActiveAudioDevice", "()Lcom/discord/audio/DiscordAudioManager$DeviceTypes;", "setActiveAudioDevice", "(Lcom/discord/audio/DiscordAudioManager$DeviceTypes;)V", "Landroid/database/ContentObserver;", "mediaVolumeObserver", "Landroid/database/ContentObserver;", "currentMediaVolume", "I", "getCurrentMediaVolume", "()I", "setCurrentMediaVolume", "(I)V", "maxMediaVolume", "getMaxMediaVolume", "requestedAudioDevice", "savedIsSpeakerphoneOn", "savedIsMicrophoneMute", "savedIsBluetoothScoOn", "inDiscordRequestedCommunicationMode", "<init>", "(Landroid/content/Context;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V", "Companion", "AudioDevice", "BluetoothScoState", "DeviceTypes", "audio_release"}, k = 1, mv = {1, 8, 0})
 
@@ -273,7 +273,7 @@ public final class DiscordAudioManager {
                     audioDevice = null;
                     break;
                 default:
-                    throw new jf.q();
+                    throw new kf.q();
             }
             if (audioDevice != null) {
                 arrayList.add(audioDevice);
@@ -339,7 +339,7 @@ public final class DiscordAudioManager {
         setSpeakerphoneOn(z10);
         synchronized (this.instanceLock) {
             setActiveAudioDevice(deviceTypes);
-            Unit unit = Unit.f21215a;
+            Unit unit = Unit.f21436a;
         }
         Log.i$default(Log.INSTANCE, TAG, "Activated device: " + deviceTypes, (Throwable) null, 4, (Object) null);
     }
@@ -374,7 +374,7 @@ public final class DiscordAudioManager {
             case 6:
                 return false;
             default:
-                throw new jf.q();
+                throw new kf.q();
         }
     }
 
@@ -430,7 +430,7 @@ public final class DiscordAudioManager {
                     arrayList.add(audioDevice);
                 }
                 setAudioDevices(arrayList);
-                Unit unit = Unit.f21215a;
+                Unit unit = Unit.f21436a;
             }
         } else if (i10 == 2) {
             updateDeviceActivation();
@@ -536,7 +536,7 @@ public final class DiscordAudioManager {
                         arrayList.add(audioDevice);
                     }
                     setAudioDevices(arrayList);
-                    Unit unit = Unit.f21215a;
+                    Unit unit = Unit.f21436a;
                 }
                 activateDefaultDevice(this.audioDevices);
             }
@@ -568,7 +568,7 @@ public final class DiscordAudioManager {
                     arrayList.add(audioDevice2);
                 }
                 setAudioDevices(arrayList);
-                Unit unit = Unit.f21215a;
+                Unit unit = Unit.f21436a;
             }
         } else if (wiredHeadsetState instanceof WiredHeadsetState.PluggedIn) {
             synchronized (this.instanceLock) {
@@ -587,7 +587,7 @@ public final class DiscordAudioManager {
                     arrayList2.add(audioDevice);
                 }
                 setAudioDevices(arrayList2);
-                Unit unit2 = Unit.f21215a;
+                Unit unit2 = Unit.f21436a;
             }
         }
         updateDeviceActivation();
@@ -611,7 +611,7 @@ public final class DiscordAudioManager {
         };
         synchronized (this.instanceLock) {
             this.audioFocusListener = iVar;
-            Unit unit = Unit.f21215a;
+            Unit unit = Unit.f21436a;
         }
     }
 
@@ -685,7 +685,7 @@ public final class DiscordAudioManager {
         }
         synchronized (this.instanceLock) {
             this.inDiscordRequestedCommunicationMode = z10;
-            Unit unit = Unit.f21215a;
+            Unit unit = Unit.f21436a;
         }
     }
 
@@ -916,7 +916,7 @@ public final class DiscordAudioManager {
             activateDevice(DeviceTypes.INVALID);
             synchronized (this.instanceLock) {
                 this.requestedAudioDevice = DeviceTypes.DEFAULT;
-                Unit unit = Unit.f21215a;
+                Unit unit = Unit.f21436a;
             }
             setCommunicationModeOnInternal(false);
             releaseAudioFocus();
@@ -951,7 +951,7 @@ public final class DiscordAudioManager {
         if (deviceType == deviceTypes) {
             synchronized (this.instanceLock) {
                 this.requestedAudioDevice = deviceTypes;
-                Unit unit = Unit.f21215a;
+                Unit unit = Unit.f21436a;
             }
             activateDefaultDevice(arrayList);
             return true;
@@ -963,7 +963,7 @@ public final class DiscordAudioManager {
             if (!z10) {
                 synchronized (this.instanceLock) {
                     this.requestedAudioDevice = deviceType;
-                    Unit unit2 = Unit.f21215a;
+                    Unit unit2 = Unit.f21436a;
                 }
                 activateDevice(deviceType);
                 return true;
@@ -999,7 +999,7 @@ public final class DiscordAudioManager {
     public static final class AudioDevice {
 
         
-        private final String f7194id;
+        private final String f7187id;
         private final boolean isAvailable;
         private final String name;
         private final DeviceTypes type;
@@ -1012,7 +1012,7 @@ public final class DiscordAudioManager {
             q.h(type, "type");
             this.type = type;
             this.isAvailable = z10;
-            this.f7194id = str;
+            this.f7187id = str;
             this.name = str2;
         }
 
@@ -1024,7 +1024,7 @@ public final class DiscordAudioManager {
                 z10 = audioDevice.isAvailable;
             }
             if ((i10 & 4) != 0) {
-                str = audioDevice.f7194id;
+                str = audioDevice.f7187id;
             }
             if ((i10 & 8) != 0) {
                 str2 = audioDevice.name;
@@ -1041,7 +1041,7 @@ public final class DiscordAudioManager {
         }
 
         public final String component3() {
-            return this.f7194id;
+            return this.f7187id;
         }
 
         public final String component4() {
@@ -1061,11 +1061,11 @@ public final class DiscordAudioManager {
                 return false;
             }
             AudioDevice audioDevice = (AudioDevice) obj;
-            return this.type == audioDevice.type && this.isAvailable == audioDevice.isAvailable && q.c(this.f7194id, audioDevice.f7194id) && q.c(this.name, audioDevice.name);
+            return this.type == audioDevice.type && this.isAvailable == audioDevice.isAvailable && q.c(this.f7187id, audioDevice.f7187id) && q.c(this.name, audioDevice.name);
         }
 
         public final String getId() {
-            return this.f7194id;
+            return this.f7187id;
         }
 
         public final String getName() {
@@ -1086,7 +1086,7 @@ public final class DiscordAudioManager {
             int i11 = z10 ? 1 : 0;
             int i12 = z10 ? 1 : 0;
             int i13 = (hashCode + i10) * 31;
-            String str = this.f7194id;
+            String str = this.f7187id;
             int i14 = 0;
             int hashCode2 = (i13 + (str == null ? 0 : str.hashCode())) * 31;
             String str2 = this.name;
@@ -1103,7 +1103,7 @@ public final class DiscordAudioManager {
         public String toString() {
             DeviceTypes deviceTypes = this.type;
             boolean z10 = this.isAvailable;
-            String str = this.f7194id;
+            String str = this.f7187id;
             String str2 = this.name;
             return "AudioDevice(type=" + deviceTypes + ", isAvailable=" + z10 + ", id=" + str + ", name=" + str2 + ")";
         }

@@ -6,7 +6,7 @@ import com.facebook.react.bridge.ReadableNativeArray;
 import com.facebook.react.bridge.WritableNativeMap;
 import java.util.List;
 import java.util.Map;
-import jf.x;
+import kf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -15,12 +15,12 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import ti.f;
-import wi.a2;
-import wi.h;
-import wi.m0;
-import wi.n1;
-import wi.r0;
+import ui.f;
+import xi.a2;
+import xi.h;
+import xi.m0;
+import xi.n1;
+import xi.r0;
 
 @f
 @Metadata(d1 = {"\u0000R\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010$\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0019\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 32\u00020\u0001:\u000223Bm\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\u000e\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\b\u0012\u000e\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\b\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\u0014\u0010\f\u001a\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0003\u0018\u00010\r\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\u0002\u0010\u0010Be\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\u0010\b\u0002\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\b\u0012\u0010\b\u0002\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\b\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\u0016\b\u0002\u0010\f\u001a\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0003\u0018\u00010\r¢\u0006\u0002\u0010\u0011J\u000b\u0010\u001d\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010\u001e\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u0011\u0010\u001f\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\bHÆ\u0003J\u0011\u0010 \u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\bHÆ\u0003J\u0010\u0010!\u001a\u0004\u0018\u00010\u000bHÆ\u0003¢\u0006\u0002\u0010\u0013J\u0017\u0010\"\u001a\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0003\u0018\u00010\rHÆ\u0003Jn\u0010#\u001a\u00020\u00002\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\u0010\b\u0002\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\b2\u0010\b\u0002\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\b2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b2\u0016\b\u0002\u0010\f\u001a\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0003\u0018\u00010\rHÆ\u0001¢\u0006\u0002\u0010$J\u0013\u0010%\u001a\u00020\u000b2\b\u0010&\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010'\u001a\u00020\u0003HÖ\u0001J\u0006\u0010(\u001a\u00020)J\t\u0010*\u001a\u00020\u0005HÖ\u0001J!\u0010+\u001a\u00020,2\u0006\u0010-\u001a\u00020\u00002\u0006\u0010.\u001a\u00020/2\u0006\u00100\u001a\u000201HÇ\u0001R\u0015\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\n\n\u0002\u0010\u0014\u001a\u0004\b\u0012\u0010\u0013R\u0019\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\b¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u001f\u0010\f\u001a\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0003\u0018\u00010\r¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001aR\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001aR\u0019\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\b¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0016¨\u00064"}, d2 = {"Lcom/discord/bundle_updater/BuildOverrideCookieMeta;", "", "seen1", "", "expiresAt", "", "releaseChannel", "validForUserIds", "", "allowedVersions", "allowLoggedOut", "", "experiments", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/Boolean;Ljava/util/Map;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/Boolean;Ljava/util/Map;)V", "getAllowLoggedOut", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getAllowedVersions", "()Ljava/util/List;", "getExperiments", "()Ljava/util/Map;", "getExpiresAt", "()Ljava/lang/String;", "getReleaseChannel", "getValidForUserIds", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/Boolean;Ljava/util/Map;)Lcom/discord/bundle_updater/BuildOverrideCookieMeta;", "equals", "other", "hashCode", "toNativeMap", "Lcom/facebook/react/bridge/WritableNativeMap;", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "bundle_updater_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -128,7 +128,7 @@ public final class BuildOverrideCookieMeta {
             z10 = true;
         }
         if (z10) {
-            output.B(serialDesc, 0, a2.f29764a, self.expiresAt);
+            output.e(serialDesc, 0, a2.f30568a, self.expiresAt);
         }
         if (!output.z(serialDesc, 1) && self.releaseChannel == null) {
             z11 = false;
@@ -136,7 +136,7 @@ public final class BuildOverrideCookieMeta {
             z11 = true;
         }
         if (z11) {
-            output.B(serialDesc, 1, a2.f29764a, self.releaseChannel);
+            output.e(serialDesc, 1, a2.f30568a, self.releaseChannel);
         }
         if (!output.z(serialDesc, 2) && self.validForUserIds == null) {
             z12 = false;
@@ -144,7 +144,7 @@ public final class BuildOverrideCookieMeta {
             z12 = true;
         }
         if (z12) {
-            output.B(serialDesc, 2, new wi.f(a2.f29764a), self.validForUserIds);
+            output.e(serialDesc, 2, new xi.f(a2.f30568a), self.validForUserIds);
         }
         if (!output.z(serialDesc, 3) && self.allowedVersions == null) {
             z13 = false;
@@ -152,7 +152,7 @@ public final class BuildOverrideCookieMeta {
             z13 = true;
         }
         if (z13) {
-            output.B(serialDesc, 3, new wi.f(a2.f29764a), self.allowedVersions);
+            output.e(serialDesc, 3, new xi.f(a2.f30568a), self.allowedVersions);
         }
         if (!output.z(serialDesc, 4) && self.allowLoggedOut == null) {
             z14 = false;
@@ -160,13 +160,13 @@ public final class BuildOverrideCookieMeta {
             z14 = true;
         }
         if (z14) {
-            output.B(serialDesc, 4, h.f29806a, self.allowLoggedOut);
+            output.e(serialDesc, 4, h.f30610a, self.allowLoggedOut);
         }
         if (output.z(serialDesc, 5) || self.experiments != null) {
             z15 = true;
         }
         if (z15) {
-            output.B(serialDesc, 5, new r0(a2.f29764a, m0.f29839a), self.experiments);
+            output.e(serialDesc, 5, new r0(a2.f30568a, m0.f30643a), self.experiments);
         }
     }
 

@@ -23,7 +23,7 @@ final class NotificationDataUtilsKt$getTitle$1 extends s implements Function1<Re
     @Override 
     public   Unit invoke(RenderContext renderContext) {
         invoke2(renderContext);
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

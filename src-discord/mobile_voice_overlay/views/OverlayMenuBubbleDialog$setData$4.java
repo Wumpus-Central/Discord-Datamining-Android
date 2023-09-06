@@ -6,7 +6,7 @@ import androidx.core.os.e;
 import com.discord.mobile_voice_overlay.MobileVoiceOverlay;
 import com.discord.mobile_voice_overlay.MobileVoiceOverlayData;
 import com.discord.react_activities.ReactActivity;
-import jf.x;
+import kf.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;

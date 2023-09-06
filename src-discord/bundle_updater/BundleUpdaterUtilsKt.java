@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 import kotlinx.serialization.json.Json;
-import ni.a;
+import oi.a;
 
 @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u001a\u0014\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0004H\u0000¨\u0006\u0005"}, d2 = {"getManifestFromAsset", "Lcom/discord/bundle_updater/AppManifest;", "Landroid/content/res/AssetManager;", "asset", "", "bundle_updater_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 
@@ -18,15 +18,15 @@ public final class BundleUpdaterUtilsKt {
         q.h(asset, "asset");
         InputStream open = assetManager.open(asset);
         q.g(open, "open(asset)");
-        InputStreamReader inputStreamReader = new InputStreamReader(open, a.f24913b);
+        InputStreamReader inputStreamReader = new InputStreamReader(open, a.f25677b);
         if (inputStreamReader instanceof BufferedReader) {
             bufferedReader = (BufferedReader) inputStreamReader;
         } else {
             bufferedReader = new BufferedReader(inputStreamReader, 8192);
         }
         try {
-            Json.a aVar = Json.f21742d;
-            String e10 = tf.q.e(bufferedReader);
+            Json.a aVar = Json.f21963d;
+            String e10 = uf.q.e(bufferedReader);
             aVar.a();
             AppManifest appManifest = (AppManifest) aVar.b(AppManifest.Companion.serializer(), e10);
             th = null;

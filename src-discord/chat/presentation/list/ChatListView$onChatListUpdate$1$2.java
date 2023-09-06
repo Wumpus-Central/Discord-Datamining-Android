@@ -46,7 +46,9 @@ public final class ChatListView$onChatListUpdate$1$2 extends s implements Functi
         LinearLayoutManager linearLayoutManager;
         LinearLayoutManager linearLayoutManager2;
         boolean z10;
+        LinearLayoutManager linearLayoutManager3;
         ChatEventHandler chatEventHandler;
+        ChatEventHandler chatEventHandler2;
         if (!(this.$update.getAction() instanceof ChatListAction.Clear)) {
             chatScrollStateObserver2 = this.this$0.scrollStateObserver;
             chatScrollStateObserver2.startWatching(this.this$0, ChatScrollStateObserver.EmitMode.NO);
@@ -57,12 +59,25 @@ public final class ChatListView$onChatListUpdate$1$2 extends s implements Functi
             z10 = this.this$0.isFirstLayout;
             if (z10 && i22 >= 0 && l22 >= 0) {
                 this.this$0.isFirstLayout = false;
-                chatEventHandler = this.this$0.eventHandler;
-                if (chatEventHandler == null) {
-                    q.z("eventHandler");
-                    chatEventHandler = null;
+                linearLayoutManager3 = this.this$0.linearLayoutManager;
+                ChatEventHandler chatEventHandler3 = null;
+                if (linearLayoutManager3.x2()) {
+                    chatEventHandler2 = this.this$0.eventHandler;
+                    if (chatEventHandler2 == null) {
+                        q.z("eventHandler");
+                    } else {
+                        chatEventHandler3 = chatEventHandler2;
+                    }
+                    chatEventHandler3.onFirstLayout(l22, i22);
+                } else {
+                    chatEventHandler = this.this$0.eventHandler;
+                    if (chatEventHandler == null) {
+                        q.z("eventHandler");
+                    } else {
+                        chatEventHandler3 = chatEventHandler;
+                    }
+                    chatEventHandler3.onFirstLayout(i22, l22);
                 }
-                chatEventHandler.onFirstLayout(i22, l22);
             }
         }
         ChatListAction action = this.$update.getAction();
@@ -80,7 +95,7 @@ public final class ChatListView$onChatListUpdate$1$2 extends s implements Functi
             }
             this.this$0.scrollToPosition(((ChatListAction.ScrollTo) this.$update.getAction()).getPosition(), targetAlignment, ((ChatListAction.ScrollTo) this.$update.getAction()).getAnimated(), ((ChatListAction.ScrollTo) this.$update.getAction()).isHighlight());
         } else if (action instanceof ChatListAction.StickToBottomIfAtBottom) {
-            if (!this.$wasAtBottom.f21240j) {
+            if (!this.$wasAtBottom.f21461j) {
                 return;
             }
             if (ChatView.Companion.getAreChatAnimationsEnabled()) {

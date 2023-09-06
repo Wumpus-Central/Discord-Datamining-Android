@@ -17,7 +17,7 @@ import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReadableNativeArray;
 import java.util.List;
 import java.util.concurrent.CancellationException;
-import jf.t;
+import kf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -30,7 +30,7 @@ import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CompletableDeferred;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.y;
-import pf.d;
+import qf.d;
 
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -70,7 +70,7 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
         }
 
         public final Object invoke(Continuation<? super BillingManager.ProductDetailsResponse> continuation) {
-            return ((AnonymousClass1) create(continuation)).invokeSuspend(Unit.f21215a);
+            return ((AnonymousClass1) create(continuation)).invokeSuspend(Unit.f21436a);
         }
 
         @Override 
@@ -91,9 +91,9 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
                 } else {
                     billingClient2 = billingClient;
                 }
-                billingClient2.g(QueryProductDetailsParams.INSTANCE.create(ProductType.valueOf(this.$skuType.name()), this.$skuIds), productsWithRetry$createProductDetailsResponseListener);
+                billingClient2.h(QueryProductDetailsParams.INSTANCE.create(ProductType.valueOf(this.$skuType.name()), this.$skuIds), productsWithRetry$createProductDetailsResponseListener);
                 this.label = 1;
-                obj = b10.H(this);
+                obj = b10.G(this);
                 if (obj == d10) {
                     return d10;
                 }
@@ -130,7 +130,7 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
         }
 
         public final Object invoke(BillingManager.ProductDetailsResponse productDetailsResponse, Continuation<? super Boolean> continuation) {
-            return ((AnonymousClass2) create(productDetailsResponse, continuation)).invokeSuspend(Unit.f21215a);
+            return ((AnonymousClass2) create(productDetailsResponse, continuation)).invokeSuspend(Unit.f21436a);
         }
 
         @Override 
@@ -165,7 +165,7 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((BillingManager$getProductsWithRetry$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21215a);
+        return ((BillingManager$getProductsWithRetry$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21436a);
     }
 
     @Override 
@@ -202,8 +202,8 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
                 if (isNotOk) {
                     BillingManager billingManager = this.this$0;
                     Function1<Exception, Unit> function1 = this.$onError;
-                    int a10 = component1.a();
-                    billingManager.invoke(function1, "Product fetch, bad response code: " + a10);
+                    int b10 = component1.b();
+                    billingManager.invoke(function1, "Product fetch, bad response code: " + b10);
                 } else {
                     try {
                         ReadableNativeArray serializeProductDetails = SerializeProductDetailsKt.serializeProductDetails(component2);
@@ -231,6 +231,6 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
                 throw e11;
             }
         }
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 }

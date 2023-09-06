@@ -1,6 +1,6 @@
 package com.discord.chat.presentation.textutils;
 
-import ag.j;
+import bg.j;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;

@@ -21,7 +21,7 @@ public  class MessageAccessoriesAdapter$onBindViewHolder$42 extends n implements
     @Override 
     public   Unit invoke(MessageId messageId, ChannelId channelId) {
         m216invokepfaIj0E(messageId.m625unboximpl(), channelId.m600unboximpl());
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

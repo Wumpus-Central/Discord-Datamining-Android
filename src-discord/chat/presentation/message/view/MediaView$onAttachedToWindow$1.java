@@ -1,7 +1,7 @@
 package com.discord.chat.presentation.message.view;
 
 import com.discord.portals.PortalViewContextManager;
-import jf.t;
+import kf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -11,10 +11,10 @@ import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
-import pf.d;
+import qf.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
-@e(c = "com.discord.chat.presentation.message.view.MediaView$onAttachedToWindow$1", f = "MediaView.kt", l = {132}, m = "invokeSuspend")
+@e(c = "com.discord.chat.presentation.message.view.MediaView$onAttachedToWindow$1", f = "MediaView.kt", l = {134}, m = "invokeSuspend")
 
 final class MediaView$onAttachedToWindow$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     int label;
@@ -33,7 +33,7 @@ final class MediaView$onAttachedToWindow$1 extends k implements Function2<Corout
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaView$onAttachedToWindow$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21215a);
+        return ((MediaView$onAttachedToWindow$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21436a);
     }
 
     @Override 
@@ -52,8 +52,8 @@ final class MediaView$onAttachedToWindow$1 extends k implements Function2<Corout
                 }
 
                 public final Object emit(PortalViewContextManager.Event event, Continuation<? super Unit> continuation) {
-                    MediaView.setMediaData$default(MediaView.this, null, false, false, false, null, false, null, event, false, false, false, null, null, null, null, 32639, null);
-                    return Unit.f21215a;
+                    MediaView.setMediaData$default(MediaView.this, null, false, false, false, null, false, null, event, false, false, false, 0, null, null, null, null, null, 130943, null);
+                    return Unit.f21436a;
                 }
             };
             this.label = 1;
@@ -65,6 +65,6 @@ final class MediaView$onAttachedToWindow$1 extends k implements Function2<Corout
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 }

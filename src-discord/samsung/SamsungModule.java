@@ -12,8 +12,8 @@ import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import jf.s;
-import jf.t;
+import kf.s;
+import kf.t;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
@@ -120,9 +120,9 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
         String str;
         String query;
         String str2 = null;
-        String w10 = Response.w(response, "Location", null, 2, null);
-        if (w10 != null) {
-            uri = Uri.parse(w10);
+        String v10 = Response.v(response, "Location", null, 2, null);
+        if (v10 != null) {
+            uri = Uri.parse(v10);
         } else {
             uri = null;
         }
@@ -130,7 +130,7 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
         if (!(uri == null || (query = uri.getQuery()) == null)) {
             z10 = p.M(query, "error", false, 2, null);
         }
-        if (!z10 && (response.X() || response.E())) {
+        if (!z10 && (response.W() || response.D())) {
             return uri;
         }
         if (uri == null || (str = uri.getQueryParameter("error")) == null) {
@@ -191,14 +191,14 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
         q.h(promise, "promise");
         this.connectionPromise = promise;
         try {
-            s.a aVar = s.f20304k;
+            s.a aVar = s.f21214k;
             ReactApplicationContext reactApplicationContext = getReactApplicationContext();
             SamsungConnectActivity.Companion companion = SamsungConnectActivity.Companion;
             Activity currentActivity = getCurrentActivity();
             q.e(currentActivity);
             obj = s.b(Boolean.valueOf(reactApplicationContext.startActivityForResult(SamsungConnectActivity.Companion.getIntent$default(companion, currentActivity, 0, 2, null), 101, Bundle.EMPTY)));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f20304k;
+            s.a aVar2 = s.f21214k;
             obj = s.b(t.a(th2));
         }
         Throwable e10 = s.e(obj);
@@ -218,10 +218,10 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
         q.h(promise, "promise");
         this.connectionPromise = promise;
         try {
-            s.a aVar = s.f20304k;
+            s.a aVar = s.f21214k;
             obj = s.b(Boolean.valueOf(getReactApplicationContext().startActivityForResult(disclaimerIntent, 100, Bundle.EMPTY)));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f20304k;
+            s.a aVar2 = s.f21214k;
             obj = s.b(t.a(th2));
         }
         Throwable e10 = s.e(obj);

@@ -34,7 +34,7 @@ public final class SamsungConnectActivity extends b {
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
             ISACallback iSACallback;
             SamsungConnectActivity.this.serviceBound = true;
-            a b10 = a.AbstractBinderC0181a.b(iBinder);
+            a b10 = a.AbstractBinderC0182a.b(iBinder);
             Log log = Log.INSTANCE;
             Log.i$default(log, "Samsung", "Samsung Account service connection established", (Throwable) null, 4, (Object) null);
             try {
@@ -43,16 +43,16 @@ public final class SamsungConnectActivity extends b {
                     q.z("samsungAccountServiceCallback");
                     iSACallback = null;
                 }
-                String Q = b10.Q(BuildConfig.SAMSUNGxDISCORD_CLIENT_ID, "dummy", BuildConfig.APPLICATION_ID, iSACallback);
-                Log.i$default(log, "Samsung", "Samsung Account service connection established: " + Q, (Throwable) null, 4, (Object) null);
-                if (Q == null) {
+                String R = b10.R(BuildConfig.SAMSUNGxDISCORD_CLIENT_ID, "dummy", BuildConfig.APPLICATION_ID, iSACallback);
+                Log.i$default(log, "Samsung", "Samsung Account service connection established: " + R, (Throwable) null, 4, (Object) null);
+                if (R == null) {
                     SamsungConnectActivity.this.finishedWithRestartRequested();
                     return;
                 }
                 Bundle bundle = new Bundle();
                 bundle.putStringArray("additional", new String[]{"api_server_url", "auth_server_url"});
-                Unit unit = Unit.f21215a;
-                Log.i$default(log, "Samsung", "Samsung Account service connection established: isReqSucc? " + b10.U(1221, Q, bundle), (Throwable) null, 4, (Object) null);
+                Unit unit = Unit.f21436a;
+                Log.i$default(log, "Samsung", "Samsung Account service connection established: isReqSucc? " + b10.V(1221, R, bundle), (Throwable) null, 4, (Object) null);
             } catch (Throwable th2) {
                 Log.INSTANCE.e("Samsung", "Unable to connect to Samsung", th2);
                 SamsungConnectActivity.this.finishWithResult(null, null);

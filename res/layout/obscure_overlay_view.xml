@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.discord.chat.presentation.message.view.IconButtonView android:layout_gravity="bottom|center|right" android:id="@id/hide_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+    <eightbitlab.com.blurview.BlurView android:id="@id/blur_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/overlay_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/overlay_centered_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/media_warning_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="centerInside" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/description_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+            </LinearLayout>
+            <com.discord.chat.presentation.message.view.IconButtonView android:id="@id/reveal_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </eightbitlab.com.blurview.BlurView>
+</merge>

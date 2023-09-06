@@ -38,7 +38,7 @@ public final class ImageAttachmentViewHolder extends MessagePartViewHolder {
         q.h(onTapRemix, "onTapRemix");
         String uploaderId = attachment.getUploaderId();
         String uploaderItemId = attachment.getUploaderItemId();
-        this.view.setContent(attachment.getUrl(), attachment.getWidth(), attachment.getHeight(), i11, i10, resizeMode, attachment.isSpoiler(), spoilerConfig, i12, attachment.getProgress(), new ImageAttachmentViewHolder$bind$onCancelUpload$1(uploaderId, uploaderItemId, this), new UploadContext(uploaderId, uploaderItemId), f10);
+        this.view.setContent(attachment.getUrl(), attachment.getWidth(), attachment.getHeight(), i11, i10, resizeMode, attachment.isSpoiler(), spoilerConfig, i12, attachment.getProgress(), new ImageAttachmentViewHolder$bind$onCancelUpload$1(uploaderId, uploaderItemId, this), new UploadContext(uploaderId, uploaderItemId), f10, attachment.getObscure(), z12 ? null : attachment.getObscureDescription());
         boolean z13 = false;
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(this.view, false, onClicked, 1, null);
         if (onLongClickListener != null) {

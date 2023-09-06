@@ -1,6 +1,6 @@
 package com.discord.bridge;
 
-import com.discord.file_manager.FileManagerModule;
+import com.discord.client_info.ClientInfoManagerModule;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import kotlin.Metadata;
@@ -19,6 +19,6 @@ final class DCDPackageList$getPackages$76 extends s implements Function1<ReactAp
 
     public final NativeModule invoke(ReactApplicationContext it) {
         q.h(it, "it");
-        return FileManagerModule.Companion.create(it);
+        return ClientInfoManagerModule.Companion.create(it);
     }
 }

@@ -14,8 +14,8 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import ti.f;
-import wi.n1;
+import ui.f;
+import xi.n1;
 
 @f
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u001f\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 >2\u00020\u0001:\u0002=>Bp\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\u000e\u0010\b\u001a\n\u0012\u0004\u0012\u00020\n\u0018\u00010\t\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\f\u0012\u0006\u0010\u000e\u001a\u00020\u0003\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0012ø\u0001\u0000¢\u0006\u0002\u0010\u0013BN\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\u0006\u0010\r\u001a\u00020\f\u0012\u0006\u0010\u000e\u001a\u00020\u0003\u0012\u0006\u0010\u000f\u001a\u00020\u0010ø\u0001\u0000¢\u0006\u0002\u0010\u0014J\t\u0010#\u001a\u00020\u0005HÆ\u0003J\t\u0010$\u001a\u00020\u0005HÆ\u0003J\t\u0010%\u001a\u00020\u0005HÆ\u0003J\u0012\u0010&\u001a\b\u0012\u0004\u0012\u00020\n0\tHÆ\u0003ø\u0001\u0000J\u0019\u0010'\u001a\u00020\fHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b(\u0010\u001bJ\u0019\u0010)\u001a\u00020\fHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b*\u0010\u001bJ\t\u0010+\u001a\u00020\u0003HÆ\u0003J\u0019\u0010,\u001a\u00020\u0010HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b-\u0010\u0016Jl\u0010.\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\u000e\b\u0002\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t2\b\b\u0002\u0010\u000b\u001a\u00020\f2\b\b\u0002\u0010\r\u001a\u00020\f2\b\b\u0002\u0010\u000e\u001a\u00020\u00032\b\b\u0002\u0010\u000f\u001a\u00020\u0010HÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b/\u00100J\u0013\u00101\u001a\u0002022\b\u00103\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00104\u001a\u00020\u0003HÖ\u0001J\t\u00105\u001a\u00020\u0005HÖ\u0001J!\u00106\u001a\u0002072\u0006\u00108\u001a\u00020\u00002\u0006\u00109\u001a\u00020:2\u0006\u0010;\u001a\u00020<HÇ\u0001R\u001c\u0010\u000f\u001a\u00020\u0010ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\u0017\u001a\u0004\b\u0015\u0010\u0016R\u0011\u0010\u000e\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u001c\u0010\r\u001a\u00020\fø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\u001c\u001a\u0004\b\u001a\u0010\u001bR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001bR\u001a\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\tø\u0001\u0000¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001fR\u001c\u0010\u000b\u001a\u00020\fø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\u001c\u001a\u0004\b \u0010\u001bR\u0011\u0010\u0007\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\u001bR\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010\u001b\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006?"}, d2 = {"Lcom/discord/chat/bridge/summaries/Summary;", "", "seen1", "", "id", "", "topic", "summShort", "people", "", "Lcom/discord/primitives/UserId;", "startId", "Lcom/discord/primitives/MessageId;", "endId", "count", "channelId", "Lcom/discord/primitives/ChannelId;", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;ILcom/discord/primitives/ChannelId;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;IJLkotlin/jvm/internal/DefaultConstructorMarker;)V", "getChannelId-o4g7jtM", "()J", "J", "getCount", "()I", "getEndId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getId", "getPeople", "()Ljava/util/List;", "getStartId-3Eiw7ao", "getSummShort", "getTopic", "component1", "component2", "component3", "component4", "component5", "component5-3Eiw7ao", "component6", "component6-3Eiw7ao", "component7", "component8", "component8-o4g7jtM", "copy", "copy-H5KhIT0", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;IJ)Lcom/discord/chat/bridge/summaries/Summary;", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -27,7 +27,7 @@ public final class Summary {
     private final String endId;
 
     
-    private final String f7255id;
+    private final String f7248id;
     private final List<UserId> people;
     private final String startId;
     private final String summShort;
@@ -52,7 +52,7 @@ public final class Summary {
         if (255 != (i10 & 255)) {
             n1.b(i10, 255, Summary$$serializer.INSTANCE.getDescriptor());
         }
-        this.f7255id = str;
+        this.f7248id = str;
         this.topic = str2;
         this.summShort = str3;
         this.people = list;
@@ -74,19 +74,19 @@ public final class Summary {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.x(serialDesc, 0, self.f7255id);
-        output.x(serialDesc, 1, self.topic);
-        output.x(serialDesc, 2, self.summShort);
-        output.o(serialDesc, 3, new wi.f(UserId$$serializer.INSTANCE), self.people);
+        output.y(serialDesc, 0, self.f7248id);
+        output.y(serialDesc, 1, self.topic);
+        output.y(serialDesc, 2, self.summShort);
+        output.h(serialDesc, 3, new xi.f(UserId$$serializer.INSTANCE), self.people);
         MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
-        output.o(serialDesc, 4, messageId$$serializer, MessageId.m617boximpl(self.startId));
-        output.o(serialDesc, 5, messageId$$serializer, MessageId.m617boximpl(self.endId));
-        output.v(serialDesc, 6, self.count);
-        output.o(serialDesc, 7, ChannelId$$serializer.INSTANCE, ChannelId.m591boximpl(self.channelId));
+        output.h(serialDesc, 4, messageId$$serializer, MessageId.m617boximpl(self.startId));
+        output.h(serialDesc, 5, messageId$$serializer, MessageId.m617boximpl(self.endId));
+        output.w(serialDesc, 6, self.count);
+        output.h(serialDesc, 7, ChannelId$$serializer.INSTANCE, ChannelId.m591boximpl(self.channelId));
     }
 
     public final String component1() {
-        return this.f7255id;
+        return this.f7248id;
     }
 
     public final String component2() {
@@ -139,7 +139,7 @@ public final class Summary {
             return false;
         }
         Summary summary = (Summary) obj;
-        return q.c(this.f7255id, summary.f7255id) && q.c(this.topic, summary.topic) && q.c(this.summShort, summary.summShort) && q.c(this.people, summary.people) && MessageId.m621equalsimpl0(this.startId, summary.startId) && MessageId.m621equalsimpl0(this.endId, summary.endId) && this.count == summary.count && ChannelId.m595equalsimpl0(this.channelId, summary.channelId);
+        return q.c(this.f7248id, summary.f7248id) && q.c(this.topic, summary.topic) && q.c(this.summShort, summary.summShort) && q.c(this.people, summary.people) && MessageId.m621equalsimpl0(this.startId, summary.startId) && MessageId.m621equalsimpl0(this.endId, summary.endId) && this.count == summary.count && ChannelId.m595equalsimpl0(this.channelId, summary.channelId);
     }
 
     
@@ -157,7 +157,7 @@ public final class Summary {
     }
 
     public final String getId() {
-        return this.f7255id;
+        return this.f7248id;
     }
 
     public final List<UserId> getPeople() {
@@ -178,11 +178,11 @@ public final class Summary {
     }
 
     public int hashCode() {
-        return (((((((((((((this.f7255id.hashCode() * 31) + this.topic.hashCode()) * 31) + this.summShort.hashCode()) * 31) + this.people.hashCode()) * 31) + MessageId.m622hashCodeimpl(this.startId)) * 31) + MessageId.m622hashCodeimpl(this.endId)) * 31) + this.count) * 31) + ChannelId.m596hashCodeimpl(this.channelId);
+        return (((((((((((((this.f7248id.hashCode() * 31) + this.topic.hashCode()) * 31) + this.summShort.hashCode()) * 31) + this.people.hashCode()) * 31) + MessageId.m622hashCodeimpl(this.startId)) * 31) + MessageId.m622hashCodeimpl(this.endId)) * 31) + this.count) * 31) + ChannelId.m596hashCodeimpl(this.channelId);
     }
 
     public String toString() {
-        String str = this.f7255id;
+        String str = this.f7248id;
         String str2 = this.topic;
         String str3 = this.summShort;
         List<UserId> list = this.people;
@@ -194,7 +194,7 @@ public final class Summary {
     }
 
     private Summary(String str, String str2, String str3, List<UserId> list, String str4, String str5, int i10, long j10) {
-        this.f7255id = str;
+        this.f7248id = str;
         this.topic = str2;
         this.summShort = str3;
         this.people = list;

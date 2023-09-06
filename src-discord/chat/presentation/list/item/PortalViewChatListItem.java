@@ -11,7 +11,7 @@ import kotlin.jvm.internal.q;
 public final class PortalViewChatListItem extends ChatListItem {
 
     
-    private final String f7295id;
+    private final String f7288id;
     private final Pair<Integer, Integer> measuredDimensions;
     private final View view;
 
@@ -64,7 +64,7 @@ public final class PortalViewChatListItem extends ChatListItem {
 
     @Override 
     public String getId() {
-        return this.f7295id;
+        return this.f7288id;
     }
 
     public final Pair<Integer, Integer> getMeasuredDimensions() {
@@ -93,7 +93,7 @@ public final class PortalViewChatListItem extends ChatListItem {
         super(id2, null);
         q.h(id2, "id");
         q.h(view, "view");
-        this.f7295id = id2;
+        this.f7288id = id2;
         this.view = view;
         this.measuredDimensions = pair;
     }

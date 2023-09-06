@@ -104,6 +104,7 @@
     <item type="id" name="bg_gradient" />
     <item type="id" name="blocked_message_group_button" />
     <item type="id" name="blocked_messages" />
+    <item type="id" name="blur_view" />
     <item type="id" name="body" />
     <item type="id" name="border" />
     <item type="id" name="bottom_end_label" />
@@ -171,6 +172,7 @@
     <item type="id" name="decor_content_parent" />
     <item type="id" name="default_activity_button" />
     <item type="id" name="description" />
+    <item type="id" name="description_label" />
     <item type="id" name="description_text" />
     <item type="id" name="design_bottom_sheet" />
     <item type="id" name="design_menu_item_action_area" />
@@ -298,11 +300,14 @@
     <item type="id" name="header_text" />
     <item type="id" name="header_title" />
     <item type="id" name="hero_text" />
+    <item type="id" name="hide_button" />
     <item type="id" name="highlight_header" />
     <item type="id" name="highlight_icon" />
     <item type="id" name="home" />
     <item type="id" name="hour" />
     <item type="id" name="icon" />
+    <item type="id" name="icon_button" />
+    <item type="id" name="icon_container" />
     <item type="id" name="icon_group" />
     <item type="id" name="image" />
     <item type="id" name="image_alt_text" />
@@ -394,6 +399,7 @@
     <item type="id" name="media_view" />
     <item type="id" name="media_view_alt_text" />
     <item type="id" name="media_view_alt_text_button" />
+    <item type="id" name="media_warning_icon" />
     <item type="id" name="menu_bottom" />
     <item type="id" name="menu_container" />
     <item type="id" name="menu_crop" />
@@ -461,17 +467,20 @@
     <item type="id" name="notification_background" />
     <item type="id" name="notification_main_column" />
     <item type="id" name="notification_main_column_container" />
+    <item type="id" name="obscure_overlay" />
     <item type="id" name="off" />
     <item type="id" name="on" />
     <item type="id" name="other_reactions_count" />
     <item type="id" name="overlay_bottom" />
     <item type="id" name="overlay_bubble_iv" />
+    <item type="id" name="overlay_centered_container" />
     <item type="id" name="overlay_channel_name" />
     <item type="id" name="overlay_channel_search" />
     <item type="id" name="overlay_guild_name" />
     <item type="id" name="overlay_header" />
     <item type="id" name="overlay_image" />
     <item type="id" name="overlay_invite_link" />
+    <item type="id" name="overlay_layout" />
     <item type="id" name="overlay_linked_anchor_view" />
     <item type="id" name="overlay_members_overflow_text" />
     <item type="id" name="overlay_members_recycler" />
@@ -520,6 +529,7 @@
     <item type="id" name="reply_spline" />
     <item type="id" name="reply_text" />
     <item type="id" name="results_rv" />
+    <item type="id" name="reveal_button" />
     <item type="id" name="right_bar" />
     <item type="id" name="right_icon" />
     <item type="id" name="right_side" />

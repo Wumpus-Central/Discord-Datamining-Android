@@ -28,7 +28,7 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$29 extends s imple
     @Override 
     public   Unit invoke(Sticker sticker) {
         invoke2(sticker);
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

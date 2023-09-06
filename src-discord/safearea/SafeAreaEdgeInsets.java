@@ -50,9 +50,9 @@ public final class SafeAreaEdgeInsets {
             Insets displayCutoutInsets = WindowInsetsCompatExtensionsKt.getDisplayCutoutInsets(windowInsetsCompat, true);
             Insets systemBarInsets = WindowInsetsCompatExtensionsKt.getSystemBarInsets(windowInsetsCompat, true);
             if (Build.VERSION.SDK_INT > 29) {
-                return new SafeAreaEdgeInsets(SizeUtilsKt.getPxToDp(Math.max(displayCutoutInsets.f2821b, systemBarInsets.f2821b)), SizeUtilsKt.getPxToDp(displayCutoutInsets.f2822c), SizeUtilsKt.getPxToDp(Math.max(displayCutoutInsets.f2823d, systemBarInsets.f2823d)), SizeUtilsKt.getPxToDp(displayCutoutInsets.f2820a));
+                return new SafeAreaEdgeInsets(SizeUtilsKt.getPxToDp(Math.max(displayCutoutInsets.f2941b, systemBarInsets.f2941b)), SizeUtilsKt.getPxToDp(displayCutoutInsets.f2942c), SizeUtilsKt.getPxToDp(Math.max(displayCutoutInsets.f2943d, systemBarInsets.f2943d)), SizeUtilsKt.getPxToDp(displayCutoutInsets.f2940a));
             }
-            return new SafeAreaEdgeInsets(SizeUtilsKt.getPxToDp(Math.max(displayCutoutInsets.f2821b, windowInsetsCompat.i())), SizeUtilsKt.getPxToDp(displayCutoutInsets.f2822c), SizeUtilsKt.getPxToDp(Math.max(displayCutoutInsets.f2823d, windowInsetsCompat.h())), SizeUtilsKt.getPxToDp(displayCutoutInsets.f2820a));
+            return new SafeAreaEdgeInsets(SizeUtilsKt.getPxToDp(Math.max(displayCutoutInsets.f2941b, windowInsetsCompat.i())), SizeUtilsKt.getPxToDp(displayCutoutInsets.f2942c), SizeUtilsKt.getPxToDp(Math.max(displayCutoutInsets.f2943d, windowInsetsCompat.h())), SizeUtilsKt.getPxToDp(displayCutoutInsets.f2940a));
         }
     }
 

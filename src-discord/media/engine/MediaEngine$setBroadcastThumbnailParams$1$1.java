@@ -2,7 +2,7 @@ package com.discord.media.engine;
 
 import android.graphics.Bitmap;
 import com.discord.media.engine.MediaEngine;
-import jf.t;
+import kf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -14,7 +14,7 @@ import kotlin.jvm.internal.q;
 import kotlin.jvm.internal.s;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.l;
-import pf.d;
+import qf.d;
 
 
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "bitmap", "Landroid/graphics/Bitmap;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
@@ -47,7 +47,7 @@ public final class MediaEngine$setBroadcastThumbnailParams$1$1 extends s impleme
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21215a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21436a);
         }
 
         @Override 
@@ -70,7 +70,7 @@ public final class MediaEngine$setBroadcastThumbnailParams$1$1 extends s impleme
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             this.$callback.invoke((String) obj);
-            return Unit.f21215a;
+            return Unit.f21436a;
         }
     }
 
@@ -86,7 +86,7 @@ public final class MediaEngine$setBroadcastThumbnailParams$1$1 extends s impleme
     @Override 
     public   Unit invoke(Bitmap bitmap) {
         invoke2(bitmap);
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

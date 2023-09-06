@@ -179,6 +179,7 @@
             </intent-filter>
         </receiver>
         <service android:name="com.discord.react.headless_tasks.service.HeadlessTasksService"/>
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
         <receiver android:exported="true" android:name="com.adjust.sdk.AdjustReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
             <intent-filter>
                 <action android:name="com.android.vending.INSTALL_REFERRER"/>
@@ -188,7 +189,6 @@
         <provider android:authorities="com.discord.imagepickerprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.imagepicker.ImagePickerProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/imagepicker_provider_paths"/>
         </provider>
-        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
         <provider android:authorities="com.discord.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
         </provider>

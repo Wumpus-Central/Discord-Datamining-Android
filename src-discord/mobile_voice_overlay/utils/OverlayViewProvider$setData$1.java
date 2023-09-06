@@ -24,7 +24,7 @@ public final class OverlayViewProvider$setData$1 extends s implements Function1<
     @Override 
     public   Unit invoke(Object obj) {
         invoke((OverlayView) obj);
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

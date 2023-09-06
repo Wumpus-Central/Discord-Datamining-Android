@@ -7,7 +7,7 @@ import com.facebook.react.bridge.ReadableNativeArray;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import jf.x;
+import kf.x;
 import kotlin.Metadata;
 import kotlin.collections.k;
 import kotlin.jvm.internal.q;
@@ -26,22 +26,22 @@ public final class SerializeProductDetailsKt {
         ArrayList arrayList = new ArrayList(s10);
         for (ProductDetails productDetails : list) {
             ArrayList arrayList2 = new ArrayList();
-            if (q.c(productDetails.d(), "inapp")) {
-                ProductDetails.a b10 = productDetails.b();
-                if (b10 != null) {
-                    q.g(b10, "productDetails.oneTimePu…oductDetails.productId}\")");
-                    j10 = b10.b();
-                    obj = b10.a();
-                    str = b10.c();
+            if (q.c(productDetails.e(), "inapp")) {
+                ProductDetails.a c10 = productDetails.c();
+                if (c10 != null) {
+                    q.g(c10, "productDetails.oneTimePu…oductDetails.productId}\")");
+                    j10 = c10.b();
+                    obj = c10.a();
+                    str = c10.c();
                 } else {
-                    throw new AssertionError("Could not find oneTimePurchaseOfferDetails for product: " + productDetails.c());
+                    throw new AssertionError("Could not find oneTimePurchaseOfferDetails for product: " + productDetails.d());
                 }
             } else {
                 obj = null;
-                if (q.c(productDetails.d(), "subs")) {
-                    List<ProductDetails.d> e10 = productDetails.e();
-                    if (e10 != null) {
-                        Iterator<T> it = e10.iterator();
+                if (q.c(productDetails.e(), "subs")) {
+                    List<ProductDetails.d> f10 = productDetails.f();
+                    if (f10 != null) {
+                        Iterator<T> it = f10.iterator();
                         while (true) {
                             if (!it.hasNext()) {
                                 break;
@@ -61,31 +61,31 @@ public final class SerializeProductDetailsKt {
                         }
                         ProductDetails.d dVar = (ProductDetails.d) obj;
                         if (dVar != null) {
-                            ProductDetails.b bVar = dVar.c().a().get(0);
+                            ProductDetails.b bVar = dVar.d().a().get(0);
                             if (bVar != null) {
-                                long b11 = bVar.b();
-                                Object a10 = bVar.a();
-                                String c10 = bVar.c();
-                                for (ProductDetails.d dVar2 : e10) {
-                                    String a11 = dVar2.a();
-                                    if (a11 != null) {
-                                        arrayList2.add(a11);
+                                long d10 = bVar.d();
+                                Object c11 = bVar.c();
+                                String e10 = bVar.e();
+                                for (ProductDetails.d dVar2 : f10) {
+                                    String a10 = dVar2.a();
+                                    if (a10 != null) {
+                                        arrayList2.add(a10);
                                     }
                                 }
-                                str = c10;
-                                j10 = b11;
-                                obj = a10;
+                                str = e10;
+                                j10 = d10;
+                                obj = c11;
                             } else {
-                                throw new AssertionError("Could not find pricingPhase for product: " + productDetails.c());
+                                throw new AssertionError("Could not find pricingPhase for product: " + productDetails.d());
                             }
                         }
                     }
-                    throw new AssertionError("Could not find subscriptionOfferDetails for product: " + productDetails.c());
+                    throw new AssertionError("Could not find subscriptionOfferDetails for product: " + productDetails.d());
                 }
                 j10 = 0;
                 str = null;
             }
-            arrayList.add(NativeMapExtensionsKt.nativeMapOf(x.a("identifier", productDetails.c()), x.a("title", productDetails.f()), x.a("description", productDetails.a()), x.a("priceString", obj), x.a("currencyCode", str), x.a("price", Integer.valueOf((int) (j10 / 10000))), x.a("type", productDetails.d()), x.a("offerIds", NativeArrayExtensionsKt.toNativeArray(arrayList2))));
+            arrayList.add(NativeMapExtensionsKt.nativeMapOf(x.a("identifier", productDetails.d()), x.a("title", productDetails.g()), x.a("description", productDetails.a()), x.a("priceString", obj), x.a("currencyCode", str), x.a("price", Integer.valueOf((int) (j10 / 10000))), x.a("type", productDetails.e()), x.a("offerIds", NativeArrayExtensionsKt.toNativeArray(arrayList2))));
         }
         return NativeArrayExtensionsKt.toNativeArray(arrayList);
     }

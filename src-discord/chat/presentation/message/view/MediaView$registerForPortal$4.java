@@ -28,7 +28,7 @@ public final class MediaView$registerForPortal$4 extends s implements Function1<
     @Override 
     public   Unit invoke(View view) {
         invoke2(view);
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     
@@ -39,7 +39,7 @@ public final class MediaView$registerForPortal$4 extends s implements Function1<
         Double portal = this.$mediaSource.getPortal();
         mediaSource = this.this$0.mediaSource;
         if (q.a(portal, mediaSource != null ? mediaSource.getPortal() : null)) {
-            MediaView.setMediaData$default(this.this$0, null, false, false, false, null, false, null, null, false, false, false, null, null, null, null, 32767, null);
+            MediaView.setMediaData$default(this.this$0, null, false, false, false, null, false, null, null, false, false, false, 0, null, null, null, null, null, 131071, null);
             this.this$0.addView(view, 0);
             ViewMeasureExtensionsKt.measureAndLayout(this.this$0);
         }

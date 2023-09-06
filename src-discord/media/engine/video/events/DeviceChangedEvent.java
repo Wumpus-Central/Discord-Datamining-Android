@@ -6,7 +6,7 @@ import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableNativeMap;
 import java.util.List;
 import java.util.Map;
-import jf.x;
+import kf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 

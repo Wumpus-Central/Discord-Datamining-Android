@@ -8,6 +8,7 @@ import com.discord.chat.R;
 import com.discord.chat.presentation.message.view.AltTextButtonView;
 import com.discord.chat.presentation.message.view.AttachmentUploadOverlayView;
 import com.discord.chat.presentation.message.view.MediaView;
+import com.discord.chat.presentation.message.view.ObscureOverlayView;
 import com.discord.chat.presentation.message.view.SpoilerView;
 import u0.a;
 
@@ -16,15 +17,17 @@ public final class VideoAttachmentViewBinding {
     public final MediaView mediaView;
     public final TextView mediaViewAltText;
     public final AltTextButtonView mediaViewAltTextButton;
+    public final ObscureOverlayView obscureOverlay;
     private final View rootView;
     public final SpoilerView spoiler;
     public final AttachmentUploadOverlayView uploadOverlay;
 
-    private VideoAttachmentViewBinding(View view, MediaView mediaView, TextView textView, AltTextButtonView altTextButtonView, SpoilerView spoilerView, AttachmentUploadOverlayView attachmentUploadOverlayView) {
+    private VideoAttachmentViewBinding(View view, MediaView mediaView, TextView textView, AltTextButtonView altTextButtonView, ObscureOverlayView obscureOverlayView, SpoilerView spoilerView, AttachmentUploadOverlayView attachmentUploadOverlayView) {
         this.rootView = view;
         this.mediaView = mediaView;
         this.mediaViewAltText = textView;
         this.mediaViewAltTextButton = altTextButtonView;
+        this.obscureOverlay = obscureOverlayView;
         this.spoiler = spoilerView;
         this.uploadOverlay = attachmentUploadOverlayView;
     }
@@ -39,13 +42,17 @@ public final class VideoAttachmentViewBinding {
                 i10 = R.id.media_view_alt_text_button;
                 AltTextButtonView altTextButtonView = (AltTextButtonView) a.a(view, i10);
                 if (altTextButtonView != null) {
-                    i10 = R.id.spoiler;
-                    SpoilerView spoilerView = (SpoilerView) a.a(view, i10);
-                    if (spoilerView != null) {
-                        i10 = R.id.upload_overlay;
-                        AttachmentUploadOverlayView attachmentUploadOverlayView = (AttachmentUploadOverlayView) a.a(view, i10);
-                        if (attachmentUploadOverlayView != null) {
-                            return new VideoAttachmentViewBinding(view, mediaView, textView, altTextButtonView, spoilerView, attachmentUploadOverlayView);
+                    i10 = R.id.obscure_overlay;
+                    ObscureOverlayView obscureOverlayView = (ObscureOverlayView) a.a(view, i10);
+                    if (obscureOverlayView != null) {
+                        i10 = R.id.spoiler;
+                        SpoilerView spoilerView = (SpoilerView) a.a(view, i10);
+                        if (spoilerView != null) {
+                            i10 = R.id.upload_overlay;
+                            AttachmentUploadOverlayView attachmentUploadOverlayView = (AttachmentUploadOverlayView) a.a(view, i10);
+                            if (attachmentUploadOverlayView != null) {
+                                return new VideoAttachmentViewBinding(view, mediaView, textView, altTextButtonView, obscureOverlayView, spoilerView, attachmentUploadOverlayView);
+                            }
                         }
                     }
                 }

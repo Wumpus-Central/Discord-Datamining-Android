@@ -23,12 +23,12 @@ public final class MediaView$prepareMediaPlayer$1$1 extends s implements Functio
     @Override 
     public   Unit invoke(MediaPlayer.Event event) {
         invoke2(event);
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     
     public final void invoke2(MediaPlayer.Event event) {
         q.h(event, "event");
-        MediaView.setMediaData$default(this.this$0, null, false, false, false, event, false, null, null, false, false, false, null, null, null, null, 32751, null);
+        MediaView.setMediaData$default(this.this$0, null, false, false, false, event, false, null, null, false, false, false, 0, null, null, null, null, null, 131055, null);
     }
 }

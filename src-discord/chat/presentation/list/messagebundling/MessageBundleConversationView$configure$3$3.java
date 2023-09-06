@@ -27,7 +27,7 @@ public final class MessageBundleConversationView$configure$3$3 extends s impleme
     @Override 
     public   Unit invoke(ReactionView.Reaction reaction) {
         invoke2(reaction);
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

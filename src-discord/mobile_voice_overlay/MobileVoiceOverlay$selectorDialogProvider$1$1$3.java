@@ -5,7 +5,7 @@ import androidx.core.os.e;
 import com.discord.mobile_voice_overlay.MobileVoiceOverlay;
 import com.discord.mobile_voice_overlay.views.OverlayVoiceSelectorBubbleDialog;
 import com.discord.primitives.ChannelId;
-import jf.x;
+import kf.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -27,7 +27,7 @@ final class MobileVoiceOverlay$selectorDialogProvider$1$1$3 extends s implements
     @Override 
     public   Unit invoke(ChannelId channelId) {
         m495invokeR7gqayM(channelId.m600unboximpl());
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

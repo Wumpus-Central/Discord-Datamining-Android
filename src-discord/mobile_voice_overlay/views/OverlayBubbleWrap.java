@@ -55,7 +55,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
         this.insetMargins = new Rect();
         this.moveThresholdPx = getResources().getDimensionPixelOffset(R.dimen.movement_threshold_dp);
         setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), R.drawable.bubble_state_selector));
-        a aVar = a.f21271a;
+        a aVar = a.f21492a;
         final Boolean bool = Boolean.FALSE;
         this.isMoving$delegate = new c<Boolean>(bool) { 
             @Override 
@@ -77,12 +77,12 @@ public abstract class OverlayBubbleWrap extends OverlayView {
             }
         };
         this.screenOffset = new int[2];
-        SpringAnimation springAnimation = new SpringAnimation(this, b.f3304u, 0.0f);
+        SpringAnimation springAnimation = new SpringAnimation(this, b.f3424u, 0.0f);
         springAnimation.j(50.0f);
         springAnimation.p().f(200.0f);
         springAnimation.p().d(0.75f);
         this.springAnimationX = springAnimation;
-        SpringAnimation springAnimation2 = new SpringAnimation(this, b.f3305v, 0.0f);
+        SpringAnimation springAnimation2 = new SpringAnimation(this, b.f3425v, 0.0f);
         springAnimation2.j(50.0f);
         springAnimation2.p().d(0.75f);
         springAnimation2.p().f(200.0f);
@@ -391,7 +391,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
         this.insetMargins = new Rect();
         this.moveThresholdPx = getResources().getDimensionPixelOffset(R.dimen.movement_threshold_dp);
         setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), R.drawable.bubble_state_selector));
-        a aVar = a.f21271a;
+        a aVar = a.f21492a;
         final Boolean bool = Boolean.FALSE;
         this.isMoving$delegate = new c<Boolean>(bool) { 
             @Override 
@@ -413,12 +413,12 @@ public abstract class OverlayBubbleWrap extends OverlayView {
             }
         };
         this.screenOffset = new int[2];
-        SpringAnimation springAnimation = new SpringAnimation(this, b.f3304u, 0.0f);
+        SpringAnimation springAnimation = new SpringAnimation(this, b.f3424u, 0.0f);
         springAnimation.j(50.0f);
         springAnimation.p().f(200.0f);
         springAnimation.p().d(0.75f);
         this.springAnimationX = springAnimation;
-        SpringAnimation springAnimation2 = new SpringAnimation(this, b.f3305v, 0.0f);
+        SpringAnimation springAnimation2 = new SpringAnimation(this, b.f3425v, 0.0f);
         springAnimation2.j(50.0f);
         springAnimation2.p().d(0.75f);
         springAnimation2.p().f(200.0f);
@@ -438,7 +438,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
         this.insetMargins = new Rect();
         this.moveThresholdPx = getResources().getDimensionPixelOffset(R.dimen.movement_threshold_dp);
         setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), R.drawable.bubble_state_selector));
-        a aVar = a.f21271a;
+        a aVar = a.f21492a;
         final Boolean bool = Boolean.FALSE;
         this.isMoving$delegate = new c<Boolean>(bool) { 
             @Override 
@@ -460,12 +460,12 @@ public abstract class OverlayBubbleWrap extends OverlayView {
             }
         };
         this.screenOffset = new int[2];
-        SpringAnimation springAnimation = new SpringAnimation(this, b.f3304u, 0.0f);
+        SpringAnimation springAnimation = new SpringAnimation(this, b.f3424u, 0.0f);
         springAnimation.j(50.0f);
         springAnimation.p().f(200.0f);
         springAnimation.p().d(0.75f);
         this.springAnimationX = springAnimation;
-        SpringAnimation springAnimation2 = new SpringAnimation(this, b.f3305v, 0.0f);
+        SpringAnimation springAnimation2 = new SpringAnimation(this, b.f3425v, 0.0f);
         springAnimation2.j(50.0f);
         springAnimation2.p().d(0.75f);
         springAnimation2.p().f(200.0f);

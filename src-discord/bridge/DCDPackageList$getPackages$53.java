@@ -1,23 +1,25 @@
 package com.discord.bridge;
 
-import com.discord.wakelock.ScreenWakeLockManagerModule;
+import com.discord.animatable_underlay.AnimatableUnderlayViewManager;
 import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.uimanager.LayoutShadowNode;
+import com.facebook.react.uimanager.ViewManager;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.n;
 import kotlin.jvm.internal.q;
+import kotlin.jvm.internal.s;
 
-@Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\f\u0012\u0002\b\u0003\u0012\u0004\u0012\u00020\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "Lcom/facebook/react/uimanager/ViewManager;", "Lcom/facebook/react/uimanager/LayoutShadowNode;", "it", "Lcom/facebook/react/bridge/ReactApplicationContext;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
 
- class DCDPackageList$getPackages$53 extends n implements Function1<ReactApplicationContext, ScreenWakeLockManagerModule> {
+final class DCDPackageList$getPackages$53 extends s implements Function1<ReactApplicationContext, ViewManager<?, LayoutShadowNode>> {
     public static final DCDPackageList$getPackages$53 INSTANCE = new DCDPackageList$getPackages$53();
 
     DCDPackageList$getPackages$53() {
-        super(1, ScreenWakeLockManagerModule.class, "<init>", "<init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V", 0);
+        super(1);
     }
 
-    public final ScreenWakeLockManagerModule invoke(ReactApplicationContext p02) {
-        q.h(p02, "p0");
-        return new ScreenWakeLockManagerModule(p02);
+    public final ViewManager<?, LayoutShadowNode> invoke(ReactApplicationContext it) {
+        q.h(it, "it");
+        return new AnimatableUnderlayViewManager();
     }
 }

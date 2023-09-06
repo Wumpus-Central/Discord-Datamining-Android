@@ -13,7 +13,7 @@ import com.facebook.react.viewmanagers.DCDZoomLayoutAndroidManagerDelegate;
 import com.facebook.react.viewmanagers.DCDZoomLayoutAndroidManagerInterface;
 import com.otaliastudios.zoom.ZoomEngine;
 import java.util.Map;
-import jf.x;
+import kf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;

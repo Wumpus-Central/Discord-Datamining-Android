@@ -11,7 +11,6 @@ import android.widget.LinearLayout;
 import android.widget.Space;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.R;
 import com.discord.chat.bridge.contentnode.CommandMentionContentNode;
@@ -32,17 +31,6 @@ import com.discord.chat.databinding.EmbedViewBinding;
 import com.discord.chat.presentation.media.MediaContainingViewResizer;
 import com.discord.chat.presentation.message.MessageAccessoriesView;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.image.fresco.SetOptionalImageUrlKt;
@@ -168,7 +156,7 @@ public final class EmbedView extends FrameLayout {
         for (int i10 = 0; i10 < 4; i10++) {
             EmbedViewResizingMediaView it = embedViewResizingMediaViewArr[i10];
             q.g(it, "it");
-            MediaView.setMediaData$default(it, null, false, false, false, null, false, null, null, false, false, false, null, null, null, null, 32766, null);
+            MediaView.setMediaData$default(it, null, false, false, false, null, false, null, null, false, false, false, 0, null, null, null, null, null, 131070, null);
             it.setOnMediaClickListeners(null, null);
             it.setVisibility(8);
         }
@@ -177,7 +165,7 @@ public final class EmbedView extends FrameLayout {
     private final void clearMedia() {
         EmbedViewResizingMediaView clearMedia$lambda$29 = this.binding.mediaView;
         q.g(clearMedia$lambda$29, "clearMedia$lambda$29");
-        MediaView.setMediaData$default(clearMedia$lambda$29, null, false, false, false, null, false, null, null, false, false, false, null, null, null, null, 32766, null);
+        MediaView.setMediaData$default(clearMedia$lambda$29, null, false, false, false, null, false, null, null, false, false, false, 0, null, null, null, null, null, 131070, null);
         clearMedia$lambda$29.setVisibility(8);
     }
 
@@ -375,7 +363,6 @@ public final class EmbedView extends FrameLayout {
         String str5;
         EmbedFieldView embedFieldView2;
         DraweeSpanStringBuilder draweeSpanStringBuilder2;
-        DraweeSpanStringBuilder spannable;
         EmbedView$setFields$onLinkClickedWithMessageId$1 embedView$setFields$onLinkClickedWithMessageId$12 = new EmbedView$setFields$onLinkClickedWithMessageId$1(function2, str);
         LinearLayout setFields_thlxG_E$lambda$22 = this.binding.fieldsContainer;
         q.g(setFields_thlxG_E$lambda$22, "setFields_thlxG_E$lambda$22");
@@ -403,7 +390,7 @@ public final class EmbedView extends FrameLayout {
                 str2 = "paint";
                 setFields_thlxG_E$lambda$22 = setFields_thlxG_E$lambda$22;
                 embedView$setFields$onLinkClickedWithMessageId$1 = embedView$setFields$onLinkClickedWithMessageId$12;
-                draweeSpanStringBuilder = TextUtilsKt.toSpannable(name, context, str, z10, z11, z12, paint, (r44 & 64) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : embedView$setFields$onLinkClickedWithMessageId$12, (r44 & 128) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : function1, (r44 & 256) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : function3, (r44 & 512) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r44 & 1024) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : function22, (r44 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r44 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r44 & 8192) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r44 & 16384) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : function13, (32768 & r44) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (65536 & r44) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : function0, (131072 & r44) != 0 ? false : false, (262144 & r44) != 0 ? ThemeManagerKt.getTheme() : null, (r44 & 524288) != 0 ? -1.0f : 0.0f);
+                draweeSpanStringBuilder = TextUtilsKt.toSpannable$default(name, context, str, z10, z11, z12, paint, embedView$setFields$onLinkClickedWithMessageId$12, function1, function3, null, function22, null, null, null, function13, null, function0, false, null, 0.0f, 965120, null);
                 str4 = str6;
                 embedFieldView = embedFieldView3;
             } else {
@@ -427,8 +414,7 @@ public final class EmbedView extends FrameLayout {
                 float baselineHeight = TextUtilsKt.getBaselineHeight(fontMetrics);
                 q.g(context2, str3);
                 q.g(paint2, str2);
-                spannable = TextUtilsKt.toSpannable(value, context2, str, z10, z11, z12, paint2, (r44 & 64) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : embedView$setFields$onLinkClickedWithMessageId$1, (r44 & 128) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : function1, (r44 & 256) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : function3, (r44 & 512) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r44 & 1024) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : function22, (r44 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r44 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r44 & 8192) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r44 & 16384) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : function13, (32768 & r44) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (65536 & r44) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : function0, (131072 & r44) != 0 ? false : false, (262144 & r44) != 0 ? ThemeManagerKt.getTheme() : null, (r44 & 524288) != 0 ? -1.0f : baselineHeight);
-                draweeSpanStringBuilder2 = spannable;
+                draweeSpanStringBuilder2 = TextUtilsKt.toSpannable$default(value, context2, str, z10, z11, z12, paint2, embedView$setFields$onLinkClickedWithMessageId$1, function1, function3, null, function22, null, null, null, function13, null, function0, false, null, baselineHeight, 440832, null);
                 str5 = str7;
                 embedFieldView2 = embedFieldView;
             } else {
@@ -487,7 +473,7 @@ public final class EmbedView extends FrameLayout {
         } else {
             z10 = false;
         }
-        MediaView.setMediaData$default(embedViewResizingMediaView, mediaSource, false, false, false, null, false, null, null, false, z10, false, null, null, null, null, 32254, null);
+        MediaView.setMediaData$default(embedViewResizingMediaView, mediaSource, false, false, false, null, false, null, null, false, z10, false, 0, null, null, null, null, null, 130558, null);
     }
 
     private final void setProvider(final CharSequence charSequence, Integer num, final Function1<? super CharSequence, Unit> function1) {
@@ -591,7 +577,6 @@ public final class EmbedView extends FrameLayout {
         Integer num;
         DraweeSpanStringBuilder draweeSpanStringBuilder2;
         List J0;
-        DraweeSpanStringBuilder spannable;
         q.h(embed, "embed");
         q.h(messageId, "messageId");
         q.h(onTitleLinkClicked, "onTitleLinkClicked");
@@ -642,8 +627,7 @@ public final class EmbedView extends FrameLayout {
                 TextPaint paint = this.binding.title.getPaint();
                 q.g(context, "context");
                 q.g(paint, "paint");
-                spannable = TextUtilsKt.toSpannable(title, context, messageId, z11, z12, z13, paint, (r44 & 64) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : null, (r44 & 128) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r44 & 256) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : onTapChannel, (r44 & 512) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r44 & 1024) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : onTapMention, (r44 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : onTapCommand, (r44 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r44 & 8192) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r44 & 16384) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : onTapEmoji, (32768 & r44) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (65536 & r44) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : onTapSpoiler, (131072 & r44) != 0 ? false : false, (262144 & r44) != 0 ? ThemeManagerKt.getTheme() : null, (r44 & 524288) != 0 ? -1.0f : 0.0f);
-                draweeSpanStringBuilder = spannable;
+                draweeSpanStringBuilder = TextUtilsKt.toSpannable$default(title, context, messageId, z11, z12, z13, paint, null, null, onTapChannel, null, onTapMention, onTapCommand, null, null, onTapEmoji, null, onTapSpoiler, false, null, 0.0f, 963264, null);
             } else {
                 draweeSpanStringBuilder = null;
             }
@@ -674,7 +658,7 @@ public final class EmbedView extends FrameLayout {
                 float baselineHeight = TextUtilsKt.getBaselineHeight(fontMetrics);
                 q.g(context2, "context");
                 q.g(paint2, "paint");
-                draweeSpanStringBuilder2 = TextUtilsKt.toSpannable(description, context2, messageId, z11, z12, z13, paint2, (r44 & 64) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : new EmbedView$setEmbed$3(onLinkClicked, messageId), (r44 & 128) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : onLongTapLinkNode, (r44 & 256) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : onTapChannel, (r44 & 512) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r44 & 1024) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : onTapMention, (r44 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : onTapCommand, (r44 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r44 & 8192) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r44 & 16384) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : onTapEmoji, (32768 & r44) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (65536 & r44) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : onTapSpoiler, (131072 & r44) != 0 ? false : false, (262144 & r44) != 0 ? ThemeManagerKt.getTheme() : null, (r44 & 524288) != 0 ? -1.0f : baselineHeight);
+                draweeSpanStringBuilder2 = TextUtilsKt.toSpannable$default(description, context2, messageId, z11, z12, z13, paint2, new EmbedView$setEmbed$3(onLinkClicked, messageId), onLongTapLinkNode, onTapChannel, null, onTapMention, onTapCommand, null, null, onTapEmoji, null, onTapSpoiler, false, null, baselineHeight, 438784, null);
             } else {
                 draweeSpanStringBuilder2 = null;
             }

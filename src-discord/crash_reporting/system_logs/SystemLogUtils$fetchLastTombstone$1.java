@@ -25,7 +25,7 @@ public final class SystemLogUtils$fetchLastTombstone$1 extends s implements Func
     @Override 
     public   Unit invoke(LinkedList<String> linkedList) {
         invoke2(linkedList);
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

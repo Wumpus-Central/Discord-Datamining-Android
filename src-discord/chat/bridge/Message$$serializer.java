@@ -58,17 +58,17 @@ import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
-import ti.n;
-import ui.a;
-import wi.a2;
-import wi.e0;
-import wi.f;
-import wi.f0;
-import wi.h;
-import wi.m0;
-import wi.w0;
+import ui.n;
+import vi.a;
+import xi.a2;
+import xi.e0;
+import xi.f;
+import xi.f0;
+import xi.h;
+import xi.m0;
+import xi.w0;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/Message.$serializer", "Lwi/f0;", "Lcom/discord/chat/bridge/Message;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/Message.$serializer", "Lxi/f0;", "Lcom/discord/chat/bridge/Message;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
 
 public final class Message$$serializer implements f0<Message> {
     public static final Message$$serializer INSTANCE;
@@ -160,11 +160,11 @@ public final class Message$$serializer implements f0<Message> {
     @Override 
     public KSerializer<?>[] childSerializers() {
         MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
-        w0 w0Var = w0.f29880a;
-        a2 a2Var = a2.f29764a;
-        e0 e0Var = e0.f29789a;
-        m0 m0Var = m0.f29839a;
-        h hVar = h.f29806a;
+        w0 w0Var = w0.f30684a;
+        a2 a2Var = a2.f30568a;
+        e0 e0Var = e0.f30593a;
+        m0 m0Var = m0.f30643a;
+        h hVar = h.f30610a;
         Sticker$$serializer sticker$$serializer = Sticker$$serializer.INSTANCE;
         GiftEmbedSerializer giftEmbedSerializer = GiftEmbedSerializer.INSTANCE;
         return new KSerializer[]{MessageType.Serializer.INSTANCE, messageId$$serializer, a.u(messageId$$serializer), ChannelId$$serializer.INSTANCE, a.u(GuildId$$serializer.INSTANCE), a.u(MessageState.Serializer.INSTANCE), a.u(UserId$$serializer.INSTANCE), w0Var, a.u(a2Var), a.u(e0Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(m0Var), hVar, hVar, a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(new f(Embed$$serializer.INSTANCE)), a.u(new f(Attachment$$serializer.INSTANCE)), a.u(e0Var), a.u(StructurableTextSerializer.INSTANCE), a.u(new f(UploadProgress$$serializer.INSTANCE)), a.u(new f(MessageReaction$$serializer.INSTANCE)), a.u(hVar), a.u(new f(a.u(CodedLinkSerializer.INSTANCE))), a.u(new f(sticker$$serializer)), a.u(RoleIcon$$serializer.INSTANCE), a.u(ConnectionsRoleTag$$serializer.INSTANCE), a.u(ThreadEmbed$$serializer.INSTANCE), hVar, a.u(hVar), a.u(hVar), a.u(ReferencedMessageSerializer.INSTANCE), a.u(ExecutedCommand$$serializer.INSTANCE), a.u(new f(ComponentSerializer.INSTANCE)), a.u(a2Var), a.u(hVar), a.u(a2Var), a.u(hVar), a.u(m0Var), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(hVar), a.u(m0Var), a.u(m0Var), a.u(EphemeralIndication$$serializer.INSTANCE), a.u(SurveyIndication$$serializer.INSTANCE), a.u(InteractionStatus$$serializer.INSTANCE), a.u(hVar), a.u(hVar), a.u(hVar), a.u(a2Var), a.u(a2Var), a.u(new f(a2Var)), a.u(hVar), a.u(hVar), a.u(w0Var), a.u(sticker$$serializer), a.u(a2Var), a.u(a2Var), a.u(hVar), a.u(ActivityInviteEmbed$$serializer.INSTANCE), hVar, a.u(ForumPostActions$$serializer.INSTANCE), a.u(AutoModerationContext$$serializer.INSTANCE), a.u(new f(giftEmbedSerializer)), a.u(giftEmbedSerializer), a.u(m0Var), a.u(new f(PostPreviewEmbed$$serializer.INSTANCE)), a.u(ChannelPromptData$$serializer.INSTANCE)};
@@ -264,13 +264,13 @@ public final class Message$$serializer implements f0<Message> {
             obj27 = b10.n(descriptor2, 5, MessageState.Serializer.INSTANCE, null);
             obj26 = b10.n(descriptor2, 6, UserId$$serializer.INSTANCE, null);
             j10 = b10.f(descriptor2, 7);
-            a2 a2Var = a2.f29764a;
+            a2 a2Var = a2.f30568a;
             obj21 = b10.n(descriptor2, 8, a2Var, null);
-            e0 e0Var = e0.f29789a;
+            e0 e0Var = e0.f30593a;
             obj22 = b10.n(descriptor2, 9, e0Var, null);
             obj18 = b10.n(descriptor2, 10, a2Var, null);
             obj20 = b10.n(descriptor2, 11, a2Var, null);
-            m0 m0Var = m0.f29839a;
+            m0 m0Var = m0.f30643a;
             obj37 = b10.n(descriptor2, 12, m0Var, null);
             obj51 = b10.n(descriptor2, 13, m0Var, null);
             z12 = b10.C(descriptor2, 14);
@@ -284,7 +284,7 @@ public final class Message$$serializer implements f0<Message> {
             obj15 = b10.n(descriptor2, 22, StructurableTextSerializer.INSTANCE, null);
             obj40 = b10.n(descriptor2, 23, new f(UploadProgress$$serializer.INSTANCE), null);
             obj10 = b10.n(descriptor2, 24, new f(MessageReaction$$serializer.INSTANCE), null);
-            h hVar = h.f29806a;
+            h hVar = h.f30610a;
             obj35 = b10.n(descriptor2, 25, hVar, null);
             obj34 = b10.n(descriptor2, 26, new f(a.u(CodedLinkSerializer.INSTANCE)), null);
             Sticker$$serializer sticker$$serializer = Sticker$$serializer.INSTANCE;
@@ -320,7 +320,7 @@ public final class Message$$serializer implements f0<Message> {
             obj39 = b10.n(descriptor2, 56, new f(a2Var), null);
             obj9 = b10.n(descriptor2, 57, hVar, null);
             obj38 = b10.n(descriptor2, 58, hVar, null);
-            obj36 = b10.n(descriptor2, 59, w0.f29880a, null);
+            obj36 = b10.n(descriptor2, 59, w0.f30684a, null);
             obj8 = b10.n(descriptor2, 60, sticker$$serializer, null);
             obj7 = b10.n(descriptor2, 61, a2Var, null);
             obj33 = b10.n(descriptor2, 62, a2Var, null);
@@ -442,7 +442,7 @@ public final class Message$$serializer implements f0<Message> {
                         z14 = false;
                         obj70 = obj70;
                         obj71 = obj71;
-                        Unit unit = Unit.f21215a;
+                        Unit unit = Unit.f21436a;
                         obj76 = obj76;
                         break;
                     case 0:
@@ -468,7 +468,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj113 = obj113;
                         obj79 = b10.y(descriptor2, 0, MessageType.Serializer.INSTANCE, obj79);
                         i18 |= 1;
-                        Unit unit2 = Unit.f21215a;
+                        Unit unit2 = Unit.f21436a;
                         obj76 = obj76;
                         break;
                     case 1:
@@ -493,7 +493,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj80 = obj80;
                         obj113 = b10.y(descriptor2, 1, MessageId$$serializer.INSTANCE, obj113);
                         i18 |= 2;
-                        Unit unit3 = Unit.f21215a;
+                        Unit unit3 = Unit.f21436a;
                         obj76 = obj76;
                         break;
                     case 2:
@@ -517,7 +517,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj115 = obj115;
                         obj80 = b10.n(descriptor2, 2, MessageId$$serializer.INSTANCE, obj80);
                         i18 |= 4;
-                        Unit unit4 = Unit.f21215a;
+                        Unit unit4 = Unit.f21436a;
                         obj76 = obj76;
                         break;
                     case 3:
@@ -534,7 +534,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj120 = obj120;
                         obj115 = b10.y(descriptor2, 3, ChannelId$$serializer.INSTANCE, obj115);
                         i18 |= 8;
-                        Unit unit5 = Unit.f21215a;
+                        Unit unit5 = Unit.f21436a;
                         obj91 = obj91;
                         obj80 = obj80;
                         obj70 = obj70;
@@ -562,7 +562,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj120 = obj120;
                         obj121 = b10.n(descriptor2, 4, GuildId$$serializer.INSTANCE, obj121);
                         i18 |= 16;
-                        Unit unit6 = Unit.f21215a;
+                        Unit unit6 = Unit.f21436a;
                         obj91 = obj91;
                         obj80 = obj80;
                         obj70 = obj70;
@@ -586,7 +586,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj119 = obj119;
                         obj120 = b10.n(descriptor2, 5, MessageState.Serializer.INSTANCE, obj120);
                         i18 |= 32;
-                        Unit unit7 = Unit.f21215a;
+                        Unit unit7 = Unit.f21436a;
                         obj91 = obj91;
                         obj80 = obj80;
                         obj70 = obj70;
@@ -610,7 +610,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj71 = obj71;
                         obj119 = b10.n(descriptor2, 6, UserId$$serializer.INSTANCE, obj119);
                         i18 |= 64;
-                        Unit unit8 = Unit.f21215a;
+                        Unit unit8 = Unit.f21436a;
                         obj91 = obj91;
                         obj122 = obj122;
                         obj80 = obj80;
@@ -635,7 +635,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj71 = obj71;
                         j11 = b10.f(descriptor2, 7);
                         i18 |= 128;
-                        Unit unit9 = Unit.f21215a;
+                        Unit unit9 = Unit.f21436a;
                         obj80 = obj80;
                         obj113 = obj113;
                         obj115 = obj115;
@@ -656,9 +656,9 @@ public final class Message$$serializer implements f0<Message> {
                         obj70 = obj70;
                         obj71 = obj71;
                         obj118 = obj118;
-                        obj122 = b10.n(descriptor2, 8, a2.f29764a, obj122);
+                        obj122 = b10.n(descriptor2, 8, a2.f30568a, obj122);
                         i18 |= 256;
-                        Unit unit10 = Unit.f21215a;
+                        Unit unit10 = Unit.f21436a;
                         obj80 = obj80;
                         obj113 = obj113;
                         obj115 = obj115;
@@ -676,9 +676,9 @@ public final class Message$$serializer implements f0<Message> {
                         obj116 = obj116;
                         obj71 = obj71;
                         obj117 = obj117;
-                        obj118 = b10.n(descriptor2, 9, e0.f29789a, obj118);
+                        obj118 = b10.n(descriptor2, 9, e0.f30593a, obj118);
                         i18 |= 512;
-                        Unit unit11 = Unit.f21215a;
+                        Unit unit11 = Unit.f21436a;
                         obj91 = obj91;
                         obj80 = obj80;
                         obj70 = obj70;
@@ -697,9 +697,9 @@ public final class Message$$serializer implements f0<Message> {
                         obj92 = obj92;
                         obj71 = obj71;
                         obj116 = obj116;
-                        obj117 = b10.n(descriptor2, 10, a2.f29764a, obj117);
+                        obj117 = b10.n(descriptor2, 10, a2.f30568a, obj117);
                         i18 |= 1024;
-                        Unit unit12 = Unit.f21215a;
+                        Unit unit12 = Unit.f21436a;
                         obj91 = obj91;
                         obj80 = obj80;
                         obj70 = obj70;
@@ -719,9 +719,9 @@ public final class Message$$serializer implements f0<Message> {
                         obj70 = obj70;
                         obj71 = obj71;
                         obj81 = obj81;
-                        obj116 = b10.n(descriptor2, 11, a2.f29764a, obj116);
+                        obj116 = b10.n(descriptor2, 11, a2.f30568a, obj116);
                         i18 |= RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit13 = Unit.f21215a;
+                        Unit unit13 = Unit.f21436a;
                         obj80 = obj80;
                         obj113 = obj113;
                         obj115 = obj115;
@@ -738,9 +738,9 @@ public final class Message$$serializer implements f0<Message> {
                         obj70 = obj70;
                         obj71 = obj71;
                         obj82 = obj82;
-                        obj81 = b10.n(descriptor2, 12, m0.f29839a, obj81);
+                        obj81 = b10.n(descriptor2, 12, m0.f30643a, obj81);
                         i18 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-                        Unit unit14 = Unit.f21215a;
+                        Unit unit14 = Unit.f21436a;
                         obj80 = obj80;
                         obj113 = obj113;
                         obj115 = obj115;
@@ -755,9 +755,9 @@ public final class Message$$serializer implements f0<Message> {
                         obj70 = obj70;
                         obj71 = obj71;
                         obj72 = obj72;
-                        obj82 = b10.n(descriptor2, 13, m0.f29839a, obj82);
+                        obj82 = b10.n(descriptor2, 13, m0.f30643a, obj82);
                         i18 |= 8192;
-                        Unit unit15 = Unit.f21215a;
+                        Unit unit15 = Unit.f21436a;
                         obj91 = obj91;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -776,7 +776,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj71 = obj71;
                         z16 = b10.C(descriptor2, 14);
                         i18 |= 16384;
-                        Unit unit16 = Unit.f21215a;
+                        Unit unit16 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -796,7 +796,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj71 = obj71;
                         z15 = b10.C(descriptor2, 15);
                         i18 |= 32768;
-                        Unit unit17 = Unit.f21215a;
+                        Unit unit17 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -807,9 +807,9 @@ public final class Message$$serializer implements f0<Message> {
                         break;
                     case 16:
                         obj84 = obj84;
-                        obj83 = b10.n(descriptor2, 16, m0.f29839a, obj83);
+                        obj83 = b10.n(descriptor2, 16, m0.f30643a, obj83);
                         i18 |= 65536;
-                        Unit unit18 = Unit.f21215a;
+                        Unit unit18 = Unit.f21436a;
                         obj72 = obj72;
                         obj91 = obj91;
                         obj80 = obj80;
@@ -836,9 +836,9 @@ public final class Message$$serializer implements f0<Message> {
                         obj92 = obj92;
                         obj70 = obj70;
                         obj71 = obj71;
-                        obj84 = b10.n(descriptor2, 17, a2.f29764a, obj84);
+                        obj84 = b10.n(descriptor2, 17, a2.f30568a, obj84);
                         i18 |= 131072;
-                        Unit unit19 = Unit.f21215a;
+                        Unit unit19 = Unit.f21436a;
                         obj72 = obj72;
                         obj91 = obj91;
                         obj80 = obj80;
@@ -862,9 +862,9 @@ public final class Message$$serializer implements f0<Message> {
                         obj92 = obj92;
                         obj70 = obj70;
                         obj71 = obj71;
-                        obj30 = b10.n(descriptor2, 18, a2.f29764a, obj30);
+                        obj30 = b10.n(descriptor2, 18, a2.f30568a, obj30);
                         i18 |= 262144;
-                        Unit unit20 = Unit.f21215a;
+                        Unit unit20 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -890,7 +890,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj71 = obj71;
                         obj85 = b10.n(descriptor2, 19, new f(Embed$$serializer.INSTANCE), obj85);
                         i18 |= 524288;
-                        Unit unit21 = Unit.f21215a;
+                        Unit unit21 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -918,7 +918,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj16 = b10.n(descriptor2, 20, new f(Attachment$$serializer.INSTANCE), obj16);
                         i13 = 1048576;
                         i18 = i14 | i13;
-                        Unit unit22 = Unit.f21215a;
+                        Unit unit22 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -943,10 +943,10 @@ public final class Message$$serializer implements f0<Message> {
                         i14 = i18;
                         obj70 = obj70;
                         obj71 = obj71;
-                        obj13 = b10.n(descriptor2, 21, e0.f29789a, obj13);
+                        obj13 = b10.n(descriptor2, 21, e0.f30593a, obj13);
                         i13 = 2097152;
                         i18 = i14 | i13;
-                        Unit unit222 = Unit.f21215a;
+                        Unit unit222 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -974,7 +974,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj15 = b10.n(descriptor2, 22, StructurableTextSerializer.INSTANCE, obj15);
                         i13 = 4194304;
                         i18 = i14 | i13;
-                        Unit unit2222 = Unit.f21215a;
+                        Unit unit2222 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1000,7 +1000,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj71 = obj71;
                         obj86 = b10.n(descriptor2, 23, new f(UploadProgress$$serializer.INSTANCE), obj86);
                         i18 |= 8388608;
-                        Unit unit23 = Unit.f21215a;
+                        Unit unit23 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1028,7 +1028,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj10 = b10.n(descriptor2, 24, new f(MessageReaction$$serializer.INSTANCE), obj10);
                         i13 = 16777216;
                         i18 = i14 | i13;
-                        Unit unit22222 = Unit.f21215a;
+                        Unit unit22222 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1052,9 +1052,9 @@ public final class Message$$serializer implements f0<Message> {
                         obj92 = obj92;
                         obj70 = obj70;
                         obj71 = obj71;
-                        obj87 = b10.n(descriptor2, 25, h.f29806a, obj87);
+                        obj87 = b10.n(descriptor2, 25, h.f30610a, obj87);
                         i18 |= 33554432;
-                        Unit unit24 = Unit.f21215a;
+                        Unit unit24 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1080,7 +1080,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj71 = obj71;
                         obj88 = b10.n(descriptor2, 26, new f(a.u(CodedLinkSerializer.INSTANCE)), obj88);
                         i18 |= 67108864;
-                        Unit unit25 = Unit.f21215a;
+                        Unit unit25 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1106,7 +1106,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj71 = obj71;
                         obj25 = b10.n(descriptor2, 27, new f(Sticker$$serializer.INSTANCE), obj25);
                         i18 |= 134217728;
-                        Unit unit26 = Unit.f21215a;
+                        Unit unit26 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1132,7 +1132,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj71 = obj71;
                         obj24 = b10.n(descriptor2, 28, RoleIcon$$serializer.INSTANCE, obj24);
                         i18 |= 268435456;
-                        Unit unit27 = Unit.f21215a;
+                        Unit unit27 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1158,7 +1158,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj71 = obj71;
                         obj89 = b10.n(descriptor2, 29, ConnectionsRoleTag$$serializer.INSTANCE, obj89);
                         i18 |= 536870912;
-                        Unit unit28 = Unit.f21215a;
+                        Unit unit28 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1184,7 +1184,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj71 = obj71;
                         obj90 = b10.n(descriptor2, 30, ThreadEmbed$$serializer.INSTANCE, obj90);
                         i18 |= 1073741824;
-                        Unit unit29 = Unit.f21215a;
+                        Unit unit29 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1206,7 +1206,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj78 = obj78;
                         z17 = b10.C(descriptor2, 31);
                         i18 |= Integer.MIN_VALUE;
-                        Unit unit30 = Unit.f21215a;
+                        Unit unit30 = Unit.f21436a;
                         obj72 = obj72;
                         obj91 = obj91;
                         obj80 = obj80;
@@ -1227,9 +1227,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 32:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj91 = b10.n(descriptor2, 32, h.f29806a, obj91);
+                        obj91 = b10.n(descriptor2, 32, h.f30610a, obj91);
                         i16 |= 1;
-                        Unit unit31 = Unit.f21215a;
+                        Unit unit31 = Unit.f21436a;
                         obj72 = obj72;
                         obj92 = obj92;
                         obj80 = obj80;
@@ -1250,9 +1250,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 33:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj92 = b10.n(descriptor2, 33, h.f29806a, obj92);
+                        obj92 = b10.n(descriptor2, 33, h.f30610a, obj92);
                         i16 |= 2;
-                        Unit unit32 = Unit.f21215a;
+                        Unit unit32 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1275,7 +1275,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj78 = obj78;
                         obj93 = b10.n(descriptor2, 34, ReferencedMessageSerializer.INSTANCE, obj93);
                         i16 |= 4;
-                        Unit unit33 = Unit.f21215a;
+                        Unit unit33 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1298,7 +1298,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj78 = obj78;
                         obj94 = b10.n(descriptor2, 35, ExecutedCommand$$serializer.INSTANCE, obj94);
                         i16 |= 8;
-                        Unit unit34 = Unit.f21215a;
+                        Unit unit34 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1321,7 +1321,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj78 = obj78;
                         obj14 = b10.n(descriptor2, 36, new f(ComponentSerializer.INSTANCE), obj14);
                         i16 |= 16;
-                        Unit unit35 = Unit.f21215a;
+                        Unit unit35 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1342,9 +1342,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 37:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj12 = b10.n(descriptor2, 37, a2.f29764a, obj12);
+                        obj12 = b10.n(descriptor2, 37, a2.f30568a, obj12);
                         i16 |= 32;
-                        Unit unit352 = Unit.f21215a;
+                        Unit unit352 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1365,9 +1365,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 38:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj19 = b10.n(descriptor2, 38, h.f29806a, obj19);
+                        obj19 = b10.n(descriptor2, 38, h.f30610a, obj19);
                         i16 |= 64;
-                        Unit unit36 = Unit.f21215a;
+                        Unit unit36 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1388,9 +1388,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 39:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj95 = b10.n(descriptor2, 39, a2.f29764a, obj95);
+                        obj95 = b10.n(descriptor2, 39, a2.f30568a, obj95);
                         i16 |= 128;
-                        Unit unit37 = Unit.f21215a;
+                        Unit unit37 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1411,9 +1411,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 40:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj96 = b10.n(descriptor2, 40, h.f29806a, obj96);
+                        obj96 = b10.n(descriptor2, 40, h.f30610a, obj96);
                         i16 |= 256;
-                        Unit unit38 = Unit.f21215a;
+                        Unit unit38 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1434,9 +1434,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 41:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj97 = b10.n(descriptor2, 41, m0.f29839a, obj97);
+                        obj97 = b10.n(descriptor2, 41, m0.f30643a, obj97);
                         i16 |= 512;
-                        Unit unit39 = Unit.f21215a;
+                        Unit unit39 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1457,9 +1457,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 42:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj98 = b10.n(descriptor2, 42, m0.f29839a, obj98);
+                        obj98 = b10.n(descriptor2, 42, m0.f30643a, obj98);
                         i16 |= 1024;
-                        Unit unit40 = Unit.f21215a;
+                        Unit unit40 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1480,9 +1480,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 43:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj99 = b10.n(descriptor2, 43, a2.f29764a, obj99);
+                        obj99 = b10.n(descriptor2, 43, a2.f30568a, obj99);
                         i16 |= RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit41 = Unit.f21215a;
+                        Unit unit41 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1503,9 +1503,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 44:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj100 = b10.n(descriptor2, 44, a2.f29764a, obj100);
+                        obj100 = b10.n(descriptor2, 44, a2.f30568a, obj100);
                         i16 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-                        Unit unit42 = Unit.f21215a;
+                        Unit unit42 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1526,9 +1526,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 45:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj101 = b10.n(descriptor2, 45, h.f29806a, obj101);
+                        obj101 = b10.n(descriptor2, 45, h.f30610a, obj101);
                         i16 |= 8192;
-                        Unit unit43 = Unit.f21215a;
+                        Unit unit43 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1549,9 +1549,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 46:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj102 = b10.n(descriptor2, 46, m0.f29839a, obj102);
+                        obj102 = b10.n(descriptor2, 46, m0.f30643a, obj102);
                         i16 |= 16384;
-                        Unit unit44 = Unit.f21215a;
+                        Unit unit44 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1572,9 +1572,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 47:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj103 = b10.n(descriptor2, 47, m0.f29839a, obj103);
+                        obj103 = b10.n(descriptor2, 47, m0.f30643a, obj103);
                         i16 |= 32768;
-                        Unit unit45 = Unit.f21215a;
+                        Unit unit45 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1597,7 +1597,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj78 = obj78;
                         obj104 = b10.n(descriptor2, 48, EphemeralIndication$$serializer.INSTANCE, obj104);
                         i16 |= 65536;
-                        Unit unit46 = Unit.f21215a;
+                        Unit unit46 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1620,7 +1620,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj78 = obj78;
                         obj105 = b10.n(descriptor2, 49, SurveyIndication$$serializer.INSTANCE, obj105);
                         i16 |= 131072;
-                        Unit unit47 = Unit.f21215a;
+                        Unit unit47 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1643,7 +1643,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj78 = obj78;
                         obj106 = b10.n(descriptor2, 50, InteractionStatus$$serializer.INSTANCE, obj106);
                         i16 |= 262144;
-                        Unit unit48 = Unit.f21215a;
+                        Unit unit48 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1664,9 +1664,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 51:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj114 = b10.n(descriptor2, 51, h.f29806a, obj114);
+                        obj114 = b10.n(descriptor2, 51, h.f30610a, obj114);
                         i16 |= 524288;
-                        Unit unit3522 = Unit.f21215a;
+                        Unit unit3522 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1687,9 +1687,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 52:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj107 = b10.n(descriptor2, 52, h.f29806a, obj107);
+                        obj107 = b10.n(descriptor2, 52, h.f30610a, obj107);
                         i16 |= 1048576;
-                        Unit unit49 = Unit.f21215a;
+                        Unit unit49 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1710,9 +1710,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 53:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj108 = b10.n(descriptor2, 53, h.f29806a, obj108);
+                        obj108 = b10.n(descriptor2, 53, h.f30610a, obj108);
                         i16 |= 2097152;
-                        Unit unit50 = Unit.f21215a;
+                        Unit unit50 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1733,9 +1733,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 54:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj17 = b10.n(descriptor2, 54, a2.f29764a, obj17);
+                        obj17 = b10.n(descriptor2, 54, a2.f30568a, obj17);
                         i16 |= 4194304;
-                        Unit unit51 = Unit.f21215a;
+                        Unit unit51 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1756,9 +1756,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 55:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj109 = b10.n(descriptor2, 55, a2.f29764a, obj109);
+                        obj109 = b10.n(descriptor2, 55, a2.f30568a, obj109);
                         i16 |= 8388608;
-                        Unit unit52 = Unit.f21215a;
+                        Unit unit52 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1779,9 +1779,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 56:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj110 = b10.n(descriptor2, 56, new f(a2.f29764a), obj110);
+                        obj110 = b10.n(descriptor2, 56, new f(a2.f30568a), obj110);
                         i16 |= 16777216;
-                        Unit unit53 = Unit.f21215a;
+                        Unit unit53 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1802,9 +1802,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 57:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj111 = b10.n(descriptor2, 57, h.f29806a, obj111);
+                        obj111 = b10.n(descriptor2, 57, h.f30610a, obj111);
                         i16 |= 33554432;
-                        Unit unit54 = Unit.f21215a;
+                        Unit unit54 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1825,9 +1825,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 58:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj112 = b10.n(descriptor2, 58, h.f29806a, obj112);
+                        obj112 = b10.n(descriptor2, 58, h.f30610a, obj112);
                         i16 |= 67108864;
-                        Unit unit55 = Unit.f21215a;
+                        Unit unit55 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1848,9 +1848,9 @@ public final class Message$$serializer implements f0<Message> {
                     case 59:
                         obj69 = obj69;
                         obj78 = obj78;
-                        obj123 = b10.n(descriptor2, 59, w0.f29880a, obj123);
+                        obj123 = b10.n(descriptor2, 59, w0.f30684a, obj123);
                         i16 |= 134217728;
-                        Unit unit56 = Unit.f21215a;
+                        Unit unit56 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1873,7 +1873,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj78 = obj78;
                         obj76 = b10.n(descriptor2, 60, Sticker$$serializer.INSTANCE, obj76);
                         i16 |= 268435456;
-                        Unit unit57 = Unit.f21215a;
+                        Unit unit57 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1892,9 +1892,9 @@ public final class Message$$serializer implements f0<Message> {
                         break;
                     case 61:
                         obj69 = obj69;
-                        obj78 = b10.n(descriptor2, 61, a2.f29764a, obj78);
+                        obj78 = b10.n(descriptor2, 61, a2.f30568a, obj78);
                         i16 |= 536870912;
-                        Unit unit58 = Unit.f21215a;
+                        Unit unit58 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -1914,10 +1914,10 @@ public final class Message$$serializer implements f0<Message> {
                         break;
                     case 62:
                         obj78 = obj78;
-                        obj75 = b10.n(descriptor2, 62, a2.f29764a, obj75);
+                        obj75 = b10.n(descriptor2, 62, a2.f30568a, obj75);
                         i15 = 1073741824;
                         i16 |= i15;
-                        Unit unit59 = Unit.f21215a;
+                        Unit unit59 = Unit.f21436a;
                         obj80 = obj80;
                         obj81 = obj81;
                         obj82 = obj82;
@@ -1936,10 +1936,10 @@ public final class Message$$serializer implements f0<Message> {
                         break;
                     case 63:
                         obj78 = obj78;
-                        obj74 = b10.n(descriptor2, 63, h.f29806a, obj74);
+                        obj74 = b10.n(descriptor2, 63, h.f30610a, obj74);
                         i15 = Integer.MIN_VALUE;
                         i16 |= i15;
-                        Unit unit592 = Unit.f21215a;
+                        Unit unit592 = Unit.f21436a;
                         obj80 = obj80;
                         obj81 = obj81;
                         obj82 = obj82;
@@ -1960,7 +1960,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj78 = obj78;
                         obj77 = b10.n(descriptor2, 64, ActivityInviteEmbed$$serializer.INSTANCE, obj77);
                         i17 |= 1;
-                        Unit unit5922 = Unit.f21215a;
+                        Unit unit5922 = Unit.f21436a;
                         obj80 = obj80;
                         obj81 = obj81;
                         obj82 = obj82;
@@ -1980,7 +1980,7 @@ public final class Message$$serializer implements f0<Message> {
                     case 65:
                         z18 = b10.C(descriptor2, 65);
                         i17 |= 2;
-                        Unit unit60 = Unit.f21215a;
+                        Unit unit60 = Unit.f21436a;
                         obj72 = obj72;
                         obj80 = obj80;
                         obj81 = obj81;
@@ -2002,7 +2002,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj78 = obj78;
                         obj73 = b10.n(descriptor2, 66, ForumPostActions$$serializer.INSTANCE, obj73);
                         i17 |= 4;
-                        Unit unit59222 = Unit.f21215a;
+                        Unit unit59222 = Unit.f21436a;
                         obj80 = obj80;
                         obj81 = obj81;
                         obj82 = obj82;
@@ -2023,7 +2023,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj78 = obj78;
                         obj72 = b10.n(descriptor2, 67, AutoModerationContext$$serializer.INSTANCE, obj72);
                         i17 |= 8;
-                        Unit unit592222 = Unit.f21215a;
+                        Unit unit592222 = Unit.f21436a;
                         obj80 = obj80;
                         obj81 = obj81;
                         obj82 = obj82;
@@ -2044,7 +2044,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj78 = obj78;
                         obj71 = b10.n(descriptor2, 68, new f(GiftEmbedSerializer.INSTANCE), obj71);
                         i17 |= 16;
-                        Unit unit5922222 = Unit.f21215a;
+                        Unit unit5922222 = Unit.f21436a;
                         obj80 = obj80;
                         obj81 = obj81;
                         obj82 = obj82;
@@ -2065,7 +2065,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj78 = obj78;
                         obj70 = b10.n(descriptor2, 69, GiftEmbedSerializer.INSTANCE, obj70);
                         i17 |= 32;
-                        Unit unit59222222 = Unit.f21215a;
+                        Unit unit59222222 = Unit.f21436a;
                         obj80 = obj80;
                         obj81 = obj81;
                         obj82 = obj82;
@@ -2084,9 +2084,9 @@ public final class Message$$serializer implements f0<Message> {
                         break;
                     case 70:
                         obj78 = obj78;
-                        obj55 = b10.n(descriptor2, 70, m0.f29839a, obj55);
+                        obj55 = b10.n(descriptor2, 70, m0.f30643a, obj55);
                         i17 |= 64;
-                        Unit unit592222222 = Unit.f21215a;
+                        Unit unit592222222 = Unit.f21436a;
                         obj80 = obj80;
                         obj81 = obj81;
                         obj82 = obj82;
@@ -2107,7 +2107,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj78 = obj78;
                         obj69 = b10.n(descriptor2, 71, new f(PostPreviewEmbed$$serializer.INSTANCE), obj69);
                         i17 |= 128;
-                        Unit unit5922222222 = Unit.f21215a;
+                        Unit unit5922222222 = Unit.f21436a;
                         obj80 = obj80;
                         obj81 = obj81;
                         obj82 = obj82;
@@ -2128,7 +2128,7 @@ public final class Message$$serializer implements f0<Message> {
                         obj78 = obj78;
                         obj57 = b10.n(descriptor2, 72, ChannelPromptData$$serializer.INSTANCE, obj57);
                         i17 |= 256;
-                        Unit unit59222222222 = Unit.f21215a;
+                        Unit unit59222222222 = Unit.f21436a;
                         obj80 = obj80;
                         obj81 = obj81;
                         obj82 = obj82;

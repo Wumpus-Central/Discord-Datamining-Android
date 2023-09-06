@@ -421,7 +421,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             if (i11 == 4) {
                 return 27;
             }
-            throw new jf.q();
+            throw new kf.q();
         } else if (messageAccessory instanceof ThreadEmbedMessageAccessory) {
             return 9;
         } else {
@@ -482,7 +482,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             if (messageAccessory instanceof ChannelPromptActionsAccessory) {
                 return 34;
             }
-            throw new jf.q();
+            throw new kf.q();
         }
     }
 
@@ -847,9 +847,9 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             }
             channelDeadchatPromptActionsViewHolder.bind(channelPromptActionsAccessory, new MessageAccessoriesAdapter$onBindViewHolder$48(chatEventHandler29));
         } else {
-            throw new jf.q();
+            throw new kf.q();
         }
-        ForceExhaustiveKt.forceExhaustive(Unit.f21215a);
+        ForceExhaustiveKt.forceExhaustive(Unit.f21436a);
     }
 
     @Override 

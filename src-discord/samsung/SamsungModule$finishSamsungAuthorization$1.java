@@ -1,8 +1,8 @@
 package com.discord.samsung;
 
 import java.util.concurrent.CancellationException;
-import jf.s;
-import jf.t;
+import kf.s;
+import kf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -14,7 +14,7 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.a1;
 import kotlinx.coroutines.j;
 import okhttp3.OkHttpClient;
-import pf.d;
+import qf.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.samsung.SamsungModule$finishSamsungAuthorization$1", f = "SamsungModule.kt", l = {151}, m = "invokeSuspend")
@@ -45,7 +45,7 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((SamsungModule$finishSamsungAuthorization$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21215a);
+        return ((SamsungModule$finishSamsungAuthorization$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21436a);
     }
 
     @Override 
@@ -62,7 +62,7 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
                 SamsungModule samsungModule = this.this$0;
                 String str2 = this.$state;
                 String str3 = this.$authCode;
-                s.a aVar = s.f20304k;
+                s.a aVar = s.f21214k;
                 OkHttpClient c10 = new OkHttpClient.Builder().i(false).c();
                 CoroutineDispatcher b10 = a1.b();
                 SamsungModule$finishSamsungAuthorization$1$1$1 samsungModule$finishSamsungAuthorization$1$1$1 = new SamsungModule$finishSamsungAuthorization$1$1$1(str, samsungModule, c10, str2, str3, null);
@@ -75,9 +75,9 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            obj2 = s.b(Unit.f21215a);
+            obj2 = s.b(Unit.f21436a);
         } catch (Throwable th2) {
-            s.a aVar2 = s.f20304k;
+            s.a aVar2 = s.f21214k;
             obj2 = s.b(t.a(th2));
         }
         SamsungModule samsungModule2 = this.this$0;
@@ -89,6 +89,6 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
                 throw e10;
             }
         }
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 }

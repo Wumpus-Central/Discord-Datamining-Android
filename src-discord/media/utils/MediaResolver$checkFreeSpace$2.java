@@ -2,7 +2,7 @@ package com.discord.media.utils;
 
 import com.discord.media.utils.MediaResolver;
 import java.io.File;
-import jf.t;
+import kf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -12,7 +12,7 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.q;
 import kotlin.text.o;
 import kotlinx.coroutines.CoroutineScope;
-import pf.d;
+import qf.d;
 
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -35,7 +35,7 @@ public final class MediaResolver$checkFreeSpace$2 extends k implements Function2
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaResolver$checkFreeSpace$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21215a);
+        return ((MediaResolver$checkFreeSpace$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21436a);
     }
 
     @Override 
@@ -78,7 +78,7 @@ public final class MediaResolver$checkFreeSpace$2 extends k implements Function2
                     }
                 }
             }
-            return Unit.f21215a;
+            return Unit.f21436a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

@@ -20,7 +20,7 @@ public final class ImageAttachmentViewHolder$bind$1 extends s implements Functio
     @Override 
     public   Unit invoke(MessageId messageId) {
         m359invoke1xi1bu0(messageId.m625unboximpl());
-        return Unit.f21215a;
+        return Unit.f21436a;
     }
 
     

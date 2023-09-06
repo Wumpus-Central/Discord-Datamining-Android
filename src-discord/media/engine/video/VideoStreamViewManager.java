@@ -17,7 +17,7 @@ import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.viewmanagers.DCDVideoRendererManagerDelegate;
 import com.facebook.react.viewmanagers.DCDVideoRendererManagerInterface;
 import java.util.Map;
-import jf.x;
+import kf.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -138,7 +138,7 @@ public final class VideoStreamViewManager extends SimpleViewManager<VideoStreamT
                     ScreenWakeLock.INSTANCE.releaseLock(currentActivity, "DCDVideoRenderer");
                 }
             }
-            Unit unit = Unit.f21215a;
+            Unit unit = Unit.f21436a;
         }
     }
 }
