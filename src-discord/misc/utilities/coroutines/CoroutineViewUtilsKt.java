@@ -49,7 +49,7 @@ public final class CoroutineViewUtilsKt {
         Object d10;
         Object b10 = RepeatOnLifecycleKt.b(requireLifecycleOwner(view), state, function2, continuation);
         d10 = d.d();
-        return b10 == d10 ? b10 : Unit.f21436a;
+        return b10 == d10 ? b10 : Unit.f21442a;
     }
 
     public static final LifecycleOwner requireLifecycleOwner(View view) {

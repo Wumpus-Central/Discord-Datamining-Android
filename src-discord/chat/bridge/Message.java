@@ -207,7 +207,7 @@ public final class Message extends MessageBase {
         } else {
             this.nonce = str2;
         }
-        this.channelId = channelId.m600unboximpl();
+        this.channelId = channelId.m607unboximpl();
         if ((i10 & 16) == 0) {
             this.guildId = null;
         } else {
@@ -555,12 +555,12 @@ public final class Message extends MessageBase {
         boolean z10 = false;
         output.h(serialDesc, 0, MessageType.Serializer.INSTANCE, self.type);
         MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
-        output.h(serialDesc, 1, messageId$$serializer, MessageId.m617boximpl(self.f7236id));
+        output.h(serialDesc, 1, messageId$$serializer, MessageId.m624boximpl(self.f7236id));
         if (output.z(serialDesc, 2) || self.nonce != null) {
             String str = self.nonce;
-            output.e(serialDesc, 2, messageId$$serializer, str != null ? MessageId.m617boximpl(str) : null);
+            output.e(serialDesc, 2, messageId$$serializer, str != null ? MessageId.m624boximpl(str) : null);
         }
-        output.h(serialDesc, 3, ChannelId$$serializer.INSTANCE, ChannelId.m591boximpl(self.channelId));
+        output.h(serialDesc, 3, ChannelId$$serializer.INSTANCE, ChannelId.m598boximpl(self.channelId));
         if (output.z(serialDesc, 4) || self.guildId != null) {
             output.e(serialDesc, 4, GuildId$$serializer.INSTANCE, self.guildId);
         }
@@ -574,22 +574,22 @@ public final class Message extends MessageBase {
             output.E(serialDesc, 7, self.flags);
         }
         if (output.z(serialDesc, 8) || self.edited != null) {
-            output.e(serialDesc, 8, a2.f30568a, self.edited);
+            output.e(serialDesc, 8, a2.f30574a, self.edited);
         }
         if (output.z(serialDesc, 9) || self._constrainedWidth != null) {
-            output.e(serialDesc, 9, e0.f30593a, self._constrainedWidth);
+            output.e(serialDesc, 9, e0.f30599a, self._constrainedWidth);
         }
         if (output.z(serialDesc, 10) || self.timestamp != null) {
-            output.e(serialDesc, 10, a2.f30568a, self.timestamp);
+            output.e(serialDesc, 10, a2.f30574a, self.timestamp);
         }
         if (output.z(serialDesc, 11) || self.username != null) {
-            output.e(serialDesc, 11, a2.f30568a, self.username);
+            output.e(serialDesc, 11, a2.f30574a, self.username);
         }
         if (output.z(serialDesc, 12) || self.usernameColor != null) {
-            output.e(serialDesc, 12, m0.f30643a, self.usernameColor);
+            output.e(serialDesc, 12, m0.f30649a, self.usernameColor);
         }
         if (output.z(serialDesc, 13) || self.roleColor != null) {
-            output.e(serialDesc, 13, m0.f30643a, self.roleColor);
+            output.e(serialDesc, 13, m0.f30649a, self.roleColor);
         }
         if (output.z(serialDesc, 14) || self.shouldShowRoleDot) {
             output.x(serialDesc, 14, self.shouldShowRoleDot);
@@ -598,13 +598,13 @@ public final class Message extends MessageBase {
             output.x(serialDesc, 15, self.shouldShowRoleOnName);
         }
         if (output.z(serialDesc, 16) || self.colorString != null) {
-            output.e(serialDesc, 16, m0.f30643a, self.colorString);
+            output.e(serialDesc, 16, m0.f30649a, self.colorString);
         }
         if (output.z(serialDesc, 17) || self.avatarURL != null) {
-            output.e(serialDesc, 17, a2.f30568a, self.avatarURL);
+            output.e(serialDesc, 17, a2.f30574a, self.avatarURL);
         }
         if (output.z(serialDesc, 18) || self.avatarDecorationURL != null) {
-            output.e(serialDesc, 18, a2.f30568a, self.avatarDecorationURL);
+            output.e(serialDesc, 18, a2.f30574a, self.avatarDecorationURL);
         }
         if (output.z(serialDesc, 19) || self.embeds != null) {
             output.e(serialDesc, 19, new xi.f(Embed$$serializer.INSTANCE), self.embeds);
@@ -613,7 +613,7 @@ public final class Message extends MessageBase {
             output.e(serialDesc, 20, new xi.f(Attachment$$serializer.INSTANCE), self.attachments);
         }
         if (output.z(serialDesc, 21) || self.attachmentsOpacity != null) {
-            output.e(serialDesc, 21, e0.f30593a, self.attachmentsOpacity);
+            output.e(serialDesc, 21, e0.f30599a, self.attachmentsOpacity);
         }
         if (output.z(serialDesc, 22) || self.content != null) {
             output.e(serialDesc, 22, StructurableTextSerializer.INSTANCE, self.content);
@@ -625,7 +625,7 @@ public final class Message extends MessageBase {
             output.e(serialDesc, 24, new xi.f(MessageReaction$$serializer.INSTANCE), self.reactions);
         }
         if (output.z(serialDesc, 25) || !q.c(self.useAddBurstReaction, Boolean.FALSE)) {
-            output.e(serialDesc, 25, h.f30610a, self.useAddBurstReaction);
+            output.e(serialDesc, 25, h.f30616a, self.useAddBurstReaction);
         }
         if (output.z(serialDesc, 26) || self.codedLinks != null) {
             output.e(serialDesc, 26, new xi.f(a.u(CodedLinkSerializer.INSTANCE)), self.codedLinks);
@@ -644,10 +644,10 @@ public final class Message extends MessageBase {
         }
         output.x(serialDesc, 31, self.mentioned);
         if (output.z(serialDesc, 32) || self.gifAutoPlay != null) {
-            output.e(serialDesc, 32, h.f30610a, self.gifAutoPlay);
+            output.e(serialDesc, 32, h.f30616a, self.gifAutoPlay);
         }
         if (output.z(serialDesc, 33) || self.animateEmoji != null) {
-            output.e(serialDesc, 33, h.f30610a, self.animateEmoji);
+            output.e(serialDesc, 33, h.f30616a, self.animateEmoji);
         }
         if (output.z(serialDesc, 34) || self.referencedMessage != null) {
             output.e(serialDesc, 34, ReferencedMessageSerializer.INSTANCE, self.referencedMessage);
@@ -659,37 +659,37 @@ public final class Message extends MessageBase {
             output.e(serialDesc, 36, new xi.f(ComponentSerializer.INSTANCE), self.components);
         }
         if (output.z(serialDesc, 37) || self.threadStarterMessageHeader != null) {
-            output.e(serialDesc, 37, a2.f30568a, self.threadStarterMessageHeader);
+            output.e(serialDesc, 37, a2.f30574a, self.threadStarterMessageHeader);
         }
         if (output.z(serialDesc, 38) || self.communicationDisabled != null) {
-            output.e(serialDesc, 38, h.f30610a, self.communicationDisabled);
+            output.e(serialDesc, 38, h.f30616a, self.communicationDisabled);
         }
         if (output.z(serialDesc, 39) || self.tagText != null) {
-            output.e(serialDesc, 39, a2.f30568a, self.tagText);
+            output.e(serialDesc, 39, a2.f30574a, self.tagText);
         }
         if (output.z(serialDesc, 40) || self.tagVerified != null) {
-            output.e(serialDesc, 40, h.f30610a, self.tagVerified);
+            output.e(serialDesc, 40, h.f30616a, self.tagVerified);
         }
         if (output.z(serialDesc, 41) || self.tagTextColor != null) {
-            output.e(serialDesc, 41, m0.f30643a, self.tagTextColor);
+            output.e(serialDesc, 41, m0.f30649a, self.tagTextColor);
         }
         if (output.z(serialDesc, 42) || self.tagBackgroundColor != null) {
-            output.e(serialDesc, 42, m0.f30643a, self.tagBackgroundColor);
+            output.e(serialDesc, 42, m0.f30649a, self.tagBackgroundColor);
         }
         if (output.z(serialDesc, 43) || self.tagType != null) {
-            output.e(serialDesc, 43, a2.f30568a, self.tagType);
+            output.e(serialDesc, 43, a2.f30574a, self.tagType);
         }
         if (output.z(serialDesc, 44) || self.opTagText != null) {
-            output.e(serialDesc, 44, a2.f30568a, self.opTagText);
+            output.e(serialDesc, 44, a2.f30574a, self.opTagText);
         }
         if (output.z(serialDesc, 45) || self.showRemixButton != null) {
-            output.e(serialDesc, 45, h.f30610a, self.showRemixButton);
+            output.e(serialDesc, 45, h.f30616a, self.showRemixButton);
         }
         if (output.z(serialDesc, 46) || self.remixButtonIconColor != null) {
-            output.e(serialDesc, 46, m0.f30643a, self.remixButtonIconColor);
+            output.e(serialDesc, 46, m0.f30649a, self.remixButtonIconColor);
         }
         if (output.z(serialDesc, 47) || self.remixButtonBackgroundColor != null) {
-            output.e(serialDesc, 47, m0.f30643a, self.remixButtonBackgroundColor);
+            output.e(serialDesc, 47, m0.f30649a, self.remixButtonBackgroundColor);
         }
         if (output.z(serialDesc, 48) || self.ephemeralIndication != null) {
             output.e(serialDesc, 48, EphemeralIndication$$serializer.INSTANCE, self.ephemeralIndication);
@@ -701,43 +701,43 @@ public final class Message extends MessageBase {
             output.e(serialDesc, 50, InteractionStatus$$serializer.INSTANCE, self.interactionStatus);
         }
         if (output.z(serialDesc, 51) || !q.c(self.useAttachmentGridLayout, Boolean.FALSE)) {
-            output.e(serialDesc, 51, h.f30610a, self.useAttachmentGridLayout);
+            output.e(serialDesc, 51, h.f30616a, self.useAttachmentGridLayout);
         }
         if (output.z(serialDesc, 52) || !q.c(self.useAttachmentUploadPreview, Boolean.FALSE)) {
-            output.e(serialDesc, 52, h.f30610a, self.useAttachmentUploadPreview);
+            output.e(serialDesc, 52, h.f30616a, self.useAttachmentUploadPreview);
         }
         if (output.z(serialDesc, 53) || !q.c(self.isCurrentUserMessageAuthor, Boolean.FALSE)) {
-            output.e(serialDesc, 53, h.f30610a, self.isCurrentUserMessageAuthor);
+            output.e(serialDesc, 53, h.f30616a, self.isCurrentUserMessageAuthor);
         }
         if (output.z(serialDesc, 54) || self.title != null) {
-            output.e(serialDesc, 54, a2.f30568a, self.title);
+            output.e(serialDesc, 54, a2.f30574a, self.title);
         }
         if (output.z(serialDesc, 55) || self.description != null) {
-            output.e(serialDesc, 55, a2.f30568a, self.description);
+            output.e(serialDesc, 55, a2.f30574a, self.description);
         }
         if (output.z(serialDesc, 56) || self.avatarURLs != null) {
-            output.e(serialDesc, 56, new xi.f(a2.f30568a), self.avatarURLs);
+            output.e(serialDesc, 56, new xi.f(a2.f30574a), self.avatarURLs);
         }
         if (output.z(serialDesc, 57) || self.isCallActive != null) {
-            output.e(serialDesc, 57, h.f30610a, self.isCallActive);
+            output.e(serialDesc, 57, h.f30616a, self.isCallActive);
         }
         if (output.z(serialDesc, 58) || self.missed != null) {
-            output.e(serialDesc, 58, h.f30610a, self.missed);
+            output.e(serialDesc, 58, h.f30616a, self.missed);
         }
         if (output.z(serialDesc, 59) || self.rawMilliseconds != null) {
-            output.e(serialDesc, 59, w0.f30684a, self.rawMilliseconds);
+            output.e(serialDesc, 59, w0.f30690a, self.rawMilliseconds);
         }
         if (output.z(serialDesc, 60) || self.sticker != null) {
             output.e(serialDesc, 60, Sticker$$serializer.INSTANCE, self.sticker);
         }
         if (output.z(serialDesc, 61) || self.stickerLabel != null) {
-            output.e(serialDesc, 61, a2.f30568a, self.stickerLabel);
+            output.e(serialDesc, 61, a2.f30574a, self.stickerLabel);
         }
         if (output.z(serialDesc, 62) || self.buttonLabel != null) {
-            output.e(serialDesc, 62, a2.f30568a, self.buttonLabel);
+            output.e(serialDesc, 62, a2.f30574a, self.buttonLabel);
         }
         if (output.z(serialDesc, 63) || self.showInviteToSpeakButton != null) {
-            output.e(serialDesc, 63, h.f30610a, self.showInviteToSpeakButton);
+            output.e(serialDesc, 63, h.f30616a, self.showInviteToSpeakButton);
         }
         if (output.z(serialDesc, 64) || self.activityInviteEmbed != null) {
             output.e(serialDesc, 64, ActivityInviteEmbed$$serializer.INSTANCE, self.activityInviteEmbed);
@@ -758,7 +758,7 @@ public final class Message extends MessageBase {
             output.e(serialDesc, 69, GiftEmbedSerializer.INSTANCE, self.referralTrialOffer);
         }
         if (output.z(serialDesc, 70) || self.totalMonthsSubscribed != null) {
-            output.e(serialDesc, 70, m0.f30643a, self.totalMonthsSubscribed);
+            output.e(serialDesc, 70, m0.f30649a, self.totalMonthsSubscribed);
         }
         if (output.z(serialDesc, 71) || self.postPreviewEmbeds != null) {
             output.e(serialDesc, 71, new xi.f(PostPreviewEmbed$$serializer.INSTANCE), self.postPreviewEmbeds);
@@ -1373,16 +1373,16 @@ public final class Message extends MessageBase {
     }
 
     public int hashCode() {
-        int hashCode = ((this.type.hashCode() * 31) + MessageId.m622hashCodeimpl(this.f7236id)) * 31;
+        int hashCode = ((this.type.hashCode() * 31) + MessageId.m629hashCodeimpl(this.f7236id)) * 31;
         String str = this.nonce;
         int i10 = 0;
-        int i11 = (((hashCode + (str == null ? 0 : MessageId.m622hashCodeimpl(str))) * 31) + ChannelId.m596hashCodeimpl(this.channelId)) * 31;
+        int i11 = (((hashCode + (str == null ? 0 : MessageId.m629hashCodeimpl(str))) * 31) + ChannelId.m603hashCodeimpl(this.channelId)) * 31;
         GuildId guildId = this.guildId;
-        int i12 = (i11 + (guildId == null ? 0 : GuildId.m609hashCodeimpl(guildId.m613unboximpl()))) * 31;
+        int i12 = (i11 + (guildId == null ? 0 : GuildId.m616hashCodeimpl(guildId.m620unboximpl()))) * 31;
         MessageState messageState = this.state;
         int hashCode2 = (i12 + (messageState == null ? 0 : messageState.hashCode())) * 31;
         UserId userId = this.authorId;
-        int i13 = (((hashCode2 + (userId == null ? 0 : UserId.m660hashCodeimpl(userId.m664unboximpl()))) * 31) + b.a(this.flags)) * 31;
+        int i13 = (((hashCode2 + (userId == null ? 0 : UserId.m667hashCodeimpl(userId.m671unboximpl()))) * 31) + b.a(this.flags)) * 31;
         String str2 = this.edited;
         int hashCode3 = (i13 + (str2 == null ? 0 : str2.hashCode())) * 31;
         Float f10 = this._constrainedWidth;
@@ -1554,10 +1554,10 @@ public final class Message extends MessageBase {
 
     public String toString() {
         MessageType messageType = this.type;
-        String str = MessageId.m623toStringimpl(this.f7236id);
+        String str = MessageId.m630toStringimpl(this.f7236id);
         String str2 = this.nonce;
-        String str3 = str2 == null ? "null" : MessageId.m623toStringimpl(str2);
-        String str4 = ChannelId.m598toStringimpl(this.channelId);
+        String str3 = str2 == null ? "null" : MessageId.m630toStringimpl(str2);
+        String str4 = ChannelId.m605toStringimpl(this.channelId);
         GuildId guildId = this.guildId;
         MessageState messageState = this.state;
         UserId userId = this.authorId;

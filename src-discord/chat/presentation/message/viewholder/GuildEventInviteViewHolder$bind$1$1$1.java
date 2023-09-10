@@ -19,14 +19,14 @@ import kotlin.jvm.internal.q;
 
     @Override 
     public   Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
-        m355invokentcYbpo(messageId.m625unboximpl(), linkContentNode);
-        return Unit.f21436a;
+        m356invokentcYbpo(messageId.m632unboximpl(), linkContentNode);
+        return Unit.f21442a;
     }
 
     
-    public final void m355invokentcYbpo(String p02, LinkContentNode p12) {
+    public final void m356invokentcYbpo(String p02, LinkContentNode p12) {
         q.h(p02, "p0");
         q.h(p12, "p1");
-        ((ChatEventHandler) this.receiver).mo157onLinkClickedntcYbpo(p02, p12);
+        ((ChatEventHandler) this.receiver).mo158onLinkClickedntcYbpo(p02, p12);
     }
 }

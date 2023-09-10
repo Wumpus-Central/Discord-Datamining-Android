@@ -51,9 +51,9 @@ public final class MobileVoiceOverlayData$$serializer implements f0<MobileVoiceO
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f30568a;
-        h hVar = h.f30610a;
-        return new KSerializer[]{new f(MobileVoiceOverlayDataUser$$serializer.INSTANCE), m0.f30643a, a.u(GuildId$$serializer.INSTANCE), ChannelId$$serializer.INSTANCE, a2Var, a2Var, hVar, hVar, ConnectionQuality.Companion.serializer(), hVar, new f(MobileVoiceOverlaySelectorResult$$serializer.INSTANCE)};
+        a2 a2Var = a2.f30574a;
+        h hVar = h.f30616a;
+        return new KSerializer[]{new f(MobileVoiceOverlayDataUser$$serializer.INSTANCE), m0.f30649a, a.u(GuildId$$serializer.INSTANCE), ChannelId$$serializer.INSTANCE, a2Var, a2Var, hVar, hVar, ConnectionQuality.Companion.serializer(), hVar, new f(MobileVoiceOverlaySelectorResult$$serializer.INSTANCE)};
     }
 
     @Override 

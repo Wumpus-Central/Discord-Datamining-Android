@@ -35,7 +35,7 @@ public final class DeleteRow$$serializer implements f0<DeleteRow> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f30643a, ChangeType.Serializer.INSTANCE};
+        return new KSerializer[]{m0.f30649a, ChangeType.Serializer.INSTANCE};
     }
 
     @Override 

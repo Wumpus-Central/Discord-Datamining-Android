@@ -20,14 +20,14 @@ public  class EmbedViewHolder$bind$3 extends n implements Function2<MessageId, L
 
     @Override 
     public   Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
-        m351invokentcYbpo(messageId.m625unboximpl(), linkContentNode);
-        return Unit.f21436a;
+        m352invokentcYbpo(messageId.m632unboximpl(), linkContentNode);
+        return Unit.f21442a;
     }
 
     
-    public final void m351invokentcYbpo(String p02, LinkContentNode p12) {
+    public final void m352invokentcYbpo(String p02, LinkContentNode p12) {
         q.h(p02, "p0");
         q.h(p12, "p1");
-        ((ChatEventHandler) this.receiver).mo157onLinkClickedntcYbpo(p02, p12);
+        ((ChatEventHandler) this.receiver).mo158onLinkClickedntcYbpo(p02, p12);
     }
 }

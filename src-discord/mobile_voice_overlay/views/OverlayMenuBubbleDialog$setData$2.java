@@ -33,7 +33,7 @@ final class OverlayMenuBubbleDialog$setData$2 extends s implements Function0<Uni
         MobileVoiceOverlay.Companion companion = MobileVoiceOverlay.Companion;
         Context context = this.this$0.getContext();
         q.g(context, "context");
-        companion.startHeadlessTask(context, "GenerateInvite", e.a(x.a("channelId", String.valueOf(this.$data.m500getChannelIdo4g7jtM()))));
+        companion.startHeadlessTask(context, "GenerateInvite", e.a(x.a("channelId", String.valueOf(this.$data.m507getChannelIdo4g7jtM()))));
         MobileVoiceOverlayAssets overlayAssets = this.this$0.getOverlayAssets();
         if (overlayAssets != null) {
             Toast.makeText(this.this$0.getContext(), overlayAssets.getInviteLinkCopied(), 0).show();

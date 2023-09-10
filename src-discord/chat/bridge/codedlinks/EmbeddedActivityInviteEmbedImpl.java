@@ -217,19 +217,19 @@ public final class EmbeddedActivityInviteEmbedImpl extends CodedLinkEmbed implem
         output.w(serialDesc, 0, self.getBackgroundColor());
         output.w(serialDesc, 1, self.getBorderColor());
         output.w(serialDesc, 2, self.getHeaderColor());
-        a2 a2Var = a2.f30568a;
+        a2 a2Var = a2.f30574a;
         output.e(serialDesc, 3, a2Var, self.getHeaderText());
         if (output.z(serialDesc, 4) || self.getType() != null) {
             output.e(serialDesc, 4, InviteType.Serializer.INSTANCE, self.getType());
         }
         if (output.z(serialDesc, 5) || self.getAcceptLabelBackgroundColor() != null) {
-            output.e(serialDesc, 5, m0.f30643a, self.getAcceptLabelBackgroundColor());
+            output.e(serialDesc, 5, m0.f30649a, self.getAcceptLabelBackgroundColor());
         }
         if (output.z(serialDesc, 6) || self.getAcceptLabelBorderColor() != null) {
-            output.e(serialDesc, 6, m0.f30643a, self.getAcceptLabelBorderColor());
+            output.e(serialDesc, 6, m0.f30649a, self.getAcceptLabelBorderColor());
         }
         if (output.z(serialDesc, 7) || self.getAcceptLabelColor() != null) {
-            output.e(serialDesc, 7, m0.f30643a, self.getAcceptLabelColor());
+            output.e(serialDesc, 7, m0.f30649a, self.getAcceptLabelColor());
         }
         if (output.z(serialDesc, 8) || self.getAcceptLabelText() != null) {
             output.e(serialDesc, 8, a2Var, self.getAcceptLabelText());
@@ -238,25 +238,25 @@ public final class EmbeddedActivityInviteEmbedImpl extends CodedLinkEmbed implem
             output.e(serialDesc, 9, a2Var, self.getBodyText());
         }
         if (output.z(serialDesc, 10) || self.getBodyTextColor() != null) {
-            output.e(serialDesc, 10, m0.f30643a, self.getBodyTextColor());
+            output.e(serialDesc, 10, m0.f30649a, self.getBodyTextColor());
         }
         if (output.z(serialDesc, 11) || self.getCanBeAccepted() != null) {
-            output.e(serialDesc, 11, h.f30610a, self.getCanBeAccepted());
+            output.e(serialDesc, 11, h.f30616a, self.getCanBeAccepted());
         }
         if (output.z(serialDesc, 12) || self.getEmbedCanBeTapped() != null) {
-            output.e(serialDesc, 12, h.f30610a, self.getEmbedCanBeTapped());
+            output.e(serialDesc, 12, h.f30616a, self.getEmbedCanBeTapped());
         }
         if (output.z(serialDesc, 13) || self.getResolvingGradientEnd() != null) {
-            output.e(serialDesc, 13, m0.f30643a, self.getResolvingGradientEnd());
+            output.e(serialDesc, 13, m0.f30649a, self.getResolvingGradientEnd());
         }
         if (output.z(serialDesc, 14) || self.getResolvingGradientStart() != null) {
-            output.e(serialDesc, 14, m0.f30643a, self.getResolvingGradientStart());
+            output.e(serialDesc, 14, m0.f30649a, self.getResolvingGradientStart());
         }
         if (output.z(serialDesc, 15) || self.getSplashHasRadialGradient() != null) {
-            output.e(serialDesc, 15, h.f30610a, self.getSplashHasRadialGradient());
+            output.e(serialDesc, 15, h.f30616a, self.getSplashHasRadialGradient());
         }
         if (output.z(serialDesc, 16) || self.getSplashOpacity() != null) {
-            output.e(serialDesc, 16, m0.f30643a, self.getSplashOpacity());
+            output.e(serialDesc, 16, m0.f30649a, self.getSplashOpacity());
         }
         if (output.z(serialDesc, 17) || self.getSplashUrl() != null) {
             output.e(serialDesc, 17, a2Var, self.getSplashUrl());
@@ -268,13 +268,13 @@ public final class EmbeddedActivityInviteEmbedImpl extends CodedLinkEmbed implem
             output.e(serialDesc, 19, a2Var, self.getSubtitle());
         }
         if (output.z(serialDesc, 20) || self.getSubtitleColor() != null) {
-            output.e(serialDesc, 20, m0.f30643a, self.getSubtitleColor());
+            output.e(serialDesc, 20, m0.f30649a, self.getSubtitleColor());
         }
         if (output.z(serialDesc, 21) || self.getThumbnailBackgroundColor() != null) {
-            output.e(serialDesc, 21, m0.f30643a, self.getThumbnailBackgroundColor());
+            output.e(serialDesc, 21, m0.f30649a, self.getThumbnailBackgroundColor());
         }
         if (output.z(serialDesc, 22) || self.getThumbnailCornerRadius() != null) {
-            output.e(serialDesc, 22, m0.f30643a, self.getThumbnailCornerRadius());
+            output.e(serialDesc, 22, m0.f30649a, self.getThumbnailCornerRadius());
         }
         if (output.z(serialDesc, 23) || self.getThumbnailText() != null) {
             output.e(serialDesc, 23, a2Var, self.getThumbnailText());
@@ -283,7 +283,7 @@ public final class EmbeddedActivityInviteEmbedImpl extends CodedLinkEmbed implem
             output.e(serialDesc, 24, a2Var, self.getThumbnailUrl());
         }
         if (output.z(serialDesc, 25) || self.getTitleColor() != null) {
-            output.e(serialDesc, 25, m0.f30643a, self.getTitleColor());
+            output.e(serialDesc, 25, m0.f30649a, self.getTitleColor());
         }
         if (output.z(serialDesc, 26) || self.getTitleText() != null) {
             output.e(serialDesc, 26, a2Var, self.getTitleText());

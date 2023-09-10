@@ -35,7 +35,7 @@ public final class SurveyIndication$$serializer implements f0<SurveyIndication> 
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{StructurableTextSerializer.INSTANCE, a2.f30568a};
+        return new KSerializer[]{StructurableTextSerializer.INSTANCE, a2.f30574a};
     }
 
     @Override 

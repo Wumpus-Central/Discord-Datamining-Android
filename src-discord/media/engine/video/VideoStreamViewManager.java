@@ -138,7 +138,7 @@ public final class VideoStreamViewManager extends SimpleViewManager<VideoStreamT
                     ScreenWakeLock.INSTANCE.releaseLock(currentActivity, "DCDVideoRenderer");
                 }
             }
-            Unit unit = Unit.f21436a;
+            Unit unit = Unit.f21442a;
         }
     }
 }

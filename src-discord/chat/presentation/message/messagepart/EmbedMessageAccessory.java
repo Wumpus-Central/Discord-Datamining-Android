@@ -44,8 +44,8 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     }
 
     
-    public final String m245component13Eiw7ao() {
-        return mo232getMessageId3Eiw7ao();
+    public final String m246component13Eiw7ao() {
+        return mo233getMessageId3Eiw7ao();
     }
 
     public final SpoilerAttributes component10() {
@@ -89,7 +89,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     }
 
     
-    public final EmbedMessageAccessory m246copy5odn8qk(String messageId, int i10, int i11, int i12, Embed embed, boolean z10, boolean z11, boolean z12, boolean z13, SpoilerAttributes spoilerAttributes, View.OnLongClickListener onLongClickListener) {
+    public final EmbedMessageAccessory m247copy5odn8qk(String messageId, int i10, int i11, int i12, Embed embed, boolean z10, boolean z11, boolean z12, boolean z13, SpoilerAttributes spoilerAttributes, View.OnLongClickListener onLongClickListener) {
         q.h(messageId, "messageId");
         q.h(embed, "embed");
         return new EmbedMessageAccessory(messageId, i10, i11, i12, embed, z10, z11, z12, z13, spoilerAttributes, onLongClickListener, null);
@@ -103,7 +103,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
             return false;
         }
         EmbedMessageAccessory embedMessageAccessory = (EmbedMessageAccessory) obj;
-        return MessageId.m621equalsimpl0(mo232getMessageId3Eiw7ao(), embedMessageAccessory.mo232getMessageId3Eiw7ao()) && getIndex() == embedMessageAccessory.getIndex() && this.constrainedWidth == embedMessageAccessory.constrainedWidth && this.radiusPx == embedMessageAccessory.radiusPx && q.c(this.embed, embedMessageAccessory.embed) && this.shouldAutoPlayGifs == embedMessageAccessory.shouldAutoPlayGifs && this.shouldAnimateEmoji == embedMessageAccessory.shouldAnimateEmoji && this.shouldShowRoleDot == embedMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == embedMessageAccessory.shouldShowRoleOnName && q.c(this.spoilerAttributes, embedMessageAccessory.spoilerAttributes) && q.c(this.onLongClick, embedMessageAccessory.onLongClick);
+        return MessageId.m628equalsimpl0(mo233getMessageId3Eiw7ao(), embedMessageAccessory.mo233getMessageId3Eiw7ao()) && getIndex() == embedMessageAccessory.getIndex() && this.constrainedWidth == embedMessageAccessory.constrainedWidth && this.radiusPx == embedMessageAccessory.radiusPx && q.c(this.embed, embedMessageAccessory.embed) && this.shouldAutoPlayGifs == embedMessageAccessory.shouldAutoPlayGifs && this.shouldAnimateEmoji == embedMessageAccessory.shouldAnimateEmoji && this.shouldShowRoleDot == embedMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == embedMessageAccessory.shouldShowRoleOnName && q.c(this.spoilerAttributes, embedMessageAccessory.spoilerAttributes) && q.c(this.onLongClick, embedMessageAccessory.onLongClick);
     }
 
     public final int getConstrainedWidth() {
@@ -121,7 +121,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
 
     @Override 
     
-    public String mo232getMessageId3Eiw7ao() {
+    public String mo233getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -159,7 +159,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     }
 
     public int hashCode() {
-        int i10 = ((((((((MessageId.m622hashCodeimpl(mo232getMessageId3Eiw7ao()) * 31) + getIndex()) * 31) + this.constrainedWidth) * 31) + this.radiusPx) * 31) + this.embed.hashCode()) * 31;
+        int i10 = ((((((((MessageId.m629hashCodeimpl(mo233getMessageId3Eiw7ao()) * 31) + getIndex()) * 31) + this.constrainedWidth) * 31) + this.radiusPx) * 31) + this.embed.hashCode()) * 31;
         boolean z10 = this.shouldAutoPlayGifs;
         int i11 = 1;
         if (z10) {
@@ -201,7 +201,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     }
 
     public String toString() {
-        String str = MessageId.m623toStringimpl(mo232getMessageId3Eiw7ao());
+        String str = MessageId.m630toStringimpl(mo233getMessageId3Eiw7ao());
         int index = getIndex();
         int i10 = this.constrainedWidth;
         int i11 = this.radiusPx;

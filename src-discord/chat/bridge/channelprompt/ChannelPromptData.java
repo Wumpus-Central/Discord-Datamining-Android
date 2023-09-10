@@ -76,13 +76,13 @@ public final class ChannelPromptData {
             z10 = true;
         }
         if (z10) {
-            output.e(serialDesc, 0, a2.f30568a, self.cameraButtonIcon);
+            output.e(serialDesc, 0, a2.f30574a, self.cameraButtonIcon);
         }
         if (output.z(serialDesc, 1) || self.emojiButtonIcon != null) {
             z11 = true;
         }
         if (z11) {
-            output.e(serialDesc, 1, a2.f30568a, self.emojiButtonIcon);
+            output.e(serialDesc, 1, a2.f30574a, self.emojiButtonIcon);
         }
     }
 

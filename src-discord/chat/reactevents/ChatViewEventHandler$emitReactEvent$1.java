@@ -29,7 +29,7 @@ final class ChatViewEventHandler$emitReactEvent$1 extends s implements Function1
     @Override 
     public   Unit invoke(ReactEvent reactEvent) {
         invoke2(reactEvent);
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 
     

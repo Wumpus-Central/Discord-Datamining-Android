@@ -27,7 +27,7 @@ public final class AudioPlayerView$configureAudioWave$1 extends s implements Fun
     @Override 
     public   Unit invoke(AudioWaveView.ProgressEvent progressEvent) {
         invoke2(progressEvent);
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 
     

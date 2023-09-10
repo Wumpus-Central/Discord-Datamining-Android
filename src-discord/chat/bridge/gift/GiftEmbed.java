@@ -350,7 +350,7 @@ public interface GiftEmbed {
                     z10 = true;
                 }
                 if (z10) {
-                    output.e(serialDesc, 4, a2.f30568a, self.getThumbnailUrl());
+                    output.e(serialDesc, 4, a2.f30574a, self.getThumbnailUrl());
                 }
                 if (!output.z(serialDesc, 5) && self.getTitleText() == null) {
                     z11 = false;
@@ -358,7 +358,7 @@ public interface GiftEmbed {
                     z11 = true;
                 }
                 if (z11) {
-                    output.e(serialDesc, 5, a2.f30568a, self.getTitleText());
+                    output.e(serialDesc, 5, a2.f30574a, self.getTitleText());
                 }
                 output.w(serialDesc, 6, self.getTitleColor());
                 if (!output.z(serialDesc, 7) && self.getSubtitle() == null) {
@@ -367,7 +367,7 @@ public interface GiftEmbed {
                     z12 = true;
                 }
                 if (z12) {
-                    output.e(serialDesc, 7, a2.f30568a, self.getSubtitle());
+                    output.e(serialDesc, 7, a2.f30574a, self.getSubtitle());
                 }
                 output.w(serialDesc, 8, self.getSubtitleColor());
                 if (!output.z(serialDesc, 9) && self.bodyText == null) {
@@ -376,7 +376,7 @@ public interface GiftEmbed {
                     z13 = true;
                 }
                 if (z13) {
-                    output.e(serialDesc, 9, a2.f30568a, self.bodyText);
+                    output.e(serialDesc, 9, a2.f30574a, self.bodyText);
                 }
                 output.w(serialDesc, 10, self.bodyTextColor);
                 if (!output.z(serialDesc, 11) && self.acceptLabelText == null) {
@@ -385,7 +385,7 @@ public interface GiftEmbed {
                     z14 = true;
                 }
                 if (z14) {
-                    output.e(serialDesc, 11, a2.f30568a, self.acceptLabelText);
+                    output.e(serialDesc, 11, a2.f30574a, self.acceptLabelText);
                 }
                 output.w(serialDesc, 12, self.acceptLabelColor);
                 output.w(serialDesc, 13, self.acceptLabelBackgroundColor);
@@ -393,7 +393,7 @@ public interface GiftEmbed {
                     z15 = true;
                 }
                 if (z15) {
-                    output.e(serialDesc, 14, a2.f30568a, self.splashUrl);
+                    output.e(serialDesc, 14, a2.f30574a, self.splashUrl);
                 }
                 output.s(serialDesc, 15, self.splashOpacity);
                 output.x(serialDesc, 16, self.canBeAccepted);

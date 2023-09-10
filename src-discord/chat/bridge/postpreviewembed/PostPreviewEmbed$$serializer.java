@@ -60,8 +60,8 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
     @Override 
     public KSerializer<?>[] childSerializers() {
         ChannelId$$serializer channelId$$serializer = ChannelId$$serializer.INSTANCE;
-        a2 a2Var = a2.f30568a;
-        return new KSerializer[]{channelId$$serializer, channelId$$serializer, MessageId$$serializer.INSTANCE, GuildId$$serializer.INSTANCE, a2Var, a2Var, m0.f30643a, StructurableTextSerializer.INSTANCE, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), h.f30610a, a.u(a2Var)};
+        a2 a2Var = a2.f30574a;
+        return new KSerializer[]{channelId$$serializer, channelId$$serializer, MessageId$$serializer.INSTANCE, GuildId$$serializer.INSTANCE, a2Var, a2Var, m0.f30649a, StructurableTextSerializer.INSTANCE, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), h.f30616a, a.u(a2Var)};
     }
 
     @Override 
@@ -99,7 +99,7 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
             str = b10.m(descriptor2, 5);
             i10 = b10.i(descriptor2, 6);
             obj5 = b10.y(descriptor2, 7, StructurableTextSerializer.INSTANCE, null);
-            a2 a2Var = a2.f30568a;
+            a2 a2Var = a2.f30574a;
             obj3 = b10.n(descriptor2, 8, a2Var, null);
             obj6 = b10.n(descriptor2, 9, a2Var, null);
             obj7 = b10.n(descriptor2, 10, a2Var, null);
@@ -200,40 +200,40 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
                         c10 = '\n';
                         break;
                     case 8:
-                        obj17 = b10.n(descriptor2, 8, a2.f30568a, obj17);
+                        obj17 = b10.n(descriptor2, 8, a2.f30574a, obj17);
                         i14 |= 256;
                         i13 = 15;
                         i12 = 11;
                         c10 = '\n';
                         break;
                     case 9:
-                        obj18 = b10.n(descriptor2, 9, a2.f30568a, obj18);
+                        obj18 = b10.n(descriptor2, 9, a2.f30574a, obj18);
                         i14 |= 512;
                         i13 = 15;
                         i12 = 11;
                         c10 = '\n';
                         break;
                     case 10:
-                        obj19 = b10.n(descriptor2, 10, a2.f30568a, obj19);
+                        obj19 = b10.n(descriptor2, 10, a2.f30574a, obj19);
                         i14 |= 1024;
                         c10 = '\n';
                         i13 = 15;
                         i12 = 11;
                         break;
                     case 11:
-                        obj20 = b10.n(descriptor2, i12, a2.f30568a, obj20);
+                        obj20 = b10.n(descriptor2, i12, a2.f30574a, obj20);
                         i14 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         i13 = 15;
                         c10 = '\n';
                         break;
                     case 12:
-                        obj14 = b10.n(descriptor2, 12, a2.f30568a, obj14);
+                        obj14 = b10.n(descriptor2, 12, a2.f30574a, obj14);
                         i14 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                         i13 = 15;
                         c10 = '\n';
                         break;
                     case 13:
-                        obj16 = b10.n(descriptor2, 13, a2.f30568a, obj16);
+                        obj16 = b10.n(descriptor2, 13, a2.f30574a, obj16);
                         i14 |= 8192;
                         i13 = 15;
                         c10 = '\n';
@@ -243,7 +243,7 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
                         i14 |= 16384;
                         break;
                     case 15:
-                        obj4 = b10.n(descriptor2, i13, a2.f30568a, obj4);
+                        obj4 = b10.n(descriptor2, i13, a2.f30574a, obj4);
                         i14 |= 32768;
                         break;
                     default:
@@ -269,7 +269,7 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj11;
-        return new PostPreviewEmbed(i11, (ChannelId) obj9, (ChannelId) obj12, messageId != null ? messageId.m625unboximpl() : null, (GuildId) obj10, str2, str, i10, (StructurableText) obj5, (String) obj3, (String) obj6, (String) obj7, (String) obj8, (String) obj, (String) obj2, z10, (String) obj4, null, null);
+        return new PostPreviewEmbed(i11, (ChannelId) obj9, (ChannelId) obj12, messageId != null ? messageId.m632unboximpl() : null, (GuildId) obj10, str2, str, i10, (StructurableText) obj5, (String) obj3, (String) obj6, (String) obj7, (String) obj8, (String) obj, (String) obj2, z10, (String) obj4, null, null);
     }
 
     @Override 

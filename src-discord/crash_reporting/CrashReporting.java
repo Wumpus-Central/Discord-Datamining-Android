@@ -103,18 +103,18 @@ public final class CrashReporting {
         q.h(dsn, "$dsn");
         q.h(context, "$context");
         q.h(options, "options");
-        options.setDsn((String) dsn.f21463j);
+        options.setDsn((String) dsn.f21469j);
         ClientInfo clientInfo = ClientInfo.INSTANCE;
         options.setEnvironment(clientInfo.getReleaseChannel());
         options.setDist(clientInfo.getVersionCode());
-        options.setRelease("discord_android@196.1.0-2+196201");
+        options.setRelease("discord_android@196.6.0-2+196206");
         File cacheDir = context.getCacheDir();
         options.setCacheDirPath(cacheDir + "/sentry");
         options.setEnableActivityLifecycleTracingAutoFinish(false);
         options.setEnableAutoActivityLifecycleTracing(false);
         options.setTracesSampleRate(Double.valueOf(INSTANCE.getTracingSampleRate()));
         options.setSampleRate(Double.valueOf(d10));
-        options.setProguardUuid("6002b5b8-ba28-4a44-8ae5-0c5af8f5d599");
+        options.setProguardUuid("18e0780b-1b56-463e-9487-fe6a7760f21e");
         options.setTag(TAG_BUILD_NUMBER, clientInfo.getVersionCode());
         options.setTag(TAG_APP_VERSION, clientInfo.getVersionName());
     }
@@ -199,7 +199,7 @@ public final class CrashReporting {
             } else {
                 t10 = "https:
             }
-            ref$ObjectRef.f21463j = t10;
+            ref$ObjectRef.f21469j = t10;
             final double sampleRate = getSampleRate(context);
             m1.f(context, new d3.a() { 
                 @Override 

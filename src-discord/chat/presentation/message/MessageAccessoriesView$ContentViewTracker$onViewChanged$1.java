@@ -20,7 +20,7 @@ public final class MessageAccessoriesView$ContentViewTracker$onViewChanged$1 ext
     @Override 
     public   Unit invoke(MessageContentView messageContentView) {
         invoke2(messageContentView);
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 
     

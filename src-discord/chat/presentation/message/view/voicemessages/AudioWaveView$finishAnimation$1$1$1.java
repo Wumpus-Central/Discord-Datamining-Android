@@ -28,7 +28,7 @@ final class AudioWaveView$finishAnimation$1$1$1 extends k implements Function2<C
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioWaveView$finishAnimation$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21436a);
+        return ((AudioWaveView$finishAnimation$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21442a);
     }
 
     @Override 
@@ -47,6 +47,6 @@ final class AudioWaveView$finishAnimation$1$1$1 extends k implements Function2<C
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 }

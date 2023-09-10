@@ -32,7 +32,7 @@ public final class AudioManagerMediaVolumeChanged$$serializer implements f0<Audi
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f30643a};
+        return new KSerializer[]{m0.f30649a};
     }
 
     @Override 

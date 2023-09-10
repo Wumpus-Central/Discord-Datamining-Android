@@ -70,7 +70,7 @@ public final class ContactName {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        a2 a2Var = a2.f30568a;
+        a2 a2Var = a2.f30574a;
         output.e(serialDesc, 0, a2Var, self.displayName);
         output.e(serialDesc, 1, a2Var, self.givenName);
         output.e(serialDesc, 2, a2Var, self.familyName);

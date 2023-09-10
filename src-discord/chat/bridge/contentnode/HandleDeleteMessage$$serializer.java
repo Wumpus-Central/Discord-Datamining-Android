@@ -40,7 +40,7 @@ public final class HandleDeleteMessage$$serializer implements f0<HandleDeleteMes
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a.u(a2.f30568a), HandleDeleteMessageAuthor$$serializer.INSTANCE};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a.u(a2.f30574a), HandleDeleteMessageAuthor$$serializer.INSTANCE};
     }
 
     @Override 
@@ -57,7 +57,7 @@ public final class HandleDeleteMessage$$serializer implements f0<HandleDeleteMes
         if (b10.p()) {
             obj4 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
             obj = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
-            obj2 = b10.n(descriptor2, 2, a2.f30568a, null);
+            obj2 = b10.n(descriptor2, 2, a2.f30574a, null);
             obj3 = b10.y(descriptor2, 3, HandleDeleteMessageAuthor$$serializer.INSTANCE, null);
             i10 = 15;
         } else {
@@ -78,7 +78,7 @@ public final class HandleDeleteMessage$$serializer implements f0<HandleDeleteMes
                     obj7 = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, obj7);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    obj6 = b10.n(descriptor2, 2, a2.f30568a, obj6);
+                    obj6 = b10.n(descriptor2, 2, a2.f30574a, obj6);
                     i11 |= 4;
                 } else if (o10 == 3) {
                     obj5 = b10.y(descriptor2, 3, HandleDeleteMessageAuthor$$serializer.INSTANCE, obj5);
@@ -95,7 +95,7 @@ public final class HandleDeleteMessage$$serializer implements f0<HandleDeleteMes
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj4;
         if (messageId != null) {
-            str = messageId.m625unboximpl();
+            str = messageId.m632unboximpl();
         }
         return new HandleDeleteMessage(i10, str, (ChannelId) obj, (String) obj2, (HandleDeleteMessageAuthor) obj3, null, null);
     }

@@ -18,13 +18,13 @@ import kotlin.jvm.internal.q;
 
     @Override 
     public   Unit invoke(MessageId messageId) {
-        m356invoke1xi1bu0(messageId.m625unboximpl());
-        return Unit.f21436a;
+        m357invoke1xi1bu0(messageId.m632unboximpl());
+        return Unit.f21442a;
     }
 
     
-    public final void m356invoke1xi1bu0(String p02) {
+    public final void m357invoke1xi1bu0(String p02) {
         q.h(p02, "p0");
-        ((ChatEventHandler) this.receiver).mo182onTapSeeMore1xi1bu0(p02);
+        ((ChatEventHandler) this.receiver).mo183onTapSeeMore1xi1bu0(p02);
     }
 }

@@ -28,14 +28,14 @@ public final class ChannelDeadchatPromptActionsViewHolder extends MessagePartVie
     public static final void bind$lambda$0(Function3 onTapChannelPromptButton, ChannelPromptActionsAccessory accessory, View view) {
         q.h(onTapChannelPromptButton, "$onTapChannelPromptButton");
         q.h(accessory, "$accessory");
-        onTapChannelPromptButton.invoke(MessageId.m617boximpl(accessory.mo232getMessageId3Eiw7ao()), ChannelId.m591boximpl(accessory.getMessage().m23getChannelIdo4g7jtM()), "camera");
+        onTapChannelPromptButton.invoke(MessageId.m624boximpl(accessory.mo233getMessageId3Eiw7ao()), ChannelId.m598boximpl(accessory.getMessage().m23getChannelIdo4g7jtM()), "camera");
     }
 
     
     public static final void bind$lambda$1(Function3 onTapChannelPromptButton, ChannelPromptActionsAccessory accessory, View view) {
         q.h(onTapChannelPromptButton, "$onTapChannelPromptButton");
         q.h(accessory, "$accessory");
-        onTapChannelPromptButton.invoke(MessageId.m617boximpl(accessory.mo232getMessageId3Eiw7ao()), ChannelId.m591boximpl(accessory.getMessage().m23getChannelIdo4g7jtM()), "emoji");
+        onTapChannelPromptButton.invoke(MessageId.m624boximpl(accessory.mo233getMessageId3Eiw7ao()), ChannelId.m598boximpl(accessory.getMessage().m23getChannelIdo4g7jtM()), "emoji");
     }
 
     public final void bind(final ChannelPromptActionsAccessory accessory, final Function3<? super MessageId, ? super ChannelId, ? super String, Unit> onTapChannelPromptButton) {

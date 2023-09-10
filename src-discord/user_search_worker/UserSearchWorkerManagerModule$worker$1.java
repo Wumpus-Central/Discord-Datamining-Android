@@ -28,7 +28,7 @@ public final class UserSearchWorkerManagerModule$worker$1 extends s implements F
     @Override 
     public   Unit invoke(List<? extends UserSearchWorkerResult> list, String str, String str2) {
         invoke2((List<UserSearchWorkerResult>) list, str, str2);
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 
     

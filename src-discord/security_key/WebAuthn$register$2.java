@@ -24,7 +24,7 @@ final class WebAuthn$register$2 extends s implements Function1<PendingIntent, Un
     @Override 
     public   Unit invoke(PendingIntent pendingIntent) {
         invoke2(pendingIntent);
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 
     

@@ -1,6 +1,7 @@
 package com.discord.chat.presentation.root;
 
 import com.discord.chat.bridge.Message;
+import com.discord.chat.bridge.SwipeActionsType;
 import com.discord.chat.bridge.messageframe.MessageFrame;
 import com.discord.chat.bridge.messageframe.MessageFrameType;
 import com.discord.chat.bridge.reaction.ReactionsTheme;
@@ -15,11 +16,11 @@ public final class MessageContextKt {
     public static final MessageContext getMessageContext(MessageRow messageRow) {
         MessageFrameType messageFrameType;
         boolean z10;
-        String str;
-        String str2;
         boolean z11;
         boolean z12;
         boolean z13;
+        boolean z14;
+        boolean z15;
         q.h(messageRow, "<this>");
         MessageFrame messageFrame = messageRow.getMessageFrame();
         if (messageFrame != null) {
@@ -36,21 +37,17 @@ public final class MessageContextKt {
         Boolean bool = Boolean.TRUE;
         boolean c10 = q.c(canAddNewReactions, bool);
         String addReactionLabel = messageRow.getAddReactionLabel();
-        String str3 = "";
+        String str = "";
         if (addReactionLabel == null) {
-            str = str3;
-        } else {
-            str = addReactionLabel;
+            addReactionLabel = str;
         }
         String addNewReactionAccessibilityLabel = messageRow.getAddNewReactionAccessibilityLabel();
         if (addNewReactionAccessibilityLabel == null) {
-            str2 = str3;
-        } else {
-            str2 = addNewReactionAccessibilityLabel;
+            addNewReactionAccessibilityLabel = str;
         }
         String addNewBurstReactionAccessibilityLabel = messageRow.getAddNewBurstReactionAccessibilityLabel();
         if (addNewBurstReactionAccessibilityLabel != null) {
-            str3 = addNewBurstReactionAccessibilityLabel;
+            str = addNewBurstReactionAccessibilityLabel;
         }
         ReactionsTheme reactionsTheme = messageRow.getReactionsTheme();
         Truncation truncation = messageRow.getTruncation();
@@ -64,12 +61,21 @@ public final class MessageContextKt {
         } else {
             z12 = true;
         }
-        boolean enableSwipeToReply = messageRow.getEnableSwipeToReply();
-        if (!(messageRow.getMessage() instanceof Message) || !q.c(((Message) messageRow.getMessage()).getUseAddBurstReaction(), bool)) {
-            z13 = false;
-        } else {
+        if (messageRow.getSwipeActions() == SwipeActionsType.REPLY || messageRow.getSwipeActions() == SwipeActionsType.REPLY_EDIT) {
             z13 = true;
+        } else {
+            z13 = false;
         }
-        return new MessageContext(z10, c10, str, str2, str3, reactionsTheme, truncation, z11, z12, enableSwipeToReply, z13);
+        if (messageRow.getSwipeActions() == SwipeActionsType.REPLY_EDIT) {
+            z14 = true;
+        } else {
+            z14 = false;
+        }
+        if (!(messageRow.getMessage() instanceof Message) || !q.c(((Message) messageRow.getMessage()).getUseAddBurstReaction(), bool)) {
+            z15 = false;
+        } else {
+            z15 = true;
+        }
+        return new MessageContext(z10, c10, addReactionLabel, addNewReactionAccessibilityLabel, str, reactionsTheme, truncation, z11, z12, z13, z14, z15);
     }
 }

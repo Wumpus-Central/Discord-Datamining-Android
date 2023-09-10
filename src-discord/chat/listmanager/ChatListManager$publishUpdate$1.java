@@ -34,7 +34,7 @@ public final class ChatListManager$publishUpdate$1 extends k implements Function
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatListManager$publishUpdate$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21436a);
+        return ((ChatListManager$publishUpdate$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21442a);
     }
 
     @Override 
@@ -56,6 +56,6 @@ public final class ChatListManager$publishUpdate$1 extends k implements Function
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 }

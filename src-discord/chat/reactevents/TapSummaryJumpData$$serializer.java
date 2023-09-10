@@ -34,7 +34,7 @@ public final class TapSummaryJumpData$$serializer implements f0<TapSummaryJumpDa
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f30568a;
+        a2 a2Var = a2.f30574a;
         return new KSerializer[]{a2Var, a2Var, a2Var};
     }
 

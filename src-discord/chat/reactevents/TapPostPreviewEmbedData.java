@@ -58,7 +58,7 @@ public final class TapPostPreviewEmbedData implements ReactEvent {
     }
 
     
-    public static  TapPostPreviewEmbedData m419copywInV0_I$default(TapPostPreviewEmbedData tapPostPreviewEmbedData, String str, String str2, String str3, String str4, int i10, Object obj) {
+    public static  TapPostPreviewEmbedData m426copywInV0_I$default(TapPostPreviewEmbedData tapPostPreviewEmbedData, String str, String str2, String str3, String str4, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapPostPreviewEmbedData.guildId;
         }
@@ -71,7 +71,7 @@ public final class TapPostPreviewEmbedData implements ReactEvent {
         if ((i10 & 8) != 0) {
             str4 = tapPostPreviewEmbedData.messageId;
         }
-        return tapPostPreviewEmbedData.m421copywInV0_I(str, str2, str3, str4);
+        return tapPostPreviewEmbedData.m428copywInV0_I(str, str2, str3, str4);
     }
 
     public static final void write$Self(TapPostPreviewEmbedData self, CompositeEncoder output, SerialDescriptor serialDesc) {
@@ -81,7 +81,7 @@ public final class TapPostPreviewEmbedData implements ReactEvent {
         output.y(serialDesc, 0, self.guildId);
         output.y(serialDesc, 1, self.parentChannelId);
         output.y(serialDesc, 2, self.threadId);
-        output.h(serialDesc, 3, MessageId$$serializer.INSTANCE, MessageId.m617boximpl(self.messageId));
+        output.h(serialDesc, 3, MessageId$$serializer.INSTANCE, MessageId.m624boximpl(self.messageId));
     }
 
     public final String component1() {
@@ -97,12 +97,12 @@ public final class TapPostPreviewEmbedData implements ReactEvent {
     }
 
     
-    public final String m420component43Eiw7ao() {
+    public final String m427component43Eiw7ao() {
         return this.messageId;
     }
 
     
-    public final TapPostPreviewEmbedData m421copywInV0_I(String guildId, String parentChannelId, String threadId, String messageId) {
+    public final TapPostPreviewEmbedData m428copywInV0_I(String guildId, String parentChannelId, String threadId, String messageId) {
         q.h(guildId, "guildId");
         q.h(parentChannelId, "parentChannelId");
         q.h(threadId, "threadId");
@@ -118,7 +118,7 @@ public final class TapPostPreviewEmbedData implements ReactEvent {
             return false;
         }
         TapPostPreviewEmbedData tapPostPreviewEmbedData = (TapPostPreviewEmbedData) obj;
-        return q.c(this.guildId, tapPostPreviewEmbedData.guildId) && q.c(this.parentChannelId, tapPostPreviewEmbedData.parentChannelId) && q.c(this.threadId, tapPostPreviewEmbedData.threadId) && MessageId.m621equalsimpl0(this.messageId, tapPostPreviewEmbedData.messageId);
+        return q.c(this.guildId, tapPostPreviewEmbedData.guildId) && q.c(this.parentChannelId, tapPostPreviewEmbedData.parentChannelId) && q.c(this.threadId, tapPostPreviewEmbedData.threadId) && MessageId.m628equalsimpl0(this.messageId, tapPostPreviewEmbedData.messageId);
     }
 
     public final String getGuildId() {
@@ -126,7 +126,7 @@ public final class TapPostPreviewEmbedData implements ReactEvent {
     }
 
     
-    public final String m422getMessageId3Eiw7ao() {
+    public final String m429getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -139,7 +139,7 @@ public final class TapPostPreviewEmbedData implements ReactEvent {
     }
 
     public int hashCode() {
-        return (((((this.guildId.hashCode() * 31) + this.parentChannelId.hashCode()) * 31) + this.threadId.hashCode()) * 31) + MessageId.m622hashCodeimpl(this.messageId);
+        return (((((this.guildId.hashCode() * 31) + this.parentChannelId.hashCode()) * 31) + this.threadId.hashCode()) * 31) + MessageId.m629hashCodeimpl(this.messageId);
     }
 
     @Override 
@@ -151,7 +151,7 @@ public final class TapPostPreviewEmbedData implements ReactEvent {
         String str = this.guildId;
         String str2 = this.parentChannelId;
         String str3 = this.threadId;
-        String str4 = MessageId.m623toStringimpl(this.messageId);
+        String str4 = MessageId.m630toStringimpl(this.messageId);
         return "TapPostPreviewEmbedData(guildId=" + str + ", parentChannelId=" + str2 + ", threadId=" + str3 + ", messageId=" + str4 + ")";
     }
 

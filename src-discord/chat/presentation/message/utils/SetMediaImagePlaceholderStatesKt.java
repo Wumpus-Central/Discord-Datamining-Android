@@ -31,7 +31,7 @@ public final class SetMediaImagePlaceholderStatesKt {
             @Override 
             public void onFailure(String str, Throwable th2) {
                 ReactAsset reactAsset;
-                SimpleDraweeView.this.getHierarchy().t(ScalingUtils.ScaleType.f7829e);
+                SimpleDraweeView.this.getHierarchy().t(ScalingUtils.ScaleType.f7835e);
                 SimpleDraweeView simpleDraweeView = SimpleDraweeView.this;
                 if (ThemeManagerKt.getTheme() instanceof DarkTheme) {
                     reactAsset = ReactAsset.PoopDark;

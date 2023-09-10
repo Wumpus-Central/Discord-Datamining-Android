@@ -35,7 +35,7 @@ public final class ChannelPromptData$$serializer implements f0<ChannelPromptData
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f30568a;
+        a2 a2Var = a2.f30574a;
         return new KSerializer[]{a.u(a2Var), a.u(a2Var)};
     }
 
@@ -48,7 +48,7 @@ public final class ChannelPromptData$$serializer implements f0<ChannelPromptData
         SerialDescriptor descriptor2 = getDescriptor();
         c b10 = decoder.b(descriptor2);
         if (b10.p()) {
-            a2 a2Var = a2.f30568a;
+            a2 a2Var = a2.f30574a;
             obj = b10.n(descriptor2, 0, a2Var, null);
             obj2 = b10.n(descriptor2, 1, a2Var, null);
             i10 = 3;
@@ -62,10 +62,10 @@ public final class ChannelPromptData$$serializer implements f0<ChannelPromptData
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    obj3 = b10.n(descriptor2, 0, a2.f30568a, obj3);
+                    obj3 = b10.n(descriptor2, 0, a2.f30574a, obj3);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    obj2 = b10.n(descriptor2, 1, a2.f30568a, obj2);
+                    obj2 = b10.n(descriptor2, 1, a2.f30574a, obj2);
                     i11 |= 2;
                 } else {
                     throw new n(o10);

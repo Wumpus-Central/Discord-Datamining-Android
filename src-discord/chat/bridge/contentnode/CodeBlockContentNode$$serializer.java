@@ -35,8 +35,8 @@ public final class CodeBlockContentNode$$serializer implements f0<CodeBlockConte
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f30568a;
-        return new KSerializer[]{a2Var, a2Var, h.f30610a};
+        a2 a2Var = a2.f30574a;
+        return new KSerializer[]{a2Var, a2Var, h.f30616a};
     }
 
     @Override 

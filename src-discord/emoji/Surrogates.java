@@ -14,39 +14,39 @@ public final class Surrogates {
     }
 
     
-    public static final  Surrogates m473boximpl(String str) {
+    public static final  Surrogates m480boximpl(String str) {
         return new Surrogates(str);
     }
 
     
-    public static String m474constructorimpl(String value) {
+    public static String m481constructorimpl(String value) {
         q.h(value, "value");
         return value;
     }
 
     
-    public static boolean m475equalsimpl(String str, Object obj) {
-        return (obj instanceof Surrogates) && q.c(str, ((Surrogates) obj).m482unboximpl());
+    public static boolean m482equalsimpl(String str, Object obj) {
+        return (obj instanceof Surrogates) && q.c(str, ((Surrogates) obj).m489unboximpl());
     }
 
     
-    public static final boolean m476equalsimpl0(String str, String str2) {
+    public static final boolean m483equalsimpl0(String str, String str2) {
         return q.c(str, str2);
     }
 
     
-    public static int m477hashCodeimpl(String str) {
+    public static int m484hashCodeimpl(String str) {
         return str.hashCode();
     }
 
     
-    public static final String m478toAssetUrlimpl(String str) {
-        String str2 = m479toCodePointsimpl(str);
+    public static final String m485toAssetUrlimpl(String str) {
+        String str2 = m486toCodePointsimpl(str);
         return "asset:
     }
 
     
-    private static final String m479toCodePointsimpl(String str) {
+    private static final String m486toCodePointsimpl(String str) {
         boolean z10;
         StringBuilder sb2 = new StringBuilder();
         int i10 = 0;
@@ -69,12 +69,12 @@ public final class Surrogates {
     }
 
     
-    public static String m480toStringimpl(String str) {
+    public static String m487toStringimpl(String str) {
         return "Surrogates(value=" + str + ")";
     }
 
     
-    public static final String m481withoutDiversityimpl(String str) {
+    public static final String m488withoutDiversityimpl(String str) {
         String a02;
         char[] chars = Character.toChars(str.codePointAt(0));
         q.g(chars, "toChars(value.codePointAt(0))");
@@ -83,7 +83,7 @@ public final class Surrogates {
     }
 
     public boolean equals(Object obj) {
-        return m475equalsimpl(this.value, obj);
+        return m482equalsimpl(this.value, obj);
     }
 
     public final String getValue() {
@@ -91,15 +91,15 @@ public final class Surrogates {
     }
 
     public int hashCode() {
-        return m477hashCodeimpl(this.value);
+        return m484hashCodeimpl(this.value);
     }
 
     public String toString() {
-        return m480toStringimpl(this.value);
+        return m487toStringimpl(this.value);
     }
 
     
-    public final  String m482unboximpl() {
+    public final  String m489unboximpl() {
         return this.value;
     }
 }

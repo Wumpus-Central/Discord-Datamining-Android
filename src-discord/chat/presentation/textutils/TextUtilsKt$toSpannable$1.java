@@ -20,7 +20,7 @@ public final class TextUtilsKt$toSpannable$1 extends s implements Function1<Link
     @Override 
     public   Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 
     

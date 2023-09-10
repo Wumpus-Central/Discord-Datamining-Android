@@ -88,7 +88,7 @@ public final class AutoModerationNotification {
             z10 = true;
         }
         if (z10) {
-            output.e(serialDesc, 1, a2.f30568a, self.severity);
+            output.e(serialDesc, 1, a2.f30574a, self.severity);
         }
         if (!output.z(serialDesc, 2) && self.startTime == null) {
             z11 = false;
@@ -96,13 +96,13 @@ public final class AutoModerationNotification {
             z11 = true;
         }
         if (z11) {
-            output.e(serialDesc, 2, a2.f30568a, self.startTime);
+            output.e(serialDesc, 2, a2.f30574a, self.startTime);
         }
         if (output.z(serialDesc, 3) || self.body != null) {
             z12 = true;
         }
         if (z12) {
-            output.e(serialDesc, 3, a2.f30568a, self.body);
+            output.e(serialDesc, 3, a2.f30574a, self.body);
         }
     }
 

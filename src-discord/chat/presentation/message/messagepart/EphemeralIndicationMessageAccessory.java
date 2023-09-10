@@ -23,19 +23,19 @@ public final class EphemeralIndicationMessageAccessory extends MessageAccessory 
     }
 
     
-    public static  EphemeralIndicationMessageAccessory m250copyntcYbpo$default(EphemeralIndicationMessageAccessory ephemeralIndicationMessageAccessory, String str, EphemeralIndication ephemeralIndication, int i10, Object obj) {
+    public static  EphemeralIndicationMessageAccessory m251copyntcYbpo$default(EphemeralIndicationMessageAccessory ephemeralIndicationMessageAccessory, String str, EphemeralIndication ephemeralIndication, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = ephemeralIndicationMessageAccessory.mo232getMessageId3Eiw7ao();
+            str = ephemeralIndicationMessageAccessory.mo233getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             ephemeralIndication = ephemeralIndicationMessageAccessory.ephemeralIndication;
         }
-        return ephemeralIndicationMessageAccessory.m252copyntcYbpo(str, ephemeralIndication);
+        return ephemeralIndicationMessageAccessory.m253copyntcYbpo(str, ephemeralIndication);
     }
 
     
-    public final String m251component13Eiw7ao() {
-        return mo232getMessageId3Eiw7ao();
+    public final String m252component13Eiw7ao() {
+        return mo233getMessageId3Eiw7ao();
     }
 
     public final EphemeralIndication component2() {
@@ -43,7 +43,7 @@ public final class EphemeralIndicationMessageAccessory extends MessageAccessory 
     }
 
     
-    public final EphemeralIndicationMessageAccessory m252copyntcYbpo(String messageId, EphemeralIndication ephemeralIndication) {
+    public final EphemeralIndicationMessageAccessory m253copyntcYbpo(String messageId, EphemeralIndication ephemeralIndication) {
         q.h(messageId, "messageId");
         q.h(ephemeralIndication, "ephemeralIndication");
         return new EphemeralIndicationMessageAccessory(messageId, ephemeralIndication, null);
@@ -57,7 +57,7 @@ public final class EphemeralIndicationMessageAccessory extends MessageAccessory 
             return false;
         }
         EphemeralIndicationMessageAccessory ephemeralIndicationMessageAccessory = (EphemeralIndicationMessageAccessory) obj;
-        return MessageId.m621equalsimpl0(mo232getMessageId3Eiw7ao(), ephemeralIndicationMessageAccessory.mo232getMessageId3Eiw7ao()) && q.c(this.ephemeralIndication, ephemeralIndicationMessageAccessory.ephemeralIndication);
+        return MessageId.m628equalsimpl0(mo233getMessageId3Eiw7ao(), ephemeralIndicationMessageAccessory.mo233getMessageId3Eiw7ao()) && q.c(this.ephemeralIndication, ephemeralIndicationMessageAccessory.ephemeralIndication);
     }
 
     public final EphemeralIndication getEphemeralIndication() {
@@ -66,16 +66,16 @@ public final class EphemeralIndicationMessageAccessory extends MessageAccessory 
 
     @Override 
     
-    public String mo232getMessageId3Eiw7ao() {
+    public String mo233getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (MessageId.m622hashCodeimpl(mo232getMessageId3Eiw7ao()) * 31) + this.ephemeralIndication.hashCode();
+        return (MessageId.m629hashCodeimpl(mo233getMessageId3Eiw7ao()) * 31) + this.ephemeralIndication.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m623toStringimpl(mo232getMessageId3Eiw7ao());
+        String str = MessageId.m630toStringimpl(mo233getMessageId3Eiw7ao());
         EphemeralIndication ephemeralIndication = this.ephemeralIndication;
         return "EphemeralIndicationMessageAccessory(messageId=" + str + ", ephemeralIndication=" + ephemeralIndication + ")";
     }

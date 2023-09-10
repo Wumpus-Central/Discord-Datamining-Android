@@ -19,7 +19,7 @@ public final class TextUtilsKt$toSpannable$4 extends s implements Function4<Stri
     @Override 
     public   Unit invoke(String str, String str2, String str3, String str4) {
         invoke2(str, str2, str3, str4);
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 
     

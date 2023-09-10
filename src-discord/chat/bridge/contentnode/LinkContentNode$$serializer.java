@@ -41,8 +41,8 @@ public final class LinkContentNode$$serializer implements f0<LinkContentNode> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f30568a;
-        return new KSerializer[]{new f(ContentNodeSerializer.INSTANCE), a2Var, a.u(LinkContext$$serializer.INSTANCE), a2Var, h.f30610a};
+        a2 a2Var = a2.f30574a;
+        return new KSerializer[]{new f(ContentNodeSerializer.INSTANCE), a2Var, a.u(LinkContext$$serializer.INSTANCE), a2Var, h.f30616a};
     }
 
     @Override 

@@ -19,7 +19,7 @@ public final class MediaPlayerPause implements ReactEvent {
     public static final Companion Companion = new Companion(null);
 
     
-    private final double f7541id;
+    private final double f7547id;
     private final boolean paused;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/media_player/reactevents/MediaPlayerPause$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/media_player/reactevents/MediaPlayerPause;", "media_player_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -38,13 +38,13 @@ public final class MediaPlayerPause implements ReactEvent {
     }
 
     public MediaPlayerPause(double d10, boolean z10) {
-        this.f7541id = d10;
+        this.f7547id = d10;
         this.paused = z10;
     }
 
     public static  MediaPlayerPause copy$default(MediaPlayerPause mediaPlayerPause, double d10, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            d10 = mediaPlayerPause.f7541id;
+            d10 = mediaPlayerPause.f7547id;
         }
         if ((i10 & 2) != 0) {
             z10 = mediaPlayerPause.paused;
@@ -56,12 +56,12 @@ public final class MediaPlayerPause implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.C(serialDesc, 0, self.f7541id);
+        output.C(serialDesc, 0, self.f7547id);
         output.x(serialDesc, 1, self.paused);
     }
 
     public final double component1() {
-        return this.f7541id;
+        return this.f7547id;
     }
 
     public final boolean component2() {
@@ -80,11 +80,11 @@ public final class MediaPlayerPause implements ReactEvent {
             return false;
         }
         MediaPlayerPause mediaPlayerPause = (MediaPlayerPause) obj;
-        return Double.compare(this.f7541id, mediaPlayerPause.f7541id) == 0 && this.paused == mediaPlayerPause.paused;
+        return Double.compare(this.f7547id, mediaPlayerPause.f7547id) == 0 && this.paused == mediaPlayerPause.paused;
     }
 
     public final double getId() {
-        return this.f7541id;
+        return this.f7547id;
     }
 
     public final boolean getPaused() {
@@ -92,7 +92,7 @@ public final class MediaPlayerPause implements ReactEvent {
     }
 
     public int hashCode() {
-        int doubleToLongBits = Double.doubleToLongBits(this.f7541id) * 31;
+        int doubleToLongBits = Double.doubleToLongBits(this.f7547id) * 31;
         boolean z10 = this.paused;
         if (z10) {
             z10 = true;
@@ -109,7 +109,7 @@ public final class MediaPlayerPause implements ReactEvent {
     }
 
     public String toString() {
-        double d10 = this.f7541id;
+        double d10 = this.f7547id;
         boolean z10 = this.paused;
         return "MediaPlayerPause(id=" + d10 + ", paused=" + z10 + ")";
     }
@@ -118,7 +118,7 @@ public final class MediaPlayerPause implements ReactEvent {
         if (3 != (i10 & 3)) {
             n1.b(i10, 3, MediaPlayerPause$$serializer.INSTANCE.getDescriptor());
         }
-        this.f7541id = d10;
+        this.f7547id = d10;
         this.paused = z10;
     }
 }

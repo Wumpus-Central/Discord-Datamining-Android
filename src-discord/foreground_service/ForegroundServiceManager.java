@@ -71,7 +71,7 @@ public final class ForegroundServiceManager {
             return null;
         }
         genericAction.onNotificationAction(context, false);
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 
     public final synchronized boolean isRunning$foreground_service_release() {

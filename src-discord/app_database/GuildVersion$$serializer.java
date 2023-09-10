@@ -34,7 +34,7 @@ public final class GuildVersion$$serializer implements f0<GuildVersion> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f30568a, w0.f30684a};
+        return new KSerializer[]{a2.f30574a, w0.f30690a};
     }
 
     @Override 

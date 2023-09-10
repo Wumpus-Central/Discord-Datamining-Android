@@ -25,7 +25,7 @@ public final class MediaResolver$handleVideo$2$compressedUri$1 extends s impleme
     @Override 
     public   Unit invoke(Float f10) {
         invoke(f10.floatValue());
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 
     public final void invoke(float f10) {

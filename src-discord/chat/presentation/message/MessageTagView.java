@@ -52,7 +52,7 @@ public final class MessageTagView extends FrameLayout {
     public static final void configureTagView_e_CJZyo$lambda$0(ChatEventHandler eventHandler, String messageId, long j10, String str, View view) {
         q.h(eventHandler, "$eventHandler");
         q.h(messageId, "$messageId");
-        eventHandler.mo187onTapTagEqy5D80(messageId, j10, str);
+        eventHandler.mo188onTapTagEqy5D80(messageId, j10, str);
     }
 
     
@@ -62,7 +62,7 @@ public final class MessageTagView extends FrameLayout {
     }
 
     
-    public final void m227configureTagVieweCJZyo(String str, Boolean bool, Integer num, Integer num2, String str2, final ChatEventHandler eventHandler, final String messageId, final long j10, final String str3) {
+    public final void m228configureTagVieweCJZyo(String str, Boolean bool, Integer num, Integer num2, String str2, final ChatEventHandler eventHandler, final String messageId, final long j10, final String str3) {
         int i10;
         q.h(eventHandler, "eventHandler");
         q.h(messageId, "messageId");

@@ -79,7 +79,7 @@ public enum MessageState {
 
         @Override 
         public SerialDescriptor getDescriptor() {
-            return g.a("MessageState", e.i.f30044a);
+            return g.a("MessageState", e.i.f30050a);
         }
 
         @Override 

@@ -13,6 +13,7 @@ import com.discord.theme.ThemeManager;
 import com.discord.tti_manager.TTILoggingApplication;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
+import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -55,7 +56,7 @@ public abstract class ReactActivity extends com.facebook.react.ReactActivity {
     protected void attachBaseContext(Context newBase) {
         q.h(newBase, "newBase");
         super.attachBaseContext(FontScaleUtilsKt.getFontScaledContext(newBase));
-        Unit unit = Unit.f21436a;
+        Unit unit = Unit.f21442a;
         Context applicationContext = getApplicationContext();
         q.g(applicationContext, "applicationContext");
         FontScaleUtilsKt.setFontScaleDeprecated(applicationContext);
@@ -83,7 +84,7 @@ public abstract class ReactActivity extends com.facebook.react.ReactActivity {
     public void onConfigurationChanged(Configuration newConfig) {
         q.h(newConfig, "newConfig");
         super.onConfigurationChanged(newConfig);
-        b.f27188m.a(this, newConfig);
+        b.f27194m.a(this, newConfig);
     }
 
     @Override 
@@ -101,7 +102,13 @@ public abstract class ReactActivity extends com.facebook.react.ReactActivity {
         this.rootView = reactRootView;
     }
 
-    @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0096\u0004\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0005\u001a\u00020\u0006H\u0014J\u0012\u0010\u0005\u001a\u00020\u00062\b\u0010\u0007\u001a\u0004\u0018\u00010\bH\u0014¨\u0006\t"}, d2 = {"Lcom/discord/react_activities/ReactActivity$ActivityDelegate;", "Lcom/facebook/react/ReactActivityDelegate;", "activity", "Lcom/discord/react_activities/ReactActivity;", "(Lcom/discord/react_activities/ReactActivity;Lcom/discord/react_activities/ReactActivity;)V", "createRootView", "Lcom/facebook/react/ReactRootView;", "initialProps", "Landroid/os/Bundle;", "react_activity_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    
+    @Override 
+    public final ActivityDelegate createReactActivityDelegate() {
+        return getActivityDelegate();
+    }
+
+    @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\b\u0096\u0004\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0005\u001a\u00020\u0006H\u0014J\u0012\u0010\u0005\u001a\u00020\u00062\b\u0010\u0007\u001a\u0004\u0018\u00010\bH\u0014J\b\u0010\t\u001a\u00020\nH\u0014¨\u0006\u000b"}, d2 = {"Lcom/discord/react_activities/ReactActivity$ActivityDelegate;", "Lcom/facebook/react/ReactActivityDelegate;", "activity", "Lcom/discord/react_activities/ReactActivity;", "(Lcom/discord/react_activities/ReactActivity;Lcom/discord/react_activities/ReactActivity;)V", "createRootView", "Lcom/facebook/react/ReactRootView;", "initialProps", "Landroid/os/Bundle;", "isFabricEnabled", "", "react_activity_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     
     public class ActivityDelegate extends ReactActivityDelegate {
         final  ReactActivity this$0;
@@ -124,19 +131,19 @@ public abstract class ReactActivity extends com.facebook.react.ReactActivity {
             Context context = getContext();
             q.g(context, "context");
             ReactRootView reactRootView = new ReactRootView(context);
+            reactRootView.setIsFabric(DefaultNewArchitectureEntryPoint.getFabricEnabled());
             this.this$0.setRootView$react_activity_release(reactRootView);
             return reactRootView;
+        }
+
+        @Override 
+        protected boolean isFabricEnabled() {
+            return DefaultNewArchitectureEntryPoint.getFabricEnabled();
         }
 
         @Override 
         protected ReactRootView createRootView(Bundle bundle) {
             return createRootView();
         }
-    }
-
-    
-    @Override 
-    public final ActivityDelegate createReactActivityDelegate() {
-        return getActivityDelegate();
     }
 }

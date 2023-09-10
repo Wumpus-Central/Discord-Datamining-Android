@@ -79,14 +79,14 @@ public final class GuildNameContentNode extends ContentNode {
             z10 = true;
         }
         if (z10) {
-            output.e(serialDesc, 0, a2.f30568a, self.guildId);
+            output.e(serialDesc, 0, a2.f30574a, self.guildId);
         }
         output.y(serialDesc, 1, self.content);
         if (output.z(serialDesc, 2) || self.icon != null) {
             z11 = true;
         }
         if (z11) {
-            output.e(serialDesc, 2, a2.f30568a, self.icon);
+            output.e(serialDesc, 2, a2.f30574a, self.icon);
         }
     }
 

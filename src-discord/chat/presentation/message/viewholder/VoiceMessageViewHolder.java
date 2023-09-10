@@ -31,7 +31,7 @@ public final class VoiceMessageViewHolder extends MessagePartViewHolder {
             final float floatValue = durationSecs.floatValue();
             VoiceMessageViewHolder$bind$1$onCancelUpload$1 voiceMessageViewHolder$bind$1$onCancelUpload$1 = new VoiceMessageViewHolder$bind$1$onCancelUpload$1(attachment, eventHandler);
             AudioPlayerView audioPlayerView = this.view;
-            audioPlayerView.m344setSourceUrlntcYbpo(accessory.mo232getMessageId3Eiw7ao(), accessory.getAttachment().getUrl());
+            audioPlayerView.m345setSourceUrlntcYbpo(accessory.mo233getMessageId3Eiw7ao(), accessory.getAttachment().getUrl());
             audioPlayerView.setSampleData(waveformByteArray);
             audioPlayerView.setDurationMs(((float) RNCWebViewManager.COMMAND_CLEAR_FORM_DATA) * floatValue);
             audioPlayerView.setUploadProgress(attachment.getProgress(), voiceMessageViewHolder$bind$1$onCancelUpload$1, f10);
@@ -40,27 +40,27 @@ public final class VoiceMessageViewHolder extends MessagePartViewHolder {
                 @Override 
                 public void voiceMessagePlaybackEnded(float f11, float f12) {
                     ChatEventHandler chatEventHandler = ChatEventHandler.this;
-                    String str = accessory.mo232getMessageId3Eiw7ao();
+                    String str = accessory.mo233getMessageId3Eiw7ao();
                     float f13 = floatValue;
-                    UserId userId = accessory.m240getAuthorIdwUX8bhU();
+                    UserId userId = accessory.m241getAuthorIdwUX8bhU();
                     if (userId != null) {
-                        chatEventHandler.mo192voiceMessagePlaybackEndedHuwN0RY(str, f13, f11, userId.m664unboximpl(), f12);
+                        chatEventHandler.mo193voiceMessagePlaybackEndedHuwN0RY(str, f13, f11, userId.m671unboximpl(), f12);
                     }
                 }
 
                 @Override 
                 public void voiceMessagePlaybackFailed(String str) {
-                    ChatEventHandler.this.mo193voiceMessagePlaybackFailedntcYbpo(accessory.mo232getMessageId3Eiw7ao(), str);
+                    ChatEventHandler.this.mo194voiceMessagePlaybackFailedntcYbpo(accessory.mo233getMessageId3Eiw7ao(), str);
                 }
 
                 @Override 
                 public void voiceMessagePlaybackStarted(float f11) {
                     ChatEventHandler chatEventHandler = ChatEventHandler.this;
-                    String str = accessory.mo232getMessageId3Eiw7ao();
+                    String str = accessory.mo233getMessageId3Eiw7ao();
                     float f12 = floatValue;
-                    UserId userId = accessory.m240getAuthorIdwUX8bhU();
+                    UserId userId = accessory.m241getAuthorIdwUX8bhU();
                     if (userId != null) {
-                        chatEventHandler.mo194voiceMessagePlaybackStartedOuNwOLg(str, f12, f11, userId.m664unboximpl());
+                        chatEventHandler.mo195voiceMessagePlaybackStartedOuNwOLg(str, f12, f11, userId.m671unboximpl());
                     }
                 }
             });

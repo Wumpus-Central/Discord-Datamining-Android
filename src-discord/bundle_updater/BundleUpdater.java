@@ -332,7 +332,7 @@ public final class BundleUpdater {
         b12 = n.b(new BundleUpdater$otasRootDirectory$2(this));
         this.otasRootDirectory$delegate = b12;
         this.otaMetrics = new ArrayList();
-        this.otaCheckTimeMark = f.a.b(f.f26320a.a());
+        this.otaCheckTimeMark = f.a.b(f.f26326a.a());
     }
 
     private final OtaCheckAttempt attemptOtaUpdate() {
@@ -422,7 +422,7 @@ public final class BundleUpdater {
         Thread.sleep(i10 * 1000);
         try {
             this$0.otaMetrics.clear();
-            this$0.otaCheckTimeMark = f.a.b(f.f26320a.a());
+            this$0.otaCheckTimeMark = f.a.b(f.f26326a.a());
             this$0.totalBytesReceived = 0L;
             OtaCheckAttempt attemptOtaUpdate = this$0.attemptOtaUpdate();
             if (function0 != null) {
@@ -772,7 +772,7 @@ public final class BundleUpdater {
     }
 
     public final Cookie getBuildOverrideCookie() {
-        return Cookie.f25734n.c(BASE_OTA_URL, getBuildOverrideCookieHeader());
+        return Cookie.f25740n.c(BASE_OTA_URL, getBuildOverrideCookieHeader());
     }
 
     public final String getBuildOverrideCookieHeader() {

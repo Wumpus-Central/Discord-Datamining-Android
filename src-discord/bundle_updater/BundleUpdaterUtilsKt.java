@@ -18,14 +18,14 @@ public final class BundleUpdaterUtilsKt {
         q.h(asset, "asset");
         InputStream open = assetManager.open(asset);
         q.g(open, "open(asset)");
-        InputStreamReader inputStreamReader = new InputStreamReader(open, a.f25677b);
+        InputStreamReader inputStreamReader = new InputStreamReader(open, a.f25683b);
         if (inputStreamReader instanceof BufferedReader) {
             bufferedReader = (BufferedReader) inputStreamReader;
         } else {
             bufferedReader = new BufferedReader(inputStreamReader, 8192);
         }
         try {
-            Json.a aVar = Json.f21963d;
+            Json.a aVar = Json.f21969d;
             String e10 = uf.q.e(bufferedReader);
             aVar.a();
             AppManifest appManifest = (AppManifest) aVar.b(AppManifest.Companion.serializer(), e10);

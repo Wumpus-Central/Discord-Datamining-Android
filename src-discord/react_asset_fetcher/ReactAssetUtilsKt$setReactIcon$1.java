@@ -39,7 +39,7 @@ public final class ReactAssetUtilsKt$setReactIcon$1 extends k implements Functio
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ReactAssetUtilsKt$setReactIcon$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21436a);
+        return ((ReactAssetUtilsKt$setReactIcon$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21442a);
     }
 
     @Override 
@@ -69,6 +69,6 @@ public final class ReactAssetUtilsKt$setReactIcon$1 extends k implements Functio
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
         materialButton.setIcon((Drawable) obj);
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 }

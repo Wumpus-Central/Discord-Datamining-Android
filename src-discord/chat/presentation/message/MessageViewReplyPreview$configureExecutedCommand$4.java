@@ -23,7 +23,7 @@ final class MessageViewReplyPreview$configureExecutedCommand$4 extends s impleme
     @Override 
     public   Unit invoke(CommandMentionContentNode commandMentionContentNode) {
         invoke2(commandMentionContentNode);
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 
     

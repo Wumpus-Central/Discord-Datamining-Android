@@ -63,7 +63,7 @@ public final class TapSeeMoreData$$serializer implements f0<TapSeeMoreData> {
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj;
-        return new TapSeeMoreData(i10, messageId != null ? messageId.m625unboximpl() : null, null, null);
+        return new TapSeeMoreData(i10, messageId != null ? messageId.m632unboximpl() : null, null, null);
     }
 
     @Override 

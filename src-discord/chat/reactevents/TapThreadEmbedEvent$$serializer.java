@@ -32,7 +32,7 @@ public final class TapThreadEmbedEvent$$serializer implements f0<TapThreadEmbedE
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f30568a};
+        return new KSerializer[]{a2.f30574a};
     }
 
     @Override 

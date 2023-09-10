@@ -73,7 +73,7 @@ public final class MediaMosaicView extends GridLayout {
             if (spoilerAttributes != null) {
                 spoilerConfig = spoilerAttributes.configure(new MediaMosaicView$bindAttachmentHolder$2(this, imageAttachmentMessageAccessory));
             }
-            imageAttachmentViewHolder.m358bindNlw0kPk(attachment, i10, i11, radiusPx, resizeMode, d0Var, onLongClick, spoilerConfig, true, imageAttachmentMessageAccessory.getAttachmentsOpacity(), false, true, imageAttachmentMessageAccessory.getRemixButtonIconColor(), imageAttachmentMessageAccessory.getRemixButtonBackgroundColor(), imageAttachmentMessageAccessory.mo232getMessageId3Eiw7ao(), (r35 & 32768) != 0 ? ImageAttachmentViewHolder$bind$1.INSTANCE : null);
+            imageAttachmentViewHolder.m359bindNlw0kPk(attachment, i10, i11, radiusPx, resizeMode, d0Var, onLongClick, spoilerConfig, true, imageAttachmentMessageAccessory.getAttachmentsOpacity(), false, true, imageAttachmentMessageAccessory.getRemixButtonIconColor(), imageAttachmentMessageAccessory.getRemixButtonBackgroundColor(), imageAttachmentMessageAccessory.mo233getMessageId3Eiw7ao(), (r35 & 32768) != 0 ? ImageAttachmentViewHolder$bind$1.INSTANCE : null);
         } else if (messagePartViewHolder instanceof VideoAttachmentViewHolder) {
             q.f(messageAccessory, "null cannot be cast to non-null type com.discord.chat.presentation.message.messagepart.VideoAttachmentMessageAccessory");
             VideoAttachmentMessageAccessory videoAttachmentMessageAccessory = (VideoAttachmentMessageAccessory) messageAccessory;

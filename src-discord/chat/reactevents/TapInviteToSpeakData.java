@@ -23,20 +23,20 @@ public final class TapInviteToSpeakData implements ReactEvent {
     }
 
     
-    public static  TapInviteToSpeakData m407copy1xi1bu0$default(TapInviteToSpeakData tapInviteToSpeakData, String str, int i10, Object obj) {
+    public static  TapInviteToSpeakData m414copy1xi1bu0$default(TapInviteToSpeakData tapInviteToSpeakData, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapInviteToSpeakData.messageId;
         }
-        return tapInviteToSpeakData.m409copy1xi1bu0(str);
+        return tapInviteToSpeakData.m416copy1xi1bu0(str);
     }
 
     
-    public final String m408component13Eiw7ao() {
+    public final String m415component13Eiw7ao() {
         return this.messageId;
     }
 
     
-    public final TapInviteToSpeakData m409copy1xi1bu0(String messageId) {
+    public final TapInviteToSpeakData m416copy1xi1bu0(String messageId) {
         q.h(messageId, "messageId");
         return new TapInviteToSpeakData(messageId, null);
     }
@@ -45,25 +45,25 @@ public final class TapInviteToSpeakData implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof TapInviteToSpeakData) && MessageId.m621equalsimpl0(this.messageId, ((TapInviteToSpeakData) obj).messageId);
+        return (obj instanceof TapInviteToSpeakData) && MessageId.m628equalsimpl0(this.messageId, ((TapInviteToSpeakData) obj).messageId);
     }
 
     
-    public final String m410getMessageId3Eiw7ao() {
+    public final String m417getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return MessageId.m622hashCodeimpl(this.messageId);
+        return MessageId.m629hashCodeimpl(this.messageId);
     }
 
     @Override 
     public WritableMap serialize() {
-        return NativeMapExtensionsKt.nativeMapOf(x.a("messageId", MessageId.m623toStringimpl(this.messageId)));
+        return NativeMapExtensionsKt.nativeMapOf(x.a("messageId", MessageId.m630toStringimpl(this.messageId)));
     }
 
     public String toString() {
-        String str = MessageId.m623toStringimpl(this.messageId);
+        String str = MessageId.m630toStringimpl(this.messageId);
         return "TapInviteToSpeakData(messageId=" + str + ")";
     }
 }

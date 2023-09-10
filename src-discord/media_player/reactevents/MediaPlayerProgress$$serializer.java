@@ -35,8 +35,8 @@ public final class MediaPlayerProgress$$serializer implements f0<MediaPlayerProg
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        w0 w0Var = w0.f30684a;
-        return new KSerializer[]{x.f30689a, w0Var, w0Var};
+        w0 w0Var = w0.f30690a;
+        return new KSerializer[]{x.f30695a, w0Var, w0Var};
     }
 
     @Override 

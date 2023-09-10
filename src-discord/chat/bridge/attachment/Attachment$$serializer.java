@@ -68,10 +68,10 @@ public final class Attachment$$serializer implements f0<Attachment> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f30568a;
-        m0 m0Var = m0.f30643a;
-        h hVar = h.f30610a;
-        return new KSerializer[]{a2Var, a.u(a2Var), a2Var, a2Var, a.u(m0Var), a.u(m0Var), hVar, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), hVar, a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(a2Var), a.u(m0Var), a.u(m0Var), a.u(a2Var), a.u(hVar), a.u(a2Var), a.u(e0.f30593a), a.u(a2Var), hVar, a.u(b.f21952c), a.u(a2Var), a.u(m0Var), a.u(m0Var)};
+        a2 a2Var = a2.f30574a;
+        m0 m0Var = m0.f30649a;
+        h hVar = h.f30616a;
+        return new KSerializer[]{a2Var, a.u(a2Var), a2Var, a2Var, a.u(m0Var), a.u(m0Var), hVar, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), hVar, a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(a2Var), a.u(m0Var), a.u(m0Var), a.u(a2Var), a.u(hVar), a.u(a2Var), a.u(e0.f30599a), a.u(a2Var), hVar, a.u(b.f21958c), a.u(a2Var), a.u(m0Var), a.u(m0Var)};
     }
 
     @Override 
@@ -112,11 +112,11 @@ public final class Attachment$$serializer implements f0<Attachment> {
         c b10 = decoder.b(descriptor2);
         if (b10.p()) {
             str3 = b10.m(descriptor2, 0);
-            a2 a2Var = a2.f30568a;
+            a2 a2Var = a2.f30574a;
             obj13 = b10.n(descriptor2, 1, a2Var, null);
             str2 = b10.m(descriptor2, 2);
             str = b10.m(descriptor2, 3);
-            m0 m0Var = m0.f30643a;
+            m0 m0Var = m0.f30649a;
             obj6 = b10.n(descriptor2, 4, m0Var, null);
             obj5 = b10.n(descriptor2, 5, m0Var, null);
             z10 = b10.C(descriptor2, 6);
@@ -133,12 +133,12 @@ public final class Attachment$$serializer implements f0<Attachment> {
             obj10 = b10.n(descriptor2, 17, m0Var, null);
             obj11 = b10.n(descriptor2, 18, m0Var, null);
             obj19 = b10.n(descriptor2, 19, a2Var, null);
-            obj18 = b10.n(descriptor2, 20, h.f30610a, null);
+            obj18 = b10.n(descriptor2, 20, h.f30616a, null);
             obj = b10.n(descriptor2, 21, a2Var, null);
-            obj17 = b10.n(descriptor2, 22, e0.f30593a, null);
+            obj17 = b10.n(descriptor2, 22, e0.f30599a, null);
             obj14 = b10.n(descriptor2, 23, a2Var, null);
             z11 = b10.C(descriptor2, 24);
-            obj16 = b10.n(descriptor2, 25, b.f21952c, null);
+            obj16 = b10.n(descriptor2, 25, b.f21958c, null);
             obj12 = b10.n(descriptor2, 26, a2Var, null);
             obj7 = b10.n(descriptor2, 27, m0Var, null);
             obj15 = b10.n(descriptor2, 28, m0Var, null);
@@ -194,7 +194,7 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj43 = obj43;
                         obj31 = obj31;
                         z13 = false;
-                        Unit unit = Unit.f21436a;
+                        Unit unit = Unit.f21442a;
                         break;
                     case 0:
                         obj25 = obj25;
@@ -213,7 +213,7 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj31 = obj31;
                         str6 = b10.m(descriptor2, 0);
                         i12 |= 1;
-                        Unit unit2 = Unit.f21436a;
+                        Unit unit2 = Unit.f21442a;
                         break;
                     case 1:
                         obj25 = obj25;
@@ -229,9 +229,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj43 = obj43;
                         obj31 = obj31;
                         obj35 = obj35;
-                        obj34 = b10.n(descriptor2, 1, a2.f30568a, obj34);
+                        obj34 = b10.n(descriptor2, 1, a2.f30574a, obj34);
                         i12 |= 2;
-                        Unit unit3 = Unit.f21436a;
+                        Unit unit3 = Unit.f21442a;
                         obj26 = obj26;
                         break;
                     case 2:
@@ -251,7 +251,7 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj31 = obj31;
                         str4 = b10.m(descriptor2, 2);
                         i12 |= 4;
-                        Unit unit4 = Unit.f21436a;
+                        Unit unit4 = Unit.f21442a;
                         break;
                     case 3:
                         obj25 = obj25;
@@ -270,7 +270,7 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj31 = obj31;
                         str5 = b10.m(descriptor2, 3);
                         i12 |= 8;
-                        Unit unit5 = Unit.f21436a;
+                        Unit unit5 = Unit.f21442a;
                         break;
                     case 4:
                         obj25 = obj25;
@@ -285,9 +285,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj43 = obj43;
                         obj31 = obj31;
                         obj36 = obj36;
-                        obj35 = b10.n(descriptor2, 4, m0.f30643a, obj35);
+                        obj35 = b10.n(descriptor2, 4, m0.f30649a, obj35);
                         i12 |= 16;
-                        Unit unit6 = Unit.f21436a;
+                        Unit unit6 = Unit.f21442a;
                         obj26 = obj26;
                         break;
                     case 5:
@@ -302,9 +302,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj43 = obj43;
                         obj31 = obj31;
                         obj37 = obj37;
-                        obj36 = b10.n(descriptor2, 5, m0.f30643a, obj36);
+                        obj36 = b10.n(descriptor2, 5, m0.f30649a, obj36);
                         i12 |= 32;
-                        Unit unit7 = Unit.f21436a;
+                        Unit unit7 = Unit.f21442a;
                         obj26 = obj26;
                         obj35 = obj35;
                         break;
@@ -321,7 +321,7 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj31 = obj31;
                         z10 = b10.C(descriptor2, 6);
                         i12 |= 64;
-                        Unit unit8 = Unit.f21436a;
+                        Unit unit8 = Unit.f21442a;
                         obj26 = obj26;
                         obj37 = obj37;
                         obj35 = obj35;
@@ -338,9 +338,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj43 = obj43;
                         obj31 = obj31;
                         obj38 = obj38;
-                        obj37 = b10.n(descriptor2, 7, a2.f30568a, obj37);
+                        obj37 = b10.n(descriptor2, 7, a2.f30574a, obj37);
                         i12 |= 128;
-                        Unit unit9 = Unit.f21436a;
+                        Unit unit9 = Unit.f21442a;
                         obj26 = obj26;
                         obj35 = obj35;
                         obj36 = obj36;
@@ -355,9 +355,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj43 = obj43;
                         obj31 = obj31;
                         obj39 = obj39;
-                        obj38 = b10.n(descriptor2, 8, a2.f30568a, obj38);
+                        obj38 = b10.n(descriptor2, 8, a2.f30574a, obj38);
                         i12 |= 256;
-                        Unit unit10 = Unit.f21436a;
+                        Unit unit10 = Unit.f21442a;
                         obj26 = obj26;
                         obj35 = obj35;
                         obj36 = obj36;
@@ -372,9 +372,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj43 = obj43;
                         obj31 = obj31;
                         obj27 = obj27;
-                        obj39 = b10.n(descriptor2, 9, a2.f30568a, obj39);
+                        obj39 = b10.n(descriptor2, 9, a2.f30574a, obj39);
                         i12 |= 512;
-                        Unit unit11 = Unit.f21436a;
+                        Unit unit11 = Unit.f21442a;
                         obj26 = obj26;
                         obj35 = obj35;
                         obj36 = obj36;
@@ -387,9 +387,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj43 = obj43;
                         obj31 = obj31;
                         obj41 = obj41;
-                        obj40 = b10.n(descriptor2, 10, a2.f30568a, obj40);
+                        obj40 = b10.n(descriptor2, 10, a2.f30574a, obj40);
                         i12 |= 1024;
-                        Unit unit12 = Unit.f21436a;
+                        Unit unit12 = Unit.f21442a;
                         obj27 = obj27;
                         obj24 = obj24;
                         obj35 = obj35;
@@ -407,7 +407,7 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj31 = obj31;
                         z14 = b10.C(descriptor2, 11);
                         i12 |= RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit13 = Unit.f21436a;
+                        Unit unit13 = Unit.f21442a;
                         obj41 = obj41;
                         obj27 = obj27;
                         obj24 = obj24;
@@ -424,9 +424,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj43 = obj43;
                         obj31 = obj31;
                         obj42 = obj42;
-                        obj41 = b10.n(descriptor2, 12, m0.f30643a, obj41);
+                        obj41 = b10.n(descriptor2, 12, m0.f30649a, obj41);
                         i12 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-                        Unit unit14 = Unit.f21436a;
+                        Unit unit14 = Unit.f21442a;
                         obj27 = obj27;
                         obj24 = obj24;
                         obj35 = obj35;
@@ -441,9 +441,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj26 = obj26;
                         obj31 = obj31;
                         obj43 = obj43;
-                        obj42 = b10.n(descriptor2, 13, a2.f30568a, obj42);
+                        obj42 = b10.n(descriptor2, 13, a2.f30574a, obj42);
                         i12 |= 8192;
-                        Unit unit15 = Unit.f21436a;
+                        Unit unit15 = Unit.f21442a;
                         obj27 = obj27;
                         obj24 = obj24;
                         obj35 = obj35;
@@ -458,9 +458,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj25 = obj25;
                         obj26 = obj26;
                         obj31 = obj31;
-                        obj43 = b10.n(descriptor2, 14, a2.f30568a, obj43);
+                        obj43 = b10.n(descriptor2, 14, a2.f30574a, obj43);
                         i12 |= 16384;
-                        Unit unit16 = Unit.f21436a;
+                        Unit unit16 = Unit.f21442a;
                         obj27 = obj27;
                         obj24 = obj24;
                         obj35 = obj35;
@@ -475,9 +475,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                     case 15:
                         obj25 = obj25;
                         obj26 = obj26;
-                        obj31 = b10.n(descriptor2, 15, m0.f30643a, obj31);
+                        obj31 = b10.n(descriptor2, 15, m0.f30649a, obj31);
                         i12 |= 32768;
-                        Unit unit17 = Unit.f21436a;
+                        Unit unit17 = Unit.f21442a;
                         obj27 = obj27;
                         obj24 = obj24;
                         obj35 = obj35;
@@ -493,9 +493,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                     case 16:
                         obj26 = obj26;
                         obj25 = obj25;
-                        obj24 = b10.n(descriptor2, 16, a2.f30568a, obj24);
+                        obj24 = b10.n(descriptor2, 16, a2.f30574a, obj24);
                         i12 |= 65536;
-                        Unit unit18 = Unit.f21436a;
+                        Unit unit18 = Unit.f21442a;
                         obj27 = obj27;
                         obj35 = obj35;
                         obj36 = obj36;
@@ -511,9 +511,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                     case 17:
                         obj26 = obj26;
                         obj24 = obj24;
-                        obj30 = b10.n(descriptor2, 17, m0.f30643a, obj30);
+                        obj30 = b10.n(descriptor2, 17, m0.f30649a, obj30);
                         i12 |= 131072;
-                        Unit unit19 = Unit.f21436a;
+                        Unit unit19 = Unit.f21442a;
                         obj25 = obj25;
                         obj27 = obj27;
                         obj35 = obj35;
@@ -530,9 +530,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                     case 18:
                         obj26 = obj26;
                         obj24 = obj24;
-                        obj44 = b10.n(descriptor2, 18, m0.f30643a, obj44);
+                        obj44 = b10.n(descriptor2, 18, m0.f30649a, obj44);
                         i12 |= 262144;
-                        Unit unit20 = Unit.f21436a;
+                        Unit unit20 = Unit.f21442a;
                         obj25 = obj25;
                         obj27 = obj27;
                         obj35 = obj35;
@@ -549,9 +549,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                     case 19:
                         obj24 = obj24;
                         obj26 = obj26;
-                        obj25 = b10.n(descriptor2, 19, a2.f30568a, obj25);
+                        obj25 = b10.n(descriptor2, 19, a2.f30574a, obj25);
                         i12 |= 524288;
-                        Unit unit21 = Unit.f21436a;
+                        Unit unit21 = Unit.f21442a;
                         obj27 = obj27;
                         obj35 = obj35;
                         obj36 = obj36;
@@ -565,9 +565,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj31 = obj31;
                         break;
                     case 20:
-                        obj18 = b10.n(descriptor2, 20, h.f30610a, obj18);
+                        obj18 = b10.n(descriptor2, 20, h.f30616a, obj18);
                         i12 |= 1048576;
-                        Unit unit22 = Unit.f21436a;
+                        Unit unit22 = Unit.f21442a;
                         obj25 = obj25;
                         obj27 = obj27;
                         obj35 = obj35;
@@ -584,10 +584,10 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         break;
                     case 21:
                         obj24 = obj24;
-                        obj27 = b10.n(descriptor2, 21, a2.f30568a, obj27);
+                        obj27 = b10.n(descriptor2, 21, a2.f30574a, obj27);
                         i11 = 2097152;
                         i12 |= i11;
-                        Unit unit23 = Unit.f21436a;
+                        Unit unit23 = Unit.f21442a;
                         obj25 = obj25;
                         obj35 = obj35;
                         obj36 = obj36;
@@ -602,10 +602,10 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         break;
                     case 22:
                         obj24 = obj24;
-                        obj28 = b10.n(descriptor2, 22, e0.f30593a, obj28);
+                        obj28 = b10.n(descriptor2, 22, e0.f30599a, obj28);
                         i11 = 4194304;
                         i12 |= i11;
-                        Unit unit232 = Unit.f21436a;
+                        Unit unit232 = Unit.f21442a;
                         obj25 = obj25;
                         obj35 = obj35;
                         obj36 = obj36;
@@ -620,10 +620,10 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         break;
                     case 23:
                         obj24 = obj24;
-                        obj26 = b10.n(descriptor2, 23, a2.f30568a, obj26);
+                        obj26 = b10.n(descriptor2, 23, a2.f30574a, obj26);
                         i11 = 8388608;
                         i12 |= i11;
-                        Unit unit2322 = Unit.f21436a;
+                        Unit unit2322 = Unit.f21442a;
                         obj25 = obj25;
                         obj35 = obj35;
                         obj36 = obj36;
@@ -641,7 +641,7 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         z15 = b10.C(descriptor2, 24);
                         i11 = 16777216;
                         i12 |= i11;
-                        Unit unit23222 = Unit.f21436a;
+                        Unit unit23222 = Unit.f21442a;
                         obj25 = obj25;
                         obj35 = obj35;
                         obj36 = obj36;
@@ -656,9 +656,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         break;
                     case 25:
                         obj24 = obj24;
-                        obj33 = b10.n(descriptor2, 25, b.f21952c, obj33);
+                        obj33 = b10.n(descriptor2, 25, b.f21958c, obj33);
                         i12 |= 33554432;
-                        Unit unit24 = Unit.f21436a;
+                        Unit unit24 = Unit.f21442a;
                         obj25 = obj25;
                         obj27 = obj27;
                         obj35 = obj35;
@@ -674,9 +674,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         break;
                     case 26:
                         obj24 = obj24;
-                        obj12 = b10.n(descriptor2, 26, a2.f30568a, obj12);
+                        obj12 = b10.n(descriptor2, 26, a2.f30574a, obj12);
                         i12 |= 67108864;
-                        Unit unit25 = Unit.f21436a;
+                        Unit unit25 = Unit.f21442a;
                         obj25 = obj25;
                         obj27 = obj27;
                         obj35 = obj35;
@@ -692,10 +692,10 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         break;
                     case 27:
                         obj24 = obj24;
-                        obj29 = b10.n(descriptor2, 27, m0.f30643a, obj29);
+                        obj29 = b10.n(descriptor2, 27, m0.f30649a, obj29);
                         i11 = 134217728;
                         i12 |= i11;
-                        Unit unit232222 = Unit.f21436a;
+                        Unit unit232222 = Unit.f21442a;
                         obj25 = obj25;
                         obj35 = obj35;
                         obj36 = obj36;
@@ -710,9 +710,9 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         break;
                     case 28:
                         obj24 = obj24;
-                        obj32 = b10.n(descriptor2, 28, m0.f30643a, obj32);
+                        obj32 = b10.n(descriptor2, 28, m0.f30649a, obj32);
                         i12 |= 268435456;
-                        Unit unit26 = Unit.f21436a;
+                        Unit unit26 = Unit.f21442a;
                         obj25 = obj25;
                         obj27 = obj27;
                         obj35 = obj35;

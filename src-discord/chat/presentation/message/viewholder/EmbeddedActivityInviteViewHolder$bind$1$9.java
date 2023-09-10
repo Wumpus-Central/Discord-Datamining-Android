@@ -20,7 +20,7 @@ public  class EmbeddedActivityInviteViewHolder$bind$1$9 extends n implements Fun
     @Override 
     public   Unit invoke(EmojiContentNode emojiContentNode) {
         invoke2(emojiContentNode);
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 
     

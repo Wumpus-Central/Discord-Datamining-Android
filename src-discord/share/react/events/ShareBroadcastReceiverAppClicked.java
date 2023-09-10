@@ -59,7 +59,7 @@ public final class ShareBroadcastReceiverAppClicked implements ReactEvent {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         output.y(serialDesc, 0, self.app);
-        output.e(serialDesc, 1, a2.f30568a, self.location);
+        output.e(serialDesc, 1, a2.f30574a, self.location);
     }
 
     public final String component1() {

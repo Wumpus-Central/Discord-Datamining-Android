@@ -46,7 +46,7 @@ public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
     @Override 
     public KSerializer<?>[] childSerializers() {
         UserId$$serializer userId$$serializer = UserId$$serializer.INSTANCE;
-        return new KSerializer[]{a.u(a2.f30568a), a.u(userId$$serializer), a.u(MessageId$$serializer.INSTANCE), a.u(userId$$serializer), a.u(MessageType.Serializer.INSTANCE), a.u(ChannelId$$serializer.INSTANCE)};
+        return new KSerializer[]{a.u(a2.f30574a), a.u(userId$$serializer), a.u(MessageId$$serializer.INSTANCE), a.u(userId$$serializer), a.u(MessageType.Serializer.INSTANCE), a.u(ChannelId$$serializer.INSTANCE)};
     }
 
     @Override 
@@ -62,7 +62,7 @@ public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
         SerialDescriptor descriptor2 = getDescriptor();
         c b10 = decoder.b(descriptor2);
         if (b10.p()) {
-            obj6 = b10.n(descriptor2, 0, a2.f30568a, null);
+            obj6 = b10.n(descriptor2, 0, a2.f30574a, null);
             UserId$$serializer userId$$serializer = UserId$$serializer.INSTANCE;
             obj = b10.n(descriptor2, 1, userId$$serializer, null);
             obj2 = b10.n(descriptor2, 2, MessageId$$serializer.INSTANCE, null);
@@ -86,7 +86,7 @@ public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
                         z10 = false;
                         break;
                     case 0:
-                        obj6 = b10.n(descriptor2, 0, a2.f30568a, obj6);
+                        obj6 = b10.n(descriptor2, 0, a2.f30574a, obj6);
                         i11 |= 1;
                         break;
                     case 1:
@@ -122,7 +122,7 @@ public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
-        return new CommandOnClick(i10, (String) obj6, (UserId) obj, messageId != null ? messageId.m625unboximpl() : null, (UserId) obj4, (MessageType) obj3, (ChannelId) obj5, null, null);
+        return new CommandOnClick(i10, (String) obj6, (UserId) obj, messageId != null ? messageId.m632unboximpl() : null, (UserId) obj4, (MessageType) obj3, (ChannelId) obj5, null, null);
     }
 
     @Override 

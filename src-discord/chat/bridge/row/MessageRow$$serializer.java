@@ -5,6 +5,7 @@ import com.discord.chat.bridge.BackgroundHighlight;
 import com.discord.chat.bridge.BackgroundHighlight$$serializer;
 import com.discord.chat.bridge.ChangeType;
 import com.discord.chat.bridge.MessageBase;
+import com.discord.chat.bridge.SwipeActionsType;
 import com.discord.chat.bridge.messageframe.MessageFrame;
 import com.discord.chat.bridge.messageframe.MessageFrameSerializer;
 import com.discord.chat.bridge.reaction.ReactionsTheme;
@@ -57,7 +58,7 @@ public final class MessageRow$$serializer implements f0<MessageRow> {
         pluginGeneratedSerialDescriptor.l("reactTag", true);
         pluginGeneratedSerialDescriptor.l("truncation", true);
         pluginGeneratedSerialDescriptor.l("backgroundHighlight", true);
-        pluginGeneratedSerialDescriptor.l("enableSwipeToReply", true);
+        pluginGeneratedSerialDescriptor.l("swipeActions", true);
         descriptor = pluginGeneratedSerialDescriptor;
     }
 
@@ -66,66 +67,63 @@ public final class MessageRow$$serializer implements f0<MessageRow> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f30643a;
-        h hVar = h.f30610a;
-        a2 a2Var = a2.f30568a;
-        return new KSerializer[]{m0Var, ChangeType.Serializer.INSTANCE, a.u(hVar), a.u(hVar), MessageSerializer.INSTANCE, a.u(hVar), a.u(hVar), a.u(hVar), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(ReactionsTheme$$serializer.INSTANCE), hVar, hVar, a.u(MessageFrameSerializer.INSTANCE), a.u(m0Var), a.u(Truncation$$serializer.INSTANCE), a.u(BackgroundHighlight$$serializer.INSTANCE), hVar};
+        m0 m0Var = m0.f30649a;
+        h hVar = h.f30616a;
+        a2 a2Var = a2.f30574a;
+        return new KSerializer[]{m0Var, ChangeType.Serializer.INSTANCE, a.u(hVar), a.u(hVar), MessageSerializer.INSTANCE, a.u(hVar), a.u(hVar), a.u(hVar), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(ReactionsTheme$$serializer.INSTANCE), hVar, hVar, a.u(MessageFrameSerializer.INSTANCE), a.u(m0Var), a.u(Truncation$$serializer.INSTANCE), a.u(BackgroundHighlight$$serializer.INSTANCE), SwipeActionsType.Serializer.INSTANCE};
     }
 
     @Override 
     public MessageRow deserialize(Decoder decoder) {
+        Object obj;
         boolean z10;
         boolean z11;
-        boolean z12;
-        Object obj;
-        int i10;
         Object obj2;
+        int i10;
         Object obj3;
         Object obj4;
         Object obj5;
         Object obj6;
         Object obj7;
         Object obj8;
-        int i11;
         Object obj9;
         Object obj10;
+        int i11;
         Object obj11;
         Object obj12;
         Object obj13;
         Object obj14;
         Object obj15;
+        Object obj16;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
         c b10 = decoder.b(descriptor2);
         if (b10.p()) {
             i11 = b10.i(descriptor2, 0);
-            obj9 = b10.y(descriptor2, 1, ChangeType.Serializer.INSTANCE, null);
-            h hVar = h.f30610a;
-            obj10 = b10.n(descriptor2, 2, hVar, null);
-            obj8 = b10.n(descriptor2, 3, hVar, null);
-            obj7 = b10.y(descriptor2, 4, MessageSerializer.INSTANCE, null);
-            obj6 = b10.n(descriptor2, 5, hVar, null);
-            obj5 = b10.n(descriptor2, 6, hVar, null);
+            obj7 = b10.y(descriptor2, 1, ChangeType.Serializer.INSTANCE, null);
+            h hVar = h.f30616a;
+            obj = b10.n(descriptor2, 2, hVar, null);
+            obj10 = b10.n(descriptor2, 3, hVar, null);
+            obj8 = b10.y(descriptor2, 4, MessageSerializer.INSTANCE, null);
+            obj9 = b10.n(descriptor2, 5, hVar, null);
+            obj6 = b10.n(descriptor2, 6, hVar, null);
             obj4 = b10.n(descriptor2, 7, hVar, null);
-            a2 a2Var = a2.f30568a;
+            a2 a2Var = a2.f30574a;
             obj11 = b10.n(descriptor2, 8, a2Var, null);
-            obj2 = b10.n(descriptor2, 9, a2Var, null);
+            obj5 = b10.n(descriptor2, 9, a2Var, null);
             obj3 = b10.n(descriptor2, 10, a2Var, null);
-            obj = b10.n(descriptor2, 11, ReactionsTheme$$serializer.INSTANCE, null);
+            obj2 = b10.n(descriptor2, 11, ReactionsTheme$$serializer.INSTANCE, null);
             z10 = b10.C(descriptor2, 12);
             z11 = b10.C(descriptor2, 13);
-            obj15 = b10.n(descriptor2, 14, MessageFrameSerializer.INSTANCE, null);
-            obj14 = b10.n(descriptor2, 15, m0.f30643a, null);
-            obj13 = b10.n(descriptor2, 16, Truncation$$serializer.INSTANCE, null);
-            obj12 = b10.n(descriptor2, 17, BackgroundHighlight$$serializer.INSTANCE, null);
-            z12 = b10.C(descriptor2, 18);
+            obj16 = b10.n(descriptor2, 14, MessageFrameSerializer.INSTANCE, null);
+            obj15 = b10.n(descriptor2, 15, m0.f30649a, null);
+            obj14 = b10.n(descriptor2, 16, Truncation$$serializer.INSTANCE, null);
+            obj13 = b10.n(descriptor2, 17, BackgroundHighlight$$serializer.INSTANCE, null);
+            obj12 = b10.y(descriptor2, 18, SwipeActionsType.Serializer.INSTANCE, null);
             i10 = 524287;
         } else {
-            int i12 = 18;
-            int i13 = 0;
-            boolean z13 = true;
-            Object obj16 = null;
             Object obj17 = null;
+            boolean z12 = true;
             Object obj18 = null;
             Object obj19 = null;
             Object obj20 = null;
@@ -133,163 +131,165 @@ public final class MessageRow$$serializer implements f0<MessageRow> {
             Object obj22 = null;
             Object obj23 = null;
             Object obj24 = null;
-            obj7 = null;
             Object obj25 = null;
             Object obj26 = null;
+            obj8 = null;
             Object obj27 = null;
             Object obj28 = null;
             Object obj29 = null;
-            int i14 = 0;
-            boolean z14 = false;
+            Object obj30 = null;
+            int i12 = 0;
             z11 = false;
+            int i13 = 0;
             z10 = false;
-            while (z13) {
+            Object obj31 = null;
+            while (z12) {
                 int o10 = b10.o(descriptor2);
                 switch (o10) {
                     case -1:
-                        z13 = false;
-                        i14 = i14;
+                        z12 = false;
+                        obj17 = obj17;
                         break;
                     case 0:
-                        i14 = b10.i(descriptor2, 0);
-                        i13 |= 1;
-                        z14 = z14;
+                        obj18 = obj18;
+                        obj17 = obj17;
+                        i13 = b10.i(descriptor2, 0);
+                        i12 |= 1;
                         break;
                     case 1:
-                        z14 = z14;
-                        obj25 = b10.y(descriptor2, 1, ChangeType.Serializer.INSTANCE, obj25);
-                        i13 |= 2;
-                        i14 = i14;
+                        obj17 = obj17;
+                        obj18 = obj18;
+                        obj31 = b10.y(descriptor2, 1, ChangeType.Serializer.INSTANCE, obj31);
+                        i12 |= 2;
                         break;
                     case 2:
-                        z14 = z14;
-                        obj19 = b10.n(descriptor2, 2, h.f30610a, obj19);
-                        i13 |= 4;
-                        i14 = i14;
+                        obj17 = obj17;
+                        obj31 = obj31;
+                        obj18 = b10.n(descriptor2, 2, h.f30616a, obj18);
+                        i12 |= 4;
                         break;
                     case 3:
-                        z14 = z14;
-                        obj18 = b10.n(descriptor2, 3, h.f30610a, obj18);
-                        i13 |= 8;
-                        i14 = i14;
+                        obj17 = obj17;
+                        obj31 = obj31;
+                        obj21 = b10.n(descriptor2, 3, h.f30616a, obj21);
+                        i12 |= 8;
                         break;
                     case 4:
-                        z14 = z14;
-                        obj7 = b10.y(descriptor2, 4, MessageSerializer.INSTANCE, obj7);
-                        i13 |= 16;
-                        i14 = i14;
+                        obj17 = obj17;
+                        obj31 = obj31;
+                        obj8 = b10.y(descriptor2, 4, MessageSerializer.INSTANCE, obj8);
+                        i12 |= 16;
                         break;
                     case 5:
-                        z14 = z14;
-                        obj16 = b10.n(descriptor2, 5, h.f30610a, obj16);
-                        i13 |= 32;
-                        i14 = i14;
+                        obj17 = obj17;
+                        obj31 = obj31;
+                        obj19 = b10.n(descriptor2, 5, h.f30616a, obj19);
+                        i12 |= 32;
                         break;
                     case 6:
-                        z14 = z14;
-                        obj24 = b10.n(descriptor2, 6, h.f30610a, obj24);
-                        i13 |= 64;
-                        i14 = i14;
+                        obj17 = obj17;
+                        obj31 = obj31;
+                        obj26 = b10.n(descriptor2, 6, h.f30616a, obj26);
+                        i12 |= 64;
                         break;
                     case 7:
-                        z14 = z14;
-                        obj23 = b10.n(descriptor2, 7, h.f30610a, obj23);
-                        i13 |= 128;
-                        i14 = i14;
+                        obj17 = obj17;
+                        obj31 = obj31;
+                        obj25 = b10.n(descriptor2, 7, h.f30616a, obj25);
+                        i12 |= 128;
                         break;
                     case 8:
-                        z14 = z14;
-                        obj22 = b10.n(descriptor2, 8, a2.f30568a, obj22);
-                        i13 |= 256;
-                        i14 = i14;
+                        obj17 = obj17;
+                        obj31 = obj31;
+                        obj24 = b10.n(descriptor2, 8, a2.f30574a, obj24);
+                        i12 |= 256;
                         break;
                     case 9:
-                        z14 = z14;
-                        obj17 = b10.n(descriptor2, 9, a2.f30568a, obj17);
-                        i13 |= 512;
-                        i14 = i14;
+                        obj17 = obj17;
+                        obj31 = obj31;
+                        obj20 = b10.n(descriptor2, 9, a2.f30574a, obj20);
+                        i12 |= 512;
                         break;
                     case 10:
-                        z14 = z14;
-                        obj21 = b10.n(descriptor2, 10, a2.f30568a, obj21);
-                        i13 |= 1024;
-                        i14 = i14;
+                        obj17 = obj17;
+                        obj31 = obj31;
+                        obj23 = b10.n(descriptor2, 10, a2.f30574a, obj23);
+                        i12 |= 1024;
                         break;
                     case 11:
-                        z14 = z14;
-                        obj20 = b10.n(descriptor2, 11, ReactionsTheme$$serializer.INSTANCE, obj20);
-                        i13 |= RecyclerView.ItemAnimator.FLAG_MOVED;
-                        i14 = i14;
+                        obj17 = obj17;
+                        obj31 = obj31;
+                        obj22 = b10.n(descriptor2, 11, ReactionsTheme$$serializer.INSTANCE, obj22);
+                        i12 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         break;
                     case 12:
-                        z14 = z14;
+                        obj17 = obj17;
+                        obj31 = obj31;
                         z10 = b10.C(descriptor2, 12);
-                        i13 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-                        i14 = i14;
+                        i12 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                         break;
                     case 13:
-                        z14 = z14;
+                        obj17 = obj17;
+                        obj31 = obj31;
                         z11 = b10.C(descriptor2, 13);
-                        i13 |= 8192;
-                        i14 = i14;
+                        i12 |= 8192;
                         break;
                     case 14:
-                        obj26 = b10.n(descriptor2, 14, MessageFrameSerializer.INSTANCE, obj26);
-                        i13 |= 16384;
-                        z14 = z14;
-                        obj27 = obj27;
-                        i14 = i14;
+                        obj31 = obj31;
+                        obj27 = b10.n(descriptor2, 14, MessageFrameSerializer.INSTANCE, obj27);
+                        i12 |= 16384;
+                        obj17 = obj17;
+                        obj28 = obj28;
                         break;
                     case 15:
-                        obj27 = b10.n(descriptor2, 15, m0.f30643a, obj27);
-                        i13 |= 32768;
-                        z14 = z14;
-                        obj28 = obj28;
-                        i14 = i14;
+                        obj31 = obj31;
+                        obj28 = b10.n(descriptor2, 15, m0.f30649a, obj28);
+                        i12 |= 32768;
+                        obj17 = obj17;
+                        obj29 = obj29;
                         break;
                     case 16:
-                        obj28 = b10.n(descriptor2, 16, Truncation$$serializer.INSTANCE, obj28);
-                        i13 |= 65536;
-                        z14 = z14;
-                        obj29 = obj29;
-                        i14 = i14;
+                        obj31 = obj31;
+                        obj29 = b10.n(descriptor2, 16, Truncation$$serializer.INSTANCE, obj29);
+                        i12 |= 65536;
+                        obj17 = obj17;
+                        obj30 = obj30;
                         break;
                     case 17:
-                        z14 = z14;
-                        obj29 = b10.n(descriptor2, 17, BackgroundHighlight$$serializer.INSTANCE, obj29);
-                        i13 |= 131072;
-                        i14 = i14;
+                        obj31 = obj31;
+                        obj17 = obj17;
+                        obj30 = b10.n(descriptor2, 17, BackgroundHighlight$$serializer.INSTANCE, obj30);
+                        i12 |= 131072;
                         break;
                     case 18:
-                        z14 = b10.C(descriptor2, i12);
-                        i13 |= 262144;
-                        i14 = i14;
+                        obj17 = b10.y(descriptor2, 18, SwipeActionsType.Serializer.INSTANCE, obj17);
+                        i12 |= 262144;
+                        obj31 = obj31;
                         continue;
                     default:
                         throw new n(o10);
                 }
-                i12 = 18;
             }
-            obj2 = obj17;
-            obj9 = obj25;
-            i10 = i13;
-            obj = obj20;
-            obj3 = obj21;
-            z12 = z14;
-            obj13 = obj28;
-            obj15 = obj26;
-            i11 = i14;
-            obj6 = obj16;
-            obj10 = obj19;
-            obj11 = obj22;
-            obj14 = obj27;
-            obj4 = obj23;
-            obj8 = obj18;
-            obj12 = obj29;
-            obj5 = obj24;
+            obj = obj18;
+            obj16 = obj27;
+            i10 = i12;
+            obj2 = obj22;
+            obj3 = obj23;
+            obj12 = obj17;
+            i11 = i13;
+            obj7 = obj31;
+            obj11 = obj24;
+            obj10 = obj21;
+            obj13 = obj30;
+            obj6 = obj26;
+            obj9 = obj19;
+            obj15 = obj28;
+            obj4 = obj25;
+            obj5 = obj20;
+            obj14 = obj29;
         }
         b10.c(descriptor2);
-        return new MessageRow(i10, i11, (ChangeType) obj9, (Boolean) obj10, (Boolean) obj8, (MessageBase) obj7, (Boolean) obj6, (Boolean) obj5, (Boolean) obj4, (String) obj11, (String) obj2, (String) obj3, (ReactionsTheme) obj, z10, z11, (MessageFrame) obj15, (Integer) obj14, (Truncation) obj13, (BackgroundHighlight) obj12, z12, (SerializationConstructorMarker) null);
+        return new MessageRow(i10, i11, (ChangeType) obj7, (Boolean) obj, (Boolean) obj10, (MessageBase) obj8, (Boolean) obj9, (Boolean) obj6, (Boolean) obj4, (String) obj11, (String) obj5, (String) obj3, (ReactionsTheme) obj2, z10, z11, (MessageFrame) obj16, (Integer) obj15, (Truncation) obj14, (BackgroundHighlight) obj13, (SwipeActionsType) obj12, (SerializationConstructorMarker) null);
     }
 
     @Override 

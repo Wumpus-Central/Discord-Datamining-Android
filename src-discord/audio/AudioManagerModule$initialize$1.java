@@ -26,7 +26,7 @@ final class AudioManagerModule$initialize$1 extends s implements Function1<List<
     @Override 
     public   Unit invoke(List<? extends DiscordAudioManager.AudioDevice> list) {
         invoke2((List<DiscordAudioManager.AudioDevice>) list);
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 
     

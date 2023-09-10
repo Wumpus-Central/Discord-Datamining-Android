@@ -25,7 +25,7 @@ final class PushNotificationModule$registerEventListener$2 extends s implements 
     @Override 
     public   Unit invoke(Map<String, ? extends String> map) {
         invoke2((Map<String, String>) map);
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 
     

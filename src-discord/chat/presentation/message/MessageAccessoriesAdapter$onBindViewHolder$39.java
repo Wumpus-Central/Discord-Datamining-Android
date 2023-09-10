@@ -23,7 +23,7 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$39 extends s imple
     @Override 
     public   Unit invoke(String str, String str2) {
         invoke2(str, str2);
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 
     
@@ -39,6 +39,6 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$39 extends s imple
         }
         str = this.this$0.messageId;
         q.e(str);
-        chatEventHandler.mo158onLinkClickedu7_MRrM(str, url, filename);
+        chatEventHandler.mo159onLinkClickedu7_MRrM(str, url, filename);
     }
 }

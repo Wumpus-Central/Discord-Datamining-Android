@@ -35,7 +35,7 @@ public final class CustomTabs {
             b a11 = e10.a();
             q.g(a11, "Builder()\n              …\n                .build()");
             try {
-                a11.f22036a.setData(uri);
+                a11.f22042a.setData(uri);
                 a11.a(context, uri);
             } catch (ActivityNotFoundException e11) {
                 onFailure.invoke(e11);

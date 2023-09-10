@@ -35,8 +35,8 @@ public final class UserSpeakingEvent$$serializer implements f0<UserSpeakingEvent
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f30643a;
-        return new KSerializer[]{m0Var, a2.f30568a, m0Var};
+        m0 m0Var = m0.f30649a;
+        return new KSerializer[]{m0Var, a2.f30574a, m0Var};
     }
 
     @Override 

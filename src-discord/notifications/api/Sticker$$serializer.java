@@ -50,8 +50,8 @@ public final class Sticker$$serializer implements f0<Sticker> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f30568a;
-        return new KSerializer[]{StickerId$$serializer.INSTANCE, a2Var, a.u(w0.f30684a), a.u(GuildId$$serializer.INSTANCE), a2Var, StickerFormatType.Serializer.INSTANCE, a2Var, StickerType.Serializer.INSTANCE, a.u(h.f30610a)};
+        a2 a2Var = a2.f30574a;
+        return new KSerializer[]{StickerId$$serializer.INSTANCE, a2Var, a.u(w0.f30690a), a.u(GuildId$$serializer.INSTANCE), a2Var, StickerFormatType.Serializer.INSTANCE, a2Var, StickerType.Serializer.INSTANCE, a.u(h.f30616a)};
     }
 
     @Override 
@@ -75,13 +75,13 @@ public final class Sticker$$serializer implements f0<Sticker> {
         if (b10.p()) {
             obj6 = b10.y(descriptor2, 0, StickerId$$serializer.INSTANCE, null);
             str3 = b10.m(descriptor2, 1);
-            obj = b10.n(descriptor2, 2, w0.f30684a, null);
+            obj = b10.n(descriptor2, 2, w0.f30690a, null);
             obj4 = b10.n(descriptor2, 3, GuildId$$serializer.INSTANCE, null);
             str2 = b10.m(descriptor2, 4);
             obj2 = b10.y(descriptor2, 5, StickerFormatType.Serializer.INSTANCE, null);
             str = b10.m(descriptor2, 6);
             obj5 = b10.y(descriptor2, 7, StickerType.Serializer.INSTANCE, null);
-            obj3 = b10.n(descriptor2, 8, h.f30610a, null);
+            obj3 = b10.n(descriptor2, 8, h.f30616a, null);
             i10 = 511;
         } else {
             boolean z10 = true;
@@ -113,7 +113,7 @@ public final class Sticker$$serializer implements f0<Sticker> {
                         i11 = 7;
                         break;
                     case 2:
-                        obj = b10.n(descriptor2, 2, w0.f30684a, obj);
+                        obj = b10.n(descriptor2, 2, w0.f30690a, obj);
                         i13 |= 4;
                         i11 = 7;
                         break;
@@ -139,7 +139,7 @@ public final class Sticker$$serializer implements f0<Sticker> {
                         i13 |= 128;
                         break;
                     case 8:
-                        obj3 = b10.n(descriptor2, 8, h.f30610a, obj3);
+                        obj3 = b10.n(descriptor2, 8, h.f30616a, obj3);
                         i13 |= 256;
                         break;
                     default:

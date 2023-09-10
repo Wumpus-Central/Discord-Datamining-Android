@@ -33,7 +33,7 @@ final class ChatInputRootView$onAttachedToWindow$1 extends k implements Function
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatInputRootView$onAttachedToWindow$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21436a);
+        return ((ChatInputRootView$onAttachedToWindow$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21442a);
     }
 
     @Override 
@@ -53,13 +53,13 @@ final class ChatInputRootView$onAttachedToWindow$1 extends k implements Function
 
                 public final Object emit(ChatInputRootView.CurrentTextAndSelection currentTextAndSelection, Continuation<? super Unit> continuation) {
                     if (currentTextAndSelection == null) {
-                        return Unit.f21436a;
+                        return Unit.f21442a;
                     }
                     ChatInputRootView.ChatInputListener listener = ChatInputRootView.this.getListener();
                     if (listener != null) {
                         listener.onTextOrSelectionChanged(currentTextAndSelection.getSelectionStart(), currentTextAndSelection.getSelectionEnd(), currentTextAndSelection.getText(), currentTextAndSelection.getEditId());
                     }
-                    return Unit.f21436a;
+                    return Unit.f21442a;
                 }
             };
             this.label = 1;
@@ -71,6 +71,6 @@ final class ChatInputRootView$onAttachedToWindow$1 extends k implements Function
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f21436a;
+        return Unit.f21442a;
     }
 }
