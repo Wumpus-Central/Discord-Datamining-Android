@@ -7,12 +7,24 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.bridge.contentnode.LinkContentNode;
 import com.discord.chat.bridge.ephemeral.EphemeralIndication;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.databinding.EphemeralActionViewBinding;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.image.fresco.SimpleDraweeSpanTextViewUtilsKt;
@@ -64,6 +76,7 @@ public final class EphemeralIndicationView extends ConstraintLayout {
 
     
     public final void m324setEphemeralIndicationAFFcxXc(String messageId, final EphemeralIndication ephemeralIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, final Function1<? super String, Unit> onHelpArticleClicked) {
+        DraweeSpanStringBuilder spannable;
         q.h(messageId, "messageId");
         q.h(ephemeralIndication, "ephemeralIndication");
         q.h(onLinkClicked, "onLinkClicked");
@@ -86,9 +99,9 @@ public final class EphemeralIndicationView extends ConstraintLayout {
         TextPaint paint = setEphemeralIndication_AFFcxXc$lambda$6.getPaint();
         q.g(context, "context");
         q.g(paint, "paint");
-        DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context, messageId, false, false, false, paint, new EphemeralIndicationView$setEphemeralIndication$2$1(onLinkClicked, messageId), null, null, null, null, null, null, null, null, null, null, false, null, baselineHeight, 524160, null);
-        SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(setEphemeralIndication_AFFcxXc$lambda$6));
-        SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setEphemeralIndication_AFFcxXc$lambda$6, spannable$default);
+        spannable = TextUtilsKt.toSpannable(content, context, messageId, false, false, false, paint, (r44 & 64) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : new EphemeralIndicationView$setEphemeralIndication$2$1(onLinkClicked, messageId), (r44 & 128) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r44 & 256) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r44 & 512) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r44 & 1024) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r44 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r44 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r44 & 8192) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r44 & 16384) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (32768 & r44) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (65536 & r44) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (131072 & r44) != 0 ? false : false, (262144 & r44) != 0 ? ThemeManagerKt.getTheme() : null, (r44 & 524288) != 0 ? -1.0f : baselineHeight);
+        SpannableExtensionsKt.coverWithSpan(spannable, new BackgroundSpanDrawer(setEphemeralIndication_AFFcxXc$lambda$6));
+        SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setEphemeralIndication_AFFcxXc$lambda$6, spannable);
         NestedScrollOnTouchUtilsKt.enableNestedSpanClickListener$default(setEphemeralIndication_AFFcxXc$lambda$6, false, 1, null);
     }
 

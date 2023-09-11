@@ -1,11 +1,11 @@
 {
     "metadata": {
-        "build": "196206",
+        "build": "197200",
         "commit": "null",
         "confirm_update": false
     },
     "hashes": {
-        "app/src/main/assets/index.android.bundle": "c34d99b2381fcf38e2b6cd1ab48efa06",
+        "app/src/main/assets/index.android.bundle": "3013ddbc87de36e6f274a656a65ffa35",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
         "app/src/main/res/drawable-mdpi/images_auth_backgroundsplashdev.jpg": "c2620d71d0c18f7cbdf536c0e7d3a788",
         "app/src/main/res/drawable-mdpi/images_auth_backgroundsplashmobile.png": "4680228d0a03d95dd5f928d62cdda206",

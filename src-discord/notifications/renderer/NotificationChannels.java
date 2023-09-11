@@ -446,7 +446,6 @@ public final class NotificationChannels {
     public final void init(Context context, Map<String, String> localizedCategoryNames, Map<String, String> localizedGroupNames) {
         int s10;
         int d10;
-        int c10;
         boolean z10;
         q.h(context, "context");
         q.h(localizedCategoryNames, "localizedCategoryNames");
@@ -467,8 +466,7 @@ public final class NotificationChannels {
             CrashReporting crashReporting = CrashReporting.INSTANCE;
             s10 = k.s(createNotificationChannelGroups, 10);
             d10 = u.d(s10);
-            c10 = j.c(d10, 16);
-            LinkedHashMap linkedHashMap = new LinkedHashMap(c10);
+            LinkedHashMap linkedHashMap = new LinkedHashMap(j.c(d10, 16));
             for (t0 t0Var : createNotificationChannelGroups) {
                 String valueOf = String.valueOf(t0Var.b());
                 if (NotificationManagerUtilsKt.getNotificationManagerCompat(context).k(t0Var.a()) != null) {
