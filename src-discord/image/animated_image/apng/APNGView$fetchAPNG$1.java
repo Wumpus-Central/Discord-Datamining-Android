@@ -23,7 +23,7 @@ import qf.d;
 
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
-@e(c = "com.discord.image.animated_image.apng.APNGView$fetchAPNG$1", f = "APNGView.kt", l = {82}, m = "invokeSuspend")
+@e(c = "com.discord.image.animated_image.apng.APNGView$fetchAPNG$1", f = "APNGView.kt", l = {83}, m = "invokeSuspend")
 
 public final class APNGView$fetchAPNG$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final  APNGView.Config $config;
@@ -44,7 +44,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((APNGView$fetchAPNG$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21442a);
+        return ((APNGView$fetchAPNG$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
     }
 
     @Override 
@@ -71,7 +71,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f21442a;
+        return Unit.f21444a;
     }
 
     
@@ -107,7 +107,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                return ((C01121) create(coroutineScope, continuation)).invokeSuspend(Unit.f21442a);
+                return ((C01121) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
             }
 
             @Override 
@@ -147,7 +147,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21442a);
+                return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
             }
 
             @Override 
@@ -184,7 +184,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                return ((AnonymousClass3) create(coroutineScope, continuation)).invokeSuspend(Unit.f21442a);
+                return ((AnonymousClass3) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
             }
 
             @Override 

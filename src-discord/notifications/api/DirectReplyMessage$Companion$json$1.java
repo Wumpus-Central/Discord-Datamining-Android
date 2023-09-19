@@ -19,7 +19,7 @@ final class DirectReplyMessage$Companion$json$1 extends s implements Function1<J
     @Override 
     public   Unit invoke(JsonBuilder jsonBuilder) {
         invoke2(jsonBuilder);
-        return Unit.f21442a;
+        return Unit.f21444a;
     }
 
     

@@ -26,7 +26,7 @@ public final class MediaView$setMediaData$1 extends s implements Function1<Pipel
     @Override 
     public   Unit invoke(PipelineDraweeControllerBuilder pipelineDraweeControllerBuilder) {
         invoke2(pipelineDraweeControllerBuilder);
-        return Unit.f21442a;
+        return Unit.f21444a;
     }
 
     

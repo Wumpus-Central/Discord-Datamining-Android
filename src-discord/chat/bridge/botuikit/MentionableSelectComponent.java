@@ -86,7 +86,7 @@ public final class MentionableSelectComponent extends SearchableSelectComponent 
         SearchableSelectComponent.write$Self((SearchableSelectComponent) self, output, serialDesc);
         boolean z12 = true;
         output.w(serialDesc, 1, self.getType());
-        output.h(serialDesc, 2, new xi.f(m0.f30649a), self.getIndices());
+        output.h(serialDesc, 2, new xi.f(m0.f30651a), self.getIndices());
         output.y(serialDesc, 3, self.getApplicationId());
         output.y(serialDesc, 4, self.getCustomId());
         if (!output.z(serialDesc, 5) && self.getPlaceholder() == null) {
@@ -95,7 +95,7 @@ public final class MentionableSelectComponent extends SearchableSelectComponent 
             z10 = true;
         }
         if (z10) {
-            output.e(serialDesc, 5, a2.f30574a, self.getPlaceholder());
+            output.e(serialDesc, 5, a2.f30576a, self.getPlaceholder());
         }
         if (!output.z(serialDesc, 6) && self.getAccessibilityLabel() == null) {
             z11 = false;
@@ -103,7 +103,7 @@ public final class MentionableSelectComponent extends SearchableSelectComponent 
             z11 = true;
         }
         if (z11) {
-            output.e(serialDesc, 6, a2.f30574a, self.getAccessibilityLabel());
+            output.e(serialDesc, 6, a2.f30576a, self.getAccessibilityLabel());
         }
         output.w(serialDesc, 7, self.getMinValues());
         output.w(serialDesc, 8, self.getMaxValues());

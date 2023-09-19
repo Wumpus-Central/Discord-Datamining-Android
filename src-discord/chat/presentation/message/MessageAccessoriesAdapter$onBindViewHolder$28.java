@@ -28,7 +28,7 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$28 extends s imple
     @Override 
     public   Unit invoke(Sticker sticker) {
         invoke2(sticker);
-        return Unit.f21442a;
+        return Unit.f21444a;
     }
 
     
@@ -40,6 +40,6 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$28 extends s imple
             q.z("eventHandler");
             chatEventHandler = null;
         }
-        chatEventHandler.mo163onStickerClickedAyv7vGE(((StickerMessageAccessory) this.$part).getSticker(), this.$part.mo233getMessageId3Eiw7ao());
+        chatEventHandler.mo165onStickerClickedAyv7vGE(((StickerMessageAccessory) this.$part).getSticker(), this.$part.mo236getMessageId3Eiw7ao());
     }
 }

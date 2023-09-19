@@ -38,8 +38,8 @@ public final class OnVideoCallbackEvent$$serializer implements f0<OnVideoCallbac
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f30574a;
-        return new KSerializer[]{m0.f30649a, a2Var, w0.f30690a, a2Var, a2Var};
+        a2 a2Var = a2.f30576a;
+        return new KSerializer[]{m0.f30651a, a2Var, w0.f30692a, a2Var, a2Var};
     }
 
     @Override 

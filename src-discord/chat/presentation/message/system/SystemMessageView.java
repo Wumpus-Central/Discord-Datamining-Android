@@ -98,100 +98,104 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                iArr[MessageType.RECIPIENT_REMOVE.ordinal()] = 8;
+                iArr[MessageType.GUILD_GAMING_STATS_PROMPT.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                iArr[MessageType.PRIVATE_CHANNEL_INTEGRATION_REMOVED.ordinal()] = 9;
+                iArr[MessageType.RECIPIENT_REMOVE.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                iArr[MessageType.CHANNEL_NAME_CHANGE.ordinal()] = 10;
+                iArr[MessageType.PRIVATE_CHANNEL_INTEGRATION_REMOVED.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                iArr[MessageType.CHANNEL_ICON_CHANGE.ordinal()] = 11;
+                iArr[MessageType.CHANNEL_NAME_CHANGE.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                iArr[MessageType.CHANNEL_PINNED_MESSAGE.ordinal()] = 12;
+                iArr[MessageType.CHANNEL_ICON_CHANGE.ordinal()] = 12;
             } catch (NoSuchFieldError unused12) {
             }
             try {
-                iArr[MessageType.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION.ordinal()] = 13;
+                iArr[MessageType.CHANNEL_PINNED_MESSAGE.ordinal()] = 13;
             } catch (NoSuchFieldError unused13) {
             }
             try {
-                iArr[MessageType.USER_PREMIUM_GUILD_SUBSCRIPTION.ordinal()] = 14;
+                iArr[MessageType.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION.ordinal()] = 14;
             } catch (NoSuchFieldError unused14) {
             }
             try {
-                iArr[MessageType.USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_1.ordinal()] = 15;
+                iArr[MessageType.USER_PREMIUM_GUILD_SUBSCRIPTION.ordinal()] = 15;
             } catch (NoSuchFieldError unused15) {
             }
             try {
-                iArr[MessageType.USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_2.ordinal()] = 16;
+                iArr[MessageType.USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_1.ordinal()] = 16;
             } catch (NoSuchFieldError unused16) {
             }
             try {
-                iArr[MessageType.USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_3.ordinal()] = 17;
+                iArr[MessageType.USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_2.ordinal()] = 17;
             } catch (NoSuchFieldError unused17) {
             }
             try {
-                iArr[MessageType.CHANNEL_FOLLOW_ADD.ordinal()] = 18;
+                iArr[MessageType.USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_3.ordinal()] = 18;
             } catch (NoSuchFieldError unused18) {
             }
             try {
-                iArr[MessageType.GUILD_DISCOVERY_DISQUALIFIED.ordinal()] = 19;
+                iArr[MessageType.CHANNEL_FOLLOW_ADD.ordinal()] = 19;
             } catch (NoSuchFieldError unused19) {
             }
             try {
-                iArr[MessageType.GUILD_DISCOVERY_REQUALIFIED.ordinal()] = 20;
+                iArr[MessageType.GUILD_DISCOVERY_DISQUALIFIED.ordinal()] = 20;
             } catch (NoSuchFieldError unused20) {
             }
             try {
-                iArr[MessageType.GUILD_DISCOVERY_GRACE_PERIOD_INITIAL_WARNING.ordinal()] = 21;
+                iArr[MessageType.GUILD_DISCOVERY_REQUALIFIED.ordinal()] = 21;
             } catch (NoSuchFieldError unused21) {
             }
             try {
-                iArr[MessageType.GUILD_DISCOVERY_GRACE_PERIOD_FINAL_WARNING.ordinal()] = 22;
+                iArr[MessageType.GUILD_DISCOVERY_GRACE_PERIOD_INITIAL_WARNING.ordinal()] = 22;
             } catch (NoSuchFieldError unused22) {
             }
             try {
-                iArr[MessageType.THREAD_CREATED.ordinal()] = 23;
+                iArr[MessageType.GUILD_DISCOVERY_GRACE_PERIOD_FINAL_WARNING.ordinal()] = 23;
             } catch (NoSuchFieldError unused23) {
             }
             try {
-                iArr[MessageType.THREAD_STARTER_MESSAGE.ordinal()] = 24;
+                iArr[MessageType.THREAD_CREATED.ordinal()] = 24;
             } catch (NoSuchFieldError unused24) {
             }
             try {
-                iArr[MessageType.STAGE_START.ordinal()] = 25;
+                iArr[MessageType.THREAD_STARTER_MESSAGE.ordinal()] = 25;
             } catch (NoSuchFieldError unused25) {
             }
             try {
-                iArr[MessageType.STAGE_END.ordinal()] = 26;
+                iArr[MessageType.STAGE_START.ordinal()] = 26;
             } catch (NoSuchFieldError unused26) {
             }
             try {
-                iArr[MessageType.STAGE_TOPIC.ordinal()] = 27;
+                iArr[MessageType.STAGE_END.ordinal()] = 27;
             } catch (NoSuchFieldError unused27) {
             }
             try {
-                iArr[MessageType.STAGE_SPEAKER.ordinal()] = 28;
+                iArr[MessageType.STAGE_TOPIC.ordinal()] = 28;
             } catch (NoSuchFieldError unused28) {
             }
             try {
-                iArr[MessageType.STAGE_RAISE_HAND.ordinal()] = 29;
+                iArr[MessageType.STAGE_SPEAKER.ordinal()] = 29;
             } catch (NoSuchFieldError unused29) {
             }
             try {
-                iArr[MessageType.GUILD_INCIDENT_ALERT_MODE_ENABLED.ordinal()] = 30;
+                iArr[MessageType.STAGE_RAISE_HAND.ordinal()] = 30;
             } catch (NoSuchFieldError unused30) {
             }
             try {
-                iArr[MessageType.GUILD_INCIDENT_ALERT_MODE_DISABLED.ordinal()] = 31;
+                iArr[MessageType.GUILD_INCIDENT_ALERT_MODE_ENABLED.ordinal()] = 31;
             } catch (NoSuchFieldError unused31) {
+            }
+            try {
+                iArr[MessageType.GUILD_INCIDENT_ALERT_MODE_DISABLED.ordinal()] = 32;
+            } catch (NoSuchFieldError unused32) {
             }
             $EnumSwitchMapping$0 = iArr;
         }
@@ -257,7 +261,7 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         if (message.getType() == MessageType.STAGE_RAISE_HAND && q.c(message.getShowInviteToSpeakButton(), Boolean.TRUE)) {
             this.accessories.add(new InviteToSpeakAccessory(message2));
         }
-        if (message.getType() == MessageType.GUILD_DEADCHAT_REVIVE_PROMPT) {
+        if (message.getType() == MessageType.GUILD_DEADCHAT_REVIVE_PROMPT || message.getType() == MessageType.GUILD_GAMING_STATS_PROMPT) {
             this.accessories.add(new ChannelPromptActionsAccessory(message2));
         }
         if (message.getReactions() != null && (!reactions.isEmpty())) {
@@ -286,46 +290,47 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
             case 5:
             case 6:
             case 7:
-                return x.a(ReactAsset.ArrowForward, Integer.valueOf(this.greenIconColor));
             case 8:
+                return x.a(ReactAsset.ArrowForward, Integer.valueOf(this.greenIconColor));
             case 9:
-                return x.a(ReactAsset.ArrowBack, Integer.valueOf(this.redIconColor));
             case 10:
+                return x.a(ReactAsset.ArrowBack, Integer.valueOf(this.redIconColor));
             case 11:
-                return x.a(ReactAsset.Pencil, Integer.valueOf(this.normalIconColor));
             case 12:
-                return x.a(ReactAsset.Pin, Integer.valueOf(this.normalIconColor));
+                return x.a(ReactAsset.Pencil, Integer.valueOf(this.normalIconColor));
             case 13:
-                return x.a(ReactAsset.Ticket, Integer.valueOf(this.normalIconColor));
+                return x.a(ReactAsset.Pin, Integer.valueOf(this.normalIconColor));
             case 14:
+                return x.a(ReactAsset.Ticket, Integer.valueOf(this.normalIconColor));
             case 15:
             case 16:
             case 17:
-                return x.a(ReactAsset.MemberListBadge, Integer.valueOf(this.pinkIconColor));
             case 18:
-                return x.a(ReactAsset.AnnouncementThread, Integer.valueOf(this.normalIconColor));
+                return x.a(ReactAsset.MemberListBadge, Integer.valueOf(this.pinkIconColor));
             case 19:
-                return x.a(ReactAsset.Close, Integer.valueOf(this.redIconColor));
+                return x.a(ReactAsset.AnnouncementThread, Integer.valueOf(this.normalIconColor));
             case 20:
-                return x.a(ReactAsset.Check, Integer.valueOf(this.greenIconColor));
+                return x.a(ReactAsset.Close, Integer.valueOf(this.redIconColor));
             case 21:
+                return x.a(ReactAsset.Check, Integer.valueOf(this.greenIconColor));
             case 22:
-                return x.a(ReactAsset.Alert, Integer.valueOf(this.warnIconColor));
             case 23:
+                return x.a(ReactAsset.Alert, Integer.valueOf(this.warnIconColor));
             case 24:
-                return x.a(ReactAsset.Thread, Integer.valueOf(this.normalIconColor));
             case 25:
-                return x.a(ReactAsset.StageChannel, Integer.valueOf(this.greenIconColor));
+                return x.a(ReactAsset.Thread, Integer.valueOf(this.normalIconColor));
             case 26:
+                return x.a(ReactAsset.StageChannel, Integer.valueOf(this.greenIconColor));
             case 27:
-                return x.a(ReactAsset.StageChannel, Integer.valueOf(this.normalIconColor));
             case 28:
-                return x.a(ReactAsset.MoveToSpeaker, Integer.valueOf(this.normalIconColor));
+                return x.a(ReactAsset.StageChannel, Integer.valueOf(this.normalIconColor));
             case 29:
-                return x.a(ReactAsset.RaisedHand, Integer.valueOf(this.normalIconColor));
+                return x.a(ReactAsset.MoveToSpeaker, Integer.valueOf(this.normalIconColor));
             case 30:
-                return x.a(ReactAsset.LockClosed, Integer.valueOf(this.normalIconColor));
+                return x.a(ReactAsset.RaisedHand, Integer.valueOf(this.normalIconColor));
             case 31:
+                return x.a(ReactAsset.LockClosed, Integer.valueOf(this.normalIconColor));
+            case 32:
                 return x.a(ReactAsset.LockOpen, Integer.valueOf(this.normalIconColor));
             default:
                 throw new IllegalArgumentException("Unhandled message type: " + messageType);
@@ -348,7 +353,7 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         }
         Function4<MessageId, ChannelId, Integer, MediaType, Unit> onMessageLongPressed = eventHandler.getOnMessageLongPressed();
         if (onMessageLongPressed != null) {
-            onMessageLongPressed.invoke(MessageId.m624boximpl(message.m25getId3Eiw7ao()), ChannelId.m598boximpl(message.m23getChannelIdo4g7jtM()), null, null);
+            onMessageLongPressed.invoke(MessageId.m631boximpl(message.m25getId3Eiw7ao()), ChannelId.m605boximpl(message.m23getChannelIdo4g7jtM()), null, null);
         }
         return true;
     }
@@ -388,7 +393,7 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         q.g(simpleDraweeView2, "binding.icon");
         ColorUtilsKt.setTintColor(simpleDraweeView2, Integer.valueOf(intValue));
         List<MessageAccessory> generateMessageAccessories = generateMessageAccessories(message, context);
-        this.binding.accessoriesView.m226setAccessoriesRC8ZMxU(message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.m24getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, null);
+        this.binding.accessoriesView.m229setAccessoriesRC8ZMxU(message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.m24getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, null);
         MessageAccessoriesView messageAccessoriesView = this.binding.accessoriesView;
         q.g(messageAccessoriesView, "binding.accessoriesView");
         if (!generateMessageAccessories.isEmpty()) {

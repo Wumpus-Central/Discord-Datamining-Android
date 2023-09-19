@@ -66,7 +66,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21442a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
         }
 
         @Override 
@@ -85,7 +85,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
                     imageView = this.this$0.imageView;
                     imageView.setImageBitmap(this.$bitmap);
                 }
-                return Unit.f21442a;
+                return Unit.f21444a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -114,7 +114,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21442a);
+            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
         }
 
         @Override 
@@ -127,7 +127,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
                 LocalImageThumbnailView localImageThumbnailView = this.this$0;
                 simpleDraweeView = localImageThumbnailView.simpleDraweeView;
                 localImageThumbnailView.loadDefaultBitmap(simpleDraweeView, this.$uri);
-                return Unit.f21442a;
+                return Unit.f21444a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -149,7 +149,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((LocalImageThumbnailView$setLocalImageSource$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21442a);
+        return ((LocalImageThumbnailView$setLocalImageSource$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
     }
 
     @Override 
@@ -221,6 +221,6 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
                 return d10;
             }
         }
-        return Unit.f21442a;
+        return Unit.f21444a;
     }
 }

@@ -35,7 +35,7 @@ public final class WebhookNameOnClick$$serializer implements f0<WebhookNameOnCli
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f30574a, a.u(MessageReference$$serializer.INSTANCE)};
+        return new KSerializer[]{a2.f30576a, a.u(MessageReference$$serializer.INSTANCE)};
     }
 
     @Override 

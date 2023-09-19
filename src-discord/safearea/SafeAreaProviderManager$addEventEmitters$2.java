@@ -31,7 +31,7 @@ public final class SafeAreaProviderManager$addEventEmitters$2 extends s implemen
     @Override 
     public   Unit invoke(WindowInsetsCompat windowInsetsCompat) {
         invoke2(windowInsetsCompat);
-        return Unit.f21442a;
+        return Unit.f21444a;
     }
 
     

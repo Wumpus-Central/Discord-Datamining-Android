@@ -90,7 +90,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
         SearchableSelectComponent.write$Self((SearchableSelectComponent) self, output, serialDesc);
         boolean z13 = true;
         output.w(serialDesc, 1, self.getType());
-        m0 m0Var = m0.f30649a;
+        m0 m0Var = m0.f30651a;
         output.h(serialDesc, 2, new xi.f(m0Var), self.getIndices());
         output.y(serialDesc, 3, self.getApplicationId());
         output.y(serialDesc, 4, self.getCustomId());
@@ -100,7 +100,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
             z10 = true;
         }
         if (z10) {
-            output.e(serialDesc, 5, a2.f30574a, self.getPlaceholder());
+            output.e(serialDesc, 5, a2.f30576a, self.getPlaceholder());
         }
         if (!output.z(serialDesc, 6) && self.getAccessibilityLabel() == null) {
             z11 = false;
@@ -108,7 +108,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
             z11 = true;
         }
         if (z11) {
-            output.e(serialDesc, 6, a2.f30574a, self.getAccessibilityLabel());
+            output.e(serialDesc, 6, a2.f30576a, self.getAccessibilityLabel());
         }
         output.w(serialDesc, 7, self.getMinValues());
         output.w(serialDesc, 8, self.getMaxValues());

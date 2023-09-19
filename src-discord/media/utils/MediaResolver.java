@@ -63,7 +63,7 @@ public final class MediaResolver {
         Object d10;
         Object g10 = j.g(a1.b(), new MediaResolver$checkFreeSpace$2(this, null), continuation);
         d10 = d.d();
-        return g10 == d10 ? g10 : Unit.f21442a;
+        return g10 == d10 ? g10 : Unit.f21444a;
     }
 
     

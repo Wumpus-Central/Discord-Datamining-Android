@@ -3,6 +3,7 @@ package com.discord.chat.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.Space;
 import android.widget.TextView;
@@ -29,6 +30,7 @@ public final class EmbedViewBinding {
     public final SimpleDraweeView footerAvatar;
     public final LinearLayout footerContainer;
     public final TextView footerText;
+    public final FrameLayout imageBlurBg;
     public final ConstraintLayout inlineMediaContainer;
     public final EmbedViewResizingMediaView inlineMediaView;
     public final EmbedViewResizingMediaView inlineMediaView2;
@@ -42,7 +44,7 @@ public final class EmbedViewBinding {
     public final SimpleDraweeView thumbnail;
     public final SimpleDraweeSpanTextView title;
 
-    private EmbedViewBinding(View view, SimpleDraweeView simpleDraweeView, LinearLayout linearLayout, TextView textView, View view2, SimpleDraweeSpanTextView simpleDraweeSpanTextView, TextView textView2, SimpleDraweeView simpleDraweeView2, LinearLayout linearLayout2, LinearLayout linearLayout3, LinearLayout linearLayout4, SimpleDraweeView simpleDraweeView3, LinearLayout linearLayout5, TextView textView3, ConstraintLayout constraintLayout, EmbedViewResizingMediaView embedViewResizingMediaView, EmbedViewResizingMediaView embedViewResizingMediaView2, EmbedViewResizingMediaView embedViewResizingMediaView3, EmbedViewResizingMediaView embedViewResizingMediaView4, EmbedViewResizingMediaView embedViewResizingMediaView5, SimpleDraweeSpanTextView simpleDraweeSpanTextView2, Space space, SpoilerView spoilerView, SimpleDraweeView simpleDraweeView4, SimpleDraweeSpanTextView simpleDraweeSpanTextView3) {
+    private EmbedViewBinding(View view, SimpleDraweeView simpleDraweeView, LinearLayout linearLayout, TextView textView, View view2, SimpleDraweeSpanTextView simpleDraweeSpanTextView, TextView textView2, SimpleDraweeView simpleDraweeView2, LinearLayout linearLayout2, LinearLayout linearLayout3, LinearLayout linearLayout4, SimpleDraweeView simpleDraweeView3, LinearLayout linearLayout5, TextView textView3, FrameLayout frameLayout, ConstraintLayout constraintLayout, EmbedViewResizingMediaView embedViewResizingMediaView, EmbedViewResizingMediaView embedViewResizingMediaView2, EmbedViewResizingMediaView embedViewResizingMediaView3, EmbedViewResizingMediaView embedViewResizingMediaView4, EmbedViewResizingMediaView embedViewResizingMediaView5, SimpleDraweeSpanTextView simpleDraweeSpanTextView2, Space space, SpoilerView spoilerView, SimpleDraweeView simpleDraweeView4, SimpleDraweeSpanTextView simpleDraweeSpanTextView3) {
         this.rootView = view;
         this.authorAvatar = simpleDraweeView;
         this.authorContainer = linearLayout;
@@ -57,6 +59,7 @@ public final class EmbedViewBinding {
         this.footerAvatar = simpleDraweeView3;
         this.footerContainer = linearLayout5;
         this.footerText = textView3;
+        this.imageBlurBg = frameLayout;
         this.inlineMediaContainer = constraintLayout;
         this.inlineMediaView = embedViewResizingMediaView;
         this.inlineMediaView2 = embedViewResizingMediaView2;
@@ -108,40 +111,44 @@ public final class EmbedViewBinding {
                                                     i10 = R.id.footer_text;
                                                     TextView textView3 = (TextView) a.a(view, i10);
                                                     if (textView3 != null) {
-                                                        i10 = R.id.inline_media_container;
-                                                        ConstraintLayout constraintLayout = (ConstraintLayout) a.a(view, i10);
-                                                        if (constraintLayout != null) {
-                                                            i10 = R.id.inline_media_view;
-                                                            EmbedViewResizingMediaView embedViewResizingMediaView = (EmbedViewResizingMediaView) a.a(view, i10);
-                                                            if (embedViewResizingMediaView != null) {
-                                                                i10 = R.id.inline_media_view2;
-                                                                EmbedViewResizingMediaView embedViewResizingMediaView2 = (EmbedViewResizingMediaView) a.a(view, i10);
-                                                                if (embedViewResizingMediaView2 != null) {
-                                                                    i10 = R.id.inline_media_view3;
-                                                                    EmbedViewResizingMediaView embedViewResizingMediaView3 = (EmbedViewResizingMediaView) a.a(view, i10);
-                                                                    if (embedViewResizingMediaView3 != null) {
-                                                                        i10 = R.id.inline_media_view4;
-                                                                        EmbedViewResizingMediaView embedViewResizingMediaView4 = (EmbedViewResizingMediaView) a.a(view, i10);
-                                                                        if (embedViewResizingMediaView4 != null) {
-                                                                            i10 = R.id.media_view;
-                                                                            EmbedViewResizingMediaView embedViewResizingMediaView5 = (EmbedViewResizingMediaView) a.a(view, i10);
-                                                                            if (embedViewResizingMediaView5 != null) {
-                                                                                i10 = R.id.provider;
-                                                                                SimpleDraweeSpanTextView simpleDraweeSpanTextView2 = (SimpleDraweeSpanTextView) a.a(view, i10);
-                                                                                if (simpleDraweeSpanTextView2 != null) {
-                                                                                    i10 = R.id.spacer;
-                                                                                    Space space = (Space) a.a(view, i10);
-                                                                                    if (space != null) {
-                                                                                        i10 = R.id.spoiler;
-                                                                                        SpoilerView spoilerView = (SpoilerView) a.a(view, i10);
-                                                                                        if (spoilerView != null) {
-                                                                                            i10 = R.id.thumbnail;
-                                                                                            SimpleDraweeView simpleDraweeView4 = (SimpleDraweeView) a.a(view, i10);
-                                                                                            if (simpleDraweeView4 != null) {
-                                                                                                i10 = R.id.title;
-                                                                                                SimpleDraweeSpanTextView simpleDraweeSpanTextView3 = (SimpleDraweeSpanTextView) a.a(view, i10);
-                                                                                                if (simpleDraweeSpanTextView3 != null) {
-                                                                                                    return new EmbedViewBinding(view, simpleDraweeView, linearLayout, textView, a10, simpleDraweeSpanTextView, textView2, simpleDraweeView2, linearLayout2, linearLayout3, linearLayout4, simpleDraweeView3, linearLayout5, textView3, constraintLayout, embedViewResizingMediaView, embedViewResizingMediaView2, embedViewResizingMediaView3, embedViewResizingMediaView4, embedViewResizingMediaView5, simpleDraweeSpanTextView2, space, spoilerView, simpleDraweeView4, simpleDraweeSpanTextView3);
+                                                        i10 = R.id.image_blur_bg;
+                                                        FrameLayout frameLayout = (FrameLayout) a.a(view, i10);
+                                                        if (frameLayout != null) {
+                                                            i10 = R.id.inline_media_container;
+                                                            ConstraintLayout constraintLayout = (ConstraintLayout) a.a(view, i10);
+                                                            if (constraintLayout != null) {
+                                                                i10 = R.id.inline_media_view;
+                                                                EmbedViewResizingMediaView embedViewResizingMediaView = (EmbedViewResizingMediaView) a.a(view, i10);
+                                                                if (embedViewResizingMediaView != null) {
+                                                                    i10 = R.id.inline_media_view2;
+                                                                    EmbedViewResizingMediaView embedViewResizingMediaView2 = (EmbedViewResizingMediaView) a.a(view, i10);
+                                                                    if (embedViewResizingMediaView2 != null) {
+                                                                        i10 = R.id.inline_media_view3;
+                                                                        EmbedViewResizingMediaView embedViewResizingMediaView3 = (EmbedViewResizingMediaView) a.a(view, i10);
+                                                                        if (embedViewResizingMediaView3 != null) {
+                                                                            i10 = R.id.inline_media_view4;
+                                                                            EmbedViewResizingMediaView embedViewResizingMediaView4 = (EmbedViewResizingMediaView) a.a(view, i10);
+                                                                            if (embedViewResizingMediaView4 != null) {
+                                                                                i10 = R.id.media_view;
+                                                                                EmbedViewResizingMediaView embedViewResizingMediaView5 = (EmbedViewResizingMediaView) a.a(view, i10);
+                                                                                if (embedViewResizingMediaView5 != null) {
+                                                                                    i10 = R.id.provider;
+                                                                                    SimpleDraweeSpanTextView simpleDraweeSpanTextView2 = (SimpleDraweeSpanTextView) a.a(view, i10);
+                                                                                    if (simpleDraweeSpanTextView2 != null) {
+                                                                                        i10 = R.id.spacer;
+                                                                                        Space space = (Space) a.a(view, i10);
+                                                                                        if (space != null) {
+                                                                                            i10 = R.id.spoiler;
+                                                                                            SpoilerView spoilerView = (SpoilerView) a.a(view, i10);
+                                                                                            if (spoilerView != null) {
+                                                                                                i10 = R.id.thumbnail;
+                                                                                                SimpleDraweeView simpleDraweeView4 = (SimpleDraweeView) a.a(view, i10);
+                                                                                                if (simpleDraweeView4 != null) {
+                                                                                                    i10 = R.id.title;
+                                                                                                    SimpleDraweeSpanTextView simpleDraweeSpanTextView3 = (SimpleDraweeSpanTextView) a.a(view, i10);
+                                                                                                    if (simpleDraweeSpanTextView3 != null) {
+                                                                                                        return new EmbedViewBinding(view, simpleDraweeView, linearLayout, textView, a10, simpleDraweeSpanTextView, textView2, simpleDraweeView2, linearLayout2, linearLayout3, linearLayout4, simpleDraweeView3, linearLayout5, textView3, frameLayout, constraintLayout, embedViewResizingMediaView, embedViewResizingMediaView2, embedViewResizingMediaView3, embedViewResizingMediaView4, embedViewResizingMediaView5, simpleDraweeSpanTextView2, space, spoilerView, simpleDraweeView4, simpleDraweeSpanTextView3);
+                                                                                                    }
                                                                                                 }
                                                                                             }
                                                                                         }

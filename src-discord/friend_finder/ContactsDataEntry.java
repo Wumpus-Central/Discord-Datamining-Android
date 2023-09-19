@@ -102,7 +102,7 @@ public final class ContactsDataEntry {
         output.y(serialDesc, 2, self.contactMethodType);
         output.h(serialDesc, 3, new v1(f0.b(ContactName.class), ContactName$$serializer.INSTANCE), self.contactNames);
         output.x(serialDesc, 4, self.hasImageData);
-        output.h(serialDesc, 5, new v1(f0.b(String.class), a2.f30574a), self.deviceContactIds);
+        output.h(serialDesc, 5, new v1(f0.b(String.class), a2.f30576a), self.deviceContactIds);
     }
 
     public final String component1() {

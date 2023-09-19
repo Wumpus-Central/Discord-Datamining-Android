@@ -47,7 +47,7 @@ public final class HandleDeleteMessage {
             n1.b(i10, 11, HandleDeleteMessage$$serializer.INSTANCE.getDescriptor());
         }
         this.f7241id = str;
-        this.channelId = channelId.m607unboximpl();
+        this.channelId = channelId.m614unboximpl();
         if ((i10 & 4) == 0) {
             this.loggingName = null;
         } else {
@@ -90,13 +90,13 @@ public final class HandleDeleteMessage {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z10 = false;
-        output.h(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m624boximpl(self.f7241id));
-        output.h(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m598boximpl(self.channelId));
+        output.h(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m631boximpl(self.f7241id));
+        output.h(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m605boximpl(self.channelId));
         if (output.z(serialDesc, 2) || self.loggingName != null) {
             z10 = true;
         }
         if (z10) {
-            output.e(serialDesc, 2, a2.f30574a, self.loggingName);
+            output.e(serialDesc, 2, a2.f30576a, self.loggingName);
         }
         output.h(serialDesc, 3, HandleDeleteMessageAuthor$$serializer.INSTANCE, self.author);
     }
@@ -134,7 +134,7 @@ public final class HandleDeleteMessage {
             return false;
         }
         HandleDeleteMessage handleDeleteMessage = (HandleDeleteMessage) obj;
-        return MessageId.m628equalsimpl0(this.f7241id, handleDeleteMessage.f7241id) && ChannelId.m602equalsimpl0(this.channelId, handleDeleteMessage.channelId) && q.c(this.loggingName, handleDeleteMessage.loggingName) && q.c(this.author, handleDeleteMessage.author);
+        return MessageId.m635equalsimpl0(this.f7241id, handleDeleteMessage.f7241id) && ChannelId.m609equalsimpl0(this.channelId, handleDeleteMessage.channelId) && q.c(this.loggingName, handleDeleteMessage.loggingName) && q.c(this.author, handleDeleteMessage.author);
     }
 
     public final HandleDeleteMessageAuthor getAuthor() {
@@ -156,14 +156,14 @@ public final class HandleDeleteMessage {
     }
 
     public int hashCode() {
-        int i10 = ((MessageId.m629hashCodeimpl(this.f7241id) * 31) + ChannelId.m603hashCodeimpl(this.channelId)) * 31;
+        int i10 = ((MessageId.m636hashCodeimpl(this.f7241id) * 31) + ChannelId.m610hashCodeimpl(this.channelId)) * 31;
         String str = this.loggingName;
         return ((i10 + (str == null ? 0 : str.hashCode())) * 31) + this.author.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m630toStringimpl(this.f7241id);
-        String str2 = ChannelId.m605toStringimpl(this.channelId);
+        String str = MessageId.m637toStringimpl(this.f7241id);
+        String str2 = ChannelId.m612toStringimpl(this.channelId);
         String str3 = this.loggingName;
         HandleDeleteMessageAuthor handleDeleteMessageAuthor = this.author;
         return "HandleDeleteMessage(id=" + str + ", channelId=" + str2 + ", loggingName=" + str3 + ", author=" + handleDeleteMessageAuthor + ")";

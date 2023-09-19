@@ -24,9 +24,10 @@ public final class SpoilerContentNode$$serializer implements f0<SpoilerContentNo
     static {
         SpoilerContentNode$$serializer spoilerContentNode$$serializer = new SpoilerContentNode$$serializer();
         INSTANCE = spoilerContentNode$$serializer;
-        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("spoiler", spoilerContentNode$$serializer, 2);
+        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("spoiler", spoilerContentNode$$serializer, 3);
         pluginGeneratedSerialDescriptor.l("content", false);
         pluginGeneratedSerialDescriptor.l("spoilerOrNull", true);
+        pluginGeneratedSerialDescriptor.l("obscureOrNull", true);
         descriptor = pluginGeneratedSerialDescriptor;
     }
 
@@ -35,45 +36,54 @@ public final class SpoilerContentNode$$serializer implements f0<SpoilerContentNo
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{new f(ContentNodeSerializer.INSTANCE), a2.f30574a};
+        a2 a2Var = a2.f30576a;
+        return new KSerializer[]{new f(ContentNodeSerializer.INSTANCE), a2Var, a2Var};
     }
 
     @Override 
     public SpoilerContentNode deserialize(Decoder decoder) {
-        int i10;
         String str;
+        String str2;
+        int i10;
         Object obj;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
         c b10 = decoder.b(descriptor2);
+        Object obj2 = null;
         if (b10.p()) {
             obj = b10.y(descriptor2, 0, new f(ContentNodeSerializer.INSTANCE), null);
-            str = b10.m(descriptor2, 1);
-            i10 = 3;
+            str2 = b10.m(descriptor2, 1);
+            str = b10.m(descriptor2, 2);
+            i10 = 7;
         } else {
             boolean z10 = true;
             int i11 = 0;
-            obj = null;
-            String str2 = null;
+            String str3 = null;
+            String str4 = null;
             while (z10) {
                 int o10 = b10.o(descriptor2);
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    obj = b10.y(descriptor2, 0, new f(ContentNodeSerializer.INSTANCE), obj);
+                    obj2 = b10.y(descriptor2, 0, new f(ContentNodeSerializer.INSTANCE), obj2);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    str2 = b10.m(descriptor2, 1);
+                    str3 = b10.m(descriptor2, 1);
                     i11 |= 2;
+                } else if (o10 == 2) {
+                    str4 = b10.m(descriptor2, 2);
+                    i11 |= 4;
                 } else {
                     throw new n(o10);
                 }
             }
-            str = str2;
             i10 = i11;
+            obj = obj2;
+            str2 = str3;
+            str = str4;
         }
         b10.c(descriptor2);
-        return new SpoilerContentNode(i10, (List) obj, str, null);
+        return new SpoilerContentNode(i10, (List) obj, str2, str, null);
     }
 
     @Override 

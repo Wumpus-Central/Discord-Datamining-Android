@@ -20,15 +20,15 @@ public final class IntervalFlowKt {
     }
 
     
-    public static final Flow<Unit> m500intervalFlowQTBD994(long j10, long j11) {
+    public static final Flow<Unit> m507intervalFlowQTBD994(long j10, long j11) {
         return d.e(new IntervalFlowKt$intervalFlow$1(j11, j10, null));
     }
 
     
-    public static  Flow m501intervalFlowQTBD994$default(long j10, long j11, int i10, Object obj) {
+    public static  Flow m508intervalFlowQTBD994$default(long j10, long j11, int i10, Object obj) {
         if ((i10 & 2) != 0) {
             j11 = j10;
         }
-        return m500intervalFlowQTBD994(j10, j11);
+        return m507intervalFlowQTBD994(j10, j11);
     }
 }

@@ -8,15 +8,12 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import kotlin.text.o;
 import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.webrtc.MediaStreamTrack;
 import ui.f;
-import xi.n1;
 
 @f
-@Metadata(d1 = {"\u0000\u0086\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\bJ\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 \u0082\u00012\u00020\u0001:\u0004\u0081\u0001\u0082\u0001B±\u0002\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r\u0012\u000e\u0010\u000e\u001a\n\u0012\u0004\u0012\u00020\u0010\u0018\u00010\u000f\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015\u0012\u000e\u0010\u0016\u001a\n\u0012\u0004\u0012\u00020\u0015\u0018\u00010\u000f\u0012\b\u0010\u0017\u001a\u0004\u0018\u00010\u0015\u0012\b\u0010\u0018\u001a\u0004\u0018\u00010\u0019\u0012\b\u0010\u001a\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u001b\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u001c\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u001d\u001a\u0004\u0018\u00010\u001e\u0012\b\u0010\u001f\u001a\u0004\u0018\u00010 \u0012\b\u0010!\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\"\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010#\u001a\u0004\u0018\u00010$\u0012\b\u0010%\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010&\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010'\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010(\u001a\u00020\u0003\u0012\b\u0010)\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010*\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010+\u001a\u0004\u0018\u00010,¢\u0006\u0002\u0010-BÃ\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\r\u0012\u0010\b\u0002\u0010\u000e\u001a\n\u0012\u0004\u0012\u00020\u0010\u0018\u00010\u000f\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u0015\u0012\u0010\b\u0002\u0010\u0016\u001a\n\u0012\u0004\u0012\u00020\u0015\u0018\u00010\u000f\u0012\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u0015\u0012\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0019\u0012\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u001e\u0012\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010 \u0012\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\"\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010#\u001a\u0004\u0018\u00010$\u0012\n\b\u0003\u0010%\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0003\u0010&\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0003\u0010'\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0001\u0010(\u001a\u00020\u0003\u0012\n\b\u0003\u0010)\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010.J\t\u0010Y\u001a\u00020\u0005HÆ\u0003J\u000b\u0010Z\u001a\u0004\u0018\u00010\u0015HÆ\u0003J\u0011\u0010[\u001a\n\u0012\u0004\u0012\u00020\u0015\u0018\u00010\u000fHÆ\u0003J\u000b\u0010\\\u001a\u0004\u0018\u00010\u0015HÆ\u0003J\u000b\u0010]\u001a\u0004\u0018\u00010\u0019HÆ\u0003J\u000b\u0010^\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010_\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010`\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u0010\u0010a\u001a\u0004\u0018\u00010\u001eHÆ\u0003¢\u0006\u0002\u0010<J\u000b\u0010b\u001a\u0004\u0018\u00010 HÆ\u0003J\u000b\u0010c\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010d\u001a\u0004\u0018\u00010\u0007HÆ\u0003J\u000b\u0010e\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010f\u001a\u0004\u0018\u00010$HÆ\u0003J\u0010\u0010g\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u00104J\u0010\u0010h\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u00104J\u0010\u0010i\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u00104J\t\u0010j\u001a\u00020\u0003HÆ\u0003J\u0010\u0010k\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u00104J\u000b\u0010l\u001a\u0004\u0018\u00010\tHÆ\u0003J\u000b\u0010m\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010n\u001a\u0004\u0018\u00010\rHÆ\u0003J\u0011\u0010o\u001a\n\u0012\u0004\u0012\u00020\u0010\u0018\u00010\u000fHÆ\u0003J\u000b\u0010p\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010q\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010r\u001a\u0004\u0018\u00010\rHÆ\u0003JÎ\u0002\u0010s\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\r2\u0010\b\u0002\u0010\u000e\u001a\n\u0012\u0004\u0012\u00020\u0010\u0018\u00010\u000f2\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u00152\u0010\b\u0002\u0010\u0016\u001a\n\u0012\u0004\u0012\u00020\u0015\u0018\u00010\u000f2\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00152\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010 2\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\"\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010#\u001a\u0004\u0018\u00010$2\n\b\u0003\u0010%\u001a\u0004\u0018\u00010\u00032\n\b\u0003\u0010&\u001a\u0004\u0018\u00010\u00032\n\b\u0003\u0010'\u001a\u0004\u0018\u00010\u00032\b\b\u0003\u0010(\u001a\u00020\u00032\n\b\u0003\u0010)\u001a\u0004\u0018\u00010\u0003HÆ\u0001¢\u0006\u0002\u0010tJ\u0013\u0010u\u001a\u00020\u001e2\b\u0010v\u001a\u0004\u0018\u00010wHÖ\u0003J\t\u0010x\u001a\u00020\u0003HÖ\u0001J\t\u0010y\u001a\u00020\u000bHÖ\u0001J\"\u0010z\u001a\u00020{2\u0006\u0010|\u001a\u00020\u00002\u0006\u0010}\u001a\u00020~2\u0007\u0010\u007f\u001a\u00030\u0080\u0001HÇ\u0001R\u0013\u0010\u001b\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\b/\u00100R\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\b\n\u0000\u001a\u0004\b1\u00102R\u0015\u0010)\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u00105\u001a\u0004\b3\u00104R\u0011\u0010(\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b6\u00107R\u0015\u0010&\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u00105\u001a\u0004\b8\u00104R\u0013\u0010\u0013\u001a\u0004\u0018\u00010\r¢\u0006\b\n\u0000\u001a\u0004\b9\u0010:R\u0015\u0010\u001d\u001a\u0004\u0018\u00010\u001e¢\u0006\n\n\u0002\u0010=\u001a\u0004\b;\u0010<R\u0013\u0010#\u001a\u0004\u0018\u00010$¢\u0006\b\n\u0000\u001a\u0004\b>\u0010?R\u0019\u0010\u000e\u001a\n\u0012\u0004\u0012\u00020\u0010\u0018\u00010\u000f¢\u0006\b\n\u0000\u001a\u0004\b@\u0010AR\u0013\u0010\u001f\u001a\u0004\u0018\u00010 ¢\u0006\b\n\u0000\u001a\u0004\bB\u0010CR\u0015\u0010'\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u00105\u001a\u0004\bD\u00104R\u0013\u0010\"\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\bE\u00100R\u0013\u0010\u0014\u001a\u0004\u0018\u00010\u0015¢\u0006\b\n\u0000\u001a\u0004\bF\u0010GR\u0019\u0010\u0016\u001a\n\u0012\u0004\u0012\u00020\u0015\u0018\u00010\u000f¢\u0006\b\n\u0000\u001a\u0004\bH\u0010AR\u0013\u0010\u001c\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\bI\u00100R\u0013\u0010\u001a\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\bJ\u00100R\u0013\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\b\n\u0000\u001a\u0004\bK\u0010LR\u0015\u0010%\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u00105\u001a\u0004\bM\u00104R\u0013\u0010\u0012\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\bN\u00100R\u0013\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\bO\u00100R\u0013\u0010!\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\bP\u00100R\u0016\u0010*\u001a\u0004\u0018\u00010\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bQ\u00100R\u0013\u0010\u0018\u001a\u0004\u0018\u00010\u0019¢\u0006\b\n\u0000\u001a\u0004\bR\u0010SR\u0013\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\b\n\u0000\u001a\u0004\bT\u0010:R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\bU\u0010VR\u0013\u0010\u0011\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\bW\u00100R\u0013\u0010\u0017\u001a\u0004\u0018\u00010\u0015¢\u0006\b\n\u0000\u001a\u0004\bX\u0010G¨\u0006\u0083\u0001"}, d2 = {"Lcom/discord/chat/bridge/embed/Embed;", "Lcom/discord/chat/bridge/spoiler/SpoilerableData;", "seen1", "", "type", "Lcom/discord/chat/bridge/embed/EmbedType;", "author", "Lcom/discord/chat/bridge/embed/EmbedAuthor;", "provider", "Lcom/discord/chat/bridge/embed/EmbedProvider;", "rawTitle", "", "title", "Lcom/discord/chat/bridge/structurabletext/StructurableText;", "fields", "", "Lcom/discord/chat/bridge/embed/EmbedField;", "url", "rawDescription", "description", "image", "Lcom/discord/chat/bridge/embed/EmbedMedia;", "images", MediaStreamTrack.VIDEO_TRACK_KIND, "thumbnail", "Lcom/discord/chat/bridge/embed/EmbedThumbnail;", "numAttachments", "attachmentsSize", "messageSendError", "disableBackgroundColor", "", "footer", "Lcom/discord/chat/bridge/embed/EmbedFooter;", "spoiler", "iconURL", "failureState", "Lcom/discord/chat/bridge/embed/EmbedFailureState;", "providerColor", ViewProps.BORDER_LEFT_COLOR, "headerTextColor", "bodyTextColor", ViewProps.BACKGROUND_COLOR, "spoilerOrNull", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/chat/bridge/embed/EmbedType;Lcom/discord/chat/bridge/embed/EmbedAuthor;Lcom/discord/chat/bridge/embed/EmbedProvider;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Lcom/discord/chat/bridge/embed/EmbedMedia;Ljava/util/List;Lcom/discord/chat/bridge/embed/EmbedMedia;Lcom/discord/chat/bridge/embed/EmbedThumbnail;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lcom/discord/chat/bridge/embed/EmbedFooter;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/embed/EmbedFailureState;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;ILjava/lang/Integer;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Lcom/discord/chat/bridge/embed/EmbedType;Lcom/discord/chat/bridge/embed/EmbedAuthor;Lcom/discord/chat/bridge/embed/EmbedProvider;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Lcom/discord/chat/bridge/embed/EmbedMedia;Ljava/util/List;Lcom/discord/chat/bridge/embed/EmbedMedia;Lcom/discord/chat/bridge/embed/EmbedThumbnail;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lcom/discord/chat/bridge/embed/EmbedFooter;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/embed/EmbedFailureState;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;ILjava/lang/Integer;)V", "getAttachmentsSize", "()Ljava/lang/String;", "getAuthor", "()Lcom/discord/chat/bridge/embed/EmbedAuthor;", "getBackgroundColor", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getBodyTextColor", "()I", "getBorderLeftColor", "getDescription", "()Lcom/discord/chat/bridge/structurabletext/StructurableText;", "getDisableBackgroundColor", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getFailureState", "()Lcom/discord/chat/bridge/embed/EmbedFailureState;", "getFields", "()Ljava/util/List;", "getFooter", "()Lcom/discord/chat/bridge/embed/EmbedFooter;", "getHeaderTextColor", "getIconURL", "getImage", "()Lcom/discord/chat/bridge/embed/EmbedMedia;", "getImages", "getMessageSendError", "getNumAttachments", "getProvider", "()Lcom/discord/chat/bridge/embed/EmbedProvider;", "getProviderColor", "getRawDescription", "getRawTitle", "getSpoiler", "getSpoilerOrNull", "getThumbnail", "()Lcom/discord/chat/bridge/embed/EmbedThumbnail;", "getTitle", "getType", "()Lcom/discord/chat/bridge/embed/EmbedType;", "getUrl", "getVideo", "component1", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "component18", "component19", "component2", "component20", "component21", "component22", "component23", "component24", "component25", "component26", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "(Lcom/discord/chat/bridge/embed/EmbedType;Lcom/discord/chat/bridge/embed/EmbedAuthor;Lcom/discord/chat/bridge/embed/EmbedProvider;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Lcom/discord/chat/bridge/embed/EmbedMedia;Ljava/util/List;Lcom/discord/chat/bridge/embed/EmbedMedia;Lcom/discord/chat/bridge/embed/EmbedThumbnail;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lcom/discord/chat/bridge/embed/EmbedFooter;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/embed/EmbedFailureState;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;ILjava/lang/Integer;)Lcom/discord/chat/bridge/embed/Embed;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000\u0086\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\bM\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 \u0087\u00012\u00020\u0001:\u0004\u0086\u0001\u0087\u0001BÅ\u0002\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r\u0012\u000e\u0010\u000e\u001a\n\u0012\u0004\u0012\u00020\u0010\u0018\u00010\u000f\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015\u0012\u000e\u0010\u0016\u001a\n\u0012\u0004\u0012\u00020\u0015\u0018\u00010\u000f\u0012\b\u0010\u0017\u001a\u0004\u0018\u00010\u0015\u0012\b\u0010\u0018\u001a\u0004\u0018\u00010\u0019\u0012\b\u0010\u001a\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u001b\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u001c\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u001d\u001a\u0004\u0018\u00010\u001e\u0012\b\u0010\u001f\u001a\u0004\u0018\u00010 \u0012\b\u0010!\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\"\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010#\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010$\u001a\u0004\u0018\u00010%\u0012\b\u0010&\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010'\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010(\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010)\u001a\u00020\u0003\u0012\b\u0010*\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010+\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010,\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010-\u001a\u0004\u0018\u00010.¢\u0006\u0002\u0010/BÏ\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\r\u0012\u0010\b\u0002\u0010\u000e\u001a\n\u0012\u0004\u0012\u00020\u0010\u0018\u00010\u000f\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u0015\u0012\u0010\b\u0002\u0010\u0016\u001a\n\u0012\u0004\u0012\u00020\u0015\u0018\u00010\u000f\u0012\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u0015\u0012\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0019\u0012\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u001e\u0012\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010 \u0012\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\"\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010#\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010$\u001a\u0004\u0018\u00010%\u0012\n\b\u0003\u0010&\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0003\u0010'\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0003\u0010(\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0001\u0010)\u001a\u00020\u0003\u0012\n\b\u0003\u0010*\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u00100J\t\u0010]\u001a\u00020\u0005HÆ\u0003J\u000b\u0010^\u001a\u0004\u0018\u00010\u0015HÆ\u0003J\u0011\u0010_\u001a\n\u0012\u0004\u0012\u00020\u0015\u0018\u00010\u000fHÆ\u0003J\u000b\u0010`\u001a\u0004\u0018\u00010\u0015HÆ\u0003J\u000b\u0010a\u001a\u0004\u0018\u00010\u0019HÆ\u0003J\u000b\u0010b\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010c\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010d\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u0010\u0010e\u001a\u0004\u0018\u00010\u001eHÆ\u0003¢\u0006\u0002\u0010>J\u000b\u0010f\u001a\u0004\u0018\u00010 HÆ\u0003J\u000b\u0010g\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010h\u001a\u0004\u0018\u00010\u0007HÆ\u0003J\u000b\u0010i\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010j\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010k\u001a\u0004\u0018\u00010%HÆ\u0003J\u0010\u0010l\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u00106J\u0010\u0010m\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u00106J\u0010\u0010n\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u00106J\t\u0010o\u001a\u00020\u0003HÆ\u0003J\u0010\u0010p\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u00106J\u000b\u0010q\u001a\u0004\u0018\u00010\tHÆ\u0003J\u000b\u0010r\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010s\u001a\u0004\u0018\u00010\rHÆ\u0003J\u0011\u0010t\u001a\n\u0012\u0004\u0012\u00020\u0010\u0018\u00010\u000fHÆ\u0003J\u000b\u0010u\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010v\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010w\u001a\u0004\u0018\u00010\rHÆ\u0003JÚ\u0002\u0010x\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\r2\u0010\b\u0002\u0010\u000e\u001a\n\u0012\u0004\u0012\u00020\u0010\u0018\u00010\u000f2\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u00152\u0010\b\u0002\u0010\u0016\u001a\n\u0012\u0004\u0012\u00020\u0015\u0018\u00010\u000f2\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00152\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010 2\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\"\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010#\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010$\u001a\u0004\u0018\u00010%2\n\b\u0003\u0010&\u001a\u0004\u0018\u00010\u00032\n\b\u0003\u0010'\u001a\u0004\u0018\u00010\u00032\n\b\u0003\u0010(\u001a\u0004\u0018\u00010\u00032\b\b\u0003\u0010)\u001a\u00020\u00032\n\b\u0003\u0010*\u001a\u0004\u0018\u00010\u0003HÆ\u0001¢\u0006\u0002\u0010yJ\u0013\u0010z\u001a\u00020\u001e2\b\u0010{\u001a\u0004\u0018\u00010|HÖ\u0003J\t\u0010}\u001a\u00020\u0003HÖ\u0001J\t\u0010~\u001a\u00020\u000bHÖ\u0001J'\u0010\u007f\u001a\u00030\u0080\u00012\u0007\u0010\u0081\u0001\u001a\u00020\u00002\b\u0010\u0082\u0001\u001a\u00030\u0083\u00012\b\u0010\u0084\u0001\u001a\u00030\u0085\u0001HÇ\u0001R\u0013\u0010\u001b\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\b1\u00102R\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\b\n\u0000\u001a\u0004\b3\u00104R\u0015\u0010*\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u00107\u001a\u0004\b5\u00106R\u0011\u0010)\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b8\u00109R\u0015\u0010'\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u00107\u001a\u0004\b:\u00106R\u0013\u0010\u0013\u001a\u0004\u0018\u00010\r¢\u0006\b\n\u0000\u001a\u0004\b;\u0010<R\u0015\u0010\u001d\u001a\u0004\u0018\u00010\u001e¢\u0006\n\n\u0002\u0010?\u001a\u0004\b=\u0010>R\u0013\u0010$\u001a\u0004\u0018\u00010%¢\u0006\b\n\u0000\u001a\u0004\b@\u0010AR\u0019\u0010\u000e\u001a\n\u0012\u0004\u0012\u00020\u0010\u0018\u00010\u000f¢\u0006\b\n\u0000\u001a\u0004\bB\u0010CR\u0013\u0010\u001f\u001a\u0004\u0018\u00010 ¢\u0006\b\n\u0000\u001a\u0004\bD\u0010ER\u0015\u0010(\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u00107\u001a\u0004\bF\u00106R\u0013\u0010#\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\bG\u00102R\u0013\u0010\u0014\u001a\u0004\u0018\u00010\u0015¢\u0006\b\n\u0000\u001a\u0004\bH\u0010IR\u0019\u0010\u0016\u001a\n\u0012\u0004\u0012\u00020\u0015\u0018\u00010\u000f¢\u0006\b\n\u0000\u001a\u0004\bJ\u0010CR\u0013\u0010\u001c\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\bK\u00102R\u0013\u0010\u001a\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\bL\u00102R\u0013\u0010\"\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\bM\u00102R\u0016\u0010,\u001a\u0004\u0018\u00010\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bN\u00102R\u0013\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\b\n\u0000\u001a\u0004\bO\u0010PR\u0015\u0010&\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u00107\u001a\u0004\bQ\u00106R\u0013\u0010\u0012\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\bR\u00102R\u0013\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\bS\u00102R\u0013\u0010!\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\bT\u00102R\u0016\u0010+\u001a\u0004\u0018\u00010\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bU\u00102R\u0013\u0010\u0018\u001a\u0004\u0018\u00010\u0019¢\u0006\b\n\u0000\u001a\u0004\bV\u0010WR\u0013\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\b\n\u0000\u001a\u0004\bX\u0010<R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\bY\u0010ZR\u0013\u0010\u0011\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\b[\u00102R\u0013\u0010\u0017\u001a\u0004\u0018\u00010\u0015¢\u0006\b\n\u0000\u001a\u0004\b\\\u0010I¨\u0006\u0088\u0001"}, d2 = {"Lcom/discord/chat/bridge/embed/Embed;", "Lcom/discord/chat/bridge/spoiler/SpoilerableData;", "seen1", "", "type", "Lcom/discord/chat/bridge/embed/EmbedType;", "author", "Lcom/discord/chat/bridge/embed/EmbedAuthor;", "provider", "Lcom/discord/chat/bridge/embed/EmbedProvider;", "rawTitle", "", "title", "Lcom/discord/chat/bridge/structurabletext/StructurableText;", "fields", "", "Lcom/discord/chat/bridge/embed/EmbedField;", "url", "rawDescription", "description", "image", "Lcom/discord/chat/bridge/embed/EmbedMedia;", "images", MediaStreamTrack.VIDEO_TRACK_KIND, "thumbnail", "Lcom/discord/chat/bridge/embed/EmbedThumbnail;", "numAttachments", "attachmentsSize", "messageSendError", "disableBackgroundColor", "", "footer", "Lcom/discord/chat/bridge/embed/EmbedFooter;", "spoiler", "obscure", "iconURL", "failureState", "Lcom/discord/chat/bridge/embed/EmbedFailureState;", "providerColor", ViewProps.BORDER_LEFT_COLOR, "headerTextColor", "bodyTextColor", ViewProps.BACKGROUND_COLOR, "spoilerOrNull", "obscureOrNull", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/chat/bridge/embed/EmbedType;Lcom/discord/chat/bridge/embed/EmbedAuthor;Lcom/discord/chat/bridge/embed/EmbedProvider;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Lcom/discord/chat/bridge/embed/EmbedMedia;Ljava/util/List;Lcom/discord/chat/bridge/embed/EmbedMedia;Lcom/discord/chat/bridge/embed/EmbedThumbnail;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lcom/discord/chat/bridge/embed/EmbedFooter;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/embed/EmbedFailureState;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;ILjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Lcom/discord/chat/bridge/embed/EmbedType;Lcom/discord/chat/bridge/embed/EmbedAuthor;Lcom/discord/chat/bridge/embed/EmbedProvider;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Lcom/discord/chat/bridge/embed/EmbedMedia;Ljava/util/List;Lcom/discord/chat/bridge/embed/EmbedMedia;Lcom/discord/chat/bridge/embed/EmbedThumbnail;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lcom/discord/chat/bridge/embed/EmbedFooter;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/embed/EmbedFailureState;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;ILjava/lang/Integer;)V", "getAttachmentsSize", "()Ljava/lang/String;", "getAuthor", "()Lcom/discord/chat/bridge/embed/EmbedAuthor;", "getBackgroundColor", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getBodyTextColor", "()I", "getBorderLeftColor", "getDescription", "()Lcom/discord/chat/bridge/structurabletext/StructurableText;", "getDisableBackgroundColor", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getFailureState", "()Lcom/discord/chat/bridge/embed/EmbedFailureState;", "getFields", "()Ljava/util/List;", "getFooter", "()Lcom/discord/chat/bridge/embed/EmbedFooter;", "getHeaderTextColor", "getIconURL", "getImage", "()Lcom/discord/chat/bridge/embed/EmbedMedia;", "getImages", "getMessageSendError", "getNumAttachments", "getObscure", "getObscureOrNull", "getProvider", "()Lcom/discord/chat/bridge/embed/EmbedProvider;", "getProviderColor", "getRawDescription", "getRawTitle", "getSpoiler", "getSpoilerOrNull", "getThumbnail", "()Lcom/discord/chat/bridge/embed/EmbedThumbnail;", "getTitle", "getType", "()Lcom/discord/chat/bridge/embed/EmbedType;", "getUrl", "getVideo", "component1", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "component18", "component19", "component2", "component20", "component21", "component22", "component23", "component24", "component25", "component26", "component27", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "(Lcom/discord/chat/bridge/embed/EmbedType;Lcom/discord/chat/bridge/embed/EmbedAuthor;Lcom/discord/chat/bridge/embed/EmbedProvider;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Lcom/discord/chat/bridge/embed/EmbedMedia;Ljava/util/List;Lcom/discord/chat/bridge/embed/EmbedMedia;Lcom/discord/chat/bridge/embed/EmbedThumbnail;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lcom/discord/chat/bridge/embed/EmbedFooter;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/embed/EmbedFailureState;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;ILjava/lang/Integer;)Lcom/discord/chat/bridge/embed/Embed;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
 public final class Embed implements SpoilerableData {
     public static final Companion Companion = new Companion(null);
@@ -36,6 +33,8 @@ public final class Embed implements SpoilerableData {
     private final List<EmbedMedia> images;
     private final String messageSendError;
     private final String numAttachments;
+    private final String obscure;
+    private final String obscureOrNull;
     private final EmbedProvider provider;
     private final Integer providerColor;
     private final String rawDescription;
@@ -63,152 +62,21 @@ public final class Embed implements SpoilerableData {
         }
     }
 
-    public  Embed(int i10, EmbedType embedType, EmbedAuthor embedAuthor, EmbedProvider embedProvider, String str, StructurableText structurableText, List list, String str2, String str3, StructurableText structurableText2, EmbedMedia embedMedia, List list2, EmbedMedia embedMedia2, EmbedThumbnail embedThumbnail, String str4, String str5, String str6, Boolean bool, EmbedFooter embedFooter, String str7, String str8, EmbedFailureState embedFailureState, Integer num, Integer num2, Integer num3, int i11, Integer num4, String str9, SerializationConstructorMarker serializationConstructorMarker) {
-        boolean w10;
-        if (16777217 != (i10 & 16777217)) {
-            n1.b(i10, 16777217, Embed$$serializer.INSTANCE.getDescriptor());
-        }
-        this.type = embedType;
-        String str10 = null;
-        if ((i10 & 2) == 0) {
-            this.author = null;
-        } else {
-            this.author = embedAuthor;
-        }
-        if ((i10 & 4) == 0) {
-            this.provider = null;
-        } else {
-            this.provider = embedProvider;
-        }
-        if ((i10 & 8) == 0) {
-            this.rawTitle = null;
-        } else {
-            this.rawTitle = str;
-        }
-        if ((i10 & 16) == 0) {
-            this.title = null;
-        } else {
-            this.title = structurableText;
-        }
-        if ((i10 & 32) == 0) {
-            this.fields = null;
-        } else {
-            this.fields = list;
-        }
-        if ((i10 & 64) == 0) {
-            this.url = null;
-        } else {
-            this.url = str2;
-        }
-        if ((i10 & 128) == 0) {
-            this.rawDescription = null;
-        } else {
-            this.rawDescription = str3;
-        }
-        if ((i10 & 256) == 0) {
-            this.description = null;
-        } else {
-            this.description = structurableText2;
-        }
-        if ((i10 & 512) == 0) {
-            this.image = null;
-        } else {
-            this.image = embedMedia;
-        }
-        if ((i10 & 1024) == 0) {
-            this.images = null;
-        } else {
-            this.images = list2;
-        }
-        if ((i10 & RecyclerView.ItemAnimator.FLAG_MOVED) == 0) {
-            this.video = null;
-        } else {
-            this.video = embedMedia2;
-        }
-        if ((i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) == 0) {
-            this.thumbnail = null;
-        } else {
-            this.thumbnail = embedThumbnail;
-        }
-        if ((i10 & 8192) == 0) {
-            this.numAttachments = null;
-        } else {
-            this.numAttachments = str4;
-        }
-        if ((i10 & 16384) == 0) {
-            this.attachmentsSize = null;
-        } else {
-            this.attachmentsSize = str5;
-        }
-        if ((32768 & i10) == 0) {
-            this.messageSendError = null;
-        } else {
-            this.messageSendError = str6;
-        }
-        if ((65536 & i10) == 0) {
-            this.disableBackgroundColor = null;
-        } else {
-            this.disableBackgroundColor = bool;
-        }
-        if ((131072 & i10) == 0) {
-            this.footer = null;
-        } else {
-            this.footer = embedFooter;
-        }
-        if ((262144 & i10) == 0) {
-            this.spoiler = null;
-        } else {
-            this.spoiler = str7;
-        }
-        if ((524288 & i10) == 0) {
-            this.iconURL = null;
-        } else {
-            this.iconURL = str8;
-        }
-        if ((1048576 & i10) == 0) {
-            this.failureState = null;
-        } else {
-            this.failureState = embedFailureState;
-        }
-        if ((2097152 & i10) == 0) {
-            this.providerColor = null;
-        } else {
-            this.providerColor = num;
-        }
-        if ((4194304 & i10) == 0) {
-            this.borderLeftColor = null;
-        } else {
-            this.borderLeftColor = num2;
-        }
-        if ((8388608 & i10) == 0) {
-            this.headerTextColor = null;
-        } else {
-            this.headerTextColor = num3;
-        }
-        this.bodyTextColor = i11;
-        if ((33554432 & i10) == 0) {
-            this.backgroundColor = null;
-        } else {
-            this.backgroundColor = num4;
-        }
-        if ((i10 & 67108864) == 0) {
-            String str11 = this.spoiler;
-            if (str11 != null) {
-                w10 = o.w(str11);
-                if (!w10) {
-                    str10 = str11;
-                }
-            }
-            this.spoilerOrNull = str10;
-            return;
-        }
-        this.spoilerOrNull = str9;
+    
+    
+    public  Embed(int r6, com.discord.chat.bridge.embed.EmbedType r7, com.discord.chat.bridge.embed.EmbedAuthor r8, com.discord.chat.bridge.embed.EmbedProvider r9, java.lang.String r10, com.discord.chat.bridge.structurabletext.StructurableText r11, java.util.List r12, java.lang.String r13, java.lang.String r14, com.discord.chat.bridge.structurabletext.StructurableText r15, com.discord.chat.bridge.embed.EmbedMedia r16, java.util.List r17, com.discord.chat.bridge.embed.EmbedMedia r18, com.discord.chat.bridge.embed.EmbedThumbnail r19, java.lang.String r20, java.lang.String r21, java.lang.String r22, java.lang.Boolean r23, com.discord.chat.bridge.embed.EmbedFooter r24, java.lang.String r25, java.lang.String r26, java.lang.String r27, com.discord.chat.bridge.embed.EmbedFailureState r28, java.lang.Integer r29, java.lang.Integer r30, java.lang.Integer r31, int r32, java.lang.Integer r33, java.lang.String r34, java.lang.String r35, kotlinx.serialization.internal.SerializationConstructorMarker r36) {
+        
+        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.bridge.embed.Embed.<init>(int, com.discord.chat.bridge.embed.EmbedType, com.discord.chat.bridge.embed.EmbedAuthor, com.discord.chat.bridge.embed.EmbedProvider, java.lang.String, com.discord.chat.bridge.structurabletext.StructurableText, java.util.List, java.lang.String, java.lang.String, com.discord.chat.bridge.structurabletext.StructurableText, com.discord.chat.bridge.embed.EmbedMedia, java.util.List, com.discord.chat.bridge.embed.EmbedMedia, com.discord.chat.bridge.embed.EmbedThumbnail, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, com.discord.chat.bridge.embed.EmbedFooter, java.lang.String, java.lang.String, java.lang.String, com.discord.chat.bridge.embed.EmbedFailureState, java.lang.Integer, java.lang.Integer, java.lang.Integer, int, java.lang.Integer, java.lang.String, java.lang.String, kotlinx.serialization.internal.SerializationConstructorMarker):void");
     }
 
     
     
     
-    public static final void write$Self(com.discord.chat.bridge.embed.Embed r5, kotlinx.serialization.encoding.CompositeEncoder r6, kotlinx.serialization.descriptors.SerialDescriptor r7) {
+    
+    
+    
+    
+    public static final void write$Self(com.discord.chat.bridge.embed.Embed r6, kotlinx.serialization.encoding.CompositeEncoder r7, kotlinx.serialization.descriptors.SerialDescriptor r8) {
         
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.bridge.embed.Embed.write$Self(com.discord.chat.bridge.embed.Embed, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor):void");
     }
@@ -262,30 +130,34 @@ public final class Embed implements SpoilerableData {
     }
 
     public final String component20() {
+        return this.obscure;
+    }
+
+    public final String component21() {
         return this.iconURL;
     }
 
-    public final EmbedFailureState component21() {
+    public final EmbedFailureState component22() {
         return this.failureState;
     }
 
-    public final Integer component22() {
+    public final Integer component23() {
         return this.providerColor;
     }
 
-    public final Integer component23() {
+    public final Integer component24() {
         return this.borderLeftColor;
     }
 
-    public final Integer component24() {
+    public final Integer component25() {
         return this.headerTextColor;
     }
 
-    public final int component25() {
+    public final int component26() {
         return this.bodyTextColor;
     }
 
-    public final Integer component26() {
+    public final Integer component27() {
         return this.backgroundColor;
     }
 
@@ -317,9 +189,9 @@ public final class Embed implements SpoilerableData {
         return this.description;
     }
 
-    public final Embed copy(EmbedType type, EmbedAuthor embedAuthor, EmbedProvider embedProvider, String str, StructurableText structurableText, List<EmbedField> list, String str2, String str3, StructurableText structurableText2, EmbedMedia embedMedia, List<EmbedMedia> list2, EmbedMedia embedMedia2, EmbedThumbnail embedThumbnail, String str4, String str5, String str6, Boolean bool, EmbedFooter embedFooter, String str7, String str8, EmbedFailureState embedFailureState, Integer num, Integer num2, Integer num3, int i10, Integer num4) {
+    public final Embed copy(EmbedType type, EmbedAuthor embedAuthor, EmbedProvider embedProvider, String str, StructurableText structurableText, List<EmbedField> list, String str2, String str3, StructurableText structurableText2, EmbedMedia embedMedia, List<EmbedMedia> list2, EmbedMedia embedMedia2, EmbedThumbnail embedThumbnail, String str4, String str5, String str6, Boolean bool, EmbedFooter embedFooter, String str7, String str8, String str9, EmbedFailureState embedFailureState, Integer num, Integer num2, Integer num3, int i10, Integer num4) {
         q.h(type, "type");
-        return new Embed(type, embedAuthor, embedProvider, str, structurableText, list, str2, str3, structurableText2, embedMedia, list2, embedMedia2, embedThumbnail, str4, str5, str6, bool, embedFooter, str7, str8, embedFailureState, num, num2, num3, i10, num4);
+        return new Embed(type, embedAuthor, embedProvider, str, structurableText, list, str2, str3, structurableText2, embedMedia, list2, embedMedia2, embedThumbnail, str4, str5, str6, bool, embedFooter, str7, str8, str9, embedFailureState, num, num2, num3, i10, num4);
     }
 
     public boolean equals(Object obj) {
@@ -330,7 +202,7 @@ public final class Embed implements SpoilerableData {
             return false;
         }
         Embed embed = (Embed) obj;
-        return this.type == embed.type && q.c(this.author, embed.author) && q.c(this.provider, embed.provider) && q.c(this.rawTitle, embed.rawTitle) && q.c(this.title, embed.title) && q.c(this.fields, embed.fields) && q.c(this.url, embed.url) && q.c(this.rawDescription, embed.rawDescription) && q.c(this.description, embed.description) && q.c(this.image, embed.image) && q.c(this.images, embed.images) && q.c(this.video, embed.video) && q.c(this.thumbnail, embed.thumbnail) && q.c(this.numAttachments, embed.numAttachments) && q.c(this.attachmentsSize, embed.attachmentsSize) && q.c(this.messageSendError, embed.messageSendError) && q.c(this.disableBackgroundColor, embed.disableBackgroundColor) && q.c(this.footer, embed.footer) && q.c(this.spoiler, embed.spoiler) && q.c(this.iconURL, embed.iconURL) && this.failureState == embed.failureState && q.c(this.providerColor, embed.providerColor) && q.c(this.borderLeftColor, embed.borderLeftColor) && q.c(this.headerTextColor, embed.headerTextColor) && this.bodyTextColor == embed.bodyTextColor && q.c(this.backgroundColor, embed.backgroundColor);
+        return this.type == embed.type && q.c(this.author, embed.author) && q.c(this.provider, embed.provider) && q.c(this.rawTitle, embed.rawTitle) && q.c(this.title, embed.title) && q.c(this.fields, embed.fields) && q.c(this.url, embed.url) && q.c(this.rawDescription, embed.rawDescription) && q.c(this.description, embed.description) && q.c(this.image, embed.image) && q.c(this.images, embed.images) && q.c(this.video, embed.video) && q.c(this.thumbnail, embed.thumbnail) && q.c(this.numAttachments, embed.numAttachments) && q.c(this.attachmentsSize, embed.attachmentsSize) && q.c(this.messageSendError, embed.messageSendError) && q.c(this.disableBackgroundColor, embed.disableBackgroundColor) && q.c(this.footer, embed.footer) && q.c(this.spoiler, embed.spoiler) && q.c(this.obscure, embed.obscure) && q.c(this.iconURL, embed.iconURL) && this.failureState == embed.failureState && q.c(this.providerColor, embed.providerColor) && q.c(this.borderLeftColor, embed.borderLeftColor) && q.c(this.headerTextColor, embed.headerTextColor) && this.bodyTextColor == embed.bodyTextColor && q.c(this.backgroundColor, embed.backgroundColor);
     }
 
     public final String getAttachmentsSize() {
@@ -395,6 +267,15 @@ public final class Embed implements SpoilerableData {
 
     public final String getNumAttachments() {
         return this.numAttachments;
+    }
+
+    public final String getObscure() {
+        return this.obscure;
+    }
+
+    @Override 
+    public String getObscureOrNull() {
+        return this.obscureOrNull;
     }
 
     public final EmbedProvider getProvider() {
@@ -481,21 +362,23 @@ public final class Embed implements SpoilerableData {
         int hashCode18 = (hashCode17 + (embedFooter == null ? 0 : embedFooter.hashCode())) * 31;
         String str7 = this.spoiler;
         int hashCode19 = (hashCode18 + (str7 == null ? 0 : str7.hashCode())) * 31;
-        String str8 = this.iconURL;
+        String str8 = this.obscure;
         int hashCode20 = (hashCode19 + (str8 == null ? 0 : str8.hashCode())) * 31;
+        String str9 = this.iconURL;
+        int hashCode21 = (hashCode20 + (str9 == null ? 0 : str9.hashCode())) * 31;
         EmbedFailureState embedFailureState = this.failureState;
-        int hashCode21 = (hashCode20 + (embedFailureState == null ? 0 : embedFailureState.hashCode())) * 31;
+        int hashCode22 = (hashCode21 + (embedFailureState == null ? 0 : embedFailureState.hashCode())) * 31;
         Integer num = this.providerColor;
-        int hashCode22 = (hashCode21 + (num == null ? 0 : num.hashCode())) * 31;
+        int hashCode23 = (hashCode22 + (num == null ? 0 : num.hashCode())) * 31;
         Integer num2 = this.borderLeftColor;
-        int hashCode23 = (hashCode22 + (num2 == null ? 0 : num2.hashCode())) * 31;
+        int hashCode24 = (hashCode23 + (num2 == null ? 0 : num2.hashCode())) * 31;
         Integer num3 = this.headerTextColor;
-        int hashCode24 = (((hashCode23 + (num3 == null ? 0 : num3.hashCode())) * 31) + this.bodyTextColor) * 31;
+        int hashCode25 = (((hashCode24 + (num3 == null ? 0 : num3.hashCode())) * 31) + this.bodyTextColor) * 31;
         Integer num4 = this.backgroundColor;
         if (num4 != null) {
             i10 = num4.hashCode();
         }
-        return hashCode24 + i10;
+        return hashCode25 + i10;
     }
 
     public String toString() {
@@ -518,56 +401,25 @@ public final class Embed implements SpoilerableData {
         Boolean bool = this.disableBackgroundColor;
         EmbedFooter embedFooter = this.footer;
         String str7 = this.spoiler;
-        String str8 = this.iconURL;
+        String str8 = this.obscure;
+        String str9 = this.iconURL;
         EmbedFailureState embedFailureState = this.failureState;
         Integer num = this.providerColor;
         Integer num2 = this.borderLeftColor;
         Integer num3 = this.headerTextColor;
         int i10 = this.bodyTextColor;
         Integer num4 = this.backgroundColor;
-        return "Embed(type=" + embedType + ", author=" + embedAuthor + ", provider=" + embedProvider + ", rawTitle=" + str + ", title=" + structurableText + ", fields=" + list + ", url=" + str2 + ", rawDescription=" + str3 + ", description=" + structurableText2 + ", image=" + embedMedia + ", images=" + list2 + ", video=" + embedMedia2 + ", thumbnail=" + embedThumbnail + ", numAttachments=" + str4 + ", attachmentsSize=" + str5 + ", messageSendError=" + str6 + ", disableBackgroundColor=" + bool + ", footer=" + embedFooter + ", spoiler=" + str7 + ", iconURL=" + str8 + ", failureState=" + embedFailureState + ", providerColor=" + num + ", borderLeftColor=" + num2 + ", headerTextColor=" + num3 + ", bodyTextColor=" + i10 + ", backgroundColor=" + num4 + ")";
+        return "Embed(type=" + embedType + ", author=" + embedAuthor + ", provider=" + embedProvider + ", rawTitle=" + str + ", title=" + structurableText + ", fields=" + list + ", url=" + str2 + ", rawDescription=" + str3 + ", description=" + structurableText2 + ", image=" + embedMedia + ", images=" + list2 + ", video=" + embedMedia2 + ", thumbnail=" + embedThumbnail + ", numAttachments=" + str4 + ", attachmentsSize=" + str5 + ", messageSendError=" + str6 + ", disableBackgroundColor=" + bool + ", footer=" + embedFooter + ", spoiler=" + str7 + ", obscure=" + str8 + ", iconURL=" + str9 + ", failureState=" + embedFailureState + ", providerColor=" + num + ", borderLeftColor=" + num2 + ", headerTextColor=" + num3 + ", bodyTextColor=" + i10 + ", backgroundColor=" + num4 + ")";
     }
 
-    public Embed(EmbedType type, EmbedAuthor embedAuthor, EmbedProvider embedProvider, String str, StructurableText structurableText, List<EmbedField> list, String str2, String str3, StructurableText structurableText2, EmbedMedia embedMedia, List<EmbedMedia> list2, EmbedMedia embedMedia2, EmbedThumbnail embedThumbnail, String str4, String str5, String str6, Boolean bool, EmbedFooter embedFooter, String str7, String str8, EmbedFailureState embedFailureState, Integer num, Integer num2, Integer num3, int i10, Integer num4) {
-        boolean w10;
-        q.h(type, "type");
-        this.type = type;
-        this.author = embedAuthor;
-        this.provider = embedProvider;
-        this.rawTitle = str;
-        this.title = structurableText;
-        this.fields = list;
-        this.url = str2;
-        this.rawDescription = str3;
-        this.description = structurableText2;
-        this.image = embedMedia;
-        this.images = list2;
-        this.video = embedMedia2;
-        this.thumbnail = embedThumbnail;
-        this.numAttachments = str4;
-        this.attachmentsSize = str5;
-        this.messageSendError = str6;
-        this.disableBackgroundColor = bool;
-        this.footer = embedFooter;
-        this.spoiler = str7;
-        this.iconURL = str8;
-        this.failureState = embedFailureState;
-        this.providerColor = num;
-        this.borderLeftColor = num2;
-        this.headerTextColor = num3;
-        this.bodyTextColor = i10;
-        this.backgroundColor = num4;
-        String str9 = null;
-        if (str7 != null) {
-            w10 = o.w(str7);
-            if (!w10) {
-                str9 = str7;
-            }
-        }
-        this.spoilerOrNull = str9;
+    
+    
+    public Embed(com.discord.chat.bridge.embed.EmbedType r6, com.discord.chat.bridge.embed.EmbedAuthor r7, com.discord.chat.bridge.embed.EmbedProvider r8, java.lang.String r9, com.discord.chat.bridge.structurabletext.StructurableText r10, java.util.List<com.discord.chat.bridge.embed.EmbedField> r11, java.lang.String r12, java.lang.String r13, com.discord.chat.bridge.structurabletext.StructurableText r14, com.discord.chat.bridge.embed.EmbedMedia r15, java.util.List<com.discord.chat.bridge.embed.EmbedMedia> r16, com.discord.chat.bridge.embed.EmbedMedia r17, com.discord.chat.bridge.embed.EmbedThumbnail r18, java.lang.String r19, java.lang.String r20, java.lang.String r21, java.lang.Boolean r22, com.discord.chat.bridge.embed.EmbedFooter r23, java.lang.String r24, java.lang.String r25, java.lang.String r26, com.discord.chat.bridge.embed.EmbedFailureState r27, java.lang.Integer r28, java.lang.Integer r29, java.lang.Integer r30, int r31, java.lang.Integer r32) {
+        
+        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.bridge.embed.Embed.<init>(com.discord.chat.bridge.embed.EmbedType, com.discord.chat.bridge.embed.EmbedAuthor, com.discord.chat.bridge.embed.EmbedProvider, java.lang.String, com.discord.chat.bridge.structurabletext.StructurableText, java.util.List, java.lang.String, java.lang.String, com.discord.chat.bridge.structurabletext.StructurableText, com.discord.chat.bridge.embed.EmbedMedia, java.util.List, com.discord.chat.bridge.embed.EmbedMedia, com.discord.chat.bridge.embed.EmbedThumbnail, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, com.discord.chat.bridge.embed.EmbedFooter, java.lang.String, java.lang.String, java.lang.String, com.discord.chat.bridge.embed.EmbedFailureState, java.lang.Integer, java.lang.Integer, java.lang.Integer, int, java.lang.Integer):void");
     }
 
-    public  Embed(EmbedType embedType, EmbedAuthor embedAuthor, EmbedProvider embedProvider, String str, StructurableText structurableText, List list, String str2, String str3, StructurableText structurableText2, EmbedMedia embedMedia, List list2, EmbedMedia embedMedia2, EmbedThumbnail embedThumbnail, String str4, String str5, String str6, Boolean bool, EmbedFooter embedFooter, String str7, String str8, EmbedFailureState embedFailureState, Integer num, Integer num2, Integer num3, int i10, Integer num4, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-        this(embedType, (i11 & 2) != 0 ? null : embedAuthor, (i11 & 4) != 0 ? null : embedProvider, (i11 & 8) != 0 ? null : str, (i11 & 16) != 0 ? null : structurableText, (i11 & 32) != 0 ? null : list, (i11 & 64) != 0 ? null : str2, (i11 & 128) != 0 ? null : str3, (i11 & 256) != 0 ? null : structurableText2, (i11 & 512) != 0 ? null : embedMedia, (i11 & 1024) != 0 ? null : list2, (i11 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? null : embedMedia2, (i11 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? null : embedThumbnail, (i11 & 8192) != 0 ? null : str4, (i11 & 16384) != 0 ? null : str5, (32768 & i11) != 0 ? null : str6, (65536 & i11) != 0 ? null : bool, (131072 & i11) != 0 ? null : embedFooter, (262144 & i11) != 0 ? null : str7, (524288 & i11) != 0 ? null : str8, (1048576 & i11) != 0 ? null : embedFailureState, (2097152 & i11) != 0 ? null : num, (4194304 & i11) != 0 ? null : num2, (8388608 & i11) != 0 ? null : num3, i10, (i11 & 33554432) != 0 ? null : num4);
+    public  Embed(EmbedType embedType, EmbedAuthor embedAuthor, EmbedProvider embedProvider, String str, StructurableText structurableText, List list, String str2, String str3, StructurableText structurableText2, EmbedMedia embedMedia, List list2, EmbedMedia embedMedia2, EmbedThumbnail embedThumbnail, String str4, String str5, String str6, Boolean bool, EmbedFooter embedFooter, String str7, String str8, String str9, EmbedFailureState embedFailureState, Integer num, Integer num2, Integer num3, int i10, Integer num4, int i11, DefaultConstructorMarker defaultConstructorMarker) {
+        this(embedType, (i11 & 2) != 0 ? null : embedAuthor, (i11 & 4) != 0 ? null : embedProvider, (i11 & 8) != 0 ? null : str, (i11 & 16) != 0 ? null : structurableText, (i11 & 32) != 0 ? null : list, (i11 & 64) != 0 ? null : str2, (i11 & 128) != 0 ? null : str3, (i11 & 256) != 0 ? null : structurableText2, (i11 & 512) != 0 ? null : embedMedia, (i11 & 1024) != 0 ? null : list2, (i11 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? null : embedMedia2, (i11 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? null : embedThumbnail, (i11 & 8192) != 0 ? null : str4, (i11 & 16384) != 0 ? null : str5, (32768 & i11) != 0 ? null : str6, (65536 & i11) != 0 ? null : bool, (131072 & i11) != 0 ? null : embedFooter, (262144 & i11) != 0 ? null : str7, (524288 & i11) != 0 ? null : str8, (1048576 & i11) != 0 ? null : str9, (2097152 & i11) != 0 ? null : embedFailureState, (4194304 & i11) != 0 ? null : num, (8388608 & i11) != 0 ? null : num2, (16777216 & i11) != 0 ? null : num3, i10, (i11 & 67108864) != 0 ? null : num4);
     }
 }

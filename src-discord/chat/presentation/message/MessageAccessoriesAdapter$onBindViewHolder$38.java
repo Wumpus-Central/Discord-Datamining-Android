@@ -20,14 +20,14 @@ public  class MessageAccessoriesAdapter$onBindViewHolder$38 extends n implements
 
     @Override 
     public   Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
-        m215invokentcYbpo(messageId.m632unboximpl(), linkContentNode);
-        return Unit.f21442a;
+        m218invokentcYbpo(messageId.m639unboximpl(), linkContentNode);
+        return Unit.f21444a;
     }
 
     
-    public final void m215invokentcYbpo(String p02, LinkContentNode p12) {
+    public final void m218invokentcYbpo(String p02, LinkContentNode p12) {
         q.h(p02, "p0");
         q.h(p12, "p1");
-        ((ChatEventHandler) this.receiver).mo158onLinkClickedntcYbpo(p02, p12);
+        ((ChatEventHandler) this.receiver).mo160onLinkClickedntcYbpo(p02, p12);
     }
 }

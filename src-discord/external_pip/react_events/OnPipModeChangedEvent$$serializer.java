@@ -32,7 +32,7 @@ public final class OnPipModeChangedEvent$$serializer implements f0<OnPipModeChan
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{h.f30616a};
+        return new KSerializer[]{h.f30618a};
     }
 
     @Override 

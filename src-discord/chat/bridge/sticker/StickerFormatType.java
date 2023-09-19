@@ -57,7 +57,7 @@ public enum StickerFormatType {
 
         @Override 
         public SerialDescriptor getDescriptor() {
-            return g.a("StickerFormatType", e.f.f30047a);
+            return g.a("StickerFormatType", e.f.f30049a);
         }
 
         @Override 

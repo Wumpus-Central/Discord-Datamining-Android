@@ -26,9 +26,9 @@ public final class AutoModerationNotificationEmbedAccessory extends MessageAcces
     }
 
     
-    public static  AutoModerationNotificationEmbedAccessory m242copyu7_MRrM$default(AutoModerationNotificationEmbedAccessory autoModerationNotificationEmbedAccessory, String str, Message message, AutoModerationContext autoModerationContext, int i10, Object obj) {
+    public static  AutoModerationNotificationEmbedAccessory m245copyu7_MRrM$default(AutoModerationNotificationEmbedAccessory autoModerationNotificationEmbedAccessory, String str, Message message, AutoModerationContext autoModerationContext, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = autoModerationNotificationEmbedAccessory.mo233getMessageId3Eiw7ao();
+            str = autoModerationNotificationEmbedAccessory.mo236getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             message = autoModerationNotificationEmbedAccessory.message;
@@ -36,12 +36,12 @@ public final class AutoModerationNotificationEmbedAccessory extends MessageAcces
         if ((i10 & 4) != 0) {
             autoModerationContext = autoModerationNotificationEmbedAccessory.moderationContext;
         }
-        return autoModerationNotificationEmbedAccessory.m244copyu7_MRrM(str, message, autoModerationContext);
+        return autoModerationNotificationEmbedAccessory.m247copyu7_MRrM(str, message, autoModerationContext);
     }
 
     
-    public final String m243component13Eiw7ao() {
-        return mo233getMessageId3Eiw7ao();
+    public final String m246component13Eiw7ao() {
+        return mo236getMessageId3Eiw7ao();
     }
 
     public final Message component2() {
@@ -53,7 +53,7 @@ public final class AutoModerationNotificationEmbedAccessory extends MessageAcces
     }
 
     
-    public final AutoModerationNotificationEmbedAccessory m244copyu7_MRrM(String messageId, Message message, AutoModerationContext moderationContext) {
+    public final AutoModerationNotificationEmbedAccessory m247copyu7_MRrM(String messageId, Message message, AutoModerationContext moderationContext) {
         q.h(messageId, "messageId");
         q.h(message, "message");
         q.h(moderationContext, "moderationContext");
@@ -68,7 +68,7 @@ public final class AutoModerationNotificationEmbedAccessory extends MessageAcces
             return false;
         }
         AutoModerationNotificationEmbedAccessory autoModerationNotificationEmbedAccessory = (AutoModerationNotificationEmbedAccessory) obj;
-        return MessageId.m628equalsimpl0(mo233getMessageId3Eiw7ao(), autoModerationNotificationEmbedAccessory.mo233getMessageId3Eiw7ao()) && q.c(this.message, autoModerationNotificationEmbedAccessory.message) && q.c(this.moderationContext, autoModerationNotificationEmbedAccessory.moderationContext);
+        return MessageId.m635equalsimpl0(mo236getMessageId3Eiw7ao(), autoModerationNotificationEmbedAccessory.mo236getMessageId3Eiw7ao()) && q.c(this.message, autoModerationNotificationEmbedAccessory.message) && q.c(this.moderationContext, autoModerationNotificationEmbedAccessory.moderationContext);
     }
 
     public final Message getMessage() {
@@ -77,7 +77,7 @@ public final class AutoModerationNotificationEmbedAccessory extends MessageAcces
 
     @Override 
     
-    public String mo233getMessageId3Eiw7ao() {
+    public String mo236getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -86,11 +86,11 @@ public final class AutoModerationNotificationEmbedAccessory extends MessageAcces
     }
 
     public int hashCode() {
-        return (((MessageId.m629hashCodeimpl(mo233getMessageId3Eiw7ao()) * 31) + this.message.hashCode()) * 31) + this.moderationContext.hashCode();
+        return (((MessageId.m636hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.message.hashCode()) * 31) + this.moderationContext.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m630toStringimpl(mo233getMessageId3Eiw7ao());
+        String str = MessageId.m637toStringimpl(mo236getMessageId3Eiw7ao());
         Message message = this.message;
         AutoModerationContext autoModerationContext = this.moderationContext;
         return "AutoModerationNotificationEmbedAccessory(messageId=" + str + ", message=" + message + ", moderationContext=" + autoModerationContext + ")";

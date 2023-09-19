@@ -41,7 +41,7 @@ public final class MessageReference {
         if (1 != (i10 & 1)) {
             n1.b(i10, 1, MessageReference$$serializer.INSTANCE.getDescriptor());
         }
-        this.channelId = channelId.m607unboximpl();
+        this.channelId = channelId.m614unboximpl();
         if ((i10 & 2) == 0) {
             this.guildId = null;
         } else {
@@ -81,7 +81,7 @@ public final class MessageReference {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z10 = false;
-        output.h(serialDesc, 0, ChannelId$$serializer.INSTANCE, ChannelId.m598boximpl(self.channelId));
+        output.h(serialDesc, 0, ChannelId$$serializer.INSTANCE, ChannelId.m605boximpl(self.channelId));
         if (output.z(serialDesc, 1) || self.guildId != null) {
             z10 = true;
         }
@@ -113,7 +113,7 @@ public final class MessageReference {
             return false;
         }
         MessageReference messageReference = (MessageReference) obj;
-        return ChannelId.m602equalsimpl0(this.channelId, messageReference.channelId) && q.c(this.guildId, messageReference.guildId);
+        return ChannelId.m609equalsimpl0(this.channelId, messageReference.channelId) && q.c(this.guildId, messageReference.guildId);
     }
 
     
@@ -127,13 +127,13 @@ public final class MessageReference {
     }
 
     public int hashCode() {
-        int i10 = ChannelId.m603hashCodeimpl(this.channelId) * 31;
+        int i10 = ChannelId.m610hashCodeimpl(this.channelId) * 31;
         GuildId guildId = this.guildId;
-        return i10 + (guildId == null ? 0 : GuildId.m616hashCodeimpl(guildId.m620unboximpl()));
+        return i10 + (guildId == null ? 0 : GuildId.m623hashCodeimpl(guildId.m627unboximpl()));
     }
 
     public String toString() {
-        String str = ChannelId.m605toStringimpl(this.channelId);
+        String str = ChannelId.m612toStringimpl(this.channelId);
         GuildId guildId = this.guildId;
         return "MessageReference(channelId=" + str + ", guildId=" + guildId + ")";
     }

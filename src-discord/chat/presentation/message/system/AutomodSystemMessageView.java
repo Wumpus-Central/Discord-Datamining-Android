@@ -90,7 +90,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         q.g(context, "context");
         simpleDraweeView.setImageURI(MessageKt.avatarUrl(message, context));
         this.binding.authorName.setText(message.getUsername());
-        this.binding.messageTagView.m228configureTagVieweCJZyo(autoModerationContext.getHeaderBadgeText(), Boolean.FALSE, null, null, null, chatEventHandler, message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.getTagType());
+        this.binding.messageTagView.m231configureTagVieweCJZyo(autoModerationContext.getHeaderBadgeText(), Boolean.FALSE, null, null, null, chatEventHandler, message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.getTagType());
         this.binding.automodMessageContextHeader.setText(autoModerationContext.getHeaderText());
         this.binding.timestamp.setText(message.getTimestamp());
         TextView configureAuthor$lambda$8 = this.binding.automodMessageChannel;
@@ -124,10 +124,10 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         String str;
         q.h(eventHandler, "$eventHandler");
         q.h(automodContext, "$automodContext");
-        String str2 = ChannelId.m605toStringimpl(automodContext.getMessage().m33getChannelIdo4g7jtM());
+        String str2 = ChannelId.m612toStringimpl(automodContext.getMessage().m33getChannelIdo4g7jtM());
         GuildId guildId = automodContext.getMessage().m34getGuildIdqOKuAAo();
         if (guildId != null) {
-            str = GuildId.m618toStringimpl(guildId.m620unboximpl());
+            str = GuildId.m625toStringimpl(guildId.m627unboximpl());
         } else {
             str = null;
         }
@@ -267,7 +267,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
             }
             threadStarterMessageHeaderView.configure(threadStarterMessageHeader, z11);
             this.binding.replyPreview.clear();
-            this.binding.accessoriesView.m226setAccessoriesRC8ZMxU(message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.m24getGuildIdqOKuAAo(), generateMessageAccessories(message, messageContext), eventHandler, componentProvider);
+            this.binding.accessoriesView.m229setAccessoriesRC8ZMxU(message.m25getId3Eiw7ao(), message.m23getChannelIdo4g7jtM(), message.m24getGuildIdqOKuAAo(), generateMessageAccessories(message, messageContext), eventHandler, componentProvider);
         }
     }
 

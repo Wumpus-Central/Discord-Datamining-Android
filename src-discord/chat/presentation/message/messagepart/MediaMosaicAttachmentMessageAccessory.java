@@ -27,9 +27,9 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
 
     
     
-    public static  MediaMosaicAttachmentMessageAccessory m284copyu7_MRrM$default(MediaMosaicAttachmentMessageAccessory mediaMosaicAttachmentMessageAccessory, String str, List list, int i10, int i11, Object obj) {
+    public static  MediaMosaicAttachmentMessageAccessory m287copyu7_MRrM$default(MediaMosaicAttachmentMessageAccessory mediaMosaicAttachmentMessageAccessory, String str, List list, int i10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = mediaMosaicAttachmentMessageAccessory.mo233getMessageId3Eiw7ao();
+            str = mediaMosaicAttachmentMessageAccessory.mo236getMessageId3Eiw7ao();
         }
         if ((i11 & 2) != 0) {
             list = mediaMosaicAttachmentMessageAccessory.attachments;
@@ -37,12 +37,12 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
         if ((i11 & 4) != 0) {
             i10 = mediaMosaicAttachmentMessageAccessory.constrainedWidth;
         }
-        return mediaMosaicAttachmentMessageAccessory.m286copyu7_MRrM(str, list, i10);
+        return mediaMosaicAttachmentMessageAccessory.m289copyu7_MRrM(str, list, i10);
     }
 
     
-    public final String m285component13Eiw7ao() {
-        return mo233getMessageId3Eiw7ao();
+    public final String m288component13Eiw7ao() {
+        return mo236getMessageId3Eiw7ao();
     }
 
     public final List<MessageAccessory> component2() {
@@ -54,7 +54,7 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
     }
 
     
-    public final MediaMosaicAttachmentMessageAccessory m286copyu7_MRrM(String messageId, List<? extends MessageAccessory> attachments, int i10) {
+    public final MediaMosaicAttachmentMessageAccessory m289copyu7_MRrM(String messageId, List<? extends MessageAccessory> attachments, int i10) {
         q.h(messageId, "messageId");
         q.h(attachments, "attachments");
         return new MediaMosaicAttachmentMessageAccessory(messageId, attachments, i10, null);
@@ -68,7 +68,7 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
             return false;
         }
         MediaMosaicAttachmentMessageAccessory mediaMosaicAttachmentMessageAccessory = (MediaMosaicAttachmentMessageAccessory) obj;
-        return MessageId.m628equalsimpl0(mo233getMessageId3Eiw7ao(), mediaMosaicAttachmentMessageAccessory.mo233getMessageId3Eiw7ao()) && q.c(this.attachments, mediaMosaicAttachmentMessageAccessory.attachments) && this.constrainedWidth == mediaMosaicAttachmentMessageAccessory.constrainedWidth;
+        return MessageId.m635equalsimpl0(mo236getMessageId3Eiw7ao(), mediaMosaicAttachmentMessageAccessory.mo236getMessageId3Eiw7ao()) && q.c(this.attachments, mediaMosaicAttachmentMessageAccessory.attachments) && this.constrainedWidth == mediaMosaicAttachmentMessageAccessory.constrainedWidth;
     }
 
     public final List<MessageAccessory> getAttachments() {
@@ -81,16 +81,16 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
 
     @Override 
     
-    public String mo233getMessageId3Eiw7ao() {
+    public String mo236getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((MessageId.m629hashCodeimpl(mo233getMessageId3Eiw7ao()) * 31) + this.attachments.hashCode()) * 31) + this.constrainedWidth;
+        return (((MessageId.m636hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.attachments.hashCode()) * 31) + this.constrainedWidth;
     }
 
     public String toString() {
-        String str = MessageId.m630toStringimpl(mo233getMessageId3Eiw7ao());
+        String str = MessageId.m637toStringimpl(mo236getMessageId3Eiw7ao());
         List<MessageAccessory> list = this.attachments;
         int i10 = this.constrainedWidth;
         return "MediaMosaicAttachmentMessageAccessory(messageId=" + str + ", attachments=" + list + ", constrainedWidth=" + i10 + ")";

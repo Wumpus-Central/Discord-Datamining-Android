@@ -122,7 +122,7 @@ public final class FileAttachmentView extends ConstraintLayout {
                 FileAttachmentView.setContent$lambda$1(FileAttachmentView.this, url, attachmentName, attachmentDescription, view);
             }
         }, i10, null);
-        this.binding.spoiler.configure(spoilerConfig);
+        this.binding.spoiler.configure(spoilerConfig, this);
         if (z10) {
             SpoilerView spoilerView = this.binding.spoiler;
             q.g(spoilerView, "binding.spoiler");

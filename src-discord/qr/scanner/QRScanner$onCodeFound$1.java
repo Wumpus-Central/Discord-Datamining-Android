@@ -18,7 +18,7 @@ final class QRScanner$onCodeFound$1 extends s implements Function1<String, Unit>
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f21442a;
+        return Unit.f21444a;
     }
 
     

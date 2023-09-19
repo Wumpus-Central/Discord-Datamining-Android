@@ -2,34 +2,42 @@ package com.discord.chat.presentation.message.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewParent;
 import android.widget.FrameLayout;
-import android.widget.TextView;
-import androidx.transition.Transition;
-import androidx.transition.c;
-import androidx.transition.i;
-import androidx.transition.j;
-import com.discord.chat.R;
 import com.discord.chat.bridge.spoiler.SpoilerConfig;
-import com.discord.fonts.DiscordFont;
-import com.discord.fonts.DiscordFontUtilsKt;
-import com.discord.misc.utilities.size.SizeUtilsKt;
-import com.discord.misc.utilities.view.ViewClippingUtilsKt;
-import com.discord.theme.ThemeManagerKt;
-import com.discord.theme.utils.ColorUtilsKt;
+import com.discord.chat.bridge.spoiler.SpoilerManager;
+import com.discord.chat.bridge.spoiler.SpoilerType;
+import com.discord.chat.databinding.SpoilerViewBinding;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
-@Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0006J\u0010\u0010\f\u001a\u00020\u000b2\b\u0010\r\u001a\u0004\u0018\u00010\u000eR\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u000b0\nX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u000f"}, d2 = {"Lcom/discord/chat/presentation/message/view/SpoilerView;", "Landroid/widget/FrameLayout;", "context", "Landroid/content/Context;", "attributeSet", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "label", "Landroid/widget/TextView;", "onReveal", "Lkotlin/Function0;", "", "configure", "config", "Lcom/discord/chat/bridge/spoiler/SpoilerConfig;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0006J\u0018\u0010\u000f\u001a\u00020\r2\b\u0010\u0010\u001a\u0004\u0018\u00010\u00112\u0006\u0010\u0012\u001a\u00020\u0013J\u0018\u0010\u0014\u001a\u00020\r2\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0013H\u0002J\u0010\u0010\u0018\u001a\u00020\r2\u0006\u0010\u0015\u001a\u00020\u0016H\u0002J\u0006\u0010\t\u001a\u00020\nJ\u0006\u0010\u0019\u001a\u00020\rJ\u001e\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\r0\f2\u0006\u0010\u001b\u001a\u00020\n2\u0006\u0010\u001c\u001a\u00020\u001dH\u0002J\b\u0010\u001e\u001a\u00020\rH\u0002J\u000e\u0010\u001f\u001a\u00020\r2\u0006\u0010 \u001a\u00020\nR\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\r0\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\r0\fX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006!"}, d2 = {"Lcom/discord/chat/presentation/message/view/SpoilerView;", "Landroid/widget/FrameLayout;", "context", "Landroid/content/Context;", "attributeSet", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "binding", "Lcom/discord/chat/databinding/SpoilerViewBinding;", "isOverlayVisible", "", "onHide", "Lkotlin/Function0;", "", "onReveal", "configure", "config", "Lcom/discord/chat/bridge/spoiler/SpoilerConfig;", "viewToBlur", "Landroid/view/ViewGroup;", "configureObscureOverlay", "label", "", "parent", "configureSpoilerOverlay", "makeObscureHideButtonHidden", "onClick", "showImage", "overlayView", "Landroid/view/View;", "resetOverlays", "setObscureLabelVisible", "isVisible", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
 public final class SpoilerView extends FrameLayout {
-    private final TextView label;
+    private final SpoilerViewBinding binding;
+    private boolean isOverlayVisible;
+    private Function0<Unit> onHide;
     private Function0<Unit> onReveal;
+
+    @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
+    
+    public  class WhenMappings {
+        public static final  int[] $EnumSwitchMapping$0;
+
+        static {
+            int[] iArr = new int[SpoilerType.values().length];
+            try {
+                iArr[SpoilerType.OBSCURE.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            $EnumSwitchMapping$0 = iArr;
+        }
+    }
 
     
     public SpoilerView(Context context) {
@@ -41,63 +49,74 @@ public final class SpoilerView extends FrameLayout {
         this(context, (i10 & 2) != 0 ? null : attributeSet);
     }
 
-    
-    public static final void _init_$lambda$2(final SpoilerView this$0, View it) {
-        ViewParent viewParent;
-        q.h(this$0, "this$0");
-        if (this$0.getParent().getParent() instanceof ViewGroup) {
-            viewParent = this$0.getParent().getParent();
-        } else if (this$0.getParent() instanceof ViewGroup) {
-            viewParent = this$0.getParent();
-        } else {
-            viewParent = this$0;
-        }
-        q.f(viewParent, "null cannot be cast to non-null type android.view.ViewGroup");
-        c cVar = new c(2);
-        cVar.X(150L);
-        cVar.b(new i() { 
-            @Override 
-            public void onTransitionEnd(Transition transition) {
-                Function0 function0;
-                q.h(transition, "transition");
-                function0 = SpoilerView.this.onReveal;
-                function0.invoke();
-            }
-        });
-        j.a((ViewGroup) viewParent, cVar);
-        q.g(it, "it");
-        it.setVisibility(8);
+    private final void configureObscureOverlay(String str, ViewGroup viewGroup) {
+        View overlayView = this.binding.obscure.getOverlayView();
+        ObscureOverlayView obscureOverlayView = this.binding.obscure;
+        q.g(obscureOverlayView, "binding.obscure");
+        obscureOverlayView.setVisibility(0);
+        this.binding.obscure.configure(str, viewGroup, this.isOverlayVisible, onClick(true, overlayView), onClick(false, overlayView));
     }
 
-    public final void configure(SpoilerConfig spoilerConfig) {
+    private final void configureSpoilerOverlay(String str) {
+        View overlayView = this.binding.spoiler.getOverlayView();
+        SpoilerOverlayView spoilerOverlayView = this.binding.spoiler;
+        q.g(spoilerOverlayView, "binding.spoiler");
+        spoilerOverlayView.setVisibility(0);
+        this.binding.spoiler.configure(str, onClick(true, overlayView));
+    }
+
+    private final Function0<Unit> onClick(boolean z10, View view) {
+        return new SpoilerView$onClick$1(this, z10, view);
+    }
+
+    private final void resetOverlays() {
+        SpoilerOverlayView spoilerOverlayView = this.binding.spoiler;
+        q.g(spoilerOverlayView, "binding.spoiler");
+        spoilerOverlayView.setVisibility(8);
+        ObscureOverlayView obscureOverlayView = this.binding.obscure;
+        q.g(obscureOverlayView, "binding.obscure");
+        obscureOverlayView.setVisibility(8);
+    }
+
+    public final void configure(SpoilerConfig spoilerConfig, ViewGroup viewToBlur) {
+        q.h(viewToBlur, "viewToBlur");
         if (spoilerConfig != null) {
-            this.label.setText(spoilerConfig.getAttributes().getLabel());
+            resetOverlays();
+            this.isOverlayVisible = SpoilerManager.INSTANCE.m140isNotRevealedV2PEE7g(spoilerConfig.getAttributes().m128getIdentifierBq9X6Gg());
+            if (WhenMappings.$EnumSwitchMapping$0[spoilerConfig.getAttributes().getType().ordinal()] == 1) {
+                configureObscureOverlay(spoilerConfig.getAttributes().getLabel(), viewToBlur);
+            } else {
+                configureSpoilerOverlay(spoilerConfig.getAttributes().getLabel());
+            }
             this.onReveal = new SpoilerView$configure$1(spoilerConfig);
+            this.onHide = new SpoilerView$configure$2(spoilerConfig);
             setVisibility(0);
             return;
         }
+        this.isOverlayVisible = false;
         setVisibility(8);
+    }
+
+    public final boolean isOverlayVisible() {
+        return this.isOverlayVisible;
+    }
+
+    public final void makeObscureHideButtonHidden() {
+        this.binding.obscure.makeHideButtonHidden();
+    }
+
+    public final void setObscureLabelVisible(boolean z10) {
+        this.binding.obscure.setLabelVisible(z10);
     }
 
     
     public SpoilerView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         q.h(context, "context");
-        TextView textView = new TextView(context);
-        textView.setTextColor(-1);
-        DiscordFontUtilsKt.setDiscordFont(textView, DiscordFont.PrimaryBold);
-        ViewClippingUtilsKt.clipToCircle(textView);
-        textView.setBackgroundColor(ColorUtilsKt.getColorCompat(context, R.color.primary_800));
-        textView.setPadding(SizeUtilsKt.getDpToPx(12), SizeUtilsKt.getDpToPx(8), SizeUtilsKt.getDpToPx(12), SizeUtilsKt.getDpToPx(8));
-        this.label = textView;
+        SpoilerViewBinding inflate = SpoilerViewBinding.inflate(LayoutInflater.from(context), this);
+        q.g(inflate, "inflate(LayoutInflater.from(context), this)");
+        this.binding = inflate;
         this.onReveal = SpoilerView$onReveal$1.INSTANCE;
-        setBackgroundColor(ThemeManagerKt.getTheme().getSpoilerHiddenBackground());
-        addView(textView, new FrameLayout.LayoutParams(-2, -2, 17));
-        setOnClickListener(new View.OnClickListener() { 
-            @Override 
-            public final void onClick(View view) {
-                SpoilerView._init_$lambda$2(SpoilerView.this, view);
-            }
-        });
+        this.onHide = SpoilerView$onHide$1.INSTANCE;
     }
 }

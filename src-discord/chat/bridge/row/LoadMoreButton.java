@@ -91,13 +91,13 @@ public final class LoadMoreButton {
             z10 = true;
         }
         if (z10) {
-            output.e(serialDesc, 3, m0.f30649a, self.cornerRadius);
+            output.e(serialDesc, 3, m0.f30651a, self.cornerRadius);
         }
         if (output.z(serialDesc, 4) || self.color != null) {
             z11 = true;
         }
         if (z11) {
-            output.e(serialDesc, 4, m0.f30649a, self.color);
+            output.e(serialDesc, 4, m0.f30651a, self.color);
         }
     }
 

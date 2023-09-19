@@ -1,5 +1,7 @@
 package com.discord.chat.reactevents;
 
+import com.discord.primitives.MessageId;
+import com.discord.primitives.MessageId$$serializer;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 import kotlinx.serialization.KSerializer;
@@ -10,6 +12,7 @@ import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
 import ui.n;
+import vi.a;
 import xi.a2;
 import xi.f0;
 
@@ -22,8 +25,9 @@ public final class TapGiftCodeAcceptData$$serializer implements f0<TapGiftCodeAc
     static {
         TapGiftCodeAcceptData$$serializer tapGiftCodeAcceptData$$serializer = new TapGiftCodeAcceptData$$serializer();
         INSTANCE = tapGiftCodeAcceptData$$serializer;
-        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("com.discord.chat.reactevents.TapGiftCodeAcceptData", tapGiftCodeAcceptData$$serializer, 1);
+        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("com.discord.chat.reactevents.TapGiftCodeAcceptData", tapGiftCodeAcceptData$$serializer, 2);
         pluginGeneratedSerialDescriptor.l("giftCode", false);
+        pluginGeneratedSerialDescriptor.l("messageId", false);
         descriptor = pluginGeneratedSerialDescriptor;
     }
 
@@ -32,36 +36,51 @@ public final class TapGiftCodeAcceptData$$serializer implements f0<TapGiftCodeAc
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f30574a};
+        return new KSerializer[]{a2.f30576a, a.u(MessageId$$serializer.INSTANCE)};
     }
 
     @Override 
     public TapGiftCodeAcceptData deserialize(Decoder decoder) {
         String str;
+        int i10;
+        Object obj;
         q.h(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
         c b10 = decoder.b(descriptor2);
-        int i10 = 1;
+        String str2 = null;
         if (b10.p()) {
             str = b10.m(descriptor2, 0);
+            obj = b10.n(descriptor2, 1, MessageId$$serializer.INSTANCE, null);
+            i10 = 3;
         } else {
+            boolean z10 = true;
             int i11 = 0;
-            str = null;
-            while (i10 != 0) {
+            String str3 = null;
+            Object obj2 = null;
+            while (z10) {
                 int o10 = b10.o(descriptor2);
                 if (o10 == -1) {
-                    i10 = 0;
+                    z10 = false;
                 } else if (o10 == 0) {
-                    str = b10.m(descriptor2, 0);
+                    str3 = b10.m(descriptor2, 0);
                     i11 |= 1;
+                } else if (o10 == 1) {
+                    obj2 = b10.n(descriptor2, 1, MessageId$$serializer.INSTANCE, obj2);
+                    i11 |= 2;
                 } else {
                     throw new n(o10);
                 }
             }
+            str = str3;
+            obj = obj2;
             i10 = i11;
         }
         b10.c(descriptor2);
-        return new TapGiftCodeAcceptData(i10, str, null);
+        MessageId messageId = (MessageId) obj;
+        if (messageId != null) {
+            str2 = messageId.m639unboximpl();
+        }
+        return new TapGiftCodeAcceptData(i10, str, str2, null, null);
     }
 
     @Override 

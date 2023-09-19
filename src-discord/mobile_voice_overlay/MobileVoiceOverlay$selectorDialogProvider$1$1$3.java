@@ -26,12 +26,12 @@ final class MobileVoiceOverlay$selectorDialogProvider$1$1$3 extends s implements
 
     @Override 
     public   Unit invoke(ChannelId channelId) {
-        m502invokeR7gqayM(channelId.m607unboximpl());
-        return Unit.f21442a;
+        m509invokeR7gqayM(channelId.m614unboximpl());
+        return Unit.f21444a;
     }
 
     
-    public final void m502invokeR7gqayM(long j10) {
+    public final void m509invokeR7gqayM(long j10) {
         MobileVoiceOverlay.Companion companion = MobileVoiceOverlay.Companion;
         Context context = this.$this_apply.getContext();
         q.g(context, "context");

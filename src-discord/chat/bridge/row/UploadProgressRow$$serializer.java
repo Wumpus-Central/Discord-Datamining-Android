@@ -39,7 +39,7 @@ public final class UploadProgressRow$$serializer implements f0<UploadProgressRow
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f30649a, ChangeType.Serializer.INSTANCE, Message$$serializer.INSTANCE, a2.f30574a};
+        return new KSerializer[]{m0.f30651a, ChangeType.Serializer.INSTANCE, Message$$serializer.INSTANCE, a2.f30576a};
     }
 
     @Override 

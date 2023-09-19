@@ -33,7 +33,7 @@ public final class OnSizeEvent$$serializer implements f0<OnSizeEvent> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f30649a;
+        m0 m0Var = m0.f30651a;
         return new KSerializer[]{m0Var, m0Var};
     }
 

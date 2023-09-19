@@ -3,6 +3,7 @@ package com.discord.chat.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import com.discord.chat.R;
 import com.discord.chat.presentation.message.view.SpoilerView;
@@ -19,12 +20,13 @@ public final class PostPreviewEmbedViewBinding {
     public final DCDButton cta;
     public final SimpleDraweeSpanTextView footer;
     public final View headerDivider;
+    public final FrameLayout imageBlurBg;
     private final View rootView;
     public final SpoilerView spoiler;
     public final TextView subtitle;
     public final TextView title;
 
-    private PostPreviewEmbedViewBinding(View view, SimpleDraweeView simpleDraweeView, SimpleDraweeView simpleDraweeView2, DCDButton dCDButton, DCDButton dCDButton2, SimpleDraweeSpanTextView simpleDraweeSpanTextView, View view2, SpoilerView spoilerView, TextView textView, TextView textView2) {
+    private PostPreviewEmbedViewBinding(View view, SimpleDraweeView simpleDraweeView, SimpleDraweeView simpleDraweeView2, DCDButton dCDButton, DCDButton dCDButton2, SimpleDraweeSpanTextView simpleDraweeSpanTextView, View view2, FrameLayout frameLayout, SpoilerView spoilerView, TextView textView, TextView textView2) {
         this.rootView = view;
         this.backgroundImage = simpleDraweeView;
         this.coverImage = simpleDraweeView2;
@@ -32,6 +34,7 @@ public final class PostPreviewEmbedViewBinding {
         this.cta = dCDButton2;
         this.footer = simpleDraweeSpanTextView;
         this.headerDivider = view2;
+        this.imageBlurBg = frameLayout;
         this.spoiler = spoilerView;
         this.subtitle = textView;
         this.title = textView2;
@@ -54,16 +57,20 @@ public final class PostPreviewEmbedViewBinding {
                         i10 = R.id.footer;
                         SimpleDraweeSpanTextView simpleDraweeSpanTextView = (SimpleDraweeSpanTextView) a.a(view, i10);
                         if (!(simpleDraweeSpanTextView == null || (a10 = a.a(view, (i10 = R.id.header_divider))) == null)) {
-                            i10 = R.id.spoiler;
-                            SpoilerView spoilerView = (SpoilerView) a.a(view, i10);
-                            if (spoilerView != null) {
-                                i10 = R.id.subtitle;
-                                TextView textView = (TextView) a.a(view, i10);
-                                if (textView != null) {
-                                    i10 = R.id.title;
-                                    TextView textView2 = (TextView) a.a(view, i10);
-                                    if (textView2 != null) {
-                                        return new PostPreviewEmbedViewBinding(view, simpleDraweeView, simpleDraweeView2, dCDButton, dCDButton2, simpleDraweeSpanTextView, a10, spoilerView, textView, textView2);
+                            i10 = R.id.image_blur_bg;
+                            FrameLayout frameLayout = (FrameLayout) a.a(view, i10);
+                            if (frameLayout != null) {
+                                i10 = R.id.spoiler;
+                                SpoilerView spoilerView = (SpoilerView) a.a(view, i10);
+                                if (spoilerView != null) {
+                                    i10 = R.id.subtitle;
+                                    TextView textView = (TextView) a.a(view, i10);
+                                    if (textView != null) {
+                                        i10 = R.id.title;
+                                        TextView textView2 = (TextView) a.a(view, i10);
+                                        if (textView2 != null) {
+                                            return new PostPreviewEmbedViewBinding(view, simpleDraweeView, simpleDraweeView2, dCDButton, dCDButton2, simpleDraweeSpanTextView, a10, frameLayout, spoilerView, textView, textView2);
+                                        }
                                     }
                                 }
                             }

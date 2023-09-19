@@ -29,18 +29,18 @@ public final class UserId$$serializer implements f0<UserId> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f30690a};
+        return new KSerializer[]{w0.f30692a};
     }
 
     @Override 
     public   Object deserialize(Decoder decoder) {
-        return UserId.m662boximpl(m672deserializePmcOV3I(decoder));
+        return UserId.m669boximpl(m679deserializePmcOV3I(decoder));
     }
 
     
-    public long m672deserializePmcOV3I(Decoder decoder) {
+    public long m679deserializePmcOV3I(Decoder decoder) {
         q.h(decoder, "decoder");
-        return UserId.m663constructorimpl(decoder.q(getDescriptor()).l());
+        return UserId.m670constructorimpl(decoder.q(getDescriptor()).l());
     }
 
     @Override 
@@ -50,11 +50,11 @@ public final class UserId$$serializer implements f0<UserId> {
 
     @Override 
     public   void serialize(Encoder encoder, Object obj) {
-        m673serialize2YFG4pU(encoder, ((UserId) obj).m671unboximpl());
+        m680serialize2YFG4pU(encoder, ((UserId) obj).m678unboximpl());
     }
 
     
-    public void m673serialize2YFG4pU(Encoder encoder, long j10) {
+    public void m680serialize2YFG4pU(Encoder encoder, long j10) {
         q.h(encoder, "encoder");
         Encoder l10 = encoder.l(getDescriptor());
         if (l10 != null) {

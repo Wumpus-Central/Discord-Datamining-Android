@@ -34,7 +34,7 @@ public final class TapAction$$serializer implements f0<TapAction> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f30574a;
+        a2 a2Var = a2.f30576a;
         return new KSerializer[]{a2Var, a2Var, a2Var};
     }
 

@@ -95,7 +95,7 @@ public final class ChatListView$onChatListUpdate$1$2 extends s implements Functi
             }
             this.this$0.scrollToPosition(((ChatListAction.ScrollTo) this.$update.getAction()).getPosition(), targetAlignment, ((ChatListAction.ScrollTo) this.$update.getAction()).getAnimated(), ((ChatListAction.ScrollTo) this.$update.getAction()).isHighlight());
         } else if (action instanceof ChatListAction.StickToBottomIfAtBottom) {
-            if (!this.$wasAtBottom.f21467j) {
+            if (!this.$wasAtBottom.f21469j) {
                 return;
             }
             if (ChatView.Companion.getAreChatAnimationsEnabled()) {

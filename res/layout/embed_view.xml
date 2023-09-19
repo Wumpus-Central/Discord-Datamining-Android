@@ -32,4 +32,5 @@
     </RelativeLayout>
     <View android:layout_gravity="start" android:id="@id/border" android:layout_width="4.0dip" android:layout_height="fill_parent" />
     <com.discord.chat.presentation.message.view.SpoilerView android:id="@id/spoiler" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/image_blur_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.5" />
 </merge>

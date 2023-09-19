@@ -92,7 +92,7 @@ public final class SeparatorRow extends Row {
             z10 = true;
         }
         if (z10) {
-            output.e(serialDesc, 5, h.f30616a, self.scrollTo);
+            output.e(serialDesc, 5, h.f30618a, self.scrollTo);
         }
         if (!output.z(serialDesc, 6) && self.isBeforeContent == null) {
             z11 = false;
@@ -100,7 +100,7 @@ public final class SeparatorRow extends Row {
             z11 = true;
         }
         if (z11) {
-            output.e(serialDesc, 6, h.f30616a, self.isBeforeContent);
+            output.e(serialDesc, 6, h.f30618a, self.isBeforeContent);
         }
         if (output.z(serialDesc, 7) || self.summary != null) {
             z12 = true;

@@ -27,13 +27,13 @@ public final class MessageViewManagers$MessageBundleViewManager$createViewInstan
 
     @Override 
     public   Unit invoke(MessageId messageId) {
-        m154invoke1xi1bu0(messageId.m632unboximpl());
-        return Unit.f21442a;
+        m156invoke1xi1bu0(messageId.m639unboximpl());
+        return Unit.f21444a;
     }
 
     
-    public final void m154invoke1xi1bu0(String messageId) {
+    public final void m156invoke1xi1bu0(String messageId) {
         q.h(messageId, "messageId");
-        this.this$0.m153emitOnTruncateMessageAyv7vGE(this.$wrapper, messageId);
+        this.this$0.m155emitOnTruncateMessageAyv7vGE(this.$wrapper, messageId);
     }
 }

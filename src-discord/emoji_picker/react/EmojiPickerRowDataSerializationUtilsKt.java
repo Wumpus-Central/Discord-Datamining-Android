@@ -30,13 +30,13 @@ public final class EmojiPickerRowDataSerializationUtilsKt {
         Iterator<Integer> it = sizeRange.iterator();
         while (it.hasNext()) {
             int nextInt = ((p) it).nextInt();
-            if (!nonNullArray.isNull(nextInt)) {
+            if (nonNullArray.isNull(nextInt) || NativeMapExtensionsKt.getBoolean(nonNullArray.getMap(nextInt), "invisible", false)) {
+                emoji = null;
+            } else {
                 ReadableMap emojiRaw = nonNullArray.getMap(nextInt);
                 String string = emojiRaw.getString("emojiId");
                 q.g(emojiRaw, "emojiRaw");
                 emoji = new EmojiPickerRow.Emoji(string, NativeMapExtensionsKt.getNonNullString(emojiRaw, "emojiName"), NativeMapExtensionsKt.getNonNullString(emojiRaw, "emojiUrl"), NativeMapExtensionsKt.getBoolean(emojiRaw, "disabled", false));
-            } else {
-                emoji = null;
             }
             arrayList.add(emoji);
         }

@@ -37,7 +37,7 @@ public final class ChatListView$onChatListUpdate$1$1 extends s implements Functi
         if (scrollState != null && scrollState.isAtBottom()) {
             z10 = true;
         }
-        ref$BooleanRef.f21467j = z10;
+        ref$BooleanRef.f21469j = z10;
         if (this.$update.getAction() instanceof ChatListAction.Clear) {
             chatScrollStateObserver2 = this.this$0.scrollStateObserver;
             chatScrollStateObserver2.stopWatching();

@@ -32,7 +32,7 @@ public final class OnZoomChangedEvent$$serializer implements f0<OnZoomChangedEve
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{e0.f30599a};
+        return new KSerializer[]{e0.f30601a};
     }
 
     @Override 

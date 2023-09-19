@@ -22,7 +22,7 @@ public final class DirectReplyUser {
     private final String discriminator;
 
     
-    private final long f7562id;
+    private final long f7564id;
     private final String username;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/notifications/api/DirectReplyUser$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/notifications/api/DirectReplyUser;", "notification_api_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -44,7 +44,7 @@ public final class DirectReplyUser {
         if (1 != (i10 & 1)) {
             n1.b(i10, 1, DirectReplyUser$$serializer.INSTANCE.getDescriptor());
         }
-        this.f7562id = userId.m671unboximpl();
+        this.f7564id = userId.m678unboximpl();
         if ((i10 & 2) == 0) {
             this.username = null;
         } else {
@@ -71,9 +71,9 @@ public final class DirectReplyUser {
     }
 
     
-    public static  DirectReplyUser m538copyASSxI_0$default(DirectReplyUser directReplyUser, long j10, String str, String str2, String str3, int i10, Object obj) {
+    public static  DirectReplyUser m545copyASSxI_0$default(DirectReplyUser directReplyUser, long j10, String str, String str2, String str3, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            j10 = directReplyUser.f7562id;
+            j10 = directReplyUser.f7564id;
         }
         if ((i10 & 2) != 0) {
             str = directReplyUser.username;
@@ -84,7 +84,7 @@ public final class DirectReplyUser {
         if ((i10 & 8) != 0) {
             str3 = directReplyUser.avatar;
         }
-        return directReplyUser.m540copyASSxI_0(j10, str, str2, str3);
+        return directReplyUser.m547copyASSxI_0(j10, str, str2, str3);
     }
 
     public static final void write$Self(DirectReplyUser self, CompositeEncoder output, SerialDescriptor serialDesc) {
@@ -94,14 +94,14 @@ public final class DirectReplyUser {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z12 = false;
-        output.h(serialDesc, 0, UserId$$serializer.INSTANCE, UserId.m662boximpl(self.f7562id));
+        output.h(serialDesc, 0, UserId$$serializer.INSTANCE, UserId.m669boximpl(self.f7564id));
         if (!output.z(serialDesc, 1) && self.username == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.e(serialDesc, 1, a2.f30574a, self.username);
+            output.e(serialDesc, 1, a2.f30576a, self.username);
         }
         if (!output.z(serialDesc, 2) && self.discriminator == null) {
             z11 = false;
@@ -109,19 +109,19 @@ public final class DirectReplyUser {
             z11 = true;
         }
         if (z11) {
-            output.e(serialDesc, 2, a2.f30574a, self.discriminator);
+            output.e(serialDesc, 2, a2.f30576a, self.discriminator);
         }
         if (output.z(serialDesc, 3) || self.avatar != null) {
             z12 = true;
         }
         if (z12) {
-            output.e(serialDesc, 3, a2.f30574a, self.avatar);
+            output.e(serialDesc, 3, a2.f30576a, self.avatar);
         }
     }
 
     
-    public final long m539component1re6GcUE() {
-        return this.f7562id;
+    public final long m546component1re6GcUE() {
+        return this.f7564id;
     }
 
     public final String component2() {
@@ -137,7 +137,7 @@ public final class DirectReplyUser {
     }
 
     
-    public final DirectReplyUser m540copyASSxI_0(long j10, String str, String str2, String str3) {
+    public final DirectReplyUser m547copyASSxI_0(long j10, String str, String str2, String str3) {
         return new DirectReplyUser(j10, str, str2, str3, null);
     }
 
@@ -149,7 +149,7 @@ public final class DirectReplyUser {
             return false;
         }
         DirectReplyUser directReplyUser = (DirectReplyUser) obj;
-        return UserId.m666equalsimpl0(this.f7562id, directReplyUser.f7562id) && q.c(this.username, directReplyUser.username) && q.c(this.discriminator, directReplyUser.discriminator) && q.c(this.avatar, directReplyUser.avatar);
+        return UserId.m673equalsimpl0(this.f7564id, directReplyUser.f7564id) && q.c(this.username, directReplyUser.username) && q.c(this.discriminator, directReplyUser.discriminator) && q.c(this.avatar, directReplyUser.avatar);
     }
 
     public final String getAvatar() {
@@ -161,8 +161,8 @@ public final class DirectReplyUser {
     }
 
     
-    public final long m541getIdre6GcUE() {
-        return this.f7562id;
+    public final long m548getIdre6GcUE() {
+        return this.f7564id;
     }
 
     public final String getUsername() {
@@ -170,7 +170,7 @@ public final class DirectReplyUser {
     }
 
     public int hashCode() {
-        int i10 = UserId.m667hashCodeimpl(this.f7562id) * 31;
+        int i10 = UserId.m674hashCodeimpl(this.f7564id) * 31;
         String str = this.username;
         int i11 = 0;
         int hashCode = (i10 + (str == null ? 0 : str.hashCode())) * 31;
@@ -184,7 +184,7 @@ public final class DirectReplyUser {
     }
 
     public String toString() {
-        String str = UserId.m669toStringimpl(this.f7562id);
+        String str = UserId.m676toStringimpl(this.f7564id);
         String str2 = this.username;
         String str3 = this.discriminator;
         String str4 = this.avatar;
@@ -192,7 +192,7 @@ public final class DirectReplyUser {
     }
 
     private DirectReplyUser(long j10, String str, String str2, String str3) {
-        this.f7562id = j10;
+        this.f7564id = j10;
         this.username = str;
         this.discriminator = str2;
         this.avatar = str3;

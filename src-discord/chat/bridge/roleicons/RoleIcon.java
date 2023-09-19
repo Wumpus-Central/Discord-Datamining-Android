@@ -88,13 +88,13 @@ public final class RoleIcon {
             z10 = true;
         }
         if (z10) {
-            output.e(serialDesc, 0, a2.f30574a, self.source);
+            output.e(serialDesc, 0, a2.f30576a, self.source);
         }
         if (output.z(serialDesc, 1) || self.unicodeEmoji != null) {
             z11 = true;
         }
         if (z11) {
-            output.e(serialDesc, 1, a2.f30574a, self.unicodeEmoji);
+            output.e(serialDesc, 1, a2.f30576a, self.unicodeEmoji);
         }
         output.y(serialDesc, 2, self.name);
         output.w(serialDesc, 3, self.size);

@@ -24,11 +24,11 @@ public final class SpoilerIdentifier {
         }
 
         
-        public final String m138forNode2sfwrmE(SpoilerContentNode node, String containerId, int i10) {
+        public final String m139forNode2sfwrmE(SpoilerContentNode node, String containerId, int i10) {
             q.h(node, "node");
             q.h(containerId, "containerId");
             int hashCode = node.hashCode();
-            return SpoilerIdentifier.m132constructorimpl("spoiler:" + hashCode + ":" + containerId + ":" + i10);
+            return SpoilerIdentifier.m133constructorimpl("spoiler:" + hashCode + ":" + containerId + ":" + i10);
         }
     }
 
@@ -37,38 +37,38 @@ public final class SpoilerIdentifier {
     }
 
     
-    public static final  SpoilerIdentifier m131boximpl(String str) {
+    public static final  SpoilerIdentifier m132boximpl(String str) {
         return new SpoilerIdentifier(str);
     }
 
     
-    public static String m132constructorimpl(String id2) {
+    public static String m133constructorimpl(String id2) {
         q.h(id2, "id");
         return id2;
     }
 
     
-    public static boolean m133equalsimpl(String str, Object obj) {
-        return (obj instanceof SpoilerIdentifier) && q.c(str, ((SpoilerIdentifier) obj).m137unboximpl());
+    public static boolean m134equalsimpl(String str, Object obj) {
+        return (obj instanceof SpoilerIdentifier) && q.c(str, ((SpoilerIdentifier) obj).m138unboximpl());
     }
 
     
-    public static final boolean m134equalsimpl0(String str, String str2) {
+    public static final boolean m135equalsimpl0(String str, String str2) {
         return q.c(str, str2);
     }
 
     
-    public static int m135hashCodeimpl(String str) {
+    public static int m136hashCodeimpl(String str) {
         return str.hashCode();
     }
 
     
-    public static String m136toStringimpl(String str) {
+    public static String m137toStringimpl(String str) {
         return "SpoilerIdentifier(id=" + str + ")";
     }
 
     public boolean equals(Object obj) {
-        return m133equalsimpl(this.f7246id, obj);
+        return m134equalsimpl(this.f7246id, obj);
     }
 
     public final String getId() {
@@ -76,15 +76,15 @@ public final class SpoilerIdentifier {
     }
 
     public int hashCode() {
-        return m135hashCodeimpl(this.f7246id);
+        return m136hashCodeimpl(this.f7246id);
     }
 
     public String toString() {
-        return m136toStringimpl(this.f7246id);
+        return m137toStringimpl(this.f7246id);
     }
 
     
-    public final  String m137unboximpl() {
+    public final  String m138unboximpl() {
         return this.f7246id;
     }
 }

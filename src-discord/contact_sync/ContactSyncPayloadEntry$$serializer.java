@@ -32,7 +32,7 @@ public final class ContactSyncPayloadEntry$$serializer implements f0<ContactSync
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f30574a};
+        return new KSerializer[]{a2.f30576a};
     }
 
     @Override 

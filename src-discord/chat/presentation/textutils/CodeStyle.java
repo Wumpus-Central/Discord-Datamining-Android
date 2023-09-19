@@ -112,10 +112,10 @@ public final class CodeStyle {
         String obj2 = V02.toString();
         String str = "```" + obj + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE + obj2 + "\n```";
         try {
-            s.a aVar = s.f21220k;
-            list = s.b(Parser.parse$default(getParser(), str, Unit.f21442a, null, 4, null));
+            s.a aVar = s.f21222k;
+            list = s.b(Parser.parse$default(getParser(), str, Unit.f21444a, null, 4, null));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f21220k;
+            s.a aVar2 = s.f21222k;
             list = s.b(t.a(th2));
         }
         d10 = i.d(new TextNode(obj2));

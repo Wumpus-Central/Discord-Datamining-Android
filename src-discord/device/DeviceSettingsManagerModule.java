@@ -110,7 +110,7 @@ public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModul
             return null;
         }
         openAccessibilitySettings(currentActivity);
-        return Unit.f21442a;
+        return Unit.f21444a;
     }
 
     @ReactMethod
@@ -121,14 +121,14 @@ public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModul
                 return null;
             }
             openApplicationNotificationSettings(currentActivity);
-            return Unit.f21442a;
+            return Unit.f21444a;
         }
         Activity currentActivity2 = getReactApplicationContext().getCurrentActivity();
         if (currentActivity2 == null) {
             return null;
         }
         openApplicationDetailSettings(currentActivity2);
-        return Unit.f21442a;
+        return Unit.f21444a;
     }
 
     @ReactMethod

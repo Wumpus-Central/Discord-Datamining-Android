@@ -29,32 +29,32 @@ public final class GradientPostprocessor extends BasePostprocessor {
         private static final class Point {
 
             
-            private final float f7506x;
+            private final float f7508x;
 
             
-            private final float f7507y;
+            private final float f7509y;
 
             public Point(float f10, float f11) {
-                this.f7506x = f10;
-                this.f7507y = f11;
+                this.f7508x = f10;
+                this.f7509y = f11;
             }
 
             public static  Point copy$default(Point point, float f10, float f11, int i10, Object obj) {
                 if ((i10 & 1) != 0) {
-                    f10 = point.f7506x;
+                    f10 = point.f7508x;
                 }
                 if ((i10 & 2) != 0) {
-                    f11 = point.f7507y;
+                    f11 = point.f7509y;
                 }
                 return point.copy(f10, f11);
             }
 
             public final float component1() {
-                return this.f7506x;
+                return this.f7508x;
             }
 
             public final float component2() {
-                return this.f7507y;
+                return this.f7509y;
             }
 
             public final Point copy(float f10, float f11) {
@@ -69,24 +69,24 @@ public final class GradientPostprocessor extends BasePostprocessor {
                     return false;
                 }
                 Point point = (Point) obj;
-                return Float.compare(this.f7506x, point.f7506x) == 0 && Float.compare(this.f7507y, point.f7507y) == 0;
+                return Float.compare(this.f7508x, point.f7508x) == 0 && Float.compare(this.f7509y, point.f7509y) == 0;
             }
 
             public final float getX() {
-                return this.f7506x;
+                return this.f7508x;
             }
 
             public final float getY() {
-                return this.f7507y;
+                return this.f7509y;
             }
 
             public int hashCode() {
-                return (Float.floatToIntBits(this.f7506x) * 31) + Float.floatToIntBits(this.f7507y);
+                return (Float.floatToIntBits(this.f7508x) * 31) + Float.floatToIntBits(this.f7509y);
             }
 
             public String toString() {
-                float f10 = this.f7506x;
-                float f11 = this.f7507y;
+                float f10 = this.f7508x;
+                float f11 = this.f7509y;
                 return "Point(x=" + f10 + ", y=" + f11 + ")";
             }
         }
@@ -152,7 +152,7 @@ public final class GradientPostprocessor extends BasePostprocessor {
         float height = bitmap.getHeight();
         Paint paint = new Paint();
         paint.setShader(new LinearGradient(point.getX(), point.getY(), point2.getX(), point2.getY(), new int[]{this.gradient.getStartColor(), this.gradient.getEndColor()}, new float[]{this.gradient.getStartPosition(), this.gradient.getEndPosition()}, Shader.TileMode.CLAMP));
-        Unit unit = Unit.f21442a;
+        Unit unit = Unit.f21444a;
         new Canvas(bitmap).drawRect(0.0f, 0.0f, bitmap.getWidth(), height, paint);
     }
 }

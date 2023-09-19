@@ -18,7 +18,7 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder imp
     private final ChatEventHandler eventHandler;
     private final MessageComponentsView messageComponentsView;
     private long messageFlags;
-    private String messageId = MessageId.m625constructorimpl("0");
+    private String messageId = MessageId.m632constructorimpl("0");
 
     
     public MessageComponentsViewHolder(MessageComponentsView messageComponentsView, ChatEventHandler eventHandler) {
@@ -31,7 +31,7 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder imp
 
     public final void bind(MessageComponentsAccessory componentsComponentsAccessory, ComponentProvider componentProvider) {
         q.h(componentsComponentsAccessory, "componentsComponentsAccessory");
-        this.messageId = componentsComponentsAccessory.mo233getMessageId3Eiw7ao();
+        this.messageId = componentsComponentsAccessory.mo236getMessageId3Eiw7ao();
         this.messageFlags = componentsComponentsAccessory.getMessageFlags();
         this.messageComponentsView.setComponents(componentProvider, componentsComponentsAccessory.getMessageComponents(), this);
     }
@@ -41,32 +41,32 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder imp
     }
 
     
-    public final String m361getMessageId3Eiw7ao() {
+    public final String m364getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     @Override 
     
-    public void mo340onTapButtonActionComponenty43Yjpg(String str, long j10, List<Integer> indices) {
+    public void mo343onTapButtonActionComponenty43Yjpg(String str, long j10, List<Integer> indices) {
         int[] A0;
         q.h(indices, "indices");
         ChatEventHandler chatEventHandler = this.eventHandler;
         String str2 = this.messageId;
         long j11 = this.messageFlags;
         A0 = r.A0(indices);
-        chatEventHandler.mo169onTapButtonActionComponentNkFJqEg(str2, j11, str, j10, A0);
+        chatEventHandler.mo171onTapButtonActionComponentNkFJqEg(str2, j11, str, j10, A0);
     }
 
     @Override 
     public void onTapSelectActionComponent(SelectComponent selectComponent) {
         q.h(selectComponent, "selectComponent");
-        this.eventHandler.mo184onTapSelectActionComponentu7_MRrM(this.messageId, this.messageFlags, selectComponent);
+        this.eventHandler.mo187onTapSelectActionComponentu7_MRrM(this.messageId, this.messageFlags, selectComponent);
     }
 
     @Override 
     public void openLink(String url) {
         q.h(url, "url");
-        this.eventHandler.mo159onLinkClickedu7_MRrM(this.messageId, url, "");
+        this.eventHandler.mo161onLinkClickedu7_MRrM(this.messageId, url, "");
     }
 
     public final void setMessageFlags(long j10) {
@@ -74,7 +74,7 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder imp
     }
 
     
-    public final void m362setMessageId1xi1bu0(String str) {
+    public final void m365setMessageId1xi1bu0(String str) {
         q.h(str, "<set-?>");
         this.messageId = str;
     }

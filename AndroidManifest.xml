@@ -5,7 +5,6 @@
     <uses-feature android:name="android.hardware.microphone" android:required="false"/>
     <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -26,6 +25,7 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
     <queries>
         <package android:name="com.facebook.orca"/>
@@ -148,13 +148,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainBrandInverted" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_inverted" android:name="com.discord.main.MainBrandInverted" android:roundIcon="@mipmap/brand_inverted_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainMatteDark" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/matte_dark" android:name="com.discord.main.MainMatteDark" android:roundIcon="@mipmap/matte_dark_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -172,97 +172,97 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainPastel" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/pastel" android:name="com.discord.main.MainPastel" android:roundIcon="@mipmap/pastel_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainPirate" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/pirate" android:name="com.discord.main.MainPirate" android:roundIcon="@mipmap/pirate_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainCamo" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/camo" android:name="com.discord.main.MainCamo" android:roundIcon="@mipmap/camo_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainSunset" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/sunset" android:name="com.discord.main.MainSunset" android:roundIcon="@mipmap/sunset_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainGalaxy" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/galaxy" android:name="com.discord.main.MainGalaxy" android:roundIcon="@mipmap/galaxy_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainY2K" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/y2k" android:name="com.discord.main.MainY2K" android:roundIcon="@mipmap/y2k_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainCherryBlossom" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/cherry_blossom" android:name="com.discord.main.MainCherryBlossom" android:roundIcon="@mipmap/cherry_blossom_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainBeanie" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/beanie" android:name="com.discord.main.MainBeanie" android:roundIcon="@mipmap/beanie_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainGaming" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/gaming" android:name="com.discord.main.MainGaming" android:roundIcon="@mipmap/gaming_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainCircuit" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/circuit" android:name="com.discord.main.MainCircuit" android:roundIcon="@mipmap/circuit_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainHoloWaves" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/holowaves" android:name="com.discord.main.MainHoloWaves" android:roundIcon="@mipmap/holowaves_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainBlush" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/blush" android:name="com.discord.main.MainBlush" android:roundIcon="@mipmap/blush_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainAngry" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/angry" android:name="com.discord.main.MainAngry" android:roundIcon="@mipmap/angry_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainManga" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/manga" android:name="com.discord.main.MainManga" android:roundIcon="@mipmap/manga_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainController" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/controller" android:name="com.discord.main.MainController" android:roundIcon="@mipmap/controller_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/brand_dark" android:name="com.discord.main.MainMushroom" android:roundIcon="@mipmap/brand_dark_round" android:targetActivity="com.discord.main.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/mushroom" android:name="com.discord.main.MainMushroom" android:roundIcon="@mipmap/mushroom_round" android:targetActivity="com.discord.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>

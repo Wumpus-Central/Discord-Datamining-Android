@@ -34,7 +34,7 @@ public final class Replay$$serializer implements f0<Replay> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f30574a, w0.f30690a};
+        return new KSerializer[]{a2.f30576a, w0.f30692a};
     }
 
     @Override 

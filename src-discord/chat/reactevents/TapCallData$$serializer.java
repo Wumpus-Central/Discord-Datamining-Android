@@ -76,7 +76,7 @@ public final class TapCallData$$serializer implements f0<TapCallData> {
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
         if (messageId != null) {
-            str = messageId.m632unboximpl();
+            str = messageId.m639unboximpl();
         }
         return new TapCallData(i10, str, (ChannelId) obj, null, null);
     }

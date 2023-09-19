@@ -27,14 +27,14 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$23 extends s imple
     @Override 
     public   Unit invoke(Integer num, MessageAccessory messageAccessory, MessagePartViewHolder messagePartViewHolder) {
         invoke(num.intValue(), messageAccessory, messagePartViewHolder);
-        return Unit.f21442a;
+        return Unit.f21444a;
     }
 
     public final void invoke(int i10, MessageAccessory attachment, MessagePartViewHolder attachmentViewHolder) {
         Double valueOf;
         q.h(attachment, "attachment");
         q.h(attachmentViewHolder, "attachmentViewHolder");
-        String str = attachment.mo233getMessageId3Eiw7ao();
+        String str = attachment.mo236getMessageId3Eiw7ao();
         if (attachment instanceof ImageAttachmentMessageAccessory) {
             valueOf = null;
         } else if (attachment instanceof VideoAttachmentMessageAccessory) {
@@ -42,6 +42,6 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$23 extends s imple
         } else {
             throw new IllegalStateException(("Unsupported accessory: " + attachment).toString());
         }
-        this.this$0.m210onMediaClickedl3ndGo(attachmentViewHolder, str, i10, "attachment", valueOf, null, ViewResizeMode.Cover);
+        this.this$0.m213onMediaClickedl3ndGo(attachmentViewHolder, str, i10, "attachment", valueOf, null, ViewResizeMode.Cover);
     }
 }

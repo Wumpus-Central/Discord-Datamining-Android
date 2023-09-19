@@ -47,8 +47,8 @@ public final class ImageAttachmentMessageAccessory extends MessageAccessory {
     }
 
     
-    public final String m279component13Eiw7ao() {
-        return mo233getMessageId3Eiw7ao();
+    public final String m282component13Eiw7ao() {
+        return mo236getMessageId3Eiw7ao();
     }
 
     public final boolean component10() {
@@ -100,7 +100,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAccessory {
     }
 
     
-    public final ImageAttachmentMessageAccessory m280copyJJXpD5M(String messageId, int i10, Attachment attachment, int i11, int i12, SpoilerAttributes spoilerAttributes, View.OnLongClickListener onLongClickListener, boolean z10, Float f10, boolean z11, boolean z12, Integer num, Integer num2) {
+    public final ImageAttachmentMessageAccessory m283copyJJXpD5M(String messageId, int i10, Attachment attachment, int i11, int i12, SpoilerAttributes spoilerAttributes, View.OnLongClickListener onLongClickListener, boolean z10, Float f10, boolean z11, boolean z12, Integer num, Integer num2) {
         q.h(messageId, "messageId");
         q.h(attachment, "attachment");
         return new ImageAttachmentMessageAccessory(messageId, i10, attachment, i11, i12, spoilerAttributes, onLongClickListener, z10, f10, z11, z12, num, num2, null);
@@ -114,7 +114,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAccessory {
             return false;
         }
         ImageAttachmentMessageAccessory imageAttachmentMessageAccessory = (ImageAttachmentMessageAccessory) obj;
-        return MessageId.m628equalsimpl0(mo233getMessageId3Eiw7ao(), imageAttachmentMessageAccessory.mo233getMessageId3Eiw7ao()) && this.attachmentIndex == imageAttachmentMessageAccessory.attachmentIndex && q.c(this.attachment, imageAttachmentMessageAccessory.attachment) && this.constrainedWidth == imageAttachmentMessageAccessory.constrainedWidth && this.radiusPx == imageAttachmentMessageAccessory.radiusPx && q.c(this.spoilerAttributes, imageAttachmentMessageAccessory.spoilerAttributes) && q.c(this.onLongClick, imageAttachmentMessageAccessory.onLongClick) && this.useNewAltTextButton == imageAttachmentMessageAccessory.useNewAltTextButton && q.c(this.attachmentsOpacity, imageAttachmentMessageAccessory.attachmentsOpacity) && this.showRemixButton == imageAttachmentMessageAccessory.showRemixButton && this.isPartOfMosaic == imageAttachmentMessageAccessory.isPartOfMosaic && q.c(this.remixButtonIconColor, imageAttachmentMessageAccessory.remixButtonIconColor) && q.c(this.remixButtonBackgroundColor, imageAttachmentMessageAccessory.remixButtonBackgroundColor);
+        return MessageId.m635equalsimpl0(mo236getMessageId3Eiw7ao(), imageAttachmentMessageAccessory.mo236getMessageId3Eiw7ao()) && this.attachmentIndex == imageAttachmentMessageAccessory.attachmentIndex && q.c(this.attachment, imageAttachmentMessageAccessory.attachment) && this.constrainedWidth == imageAttachmentMessageAccessory.constrainedWidth && this.radiusPx == imageAttachmentMessageAccessory.radiusPx && q.c(this.spoilerAttributes, imageAttachmentMessageAccessory.spoilerAttributes) && q.c(this.onLongClick, imageAttachmentMessageAccessory.onLongClick) && this.useNewAltTextButton == imageAttachmentMessageAccessory.useNewAltTextButton && q.c(this.attachmentsOpacity, imageAttachmentMessageAccessory.attachmentsOpacity) && this.showRemixButton == imageAttachmentMessageAccessory.showRemixButton && this.isPartOfMosaic == imageAttachmentMessageAccessory.isPartOfMosaic && q.c(this.remixButtonIconColor, imageAttachmentMessageAccessory.remixButtonIconColor) && q.c(this.remixButtonBackgroundColor, imageAttachmentMessageAccessory.remixButtonBackgroundColor);
     }
 
     public final Attachment getAttachment() {
@@ -135,7 +135,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAccessory {
 
     @Override 
     
-    public String mo233getMessageId3Eiw7ao() {
+    public String mo236getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -168,7 +168,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int i10 = ((((((((MessageId.m629hashCodeimpl(mo233getMessageId3Eiw7ao()) * 31) + this.attachmentIndex) * 31) + this.attachment.hashCode()) * 31) + this.constrainedWidth) * 31) + this.radiusPx) * 31;
+        int i10 = ((((((((MessageId.m636hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.attachmentIndex) * 31) + this.attachment.hashCode()) * 31) + this.constrainedWidth) * 31) + this.radiusPx) * 31;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         int i11 = 0;
         int hashCode = (i10 + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode())) * 31;
@@ -212,7 +212,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m630toStringimpl(mo233getMessageId3Eiw7ao());
+        String str = MessageId.m637toStringimpl(mo236getMessageId3Eiw7ao());
         int i10 = this.attachmentIndex;
         Attachment attachment = this.attachment;
         int i11 = this.constrainedWidth;

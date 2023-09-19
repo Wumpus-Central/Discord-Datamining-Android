@@ -161,29 +161,29 @@ public final class MessageRow extends Row {
         output.w(serialDesc, 0, self.getIndex());
         output.h(serialDesc, 1, ChangeType.Serializer.INSTANCE, self.getChangeType());
         if (output.z(serialDesc, 2) || self.jumped != null) {
-            output.e(serialDesc, 2, h.f30616a, self.jumped);
+            output.e(serialDesc, 2, h.f30618a, self.jumped);
         }
         if (output.z(serialDesc, 3) || self.highlightJumpedOnceOnly != null) {
-            output.e(serialDesc, 3, h.f30616a, self.highlightJumpedOnceOnly);
+            output.e(serialDesc, 3, h.f30618a, self.highlightJumpedOnceOnly);
         }
         output.h(serialDesc, 4, MessageSerializer.INSTANCE, self.message);
         if (output.z(serialDesc, 5) || self.scrollTo != null) {
-            output.e(serialDesc, 5, h.f30616a, self.scrollTo);
+            output.e(serialDesc, 5, h.f30618a, self.scrollTo);
         }
         if (output.z(serialDesc, 6) || self.animated != null) {
-            output.e(serialDesc, 6, h.f30616a, self.animated);
+            output.e(serialDesc, 6, h.f30618a, self.animated);
         }
         if (output.z(serialDesc, 7) || self.canAddNewReactions != null) {
-            output.e(serialDesc, 7, h.f30616a, self.canAddNewReactions);
+            output.e(serialDesc, 7, h.f30618a, self.canAddNewReactions);
         }
         if (output.z(serialDesc, 8) || self.addReactionLabel != null) {
-            output.e(serialDesc, 8, a2.f30574a, self.addReactionLabel);
+            output.e(serialDesc, 8, a2.f30576a, self.addReactionLabel);
         }
         if (output.z(serialDesc, 9) || self.addNewReactionAccessibilityLabel != null) {
-            output.e(serialDesc, 9, a2.f30574a, self.addNewReactionAccessibilityLabel);
+            output.e(serialDesc, 9, a2.f30576a, self.addNewReactionAccessibilityLabel);
         }
         if (output.z(serialDesc, 10) || self.addNewBurstReactionAccessibilityLabel != null) {
-            output.e(serialDesc, 10, a2.f30574a, self.addNewBurstReactionAccessibilityLabel);
+            output.e(serialDesc, 10, a2.f30576a, self.addNewBurstReactionAccessibilityLabel);
         }
         if (output.z(serialDesc, 11) || self.reactionsTheme != null) {
             output.e(serialDesc, 11, ReactionsTheme$$serializer.INSTANCE, self.reactionsTheme);
@@ -198,7 +198,7 @@ public final class MessageRow extends Row {
             output.e(serialDesc, 14, MessageFrameSerializer.INSTANCE, self.messageFrame);
         }
         if (output.z(serialDesc, 15) || self.reactTag != null) {
-            output.e(serialDesc, 15, m0.f30649a, self.reactTag);
+            output.e(serialDesc, 15, m0.f30651a, self.reactTag);
         }
         if (output.z(serialDesc, 16) || self.truncation != null) {
             output.e(serialDesc, 16, Truncation$$serializer.INSTANCE, self.truncation);

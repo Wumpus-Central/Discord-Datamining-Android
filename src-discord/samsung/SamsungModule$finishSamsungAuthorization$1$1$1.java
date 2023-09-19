@@ -50,7 +50,7 @@ final class SamsungModule$finishSamsungAuthorization$1$1$1 extends k implements 
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((SamsungModule$finishSamsungAuthorization$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21442a);
+        return ((SamsungModule$finishSamsungAuthorization$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
     }
 
     @Override 
@@ -76,9 +76,9 @@ final class SamsungModule$finishSamsungAuthorization$1$1$1 extends k implements 
                 arrayList.add(((String) entry.getKey()) + "=" + ((String) entry.getValue()));
             }
             c02 = r.c0(arrayList, "&", null, null, 0, null, null, 62, null);
-            this.this$0.handleSamsungCallback(this.$client.b(new Request.Builder().h(RequestBody.Companion.b(c02, MediaType.f25794g.a("application/x-www-form-urlencoded"))).l(queryParameter).b()).execute());
+            this.this$0.handleSamsungCallback(this.$client.b(new Request.Builder().h(RequestBody.Companion.b(c02, MediaType.f25796g.a("application/x-www-form-urlencoded"))).l(queryParameter).b()).execute());
             SamsungModule.resolveConnection$default(this.this$0, null, 1, null);
-            return Unit.f21442a;
+            return Unit.f21444a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

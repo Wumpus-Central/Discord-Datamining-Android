@@ -36,7 +36,7 @@ public final class EmbedFooter$$serializer implements f0<EmbedFooter> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f30574a;
+        a2 a2Var = a2.f30576a;
         return new KSerializer[]{a.u(a2Var), a.u(a2Var), a.u(a2Var)};
     }
 
@@ -51,7 +51,7 @@ public final class EmbedFooter$$serializer implements f0<EmbedFooter> {
         c b10 = decoder.b(descriptor2);
         Object obj4 = null;
         if (b10.p()) {
-            a2 a2Var = a2.f30574a;
+            a2 a2Var = a2.f30576a;
             obj2 = b10.n(descriptor2, 0, a2Var, null);
             obj = b10.n(descriptor2, 1, a2Var, null);
             obj3 = b10.n(descriptor2, 2, a2Var, null);
@@ -66,13 +66,13 @@ public final class EmbedFooter$$serializer implements f0<EmbedFooter> {
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    obj4 = b10.n(descriptor2, 0, a2.f30574a, obj4);
+                    obj4 = b10.n(descriptor2, 0, a2.f30576a, obj4);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    obj = b10.n(descriptor2, 1, a2.f30574a, obj);
+                    obj = b10.n(descriptor2, 1, a2.f30576a, obj);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    obj5 = b10.n(descriptor2, 2, a2.f30574a, obj5);
+                    obj5 = b10.n(descriptor2, 2, a2.f30576a, obj5);
                     i11 |= 4;
                 } else {
                     throw new n(o10);

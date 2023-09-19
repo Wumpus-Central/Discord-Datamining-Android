@@ -34,7 +34,7 @@ public final class CompressionProgressEvent$$serializer implements f0<Compressio
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f30574a, m0.f30649a};
+        return new KSerializer[]{a2.f30576a, m0.f30651a};
     }
 
     @Override 

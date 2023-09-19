@@ -26,14 +26,14 @@ public final class SummarySeparatorDelegate extends BaseChatListItemDelegate<Sum
     public static final void bindView$lambda$2$lambda$0(SummarySeparatorDelegate this$0, SummarySeparatorChatListItem item, View view) {
         q.h(this$0, "this$0");
         q.h(item, "$item");
-        this$0.getEventHandler().mo186onTapSummarysekaTiM(item.getSummary().m147getChannelIdo4g7jtM(), item.m201getCurrentMsgId3Eiw7ao(), item.getSummary().getId());
+        this$0.getEventHandler().mo189onTapSummarysekaTiM(item.getSummary().m149getChannelIdo4g7jtM(), item.m204getCurrentMsgId3Eiw7ao(), item.getSummary().getId());
     }
 
     
     public static final void bindView$lambda$2$lambda$1(SummarySeparatorDelegate this$0, SummarySeparatorChatListItem item, View view) {
         q.h(this$0, "this$0");
         q.h(item, "$item");
-        this$0.getEventHandler().mo187onTapSummaryJumpsekaTiM(item.getSummary().m147getChannelIdo4g7jtM(), item.m202getJumpToMsgId3Eiw7ao(), item.getSummary().getId());
+        this$0.getEventHandler().mo190onTapSummaryJumpsekaTiM(item.getSummary().m149getChannelIdo4g7jtM(), item.m205getJumpToMsgId3Eiw7ao(), item.getSummary().getId());
     }
 
     @Override 

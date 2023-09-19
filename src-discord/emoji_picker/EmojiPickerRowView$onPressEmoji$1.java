@@ -18,7 +18,7 @@ final class EmojiPickerRowView$onPressEmoji$1 extends s implements Function1<Str
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f21442a;
+        return Unit.f21444a;
     }
 
     

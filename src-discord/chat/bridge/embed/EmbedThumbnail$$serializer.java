@@ -42,9 +42,9 @@ public final class EmbedThumbnail$$serializer implements f0<EmbedThumbnail> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f30574a;
-        m0 m0Var = m0.f30649a;
-        h hVar = h.f30616a;
+        a2 a2Var = a2.f30576a;
+        m0 m0Var = m0.f30651a;
+        h hVar = h.f30618a;
         return new KSerializer[]{a2Var, a.u(a2Var), a.u(a2Var), m0Var, m0Var, a.u(hVar), a.u(hVar), a2Var};
     }
 
@@ -65,12 +65,12 @@ public final class EmbedThumbnail$$serializer implements f0<EmbedThumbnail> {
         int i13 = 7;
         if (b10.p()) {
             str2 = b10.m(descriptor2, 0);
-            a2 a2Var = a2.f30574a;
+            a2 a2Var = a2.f30576a;
             obj = b10.n(descriptor2, 1, a2Var, null);
             obj2 = b10.n(descriptor2, 2, a2Var, null);
             i11 = b10.i(descriptor2, 3);
             i10 = b10.i(descriptor2, 4);
-            h hVar = h.f30616a;
+            h hVar = h.f30618a;
             obj3 = b10.n(descriptor2, 5, hVar, null);
             obj4 = b10.n(descriptor2, 6, hVar, null);
             str = b10.m(descriptor2, 7);
@@ -98,12 +98,12 @@ public final class EmbedThumbnail$$serializer implements f0<EmbedThumbnail> {
                         i13 = 7;
                         break;
                     case 1:
-                        obj6 = b10.n(descriptor2, 1, a2.f30574a, obj6);
+                        obj6 = b10.n(descriptor2, 1, a2.f30576a, obj6);
                         i15 |= 2;
                         i13 = 7;
                         break;
                     case 2:
-                        obj7 = b10.n(descriptor2, 2, a2.f30574a, obj7);
+                        obj7 = b10.n(descriptor2, 2, a2.f30576a, obj7);
                         i15 |= 4;
                         i13 = 7;
                         continue;
@@ -116,11 +116,11 @@ public final class EmbedThumbnail$$serializer implements f0<EmbedThumbnail> {
                         i15 |= 16;
                         break;
                     case 5:
-                        obj8 = b10.n(descriptor2, 5, h.f30616a, obj8);
+                        obj8 = b10.n(descriptor2, 5, h.f30618a, obj8);
                         i15 |= 32;
                         break;
                     case 6:
-                        obj5 = b10.n(descriptor2, 6, h.f30616a, obj5);
+                        obj5 = b10.n(descriptor2, 6, h.f30618a, obj5);
                         i15 |= 64;
                         break;
                     case 7:

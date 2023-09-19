@@ -382,7 +382,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
                 AttachmentUploadOverlayView.uploadCompleteCheckmarkFadeInAnim$lambda$10$lambda$5$lambda$4(AttachmentUploadOverlayView.this, valueAnimator2);
             }
         });
-        Unit unit = Unit.f21442a;
+        Unit unit = Unit.f21444a;
         ValueAnimator valueAnimator2 = new ValueAnimator();
         valueAnimator2.setFloatValues(0.8f, 0.9f);
         valueAnimator2.setInterpolator(new OvershootInterpolator(8.0f));
@@ -445,7 +445,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
                 AttachmentUploadOverlayView.uploadCompleteCheckmarkFadeOutAnim$lambda$16$lambda$12$lambda$11(AttachmentUploadOverlayView.this, valueAnimator2);
             }
         });
-        Unit unit = Unit.f21442a;
+        Unit unit = Unit.f21444a;
         ValueAnimator valueAnimator2 = new ValueAnimator();
         valueAnimator2.setFloatValues(1.0f, 0.0f);
         valueAnimator2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { 

@@ -20,7 +20,7 @@ public final class ReactionsView$setReactions$3 extends s implements Function1<R
     @Override 
     public   Unit invoke(ReactionView.Reaction reaction) {
         invoke2(reaction);
-        return Unit.f21442a;
+        return Unit.f21444a;
     }
 
     

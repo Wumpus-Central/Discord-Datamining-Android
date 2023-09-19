@@ -189,7 +189,7 @@ public class MediaView extends FrameLayout {
         MediaPlayer mediaPlayer = this.mediaPlayer;
         if (mediaPlayer != null) {
             mediaPlayer.reset();
-            Unit unit = Unit.f21442a;
+            Unit unit = Unit.f21444a;
             this.mediaPlayer = null;
         }
         MediaPlayerView mediaPlayerView = this.mediaPlayerView;

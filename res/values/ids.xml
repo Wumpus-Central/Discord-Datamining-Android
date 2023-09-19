@@ -281,6 +281,7 @@
     <item type="id" name="fps_text" />
     <item type="id" name="fragment_container_view_tag" />
     <item type="id" name="fullscreen_header" />
+    <item type="id" name="gaming_stats_button" />
     <item type="id" name="ghost_view" />
     <item type="id" name="ghost_view_holder" />
     <item type="id" name="gradients" />
@@ -311,6 +312,7 @@
     <item type="id" name="icon_group" />
     <item type="id" name="image" />
     <item type="id" name="image_alt_text" />
+    <item type="id" name="image_blur_bg" />
     <item type="id" name="image_view_crop" />
     <item type="id" name="image_view_logo" />
     <item type="id" name="image_view_state_aspect_ratio" />
@@ -467,7 +469,7 @@
     <item type="id" name="notification_background" />
     <item type="id" name="notification_main_column" />
     <item type="id" name="notification_main_column_container" />
-    <item type="id" name="obscure_overlay" />
+    <item type="id" name="obscure" />
     <item type="id" name="off" />
     <item type="id" name="on" />
     <item type="id" name="other_reactions_count" />
@@ -476,6 +478,7 @@
     <item type="id" name="overlay_centered_container" />
     <item type="id" name="overlay_channel_name" />
     <item type="id" name="overlay_channel_search" />
+    <item type="id" name="overlay_container" />
     <item type="id" name="overlay_guild_name" />
     <item type="id" name="overlay_header" />
     <item type="id" name="overlay_image" />

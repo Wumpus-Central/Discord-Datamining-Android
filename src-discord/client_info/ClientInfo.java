@@ -17,9 +17,9 @@ public final class ClientInfo {
     public static String otaManifestETag = null;
     public static String otaVersion = null;
     public static String packageName = null;
-    public static final String proguardUUID = "52e10a8b-bd62-423d-9a3e-67381f1682d7";
+    public static final String proguardUUID = "b10271b2-c316-4f38-b03f-a46e9ca9200f";
     public static final String sentryDsn = "https:
-    public static final String sentryRelease = "discord_android@197.0.0-2+197200";
+    public static final String sentryRelease = "discord_android@198.2.0-2+198202";
     public static final String sentryStaffDsn = "https:
     public static String versionCode;
     public static String versionName;

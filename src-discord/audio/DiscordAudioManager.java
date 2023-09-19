@@ -1,10 +1,9 @@
 package com.discord.audio;
 
-import android.annotation.SuppressLint;
-import android.bluetooth.BluetoothDevice;
-import android.bluetooth.BluetoothHeadset;
 import android.content.Context;
 import android.database.ContentObserver;
+import android.media.AudioDeviceCallback;
+import android.media.AudioDeviceInfo;
 import android.media.AudioFocusRequest;
 import android.media.AudioManager;
 import android.os.Handler;
@@ -13,15 +12,14 @@ import android.provider.Settings;
 import androidx.core.content.a;
 import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.discord.async_init.AsyncInitThreadChecker;
-import com.discord.audio.bluetooth.BluetoothBroadcastReceiver;
-import com.discord.audio.enums.BluetoothHeadsetAudioState;
-import com.discord.audio.enums.BluetoothProfileConnectionState;
+import com.discord.audio.DiscordAudioManager;
 import com.discord.audio.enums.ScoAudioState;
 import com.discord.audio.enums.WiredHeadsetState;
 import com.discord.audio.utils.AudioPermissionsUtilsKt;
 import com.discord.logging.Log;
 import com.facebook.react.uimanager.ViewProps;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 import kotlin.Metadata;
@@ -30,21 +28,22 @@ import kotlin.collections.j;
 import kotlin.collections.k;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.b;
 import kotlin.jvm.internal.q;
 import yf.c;
 
-@Metadata(d1 = {"\u0000¸\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0007\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0018\u0002\n\u0002\b\u0016\u0018\u0000 \u0092\u00012\u00020\u0001:\b\u0093\u0001\u0094\u0001\u0092\u0001\u0095\u0001BS\u0012\u0006\u00107\u001a\u000206\u0012\u0018\u0010:\u001a\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00160\u0015\u0012\u0004\u0012\u00020\u000409\u0012\u0012\u0010>\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u000409\u0012\u0012\u0010A\u001a\u000e\u0012\u0004\u0012\u00020@\u0012\u0004\u0012\u00020\u000409¢\u0006\u0006\b\u0090\u0001\u0010\u0091\u0001J\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\b\u0010\u0006\u001a\u00020\u0002H\u0002J\b\u0010\u0007\u001a\u00020\u0004H\u0002J\b\u0010\b\u001a\u00020\u0004H\u0002J\b\u0010\t\u001a\u00020\u0004H\u0002J\u0010\u0010\f\u001a\u00020\u00022\u0006\u0010\u000b\u001a\u00020\nH\u0002J\u0010\u0010\r\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\b\u0010\u000e\u001a\u00020\u0004H\u0003J\b\u0010\u000f\u001a\u00020\u0002H\u0002J\b\u0010\u0010\u001a\u00020\u0004H\u0002J\u0010\u0010\u0011\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0010\u0010\u0012\u001a\u00020\u00042\u0006\u0010\u000b\u001a\u00020\nH\u0002J\b\u0010\u0013\u001a\u00020\u0004H\u0002J\b\u0010\u0014\u001a\u00020\u0004H\u0002J\u0016\u0010\u0018\u001a\u00020\u00042\f\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\u00160\u0015H\u0002J\b\u0010\u0019\u001a\u00020\u0004H\u0002J\u0010\u0010\u001c\u001a\u00020\u00042\u0006\u0010\u001b\u001a\u00020\u001aH\u0003J\u0010\u0010\u001f\u001a\u00020\u00042\u0006\u0010\u001e\u001a\u00020\u001dH\u0003J\u0012\u0010!\u001a\u00020\u00042\b\u0010\u000b\u001a\u0004\u0018\u00010 H\u0003J\u0012\u0010$\u001a\u00020\u00042\b\u0010#\u001a\u0004\u0018\u00010\"H\u0003J\u0010\u0010'\u001a\u00020\u00042\u0006\u0010&\u001a\u00020%H\u0003J\u0010\u0010*\u001a\u00020\u00042\u0006\u0010)\u001a\u00020(H\u0003J\u000e\u0010,\u001a\u00020\u00022\u0006\u0010+\u001a\u00020\nJ\u0006\u0010-\u001a\u00020\u0004J\u0006\u0010.\u001a\u00020\u0004J\u000e\u0010/\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002J\u0010\u00102\u001a\u00020\u00042\b\b\u0001\u00101\u001a\u000200J\u000f\u00105\u001a\u00020\u0004H\u0001¢\u0006\u0004\b3\u00104R\u0014\u00107\u001a\u0002068\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b7\u00108R)\u0010:\u001a\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00160\u0015\u0012\u0004\u0012\u00020\u0004098\u0006¢\u0006\f\n\u0004\b:\u0010;\u001a\u0004\b<\u0010=R#\u0010>\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u0004098\u0006¢\u0006\f\n\u0004\b>\u0010;\u001a\u0004\b?\u0010=R#\u0010A\u001a\u000e\u0012\u0004\u0012\u00020@\u0012\u0004\u0012\u00020\u0004098\u0006¢\u0006\f\n\u0004\bA\u0010;\u001a\u0004\bB\u0010=R\u0014\u0010D\u001a\u00020C8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bD\u0010ER\u0014\u0010F\u001a\u00020\u00028\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bF\u0010GR\u0014\u0010H\u001a\u00020\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bH\u0010IR\u0014\u0010K\u001a\u00020J8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bK\u0010LR \u0010N\u001a\u00020M8\u0000X\u0081\u0004¢\u0006\u0012\n\u0004\bN\u0010O\u0012\u0004\bR\u00104\u001a\u0004\bP\u0010QR \u0010T\u001a\u00020S8\u0000X\u0081\u0004¢\u0006\u0012\n\u0004\bT\u0010U\u0012\u0004\bX\u00104\u001a\u0004\bV\u0010WR*\u0010Y\u001a\u0004\u0018\u00010\"8\u0000@\u0000X\u0081\u000e¢\u0006\u0018\n\u0004\bY\u0010Z\u0012\u0004\b_\u00104\u001a\u0004\b[\u0010\\\"\u0004\b]\u0010^R(\u0010a\u001a\u00020`8\u0000@\u0000X\u0081\u000e¢\u0006\u0018\n\u0004\ba\u0010b\u0012\u0004\bg\u00104\u001a\u0004\bc\u0010d\"\u0004\be\u0010fR*\u0010i\u001a\u0004\u0018\u00010h8\u0000@\u0000X\u0081\u000e¢\u0006\u0018\n\u0004\bi\u0010j\u0012\u0004\bo\u00104\u001a\u0004\bk\u0010l\"\u0004\bm\u0010nR\u0018\u0010q\u001a\u0004\u0018\u00010p8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bq\u0010rR6\u0010t\u001a\b\u0012\u0004\u0012\u00020\u00160\u00152\f\u0010s\u001a\b\u0012\u0004\u0012\u00020\u00160\u00158\u0006@BX\u0086\u000e¢\u0006\u0012\n\u0004\bt\u0010u\u001a\u0004\bv\u0010w\"\u0004\bx\u0010yR*\u0010z\u001a\u00020\n2\u0006\u0010s\u001a\u00020\n8\u0006@BX\u0086\u000e¢\u0006\u0012\n\u0004\bz\u0010{\u001a\u0004\b|\u0010}\"\u0004\b~\u0010\u007fR\u001c\u0010\u0081\u0001\u001a\u0005\u0018\u00010\u0080\u00018\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u0081\u0001\u0010\u0082\u0001R1\u0010\u0083\u0001\u001a\u00020@2\u0006\u0010s\u001a\u00020@8\u0006@BX\u0086\u000e¢\u0006\u0018\n\u0006\b\u0083\u0001\u0010\u0084\u0001\u001a\u0006\b\u0085\u0001\u0010\u0086\u0001\"\u0006\b\u0087\u0001\u0010\u0088\u0001R\u001c\u0010\u0089\u0001\u001a\u00020@8\u0006¢\u0006\u0010\n\u0006\b\u0089\u0001\u0010\u0084\u0001\u001a\u0006\b\u008a\u0001\u0010\u0086\u0001R\u0018\u0010\u008b\u0001\u001a\u00020\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u008b\u0001\u0010{R\u0018\u0010\u008c\u0001\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u008c\u0001\u0010GR\u0018\u0010\u008d\u0001\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u008d\u0001\u0010GR\u0018\u0010\u008e\u0001\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u008e\u0001\u0010GR\u0018\u0010\u008f\u0001\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u008f\u0001\u0010G¨\u0006\u0096\u0001"}, d2 = {"Lcom/discord/audio/DiscordAudioManager;", "", "", ViewProps.ON, "", "setCommunicationModeOnInternal", "requestAudioFocus", "releaseAudioFocus", "startObservingVolumeChanges", "stopObservingVolumeChanges", "Lcom/discord/audio/DiscordAudioManager$DeviceTypes;", "device", "isValidOutputDevice", "setMicrophoneMute", "refreshBluetoothHeadset", "hasWiredHeadset", "registerAudioFocusListener", "setSpeakerphoneOn", "activateDevice", "startBluetoothSco", "stopBluetoothSco", "", "Lcom/discord/audio/DiscordAudioManager$AudioDevice;", "devices", "activateDefaultDevice", "updateDeviceActivation", "Lcom/discord/audio/enums/BluetoothProfileConnectionState$Update;", "connectionState", "onHeadsetConnectionStateUpdate", "Lcom/discord/audio/enums/BluetoothHeadsetAudioState$Update;", "audioState", "onHeadsetAudioStateUpdate", "Landroid/bluetooth/BluetoothDevice;", "onActiveDeviceUpdate", "Landroid/bluetooth/BluetoothHeadset;", "bluetoothHeadset", "onHeadsetProxyConnectionUpdate", "Lcom/discord/audio/enums/WiredHeadsetState;", "wiredHeadsetState", "onWiredHeadsetPlug", "Lcom/discord/audio/enums/ScoAudioState$Update;", "scoAudioStateUpdate", "onScoAudioStateUpdate", "deviceType", "setDevice", "makeEarpieceUnavailable", "resetEarpieceAvailability", "setCommunicationModeOn", "", "ratio", "setMediaVolume", "registerHandlers$audio_release", "()V", "registerHandlers", "Landroid/content/Context;", "context", "Landroid/content/Context;", "Lkotlin/Function1;", "onAudioDevicesUpdated", "Lkotlin/jvm/functions/Function1;", "getOnAudioDevicesUpdated", "()Lkotlin/jvm/functions/Function1;", "onActiveAudioDeviceChanged", "getOnActiveAudioDeviceChanged", "", "onCurrentMediaVolumeChanged", "getOnCurrentMediaVolumeChanged", "Landroid/media/AudioManager;", "audioManager", "Landroid/media/AudioManager;", "hasEarpiece", "Z", "instanceLock", "Ljava/lang/Object;", "Lcom/discord/async_init/AsyncInitThreadChecker;", "asyncInitThreadChecker", "Lcom/discord/async_init/AsyncInitThreadChecker;", "Lcom/discord/audio/bluetooth/BluetoothBroadcastReceiver;", "bluetoothBroadcastReceiver", "Lcom/discord/audio/bluetooth/BluetoothBroadcastReceiver;", "getBluetoothBroadcastReceiver$audio_release", "()Lcom/discord/audio/bluetooth/BluetoothBroadcastReceiver;", "getBluetoothBroadcastReceiver$audio_release$annotations", "Lcom/discord/audio/AudioManagerBroadcastReceiver;", "audioManagerBroadcastReceiver", "Lcom/discord/audio/AudioManagerBroadcastReceiver;", "getAudioManagerBroadcastReceiver$audio_release", "()Lcom/discord/audio/AudioManagerBroadcastReceiver;", "getAudioManagerBroadcastReceiver$audio_release$annotations", "bluetoothHeadsetProfileProxy", "Landroid/bluetooth/BluetoothHeadset;", "getBluetoothHeadsetProfileProxy$audio_release", "()Landroid/bluetooth/BluetoothHeadset;", "setBluetoothHeadsetProfileProxy$audio_release", "(Landroid/bluetooth/BluetoothHeadset;)V", "getBluetoothHeadsetProfileProxy$audio_release$annotations", "Lcom/discord/audio/DiscordAudioManager$BluetoothScoState;", "bluetoothScoState", "Lcom/discord/audio/DiscordAudioManager$BluetoothScoState;", "getBluetoothScoState$audio_release", "()Lcom/discord/audio/DiscordAudioManager$BluetoothScoState;", "setBluetoothScoState$audio_release", "(Lcom/discord/audio/DiscordAudioManager$BluetoothScoState;)V", "getBluetoothScoState$audio_release$annotations", "Landroid/media/AudioManager$OnAudioFocusChangeListener;", "audioFocusListener", "Landroid/media/AudioManager$OnAudioFocusChangeListener;", "getAudioFocusListener$audio_release", "()Landroid/media/AudioManager$OnAudioFocusChangeListener;", "setAudioFocusListener$audio_release", "(Landroid/media/AudioManager$OnAudioFocusChangeListener;)V", "getAudioFocusListener$audio_release$annotations", "Landroid/media/AudioFocusRequest;", "audioFocusRequest", "Landroid/media/AudioFocusRequest;", "value", "audioDevices", "Ljava/util/List;", "getAudioDevices", "()Ljava/util/List;", "setAudioDevices", "(Ljava/util/List;)V", "activeAudioDevice", "Lcom/discord/audio/DiscordAudioManager$DeviceTypes;", "getActiveAudioDevice", "()Lcom/discord/audio/DiscordAudioManager$DeviceTypes;", "setActiveAudioDevice", "(Lcom/discord/audio/DiscordAudioManager$DeviceTypes;)V", "Landroid/database/ContentObserver;", "mediaVolumeObserver", "Landroid/database/ContentObserver;", "currentMediaVolume", "I", "getCurrentMediaVolume", "()I", "setCurrentMediaVolume", "(I)V", "maxMediaVolume", "getMaxMediaVolume", "requestedAudioDevice", "savedIsSpeakerphoneOn", "savedIsMicrophoneMute", "savedIsBluetoothScoOn", "inDiscordRequestedCommunicationMode", "<init>", "(Landroid/content/Context;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V", "Companion", "AudioDevice", "BluetoothScoState", "DeviceTypes", "audio_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u0000\u009a\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0007\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0018\u0002\n\u0002\b\u0016\u0018\u0000 ~2\u00020\u0001:\u0006\u007f\u0080\u0001~\u0081\u0001BQ\u0012\u0006\u0010-\u001a\u00020,\u0012\u0018\u00100\u001a\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00160\u0015\u0012\u0004\u0012\u00020\u00040/\u0012\u0012\u00104\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00040/\u0012\u0012\u00107\u001a\u000e\u0012\u0004\u0012\u000206\u0012\u0004\u0012\u00020\u00040/¢\u0006\u0004\b|\u0010}J\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\b\u0010\u0006\u001a\u00020\u0002H\u0002J\b\u0010\u0007\u001a\u00020\u0004H\u0002J\b\u0010\b\u001a\u00020\u0004H\u0002J\b\u0010\t\u001a\u00020\u0004H\u0002J\u0010\u0010\f\u001a\u00020\u00022\u0006\u0010\u000b\u001a\u00020\nH\u0002J\u0010\u0010\r\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\b\u0010\u000e\u001a\u00020\u0002H\u0002J\b\u0010\u000f\u001a\u00020\u0004H\u0002J\b\u0010\u0010\u001a\u00020\u0004H\u0002J\u0010\u0010\u0011\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0010\u0010\u0012\u001a\u00020\u00042\u0006\u0010\u000b\u001a\u00020\nH\u0002J\b\u0010\u0013\u001a\u00020\u0004H\u0002J\b\u0010\u0014\u001a\u00020\u0004H\u0002J\u001e\u0010\u0019\u001a\u00020\u00042\f\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\u00160\u00152\u0006\u0010\u0018\u001a\u00020\u0002H\u0002J\b\u0010\u001a\u001a\u00020\u0004H\u0002J\u0010\u0010\u001d\u001a\u00020\u00042\u0006\u0010\u001c\u001a\u00020\u001bH\u0003J\u0010\u0010 \u001a\u00020\u00042\u0006\u0010\u001f\u001a\u00020\u001eH\u0003J\u000e\u0010\"\u001a\u00020\u00022\u0006\u0010!\u001a\u00020\nJ\u0006\u0010#\u001a\u00020\u0004J\u0006\u0010$\u001a\u00020\u0004J\u000e\u0010%\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002J\u0010\u0010(\u001a\u00020\u00042\b\b\u0001\u0010'\u001a\u00020&J\u000f\u0010+\u001a\u00020\u0004H\u0001¢\u0006\u0004\b)\u0010*R\u0014\u0010-\u001a\u00020,8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b-\u0010.R)\u00100\u001a\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00160\u0015\u0012\u0004\u0012\u00020\u00040/8\u0006¢\u0006\f\n\u0004\b0\u00101\u001a\u0004\b2\u00103R#\u00104\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00040/8\u0006¢\u0006\f\n\u0004\b4\u00101\u001a\u0004\b5\u00103R#\u00107\u001a\u000e\u0012\u0004\u0012\u000206\u0012\u0004\u0012\u00020\u00040/8\u0006¢\u0006\f\n\u0004\b7\u00101\u001a\u0004\b8\u00103R\u0014\u0010:\u001a\u0002098\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b:\u0010;R\u0014\u0010<\u001a\u00020\u00028\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b<\u0010=R\u0014\u0010>\u001a\u00020\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b>\u0010?R\u0014\u0010A\u001a\u00020@8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bA\u0010BR \u0010D\u001a\u00020C8\u0000X\u0081\u0004¢\u0006\u0012\n\u0004\bD\u0010E\u0012\u0004\bH\u0010*\u001a\u0004\bF\u0010GR(\u0010J\u001a\u00020I8\u0000@\u0000X\u0081\u000e¢\u0006\u0018\n\u0004\bJ\u0010K\u0012\u0004\bP\u0010*\u001a\u0004\bL\u0010M\"\u0004\bN\u0010OR*\u0010R\u001a\u0004\u0018\u00010Q8\u0000@\u0000X\u0081\u000e¢\u0006\u0018\n\u0004\bR\u0010S\u0012\u0004\bX\u0010*\u001a\u0004\bT\u0010U\"\u0004\bV\u0010WR\u0018\u0010Z\u001a\u0004\u0018\u00010Y8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bZ\u0010[R\u0018\u0010]\u001a\u0004\u0018\u00010\\8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b]\u0010^R6\u0010`\u001a\b\u0012\u0004\u0012\u00020\u00160\u00152\f\u0010_\u001a\b\u0012\u0004\u0012\u00020\u00160\u00158\u0006@BX\u0086\u000e¢\u0006\u0012\n\u0004\b`\u0010a\u001a\u0004\bb\u0010c\"\u0004\bd\u0010eR*\u0010f\u001a\u00020\n2\u0006\u0010_\u001a\u00020\n8\u0006@BX\u0086\u000e¢\u0006\u0012\n\u0004\bf\u0010g\u001a\u0004\bh\u0010i\"\u0004\bj\u0010kR\u0018\u0010m\u001a\u0004\u0018\u00010l8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bm\u0010nR*\u0010o\u001a\u0002062\u0006\u0010_\u001a\u0002068\u0006@BX\u0086\u000e¢\u0006\u0012\n\u0004\bo\u0010p\u001a\u0004\bq\u0010r\"\u0004\bs\u0010tR\u0017\u0010u\u001a\u0002068\u0006¢\u0006\f\n\u0004\bu\u0010p\u001a\u0004\bv\u0010rR\u0016\u0010w\u001a\u00020\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bw\u0010gR\u0016\u0010x\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bx\u0010=R\u0016\u0010y\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\by\u0010=R\u0016\u0010z\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bz\u0010=R\u0016\u0010{\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b{\u0010=¨\u0006\u0082\u0001"}, d2 = {"Lcom/discord/audio/DiscordAudioManager;", "", "", ViewProps.ON, "", "setCommunicationModeOnInternal", "requestAudioFocus", "releaseAudioFocus", "startObservingVolumeChanges", "stopObservingVolumeChanges", "Lcom/discord/audio/DiscordAudioManager$DeviceTypes;", "device", "isValidOutputDevice", "setMicrophoneMute", "hasWiredHeadset", "registerAudioFocusListener", "registerAudioDeviceCallback", "setSpeakerphoneOn", "activateDevice", "startBluetoothSco", "stopBluetoothSco", "", "Lcom/discord/audio/DiscordAudioManager$AudioDevice;", "devices", "bluetoothFailed", "activateDefaultDevice", "updateDeviceActivation", "Lcom/discord/audio/enums/WiredHeadsetState;", "wiredHeadsetState", "onWiredHeadsetPlug", "Lcom/discord/audio/enums/ScoAudioState$Update;", "scoAudioStateUpdate", "onScoAudioStateUpdate", "deviceType", "setDevice", "makeEarpieceUnavailable", "resetEarpieceAvailability", "setCommunicationModeOn", "", "ratio", "setMediaVolume", "registerHandlers$audio_release", "()V", "registerHandlers", "Landroid/content/Context;", "context", "Landroid/content/Context;", "Lkotlin/Function1;", "onAudioDevicesUpdated", "Lkotlin/jvm/functions/Function1;", "getOnAudioDevicesUpdated", "()Lkotlin/jvm/functions/Function1;", "onActiveAudioDeviceChanged", "getOnActiveAudioDeviceChanged", "", "onCurrentMediaVolumeChanged", "getOnCurrentMediaVolumeChanged", "Landroid/media/AudioManager;", "audioManager", "Landroid/media/AudioManager;", "hasEarpiece", "Z", "instanceLock", "Ljava/lang/Object;", "Lcom/discord/async_init/AsyncInitThreadChecker;", "asyncInitThreadChecker", "Lcom/discord/async_init/AsyncInitThreadChecker;", "Lcom/discord/audio/AudioManagerBroadcastReceiver;", "audioManagerBroadcastReceiver", "Lcom/discord/audio/AudioManagerBroadcastReceiver;", "getAudioManagerBroadcastReceiver$audio_release", "()Lcom/discord/audio/AudioManagerBroadcastReceiver;", "getAudioManagerBroadcastReceiver$audio_release$annotations", "Lcom/discord/audio/DiscordAudioManager$BluetoothScoState;", "bluetoothScoState", "Lcom/discord/audio/DiscordAudioManager$BluetoothScoState;", "getBluetoothScoState$audio_release", "()Lcom/discord/audio/DiscordAudioManager$BluetoothScoState;", "setBluetoothScoState$audio_release", "(Lcom/discord/audio/DiscordAudioManager$BluetoothScoState;)V", "getBluetoothScoState$audio_release$annotations", "Landroid/media/AudioManager$OnAudioFocusChangeListener;", "audioFocusListener", "Landroid/media/AudioManager$OnAudioFocusChangeListener;", "getAudioFocusListener$audio_release", "()Landroid/media/AudioManager$OnAudioFocusChangeListener;", "setAudioFocusListener$audio_release", "(Landroid/media/AudioManager$OnAudioFocusChangeListener;)V", "getAudioFocusListener$audio_release$annotations", "Landroid/media/AudioFocusRequest;", "audioFocusRequest", "Landroid/media/AudioFocusRequest;", "Landroid/media/AudioDeviceCallback;", "audioDeviceCallback", "Landroid/media/AudioDeviceCallback;", "value", "audioDevices", "Ljava/util/List;", "getAudioDevices", "()Ljava/util/List;", "setAudioDevices", "(Ljava/util/List;)V", "activeAudioDevice", "Lcom/discord/audio/DiscordAudioManager$DeviceTypes;", "getActiveAudioDevice", "()Lcom/discord/audio/DiscordAudioManager$DeviceTypes;", "setActiveAudioDevice", "(Lcom/discord/audio/DiscordAudioManager$DeviceTypes;)V", "Landroid/database/ContentObserver;", "mediaVolumeObserver", "Landroid/database/ContentObserver;", "currentMediaVolume", "I", "getCurrentMediaVolume", "()I", "setCurrentMediaVolume", "(I)V", "maxMediaVolume", "getMaxMediaVolume", "requestedAudioDevice", "savedIsSpeakerphoneOn", "savedIsMicrophoneMute", "savedIsBluetoothScoOn", "inDiscordRequestedCommunicationMode", "<init>", "(Landroid/content/Context;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V", "Companion", "AudioDevice", "BluetoothScoState", "DeviceTypes", "audio_release"}, k = 1, mv = {1, 8, 0})
 
 public final class DiscordAudioManager {
     public static final Companion Companion = new Companion(null);
     private static final List<DeviceTypes> DEFAULT_DEVICE_PRIORITIZATION;
     private static final String TAG = "DiscordAudioManager";
     private DeviceTypes activeAudioDevice;
+    private AudioDeviceCallback audioDeviceCallback;
     private List<AudioDevice> audioDevices;
     private AudioManager.OnAudioFocusChangeListener audioFocusListener;
     private AudioFocusRequest audioFocusRequest;
     private final AudioManager audioManager;
-    private BluetoothHeadset bluetoothHeadsetProfileProxy;
     private final Context context;
     private int currentMediaVolume;
     private final boolean hasEarpiece;
@@ -60,7 +59,6 @@ public final class DiscordAudioManager {
     private boolean savedIsSpeakerphoneOn;
     private final Object instanceLock = this;
     private final AsyncInitThreadChecker asyncInitThreadChecker = new AsyncInitThreadChecker(TAG);
-    private final BluetoothBroadcastReceiver bluetoothBroadcastReceiver = new BluetoothBroadcastReceiver(new DiscordAudioManager$bluetoothBroadcastReceiver$1(this), new DiscordAudioManager$bluetoothBroadcastReceiver$2(this), new DiscordAudioManager$bluetoothBroadcastReceiver$3(this), new DiscordAudioManager$bluetoothBroadcastReceiver$4(this));
     private final AudioManagerBroadcastReceiver audioManagerBroadcastReceiver = new AudioManagerBroadcastReceiver(new DiscordAudioManager$audioManagerBroadcastReceiver$1(this), new DiscordAudioManager$audioManagerBroadcastReceiver$2(this));
     private BluetoothScoState bluetoothScoState = BluetoothScoState.INVALID;
 
@@ -132,8 +130,6 @@ public final class DiscordAudioManager {
         public static final  int[] $EnumSwitchMapping$0;
         public static final  int[] $EnumSwitchMapping$1;
         public static final  int[] $EnumSwitchMapping$2;
-        public static final  int[] $EnumSwitchMapping$3;
-        public static final  int[] $EnumSwitchMapping$4;
 
         static {
             int[] iArr = new int[DeviceTypes.values().length];
@@ -162,66 +158,34 @@ public final class DiscordAudioManager {
             } catch (NoSuchFieldError unused6) {
             }
             $EnumSwitchMapping$0 = iArr;
-            int[] iArr2 = new int[BluetoothProfileConnectionState.values().length];
+            int[] iArr2 = new int[BluetoothScoState.values().length];
             try {
-                iArr2[BluetoothProfileConnectionState.Disconnected.ordinal()] = 1;
+                iArr2[BluetoothScoState.ON.ordinal()] = 1;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                iArr2[BluetoothProfileConnectionState.Connected.ordinal()] = 2;
+                iArr2[BluetoothScoState.TURNING_ON.ordinal()] = 2;
             } catch (NoSuchFieldError unused8) {
             }
+            $EnumSwitchMapping$1 = iArr2;
+            int[] iArr3 = new int[ScoAudioState.values().length];
             try {
-                iArr2[BluetoothProfileConnectionState.Connecting.ordinal()] = 3;
+                iArr3[ScoAudioState.Connected.ordinal()] = 1;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                iArr2[BluetoothProfileConnectionState.Disconnecting.ordinal()] = 4;
+                iArr3[ScoAudioState.Disconnected.ordinal()] = 2;
             } catch (NoSuchFieldError unused10) {
             }
-            $EnumSwitchMapping$1 = iArr2;
-            int[] iArr3 = new int[BluetoothHeadsetAudioState.values().length];
             try {
-                iArr3[BluetoothHeadsetAudioState.Connected.ordinal()] = 1;
+                iArr3[ScoAudioState.Error.ordinal()] = 3;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                iArr3[BluetoothHeadsetAudioState.Disconnected.ordinal()] = 2;
+                iArr3[ScoAudioState.Connecting.ordinal()] = 4;
             } catch (NoSuchFieldError unused12) {
             }
-            try {
-                iArr3[BluetoothHeadsetAudioState.Connecting.ordinal()] = 3;
-            } catch (NoSuchFieldError unused13) {
-            }
             $EnumSwitchMapping$2 = iArr3;
-            int[] iArr4 = new int[BluetoothScoState.values().length];
-            try {
-                iArr4[BluetoothScoState.ON.ordinal()] = 1;
-            } catch (NoSuchFieldError unused14) {
-            }
-            try {
-                iArr4[BluetoothScoState.TURNING_ON.ordinal()] = 2;
-            } catch (NoSuchFieldError unused15) {
-            }
-            $EnumSwitchMapping$3 = iArr4;
-            int[] iArr5 = new int[ScoAudioState.values().length];
-            try {
-                iArr5[ScoAudioState.Connected.ordinal()] = 1;
-            } catch (NoSuchFieldError unused16) {
-            }
-            try {
-                iArr5[ScoAudioState.Disconnected.ordinal()] = 2;
-            } catch (NoSuchFieldError unused17) {
-            }
-            try {
-                iArr5[ScoAudioState.Error.ordinal()] = 3;
-            } catch (NoSuchFieldError unused18) {
-            }
-            try {
-                iArr5[ScoAudioState.Connecting.ordinal()] = 4;
-            } catch (NoSuchFieldError unused19) {
-            }
-            $EnumSwitchMapping$4 = iArr5;
         }
     }
 
@@ -283,6 +247,7 @@ public final class DiscordAudioManager {
         this.activeAudioDevice = DeviceTypes.INVALID;
         this.maxMediaVolume = this.audioManager.getStreamMaxVolume(3);
         this.requestedAudioDevice = DeviceTypes.DEFAULT;
+        this.inDiscordRequestedCommunicationMode = true;
     }
 
     
@@ -291,9 +256,10 @@ public final class DiscordAudioManager {
         this$0.registerHandlers$audio_release();
     }
 
-    private final void activateDefaultDevice(List<AudioDevice> list) {
+    private final void activateDefaultDevice(List<AudioDevice> list, boolean z10) {
         DeviceTypes deviceTypes;
         DeviceTypes deviceTypes2;
+        boolean z11;
         synchronized (this.instanceLock) {
             List<DeviceTypes> list2 = DEFAULT_DEVICE_PRIORITIZATION;
             ListIterator<DeviceTypes> listIterator = list2.listIterator(list2.size());
@@ -303,7 +269,15 @@ public final class DiscordAudioManager {
                     break;
                 }
                 deviceTypes = listIterator.previous();
-                if (list.get(deviceTypes.getValue()).isAvailable()) {
+                DeviceTypes deviceTypes3 = deviceTypes;
+                if (!list.get(deviceTypes3.getValue()).isAvailable() || list.get(deviceTypes3.getValue()).getType() != DeviceTypes.BLUETOOTH_HEADSET || z10) {
+                    z11 = false;
+                    continue;
+                } else {
+                    z11 = true;
+                    continue;
+                }
+                if (z11) {
                     break;
                 }
             }
@@ -339,7 +313,7 @@ public final class DiscordAudioManager {
         setSpeakerphoneOn(z10);
         synchronized (this.instanceLock) {
             setActiveAudioDevice(deviceTypes);
-            Unit unit = Unit.f21442a;
+            Unit unit = Unit.f21444a;
         }
         Log.i$default(Log.INSTANCE, TAG, "Activated device: " + deviceTypes, (Throwable) null, 4, (Object) null);
     }
@@ -348,12 +322,6 @@ public final class DiscordAudioManager {
     }
 
     public static  void getAudioManagerBroadcastReceiver$audio_release$annotations() {
-    }
-
-    public static  void getBluetoothBroadcastReceiver$audio_release$annotations() {
-    }
-
-    public static  void getBluetoothHeadsetProfileProxy$audio_release$annotations() {
     }
 
     public static  void getBluetoothScoState$audio_release$annotations() {
@@ -379,166 +347,18 @@ public final class DiscordAudioManager {
     }
 
     
-    public final void onActiveDeviceUpdate(BluetoothDevice bluetoothDevice) {
-        if (bluetoothDevice != null) {
-            updateDeviceActivation();
-        }
-    }
-
-    
-    @SuppressLint({"MissingPermission"})
-    public final void onHeadsetAudioStateUpdate(BluetoothHeadsetAudioState.Update update) {
-        String str;
-        int s10;
-        AudioDevice audioDevice;
-        String str2;
-        String str3;
-        BluetoothHeadsetAudioState current = update.getCurrent();
-        if (current == null) {
-            current = BluetoothHeadsetAudioState.Disconnected;
-        }
-        BluetoothDevice device = update.getDevice();
-        Log log = Log.INSTANCE;
-        if (device != null) {
-            str = device.getName();
-        } else {
-            str = null;
-        }
-        Log.i$default(log, TAG, "[onHeadsetAudioStateChanged] state: " + current + ", device: " + str, (Throwable) null, 4, (Object) null);
-        int i10 = WhenMappings.$EnumSwitchMapping$2[current.ordinal()];
-        if (i10 == 1) {
-            synchronized (this.instanceLock) {
-                List<AudioDevice> list = this.audioDevices;
-                s10 = k.s(list, 10);
-                ArrayList arrayList = new ArrayList(s10);
-                for (AudioDevice audioDevice2 : list) {
-                    if (WhenMappings.$EnumSwitchMapping$0[audioDevice2.getType().ordinal()] == 4) {
-                        if (device != null) {
-                            str2 = device.getAddress();
-                        } else {
-                            str2 = null;
-                        }
-                        if (device != null) {
-                            str3 = device.getName();
-                        } else {
-                            str3 = null;
-                        }
-                        audioDevice = AudioDevice.copy$default(audioDevice2, null, true, str2, str3, 1, null);
-                    } else {
-                        audioDevice = AudioDevice.copy$default(audioDevice2, null, false, null, null, 15, null);
-                    }
-                    arrayList.add(audioDevice);
-                }
-                setAudioDevices(arrayList);
-                Unit unit = Unit.f21442a;
-            }
-        } else if (i10 == 2) {
-            updateDeviceActivation();
-        }
-    }
-
-    
-    @SuppressLint({"MissingPermission"})
-    public final void onHeadsetConnectionStateUpdate(BluetoothProfileConnectionState.Update update) {
-        String str;
-        ArrayList arrayList;
-        int s10;
-        DeviceTypes deviceTypes;
-        BluetoothProfileConnectionState current = update.getCurrent();
-        if (current == null) {
-            current = BluetoothProfileConnectionState.Disconnected;
-        }
-        BluetoothDevice device = update.getDevice();
-        Log log = Log.INSTANCE;
-        String str2 = null;
-        if (device != null) {
-            str = device.getName();
-        } else {
-            str = null;
-        }
-        Log.i$default(log, TAG, "[onHeadsetConnectionStateChanged] state: " + current + ", device: " + str, (Throwable) null, 4, (Object) null);
-        int i10 = WhenMappings.$EnumSwitchMapping$1[current.ordinal()];
-        if (i10 == 1) {
-            synchronized (this.instanceLock) {
-                List<AudioDevice> list = this.audioDevices;
-                s10 = k.s(list, 10);
-                arrayList = new ArrayList(s10);
-                for (AudioDevice audioDevice : list) {
-                    arrayList.add(AudioDevice.copy$default(audioDevice, null, false, null, null, 15, null));
-                }
-            }
-            DeviceTypes deviceTypes2 = DeviceTypes.BLUETOOTH_HEADSET;
-            if (((AudioDevice) arrayList.get(deviceTypes2.getValue())).getId() != null) {
-                if (device != null) {
-                    str2 = device.getAddress();
-                }
-                if (q.c(str2, ((AudioDevice) arrayList.get(deviceTypes2.getValue())).getId())) {
-                    updateDeviceActivation();
-                }
-            }
-        } else if (i10 == 2) {
-            synchronized (this.instanceLock) {
-                deviceTypes = this.activeAudioDevice;
-            }
-            if (deviceTypes == DeviceTypes.BLUETOOTH_HEADSET) {
-                refreshBluetoothHeadset();
-            } else {
-                updateDeviceActivation();
-            }
-        } else if (i10 == 3 || i10 == 4) {
-            Log.i$default(log, TAG, "[onHeadsetConnectionStateChanged] " + current + "...", (Throwable) null, 4, (Object) null);
-        }
-    }
-
-    
-    public final void onHeadsetProxyConnectionUpdate(BluetoothHeadset bluetoothHeadset) {
-        this.bluetoothHeadsetProfileProxy = bluetoothHeadset;
-    }
-
-    
     public final void onScoAudioStateUpdate(ScoAudioState.Update update) {
-        boolean z10;
-        int s10;
-        AudioDevice audioDevice;
         Log log = Log.INSTANCE;
         BluetoothScoState bluetoothScoState = this.bluetoothScoState;
         boolean isBluetoothScoOn = this.audioManager.isBluetoothScoOn();
         Log.i$default(log, TAG, "[onScoAudioStateUpdate] scoAudioStateUpdate = " + update + ", bluetoothScoState=" + bluetoothScoState + ", isBluetoothScoOn=" + isBluetoothScoOn, (Throwable) null, 4, (Object) null);
-        int i10 = WhenMappings.$EnumSwitchMapping$4[update.getCurrent().ordinal()];
-        if (i10 == 1) {
-            startBluetoothSco();
-        } else if (i10 == 2) {
+        if (WhenMappings.$EnumSwitchMapping$2[update.getCurrent().ordinal()] == 2) {
             BluetoothScoState bluetoothScoState2 = this.bluetoothScoState;
             stopBluetoothSco();
-            int i11 = WhenMappings.$EnumSwitchMapping$3[bluetoothScoState2.ordinal()];
-            if (i11 == 1) {
-                synchronized (this.instanceLock) {
-                    z10 = this.inDiscordRequestedCommunicationMode;
-                }
-                if (z10) {
-                    Log.i$default(log, TAG, "SCO off detected directly from ON. Refreshing Bluetooth device", (Throwable) null, 4, (Object) null);
-                    startBluetoothSco();
-                    updateDeviceActivation();
-                }
-            } else if (i11 == 2) {
+            if (WhenMappings.$EnumSwitchMapping$1[bluetoothScoState2.ordinal()] == 2) {
                 int mode = this.audioManager.getMode();
                 Log.i$default(log, TAG, "Unable to turn on SCO. Clearing Bluetooth device. mode: " + mode, (Throwable) null, 4, (Object) null);
-                synchronized (this.instanceLock) {
-                    List<AudioDevice> list = this.audioDevices;
-                    s10 = k.s(list, 10);
-                    ArrayList arrayList = new ArrayList(s10);
-                    for (AudioDevice audioDevice2 : list) {
-                        if (WhenMappings.$EnumSwitchMapping$0[audioDevice2.getType().ordinal()] == 4) {
-                            audioDevice = AudioDevice.copy$default(audioDevice2, null, false, null, null, 1, null);
-                        } else {
-                            audioDevice = AudioDevice.copy$default(audioDevice2, null, false, null, null, 15, null);
-                        }
-                        arrayList.add(audioDevice);
-                    }
-                    setAudioDevices(arrayList);
-                    Unit unit = Unit.f21442a;
-                }
-                activateDefaultDevice(this.audioDevices);
+                activateDefaultDevice(this.audioDevices, true);
             }
         }
     }
@@ -568,7 +388,7 @@ public final class DiscordAudioManager {
                     arrayList.add(audioDevice2);
                 }
                 setAudioDevices(arrayList);
-                Unit unit = Unit.f21442a;
+                Unit unit = Unit.f21444a;
             }
         } else if (wiredHeadsetState instanceof WiredHeadsetState.PluggedIn) {
             synchronized (this.instanceLock) {
@@ -587,36 +407,104 @@ public final class DiscordAudioManager {
                     arrayList2.add(audioDevice);
                 }
                 setAudioDevices(arrayList2);
-                Unit unit2 = Unit.f21442a;
+                Unit unit2 = Unit.f21444a;
             }
         }
         updateDeviceActivation();
     }
 
-    
-    
-    @android.annotation.SuppressLint({"MissingPermission"})
-    
-    private final void refreshBluetoothHeadset() {
-        
-        throw new UnsupportedOperationException("Method not decompiled: com.discord.audio.DiscordAudioManager.refreshBluetoothHeadset():void");
+    private final void registerAudioDeviceCallback() {
+        AudioDeviceCallback discordAudioManager$registerAudioDeviceCallback$callback$1 = new AudioDeviceCallback() { 
+
+            @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
+            
+            public  class WhenMappings {
+                public static final  int[] $EnumSwitchMapping$0;
+
+                static {
+                    int[] iArr = new int[DiscordAudioManager.DeviceTypes.values().length];
+                    try {
+                        iArr[DiscordAudioManager.DeviceTypes.BLUETOOTH_HEADSET.ordinal()] = 1;
+                    } catch (NoSuchFieldError unused) {
+                    }
+                    $EnumSwitchMapping$0 = iArr;
+                }
+            }
+
+            @Override 
+            public void onAudioDevicesAdded(AudioDeviceInfo[] audioDeviceInfoArr) {
+                int s10;
+                DiscordAudioManager.AudioDevice audioDevice;
+                if (audioDeviceInfoArr != null) {
+                    Iterator a10 = b.a(audioDeviceInfoArr);
+                    while (a10.hasNext()) {
+                        if (((AudioDeviceInfo) a10.next()).getType() == 7) {
+                            DiscordAudioManager discordAudioManager = DiscordAudioManager.this;
+                            List<DiscordAudioManager.AudioDevice> audioDevices = discordAudioManager.getAudioDevices();
+                            s10 = k.s(audioDevices, 10);
+                            ArrayList arrayList = new ArrayList(s10);
+                            for (DiscordAudioManager.AudioDevice audioDevice2 : audioDevices) {
+                                if (WhenMappings.$EnumSwitchMapping$0[audioDevice2.getType().ordinal()] == 1) {
+                                    audioDevice = DiscordAudioManager.AudioDevice.copy$default(audioDevice2, null, true, null, null, 13, null);
+                                } else {
+                                    audioDevice = DiscordAudioManager.AudioDevice.copy$default(audioDevice2, null, false, null, null, 15, null);
+                                }
+                                arrayList.add(audioDevice);
+                            }
+                            discordAudioManager.setAudioDevices(arrayList);
+                        }
+                    }
+                }
+            }
+
+            @Override 
+            public void onAudioDevicesRemoved(AudioDeviceInfo[] audioDeviceInfoArr) {
+                int s10;
+                DiscordAudioManager.AudioDevice audioDevice;
+                if (audioDeviceInfoArr != null) {
+                    Iterator a10 = b.a(audioDeviceInfoArr);
+                    while (a10.hasNext()) {
+                        if (((AudioDeviceInfo) a10.next()).getType() == 7) {
+                            DiscordAudioManager discordAudioManager = DiscordAudioManager.this;
+                            List<DiscordAudioManager.AudioDevice> audioDevices = discordAudioManager.getAudioDevices();
+                            s10 = k.s(audioDevices, 10);
+                            ArrayList arrayList = new ArrayList(s10);
+                            for (DiscordAudioManager.AudioDevice audioDevice2 : audioDevices) {
+                                if (WhenMappings.$EnumSwitchMapping$0[audioDevice2.getType().ordinal()] == 1) {
+                                    audioDevice = DiscordAudioManager.AudioDevice.copy$default(audioDevice2, null, false, null, null, 1, null);
+                                } else {
+                                    audioDevice = DiscordAudioManager.AudioDevice.copy$default(audioDevice2, null, false, null, null, 15, null);
+                                }
+                                arrayList.add(audioDevice);
+                            }
+                            discordAudioManager.setAudioDevices(arrayList);
+                        }
+                    }
+                }
+            }
+        };
+        this.audioDeviceCallback = discordAudioManager$registerAudioDeviceCallback$callback$1;
+        AudioManager audioManager = this.audioManager;
+        Looper myLooper = Looper.myLooper();
+        q.e(myLooper);
+        audioManager.registerAudioDeviceCallback(discordAudioManager$registerAudioDeviceCallback$callback$1, new Handler(myLooper));
     }
 
     private final void registerAudioFocusListener() {
-        AudioManager.OnAudioFocusChangeListener iVar = new AudioManager.OnAudioFocusChangeListener() { 
+        AudioManager.OnAudioFocusChangeListener gVar = new AudioManager.OnAudioFocusChangeListener() { 
             @Override 
             public final void onAudioFocusChange(int i10) {
-                DiscordAudioManager.registerAudioFocusListener$lambda$22(DiscordAudioManager.this, i10);
+                DiscordAudioManager.registerAudioFocusListener$lambda$19(DiscordAudioManager.this, i10);
             }
         };
         synchronized (this.instanceLock) {
-            this.audioFocusListener = iVar;
-            Unit unit = Unit.f21442a;
+            this.audioFocusListener = gVar;
+            Unit unit = Unit.f21444a;
         }
     }
 
     
-    public static final void registerAudioFocusListener$lambda$22(DiscordAudioManager this$0, int i10) {
+    public static final void registerAudioFocusListener$lambda$19(DiscordAudioManager this$0, int i10) {
         q.h(this$0, "this$0");
         Log log = Log.INSTANCE;
         Log.i$default(log, TAG, "[AudioFocus] new focus: " + i10, (Throwable) null, 4, (Object) null);
@@ -663,7 +551,8 @@ public final class DiscordAudioManager {
         }
     }
 
-    private final void setAudioDevices(List<AudioDevice> list) {
+    
+    public final void setAudioDevices(List<AudioDevice> list) {
         boolean z10 = !q.c(this.audioDevices, list);
         this.audioDevices = list;
         if (z10) {
@@ -685,7 +574,7 @@ public final class DiscordAudioManager {
         }
         synchronized (this.instanceLock) {
             this.inDiscordRequestedCommunicationMode = z10;
-            Unit unit = Unit.f21442a;
+            Unit unit = Unit.f21444a;
         }
     }
 
@@ -776,7 +665,6 @@ public final class DiscordAudioManager {
         synchronized (this.instanceLock) {
             deviceTypes = this.requestedAudioDevice;
         }
-        refreshBluetoothHeadset();
         synchronized (this.instanceLock) {
             List<AudioDevice> list = this.audioDevices;
             s10 = k.s(list, 10);
@@ -786,7 +674,7 @@ public final class DiscordAudioManager {
             }
         }
         if (deviceTypes == DeviceTypes.DEFAULT || !arrayList.get(deviceTypes.getValue()).isAvailable()) {
-            activateDefaultDevice(arrayList);
+            activateDefaultDevice(arrayList, false);
         } else {
             activateDevice(deviceTypes);
         }
@@ -806,14 +694,6 @@ public final class DiscordAudioManager {
 
     public final AudioManagerBroadcastReceiver getAudioManagerBroadcastReceiver$audio_release() {
         return this.audioManagerBroadcastReceiver;
-    }
-
-    public final BluetoothBroadcastReceiver getBluetoothBroadcastReceiver$audio_release() {
-        return this.bluetoothBroadcastReceiver;
-    }
-
-    public final BluetoothHeadset getBluetoothHeadsetProfileProxy$audio_release() {
-        return this.bluetoothHeadsetProfileProxy;
     }
 
     public final BluetoothScoState getBluetoothScoState$audio_release() {
@@ -862,8 +742,8 @@ public final class DiscordAudioManager {
 
     public final void registerHandlers$audio_release() {
         this.audioManagerBroadcastReceiver.register(this.context);
-        this.bluetoothBroadcastReceiver.register(this.context);
         registerAudioFocusListener();
+        registerAudioDeviceCallback();
     }
 
     public final synchronized void resetEarpieceAvailability() {
@@ -890,10 +770,6 @@ public final class DiscordAudioManager {
         this.audioFocusListener = onAudioFocusChangeListener;
     }
 
-    public final void setBluetoothHeadsetProfileProxy$audio_release(BluetoothHeadset bluetoothHeadset) {
-        this.bluetoothHeadsetProfileProxy = bluetoothHeadset;
-    }
-
     public final void setBluetoothScoState$audio_release(BluetoothScoState bluetoothScoState) {
         q.h(bluetoothScoState, "<set-?>");
         this.bluetoothScoState = bluetoothScoState;
@@ -916,7 +792,7 @@ public final class DiscordAudioManager {
             activateDevice(DeviceTypes.INVALID);
             synchronized (this.instanceLock) {
                 this.requestedAudioDevice = DeviceTypes.DEFAULT;
-                Unit unit = Unit.f21442a;
+                Unit unit = Unit.f21444a;
             }
             setCommunicationModeOnInternal(false);
             releaseAudioFocus();
@@ -951,9 +827,9 @@ public final class DiscordAudioManager {
         if (deviceType == deviceTypes) {
             synchronized (this.instanceLock) {
                 this.requestedAudioDevice = deviceTypes;
-                Unit unit = Unit.f21442a;
+                Unit unit = Unit.f21444a;
             }
-            activateDefaultDevice(arrayList);
+            activateDefaultDevice(arrayList, false);
             return true;
         }
         if (isValidOutputDevice(deviceType)) {
@@ -963,7 +839,7 @@ public final class DiscordAudioManager {
             if (!z10) {
                 synchronized (this.instanceLock) {
                     this.requestedAudioDevice = deviceType;
-                    Unit unit2 = Unit.f21442a;
+                    Unit unit2 = Unit.f21444a;
                 }
                 activateDevice(deviceType);
                 return true;

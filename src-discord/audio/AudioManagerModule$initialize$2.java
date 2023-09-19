@@ -25,7 +25,7 @@ final class AudioManagerModule$initialize$2 extends s implements Function1<Disco
     @Override 
     public   Unit invoke(DiscordAudioManager.DeviceTypes deviceTypes) {
         invoke2(deviceTypes);
-        return Unit.f21442a;
+        return Unit.f21444a;
     }
 
     

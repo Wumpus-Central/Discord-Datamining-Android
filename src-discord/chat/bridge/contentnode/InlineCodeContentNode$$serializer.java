@@ -32,7 +32,7 @@ public final class InlineCodeContentNode$$serializer implements f0<InlineCodeCon
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f30574a};
+        return new KSerializer[]{a2.f30576a};
     }
 
     @Override 

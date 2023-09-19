@@ -31,27 +31,36 @@ public final class ImageAttachmentViewHolder extends MessagePartViewHolder {
     }
 
     
-    public final void m359bindNlw0kPk(Attachment attachment, int i10, int i11, int i12, MediaContainingViewResizer.ResizeMode resizeMode, View.OnClickListener onClicked, View.OnLongClickListener onLongClickListener, SpoilerConfig spoilerConfig, boolean z10, Float f10, boolean z11, boolean z12, Integer num, Integer num2, String str, Function1<? super MessageId, Unit> onTapRemix) {
+    public final void m362bindNlw0kPk(Attachment attachment, int i10, int i11, int i12, MediaContainingViewResizer.ResizeMode resizeMode, View.OnClickListener onClicked, View.OnLongClickListener onLongClickListener, SpoilerConfig spoilerConfig, boolean z10, Float f10, boolean z11, boolean z12, Integer num, Integer num2, String str, Function1<? super MessageId, Unit> onTapRemix) {
         q.h(attachment, "attachment");
         q.h(resizeMode, "resizeMode");
         q.h(onClicked, "onClicked");
         q.h(onTapRemix, "onTapRemix");
         String uploaderId = attachment.getUploaderId();
         String uploaderItemId = attachment.getUploaderItemId();
-        this.view.setContent(attachment.getUrl(), attachment.getWidth(), attachment.getHeight(), i11, i10, resizeMode, attachment.isSpoiler(), spoilerConfig, i12, attachment.getProgress(), new ImageAttachmentViewHolder$bind$onCancelUpload$1(uploaderId, uploaderItemId, this), new UploadContext(uploaderId, uploaderItemId), f10, attachment.getObscure(), z12 ? null : attachment.getObscureDescription());
-        boolean z13 = false;
+        ImageAttachmentViewHolder$bind$onCancelUpload$1 imageAttachmentViewHolder$bind$onCancelUpload$1 = new ImageAttachmentViewHolder$bind$onCancelUpload$1(uploaderId, uploaderItemId, this);
+        ImageAttachmentView imageAttachmentView = this.view;
+        String url = attachment.getUrl();
+        int width = attachment.getWidth();
+        int height = attachment.getHeight();
+        boolean isSpoiler = attachment.isSpoiler();
+        Integer progress = attachment.getProgress();
+        UploadContext uploadContext = new UploadContext(uploaderId, uploaderItemId);
+        Boolean obscure = attachment.getObscure();
+        imageAttachmentView.setContent(url, width, height, i11, i10, resizeMode, isSpoiler, spoilerConfig, i12, progress, imageAttachmentViewHolder$bind$onCancelUpload$1, uploadContext, f10, obscure != null ? obscure.booleanValue() : false, z12);
+        boolean z13 = true;
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(this.view, false, onClicked, 1, null);
         if (onLongClickListener != null) {
             NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(this.view, false, onLongClickListener, 1, null);
         }
         this.view.setDescription(attachment.getDescription(), attachment.getHint());
         this.view.showAltTextButton(z10 && attachment.getShowDescription(), attachment.getDescription(), new ImageAttachmentViewHolder$bind$2(this.eventHandler));
-        ImageAttachmentView imageAttachmentView = this.view;
-        if (!z10 && attachment.getShowDescription()) {
-            z13 = true;
+        ImageAttachmentView imageAttachmentView2 = this.view;
+        if (z10 || !attachment.getShowDescription()) {
+            z13 = false;
         }
-        imageAttachmentView.showDescription(z13, attachment.getDescription());
-        this.view.m331maybeShowRemixButtoncUe2JkQ(z11, attachment.isSpoiler(), num, num2, str, onTapRemix);
+        imageAttachmentView2.showDescription(z13, attachment.getDescription());
+        this.view.m334maybeShowRemixButtoncUe2JkQ(z11, attachment.isSpoiler(), num, num2, str, onTapRemix);
         this.view.updateMarginStart(z11, attachment.isSpoiler(), z12);
         this.view.setRole(attachment.getRole());
     }

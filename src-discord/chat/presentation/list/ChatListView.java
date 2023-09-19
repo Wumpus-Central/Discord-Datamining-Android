@@ -129,6 +129,20 @@ public final class ChatListView extends RecyclerView {
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
         sync();
+        addOnLayoutChangeListener(new View.OnLayoutChangeListener() { 
+            @Override 
+            public void onLayoutChange(View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
+                ChatEventHandler chatEventHandler;
+                q.h(view, "view");
+                view.removeOnLayoutChangeListener(this);
+                chatEventHandler = ChatListView.this.eventHandler;
+                if (chatEventHandler == null) {
+                    q.z("eventHandler");
+                    chatEventHandler = null;
+                }
+                chatEventHandler.onCompleteFirstLayout();
+            }
+        });
     }
 
     

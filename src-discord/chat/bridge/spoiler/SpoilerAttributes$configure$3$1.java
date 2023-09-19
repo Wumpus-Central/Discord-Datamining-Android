@@ -21,14 +21,14 @@ final class SpoilerAttributes$configure$3$1 extends s implements Function1<Spoil
 
     @Override 
     public   Unit invoke(SpoilerIdentifier spoilerIdentifier) {
-        m130invokeV2PEE7g(spoilerIdentifier.m137unboximpl());
-        return Unit.f21442a;
+        m130invokeV2PEE7g(spoilerIdentifier.m138unboximpl());
+        return Unit.f21444a;
     }
 
     
     public final void m130invokeV2PEE7g(String spoilerId) {
         q.h(spoilerId, "spoilerId");
-        SpoilerManager.INSTANCE.m141markRevealedV2PEE7g(spoilerId);
+        SpoilerManager.INSTANCE.m143markRevealedV2PEE7g(spoilerId);
         this.$onTapSpoiler.invoke();
     }
 }

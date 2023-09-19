@@ -44,7 +44,7 @@ public final class InitiateEditData implements ReactEvent {
             n1.b(i10, 3, InitiateEditData$$serializer.INSTANCE.getDescriptor());
         }
         this.messageId = str;
-        this.channelId = channelId.m607unboximpl();
+        this.channelId = channelId.m614unboximpl();
     }
 
     public  InitiateEditData(int i10, String str, ChannelId channelId, SerializationConstructorMarker serializationConstructorMarker, DefaultConstructorMarker defaultConstructorMarker) {
@@ -56,36 +56,36 @@ public final class InitiateEditData implements ReactEvent {
     }
 
     
-    public static  InitiateEditData m368copypfaIj0E$default(InitiateEditData initiateEditData, String str, long j10, int i10, Object obj) {
+    public static  InitiateEditData m371copypfaIj0E$default(InitiateEditData initiateEditData, String str, long j10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = initiateEditData.messageId;
         }
         if ((i10 & 2) != 0) {
             j10 = initiateEditData.channelId;
         }
-        return initiateEditData.m371copypfaIj0E(str, j10);
+        return initiateEditData.m374copypfaIj0E(str, j10);
     }
 
     public static final void write$Self(InitiateEditData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.h(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m624boximpl(self.messageId));
-        output.h(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m598boximpl(self.channelId));
+        output.h(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m631boximpl(self.messageId));
+        output.h(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m605boximpl(self.channelId));
     }
 
     
-    public final String m369component13Eiw7ao() {
+    public final String m372component13Eiw7ao() {
         return this.messageId;
     }
 
     
-    public final long m370component2o4g7jtM() {
+    public final long m373component2o4g7jtM() {
         return this.channelId;
     }
 
     
-    public final InitiateEditData m371copypfaIj0E(String messageId, long j10) {
+    public final InitiateEditData m374copypfaIj0E(String messageId, long j10) {
         q.h(messageId, "messageId");
         return new InitiateEditData(messageId, j10, null);
     }
@@ -98,21 +98,21 @@ public final class InitiateEditData implements ReactEvent {
             return false;
         }
         InitiateEditData initiateEditData = (InitiateEditData) obj;
-        return MessageId.m628equalsimpl0(this.messageId, initiateEditData.messageId) && ChannelId.m602equalsimpl0(this.channelId, initiateEditData.channelId);
+        return MessageId.m635equalsimpl0(this.messageId, initiateEditData.messageId) && ChannelId.m609equalsimpl0(this.channelId, initiateEditData.channelId);
     }
 
     
-    public final long m372getChannelIdo4g7jtM() {
+    public final long m375getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
     
-    public final String m373getMessageId3Eiw7ao() {
+    public final String m376getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (MessageId.m629hashCodeimpl(this.messageId) * 31) + ChannelId.m603hashCodeimpl(this.channelId);
+        return (MessageId.m636hashCodeimpl(this.messageId) * 31) + ChannelId.m610hashCodeimpl(this.channelId);
     }
 
     @Override 
@@ -121,8 +121,8 @@ public final class InitiateEditData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m630toStringimpl(this.messageId);
-        String str2 = ChannelId.m605toStringimpl(this.channelId);
+        String str = MessageId.m637toStringimpl(this.messageId);
+        String str2 = ChannelId.m612toStringimpl(this.channelId);
         return "InitiateEditData(messageId=" + str + ", channelId=" + str2 + ")";
     }
 

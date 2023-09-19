@@ -19,13 +19,13 @@ public  class MessageAccessoriesAdapter$onCreateViewHolder$3 extends n implement
 
     @Override 
     public   Unit invoke(MessageId messageId) {
-        m225invoke1xi1bu0(messageId.m632unboximpl());
-        return Unit.f21442a;
+        m228invoke1xi1bu0(messageId.m639unboximpl());
+        return Unit.f21444a;
     }
 
     
-    public final void m225invoke1xi1bu0(String p02) {
+    public final void m228invoke1xi1bu0(String p02) {
         q.h(p02, "p0");
-        ((ChatEventHandler) this.receiver).mo176onTapInviteToSpeak1xi1bu0(p02);
+        ((ChatEventHandler) this.receiver).mo179onTapInviteToSpeak1xi1bu0(p02);
     }
 }
