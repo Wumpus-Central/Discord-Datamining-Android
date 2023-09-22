@@ -42,7 +42,7 @@ public final class MessageFrameSerializer extends d<MessageFrame> {
     @Override 
     protected DeserializationStrategy<MessageFrame> selectDeserializer(JsonElement element) {
         Integer num;
-        boolean K;
+        boolean L;
         JsonPrimitive n10;
         q.h(element, "element");
         List<Integer> list = knownTypes;
@@ -52,8 +52,8 @@ public final class MessageFrameSerializer extends d<MessageFrame> {
         } else {
             num = Integer.valueOf(g.l(n10));
         }
-        K = r.K(list, num);
-        if (K) {
+        L = r.L(list, num);
+        if (L) {
             return messageFrameClassSerializer;
         }
         return UnknownMessageFrame.Companion.serializer();

@@ -18,9 +18,9 @@ public final class VoiceUserAdapter extends RecyclerView.Adapter<VoiceUserViewHo
     private List<MobileVoiceOverlayDataUser> data;
 
     public VoiceUserAdapter() {
-        List<MobileVoiceOverlayDataUser> h10;
-        h10 = j.h();
-        this.data = h10;
+        List<MobileVoiceOverlayDataUser> i10;
+        i10 = j.i();
+        this.data = i10;
     }
 
     @Override 

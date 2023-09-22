@@ -65,7 +65,7 @@ public final class EmojiRendererKt {
         } else if (emojiContentNode instanceof UnicodeEmojiContentNode) {
             return RenderableEmoji.Companion.unicode(((UnicodeEmojiContentNode) emojiContentNode).getSurrogate());
         } else {
-            throw new kf.q();
+            throw new pf.q();
         }
     }
 }

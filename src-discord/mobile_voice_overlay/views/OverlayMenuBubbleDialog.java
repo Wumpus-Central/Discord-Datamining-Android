@@ -138,7 +138,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         animatorSet.setStartDelay(getResources().getInteger(17694720));
         Animator loadAnimator = AnimatorInflater.loadAnimator(this.binding.overlayMenu.getContext(), R.animator.overlay_slide_down_fade_out);
         loadAnimator.setTarget(this.binding.overlayMenu);
-        Unit unit = Unit.f21444a;
+        Unit unit = Unit.f21600a;
         Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), R.animator.overlay_slide_up_fade_out);
         loadAnimator2.setTarget(this.binding.overlayHeader);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
@@ -163,7 +163,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         AnimatorSet animatorSet = new AnimatorSet();
         Animator loadAnimator = AnimatorInflater.loadAnimator(this.binding.overlayMenu.getContext(), R.animator.overlay_slide_up_fade_in);
         loadAnimator.setTarget(this.binding.overlayMenu);
-        Unit unit = Unit.f21444a;
+        Unit unit = Unit.f21600a;
         Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), R.animator.overlay_slide_down_fade_in);
         loadAnimator2.setTarget(this.binding.overlayHeader);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
@@ -195,10 +195,10 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         q.h(data, "data");
         List<MobileVoiceOverlayDataUser> users = data.getUsers();
         if (users.size() < 2) {
-            list = j.h();
+            list = j.i();
         } else {
-            q10 = bg.j.q(1, users.size());
-            list = r.s0(users, q10);
+            q10 = gg.j.q(1, users.size());
+            list = r.t0(users, q10);
         }
         this.adapter.setData(list);
         TextView textView = this.binding.overlayMembersOverflowText;

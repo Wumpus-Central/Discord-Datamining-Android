@@ -36,13 +36,13 @@ public final class RegularMessageDelegate extends BaseChatListItemDelegate<Messa
 
     
     public final MessageView.ChainPart getChainPart(MessageItem messageItem, BaseChatListItemDelegate.Metadata<MessageView> metadata) {
-        Object V;
+        Object W;
         boolean z10;
         RecyclerView.Adapter<? extends RecyclerView.ViewHolder> bindingAdapter = metadata.getHolder().getBindingAdapter();
         q.f(bindingAdapter, "null cannot be cast to non-null type com.discord.chat.presentation.list.ChatListAdapter");
         boolean z11 = true;
-        V = r.V(((ChatListAdapter) bindingAdapter).getChatListItems(), metadata.getHolder().getBindingAdapterPosition() - 1);
-        ChatListItem chatListItem = (ChatListItem) V;
+        W = r.W(((ChatListAdapter) bindingAdapter).getChatListItems(), metadata.getHolder().getBindingAdapterPosition() - 1);
+        ChatListItem chatListItem = (ChatListItem) W;
         if (messageItem.getMessage().getTimestamp() == null) {
             z10 = true;
         } else {

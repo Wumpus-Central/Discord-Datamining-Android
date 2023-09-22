@@ -15,24 +15,24 @@ public final class ListOperationsBuilder {
     private final List<ListOperation> listOperations = new ArrayList();
 
     private final void addChange(ListOperation.Change change) {
-        Object e02;
-        int j10;
-        int j11;
-        int j12;
-        int j13;
-        e02 = r.e0(this.listOperations);
-        ListOperation listOperation = (ListOperation) e02;
+        Object f02;
+        int k10;
+        int k11;
+        int k12;
+        int k13;
+        f02 = r.f0(this.listOperations);
+        ListOperation listOperation = (ListOperation) f02;
         if (listOperation instanceof ListOperation.Change) {
             ListOperation.Change change2 = (ListOperation.Change) listOperation;
             int index = change2.getIndex();
             if (index == change.getIndex() - 1) {
                 List<ListOperation> list = this.listOperations;
-                j13 = j.j(list);
-                list.set(j13, new ListOperation.ChangeRange(new IntRange(change2.getIndex(), change.getIndex())));
+                k13 = j.k(list);
+                list.set(k13, new ListOperation.ChangeRange(new IntRange(change2.getIndex(), change.getIndex())));
             } else if (index == change.getIndex() + 1) {
                 List<ListOperation> list2 = this.listOperations;
-                j12 = j.j(list2);
-                list2.set(j12, new ListOperation.ChangeRange(new IntRange(change.getIndex(), change2.getIndex())));
+                k12 = j.k(list2);
+                list2.set(k12, new ListOperation.ChangeRange(new IntRange(change.getIndex(), change2.getIndex())));
             } else {
                 this.listOperations.add(change);
             }
@@ -40,12 +40,12 @@ public final class ListOperationsBuilder {
             ListOperation.ChangeRange changeRange = (ListOperation.ChangeRange) listOperation;
             if (changeRange.getLast() == change.getIndex() - 1) {
                 List<ListOperation> list3 = this.listOperations;
-                j11 = j.j(list3);
-                list3.set(j11, new ListOperation.ChangeRange(new IntRange(changeRange.getFirst(), change.getIndex())));
+                k11 = j.k(list3);
+                list3.set(k11, new ListOperation.ChangeRange(new IntRange(changeRange.getFirst(), change.getIndex())));
             } else if (changeRange.getFirst() == change.getIndex() + 1) {
                 List<ListOperation> list4 = this.listOperations;
-                j10 = j.j(list4);
-                list4.set(j10, new ListOperation.ChangeRange(new IntRange(change.getIndex(), changeRange.getLast())));
+                k10 = j.k(list4);
+                list4.set(k10, new ListOperation.ChangeRange(new IntRange(change.getIndex(), changeRange.getLast())));
             } else {
                 this.listOperations.add(change);
             }
@@ -55,24 +55,24 @@ public final class ListOperationsBuilder {
     }
 
     private final void addInsert(ListOperation.Insert insert) {
-        Object e02;
-        int j10;
-        int j11;
-        int j12;
-        int j13;
-        e02 = r.e0(this.listOperations);
-        ListOperation listOperation = (ListOperation) e02;
+        Object f02;
+        int k10;
+        int k11;
+        int k12;
+        int k13;
+        f02 = r.f0(this.listOperations);
+        ListOperation listOperation = (ListOperation) f02;
         if (listOperation instanceof ListOperation.Insert) {
             ListOperation.Insert insert2 = (ListOperation.Insert) listOperation;
             int index = insert2.getIndex();
             if (index == insert.getIndex() - 1) {
                 List<ListOperation> list = this.listOperations;
-                j13 = j.j(list);
-                list.set(j13, new ListOperation.InsertRange(new IntRange(insert2.getIndex(), insert.getIndex())));
+                k13 = j.k(list);
+                list.set(k13, new ListOperation.InsertRange(new IntRange(insert2.getIndex(), insert.getIndex())));
             } else if (index == insert.getIndex() + 1) {
                 List<ListOperation> list2 = this.listOperations;
-                j12 = j.j(list2);
-                list2.set(j12, new ListOperation.InsertRange(new IntRange(insert.getIndex(), insert2.getIndex())));
+                k12 = j.k(list2);
+                list2.set(k12, new ListOperation.InsertRange(new IntRange(insert.getIndex(), insert2.getIndex())));
             } else {
                 this.listOperations.add(insert);
             }
@@ -80,12 +80,12 @@ public final class ListOperationsBuilder {
             ListOperation.InsertRange insertRange = (ListOperation.InsertRange) listOperation;
             if (insertRange.getLast() == insert.getIndex() - 1) {
                 List<ListOperation> list3 = this.listOperations;
-                j11 = j.j(list3);
-                list3.set(j11, new ListOperation.InsertRange(new IntRange(insertRange.getFirst(), insert.getIndex())));
+                k11 = j.k(list3);
+                list3.set(k11, new ListOperation.InsertRange(new IntRange(insertRange.getFirst(), insert.getIndex())));
             } else if (insertRange.getFirst() == insert.getIndex() + 1) {
                 List<ListOperation> list4 = this.listOperations;
-                j10 = j.j(list4);
-                list4.set(j10, new ListOperation.InsertRange(new IntRange(insert.getIndex(), insertRange.getLast())));
+                k10 = j.k(list4);
+                list4.set(k10, new ListOperation.InsertRange(new IntRange(insert.getIndex(), insertRange.getLast())));
             } else {
                 this.listOperations.add(insert);
             }
@@ -95,24 +95,24 @@ public final class ListOperationsBuilder {
     }
 
     private final void addRemove(ListOperation.Remove remove) {
-        Object e02;
-        int j10;
-        int j11;
-        int j12;
-        int j13;
-        e02 = r.e0(this.listOperations);
-        ListOperation listOperation = (ListOperation) e02;
+        Object f02;
+        int k10;
+        int k11;
+        int k12;
+        int k13;
+        f02 = r.f0(this.listOperations);
+        ListOperation listOperation = (ListOperation) f02;
         if (listOperation instanceof ListOperation.Remove) {
             ListOperation.Remove remove2 = (ListOperation.Remove) listOperation;
             int index = remove2.getIndex();
             if (index == remove.getIndex() - 1) {
                 List<ListOperation> list = this.listOperations;
-                j13 = j.j(list);
-                list.set(j13, new ListOperation.RemoveRange(new IntRange(remove2.getIndex(), remove.getIndex())));
+                k13 = j.k(list);
+                list.set(k13, new ListOperation.RemoveRange(new IntRange(remove2.getIndex(), remove.getIndex())));
             } else if (index == remove.getIndex() + 1) {
                 List<ListOperation> list2 = this.listOperations;
-                j12 = j.j(list2);
-                list2.set(j12, new ListOperation.RemoveRange(new IntRange(remove.getIndex(), remove2.getIndex())));
+                k12 = j.k(list2);
+                list2.set(k12, new ListOperation.RemoveRange(new IntRange(remove.getIndex(), remove2.getIndex())));
             } else {
                 this.listOperations.add(remove);
             }
@@ -120,12 +120,12 @@ public final class ListOperationsBuilder {
             ListOperation.RemoveRange removeRange = (ListOperation.RemoveRange) listOperation;
             if (removeRange.getLast() == remove.getIndex() - 1) {
                 List<ListOperation> list3 = this.listOperations;
-                j11 = j.j(list3);
-                list3.set(j11, new ListOperation.RemoveRange(new IntRange(removeRange.getFirst(), remove.getIndex())));
+                k11 = j.k(list3);
+                list3.set(k11, new ListOperation.RemoveRange(new IntRange(removeRange.getFirst(), remove.getIndex())));
             } else if (removeRange.getFirst() == remove.getIndex() + 1) {
                 List<ListOperation> list4 = this.listOperations;
-                j10 = j.j(list4);
-                list4.set(j10, new ListOperation.RemoveRange(new IntRange(remove.getIndex(), removeRange.getLast())));
+                k10 = j.k(list4);
+                list4.set(k10, new ListOperation.RemoveRange(new IntRange(remove.getIndex(), removeRange.getLast())));
             } else {
                 this.listOperations.add(remove);
             }

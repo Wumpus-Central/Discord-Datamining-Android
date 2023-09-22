@@ -19,7 +19,7 @@ public final class AutomodSystemMessageItem extends ChatListItem {
         Message message2;
         boolean z11;
         AutomodSystemMessageItem automodSystemMessageItem;
-        MessageContext messageContext2 = (i10 & 2) != 0 ? new MessageContext(false, false, null, null, null, null, null, false, false, false, false, false, 4095, null) : messageContext;
+        MessageContext messageContext2 = (i10 & 2) != 0 ? new MessageContext(false, false, null, null, null, null, null, false, false, false, false, false, null, 8191, null) : messageContext;
         if ((i10 & 4) != 0) {
             z11 = true;
             automodSystemMessageItem = this;
@@ -107,7 +107,7 @@ public final class AutomodSystemMessageItem extends ChatListItem {
 
     
     public AutomodSystemMessageItem(Message message, MessageContext messageContext, boolean z10) {
-        super(MessageId.m637toStringimpl(message.m25getId3Eiw7ao()), null);
+        super(MessageId.m642toStringimpl(message.m24getId3Eiw7ao()), null);
         q.h(message, "message");
         q.h(messageContext, "messageContext");
         this.message = message;

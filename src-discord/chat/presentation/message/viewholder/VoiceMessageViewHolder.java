@@ -31,7 +31,7 @@ public final class VoiceMessageViewHolder extends MessagePartViewHolder {
             final float floatValue = durationSecs.floatValue();
             VoiceMessageViewHolder$bind$1$onCancelUpload$1 voiceMessageViewHolder$bind$1$onCancelUpload$1 = new VoiceMessageViewHolder$bind$1$onCancelUpload$1(attachment, eventHandler);
             AudioPlayerView audioPlayerView = this.view;
-            audioPlayerView.m348setSourceUrlntcYbpo(accessory.mo236getMessageId3Eiw7ao(), accessory.getAttachment().getUrl());
+            audioPlayerView.m353setSourceUrlntcYbpo(accessory.mo236getMessageId3Eiw7ao(), accessory.getAttachment().getUrl());
             audioPlayerView.setSampleData(waveformByteArray);
             audioPlayerView.setDurationMs(((float) RNCWebViewManager.COMMAND_CLEAR_FORM_DATA) * floatValue);
             audioPlayerView.setUploadProgress(attachment.getProgress(), voiceMessageViewHolder$bind$1$onCancelUpload$1, f10);
@@ -44,7 +44,7 @@ public final class VoiceMessageViewHolder extends MessagePartViewHolder {
                     float f13 = floatValue;
                     UserId userId = accessory.m244getAuthorIdwUX8bhU();
                     if (userId != null) {
-                        chatEventHandler.mo196voiceMessagePlaybackEndedHuwN0RY(str, f13, f11, userId.m678unboximpl(), f12);
+                        chatEventHandler.mo196voiceMessagePlaybackEndedHuwN0RY(str, f13, f11, userId.m683unboximpl(), f12);
                     }
                 }
 
@@ -60,7 +60,7 @@ public final class VoiceMessageViewHolder extends MessagePartViewHolder {
                     float f12 = floatValue;
                     UserId userId = accessory.m244getAuthorIdwUX8bhU();
                     if (userId != null) {
-                        chatEventHandler.mo198voiceMessagePlaybackStartedOuNwOLg(str, f12, f11, userId.m678unboximpl());
+                        chatEventHandler.mo198voiceMessagePlaybackStartedOuNwOLg(str, f12, f11, userId.m683unboximpl());
                     }
                 }
             });

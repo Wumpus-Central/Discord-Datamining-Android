@@ -41,11 +41,11 @@ public interface NotificationAction extends Parcelable {
 
         public final  <T extends NotificationAction> T toAction(Intent intent) {
             q.h(intent, "<this>");
-            q.n(4, "T");
+            q.m(4, "T");
             if (!IntentUtilsKt.hasExtra(intent, f0.b(NotificationAction.class))) {
                 return null;
             }
-            q.n(4, "T");
+            q.m(4, "T");
             return (T) ((NotificationAction) ((Parcelable) e.b(intent, "action_intent_arg_key", Parcelable.class)));
         }
     }

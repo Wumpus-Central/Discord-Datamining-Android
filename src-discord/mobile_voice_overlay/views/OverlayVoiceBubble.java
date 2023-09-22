@@ -60,7 +60,7 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
         IconUrlUtils iconUrlUtils = IconUrlUtils.INSTANCE;
         Context context = getContext();
         q.g(context, "context");
-        str = iconUrlUtils.m506getForUser_fRzTXg(context, UserId.m669boximpl(user.m519getUserIdre6GcUE()), user.getAvatar(), (r16 & 8) != 0 ? null : Integer.valueOf(user.getDiscriminator()), (r16 & 16) != 0 ? false : false, (r16 & 32) != 0 ? null : null);
+        str = iconUrlUtils.m511getForUser_fRzTXg(context, UserId.m674boximpl(user.m524getUserIdre6GcUE()), user.getAvatar(), (r16 & 8) != 0 ? null : Integer.valueOf(user.getDiscriminator()), (r16 & 16) != 0 ? false : false, (r16 & 32) != 0 ? null : null);
         simpleDraweeView.setImageURI(str);
         if (user.getSpeaking()) {
             fadeActive();
@@ -95,10 +95,10 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
 
     @Override 
     public void setData(MobileVoiceOverlayData data) {
-        Object U;
+        Object V;
         q.h(data, "data");
-        U = r.U(data.getUsers());
-        MobileVoiceOverlayDataUser mobileVoiceOverlayDataUser = (MobileVoiceOverlayDataUser) U;
+        V = r.V(data.getUsers());
+        MobileVoiceOverlayDataUser mobileVoiceOverlayDataUser = (MobileVoiceOverlayDataUser) V;
         if (mobileVoiceOverlayDataUser != null) {
             configureUI(mobileVoiceOverlayDataUser);
         }

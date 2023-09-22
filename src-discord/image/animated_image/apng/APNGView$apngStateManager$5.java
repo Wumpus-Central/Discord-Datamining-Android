@@ -23,7 +23,7 @@ public final class APNGView$apngStateManager$5 extends s implements Function1<AP
     @Override 
     public   Unit invoke(APNGView.Config config) {
         invoke2(config);
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     

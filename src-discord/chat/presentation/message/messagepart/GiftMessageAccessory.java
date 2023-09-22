@@ -66,7 +66,7 @@ public final class GiftMessageAccessory extends MessageAccessory {
             return false;
         }
         GiftMessageAccessory giftMessageAccessory = (GiftMessageAccessory) obj;
-        return MessageId.m635equalsimpl0(mo236getMessageId3Eiw7ao(), giftMessageAccessory.mo236getMessageId3Eiw7ao()) && this.index == giftMessageAccessory.index && q.c(this.gift, giftMessageAccessory.gift);
+        return MessageId.m640equalsimpl0(mo236getMessageId3Eiw7ao(), giftMessageAccessory.mo236getMessageId3Eiw7ao()) && this.index == giftMessageAccessory.index && q.c(this.gift, giftMessageAccessory.gift);
     }
 
     public final GiftEmbed getGift() {
@@ -84,11 +84,11 @@ public final class GiftMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((MessageId.m636hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.index) * 31) + this.gift.hashCode();
+        return (((MessageId.m641hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.index) * 31) + this.gift.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m637toStringimpl(mo236getMessageId3Eiw7ao());
+        String str = MessageId.m642toStringimpl(mo236getMessageId3Eiw7ao());
         int i10 = this.index;
         GiftEmbed giftEmbed = this.gift;
         return "GiftMessageAccessory(messageId=" + str + ", index=" + i10 + ", gift=" + giftEmbed + ")";

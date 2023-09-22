@@ -44,7 +44,7 @@ public class Node<R> {
             sb2.append(" >\n");
             Collection<Node<R>> children = getChildren();
             if (children != null) {
-                str = r.c0(children, "\n->", ">>", "\n>|", 0, null, Node$Parent$toString$1.INSTANCE, 24, null);
+                str = r.d0(children, "\n->", ">>", "\n>|", 0, null, Node$Parent$toString$1.INSTANCE, 24, null);
             } else {
                 str = null;
             }
@@ -68,7 +68,7 @@ public class Node<R> {
             collection = new ArrayList<>();
         }
         collection.add(child);
-        Unit unit = Unit.f21444a;
+        Unit unit = Unit.f21600a;
         this.children = collection;
     }
 

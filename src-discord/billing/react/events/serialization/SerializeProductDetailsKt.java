@@ -7,23 +7,23 @@ import com.facebook.react.bridge.ReadableNativeArray;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import kf.x;
 import kotlin.Metadata;
 import kotlin.collections.k;
 import kotlin.jvm.internal.q;
+import pf.x;
 
 @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\u001a\u0012\u0010\u0000\u001a\u00020\u0001*\b\u0012\u0004\u0012\u00020\u00030\u0002H\u0000¨\u0006\u0004"}, d2 = {"serializeProductDetails", "Lcom/facebook/react/bridge/ReadableNativeArray;", "", "Lcom/android/billingclient/api/ProductDetails;", "billing_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 
 public final class SerializeProductDetailsKt {
     public static final ReadableNativeArray serializeProductDetails(List<ProductDetails> list) {
-        int s10;
+        int t10;
         Object obj;
         long j10;
         String str;
         boolean z10;
         q.h(list, "<this>");
-        s10 = k.s(list, 10);
-        ArrayList arrayList = new ArrayList(s10);
+        t10 = k.t(list, 10);
+        ArrayList arrayList = new ArrayList(t10);
         for (ProductDetails productDetails : list) {
             ArrayList arrayList2 = new ArrayList();
             if (q.c(productDetails.e(), "inapp")) {

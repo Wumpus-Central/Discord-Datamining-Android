@@ -15,10 +15,10 @@ import kotlin.jvm.internal.q;
 public final class DCDJSIModulePackage implements JSIModulePackage {
     @Override 
     public List<JSIModuleSpec<JSIModule>> getJSIModules(ReactApplicationContext reactApplicationContext, JavaScriptContextHolder jsContext) {
-        List<JSIModuleSpec<JSIModule>> h10;
+        List<JSIModuleSpec<JSIModule>> i10;
         q.h(reactApplicationContext, "reactApplicationContext");
         q.h(jsContext, "jsContext");
-        h10 = j.h();
-        return h10;
+        i10 = j.i();
+        return i10;
     }
 }

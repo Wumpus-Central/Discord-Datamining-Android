@@ -1,6 +1,11 @@
 package com.discord.chat.bridge.row;
 
+import aj.a;
 import androidx.recyclerview.widget.RecyclerView;
+import cj.a2;
+import cj.f0;
+import cj.h;
+import cj.m0;
 import com.discord.chat.bridge.BackgroundHighlight;
 import com.discord.chat.bridge.BackgroundHighlight$$serializer;
 import com.discord.chat.bridge.ChangeType;
@@ -23,14 +28,9 @@ import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import ui.n;
-import vi.a;
-import xi.a2;
-import xi.f0;
-import xi.h;
-import xi.m0;
+import zi.n;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/row/MessageRow.$serializer", "Lxi/f0;", "Lcom/discord/chat/bridge/row/MessageRow;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/row/MessageRow.$serializer", "Lcj/f0;", "Lcom/discord/chat/bridge/row/MessageRow;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
 
 public final class MessageRow$$serializer implements f0<MessageRow> {
     public static final MessageRow$$serializer INSTANCE;
@@ -67,9 +67,9 @@ public final class MessageRow$$serializer implements f0<MessageRow> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f30651a;
-        h hVar = h.f30618a;
-        a2 a2Var = a2.f30576a;
+        m0 m0Var = m0.f6313a;
+        h hVar = h.f6280a;
+        a2 a2Var = a2.f6238a;
         return new KSerializer[]{m0Var, ChangeType.Serializer.INSTANCE, a.u(hVar), a.u(hVar), MessageSerializer.INSTANCE, a.u(hVar), a.u(hVar), a.u(hVar), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(ReactionsTheme$$serializer.INSTANCE), hVar, hVar, a.u(MessageFrameSerializer.INSTANCE), a.u(m0Var), a.u(Truncation$$serializer.INSTANCE), a.u(BackgroundHighlight$$serializer.INSTANCE), SwipeActionsType.Serializer.INSTANCE};
     }
 
@@ -101,14 +101,14 @@ public final class MessageRow$$serializer implements f0<MessageRow> {
         if (b10.p()) {
             i11 = b10.i(descriptor2, 0);
             obj7 = b10.y(descriptor2, 1, ChangeType.Serializer.INSTANCE, null);
-            h hVar = h.f30618a;
+            h hVar = h.f6280a;
             obj = b10.n(descriptor2, 2, hVar, null);
             obj10 = b10.n(descriptor2, 3, hVar, null);
             obj8 = b10.y(descriptor2, 4, MessageSerializer.INSTANCE, null);
             obj9 = b10.n(descriptor2, 5, hVar, null);
             obj6 = b10.n(descriptor2, 6, hVar, null);
             obj4 = b10.n(descriptor2, 7, hVar, null);
-            a2 a2Var = a2.f30576a;
+            a2 a2Var = a2.f6238a;
             obj11 = b10.n(descriptor2, 8, a2Var, null);
             obj5 = b10.n(descriptor2, 9, a2Var, null);
             obj3 = b10.n(descriptor2, 10, a2Var, null);
@@ -116,7 +116,7 @@ public final class MessageRow$$serializer implements f0<MessageRow> {
             z10 = b10.C(descriptor2, 12);
             z11 = b10.C(descriptor2, 13);
             obj16 = b10.n(descriptor2, 14, MessageFrameSerializer.INSTANCE, null);
-            obj15 = b10.n(descriptor2, 15, m0.f30651a, null);
+            obj15 = b10.n(descriptor2, 15, m0.f6313a, null);
             obj14 = b10.n(descriptor2, 16, Truncation$$serializer.INSTANCE, null);
             obj13 = b10.n(descriptor2, 17, BackgroundHighlight$$serializer.INSTANCE, null);
             obj12 = b10.y(descriptor2, 18, SwipeActionsType.Serializer.INSTANCE, null);
@@ -165,13 +165,13 @@ public final class MessageRow$$serializer implements f0<MessageRow> {
                     case 2:
                         obj17 = obj17;
                         obj31 = obj31;
-                        obj18 = b10.n(descriptor2, 2, h.f30618a, obj18);
+                        obj18 = b10.n(descriptor2, 2, h.f6280a, obj18);
                         i12 |= 4;
                         break;
                     case 3:
                         obj17 = obj17;
                         obj31 = obj31;
-                        obj21 = b10.n(descriptor2, 3, h.f30618a, obj21);
+                        obj21 = b10.n(descriptor2, 3, h.f6280a, obj21);
                         i12 |= 8;
                         break;
                     case 4:
@@ -183,37 +183,37 @@ public final class MessageRow$$serializer implements f0<MessageRow> {
                     case 5:
                         obj17 = obj17;
                         obj31 = obj31;
-                        obj19 = b10.n(descriptor2, 5, h.f30618a, obj19);
+                        obj19 = b10.n(descriptor2, 5, h.f6280a, obj19);
                         i12 |= 32;
                         break;
                     case 6:
                         obj17 = obj17;
                         obj31 = obj31;
-                        obj26 = b10.n(descriptor2, 6, h.f30618a, obj26);
+                        obj26 = b10.n(descriptor2, 6, h.f6280a, obj26);
                         i12 |= 64;
                         break;
                     case 7:
                         obj17 = obj17;
                         obj31 = obj31;
-                        obj25 = b10.n(descriptor2, 7, h.f30618a, obj25);
+                        obj25 = b10.n(descriptor2, 7, h.f6280a, obj25);
                         i12 |= 128;
                         break;
                     case 8:
                         obj17 = obj17;
                         obj31 = obj31;
-                        obj24 = b10.n(descriptor2, 8, a2.f30576a, obj24);
+                        obj24 = b10.n(descriptor2, 8, a2.f6238a, obj24);
                         i12 |= 256;
                         break;
                     case 9:
                         obj17 = obj17;
                         obj31 = obj31;
-                        obj20 = b10.n(descriptor2, 9, a2.f30576a, obj20);
+                        obj20 = b10.n(descriptor2, 9, a2.f6238a, obj20);
                         i12 |= 512;
                         break;
                     case 10:
                         obj17 = obj17;
                         obj31 = obj31;
-                        obj23 = b10.n(descriptor2, 10, a2.f30576a, obj23);
+                        obj23 = b10.n(descriptor2, 10, a2.f6238a, obj23);
                         i12 |= 1024;
                         break;
                     case 11:
@@ -243,7 +243,7 @@ public final class MessageRow$$serializer implements f0<MessageRow> {
                         break;
                     case 15:
                         obj31 = obj31;
-                        obj28 = b10.n(descriptor2, 15, m0.f30651a, obj28);
+                        obj28 = b10.n(descriptor2, 15, m0.f6313a, obj28);
                         i12 |= 32768;
                         obj17 = obj17;
                         obj29 = obj29;

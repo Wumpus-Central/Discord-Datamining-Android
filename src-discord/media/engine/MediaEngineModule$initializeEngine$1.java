@@ -22,7 +22,7 @@ final class MediaEngineModule$initializeEngine$1 extends s implements Function1<
     @Override 
     public   Unit invoke(Boolean bool) {
         invoke(bool.booleanValue());
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     public final void invoke(boolean z10) {

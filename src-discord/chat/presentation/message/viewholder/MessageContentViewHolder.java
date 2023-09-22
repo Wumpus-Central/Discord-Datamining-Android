@@ -56,7 +56,7 @@ public final class MessageContentViewHolder extends MessagePartViewHolder {
         int bottomSpacingPx = messageContentItem.getBottomSpacingPx();
         String editedLabel = messageContentItem.getEditedLabel();
         Truncation truncation = messageContentItem.getTruncation();
-        messageContentView.m339setMessageContent2i9KL1s(messageContent, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, onLinkClicked, onLinkLongClicked, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, onTapSeeMore, new MessageContentViewHolder$bind$1(messageContentItem), bottomSpacingPx, messageContentItem.getConstrainedWidth(), editedLabel, truncation, messageContentItem.getTheme());
+        messageContentView.m344setMessageContent2i9KL1s(messageContent, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, onLinkClicked, onLinkLongClicked, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, onTapSeeMore, new MessageContentViewHolder$bind$1(messageContentItem), bottomSpacingPx, messageContentItem.getConstrainedWidth(), editedLabel, truncation, messageContentItem.getTheme());
     }
 
     public final MessageContentView getMessageContentView() {

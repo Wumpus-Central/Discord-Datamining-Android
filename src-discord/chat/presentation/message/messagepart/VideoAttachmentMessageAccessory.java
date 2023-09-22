@@ -42,7 +42,7 @@ public final class VideoAttachmentMessageAccessory extends MessageAccessory impl
     }
 
     
-    public final String m321component13Eiw7ao() {
+    public final String m326component13Eiw7ao() {
         return mo236getMessageId3Eiw7ao();
     }
 
@@ -83,7 +83,7 @@ public final class VideoAttachmentMessageAccessory extends MessageAccessory impl
     }
 
     
-    public final VideoAttachmentMessageAccessory m322copya6FnOk(String messageId, int i10, Attachment attachment, int i11, int i12, SpoilerAttributes spoilerAttributes, View.OnLongClickListener onLongClickListener, boolean z10, boolean z11, Float f10) {
+    public final VideoAttachmentMessageAccessory m327copya6FnOk(String messageId, int i10, Attachment attachment, int i11, int i12, SpoilerAttributes spoilerAttributes, View.OnLongClickListener onLongClickListener, boolean z10, boolean z11, Float f10) {
         q.h(messageId, "messageId");
         q.h(attachment, "attachment");
         return new VideoAttachmentMessageAccessory(messageId, i10, attachment, i11, i12, spoilerAttributes, onLongClickListener, z10, z11, f10, null);
@@ -97,7 +97,7 @@ public final class VideoAttachmentMessageAccessory extends MessageAccessory impl
             return false;
         }
         VideoAttachmentMessageAccessory videoAttachmentMessageAccessory = (VideoAttachmentMessageAccessory) obj;
-        return MessageId.m635equalsimpl0(mo236getMessageId3Eiw7ao(), videoAttachmentMessageAccessory.mo236getMessageId3Eiw7ao()) && getIndex() == videoAttachmentMessageAccessory.getIndex() && q.c(this.attachment, videoAttachmentMessageAccessory.attachment) && this.constrainedWidth == videoAttachmentMessageAccessory.constrainedWidth && this.radiusPx == videoAttachmentMessageAccessory.radiusPx && q.c(this.spoilerAttributes, videoAttachmentMessageAccessory.spoilerAttributes) && q.c(this.onLongClick, videoAttachmentMessageAccessory.onLongClick) && this.useNewAltTextButton == videoAttachmentMessageAccessory.useNewAltTextButton && this.hideMediaPlayButton == videoAttachmentMessageAccessory.hideMediaPlayButton && q.c(this.attachmentsOpacity, videoAttachmentMessageAccessory.attachmentsOpacity);
+        return MessageId.m640equalsimpl0(mo236getMessageId3Eiw7ao(), videoAttachmentMessageAccessory.mo236getMessageId3Eiw7ao()) && getIndex() == videoAttachmentMessageAccessory.getIndex() && q.c(this.attachment, videoAttachmentMessageAccessory.attachment) && this.constrainedWidth == videoAttachmentMessageAccessory.constrainedWidth && this.radiusPx == videoAttachmentMessageAccessory.radiusPx && q.c(this.spoilerAttributes, videoAttachmentMessageAccessory.spoilerAttributes) && q.c(this.onLongClick, videoAttachmentMessageAccessory.onLongClick) && this.useNewAltTextButton == videoAttachmentMessageAccessory.useNewAltTextButton && this.hideMediaPlayButton == videoAttachmentMessageAccessory.hideMediaPlayButton && q.c(this.attachmentsOpacity, videoAttachmentMessageAccessory.attachmentsOpacity);
     }
 
     public final Attachment getAttachment() {
@@ -149,7 +149,7 @@ public final class VideoAttachmentMessageAccessory extends MessageAccessory impl
     }
 
     public int hashCode() {
-        int i10 = ((((((((MessageId.m636hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + getIndex()) * 31) + this.attachment.hashCode()) * 31) + this.constrainedWidth) * 31) + this.radiusPx) * 31;
+        int i10 = ((((((((MessageId.m641hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + getIndex()) * 31) + this.attachment.hashCode()) * 31) + this.constrainedWidth) * 31) + this.radiusPx) * 31;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         int i11 = 0;
         int hashCode = (i10 + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode())) * 31;
@@ -177,7 +177,7 @@ public final class VideoAttachmentMessageAccessory extends MessageAccessory impl
     }
 
     public String toString() {
-        String str = MessageId.m637toStringimpl(mo236getMessageId3Eiw7ao());
+        String str = MessageId.m642toStringimpl(mo236getMessageId3Eiw7ao());
         int index = getIndex();
         Attachment attachment = this.attachment;
         int i10 = this.constrainedWidth;

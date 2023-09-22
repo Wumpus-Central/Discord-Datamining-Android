@@ -12,8 +12,6 @@ import com.discord.crash_reporting.CrashReporting;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.facebook.drawee.view.SimpleDraweeView;
 import java.util.Map;
-import kf.t;
-import kf.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -22,11 +20,13 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
-import kotlinx.coroutines.a1;
-import kotlinx.coroutines.h2;
+import kotlinx.coroutines.b1;
+import kotlinx.coroutines.i2;
 import kotlinx.coroutines.j;
-import lf.v;
-import qf.d;
+import pf.t;
+import pf.x;
+import qf.v;
+import vf.d;
 
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -66,7 +66,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21600a);
         }
 
         @Override 
@@ -85,7 +85,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
                     imageView = this.this$0.imageView;
                     imageView.setImageBitmap(this.$bitmap);
                 }
-                return Unit.f21444a;
+                return Unit.f21600a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -114,7 +114,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
+            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21600a);
         }
 
         @Override 
@@ -127,7 +127,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
                 LocalImageThumbnailView localImageThumbnailView = this.this$0;
                 simpleDraweeView = localImageThumbnailView.simpleDraweeView;
                 localImageThumbnailView.loadDefaultBitmap(simpleDraweeView, this.$uri);
-                return Unit.f21444a;
+                return Unit.f21600a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -149,7 +149,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((LocalImageThumbnailView$setLocalImageSource$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
+        return ((LocalImageThumbnailView$setLocalImageSource$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21600a);
     }
 
     @Override 
@@ -191,7 +191,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
                 } else {
                     z10 = false;
                 }
-                h2 c10 = a1.c();
+                i2 c10 = b1.c();
                 LocalImageThumbnailView localImageThumbnailView = this.this$0;
                 if (z10) {
                     z11 = true;
@@ -214,13 +214,13 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
             CrashReporting crashReporting = CrashReporting.INSTANCE;
             k10 = v.k(x.a("exception", e10.toString()), x.a("url", this.$uri.toString()));
             CrashReporting.addBreadcrumb$default(crashReporting, "DCDLocalImageThumbnail - Failed to load thumbnail", k10, null, 4, null);
-            h2 c11 = a1.c();
+            i2 c11 = b1.c();
             AnonymousClass2 r13 = new AnonymousClass2(this.this$0, this.$uri, null);
             this.label = 2;
             if (j.g(c11, r13, this) == d10) {
                 return d10;
             }
         }
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 }

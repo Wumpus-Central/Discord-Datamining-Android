@@ -5,6 +5,8 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import cj.a2;
+import cj.n1;
 import com.discord.chat.databinding.MessageFrameFeedHeaderBinding;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
@@ -20,9 +22,7 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import ui.f;
-import xi.a2;
-import xi.n1;
+import zi.f;
 
 @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001:\u0001\u0011B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\u0018\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0012"}, d2 = {"Lcom/discord/chat/presentation/message/MessageFrameFeedHeaderView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/chat/databinding/MessageFrameFeedHeaderBinding;", "configure", "", "messageFrame", "Lcom/discord/chat/presentation/message/MessageFrameFeedHeaderView$MessageBundleHeader;", "onOverflowClick", "Landroid/view/View$OnClickListener;", "MessageBundleHeader", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -115,7 +115,7 @@ public final class MessageFrameFeedHeaderView extends ConstraintLayout {
                 z10 = true;
             }
             if (z10) {
-                output.e(serialDesc, 0, a2.f30576a, self.channelIconURL);
+                output.E(serialDesc, 0, a2.f6238a, self.channelIconURL);
             }
             if (!output.z(serialDesc, 1) && self.chatIconURL == null) {
                 z11 = false;
@@ -123,7 +123,7 @@ public final class MessageFrameFeedHeaderView extends ConstraintLayout {
                 z11 = true;
             }
             if (z11) {
-                output.e(serialDesc, 1, a2.f30576a, self.chatIconURL);
+                output.E(serialDesc, 1, a2.f6238a, self.chatIconURL);
             }
             if (!output.z(serialDesc, 2) && self.avatarURLs == null) {
                 z12 = false;
@@ -131,13 +131,13 @@ public final class MessageFrameFeedHeaderView extends ConstraintLayout {
                 z12 = true;
             }
             if (z12) {
-                output.e(serialDesc, 2, new xi.f(a2.f30576a), self.avatarURLs);
+                output.E(serialDesc, 2, new cj.f(a2.f6238a), self.avatarURLs);
             }
             if (output.z(serialDesc, 3) || self.channelName != null) {
                 z13 = true;
             }
             if (z13) {
-                output.e(serialDesc, 3, a2.f30576a, self.channelName);
+                output.E(serialDesc, 3, a2.f6238a, self.channelName);
             }
         }
 

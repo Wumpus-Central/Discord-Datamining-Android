@@ -11,7 +11,7 @@ public final class DeserializationErrorMessageItem extends ChatListItem {
 
     
     public DeserializationErrorMessageItem(ErrorMessage message) {
-        super(message.m14getId3Eiw7ao(), null);
+        super(message.m13getId3Eiw7ao(), null);
         q.h(message, "message");
         this.message = message;
     }

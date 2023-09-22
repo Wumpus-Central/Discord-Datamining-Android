@@ -1,6 +1,11 @@
 package com.discord.chat.bridge.postpreviewembed;
 
+import aj.a;
 import androidx.recyclerview.widget.RecyclerView;
+import cj.a2;
+import cj.f0;
+import cj.h;
+import cj.m0;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.bridge.structurabletext.StructurableTextSerializer;
 import com.discord.primitives.ChannelId;
@@ -18,14 +23,9 @@ import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
-import ui.n;
-import vi.a;
-import xi.a2;
-import xi.f0;
-import xi.h;
-import xi.m0;
+import zi.n;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/postpreviewembed/PostPreviewEmbed.$serializer", "Lxi/f0;", "Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/postpreviewembed/PostPreviewEmbed.$serializer", "Lcj/f0;", "Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
 
 public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> {
     public static final PostPreviewEmbed$$serializer INSTANCE;
@@ -62,8 +62,8 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
     @Override 
     public KSerializer<?>[] childSerializers() {
         ChannelId$$serializer channelId$$serializer = ChannelId$$serializer.INSTANCE;
-        a2 a2Var = a2.f30576a;
-        return new KSerializer[]{channelId$$serializer, channelId$$serializer, MessageId$$serializer.INSTANCE, GuildId$$serializer.INSTANCE, a2Var, a2Var, m0.f30651a, StructurableTextSerializer.INSTANCE, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), h.f30618a, a.u(a2Var), a.u(a2Var)};
+        a2 a2Var = a2.f6238a;
+        return new KSerializer[]{channelId$$serializer, channelId$$serializer, MessageId$$serializer.INSTANCE, GuildId$$serializer.INSTANCE, a2Var, a2Var, m0.f6313a, StructurableTextSerializer.INSTANCE, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), h.f6280a, a.u(a2Var), a.u(a2Var)};
     }
 
     @Override 
@@ -101,7 +101,7 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
             str = b10.m(descriptor2, 5);
             i10 = b10.i(descriptor2, 6);
             obj6 = b10.y(descriptor2, 7, StructurableTextSerializer.INSTANCE, null);
-            a2 a2Var = a2.f30576a;
+            a2 a2Var = a2.f6238a;
             obj13 = b10.n(descriptor2, 8, a2Var, null);
             obj7 = b10.n(descriptor2, 9, a2Var, null);
             obj8 = b10.n(descriptor2, 10, a2Var, null);
@@ -199,37 +199,37 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
                         i12 = 17;
                         break;
                     case 8:
-                        obj22 = b10.n(descriptor2, 8, a2.f30576a, obj22);
+                        obj22 = b10.n(descriptor2, 8, a2.f6238a, obj22);
                         i13 |= 256;
                         i12 = 17;
                         break;
                     case 9:
-                        obj17 = b10.n(descriptor2, 9, a2.f30576a, obj17);
+                        obj17 = b10.n(descriptor2, 9, a2.f6238a, obj17);
                         i13 |= 512;
                         i12 = 17;
                         break;
                     case 10:
-                        obj20 = b10.n(descriptor2, 10, a2.f30576a, obj20);
+                        obj20 = b10.n(descriptor2, 10, a2.f6238a, obj20);
                         i13 |= 1024;
                         i12 = 17;
                         continue;
                     case 11:
-                        obj21 = b10.n(descriptor2, 11, a2.f30576a, obj21);
+                        obj21 = b10.n(descriptor2, 11, a2.f6238a, obj21);
                         i13 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         i12 = 17;
                         break;
                     case 12:
-                        obj16 = b10.n(descriptor2, 12, a2.f30576a, obj16);
+                        obj16 = b10.n(descriptor2, 12, a2.f6238a, obj16);
                         i13 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                         i12 = 17;
                         break;
                     case 13:
-                        obj19 = b10.n(descriptor2, 13, a2.f30576a, obj19);
+                        obj19 = b10.n(descriptor2, 13, a2.f6238a, obj19);
                         i13 |= 8192;
                         i12 = 17;
                         break;
                     case 14:
-                        obj18 = b10.n(descriptor2, 14, a2.f30576a, obj18);
+                        obj18 = b10.n(descriptor2, 14, a2.f6238a, obj18);
                         i13 |= 16384;
                         i12 = 17;
                         break;
@@ -239,12 +239,12 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
                         i12 = 17;
                         break;
                     case 16:
-                        obj4 = b10.n(descriptor2, 16, a2.f30576a, obj4);
+                        obj4 = b10.n(descriptor2, 16, a2.f6238a, obj4);
                         i13 |= 65536;
                         i12 = 17;
                         break;
                     case 17:
-                        obj5 = b10.n(descriptor2, i12, a2.f30576a, obj5);
+                        obj5 = b10.n(descriptor2, i12, a2.f6238a, obj5);
                         i13 |= 131072;
                         break;
                     default:
@@ -271,7 +271,7 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj12;
-        return new PostPreviewEmbed(i11, (ChannelId) obj10, (ChannelId) obj14, messageId != null ? messageId.m639unboximpl() : null, (GuildId) obj11, str2, str, i10, (StructurableText) obj6, (String) obj13, (String) obj7, (String) obj8, (String) obj9, (String) obj, (String) obj2, (String) obj3, z10, (String) obj4, (String) obj5, null, null);
+        return new PostPreviewEmbed(i11, (ChannelId) obj10, (ChannelId) obj14, messageId != null ? messageId.m644unboximpl() : null, (GuildId) obj11, str2, str, i10, (StructurableText) obj6, (String) obj13, (String) obj7, (String) obj8, (String) obj9, (String) obj, (String) obj2, (String) obj3, z10, (String) obj4, (String) obj5, null, null);
     }
 
     @Override 

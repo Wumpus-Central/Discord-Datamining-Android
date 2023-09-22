@@ -48,7 +48,7 @@ public final class ShortcutData {
                     c10.add(value);
                 }
             }
-            Unit unit = Unit.f21444a;
+            Unit unit = Unit.f21600a;
             a10 = i.a(c10);
             Intent putExtra2 = putExtra.putExtra(ShortcutData.KEY_DATA, (String[]) a10.toArray(new String[0]));
             q.g(putExtra2, "Intent(action, null, con…rray(),\n                )");

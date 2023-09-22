@@ -25,13 +25,13 @@ public class BaseChatListAdapter extends b<List<? extends ChatListItem>> impleme
     private final RecyclerView.RecycledViewPool messageAccessoriesRecycledViewPool;
 
     public BaseChatListAdapter(Function0<? extends ChatEventHandler> eventHandlerProvider, Function0<ComponentProvider> messageComponentProvider) {
-        List<? extends ChatListItem> h10;
+        List<? extends ChatListItem> i10;
         q.h(eventHandlerProvider, "eventHandlerProvider");
         q.h(messageComponentProvider, "messageComponentProvider");
         RecyclerView.RecycledViewPool messageAccessoriesViewPool = ChatListUtilsKt.getMessageAccessoriesViewPool();
         this.messageAccessoriesRecycledViewPool = messageAccessoriesViewPool;
-        h10 = j.h();
-        this.chatListItems = h10;
+        i10 = j.i();
+        this.chatListItems = i10;
         AdapterDelegatesManager<T> delegatesManager = this.delegatesManager;
         q.g(delegatesManager, "delegatesManager");
         this.delegateViewTypes = ChatListAdapterConfiguratorKt.chatListAdapterConfigurator(delegatesManager, eventHandlerProvider, messageComponentProvider, messageAccessoriesViewPool);
@@ -40,9 +40,9 @@ public class BaseChatListAdapter extends b<List<? extends ChatListItem>> impleme
 
     @Override 
     public ChatListItem getChatListItem(int i10) {
-        Object V;
-        V = r.V(this.chatListItems, i10);
-        return (ChatListItem) V;
+        Object W;
+        W = r.W(this.chatListItems, i10);
+        return (ChatListItem) W;
     }
 
     @Override 

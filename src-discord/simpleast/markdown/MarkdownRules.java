@@ -191,20 +191,20 @@ public final class MarkdownRules {
     }
 
     public static final <R, S> List<Rule<R, Node<R>, S>> createHeaderRules(Context context, List<Integer> headerStyles) {
-        List<Rule<R, Node<R>, S>> k10;
+        List<Rule<R, Node<R>, S>> l10;
         q.h(context, "context");
         q.h(headerStyles, "headerStyles");
         MarkdownRules$createHeaderRules$1 markdownRules$createHeaderRules$1 = new MarkdownRules$createHeaderRules$1(context, headerStyles);
-        k10 = j.k(new HeaderRule(new MarkdownRules$createHeaderRules$2(markdownRules$createHeaderRules$1)), new HeaderLineRule(null, new MarkdownRules$createHeaderRules$3(markdownRules$createHeaderRules$1), 1, null));
-        return k10;
+        l10 = j.l(new HeaderRule(new MarkdownRules$createHeaderRules$2(markdownRules$createHeaderRules$1)), new HeaderLineRule(null, new MarkdownRules$createHeaderRules$3(markdownRules$createHeaderRules$1), 1, null));
+        return l10;
     }
 
     public static final <R, S> List<Rule<R, Node<R>, S>> createMarkdownRules(Context context, List<Integer> headerStyles) {
-        List<Rule<R, Node<R>, S>> n02;
+        List<Rule<R, Node<R>, S>> o02;
         q.h(context, "context");
         q.h(headerStyles, "headerStyles");
-        n02 = r.n0(createHeaderRules(context, headerStyles), new ListItemRule(MarkdownRules$createMarkdownRules$1.INSTANCE));
-        return n02;
+        o02 = r.o0(createHeaderRules(context, headerStyles), new ListItemRule(MarkdownRules$createMarkdownRules$1.INSTANCE));
+        return o02;
     }
 
     public final Pattern getPATTERN_HEADER_ITEM() {

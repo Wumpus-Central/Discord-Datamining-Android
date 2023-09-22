@@ -29,7 +29,7 @@ public final class MediaMosaicView$bindAttachmentHolder$4 extends s implements F
         Function1 function1;
         function1 = this.this$0.onAttachmentSpoilerClicked;
         if (function1 == null) {
-            q.z("onAttachmentSpoilerClicked");
+            q.y("onAttachmentSpoilerClicked");
             function1 = null;
         }
         function1.invoke(Integer.valueOf(this.$item.getIndex()));

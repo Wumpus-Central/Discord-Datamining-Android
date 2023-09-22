@@ -13,10 +13,10 @@ public final class MediaExtensionKt {
     private static final String STATIC_IMAGE_EXTENSION;
 
     static {
-        List k10;
+        List l10;
         String str;
-        k10 = j.k(28, 29);
-        if (k10.contains(Integer.valueOf(Build.VERSION.SDK_INT))) {
+        l10 = j.l(28, 29);
+        if (l10.contains(Integer.valueOf(Build.VERSION.SDK_INT))) {
             str = "png";
         } else {
             str = "webp";

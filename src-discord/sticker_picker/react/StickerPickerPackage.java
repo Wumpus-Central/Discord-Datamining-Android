@@ -22,9 +22,9 @@ public final class StickerPickerPackage implements ReactPackage {
 
     @Override 
     public List<ViewManager<?, LayoutShadowNode>> createViewManagers(ReactApplicationContext reactContext) {
-        List<ViewManager<?, LayoutShadowNode>> n10;
+        List<ViewManager<?, LayoutShadowNode>> o10;
         q.h(reactContext, "reactContext");
-        n10 = j.n(new StickerPickerRowViewManager());
-        return n10;
+        o10 = j.o(new StickerPickerRowViewManager());
+        return o10;
     }
 }

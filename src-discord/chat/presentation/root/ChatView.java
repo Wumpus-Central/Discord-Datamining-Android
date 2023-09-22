@@ -13,12 +13,12 @@ import com.discord.recycler_view.scroller.Scroller;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.views.view.ReactViewGroup;
-import kf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.flow.Flow;
+import pf.x;
 
 @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0007\u0018\u0000 \u001d2\u00020\u0001:\u0001\u001dB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\"\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00102\b\u0010\u0011\u001a\u0004\u0018\u00010\u0012H\u0016J\u0010\u0010\u0013\u001a\u00020\f2\u0006\u0010\u0014\u001a\u00020\u000eH\u0003J(\u0010\u0015\u001a\u00020\f2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\n2\u0006\u0010\u0019\u001a\u00020\nH\u0007J\u0010\u0010\u001a\u001a\u00020\f2\u0006\u0010\u0018\u001a\u00020\nH\u0007J\u0010\u0010\u001b\u001a\u00020\f2\u0006\u0010\u0007\u001a\u00020\bH\u0007J\u0010\u0010\u001c\u001a\u00020\f2\u0006\u0010\t\u001a\u00020\nH\u0007R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u001e"}, d2 = {"Lcom/discord/chat/presentation/root/ChatView;", "Lcom/facebook/react/views/view/ReactViewGroup;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "chatList", "Lcom/discord/chat/presentation/list/ChatListView;", "eventHandler", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "inverted", "", "addView", "", "child", "Landroid/view/View;", "index", "", "params", "Landroid/view/ViewGroup$LayoutParams;", "attachPortalViewToChatList", "portalView", "scrollTo", "targetScreenLocation", "Lcom/discord/recycler_view/scroller/Scroller$TargetAlignment;", "animated", "isHighlight", "setAnimated", "setEventHandler", "setInverted", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -82,7 +82,7 @@ public final class ChatView extends ReactViewGroup {
             ChatListView chatListView = this$0.chatList;
             ChatListView chatListView2 = null;
             if (chatListView == null) {
-                q.z("chatList");
+                q.y("chatList");
                 chatListView = null;
             }
             if (!chatListView.isComputingLayout()) {
@@ -101,7 +101,7 @@ public final class ChatView extends ReactViewGroup {
                 }
                 ChatListView chatListView3 = this$0.chatList;
                 if (chatListView3 == null) {
-                    q.z("chatList");
+                    q.y("chatList");
                 } else {
                     chatListView2 = chatListView3;
                 }
@@ -122,7 +122,7 @@ public final class ChatView extends ReactViewGroup {
             ChatListView chatListView = (ChatListView) child;
             ChatEventHandler chatEventHandler = this.eventHandler;
             if (chatEventHandler == null) {
-                q.z("eventHandler");
+                q.y("eventHandler");
                 chatEventHandler = null;
             }
             chatListView.setEventHandler(chatEventHandler);
@@ -152,7 +152,7 @@ public final class ChatView extends ReactViewGroup {
         if (ThreadUtilsKt.isOnMainThread()) {
             ChatListView chatListView = this.chatList;
             if (chatListView == null) {
-                q.z("chatList");
+                q.y("chatList");
                 chatListView = null;
             }
             chatListView.scrollToPosition(i10, targetScreenLocation, z10, z11);

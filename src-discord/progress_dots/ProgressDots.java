@@ -92,10 +92,10 @@ public final class ProgressDots extends ConstraintLayout {
     }
 
     private final void stop() {
-        List<ProgressDot> k10;
+        List<ProgressDot> l10;
         ProgressDotsViewBinding progressDotsViewBinding = this.binding;
-        k10 = j.k(progressDotsViewBinding.viewProgressDots1, progressDotsViewBinding.viewProgressDots2, progressDotsViewBinding.viewProgressDots3);
-        for (ProgressDot progressDot : k10) {
+        l10 = j.l(progressDotsViewBinding.viewProgressDots1, progressDotsViewBinding.viewProgressDots2, progressDotsViewBinding.viewProgressDots3);
+        for (ProgressDot progressDot : l10) {
             progressDot.stop();
         }
         this.isRunning = false;

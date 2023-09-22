@@ -27,7 +27,7 @@ public final class ActivityBookmarkViewHolder extends MessagePartViewHolder {
     public static final void bind$lambda$1$lambda$0(ActivityBookmarkEmbedImpl activityBookmarkEmbed, ActivityBookmarkViewHolder this$0, View view) {
         q.h(activityBookmarkEmbed, "$activityBookmarkEmbed");
         q.h(this$0, "this$0");
-        this$0.eventHandler.mo167onTapActivityBookmarkEmbeduU1mFKc(activityBookmarkEmbed.mo41getApplicationIdVavddsQ(), activityBookmarkEmbed.mo42getChannelIdo4g7jtM());
+        this$0.eventHandler.mo166onTapActivityBookmarkEmbeduU1mFKc(activityBookmarkEmbed.mo40getApplicationIdVavddsQ(), activityBookmarkEmbed.mo41getChannelIdo4g7jtM());
     }
 
     public final void bind(ActivityBookmarkMessageAccessory activityMessageAccessory) {

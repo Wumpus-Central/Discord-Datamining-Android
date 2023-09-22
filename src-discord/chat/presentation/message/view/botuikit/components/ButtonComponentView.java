@@ -118,7 +118,7 @@ public final class ButtonComponentView extends ConstraintLayout implements Compo
         if (component.getUrl() != null) {
             componentActionListener.openLink(component.getUrl());
         } else if (component.getCustomId() != null) {
-            componentActionListener.mo343onTapButtonActionComponenty43Yjpg(component.getCustomId(), component.m40getApplicationIdVavddsQ(), component.getIndices());
+            componentActionListener.mo348onTapButtonActionComponenty43Yjpg(component.getCustomId(), component.m39getApplicationIdVavddsQ(), component.getIndices());
         }
     }
 

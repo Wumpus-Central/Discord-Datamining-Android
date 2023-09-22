@@ -8,10 +8,10 @@ import android.view.View;
 import androidx.recyclerview.widget.RecyclerView;
 import com.discord.channel_spine.ChannelSpineView;
 import com.discord.chat.R;
-import kf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
+import pf.n;
 
 @Metadata(d1 = {"\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J.\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u001e2\u0006\u0010 \u001a\u00020\u0005J0\u0010!\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010 \u001a\u00020\u00052\b\b\u0002\u0010\"\u001a\u00020\u0005R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u000e\u0010\t\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u001b\u0010\n\u001a\u00020\u000b8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u000e\u0010\u000f\u001a\u0004\b\f\u0010\rR\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u0004¢\u0006\u0002\n\u0000R\u001b\u0010\u0012\u001a\u00020\u00138BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u0016\u0010\u000f\u001a\u0004\b\u0014\u0010\u0015¨\u0006#"}, d2 = {"Lcom/discord/chat/presentation/message/decorations/SpineDrawer;", "Landroidx/recyclerview/widget/RecyclerView$ItemDecoration;", "context", "Landroid/content/Context;", "contentStartPositionPx", "", "(Landroid/content/Context;I)V", "getContext", "()Landroid/content/Context;", "itemPaddingOffset", "lineDrawable", "Landroid/graphics/drawable/PaintDrawable;", "getLineDrawable", "()Landroid/graphics/drawable/PaintDrawable;", "lineDrawable$delegate", "Lkotlin/Lazy;", "spineRect", "Landroid/graphics/Rect;", "splineView", "Lcom/discord/channel_spine/ChannelSpineView;", "getSplineView", "()Lcom/discord/channel_spine/ChannelSpineView;", "splineView$delegate", "drawSpineCurve", "", "canvas", "Landroid/graphics/Canvas;", "parent", "Landroidx/recyclerview/widget/RecyclerView;", "child", "Landroid/view/View;", "viewToCenterSpine", "middle", "drawSpinePiece", "topOffsetPx", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -24,15 +24,15 @@ public final class SpineDrawer extends RecyclerView.ItemDecoration {
     private final Lazy splineView$delegate;
 
     public SpineDrawer(Context context, int i10) {
-        Lazy b10;
-        Lazy b11;
+        Lazy a10;
+        Lazy a11;
         q.h(context, "context");
         this.context = context;
         this.contentStartPositionPx = i10;
-        b10 = n.b(new SpineDrawer$lineDrawable$2(this));
-        this.lineDrawable$delegate = b10;
-        b11 = n.b(new SpineDrawer$splineView$2(this));
-        this.splineView$delegate = b11;
+        a10 = n.a(new SpineDrawer$lineDrawable$2(this));
+        this.lineDrawable$delegate = a10;
+        a11 = n.a(new SpineDrawer$splineView$2(this));
+        this.splineView$delegate = a11;
         this.itemPaddingOffset = context.getResources().getDimensionPixelSize(R.dimen.message_accessories_vertical_spacing);
     }
 

@@ -1,5 +1,7 @@
 package com.discord.chat.bridge.botuikit;
 
+import cj.a2;
+import cj.n1;
 import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -8,19 +10,17 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import ui.f;
-import xi.a2;
-import xi.n1;
+import zi.f;
 
-@f
 @Metadata(d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0014\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 (2\u00020\u0001:\u0002'(BI\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\b\u001a\u00020\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\u0002\u0010\rB;\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\b\u001a\u00020\t\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u000eJ\u000b\u0010\u0016\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010\u0017\u001a\u00020\u0005HÆ\u0003J\u000b\u0010\u0018\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010\u0019\u001a\u00020\tHÆ\u0003J\u000b\u0010\u001a\u001a\u0004\u0018\u00010\u0005HÆ\u0003JA\u0010\u001b\u001a\u00020\u00002\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\b\u001a\u00020\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0005HÆ\u0001J\u0013\u0010\u001c\u001a\u00020\t2\b\u0010\u001d\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001e\u001a\u00020\u0003HÖ\u0001J\t\u0010\u001f\u001a\u00020\u0005HÖ\u0001J!\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020\u00002\u0006\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020&HÇ\u0001R\u0011\u0010\b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0012R\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0012R\u0013\u0010\n\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0012¨\u0006)"}, d2 = {"Lcom/discord/chat/bridge/botuikit/ComponentEmoji;", "", "seen1", "", "id", "", ZeroconfModule.KEY_SERVICE_NAME, "src", "animated", "", "surrogates", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V", "getAnimated", "()Z", "getId", "()Ljava/lang/String;", "getName", "getSrc", "getSurrogates", "component1", "component2", "component3", "component4", "component5", "copy", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@f
 
 public final class ComponentEmoji {
     public static final Companion Companion = new Companion(null);
     private final boolean animated;
 
     
-    private final String f7238id;
+    private final String f6923id;
     private final String name;
     private final String src;
     private final String surrogates;
@@ -45,9 +45,9 @@ public final class ComponentEmoji {
             n1.b(i10, 2, ComponentEmoji$$serializer.INSTANCE.getDescriptor());
         }
         if ((i10 & 1) == 0) {
-            this.f7238id = null;
+            this.f6923id = null;
         } else {
-            this.f7238id = str;
+            this.f6923id = str;
         }
         this.name = str2;
         if ((i10 & 4) == 0) {
@@ -69,7 +69,7 @@ public final class ComponentEmoji {
 
     public static  ComponentEmoji copy$default(ComponentEmoji componentEmoji, String str, String str2, String str3, boolean z10, String str4, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = componentEmoji.f7238id;
+            str = componentEmoji.f6923id;
         }
         if ((i10 & 2) != 0) {
             str2 = componentEmoji.name;
@@ -94,13 +94,13 @@ public final class ComponentEmoji {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z13 = false;
-        if (!output.z(serialDesc, 0) && self.f7238id == null) {
+        if (!output.z(serialDesc, 0) && self.f6923id == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.e(serialDesc, 0, a2.f30576a, self.f7238id);
+            output.E(serialDesc, 0, a2.f6238a, self.f6923id);
         }
         output.y(serialDesc, 1, self.name);
         if (!output.z(serialDesc, 2) && self.src == null) {
@@ -109,7 +109,7 @@ public final class ComponentEmoji {
             z11 = true;
         }
         if (z11) {
-            output.e(serialDesc, 2, a2.f30576a, self.src);
+            output.E(serialDesc, 2, a2.f6238a, self.src);
         }
         if (!output.z(serialDesc, 3) && !self.animated) {
             z12 = false;
@@ -123,12 +123,12 @@ public final class ComponentEmoji {
             z13 = true;
         }
         if (z13) {
-            output.e(serialDesc, 4, a2.f30576a, self.surrogates);
+            output.E(serialDesc, 4, a2.f6238a, self.surrogates);
         }
     }
 
     public final String component1() {
-        return this.f7238id;
+        return this.f6923id;
     }
 
     public final String component2() {
@@ -160,7 +160,7 @@ public final class ComponentEmoji {
             return false;
         }
         ComponentEmoji componentEmoji = (ComponentEmoji) obj;
-        return q.c(this.f7238id, componentEmoji.f7238id) && q.c(this.name, componentEmoji.name) && q.c(this.src, componentEmoji.src) && this.animated == componentEmoji.animated && q.c(this.surrogates, componentEmoji.surrogates);
+        return q.c(this.f6923id, componentEmoji.f6923id) && q.c(this.name, componentEmoji.name) && q.c(this.src, componentEmoji.src) && this.animated == componentEmoji.animated && q.c(this.surrogates, componentEmoji.surrogates);
     }
 
     public final boolean getAnimated() {
@@ -168,7 +168,7 @@ public final class ComponentEmoji {
     }
 
     public final String getId() {
-        return this.f7238id;
+        return this.f6923id;
     }
 
     public final String getName() {
@@ -184,7 +184,7 @@ public final class ComponentEmoji {
     }
 
     public int hashCode() {
-        String str = this.f7238id;
+        String str = this.f6923id;
         int i10 = 0;
         int hashCode = (((str == null ? 0 : str.hashCode()) * 31) + this.name.hashCode()) * 31;
         String str2 = this.src;
@@ -205,7 +205,7 @@ public final class ComponentEmoji {
     }
 
     public String toString() {
-        String str = this.f7238id;
+        String str = this.f6923id;
         String str2 = this.name;
         String str3 = this.src;
         boolean z10 = this.animated;
@@ -215,7 +215,7 @@ public final class ComponentEmoji {
 
     public ComponentEmoji(String str, String name, String str2, boolean z10, String str3) {
         q.h(name, "name");
-        this.f7238id = str;
+        this.f6923id = str;
         this.name = name;
         this.src = str2;
         this.animated = z10;

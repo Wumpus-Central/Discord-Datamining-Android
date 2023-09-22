@@ -18,8 +18,8 @@ final class MessageBundleAdapter$onTapReply$1 extends s implements Function1<Mes
 
     @Override 
     public   Unit invoke(MessageId messageId) {
-        m206invoke1xi1bu0(messageId.m639unboximpl());
-        return Unit.f21444a;
+        m206invoke1xi1bu0(messageId.m644unboximpl());
+        return Unit.f21600a;
     }
 
     

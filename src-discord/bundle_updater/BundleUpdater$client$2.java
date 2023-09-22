@@ -38,7 +38,7 @@ public final class BundleUpdater$client$2 extends s implements Function0<OkHttpC
             @Override 
             public List<Cookie> loadForRequest(HttpUrl url) {
                 CookieManager cookieManager;
-                List<Cookie> D0;
+                List<Cookie> E0;
                 q.h(url, "url");
                 cookieManager = BundleUpdater.this.getCookieManager();
                 q.g(cookieManager, "cookieManager");
@@ -49,24 +49,24 @@ public final class BundleUpdater$client$2 extends s implements Function0<OkHttpC
                         arrayList.add(obj);
                     }
                 }
-                D0 = r.D0(arrayList);
+                E0 = r.E0(arrayList);
                 Cookie buildOverrideCookie = BundleUpdater.this.getBuildOverrideCookie();
                 if (buildOverrideCookie != null) {
-                    D0.add(buildOverrideCookie);
+                    E0.add(buildOverrideCookie);
                 }
-                return D0;
+                return E0;
             }
 
             @Override 
             public void saveFromResponse(HttpUrl url, List<Cookie> cookies) {
                 CookieManager cookieManager;
-                String c02;
+                String d02;
                 q.h(url, "url");
                 q.h(cookies, "cookies");
                 cookieManager = BundleUpdater.this.getCookieManager();
                 String httpUrl = url.toString();
-                c02 = r.c0(cookies, "; ", null, null, 0, null, null, 62, null);
-                cookieManager.setCookie(httpUrl, c02);
+                d02 = r.d0(cookies, "; ", null, null, 0, null, null, 62, null);
+                cookieManager.setCookie(httpUrl, d02);
             }
         }).O(1L, TimeUnit.MINUTES);
         final DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;

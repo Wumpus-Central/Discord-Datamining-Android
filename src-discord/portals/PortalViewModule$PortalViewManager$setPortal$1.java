@@ -1,7 +1,6 @@
 package com.discord.portals;
 
 import android.widget.FrameLayout;
-import kf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -10,10 +9,11 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineScope;
-import kotlinx.coroutines.a1;
+import kotlinx.coroutines.b1;
 import kotlinx.coroutines.j;
 import kotlinx.coroutines.v0;
-import qf.d;
+import pf.t;
+import vf.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.portals.PortalViewModule$PortalViewManager$setPortal$1", f = "PortalViewModule.kt", l = {46}, m = "invokeSuspend")
@@ -41,7 +41,7 @@ final class PortalViewModule$PortalViewManager$setPortal$1 extends k implements 
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21600a);
         }
 
         @Override 
@@ -60,7 +60,7 @@ final class PortalViewModule$PortalViewManager$setPortal$1 extends k implements 
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            return Unit.f21444a;
+            return Unit.f21600a;
         }
     }
 
@@ -78,7 +78,7 @@ final class PortalViewModule$PortalViewManager$setPortal$1 extends k implements 
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((PortalViewModule$PortalViewManager$setPortal$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
+        return ((PortalViewModule$PortalViewManager$setPortal$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21600a);
     }
 
     @Override 
@@ -88,7 +88,7 @@ final class PortalViewModule$PortalViewManager$setPortal$1 extends k implements 
         int i10 = this.label;
         if (i10 == 0) {
             t.b(obj);
-            CoroutineDispatcher a10 = a1.a();
+            CoroutineDispatcher a10 = b1.a();
             AnonymousClass1 r12 = new AnonymousClass1(null);
             this.label = 1;
             if (j.g(a10, r12, this) == d10) {
@@ -100,6 +100,6 @@ final class PortalViewModule$PortalViewManager$setPortal$1 extends k implements 
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
         PortalViewContextManager.INSTANCE.registerView(this.$portal, this.$portalView);
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 }

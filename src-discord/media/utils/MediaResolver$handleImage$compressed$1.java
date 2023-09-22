@@ -24,7 +24,7 @@ final class MediaResolver$handleImage$compressed$1 extends s implements Function
     @Override 
     public   Unit invoke(Compression compression) {
         invoke2(compression);
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     

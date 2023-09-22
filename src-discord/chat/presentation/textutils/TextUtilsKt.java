@@ -157,10 +157,10 @@ public final class TextUtilsKt {
         draweeSpanStringBuilder.append((char) 8203);
         a c10 = c.g().D(ImageRequestBuilder.s(Uri.parse(ReactAssetUtilsKt.getReactImageUrl(context, imageUrl))).a()).build();
         q.g(c10, "newDraweeControllerBuild…build())\n        .build()");
-        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f7837e);
+        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f7529e);
         com.facebook.drawee.generic.a a10 = com.facebook.drawee.generic.a.a(f10);
         a10.r(f11);
-        a10.u(a.EnumC0119a.BITMAP_ONLY);
+        a10.u(a.EnumC0113a.BITMAP_ONLY);
         w10.K(a10);
         if (rc2.spoilerIsHidden()) {
             w10.v(new PorterDuffColorFilter(rc2.getTheme().getSpoilerHiddenBackground(), PorterDuff.Mode.SRC_IN));
@@ -252,7 +252,7 @@ public final class TextUtilsKt {
         if (structurableText instanceof PrimitiveStructurableText) {
             return new DraweeSpanStringBuilder(((PrimitiveStructurableText) structurableText).getContent());
         }
-        throw new kf.q();
+        throw new pf.q();
     }
 
     public static  DraweeSpanStringBuilder toSpannable$default(StructurableText structurableText, Context context, String str, boolean z10, boolean z11, boolean z12, Paint paint, Function1 function1, Function1 function12, Function3 function3, Function4 function4, Function2 function2, Function1 function13, Function1 function14, Function1 function15, Function1 function16, Function1 function17, Function0 function0, boolean z13, DiscordTheme discordTheme, float f10, int i10, Object obj) {

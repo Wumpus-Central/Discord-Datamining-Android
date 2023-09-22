@@ -29,7 +29,7 @@ public final class MarkAsReadAction implements NotificationAction {
         @Override 
         public final MarkAsReadAction createFromParcel(Parcel parcel) {
             q.h(parcel, "parcel");
-            return new MarkAsReadAction(parcel.readString(), ((ChannelId) parcel.readParcelable(MarkAsReadAction.class.getClassLoader())).m614unboximpl(), ((MessageId) parcel.readParcelable(MarkAsReadAction.class.getClassLoader())).m639unboximpl(), null);
+            return new MarkAsReadAction(parcel.readString(), ((ChannelId) parcel.readParcelable(MarkAsReadAction.class.getClassLoader())).m619unboximpl(), ((MessageId) parcel.readParcelable(MarkAsReadAction.class.getClassLoader())).m644unboximpl(), null);
         }
 
         
@@ -50,17 +50,17 @@ public final class MarkAsReadAction implements NotificationAction {
     }
 
     
-    private final long m534component2o4g7jtM() {
+    private final long m539component2o4g7jtM() {
         return this.channelId;
     }
 
     
-    private final String m535component33Eiw7ao() {
+    private final String m540component33Eiw7ao() {
         return this.messageId;
     }
 
     
-    public static  MarkAsReadAction m536copySHRpUJI$default(MarkAsReadAction markAsReadAction, String str, long j10, String str2, int i10, Object obj) {
+    public static  MarkAsReadAction m541copySHRpUJI$default(MarkAsReadAction markAsReadAction, String str, long j10, String str2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = markAsReadAction.getTag();
         }
@@ -70,7 +70,7 @@ public final class MarkAsReadAction implements NotificationAction {
         if ((i10 & 4) != 0) {
             str2 = markAsReadAction.messageId;
         }
-        return markAsReadAction.m537copySHRpUJI(str, j10, str2);
+        return markAsReadAction.m542copySHRpUJI(str, j10, str2);
     }
 
     public final String component1() {
@@ -78,7 +78,7 @@ public final class MarkAsReadAction implements NotificationAction {
     }
 
     
-    public final MarkAsReadAction m537copySHRpUJI(String tag, long j10, String messageId) {
+    public final MarkAsReadAction m542copySHRpUJI(String tag, long j10, String messageId) {
         q.h(tag, "tag");
         q.h(messageId, "messageId");
         return new MarkAsReadAction(tag, j10, messageId, null);
@@ -97,7 +97,7 @@ public final class MarkAsReadAction implements NotificationAction {
             return false;
         }
         MarkAsReadAction markAsReadAction = (MarkAsReadAction) obj;
-        return q.c(getTag(), markAsReadAction.getTag()) && ChannelId.m609equalsimpl0(this.channelId, markAsReadAction.channelId) && MessageId.m635equalsimpl0(this.messageId, markAsReadAction.messageId);
+        return q.c(getTag(), markAsReadAction.getTag()) && ChannelId.m614equalsimpl0(this.channelId, markAsReadAction.channelId) && MessageId.m640equalsimpl0(this.messageId, markAsReadAction.messageId);
     }
 
     @Override 
@@ -111,7 +111,7 @@ public final class MarkAsReadAction implements NotificationAction {
     }
 
     public int hashCode() {
-        return (((getTag().hashCode() * 31) + ChannelId.m610hashCodeimpl(this.channelId)) * 31) + MessageId.m636hashCodeimpl(this.messageId);
+        return (((getTag().hashCode() * 31) + ChannelId.m615hashCodeimpl(this.channelId)) * 31) + MessageId.m641hashCodeimpl(this.messageId);
     }
 
     @Override 
@@ -120,8 +120,8 @@ public final class MarkAsReadAction implements NotificationAction {
         q.h(intent, "intent");
         HeadlessTasks.Companion companion = HeadlessTasks.Companion;
         Bundle bundle = new Bundle();
-        bundle.putString("channelId", ChannelId.m612toStringimpl(this.channelId));
-        bundle.putString("messageId", MessageId.m637toStringimpl(this.messageId));
+        bundle.putString("channelId", ChannelId.m617toStringimpl(this.channelId));
+        bundle.putString("messageId", MessageId.m642toStringimpl(this.messageId));
         companion.startHeadlessTask(context, "MarkAsRead", (r18 & 4) != 0 ? HeadlessTasks.TASK_TIMEOUT_DEFAULT : 0L, (r18 & 8) != 0, (r18 & 16) != 0 ? new Bundle() : bundle, (r18 & 32) != 0 ? false : true);
     }
 
@@ -137,8 +137,8 @@ public final class MarkAsReadAction implements NotificationAction {
 
     public String toString() {
         String tag = getTag();
-        String str = ChannelId.m612toStringimpl(this.channelId);
-        String str2 = MessageId.m637toStringimpl(this.messageId);
+        String str = ChannelId.m617toStringimpl(this.channelId);
+        String str2 = MessageId.m642toStringimpl(this.messageId);
         return "MarkAsReadAction(tag=" + tag + ", channelId=" + str + ", messageId=" + str2 + ")";
     }
 
@@ -146,7 +146,7 @@ public final class MarkAsReadAction implements NotificationAction {
     public void writeToParcel(Parcel out, int i10) {
         q.h(out, "out");
         out.writeString(this.tag);
-        out.writeParcelable(ChannelId.m605boximpl(this.channelId), i10);
-        out.writeParcelable(MessageId.m631boximpl(this.messageId), i10);
+        out.writeParcelable(ChannelId.m610boximpl(this.channelId), i10);
+        out.writeParcelable(MessageId.m636boximpl(this.messageId), i10);
     }
 }

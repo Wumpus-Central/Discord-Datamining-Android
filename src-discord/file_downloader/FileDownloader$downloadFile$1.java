@@ -40,7 +40,7 @@ public final class FileDownloader$downloadFile$1 extends k implements Function2<
     }
 
     public final Object invoke(FlowCollector<? super DownloadState> flowCollector, Continuation<? super Unit> continuation) {
-        return ((FileDownloader$downloadFile$1) create(flowCollector, continuation)).invokeSuspend(Unit.f21444a);
+        return ((FileDownloader$downloadFile$1) create(flowCollector, continuation)).invokeSuspend(Unit.f21600a);
     }
 
     

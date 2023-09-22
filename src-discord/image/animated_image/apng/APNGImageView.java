@@ -72,7 +72,7 @@ public abstract class APNGImageView extends FrameLayout {
         if (aPNGView != null) {
             return aPNGView;
         }
-        q.z("apngView");
+        q.y("apngView");
         return null;
     }
 

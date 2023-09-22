@@ -1,29 +1,31 @@
 package com.discord.chat.presentation.message;
 
+import com.discord.chat.bridge.contentnode.LinkContentNode;
 import com.discord.chat.presentation.events.ChatEventHandler;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.jvm.functions.Function3;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.n;
 import kotlin.jvm.internal.q;
 
+
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 
- class MessageAccessoriesAdapter$onBindViewHolder$8 extends n implements Function3<String, String, String, Unit> {
+public  class MessageAccessoriesAdapter$onBindViewHolder$8 extends n implements Function1<LinkContentNode, Unit> {
     
     public MessageAccessoriesAdapter$onBindViewHolder$8(Object obj) {
-        super(3, obj, ChatEventHandler.class, "onTapChannel", "onTapChannel(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", 0);
+        super(1, obj, ChatEventHandler.class, "onLinkLongClicked", "onLinkLongClicked(Lcom/discord/chat/bridge/contentnode/LinkContentNode;)V", 0);
     }
 
     @Override 
-    public   Unit invoke(String str, String str2, String str3) {
-        invoke2(str, str2, str3);
-        return Unit.f21444a;
+    public   Unit invoke(LinkContentNode linkContentNode) {
+        invoke2(linkContentNode);
+        return Unit.f21600a;
     }
 
     
-    public final void invoke2(String p02, String str, String str2) {
+    public final void invoke2(LinkContentNode p02) {
         q.h(p02, "p0");
-        ((ChatEventHandler) this.receiver).onTapChannel(p02, str, str2);
+        ((ChatEventHandler) this.receiver).onLinkLongClicked(p02);
     }
 }

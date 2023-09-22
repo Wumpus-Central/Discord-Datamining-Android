@@ -15,18 +15,18 @@ import kotlin.jvm.internal.q;
 public  class MessageAccessoriesAdapter$onBindViewHolder$44 extends n implements Function2<MessageId, ChannelId, Unit> {
     
     public MessageAccessoriesAdapter$onBindViewHolder$44(Object obj) {
-        super(2, obj, ChatEventHandler.class, "onTapAutoModerationFeedback", "onTapAutoModerationFeedback-pfaIj0E(Ljava/lang/String;J)V", 0);
+        super(2, obj, ChatEventHandler.class, "onTapAutoModerationActions", "onTapAutoModerationActions-pfaIj0E(Ljava/lang/String;J)V", 0);
     }
 
     @Override 
     public   Unit invoke(MessageId messageId, ChannelId channelId) {
-        m222invokepfaIj0E(messageId.m639unboximpl(), channelId.m614unboximpl());
-        return Unit.f21444a;
+        m221invokepfaIj0E(messageId.m644unboximpl(), channelId.m619unboximpl());
+        return Unit.f21600a;
     }
 
     
-    public final void m222invokepfaIj0E(String p02, long j10) {
+    public final void m221invokepfaIj0E(String p02, long j10) {
         q.h(p02, "p0");
-        ((ChatEventHandler) this.receiver).mo169onTapAutoModerationFeedbackpfaIj0E(p02, j10);
+        ((ChatEventHandler) this.receiver).mo167onTapAutoModerationActionspfaIj0E(p02, j10);
     }
 }

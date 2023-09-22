@@ -1,6 +1,5 @@
 package com.discord.chat.presentation.message.view.voicemessages;
 
-import kf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -9,9 +8,10 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineScope;
-import kotlinx.coroutines.a1;
+import kotlinx.coroutines.b1;
 import kotlinx.coroutines.j;
-import qf.d;
+import pf.t;
+import vf.d;
 
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -47,7 +47,7 @@ public final class AudioWaveView$recalculateSampleData$1 extends k implements Fu
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super byte[]> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21600a);
         }
 
         @Override 
@@ -76,7 +76,7 @@ public final class AudioWaveView$recalculateSampleData$1 extends k implements Fu
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioWaveView$recalculateSampleData$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
+        return ((AudioWaveView$recalculateSampleData$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21600a);
     }
 
     @Override 
@@ -88,7 +88,7 @@ public final class AudioWaveView$recalculateSampleData$1 extends k implements Fu
         if (i10 == 0) {
             t.b(obj);
             AudioWaveView audioWaveView2 = this.this$0;
-            CoroutineDispatcher a10 = a1.a();
+            CoroutineDispatcher a10 = b1.a();
             AnonymousClass1 r32 = new AnonymousClass1(this.$originalSampleData, this.$numChunks, null);
             this.L$0 = audioWaveView2;
             this.label = 1;
@@ -106,6 +106,6 @@ public final class AudioWaveView$recalculateSampleData$1 extends k implements Fu
         }
         audioWaveView.setDownSampleData((byte[]) obj);
         this.this$0.invalidate();
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 }

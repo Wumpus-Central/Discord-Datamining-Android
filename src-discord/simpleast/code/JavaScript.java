@@ -15,7 +15,7 @@ import kotlin.collections.j;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import kotlin.text.Regex;
-import oi.f;
+import ti.f;
 
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÆ\u0002\u0018\u00002\u00020\u0001:\u0003\u001a\u001b\u001cB\u0007\b\u0002¢\u0006\u0002\u0010\u0002JE\u0010\u0011\u001a \u0012\u001c\u0012\u001a\u0012\u0004\u0012\u0002H\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00140\u0015\u0012\u0004\u0012\u0002H\u00160\u00130\u0012\"\u0004\b\u0000\u0010\u0014\"\u0004\b\u0001\u0010\u00162\f\u0010\u0017\u001a\b\u0012\u0004\u0012\u0002H\u00140\u0018H\u0000¢\u0006\u0002\b\u0019R\u0019\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\u0006\u0010\u0007R\u0019\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\n\u0010\u0007R\u0016\u0010\u000b\u001a\n \r*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u000e\u001a\n \r*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u000f\u001a\n \r*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u0010\u001a\n \r*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001d"}, d2 = {"Lcom/discord/simpleast/code/JavaScript;", "", "()V", "BUILT_INS", "", "", "getBUILT_INS", "()[Ljava/lang/String;", "[Ljava/lang/String;", "KEYWORDS", "getKEYWORDS", "PATTERN_JAVASCRIPT_COMMENTS", "Ljava/util/regex/Pattern;", "kotlin.jvm.PlatformType", "PATTERN_JAVASCRIPT_GENERIC", "PATTERN_JAVASCRIPT_REGEX", "PATTERN_JAVASCRIPT_STRINGS", "createCodeRules", "", "Lcom/discord/simpleast/core/parser/Rule;", "RC", "Lcom/discord/simpleast/core/node/Node;", "S", "codeStyleProviders", "Lcom/discord/simpleast/code/CodeStyleProviders;", "createCodeRules$simpleast_core_release", "FieldNode", "FunctionNode", "ObjectPropertyNode", "simpleast-core_release"}, k = 1, mv = {1, 4, 0})
 
@@ -169,7 +169,7 @@ public final class JavaScript {
     }
 
     public final <RC, S> List<Rule<RC, Node<RC>, S>> createCodeRules$simpleast_core_release(CodeStyleProviders<RC> codeStyleProviders) {
-        List<Rule<RC, Node<RC>, S>> k10;
+        List<Rule<RC, Node<RC>, S>> l10;
         q.h(codeStyleProviders, "codeStyleProviders");
         CodeRules codeRules = CodeRules.INSTANCE;
         Pattern PATTERN_JAVASCRIPT_COMMENTS2 = PATTERN_JAVASCRIPT_COMMENTS;
@@ -180,8 +180,8 @@ public final class JavaScript {
         q.g(PATTERN_JAVASCRIPT_GENERIC2, "PATTERN_JAVASCRIPT_GENERIC");
         Pattern PATTERN_JAVASCRIPT_REGEX2 = PATTERN_JAVASCRIPT_REGEX;
         q.g(PATTERN_JAVASCRIPT_REGEX2, "PATTERN_JAVASCRIPT_REGEX");
-        k10 = j.k(CodeRules.toMatchGroupRule$default(codeRules, PATTERN_JAVASCRIPT_COMMENTS2, 0, codeStyleProviders.getCommentStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_JAVASCRIPT_STRINGS2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), ObjectPropertyNode.Companion.createObjectPropertyRule(codeStyleProviders), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_JAVASCRIPT_GENERIC2, 0, codeStyleProviders.getGenericsStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_JAVASCRIPT_REGEX2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), FieldNode.Companion.createFieldRule(codeStyleProviders), FunctionNode.Companion.createFunctionRule(codeStyleProviders));
-        return k10;
+        l10 = j.l(CodeRules.toMatchGroupRule$default(codeRules, PATTERN_JAVASCRIPT_COMMENTS2, 0, codeStyleProviders.getCommentStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_JAVASCRIPT_STRINGS2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), ObjectPropertyNode.Companion.createObjectPropertyRule(codeStyleProviders), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_JAVASCRIPT_GENERIC2, 0, codeStyleProviders.getGenericsStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_JAVASCRIPT_REGEX2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), FieldNode.Companion.createFieldRule(codeStyleProviders), FunctionNode.Companion.createFunctionRule(codeStyleProviders));
+        return l10;
     }
 
     public final String[] getBUILT_INS() {

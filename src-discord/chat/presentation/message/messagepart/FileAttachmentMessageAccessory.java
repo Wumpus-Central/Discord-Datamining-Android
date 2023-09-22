@@ -99,7 +99,7 @@ public final class FileAttachmentMessageAccessory extends MessageAccessory {
             return false;
         }
         FileAttachmentMessageAccessory fileAttachmentMessageAccessory = (FileAttachmentMessageAccessory) obj;
-        return MessageId.m635equalsimpl0(mo236getMessageId3Eiw7ao(), fileAttachmentMessageAccessory.mo236getMessageId3Eiw7ao()) && this.attachmentIndex == fileAttachmentMessageAccessory.attachmentIndex && q.c(this.attachment, fileAttachmentMessageAccessory.attachment) && q.c(this.spoilerAttributes, fileAttachmentMessageAccessory.spoilerAttributes) && q.c(this.uploaderId, fileAttachmentMessageAccessory.uploaderId) && q.c(this.uploaderItemId, fileAttachmentMessageAccessory.uploaderItemId) && q.c(this.attachmentsOpacity, fileAttachmentMessageAccessory.attachmentsOpacity);
+        return MessageId.m640equalsimpl0(mo236getMessageId3Eiw7ao(), fileAttachmentMessageAccessory.mo236getMessageId3Eiw7ao()) && this.attachmentIndex == fileAttachmentMessageAccessory.attachmentIndex && q.c(this.attachment, fileAttachmentMessageAccessory.attachment) && q.c(this.spoilerAttributes, fileAttachmentMessageAccessory.spoilerAttributes) && q.c(this.uploaderId, fileAttachmentMessageAccessory.uploaderId) && q.c(this.uploaderItemId, fileAttachmentMessageAccessory.uploaderItemId) && q.c(this.attachmentsOpacity, fileAttachmentMessageAccessory.attachmentsOpacity);
     }
 
     public final Attachment getAttachment() {
@@ -133,7 +133,7 @@ public final class FileAttachmentMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int i10 = ((((MessageId.m636hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.attachmentIndex) * 31) + this.attachment.hashCode()) * 31;
+        int i10 = ((((MessageId.m641hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.attachmentIndex) * 31) + this.attachment.hashCode()) * 31;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         int i11 = 0;
         int hashCode = (i10 + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode())) * 31;
@@ -149,7 +149,7 @@ public final class FileAttachmentMessageAccessory extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m637toStringimpl(mo236getMessageId3Eiw7ao());
+        String str = MessageId.m642toStringimpl(mo236getMessageId3Eiw7ao());
         int i10 = this.attachmentIndex;
         Attachment attachment = this.attachment;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;

@@ -27,14 +27,14 @@ final class ClientInfo$isProdBuild$2 extends s implements Function0<Boolean> {
         if (!ClientInfo.INSTANCE.isDebugBuild()) {
             str = ClientInfo.flavor;
             if (str == null) {
-                q.z("flavor");
+                q.y("flavor");
                 str = null;
             }
             M = p.M(str, "beta", false, 2, null);
             if (!M) {
                 str2 = ClientInfo.flavor;
                 if (str2 == null) {
-                    q.z("flavor");
+                    q.y("flavor");
                     str2 = null;
                 }
                 M2 = p.M(str2, BuildConfig.FLAVOR, false, 2, null);

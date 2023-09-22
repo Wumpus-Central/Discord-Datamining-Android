@@ -1,5 +1,6 @@
 package com.discord.notifications.api;
 
+import cj.n1;
 import com.discord.primitives.ChannelId;
 import com.discord.primitives.ChannelId$$serializer;
 import com.discord.primitives.MessageId;
@@ -15,18 +16,17 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import kotlinx.serialization.json.JsonObject;
 import kotlinx.serialization.json.t;
-import ui.f;
-import xi.n1;
+import zi.f;
 
-@f
 @Metadata(d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u001e\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 :2\u00020\u0001:\u00029:Bd\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0010\b\u0001\u0010\u0004\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u0005\u0012\u0010\b\u0001\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u0005\u0012\n\b\u0001\u0010\b\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u0010\t\u001a\u0004\u0018\u00010\n\u0012\n\b\u0001\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000eø\u0001\u0000¢\u0006\u0002\u0010\u000fB@\u0012\u000e\b\u0002\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005\u0012\u000e\b\u0002\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005\u0012\u0006\u0010\b\u001a\u00020\u0006\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\fø\u0001\u0000¢\u0006\u0002\u0010\u0010J\u000f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005HÆ\u0003J\u000f\u0010#\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005HÆ\u0003J\t\u0010$\u001a\u00020\u0006HÆ\u0003J\u0019\u0010%\u001a\u00020\nHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b&\u0010\u0018J\u0019\u0010'\u001a\u00020\fHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b(\u0010\u0014JT\u0010)\u001a\u00020\u00002\u000e\b\u0002\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\u000e\b\u0002\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\b\b\u0002\u0010\b\u001a\u00020\u00062\b\b\u0002\u0010\t\u001a\u00020\n2\b\b\u0002\u0010\u000b\u001a\u00020\fHÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b*\u0010+J\u0013\u0010,\u001a\u00020-2\b\u0010.\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010/\u001a\u00020\u0003HÖ\u0001J\t\u00100\u001a\u000201HÖ\u0001J!\u00102\u001a\u0002032\u0006\u00104\u001a\u00020\u00002\u0006\u00105\u001a\u0002062\u0006\u00107\u001a\u000208HÇ\u0001R'\u0010\u000b\u001a\u00020\f8\u0006X\u0087\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0010\n\u0002\u0010\u0015\u0012\u0004\b\u0011\u0010\u0012\u001a\u0004\b\u0013\u0010\u0014R'\u0010\t\u001a\u00020\n8\u0006X\u0087\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0010\n\u0002\u0010\u0019\u0012\u0004\b\u0016\u0010\u0012\u001a\u0004\b\u0017\u0010\u0018R\"\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u00058\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u001a\u0010\u0012\u001a\u0004\b\u001b\u0010\u001cR\u001c\u0010\b\u001a\u00020\u00068\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u001d\u0010\u0012\u001a\u0004\b\u001e\u0010\u001fR\"\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\u00058\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b \u0010\u0012\u001a\u0004\b!\u0010\u001c\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006;"}, d2 = {"Lcom/discord/notifications/api/KvMessageEntry;", "", "seen1", "", "members", "", "Lkotlinx/serialization/json/JsonObject;", "users", "message", "id", "Lcom/discord/primitives/MessageId;", "channelId", "Lcom/discord/primitives/ChannelId;", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/util/List;Ljava/util/List;Lkotlinx/serialization/json/JsonObject;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "(Ljava/util/List;Ljava/util/List;Lkotlinx/serialization/json/JsonObject;Ljava/lang/String;JLkotlin/jvm/internal/DefaultConstructorMarker;)V", "getChannelId-o4g7jtM$annotations", "()V", "getChannelId-o4g7jtM", "()J", "J", "getId-3Eiw7ao$annotations", "getId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getMembers$annotations", "getMembers", "()Ljava/util/List;", "getMessage$annotations", "getMessage", "()Lkotlinx/serialization/json/JsonObject;", "getUsers$annotations", "getUsers", "component1", "component2", "component3", "component4", "component4-3Eiw7ao", "component5", "component5-o4g7jtM", "copy", "copy-kA7ecXY", "(Ljava/util/List;Ljava/util/List;Lkotlinx/serialization/json/JsonObject;Ljava/lang/String;J)Lcom/discord/notifications/api/KvMessageEntry;", "equals", "", "other", "hashCode", "toString", "", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "notification_api_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@f
 
 public final class KvMessageEntry {
     public static final Companion Companion = new Companion(null);
     private final long channelId;
 
     
-    private final String f7565id;
+    private final String f7257id;
     private final List<JsonObject> members;
     private final JsonObject message;
     private final List<JsonObject> users;
@@ -47,20 +47,20 @@ public final class KvMessageEntry {
     }
 
     private KvMessageEntry(int i10, List<JsonObject> list, List<JsonObject> list2, JsonObject jsonObject, String str, ChannelId channelId, SerializationConstructorMarker serializationConstructorMarker) {
-        List<JsonObject> h10;
+        List<JsonObject> i11;
         if (28 != (i10 & 28)) {
             n1.b(i10, 28, KvMessageEntry$$serializer.INSTANCE.getDescriptor());
         }
-        this.members = (i10 & 1) == 0 ? j.h() : list;
+        this.members = (i10 & 1) == 0 ? j.i() : list;
         if ((i10 & 2) == 0) {
-            h10 = j.h();
-            this.users = h10;
+            i11 = j.i();
+            this.users = i11;
         } else {
             this.users = list2;
         }
         this.message = jsonObject;
-        this.f7565id = str;
-        this.channelId = channelId.m614unboximpl();
+        this.f7257id = str;
+        this.channelId = channelId.m619unboximpl();
     }
 
     public  KvMessageEntry(int i10, List list, List list2, JsonObject jsonObject, String str, ChannelId channelId, SerializationConstructorMarker serializationConstructorMarker, DefaultConstructorMarker defaultConstructorMarker) {
@@ -73,7 +73,7 @@ public final class KvMessageEntry {
 
     
     
-    public static  KvMessageEntry m549copykA7ecXY$default(KvMessageEntry kvMessageEntry, List list, List list2, JsonObject jsonObject, String str, long j10, int i10, Object obj) {
+    public static  KvMessageEntry m554copykA7ecXY$default(KvMessageEntry kvMessageEntry, List list, List list2, JsonObject jsonObject, String str, long j10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             list = kvMessageEntry.members;
         }
@@ -84,20 +84,20 @@ public final class KvMessageEntry {
             jsonObject = kvMessageEntry.message;
         }
         if ((i10 & 8) != 0) {
-            str = kvMessageEntry.f7565id;
+            str = kvMessageEntry.f7257id;
         }
         if ((i10 & 16) != 0) {
             j10 = kvMessageEntry.channelId;
         }
-        return kvMessageEntry.m554copykA7ecXY(list, list2, jsonObject, str, j10);
+        return kvMessageEntry.m559copykA7ecXY(list, list2, jsonObject, str, j10);
     }
 
     
-    public static  void m550getChannelIdo4g7jtM$annotations() {
+    public static  void m555getChannelIdo4g7jtM$annotations() {
     }
 
     
-    public static  void m551getId3Eiw7ao$annotations() {
+    public static  void m556getId3Eiw7ao$annotations() {
     }
 
     public static  void getMembers$annotations() {
@@ -113,12 +113,12 @@ public final class KvMessageEntry {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        t tVar = t.f22029a;
-        output.h(serialDesc, 0, new xi.f(tVar), self.members);
-        output.h(serialDesc, 1, new xi.f(tVar), self.users);
-        output.h(serialDesc, 2, tVar, self.message);
-        output.h(serialDesc, 3, MessageId$$serializer.INSTANCE, MessageId.m631boximpl(self.f7565id));
-        output.h(serialDesc, 4, ChannelId$$serializer.INSTANCE, ChannelId.m605boximpl(self.channelId));
+        t tVar = t.f22186a;
+        output.i(serialDesc, 0, new cj.f(tVar), self.members);
+        output.i(serialDesc, 1, new cj.f(tVar), self.users);
+        output.i(serialDesc, 2, tVar, self.message);
+        output.i(serialDesc, 3, MessageId$$serializer.INSTANCE, MessageId.m636boximpl(self.f7257id));
+        output.i(serialDesc, 4, ChannelId$$serializer.INSTANCE, ChannelId.m610boximpl(self.channelId));
     }
 
     public final List<JsonObject> component1() {
@@ -134,17 +134,17 @@ public final class KvMessageEntry {
     }
 
     
-    public final String m552component43Eiw7ao() {
-        return this.f7565id;
+    public final String m557component43Eiw7ao() {
+        return this.f7257id;
     }
 
     
-    public final long m553component5o4g7jtM() {
+    public final long m558component5o4g7jtM() {
         return this.channelId;
     }
 
     
-    public final KvMessageEntry m554copykA7ecXY(List<JsonObject> members, List<JsonObject> users, JsonObject message, String id2, long j10) {
+    public final KvMessageEntry m559copykA7ecXY(List<JsonObject> members, List<JsonObject> users, JsonObject message, String id2, long j10) {
         q.h(members, "members");
         q.h(users, "users");
         q.h(message, "message");
@@ -160,17 +160,17 @@ public final class KvMessageEntry {
             return false;
         }
         KvMessageEntry kvMessageEntry = (KvMessageEntry) obj;
-        return q.c(this.members, kvMessageEntry.members) && q.c(this.users, kvMessageEntry.users) && q.c(this.message, kvMessageEntry.message) && MessageId.m635equalsimpl0(this.f7565id, kvMessageEntry.f7565id) && ChannelId.m609equalsimpl0(this.channelId, kvMessageEntry.channelId);
+        return q.c(this.members, kvMessageEntry.members) && q.c(this.users, kvMessageEntry.users) && q.c(this.message, kvMessageEntry.message) && MessageId.m640equalsimpl0(this.f7257id, kvMessageEntry.f7257id) && ChannelId.m614equalsimpl0(this.channelId, kvMessageEntry.channelId);
     }
 
     
-    public final long m555getChannelIdo4g7jtM() {
+    public final long m560getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
     
-    public final String m556getId3Eiw7ao() {
-        return this.f7565id;
+    public final String m561getId3Eiw7ao() {
+        return this.f7257id;
     }
 
     public final List<JsonObject> getMembers() {
@@ -186,15 +186,15 @@ public final class KvMessageEntry {
     }
 
     public int hashCode() {
-        return (((((((this.members.hashCode() * 31) + this.users.hashCode()) * 31) + this.message.hashCode()) * 31) + MessageId.m636hashCodeimpl(this.f7565id)) * 31) + ChannelId.m610hashCodeimpl(this.channelId);
+        return (((((((this.members.hashCode() * 31) + this.users.hashCode()) * 31) + this.message.hashCode()) * 31) + MessageId.m641hashCodeimpl(this.f7257id)) * 31) + ChannelId.m615hashCodeimpl(this.channelId);
     }
 
     public String toString() {
         List<JsonObject> list = this.members;
         List<JsonObject> list2 = this.users;
         JsonObject jsonObject = this.message;
-        String str = MessageId.m637toStringimpl(this.f7565id);
-        String str2 = ChannelId.m612toStringimpl(this.channelId);
+        String str = MessageId.m642toStringimpl(this.f7257id);
+        String str2 = ChannelId.m617toStringimpl(this.channelId);
         return "KvMessageEntry(members=" + list + ", users=" + list2 + ", message=" + jsonObject + ", id=" + str + ", channelId=" + str2 + ")";
     }
 
@@ -202,7 +202,7 @@ public final class KvMessageEntry {
         this.members = list;
         this.users = list2;
         this.message = jsonObject;
-        this.f7565id = str;
+        this.f7257id = str;
         this.channelId = j10;
     }
 

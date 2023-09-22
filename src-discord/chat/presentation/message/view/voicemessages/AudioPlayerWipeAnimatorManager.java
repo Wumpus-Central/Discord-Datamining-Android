@@ -11,11 +11,11 @@ import android.os.Build;
 import com.discord.chat.R;
 import com.discord.chat.databinding.AudioPlayerViewBinding;
 import com.discord.theme.ThemeManagerKt;
-import kf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
+import pf.n;
 
 @Metadata(d1 = {"\u0000X\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\u0018\u0000 02\u00020\u0001:\u00010B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J \u0010)\u001a\u00020\n2\u0006\u0010\u0007\u001a\u00020\b2\u0006\u0010*\u001a\u00020+2\u0006\u0010,\u001a\u00020\bH\u0002J\u0018\u0010\u001d\u001a\n \u001c*\u0004\u0018\u00010\u001b0\u001b2\u0006\u0010-\u001a\u00020\bH\u0002J\u0018\u0010!\u001a\n \u001c*\u0004\u0018\u00010\u001b0\u001b2\u0006\u0010-\u001a\u00020\bH\u0002J\u0018\u0010$\u001a\n \u001c*\u0004\u0018\u00010\u001b0\u001b2\u0006\u0010-\u001a\u00020\bH\u0002J\u0018\u0010'\u001a\n \u001c*\u0004\u0018\u00010\u001b0\u001b2\u0006\u0010-\u001a\u00020\bH\u0002J\u0016\u0010.\u001a\u00020/2\u0006\u0010\u0007\u001a\u00020\b2\u0006\u0010,\u001a\u00020\bR\u000e\u0010\u0007\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u001b\u0010\u000f\u001a\u00020\u00108BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u0013\u0010\u0014\u001a\u0004\b\u0011\u0010\u0012R\u001d\u0010\u0015\u001a\u0004\u0018\u00010\u00168BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u0019\u0010\u0014\u001a\u0004\b\u0017\u0010\u0018R#\u0010\u001a\u001a\n \u001c*\u0004\u0018\u00010\u001b0\u001b8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u001f\u0010\u0014\u001a\u0004\b\u001d\u0010\u001eR#\u0010 \u001a\n \u001c*\u0004\u0018\u00010\u001b0\u001b8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\"\u0010\u0014\u001a\u0004\b!\u0010\u001eR#\u0010#\u001a\n \u001c*\u0004\u0018\u00010\u001b0\u001b8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b%\u0010\u0014\u001a\u0004\b$\u0010\u001eR#\u0010&\u001a\n \u001c*\u0004\u0018\u00010\u001b0\u001b8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b(\u0010\u0014\u001a\u0004\b'\u0010\u001e¨\u00061"}, d2 = {"Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerWipeAnimatorManager;", "", "context", "Landroid/content/Context;", "binding", "Lcom/discord/chat/databinding/AudioPlayerViewBinding;", "(Landroid/content/Context;Lcom/discord/chat/databinding/AudioPlayerViewBinding;)V", "animateToPlay", "", "animatorSet", "Landroid/animation/AnimatorSet;", "argbEvaluator", "Landroid/animation/ArgbEvaluator;", "brand500", "", "buttonContainerActiveDrawable", "Landroid/graphics/drawable/ColorDrawable;", "getButtonContainerActiveDrawable", "()Landroid/graphics/drawable/ColorDrawable;", "buttonContainerActiveDrawable$delegate", "Lkotlin/Lazy;", "buttonContainerDefaultDrawable", "Landroid/graphics/drawable/Drawable;", "getButtonContainerDefaultDrawable", "()Landroid/graphics/drawable/Drawable;", "buttonContainerDefaultDrawable$delegate", "buttonIconColorAnimator", "Landroid/animation/ValueAnimator;", "kotlin.jvm.PlatformType", "getButtonIconColorAnimator", "()Landroid/animation/ValueAnimator;", "buttonIconColorAnimator$delegate", "progressColorAnimator", "getProgressColorAnimator", "progressColorAnimator$delegate", "scaleAnimator", "getScaleAnimator", "scaleAnimator$delegate", "textColorAnimator", "getTextColorAnimator", "textColorAnimator$delegate", "getAnimatorSet", "currentPlayTime", "", "shouldAnimate", "shouldPlay", "startAnimator", "", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -45,27 +45,27 @@ public final class AudioPlayerWipeAnimatorManager {
     }
 
     public AudioPlayerWipeAnimatorManager(Context context, AudioPlayerViewBinding binding) {
-        Lazy b10;
-        Lazy b11;
-        Lazy b12;
-        Lazy b13;
-        Lazy b14;
-        Lazy b15;
+        Lazy a10;
+        Lazy a11;
+        Lazy a12;
+        Lazy a13;
+        Lazy a14;
+        Lazy a15;
         q.h(context, "context");
         q.h(binding, "binding");
         this.brand500 = context.getColor(R.color.brand_500);
-        b10 = n.b(new AudioPlayerWipeAnimatorManager$buttonContainerDefaultDrawable$2(context));
-        this.buttonContainerDefaultDrawable$delegate = b10;
-        b11 = n.b(AudioPlayerWipeAnimatorManager$buttonContainerActiveDrawable$2.INSTANCE);
-        this.buttonContainerActiveDrawable$delegate = b11;
-        b12 = n.b(new AudioPlayerWipeAnimatorManager$scaleAnimator$2(binding, this));
-        this.scaleAnimator$delegate = b12;
-        b13 = n.b(new AudioPlayerWipeAnimatorManager$textColorAnimator$2(binding));
-        this.textColorAnimator$delegate = b13;
-        b14 = n.b(new AudioPlayerWipeAnimatorManager$buttonIconColorAnimator$2(binding));
-        this.buttonIconColorAnimator$delegate = b14;
-        b15 = n.b(new AudioPlayerWipeAnimatorManager$progressColorAnimator$2(binding));
-        this.progressColorAnimator$delegate = b15;
+        a10 = n.a(new AudioPlayerWipeAnimatorManager$buttonContainerDefaultDrawable$2(context));
+        this.buttonContainerDefaultDrawable$delegate = a10;
+        a11 = n.a(AudioPlayerWipeAnimatorManager$buttonContainerActiveDrawable$2.INSTANCE);
+        this.buttonContainerActiveDrawable$delegate = a11;
+        a12 = n.a(new AudioPlayerWipeAnimatorManager$scaleAnimator$2(binding, this));
+        this.scaleAnimator$delegate = a12;
+        a13 = n.a(new AudioPlayerWipeAnimatorManager$textColorAnimator$2(binding));
+        this.textColorAnimator$delegate = a13;
+        a14 = n.a(new AudioPlayerWipeAnimatorManager$buttonIconColorAnimator$2(binding));
+        this.buttonIconColorAnimator$delegate = a14;
+        a15 = n.a(new AudioPlayerWipeAnimatorManager$progressColorAnimator$2(binding));
+        this.progressColorAnimator$delegate = a15;
     }
 
     private final AnimatorSet getAnimatorSet(boolean z10, long j10, boolean z11) {

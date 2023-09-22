@@ -3,6 +3,6 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/APKTOOL_DUMMY_73" />
     <item>
-        <bitmap android:gravity="center" android:src="@drawable/APKTOOL_DUMMY_17e" />
+        <bitmap android:gravity="center" android:src="@drawable/APKTOOL_DUMMY_17f" />
     </item>
 </layer-list>

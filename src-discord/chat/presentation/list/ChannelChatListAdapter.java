@@ -124,17 +124,17 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
 
     
     public final void processPortalViewUpdate(PortalViewUpdate portalViewUpdate) {
-        Object g02;
+        Object h02;
         boolean z10;
         PortalViewUpdateType portalViewUpdateType;
         List<? extends ChatListItem> list;
-        int j10;
-        int j11;
-        int j12;
-        int j13;
+        int k10;
+        int k11;
+        int k12;
+        int k13;
         this.disableAnimations.invoke();
-        g02 = r.g0(getChatListItems$chat_release());
-        boolean z11 = g02 instanceof PortalViewChatListItem;
+        h02 = r.h0(getChatListItems$chat_release());
+        boolean z11 = h02 instanceof PortalViewChatListItem;
         if (portalViewUpdate.getPortalChatListItem() != null) {
             z10 = true;
         } else {
@@ -155,30 +155,30 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
             List<ChatListItem> chatListItems$chat_release = getChatListItems$chat_release();
             PortalViewChatListItem portalChatListItem = portalViewUpdate.getPortalChatListItem();
             q.e(portalChatListItem);
-            list = r.n0(chatListItems$chat_release, portalChatListItem);
+            list = r.o0(chatListItems$chat_release, portalChatListItem);
         } else if (i10 == 2) {
-            list = r.N(getChatListItems$chat_release(), 1);
+            list = r.O(getChatListItems$chat_release(), 1);
         } else if (i10 == 3) {
-            list = r.D0(getChatListItems$chat_release());
-            j13 = j.j(getChatListItems$chat_release());
+            list = r.E0(getChatListItems$chat_release());
+            k13 = j.k(getChatListItems$chat_release());
             PortalViewChatListItem portalChatListItem2 = portalViewUpdate.getPortalChatListItem();
             q.e(portalChatListItem2);
-            list.set(j13, portalChatListItem2);
+            list.set(k13, portalChatListItem2);
         } else {
-            throw new kf.q();
+            throw new pf.q();
         }
         setChatListItems$chat_release(list);
         super.setItems((ChannelChatListAdapter) getChatListItems$chat_release());
         int i11 = iArr[portalViewUpdateType.ordinal()];
         if (i11 == 1) {
-            j10 = j.j(getChatListItems$chat_release());
-            notifyItemInserted(j10);
+            k10 = j.k(getChatListItems$chat_release());
+            notifyItemInserted(k10);
         } else if (i11 == 2) {
-            j11 = j.j(getChatListItems$chat_release());
-            notifyItemRemoved(j11 + 1);
+            k11 = j.k(getChatListItems$chat_release());
+            notifyItemRemoved(k11 + 1);
         } else if (i11 == 3) {
-            j12 = j.j(getChatListItems$chat_release());
-            notifyItemChanged(j12);
+            k12 = j.k(getChatListItems$chat_release());
+            notifyItemChanged(k12);
         }
     }
 
@@ -221,15 +221,15 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
 
     private final boolean shouldAnimateOperations(List<? extends ListOperation> list) {
         boolean z10;
-        Object S;
+        Object T;
         if (list.size() == 1) {
             z10 = true;
         } else {
             z10 = false;
         }
         if (z10) {
-            S = r.S(list);
-            ListOperation listOperation = (ListOperation) S;
+            T = r.T(list);
+            ListOperation listOperation = (ListOperation) T;
             if (listOperation instanceof ListOperation.Change) {
                 return false;
             }

@@ -1,7 +1,7 @@
 package com.discord.chat.bridge.contentnode;
 
-import kf.n;
-import kf.p;
+import bj.e;
+import bj.g;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -10,12 +10,12 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
-import ui.f;
-import wi.e;
-import wi.g;
+import pf.n;
+import pf.p;
+import zi.f;
 
-@f(with = Serializer.class)
 @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u000e\n\u0002\b\n\b\u0087\u0001\u0018\u0000 \u000b2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0002\u000b\fB\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\n¨\u0006\r"}, d2 = {"Lcom/discord/chat/bridge/contentnode/StaticChannelMentionType;", "", "channelId", "", "(Ljava/lang/String;ILjava/lang/String;)V", "getChannelId", "()Ljava/lang/String;", "Home", "Customize", "Browse", "Unknown", "Companion", "Serializer", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@f(with = Serializer.class)
 
 public enum StaticChannelMentionType {
     Home("home"),
@@ -79,7 +79,7 @@ public enum StaticChannelMentionType {
 
         @Override 
         public SerialDescriptor getDescriptor() {
-            return g.a("StaticChannelMentionType", e.i.f30052a);
+            return g.a("StaticChannelMentionType", e.i.f5714a);
         }
 
         @Override 
@@ -96,9 +96,9 @@ public enum StaticChannelMentionType {
     }
 
     static {
-        Lazy<KSerializer<Object>> a10;
-        a10 = n.a(p.PUBLICATION, StaticChannelMentionType$Companion$$cachedSerializer$delegate$1.INSTANCE);
-        $cachedSerializer$delegate = a10;
+        Lazy<KSerializer<Object>> b10;
+        b10 = n.b(p.PUBLICATION, StaticChannelMentionType$Companion$$cachedSerializer$delegate$1.INSTANCE);
+        $cachedSerializer$delegate = b10;
     }
 
     StaticChannelMentionType(String str) {

@@ -2,7 +2,6 @@ package com.discord.chat.presentation.list;
 
 import com.discord.chat.listmanager.ChatListUpdate;
 import com.discord.chat.presentation.list.ChatListView;
-import kf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -14,7 +13,8 @@ import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
-import qf.d;
+import pf.t;
+import vf.d;
 
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -37,7 +37,7 @@ public final class ChatListView$sync$1 extends k implements Function2<CoroutineS
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatListView$sync$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
+        return ((ChatListView$sync$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21600a);
     }
 
     @Override 
@@ -49,10 +49,10 @@ public final class ChatListView$sync$1 extends k implements Function2<CoroutineS
         if (i10 == 0) {
             t.b(obj);
             final Ref$BooleanRef ref$BooleanRef = new Ref$BooleanRef();
-            ref$BooleanRef.f21469j = true;
+            ref$BooleanRef.f21625j = true;
             dataSource = this.this$0.dataSource;
             if (dataSource == null) {
-                q.z("dataSource");
+                q.y("dataSource");
                 dataSource = null;
             }
             Flow<ChatListUpdate> updatesFlow = dataSource.getUpdatesFlow();
@@ -64,13 +64,13 @@ public final class ChatListView$sync$1 extends k implements Function2<CoroutineS
                 }
 
                 public final Object emit(ChatListUpdate chatListUpdate, Continuation<? super Unit> continuation) {
-                    if (Ref$BooleanRef.this.f21469j) {
+                    if (Ref$BooleanRef.this.f21625j) {
                         chatListView.onChatListUpdate(ChatListUpdate.copy$default(chatListUpdate, null, null, null, 3, null));
-                        Ref$BooleanRef.this.f21469j = false;
+                        Ref$BooleanRef.this.f21625j = false;
                     } else {
                         chatListView.onChatListUpdate(chatListUpdate);
                     }
-                    return Unit.f21444a;
+                    return Unit.f21600a;
                 }
             };
             this.label = 1;
@@ -82,6 +82,6 @@ public final class ChatListView$sync$1 extends k implements Function2<CoroutineS
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 }

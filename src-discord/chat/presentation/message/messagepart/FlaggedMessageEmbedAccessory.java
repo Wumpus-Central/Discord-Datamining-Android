@@ -68,7 +68,7 @@ public final class FlaggedMessageEmbedAccessory extends MessageAccessory {
             return false;
         }
         FlaggedMessageEmbedAccessory flaggedMessageEmbedAccessory = (FlaggedMessageEmbedAccessory) obj;
-        return MessageId.m635equalsimpl0(mo236getMessageId3Eiw7ao(), flaggedMessageEmbedAccessory.mo236getMessageId3Eiw7ao()) && q.c(this.message, flaggedMessageEmbedAccessory.message) && q.c(this.messageContext, flaggedMessageEmbedAccessory.messageContext);
+        return MessageId.m640equalsimpl0(mo236getMessageId3Eiw7ao(), flaggedMessageEmbedAccessory.mo236getMessageId3Eiw7ao()) && q.c(this.message, flaggedMessageEmbedAccessory.message) && q.c(this.messageContext, flaggedMessageEmbedAccessory.messageContext);
     }
 
     public final Message getMessage() {
@@ -86,11 +86,11 @@ public final class FlaggedMessageEmbedAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((MessageId.m636hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.message.hashCode()) * 31) + this.messageContext.hashCode();
+        return (((MessageId.m641hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.message.hashCode()) * 31) + this.messageContext.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m637toStringimpl(mo236getMessageId3Eiw7ao());
+        String str = MessageId.m642toStringimpl(mo236getMessageId3Eiw7ao());
         Message message = this.message;
         MessageContext messageContext = this.messageContext;
         return "FlaggedMessageEmbedAccessory(messageId=" + str + ", message=" + message + ", messageContext=" + messageContext + ")";

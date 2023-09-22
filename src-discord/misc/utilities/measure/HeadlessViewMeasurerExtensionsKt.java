@@ -24,7 +24,7 @@ public final class HeadlessViewMeasurerExtensionsKt {
         q.h(context, "<this>");
         q.h(configureView, "configureView");
         q.h(measureBounds, "measureBounds");
-        q.n(4, "T");
+        q.m(4, "T");
         return measureHeadlessView(context, View.class, configureView, measureBounds);
     }
 }

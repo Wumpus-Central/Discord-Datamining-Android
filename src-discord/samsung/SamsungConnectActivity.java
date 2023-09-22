@@ -34,13 +34,13 @@ public final class SamsungConnectActivity extends b {
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
             ISACallback iSACallback;
             SamsungConnectActivity.this.serviceBound = true;
-            a b10 = a.AbstractBinderC0182a.b(iBinder);
+            a b10 = a.AbstractBinderC0176a.b(iBinder);
             Log log = Log.INSTANCE;
             Log.i$default(log, "Samsung", "Samsung Account service connection established", (Throwable) null, 4, (Object) null);
             try {
                 iSACallback = SamsungConnectActivity.this.samsungAccountServiceCallback;
                 if (iSACallback == null) {
-                    q.z("samsungAccountServiceCallback");
+                    q.y("samsungAccountServiceCallback");
                     iSACallback = null;
                 }
                 String R = b10.R(BuildConfig.SAMSUNGxDISCORD_CLIENT_ID, "dummy", BuildConfig.APPLICATION_ID, iSACallback);
@@ -51,7 +51,7 @@ public final class SamsungConnectActivity extends b {
                 }
                 Bundle bundle = new Bundle();
                 bundle.putStringArray("additional", new String[]{"api_server_url", "auth_server_url"});
-                Unit unit = Unit.f21444a;
+                Unit unit = Unit.f21600a;
                 Log.i$default(log, "Samsung", "Samsung Account service connection established: isReqSucc? " + b10.V(1221, R, bundle), (Throwable) null, 4, (Object) null);
             } catch (Throwable th2) {
                 Log.INSTANCE.e("Samsung", "Unable to connect to Samsung", th2);

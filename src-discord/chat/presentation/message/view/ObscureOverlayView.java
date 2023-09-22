@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import com.discord.chat.databinding.ObscureOverlayViewBinding;
+import com.discord.fonts.DiscordFont;
+import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.react_asset_fetcher.ReactAsset;
 import com.discord.react_asset_fetcher.ReactAssetUtilsKt;
 import com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchUtilsKt;
@@ -117,5 +119,8 @@ public final class ObscureOverlayView extends FrameLayout implements SpoilerView
         ReactAssetUtilsKt.setReactAsset(it, ReactAsset.MediaChannelNSFW);
         ColorUtilsKt.setTintColor(it, Integer.valueOf(ThemeManagerKt.getTheme().getWhite()));
         it.getHierarchy().w(0);
+        TextView textView = inflate.descriptionLabel;
+        q.g(textView, "binding.descriptionLabel");
+        DiscordFontUtilsKt.setDiscordFont(textView, DiscordFont.PrimaryNormal);
     }
 }

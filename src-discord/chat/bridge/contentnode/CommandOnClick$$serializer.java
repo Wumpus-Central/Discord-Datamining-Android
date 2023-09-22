@@ -1,5 +1,8 @@
 package com.discord.chat.bridge.contentnode;
 
+import aj.a;
+import cj.a2;
+import cj.f0;
 import com.discord.chat.bridge.MessageType;
 import com.discord.primitives.ChannelId;
 import com.discord.primitives.ChannelId$$serializer;
@@ -16,12 +19,9 @@ import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
-import ui.n;
-import vi.a;
-import xi.a2;
-import xi.f0;
+import zi.n;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/contentnode/CommandOnClick.$serializer", "Lxi/f0;", "Lcom/discord/chat/bridge/contentnode/CommandOnClick;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/contentnode/CommandOnClick.$serializer", "Lcj/f0;", "Lcom/discord/chat/bridge/contentnode/CommandOnClick;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
 
 public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
     public static final CommandOnClick$$serializer INSTANCE;
@@ -46,7 +46,7 @@ public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
     @Override 
     public KSerializer<?>[] childSerializers() {
         UserId$$serializer userId$$serializer = UserId$$serializer.INSTANCE;
-        return new KSerializer[]{a.u(a2.f30576a), a.u(userId$$serializer), a.u(MessageId$$serializer.INSTANCE), a.u(userId$$serializer), a.u(MessageType.Serializer.INSTANCE), a.u(ChannelId$$serializer.INSTANCE)};
+        return new KSerializer[]{a.u(a2.f6238a), a.u(userId$$serializer), a.u(MessageId$$serializer.INSTANCE), a.u(userId$$serializer), a.u(MessageType.Serializer.INSTANCE), a.u(ChannelId$$serializer.INSTANCE)};
     }
 
     @Override 
@@ -62,7 +62,7 @@ public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
         SerialDescriptor descriptor2 = getDescriptor();
         c b10 = decoder.b(descriptor2);
         if (b10.p()) {
-            obj6 = b10.n(descriptor2, 0, a2.f30576a, null);
+            obj6 = b10.n(descriptor2, 0, a2.f6238a, null);
             UserId$$serializer userId$$serializer = UserId$$serializer.INSTANCE;
             obj = b10.n(descriptor2, 1, userId$$serializer, null);
             obj2 = b10.n(descriptor2, 2, MessageId$$serializer.INSTANCE, null);
@@ -86,7 +86,7 @@ public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
                         z10 = false;
                         break;
                     case 0:
-                        obj6 = b10.n(descriptor2, 0, a2.f30576a, obj6);
+                        obj6 = b10.n(descriptor2, 0, a2.f6238a, obj6);
                         i11 |= 1;
                         break;
                     case 1:
@@ -122,7 +122,7 @@ public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
-        return new CommandOnClick(i10, (String) obj6, (UserId) obj, messageId != null ? messageId.m639unboximpl() : null, (UserId) obj4, (MessageType) obj3, (ChannelId) obj5, null, null);
+        return new CommandOnClick(i10, (String) obj6, (UserId) obj, messageId != null ? messageId.m644unboximpl() : null, (UserId) obj4, (MessageType) obj3, (ChannelId) obj5, null, null);
     }
 
     @Override 

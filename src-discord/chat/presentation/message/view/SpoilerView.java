@@ -82,7 +82,7 @@ public final class SpoilerView extends FrameLayout {
         q.h(viewToBlur, "viewToBlur");
         if (spoilerConfig != null) {
             resetOverlays();
-            this.isOverlayVisible = SpoilerManager.INSTANCE.m140isNotRevealedV2PEE7g(spoilerConfig.getAttributes().m128getIdentifierBq9X6Gg());
+            this.isOverlayVisible = SpoilerManager.INSTANCE.m139isNotRevealedV2PEE7g(spoilerConfig.getAttributes().m127getIdentifierBq9X6Gg());
             if (WhenMappings.$EnumSwitchMapping$0[spoilerConfig.getAttributes().getType().ordinal()] == 1) {
                 configureObscureOverlay(spoilerConfig.getAttributes().getLabel(), viewToBlur);
             } else {

@@ -22,11 +22,11 @@ public final class ResultAdapter extends RecyclerView.Adapter<ResultViewHolder> 
 
     
     public ResultAdapter(Function1<? super ChannelId, Unit> onChannelSelected) {
-        List<MobileVoiceOverlaySelectorResult> h10;
+        List<MobileVoiceOverlaySelectorResult> i10;
         q.h(onChannelSelected, "onChannelSelected");
         this.onChannelSelected = onChannelSelected;
-        h10 = j.h();
-        this.results = h10;
+        i10 = j.i();
+        this.results = i10;
     }
 
     @Override 

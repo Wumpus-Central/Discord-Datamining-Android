@@ -1,5 +1,10 @@
 package com.discord.chat.bridge.forums;
 
+import aj.a;
+import cj.a2;
+import cj.f0;
+import cj.h;
+import cj.m0;
 import com.discord.chat.bridge.reaction.MessageReaction;
 import com.discord.chat.bridge.reaction.MessageReaction$$serializer;
 import kotlin.Metadata;
@@ -12,14 +17,9 @@ import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import ui.n;
-import vi.a;
-import xi.a2;
-import xi.f0;
-import xi.h;
-import xi.m0;
+import zi.n;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/forums/ForumPostActions.$serializer", "Lxi/f0;", "Lcom/discord/chat/bridge/forums/ForumPostActions;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/forums/ForumPostActions.$serializer", "Lcj/f0;", "Lcom/discord/chat/bridge/forums/ForumPostActions;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
 
 public final class ForumPostActions$$serializer implements f0<ForumPostActions> {
     public static final ForumPostActions$$serializer INSTANCE;
@@ -45,8 +45,8 @@ public final class ForumPostActions$$serializer implements f0<ForumPostActions> 
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f30576a;
-        return new KSerializer[]{m0.f30651a, h.f30618a, a.u(a2Var), a2Var, a.u(a2Var), a2Var, a.u(MessageReaction$$serializer.INSTANCE), a.u(PostSharePrompt$$serializer.INSTANCE)};
+        a2 a2Var = a2.f6238a;
+        return new KSerializer[]{m0.f6313a, h.f6280a, a.u(a2Var), a2Var, a.u(a2Var), a2Var, a.u(MessageReaction$$serializer.INSTANCE), a.u(PostSharePrompt$$serializer.INSTANCE)};
     }
 
     @Override 
@@ -68,7 +68,7 @@ public final class ForumPostActions$$serializer implements f0<ForumPostActions> 
         if (b10.p()) {
             i10 = b10.i(descriptor2, 0);
             z10 = b10.C(descriptor2, 1);
-            a2 a2Var = a2.f30576a;
+            a2 a2Var = a2.f6238a;
             obj = b10.n(descriptor2, 2, a2Var, null);
             str2 = b10.m(descriptor2, 3);
             obj2 = b10.n(descriptor2, 4, a2Var, null);
@@ -103,14 +103,14 @@ public final class ForumPostActions$$serializer implements f0<ForumPostActions> 
                         i12 = 7;
                     case 2:
                         c10 = 2;
-                        obj6 = b10.n(descriptor2, 2, a2.f30576a, obj6);
+                        obj6 = b10.n(descriptor2, 2, a2.f6238a, obj6);
                         i14 |= 4;
                         i12 = 7;
                     case 3:
                         str2 = b10.m(descriptor2, 3);
                         i14 |= 8;
                     case 4:
-                        obj7 = b10.n(descriptor2, 4, a2.f30576a, obj7);
+                        obj7 = b10.n(descriptor2, 4, a2.f6238a, obj7);
                         i14 |= 16;
                     case 5:
                         str = b10.m(descriptor2, 5);

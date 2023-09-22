@@ -12,7 +12,6 @@ import android.view.animation.Animation;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import androidx.core.view.w0;
-import bg.j;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.R;
 import com.discord.chat.databinding.AudioPlayerViewBinding;
@@ -35,8 +34,8 @@ import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
+import gg.j;
 import java.util.Arrays;
-import kf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -47,7 +46,8 @@ import kotlin.time.Duration;
 import kotlin.time.a;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.l;
-import pi.c;
+import pf.n;
+import ui.c;
 
 @Metadata(d1 = {"\u0000\u008e\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u000e\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0010\u0012\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\t\u0018\u0000 \\2\u00020\u0001:\u0002\\]B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\u0010\u0010/\u001a\u0002002\u0006\u0010+\u001a\u00020,H\u0002J#\u00101\u001a\u0002002\n\b\u0002\u00102\u001a\u0004\u0018\u00010\u001e2\b\b\u0002\u00103\u001a\u00020(H\u0002¢\u0006\u0002\u00104J\u0010\u00105\u001a\u0002002\u0006\u0010+\u001a\u00020,H\u0002J\u0010\u00106\u001a\u0002002\u0006\u0010+\u001a\u00020,H\u0002J\u001a\u00107\u001a\u0002002\u0006\u0010+\u001a\u00020,2\b\b\u0002\u00108\u001a\u00020(H\u0002J\b\u00109\u001a\u000200H\u0002J\u000f\u0010:\u001a\u0004\u0018\u00010\u001eH\u0002¢\u0006\u0002\u0010;J\b\u0010<\u001a\u000200H\u0002J\u0012\u0010=\u001a\u0002002\b\u0010>\u001a\u0004\u0018\u00010?H\u0002J\b\u0010@\u001a\u000200H\u0002J\u0010\u0010A\u001a\u0002002\u0006\u0010+\u001a\u00020,H\u0002J\u0010\u0010B\u001a\u0002002\u0006\u0010C\u001a\u00020(H\u0002J\u000e\u0010D\u001a\u0002002\u0006\u0010\u001d\u001a\u00020\u001eJ\u000e\u0010E\u001a\u0002002\u0006\u0010F\u001a\u00020GJ%\u0010H\u001a\u0002002\u0006\u0010I\u001a\u00020J2\b\u0010K\u001a\u0004\u0018\u00010?ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\bL\u0010MJ\u001c\u0010N\u001a\u0002002\b\b\u0002\u0010+\u001a\u00020,2\b\b\u0002\u0010O\u001a\u00020(H\u0002J-\u0010P\u001a\u0002002\b\u0010Q\u001a\u0004\u0018\u00010\u00072\f\u0010R\u001a\b\u0012\u0004\u0012\u0002000S2\b\u0010T\u001a\u0004\u0018\u00010U¢\u0006\u0002\u0010VJ\u000e\u0010'\u001a\u0002002\u0006\u0010'\u001a\u00020(J\u0010\u0010W\u001a\u0002002\u0006\u0010X\u001a\u00020(H\u0002J\f\u0010Y\u001a\u00020?*\u00020\u0007H\u0002J\f\u0010Z\u001a\u00020?*\u00020\u0007H\u0002J\f\u0010[\u001a\u00020\u0007*\u00020\u001eH\u0002R\u001b\u0010\t\u001a\u00020\n8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\r\u0010\u000e\u001a\u0004\b\u000b\u0010\fR\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0011\u001a\u00020\u0012¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R#\u0010\u0015\u001a\n \u0017*\u0004\u0018\u00010\u00160\u00168BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u001a\u0010\u000e\u001a\u0004\b\u0018\u0010\u0019R\u0010\u0010\u001b\u001a\u0004\u0018\u00010\u001cX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u001eX\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\u001f\u001a\u0004\u0018\u00010 X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b!\u0010\"\"\u0004\b#\u0010$R\u0010\u0010%\u001a\u0004\u0018\u00010\u001cX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010&\u001a\u0004\u0018\u00010\u001cX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010'\u001a\u00020(X\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010)\u001a\u0004\u0018\u00010\u001eX\u0082\u000e¢\u0006\u0004\n\u0002\u0010*R\u000e\u0010+\u001a\u00020,X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010-\u001a\u00020(X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010.\u001a\u00020(X\u0082\u000e¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006^"}, d2 = {"Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView;", "Landroid/widget/FrameLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "animatorManager", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerWipeAnimatorManager;", "getAnimatorManager", "()Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerWipeAnimatorManager;", "animatorManager$delegate", "Lkotlin/Lazy;", "attachStateChangeListener", "Lcom/discord/chat/presentation/message/view/media/ViewAttachedListener;", "binding", "Lcom/discord/chat/databinding/AudioPlayerViewBinding;", "getBinding", "()Lcom/discord/chat/databinding/AudioPlayerViewBinding;", "bounceAnimator", "Landroid/view/animation/Animation;", "kotlin.jvm.PlatformType", "getBounceAnimator", "()Landroid/view/animation/Animation;", "bounceAnimator$delegate", "durationJob", "Lkotlinx/coroutines/Job;", "durationMs", "", "listener", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView$Listener;", "getListener", "()Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView$Listener;", "setListener", "(Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView$Listener;)V", "playerJob", "resetJob", "shouldAnimate", "", "startTimeMS", "Ljava/lang/Long;", "state", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerViewState;", "uploadFinished", "wasPlayingBeforeBeingPaused", "configureAudioWave", "", "configureDuration", "overrideDuration", "isPlaying", "(Ljava/lang/Long;Z)V", "configureLoading", "configurePlayButton", "configurePlayerState", "hasSourceChanged", "configureProgress", "getCurrentPosition", "()Ljava/lang/Long;", "maybeLogPlaybackEnded", "maybeLogPlaybackFailed", "errorMessage", "", "maybeLogPlaybackStarted", "prepareAudio", "reset", "logDuration", "setDurationMs", "setSampleData", "sampleData", "", "setSourceUrl", "messageId", "Lcom/discord/primitives/MessageId;", "sourceUrl", "setSourceUrl-ntcYbpo", "(Ljava/lang/String;Ljava/lang/String;)V", "setState", "forceRefresh", "setUploadProgress", "progress", "onCancelUpload", "Lkotlin/Function0;", "attachmentsOpacity", "", "(Ljava/lang/Integer;Lkotlin/jvm/functions/Function0;Ljava/lang/Float;)V", "toggleDurationEmitter", "shouldEmit", "timeRemainingAccessibilityText", "timeRemainingText", "toSeconds", "Companion", "Listener", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -95,8 +95,8 @@ public final class AudioPlayerView extends FrameLayout {
 
             public final float secondsSinceStart(long j10) {
                 Comparable e10;
-                Duration.a aVar = Duration.f21539k;
-                e10 = j.e(Duration.e(a.t(System.currentTimeMillis() - j10, c.MILLISECONDS)), Duration.e(Duration.f21539k.b()));
+                Duration.a aVar = Duration.f21695k;
+                e10 = j.e(Duration.e(a.t(System.currentTimeMillis() - j10, c.MILLISECONDS)), Duration.e(Duration.f21695k.b()));
                 return (float) Duration.H(((Duration) e10).M(), c.SECONDS);
             }
         }
@@ -338,7 +338,7 @@ public final class AudioPlayerView extends FrameLayout {
                 this.startTimeMS = null;
                 Listener listener = this.listener;
                 if (listener != null) {
-                    Duration.a aVar = Duration.f21539k;
+                    Duration.a aVar = Duration.f21695k;
                     listener.voiceMessagePlaybackEnded((float) Duration.H(a.t(longValue, c.MILLISECONDS), c.SECONDS), secondsSinceStart);
                 }
             }
@@ -361,7 +361,7 @@ public final class AudioPlayerView extends FrameLayout {
             this.startTimeMS = Long.valueOf(System.currentTimeMillis());
             Listener listener = this.listener;
             if (listener != null) {
-                Duration.a aVar = Duration.f21539k;
+                Duration.a aVar = Duration.f21695k;
                 listener.voiceMessagePlaybackStarted((float) Duration.H(a.t(longValue, c.MILLISECONDS), c.SECONDS));
             }
         }
@@ -440,7 +440,7 @@ public final class AudioPlayerView extends FrameLayout {
     }
 
     private final int toSeconds(long j10) {
-        Duration.a aVar = Duration.f21539k;
+        Duration.a aVar = Duration.f21695k;
         return (int) Math.ceil(Duration.H(a.t(j10, c.MILLISECONDS), c.SECONDS));
     }
 
@@ -450,7 +450,7 @@ public final class AudioPlayerView extends FrameLayout {
         Job job = this.durationJob;
         if (job != null) {
             Job.a.a(job, null, 1, null);
-            Unit unit = Unit.f21444a;
+            Unit unit = Unit.f21600a;
         }
         this.durationJob = null;
         if (z10) {
@@ -500,7 +500,7 @@ public final class AudioPlayerView extends FrameLayout {
     }
 
     
-    public final void m348setSourceUrlntcYbpo(String messageId, String str) {
+    public final void m353setSourceUrlntcYbpo(String messageId, String str) {
         q.h(messageId, "messageId");
         this.binding.wave.setEnabled(false);
         if (!q.c(str, this.state.getSourceUrl())) {
@@ -535,7 +535,7 @@ public final class AudioPlayerView extends FrameLayout {
         Context context = getContext();
         q.g(context, "context");
         paint.setColor(ColorUtilsKt.getColorCompat(context, 17170445));
-        Unit unit = Unit.f21444a;
+        Unit unit = Unit.f21600a;
         attachmentUploadOverlayView.configureProgressView(valueOf, shapeDrawable, Integer.valueOf(SizeUtilsKt.getDpToPx(16)), Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()), Integer.valueOf(SizeUtilsKt.getDpToPx(29)), Integer.valueOf(ThemeManagerKt.getTheme().getBackgroundModifierAccent()));
         this.binding.uploadOverlay.configureCompleteView(Integer.valueOf(SizeUtilsKt.getDpToPx(32)), Integer.valueOf(SizeUtilsKt.getDpToPx(19)));
         if (z10 && !this.uploadFinished) {
@@ -560,8 +560,8 @@ public final class AudioPlayerView extends FrameLayout {
     
     public AudioPlayerView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        Lazy b10;
-        Lazy b11;
+        Lazy a10;
+        Lazy a11;
         int i11;
         q.h(context, "context");
         AudioPlayerViewBinding inflate = AudioPlayerViewBinding.inflate(LayoutInflater.from(context), this);
@@ -571,10 +571,10 @@ public final class AudioPlayerView extends FrameLayout {
         this.shouldAnimate = true;
         ViewAttachedListener viewAttachedListener = new ViewAttachedListener(this, new AudioPlayerView$attachStateChangeListener$1(this), null, 4, null);
         this.attachStateChangeListener = viewAttachedListener;
-        b10 = n.b(new AudioPlayerView$bounceAnimator$2(context));
-        this.bounceAnimator$delegate = b10;
-        b11 = n.b(new AudioPlayerView$animatorManager$2(context, this));
-        this.animatorManager$delegate = b11;
+        a10 = n.a(new AudioPlayerView$bounceAnimator$2(context));
+        this.bounceAnimator$delegate = a10;
+        a11 = n.a(new AudioPlayerView$animatorManager$2(context, this));
+        this.animatorManager$delegate = a11;
         addOnAttachStateChangeListener(viewAttachedListener);
         LinearLayout _init_$lambda$0 = inflate.playerContainer;
         q.g(_init_$lambda$0, "_init_$lambda$0");

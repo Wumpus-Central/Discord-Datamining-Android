@@ -75,10 +75,10 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
     }
 
     public ReactionsViewAdapter(int i10) {
-        List<? extends ReactionView.Reaction> h10;
+        List<? extends ReactionView.Reaction> i11;
         this.reactionHeight = i10;
-        h10 = j.h();
-        this.reactions = h10;
+        i11 = j.i();
+        this.reactions = i11;
         setHasStableIds(true);
     }
 
@@ -109,12 +109,12 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
         if (i10 == getAddBurstReactionIndex()) {
             String str2 = this.messageId;
             if (str2 == null) {
-                q.z("messageId");
+                q.y("messageId");
                 str2 = null;
             }
             String str3 = this.addReactionLabel;
             if (str3 == null) {
-                q.z("addReactionLabel");
+                q.y("addReactionLabel");
             } else {
                 str = str3;
             }
@@ -122,12 +122,12 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
         } else if (i10 == getAddReactionIndex()) {
             String str4 = this.messageId;
             if (str4 == null) {
-                q.z("messageId");
+                q.y("messageId");
                 str4 = null;
             }
             String str5 = this.addReactionLabel;
             if (str5 == null) {
-                q.z("addReactionLabel");
+                q.y("addReactionLabel");
             } else {
                 str = str5;
             }
@@ -136,7 +136,7 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
             ReactionView.Reaction reaction = (ReactionView.Reaction) this.reactions.get(i10);
             String str6 = this.messageId;
             if (str6 == null) {
-                q.z("messageId");
+                q.y("messageId");
             } else {
                 str = str6;
             }
@@ -174,12 +174,12 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
             BurstReactionViewHolder burstReactionViewHolder = (BurstReactionViewHolder) holder;
             Function1<? super ReactionView.Reaction, Unit> function13 = this.onReactionClick;
             if (function13 == null) {
-                q.z("onReactionClick");
+                q.y("onReactionClick");
                 function13 = null;
             }
             Function1<? super ReactionView.Reaction, Unit> function14 = this.onReactionLongPress;
             if (function14 == null) {
-                q.z("onReactionLongPress");
+                q.y("onReactionLongPress");
             } else {
                 function1 = function14;
             }
@@ -189,12 +189,12 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
             ReactionViewHolder reactionViewHolder = (ReactionViewHolder) holder;
             Function1<? super ReactionView.Reaction, Unit> function15 = this.onReactionClick;
             if (function15 == null) {
-                q.z("onReactionClick");
+                q.y("onReactionClick");
                 function15 = null;
             }
             Function1<? super ReactionView.Reaction, Unit> function16 = this.onReactionLongPress;
             if (function16 == null) {
-                q.z("onReactionLongPress");
+                q.y("onReactionLongPress");
             } else {
                 function12 = function16;
             }
@@ -203,17 +203,17 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
             AddReactionViewHolder addReactionViewHolder = (AddReactionViewHolder) holder;
             String str = this.addReactionLabel;
             if (str == null) {
-                q.z("addReactionLabel");
+                q.y("addReactionLabel");
                 str = null;
             }
             String str2 = this.addNewReactionAccessibilityLabel;
             if (str2 == null) {
-                q.z("addNewReactionAccessibilityLabel");
+                q.y("addNewReactionAccessibilityLabel");
                 str2 = null;
             }
             View.OnClickListener onClickListener3 = this.onAddReactionClick;
             if (onClickListener3 == null) {
-                q.z("onAddReactionClick");
+                q.y("onAddReactionClick");
             } else {
                 onClickListener2 = onClickListener3;
             }
@@ -222,17 +222,17 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
             AddBurstReactionViewHolder addBurstReactionViewHolder = (AddBurstReactionViewHolder) holder;
             String str3 = this.addReactionLabel;
             if (str3 == null) {
-                q.z("addReactionLabel");
+                q.y("addReactionLabel");
                 str3 = null;
             }
             String str4 = this.addNewBurstReactionAccessibilityLabel;
             if (str4 == null) {
-                q.z("addNewBurstReactionAccessibilityLabel");
+                q.y("addNewBurstReactionAccessibilityLabel");
                 str4 = null;
             }
             View.OnClickListener onClickListener4 = this.onAddBurstReactionClick;
             if (onClickListener4 == null) {
-                q.z("onAddBurstReactionClick");
+                q.y("onAddBurstReactionClick");
             } else {
                 onClickListener = onClickListener4;
             }
@@ -277,7 +277,7 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
             addReactionView2.setLayoutParams(cVar);
             viewHolder = new AddBurstReactionViewHolder(addReactionView2);
         } else {
-            throw new kf.q();
+            throw new pf.q();
         }
         themeManager.setThemeOverride(themeOverride);
         return viewHolder;

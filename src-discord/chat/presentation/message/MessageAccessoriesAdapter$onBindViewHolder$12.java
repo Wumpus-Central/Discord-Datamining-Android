@@ -14,18 +14,18 @@ import kotlin.jvm.internal.q;
 public  class MessageAccessoriesAdapter$onBindViewHolder$12 extends n implements Function1<CommandMentionContentNode, Unit> {
     
     public MessageAccessoriesAdapter$onBindViewHolder$12(Object obj) {
-        super(1, obj, ChatEventHandler.class, "onLongPressCommand", "onLongPressCommand(Lcom/discord/chat/bridge/contentnode/CommandMentionContentNode;)V", 0);
+        super(1, obj, ChatEventHandler.class, "onTapCommand", "onTapCommand(Lcom/discord/chat/bridge/contentnode/CommandMentionContentNode;)V", 0);
     }
 
     @Override 
     public   Unit invoke(CommandMentionContentNode commandMentionContentNode) {
         invoke2(commandMentionContentNode);
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     
     public final void invoke2(CommandMentionContentNode p02) {
         q.h(p02, "p0");
-        ((ChatEventHandler) this.receiver).onLongPressCommand(p02);
+        ((ChatEventHandler) this.receiver).onTapCommand(p02);
     }
 }

@@ -56,7 +56,7 @@ public final class NearbyManager extends b {
         this.onFoundUser = onFoundUser;
         this.onLostUser = onLostUser;
         this.onError = onError;
-        SubscribeOptions a10 = new SubscribeOptions.a().b(i.f6202r).a();
+        SubscribeOptions a10 = new SubscribeOptions.a().b(i.f6053r).a();
         q.g(a10, "Builder()\n        .setSt…DEFAULT)\n        .build()");
         this.subscribeOptions = a10;
     }
@@ -67,7 +67,7 @@ public final class NearbyManager extends b {
         a10.a(this.statusCallback);
         Message message = this.outboundMessage;
         if (message == null) {
-            q.z("outboundMessage");
+            q.y("outboundMessage");
             message = null;
         }
         a10.c(message);
@@ -78,7 +78,7 @@ public final class NearbyManager extends b {
         q.h(context, "context");
         Message message = this.outboundMessage;
         if (message == null) {
-            q.z("outboundMessage");
+            q.y("outboundMessage");
             message = null;
         }
         d a10 = a.a(context);
@@ -94,7 +94,7 @@ public final class NearbyManager extends b {
         Function1<String, Unit> function1 = this.onFoundUser;
         byte[] r10 = message.r();
         q.g(r10, "message.content");
-        function1.invoke(new String(r10, oi.a.f25685b));
+        function1.invoke(new String(r10, ti.a.f28776b));
     }
 
     @Override 
@@ -104,12 +104,12 @@ public final class NearbyManager extends b {
         Function1<String, Unit> function1 = this.onLostUser;
         byte[] r10 = message.r();
         q.g(r10, "message.content");
-        function1.invoke(new String(r10, oi.a.f25685b));
+        function1.invoke(new String(r10, ti.a.f28776b));
     }
 
     public final void setOutboundMessage(String message) {
         q.h(message, "message");
-        byte[] bytes = message.getBytes(oi.a.f25685b);
+        byte[] bytes = message.getBytes(ti.a.f28776b);
         q.g(bytes, "this as java.lang.String).getBytes(charset)");
         this.outboundMessage = new Message(bytes);
     }

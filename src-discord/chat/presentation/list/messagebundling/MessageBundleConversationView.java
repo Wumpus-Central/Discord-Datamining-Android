@@ -70,14 +70,14 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
     public static final void configure$lambda$7$lambda$5(ChatEventHandler eventHandler, Message message, View view) {
         q.h(eventHandler, "$eventHandler");
         q.h(message, "$message");
-        ChatEventHandler.DefaultImpls.m201onTapReactionu7_MRrM$default(eventHandler, message.m25getId3Eiw7ao(), null, null, 4, null);
+        ChatEventHandler.DefaultImpls.m201onTapReactionu7_MRrM$default(eventHandler, message.m24getId3Eiw7ao(), null, null, 4, null);
     }
 
     
     public static final void configure$lambda$7$lambda$6(ChatEventHandler eventHandler, Message message, View view) {
         q.h(eventHandler, "$eventHandler");
         q.h(message, "$message");
-        eventHandler.mo183onTapReactionu7_MRrM(message.m25getId3Eiw7ao(), null, Boolean.TRUE);
+        eventHandler.mo183onTapReactionu7_MRrM(message.m24getId3Eiw7ao(), null, Boolean.TRUE);
     }
 
     public final void configure(MessageItem messageItem, final ChatEventHandler eventHandler) {
@@ -100,7 +100,7 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
             q.g(textView, "binding.replyAuthorName");
             StructurableText content = message.getContent();
             Context context2 = getContext();
-            String str = message.m25getId3Eiw7ao();
+            String str = message.m24getId3Eiw7ao();
             boolean shouldAnimateEmoji = MessageKt.shouldAnimateEmoji(message);
             boolean shouldShowRoleDot = message.getShouldShowRoleDot();
             boolean shouldShowRoleOnName = message.getShouldShowRoleOnName();
@@ -143,10 +143,10 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
         }
         ReactionsView configure$lambda$7 = this.binding.reactionsView;
         q.g(configure$lambda$7, "configure$lambda$7");
-        String str2 = message.m25getId3Eiw7ao();
+        String str2 = message.m24getId3Eiw7ao();
         List<MessageReaction> reactions = message.getReactions();
         if (reactions == null) {
-            reactions = j.h();
+            reactions = j.i();
         }
         configure$lambda$7.setReactions(str2, reactions, messageContext.getCanAddNewReactions(), messageContext.getUseAddBurstReaction(), messageContext.getAddReactionLabel(), messageContext.getAddNewReactionAccessibilityLabel(), messageContext.getAddNewBurstReactionAccessibilityLabel(), messageContext.getReactionsTheme(), (r32 & 256) != 0 ? new View.OnClickListener() { 
             @Override 

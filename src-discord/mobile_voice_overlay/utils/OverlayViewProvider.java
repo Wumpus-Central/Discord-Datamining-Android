@@ -30,7 +30,7 @@ public final class OverlayViewProvider<T extends OverlayView> {
         T invoke = this.initializer.invoke(this);
         MobileVoiceOverlayAssets mobileVoiceOverlayAssets = this.assets;
         if (mobileVoiceOverlayAssets == null) {
-            q.z("assets");
+            q.y("assets");
             mobileVoiceOverlayAssets = null;
         }
         invoke.setAssets(mobileVoiceOverlayAssets);

@@ -23,7 +23,7 @@ final class BundleUpdaterManager$addListener$1 extends s implements Function1<Bo
     @Override 
     public   Unit invoke(Boolean bool) {
         invoke(bool.booleanValue());
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     public final void invoke(boolean z10) {

@@ -1,20 +1,20 @@
 package com.discord.bundle_updater;
 
-import bk.j;
-import bk.m;
 import com.facebook.react.util.JSStackTrace;
+import gk.j;
+import gk.m;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-import kf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.r;
 import kotlin.jvm.internal.q;
 import kotlinx.serialization.json.Json;
 import okio.BufferedSource;
-import uf.l;
+import pf.x;
+import zf.l;
 
 @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J2\u0010\u0003\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00070\u00050\u00042\u0006\u0010\b\u001a\u00020\t2\b\u0010\n\u001a\u0004\u0018\u00010\t2\u0006\u0010\u000b\u001a\u00020\tJ\u000e\u0010\f\u001a\u00020\t2\u0006\u0010\r\u001a\u00020\u000eJ\u000e\u0010\u000f\u001a\u00020\u00062\u0006\u0010\r\u001a\u00020\u000e¨\u0006\u0010"}, d2 = {"Lcom/discord/bundle_updater/BundleUpdaterUtils;", "", "()V", "compareJSONData", "", "Lkotlin/Pair;", "", "Lcom/discord/bundle_updater/AssetStatus;", "apkManifest", "Lcom/discord/bundle_updater/AppManifest;", "oldManifest", "newManifest", "getManifestFromFile", JSStackTrace.FILE_KEY, "Ljava/io/File;", "md5", "bundle_updater_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -25,7 +25,7 @@ public final class BundleUpdaterUtils {
     }
 
     public final List<Pair<String, AssetStatus>> compareJSONData(AppManifest apkManifest, AppManifest appManifest, AppManifest newManifest) {
-        List<Pair<String, AssetStatus>> B0;
+        List<Pair<String, AssetStatus>> C0;
         Pair pair;
         AssetStatus assetStatus;
         q.h(apkManifest, "apkManifest");
@@ -48,14 +48,14 @@ public final class BundleUpdaterUtils {
                 arrayList.add(pair);
             }
         }
-        B0 = r.B0(arrayList);
-        return B0;
+        C0 = r.C0(arrayList);
+        return C0;
     }
 
     public final AppManifest getManifestFromFile(File file) {
         String d10;
         q.h(file, "file");
-        Json.a aVar = Json.f21971d;
+        Json.a aVar = Json.f22128d;
         d10 = l.d(file, null, 1, null);
         aVar.a();
         return (AppManifest) aVar.b(AppManifest.Companion.serializer(), d10);
@@ -65,7 +65,7 @@ public final class BundleUpdaterUtils {
         q.h(file, "file");
         BufferedSource d10 = m.d(m.k(file));
         try {
-            j a10 = j.f5865m.a(m.b());
+            j a10 = j.f15804m.a(m.b());
             d10.u0(a10);
             th = null;
             return a10.a().l();

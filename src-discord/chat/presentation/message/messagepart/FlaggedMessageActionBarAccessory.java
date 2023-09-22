@@ -68,7 +68,7 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
             return false;
         }
         FlaggedMessageActionBarAccessory flaggedMessageActionBarAccessory = (FlaggedMessageActionBarAccessory) obj;
-        return MessageId.m635equalsimpl0(mo236getMessageId3Eiw7ao(), flaggedMessageActionBarAccessory.mo236getMessageId3Eiw7ao()) && q.c(this.message, flaggedMessageActionBarAccessory.message) && q.c(this.autoModerationContext, flaggedMessageActionBarAccessory.autoModerationContext);
+        return MessageId.m640equalsimpl0(mo236getMessageId3Eiw7ao(), flaggedMessageActionBarAccessory.mo236getMessageId3Eiw7ao()) && q.c(this.message, flaggedMessageActionBarAccessory.message) && q.c(this.autoModerationContext, flaggedMessageActionBarAccessory.autoModerationContext);
     }
 
     public final AutoModerationContext getAutoModerationContext() {
@@ -86,11 +86,11 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((MessageId.m636hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.message.hashCode()) * 31) + this.autoModerationContext.hashCode();
+        return (((MessageId.m641hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.message.hashCode()) * 31) + this.autoModerationContext.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m637toStringimpl(mo236getMessageId3Eiw7ao());
+        String str = MessageId.m642toStringimpl(mo236getMessageId3Eiw7ao());
         Message message = this.message;
         AutoModerationContext autoModerationContext = this.autoModerationContext;
         return "FlaggedMessageActionBarAccessory(messageId=" + str + ", message=" + message + ", autoModerationContext=" + autoModerationContext + ")";

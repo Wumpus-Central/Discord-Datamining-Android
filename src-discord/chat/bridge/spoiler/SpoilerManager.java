@@ -15,27 +15,27 @@ public final class SpoilerManager {
     }
 
     
-    public final boolean m140isNotRevealedV2PEE7g(String id2) {
+    public final boolean m139isNotRevealedV2PEE7g(String id2) {
         q.h(id2, "id");
-        return !m141isRevealedV2PEE7g(id2);
+        return !m140isRevealedV2PEE7g(id2);
     }
 
     
-    public final boolean m141isRevealedV2PEE7g(String id2) {
+    public final boolean m140isRevealedV2PEE7g(String id2) {
         q.h(id2, "id");
-        return revealedSpoilers.contains(SpoilerIdentifier.m132boximpl(id2));
+        return revealedSpoilers.contains(SpoilerIdentifier.m131boximpl(id2));
     }
 
     
-    public final void m142markHiddenV2PEE7g(String id2) {
+    public final void m141markHiddenV2PEE7g(String id2) {
         q.h(id2, "id");
-        revealedSpoilers.remove(SpoilerIdentifier.m132boximpl(id2));
+        revealedSpoilers.remove(SpoilerIdentifier.m131boximpl(id2));
     }
 
     
-    public final void m143markRevealedV2PEE7g(String id2) {
+    public final void m142markRevealedV2PEE7g(String id2) {
         q.h(id2, "id");
-        revealedSpoilers.add(SpoilerIdentifier.m132boximpl(id2));
+        revealedSpoilers.add(SpoilerIdentifier.m131boximpl(id2));
     }
 
     public final void reset() {

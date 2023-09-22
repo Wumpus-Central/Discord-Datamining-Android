@@ -14,17 +14,17 @@ import kotlin.jvm.internal.q;
 public final class BlurViewPackage implements ReactPackage {
     @Override 
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-        List<NativeModule> h10;
+        List<NativeModule> i10;
         q.h(reactContext, "reactContext");
-        h10 = j.h();
-        return h10;
+        i10 = j.i();
+        return i10;
     }
 
     @Override 
     public List<ViewManager<?, ?>> createViewManagers(ReactApplicationContext reactContext) {
-        List<ViewManager<?, ?>> n10;
+        List<ViewManager<?, ?>> o10;
         q.h(reactContext, "reactContext");
-        n10 = j.n(new BlurViewManager(), new BlurViewTargetManager());
-        return n10;
+        o10 = j.o(new BlurViewManager(), new BlurViewTargetManager());
+        return o10;
     }
 }

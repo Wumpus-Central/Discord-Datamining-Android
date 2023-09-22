@@ -29,7 +29,7 @@ public final class SegmentedControlViewManager$createViewInstance$1$1 extends s 
     @Override 
     public   Unit invoke(Integer num, String str) {
         invoke(num.intValue(), str);
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     public final void invoke(int i10, String label) {

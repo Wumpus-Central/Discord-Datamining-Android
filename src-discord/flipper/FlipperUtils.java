@@ -47,10 +47,10 @@ public final class FlipperUtils {
         return new ReactPackage() { 
             @Override 
             public List<ReactContextBaseJavaModule> createNativeModules(ReactApplicationContext reactContext) {
-                List<ReactContextBaseJavaModule> h10;
+                List<ReactContextBaseJavaModule> i10;
                 q.h(reactContext, "reactContext");
-                h10 = j.h();
-                return h10;
+                i10 = j.i();
+                return i10;
             }
 
             @Override 

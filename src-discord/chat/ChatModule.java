@@ -20,12 +20,12 @@ import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.a2;
 import kotlinx.coroutines.j;
 import kotlinx.coroutines.m0;
-import kotlinx.coroutines.o1;
-import kotlinx.coroutines.s2;
+import kotlinx.coroutines.p1;
+import kotlinx.coroutines.t2;
 import kotlinx.coroutines.z;
-import kotlinx.coroutines.z1;
 import kotlinx.serialization.json.Json;
 import kotlinx.serialization.json.l;
 
@@ -45,10 +45,10 @@ public final class ChatModule extends ReactContextBaseJavaModule {
         super(reactContext);
         q.h(reactContext, "reactContext");
         this.reactContext = reactContext;
-        z b10 = s2.b(null, 1, null);
+        z b10 = t2.b(null, 1, null);
         ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor();
         q.g(newSingleThreadExecutor, "newSingleThreadExecutor()");
-        this.moduleScope = m0.a(b10.e0(o1.a(newSingleThreadExecutor)));
+        this.moduleScope = m0.a(b10.e0(p1.b(newSingleThreadExecutor)));
     }
 
     
@@ -94,7 +94,7 @@ public final class ChatModule extends ReactContextBaseJavaModule {
         super.invalidate();
         CoroutineContext coroutineContext = this.moduleScope.getCoroutineContext();
         String simpleName = ChatModule.class.getSimpleName();
-        z1.e(coroutineContext, new CancellationException(simpleName + " invalidate()"));
+        a2.e(coroutineContext, new CancellationException(simpleName + " invalidate()"));
     }
 
     @ReactMethod

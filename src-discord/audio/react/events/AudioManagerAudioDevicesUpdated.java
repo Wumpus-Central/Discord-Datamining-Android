@@ -8,11 +8,11 @@ import com.facebook.react.bridge.ReadableNativeArray;
 import com.facebook.react.bridge.WritableNativeMap;
 import java.util.ArrayList;
 import java.util.List;
-import kf.x;
 import kotlin.Metadata;
 import kotlin.collections.k;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
+import pf.x;
 
 @Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0080\b\u0018\u0000 \u00142\u00020\u0001:\u0001\u0014B\u0013\u0012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\u0002\u0010\u0005J\u000f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\u0019\u0010\t\u001a\u00020\u00002\u000e\b\u0002\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0001J\u0013\u0010\n\u001a\u00020\u000b2\b\u0010\f\u001a\u0004\u0018\u00010\rHÖ\u0003J\t\u0010\u000e\u001a\u00020\u000fHÖ\u0001J\b\u0010\u0010\u001a\u00020\u0011H\u0016J\t\u0010\u0012\u001a\u00020\u0013HÖ\u0001R\u0017\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007¨\u0006\u0015"}, d2 = {"Lcom/discord/audio/react/events/AudioManagerAudioDevicesUpdated;", "Lcom/discord/reactevents/ReactEvent;", "devices", "", "Lcom/discord/audio/DiscordAudioManager$AudioDevice;", "(Ljava/util/List;)V", "getDevices", "()Ljava/util/List;", "component1", "copy", "equals", "", "other", "", "hashCode", "", "serialize", "Lcom/facebook/react/bridge/WritableNativeMap;", "toString", "", "Companion", "audio_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -32,15 +32,15 @@ public final class AudioManagerAudioDevicesUpdated implements ReactEvent {
 
         
         public final ReadableNativeArray convertDevices(List<DiscordAudioManager.AudioDevice> list) {
-            int s10;
+            int t10;
             ArrayList<DiscordAudioManager.AudioDevice> arrayList = new ArrayList();
             for (Object obj : list) {
                 if (((DiscordAudioManager.AudioDevice) obj).isAvailable()) {
                     arrayList.add(obj);
                 }
             }
-            s10 = k.s(arrayList, 10);
-            ArrayList arrayList2 = new ArrayList(s10);
+            t10 = k.t(arrayList, 10);
+            ArrayList arrayList2 = new ArrayList(t10);
             for (DiscordAudioManager.AudioDevice audioDevice : arrayList) {
                 arrayList2.add(audioDevice.getType().toString());
             }

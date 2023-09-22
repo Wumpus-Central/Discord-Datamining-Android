@@ -35,9 +35,9 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Ref$BooleanRef;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
-import kotlinx.coroutines.a1;
+import kotlinx.coroutines.b1;
 import kotlinx.coroutines.l;
-import kotlinx.coroutines.p1;
+import kotlinx.coroutines.q1;
 import s1.c;
 import s1.d;
 import s1.e;
@@ -59,7 +59,7 @@ public final class BillingManager {
             BillingManager.this.getOnConnectionUpdated().invoke(Integer.valueOf(BillingManager.ConnectionState.DISCONNECTED.getValue()));
             billingClient = BillingManager.this.billingClient;
             if (billingClient == null) {
-                q.z("billingClient");
+                q.y("billingClient");
                 billingClient = null;
             }
             if (!billingClient.e()) {
@@ -83,7 +83,7 @@ public final class BillingManager {
             BillingManager.loadPurchases$default(BillingManager.this, null, null, 3, null);
         }
     };
-    private final ExponentialBackoff backoff = new ExponentialBackoff(p1.f21802j, 1000, 300000, 10);
+    private final ExponentialBackoff backoff = new ExponentialBackoff(q1.f21963j, 1000, 300000, 10);
 
     
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\b\n\u0002\b\b\b\u0082\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\n¨\u0006\u000b"}, d2 = {"Lcom/discord/billing/BillingManager$ConnectionState;", "", "value", "", "(Ljava/lang/String;II)V", "getValue", "()I", "DISCONNECTED", "CONNECTING", "CONNECTED", "ERROR", "billing_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -306,7 +306,7 @@ public final class BillingManager {
             return iVar;
         }
         CrashReporting.addBreadcrumb$default(CrashReporting.INSTANCE, "Can't get lifecycleScope for billing client, defaulting to GlobalScope but API might be backing off while the app is background", null, null, 6, null);
-        return p1.f21802j;
+        return q1.f21963j;
     }
 
     private final void getProductsWithRetry(List<String> list, SkuType skuType, Promise promise, Function1<? super Exception, Unit> function1, ReactApplicationContext reactApplicationContext) {
@@ -315,7 +315,7 @@ public final class BillingManager {
             return;
         }
         CoroutineScope coroutineScope = getCoroutineScope(reactApplicationContext);
-        l.d(coroutineScope, a1.a(), null, new BillingManager$getProductsWithRetry$1(new ExponentialBackoff(coroutineScope, 0L, 0L, 0, 14, null), this, function1, promise, skuType, list, null), 2, null);
+        l.d(coroutineScope, b1.a(), null, new BillingManager$getProductsWithRetry$1(new ExponentialBackoff(coroutineScope, 0L, 0L, 0, 14, null), this, function1, promise, skuType, list, null), 2, null);
     }
 
     
@@ -342,7 +342,7 @@ public final class BillingManager {
             return;
         }
         CoroutineScope coroutineScope = getCoroutineScope(reactApplicationContext);
-        l.d(coroutineScope, a1.a(), null, new BillingManager$getSkusWithRetry$1(new ExponentialBackoff(coroutineScope, 0L, 0L, 0, 14, null), this, function1, promise, skuType, list, null), 2, null);
+        l.d(coroutineScope, b1.a(), null, new BillingManager$getSkusWithRetry$1(new ExponentialBackoff(coroutineScope, 0L, 0L, 0, 14, null), this, function1, promise, skuType, list, null), 2, null);
     }
 
     
@@ -360,7 +360,7 @@ public final class BillingManager {
         q.h(listener, "$listener");
         q.h(billingResult, "billingResult");
         if (list == null) {
-            list = j.h();
+            list = j.i();
         }
         listener.invoke(billingResult, list);
     }
@@ -396,7 +396,7 @@ public final class BillingManager {
         BillingClient billingClient = this.billingClient;
         if (billingClient != null) {
             if (billingClient == null) {
-                q.z("billingClient");
+                q.y("billingClient");
                 billingClient = null;
             }
             if (billingClient.e()) {
@@ -437,16 +437,16 @@ public final class BillingManager {
 
     
     public final void purchaseWithProductDetails(final Activity activity, final String str, ProductType productType, final String str2, final String str3, final String str4, final String str5, final Function0<Unit> function0, final Function1<? super Exception, Unit> function1) {
-        List<String> m10;
+        List<String> n10;
         final Ref$BooleanRef ref$BooleanRef = new Ref$BooleanRef();
         BillingClient billingClient = this.billingClient;
         if (billingClient == null) {
-            q.z("billingClient");
+            q.y("billingClient");
             billingClient = null;
         }
         QueryProductDetailsParams queryProductDetailsParams = QueryProductDetailsParams.INSTANCE;
-        m10 = j.m(str, str3);
-        billingClient.h(queryProductDetailsParams.create(productType, m10), new ProductDetailsResponseListener() { 
+        n10 = j.n(str, str3);
+        billingClient.h(queryProductDetailsParams.create(productType, n10), new ProductDetailsResponseListener() { 
             @Override 
             public final void a(BillingResult billingResult, List list) {
                 BillingManager.purchaseWithProductDetails$lambda$6(BillingManager.this, function1, str, str3, str4, str2, str5, activity, function0, ref$BooleanRef, billingResult, list);
@@ -466,9 +466,9 @@ public final class BillingManager {
         q.h(billingResult, "billingResult");
         q.h(productDetails, "productDetails");
         synchronized (this$0) {
-            if (!completed.f21469j) {
-                completed.f21469j = true;
-                Unit unit = Unit.f21444a;
+            if (!completed.f21625j) {
+                completed.f21625j = true;
+                Unit unit = Unit.f21600a;
                 if (this$0.isNotOk(billingResult)) {
                     int b10 = billingResult.b();
                     this$0.invoke(onError, "Purchase failed, bad code: " + b10);
@@ -482,7 +482,7 @@ public final class BillingManager {
                     }
                     BillingClient billingClient = this$0.billingClient;
                     if (billingClient == null) {
-                        q.z("billingClient");
+                        q.y("billingClient");
                         billingClient = null;
                     }
                     billingClient.f(activity, createWithProductDetails);
@@ -498,16 +498,16 @@ public final class BillingManager {
 
     
     public final void purchaseWithSkuDetails(final Activity activity, final String str, SkuType skuType, final String str2, final String str3, final String str4, final Function0<Unit> function0, final Function1<? super Exception, Unit> function1) {
-        List<String> m10;
+        List<String> n10;
         final Ref$BooleanRef ref$BooleanRef = new Ref$BooleanRef();
         BillingClient billingClient = this.billingClient;
         if (billingClient == null) {
-            q.z("billingClient");
+            q.y("billingClient");
             billingClient = null;
         }
         SkuDetailsParams skuDetailsParams = SkuDetailsParams.INSTANCE;
-        m10 = j.m(str, str3);
-        billingClient.l(skuDetailsParams.create(skuType, m10), new SkuDetailsResponseListener() { 
+        n10 = j.n(str, str3);
+        billingClient.l(skuDetailsParams.create(skuType, n10), new SkuDetailsResponseListener() { 
             @Override 
             public final void a(BillingResult billingResult, List list) {
                 BillingManager.purchaseWithSkuDetails$lambda$4(BillingManager.this, function1, str, str3, str4, str2, activity, function0, ref$BooleanRef, billingResult, list);
@@ -526,9 +526,9 @@ public final class BillingManager {
         q.h(completed, "$completed");
         q.h(billingResult, "billingResult");
         synchronized (this$0) {
-            if (!completed.f21469j) {
-                completed.f21469j = true;
-                Unit unit = Unit.f21444a;
+            if (!completed.f21625j) {
+                completed.f21625j = true;
+                Unit unit = Unit.f21600a;
                 if (this$0.isNotOk(billingResult)) {
                     int b10 = billingResult.b();
                     this$0.invoke(onError, "Purchase failed, bad code: " + b10);
@@ -541,7 +541,7 @@ public final class BillingManager {
                 }
                 BillingClient billingClient = this$0.billingClient;
                 if (billingClient == null) {
-                    q.z("billingClient");
+                    q.y("billingClient");
                     billingClient = null;
                 }
                 billingClient.f(activity, create);
@@ -579,7 +579,7 @@ public final class BillingManager {
         BillingClient billingClient = this.billingClient;
         if (billingClient != null) {
             if (billingClient == null) {
-                q.z("billingClient");
+                q.y("billingClient");
                 billingClient = null;
             }
             billingClient.c();
@@ -601,7 +601,7 @@ public final class BillingManager {
         q.g(a10, "newBuilder()\n           …\n                .build()");
         BillingClient billingClient = this.billingClient;
         if (billingClient == null) {
-            q.z("billingClient");
+            q.y("billingClient");
             billingClient = null;
         }
         billingClient.b(a10, new e() { 
@@ -636,7 +636,7 @@ public final class BillingManager {
         }
         BillingClient billingClient = this.billingClient;
         if (billingClient == null) {
-            q.z("billingClient");
+            q.y("billingClient");
             billingClient = null;
         }
         BillingResult d10 = billingClient.d("fff");
@@ -658,7 +658,7 @@ public final class BillingManager {
         BillingClient billingClient = this.billingClient;
         BillingClient billingClient2 = null;
         if (billingClient == null) {
-            q.z("billingClient");
+            q.y("billingClient");
             billingClient = null;
         }
         billingClient.j("inapp", new g() { 
@@ -669,7 +669,7 @@ public final class BillingManager {
         });
         BillingClient billingClient3 = this.billingClient;
         if (billingClient3 == null) {
-            q.z("billingClient");
+            q.y("billingClient");
         } else {
             billingClient2 = billingClient3;
         }
@@ -694,14 +694,14 @@ public final class BillingManager {
         this.billingClient = a10;
         BillingClient billingClient = null;
         if (a10 == null) {
-            q.z("billingClient");
+            q.y("billingClient");
             a10 = null;
         }
         if (!a10.e()) {
             try {
                 BillingClient billingClient2 = this.billingClient;
                 if (billingClient2 == null) {
-                    q.z("billingClient");
+                    q.y("billingClient");
                 } else {
                     billingClient = billingClient2;
                 }
@@ -726,7 +726,7 @@ public final class BillingManager {
         } else {
             BillingClient billingClient = this.billingClient;
             if (billingClient == null) {
-                q.z("billingClient");
+                q.y("billingClient");
                 billingClient = null;
             }
             BillingResult d10 = billingClient.d("fff");

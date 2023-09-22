@@ -18,7 +18,7 @@ public final class MessageComponentsViewKt {
         for (Object obj : views) {
             int i11 = i10 + 1;
             if (i10 < 0) {
-                j.r();
+                j.s();
             }
             ComponentView componentView = (ComponentView) obj;
             if (i10 >= viewGroup.getChildCount()) {

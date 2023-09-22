@@ -1,15 +1,15 @@
 package com.discord.mobile_voice_overlay;
 
-import kf.n;
-import kf.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
-import ui.f;
+import pf.n;
+import pf.p;
+import zi.f;
 
-@f
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0007\b\u0087\u0001\u0018\u0000 \u00072\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\u0007B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006¨\u0006\b"}, d2 = {"Lcom/discord/mobile_voice_overlay/ConnectionQuality;", "", "(Ljava/lang/String;I)V", "Fine", "Average", "Bad", "Unknown", "Companion", "mobile_voice_overlay_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@f
 
 public enum ConnectionQuality {
     Fine,
@@ -40,8 +40,8 @@ public enum ConnectionQuality {
     }
 
     static {
-        Lazy<KSerializer<Object>> a10;
-        a10 = n.a(p.PUBLICATION, ConnectionQuality$Companion$$cachedSerializer$delegate$1.INSTANCE);
-        $cachedSerializer$delegate = a10;
+        Lazy<KSerializer<Object>> b10;
+        b10 = n.b(p.PUBLICATION, ConnectionQuality$Companion$$cachedSerializer$delegate$1.INSTANCE);
+        $cachedSerializer$delegate = b10;
     }
 }

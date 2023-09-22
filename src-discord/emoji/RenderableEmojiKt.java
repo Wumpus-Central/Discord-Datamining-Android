@@ -69,7 +69,7 @@ public final class RenderableEmojiKt {
         int length = draweeSpanStringBuilder.length();
         draweeSpanStringBuilder.append((char) 8203);
         a c10 = c.g().z(z10).D(ImageRequestBuilder.s(Uri.parse(str)).E(new ResizeOptions(i10, i10)).z(ImageRequest.RequestLevel.FULL_FETCH).a()).B(str2).build();
-        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f7837e);
+        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f7529e);
         function1.invoke(w10);
         draweeSpanStringBuilder.j(context, w10.a(), c10, length, i10, i10, false, i11);
     }

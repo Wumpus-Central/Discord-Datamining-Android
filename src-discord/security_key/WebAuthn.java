@@ -4,10 +4,10 @@ import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.util.Base64;
-import bg.j;
 import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.google.android.gms.tasks.Task;
 import com.reactnativecommunity.webview.RNCWebViewManager;
+import gg.j;
 import ha.e;
 import ha.f;
 import java.util.ArrayList;
@@ -20,7 +20,6 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import kotlin.ranges.IntRange;
-import lf.p;
 import m9.b;
 import m9.g;
 import m9.h;
@@ -36,6 +35,7 @@ import m9.v;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONTokener;
+import qf.p;
 
 @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0012\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\n\u0018\u0000  2\u00020\u0001:\u0001 B/\u0012\u0012\u0010\u0018\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u00100\u0017\u0012\u0012\u0010\u001c\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u00100\u0017¢\u0006\u0004\b\u001e\u0010\u001fJ\u0016\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\f\u0010\t\u001a\u00020\b*\u00020\u0007H\u0002J\f\u0010\n\u001a\u00020\u0007*\u00020\bH\u0002J \u0010\u0011\u001a\u00020\u00102\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\r\u001a\u00020\u000b2\b\u0010\u000f\u001a\u0004\u0018\u00010\u000eJ\u0018\u0010\u0015\u001a\u00020\u00102\u0006\u0010\u0012\u001a\u00020\b2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0013J\u0018\u0010\u0016\u001a\u00020\u00102\u0006\u0010\u0012\u001a\u00020\b2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0013R#\u0010\u0018\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u00100\u00178\u0006¢\u0006\f\n\u0004\b\u0018\u0010\u0019\u001a\u0004\b\u001a\u0010\u001bR#\u0010\u001c\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u00100\u00178\u0006¢\u0006\f\n\u0004\b\u001c\u0010\u0019\u001a\u0004\b\u001d\u0010\u001b¨\u0006!"}, d2 = {"Lcom/discord/security_key/WebAuthn;", "", "Lorg/json/JSONArray;", "array", "", "Lm9/q;", "parseCredentialDescriptors", "", "", "toBase64", "decodeBase64", "", "requestCode", "resultCode", "Landroid/content/Intent;", "data", "", "onActivityResult", "challenge", "Landroid/app/Activity;", "currentActivity", "register", "authenticate", "Lkotlin/Function1;", "resolve", "Lkotlin/jvm/functions/Function1;", "getResolve", "()Lkotlin/jvm/functions/Function1;", "reject", "getReject", "<init>", "(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V", "Companion", "security_key_release"}, k = 1, mv = {1, 8, 0})
 
@@ -174,20 +174,20 @@ public final class WebAuthn {
             return;
         }
         o r10 = o.r(bArr);
-        if (r10.z() instanceof h) {
+        if (r10.G() instanceof h) {
             Function1<String, Unit> function1 = this.reject;
-            i z10 = r10.z();
-            q.f(z10, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorErrorResponse");
-            String w10 = ((h) z10).w();
-            q.e(w10);
-            function1.invoke(w10);
+            i G = r10.G();
+            q.f(G, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorErrorResponse");
+            String A = ((h) G).A();
+            q.e(A);
+            function1.invoke(A);
         } else if (i10 == 4001) {
-            byte[] w11 = r10.w();
-            q.g(w11, "credential.rawId");
-            String base64 = toBase64(w11);
-            i z11 = r10.z();
-            q.f(z11, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorAttestationResponse");
-            g gVar = (g) z11;
+            byte[] A2 = r10.A();
+            q.g(A2, "credential.rawId");
+            String base64 = toBase64(A2);
+            i G2 = r10.G();
+            q.f(G2, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorAttestationResponse");
+            g gVar = (g) G2;
             JSONObject jSONObject = new JSONObject();
             jSONObject.put("id", base64);
             jSONObject.put("rawId", base64);
@@ -196,21 +196,21 @@ public final class WebAuthn {
             byte[] r11 = gVar.r();
             q.g(r11, "response.clientDataJSON");
             jSONObject2.put("clientDataJSON", toBase64(r11));
-            byte[] t10 = gVar.t();
-            q.g(t10, "response.attestationObject");
-            jSONObject2.put("attestationObject", toBase64(t10));
+            byte[] z10 = gVar.z();
+            q.g(z10, "response.attestationObject");
+            jSONObject2.put("attestationObject", toBase64(z10));
             jSONObject.put("response", jSONObject2);
             Function1<String, Unit> function12 = this.resolve;
             String jSONObject3 = jSONObject.toString();
             q.g(jSONObject3, "obj.toString()");
             function12.invoke(jSONObject3);
         } else if (i10 == REQUEST_CODE_AUTHENTICATE) {
-            byte[] w12 = r10.w();
-            q.g(w12, "credential.rawId");
-            String base642 = toBase64(w12);
-            i z12 = r10.z();
-            q.f(z12, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorAssertionResponse");
-            m9.f fVar = (m9.f) z12;
+            byte[] A3 = r10.A();
+            q.g(A3, "credential.rawId");
+            String base642 = toBase64(A3);
+            i G3 = r10.G();
+            q.f(G3, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorAssertionResponse");
+            m9.f fVar = (m9.f) G3;
             JSONObject jSONObject4 = new JSONObject();
             jSONObject4.put("id", base642);
             jSONObject4.put("rawId", base642);
@@ -219,15 +219,15 @@ public final class WebAuthn {
             byte[] r12 = fVar.r();
             q.g(r12, "response.clientDataJSON");
             jSONObject5.put("clientDataJSON", toBase64(r12));
-            byte[] t11 = fVar.t();
-            q.g(t11, "response.authenticatorData");
-            jSONObject5.put("authenticatorData", toBase64(t11));
-            byte[] z13 = fVar.z();
-            q.g(z13, "response.signature");
-            jSONObject5.put("signature", toBase64(z13));
-            byte[] C = fVar.C();
-            if (C != null) {
-                jSONObject5.put("userHandle", toBase64(C));
+            byte[] z11 = fVar.z();
+            q.g(z11, "response.authenticatorData");
+            jSONObject5.put("authenticatorData", toBase64(z11));
+            byte[] G4 = fVar.G();
+            q.g(G4, "response.signature");
+            jSONObject5.put("signature", toBase64(G4));
+            byte[] H = fVar.H();
+            if (H != null) {
+                jSONObject5.put("userHandle", toBase64(H));
             }
             jSONObject4.put("response", jSONObject5);
             Function1<String, Unit> function13 = this.resolve;
@@ -253,7 +253,7 @@ public final class WebAuthn {
         q10 = j.q(0, jSONArray.length());
         Iterator<Integer> it = q10.iterator();
         while (it.hasNext()) {
-            JSONObject jSONObject2 = jSONArray.getJSONObject(((lf.p) it).nextInt());
+            JSONObject jSONObject2 = jSONArray.getJSONObject(((qf.p) it).nextInt());
             arrayList.add(new r(jSONObject2.getString("type"), jSONObject2.getInt("alg")));
         }
         aVar.e(arrayList);

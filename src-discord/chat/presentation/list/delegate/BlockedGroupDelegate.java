@@ -35,7 +35,7 @@ public final class BlockedGroupDelegate extends BaseChatListItemDelegate<Blocked
         @Override 
         public   Unit invoke(BlockedMessageGroupView blockedMessageGroupView) {
             invoke2(blockedMessageGroupView);
-            return Unit.f21444a;
+            return Unit.f21600a;
         }
 
         

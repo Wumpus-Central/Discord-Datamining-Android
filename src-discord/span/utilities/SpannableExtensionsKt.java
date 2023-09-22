@@ -16,7 +16,7 @@ public final class SpannableExtensionsKt {
     public static final  <T> boolean hasSpan(Spannable spannable) {
         q.h(spannable, "<this>");
         int length = spannable.length();
-        q.n(4, "T");
+        q.m(4, "T");
         boolean z10 = false;
         Object[] spans = spannable.getSpans(0, length, Object.class);
         q.g(spans, "getSpans(0, length, T::class.java)");

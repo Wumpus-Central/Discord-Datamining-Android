@@ -23,18 +23,18 @@ public final class InteractionStatusMessageAccessory extends MessageAccessory {
     }
 
     
-    public static  InteractionStatusMessageAccessory m284copyntcYbpo$default(InteractionStatusMessageAccessory interactionStatusMessageAccessory, String str, InteractionStatus interactionStatus, int i10, Object obj) {
+    public static  InteractionStatusMessageAccessory m289copyntcYbpo$default(InteractionStatusMessageAccessory interactionStatusMessageAccessory, String str, InteractionStatus interactionStatus, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = interactionStatusMessageAccessory.mo236getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             interactionStatus = interactionStatusMessageAccessory.interactionStatus;
         }
-        return interactionStatusMessageAccessory.m286copyntcYbpo(str, interactionStatus);
+        return interactionStatusMessageAccessory.m291copyntcYbpo(str, interactionStatus);
     }
 
     
-    public final String m285component13Eiw7ao() {
+    public final String m290component13Eiw7ao() {
         return mo236getMessageId3Eiw7ao();
     }
 
@@ -43,7 +43,7 @@ public final class InteractionStatusMessageAccessory extends MessageAccessory {
     }
 
     
-    public final InteractionStatusMessageAccessory m286copyntcYbpo(String messageId, InteractionStatus interactionStatus) {
+    public final InteractionStatusMessageAccessory m291copyntcYbpo(String messageId, InteractionStatus interactionStatus) {
         q.h(messageId, "messageId");
         q.h(interactionStatus, "interactionStatus");
         return new InteractionStatusMessageAccessory(messageId, interactionStatus, null);
@@ -57,7 +57,7 @@ public final class InteractionStatusMessageAccessory extends MessageAccessory {
             return false;
         }
         InteractionStatusMessageAccessory interactionStatusMessageAccessory = (InteractionStatusMessageAccessory) obj;
-        return MessageId.m635equalsimpl0(mo236getMessageId3Eiw7ao(), interactionStatusMessageAccessory.mo236getMessageId3Eiw7ao()) && q.c(this.interactionStatus, interactionStatusMessageAccessory.interactionStatus);
+        return MessageId.m640equalsimpl0(mo236getMessageId3Eiw7ao(), interactionStatusMessageAccessory.mo236getMessageId3Eiw7ao()) && q.c(this.interactionStatus, interactionStatusMessageAccessory.interactionStatus);
     }
 
     public final InteractionStatus getInteractionStatus() {
@@ -71,11 +71,11 @@ public final class InteractionStatusMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (MessageId.m636hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.interactionStatus.hashCode();
+        return (MessageId.m641hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.interactionStatus.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m637toStringimpl(mo236getMessageId3Eiw7ao());
+        String str = MessageId.m642toStringimpl(mo236getMessageId3Eiw7ao());
         InteractionStatus interactionStatus = this.interactionStatus;
         return "InteractionStatusMessageAccessory(messageId=" + str + ", interactionStatus=" + interactionStatus + ")";
     }

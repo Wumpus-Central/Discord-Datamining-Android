@@ -20,14 +20,14 @@ public  class SurveyIndicationViewHolder$bind$1$1 extends n implements Function2
 
     @Override 
     public   Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
-        m368invokentcYbpo(messageId.m639unboximpl(), linkContentNode);
-        return Unit.f21444a;
+        m373invokentcYbpo(messageId.m644unboximpl(), linkContentNode);
+        return Unit.f21600a;
     }
 
     
-    public final void m368invokentcYbpo(String p02, LinkContentNode p12) {
+    public final void m373invokentcYbpo(String p02, LinkContentNode p12) {
         q.h(p02, "p0");
         q.h(p12, "p1");
-        ((ChatEventHandler) this.receiver).mo160onLinkClickedntcYbpo(p02, p12);
+        ((ChatEventHandler) this.receiver).mo159onLinkClickedntcYbpo(p02, p12);
     }
 }

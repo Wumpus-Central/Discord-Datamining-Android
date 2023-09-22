@@ -27,14 +27,14 @@ public final class FlaggedMessageActionBarViewHolder extends MessagePartViewHold
     public static final void bind$lambda$0(Function2 onTapAutoModerationActions, String messageId, long j10, View view) {
         q.h(onTapAutoModerationActions, "$onTapAutoModerationActions");
         q.h(messageId, "$messageId");
-        onTapAutoModerationActions.invoke(MessageId.m631boximpl(messageId), ChannelId.m605boximpl(j10));
+        onTapAutoModerationActions.invoke(MessageId.m636boximpl(messageId), ChannelId.m610boximpl(j10));
     }
 
     
     public static final void bind$lambda$1(Function2 onTapAutoModerationFeedback, String messageId, long j10, View view) {
         q.h(onTapAutoModerationFeedback, "$onTapAutoModerationFeedback");
         q.h(messageId, "$messageId");
-        onTapAutoModerationFeedback.invoke(MessageId.m631boximpl(messageId), ChannelId.m605boximpl(j10));
+        onTapAutoModerationFeedback.invoke(MessageId.m636boximpl(messageId), ChannelId.m610boximpl(j10));
     }
 
     public final void bind(FlaggedMessageActionBarAccessory messageActionBarAccessory, final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationActions, final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationFeedback) {
@@ -42,8 +42,8 @@ public final class FlaggedMessageActionBarViewHolder extends MessagePartViewHold
         q.h(onTapAutoModerationActions, "onTapAutoModerationActions");
         q.h(onTapAutoModerationFeedback, "onTapAutoModerationFeedback");
         AutoModerationContext autoModerationContext = messageActionBarAccessory.getAutoModerationContext();
-        final long j10 = messageActionBarAccessory.getMessage().m23getChannelIdo4g7jtM();
-        final String str = messageActionBarAccessory.getMessage().m25getId3Eiw7ao();
+        final long j10 = messageActionBarAccessory.getMessage().m22getChannelIdo4g7jtM();
+        final String str = messageActionBarAccessory.getMessage().m24getId3Eiw7ao();
         this.actionBarView.setActions(autoModerationContext, new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {

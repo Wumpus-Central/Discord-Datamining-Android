@@ -30,10 +30,10 @@ public enum AppIcon {
     private final String aliasSuffix;
 
     
-    private final String f7186id;
+    private final String f6871id;
 
     AppIcon(String str, String str2) {
-        this.f7186id = str;
+        this.f6871id = str;
         this.aliasSuffix = str2;
     }
 
@@ -43,6 +43,6 @@ public enum AppIcon {
     }
 
     public final String getId() {
-        return this.f7186id;
+        return this.f6871id;
     }
 }

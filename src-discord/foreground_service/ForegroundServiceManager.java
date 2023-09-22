@@ -48,9 +48,9 @@ public final class ForegroundServiceManager {
     }
 
     public ForegroundServiceManager() {
-        List<ServiceNotificationConfiguration> h10;
-        h10 = j.h();
-        this.serviceConfigurations = h10;
+        List<ServiceNotificationConfiguration> i10;
+        i10 = j.i();
+        this.serviceConfigurations = i10;
         String tag2 = tag;
         q.g(tag2, "tag");
         this.serviceWakelocks = new Wakelocks(tag2, 0L, 2, null);
@@ -71,7 +71,7 @@ public final class ForegroundServiceManager {
             return null;
         }
         genericAction.onNotificationAction(context, false);
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     public final synchronized boolean isRunning$foreground_service_release() {

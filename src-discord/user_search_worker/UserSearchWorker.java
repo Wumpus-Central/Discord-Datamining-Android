@@ -17,8 +17,8 @@ import kotlin.jvm.internal.q;
 import kotlin.text.Regex;
 import kotlinx.serialization.json.Json;
 import kotlinx.serialization.json.l;
-import nf.c;
-import oi.f;
+import sf.c;
+import ti.f;
 
 @Metadata(d1 = {"\u0000b\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0006\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\b\u0007\b\u0000\u0018\u0000 .2\u00020\u0001:\u0001.B-\u0012$\u0010!\u001a \u0012\n\u0012\b\u0012\u0004\u0012\u00020 0\u001f\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00040\u001e¢\u0006\u0004\b,\u0010-J\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0010\u0010\u0007\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0006H\u0002J\u0010\u0010\t\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\bH\u0002J \u0010\u0011\u001a\u00020\u00102\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\f2\u0006\u0010\u000f\u001a\u00020\u000eH\u0002J\u0018\u0010\u0014\u001a\u00020\u00102\u0006\u0010\u0012\u001a\u00020\n2\u0006\u0010\u0013\u001a\u00020\nH\u0002J\u0018\u0010\u0018\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0017\u001a\u00020\u0015H\u0002J\u0018\u0010\u001a\u001a\u00020\u00042\u0006\u0010\u0019\u001a\u00020\n2\u0006\u0010\u000f\u001a\u00020\u000eH\u0002J\u000e\u0010\u001c\u001a\u00020\u00042\u0006\u0010\u001b\u001a\u00020\nJ\u0006\u0010\u001d\u001a\u00020\u0004R5\u0010!\u001a \u0012\n\u0012\b\u0012\u0004\u0012\u00020 0\u001f\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00040\u001e8\u0006¢\u0006\f\n\u0004\b!\u0010\"\u001a\u0004\b#\u0010$R\u0014\u0010&\u001a\u00020%8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b&\u0010'R \u0010)\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\f0(8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b)\u0010*R \u0010+\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u000e0(8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b+\u0010*¨\u0006/"}, d2 = {"Lcom/discord/user_search_worker/UserSearchWorker;", "", "Lcom/discord/user_search_worker/UserSearchUpdateUsersData;", "data", "", "mergeUsers", "Lcom/discord/user_search_worker/UserSearchQuerySetData;", "setNewQuery", "Lcom/discord/user_search_worker/UserSearchQueryClearData;", "clearQuery", "", "id", "Lcom/discord/user_search_worker/UserSearchTransformedUser;", "user", "Lcom/discord/user_search_worker/UserSearchQuerySetPayload;", "payload", "", "isValid", "needleBase", "haystackBase", "fuzzySearch", "", "score", "booster", "calculateScore", "uuid", "searchUsers", "dataJSON", "onMessage", "terminate", "Lkotlin/Function3;", "", "Lcom/discord/user_search_worker/UserSearchWorkerResult;", "onResults", "Lkotlin/jvm/functions/Function3;", "getOnResults", "()Lkotlin/jvm/functions/Function3;", "Lkotlinx/serialization/json/Json;", "json", "Lkotlinx/serialization/json/Json;", "", "users", "Ljava/util/Map;", "queries", "<init>", "(Lkotlin/jvm/functions/Function3;)V", "Companion", "user_search_worker_release"}, k = 1, mv = {1, 8, 0})
 
@@ -211,14 +211,14 @@ public final class UserSearchWorker {
         boolean z10;
         boolean z11;
         Comparator b10;
-        List u02;
-        List<UserSearchWorkerResult> v02;
+        List v02;
+        List<UserSearchWorkerResult> w02;
         List list;
-        List<String> P;
+        List<String> Q;
         double d10;
         Regex regex;
         Companion.LocalResult localResult;
-        List k10;
+        List l10;
         String str2;
         Boolean strict;
         String query = userSearchQuerySetPayload.getQuery();
@@ -240,7 +240,7 @@ public final class UserSearchWorker {
             this.onResults.invoke(arrayList, query, str);
             return;
         }
-        String c12 = Regex.f21514k.c(query);
+        String c12 = Regex.f21670k.c(query);
         f fVar = f.IGNORE_CASE;
         Regex regex2 = new Regex("^" + c12, fVar);
         Regex regex3 = new Regex(c12, fVar);
@@ -262,20 +262,20 @@ public final class UserSearchWorker {
                         str2 = null;
                     }
                     strArr[3] = nicknames.get(str2);
-                    list = j.k(strArr);
+                    list = j.l(strArr);
                 } else if (!z10) {
                     String[] strArr2 = new String[3];
                     strArr2[c10] = value.getUsername();
                     strArr2[c11] = value.getGlobalName();
                     strArr2[2] = value.getFriendNickname();
-                    k10 = j.k(strArr2);
-                    list = r.m0(k10, value.getNicknames().values());
+                    l10 = j.l(strArr2);
+                    list = r.n0(l10, value.getNicknames().values());
                 } else {
-                    throw new kf.q();
+                    throw new pf.q();
                 }
-                P = r.P(list);
+                Q = r.Q(list);
                 UserSearchWorkerResult userSearchWorkerResult = null;
-                for (String str3 : P) {
+                for (String str3 : Q) {
                     Double d11 = userSearchQuerySetPayload.getBoosters().get(key);
                     if (d11 != null) {
                         d10 = d11.doubleValue();
@@ -313,9 +313,9 @@ public final class UserSearchWorker {
             }
         }
         b10 = c.b(UserSearchWorker$searchUsers$sortedResults$1.INSTANCE, UserSearchWorker$searchUsers$sortedResults$2.INSTANCE);
-        u02 = r.u0(arrayList, b10);
-        v02 = r.v0(u02, userSearchQuerySetPayload.getLimit());
-        this.onResults.invoke(v02, query, str);
+        v02 = r.v0(arrayList, b10);
+        w02 = r.w0(v02, userSearchQuerySetPayload.getLimit());
+        this.onResults.invoke(w02, query, str);
     }
 
     private final void setNewQuery(UserSearchQuerySetData userSearchQuerySetData) {

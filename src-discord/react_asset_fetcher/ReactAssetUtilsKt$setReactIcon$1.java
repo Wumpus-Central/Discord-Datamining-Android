@@ -2,7 +2,6 @@ package com.discord.react_asset_fetcher;
 
 import android.graphics.drawable.Drawable;
 import com.google.android.material.button.MaterialButton;
-import kf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -11,9 +10,10 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineScope;
-import kotlinx.coroutines.a1;
+import kotlinx.coroutines.b1;
 import kotlinx.coroutines.j;
-import qf.d;
+import pf.t;
+import vf.d;
 
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -39,7 +39,7 @@ public final class ReactAssetUtilsKt$setReactIcon$1 extends k implements Functio
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ReactAssetUtilsKt$setReactIcon$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
+        return ((ReactAssetUtilsKt$setReactIcon$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21600a);
     }
 
     @Override 
@@ -52,7 +52,7 @@ public final class ReactAssetUtilsKt$setReactIcon$1 extends k implements Functio
             t.b(obj);
             MaterialButton materialButton2 = this.$this_setReactIcon;
             String str = this.$assetUrl;
-            CoroutineDispatcher b10 = a1.b();
+            CoroutineDispatcher b10 = b1.b();
             ReactAssetUtilsKt$setReactIcon$1$1$1 reactAssetUtilsKt$setReactIcon$1$1$1 = new ReactAssetUtilsKt$setReactIcon$1$1$1(materialButton2, str, null);
             this.L$0 = materialButton2;
             this.label = 1;
@@ -69,6 +69,6 @@ public final class ReactAssetUtilsKt$setReactIcon$1 extends k implements Functio
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
         materialButton.setIcon((Drawable) obj);
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 }

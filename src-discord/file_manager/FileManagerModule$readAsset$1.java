@@ -35,7 +35,7 @@ final class FileManagerModule$readAsset$1 extends k implements Function2<Corouti
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileManagerModule$readAsset$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
+        return ((FileManagerModule$readAsset$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21600a);
     }
 
     

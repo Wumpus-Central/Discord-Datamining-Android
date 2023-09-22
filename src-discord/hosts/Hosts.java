@@ -27,7 +27,7 @@ public final class Hosts {
     private final String requireHost(String str) {
         SharedPreferences sharedPreferences = prefs;
         if (sharedPreferences == null) {
-            q.z("prefs");
+            q.y("prefs");
             sharedPreferences = null;
         }
         String string = sharedPreferences.getString(str, null);
@@ -48,7 +48,7 @@ public final class Hosts {
     private final void setHost(String str, String str2) {
         SharedPreferences sharedPreferences = prefs;
         if (sharedPreferences == null) {
-            q.z("prefs");
+            q.y("prefs");
             sharedPreferences = null;
         }
         SharedPreferences.Editor editor = sharedPreferences.edit();

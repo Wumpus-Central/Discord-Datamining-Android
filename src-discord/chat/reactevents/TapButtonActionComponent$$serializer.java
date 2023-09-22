@@ -1,5 +1,9 @@
 package com.discord.chat.reactevents;
 
+import aj.a;
+import cj.a2;
+import cj.f0;
+import cj.x;
 import com.discord.primitives.ApplicationId;
 import com.discord.primitives.ApplicationId$$serializer;
 import com.discord.primitives.MessageId;
@@ -14,13 +18,9 @@ import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
 import kotlinx.serialization.internal.f;
-import ui.n;
-import vi.a;
-import xi.a2;
-import xi.f0;
-import xi.x;
+import zi.n;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/reactevents/TapButtonActionComponent.$serializer", "Lxi/f0;", "Lcom/discord/chat/reactevents/TapButtonActionComponent;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/reactevents/TapButtonActionComponent.$serializer", "Lcj/f0;", "Lcom/discord/chat/reactevents/TapButtonActionComponent;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
 
 public final class TapButtonActionComponent$$serializer implements f0<TapButtonActionComponent> {
     public static final TapButtonActionComponent$$serializer INSTANCE;
@@ -43,7 +43,7 @@ public final class TapButtonActionComponent$$serializer implements f0<TapButtonA
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, x.f30697a, a.u(a2.f30576a), ApplicationId$$serializer.INSTANCE, f.f21964c};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, x.f6359a, a.u(a2.f6238a), ApplicationId$$serializer.INSTANCE, f.f22121c};
     }
 
     @Override 
@@ -60,9 +60,9 @@ public final class TapButtonActionComponent$$serializer implements f0<TapButtonA
         if (b10.p()) {
             obj4 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
             d10 = b10.F(descriptor2, 1);
-            obj = b10.n(descriptor2, 2, a2.f30576a, null);
+            obj = b10.n(descriptor2, 2, a2.f6238a, null);
             obj3 = b10.y(descriptor2, 3, ApplicationId$$serializer.INSTANCE, null);
-            obj2 = b10.y(descriptor2, 4, f.f21964c, null);
+            obj2 = b10.y(descriptor2, 4, f.f22121c, null);
             i10 = 31;
         } else {
             double d11 = 0.0d;
@@ -83,13 +83,13 @@ public final class TapButtonActionComponent$$serializer implements f0<TapButtonA
                     d11 = b10.F(descriptor2, 1);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    obj5 = b10.n(descriptor2, 2, a2.f30576a, obj5);
+                    obj5 = b10.n(descriptor2, 2, a2.f6238a, obj5);
                     i11 |= 4;
                 } else if (o10 == 3) {
                     obj6 = b10.y(descriptor2, 3, ApplicationId$$serializer.INSTANCE, obj6);
                     i11 |= 8;
                 } else if (o10 == 4) {
-                    obj7 = b10.y(descriptor2, 4, f.f21964c, obj7);
+                    obj7 = b10.y(descriptor2, 4, f.f22121c, obj7);
                     i11 |= 16;
                 } else {
                     throw new n(o10);
@@ -103,7 +103,7 @@ public final class TapButtonActionComponent$$serializer implements f0<TapButtonA
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj4;
-        return new TapButtonActionComponent(i10, messageId != null ? messageId.m639unboximpl() : null, d10, (String) obj, (ApplicationId) obj3, (int[]) obj2, null, null);
+        return new TapButtonActionComponent(i10, messageId != null ? messageId.m644unboximpl() : null, d10, (String) obj, (ApplicationId) obj3, (int[]) obj2, null, null);
     }
 
     @Override 

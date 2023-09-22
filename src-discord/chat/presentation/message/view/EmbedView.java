@@ -324,7 +324,7 @@ public final class EmbedView extends FrameLayout {
         q.h(onTitleLinkClicked, "$onTitleLinkClicked");
         q.h(messageId, "$messageId");
         q.h(url, "$url");
-        MessageId messageId2 = MessageId.m631boximpl(messageId);
+        MessageId messageId2 = MessageId.m636boximpl(messageId);
         if (draweeSpanStringBuilder != null) {
             str = draweeSpanStringBuilder.toString();
         } else {
@@ -341,7 +341,7 @@ public final class EmbedView extends FrameLayout {
         q.h(onAuthorLinkClicked, "$onAuthorLinkClicked");
         q.h(messageId, "$messageId");
         q.h(embed, "$embed");
-        onAuthorLinkClicked.invoke(MessageId.m631boximpl(messageId), embed.getAuthor().getUrl(), embed.getAuthor().getName());
+        onAuthorLinkClicked.invoke(MessageId.m636boximpl(messageId), embed.getAuthor().getUrl(), embed.getAuthor().getName());
     }
 
     
@@ -362,7 +362,7 @@ public final class EmbedView extends FrameLayout {
     }
 
     
-    private final void m324setFieldsthlxGE(List<EmbedField> list, String str, boolean z10, boolean z11, boolean z12, Function2<? super MessageId, ? super LinkContentNode, Unit> function2, Function1<? super LinkContentNode, Unit> function1, Function1<? super CharSequence, Unit> function12, Function0<Unit> function0, Function1<? super EmojiContentNode, Unit> function13, Function3<? super String, ? super String, ? super String, Unit> function3, Function2<? super String, ? super String, Unit> function22) {
+    private final void m329setFieldsthlxGE(List<EmbedField> list, String str, boolean z10, boolean z11, boolean z12, Function2<? super MessageId, ? super LinkContentNode, Unit> function2, Function1<? super LinkContentNode, Unit> function1, Function1<? super CharSequence, Unit> function12, Function0<Unit> function0, Function1<? super EmojiContentNode, Unit> function13, Function3<? super String, ? super String, ? super String, Unit> function3, Function2<? super String, ? super String, Unit> function22) {
         EmbedView$setFields$onLinkClickedWithMessageId$1 embedView$setFields$onLinkClickedWithMessageId$1;
         String str2;
         String str3;
@@ -381,7 +381,7 @@ public final class EmbedView extends FrameLayout {
         for (Object obj : list) {
             i10++;
             if (i10 < 0) {
-                j.r();
+                j.s();
             }
             EmbedField embedField = (EmbedField) obj;
             View childAt = setFields_thlxG_E$lambda$22.getChildAt(i10);
@@ -482,7 +482,7 @@ public final class EmbedView extends FrameLayout {
         } else {
             z10 = false;
         }
-        MediaView.setMediaData$default(embedViewResizingMediaView, mediaSource, false, false, false, null, false, null, null, false, z10, false, 0, null, null, null, null, null, 130558, null);
+        MediaView.setMediaData$default(embedViewResizingMediaView, mediaSource, false, false, false, null, false, null, null, false, z10, false, 0, new EmbedView$setMediaEmbed$1(this), null, null, null, null, 126462, null);
     }
 
     private final void setProvider(final CharSequence charSequence, Integer num, final Function1<? super CharSequence, Unit> function1) {
@@ -581,11 +581,11 @@ public final class EmbedView extends FrameLayout {
     }
 
     
-    public final void m325setEmbedlKx2FiY(final Embed embed, final String messageId, int i10, int i11, int i12, boolean z10, boolean z11, boolean z12, boolean z13, final Function3<? super MessageId, ? super String, ? super String, Unit> onTitleLinkClicked, final Function3<? super MessageId, ? super String, ? super String, Unit> onAuthorLinkClicked, Function2<? super Double, ? super Integer, Unit> onMediaClicked, View.OnLongClickListener onLongClickListener, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, Function1<? super LinkContentNode, Unit> onLongTapLinkNode, Function1<? super CharSequence, Unit> onTapCopyText, Function0<Unit> onTapSpoiler, Function1<? super EmojiContentNode, Unit> onTapEmoji, Function3<? super String, ? super String, ? super String, Unit> onTapChannel, Function2<? super String, ? super String, Unit> onTapMention, Function1<? super CommandMentionContentNode, Unit> onTapCommand, SpoilerConfig spoilerConfig, double d10) {
+    public final void m330setEmbedlKx2FiY(final Embed embed, final String messageId, int i10, int i11, int i12, boolean z10, boolean z11, boolean z12, boolean z13, final Function3<? super MessageId, ? super String, ? super String, Unit> onTitleLinkClicked, final Function3<? super MessageId, ? super String, ? super String, Unit> onAuthorLinkClicked, Function2<? super Double, ? super Integer, Unit> onMediaClicked, View.OnLongClickListener onLongClickListener, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, Function1<? super LinkContentNode, Unit> onLongTapLinkNode, Function1<? super CharSequence, Unit> onTapCopyText, Function0<Unit> onTapSpoiler, Function1<? super EmojiContentNode, Unit> onTapEmoji, Function3<? super String, ? super String, ? super String, Unit> onTapChannel, Function2<? super String, ? super String, Unit> onTapMention, Function1<? super CommandMentionContentNode, Unit> onTapCommand, SpoilerConfig spoilerConfig, double d10) {
         final DraweeSpanStringBuilder draweeSpanStringBuilder;
         Integer num;
         DraweeSpanStringBuilder draweeSpanStringBuilder2;
-        List J0;
+        List K0;
         q.h(embed, "embed");
         q.h(messageId, "messageId");
         q.h(onTitleLinkClicked, "onTitleLinkClicked");
@@ -689,9 +689,9 @@ public final class EmbedView extends FrameLayout {
             }, onTapCopyText);
             List<EmbedField> fields = embed.getFields();
             if (fields == null) {
-                fields = j.h();
+                fields = j.i();
             }
-            m324setFieldsthlxGE(fields, messageId, z11, z12, z13, onLinkClicked, onLongTapLinkNode, onTapCopyText, onTapSpoiler, onTapEmoji, onTapChannel, onTapMention);
+            m329setFieldsthlxGE(fields, messageId, z11, z12, z13, onLinkClicked, onLongTapLinkNode, onTapCopyText, onTapSpoiler, onTapEmoji, onTapChannel, onTapMention);
             EmbedFooter footer = embed.getFooter();
             String imageUrl2 = footer != null ? footer.getImageUrl() : null;
             EmbedFooter footer2 = embed.getFooter();
@@ -710,12 +710,12 @@ public final class EmbedView extends FrameLayout {
                 q.g(constraintLayout2, "binding.inlineMediaContainer");
                 MediaContainingViewResizer.resizeLayoutParams$default(mediaContainingViewResizer, constraintLayout2, widthForEmbedContent, i13, widthForEmbedContent, i13, null, 16, null);
                 EmbedViewBinding embedViewBinding = this.binding;
-                J0 = r.J0(imageMediaSources, new EmbedViewResizingMediaView[]{embedViewBinding.inlineMediaView, embedViewBinding.inlineMediaView2, embedViewBinding.inlineMediaView3, embedViewBinding.inlineMediaView4});
+                K0 = r.K0(imageMediaSources, new EmbedViewResizingMediaView[]{embedViewBinding.inlineMediaView, embedViewBinding.inlineMediaView2, embedViewBinding.inlineMediaView3, embedViewBinding.inlineMediaView4});
                 int i14 = 0;
-                for (Object obj : J0) {
+                for (Object obj : K0) {
                     i14++;
                     if (i14 < 0) {
-                        j.r();
+                        j.s();
                     }
                     Pair pair = (Pair) obj;
                     EmbedViewResizingMediaView mediaView = (EmbedViewResizingMediaView) pair.b();

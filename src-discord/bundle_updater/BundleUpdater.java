@@ -22,10 +22,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
-import kf.n;
-import kf.s;
-import kf.t;
-import kf.x;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Pair;
@@ -39,16 +35,20 @@ import kotlin.text.o;
 import kotlin.text.p;
 import kotlin.time.Duration;
 import kotlin.time.TimeMark;
-import lf.v;
 import okhttp3.Cookie;
 import okhttp3.Headers;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
-import pi.f;
-import uf.b;
-import uf.c;
+import pf.n;
+import pf.s;
+import pf.t;
+import pf.x;
+import qf.v;
+import ui.f;
+import zf.b;
+import zf.c;
 
-@Metadata(d1 = {"\u0000Ö\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0011\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b \n\u0002\u0018\u0002\n\u0002\b\u0014\u0018\u0000 \u0093\u00012\u00020\u0001:\u0014\u0093\u0001\u0094\u0001\u0095\u0001\u0096\u0001\u0097\u0001\u0098\u0001\u0099\u0001\u009a\u0001\u009b\u0001\u009c\u0001B-\b\u0002\u0012\u0006\u0010=\u001a\u00020<\u0012\u0006\u0010?\u001a\u00020\u0005\u0012\u0006\u0010B\u001a\u00020A\u0012\b\b\u0002\u0010E\u001a\u00020D¢\u0006\u0006\b\u0091\u0001\u0010\u0092\u0001J\u0018\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u0002H\u0002J\u0010\u0010\u0007\u001a\u00020\u00052\u0006\u0010\u0004\u001a\u00020\u0002H\u0002J\u0018\u0010\u000b\u001a\u00020\n2\u0006\u0010\b\u001a\u00020\u00052\u0006\u0010\t\u001a\u00020\u0005H\u0002J\b\u0010\r\u001a\u00020\fH\u0002J\"\u0010\u0012\u001a\u00020\f2\b\u0010\u000e\u001a\u0004\u0018\u00010\u00022\u0006\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0011\u001a\u00020\u0002H\u0002Jn\u0010!\u001a\b\u0012\u0004\u0012\u00020\u001e0\u001d2\u0006\u0010\u0013\u001a\u00020\u00022\u001c\b\u0002\u0010\u0016\u001a\u0016\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00020\u0015\u0018\u00010\u00142\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u00182\u0006\u0010\u001a\u001a\u00020\u00052\b\b\u0002\u0010\u001c\u001a\u00020\u001bH\u0002ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0004\b\u001f\u0010 J\f\u0010\"\u001a\u00020\u0005*\u00020\u0005H\u0002J\b\u0010#\u001a\u00020\nH\u0002J'\u0010&\u001a\u00020\n2\u0016\u0010%\u001a\f\u0012\b\b\u0001\u0012\u0004\u0018\u00010\u00020$\"\u0004\u0018\u00010\u0002H\u0002¢\u0006\u0004\b&\u0010'J\u001c\u0010+\u001a\u00020\f2\u0006\u0010)\u001a\u00020(2\n\b\u0002\u0010*\u001a\u0004\u0018\u00010\u0002H\u0002JK\u00102\u001a\u00020\n2\u0006\u0010)\u001a\u00020,2\u0006\u0010\u0013\u001a\u00020\u00022\u0006\u0010.\u001a\u00020-2\n\b\u0002\u00100\u001a\u0004\u0018\u00010/2\n\b\u0002\u00101\u001a\u0004\u0018\u00010\u001b2\n\b\u0002\u0010*\u001a\u0004\u0018\u00010\u0002H\u0002¢\u0006\u0004\b2\u00103J\u0010\u00104\u001a\u00020\n2\u0006\u0010)\u001a\u00020\fH\u0002J\u0006\u00106\u001a\u000205J&\u0010;\u001a\u0006\u0012\u0002\b\u00030:2\b\b\u0002\u00107\u001a\u00020\u001b2\u0010\b\u0002\u00109\u001a\n\u0012\u0004\u0012\u00020\n\u0018\u000108R\u0014\u0010=\u001a\u00020<8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b=\u0010>R\u0014\u0010?\u001a\u00020\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b?\u0010@R\u0014\u0010B\u001a\u00020A8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bB\u0010CR\u0014\u0010E\u001a\u00020D8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bE\u0010FR#\u0010M\u001a\n H*\u0004\u0018\u00010G0G8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bI\u0010J\u001a\u0004\bK\u0010LR\u001b\u0010R\u001a\u00020N8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bO\u0010J\u001a\u0004\bP\u0010QR\u001b\u0010V\u001a\u00020\u00058FX\u0086\u0084\u0002¢\u0006\f\n\u0004\bS\u0010J\u001a\u0004\bT\u0010UR\u0016\u0010W\u001a\u00020/8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bW\u0010XR$\u0010[\u001a\u00020Y2\u0006\u0010Z\u001a\u00020Y8\u0006@BX\u0086\u000e¢\u0006\f\n\u0004\b[\u0010\\\u001a\u0004\b[\u0010]R\u001d\u0010`\u001a\b\u0012\u0004\u0012\u00020_0^8\u0006¢\u0006\f\n\u0004\b`\u0010a\u001a\u0004\bb\u0010cR\u001e\u0010d\u001a\u0004\u0018\u00010-8\u0002@\u0002X\u0082\u000e¢\u0006\f\n\u0004\bd\u0010e\u0012\u0004\bf\u0010gR0\u0010i\u001a\u0010\u0012\u0004\u0012\u00020Y\u0012\u0004\u0012\u00020\n\u0018\u00010h8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\bi\u0010j\u001a\u0004\bk\u0010l\"\u0004\bm\u0010nR6\u0010o\u001a\u0016\u0012\n\u0012\b\u0012\u0004\u0012\u00020_0\u0014\u0012\u0004\u0012\u00020\n\u0018\u00010h8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\bo\u0010j\u001a\u0004\bp\u0010l\"\u0004\bq\u0010nR\u0014\u0010t\u001a\u00020\u00028BX\u0082\u0004¢\u0006\u0006\u001a\u0004\br\u0010sR\u0014\u0010v\u001a\u00020\u00028BX\u0082\u0004¢\u0006\u0006\u001a\u0004\bu\u0010sR$\u0010{\u001a\u00020\u00022\u0006\u0010w\u001a\u00020\u00028F@BX\u0086\u000e¢\u0006\f\u001a\u0004\bx\u0010s\"\u0004\by\u0010zR(\u0010~\u001a\u0004\u0018\u00010\u00022\b\u0010w\u001a\u0004\u0018\u00010\u00028B@BX\u0082\u000e¢\u0006\f\u001a\u0004\b|\u0010s\"\u0004\b}\u0010zR&\u0010\u0081\u0001\u001a\u00020\u00022\u0006\u0010w\u001a\u00020\u00028F@BX\u0086\u000e¢\u0006\r\u001a\u0004\b\u007f\u0010s\"\u0005\b\u0080\u0001\u0010zR\u0016\u0010\u0083\u0001\u001a\u00020Y8BX\u0082\u0004¢\u0006\u0007\u001a\u0005\b\u0082\u0001\u0010]R\u0017\u0010\u000e\u001a\u0004\u0018\u00010\u00028BX\u0082\u0004¢\u0006\u0007\u001a\u0005\b\u0084\u0001\u0010sR(\u0010\u0088\u0001\u001a\u00020\u00022\u0007\u0010\u0085\u0001\u001a\u00020\u00028F@FX\u0086\u000e¢\u0006\u000e\u001a\u0005\b\u0086\u0001\u0010s\"\u0005\b\u0087\u0001\u0010zR\u0017\u0010\u008c\u0001\u001a\u0005\u0018\u00010\u0089\u00018F¢\u0006\b\u001a\u0006\b\u008a\u0001\u0010\u008b\u0001R,\u0010\u0090\u0001\u001a\u0004\u0018\u00010\u00052\b\u0010w\u001a\u0004\u0018\u00010\u00058F@FX\u0086\u000e¢\u0006\u000f\u001a\u0005\b\u008d\u0001\u0010U\"\u0006\b\u008e\u0001\u0010\u008f\u0001\u0082\u0002\u000f\n\u0002\b!\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006\u009d\u0001"}, d2 = {"Lcom/discord/bundle_updater/BundleUpdater;", "", "", "commit", JSStackTrace.FILE_KEY, "Ljava/io/File;", "otaFile", "otaTempFile", "src", "dst", "", "moveFile", "Lcom/discord/bundle_updater/BundleUpdater$OtaCheckAttempt;", "attemptOtaUpdate", "existingOtaCommit", "Lcom/discord/bundle_updater/AppManifest;", "newManifest", "newOtaCommit", "downloadOtaFiles", "url", "", "Lkotlin/Pair;", "extraHeaders", "hash", "Lcom/discord/bundle_updater/BundleUpdater$Patch;", "patch", "destinationFile", "", "attempt", "Lkf/s;", "Lokhttp3/Headers;", "downloadSingleFile-hUnOzRk", "(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Lcom/discord/bundle_updater/BundleUpdater$Patch;Ljava/io/File;I)Ljava/lang/Object;", "downloadSingleFile", "ensureEmptyFile", "validateBuildOverrideCookie", "", "knownOtaCommits", "deleteUnknownOtas", "([Ljava/lang/String;)V", "Lcom/discord/bundle_updater/BundleUpdater$OtaCheckAttemptResult;", "result", "error", "createOtaCheckAttempt", "Lcom/discord/bundle_updater/BundleUpdater$OtaAssetDownloadAttemptResult;", "Lkotlin/time/TimeMark;", "startMark", "", "bytesReceived", "statusCode", "trackAssetDownload", "(Lcom/discord/bundle_updater/BundleUpdater$OtaAssetDownloadAttemptResult;Ljava/lang/String;Lkotlin/time/TimeMark;Ljava/lang/Long;Ljava/lang/Integer;Ljava/lang/String;)V", "trackCheckAttempt", "Lcom/discord/bundle_updater/BundleUpdater$ManifestInfo;", "manifestInfo", "delaySeconds", "Lkotlin/Function0;", "onComplete", "Ljava/util/concurrent/Future;", "checkForUpdate", "Landroid/content/SharedPreferences;", "sharedPreferences", "Landroid/content/SharedPreferences;", "filesDirectory", "Ljava/io/File;", "Landroid/content/res/AssetManager;", "assetManager", "Landroid/content/res/AssetManager;", "Ljava/util/concurrent/ExecutorService;", "executor", "Ljava/util/concurrent/ExecutorService;", "Landroid/webkit/CookieManager;", "kotlin.jvm.PlatformType", "cookieManager$delegate", "Lkotlin/Lazy;", "getCookieManager", "()Landroid/webkit/CookieManager;", "cookieManager", "Lokhttp3/OkHttpClient;", "client$delegate", "getClient", "()Lokhttp3/OkHttpClient;", "client", "otasRootDirectory$delegate", "getOtasRootDirectory", "()Ljava/io/File;", "otasRootDirectory", "totalBytesReceived", "J", "", "<set-?>", "isVersionRequired", "Z", "()Z", "", "Lcom/discord/bundle_updater/BundleUpdater$OtaMetric;", "otaMetrics", "Ljava/util/List;", "getOtaMetrics", "()Ljava/util/List;", "otaCheckTimeMark", "Lkotlin/time/TimeMark;", "getOtaCheckTimeMark$annotations", "()V", "Lkotlin/Function1;", "onBundleDownloadedListener", "Lkotlin/jvm/functions/Function1;", "getOnBundleDownloadedListener", "()Lkotlin/jvm/functions/Function1;", "setOnBundleDownloadedListener", "(Lkotlin/jvm/functions/Function1;)V", "onOtaUpdateCheckedListener", "getOnOtaUpdateCheckedListener", "setOnOtaUpdateCheckedListener", "getVersion", "()Ljava/lang/String;", "version", "getManifestURL", "manifestURL", "value", "getManifestETag", "setManifestETag", "(Ljava/lang/String;)V", "manifestETag", "getInProgressOtaCommit", "setInProgressOtaCommit", "inProgressOtaCommit", "getOtaVersion", "setOtaVersion", "otaVersion", "getValidOTAVersion", "validOTAVersion", "getExistingOtaCommit", "cookieHeader", "getBuildOverrideCookieHeader", "setBuildOverrideCookieHeader", "buildOverrideCookieHeader", "Lokhttp3/Cookie;", "getBuildOverrideCookie", "()Lokhttp3/Cookie;", "buildOverrideCookie", "getBundleLocation", "setBundleLocation", "(Ljava/io/File;)V", "bundleLocation", "<init>", "(Landroid/content/SharedPreferences;Ljava/io/File;Landroid/content/res/AssetManager;Ljava/util/concurrent/ExecutorService;)V", "Companion", "HttpException", "ManifestInfo", "MaxDownloadAttemptsException", "OtaAssetDownloadAttempt", "OtaAssetDownloadAttemptResult", "OtaCheckAttempt", "OtaCheckAttemptResult", "OtaMetric", "Patch", "bundle_updater_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u0000Ö\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0011\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b \n\u0002\u0018\u0002\n\u0002\b\u0014\u0018\u0000 \u0093\u00012\u00020\u0001:\u0014\u0093\u0001\u0094\u0001\u0095\u0001\u0096\u0001\u0097\u0001\u0098\u0001\u0099\u0001\u009a\u0001\u009b\u0001\u009c\u0001B-\b\u0002\u0012\u0006\u0010=\u001a\u00020<\u0012\u0006\u0010?\u001a\u00020\u0005\u0012\u0006\u0010B\u001a\u00020A\u0012\b\b\u0002\u0010E\u001a\u00020D¢\u0006\u0006\b\u0091\u0001\u0010\u0092\u0001J\u0018\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u0002H\u0002J\u0010\u0010\u0007\u001a\u00020\u00052\u0006\u0010\u0004\u001a\u00020\u0002H\u0002J\u0018\u0010\u000b\u001a\u00020\n2\u0006\u0010\b\u001a\u00020\u00052\u0006\u0010\t\u001a\u00020\u0005H\u0002J\b\u0010\r\u001a\u00020\fH\u0002J\"\u0010\u0012\u001a\u00020\f2\b\u0010\u000e\u001a\u0004\u0018\u00010\u00022\u0006\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0011\u001a\u00020\u0002H\u0002Jn\u0010!\u001a\b\u0012\u0004\u0012\u00020\u001e0\u001d2\u0006\u0010\u0013\u001a\u00020\u00022\u001c\b\u0002\u0010\u0016\u001a\u0016\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00020\u0015\u0018\u00010\u00142\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u00182\u0006\u0010\u001a\u001a\u00020\u00052\b\b\u0002\u0010\u001c\u001a\u00020\u001bH\u0002ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0004\b\u001f\u0010 J\f\u0010\"\u001a\u00020\u0005*\u00020\u0005H\u0002J\b\u0010#\u001a\u00020\nH\u0002J'\u0010&\u001a\u00020\n2\u0016\u0010%\u001a\f\u0012\b\b\u0001\u0012\u0004\u0018\u00010\u00020$\"\u0004\u0018\u00010\u0002H\u0002¢\u0006\u0004\b&\u0010'J\u001c\u0010+\u001a\u00020\f2\u0006\u0010)\u001a\u00020(2\n\b\u0002\u0010*\u001a\u0004\u0018\u00010\u0002H\u0002JK\u00102\u001a\u00020\n2\u0006\u0010)\u001a\u00020,2\u0006\u0010\u0013\u001a\u00020\u00022\u0006\u0010.\u001a\u00020-2\n\b\u0002\u00100\u001a\u0004\u0018\u00010/2\n\b\u0002\u00101\u001a\u0004\u0018\u00010\u001b2\n\b\u0002\u0010*\u001a\u0004\u0018\u00010\u0002H\u0002¢\u0006\u0004\b2\u00103J\u0010\u00104\u001a\u00020\n2\u0006\u0010)\u001a\u00020\fH\u0002J\u0006\u00106\u001a\u000205J&\u0010;\u001a\u0006\u0012\u0002\b\u00030:2\b\b\u0002\u00107\u001a\u00020\u001b2\u0010\b\u0002\u00109\u001a\n\u0012\u0004\u0012\u00020\n\u0018\u000108R\u0014\u0010=\u001a\u00020<8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b=\u0010>R\u0014\u0010?\u001a\u00020\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b?\u0010@R\u0014\u0010B\u001a\u00020A8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bB\u0010CR\u0014\u0010E\u001a\u00020D8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bE\u0010FR#\u0010M\u001a\n H*\u0004\u0018\u00010G0G8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bI\u0010J\u001a\u0004\bK\u0010LR\u001b\u0010R\u001a\u00020N8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bO\u0010J\u001a\u0004\bP\u0010QR\u001b\u0010V\u001a\u00020\u00058FX\u0086\u0084\u0002¢\u0006\f\n\u0004\bS\u0010J\u001a\u0004\bT\u0010UR\u0016\u0010W\u001a\u00020/8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bW\u0010XR$\u0010[\u001a\u00020Y2\u0006\u0010Z\u001a\u00020Y8\u0006@BX\u0086\u000e¢\u0006\f\n\u0004\b[\u0010\\\u001a\u0004\b[\u0010]R\u001d\u0010`\u001a\b\u0012\u0004\u0012\u00020_0^8\u0006¢\u0006\f\n\u0004\b`\u0010a\u001a\u0004\bb\u0010cR\u001e\u0010d\u001a\u0004\u0018\u00010-8\u0002@\u0002X\u0082\u000e¢\u0006\f\n\u0004\bd\u0010e\u0012\u0004\bf\u0010gR0\u0010i\u001a\u0010\u0012\u0004\u0012\u00020Y\u0012\u0004\u0012\u00020\n\u0018\u00010h8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\bi\u0010j\u001a\u0004\bk\u0010l\"\u0004\bm\u0010nR6\u0010o\u001a\u0016\u0012\n\u0012\b\u0012\u0004\u0012\u00020_0\u0014\u0012\u0004\u0012\u00020\n\u0018\u00010h8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\bo\u0010j\u001a\u0004\bp\u0010l\"\u0004\bq\u0010nR\u0014\u0010t\u001a\u00020\u00028BX\u0082\u0004¢\u0006\u0006\u001a\u0004\br\u0010sR\u0014\u0010v\u001a\u00020\u00028BX\u0082\u0004¢\u0006\u0006\u001a\u0004\bu\u0010sR$\u0010{\u001a\u00020\u00022\u0006\u0010w\u001a\u00020\u00028F@BX\u0086\u000e¢\u0006\f\u001a\u0004\bx\u0010s\"\u0004\by\u0010zR(\u0010~\u001a\u0004\u0018\u00010\u00022\b\u0010w\u001a\u0004\u0018\u00010\u00028B@BX\u0082\u000e¢\u0006\f\u001a\u0004\b|\u0010s\"\u0004\b}\u0010zR&\u0010\u0081\u0001\u001a\u00020\u00022\u0006\u0010w\u001a\u00020\u00028F@BX\u0086\u000e¢\u0006\r\u001a\u0004\b\u007f\u0010s\"\u0005\b\u0080\u0001\u0010zR\u0016\u0010\u0083\u0001\u001a\u00020Y8BX\u0082\u0004¢\u0006\u0007\u001a\u0005\b\u0082\u0001\u0010]R\u0017\u0010\u000e\u001a\u0004\u0018\u00010\u00028BX\u0082\u0004¢\u0006\u0007\u001a\u0005\b\u0084\u0001\u0010sR(\u0010\u0088\u0001\u001a\u00020\u00022\u0007\u0010\u0085\u0001\u001a\u00020\u00028F@FX\u0086\u000e¢\u0006\u000e\u001a\u0005\b\u0086\u0001\u0010s\"\u0005\b\u0087\u0001\u0010zR\u0017\u0010\u008c\u0001\u001a\u0005\u0018\u00010\u0089\u00018F¢\u0006\b\u001a\u0006\b\u008a\u0001\u0010\u008b\u0001R,\u0010\u0090\u0001\u001a\u0004\u0018\u00010\u00052\b\u0010w\u001a\u0004\u0018\u00010\u00058F@FX\u0086\u000e¢\u0006\u000f\u001a\u0005\b\u008d\u0001\u0010U\"\u0006\b\u008e\u0001\u0010\u008f\u0001\u0082\u0002\u000f\n\u0002\b!\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006\u009d\u0001"}, d2 = {"Lcom/discord/bundle_updater/BundleUpdater;", "", "", "commit", JSStackTrace.FILE_KEY, "Ljava/io/File;", "otaFile", "otaTempFile", "src", "dst", "", "moveFile", "Lcom/discord/bundle_updater/BundleUpdater$OtaCheckAttempt;", "attemptOtaUpdate", "existingOtaCommit", "Lcom/discord/bundle_updater/AppManifest;", "newManifest", "newOtaCommit", "downloadOtaFiles", "url", "", "Lkotlin/Pair;", "extraHeaders", "hash", "Lcom/discord/bundle_updater/BundleUpdater$Patch;", "patch", "destinationFile", "", "attempt", "Lpf/s;", "Lokhttp3/Headers;", "downloadSingleFile-hUnOzRk", "(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Lcom/discord/bundle_updater/BundleUpdater$Patch;Ljava/io/File;I)Ljava/lang/Object;", "downloadSingleFile", "ensureEmptyFile", "validateBuildOverrideCookie", "", "knownOtaCommits", "deleteUnknownOtas", "([Ljava/lang/String;)V", "Lcom/discord/bundle_updater/BundleUpdater$OtaCheckAttemptResult;", "result", "error", "createOtaCheckAttempt", "Lcom/discord/bundle_updater/BundleUpdater$OtaAssetDownloadAttemptResult;", "Lkotlin/time/TimeMark;", "startMark", "", "bytesReceived", "statusCode", "trackAssetDownload", "(Lcom/discord/bundle_updater/BundleUpdater$OtaAssetDownloadAttemptResult;Ljava/lang/String;Lkotlin/time/TimeMark;Ljava/lang/Long;Ljava/lang/Integer;Ljava/lang/String;)V", "trackCheckAttempt", "Lcom/discord/bundle_updater/BundleUpdater$ManifestInfo;", "manifestInfo", "delaySeconds", "Lkotlin/Function0;", "onComplete", "Ljava/util/concurrent/Future;", "checkForUpdate", "Landroid/content/SharedPreferences;", "sharedPreferences", "Landroid/content/SharedPreferences;", "filesDirectory", "Ljava/io/File;", "Landroid/content/res/AssetManager;", "assetManager", "Landroid/content/res/AssetManager;", "Ljava/util/concurrent/ExecutorService;", "executor", "Ljava/util/concurrent/ExecutorService;", "Landroid/webkit/CookieManager;", "kotlin.jvm.PlatformType", "cookieManager$delegate", "Lkotlin/Lazy;", "getCookieManager", "()Landroid/webkit/CookieManager;", "cookieManager", "Lokhttp3/OkHttpClient;", "client$delegate", "getClient", "()Lokhttp3/OkHttpClient;", "client", "otasRootDirectory$delegate", "getOtasRootDirectory", "()Ljava/io/File;", "otasRootDirectory", "totalBytesReceived", "J", "", "<set-?>", "isVersionRequired", "Z", "()Z", "", "Lcom/discord/bundle_updater/BundleUpdater$OtaMetric;", "otaMetrics", "Ljava/util/List;", "getOtaMetrics", "()Ljava/util/List;", "otaCheckTimeMark", "Lkotlin/time/TimeMark;", "getOtaCheckTimeMark$annotations", "()V", "Lkotlin/Function1;", "onBundleDownloadedListener", "Lkotlin/jvm/functions/Function1;", "getOnBundleDownloadedListener", "()Lkotlin/jvm/functions/Function1;", "setOnBundleDownloadedListener", "(Lkotlin/jvm/functions/Function1;)V", "onOtaUpdateCheckedListener", "getOnOtaUpdateCheckedListener", "setOnOtaUpdateCheckedListener", "getVersion", "()Ljava/lang/String;", "version", "getManifestURL", "manifestURL", "value", "getManifestETag", "setManifestETag", "(Ljava/lang/String;)V", "manifestETag", "getInProgressOtaCommit", "setInProgressOtaCommit", "inProgressOtaCommit", "getOtaVersion", "setOtaVersion", "otaVersion", "getValidOTAVersion", "validOTAVersion", "getExistingOtaCommit", "cookieHeader", "getBuildOverrideCookieHeader", "setBuildOverrideCookieHeader", "buildOverrideCookieHeader", "Lokhttp3/Cookie;", "getBuildOverrideCookie", "()Lokhttp3/Cookie;", "buildOverrideCookie", "getBundleLocation", "setBundleLocation", "(Ljava/io/File;)V", "bundleLocation", "<init>", "(Landroid/content/SharedPreferences;Ljava/io/File;Landroid/content/res/AssetManager;Ljava/util/concurrent/ExecutorService;)V", "Companion", "HttpException", "ManifestInfo", "MaxDownloadAttemptsException", "OtaAssetDownloadAttempt", "OtaAssetDownloadAttemptResult", "OtaCheckAttempt", "OtaCheckAttemptResult", "OtaMetric", "Patch", "bundle_updater_release"}, k = 1, mv = {1, 8, 0})
 
 public final class BundleUpdater {
     public static final String ANDROID_JS_BUNDLE_ASSET_NAME = "index.android.bundle";
@@ -104,7 +104,7 @@ public final class BundleUpdater {
             if (bundleUpdater != null) {
                 return bundleUpdater;
             }
-            q.z("updater");
+            q.y("updater");
             return null;
         }
     }
@@ -318,21 +318,21 @@ public final class BundleUpdater {
     }
 
     private BundleUpdater(SharedPreferences sharedPreferences, File file, AssetManager assetManager, ExecutorService executorService) {
-        Lazy b10;
-        Lazy b11;
-        Lazy b12;
+        Lazy a10;
+        Lazy a11;
+        Lazy a12;
         this.sharedPreferences = sharedPreferences;
         this.filesDirectory = file;
         this.assetManager = assetManager;
         this.executor = executorService;
-        b10 = n.b(BundleUpdater$cookieManager$2.INSTANCE);
-        this.cookieManager$delegate = b10;
-        b11 = n.b(new BundleUpdater$client$2(this));
-        this.client$delegate = b11;
-        b12 = n.b(new BundleUpdater$otasRootDirectory$2(this));
-        this.otasRootDirectory$delegate = b12;
+        a10 = n.a(BundleUpdater$cookieManager$2.INSTANCE);
+        this.cookieManager$delegate = a10;
+        a11 = n.a(new BundleUpdater$client$2(this));
+        this.client$delegate = a11;
+        a12 = n.a(new BundleUpdater$otasRootDirectory$2(this));
+        this.otasRootDirectory$delegate = a12;
         this.otaMetrics = new ArrayList();
-        this.otaCheckTimeMark = f.a.b(f.f26328a.a());
+        this.otaCheckTimeMark = f.a.b(f.f29329a.a());
     }
 
     private final OtaCheckAttempt attemptOtaUpdate() {
@@ -362,7 +362,7 @@ public final class BundleUpdater {
         } else {
             list = null;
         }
-        Object obj = m2downloadSingleFilehUnOzRk$default(this, manifestURL, list, null, null, otaTempFile, 0, 44, null);
+        Object obj = m1downloadSingleFilehUnOzRk$default(this, manifestURL, list, null, null, otaTempFile, 0, 44, null);
         Throwable e10 = s.e(obj);
         String str = "";
         if (e10 == null) {
@@ -422,7 +422,7 @@ public final class BundleUpdater {
         Thread.sleep(i10 * 1000);
         try {
             this$0.otaMetrics.clear();
-            this$0.otaCheckTimeMark = f.a.b(f.f26328a.a());
+            this$0.otaCheckTimeMark = f.a.b(f.f29329a.a());
             this$0.totalBytesReceived = 0L;
             OtaCheckAttempt attemptOtaUpdate = this$0.attemptOtaUpdate();
             if (function0 != null) {
@@ -470,7 +470,7 @@ public final class BundleUpdater {
                 if (!y10) {
                     CrashReporting.addBreadcrumb$default(CrashReporting.INSTANCE, TAG + " - Deleting outdated/unknown OTA at " + child.getName() + "...", null, null, 6, null);
                     q.g(child, "child");
-                    uf.n.i(child);
+                    zf.n.i(child);
                 }
             }
         }
@@ -577,11 +577,11 @@ public final class BundleUpdater {
         int i10 = WhenMappings.$EnumSwitchMapping$1[assetStatus.ordinal()];
         if (i10 == 1) {
             q.e(str);
-            uf.n.h(this$0.otaFile(str, localFileString), tempAsset, true, 0, 4, null);
+            zf.n.h(this$0.otaFile(str, localFileString), tempAsset, true, 0, 4, null);
         } else if (i10 == 2) {
             String uri2 = uri.toString();
             q.g(uri2, "url.toString()");
-            t.b(m2downloadSingleFilehUnOzRk$default(this$0, uri2, null, newManifest.getHashes().get(fileString), patch, tempAsset, 0, 34, null));
+            t.b(m1downloadSingleFilehUnOzRk$default(this$0, uri2, null, newManifest.getHashes().get(fileString), patch, tempAsset, 0, 34, null));
         }
         this$0.moveFile(tempAsset, dstAsset);
     }
@@ -597,14 +597,14 @@ public final class BundleUpdater {
     
     
     
-    private final java.lang.Object m1downloadSingleFilehUnOzRk(java.lang.String r33, java.util.List<kotlin.Pair<java.lang.String, java.lang.String>> r34, java.lang.String r35, com.discord.bundle_updater.BundleUpdater.Patch r36, java.io.File r37, int r38) {
+    private final java.lang.Object m0downloadSingleFilehUnOzRk(java.lang.String r33, java.util.List<kotlin.Pair<java.lang.String, java.lang.String>> r34, java.lang.String r35, com.discord.bundle_updater.BundleUpdater.Patch r36, java.io.File r37, int r38) {
         
-        throw new UnsupportedOperationException("Method not decompiled: com.discord.bundle_updater.BundleUpdater.m1downloadSingleFilehUnOzRk(java.lang.String, java.util.List, java.lang.String, com.discord.bundle_updater.BundleUpdater$Patch, java.io.File, int):java.lang.Object");
+        throw new UnsupportedOperationException("Method not decompiled: com.discord.bundle_updater.BundleUpdater.m0downloadSingleFilehUnOzRk(java.lang.String, java.util.List, java.lang.String, com.discord.bundle_updater.BundleUpdater$Patch, java.io.File, int):java.lang.Object");
     }
 
     
-    static  Object m2downloadSingleFilehUnOzRk$default(BundleUpdater bundleUpdater, String str, List list, String str2, Patch patch, File file, int i10, int i11, Object obj) {
-        return bundleUpdater.m1downloadSingleFilehUnOzRk(str, (i11 & 2) != 0 ? null : list, (i11 & 4) != 0 ? null : str2, (i11 & 8) != 0 ? null : patch, file, (i11 & 32) != 0 ? 0 : i10);
+    static  Object m1downloadSingleFilehUnOzRk$default(BundleUpdater bundleUpdater, String str, List list, String str2, Patch patch, File file, int i10, int i11, Object obj) {
+        return bundleUpdater.m0downloadSingleFilehUnOzRk(str, (i11 & 2) != 0 ? null : list, (i11 & 4) != 0 ? null : str2, (i11 & 8) != 0 ? null : patch, file, (i11 & 32) != 0 ? 0 : i10);
     }
 
     private final File ensureEmptyFile(File file) {
@@ -772,7 +772,7 @@ public final class BundleUpdater {
     }
 
     public final Cookie getBuildOverrideCookie() {
-        return Cookie.f25742n.c(BASE_OTA_URL, getBuildOverrideCookieHeader());
+        return Cookie.f25293n.c(BASE_OTA_URL, getBuildOverrideCookieHeader());
     }
 
     public final String getBuildOverrideCookieHeader() {
@@ -891,7 +891,7 @@ public final class BundleUpdater {
         }
 
         
-        public static  OtaCheckAttempt m7copydWUq8MI$default(OtaCheckAttempt otaCheckAttempt, OtaCheckAttemptResult otaCheckAttemptResult, long j10, long j11, String str, int i10, Object obj) {
+        public static  OtaCheckAttempt m6copydWUq8MI$default(OtaCheckAttempt otaCheckAttempt, OtaCheckAttemptResult otaCheckAttemptResult, long j10, long j11, String str, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 otaCheckAttemptResult = otaCheckAttempt.result;
             }
@@ -904,7 +904,7 @@ public final class BundleUpdater {
             if ((i10 & 8) != 0) {
                 str = otaCheckAttempt.error;
             }
-            return otaCheckAttempt.m9copydWUq8MI(otaCheckAttemptResult, j10, j11, str);
+            return otaCheckAttempt.m8copydWUq8MI(otaCheckAttemptResult, j10, j11, str);
         }
 
         public final OtaCheckAttemptResult component1() {
@@ -912,7 +912,7 @@ public final class BundleUpdater {
         }
 
         
-        public final long m8component2UwyO8pc() {
+        public final long m7component2UwyO8pc() {
             return this.duration;
         }
 
@@ -925,7 +925,7 @@ public final class BundleUpdater {
         }
 
         
-        public final OtaCheckAttempt m9copydWUq8MI(OtaCheckAttemptResult result, long j10, long j11, String str) {
+        public final OtaCheckAttempt m8copydWUq8MI(OtaCheckAttemptResult result, long j10, long j11, String str) {
             q.h(result, "result");
             return new OtaCheckAttempt(result, j10, j11, str, null);
         }
@@ -942,7 +942,7 @@ public final class BundleUpdater {
         }
 
         
-        public final long m10getDurationUwyO8pc() {
+        public final long m9getDurationUwyO8pc() {
             return this.duration;
         }
 
@@ -959,14 +959,14 @@ public final class BundleUpdater {
         }
 
         public int hashCode() {
-            int hashCode = ((((this.result.hashCode() * 31) + Duration.z(this.duration)) * 31) + co.discord.media_engine.b.a(this.totalBytesReceived)) * 31;
+            int hashCode = ((((this.result.hashCode() * 31) + Duration.A(this.duration)) * 31) + co.discord.media_engine.b.a(this.totalBytesReceived)) * 31;
             String str = this.error;
             return hashCode + (str == null ? 0 : str.hashCode());
         }
 
         @Override 
         public ReadableMap toNativeMap() {
-            return NativeMapExtensionsKt.nativeMapOf(x.a("type", "OtaCheckAttempt"), x.a("result", this.result.getValue()), x.a("durationSeconds", Double.valueOf(Duration.H(this.duration, pi.c.SECONDS))), x.a("bytesReceived", Long.valueOf(this.totalBytesReceived)), x.a("error", this.error));
+            return NativeMapExtensionsKt.nativeMapOf(x.a("type", "OtaCheckAttempt"), x.a("result", this.result.getValue()), x.a("durationSeconds", Double.valueOf(Duration.H(this.duration, ui.c.SECONDS))), x.a("bytesReceived", Long.valueOf(this.totalBytesReceived)), x.a("error", this.error));
         }
 
         public String toString() {
@@ -1006,7 +1006,7 @@ public final class BundleUpdater {
         }
 
         
-        public static  OtaAssetDownloadAttempt m3copyfUqyM7Y$default(OtaAssetDownloadAttempt otaAssetDownloadAttempt, OtaAssetDownloadAttemptResult otaAssetDownloadAttemptResult, String str, Duration duration, Long l10, Integer num, String str2, int i10, Object obj) {
+        public static  OtaAssetDownloadAttempt m2copyfUqyM7Y$default(OtaAssetDownloadAttempt otaAssetDownloadAttempt, OtaAssetDownloadAttemptResult otaAssetDownloadAttemptResult, String str, Duration duration, Long l10, Integer num, String str2, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 otaAssetDownloadAttemptResult = otaAssetDownloadAttempt.result;
             }
@@ -1025,7 +1025,7 @@ public final class BundleUpdater {
             if ((i10 & 32) != 0) {
                 str2 = otaAssetDownloadAttempt.error;
             }
-            return otaAssetDownloadAttempt.m5copyfUqyM7Y(otaAssetDownloadAttemptResult, str, duration, l10, num, str2);
+            return otaAssetDownloadAttempt.m4copyfUqyM7Y(otaAssetDownloadAttemptResult, str, duration, l10, num, str2);
         }
 
         public final OtaAssetDownloadAttemptResult component1() {
@@ -1037,7 +1037,7 @@ public final class BundleUpdater {
         }
 
         
-        public final Duration m4component3FghU774() {
+        public final Duration m3component3FghU774() {
             return this.duration;
         }
 
@@ -1054,7 +1054,7 @@ public final class BundleUpdater {
         }
 
         
-        public final OtaAssetDownloadAttempt m5copyfUqyM7Y(OtaAssetDownloadAttemptResult result, String url, Duration duration, Long l10, Integer num, String str) {
+        public final OtaAssetDownloadAttempt m4copyfUqyM7Y(OtaAssetDownloadAttemptResult result, String url, Duration duration, Long l10, Integer num, String str) {
             q.h(result, "result");
             q.h(url, "url");
             return new OtaAssetDownloadAttempt(result, url, duration, l10, num, str, null);
@@ -1076,7 +1076,7 @@ public final class BundleUpdater {
         }
 
         
-        public final Duration m6getDurationFghU774() {
+        public final Duration m5getDurationFghU774() {
             return this.duration;
         }
 
@@ -1100,9 +1100,9 @@ public final class BundleUpdater {
             int hashCode = ((this.result.hashCode() * 31) + this.url.hashCode()) * 31;
             Duration duration = this.duration;
             int i10 = 0;
-            int z10 = (hashCode + (duration == null ? 0 : Duration.z(duration.M()))) * 31;
+            int A = (hashCode + (duration == null ? 0 : Duration.A(duration.M()))) * 31;
             Long l10 = this.bytesReceived;
-            int hashCode2 = (z10 + (l10 == null ? 0 : l10.hashCode())) * 31;
+            int hashCode2 = (A + (l10 == null ? 0 : l10.hashCode())) * 31;
             Integer num = this.statusCode;
             int hashCode3 = (hashCode2 + (num == null ? 0 : num.hashCode())) * 31;
             String str = this.error;
@@ -1122,7 +1122,7 @@ public final class BundleUpdater {
             pairArr[3] = x.a("bytesReceived", this.bytesReceived);
             Duration duration = this.duration;
             if (duration != null) {
-                d10 = Double.valueOf(Duration.H(duration.M(), pi.c.SECONDS));
+                d10 = Double.valueOf(Duration.H(duration.M(), ui.c.SECONDS));
             } else {
                 d10 = null;
             }

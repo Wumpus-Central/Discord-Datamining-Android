@@ -42,7 +42,7 @@ public final class CacheDataSourceFactory implements DataSource.Factory {
             if (cacheDataSourceFactory != null) {
                 return cacheDataSourceFactory;
             }
-            q.z("factory");
+            q.y("factory");
             return null;
         }
 
@@ -53,7 +53,7 @@ public final class CacheDataSourceFactory implements DataSource.Factory {
             CacheDataSourceFactory.factory = new CacheDataSourceFactory(null, 1, null);
             CacheDataSourceFactory cacheDataSourceFactory2 = CacheDataSourceFactory.factory;
             if (cacheDataSourceFactory2 == null) {
-                q.z("factory");
+                q.y("factory");
             } else {
                 cacheDataSourceFactory = cacheDataSourceFactory2;
             }
@@ -71,7 +71,7 @@ public final class CacheDataSourceFactory implements DataSource.Factory {
         SimpleCache simpleCache2 = cache;
         SimpleCache simpleCache3 = null;
         if (simpleCache2 == null) {
-            q.z("cache");
+            q.y("cache");
             simpleCache = null;
         } else {
             simpleCache = simpleCache2;
@@ -80,7 +80,7 @@ public final class CacheDataSourceFactory implements DataSource.Factory {
         r rVar = new r();
         SimpleCache simpleCache4 = cache;
         if (simpleCache4 == null) {
-            q.z("cache");
+            q.y("cache");
         } else {
             simpleCache3 = simpleCache4;
         }

@@ -27,17 +27,17 @@ final class ImageManagerModule$getDominantColors$1 extends s implements Function
     @Override 
     public   Unit invoke(Bitmap bitmap) {
         invoke2(bitmap);
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     
     public final void invoke2(Bitmap bitmap) {
-        int s10;
+        int t10;
         if (bitmap != null) {
             List<Integer> representativeColors = DominantColor.INSTANCE.getRepresentativeColors(bitmap);
             if (representativeColors != null) {
-                s10 = k.s(representativeColors, 10);
-                ArrayList arrayList = new ArrayList(s10);
+                t10 = k.t(representativeColors, 10);
+                ArrayList arrayList = new ArrayList(t10);
                 for (Number number : representativeColors) {
                     int intValue = number.intValue();
                     arrayList.add(NativeArrayExtensionsKt.nativeArrayOf(Integer.valueOf((intValue >> 16) & 255), Integer.valueOf((intValue >> 8) & 255), Integer.valueOf(intValue & 255)));

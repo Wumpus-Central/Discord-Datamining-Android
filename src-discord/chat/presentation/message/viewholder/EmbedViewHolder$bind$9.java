@@ -20,7 +20,7 @@ public  class EmbedViewHolder$bind$9 extends n implements Function1<CommandMenti
     @Override 
     public   Unit invoke(CommandMentionContentNode commandMentionContentNode) {
         invoke2(commandMentionContentNode);
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     

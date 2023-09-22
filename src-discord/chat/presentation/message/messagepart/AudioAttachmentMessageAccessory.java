@@ -86,7 +86,7 @@ public final class AudioAttachmentMessageAccessory extends MessageAccessory {
             return false;
         }
         AudioAttachmentMessageAccessory audioAttachmentMessageAccessory = (AudioAttachmentMessageAccessory) obj;
-        return MessageId.m635equalsimpl0(mo236getMessageId3Eiw7ao(), audioAttachmentMessageAccessory.mo236getMessageId3Eiw7ao()) && q.c(this.authorId, audioAttachmentMessageAccessory.authorId) && this.index == audioAttachmentMessageAccessory.index && q.c(this.attachment, audioAttachmentMessageAccessory.attachment) && q.c(this.attachmentsOpacity, audioAttachmentMessageAccessory.attachmentsOpacity);
+        return MessageId.m640equalsimpl0(mo236getMessageId3Eiw7ao(), audioAttachmentMessageAccessory.mo236getMessageId3Eiw7ao()) && q.c(this.authorId, audioAttachmentMessageAccessory.authorId) && this.index == audioAttachmentMessageAccessory.index && q.c(this.attachment, audioAttachmentMessageAccessory.attachment) && q.c(this.attachmentsOpacity, audioAttachmentMessageAccessory.attachmentsOpacity);
     }
 
     public final Attachment getAttachment() {
@@ -113,10 +113,10 @@ public final class AudioAttachmentMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int i10 = MessageId.m636hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31;
+        int i10 = MessageId.m641hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31;
         UserId userId = this.authorId;
         int i11 = 0;
-        int i12 = (((((i10 + (userId == null ? 0 : UserId.m674hashCodeimpl(userId.m678unboximpl()))) * 31) + this.index) * 31) + this.attachment.hashCode()) * 31;
+        int i12 = (((((i10 + (userId == null ? 0 : UserId.m679hashCodeimpl(userId.m683unboximpl()))) * 31) + this.index) * 31) + this.attachment.hashCode()) * 31;
         Float f10 = this.attachmentsOpacity;
         if (f10 != null) {
             i11 = f10.hashCode();
@@ -125,7 +125,7 @@ public final class AudioAttachmentMessageAccessory extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m637toStringimpl(mo236getMessageId3Eiw7ao());
+        String str = MessageId.m642toStringimpl(mo236getMessageId3Eiw7ao());
         UserId userId = this.authorId;
         int i10 = this.index;
         Attachment attachment = this.attachment;

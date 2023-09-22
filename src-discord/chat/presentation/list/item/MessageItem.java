@@ -22,7 +22,7 @@ public final class MessageItem extends ChatListItem {
     private final boolean renderContentOnly;
 
     public  MessageItem(Message message, MessageFrame messageFrame, MessageContext messageContext, boolean z10, boolean z11, BackgroundHighlight backgroundHighlight, Integer num, boolean z12, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this(message, (i10 & 2) != 0 ? null : messageFrame, (i10 & 4) != 0 ? new MessageContext(false, false, null, null, null, null, null, false, false, false, false, false, 4095, null) : messageContext, (i10 & 8) != 0 ? true : z10, (i10 & 16) != 0 ? false : z11, (i10 & 32) != 0 ? null : backgroundHighlight, (i10 & 64) == 0 ? num : null, (i10 & 128) == 0 ? z12 : false);
+        this(message, (i10 & 2) != 0 ? null : messageFrame, (i10 & 4) != 0 ? new MessageContext(false, false, null, null, null, null, null, false, false, false, false, false, null, 8191, null) : messageContext, (i10 & 8) != 0 ? true : z10, (i10 & 16) != 0 ? false : z11, (i10 & 32) != 0 ? null : backgroundHighlight, (i10 & 64) == 0 ? num : null, (i10 & 128) == 0 ? z12 : false);
     }
 
     public final Message component1() {
@@ -156,7 +156,7 @@ public final class MessageItem extends ChatListItem {
 
     
     public MessageItem(Message message, MessageFrame messageFrame, MessageContext messageContext, boolean z10, boolean z11, BackgroundHighlight backgroundHighlight, Integer num, boolean z12) {
-        super(MessageId.m637toStringimpl(message.m25getId3Eiw7ao()), null);
+        super(MessageId.m642toStringimpl(message.m24getId3Eiw7ao()), null);
         q.h(message, "message");
         q.h(messageContext, "messageContext");
         this.message = message;

@@ -75,7 +75,7 @@ public final class ActivityBookmarkMessageAccessory extends MessageAccessory {
             return false;
         }
         ActivityBookmarkMessageAccessory activityBookmarkMessageAccessory = (ActivityBookmarkMessageAccessory) obj;
-        return MessageId.m635equalsimpl0(mo236getMessageId3Eiw7ao(), activityBookmarkMessageAccessory.mo236getMessageId3Eiw7ao()) && this.codedLinkIndex == activityBookmarkMessageAccessory.codedLinkIndex && q.c(this.activityBookmarkEmbed, activityBookmarkMessageAccessory.activityBookmarkEmbed) && this.constrainedWidth == activityBookmarkMessageAccessory.constrainedWidth;
+        return MessageId.m640equalsimpl0(mo236getMessageId3Eiw7ao(), activityBookmarkMessageAccessory.mo236getMessageId3Eiw7ao()) && this.codedLinkIndex == activityBookmarkMessageAccessory.codedLinkIndex && q.c(this.activityBookmarkEmbed, activityBookmarkMessageAccessory.activityBookmarkEmbed) && this.constrainedWidth == activityBookmarkMessageAccessory.constrainedWidth;
     }
 
     public final ActivityBookmarkEmbedImpl getActivityBookmarkEmbed() {
@@ -97,11 +97,11 @@ public final class ActivityBookmarkMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((((MessageId.m636hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.codedLinkIndex) * 31) + this.activityBookmarkEmbed.hashCode()) * 31) + this.constrainedWidth;
+        return (((((MessageId.m641hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.codedLinkIndex) * 31) + this.activityBookmarkEmbed.hashCode()) * 31) + this.constrainedWidth;
     }
 
     public String toString() {
-        String str = MessageId.m637toStringimpl(mo236getMessageId3Eiw7ao());
+        String str = MessageId.m642toStringimpl(mo236getMessageId3Eiw7ao());
         int i10 = this.codedLinkIndex;
         ActivityBookmarkEmbedImpl activityBookmarkEmbedImpl = this.activityBookmarkEmbed;
         int i11 = this.constrainedWidth;

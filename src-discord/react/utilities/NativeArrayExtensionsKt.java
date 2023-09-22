@@ -1,11 +1,11 @@
 package com.discord.react.utilities;
 
-import bg.j;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.ReadableNativeArray;
 import com.facebook.react.bridge.ReadableType;
 import com.facebook.react.bridge.WritableNativeArray;
+import gg.j;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
@@ -144,10 +144,10 @@ public final class NativeArrayExtensionsKt {
     }
 
     public static final <V> ReadableNativeArray toNativeArrayOfMaps(Collection<? extends Map<String, ? extends V>> collection) {
-        int s10;
+        int t10;
         q.h(collection, "<this>");
-        s10 = k.s(collection, 10);
-        ArrayList arrayList = new ArrayList(s10);
+        t10 = k.t(collection, 10);
+        ArrayList arrayList = new ArrayList(t10);
         Iterator<T> it = collection.iterator();
         while (it.hasNext()) {
             arrayList.add(NativeMapExtensionsKt.toNativeMap((Map) it.next()));

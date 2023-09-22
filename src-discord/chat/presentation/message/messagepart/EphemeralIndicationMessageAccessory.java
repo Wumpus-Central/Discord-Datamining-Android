@@ -57,7 +57,7 @@ public final class EphemeralIndicationMessageAccessory extends MessageAccessory 
             return false;
         }
         EphemeralIndicationMessageAccessory ephemeralIndicationMessageAccessory = (EphemeralIndicationMessageAccessory) obj;
-        return MessageId.m635equalsimpl0(mo236getMessageId3Eiw7ao(), ephemeralIndicationMessageAccessory.mo236getMessageId3Eiw7ao()) && q.c(this.ephemeralIndication, ephemeralIndicationMessageAccessory.ephemeralIndication);
+        return MessageId.m640equalsimpl0(mo236getMessageId3Eiw7ao(), ephemeralIndicationMessageAccessory.mo236getMessageId3Eiw7ao()) && q.c(this.ephemeralIndication, ephemeralIndicationMessageAccessory.ephemeralIndication);
     }
 
     public final EphemeralIndication getEphemeralIndication() {
@@ -71,11 +71,11 @@ public final class EphemeralIndicationMessageAccessory extends MessageAccessory 
     }
 
     public int hashCode() {
-        return (MessageId.m636hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.ephemeralIndication.hashCode();
+        return (MessageId.m641hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.ephemeralIndication.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m637toStringimpl(mo236getMessageId3Eiw7ao());
+        String str = MessageId.m642toStringimpl(mo236getMessageId3Eiw7ao());
         EphemeralIndication ephemeralIndication = this.ephemeralIndication;
         return "EphemeralIndicationMessageAccessory(messageId=" + str + ", ephemeralIndication=" + ephemeralIndication + ")";
     }

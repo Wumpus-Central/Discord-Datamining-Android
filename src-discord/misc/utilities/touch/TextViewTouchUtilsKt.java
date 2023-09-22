@@ -20,7 +20,7 @@ public final class TextViewTouchUtilsKt {
             spannable = null;
         }
         if (spannable == null) {
-            q.n(0, "T?");
+            q.m(0, "T?");
             return (T[]) new Object[0];
         }
         int x10 = (((int) event.getX()) - textView.getTotalPaddingLeft()) + textView.getScrollX();
@@ -29,11 +29,11 @@ public final class TextViewTouchUtilsKt {
         float lineLeft = textView.getLayout().getLineLeft(lineForVertical);
         float f10 = x10;
         if (f10 > lineRight || (x10 >= 0 && f10 < lineLeft)) {
-            q.n(0, "T?");
+            q.m(0, "T?");
             return (T[]) new Object[0];
         }
         int offsetForHorizontal = textView.getLayout().getOffsetForHorizontal(lineForVertical, f10);
-        q.n(4, "T");
+        q.m(4, "T");
         T[] tArr = (T[]) spannable.getSpans(offsetForHorizontal, offsetForHorizontal, Object.class);
         q.g(tArr, "spannableText.getSpans(\n…     T::class.java,\n    )");
         return tArr;

@@ -103,7 +103,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
             return false;
         }
         EmbedMessageAccessory embedMessageAccessory = (EmbedMessageAccessory) obj;
-        return MessageId.m635equalsimpl0(mo236getMessageId3Eiw7ao(), embedMessageAccessory.mo236getMessageId3Eiw7ao()) && getIndex() == embedMessageAccessory.getIndex() && this.constrainedWidth == embedMessageAccessory.constrainedWidth && this.radiusPx == embedMessageAccessory.radiusPx && q.c(this.embed, embedMessageAccessory.embed) && this.shouldAutoPlayGifs == embedMessageAccessory.shouldAutoPlayGifs && this.shouldAnimateEmoji == embedMessageAccessory.shouldAnimateEmoji && this.shouldShowRoleDot == embedMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == embedMessageAccessory.shouldShowRoleOnName && q.c(this.spoilerAttributes, embedMessageAccessory.spoilerAttributes) && q.c(this.onLongClick, embedMessageAccessory.onLongClick);
+        return MessageId.m640equalsimpl0(mo236getMessageId3Eiw7ao(), embedMessageAccessory.mo236getMessageId3Eiw7ao()) && getIndex() == embedMessageAccessory.getIndex() && this.constrainedWidth == embedMessageAccessory.constrainedWidth && this.radiusPx == embedMessageAccessory.radiusPx && q.c(this.embed, embedMessageAccessory.embed) && this.shouldAutoPlayGifs == embedMessageAccessory.shouldAutoPlayGifs && this.shouldAnimateEmoji == embedMessageAccessory.shouldAnimateEmoji && this.shouldShowRoleDot == embedMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == embedMessageAccessory.shouldShowRoleOnName && q.c(this.spoilerAttributes, embedMessageAccessory.spoilerAttributes) && q.c(this.onLongClick, embedMessageAccessory.onLongClick);
     }
 
     public final int getConstrainedWidth() {
@@ -159,7 +159,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     }
 
     public int hashCode() {
-        int i10 = ((((((((MessageId.m636hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + getIndex()) * 31) + this.constrainedWidth) * 31) + this.radiusPx) * 31) + this.embed.hashCode()) * 31;
+        int i10 = ((((((((MessageId.m641hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + getIndex()) * 31) + this.constrainedWidth) * 31) + this.radiusPx) * 31) + this.embed.hashCode()) * 31;
         boolean z10 = this.shouldAutoPlayGifs;
         int i11 = 1;
         if (z10) {
@@ -201,7 +201,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     }
 
     public String toString() {
-        String str = MessageId.m637toStringimpl(mo236getMessageId3Eiw7ao());
+        String str = MessageId.m642toStringimpl(mo236getMessageId3Eiw7ao());
         int index = getIndex();
         int i10 = this.constrainedWidth;
         int i11 = this.radiusPx;

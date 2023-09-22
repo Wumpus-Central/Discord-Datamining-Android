@@ -98,7 +98,7 @@ public final class ForumPostActionBar extends MessageAccessory {
             return false;
         }
         ForumPostActionBar forumPostActionBar = (ForumPostActionBar) obj;
-        return MessageId.m635equalsimpl0(mo236getMessageId3Eiw7ao(), forumPostActionBar.mo236getMessageId3Eiw7ao()) && q.c(this.postActions, forumPostActionBar.postActions) && q.c(this.reactions, forumPostActionBar.reactions) && this.canAddNewReactions == forumPostActionBar.canAddNewReactions && q.c(this.addNewReactionAccessibilityLabel, forumPostActionBar.addNewReactionAccessibilityLabel) && q.c(this.reactionsTheme, forumPostActionBar.reactionsTheme);
+        return MessageId.m640equalsimpl0(mo236getMessageId3Eiw7ao(), forumPostActionBar.mo236getMessageId3Eiw7ao()) && q.c(this.postActions, forumPostActionBar.postActions) && q.c(this.reactions, forumPostActionBar.reactions) && this.canAddNewReactions == forumPostActionBar.canAddNewReactions && q.c(this.addNewReactionAccessibilityLabel, forumPostActionBar.addNewReactionAccessibilityLabel) && q.c(this.reactionsTheme, forumPostActionBar.reactionsTheme);
     }
 
     public final String getAddNewReactionAccessibilityLabel() {
@@ -128,7 +128,7 @@ public final class ForumPostActionBar extends MessageAccessory {
     }
 
     public int hashCode() {
-        int i10 = ((MessageId.m636hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.postActions.hashCode()) * 31;
+        int i10 = ((MessageId.m641hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.postActions.hashCode()) * 31;
         List<MessageReaction> list = this.reactions;
         int i11 = 0;
         int hashCode = (i10 + (list == null ? 0 : list.hashCode())) * 31;
@@ -148,7 +148,7 @@ public final class ForumPostActionBar extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m637toStringimpl(mo236getMessageId3Eiw7ao());
+        String str = MessageId.m642toStringimpl(mo236getMessageId3Eiw7ao());
         ForumPostActions forumPostActions = this.postActions;
         List<MessageReaction> list = this.reactions;
         boolean z10 = this.canAddNewReactions;

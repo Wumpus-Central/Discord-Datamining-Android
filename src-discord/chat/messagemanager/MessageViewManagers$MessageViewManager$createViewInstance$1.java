@@ -24,7 +24,7 @@ public final class MessageViewManagers$MessageViewManager$createViewInstance$1 e
     @Override 
     public   Unit invoke(View view, Integer num, Integer num2) {
         invoke(view, num.intValue(), num2.intValue());
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     public final void invoke(View view, int i10, int i11) {

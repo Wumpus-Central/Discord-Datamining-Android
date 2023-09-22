@@ -2,10 +2,10 @@ package com.discord.client_info;
 
 import android.content.Context;
 import java.util.Locale;
-import kf.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
+import pf.n;
 
 @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u001d\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J>\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020'2\u0006\u0010!\u001a\u00020\u00042\u0006\u0010\u001e\u001a\u00020(2\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u00042\u0006\u0010)\u001a\u00020\u00042\u0006\u0010\u0012\u001a\u00020\u0004R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u0011\u0010\u0006\u001a\u00020\u00078F¢\u0006\u0006\u001a\u0004\b\u0006\u0010\bR\u0011\u0010\t\u001a\u00020\u00078F¢\u0006\u0006\u001a\u0004\b\t\u0010\bR\u001b\u0010\n\u001a\u00020\u00078FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\u000b\u0010\f\u001a\u0004\b\n\u0010\bR\u001a\u0010\r\u001a\u00020\u0004X\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R\u001a\u0010\u0012\u001a\u00020\u0004X\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\u000f\"\u0004\b\u0014\u0010\u0011R\u001a\u0010\u0015\u001a\u00020\u0004X\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b\u0016\u0010\u000f\"\u0004\b\u0017\u0010\u0011R\u000e\u0010\u0018\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u0011\u0010\u0019\u001a\u00020\u00048F¢\u0006\u0006\u001a\u0004\b\u001a\u0010\u000fR\u000e\u0010\u001b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u001a\u0010\u001e\u001a\u00020\u0004X\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b\u001f\u0010\u000f\"\u0004\b \u0010\u0011R\u001a\u0010!\u001a\u00020\u0004X\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b\"\u0010\u000f\"\u0004\b#\u0010\u0011¨\u0006*"}, d2 = {"Lcom/discord/client_info/ClientInfo;", "", "()V", "buildType", "", "flavor", "isDebugBuild", "", "()Z", "isDeveloperBuild", "isProdBuild", "isProdBuild$delegate", "Lkotlin/Lazy;", "otaManifestETag", "getOtaManifestETag", "()Ljava/lang/String;", "setOtaManifestETag", "(Ljava/lang/String;)V", "otaVersion", "getOtaVersion", "setOtaVersion", "packageName", "getPackageName", "setPackageName", "proguardUUID", "releaseChannel", "getReleaseChannel", "sentryDsn", "sentryRelease", "sentryStaffDsn", "versionCode", "getVersionCode", "setVersionCode", "versionName", "getVersionName", "setVersionName", "init", "", "context", "Landroid/content/Context;", "", "otaManifest", "client_info_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -17,17 +17,17 @@ public final class ClientInfo {
     public static String otaManifestETag = null;
     public static String otaVersion = null;
     public static String packageName = null;
-    public static final String proguardUUID = "b10271b2-c316-4f38-b03f-a46e9ca9200f";
+    public static final String proguardUUID = "3daa8736-ee59-4f5c-9a53-0c3cf21dd696";
     public static final String sentryDsn = "https:
-    public static final String sentryRelease = "discord_android@198.2.0-2+198202";
+    public static final String sentryRelease = "discord_android@198.5.0-2+198205";
     public static final String sentryStaffDsn = "https:
     public static String versionCode;
     public static String versionName;
 
     static {
-        Lazy b10;
-        b10 = n.b(ClientInfo$isProdBuild$2.INSTANCE);
-        isProdBuild$delegate = b10;
+        Lazy a10;
+        a10 = n.a(ClientInfo$isProdBuild$2.INSTANCE);
+        isProdBuild$delegate = a10;
     }
 
     private ClientInfo() {
@@ -38,7 +38,7 @@ public final class ClientInfo {
         if (str != null) {
             return str;
         }
-        q.z("otaManifestETag");
+        q.y("otaManifestETag");
         return null;
     }
 
@@ -47,7 +47,7 @@ public final class ClientInfo {
         if (str != null) {
             return str;
         }
-        q.z("otaVersion");
+        q.y("otaVersion");
         return null;
     }
 
@@ -56,7 +56,7 @@ public final class ClientInfo {
         if (str != null) {
             return str;
         }
-        q.z("packageName");
+        q.y("packageName");
         return null;
     }
 
@@ -64,12 +64,12 @@ public final class ClientInfo {
         String str = flavor;
         String str2 = null;
         if (str == null) {
-            q.z("flavor");
+            q.y("flavor");
             str = null;
         }
         String str3 = buildType;
         if (str3 == null) {
-            q.z("buildType");
+            q.y("buildType");
         } else {
             str2 = str3;
         }
@@ -93,7 +93,7 @@ public final class ClientInfo {
         if (str != null) {
             return str;
         }
-        q.z("versionCode");
+        q.y("versionCode");
         return null;
     }
 
@@ -102,7 +102,7 @@ public final class ClientInfo {
         if (str != null) {
             return str;
         }
-        q.z("versionName");
+        q.y("versionName");
         return null;
     }
 
@@ -129,7 +129,7 @@ public final class ClientInfo {
     public final boolean isDebugBuild() {
         String str = buildType;
         if (str == null) {
-            q.z("buildType");
+            q.y("buildType");
             str = null;
         }
         return q.c(str, "debug");
@@ -138,7 +138,7 @@ public final class ClientInfo {
     public final boolean isDeveloperBuild() {
         String str = flavor;
         if (str == null) {
-            q.z("flavor");
+            q.y("flavor");
             str = null;
         }
         return q.c(str, "developer");

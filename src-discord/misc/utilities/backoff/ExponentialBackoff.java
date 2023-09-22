@@ -1,6 +1,6 @@
 package com.discord.misc.utilities.backoff;
 
-import bg.j;
+import gg.j;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;

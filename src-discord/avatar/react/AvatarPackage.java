@@ -22,9 +22,9 @@ public final class AvatarPackage implements ReactPackage {
 
     @Override 
     public List<ViewManager<?, LayoutShadowNode>> createViewManagers(ReactApplicationContext reactContext) {
-        List<ViewManager<?, LayoutShadowNode>> n10;
+        List<ViewManager<?, LayoutShadowNode>> o10;
         q.h(reactContext, "reactContext");
-        n10 = j.n(new APNGDecorationViewManager());
-        return n10;
+        o10 = j.o(new APNGDecorationViewManager());
+        return o10;
     }
 }

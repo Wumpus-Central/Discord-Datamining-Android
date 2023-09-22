@@ -70,7 +70,7 @@ public final class CustomTabsPackages {
         Object obj2;
         Object obj3;
         Object obj4;
-        Object U;
+        Object V;
         q.h(context, "<this>");
         List<String> customTabsPackages = getCustomTabsPackages(context);
         Iterator<T> it = customTabsPackages.iterator();
@@ -134,7 +134,7 @@ public final class CustomTabsPackages {
         if (str4 != null) {
             return str4;
         }
-        U = r.U(customTabsPackages);
-        return (String) U;
+        V = r.V(customTabsPackages);
+        return (String) V;
     }
 }

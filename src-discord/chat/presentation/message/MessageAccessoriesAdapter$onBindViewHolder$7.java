@@ -2,30 +2,32 @@ package com.discord.chat.presentation.message;
 
 import com.discord.chat.bridge.contentnode.LinkContentNode;
 import com.discord.chat.presentation.events.ChatEventHandler;
+import com.discord.primitives.MessageId;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.n;
 import kotlin.jvm.internal.q;
 
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 
-public  class MessageAccessoriesAdapter$onBindViewHolder$7 extends n implements Function1<LinkContentNode, Unit> {
+public  class MessageAccessoriesAdapter$onBindViewHolder$7 extends n implements Function2<MessageId, LinkContentNode, Unit> {
     
     public MessageAccessoriesAdapter$onBindViewHolder$7(Object obj) {
-        super(1, obj, ChatEventHandler.class, "onLinkLongClicked", "onLinkLongClicked(Lcom/discord/chat/bridge/contentnode/LinkContentNode;)V", 0);
+        super(2, obj, ChatEventHandler.class, "onLinkClicked", "onLinkClicked-ntcYbpo(Ljava/lang/String;Lcom/discord/chat/bridge/contentnode/LinkContentNode;)V", 0);
     }
 
     @Override 
-    public   Unit invoke(LinkContentNode linkContentNode) {
-        invoke2(linkContentNode);
-        return Unit.f21444a;
+    public   Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
+        m226invokentcYbpo(messageId.m644unboximpl(), linkContentNode);
+        return Unit.f21600a;
     }
 
     
-    public final void invoke2(LinkContentNode p02) {
+    public final void m226invokentcYbpo(String p02, LinkContentNode p12) {
         q.h(p02, "p0");
-        ((ChatEventHandler) this.receiver).onLinkLongClicked(p02);
+        q.h(p12, "p1");
+        ((ChatEventHandler) this.receiver).mo159onLinkClickedntcYbpo(p02, p12);
     }
 }

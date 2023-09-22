@@ -26,12 +26,12 @@ final class MessageContentView$truncate$1 extends s implements Function1<View, U
     @Override 
     public   Unit invoke(View view) {
         invoke2(view);
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     
     public final void invoke2(View it) {
         q.h(it, "it");
-        this.$onTapSeeMore.invoke(MessageId.m631boximpl(this.$messageId));
+        this.$onTapSeeMore.invoke(MessageId.m636boximpl(this.$messageId));
     }
 }

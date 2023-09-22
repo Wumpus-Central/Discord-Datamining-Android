@@ -11,10 +11,10 @@ import com.discord.primitives.UserId;
 import com.discord.react_asset_fetcher.ReactAsset;
 import com.discord.react_asset_fetcher.ReactAssetUtilsKt;
 import com.discord.snowflake.SnowflakeUtils;
-import kf.s;
-import kf.t;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
+import pf.s;
+import pf.t;
 
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u0002\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J/\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u00062\b\u0010\u0007\u001a\u0004\u0018\u00010\u00042\b\b\u0002\u0010\b\u001a\u00020\tø\u0001\u0000ø\u0001\u0001¢\u0006\u0002\b\nJ'\u0010\u000b\u001a\u00020\u00042\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\u0002\u0010\u0010JC\u0010\u0011\u001a\u00020\u00042\u0006\u0010\u0012\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u00152\b\u0010\u0016\u001a\u0004\u0018\u00010\u00042\u0006\u0010\u0017\u001a\u00020\u000f2\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\tø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u0018\u0010\u0019JI\u0010\u001a\u001a\u00020\u00042\b\u0010\u0014\u001a\u0004\u0018\u00010\u001b2\b\u0010\u0016\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u00042\b\b\u0002\u0010\u001d\u001a\u00020\u000f2\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\tø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u001e\u0010\u001fJG\u0010 \u001a\u00020\u00042\b\u0010!\u001a\u0004\u0018\u00010\u00042\b\u0010\"\u001a\u0004\u0018\u00010\u001b2\b\u0010#\u001a\u0004\u0018\u00010$2\n\b\u0002\u0010%\u001a\u0004\u0018\u00010\t2\b\b\u0002\u0010\u001d\u001a\u00020\u000fø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b&\u0010'JQ\u0010(\u001a\u00020\u00042\u0006\u0010\u0012\u001a\u00020\u00132\b\u0010#\u001a\u0004\u0018\u00010$2\b\u0010)\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010*\u001a\u0004\u0018\u00010\t2\b\b\u0002\u0010\u001d\u001a\u00020\u000f2\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\tø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b+\u0010,J&\u0010-\u001a\u00020.2\u0006\u0010\u0012\u001a\u00020\u00132\n\b\u0002\u0010/\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u00100\u001a\u0004\u0018\u00010\u0004\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u00061"}, d2 = {"Lcom/discord/icons/IconUrlUtils;", "", "()V", "getApplicationIcon", "", "applicationId", "Lcom/discord/primitives/ApplicationId;", "imageId", "size", "", "getApplicationIcon-weIltyw", "getCustomEmojiUrl", "emojiId", "", "animate", "", "(JZLjava/lang/Integer;)Ljava/lang/String;", "getForChannel", "context", "Landroid/content/Context;", "id", "Lcom/discord/primitives/ChannelId;", "icon", "isGroupDM", "getForChannel-JYSGpIY", "(Landroid/content/Context;Lcom/discord/primitives/ChannelId;Ljava/lang/String;ZLjava/lang/Integer;)Ljava/lang/String;", "getForGuild", "Lcom/discord/primitives/GuildId;", "defaultIcon", "animated", "getForGuild-14CJxO4", "(Lcom/discord/primitives/GuildId;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Integer;)Ljava/lang/String;", "getForGuildMember", "guildMemberAvatar", "guildId", "userId", "Lcom/discord/primitives/UserId;", "sizePx", "getForGuildMember-2tNb6hE", "(Ljava/lang/String;Lcom/discord/primitives/GuildId;Lcom/discord/primitives/UserId;Ljava/lang/Integer;Z)Ljava/lang/String;", "getForUser", "userAvatar", "discriminator", "getForUser-_fRzTXg", "(Landroid/content/Context;Lcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/Integer;ZLjava/lang/Integer;)Ljava/lang/String;", "init", "", "cdnHost", "apiHost", "icons_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -25,11 +25,11 @@ public final class IconUrlUtils {
     }
 
     
-    public static  String m497getApplicationIconweIltyw$default(IconUrlUtils iconUrlUtils, ApplicationId applicationId, String str, int i10, int i11, Object obj) {
+    public static  String m502getApplicationIconweIltyw$default(IconUrlUtils iconUrlUtils, ApplicationId applicationId, String str, int i10, int i11, Object obj) {
         if ((i11 & 4) != 0) {
             i10 = 160;
         }
-        return iconUrlUtils.m502getApplicationIconweIltyw(applicationId, str, i10);
+        return iconUrlUtils.m507getApplicationIconweIltyw(applicationId, str, i10);
     }
 
     public static  String getCustomEmojiUrl$default(IconUrlUtils iconUrlUtils, long j10, boolean z10, Integer num, int i10, Object obj) {
@@ -40,31 +40,31 @@ public final class IconUrlUtils {
     }
 
     
-    public static  String m498getForChannelJYSGpIY$default(IconUrlUtils iconUrlUtils, Context context, ChannelId channelId, String str, boolean z10, Integer num, int i10, Object obj) {
+    public static  String m503getForChannelJYSGpIY$default(IconUrlUtils iconUrlUtils, Context context, ChannelId channelId, String str, boolean z10, Integer num, int i10, Object obj) {
         if ((i10 & 16) != 0) {
             num = null;
         }
-        return iconUrlUtils.m503getForChannelJYSGpIY(context, channelId, str, z10, num);
+        return iconUrlUtils.m508getForChannelJYSGpIY(context, channelId, str, z10, num);
     }
 
     
-    public static  String m499getForGuild14CJxO4$default(IconUrlUtils iconUrlUtils, GuildId guildId, String str, String str2, boolean z10, Integer num, int i10, Object obj) {
+    public static  String m504getForGuild14CJxO4$default(IconUrlUtils iconUrlUtils, GuildId guildId, String str, String str2, boolean z10, Integer num, int i10, Object obj) {
         String str3 = (i10 & 4) != 0 ? null : str2;
         if ((i10 & 8) != 0) {
             z10 = false;
         }
-        return iconUrlUtils.m504getForGuild14CJxO4(guildId, str, str3, z10, (i10 & 16) != 0 ? null : num);
+        return iconUrlUtils.m509getForGuild14CJxO4(guildId, str, str3, z10, (i10 & 16) != 0 ? null : num);
     }
 
     
-    public static  String m500getForGuildMember2tNb6hE$default(IconUrlUtils iconUrlUtils, String str, GuildId guildId, UserId userId, Integer num, boolean z10, int i10, Object obj) {
+    public static  String m505getForGuildMember2tNb6hE$default(IconUrlUtils iconUrlUtils, String str, GuildId guildId, UserId userId, Integer num, boolean z10, int i10, Object obj) {
         if ((i10 & 8) != 0) {
             num = null;
         }
         if ((i10 & 16) != 0) {
             z10 = false;
         }
-        return iconUrlUtils.m505getForGuildMember2tNb6hE(str, guildId, userId, num, z10);
+        return iconUrlUtils.m510getForGuildMember2tNb6hE(str, guildId, userId, num, z10);
     }
 
     public static  void init$default(IconUrlUtils iconUrlUtils, Context context, String str, String str2, int i10, Object obj) {
@@ -78,7 +78,7 @@ public final class IconUrlUtils {
     }
 
     
-    public final String m502getApplicationIconweIltyw(ApplicationId applicationId, String str, int i10) {
+    public final String m507getApplicationIconweIltyw(ApplicationId applicationId, String str, int i10) {
         MediaProxy mediaProxy = MediaProxy.INSTANCE;
         String cdn = Hosts.INSTANCE.getCDN();
         String mediaExtension$default = MediaExtensionKt.getMediaExtension$default(false, null, 2, null);
@@ -93,7 +93,7 @@ public final class IconUrlUtils {
     }
 
     
-    public final String m503getForChannelJYSGpIY(Context context, ChannelId channelId, String str, boolean z10, Integer num) {
+    public final String m508getForChannelJYSGpIY(Context context, ChannelId channelId, String str, boolean z10, Integer num) {
         boolean z11;
         Object obj;
         q.h(context, "context");
@@ -107,10 +107,10 @@ public final class IconUrlUtils {
         }
         if (!z11) {
             try {
-                s.a aVar = s.f21222k;
+                s.a aVar = s.f26002k;
                 obj = s.b(MediaProxy.withSize$default(MediaProxy.INSTANCE, Hosts.INSTANCE.getCDN() + "/channel-icons/" + channelId + "/" + str + "." + MediaExtensionKt.getMediaExtension$default(false, null, 2, null), num, null, 4, null));
             } catch (Throwable th2) {
-                s.a aVar2 = s.f21222k;
+                s.a aVar2 = s.f26002k;
                 obj = s.b(t.a(th2));
             }
             if (s.e(obj) != null) {
@@ -142,7 +142,7 @@ public final class IconUrlUtils {
     }
 
     
-    public final String m504getForGuild14CJxO4(GuildId guildId, String str, String str2, boolean z10, Integer num) {
+    public final String m509getForGuild14CJxO4(GuildId guildId, String str, String str2, boolean z10, Integer num) {
         boolean z11;
         Object obj;
         if (str == null || str.length() == 0) {
@@ -153,10 +153,10 @@ public final class IconUrlUtils {
         if (!z11 && guildId != null) {
             MediaProxy mediaProxy = MediaProxy.INSTANCE;
             try {
-                s.a aVar = s.f21222k;
+                s.a aVar = s.f26002k;
                 obj = s.b(Hosts.INSTANCE.getCDN() + "/icons/" + guildId + "/" + str + "." + MediaExtensionKt.getMediaExtension(z10, str));
             } catch (Throwable th2) {
-                s.a aVar2 = s.f21222k;
+                s.a aVar2 = s.f26002k;
                 obj = s.b(t.a(th2));
             }
             if (s.e(obj) != null) {
@@ -174,28 +174,28 @@ public final class IconUrlUtils {
     
     
     
-    public final java.lang.String m505getForGuildMember2tNb6hE(java.lang.String r9, com.discord.primitives.GuildId r10, com.discord.primitives.UserId r11, java.lang.Integer r12, boolean r13) {
+    public final java.lang.String m510getForGuildMember2tNb6hE(java.lang.String r9, com.discord.primitives.GuildId r10, com.discord.primitives.UserId r11, java.lang.Integer r12, boolean r13) {
         
-        throw new UnsupportedOperationException("Method not decompiled: com.discord.icons.IconUrlUtils.m505getForGuildMember2tNb6hE(java.lang.String, com.discord.primitives.GuildId, com.discord.primitives.UserId, java.lang.Integer, boolean):java.lang.String");
+        throw new UnsupportedOperationException("Method not decompiled: com.discord.icons.IconUrlUtils.m510getForGuildMember2tNb6hE(java.lang.String, com.discord.primitives.GuildId, com.discord.primitives.UserId, java.lang.Integer, boolean):java.lang.String");
     }
 
     
-    public final String m506getForUser_fRzTXg(Context context, UserId userId, String str, Integer num, boolean z10, Integer num2) {
+    public final String m511getForUser_fRzTXg(Context context, UserId userId, String str, Integer num, boolean z10, Integer num2) {
         Object obj;
         q.h(context, "context");
         if (userId != null) {
-            if (UserId.m672equalsimpl(UserId.m670constructorimpl(-1L), userId)) {
+            if (UserId.m677equalsimpl(UserId.m675constructorimpl(-1L), userId)) {
                 if (str == null) {
                     return "";
                 }
                 return str;
             } else if (str != null) {
                 try {
-                    s.a aVar = s.f21222k;
+                    s.a aVar = s.f26002k;
                     String mediaExtension = MediaExtensionKt.getMediaExtension(z10, str);
                     obj = s.b(MediaProxy.withSize$default(MediaProxy.INSTANCE, Hosts.INSTANCE.getCDN() + "/avatars/" + userId + "/" + str + "." + mediaExtension, num2, null, 4, null));
                 } catch (Throwable th2) {
-                    s.a aVar2 = s.f21222k;
+                    s.a aVar2 = s.f26002k;
                     obj = s.b(t.a(th2));
                 }
                 if (s.e(obj) != null) {

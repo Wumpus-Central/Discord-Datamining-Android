@@ -57,18 +57,18 @@ public final class AudioPlayerManager {
         }
 
         
-        public static  AudioSource m344copyntcYbpo$default(AudioSource audioSource, String str, String str2, int i10, Object obj) {
+        public static  AudioSource m349copyntcYbpo$default(AudioSource audioSource, String str, String str2, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 str = audioSource.messageId;
             }
             if ((i10 & 2) != 0) {
                 str2 = audioSource.url;
             }
-            return audioSource.m346copyntcYbpo(str, str2);
+            return audioSource.m351copyntcYbpo(str, str2);
         }
 
         
-        public final String m345component13Eiw7ao() {
+        public final String m350component13Eiw7ao() {
             return this.messageId;
         }
 
@@ -77,7 +77,7 @@ public final class AudioPlayerManager {
         }
 
         
-        public final AudioSource m346copyntcYbpo(String messageId, String url) {
+        public final AudioSource m351copyntcYbpo(String messageId, String url) {
             q.h(messageId, "messageId");
             q.h(url, "url");
             return new AudioSource(messageId, url, null);
@@ -91,11 +91,11 @@ public final class AudioPlayerManager {
                 return false;
             }
             AudioSource audioSource = (AudioSource) obj;
-            return MessageId.m635equalsimpl0(this.messageId, audioSource.messageId) && q.c(this.url, audioSource.url);
+            return MessageId.m640equalsimpl0(this.messageId, audioSource.messageId) && q.c(this.url, audioSource.url);
         }
 
         
-        public final String m347getMessageId3Eiw7ao() {
+        public final String m352getMessageId3Eiw7ao() {
             return this.messageId;
         }
 
@@ -104,11 +104,11 @@ public final class AudioPlayerManager {
         }
 
         public int hashCode() {
-            return (MessageId.m636hashCodeimpl(this.messageId) * 31) + this.url.hashCode();
+            return (MessageId.m641hashCodeimpl(this.messageId) * 31) + this.url.hashCode();
         }
 
         public String toString() {
-            String str = MessageId.m637toStringimpl(this.messageId);
+            String str = MessageId.m642toStringimpl(this.messageId);
             String str2 = this.url;
             return "AudioSource(messageId=" + str + ", url=" + str2 + ")";
         }
@@ -199,12 +199,12 @@ public final class AudioPlayerManager {
         if (Build.VERSION.SDK_INT >= 26) {
             AudioManager audioManager3 = audioManager;
             if (audioManager3 == null) {
-                q.z("audioManager");
+                q.y("audioManager");
                 audioManager3 = null;
             }
             AudioFocusRequest audioFocusRequest2 = focusRequest;
             if (audioFocusRequest2 == null) {
-                q.z("focusRequest");
+                q.y("focusRequest");
             } else {
                 audioFocusRequest = audioFocusRequest2;
             }
@@ -213,7 +213,7 @@ public final class AudioPlayerManager {
         }
         AudioManager audioManager4 = audioManager;
         if (audioManager4 == null) {
-            q.z("audioManager");
+            q.y("audioManager");
         } else {
             audioManager2 = audioManager4;
         }
@@ -264,12 +264,12 @@ public final class AudioPlayerManager {
         if (Build.VERSION.SDK_INT >= 26) {
             AudioManager audioManager3 = audioManager;
             if (audioManager3 == null) {
-                q.z("audioManager");
+                q.y("audioManager");
                 audioManager3 = null;
             }
             AudioFocusRequest audioFocusRequest2 = focusRequest;
             if (audioFocusRequest2 == null) {
-                q.z("focusRequest");
+                q.y("focusRequest");
             } else {
                 audioFocusRequest = audioFocusRequest2;
             }
@@ -277,7 +277,7 @@ public final class AudioPlayerManager {
         } else {
             AudioManager audioManager4 = audioManager;
             if (audioManager4 == null) {
-                q.z("audioManager");
+                q.y("audioManager");
             } else {
                 audioManager2 = audioManager4;
             }

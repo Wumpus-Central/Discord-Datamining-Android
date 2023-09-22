@@ -7,12 +7,12 @@ import android.graphics.Paint;
 import android.graphics.Shader;
 import com.discord.image.fresco.postprocessors.PostProcessor;
 import com.facebook.imagepipeline.request.BasePostprocessor;
-import kf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
+import pf.x;
 
 @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u0000 \t2\u00020\u0001:\u0001\tB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\n"}, d2 = {"Lcom/discord/image/fresco/postprocessors/processors/GradientPostprocessor;", "Lcom/facebook/imagepipeline/request/BasePostprocessor;", "gradient", "Lcom/discord/image/fresco/postprocessors/PostProcessor$Gradient;", "(Lcom/discord/image/fresco/postprocessors/PostProcessor$Gradient;)V", "process", "", "bitmap", "Landroid/graphics/Bitmap;", "Companion", "fresco_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -29,32 +29,32 @@ public final class GradientPostprocessor extends BasePostprocessor {
         private static final class Point {
 
             
-            private final float f7508x;
+            private final float f7200x;
 
             
-            private final float f7509y;
+            private final float f7201y;
 
             public Point(float f10, float f11) {
-                this.f7508x = f10;
-                this.f7509y = f11;
+                this.f7200x = f10;
+                this.f7201y = f11;
             }
 
             public static  Point copy$default(Point point, float f10, float f11, int i10, Object obj) {
                 if ((i10 & 1) != 0) {
-                    f10 = point.f7508x;
+                    f10 = point.f7200x;
                 }
                 if ((i10 & 2) != 0) {
-                    f11 = point.f7509y;
+                    f11 = point.f7201y;
                 }
                 return point.copy(f10, f11);
             }
 
             public final float component1() {
-                return this.f7508x;
+                return this.f7200x;
             }
 
             public final float component2() {
-                return this.f7509y;
+                return this.f7201y;
             }
 
             public final Point copy(float f10, float f11) {
@@ -69,24 +69,24 @@ public final class GradientPostprocessor extends BasePostprocessor {
                     return false;
                 }
                 Point point = (Point) obj;
-                return Float.compare(this.f7508x, point.f7508x) == 0 && Float.compare(this.f7509y, point.f7509y) == 0;
+                return Float.compare(this.f7200x, point.f7200x) == 0 && Float.compare(this.f7201y, point.f7201y) == 0;
             }
 
             public final float getX() {
-                return this.f7508x;
+                return this.f7200x;
             }
 
             public final float getY() {
-                return this.f7509y;
+                return this.f7201y;
             }
 
             public int hashCode() {
-                return (Float.floatToIntBits(this.f7508x) * 31) + Float.floatToIntBits(this.f7509y);
+                return (Float.floatToIntBits(this.f7200x) * 31) + Float.floatToIntBits(this.f7201y);
             }
 
             public String toString() {
-                float f10 = this.f7508x;
-                float f11 = this.f7509y;
+                float f10 = this.f7200x;
+                float f11 = this.f7201y;
                 return "Point(x=" + f10 + ", y=" + f11 + ")";
             }
         }
@@ -145,14 +145,14 @@ public final class GradientPostprocessor extends BasePostprocessor {
         } else if (i10 == 4) {
             pair = x.a(new Companion.Point(bitmap.getWidth() / 2.0f, bitmap.getHeight()), new Companion.Point(bitmap.getWidth() / 2.0f, 0.0f));
         } else {
-            throw new kf.q();
+            throw new pf.q();
         }
         Companion.Point point = (Companion.Point) pair.a();
         Companion.Point point2 = (Companion.Point) pair.b();
         float height = bitmap.getHeight();
         Paint paint = new Paint();
         paint.setShader(new LinearGradient(point.getX(), point.getY(), point2.getX(), point2.getY(), new int[]{this.gradient.getStartColor(), this.gradient.getEndColor()}, new float[]{this.gradient.getStartPosition(), this.gradient.getEndPosition()}, Shader.TileMode.CLAMP));
-        Unit unit = Unit.f21444a;
+        Unit unit = Unit.f21600a;
         new Canvas(bitmap).drawRect(0.0f, 0.0f, bitmap.getWidth(), height, paint);
     }
 }

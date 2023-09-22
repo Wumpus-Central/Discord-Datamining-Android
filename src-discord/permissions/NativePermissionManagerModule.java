@@ -169,12 +169,12 @@ public final class NativePermissionManagerModule extends ReactContextBaseJavaMod
 
     @ReactMethod
     public final void requestPhotoAuthorization(Promise promise) {
-        List k10;
+        List l10;
         q.h(promise, "promise");
         if (Build.VERSION.SDK_INT >= 33) {
             PermissionsModule permissionsModule = getPermissionsModule();
-            k10 = j.k("android.permission.READ_MEDIA_IMAGES", "android.permission.READ_MEDIA_VIDEO", "android.permission.READ_MEDIA_AUDIO");
-            permissionsModule.requestMultiplePermissions(NativeArrayExtensionsKt.toNativeArray(k10), Companion.transformRequestResult(promise));
+            l10 = j.l("android.permission.READ_MEDIA_IMAGES", "android.permission.READ_MEDIA_VIDEO", "android.permission.READ_MEDIA_AUDIO");
+            permissionsModule.requestMultiplePermissions(NativeArrayExtensionsKt.toNativeArray(l10), Companion.transformRequestResult(promise));
             return;
         }
         getPermissionsModule().requestPermission("android.permission.READ_EXTERNAL_STORAGE", Companion.transformRequestResult(promise));

@@ -47,7 +47,7 @@ public final class EmbeddedActivityMessageView extends ConstraintLayout {
     }
 
     public final void setItem(EmbeddedActivityChatListItem item, View.OnClickListener onJoinButtonClickListener, View.OnClickListener onDismissClickListener) {
-        int s10;
+        int t10;
         q.h(item, "item");
         q.h(onJoinButtonClickListener, "onJoinButtonClickListener");
         q.h(onDismissClickListener, "onDismissClickListener");
@@ -60,8 +60,8 @@ public final class EmbeddedActivityMessageView extends ConstraintLayout {
         this.binding.dismiss.setContentDescription(item.getDismissButtonAccessibilityLabel());
         OverlappingCirclesView overlappingCirclesView = this.binding.participants;
         List<String> avatarUrls = item.getAvatarUrls();
-        s10 = k.s(avatarUrls, 10);
-        ArrayList arrayList = new ArrayList(s10);
+        t10 = k.t(avatarUrls, 10);
+        ArrayList arrayList = new ArrayList(t10);
         for (String str : avatarUrls) {
             arrayList.add(new OverlappingItem(str));
         }

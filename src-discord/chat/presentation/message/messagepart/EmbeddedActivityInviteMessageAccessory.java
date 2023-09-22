@@ -75,7 +75,7 @@ public final class EmbeddedActivityInviteMessageAccessory extends MessageAccesso
             return false;
         }
         EmbeddedActivityInviteMessageAccessory embeddedActivityInviteMessageAccessory = (EmbeddedActivityInviteMessageAccessory) obj;
-        return MessageId.m635equalsimpl0(mo236getMessageId3Eiw7ao(), embeddedActivityInviteMessageAccessory.mo236getMessageId3Eiw7ao()) && this.codedLinkIndex == embeddedActivityInviteMessageAccessory.codedLinkIndex && q.c(this.embeddedActivityInviteEmbed, embeddedActivityInviteMessageAccessory.embeddedActivityInviteEmbed) && this.constrainedWidth == embeddedActivityInviteMessageAccessory.constrainedWidth;
+        return MessageId.m640equalsimpl0(mo236getMessageId3Eiw7ao(), embeddedActivityInviteMessageAccessory.mo236getMessageId3Eiw7ao()) && this.codedLinkIndex == embeddedActivityInviteMessageAccessory.codedLinkIndex && q.c(this.embeddedActivityInviteEmbed, embeddedActivityInviteMessageAccessory.embeddedActivityInviteEmbed) && this.constrainedWidth == embeddedActivityInviteMessageAccessory.constrainedWidth;
     }
 
     public final int getCodedLinkIndex() {
@@ -97,11 +97,11 @@ public final class EmbeddedActivityInviteMessageAccessory extends MessageAccesso
     }
 
     public int hashCode() {
-        return (((((MessageId.m636hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.codedLinkIndex) * 31) + this.embeddedActivityInviteEmbed.hashCode()) * 31) + this.constrainedWidth;
+        return (((((MessageId.m641hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.codedLinkIndex) * 31) + this.embeddedActivityInviteEmbed.hashCode()) * 31) + this.constrainedWidth;
     }
 
     public String toString() {
-        String str = MessageId.m637toStringimpl(mo236getMessageId3Eiw7ao());
+        String str = MessageId.m642toStringimpl(mo236getMessageId3Eiw7ao());
         int i10 = this.codedLinkIndex;
         EmbeddedActivityInviteEmbedImpl embeddedActivityInviteEmbedImpl = this.embeddedActivityInviteEmbed;
         int i11 = this.constrainedWidth;

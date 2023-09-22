@@ -1,6 +1,7 @@
 package com.discord.app_database;
 
 import android.content.Context;
+import cj.v1;
 import com.discord.cache.CacheModule;
 import com.discord.kvstorage.discordapp.DiscordMobileApi;
 import com.discord.logging.Log;
@@ -9,15 +10,14 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.module.annotations.ReactModule;
 import java.util.Map;
-import kf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
 import kotlinx.serialization.json.Json;
-import lf.v;
-import of.a;
-import xi.v1;
+import pf.x;
+import qf.v;
+import tf.a;
 
 @ReactModule(name = AppDatabaseModule.LOG_TAG)
 @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\b\u0007\u0018\u0000 \f2\u00020\u0001:\u0001\fB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0016\u0010\u0005\u001a\u0010\u0012\u0004\u0012\u00020\u0007\u0012\u0006\u0012\u0004\u0018\u00010\u00070\u0006H\u0016J\b\u0010\b\u001a\u00020\u0007H\u0016J\u0012\u0010\t\u001a\u00020\n2\b\u0010\u000b\u001a\u0004\u0018\u00010\u0007H\u0007¨\u0006\r"}, d2 = {"Lcom/discord/app_database/AppDatabaseModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "getConstants", "", "", "getName", "setUserId", "", "userId", "Companion", "app_database_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -66,7 +66,7 @@ public final class AppDatabaseModule extends ReactContextBaseJavaModule {
             DiscordMobileApi.initialize(AppDatabaseModule.dataDirectory);
             try {
                 String json = DiscordMobileApi.getGuildVersions(databaseName(userId));
-                Json.a aVar = Json.f21971d;
+                Json.a aVar = Json.f22128d;
                 q.g(json, "json");
                 aVar.a();
                 return (GuildVersion[]) aVar.b(new v1(f0.b(GuildVersion.class), GuildVersion$$serializer.INSTANCE), json);

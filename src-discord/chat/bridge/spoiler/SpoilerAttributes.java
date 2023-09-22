@@ -30,40 +30,40 @@ public final class SpoilerAttributes {
         }
 
         
-        private final SpoilerAttributes m129forItemA9xMOlw(SpoilerableData spoilerableData, String str, String str2) {
+        private final SpoilerAttributes m128forItemA9xMOlw(SpoilerableData spoilerableData, String str, String str2) {
             String obscureOrNull = spoilerableData.getObscureOrNull();
             if (obscureOrNull != null) {
-                String str3 = MessageId.m637toStringimpl(str);
-                return new SpoilerAttributes(SpoilerIdentifier.m133constructorimpl("obscure:messageId" + str3 + ":" + str2), obscureOrNull, SpoilerType.OBSCURE, null);
+                String str3 = MessageId.m642toStringimpl(str);
+                return new SpoilerAttributes(SpoilerIdentifier.m132constructorimpl("obscure:messageId" + str3 + ":" + str2), obscureOrNull, SpoilerType.OBSCURE, null);
             }
             String spoilerOrNull = spoilerableData.getSpoilerOrNull();
             if (spoilerOrNull == null) {
                 return null;
             }
-            String str4 = MessageId.m637toStringimpl(str);
-            return new SpoilerAttributes(SpoilerIdentifier.m133constructorimpl("spoiler:messageId" + str4 + ":" + str2), spoilerOrNull, SpoilerType.SPOILER, null);
+            String str4 = MessageId.m642toStringimpl(str);
+            return new SpoilerAttributes(SpoilerIdentifier.m132constructorimpl("spoiler:messageId" + str4 + ":" + str2), spoilerOrNull, SpoilerType.SPOILER, null);
         }
 
         public final SpoilerAttributes forAttachment(Attachment attachment, Message message, int i10) {
             q.h(attachment, "attachment");
             q.h(message, "message");
-            String str = message.m25getId3Eiw7ao();
+            String str = message.m24getId3Eiw7ao();
             String indexLabel = attachment.type().getIndexLabel();
-            return m129forItemA9xMOlw(attachment, str, indexLabel + i10);
+            return m128forItemA9xMOlw(attachment, str, indexLabel + i10);
         }
 
         public final SpoilerAttributes forEmbed(Embed embed, Message message, int i10) {
             q.h(embed, "embed");
             q.h(message, "message");
-            String str = message.m25getId3Eiw7ao();
-            return m129forItemA9xMOlw(embed, str, "embedIndex" + i10);
+            String str = message.m24getId3Eiw7ao();
+            return m128forItemA9xMOlw(embed, str, "embedIndex" + i10);
         }
 
         public final SpoilerAttributes forMediaPostPreviewEmbed(PostPreviewEmbed embed, Message message, int i10) {
             q.h(embed, "embed");
             q.h(message, "message");
-            String str = message.m25getId3Eiw7ao();
-            return m129forItemA9xMOlw(embed, str, "mediaPostPreviewEmbed" + i10);
+            String str = message.m24getId3Eiw7ao();
+            return m128forItemA9xMOlw(embed, str, "mediaPostPreviewEmbed" + i10);
         }
     }
 
@@ -86,7 +86,7 @@ public final class SpoilerAttributes {
     }
 
     
-    public static  SpoilerAttributes m125copyhoKre8U$default(SpoilerAttributes spoilerAttributes, String str, String str2, SpoilerType spoilerType, int i10, Object obj) {
+    public static  SpoilerAttributes m124copyhoKre8U$default(SpoilerAttributes spoilerAttributes, String str, String str2, SpoilerType spoilerType, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = spoilerAttributes.identifier;
         }
@@ -96,18 +96,18 @@ public final class SpoilerAttributes {
         if ((i10 & 4) != 0) {
             spoilerType = spoilerAttributes.type;
         }
-        return spoilerAttributes.m127copyhoKre8U(str, str2, spoilerType);
+        return spoilerAttributes.m126copyhoKre8U(str, str2, spoilerType);
     }
 
     private final boolean hasSpoilerConfig() {
-        if (SpoilerManager.INSTANCE.m140isNotRevealedV2PEE7g(this.identifier) || this.type == SpoilerType.OBSCURE) {
+        if (SpoilerManager.INSTANCE.m139isNotRevealedV2PEE7g(this.identifier) || this.type == SpoilerType.OBSCURE) {
             return true;
         }
         return false;
     }
 
     
-    public final String m126component1Bq9X6Gg() {
+    public final String m125component1Bq9X6Gg() {
         return this.identifier;
     }
 
@@ -134,7 +134,7 @@ public final class SpoilerAttributes {
     }
 
     
-    public final SpoilerAttributes m127copyhoKre8U(String identifier, String label, SpoilerType type) {
+    public final SpoilerAttributes m126copyhoKre8U(String identifier, String label, SpoilerType type) {
         q.h(identifier, "identifier");
         q.h(label, "label");
         q.h(type, "type");
@@ -149,11 +149,11 @@ public final class SpoilerAttributes {
             return false;
         }
         SpoilerAttributes spoilerAttributes = (SpoilerAttributes) obj;
-        return SpoilerIdentifier.m135equalsimpl0(this.identifier, spoilerAttributes.identifier) && q.c(this.label, spoilerAttributes.label) && this.type == spoilerAttributes.type;
+        return SpoilerIdentifier.m134equalsimpl0(this.identifier, spoilerAttributes.identifier) && q.c(this.label, spoilerAttributes.label) && this.type == spoilerAttributes.type;
     }
 
     
-    public final String m128getIdentifierBq9X6Gg() {
+    public final String m127getIdentifierBq9X6Gg() {
         return this.identifier;
     }
 
@@ -166,11 +166,11 @@ public final class SpoilerAttributes {
     }
 
     public int hashCode() {
-        return (((SpoilerIdentifier.m136hashCodeimpl(this.identifier) * 31) + this.label.hashCode()) * 31) + this.type.hashCode();
+        return (((SpoilerIdentifier.m135hashCodeimpl(this.identifier) * 31) + this.label.hashCode()) * 31) + this.type.hashCode();
     }
 
     public String toString() {
-        String str = SpoilerIdentifier.m137toStringimpl(this.identifier);
+        String str = SpoilerIdentifier.m136toStringimpl(this.identifier);
         String str2 = this.label;
         SpoilerType spoilerType = this.type;
         return "SpoilerAttributes(identifier=" + str + ", label=" + str2 + ", type=" + spoilerType + ")";

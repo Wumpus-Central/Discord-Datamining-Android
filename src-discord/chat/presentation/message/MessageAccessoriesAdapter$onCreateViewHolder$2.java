@@ -20,8 +20,8 @@ public  class MessageAccessoriesAdapter$onCreateViewHolder$2 extends n implement
 
     @Override 
     public   Unit invoke(Sticker sticker, MessageId messageId) {
-        m227invokeAyv7vGE(sticker, messageId.m639unboximpl());
-        return Unit.f21444a;
+        m227invokeAyv7vGE(sticker, messageId.m644unboximpl());
+        return Unit.f21600a;
     }
 
     

@@ -19,12 +19,12 @@ public final class ImageAttachmentViewHolder$bind$1 extends s implements Functio
 
     @Override 
     public   Unit invoke(MessageId messageId) {
-        m363invoke1xi1bu0(messageId.m639unboximpl());
-        return Unit.f21444a;
+        m368invoke1xi1bu0(messageId.m644unboximpl());
+        return Unit.f21600a;
     }
 
     
-    public final void m363invoke1xi1bu0(String str) {
+    public final void m368invoke1xi1bu0(String str) {
         q.h(str, "<anonymous parameter 0>");
     }
 }

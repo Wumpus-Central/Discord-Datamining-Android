@@ -1,5 +1,6 @@
 package com.discord.chat.presentation.root;
 
+import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.bridge.Message;
 import com.discord.chat.bridge.SwipeActionsType;
 import com.discord.chat.bridge.messageframe.MessageFrame;
@@ -76,6 +77,6 @@ public final class MessageContextKt {
         } else {
             z15 = true;
         }
-        return new MessageContext(z10, c10, addReactionLabel, addNewReactionAccessibilityLabel, str, reactionsTheme, truncation, z11, z12, z13, z14, z15);
+        return new MessageContext(z10, c10, addReactionLabel, addNewReactionAccessibilityLabel, str, reactionsTheme, truncation, z11, z12, z13, z14, z15, null, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, null);
     }
 }

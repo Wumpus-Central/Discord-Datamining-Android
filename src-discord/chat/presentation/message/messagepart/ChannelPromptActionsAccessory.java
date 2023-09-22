@@ -11,7 +11,7 @@ public final class ChannelPromptActionsAccessory extends MessageAccessory {
 
     
     public ChannelPromptActionsAccessory(Message message) {
-        super(message.m25getId3Eiw7ao(), "channel deadchat prompt actions", null);
+        super(message.m24getId3Eiw7ao(), "channel deadchat prompt actions", null);
         q.h(message, "message");
         this.message = message;
     }

@@ -114,7 +114,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAccessory {
             return false;
         }
         ImageAttachmentMessageAccessory imageAttachmentMessageAccessory = (ImageAttachmentMessageAccessory) obj;
-        return MessageId.m635equalsimpl0(mo236getMessageId3Eiw7ao(), imageAttachmentMessageAccessory.mo236getMessageId3Eiw7ao()) && this.attachmentIndex == imageAttachmentMessageAccessory.attachmentIndex && q.c(this.attachment, imageAttachmentMessageAccessory.attachment) && this.constrainedWidth == imageAttachmentMessageAccessory.constrainedWidth && this.radiusPx == imageAttachmentMessageAccessory.radiusPx && q.c(this.spoilerAttributes, imageAttachmentMessageAccessory.spoilerAttributes) && q.c(this.onLongClick, imageAttachmentMessageAccessory.onLongClick) && this.useNewAltTextButton == imageAttachmentMessageAccessory.useNewAltTextButton && q.c(this.attachmentsOpacity, imageAttachmentMessageAccessory.attachmentsOpacity) && this.showRemixButton == imageAttachmentMessageAccessory.showRemixButton && this.isPartOfMosaic == imageAttachmentMessageAccessory.isPartOfMosaic && q.c(this.remixButtonIconColor, imageAttachmentMessageAccessory.remixButtonIconColor) && q.c(this.remixButtonBackgroundColor, imageAttachmentMessageAccessory.remixButtonBackgroundColor);
+        return MessageId.m640equalsimpl0(mo236getMessageId3Eiw7ao(), imageAttachmentMessageAccessory.mo236getMessageId3Eiw7ao()) && this.attachmentIndex == imageAttachmentMessageAccessory.attachmentIndex && q.c(this.attachment, imageAttachmentMessageAccessory.attachment) && this.constrainedWidth == imageAttachmentMessageAccessory.constrainedWidth && this.radiusPx == imageAttachmentMessageAccessory.radiusPx && q.c(this.spoilerAttributes, imageAttachmentMessageAccessory.spoilerAttributes) && q.c(this.onLongClick, imageAttachmentMessageAccessory.onLongClick) && this.useNewAltTextButton == imageAttachmentMessageAccessory.useNewAltTextButton && q.c(this.attachmentsOpacity, imageAttachmentMessageAccessory.attachmentsOpacity) && this.showRemixButton == imageAttachmentMessageAccessory.showRemixButton && this.isPartOfMosaic == imageAttachmentMessageAccessory.isPartOfMosaic && q.c(this.remixButtonIconColor, imageAttachmentMessageAccessory.remixButtonIconColor) && q.c(this.remixButtonBackgroundColor, imageAttachmentMessageAccessory.remixButtonBackgroundColor);
     }
 
     public final Attachment getAttachment() {
@@ -168,7 +168,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int i10 = ((((((((MessageId.m636hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.attachmentIndex) * 31) + this.attachment.hashCode()) * 31) + this.constrainedWidth) * 31) + this.radiusPx) * 31;
+        int i10 = ((((((((MessageId.m641hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.attachmentIndex) * 31) + this.attachment.hashCode()) * 31) + this.constrainedWidth) * 31) + this.radiusPx) * 31;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         int i11 = 0;
         int hashCode = (i10 + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode())) * 31;
@@ -212,7 +212,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m637toStringimpl(mo236getMessageId3Eiw7ao());
+        String str = MessageId.m642toStringimpl(mo236getMessageId3Eiw7ao());
         int i10 = this.attachmentIndex;
         Attachment attachment = this.attachment;
         int i11 = this.constrainedWidth;

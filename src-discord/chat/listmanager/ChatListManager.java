@@ -34,13 +34,13 @@ import kotlin.collections.p;
 import kotlin.collections.r;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
-import kotlinx.coroutines.a1;
+import kotlinx.coroutines.b1;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.MutableSharedFlow;
 import kotlinx.coroutines.flow.m;
 import kotlinx.coroutines.l;
 import kotlinx.coroutines.m0;
-import ri.e;
+import wi.e;
 
 @Metadata(d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001:\u0001$B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0006\u0010\u000e\u001a\u00020\u000fJ\u0016\u0010\u0010\u001a\u00020\u00112\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\n0\u0013H\u0002J\u0006\u0010\u0014\u001a\u00020\u0015J\u0016\u0010\u0016\u001a\u00020\u000f2\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0018J\u0016\u0010\u001a\u001a\u00020\u00112\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\n0\u0013H\u0002J\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\r0\u001cJ\u0010\u0010\u001d\u001a\u00020\u000f2\u0006\u0010\u001e\u001a\u00020\rH\u0002J\u0014\u0010\u001f\u001a\u00020\u000f2\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\n0\u0013J\u001a\u0010 \u001a\u00020\u000f*\b\u0012\u0004\u0012\u00020\n0\t2\u0006\u0010!\u001a\u00020\nH\u0002J\f\u0010\"\u001a\u00020#*\u00020\nH\u0002R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\b\u001a\n\u0012\u0004\u0012\u00020\n\u0018\u00010\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\r0\fX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006%"}, d2 = {"Lcom/discord/chat/listmanager/ChatListManager;", "", "coroutineScope", "Lkotlinx/coroutines/CoroutineScope;", "(Lkotlinx/coroutines/CoroutineScope;)V", "isDisabled", "", "publishScope", "rows", "", "Lcom/discord/chat/bridge/row/Row;", "updatesFlow", "Lkotlinx/coroutines/flow/MutableSharedFlow;", "Lcom/discord/chat/listmanager/ChatListUpdate;", "clearRows", "", "createNewRows", "Lcom/discord/chat/listmanager/ChatListManager$RowsModificationResult;", "updates", "", "getRowCount", "", "handleError", "errorJson", "", "causeMessage", "modifyExistingRows", "observeUpdates", "Lkotlinx/coroutines/flow/Flow;", "publishUpdate", "update", "updateRows", "insert", "row", "toChatListItem", "Lcom/discord/chat/presentation/list/item/ChatListItem;", "RowsModificationResult", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -144,11 +144,11 @@ public final class ChatListManager {
 
     public ChatListManager(CoroutineScope coroutineScope) {
         q.h(coroutineScope, "coroutineScope");
-        this.publishScope = m0.g(coroutineScope, a1.a());
+        this.publishScope = m0.i(coroutineScope, b1.a());
     }
 
     private final RowsModificationResult createNewRows(List<? extends Row> list) {
-        List<Row> D0;
+        List<Row> E0;
         boolean z10;
         boolean z11 = false;
         if (!(list instanceof Collection) || !list.isEmpty()) {
@@ -172,8 +172,8 @@ public final class ChatListManager {
             }
         }
         if (!z11) {
-            D0 = r.D0(list);
-            this.rows = D0;
+            E0 = r.E0(list);
+            this.rows = E0;
             return new RowsModificationResult(list, true, null);
         }
         throw new IllegalArgumentException("Deletes are not expected or allowed during syncs.".toString());
@@ -189,9 +189,9 @@ public final class ChatListManager {
 
     private final RowsModificationResult modifyExistingRows(List<? extends Row> list) {
         boolean z10;
-        List<Row> E;
+        List<Row> F;
         boolean z11;
-        Object S;
+        Object T;
         boolean z12;
         boolean z13;
         boolean z14;
@@ -235,8 +235,8 @@ public final class ChatListManager {
                 arrayList2.add(obj);
             }
         }
-        E = p.E(arrayList2);
-        for (Row row3 : E) {
+        F = p.F(arrayList2);
+        for (Row row3 : F) {
             if (row3 instanceof DeleteRow) {
                 list2.remove(row3.getIndex());
                 listOperationsBuilder.add(new ListOperation.Remove(row3.getIndex()));
@@ -246,8 +246,8 @@ public final class ChatListManager {
                 } else {
                     z11 = false;
                 }
-                S = r.S(list2);
-                Row row4 = (Row) S;
+                T = r.T(list2);
+                Row row4 = (Row) T;
                 if (!(row4 instanceof LoadingRow) || !((LoadingRow) row4).isLoading()) {
                     z12 = false;
                 } else {
@@ -277,8 +277,8 @@ public final class ChatListManager {
     }
 
     private final ChatListItem toChatListItem(Row row) {
-        int s10;
-        List E;
+        int t10;
+        List F;
         ChatListItem chatListMessageItem;
         ChatListItem loadingChatListItem;
         if (row instanceof MessageRow) {
@@ -305,16 +305,16 @@ public final class ChatListManager {
                 boolean revealed = blockedGroupRow.getRevealed();
                 List<BlockedGroupContent> content = blockedGroupRow.getContent();
                 if (content == null) {
-                    content = j.h();
+                    content = j.i();
                 }
-                s10 = k.s(content, 10);
-                ArrayList arrayList = new ArrayList(s10);
+                t10 = k.t(content, 10);
+                ArrayList arrayList = new ArrayList(t10);
                 for (BlockedGroupContent blockedGroupContent : content) {
-                    chatListMessageItem = MessageRowKt.toChatListMessageItem(blockedGroupContent.getMessage(), (r18 & 1) != 0 ? null : null, new MessageContext(false, false, null, null, null, null, null, false, false, false, false, false, 4095, null), (r18 & 4) != 0, (r18 & 8) != 0 ? false : false, (r18 & 16) != 0 ? false : false, (r18 & 32) != 0 ? null : null, (r18 & 64) != 0 ? null : null);
+                    chatListMessageItem = MessageRowKt.toChatListMessageItem(blockedGroupContent.getMessage(), (r18 & 1) != 0 ? null : null, new MessageContext(false, false, null, null, null, null, null, false, false, false, false, false, null, 8191, null), (r18 & 4) != 0, (r18 & 8) != 0 ? false : false, (r18 & 16) != 0 ? false : false, (r18 & 32) != 0 ? null : null, (r18 & 64) != 0 ? null : null);
                     arrayList.add(chatListMessageItem);
                 }
-                E = p.E(arrayList);
-                return new BlockedGroupChatListItem(text, context, color, backgroundColor, borderColor, revealed, E);
+                F = p.F(arrayList);
+                return new BlockedGroupChatListItem(text, context, color, backgroundColor, borderColor, revealed, F);
             }
             throw new IllegalStateException("Unknown row type.".toString());
         }
@@ -323,7 +323,7 @@ public final class ChatListManager {
 
     public final void clearRows() {
         boolean z10;
-        List h10;
+        List i10;
         List<Row> list = this.rows;
         if (list == null || list.isEmpty()) {
             z10 = true;
@@ -332,8 +332,8 @@ public final class ChatListManager {
         }
         if (!z10) {
             SpoilerManager.INSTANCE.reset();
-            h10 = j.h();
-            publishUpdate(new ChatListUpdate(h10, ChatListAction.Clear.INSTANCE, null));
+            i10 = j.i();
+            publishUpdate(new ChatListUpdate(i10, ChatListAction.Clear.INSTANCE, null));
         }
         this.rows = null;
     }
@@ -347,11 +347,11 @@ public final class ChatListManager {
     }
 
     public final void handleError(String errorJson, String causeMessage) {
-        List n10;
+        List o10;
         q.h(errorJson, "errorJson");
         q.h(causeMessage, "causeMessage");
-        n10 = j.n(new DeserializationErrorChatListItem("error-id", errorJson, causeMessage));
-        publishUpdate(new ChatListUpdate(n10, ChatListAction.Noop.INSTANCE, null));
+        o10 = j.o(new DeserializationErrorChatListItem("error-id", errorJson, causeMessage));
+        publishUpdate(new ChatListUpdate(o10, ChatListAction.Noop.INSTANCE, null));
         this.isDisabled = true;
     }
 
@@ -361,7 +361,7 @@ public final class ChatListManager {
 
     public final void updateRows(List<? extends Row> updates) {
         RowsModificationResult rowsModificationResult;
-        int s10;
+        int t10;
         boolean z10;
         boolean z11;
         Row row;
@@ -380,14 +380,14 @@ public final class ChatListManager {
             List<Row> component1 = rowsModificationResult.component1();
             boolean component2 = rowsModificationResult.component2();
             List<ListOperation> component3 = rowsModificationResult.component3();
-            s10 = k.s(component1, 10);
-            ArrayList arrayList = new ArrayList(s10);
+            t10 = k.t(component1, 10);
+            ArrayList arrayList = new ArrayList(t10);
             int i10 = 0;
             ChatListAction chatListAction = null;
             for (Object obj : component1) {
                 int i11 = i10 + 1;
                 if (i10 < 0) {
-                    j.r();
+                    j.s();
                 }
                 Row row2 = (Row) obj;
                 boolean z14 = row2 instanceof MessageRow;

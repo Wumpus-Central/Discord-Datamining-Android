@@ -55,7 +55,7 @@ public final class ActivityBookmarkView extends ConstraintLayout {
 
     public final void setAvatarUris(List<String> avatarUris) {
         int i10;
-        int s10;
+        int t10;
         q.h(avatarUris, "avatarUris");
         boolean z10 = !avatarUris.isEmpty();
         OverlappingCirclesView overlappingCirclesView = this.binding.participants;
@@ -68,8 +68,8 @@ public final class ActivityBookmarkView extends ConstraintLayout {
         }
         overlappingCirclesView.setVisibility(i10);
         OverlappingCirclesView overlappingCirclesView2 = this.binding.participants;
-        s10 = k.s(avatarUris, 10);
-        ArrayList arrayList = new ArrayList(s10);
+        t10 = k.t(avatarUris, 10);
+        ArrayList arrayList = new ArrayList(t10);
         for (String str : avatarUris) {
             arrayList.add(new OverlappingItem(str));
         }

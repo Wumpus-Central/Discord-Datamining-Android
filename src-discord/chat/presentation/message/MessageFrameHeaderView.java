@@ -47,7 +47,7 @@ public final class MessageFrameHeaderView extends FrameLayout {
 
     private final  <T extends View> T getOrCreate(Function0<? extends T> function0) {
         T child = (T) getChildAt(0);
-        q.n(3, "T");
+        q.m(3, "T");
         if (child instanceof View) {
             q.g(child, "child");
             return child;

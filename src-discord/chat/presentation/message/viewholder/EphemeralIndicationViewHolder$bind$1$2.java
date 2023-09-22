@@ -26,7 +26,7 @@ public final class EphemeralIndicationViewHolder$bind$1$2 extends s implements F
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     

@@ -41,7 +41,7 @@ public final class NotificationCache {
         if (sharedPreferences2 != null) {
             return sharedPreferences2;
         }
-        q.z("cache");
+        q.y("cache");
         return null;
     }
 

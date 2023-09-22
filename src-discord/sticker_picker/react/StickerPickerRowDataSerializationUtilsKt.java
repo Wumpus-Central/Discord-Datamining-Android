@@ -11,13 +11,13 @@ import kotlin.Metadata;
 import kotlin.collections.k;
 import kotlin.jvm.internal.q;
 import kotlin.ranges.IntRange;
-import lf.p;
+import qf.p;
 
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a\u0010\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u0000¨\u0006\u0004"}, d2 = {"deserializeStickerPickerRowData", "Lcom/discord/sticker_picker/StickerPickerRow;", "data", "Lcom/facebook/react/bridge/ReadableMap;", "sticker_picker_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 
 public final class StickerPickerRowDataSerializationUtilsKt {
     public static final StickerPickerRow deserializeStickerPickerRowData(ReadableMap data) {
-        int s10;
+        int t10;
         StickerPickerRow.Sticker sticker;
         StickerPickerRow.Sticker.Type type;
         q.h(data, "data");
@@ -26,8 +26,8 @@ public final class StickerPickerRowDataSerializationUtilsKt {
         int i12 = data.getInt("itemSize");
         ReadableArray nonNullArray = NativeMapExtensionsKt.getNonNullArray(data, "items");
         IntRange sizeRange = NativeArrayExtensionsKt.sizeRange(nonNullArray);
-        s10 = k.s(sizeRange, 10);
-        ArrayList arrayList = new ArrayList(s10);
+        t10 = k.t(sizeRange, 10);
+        ArrayList arrayList = new ArrayList(t10);
         Iterator<Integer> it = sizeRange.iterator();
         while (it.hasNext()) {
             int nextInt = ((p) it).nextInt();

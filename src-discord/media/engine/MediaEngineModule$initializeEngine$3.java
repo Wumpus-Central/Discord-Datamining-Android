@@ -24,7 +24,7 @@ final class MediaEngineModule$initializeEngine$3 extends s implements Function2<
     @Override 
     public   Unit invoke(String str, Boolean bool) {
         invoke(str, bool.booleanValue());
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     public final void invoke(String streamId, boolean z10) {

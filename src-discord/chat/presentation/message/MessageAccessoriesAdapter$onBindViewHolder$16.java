@@ -1,32 +1,31 @@
 package com.discord.chat.presentation.message;
 
-import com.discord.chat.presentation.message.viewholder.MessagePartViewHolder;
+import com.discord.chat.presentation.events.ChatEventHandler;
+import com.discord.primitives.MessageId;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.s;
+import kotlin.jvm.internal.n;
+import kotlin.jvm.internal.q;
 
 
-@Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
+@Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 
-public final class MessageAccessoriesAdapter$onBindViewHolder$16 extends s implements Function0<Unit> {
-    final  MessagePartViewHolder $holder;
-    final  MessageAccessoriesAdapter this$0;
-
+public  class MessageAccessoriesAdapter$onBindViewHolder$16 extends n implements Function1<MessageId, Unit> {
     
-    
-    public MessageAccessoriesAdapter$onBindViewHolder$16(MessageAccessoriesAdapter messageAccessoriesAdapter, MessagePartViewHolder messagePartViewHolder) {
-        super(0);
-        this.this$0 = messageAccessoriesAdapter;
-        this.$holder = messagePartViewHolder;
+    public MessageAccessoriesAdapter$onBindViewHolder$16(Object obj) {
+        super(1, obj, ChatEventHandler.class, "onTapSeeMore", "onTapSeeMore-1xi1bu0(Ljava/lang/String;)V", 0);
     }
 
     @Override 
+    public   Unit invoke(MessageId messageId) {
+        m215invoke1xi1bu0(messageId.m644unboximpl());
+        return Unit.f21600a;
+    }
+
     
-    public final void invoke2() {
-        Function1 function1;
-        function1 = this.this$0.onTapSpoiler;
-        function1.invoke(this.$holder);
+    public final void m215invoke1xi1bu0(String p02) {
+        q.h(p02, "p0");
+        ((ChatEventHandler) this.receiver).mo186onTapSeeMore1xi1bu0(p02);
     }
 }

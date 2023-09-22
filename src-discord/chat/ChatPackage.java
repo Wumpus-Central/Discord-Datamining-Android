@@ -18,17 +18,17 @@ import kotlin.jvm.internal.q;
 public final class ChatPackage implements ReactPackage {
     @Override 
     public List<ChatModule> createNativeModules(ReactApplicationContext reactContext) {
-        List<ChatModule> n10;
+        List<ChatModule> o10;
         q.h(reactContext, "reactContext");
-        n10 = j.n(new ChatModule(reactContext));
-        return n10;
+        o10 = j.o(new ChatModule(reactContext));
+        return o10;
     }
 
     @Override 
     public List<BaseViewManager<? extends ViewGroup, LayoutShadowNode>> createViewManagers(ReactApplicationContext reactContext) {
-        List<BaseViewManager<? extends ViewGroup, LayoutShadowNode>> n10;
+        List<BaseViewManager<? extends ViewGroup, LayoutShadowNode>> o10;
         q.h(reactContext, "reactContext");
-        n10 = j.n(new ChatViewManager(), new ChatListViewManager(), new MessageViewManagers.MessageViewManager(), new MessageViewManagers.MessageBundleViewManager(), new MessageViewManagers.SystemMessageViewManager(), new MessageViewManagers.GuildMultilineSystemMessageViewManager());
-        return n10;
+        o10 = j.o(new ChatViewManager(), new ChatListViewManager(), new MessageViewManagers.MessageViewManager(), new MessageViewManagers.MessageBundleViewManager(), new MessageViewManagers.SystemMessageViewManager(), new MessageViewManagers.GuildMultilineSystemMessageViewManager());
+        return o10;
     }
 }

@@ -1,33 +1,32 @@
 package com.discord.chat.presentation.message;
 
-import com.discord.chat.presentation.events.ChatEventHandler;
-import com.discord.primitives.ChannelId;
-import com.discord.primitives.MessageId;
+import com.discord.chat.presentation.message.viewholder.MessagePartViewHolder;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.jvm.functions.Function3;
-import kotlin.jvm.internal.n;
-import kotlin.jvm.internal.q;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.s;
 
 
-@Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
 
-public  class MessageAccessoriesAdapter$onBindViewHolder$48 extends n implements Function3<MessageId, ChannelId, String, Unit> {
+public final class MessageAccessoriesAdapter$onBindViewHolder$48 extends s implements Function0<Unit> {
+    final  MessagePartViewHolder $holder;
+    final  MessageAccessoriesAdapter this$0;
+
     
-    public MessageAccessoriesAdapter$onBindViewHolder$48(Object obj) {
-        super(3, obj, ChatEventHandler.class, "onTapChannelPromptButton", "onTapChannelPromptButton-Eqy5D80(Ljava/lang/String;JLjava/lang/String;)V", 0);
+    
+    public MessageAccessoriesAdapter$onBindViewHolder$48(MessageAccessoriesAdapter messageAccessoriesAdapter, MessagePartViewHolder messagePartViewHolder) {
+        super(0);
+        this.this$0 = messageAccessoriesAdapter;
+        this.$holder = messagePartViewHolder;
     }
 
     @Override 
-    public   Unit invoke(MessageId messageId, ChannelId channelId, String str) {
-        m225invokeEqy5D80(messageId.m639unboximpl(), channelId.m614unboximpl(), str);
-        return Unit.f21444a;
-    }
-
     
-    public final void m225invokeEqy5D80(String p02, long j10, String p22) {
-        q.h(p02, "p0");
-        q.h(p22, "p2");
-        ((ChatEventHandler) this.receiver).mo173onTapChannelPromptButtonEqy5D80(p02, j10, p22);
+    public final void invoke2() {
+        Function1 function1;
+        function1 = this.this$0.onTapSpoiler;
+        function1.invoke(this.$holder);
     }
 }

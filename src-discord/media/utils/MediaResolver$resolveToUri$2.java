@@ -2,7 +2,6 @@ package com.discord.media.utils;
 
 import android.content.ContentResolver;
 import android.net.Uri;
-import kf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -10,7 +9,8 @@ import kotlin.coroutines.jvm.internal.e;
 import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
-import qf.d;
+import pf.t;
+import vf.d;
 
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "Landroid/net/Uri;", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -41,7 +41,7 @@ public final class MediaResolver$resolveToUri$2 extends k implements Function2<C
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Uri> continuation) {
-        return ((MediaResolver$resolveToUri$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21444a);
+        return ((MediaResolver$resolveToUri$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f21600a);
     }
 
     @Override 

@@ -27,14 +27,14 @@ final class BillingManager$getProductsWithRetry$1$1$listener$1 extends s impleme
     @Override 
     public   Unit invoke(BillingResult billingResult, List<? extends ProductDetails> list) {
         invoke2(billingResult, (List<ProductDetails>) list);
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     
     public final void invoke2(BillingResult billingResult, List<ProductDetails> skuDetails) {
         q.h(billingResult, "billingResult");
         q.h(skuDetails, "skuDetails");
-        if (!this.$deferred.U(new BillingManager.ProductDetailsResponse(billingResult, skuDetails))) {
+        if (!this.$deferred.V(new BillingManager.ProductDetailsResponse(billingResult, skuDetails))) {
             Log.i$default(Log.INSTANCE, "getProductsWithRetry", "CompletableDeferred completed multiple times, indicating multiple callbacks from queryProductDetailsAsync", (Throwable) null, 4, (Object) null);
         }
     }

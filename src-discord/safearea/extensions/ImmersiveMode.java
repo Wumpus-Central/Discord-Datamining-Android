@@ -59,7 +59,7 @@ public final class ImmersiveMode {
         while (it.hasNext()) {
             ((Function1) it.next()).invoke(insets);
         }
-        WindowInsetsCompat a10 = new WindowInsetsCompat.b(insets).b(WindowInsetsCompat.m.g(), Insets.b(0, 0, 0, Math.max(WindowInsetsCompatExtensionsKt.getImeInsets$default(insets, false, 1, null).f2943d, 0))).a();
+        WindowInsetsCompat a10 = new WindowInsetsCompat.b(insets).b(WindowInsetsCompat.m.g(), Insets.b(0, 0, 0, Math.max(WindowInsetsCompatExtensionsKt.getImeInsets$default(insets, false, 1, null).f2821d, 0))).a();
         w0.c0(rootViewChild, a10);
         return a10;
     }

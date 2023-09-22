@@ -81,7 +81,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
     }
 
     
-    private final void m340setFooterAyv7vGE(StructurableText structurableText, String str) {
+    private final void m345setFooterAyv7vGE(StructurableText structurableText, String str) {
         SimpleDraweeSpanTextView setFooter_Ayv7vGE$lambda$4 = this.binding.footer;
         q.g(setFooter_Ayv7vGE$lambda$4, "setFooter_Ayv7vGE$lambda$4");
         Context context = setFooter_Ayv7vGE$lambda$4.getContext();
@@ -133,7 +133,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
     }
 
     
-    public final void m341setPostPreviewEmbedOGpb6Gk(String title, String str, String ctaCopy, int i10, StructurableText footer, String messageId, String str2, String str3, String str4, String str5, View.OnClickListener onButtonClickListener, boolean z10, SpoilerConfig spoilerConfig) {
+    public final void m346setPostPreviewEmbedOGpb6Gk(String title, String str, String ctaCopy, int i10, StructurableText footer, String messageId, String str2, String str3, String str4, String str5, View.OnClickListener onButtonClickListener, boolean z10, SpoilerConfig spoilerConfig) {
         q.h(title, "title");
         q.h(ctaCopy, "ctaCopy");
         q.h(footer, "footer");
@@ -143,7 +143,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
         setButtonColor(i10);
         setTitle(title);
         setSubtitle(str);
-        m340setFooterAyv7vGE(footer, messageId);
+        m345setFooterAyv7vGE(footer, messageId);
         setCoverImage(str2, str3, str5);
         setCoverImageButtonText(str4);
         this.binding.cta.setOnClickButtonListener(onButtonClickListener);

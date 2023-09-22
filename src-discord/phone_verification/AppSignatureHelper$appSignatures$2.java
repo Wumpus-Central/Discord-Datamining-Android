@@ -58,7 +58,7 @@ final class AppSignatureHelper$appSignatures$2 extends s implements Function0<Li
             }
         } catch (PackageManager.NameNotFoundException e10) {
             Log.INSTANCE.e(AppSignatureHelper.Companion.getTAG(), "Unable to find package to obtain hash.", e10);
-            j.h();
+            j.i();
         }
         return arrayList;
     }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/info_link_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="@id/info_link_container" app:layout_constraintStart_toStartOf="@id/info_link_container" app:layout_constraintTop_toTopOf="@id/info_link_container" />
+        <TextView android:textSize="14.0sp" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="4.0dip" app:layout_constraintBottom_toBottomOf="@id/info_link_container" app:layout_constraintStart_toEndOf="@id/icon" app:layout_constraintTop_toTopOf="@id/info_link_container" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

@@ -12,13 +12,15 @@ public final class ChannelPromptActionsViewBinding {
     public final DCDButton cameraButton;
     public final DCDButton emojiButton;
     public final DCDButton gamingStatsButton;
+    public final DCDButton gifButton;
     private final View rootView;
 
-    private ChannelPromptActionsViewBinding(View view, DCDButton dCDButton, DCDButton dCDButton2, DCDButton dCDButton3) {
+    private ChannelPromptActionsViewBinding(View view, DCDButton dCDButton, DCDButton dCDButton2, DCDButton dCDButton3, DCDButton dCDButton4) {
         this.rootView = view;
         this.cameraButton = dCDButton;
         this.emojiButton = dCDButton2;
         this.gamingStatsButton = dCDButton3;
+        this.gifButton = dCDButton4;
     }
 
     public static ChannelPromptActionsViewBinding bind(View view) {
@@ -31,7 +33,11 @@ public final class ChannelPromptActionsViewBinding {
                 i10 = R.id.gaming_stats_button;
                 DCDButton dCDButton3 = (DCDButton) a.a(view, i10);
                 if (dCDButton3 != null) {
-                    return new ChannelPromptActionsViewBinding(view, dCDButton, dCDButton2, dCDButton3);
+                    i10 = R.id.gif_button;
+                    DCDButton dCDButton4 = (DCDButton) a.a(view, i10);
+                    if (dCDButton4 != null) {
+                        return new ChannelPromptActionsViewBinding(view, dCDButton, dCDButton2, dCDButton3, dCDButton4);
+                    }
                 }
             }
         }

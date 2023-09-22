@@ -5,9 +5,6 @@ import com.discord.logging.Log;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import kf.s;
-import kf.t;
-import kf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.j;
@@ -16,8 +13,11 @@ import kotlinx.serialization.json.Json;
 import kotlinx.serialization.json.JsonElement;
 import kotlinx.serialization.json.JsonObject;
 import kotlinx.serialization.json.g;
-import lf.u;
-import lf.v;
+import pf.s;
+import pf.t;
+import pf.x;
+import qf.u;
+import qf.v;
 
 @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J!\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00042\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\u0002\u0010\tJ$\u0010\n\u001a\u00020\u000b*\u00020\u000b2\f\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u00040\r2\b\u0010\u000e\u001a\u0004\u0018\u00010\u000bH\u0002¨\u0006\u000f"}, d2 = {"Lcom/discord/modules/fastconnectmanager/IdentifyPayload;", "", "()V", "withGuildVersions", "", "json", "versions", "", "Lcom/discord/app_database/GuildVersion;", "(Ljava/lang/String;[Lcom/discord/app_database/GuildVersion;)Ljava/lang/String;", "put", "Lkotlinx/serialization/json/JsonObject;", "path", "", "value", "app_canaryRelease"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
@@ -59,16 +59,16 @@ public final class IdentifyPayload {
 
     public final String withGuildVersions(String json, GuildVersion[] versions) {
         Object obj;
-        List<String> k10;
+        List<String> l10;
         int d10;
         int c10;
         q.h(json, "json");
         q.h(versions, "versions");
         try {
-            s.a aVar = s.f21222k;
-            obj = s.b(Json.f21971d.g(json));
+            s.a aVar = s.f26002k;
+            obj = s.b(Json.f22128d.g(json));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f21222k;
+            s.a aVar2 = s.f26002k;
             obj = s.b(t.a(th2));
         }
         if (s.g(obj)) {
@@ -77,15 +77,15 @@ public final class IdentifyPayload {
         JsonElement jsonElement = (JsonElement) obj;
         if (jsonElement instanceof JsonObject) {
             JsonObject jsonObject = (JsonObject) jsonElement;
-            k10 = j.k("d", "client_state", "guild_versions");
+            l10 = j.l("d", "client_state", "guild_versions");
             d10 = u.d(versions.length);
-            c10 = bg.j.c(d10, 16);
+            c10 = gg.j.c(d10, 16);
             LinkedHashMap linkedHashMap = new LinkedHashMap(c10);
             for (GuildVersion guildVersion : versions) {
                 Pair a10 = x.a(guildVersion.getId(), g.c(Long.valueOf(guildVersion.getVersion())));
                 linkedHashMap.put(a10.c(), a10.d());
             }
-            return put(jsonObject, k10, new JsonObject(linkedHashMap)).toString();
+            return put(jsonObject, l10, new JsonObject(linkedHashMap)).toString();
         }
         Log.w$default(Log.INSTANCE, "IdentifyPayload", "skipping identify mutation: root is not a json object", (Throwable) null, 4, (Object) null);
         return json;

@@ -94,7 +94,7 @@ public final class ScreenCapturer extends ScreenCapturerAndroid {
                     if (TimestampAligner.getRtcTimeNanos() - l10.longValue() > screenCapturer.intervalNanos) {
                         NativeCapturerObserver nativeCapturerObserver = screenCapturer.nativeObserver;
                         if (nativeCapturerObserver == null) {
-                            q.z("nativeObserver");
+                            q.y("nativeObserver");
                             nativeCapturerObserver = null;
                         }
                         nativeCapturerObserver.repeatLastFrame();
@@ -216,7 +216,7 @@ public final class ScreenCapturer extends ScreenCapturerAndroid {
             Companion companion = Companion;
             Context context = this.context;
             if (context == null) {
-                q.z("context");
+                q.y("context");
                 context = null;
             }
             rect.set(companion.getScreenSize(context));
@@ -243,7 +243,7 @@ public final class ScreenCapturer extends ScreenCapturerAndroid {
         if (this.framerate > 0) {
             SurfaceTextureHelper surfaceTextureHelper = this.surfaceTextureHelper;
             if (surfaceTextureHelper == null) {
-                q.z("surfaceTextureHelper");
+                q.y("surfaceTextureHelper");
                 surfaceTextureHelper = null;
             }
             surfaceTextureHelper.getHandler().postDelayed(this.watchdog, this.intervalNanos / 1000000);

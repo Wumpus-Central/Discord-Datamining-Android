@@ -19,7 +19,7 @@ import kotlin.jvm.internal.q;
     @Override 
     public   Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     

@@ -26,7 +26,7 @@ public final class BillingManagerModule$billingManager$3 extends s implements Fu
     @Override 
     public   Unit invoke(Integer num) {
         invoke(num.intValue());
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     public final void invoke(int i10) {

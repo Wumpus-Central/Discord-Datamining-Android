@@ -1,6 +1,5 @@
 package com.discord.notifications.client;
 
-import aj.a;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
@@ -24,8 +23,8 @@ import com.discord.primitives.GuildId;
 import com.discord.primitives.MessageId;
 import com.discord.react.headless_tasks.api.HeadlessTasks;
 import com.discord.shortcuts.ShortcutData;
+import fj.a;
 import java.util.Map;
-import kf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -34,7 +33,8 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
 import kotlinx.serialization.json.Json;
-import lf.v;
+import pf.x;
+import qf.v;
 
 @Metadata(d1 = {"\u0000\\\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0018\n\u0002\u0010\t\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 K2\u00020\u0001:\u0001KB\u0007¢\u0006\u0004\bI\u0010JJ4\u0010\f\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u00042\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00070\u00062\u0006\u0010\n\u001a\u00020\tH\u0002J\u0010\u0010\r\u001a\u00020\t2\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J \u0010\u000f\u001a\u00020\u000b2\u0016\u0010\u000e\u001a\u0012\u0012\u0004\u0012\u00020\u0007\u0012\u0006\u0012\u0004\u0018\u00010\u0007\u0018\u00010\u0006H\u0002J\u0012\u0010\u0011\u001a\u0004\u0018\u00010\u00102\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J6\u0010\u0014\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u00022\u0012\u0010\u0012\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00070\u00062\u0012\u0010\u0013\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00070\u0006J\u0016\u0010\u0017\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0016\u001a\u00020\u0015J\u0016\u0010\u0018\u001a\u0012\u0012\u0004\u0012\u00020\u0007\u0012\u0006\u0012\u0004\u0018\u00010\u0007\u0018\u00010\u0006J\u000e\u0010\u001a\u001a\u00020\u000b2\u0006\u0010\u0019\u001a\u00020\u0007J\u001a\u0010\u001d\u001a\u00020\u000b2\u0012\u0010\u001c\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u000b0\u001bJ(\u0010\u001f\u001a\u00020\u000b2 \u0010\u001e\u001a\u001c\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u0007\u0012\u0006\u0012\u0004\u0018\u00010\u00070\u0006\u0012\u0004\u0012\u00020\u000b0\u001bJ\u001c\u0010 \u001a\u00020\u000b2\u0014\u0010\u000e\u001a\u0010\u0012\u0004\u0012\u00020\u0007\u0012\u0006\u0012\u0004\u0018\u00010\u00070\u0006J(\u0010!\u001a\u00020\u000b2 \u0010\u001e\u001a\u001c\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u0007\u0012\u0006\u0012\u0004\u0018\u00010\u00070\u0006\u0012\u0004\u0012\u00020\u000b0\u001bJ\u0016\u0010#\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\"\u001a\u00020\tJ\u000e\u0010$\u001a\u00020\t2\u0006\u0010\u0003\u001a\u00020\u0002J\u0016\u0010&\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010%\u001a\u00020\tJ\u000e\u0010'\u001a\u00020\t2\u0006\u0010\u0003\u001a\u00020\u0002J\u0016\u0010)\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010(\u001a\u00020\tJ\u000e\u0010*\u001a\u00020\t2\u0006\u0010\u0003\u001a\u00020\u0002J\u0016\u0010,\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010+\u001a\u00020\tJ\u0018\u0010.\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u00022\b\u0010-\u001a\u0004\u0018\u00010\u0007J\u0016\u00100\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010/\u001a\u00020\tJ\u000e\u00101\u001a\u00020\t2\u0006\u0010\u0003\u001a\u00020\u0002J\u0016\u00103\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u00102\u001a\u00020\u0007J\u0016\u00106\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u00105\u001a\u000204J$\u00107\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u00022\u0012\u00102\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00070\u0006H\u0007J\u000e\u00108\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u0002R\"\u00109\u001a\u00020\t8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b9\u0010:\u001a\u0004\b9\u0010;\"\u0004\b<\u0010=R\u0018\u0010\u0019\u001a\u0004\u0018\u00010\u00078\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0019\u0010>R\"\u0010\u001c\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u000b0\u001b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001c\u0010?R&\u0010@\u001a\u0012\u0012\u0004\u0012\u00020\u0007\u0012\u0006\u0012\u0004\u0018\u00010\u0007\u0018\u00010\u00068\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b@\u0010AR2\u0010\u001e\u001a\u001e\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u0007\u0012\u0006\u0012\u0004\u0018\u00010\u00070\u0006\u0012\u0004\u0012\u00020\u000b\u0018\u00010\u001b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001e\u0010?R2\u0010B\u001a\u001e\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u0007\u0012\u0006\u0012\u0004\u0018\u00010\u00070\u0006\u0012\u0004\u0012\u00020\u000b\u0018\u00010\u001b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bB\u0010?R\u0016\u0010D\u001a\u00020C8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bD\u0010ER\u0016\u0010G\u001a\u00020F8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bG\u0010H¨\u0006L"}, d2 = {"Lcom/discord/notifications/client/NotificationClient;", "", "Landroid/content/Context;", "context", "Lcom/discord/notifications/api/NotificationData;", "notificationData", "", "", "notificationDataMap", "", "makeOrUpdateShortcut", "", "showNotification", "updateAndComputeIfShouldRunBackgroundSync", "notification", "setNotification", "Lcom/discord/notifications/renderer/NotificationBehaviors;", "getBehaviors", "localizedCategoryNames", "localizedGroupNames", "initNotificationCategories", "Landroid/content/Intent;", "intent", "handleIntent", "getPendingNotification", "token", "setToken", "Lkotlin/Function1;", "tokenListener", "setTokenListener", "notificationListener", "setNotificationListener", "setLocalNotification", "setLocalNotificationListener", "isAuthed", "setIsAuthed", "isSoundsEnabled", "soundsEnabled", "setSoundsEnabled", "isVibrationsEnabled", "vibrationsEnabled", "setVibrationsEnabled", "isLightsEnabled", "lightsEnabled", "setLightsEnabled", "username", "setCurrentUsername", "notifyEveryTime", "setNotifyEveryTime", "shouldNotifyEveryTime", "data", "onDirectReplySuccess", "", "channelId", "markNotificationAsDirectReply", "onNotificationReceived", "clearAllNotifications", "isActive", "Z", "()Z", "setActive", "(Z)V", "Ljava/lang/String;", "Lkotlin/jvm/functions/Function1;", "notificationPending", "Ljava/util/Map;", "notificationLocalListener", "Lcom/discord/notifications/client/NotificationCache;", "cache", "Lcom/discord/notifications/client/NotificationCache;", "Lcom/discord/notifications/renderer/NotificationRenderer;", "renderer", "Lcom/discord/notifications/renderer/NotificationRenderer;", "<init>", "()V", "Companion", "notification_client_release"}, k = 1, mv = {1, 8, 0})
 
@@ -93,12 +93,12 @@ public final class NotificationClient {
         CrashReporting crashReporting = CrashReporting.INSTANCE;
         Pair[] pairArr = new Pair[3];
         pairArr[0] = x.a("type", notificationData.getType());
-        pairArr[1] = x.a("channelId", String.valueOf(notificationData.m572getChannelIdqMVnFVQ()));
-        String str3 = notificationData.m574getMessageIdN_6c4I0();
+        pairArr[1] = x.a("channelId", String.valueOf(notificationData.m577getChannelIdqMVnFVQ()));
+        String str3 = notificationData.m579getMessageIdN_6c4I0();
         if (str3 == null) {
             str = "null";
         } else {
-            str = MessageId.m637toStringimpl(str3);
+            str = MessageId.m642toStringimpl(str3);
         }
         pairArr[2] = x.a("messageId", str);
         k10 = v.k(pairArr);
@@ -121,20 +121,20 @@ public final class NotificationClient {
                     if (q.c(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE)) {
                         KvMessageEntry kvMessage = NotificationDataUtilsKt.getKvMessage(notificationData, map.get("message"));
                         if (kvMessage != null) {
-                            String str4 = notificationData.m574getMessageIdN_6c4I0();
-                            ChannelId channelId = notificationData.m572getChannelIdqMVnFVQ();
+                            String str4 = notificationData.m579getMessageIdN_6c4I0();
+                            ChannelId channelId = notificationData.m577getChannelIdqMVnFVQ();
                             if (!(str4 == null || channelId == null)) {
                                 String str5 = map.get("receiving_user_id");
                                 String str6 = "@account." + ((Object) str5);
-                                GuildId guildId = notificationData.m573getGuildIdqOKuAAo();
+                                GuildId guildId = notificationData.m578getGuildIdqOKuAAo();
                                 if (guildId != null) {
-                                    str2 = GuildId.m625toStringimpl(guildId.m627unboximpl());
+                                    str2 = GuildId.m630toStringimpl(guildId.m632unboximpl());
                                 } else {
                                     str2 = null;
                                 }
-                                String str7 = ChannelId.m612toStringimpl(channelId.m614unboximpl());
-                                String str8 = MessageId.m637toStringimpl(str4);
-                                Json.a aVar = Json.f21971d;
+                                String str7 = ChannelId.m617toStringimpl(channelId.m619unboximpl());
+                                String str8 = MessageId.m642toStringimpl(str4);
+                                Json.a aVar = Json.f22128d;
                                 aVar.a();
                                 DiscordMobileApi.putMessage(str6, str2, str7, str8, aVar.c(KvMessageEntry.Companion.serializer(), kvMessage));
                             }
@@ -249,12 +249,12 @@ public final class NotificationClient {
         NotificationData notificationData = DirectReplyMessage.Companion.toNotificationData(data);
         Pair[] pairArr = new Pair[3];
         pairArr[0] = x.a("type", notificationData.getType());
-        pairArr[1] = x.a("channel_id", String.valueOf(notificationData.m572getChannelIdqMVnFVQ()));
-        String str2 = notificationData.m574getMessageIdN_6c4I0();
+        pairArr[1] = x.a("channel_id", String.valueOf(notificationData.m577getChannelIdqMVnFVQ()));
+        String str2 = notificationData.m579getMessageIdN_6c4I0();
         if (str2 == null) {
             str = "null";
         } else {
-            str = MessageId.m637toStringimpl(str2);
+            str = MessageId.m642toStringimpl(str2);
         }
         pairArr[2] = x.a("message_id", str);
         k10 = v.k(pairArr);
@@ -264,7 +264,7 @@ public final class NotificationClient {
     public final void onNotificationReceived(Context context, Map<String, String> data) {
         q.h(context, "context");
         q.h(data, "data");
-        showNotification(context, (NotificationData) a.f683b.d(NotificationData.Companion.serializer(), data), data, true);
+        showNotification(context, (NotificationData) a.f15010b.d(NotificationData.Companion.serializer(), data), data, true);
     }
 
     public final void setActive(boolean z10) {

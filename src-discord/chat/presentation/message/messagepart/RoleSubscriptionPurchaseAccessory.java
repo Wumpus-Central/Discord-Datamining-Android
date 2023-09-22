@@ -26,7 +26,7 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
     }
 
     
-    public static  RoleSubscriptionPurchaseAccessory m302copyAFFcxXc$default(RoleSubscriptionPurchaseAccessory roleSubscriptionPurchaseAccessory, String str, String str2, String str3, int i10, int i11, Object obj) {
+    public static  RoleSubscriptionPurchaseAccessory m307copyAFFcxXc$default(RoleSubscriptionPurchaseAccessory roleSubscriptionPurchaseAccessory, String str, String str2, String str3, int i10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             str = roleSubscriptionPurchaseAccessory.mo236getMessageId3Eiw7ao();
         }
@@ -39,11 +39,11 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
         if ((i11 & 8) != 0) {
             i10 = roleSubscriptionPurchaseAccessory.constrainedWidth;
         }
-        return roleSubscriptionPurchaseAccessory.m304copyAFFcxXc(str, str2, str3, i10);
+        return roleSubscriptionPurchaseAccessory.m309copyAFFcxXc(str, str2, str3, i10);
     }
 
     
-    public final String m303component13Eiw7ao() {
+    public final String m308component13Eiw7ao() {
         return mo236getMessageId3Eiw7ao();
     }
 
@@ -60,7 +60,7 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
     }
 
     
-    public final RoleSubscriptionPurchaseAccessory m304copyAFFcxXc(String messageId, String str, String str2, int i10) {
+    public final RoleSubscriptionPurchaseAccessory m309copyAFFcxXc(String messageId, String str, String str2, int i10) {
         q.h(messageId, "messageId");
         return new RoleSubscriptionPurchaseAccessory(messageId, str, str2, i10, null);
     }
@@ -73,7 +73,7 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
             return false;
         }
         RoleSubscriptionPurchaseAccessory roleSubscriptionPurchaseAccessory = (RoleSubscriptionPurchaseAccessory) obj;
-        return MessageId.m635equalsimpl0(mo236getMessageId3Eiw7ao(), roleSubscriptionPurchaseAccessory.mo236getMessageId3Eiw7ao()) && q.c(this.authorUsername, roleSubscriptionPurchaseAccessory.authorUsername) && q.c(this.authorAvatar, roleSubscriptionPurchaseAccessory.authorAvatar) && this.constrainedWidth == roleSubscriptionPurchaseAccessory.constrainedWidth;
+        return MessageId.m640equalsimpl0(mo236getMessageId3Eiw7ao(), roleSubscriptionPurchaseAccessory.mo236getMessageId3Eiw7ao()) && q.c(this.authorUsername, roleSubscriptionPurchaseAccessory.authorUsername) && q.c(this.authorAvatar, roleSubscriptionPurchaseAccessory.authorAvatar) && this.constrainedWidth == roleSubscriptionPurchaseAccessory.constrainedWidth;
     }
 
     public final String getAuthorAvatar() {
@@ -95,7 +95,7 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int i10 = MessageId.m636hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31;
+        int i10 = MessageId.m641hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31;
         String str = this.authorUsername;
         int i11 = 0;
         int hashCode = (i10 + (str == null ? 0 : str.hashCode())) * 31;
@@ -107,7 +107,7 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m637toStringimpl(mo236getMessageId3Eiw7ao());
+        String str = MessageId.m642toStringimpl(mo236getMessageId3Eiw7ao());
         String str2 = this.authorUsername;
         String str3 = this.authorAvatar;
         int i10 = this.constrainedWidth;

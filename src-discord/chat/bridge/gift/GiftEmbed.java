@@ -1,6 +1,8 @@
 package com.discord.chat.bridge.gift;
 
 import androidx.recyclerview.widget.RecyclerView;
+import cj.a2;
+import cj.n1;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -9,12 +11,10 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import ui.f;
-import xi.a2;
-import xi.n1;
+import zi.f;
 
-@f(with = GiftEmbedSerializer.class)
 @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\bw\u0018\u0000 \u000e2\u00020\u0001:\u0003\u000e\u000f\u0010R\u0012\u0010\u0002\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005R\u0012\u0010\u0006\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\u0005R\u0012\u0010\b\u001a\u00020\tX¦\u0004¢\u0006\u0006\u001a\u0004\b\n\u0010\u000bR\u0012\u0010\f\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\r\u0010\u0005\u0082\u0001\u0002\u0011\u0012¨\u0006\u0013"}, d2 = {"Lcom/discord/chat/bridge/gift/GiftEmbed;", "", ViewProps.BACKGROUND_COLOR, "", "getBackgroundColor", "()I", "headerColor", "getHeaderColor", "headerText", "", "getHeaderText", "()Ljava/lang/String;", "thumbnailCornerRadius", "getThumbnailCornerRadius", "Companion", "Resolved", "Resolving", "Lcom/discord/chat/bridge/gift/GiftEmbed$Resolved;", "Lcom/discord/chat/bridge/gift/GiftEmbed$Resolving;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@f(with = GiftEmbedSerializer.class)
 
 public interface GiftEmbed {
     public static final Companion Companion = Companion.$$INSTANCE;
@@ -350,7 +350,7 @@ public interface GiftEmbed {
                     z10 = true;
                 }
                 if (z10) {
-                    output.e(serialDesc, 4, a2.f30576a, self.getThumbnailUrl());
+                    output.E(serialDesc, 4, a2.f6238a, self.getThumbnailUrl());
                 }
                 if (!output.z(serialDesc, 5) && self.getTitleText() == null) {
                     z11 = false;
@@ -358,7 +358,7 @@ public interface GiftEmbed {
                     z11 = true;
                 }
                 if (z11) {
-                    output.e(serialDesc, 5, a2.f30576a, self.getTitleText());
+                    output.E(serialDesc, 5, a2.f6238a, self.getTitleText());
                 }
                 output.w(serialDesc, 6, self.getTitleColor());
                 if (!output.z(serialDesc, 7) && self.getSubtitle() == null) {
@@ -367,7 +367,7 @@ public interface GiftEmbed {
                     z12 = true;
                 }
                 if (z12) {
-                    output.e(serialDesc, 7, a2.f30576a, self.getSubtitle());
+                    output.E(serialDesc, 7, a2.f6238a, self.getSubtitle());
                 }
                 output.w(serialDesc, 8, self.getSubtitleColor());
                 if (!output.z(serialDesc, 9) && self.bodyText == null) {
@@ -376,7 +376,7 @@ public interface GiftEmbed {
                     z13 = true;
                 }
                 if (z13) {
-                    output.e(serialDesc, 9, a2.f30576a, self.bodyText);
+                    output.E(serialDesc, 9, a2.f6238a, self.bodyText);
                 }
                 output.w(serialDesc, 10, self.bodyTextColor);
                 if (!output.z(serialDesc, 11) && self.acceptLabelText == null) {
@@ -385,7 +385,7 @@ public interface GiftEmbed {
                     z14 = true;
                 }
                 if (z14) {
-                    output.e(serialDesc, 11, a2.f30576a, self.acceptLabelText);
+                    output.E(serialDesc, 11, a2.f6238a, self.acceptLabelText);
                 }
                 output.w(serialDesc, 12, self.acceptLabelColor);
                 output.w(serialDesc, 13, self.acceptLabelBackgroundColor);
@@ -393,7 +393,7 @@ public interface GiftEmbed {
                     z15 = true;
                 }
                 if (z15) {
-                    output.e(serialDesc, 14, a2.f30576a, self.splashUrl);
+                    output.E(serialDesc, 14, a2.f6238a, self.splashUrl);
                 }
                 output.s(serialDesc, 15, self.splashOpacity);
                 output.x(serialDesc, 16, self.canBeAccepted);

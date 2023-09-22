@@ -5,7 +5,7 @@ import com.discord.chat.bridge.truncation.Truncation;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
-@Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b&\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B\u0081\u0001\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0005\u001a\u00020\u0006\u0012\b\b\u0002\u0010\u0007\u001a\u00020\u0006\u0012\b\b\u0002\u0010\b\u001a\u00020\u0006\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\b\u0002\u0010\r\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u000e\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u000f\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0010\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0011\u001a\u00020\u0003¢\u0006\u0002\u0010\u0012J\t\u0010#\u001a\u00020\u0003HÆ\u0003J\t\u0010$\u001a\u00020\u0003HÆ\u0003J\t\u0010%\u001a\u00020\u0003HÆ\u0003J\t\u0010&\u001a\u00020\u0003HÆ\u0003J\t\u0010'\u001a\u00020\u0003HÆ\u0003J\t\u0010(\u001a\u00020\u0006HÆ\u0003J\t\u0010)\u001a\u00020\u0006HÆ\u0003J\t\u0010*\u001a\u00020\u0006HÆ\u0003J\u000b\u0010+\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010,\u001a\u0004\u0018\u00010\fHÆ\u0003J\t\u0010-\u001a\u00020\u0003HÆ\u0003J\t\u0010.\u001a\u00020\u0003HÆ\u0003J\u0085\u0001\u0010/\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00062\b\b\u0002\u0010\u0007\u001a\u00020\u00062\b\b\u0002\u0010\b\u001a\u00020\u00062\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f2\b\b\u0002\u0010\r\u001a\u00020\u00032\b\b\u0002\u0010\u000e\u001a\u00020\u00032\b\b\u0002\u0010\u000f\u001a\u00020\u00032\b\b\u0002\u0010\u0010\u001a\u00020\u00032\b\b\u0002\u0010\u0011\u001a\u00020\u0003HÆ\u0001J\u0013\u00100\u001a\u00020\u00032\b\u00101\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00102\u001a\u000203HÖ\u0001J\t\u00104\u001a\u00020\u0006HÖ\u0001R\u0011\u0010\b\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0011\u0010\u0007\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0014R\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0014R\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0011\u0010\u0010\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0018R\u0011\u0010\u000f\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0018R\u0013\u0010\t\u001a\u0004\u0018\u00010\n¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001cR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u0018R\u0013\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001fR\u0011\u0010\u0011\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b \u0010\u0018R\u0011\u0010\r\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\u0018R\u0011\u0010\u000e\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010\u0018¨\u00065"}, d2 = {"Lcom/discord/chat/presentation/root/MessageContext;", "", "showDivider", "", "canAddNewReactions", "addReactionLabel", "", "addNewReactionAccessibilityLabel", "addNewBurstReactionAccessibilityLabel", "reactionsTheme", "Lcom/discord/chat/bridge/reaction/ReactionsTheme;", "truncation", "Lcom/discord/chat/bridge/truncation/Truncation;", "useAttachmentGridLayout", "useAttachmentUploadPreview", "enableSwipeToReply", "enableSwipeToEdit", "useAddBurstReaction", "(ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/ReactionsTheme;Lcom/discord/chat/bridge/truncation/Truncation;ZZZZZ)V", "getAddNewBurstReactionAccessibilityLabel", "()Ljava/lang/String;", "getAddNewReactionAccessibilityLabel", "getAddReactionLabel", "getCanAddNewReactions", "()Z", "getEnableSwipeToEdit", "getEnableSwipeToReply", "getReactionsTheme", "()Lcom/discord/chat/bridge/reaction/ReactionsTheme;", "getShowDivider", "getTruncation", "()Lcom/discord/chat/bridge/truncation/Truncation;", "getUseAddBurstReaction", "getUseAttachmentGridLayout", "getUseAttachmentUploadPreview", "component1", "component10", "component11", "component12", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "equals", "other", "hashCode", "", "toString", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b)\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B\u008b\u0001\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0005\u001a\u00020\u0006\u0012\b\b\u0002\u0010\u0007\u001a\u00020\u0006\u0012\b\b\u0002\u0010\b\u001a\u00020\u0006\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\b\u0002\u0010\r\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u000e\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u000f\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0010\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0011\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0012\u001a\u00020\u0006¢\u0006\u0002\u0010\u0013J\t\u0010%\u001a\u00020\u0003HÆ\u0003J\t\u0010&\u001a\u00020\u0003HÆ\u0003J\t\u0010'\u001a\u00020\u0003HÆ\u0003J\t\u0010(\u001a\u00020\u0003HÆ\u0003J\t\u0010)\u001a\u00020\u0006HÆ\u0003J\t\u0010*\u001a\u00020\u0003HÆ\u0003J\t\u0010+\u001a\u00020\u0006HÆ\u0003J\t\u0010,\u001a\u00020\u0006HÆ\u0003J\t\u0010-\u001a\u00020\u0006HÆ\u0003J\u000b\u0010.\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010/\u001a\u0004\u0018\u00010\fHÆ\u0003J\t\u00100\u001a\u00020\u0003HÆ\u0003J\t\u00101\u001a\u00020\u0003HÆ\u0003J\u008f\u0001\u00102\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00062\b\b\u0002\u0010\u0007\u001a\u00020\u00062\b\b\u0002\u0010\b\u001a\u00020\u00062\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f2\b\b\u0002\u0010\r\u001a\u00020\u00032\b\b\u0002\u0010\u000e\u001a\u00020\u00032\b\b\u0002\u0010\u000f\u001a\u00020\u00032\b\b\u0002\u0010\u0010\u001a\u00020\u00032\b\b\u0002\u0010\u0011\u001a\u00020\u00032\b\b\u0002\u0010\u0012\u001a\u00020\u0006HÆ\u0001J\u0013\u00103\u001a\u00020\u00032\b\u00104\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00105\u001a\u000206HÖ\u0001J\t\u00107\u001a\u00020\u0006HÖ\u0001R\u0011\u0010\b\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R\u0011\u0010\u0007\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0015R\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0015R\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u0011\u0010\u0010\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0019R\u0011\u0010\u000f\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0019R\u0011\u0010\u0012\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0015R\u0013\u0010\t\u001a\u0004\u0018\u00010\n¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010\u0019R\u0013\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b \u0010!R\u0011\u0010\u0011\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010\u0019R\u0011\u0010\r\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b#\u0010\u0019R\u0011\u0010\u000e\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b$\u0010\u0019¨\u00068"}, d2 = {"Lcom/discord/chat/presentation/root/MessageContext;", "", "showDivider", "", "canAddNewReactions", "addReactionLabel", "", "addNewReactionAccessibilityLabel", "addNewBurstReactionAccessibilityLabel", "reactionsTheme", "Lcom/discord/chat/bridge/reaction/ReactionsTheme;", "truncation", "Lcom/discord/chat/bridge/truncation/Truncation;", "useAttachmentGridLayout", "useAttachmentUploadPreview", "enableSwipeToReply", "enableSwipeToEdit", "useAddBurstReaction", "obscureLearnMoreLabel", "(ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/ReactionsTheme;Lcom/discord/chat/bridge/truncation/Truncation;ZZZZZLjava/lang/String;)V", "getAddNewBurstReactionAccessibilityLabel", "()Ljava/lang/String;", "getAddNewReactionAccessibilityLabel", "getAddReactionLabel", "getCanAddNewReactions", "()Z", "getEnableSwipeToEdit", "getEnableSwipeToReply", "getObscureLearnMoreLabel", "getReactionsTheme", "()Lcom/discord/chat/bridge/reaction/ReactionsTheme;", "getShowDivider", "getTruncation", "()Lcom/discord/chat/bridge/truncation/Truncation;", "getUseAddBurstReaction", "getUseAttachmentGridLayout", "getUseAttachmentUploadPreview", "component1", "component10", "component11", "component12", "component13", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "equals", "other", "hashCode", "", "toString", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
 public final class MessageContext {
     private final String addNewBurstReactionAccessibilityLabel;
@@ -14,6 +14,7 @@ public final class MessageContext {
     private final boolean canAddNewReactions;
     private final boolean enableSwipeToEdit;
     private final boolean enableSwipeToReply;
+    private final String obscureLearnMoreLabel;
     private final ReactionsTheme reactionsTheme;
     private final boolean showDivider;
     private final Truncation truncation;
@@ -22,13 +23,14 @@ public final class MessageContext {
     private final boolean useAttachmentUploadPreview;
 
     public MessageContext() {
-        this(false, false, null, null, null, null, null, false, false, false, false, false, 4095, null);
+        this(false, false, null, null, null, null, null, false, false, false, false, false, null, 8191, null);
     }
 
-    public MessageContext(boolean z10, boolean z11, String addReactionLabel, String addNewReactionAccessibilityLabel, String addNewBurstReactionAccessibilityLabel, ReactionsTheme reactionsTheme, Truncation truncation, boolean z12, boolean z13, boolean z14, boolean z15, boolean z16) {
+    public MessageContext(boolean z10, boolean z11, String addReactionLabel, String addNewReactionAccessibilityLabel, String addNewBurstReactionAccessibilityLabel, ReactionsTheme reactionsTheme, Truncation truncation, boolean z12, boolean z13, boolean z14, boolean z15, boolean z16, String obscureLearnMoreLabel) {
         q.h(addReactionLabel, "addReactionLabel");
         q.h(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
         q.h(addNewBurstReactionAccessibilityLabel, "addNewBurstReactionAccessibilityLabel");
+        q.h(obscureLearnMoreLabel, "obscureLearnMoreLabel");
         this.showDivider = z10;
         this.canAddNewReactions = z11;
         this.addReactionLabel = addReactionLabel;
@@ -41,6 +43,7 @@ public final class MessageContext {
         this.enableSwipeToReply = z14;
         this.enableSwipeToEdit = z15;
         this.useAddBurstReaction = z16;
+        this.obscureLearnMoreLabel = obscureLearnMoreLabel;
     }
 
     public final boolean component1() {
@@ -57,6 +60,10 @@ public final class MessageContext {
 
     public final boolean component12() {
         return this.useAddBurstReaction;
+    }
+
+    public final String component13() {
+        return this.obscureLearnMoreLabel;
     }
 
     public final boolean component2() {
@@ -91,11 +98,12 @@ public final class MessageContext {
         return this.useAttachmentUploadPreview;
     }
 
-    public final MessageContext copy(boolean z10, boolean z11, String addReactionLabel, String addNewReactionAccessibilityLabel, String addNewBurstReactionAccessibilityLabel, ReactionsTheme reactionsTheme, Truncation truncation, boolean z12, boolean z13, boolean z14, boolean z15, boolean z16) {
+    public final MessageContext copy(boolean z10, boolean z11, String addReactionLabel, String addNewReactionAccessibilityLabel, String addNewBurstReactionAccessibilityLabel, ReactionsTheme reactionsTheme, Truncation truncation, boolean z12, boolean z13, boolean z14, boolean z15, boolean z16, String obscureLearnMoreLabel) {
         q.h(addReactionLabel, "addReactionLabel");
         q.h(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
         q.h(addNewBurstReactionAccessibilityLabel, "addNewBurstReactionAccessibilityLabel");
-        return new MessageContext(z10, z11, addReactionLabel, addNewReactionAccessibilityLabel, addNewBurstReactionAccessibilityLabel, reactionsTheme, truncation, z12, z13, z14, z15, z16);
+        q.h(obscureLearnMoreLabel, "obscureLearnMoreLabel");
+        return new MessageContext(z10, z11, addReactionLabel, addNewReactionAccessibilityLabel, addNewBurstReactionAccessibilityLabel, reactionsTheme, truncation, z12, z13, z14, z15, z16, obscureLearnMoreLabel);
     }
 
     public boolean equals(Object obj) {
@@ -106,7 +114,7 @@ public final class MessageContext {
             return false;
         }
         MessageContext messageContext = (MessageContext) obj;
-        return this.showDivider == messageContext.showDivider && this.canAddNewReactions == messageContext.canAddNewReactions && q.c(this.addReactionLabel, messageContext.addReactionLabel) && q.c(this.addNewReactionAccessibilityLabel, messageContext.addNewReactionAccessibilityLabel) && q.c(this.addNewBurstReactionAccessibilityLabel, messageContext.addNewBurstReactionAccessibilityLabel) && q.c(this.reactionsTheme, messageContext.reactionsTheme) && q.c(this.truncation, messageContext.truncation) && this.useAttachmentGridLayout == messageContext.useAttachmentGridLayout && this.useAttachmentUploadPreview == messageContext.useAttachmentUploadPreview && this.enableSwipeToReply == messageContext.enableSwipeToReply && this.enableSwipeToEdit == messageContext.enableSwipeToEdit && this.useAddBurstReaction == messageContext.useAddBurstReaction;
+        return this.showDivider == messageContext.showDivider && this.canAddNewReactions == messageContext.canAddNewReactions && q.c(this.addReactionLabel, messageContext.addReactionLabel) && q.c(this.addNewReactionAccessibilityLabel, messageContext.addNewReactionAccessibilityLabel) && q.c(this.addNewBurstReactionAccessibilityLabel, messageContext.addNewBurstReactionAccessibilityLabel) && q.c(this.reactionsTheme, messageContext.reactionsTheme) && q.c(this.truncation, messageContext.truncation) && this.useAttachmentGridLayout == messageContext.useAttachmentGridLayout && this.useAttachmentUploadPreview == messageContext.useAttachmentUploadPreview && this.enableSwipeToReply == messageContext.enableSwipeToReply && this.enableSwipeToEdit == messageContext.enableSwipeToEdit && this.useAddBurstReaction == messageContext.useAddBurstReaction && q.c(this.obscureLearnMoreLabel, messageContext.obscureLearnMoreLabel);
     }
 
     public final String getAddNewBurstReactionAccessibilityLabel() {
@@ -131,6 +139,10 @@ public final class MessageContext {
 
     public final boolean getEnableSwipeToReply() {
         return this.enableSwipeToReply;
+    }
+
+    public final String getObscureLearnMoreLabel() {
+        return this.obscureLearnMoreLabel;
     }
 
     public final ReactionsTheme getReactionsTheme() {
@@ -219,7 +231,7 @@ public final class MessageContext {
         if (!z16) {
             i10 = z16 ? 1 : 0;
         }
-        return i35 + i10;
+        return ((i35 + i10) * 31) + this.obscureLearnMoreLabel.hashCode();
     }
 
     public String toString() {
@@ -235,13 +247,14 @@ public final class MessageContext {
         boolean z14 = this.enableSwipeToReply;
         boolean z15 = this.enableSwipeToEdit;
         boolean z16 = this.useAddBurstReaction;
-        return "MessageContext(showDivider=" + z10 + ", canAddNewReactions=" + z11 + ", addReactionLabel=" + str + ", addNewReactionAccessibilityLabel=" + str2 + ", addNewBurstReactionAccessibilityLabel=" + str3 + ", reactionsTheme=" + reactionsTheme + ", truncation=" + truncation + ", useAttachmentGridLayout=" + z12 + ", useAttachmentUploadPreview=" + z13 + ", enableSwipeToReply=" + z14 + ", enableSwipeToEdit=" + z15 + ", useAddBurstReaction=" + z16 + ")";
+        String str4 = this.obscureLearnMoreLabel;
+        return "MessageContext(showDivider=" + z10 + ", canAddNewReactions=" + z11 + ", addReactionLabel=" + str + ", addNewReactionAccessibilityLabel=" + str2 + ", addNewBurstReactionAccessibilityLabel=" + str3 + ", reactionsTheme=" + reactionsTheme + ", truncation=" + truncation + ", useAttachmentGridLayout=" + z12 + ", useAttachmentUploadPreview=" + z13 + ", enableSwipeToReply=" + z14 + ", enableSwipeToEdit=" + z15 + ", useAddBurstReaction=" + z16 + ", obscureLearnMoreLabel=" + str4 + ")";
     }
 
     
     
-    public  MessageContext(boolean r14, boolean r15, java.lang.String r16, java.lang.String r17, java.lang.String r18, com.discord.chat.bridge.reaction.ReactionsTheme r19, com.discord.chat.bridge.truncation.Truncation r20, boolean r21, boolean r22, boolean r23, boolean r24, boolean r25, int r26, kotlin.jvm.internal.DefaultConstructorMarker r27) {
+    public  MessageContext(boolean r16, boolean r17, java.lang.String r18, java.lang.String r19, java.lang.String r20, com.discord.chat.bridge.reaction.ReactionsTheme r21, com.discord.chat.bridge.truncation.Truncation r22, boolean r23, boolean r24, boolean r25, boolean r26, boolean r27, java.lang.String r28, int r29, kotlin.jvm.internal.DefaultConstructorMarker r30) {
         
-        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.root.MessageContext.<init>(boolean, boolean, java.lang.String, java.lang.String, java.lang.String, com.discord.chat.bridge.reaction.ReactionsTheme, com.discord.chat.bridge.truncation.Truncation, boolean, boolean, boolean, boolean, boolean, int, kotlin.jvm.internal.DefaultConstructorMarker):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.root.MessageContext.<init>(boolean, boolean, java.lang.String, java.lang.String, java.lang.String, com.discord.chat.bridge.reaction.ReactionsTheme, com.discord.chat.bridge.truncation.Truncation, boolean, boolean, boolean, boolean, boolean, java.lang.String, int, kotlin.jvm.internal.DefaultConstructorMarker):void");
     }
 }

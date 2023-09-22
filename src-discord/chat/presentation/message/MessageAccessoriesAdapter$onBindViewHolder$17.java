@@ -10,13 +10,13 @@ import kotlin.jvm.internal.s;
 
 @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
 
-public final class MessageAccessoriesAdapter$onBindViewHolder$18 extends s implements Function0<Unit> {
+public final class MessageAccessoriesAdapter$onBindViewHolder$17 extends s implements Function0<Unit> {
     final  MessagePartViewHolder $holder;
     final  MessageAccessoriesAdapter this$0;
 
     
     
-    public MessageAccessoriesAdapter$onBindViewHolder$18(MessageAccessoriesAdapter messageAccessoriesAdapter, MessagePartViewHolder messagePartViewHolder) {
+    public MessageAccessoriesAdapter$onBindViewHolder$17(MessageAccessoriesAdapter messageAccessoriesAdapter, MessagePartViewHolder messagePartViewHolder) {
         super(0);
         this.this$0 = messageAccessoriesAdapter;
         this.$holder = messagePartViewHolder;

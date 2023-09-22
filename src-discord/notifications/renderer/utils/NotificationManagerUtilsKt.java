@@ -11,10 +11,10 @@ import com.discord.notifications.renderer.NotificationBehaviors;
 import com.discord.notifications.renderer.R;
 import com.discord.theme.utils.ColorUtilsKt;
 import java.util.List;
-import kf.s;
-import kf.t;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
+import pf.s;
+import pf.t;
 
 @Metadata(d1 = {"\u0000L\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a\u0016\u0010\u0010\u001a\u0004\u0018\u00010\u0004*\u00020\t2\u0006\u0010\u0011\u001a\u00020\u0012H\u0000\u001a\u0014\u0010\u0013\u001a\u00020\u0001*\u00020\t2\u0006\u0010\u0011\u001a\u00020\u0012H\u0000\u001a\u001e\u0010\u0014\u001a\u00020\u0015*\u00020\t2\u0006\u0010\u0016\u001a\u00020\u00122\b\u0010\u0017\u001a\u0004\u0018\u00010\u0004H\u0000\u001a\u001c\u0010\u0018\u001a\u00020\u0019*\u00020\r2\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u001a\u001a\u00020\u0015H\u0000\u001a(\u0010\u001b\u001a\u00020\u0015*\u00020\u00152\u0006\u0010\u001c\u001a\u00020\t2\b\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\b\u0010\u001f\u001a\u0004\u0018\u00010 H\u0000\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u001a\u0010\u0002\u001a\u0004\u0018\u00010\u0003*\u00020\u00048@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006\"\u001a\u0010\u0007\u001a\u0004\u0018\u00010\b*\u00020\t8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\n\u0010\u000b\"\u0018\u0010\f\u001a\u00020\r*\u00020\t8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u000e\u0010\u000f¨\u0006!"}, d2 = {"NOTIFICATION_LIGHT_PERIOD", "", "messagingStyle", "Landroidx/core/app/NotificationCompat$MessagingStyle;", "Landroid/app/Notification;", "getMessagingStyle", "(Landroid/app/Notification;)Landroidx/core/app/NotificationCompat$MessagingStyle;", "notificationManager", "Landroid/app/NotificationManager;", "Landroid/content/Context;", "getNotificationManager", "(Landroid/content/Context;)Landroid/app/NotificationManager;", "notificationManagerCompat", "Landroidx/core/app/NotificationManagerCompat;", "getNotificationManagerCompat", "(Landroid/content/Context;)Landroidx/core/app/NotificationManagerCompat;", "getActiveNotification", "tag", "", "getActiveNotificationMessageCount", "getNotificationBuilderOrCreate", "Landroidx/core/app/NotificationCompat$Builder;", "notificationChannelId", "notificationExisting", "notify", "", "notificationBuilder", "setLegacyNotificationBehaviors", "context", "behaviors", "Lcom/discord/notifications/renderer/NotificationBehaviors;", "sound", "Landroid/net/Uri;", "notification_renderer_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 
@@ -31,10 +31,10 @@ public final class NotificationManagerUtilsKt {
             return null;
         }
         try {
-            s.a aVar = s.f21222k;
+            s.a aVar = s.f26002k;
             obj = s.b(notificationManager.getActiveNotifications());
         } catch (Throwable th2) {
-            s.a aVar2 = s.f21222k;
+            s.a aVar2 = s.f26002k;
             obj = s.b(t.a(th2));
         }
         if (s.g(obj)) {

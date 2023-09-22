@@ -123,7 +123,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
         Debug debug = Debug.INSTANCE;
         RendererCommon.RendererEvents rendererEvents = this.rendererEvents;
         if (rendererEvents == null) {
-            q.z("rendererEvents");
+            q.y("rendererEvents");
             rendererEvents = null;
         }
         rendererEvents.onFirstFrameRendered();
@@ -152,7 +152,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
         Debug debug = Debug.INSTANCE;
         RendererCommon.RendererEvents rendererEvents = this.rendererEvents;
         if (rendererEvents == null) {
-            q.z("rendererEvents");
+            q.y("rendererEvents");
             rendererEvents = null;
         }
         rendererEvents.onFrameResolutionChanged(i10, i11, i12);

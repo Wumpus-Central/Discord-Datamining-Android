@@ -32,7 +32,7 @@ public final class ScreenshotDetector {
             if (screenshotDetector != null) {
                 return screenshotDetector;
             }
-            q.z("INSTANCE");
+            q.y("INSTANCE");
             return null;
         }
 

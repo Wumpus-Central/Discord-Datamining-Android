@@ -27,7 +27,7 @@ public final class ShareActivity extends ReactActivity {
             protected Bundle getLaunchOptions() {
                 ShareProps shareProps = this.shareProps;
                 if (shareProps == null) {
-                    q.z("shareProps");
+                    q.y("shareProps");
                     shareProps = null;
                 }
                 return shareProps.toBundle();
@@ -44,7 +44,7 @@ public final class ShareActivity extends ReactActivity {
                 ShareProps createShareProps = companion.createShareProps(intent, context);
                 this.shareProps = createShareProps;
                 if (createShareProps == null) {
-                    q.z("shareProps");
+                    q.y("shareProps");
                     createShareProps = null;
                 }
                 List<ShareProps.Attachment> attachments = createShareProps.getAttachments();

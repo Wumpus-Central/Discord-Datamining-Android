@@ -14,7 +14,7 @@ import com.facebook.imagepipeline.request.ImageRequestBuilder;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import kotlinx.coroutines.a1;
+import kotlinx.coroutines.b1;
 import kotlinx.coroutines.l;
 import l3.c;
 
@@ -83,7 +83,7 @@ public final class LocalImageThumbnailView extends FrameLayout {
 
     public final void setLocalImageSource(Uri uri, int i10, int i11) {
         q.h(uri, "uri");
-        l.d(CoroutineViewUtilsKt.getAttachedScope(this), a1.b(), null, new LocalImageThumbnailView$setLocalImageSource$1(i10, i11, this, uri, null), 2, null);
+        l.d(CoroutineViewUtilsKt.getAttachedScope(this), b1.b(), null, new LocalImageThumbnailView$setLocalImageSource$1(i10, i11, this, uri, null), 2, null);
     }
 
     
@@ -96,7 +96,7 @@ public final class LocalImageThumbnailView extends FrameLayout {
         this.imageView = imageView;
         SimpleDraweeView simpleDraweeView = new SimpleDraweeView(context);
         addToParent(simpleDraweeView);
-        simpleDraweeView.getHierarchy().t(ScalingUtils.ScaleType.f7841i);
+        simpleDraweeView.getHierarchy().t(ScalingUtils.ScaleType.f7533i);
         this.simpleDraweeView = simpleDraweeView;
     }
 }

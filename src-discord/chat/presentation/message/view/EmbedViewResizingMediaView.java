@@ -119,7 +119,7 @@ public final class EmbedViewResizingMediaView extends MediaView {
         if (target != null) {
             return target;
         }
-        q.z(TouchesHelper.TARGET_KEY);
+        q.y(TouchesHelper.TARGET_KEY);
         return null;
     }
 

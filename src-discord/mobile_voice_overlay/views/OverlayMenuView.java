@@ -144,7 +144,7 @@ public final class OverlayMenuView extends LinearLayout {
         } else if (i11 == 4) {
             reactAsset2 = ReactAsset.CallStatusUnknown;
         } else {
-            throw new kf.q();
+            throw new pf.q();
         }
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView2, reactAsset2);
         this.binding.overlayGuildName.setText(data.getGuildName());

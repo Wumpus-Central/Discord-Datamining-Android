@@ -63,7 +63,7 @@ public final class StickerPickerRowView extends LinearLayout {
         for (Object obj : stickerPickerRow.getItems()) {
             int i11 = i10 + 1;
             if (i10 < 0) {
-                j.r();
+                j.s();
             }
             final StickerPickerRow.Sticker sticker = (StickerPickerRow.Sticker) obj;
             View childAt = getChildAt(i10);
@@ -134,7 +134,7 @@ public final class StickerPickerRowView extends LinearLayout {
         for (Object obj : stickerPickerRow.getItems()) {
             int i12 = i11 + 1;
             if (i11 < 0) {
-                j.r();
+                j.s();
             }
             StickerPickerRow.Sticker sticker = (StickerPickerRow.Sticker) obj;
             if (i11 == 0) {

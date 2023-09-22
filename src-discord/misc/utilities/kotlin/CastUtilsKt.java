@@ -9,7 +9,7 @@ public final class CastUtilsKt {
     
     public static final  <T> T castOrNull(Object obj) {
         q.h(obj, "<this>");
-        q.n(2, "T");
+        q.m(2, "T");
         return obj;
     }
 }

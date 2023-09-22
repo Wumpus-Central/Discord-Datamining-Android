@@ -21,7 +21,6 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.PathInterpolator;
 import androidx.core.content.res.h;
 import androidx.recyclerview.widget.RecyclerView;
-import bg.j;
 import com.discord.chat.R;
 import com.discord.device.DeviceAccessibilityModule;
 import com.discord.misc.utilities.size.SizeUtilsKt;
@@ -29,6 +28,7 @@ import com.discord.theme.LightTheme;
 import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.react.uimanager.events.TouchesHelper;
+import gg.j;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
@@ -148,13 +148,13 @@ public final class SwipeHelper extends ChatListCallback {
             if (!z10) {
                 View view2 = this.mView;
                 if (view2 == null) {
-                    q.z("mView");
+                    q.y("mView");
                     view2 = null;
                 }
                 float abs = Math.abs(view2.getTranslationX());
                 View view3 = this.mView;
                 if (view3 == null) {
-                    q.z("mView");
+                    q.y("mView");
                     view3 = null;
                 }
                 float measuredHeight = view3.getMeasuredHeight();
@@ -167,13 +167,13 @@ public final class SwipeHelper extends ChatListCallback {
                 float f14 = MAX_RIGHT_BEVEL_WIDTH * swipeProgress;
                 View view4 = this.mView;
                 if (view4 == null) {
-                    q.z("mView");
+                    q.y("mView");
                     view4 = null;
                 }
                 float measuredWidth = view4.getMeasuredWidth();
                 View view5 = this.mView;
                 if (view5 == null) {
-                    q.z("mView");
+                    q.y("mView");
                     view5 = null;
                 }
                 float translationX = measuredWidth + view5.getTranslationX();
@@ -182,7 +182,7 @@ public final class SwipeHelper extends ChatListCallback {
                 float f17 = f16 - f14;
                 View view6 = this.mView;
                 if (view6 == null) {
-                    q.z("mView");
+                    q.y("mView");
                     view = null;
                 } else {
                     view = view6;
@@ -418,7 +418,7 @@ public final class SwipeHelper extends ChatListCallback {
     private final float getSwipeProgress() {
         View view = this.mView;
         if (view == null) {
-            q.z("mView");
+            q.y("mView");
             view = null;
         }
         return Math.max(0.0f, Math.min(view.getTranslationX() / SWIPE_STOP_OFFSET_X, 1.0f));
@@ -467,7 +467,7 @@ public final class SwipeHelper extends ChatListCallback {
         this$0.actionType = SwipeActionType.Edit;
         View view = this$0.mView;
         if (view == null) {
-            q.z("mView");
+            q.y("mView");
             view = null;
         }
         view.performHapticFeedback(0);
@@ -538,7 +538,7 @@ public final class SwipeHelper extends ChatListCallback {
             if (this.actionType == SwipeActionType.Edit) {
                 View view = this.mView;
                 if (view == null) {
-                    q.z("mView");
+                    q.y("mView");
                     view = null;
                 }
                 if (view.getTranslationX() > REPLY_RESET_X) {
@@ -555,7 +555,7 @@ public final class SwipeHelper extends ChatListCallback {
             }
             View view2 = this.mView;
             if (view2 == null) {
-                q.z("mView");
+                q.y("mView");
                 view2 = null;
             }
             if (view2.getTranslationX() > EDIT_OFFSET_X && this.editRunnable != null) {
@@ -572,13 +572,13 @@ public final class SwipeHelper extends ChatListCallback {
         if (this.shouldPerformHapticFeedback) {
             View view2 = this.mView;
             if (view2 == null) {
-                q.z("mView");
+                q.y("mView");
                 view2 = null;
             }
             if (view2.getTranslationX() <= HAPTIC_TRIGGER_X) {
                 View view3 = this.mView;
                 if (view3 == null) {
-                    q.z("mView");
+                    q.y("mView");
                 } else {
                     view = view3;
                 }
@@ -596,7 +596,7 @@ public final class SwipeHelper extends ChatListCallback {
         if (!this.shouldPerformHapticFeedback) {
             View view4 = this.mView;
             if (view4 == null) {
-                q.z("mView");
+                q.y("mView");
             } else {
                 view = view4;
             }
@@ -611,7 +611,7 @@ public final class SwipeHelper extends ChatListCallback {
         if (this.shouldTriggerReply) {
             View view2 = this.mView;
             if (view2 == null) {
-                q.z("mView");
+                q.y("mView");
                 view2 = null;
             }
             if (view2.getTranslationX() > REPLY_RESET_X) {
@@ -622,7 +622,7 @@ public final class SwipeHelper extends ChatListCallback {
         if (!this.shouldTriggerReply) {
             View view3 = this.mView;
             if (view3 == null) {
-                q.z("mView");
+                q.y("mView");
             } else {
                 view = view3;
             }
@@ -647,7 +647,7 @@ public final class SwipeHelper extends ChatListCallback {
             float dpToPx = SizeUtilsKt.getDpToPx(12) * swipeProgress;
             View view3 = this.mView;
             if (view3 == null) {
-                q.z("mView");
+                q.y("mView");
             } else {
                 view2 = view3;
             }

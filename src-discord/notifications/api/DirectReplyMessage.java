@@ -1,5 +1,8 @@
 package com.discord.notifications.api;
 
+import cj.a2;
+import cj.m0;
+import cj.n1;
 import com.discord.primitives.ApplicationId;
 import com.discord.primitives.ChannelId;
 import com.discord.primitives.ChannelId$$serializer;
@@ -19,13 +22,10 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import kotlinx.serialization.json.Json;
 import kotlinx.serialization.json.l;
-import ui.f;
-import xi.a2;
-import xi.m0;
-import xi.n1;
+import zi.f;
 
-@f
 @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b!\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 ?2\u00020\u0001:\u0002>?Bn\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0001\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011ø\u0001\u0000¢\u0006\u0002\u0010\u0012B\\\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\t\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u000bø\u0001\u0000¢\u0006\u0002\u0010\u0013J\u0019\u0010%\u001a\u00020\u0005HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b&\u0010\u001cJ\u0019\u0010'\u001a\u00020\u0007HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b(\u0010\u0019J\t\u0010)\u001a\u00020\tHÆ\u0003J\u000b\u0010*\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u0010\u0010+\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u001eJ\u0010\u0010,\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u001eJ\u000b\u0010-\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010.\u001a\u0004\u0018\u00010\u000bHÆ\u0003Jp\u0010/\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u000bHÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b0\u00101J\u0013\u00102\u001a\u0002032\b\u00104\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00105\u001a\u00020\u0003HÖ\u0001J\t\u00106\u001a\u00020\u000bHÖ\u0001J!\u00107\u001a\u0002082\u0006\u00109\u001a\u00020\u00002\u0006\u0010:\u001a\u00020;2\u0006\u0010<\u001a\u00020=HÇ\u0001R\u0011\u0010\b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R'\u0010\u0006\u001a\u00020\u00078\u0006X\u0087\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0010\n\u0002\u0010\u001a\u0012\u0004\b\u0016\u0010\u0017\u001a\u0004\b\u0018\u0010\u0019R\u0013\u0010\u000e\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001cR\u0015\u0010\r\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\u001f\u001a\u0004\b\u001d\u0010\u001eR\u0013\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\b \u0010\u001cR\u0013\u0010\u000f\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\u001cR\u001c\u0010\u0004\u001a\u00020\u0005ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010#\u001a\u0004\b\"\u0010\u001cR\u0015\u0010\f\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\u001f\u001a\u0004\b$\u0010\u001e\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006@"}, d2 = {"Lcom/discord/notifications/api/DirectReplyMessage;", "", "seen1", "", "id", "Lcom/discord/primitives/MessageId;", "channelId", "Lcom/discord/primitives/ChannelId;", "author", "Lcom/discord/notifications/api/DirectReplyUser;", "content", "", "type", "channelType", "channelName", "guildName", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Lcom/discord/primitives/ChannelId;Lcom/discord/notifications/api/DirectReplyUser;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "(Ljava/lang/String;JLcom/discord/notifications/api/DirectReplyUser;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getAuthor", "()Lcom/discord/notifications/api/DirectReplyUser;", "getChannelId-o4g7jtM$annotations", "()V", "getChannelId-o4g7jtM", "()J", "J", "getChannelName", "()Ljava/lang/String;", "getChannelType", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getContent", "getGuildName", "getId-3Eiw7ao", "Ljava/lang/String;", "getType", "component1", "component1-3Eiw7ao", "component2", "component2-o4g7jtM", "component3", "component4", "component5", "component6", "component7", "component8", "copy", "copy-_6Dih7Q", "(Ljava/lang/String;JLcom/discord/notifications/api/DirectReplyUser;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;)Lcom/discord/notifications/api/DirectReplyMessage;", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "notification_api_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@f
 
 public final class DirectReplyMessage {
     public static final Companion Companion = new Companion(null);
@@ -38,7 +38,7 @@ public final class DirectReplyMessage {
     private final String guildName;
 
     
-    private final String f7563id;
+    private final String f7255id;
     private final Integer type;
 
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006HÆ\u0001J\u000e\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bR\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, d2 = {"Lcom/discord/notifications/api/DirectReplyMessage$Companion;", "", "()V", "json", "Lkotlinx/serialization/json/Json;", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/notifications/api/DirectReplyMessage;", "toNotificationData", "Lcom/discord/notifications/api/NotificationData;", "data", "", "notification_api_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -56,19 +56,19 @@ public final class DirectReplyMessage {
         }
 
         public final NotificationData toNotificationData(String data) {
-            List h10;
+            List i10;
             Integer num;
             q.h(data, "data");
             Json json = DirectReplyMessage.json;
             json.a();
             DirectReplyMessage directReplyMessage = (DirectReplyMessage) json.b(DirectReplyMessage.Companion.serializer(), data);
-            String str = directReplyMessage.m544getId3Eiw7ao();
+            String str = directReplyMessage.m549getId3Eiw7ao();
             Integer type = directReplyMessage.getType();
             String content = directReplyMessage.getContent();
-            long j10 = directReplyMessage.m543getChannelIdo4g7jtM();
+            long j10 = directReplyMessage.m548getChannelIdo4g7jtM();
             Integer channelType = directReplyMessage.getChannelType();
-            h10 = j.h();
-            long j11 = directReplyMessage.getAuthor().m548getIdre6GcUE();
+            i10 = j.i();
+            long j11 = directReplyMessage.getAuthor().m553getIdre6GcUE();
             String username = directReplyMessage.getAuthor().getUsername();
             if (username == null) {
                 username = "";
@@ -80,7 +80,7 @@ public final class DirectReplyMessage {
                 num = null;
             }
             String avatar = directReplyMessage.getAuthor().getAvatar();
-            return new NotificationData(NotificationData.TYPE_MESSAGE_CREATE, str, (Integer) null, (String) null, type, content, (Long) null, channelType, directReplyMessage.getChannelName(), ChannelId.m605boximpl(j10), (String) null, (String) null, (ChannelId) null, (String) null, h10, UserId.m669boximpl(j11), username, (String) null, num, avatar, (String) null, (Integer) null, (GuildId) null, directReplyMessage.getGuildName(), (String) null, (Integer) null, (String) null, (ApplicationId) null, (String) null, (String) null, (NotificationMessage) null, (String) null, (Integer) null, true, true, (String) null, (String) null, (String) null, (String) null, (String) null, (String) null, (Boolean) null, (String) null, -9290676, 2041, (DefaultConstructorMarker) null);
+            return new NotificationData(NotificationData.TYPE_MESSAGE_CREATE, str, (Integer) null, (String) null, type, content, (Long) null, channelType, directReplyMessage.getChannelName(), ChannelId.m610boximpl(j10), (String) null, (String) null, (ChannelId) null, (String) null, i10, UserId.m674boximpl(j11), username, (String) null, num, avatar, (String) null, (Integer) null, (GuildId) null, directReplyMessage.getGuildName(), (String) null, (Integer) null, (String) null, (ApplicationId) null, (String) null, (String) null, (NotificationMessage) null, (String) null, (Integer) null, true, true, (String) null, (String) null, (String) null, (String) null, (String) null, (String) null, (Boolean) null, (String) null, -9290676, 2041, (DefaultConstructorMarker) null);
         }
     }
 
@@ -88,8 +88,8 @@ public final class DirectReplyMessage {
         if (7 != (i10 & 7)) {
             n1.b(i10, 7, DirectReplyMessage$$serializer.INSTANCE.getDescriptor());
         }
-        this.f7563id = str;
-        this.channelId = channelId.m614unboximpl();
+        this.f7255id = str;
+        this.channelId = channelId.m619unboximpl();
         this.author = directReplyUser;
         if ((i10 & 8) == 0) {
             this.content = null;
@@ -127,7 +127,7 @@ public final class DirectReplyMessage {
     }
 
     
-    public static  void m539getChannelIdo4g7jtM$annotations() {
+    public static  void m544getChannelIdo4g7jtM$annotations() {
     }
 
     public static final void write$Self(DirectReplyMessage self, CompositeEncoder output, SerialDescriptor serialDesc) {
@@ -139,16 +139,16 @@ public final class DirectReplyMessage {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z14 = false;
-        output.h(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m631boximpl(self.f7563id));
-        output.h(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m605boximpl(self.channelId));
-        output.h(serialDesc, 2, DirectReplyUser$$serializer.INSTANCE, self.author);
+        output.i(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m636boximpl(self.f7255id));
+        output.i(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m610boximpl(self.channelId));
+        output.i(serialDesc, 2, DirectReplyUser$$serializer.INSTANCE, self.author);
         if (!output.z(serialDesc, 3) && self.content == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.e(serialDesc, 3, a2.f30576a, self.content);
+            output.E(serialDesc, 3, a2.f6238a, self.content);
         }
         if (!output.z(serialDesc, 4) && self.type == null) {
             z11 = false;
@@ -156,7 +156,7 @@ public final class DirectReplyMessage {
             z11 = true;
         }
         if (z11) {
-            output.e(serialDesc, 4, m0.f30651a, self.type);
+            output.E(serialDesc, 4, m0.f6313a, self.type);
         }
         if (!output.z(serialDesc, 5) && self.channelType == null) {
             z12 = false;
@@ -164,7 +164,7 @@ public final class DirectReplyMessage {
             z12 = true;
         }
         if (z12) {
-            output.e(serialDesc, 5, m0.f30651a, self.channelType);
+            output.E(serialDesc, 5, m0.f6313a, self.channelType);
         }
         if (!output.z(serialDesc, 6) && self.channelName == null) {
             z13 = false;
@@ -172,23 +172,23 @@ public final class DirectReplyMessage {
             z13 = true;
         }
         if (z13) {
-            output.e(serialDesc, 6, a2.f30576a, self.channelName);
+            output.E(serialDesc, 6, a2.f6238a, self.channelName);
         }
         if (output.z(serialDesc, 7) || self.guildName != null) {
             z14 = true;
         }
         if (z14) {
-            output.e(serialDesc, 7, a2.f30576a, self.guildName);
+            output.E(serialDesc, 7, a2.f6238a, self.guildName);
         }
     }
 
     
-    public final String m540component13Eiw7ao() {
-        return this.f7563id;
+    public final String m545component13Eiw7ao() {
+        return this.f7255id;
     }
 
     
-    public final long m541component2o4g7jtM() {
+    public final long m546component2o4g7jtM() {
         return this.channelId;
     }
 
@@ -217,7 +217,7 @@ public final class DirectReplyMessage {
     }
 
     
-    public final DirectReplyMessage m542copy_6Dih7Q(String id2, long j10, DirectReplyUser author, String str, Integer num, Integer num2, String str2, String str3) {
+    public final DirectReplyMessage m547copy_6Dih7Q(String id2, long j10, DirectReplyUser author, String str, Integer num, Integer num2, String str2, String str3) {
         q.h(id2, "id");
         q.h(author, "author");
         return new DirectReplyMessage(id2, j10, author, str, num, num2, str2, str3, null);
@@ -231,7 +231,7 @@ public final class DirectReplyMessage {
             return false;
         }
         DirectReplyMessage directReplyMessage = (DirectReplyMessage) obj;
-        return MessageId.m635equalsimpl0(this.f7563id, directReplyMessage.f7563id) && ChannelId.m609equalsimpl0(this.channelId, directReplyMessage.channelId) && q.c(this.author, directReplyMessage.author) && q.c(this.content, directReplyMessage.content) && q.c(this.type, directReplyMessage.type) && q.c(this.channelType, directReplyMessage.channelType) && q.c(this.channelName, directReplyMessage.channelName) && q.c(this.guildName, directReplyMessage.guildName);
+        return MessageId.m640equalsimpl0(this.f7255id, directReplyMessage.f7255id) && ChannelId.m614equalsimpl0(this.channelId, directReplyMessage.channelId) && q.c(this.author, directReplyMessage.author) && q.c(this.content, directReplyMessage.content) && q.c(this.type, directReplyMessage.type) && q.c(this.channelType, directReplyMessage.channelType) && q.c(this.channelName, directReplyMessage.channelName) && q.c(this.guildName, directReplyMessage.guildName);
     }
 
     public final DirectReplyUser getAuthor() {
@@ -239,7 +239,7 @@ public final class DirectReplyMessage {
     }
 
     
-    public final long m543getChannelIdo4g7jtM() {
+    public final long m548getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
@@ -260,8 +260,8 @@ public final class DirectReplyMessage {
     }
 
     
-    public final String m544getId3Eiw7ao() {
-        return this.f7563id;
+    public final String m549getId3Eiw7ao() {
+        return this.f7255id;
     }
 
     public final Integer getType() {
@@ -269,7 +269,7 @@ public final class DirectReplyMessage {
     }
 
     public int hashCode() {
-        int i10 = ((((MessageId.m636hashCodeimpl(this.f7563id) * 31) + ChannelId.m610hashCodeimpl(this.channelId)) * 31) + this.author.hashCode()) * 31;
+        int i10 = ((((MessageId.m641hashCodeimpl(this.f7255id) * 31) + ChannelId.m615hashCodeimpl(this.channelId)) * 31) + this.author.hashCode()) * 31;
         String str = this.content;
         int i11 = 0;
         int hashCode = (i10 + (str == null ? 0 : str.hashCode())) * 31;
@@ -287,8 +287,8 @@ public final class DirectReplyMessage {
     }
 
     public String toString() {
-        String str = MessageId.m637toStringimpl(this.f7563id);
-        String str2 = ChannelId.m612toStringimpl(this.channelId);
+        String str = MessageId.m642toStringimpl(this.f7255id);
+        String str2 = ChannelId.m617toStringimpl(this.channelId);
         DirectReplyUser directReplyUser = this.author;
         String str3 = this.content;
         Integer num = this.type;
@@ -299,7 +299,7 @@ public final class DirectReplyMessage {
     }
 
     private DirectReplyMessage(String str, long j10, DirectReplyUser directReplyUser, String str2, Integer num, Integer num2, String str3, String str4) {
-        this.f7563id = str;
+        this.f7255id = str;
         this.channelId = j10;
         this.author = directReplyUser;
         this.content = str2;

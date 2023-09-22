@@ -40,7 +40,7 @@ public final class ChatListView$onChatListUpdate$1$2 extends s implements Functi
     
     public final void invoke2() {
         ChatScrollStateObserver chatScrollStateObserver;
-        Object V;
+        Object W;
         Scroller.TargetAlignment targetAlignment;
         ChatScrollStateObserver chatScrollStateObserver2;
         LinearLayoutManager linearLayoutManager;
@@ -64,7 +64,7 @@ public final class ChatListView$onChatListUpdate$1$2 extends s implements Functi
                 if (linearLayoutManager3.x2()) {
                     chatEventHandler2 = this.this$0.eventHandler;
                     if (chatEventHandler2 == null) {
-                        q.z("eventHandler");
+                        q.y("eventHandler");
                     } else {
                         chatEventHandler3 = chatEventHandler2;
                     }
@@ -72,7 +72,7 @@ public final class ChatListView$onChatListUpdate$1$2 extends s implements Functi
                 } else {
                     chatEventHandler = this.this$0.eventHandler;
                     if (chatEventHandler == null) {
-                        q.z("eventHandler");
+                        q.y("eventHandler");
                     } else {
                         chatEventHandler3 = chatEventHandler;
                     }
@@ -82,8 +82,8 @@ public final class ChatListView$onChatListUpdate$1$2 extends s implements Functi
         }
         ChatListAction action = this.$update.getAction();
         if (action instanceof ChatListAction.ScrollTo) {
-            V = r.V(this.$update.getItems(), ((ChatListAction.ScrollTo) this.$update.getAction()).getPosition());
-            ChatListItem chatListItem = (ChatListItem) V;
+            W = r.W(this.$update.getItems(), ((ChatListAction.ScrollTo) this.$update.getAction()).getPosition());
+            ChatListItem chatListItem = (ChatListItem) W;
             if (chatListItem instanceof SeparatorChatListItem) {
                 targetAlignment = new Scroller.TargetAlignment.Top(SizeUtilsKt.getDpToPx(4));
             } else if (!(chatListItem instanceof SummarySeparatorChatListItem)) {
@@ -95,7 +95,7 @@ public final class ChatListView$onChatListUpdate$1$2 extends s implements Functi
             }
             this.this$0.scrollToPosition(((ChatListAction.ScrollTo) this.$update.getAction()).getPosition(), targetAlignment, ((ChatListAction.ScrollTo) this.$update.getAction()).getAnimated(), ((ChatListAction.ScrollTo) this.$update.getAction()).isHighlight());
         } else if (action instanceof ChatListAction.StickToBottomIfAtBottom) {
-            if (!this.$wasAtBottom.f21469j) {
+            if (!this.$wasAtBottom.f21625j) {
                 return;
             }
             if (ChatView.Companion.getAreChatAnimationsEnabled()) {

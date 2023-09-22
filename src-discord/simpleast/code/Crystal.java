@@ -74,7 +74,7 @@ public final class Crystal {
     }
 
     public final <RC, S> List<Rule<RC, Node<RC>, S>> createCrystalCodeRules$simpleast_core_release(CodeStyleProviders<RC> codeStyleProviders) {
-        List<Rule<RC, Node<RC>, S>> k10;
+        List<Rule<RC, Node<RC>, S>> l10;
         q.h(codeStyleProviders, "codeStyleProviders");
         CodeRules codeRules = CodeRules.INSTANCE;
         Pattern PATTERN_CRYSTAL_COMMENTS2 = PATTERN_CRYSTAL_COMMENTS;
@@ -87,8 +87,8 @@ public final class Crystal {
         q.g(PATTERN_CRYSTAL_ANNOTATION2, "PATTERN_CRYSTAL_ANNOTATION");
         Pattern PATTERN_CRYSTAL_SYMBOL2 = PATTERN_CRYSTAL_SYMBOL;
         q.g(PATTERN_CRYSTAL_SYMBOL2, "PATTERN_CRYSTAL_SYMBOL");
-        k10 = j.k(CodeRules.toMatchGroupRule$default(codeRules, PATTERN_CRYSTAL_COMMENTS2, 0, codeStyleProviders.getCommentStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_CRYSTAL_STRINGS2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_CRYSTAL_REGEX2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_CRYSTAL_ANNOTATION2, 0, codeStyleProviders.getGenericsStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_CRYSTAL_SYMBOL2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), FunctionNode.Companion.createFunctionRule(codeStyleProviders));
-        return k10;
+        l10 = j.l(CodeRules.toMatchGroupRule$default(codeRules, PATTERN_CRYSTAL_COMMENTS2, 0, codeStyleProviders.getCommentStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_CRYSTAL_STRINGS2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_CRYSTAL_REGEX2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_CRYSTAL_ANNOTATION2, 0, codeStyleProviders.getGenericsStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_CRYSTAL_SYMBOL2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), FunctionNode.Companion.createFunctionRule(codeStyleProviders));
+        return l10;
     }
 
     public final String[] getBUILT_INS() {

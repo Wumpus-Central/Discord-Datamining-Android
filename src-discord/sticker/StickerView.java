@@ -47,13 +47,13 @@ public final class StickerView extends APNGImageView {
         inflatePngView();
         PNGStickerView pNGStickerView = this.pngView;
         if (pNGStickerView == null) {
-            q.z("pngView");
+            q.y("pngView");
             pNGStickerView = null;
         }
         pNGStickerView.loadGifImage(url, num, num2, z10);
         PNGStickerView pNGStickerView2 = this.pngView;
         if (pNGStickerView2 == null) {
-            q.z("pngView");
+            q.y("pngView");
             pNGStickerView2 = null;
         }
         APNGImageView.resetViews$default(this, pNGStickerView2, false, 2, null);
@@ -66,7 +66,7 @@ public final class StickerView extends APNGImageView {
         inflateLottieView();
         View view = this.lottieView;
         if (view == null) {
-            q.z("lottieView");
+            q.y("lottieView");
             view = null;
         }
         if (view instanceof RLottieImageView) {
@@ -85,13 +85,13 @@ public final class StickerView extends APNGImageView {
         inflatePngView();
         PNGStickerView pNGStickerView = this.pngView;
         if (pNGStickerView == null) {
-            q.z("pngView");
+            q.y("pngView");
             pNGStickerView = null;
         }
         pNGStickerView.loadImage(url, num, num2);
         PNGStickerView pNGStickerView2 = this.pngView;
         if (pNGStickerView2 == null) {
-            q.z("pngView");
+            q.y("pngView");
             pNGStickerView2 = null;
         }
         APNGImageView.resetViews$default(this, pNGStickerView2, false, 2, null);
@@ -113,7 +113,7 @@ public final class StickerView extends APNGImageView {
             }
             View view2 = this.lottieView;
             if (view2 == null) {
-                q.z("lottieView");
+                q.y("lottieView");
             } else {
                 view = view2;
             }

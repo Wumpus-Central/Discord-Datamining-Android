@@ -4,18 +4,18 @@ import com.discord.serialization.IntEnum;
 import com.discord.serialization.IntEnumSerializer;
 import java.util.EnumSet;
 import java.util.Set;
-import kf.n;
-import kf.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
 import kotlinx.serialization.KSerializer;
-import ui.f;
+import pf.n;
+import pf.p;
+import zi.f;
 
-@f(with = Serializer.class)
 @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b7\b\u0087\u0001\u0018\u0000 <2\b\u0012\u0004\u0012\u00020\u00000\u00012\u00020\u0002:\u0002<=B\u000f\b\u0002\u0012\u0006\u0010\u0003\u001a\u00020\u0004¢\u0006\u0002\u0010\u0005R\u001b\u0010\u0006\u001a\u00020\u00078FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\t\u0010\n\u001a\u0004\b\u0006\u0010\bR\u001b\u0010\u000b\u001a\u00020\u00078FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\f\u0010\n\u001a\u0004\b\u000b\u0010\bR\u001b\u0010\r\u001a\u00020\u00078FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\u000e\u0010\n\u001a\u0004\b\r\u0010\bR\u0014\u0010\u0003\u001a\u00020\u0004X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010j\u0002\b\u0011j\u0002\b\u0012j\u0002\b\u0013j\u0002\b\u0014j\u0002\b\u0015j\u0002\b\u0016j\u0002\b\u0017j\u0002\b\u0018j\u0002\b\u0019j\u0002\b\u001aj\u0002\b\u001bj\u0002\b\u001cj\u0002\b\u001dj\u0002\b\u001ej\u0002\b\u001fj\u0002\b j\u0002\b!j\u0002\b\"j\u0002\b#j\u0002\b$j\u0002\b%j\u0002\b&j\u0002\b'j\u0002\b(j\u0002\b)j\u0002\b*j\u0002\b+j\u0002\b,j\u0002\b-j\u0002\b.j\u0002\b/j\u0002\b0j\u0002\b1j\u0002\b2j\u0002\b3j\u0002\b4j\u0002\b5j\u0002\b6j\u0002\b7j\u0002\b8j\u0002\b9j\u0002\b:j\u0002\b;¨\u0006>"}, d2 = {"Lcom/discord/chat/bridge/MessageType;", "", "Lcom/discord/serialization/IntEnum;", "serialNumber", "", "(Ljava/lang/String;II)V", "isAutomodSystem", "", "()Z", "isAutomodSystem$delegate", "Lkotlin/Lazy;", "isCall", "isCall$delegate", "isSystem", "isSystem$delegate", "getSerialNumber", "()I", "DEFAULT", "RECIPIENT_ADD", "RECIPIENT_REMOVE", "CALL", "CHANNEL_NAME_CHANGE", "CHANNEL_ICON_CHANGE", "CHANNEL_PINNED_MESSAGE", "USER_JOIN", "USER_PREMIUM_GUILD_SUBSCRIPTION", "USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_1", "USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_2", "USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_3", "CHANNEL_FOLLOW_ADD", "GUILD_STREAM", "GUILD_DISCOVERY_DISQUALIFIED", "GUILD_DISCOVERY_REQUALIFIED", "GUILD_DISCOVERY_GRACE_PERIOD_INITIAL_WARNING", "GUILD_DISCOVERY_GRACE_PERIOD_FINAL_WARNING", "THREAD_CREATED", "REPLY", "CHAT_INPUT_COMMAND", "THREAD_STARTER_MESSAGE", "GUILD_INVITE_REMINDER", "CONTEXT_MENU_COMMAND", "AUTO_MODERATION_ACTION", "ROLE_SUBSCRIPTION_PURCHASE", "INTERACTION_PREMIUM_UPSELL", "STAGE_START", "STAGE_END", "STAGE_SPEAKER", "STAGE_RAISE_HAND", "STAGE_TOPIC", "GUILD_APPLICATION_PREMIUM_SUBSCRIPTION", "PRIVATE_CHANNEL_INTEGRATION_ADDED", "PRIVATE_CHANNEL_INTEGRATION_REMOVED", "PREMIUM_REFERRAL", "GUILD_INCIDENT_ALERT_MODE_ENABLED", "GUILD_INCIDENT_ALERT_MODE_DISABLED", "GUILD_INCIDENT_REPORT_RAID", "GUILD_INCIDENT_REPORT_FALSE_ALARM", "GUILD_DEADCHAT_REVIVE_PROMPT", "CUSTOM_GIFT", "GUILD_GAMING_STATS_PROMPT", "Companion", "Serializer", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@f(with = Serializer.class)
 
 public enum MessageType implements IntEnum {
     DEFAULT(0),
@@ -137,7 +137,7 @@ public enum MessageType implements IntEnum {
         MessageType messageType26;
         MessageType messageType27;
         MessageType messageType28;
-        Lazy<KSerializer<Object>> a10;
+        Lazy<KSerializer<Object>> b10;
         MessageType messageType29 = CALL;
         MessageType messageType30 = GUILD_STREAM;
         EnumSet of2 = EnumSet.of(r0, messageType, messageType29, messageType2, messageType3, messageType4, messageType5, messageType6, messageType7, messageType8, messageType9, messageType10, messageType30, messageType11, messageType12, messageType13, messageType14, messageType15, messageType16, messageType17, messageType18, messageType19, messageType20, messageType21, messageType22, messageType23, messageType24, messageType25, messageType26, messageType27, messageType28);
@@ -146,21 +146,21 @@ public enum MessageType implements IntEnum {
         EnumSet of3 = EnumSet.of(messageType29, messageType30);
         q.g(of3, "of(\n            CALL,\n  …  GUILD_STREAM,\n        )");
         CallTypes = of3;
-        a10 = n.a(p.PUBLICATION, MessageType$Companion$$cachedSerializer$delegate$1.INSTANCE);
-        $cachedSerializer$delegate = a10;
+        b10 = n.b(p.PUBLICATION, MessageType$Companion$$cachedSerializer$delegate$1.INSTANCE);
+        $cachedSerializer$delegate = b10;
     }
 
     MessageType(int i10) {
-        Lazy b10;
-        Lazy b11;
-        Lazy b12;
+        Lazy a10;
+        Lazy a11;
+        Lazy a12;
         this.serialNumber = i10;
-        b10 = n.b(new MessageType$isSystem$2(this));
-        this.isSystem$delegate = b10;
-        b11 = n.b(new MessageType$isAutomodSystem$2(this));
-        this.isAutomodSystem$delegate = b11;
-        b12 = n.b(new MessageType$isCall$2(this));
-        this.isCall$delegate = b12;
+        a10 = n.a(new MessageType$isSystem$2(this));
+        this.isSystem$delegate = a10;
+        a11 = n.a(new MessageType$isAutomodSystem$2(this));
+        this.isAutomodSystem$delegate = a11;
+        a12 = n.a(new MessageType$isCall$2(this));
+        this.isCall$delegate = a12;
     }
 
     @Override 

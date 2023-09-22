@@ -25,19 +25,19 @@ public final class ChatViewEventHandler$onMessageLongPressed$1 extends s impleme
 
     @Override 
     public   Unit invoke(MessageId messageId, ChannelId channelId, Integer num, MediaType mediaType) {
-        m369invoke8a0ehIg(messageId.m639unboximpl(), channelId.m614unboximpl(), num, mediaType);
-        return Unit.f21444a;
+        m374invoke8a0ehIg(messageId.m644unboximpl(), channelId.m619unboximpl(), num, mediaType);
+        return Unit.f21600a;
     }
 
     
-    public final void m369invoke8a0ehIg(String messageId, long j10, Integer num, MediaType mediaType) {
+    public final void m374invoke8a0ehIg(String messageId, long j10, Integer num, MediaType mediaType) {
         Function1 function1;
         int i10;
         String str;
         q.h(messageId, "messageId");
         function1 = this.this$0.emitReactEvent;
-        String str2 = MessageId.m637toStringimpl(messageId);
-        String str3 = ChannelId.m612toStringimpl(j10);
+        String str2 = MessageId.m642toStringimpl(messageId);
+        String str3 = ChannelId.m617toStringimpl(j10);
         if (num != null) {
             i10 = num.intValue();
         } else {

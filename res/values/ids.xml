@@ -284,6 +284,7 @@
     <item type="id" name="gaming_stats_button" />
     <item type="id" name="ghost_view" />
     <item type="id" name="ghost_view_holder" />
+    <item type="id" name="gif_button" />
     <item type="id" name="gradients" />
     <item type="id" name="group_divider" />
     <item type="id" name="guideline" />
@@ -322,6 +323,7 @@
     <item type="id" name="indicator_end_barrier" />
     <item type="id" name="indicator_top" />
     <item type="id" name="info" />
+    <item type="id" name="info_link_container" />
     <item type="id" name="inline_media_container" />
     <item type="id" name="inline_media_gif_indicator" />
     <item type="id" name="inline_media_image_preview" />

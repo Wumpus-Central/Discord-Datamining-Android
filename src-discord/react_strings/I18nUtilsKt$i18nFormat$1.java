@@ -19,7 +19,7 @@ public final class I18nUtilsKt$i18nFormat$1 extends s implements Function1<Rende
     @Override 
     public   Unit invoke(RenderContext renderContext) {
         invoke2(renderContext);
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     

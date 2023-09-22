@@ -29,7 +29,7 @@ public final class ThemeManager {
         if (amoledTheme2 != null) {
             return amoledTheme2;
         }
-        q.z("amoledTheme");
+        q.y("amoledTheme");
         return null;
     }
 
@@ -38,7 +38,7 @@ public final class ThemeManager {
         if (discordTheme != null) {
             return discordTheme;
         }
-        q.z("currentTheme");
+        q.y("currentTheme");
         return null;
     }
 
@@ -47,7 +47,7 @@ public final class ThemeManager {
         if (darkTheme2 != null) {
             return darkTheme2;
         }
-        q.z("darkTheme");
+        q.y("darkTheme");
         return null;
     }
 
@@ -56,7 +56,7 @@ public final class ThemeManager {
         if (darkerTheme2 != null) {
             return darkerTheme2;
         }
-        q.z("darkerTheme");
+        q.y("darkerTheme");
         return null;
     }
 
@@ -65,7 +65,7 @@ public final class ThemeManager {
         if (lightTheme2 != null) {
             return lightTheme2;
         }
-        q.z("lightTheme");
+        q.y("lightTheme");
         return null;
     }
 

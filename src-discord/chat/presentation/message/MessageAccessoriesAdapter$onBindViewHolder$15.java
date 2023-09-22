@@ -1,7 +1,7 @@
 package com.discord.chat.presentation.message;
 
+import com.discord.chat.bridge.contentnode.EmojiContentNode;
 import com.discord.chat.presentation.events.ChatEventHandler;
-import com.discord.primitives.MessageId;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -11,21 +11,21 @@ import kotlin.jvm.internal.q;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 
-public  class MessageAccessoriesAdapter$onBindViewHolder$15 extends n implements Function1<MessageId, Unit> {
+public  class MessageAccessoriesAdapter$onBindViewHolder$15 extends n implements Function1<EmojiContentNode, Unit> {
     
     public MessageAccessoriesAdapter$onBindViewHolder$15(Object obj) {
-        super(1, obj, ChatEventHandler.class, "onTapSeeMore", "onTapSeeMore-1xi1bu0(Ljava/lang/String;)V", 0);
+        super(1, obj, ChatEventHandler.class, "onTapEmoji", "onTapEmoji(Lcom/discord/chat/bridge/contentnode/EmojiContentNode;)V", 0);
     }
 
     @Override 
-    public   Unit invoke(MessageId messageId) {
-        m215invoke1xi1bu0(messageId.m639unboximpl());
-        return Unit.f21444a;
+    public   Unit invoke(EmojiContentNode emojiContentNode) {
+        invoke2(emojiContentNode);
+        return Unit.f21600a;
     }
 
     
-    public final void m215invoke1xi1bu0(String p02) {
+    public final void invoke2(EmojiContentNode p02) {
         q.h(p02, "p0");
-        ((ChatEventHandler) this.receiver).mo186onTapSeeMore1xi1bu0(p02);
+        ((ChatEventHandler) this.receiver).onTapEmoji(p02);
     }
 }

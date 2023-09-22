@@ -23,7 +23,7 @@ public final class ChatListView$scrollStateObserver$1 extends s implements Funct
     @Override 
     public   Unit invoke(ScrollState scrollState) {
         invoke2(scrollState);
-        return Unit.f21444a;
+        return Unit.f21600a;
     }
 
     
@@ -35,7 +35,7 @@ public final class ChatListView$scrollStateObserver$1 extends s implements Funct
         if (chatEventHandler != null) {
             chatEventHandler2 = this.this$0.eventHandler;
             if (chatEventHandler2 == null) {
-                q.z("eventHandler");
+                q.y("eventHandler");
                 chatEventHandler2 = null;
             }
             chatEventHandler2.onScrollStateChanged(scrollState);
