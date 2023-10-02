@@ -56,7 +56,7 @@ public final class ButtonComponent extends Component {
         }
         this.type = i11;
         this.indices = list;
-        this.applicationId = applicationId.m606unboximpl();
+        this.applicationId = applicationId.m613unboximpl();
         if ((i10 & 8) == 0) {
             this.customId = null;
         } else {
@@ -105,7 +105,7 @@ public final class ButtonComponent extends Component {
         boolean z14 = false;
         output.w(serialDesc, 0, self.getType());
         output.i(serialDesc, 1, new cj.f(m0.f6313a), self.getIndices());
-        output.i(serialDesc, 2, ApplicationId$$serializer.INSTANCE, ApplicationId.m597boximpl(self.applicationId));
+        output.i(serialDesc, 2, ApplicationId$$serializer.INSTANCE, ApplicationId.m604boximpl(self.applicationId));
         if (!output.z(serialDesc, 3) && self.customId == null) {
             z10 = false;
         } else {
@@ -205,7 +205,7 @@ public final class ButtonComponent extends Component {
             return false;
         }
         ButtonComponent buttonComponent = (ButtonComponent) obj;
-        return getType() == buttonComponent.getType() && q.c(getIndices(), buttonComponent.getIndices()) && ApplicationId.m601equalsimpl0(this.applicationId, buttonComponent.applicationId) && q.c(this.customId, buttonComponent.customId) && q.c(this.label, buttonComponent.label) && this.style == buttonComponent.style && this.disabled == buttonComponent.disabled && q.c(this.emoji, buttonComponent.emoji) && q.c(this.url, buttonComponent.url) && this.state == buttonComponent.state;
+        return getType() == buttonComponent.getType() && q.c(getIndices(), buttonComponent.getIndices()) && ApplicationId.m608equalsimpl0(this.applicationId, buttonComponent.applicationId) && q.c(this.customId, buttonComponent.customId) && q.c(this.label, buttonComponent.label) && this.style == buttonComponent.style && this.disabled == buttonComponent.disabled && q.c(this.emoji, buttonComponent.emoji) && q.c(this.url, buttonComponent.url) && this.state == buttonComponent.state;
     }
 
     
@@ -252,7 +252,7 @@ public final class ButtonComponent extends Component {
     }
 
     public int hashCode() {
-        int type = ((((getType() * 31) + getIndices().hashCode()) * 31) + ApplicationId.m602hashCodeimpl(this.applicationId)) * 31;
+        int type = ((((getType() * 31) + getIndices().hashCode()) * 31) + ApplicationId.m609hashCodeimpl(this.applicationId)) * 31;
         String str = this.customId;
         int i10 = 0;
         int hashCode = (type + (str == null ? 0 : str.hashCode())) * 31;
@@ -278,7 +278,7 @@ public final class ButtonComponent extends Component {
     public String toString() {
         int type = getType();
         List<Integer> indices = getIndices();
-        String str = ApplicationId.m604toStringimpl(this.applicationId);
+        String str = ApplicationId.m611toStringimpl(this.applicationId);
         String str2 = this.customId;
         String str3 = this.label;
         ButtonStyle buttonStyle = this.style;

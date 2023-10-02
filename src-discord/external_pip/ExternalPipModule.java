@@ -47,7 +47,7 @@ public final class ExternalPipModule extends ReactContextBaseJavaModule {
                 return null;
             }
             module.onPipModeChanged(z10);
-            return Unit.f21600a;
+            return Unit.f21601a;
         }
 
         public final Unit onUserLeaveHint(ReactContext reactContext) {
@@ -56,7 +56,7 @@ public final class ExternalPipModule extends ReactContextBaseJavaModule {
                 return null;
             }
             module.enterPipMode(false, ExternalPipModule$Companion$onUserLeaveHint$1.INSTANCE);
-            return Unit.f21600a;
+            return Unit.f21601a;
         }
     }
 
@@ -92,7 +92,7 @@ public final class ExternalPipModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void setPipAspectRatio(int i10, int i11) {
-        this.manager.setPipAspectRatio(i10, i11);
+        this.manager.setPipAspectRatio(getReactApplicationContext().getCurrentActivity(), i10, i11);
     }
 
     public final void enterPipMode(boolean z10, Function1<? super s<Unit>, Unit> onResult) {

@@ -39,7 +39,7 @@ public final class APNGView extends m {
 
         public final String getFilename(String str) {
             MessageDigest instance = MessageDigest.getInstance("SHA-256");
-            byte[] bytes = str.getBytes(a.f28776b);
+            byte[] bytes = str.getBytes(a.f28775b);
             q.g(bytes, "this as java.lang.String).getBytes(charset)");
             byte[] digest = instance.digest(bytes);
             q.g(digest, "getInstance(\"SHA-256\")\n …digest(url.toByteArray())");

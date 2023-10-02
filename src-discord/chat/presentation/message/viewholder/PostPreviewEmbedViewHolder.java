@@ -28,7 +28,7 @@ public final class PostPreviewEmbedViewHolder extends MessagePartViewHolder {
     public static final void bind$lambda$0(Function4 onTapPostPreviewEmbed, PostPreviewEmbed postPreviewEmbed, View view) {
         q.h(onTapPostPreviewEmbed, "$onTapPostPreviewEmbed");
         q.h(postPreviewEmbed, "$postPreviewEmbed");
-        onTapPostPreviewEmbed.invoke(GuildId.m623boximpl(postPreviewEmbed.m120getGuildIdfYKD8eg()), ChannelId.m610boximpl(postPreviewEmbed.m122getParentChannelIdo4g7jtM()), ChannelId.m610boximpl(postPreviewEmbed.m123getThreadIdo4g7jtM()), MessageId.m636boximpl(postPreviewEmbed.m121getMessageId3Eiw7ao()));
+        onTapPostPreviewEmbed.invoke(GuildId.m630boximpl(postPreviewEmbed.m124getGuildIdfYKD8eg()), ChannelId.m617boximpl(postPreviewEmbed.m126getParentChannelIdo4g7jtM()), ChannelId.m617boximpl(postPreviewEmbed.m127getThreadIdo4g7jtM()), MessageId.m643boximpl(postPreviewEmbed.m125getMessageId3Eiw7ao()));
     }
 
     public final void bind(final PostPreviewEmbed postPreviewEmbed, final Function4<? super GuildId, ? super ChannelId, ? super ChannelId, ? super MessageId, Unit> onTapPostPreviewEmbed, SpoilerConfig spoilerConfig) {
@@ -41,7 +41,7 @@ public final class PostPreviewEmbedViewHolder extends MessagePartViewHolder {
         int ctaButtonColor = postPreviewEmbed.getCtaButtonColor();
         String coverImage = postPreviewEmbed.getCoverImage();
         String blurredCoverImage = postPreviewEmbed.getBlurredCoverImage();
-        postPreviewEmbedView.m346setPostPreviewEmbedOGpb6Gk(title, subtitle, ctaText, ctaButtonColor, postPreviewEmbed.getFooter(), postPreviewEmbed.m121getMessageId3Eiw7ao(), coverImage, blurredCoverImage, postPreviewEmbed.getCoverImageOverlayText(), postPreviewEmbed.getBackgroundImage(), new View.OnClickListener() { 
+        postPreviewEmbedView.m353setPostPreviewEmbedOGpb6Gk(title, subtitle, ctaText, ctaButtonColor, postPreviewEmbed.getFooter(), postPreviewEmbed.m125getMessageId3Eiw7ao(), coverImage, blurredCoverImage, postPreviewEmbed.getCoverImageOverlayText(), postPreviewEmbed.getBackgroundImage(), new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {
                 PostPreviewEmbedViewHolder.bind$lambda$0(Function4.this, postPreviewEmbed, view);

@@ -64,7 +64,7 @@ public final class FlaggedMessageEmbed {
             n1.b(i10, 643, FlaggedMessageEmbed$$serializer.INSTANCE.getDescriptor());
         }
         this.f6922id = str;
-        this.channelId = channelId.m619unboximpl();
+        this.channelId = channelId.m626unboximpl();
         if ((i10 & 4) == 0) {
             this.guildId = null;
         } else {
@@ -129,8 +129,8 @@ public final class FlaggedMessageEmbed {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z17 = false;
-        output.i(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m636boximpl(self.f6922id));
-        output.i(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m610boximpl(self.channelId));
+        output.i(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m643boximpl(self.f6922id));
+        output.i(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m617boximpl(self.channelId));
         if (!output.z(serialDesc, 2) && self.guildId == null) {
             z10 = false;
         } else {
@@ -263,7 +263,7 @@ public final class FlaggedMessageEmbed {
             return false;
         }
         FlaggedMessageEmbed flaggedMessageEmbed = (FlaggedMessageEmbed) obj;
-        return MessageId.m640equalsimpl0(this.f6922id, flaggedMessageEmbed.f6922id) && ChannelId.m614equalsimpl0(this.channelId, flaggedMessageEmbed.channelId) && q.c(this.guildId, flaggedMessageEmbed.guildId) && q.c(this.userId, flaggedMessageEmbed.userId) && q.c(this.content, flaggedMessageEmbed.content) && q.c(this.channelName, flaggedMessageEmbed.channelName) && q.c(this.username, flaggedMessageEmbed.username) && this.usernameColor == flaggedMessageEmbed.usernameColor && q.c(this.roleColor, flaggedMessageEmbed.roleColor) && this.shouldShowRoleDot == flaggedMessageEmbed.shouldShowRoleDot && q.c(this.avatarURL, flaggedMessageEmbed.avatarURL) && q.c(this.communicationDisabled, flaggedMessageEmbed.communicationDisabled);
+        return MessageId.m647equalsimpl0(this.f6922id, flaggedMessageEmbed.f6922id) && ChannelId.m621equalsimpl0(this.channelId, flaggedMessageEmbed.channelId) && q.c(this.guildId, flaggedMessageEmbed.guildId) && q.c(this.userId, flaggedMessageEmbed.userId) && q.c(this.content, flaggedMessageEmbed.content) && q.c(this.channelName, flaggedMessageEmbed.channelName) && q.c(this.username, flaggedMessageEmbed.username) && this.usernameColor == flaggedMessageEmbed.usernameColor && q.c(this.roleColor, flaggedMessageEmbed.roleColor) && this.shouldShowRoleDot == flaggedMessageEmbed.shouldShowRoleDot && q.c(this.avatarURL, flaggedMessageEmbed.avatarURL) && q.c(this.communicationDisabled, flaggedMessageEmbed.communicationDisabled);
     }
 
     public final String getAvatarURL() {
@@ -319,12 +319,12 @@ public final class FlaggedMessageEmbed {
     }
 
     public int hashCode() {
-        int i10 = ((MessageId.m641hashCodeimpl(this.f6922id) * 31) + ChannelId.m615hashCodeimpl(this.channelId)) * 31;
+        int i10 = ((MessageId.m648hashCodeimpl(this.f6922id) * 31) + ChannelId.m622hashCodeimpl(this.channelId)) * 31;
         GuildId guildId = this.guildId;
         int i11 = 0;
-        int i12 = (i10 + (guildId == null ? 0 : GuildId.m628hashCodeimpl(guildId.m632unboximpl()))) * 31;
+        int i12 = (i10 + (guildId == null ? 0 : GuildId.m635hashCodeimpl(guildId.m639unboximpl()))) * 31;
         UserId userId = this.userId;
-        int i13 = (i12 + (userId == null ? 0 : UserId.m679hashCodeimpl(userId.m683unboximpl()))) * 31;
+        int i13 = (i12 + (userId == null ? 0 : UserId.m686hashCodeimpl(userId.m690unboximpl()))) * 31;
         StructurableText structurableText = this.content;
         int hashCode = (i13 + (structurableText == null ? 0 : structurableText.hashCode())) * 31;
         String str = this.channelName;
@@ -351,8 +351,8 @@ public final class FlaggedMessageEmbed {
     }
 
     public String toString() {
-        String str = MessageId.m642toStringimpl(this.f6922id);
-        String str2 = ChannelId.m617toStringimpl(this.channelId);
+        String str = MessageId.m649toStringimpl(this.f6922id);
+        String str2 = ChannelId.m624toStringimpl(this.channelId);
         GuildId guildId = this.guildId;
         UserId userId = this.userId;
         StructurableText structurableText = this.content;

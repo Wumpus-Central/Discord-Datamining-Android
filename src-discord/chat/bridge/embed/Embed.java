@@ -31,7 +31,7 @@ public final class Embed implements SpoilerableData {
     private final String iconURL;
 
     
-    private final String f6928id;
+    private final String f6929id;
     private final EmbedMedia image;
     private final List<EmbedMedia> images;
     private final String messageSendError;
@@ -85,7 +85,7 @@ public final class Embed implements SpoilerableData {
     }
 
     public final String component1() {
-        return this.f6928id;
+        return this.f6929id;
     }
 
     public final StructurableText component10() {
@@ -210,7 +210,7 @@ public final class Embed implements SpoilerableData {
             return false;
         }
         Embed embed = (Embed) obj;
-        return q.c(this.f6928id, embed.f6928id) && this.type == embed.type && q.c(this.author, embed.author) && q.c(this.provider, embed.provider) && q.c(this.rawTitle, embed.rawTitle) && q.c(this.title, embed.title) && q.c(this.fields, embed.fields) && q.c(this.url, embed.url) && q.c(this.rawDescription, embed.rawDescription) && q.c(this.description, embed.description) && q.c(this.image, embed.image) && q.c(this.images, embed.images) && q.c(this.video, embed.video) && q.c(this.thumbnail, embed.thumbnail) && q.c(this.numAttachments, embed.numAttachments) && q.c(this.attachmentsSize, embed.attachmentsSize) && q.c(this.messageSendError, embed.messageSendError) && q.c(this.disableBackgroundColor, embed.disableBackgroundColor) && q.c(this.footer, embed.footer) && q.c(this.spoiler, embed.spoiler) && q.c(this.obscure, embed.obscure) && q.c(this.iconURL, embed.iconURL) && this.failureState == embed.failureState && q.c(this.providerColor, embed.providerColor) && q.c(this.borderLeftColor, embed.borderLeftColor) && q.c(this.headerTextColor, embed.headerTextColor) && this.bodyTextColor == embed.bodyTextColor && q.c(this.backgroundColor, embed.backgroundColor);
+        return q.c(this.f6929id, embed.f6929id) && this.type == embed.type && q.c(this.author, embed.author) && q.c(this.provider, embed.provider) && q.c(this.rawTitle, embed.rawTitle) && q.c(this.title, embed.title) && q.c(this.fields, embed.fields) && q.c(this.url, embed.url) && q.c(this.rawDescription, embed.rawDescription) && q.c(this.description, embed.description) && q.c(this.image, embed.image) && q.c(this.images, embed.images) && q.c(this.video, embed.video) && q.c(this.thumbnail, embed.thumbnail) && q.c(this.numAttachments, embed.numAttachments) && q.c(this.attachmentsSize, embed.attachmentsSize) && q.c(this.messageSendError, embed.messageSendError) && q.c(this.disableBackgroundColor, embed.disableBackgroundColor) && q.c(this.footer, embed.footer) && q.c(this.spoiler, embed.spoiler) && q.c(this.obscure, embed.obscure) && q.c(this.iconURL, embed.iconURL) && this.failureState == embed.failureState && q.c(this.providerColor, embed.providerColor) && q.c(this.borderLeftColor, embed.borderLeftColor) && q.c(this.headerTextColor, embed.headerTextColor) && this.bodyTextColor == embed.bodyTextColor && q.c(this.backgroundColor, embed.backgroundColor);
     }
 
     public final String getAttachmentsSize() {
@@ -262,7 +262,7 @@ public final class Embed implements SpoilerableData {
     }
 
     public final String getId() {
-        return this.f6928id;
+        return this.f6929id;
     }
 
     public final EmbedMedia getImage() {
@@ -336,7 +336,7 @@ public final class Embed implements SpoilerableData {
     }
 
     public int hashCode() {
-        int hashCode = ((this.f6928id.hashCode() * 31) + this.type.hashCode()) * 31;
+        int hashCode = ((this.f6929id.hashCode() * 31) + this.type.hashCode()) * 31;
         EmbedAuthor embedAuthor = this.author;
         int i10 = 0;
         int hashCode2 = (hashCode + (embedAuthor == null ? 0 : embedAuthor.hashCode())) * 31;
@@ -394,7 +394,7 @@ public final class Embed implements SpoilerableData {
     }
 
     public String toString() {
-        String str = this.f6928id;
+        String str = this.f6929id;
         EmbedType embedType = this.type;
         EmbedAuthor embedAuthor = this.author;
         EmbedProvider embedProvider = this.provider;

@@ -24,7 +24,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
     private final String displayName;
 
     
-    private final String f6930id;
+    private final String f6931id;
     private final String name;
     private final String src;
 
@@ -55,9 +55,9 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         this.src = str2;
         this.displayName = str3;
         if ((i10 & 8) == 0) {
-            this.f6930id = null;
+            this.f6931id = null;
         } else {
-            this.f6930id = str4;
+            this.f6931id = str4;
         }
         if ((i10 & 16) == 0) {
             this.animated = null;
@@ -172,7 +172,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
 
     @Override 
     public String getId() {
-        return this.f6930id;
+        return this.f6931id;
     }
 
     @Override 
@@ -219,7 +219,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         this.name = str;
         this.src = src;
         this.displayName = displayName;
-        this.f6930id = str2;
+        this.f6931id = str2;
         this.animated = bool;
     }
 

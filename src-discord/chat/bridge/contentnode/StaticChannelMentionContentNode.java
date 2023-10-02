@@ -64,7 +64,7 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
 
     
     
-    public static  StaticChannelMentionContentNode m90copyCu15v9A$default(StaticChannelMentionContentNode staticChannelMentionContentNode, StaticChannelMentionType staticChannelMentionType, GuildId guildId, List list, int i10, Object obj) {
+    public static  StaticChannelMentionContentNode m94copyCu15v9A$default(StaticChannelMentionContentNode staticChannelMentionContentNode, StaticChannelMentionType staticChannelMentionType, GuildId guildId, List list, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             staticChannelMentionType = staticChannelMentionContentNode.channelId;
         }
@@ -74,7 +74,7 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
         if ((i10 & 4) != 0) {
             list = staticChannelMentionContentNode.getContent();
         }
-        return staticChannelMentionContentNode.m92copyCu15v9A(staticChannelMentionType, guildId, list);
+        return staticChannelMentionContentNode.m96copyCu15v9A(staticChannelMentionType, guildId, list);
     }
 
     public static final void write$Self(StaticChannelMentionContentNode self, CompositeEncoder output, SerialDescriptor serialDesc) {
@@ -98,7 +98,7 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
     }
 
     
-    public final GuildId m91component2qOKuAAo() {
+    public final GuildId m95component2qOKuAAo() {
         return this.guildId;
     }
 
@@ -107,7 +107,7 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
     }
 
     
-    public final StaticChannelMentionContentNode m92copyCu15v9A(StaticChannelMentionType channelId, GuildId guildId, List<? extends ContentNode> content) {
+    public final StaticChannelMentionContentNode m96copyCu15v9A(StaticChannelMentionType channelId, GuildId guildId, List<? extends ContentNode> content) {
         q.h(channelId, "channelId");
         q.h(content, "content");
         return new StaticChannelMentionContentNode(channelId, guildId, content, null);
@@ -134,14 +134,14 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
     }
 
     
-    public final GuildId m93getGuildIdqOKuAAo() {
+    public final GuildId m97getGuildIdqOKuAAo() {
         return this.guildId;
     }
 
     public int hashCode() {
         int hashCode = this.channelId.hashCode() * 31;
         GuildId guildId = this.guildId;
-        return ((hashCode + (guildId == null ? 0 : GuildId.m628hashCodeimpl(guildId.m632unboximpl()))) * 31) + getContent().hashCode();
+        return ((hashCode + (guildId == null ? 0 : GuildId.m635hashCodeimpl(guildId.m639unboximpl()))) * 31) + getContent().hashCode();
     }
 
     public String toString() {

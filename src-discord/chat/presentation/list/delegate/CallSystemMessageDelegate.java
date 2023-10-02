@@ -49,7 +49,7 @@ public final class CallSystemMessageDelegate extends BaseChatListItemDelegate<Ca
     public static final void bindViewInternal$lambda$2(CallSystemMessageDelegate this$0, CallSystemMessageItem item, View view) {
         q.h(this$0, "this$0");
         q.h(item, "$item");
-        this$0.getEventHandler().mo171onTapCallpfaIj0E(item.getMessage().m24getId3Eiw7ao(), item.getMessage().m22getChannelIdo4g7jtM());
+        this$0.getEventHandler().mo175onTapCallpfaIj0E(item.getMessage().m24getId3Eiw7ao(), item.getMessage().m22getChannelIdo4g7jtM());
     }
 
     public final CallSystemMessageView createAndBindStandaloneView(ViewGroup parent, Message message) {

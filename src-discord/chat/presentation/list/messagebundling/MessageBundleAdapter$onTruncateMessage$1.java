@@ -18,12 +18,12 @@ final class MessageBundleAdapter$onTruncateMessage$1 extends s implements Functi
 
     @Override 
     public   Unit invoke(MessageId messageId) {
-        m207invoke1xi1bu0(messageId.m644unboximpl());
-        return Unit.f21600a;
+        m211invoke1xi1bu0(messageId.m651unboximpl());
+        return Unit.f21601a;
     }
 
     
-    public final void m207invoke1xi1bu0(String it) {
+    public final void m211invoke1xi1bu0(String it) {
         q.h(it, "it");
     }
 }

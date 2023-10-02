@@ -34,13 +34,13 @@ public final class UserId$$serializer implements f0<UserId> {
 
     @Override 
     public   Object deserialize(Decoder decoder) {
-        return UserId.m674boximpl(m684deserializePmcOV3I(decoder));
+        return UserId.m681boximpl(m691deserializePmcOV3I(decoder));
     }
 
     
-    public long m684deserializePmcOV3I(Decoder decoder) {
+    public long m691deserializePmcOV3I(Decoder decoder) {
         q.h(decoder, "decoder");
-        return UserId.m675constructorimpl(decoder.q(getDescriptor()).l());
+        return UserId.m682constructorimpl(decoder.q(getDescriptor()).l());
     }
 
     @Override 
@@ -50,11 +50,11 @@ public final class UserId$$serializer implements f0<UserId> {
 
     @Override 
     public   void serialize(Encoder encoder, Object obj) {
-        m685serialize2YFG4pU(encoder, ((UserId) obj).m683unboximpl());
+        m692serialize2YFG4pU(encoder, ((UserId) obj).m690unboximpl());
     }
 
     
-    public void m685serialize2YFG4pU(Encoder encoder, long j10) {
+    public void m692serialize2YFG4pU(Encoder encoder, long j10) {
         q.h(encoder, "encoder");
         Encoder l10 = encoder.l(getDescriptor());
         if (l10 != null) {

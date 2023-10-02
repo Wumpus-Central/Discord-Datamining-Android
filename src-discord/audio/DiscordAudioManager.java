@@ -16,6 +16,7 @@ import com.discord.audio.DiscordAudioManager;
 import com.discord.audio.enums.ScoAudioState;
 import com.discord.audio.enums.WiredHeadsetState;
 import com.discord.audio.utils.AudioPermissionsUtilsKt;
+import com.discord.crash_reporting.CrashReporting;
 import com.discord.logging.Log;
 import com.facebook.react.uimanager.ViewProps;
 import dg.c;
@@ -284,7 +285,7 @@ public final class DiscordAudioManager {
         setSpeakerphoneOn(z10);
         synchronized (this.instanceLock) {
             setActiveAudioDevice(deviceTypes);
-            Unit unit = Unit.f21600a;
+            Unit unit = Unit.f21601a;
         }
         Log.i$default(Log.INSTANCE, TAG, "Activated device: " + deviceTypes, (Throwable) null, 4, (Object) null);
     }
@@ -359,7 +360,7 @@ public final class DiscordAudioManager {
                     arrayList.add(audioDevice2);
                 }
                 setAudioDevices(arrayList);
-                Unit unit = Unit.f21600a;
+                Unit unit = Unit.f21601a;
             }
         } else if (wiredHeadsetState instanceof WiredHeadsetState.PluggedIn) {
             synchronized (this.instanceLock) {
@@ -378,7 +379,7 @@ public final class DiscordAudioManager {
                     arrayList2.add(audioDevice);
                 }
                 setAudioDevices(arrayList2);
-                Unit unit2 = Unit.f21600a;
+                Unit unit2 = Unit.f21601a;
             }
         }
         updateDeviceActivation();
@@ -414,19 +415,23 @@ public final class DiscordAudioManager {
                             obj = DiscordAudioManager.this.instanceLock;
                             DiscordAudioManager discordAudioManager = DiscordAudioManager.this;
                             synchronized (obj) {
-                                List<DiscordAudioManager.AudioDevice> audioDevices = discordAudioManager.getAudioDevices();
-                                t10 = k.t(audioDevices, 10);
-                                ArrayList arrayList = new ArrayList(t10);
-                                for (DiscordAudioManager.AudioDevice audioDevice2 : audioDevices) {
-                                    if (WhenMappings.$EnumSwitchMapping$0[audioDevice2.getType().ordinal()] == 1) {
-                                        audioDevice = DiscordAudioManager.AudioDevice.copy$default(audioDevice2, null, true, null, null, 13, null);
-                                    } else {
-                                        audioDevice = DiscordAudioManager.AudioDevice.copy$default(audioDevice2, null, false, null, null, 15, null);
+                                if (discordAudioManager.getAudioDevices() != null) {
+                                    List<DiscordAudioManager.AudioDevice> audioDevices = discordAudioManager.getAudioDevices();
+                                    t10 = k.t(audioDevices, 10);
+                                    ArrayList arrayList = new ArrayList(t10);
+                                    for (DiscordAudioManager.AudioDevice audioDevice2 : audioDevices) {
+                                        if (WhenMappings.$EnumSwitchMapping$0[audioDevice2.getType().ordinal()] == 1) {
+                                            audioDevice = DiscordAudioManager.AudioDevice.copy$default(audioDevice2, null, true, null, null, 13, null);
+                                        } else {
+                                            audioDevice = DiscordAudioManager.AudioDevice.copy$default(audioDevice2, null, false, null, null, 15, null);
+                                        }
+                                        arrayList.add(audioDevice);
                                     }
-                                    arrayList.add(audioDevice);
+                                    discordAudioManager.setAudioDevices(arrayList);
+                                } else {
+                                    CrashReporting.captureMessage$default(CrashReporting.INSTANCE, "DiscordAudioManager", "audioDevices was null in onAudioDevicesAdded", null, 4, null);
                                 }
-                                discordAudioManager.setAudioDevices(arrayList);
-                                Unit unit = Unit.f21600a;
+                                Unit unit = Unit.f21601a;
                             }
                         }
                     }
@@ -445,19 +450,23 @@ public final class DiscordAudioManager {
                             obj = DiscordAudioManager.this.instanceLock;
                             DiscordAudioManager discordAudioManager = DiscordAudioManager.this;
                             synchronized (obj) {
-                                List<DiscordAudioManager.AudioDevice> audioDevices = discordAudioManager.getAudioDevices();
-                                t10 = k.t(audioDevices, 10);
-                                ArrayList arrayList = new ArrayList(t10);
-                                for (DiscordAudioManager.AudioDevice audioDevice2 : audioDevices) {
-                                    if (WhenMappings.$EnumSwitchMapping$0[audioDevice2.getType().ordinal()] == 1) {
-                                        audioDevice = DiscordAudioManager.AudioDevice.copy$default(audioDevice2, null, false, null, null, 1, null);
-                                    } else {
-                                        audioDevice = DiscordAudioManager.AudioDevice.copy$default(audioDevice2, null, false, null, null, 15, null);
+                                if (discordAudioManager.getAudioDevices() != null) {
+                                    List<DiscordAudioManager.AudioDevice> audioDevices = discordAudioManager.getAudioDevices();
+                                    t10 = k.t(audioDevices, 10);
+                                    ArrayList arrayList = new ArrayList(t10);
+                                    for (DiscordAudioManager.AudioDevice audioDevice2 : audioDevices) {
+                                        if (WhenMappings.$EnumSwitchMapping$0[audioDevice2.getType().ordinal()] == 1) {
+                                            audioDevice = DiscordAudioManager.AudioDevice.copy$default(audioDevice2, null, false, null, null, 1, null);
+                                        } else {
+                                            audioDevice = DiscordAudioManager.AudioDevice.copy$default(audioDevice2, null, false, null, null, 15, null);
+                                        }
+                                        arrayList.add(audioDevice);
                                     }
-                                    arrayList.add(audioDevice);
+                                    discordAudioManager.setAudioDevices(arrayList);
+                                } else {
+                                    CrashReporting.captureMessage$default(CrashReporting.INSTANCE, "DiscordAudioManager", "audioDevices was null in onAudioDevicesRemoved", null, 4, null);
                                 }
-                                discordAudioManager.setAudioDevices(arrayList);
-                                Unit unit = Unit.f21600a;
+                                Unit unit = Unit.f21601a;
                             }
                         }
                     }
@@ -480,7 +489,7 @@ public final class DiscordAudioManager {
         };
         synchronized (this.instanceLock) {
             this.audioFocusListener = gVar;
-            Unit unit = Unit.f21600a;
+            Unit unit = Unit.f21601a;
         }
     }
 
@@ -555,7 +564,7 @@ public final class DiscordAudioManager {
         }
         synchronized (this.instanceLock) {
             this.inDiscordRequestedCommunicationMode = z10;
-            Unit unit = Unit.f21600a;
+            Unit unit = Unit.f21601a;
         }
     }
 
@@ -773,7 +782,7 @@ public final class DiscordAudioManager {
             activateDevice(DeviceTypes.INVALID);
             synchronized (this.instanceLock) {
                 this.requestedAudioDevice = DeviceTypes.DEFAULT;
-                Unit unit = Unit.f21600a;
+                Unit unit = Unit.f21601a;
             }
             setCommunicationModeOnInternal(false);
             releaseAudioFocus();
@@ -808,7 +817,7 @@ public final class DiscordAudioManager {
         if (deviceType == deviceTypes) {
             synchronized (this.instanceLock) {
                 this.requestedAudioDevice = deviceTypes;
-                Unit unit = Unit.f21600a;
+                Unit unit = Unit.f21601a;
             }
             activateDefaultDevice(arrayList, false);
             return true;
@@ -820,7 +829,7 @@ public final class DiscordAudioManager {
             if (!z10) {
                 synchronized (this.instanceLock) {
                     this.requestedAudioDevice = deviceType;
-                    Unit unit2 = Unit.f21600a;
+                    Unit unit2 = Unit.f21601a;
                 }
                 activateDevice(deviceType);
                 return true;

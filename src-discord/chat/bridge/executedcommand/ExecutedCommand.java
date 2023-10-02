@@ -44,7 +44,7 @@ public final class ExecutedCommand {
         if (11 != (i10 & 11)) {
             n1.b(i10, 11, ExecutedCommand$$serializer.INSTANCE.getDescriptor());
         }
-        this.userId = userId.m683unboximpl();
+        this.userId = userId.m690unboximpl();
         this.usernameColor = i11;
         if ((i10 & 4) == 0) {
             this.avatarURL = null;
@@ -63,7 +63,7 @@ public final class ExecutedCommand {
     }
 
     
-    public static  ExecutedCommand m110copyASSxI_0$default(ExecutedCommand executedCommand, long j10, int i10, String str, AnnotatedStructurableText annotatedStructurableText, int i11, Object obj) {
+    public static  ExecutedCommand m114copyASSxI_0$default(ExecutedCommand executedCommand, long j10, int i10, String str, AnnotatedStructurableText annotatedStructurableText, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             j10 = executedCommand.userId;
         }
@@ -76,7 +76,7 @@ public final class ExecutedCommand {
         if ((i11 & 8) != 0) {
             annotatedStructurableText = executedCommand.content;
         }
-        return executedCommand.m112copyASSxI_0(j10, i10, str, annotatedStructurableText);
+        return executedCommand.m116copyASSxI_0(j10, i10, str, annotatedStructurableText);
     }
 
     public static final void write$Self(ExecutedCommand self, CompositeEncoder output, SerialDescriptor serialDesc) {
@@ -84,7 +84,7 @@ public final class ExecutedCommand {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         boolean z10 = false;
-        output.i(serialDesc, 0, UserId$$serializer.INSTANCE, UserId.m674boximpl(self.userId));
+        output.i(serialDesc, 0, UserId$$serializer.INSTANCE, UserId.m681boximpl(self.userId));
         output.w(serialDesc, 1, self.usernameColor);
         if (output.z(serialDesc, 2) || self.avatarURL != null) {
             z10 = true;
@@ -96,7 +96,7 @@ public final class ExecutedCommand {
     }
 
     
-    public final long m111component1re6GcUE() {
+    public final long m115component1re6GcUE() {
         return this.userId;
     }
 
@@ -113,7 +113,7 @@ public final class ExecutedCommand {
     }
 
     
-    public final ExecutedCommand m112copyASSxI_0(long j10, int i10, String str, AnnotatedStructurableText content) {
+    public final ExecutedCommand m116copyASSxI_0(long j10, int i10, String str, AnnotatedStructurableText content) {
         q.h(content, "content");
         return new ExecutedCommand(j10, i10, str, content, null);
     }
@@ -126,7 +126,7 @@ public final class ExecutedCommand {
             return false;
         }
         ExecutedCommand executedCommand = (ExecutedCommand) obj;
-        return UserId.m678equalsimpl0(this.userId, executedCommand.userId) && this.usernameColor == executedCommand.usernameColor && q.c(this.avatarURL, executedCommand.avatarURL) && q.c(this.content, executedCommand.content);
+        return UserId.m685equalsimpl0(this.userId, executedCommand.userId) && this.usernameColor == executedCommand.usernameColor && q.c(this.avatarURL, executedCommand.avatarURL) && q.c(this.content, executedCommand.content);
     }
 
     public final String getAvatarURL() {
@@ -138,7 +138,7 @@ public final class ExecutedCommand {
     }
 
     
-    public final long m113getUserIdre6GcUE() {
+    public final long m117getUserIdre6GcUE() {
         return this.userId;
     }
 
@@ -147,13 +147,13 @@ public final class ExecutedCommand {
     }
 
     public int hashCode() {
-        int i10 = ((UserId.m679hashCodeimpl(this.userId) * 31) + this.usernameColor) * 31;
+        int i10 = ((UserId.m686hashCodeimpl(this.userId) * 31) + this.usernameColor) * 31;
         String str = this.avatarURL;
         return ((i10 + (str == null ? 0 : str.hashCode())) * 31) + this.content.hashCode();
     }
 
     public String toString() {
-        String str = UserId.m681toStringimpl(this.userId);
+        String str = UserId.m688toStringimpl(this.userId);
         int i10 = this.usernameColor;
         String str2 = this.avatarURL;
         AnnotatedStructurableText annotatedStructurableText = this.content;

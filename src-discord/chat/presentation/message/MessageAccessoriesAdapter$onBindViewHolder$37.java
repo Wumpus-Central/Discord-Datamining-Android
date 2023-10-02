@@ -25,7 +25,7 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$37 extends s imple
     @Override 
     public   Unit invoke(ReactionView.Reaction reaction) {
         invoke2(reaction);
-        return Unit.f21600a;
+        return Unit.f21601a;
     }
 
     
@@ -43,6 +43,6 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$37 extends s imple
         q.e(str);
         channelId = this.this$0.channelId;
         q.e(channelId);
-        chatEventHandler.mo162onLongPressReactionEqy5D80(str, channelId.m619unboximpl(), reaction);
+        chatEventHandler.mo166onLongPressReactionEqy5D80(str, channelId.m626unboximpl(), reaction);
     }
 }

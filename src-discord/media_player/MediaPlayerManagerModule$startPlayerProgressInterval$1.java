@@ -46,7 +46,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21600a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21601a);
         }
 
         @Override 
@@ -57,7 +57,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
                 if (this.$mediaPlayer.isPlaying()) {
                     this.this$0.onMediaPlayerProgress(this.$portal, this.$mediaPlayer.currentPositionMs(), this.$mediaPlayer.durationMs());
                 }
-                return Unit.f21600a;
+                return Unit.f21601a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -80,7 +80,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaPlayerManagerModule$startPlayerProgressInterval$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21600a);
+        return ((MediaPlayerManagerModule$startPlayerProgressInterval$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f21601a);
     }
 
     

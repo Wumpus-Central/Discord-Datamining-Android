@@ -26,14 +26,14 @@ public final class AutoModerationNotificationEmbedViewHolder extends MessagePart
     public static final void bind$lambda$0(Function2 onTapAutoModerationActions, String messageId, long j10, View view) {
         q.h(onTapAutoModerationActions, "$onTapAutoModerationActions");
         q.h(messageId, "$messageId");
-        onTapAutoModerationActions.invoke(MessageId.m636boximpl(messageId), ChannelId.m610boximpl(j10));
+        onTapAutoModerationActions.invoke(MessageId.m643boximpl(messageId), ChannelId.m617boximpl(j10));
     }
 
     
     public static final void bind$lambda$1(Function2 onTapAutoModerationFeedback, String messageId, long j10, View view) {
         q.h(onTapAutoModerationFeedback, "$onTapAutoModerationFeedback");
         q.h(messageId, "$messageId");
-        onTapAutoModerationFeedback.invoke(MessageId.m636boximpl(messageId), ChannelId.m610boximpl(j10));
+        onTapAutoModerationFeedback.invoke(MessageId.m643boximpl(messageId), ChannelId.m617boximpl(j10));
     }
 
     public final void bind(AutoModerationNotificationEmbedAccessory notificationEmbedAccessory, final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationActions, final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationFeedback) {

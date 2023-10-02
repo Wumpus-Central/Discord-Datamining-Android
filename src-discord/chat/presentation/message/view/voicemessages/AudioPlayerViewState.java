@@ -31,7 +31,7 @@ public final class AudioPlayerViewState {
     }
 
     
-    public static  AudioPlayerViewState m354copyP6IPuNM$default(AudioPlayerViewState audioPlayerViewState, String str, String str2, boolean z10, int i10, Object obj) {
+    public static  AudioPlayerViewState m361copyP6IPuNM$default(AudioPlayerViewState audioPlayerViewState, String str, String str2, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = audioPlayerViewState.messageId;
         }
@@ -41,11 +41,11 @@ public final class AudioPlayerViewState {
         if ((i10 & 4) != 0) {
             z10 = audioPlayerViewState.attached;
         }
-        return audioPlayerViewState.m356copyP6IPuNM(str, str2, z10);
+        return audioPlayerViewState.m363copyP6IPuNM(str, str2, z10);
     }
 
     
-    public final String m355component1N_6c4I0() {
+    public final String m362component1N_6c4I0() {
         return this.messageId;
     }
 
@@ -58,7 +58,7 @@ public final class AudioPlayerViewState {
     }
 
     
-    public final AudioPlayerViewState m356copyP6IPuNM(String str, String str2, boolean z10) {
+    public final AudioPlayerViewState m363copyP6IPuNM(String str, String str2, boolean z10) {
         return new AudioPlayerViewState(str, str2, z10, null);
     }
 
@@ -87,7 +87,7 @@ public final class AudioPlayerViewState {
     }
 
     
-    public final String m357getMessageIdN_6c4I0() {
+    public final String m364getMessageIdN_6c4I0() {
         return this.messageId;
     }
 
@@ -102,7 +102,7 @@ public final class AudioPlayerViewState {
     public int hashCode() {
         String str = this.messageId;
         int i10 = 0;
-        int i11 = (str == null ? 0 : MessageId.m641hashCodeimpl(str)) * 31;
+        int i11 = (str == null ? 0 : MessageId.m648hashCodeimpl(str)) * 31;
         String str2 = this.sourceUrl;
         if (str2 != null) {
             i10 = str2.hashCode();
@@ -150,7 +150,7 @@ public final class AudioPlayerViewState {
             return null;
         }
         AudioPlayerManager.INSTANCE.setCurrentProgress(audioSource, f10, j10);
-        return Unit.f21600a;
+        return Unit.f21601a;
     }
 
     public final boolean shouldEmitDuration$chat_release() {
@@ -164,7 +164,7 @@ public final class AudioPlayerViewState {
 
     public String toString() {
         String str = this.messageId;
-        String str2 = str == null ? "null" : MessageId.m642toStringimpl(str);
+        String str2 = str == null ? "null" : MessageId.m649toStringimpl(str);
         String str3 = this.sourceUrl;
         boolean z10 = this.attached;
         return "AudioPlayerViewState(messageId=" + str2 + ", sourceUrl=" + str3 + ", attached=" + z10 + ")";

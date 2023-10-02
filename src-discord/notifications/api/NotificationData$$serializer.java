@@ -269,7 +269,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj68 = obj68;
                         obj69 = obj69;
                         z14 = false;
-                        Unit unit = Unit.f21600a;
+                        Unit unit = Unit.f21601a;
                         obj43 = obj43;
                         obj48 = obj48;
                     case 0:
@@ -295,7 +295,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj69 = obj69;
                         str2 = b10.m(descriptor2, 0);
                         i13 |= 1;
-                        Unit unit2 = Unit.f21600a;
+                        Unit unit2 = Unit.f21601a;
                         obj43 = obj43;
                         obj48 = obj48;
                     case 1:
@@ -320,7 +320,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj64 = obj64;
                         obj65 = b10.n(descriptor2, 1, MessageId$$serializer.INSTANCE, obj65);
                         i13 |= 2;
-                        Unit unit3 = Unit.f21600a;
+                        Unit unit3 = Unit.f21601a;
                         obj43 = obj43;
                         obj59 = obj59;
                         obj48 = obj48;
@@ -345,7 +345,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj60 = obj60;
                         obj64 = b10.n(descriptor2, 2, m0.f6313a, obj64);
                         i13 |= 4;
-                        Unit unit4 = Unit.f21600a;
+                        Unit unit4 = Unit.f21601a;
                         obj43 = obj43;
                         obj59 = obj59;
                         obj48 = obj48;
@@ -369,7 +369,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj62 = obj62;
                         obj60 = b10.n(descriptor2, 3, a2.f6238a, obj60);
                         i13 |= 8;
-                        Unit unit5 = Unit.f21600a;
+                        Unit unit5 = Unit.f21601a;
                         obj43 = obj43;
                         obj59 = obj59;
                         obj48 = obj48;
@@ -393,7 +393,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj69 = obj69;
                         obj62 = b10.n(descriptor2, 4, m0.f6313a, obj62);
                         i13 |= 16;
-                        Unit unit6 = Unit.f21600a;
+                        Unit unit6 = Unit.f21601a;
                         obj43 = obj43;
                         obj70 = obj70;
                         obj60 = obj60;
@@ -418,7 +418,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj66 = obj66;
                         obj70 = b10.n(descriptor2, 5, a2.f6238a, obj70);
                         i13 |= 32;
-                        Unit unit7 = Unit.f21600a;
+                        Unit unit7 = Unit.f21601a;
                         obj43 = obj43;
                         obj60 = obj60;
                         obj48 = obj48;
@@ -440,7 +440,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj68 = obj68;
                         obj66 = b10.n(descriptor2, 6, w0.f6354a, obj66);
                         i13 |= 64;
-                        Unit unit8 = Unit.f21600a;
+                        Unit unit8 = Unit.f21601a;
                         obj43 = obj43;
                         obj59 = obj59;
                         obj60 = obj60;
@@ -464,7 +464,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj63 = obj63;
                         obj68 = b10.n(descriptor2, 7, m0.f6313a, obj68);
                         i13 |= 128;
-                        Unit unit9 = Unit.f21600a;
+                        Unit unit9 = Unit.f21601a;
                         obj43 = obj43;
                         obj59 = obj59;
                         obj60 = obj60;
@@ -488,7 +488,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj67 = obj67;
                         obj63 = b10.n(descriptor2, 8, a2.f6238a, obj63);
                         i13 |= 256;
-                        Unit unit10 = Unit.f21600a;
+                        Unit unit10 = Unit.f21601a;
                         obj43 = obj43;
                         obj59 = obj59;
                         obj60 = obj60;
@@ -513,7 +513,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj51 = obj51;
                         obj67 = b10.n(descriptor2, 9, ChannelId$$serializer.INSTANCE, obj67);
                         i13 |= 512;
-                        Unit unit11 = Unit.f21600a;
+                        Unit unit11 = Unit.f21601a;
                         obj60 = obj60;
                         obj62 = obj62;
                         obj63 = obj63;
@@ -536,7 +536,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj52 = obj52;
                         obj51 = b10.n(descriptor2, 10, a2.f6238a, obj51);
                         i13 |= 1024;
-                        Unit unit12 = Unit.f21600a;
+                        Unit unit12 = Unit.f21601a;
                         obj60 = obj60;
                         obj62 = obj62;
                         obj63 = obj63;
@@ -557,7 +557,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj53 = obj53;
                         obj52 = b10.n(descriptor2, 11, a2.f6238a, obj52);
                         i13 |= RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit13 = Unit.f21600a;
+                        Unit unit13 = Unit.f21601a;
                         obj43 = obj43;
                         obj51 = obj51;
                         obj60 = obj60;
@@ -579,7 +579,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj69 = obj69;
                         obj53 = b10.n(descriptor2, 12, ChannelId$$serializer.INSTANCE, obj53);
                         i13 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-                        Unit unit14 = Unit.f21600a;
+                        Unit unit14 = Unit.f21601a;
                         obj43 = obj43;
                         obj51 = obj51;
                         obj52 = obj52;
@@ -602,7 +602,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj54 = obj54;
                         obj69 = b10.n(descriptor2, 13, a2.f6238a, obj69);
                         i13 |= 8192;
-                        Unit unit15 = Unit.f21600a;
+                        Unit unit15 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -626,7 +626,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj55 = obj55;
                         obj54 = b10.y(descriptor2, 14, ChannelListSerializer.INSTANCE, obj54);
                         i13 |= 16384;
-                        Unit unit16 = Unit.f21600a;
+                        Unit unit16 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -648,7 +648,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj61 = obj61;
                         obj55 = b10.n(descriptor2, 15, UserId$$serializer.INSTANCE, obj55);
                         i13 |= 32768;
-                        Unit unit17 = Unit.f21600a;
+                        Unit unit17 = Unit.f21601a;
                         obj43 = obj43;
                         obj51 = obj51;
                         obj52 = obj52;
@@ -672,7 +672,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj56 = obj56;
                         obj61 = b10.n(descriptor2, 16, a2.f6238a, obj61);
                         i13 |= 65536;
-                        Unit unit18 = Unit.f21600a;
+                        Unit unit18 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -695,7 +695,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj57 = obj57;
                         obj56 = b10.n(descriptor2, 17, a2.f6238a, obj56);
                         i13 |= 131072;
-                        Unit unit19 = Unit.f21600a;
+                        Unit unit19 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -716,7 +716,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj59 = obj59;
                         obj57 = b10.n(descriptor2, 18, m0.f6313a, obj57);
                         i13 |= 262144;
-                        Unit unit20 = Unit.f21600a;
+                        Unit unit20 = Unit.f21601a;
                         obj43 = obj43;
                         obj51 = obj51;
                         obj52 = obj52;
@@ -737,7 +737,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj42 = obj42;
                         obj58 = b10.n(descriptor2, 19, a2.f6238a, obj58);
                         i13 |= 524288;
-                        Unit unit21 = Unit.f21600a;
+                        Unit unit21 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -762,7 +762,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj42 = obj42;
                         obj59 = b10.n(descriptor2, 20, a2.f6238a, obj59);
                         i13 |= 1048576;
-                        Unit unit22 = Unit.f21600a;
+                        Unit unit22 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -786,7 +786,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj42 = obj42;
                         obj13 = b10.n(descriptor2, 21, m0.f6313a, obj13);
                         i13 |= 2097152;
-                        Unit unit23 = Unit.f21600a;
+                        Unit unit23 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -811,7 +811,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj42 = obj42;
                         obj10 = b10.n(descriptor2, 22, GuildId$$serializer.INSTANCE, obj10);
                         i13 |= 4194304;
-                        Unit unit24 = Unit.f21600a;
+                        Unit unit24 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -836,7 +836,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj42 = obj42;
                         obj9 = b10.n(descriptor2, 23, a2.f6238a, obj9);
                         i13 |= 8388608;
-                        Unit unit25 = Unit.f21600a;
+                        Unit unit25 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -861,7 +861,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj42 = obj42;
                         obj8 = b10.n(descriptor2, 24, a2.f6238a, obj8);
                         i13 |= 16777216;
-                        Unit unit26 = Unit.f21600a;
+                        Unit unit26 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -886,7 +886,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj42 = obj42;
                         obj7 = b10.n(descriptor2, 25, m0.f6313a, obj7);
                         i13 |= 33554432;
-                        Unit unit27 = Unit.f21600a;
+                        Unit unit27 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -911,7 +911,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj42 = obj42;
                         obj6 = b10.n(descriptor2, 26, a2.f6238a, obj6);
                         i13 |= 67108864;
-                        Unit unit28 = Unit.f21600a;
+                        Unit unit28 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -936,7 +936,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj42 = obj42;
                         obj5 = b10.n(descriptor2, 27, ApplicationId$$serializer.INSTANCE, obj5);
                         i13 |= 134217728;
-                        Unit unit29 = Unit.f21600a;
+                        Unit unit29 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -961,7 +961,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj42 = obj42;
                         obj4 = b10.n(descriptor2, 28, a2.f6238a, obj4);
                         i13 |= 268435456;
-                        Unit unit30 = Unit.f21600a;
+                        Unit unit30 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -986,7 +986,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj41 = obj41;
                         obj48 = b10.n(descriptor2, 29, a2.f6238a, obj48);
                         i13 |= 536870912;
-                        Unit unit31 = Unit.f21600a;
+                        Unit unit31 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -1009,7 +1009,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj42 = obj42;
                         obj34 = b10.n(descriptor2, 30, NotificationMessageSerializer.INSTANCE, obj34);
                         i13 |= 1073741824;
-                        Unit unit32 = Unit.f21600a;
+                        Unit unit32 = Unit.f21601a;
                         obj41 = obj41;
                         obj51 = obj51;
                         obj52 = obj52;
@@ -1035,7 +1035,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj34 = obj34;
                         obj44 = b10.n(descriptor2, 31, a2.f6238a, obj44);
                         i13 |= Integer.MIN_VALUE;
-                        Unit unit33 = Unit.f21600a;
+                        Unit unit33 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -1059,7 +1059,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj34 = obj34;
                         obj41 = b10.n(descriptor2, 32, m0.f6313a, obj41);
                         i12 |= 1;
-                        Unit unit332 = Unit.f21600a;
+                        Unit unit332 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -1083,7 +1083,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj42 = obj42;
                         z12 = ((Boolean) b10.y(descriptor2, 33, CanReplySerializer.INSTANCE, Boolean.valueOf(z12))).booleanValue();
                         i12 |= 2;
-                        Unit unit3322 = Unit.f21600a;
+                        Unit unit3322 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -1106,7 +1106,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj34 = obj34;
                         z13 = b10.C(descriptor2, 34);
                         i12 |= 4;
-                        Unit unit34 = Unit.f21600a;
+                        Unit unit34 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -1129,7 +1129,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj34 = obj34;
                         obj47 = b10.n(descriptor2, 35, a2.f6238a, obj47);
                         i12 |= 8;
-                        Unit unit342 = Unit.f21600a;
+                        Unit unit342 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -1152,7 +1152,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj34 = obj34;
                         obj46 = b10.n(descriptor2, 36, a2.f6238a, obj46);
                         i12 |= 16;
-                        Unit unit3422 = Unit.f21600a;
+                        Unit unit3422 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -1175,7 +1175,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj34 = obj34;
                         obj45 = b10.n(descriptor2, 37, a2.f6238a, obj45);
                         i12 |= 32;
-                        Unit unit34222 = Unit.f21600a;
+                        Unit unit34222 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -1198,7 +1198,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj34 = obj34;
                         obj42 = b10.n(descriptor2, 38, a2.f6238a, obj42);
                         i12 |= 64;
-                        Unit unit342222 = Unit.f21600a;
+                        Unit unit342222 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -1221,7 +1221,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj34 = obj34;
                         obj43 = b10.n(descriptor2, 39, a2.f6238a, obj43);
                         i12 |= 128;
-                        Unit unit3422222 = Unit.f21600a;
+                        Unit unit3422222 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -1244,7 +1244,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj34 = obj34;
                         obj50 = b10.n(descriptor2, 40, a2.f6238a, obj50);
                         i12 |= 256;
-                        Unit unit34222222 = Unit.f21600a;
+                        Unit unit34222222 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -1267,7 +1267,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj34 = obj34;
                         obj28 = b10.n(descriptor2, 41, h.f6280a, obj28);
                         i12 |= 512;
-                        Unit unit342222222 = Unit.f21600a;
+                        Unit unit342222222 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -1290,7 +1290,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
                         obj34 = obj34;
                         obj49 = b10.n(descriptor2, 42, a2.f6238a, obj49);
                         i12 |= 1024;
-                        Unit unit3422222222 = Unit.f21600a;
+                        Unit unit3422222222 = Unit.f21601a;
                         obj51 = obj51;
                         obj52 = obj52;
                         obj53 = obj53;
@@ -1351,7 +1351,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj26;
-        return new NotificationData(i11, i10, str, messageId != null ? messageId.m644unboximpl() : null, (Integer) obj23, (String) obj24, (Integer) obj21, (String) obj20, (Long) obj25, (Integer) obj18, (String) obj17, (ChannelId) obj16, (String) obj40, (String) obj39, (ChannelId) obj38, (String) obj22, (List) obj37, (UserId) obj36, (String) obj19, (String) obj35, (Integer) obj27, (String) obj31, (String) obj15, (Integer) obj13, (GuildId) obj10, (String) obj9, (String) obj8, (Integer) obj7, (String) obj6, (ApplicationId) obj5, (String) obj4, (String) obj3, (NotificationMessage) obj34, (String) obj14, (Integer) obj2, z11, z10, (String) obj11, (String) obj33, (String) obj32, (String) obj, (String) obj30, (String) obj29, (Boolean) obj28, (String) obj12, null, null);
+        return new NotificationData(i11, i10, str, messageId != null ? messageId.m651unboximpl() : null, (Integer) obj23, (String) obj24, (Integer) obj21, (String) obj20, (Long) obj25, (Integer) obj18, (String) obj17, (ChannelId) obj16, (String) obj40, (String) obj39, (ChannelId) obj38, (String) obj22, (List) obj37, (UserId) obj36, (String) obj19, (String) obj35, (Integer) obj27, (String) obj31, (String) obj15, (Integer) obj13, (GuildId) obj10, (String) obj9, (String) obj8, (Integer) obj7, (String) obj6, (ApplicationId) obj5, (String) obj4, (String) obj3, (NotificationMessage) obj34, (String) obj14, (Integer) obj2, z11, z10, (String) obj11, (String) obj33, (String) obj32, (String) obj, (String) obj30, (String) obj29, (Boolean) obj28, (String) obj12, null, null);
     }
 
     @Override 

@@ -19,7 +19,7 @@ public final class MediaPlayerMuteStateChanged implements ReactEvent {
     public static final Companion Companion = new Companion(null);
 
     
-    private final double f7240id;
+    private final double f7243id;
     private final boolean isMuted;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/media_player/reactevents/MediaPlayerMuteStateChanged$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/media_player/reactevents/MediaPlayerMuteStateChanged;", "media_player_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -38,13 +38,13 @@ public final class MediaPlayerMuteStateChanged implements ReactEvent {
     }
 
     public MediaPlayerMuteStateChanged(double d10, boolean z10) {
-        this.f7240id = d10;
+        this.f7243id = d10;
         this.isMuted = z10;
     }
 
     public static  MediaPlayerMuteStateChanged copy$default(MediaPlayerMuteStateChanged mediaPlayerMuteStateChanged, double d10, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            d10 = mediaPlayerMuteStateChanged.f7240id;
+            d10 = mediaPlayerMuteStateChanged.f7243id;
         }
         if ((i10 & 2) != 0) {
             z10 = mediaPlayerMuteStateChanged.isMuted;
@@ -56,12 +56,12 @@ public final class MediaPlayerMuteStateChanged implements ReactEvent {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.C(serialDesc, 0, self.f7240id);
+        output.C(serialDesc, 0, self.f7243id);
         output.x(serialDesc, 1, self.isMuted);
     }
 
     public final double component1() {
-        return this.f7240id;
+        return this.f7243id;
     }
 
     public final boolean component2() {
@@ -80,15 +80,15 @@ public final class MediaPlayerMuteStateChanged implements ReactEvent {
             return false;
         }
         MediaPlayerMuteStateChanged mediaPlayerMuteStateChanged = (MediaPlayerMuteStateChanged) obj;
-        return Double.compare(this.f7240id, mediaPlayerMuteStateChanged.f7240id) == 0 && this.isMuted == mediaPlayerMuteStateChanged.isMuted;
+        return Double.compare(this.f7243id, mediaPlayerMuteStateChanged.f7243id) == 0 && this.isMuted == mediaPlayerMuteStateChanged.isMuted;
     }
 
     public final double getId() {
-        return this.f7240id;
+        return this.f7243id;
     }
 
     public int hashCode() {
-        int doubleToLongBits = Double.doubleToLongBits(this.f7240id) * 31;
+        int doubleToLongBits = Double.doubleToLongBits(this.f7243id) * 31;
         boolean z10 = this.isMuted;
         if (z10) {
             z10 = true;
@@ -109,7 +109,7 @@ public final class MediaPlayerMuteStateChanged implements ReactEvent {
     }
 
     public String toString() {
-        double d10 = this.f7240id;
+        double d10 = this.f7243id;
         boolean z10 = this.isMuted;
         return "MediaPlayerMuteStateChanged(id=" + d10 + ", isMuted=" + z10 + ")";
     }
@@ -118,7 +118,7 @@ public final class MediaPlayerMuteStateChanged implements ReactEvent {
         if (3 != (i10 & 3)) {
             n1.b(i10, 3, MediaPlayerMuteStateChanged$$serializer.INSTANCE.getDescriptor());
         }
-        this.f7240id = d10;
+        this.f7243id = d10;
         this.isMuted = z10;
     }
 }

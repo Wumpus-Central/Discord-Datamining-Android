@@ -25,12 +25,12 @@ final class MessageViewReplyPreview$configureExecutedCommand$2 extends s impleme
     @Override 
     public   Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f21600a;
+        return Unit.f21601a;
     }
 
     
     public final void invoke2(LinkContentNode it) {
         q.h(it, "it");
-        this.$eventHandler.mo159onLinkClickedntcYbpo(this.$messageId, it);
+        this.$eventHandler.mo163onLinkClickedntcYbpo(this.$messageId, it);
     }
 }

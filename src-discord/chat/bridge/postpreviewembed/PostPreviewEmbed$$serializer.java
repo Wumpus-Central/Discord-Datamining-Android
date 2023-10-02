@@ -271,7 +271,7 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj12;
-        return new PostPreviewEmbed(i11, (ChannelId) obj10, (ChannelId) obj14, messageId != null ? messageId.m644unboximpl() : null, (GuildId) obj11, str2, str, i10, (StructurableText) obj6, (String) obj13, (String) obj7, (String) obj8, (String) obj9, (String) obj, (String) obj2, (String) obj3, z10, (String) obj4, (String) obj5, null, null);
+        return new PostPreviewEmbed(i11, (ChannelId) obj10, (ChannelId) obj14, messageId != null ? messageId.m651unboximpl() : null, (GuildId) obj11, str2, str, i10, (StructurableText) obj6, (String) obj13, (String) obj7, (String) obj8, (String) obj9, (String) obj, (String) obj2, (String) obj3, z10, (String) obj4, (String) obj5, null, null);
     }
 
     @Override 

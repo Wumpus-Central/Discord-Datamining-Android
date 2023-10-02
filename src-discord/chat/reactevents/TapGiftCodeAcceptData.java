@@ -54,14 +54,14 @@ public final class TapGiftCodeAcceptData implements ReactEvent {
     }
 
     
-    public static  TapGiftCodeAcceptData m422copyNU4t8f8$default(TapGiftCodeAcceptData tapGiftCodeAcceptData, String str, String str2, int i10, Object obj) {
+    public static  TapGiftCodeAcceptData m429copyNU4t8f8$default(TapGiftCodeAcceptData tapGiftCodeAcceptData, String str, String str2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapGiftCodeAcceptData.giftCode;
         }
         if ((i10 & 2) != 0) {
             str2 = tapGiftCodeAcceptData.messageId;
         }
-        return tapGiftCodeAcceptData.m424copyNU4t8f8(str, str2);
+        return tapGiftCodeAcceptData.m431copyNU4t8f8(str, str2);
     }
 
     public static final void write$Self(TapGiftCodeAcceptData self, CompositeEncoder output, SerialDescriptor serialDesc) {
@@ -73,7 +73,7 @@ public final class TapGiftCodeAcceptData implements ReactEvent {
         MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
         String str = self.messageId;
         if (str != null) {
-            messageId = MessageId.m636boximpl(str);
+            messageId = MessageId.m643boximpl(str);
         } else {
             messageId = null;
         }
@@ -85,12 +85,12 @@ public final class TapGiftCodeAcceptData implements ReactEvent {
     }
 
     
-    public final String m423component2N_6c4I0() {
+    public final String m430component2N_6c4I0() {
         return this.messageId;
     }
 
     
-    public final TapGiftCodeAcceptData m424copyNU4t8f8(String giftCode, String str) {
+    public final TapGiftCodeAcceptData m431copyNU4t8f8(String giftCode, String str) {
         q.h(giftCode, "giftCode");
         return new TapGiftCodeAcceptData(giftCode, str, null);
     }
@@ -108,14 +108,14 @@ public final class TapGiftCodeAcceptData implements ReactEvent {
     }
 
     
-    public final String m425getMessageIdN_6c4I0() {
+    public final String m432getMessageIdN_6c4I0() {
         return this.messageId;
     }
 
     public int hashCode() {
         int hashCode = this.giftCode.hashCode() * 31;
         String str = this.messageId;
-        return hashCode + (str == null ? 0 : MessageId.m641hashCodeimpl(str));
+        return hashCode + (str == null ? 0 : MessageId.m648hashCodeimpl(str));
     }
 
     @Override 
@@ -126,7 +126,7 @@ public final class TapGiftCodeAcceptData implements ReactEvent {
     public String toString() {
         String str = this.giftCode;
         String str2 = this.messageId;
-        String str3 = str2 == null ? "null" : MessageId.m642toStringimpl(str2);
+        String str3 = str2 == null ? "null" : MessageId.m649toStringimpl(str2);
         return "TapGiftCodeAcceptData(giftCode=" + str + ", messageId=" + str3 + ")";
     }
 

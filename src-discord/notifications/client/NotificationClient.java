@@ -93,12 +93,12 @@ public final class NotificationClient {
         CrashReporting crashReporting = CrashReporting.INSTANCE;
         Pair[] pairArr = new Pair[3];
         pairArr[0] = x.a("type", notificationData.getType());
-        pairArr[1] = x.a("channelId", String.valueOf(notificationData.m577getChannelIdqMVnFVQ()));
-        String str3 = notificationData.m579getMessageIdN_6c4I0();
+        pairArr[1] = x.a("channelId", String.valueOf(notificationData.m584getChannelIdqMVnFVQ()));
+        String str3 = notificationData.m586getMessageIdN_6c4I0();
         if (str3 == null) {
             str = "null";
         } else {
-            str = MessageId.m642toStringimpl(str3);
+            str = MessageId.m649toStringimpl(str3);
         }
         pairArr[2] = x.a("messageId", str);
         k10 = v.k(pairArr);
@@ -121,20 +121,20 @@ public final class NotificationClient {
                     if (q.c(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE)) {
                         KvMessageEntry kvMessage = NotificationDataUtilsKt.getKvMessage(notificationData, map.get("message"));
                         if (kvMessage != null) {
-                            String str4 = notificationData.m579getMessageIdN_6c4I0();
-                            ChannelId channelId = notificationData.m577getChannelIdqMVnFVQ();
+                            String str4 = notificationData.m586getMessageIdN_6c4I0();
+                            ChannelId channelId = notificationData.m584getChannelIdqMVnFVQ();
                             if (!(str4 == null || channelId == null)) {
                                 String str5 = map.get("receiving_user_id");
                                 String str6 = "@account." + ((Object) str5);
-                                GuildId guildId = notificationData.m578getGuildIdqOKuAAo();
+                                GuildId guildId = notificationData.m585getGuildIdqOKuAAo();
                                 if (guildId != null) {
-                                    str2 = GuildId.m630toStringimpl(guildId.m632unboximpl());
+                                    str2 = GuildId.m637toStringimpl(guildId.m639unboximpl());
                                 } else {
                                     str2 = null;
                                 }
-                                String str7 = ChannelId.m617toStringimpl(channelId.m619unboximpl());
-                                String str8 = MessageId.m642toStringimpl(str4);
-                                Json.a aVar = Json.f22128d;
+                                String str7 = ChannelId.m624toStringimpl(channelId.m626unboximpl());
+                                String str8 = MessageId.m649toStringimpl(str4);
+                                Json.a aVar = Json.f22129d;
                                 aVar.a();
                                 DiscordMobileApi.putMessage(str6, str2, str7, str8, aVar.c(KvMessageEntry.Companion.serializer(), kvMessage));
                             }
@@ -249,12 +249,12 @@ public final class NotificationClient {
         NotificationData notificationData = DirectReplyMessage.Companion.toNotificationData(data);
         Pair[] pairArr = new Pair[3];
         pairArr[0] = x.a("type", notificationData.getType());
-        pairArr[1] = x.a("channel_id", String.valueOf(notificationData.m577getChannelIdqMVnFVQ()));
-        String str2 = notificationData.m579getMessageIdN_6c4I0();
+        pairArr[1] = x.a("channel_id", String.valueOf(notificationData.m584getChannelIdqMVnFVQ()));
+        String str2 = notificationData.m586getMessageIdN_6c4I0();
         if (str2 == null) {
             str = "null";
         } else {
-            str = MessageId.m642toStringimpl(str2);
+            str = MessageId.m649toStringimpl(str2);
         }
         pairArr[2] = x.a("message_id", str);
         k10 = v.k(pairArr);
@@ -264,7 +264,7 @@ public final class NotificationClient {
     public final void onNotificationReceived(Context context, Map<String, String> data) {
         q.h(context, "context");
         q.h(data, "data");
-        showNotification(context, (NotificationData) a.f15010b.d(NotificationData.Companion.serializer(), data), data, true);
+        showNotification(context, (NotificationData) a.f15011b.d(NotificationData.Companion.serializer(), data), data, true);
     }
 
     public final void setActive(boolean z10) {

@@ -75,11 +75,11 @@ public final class SpoilerConfig {
     }
 
     public final void onHide() {
-        this.onHide.invoke(SpoilerIdentifier.m131boximpl(this.attributes.m127getIdentifierBq9X6Gg()));
+        this.onHide.invoke(SpoilerIdentifier.m135boximpl(this.attributes.m131getIdentifierBq9X6Gg()));
     }
 
     public final void onReveal() {
-        this.onReveal.invoke(SpoilerIdentifier.m131boximpl(this.attributes.m127getIdentifierBq9X6Gg()));
+        this.onReveal.invoke(SpoilerIdentifier.m135boximpl(this.attributes.m131getIdentifierBq9X6Gg()));
     }
 
     public String toString() {

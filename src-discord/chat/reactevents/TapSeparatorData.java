@@ -5,8 +5,6 @@ import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.WritableNativeMap;
 import kotlin.Metadata;
-import kotlin.Pair;
-import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import pf.x;
@@ -78,15 +76,7 @@ public final class TapSeparatorData implements ReactEvent {
         if (str != null) {
             nativeMapOf.putString("context", str);
         }
-        Pair[] pairArr = new Pair[1];
-        WritableNativeMap nativeMapOf2 = NativeMapExtensionsKt.nativeMapOf(x.a("type", this.type));
-        String str2 = this.context;
-        if (str2 != null) {
-            nativeMapOf2.putString("context", str2);
-        }
-        Unit unit = Unit.f21600a;
-        pairArr[0] = x.a("action", nativeMapOf2);
-        return NativeMapExtensionsKt.nativeMapOf(pairArr);
+        return nativeMapOf;
     }
 
     public String toString() {

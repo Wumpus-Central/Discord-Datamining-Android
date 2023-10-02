@@ -12,7 +12,7 @@ public interface PortalUiModel {
     
     public static final class DefaultImpls {
         public static double getPortal(PortalUiModel portalUiModel) {
-            String str = MessageId.m642toStringimpl(portalUiModel.m210getMessageId3Eiw7ao());
+            String str = MessageId.m649toStringimpl(portalUiModel.m214getMessageId3Eiw7ao());
             String simpleName = portalUiModel.getClass().getSimpleName();
             int index = portalUiModel.getIndex();
             return IdUtilsKt.convertToId(str + "_" + simpleName + "_" + index);
@@ -22,7 +22,7 @@ public interface PortalUiModel {
     int getIndex();
 
     
-    String m210getMessageId3Eiw7ao();
+    String m214getMessageId3Eiw7ao();
 
     double getPortal();
 }

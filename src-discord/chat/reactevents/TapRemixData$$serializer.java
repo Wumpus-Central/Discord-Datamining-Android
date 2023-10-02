@@ -63,7 +63,7 @@ public final class TapRemixData$$serializer implements f0<TapRemixData> {
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj;
-        return new TapRemixData(i10, messageId != null ? messageId.m644unboximpl() : null, null, null);
+        return new TapRemixData(i10, messageId != null ? messageId.m651unboximpl() : null, null, null);
     }
 
     @Override 

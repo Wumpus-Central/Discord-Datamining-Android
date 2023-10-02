@@ -28,28 +28,28 @@ public final class ChannelPromptActionsViewHolder extends MessagePartViewHolder 
     public static final void bind$lambda$0(Function3 onTapChannelPromptButton, ChannelPromptActionsAccessory accessory, View view) {
         q.h(onTapChannelPromptButton, "$onTapChannelPromptButton");
         q.h(accessory, "$accessory");
-        onTapChannelPromptButton.invoke(MessageId.m636boximpl(accessory.mo236getMessageId3Eiw7ao()), ChannelId.m610boximpl(accessory.getMessage().m22getChannelIdo4g7jtM()), "camera");
+        onTapChannelPromptButton.invoke(MessageId.m643boximpl(accessory.mo240getMessageId3Eiw7ao()), ChannelId.m617boximpl(accessory.getMessage().m22getChannelIdo4g7jtM()), "camera");
     }
 
     
     public static final void bind$lambda$1(Function3 onTapChannelPromptButton, ChannelPromptActionsAccessory accessory, View view) {
         q.h(onTapChannelPromptButton, "$onTapChannelPromptButton");
         q.h(accessory, "$accessory");
-        onTapChannelPromptButton.invoke(MessageId.m636boximpl(accessory.mo236getMessageId3Eiw7ao()), ChannelId.m610boximpl(accessory.getMessage().m22getChannelIdo4g7jtM()), "emoji");
+        onTapChannelPromptButton.invoke(MessageId.m643boximpl(accessory.mo240getMessageId3Eiw7ao()), ChannelId.m617boximpl(accessory.getMessage().m22getChannelIdo4g7jtM()), "emoji");
     }
 
     
     public static final void bind$lambda$2(Function3 onTapChannelPromptButton, ChannelPromptActionsAccessory accessory, View view) {
         q.h(onTapChannelPromptButton, "$onTapChannelPromptButton");
         q.h(accessory, "$accessory");
-        onTapChannelPromptButton.invoke(MessageId.m636boximpl(accessory.mo236getMessageId3Eiw7ao()), ChannelId.m610boximpl(accessory.getMessage().m22getChannelIdo4g7jtM()), "gaming-stats");
+        onTapChannelPromptButton.invoke(MessageId.m643boximpl(accessory.mo240getMessageId3Eiw7ao()), ChannelId.m617boximpl(accessory.getMessage().m22getChannelIdo4g7jtM()), "gaming-stats");
     }
 
     
     public static final void bind$lambda$3(Function3 onTapChannelPromptButton, ChannelPromptActionsAccessory accessory, View view) {
         q.h(onTapChannelPromptButton, "$onTapChannelPromptButton");
         q.h(accessory, "$accessory");
-        onTapChannelPromptButton.invoke(MessageId.m636boximpl(accessory.mo236getMessageId3Eiw7ao()), ChannelId.m610boximpl(accessory.getMessage().m22getChannelIdo4g7jtM()), "gif");
+        onTapChannelPromptButton.invoke(MessageId.m643boximpl(accessory.mo240getMessageId3Eiw7ao()), ChannelId.m617boximpl(accessory.getMessage().m22getChannelIdo4g7jtM()), "gif");
     }
 
     public final void bind(final ChannelPromptActionsAccessory accessory, final Function3<? super MessageId, ? super ChannelId, ? super String, Unit> onTapChannelPromptButton) {

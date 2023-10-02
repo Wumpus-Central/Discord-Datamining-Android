@@ -11,12 +11,12 @@ import pf.p;
 public abstract class ChatListItem {
 
     
-    private final String f6980id;
+    private final String f6981id;
     private final Lazy recyclerItemId$delegate;
 
     private ChatListItem(String str) {
         Lazy b10;
-        this.f6980id = str;
+        this.f6981id = str;
         b10 = n.b(p.NONE, new ChatListItem$recyclerItemId$2(this));
         this.recyclerItemId$delegate = b10;
     }
@@ -26,7 +26,7 @@ public abstract class ChatListItem {
     }
 
     public String getId() {
-        return this.f6980id;
+        return this.f6981id;
     }
 
     public final long getRecyclerItemId() {

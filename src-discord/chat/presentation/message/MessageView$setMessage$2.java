@@ -25,6 +25,6 @@ public final class MessageView$setMessage$2 extends s implements Function0<Unit>
     @Override 
     
     public final void invoke2() {
-        this.$eventHandler.mo158onInitiateReplypfaIj0E(this.$message.m24getId3Eiw7ao(), this.$message.m22getChannelIdo4g7jtM());
+        this.$eventHandler.mo162onInitiateReplypfaIj0E(this.$message.m24getId3Eiw7ao(), this.$message.m22getChannelIdo4g7jtM());
     }
 }

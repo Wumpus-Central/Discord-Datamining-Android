@@ -49,6 +49,7 @@ import com.discord.chat.presentation.message.messagepart.MessageContentAccessory
 import com.discord.chat.presentation.message.messagepart.PostPreviewEmbedMessageAccessory;
 import com.discord.chat.presentation.message.messagepart.ReactionsMessageAccessory;
 import com.discord.chat.presentation.message.messagepart.RoleSubscriptionPurchaseAccessory;
+import com.discord.chat.presentation.message.messagepart.SafetyPolicyNoticeMessageAccessory;
 import com.discord.chat.presentation.message.messagepart.StickerMessageAccessory;
 import com.discord.chat.presentation.message.messagepart.SurveyIndicationMessageAccessory;
 import com.discord.chat.presentation.message.messagepart.ThreadEmbedMessageAccessory;
@@ -77,6 +78,7 @@ import com.discord.chat.presentation.message.view.MediaMosaicView;
 import com.discord.chat.presentation.message.view.MessageContentView;
 import com.discord.chat.presentation.message.view.PostPreviewEmbedView;
 import com.discord.chat.presentation.message.view.RoleSubscriptionPurchaseView;
+import com.discord.chat.presentation.message.view.SafetyPolicyNoticeView;
 import com.discord.chat.presentation.message.view.SurveyIndicationView;
 import com.discord.chat.presentation.message.view.ThreadEmbedView;
 import com.discord.chat.presentation.message.view.VideoAttachmentView;
@@ -109,6 +111,7 @@ import com.discord.chat.presentation.message.viewholder.MessagePartViewHolder;
 import com.discord.chat.presentation.message.viewholder.PostPreviewEmbedViewHolder;
 import com.discord.chat.presentation.message.viewholder.ReactionsViewHolder;
 import com.discord.chat.presentation.message.viewholder.RoleSubscriptionPurchaseViewHolder;
+import com.discord.chat.presentation.message.viewholder.SafetyPolicyNoticeViewHolder;
 import com.discord.chat.presentation.message.viewholder.StickerApngViewHolder;
 import com.discord.chat.presentation.message.viewholder.StickerGifViewHolder;
 import com.discord.chat.presentation.message.viewholder.StickerLottieViewHolder;
@@ -163,7 +166,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         void onDetachedFromWindow();
     }
 
-    @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b$\bÀ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010!\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\"\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010#\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010$\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010%\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010&\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010'\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000¨\u0006("}, d2 = {"Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$ViewTypes;", "", "()V", "ACTIVITY_BOOKMARK", "", "ACTIVITY_INVITE_EMBED", "AUDIO_ATTACHMENT", "AUTO_MODERATION_NOTIFICATION_EMBED", "BOT_COMPONENTS", "CHANNEL_DEADCHAT_PROMPT_ACTIONS", "CONTENT", "EMBED", "EMBEDDED_ACTIVITY_INVITE", "EPHEMERAL_INDICATION", "FILE_ATTACHMENT", "FLAGGED_MESSAGE_ACTION_BAR", "FLAGGED_MESSAGE_EMBED", "FORUM_POST_ACTION_BAR", "GIFT", "GUILD_EVENT_INVITE", "GUILD_INVITE", "GUILD_INVITE_DISABLED", "IMAGE_ATTACHMENT", "INFO_LINK", "INTERACTION_STATUS", "MEDIA_MOSAIC_ATTACHMENT", "POST_PREVIEW_EMBED", "REACTIONS", "ROLE_SUBSCRIPTION_PURCHASE", "STAGE_INVITE_TO_SPEAK", "STICKER_APNG", "STICKER_GIF", "STICKER_LOTTIE", "STICKER_PNG", "SURVEY_INDICATION", "THREAD_EMBED", "TIMESTAMP", "UPLOAD_PROGRESS", "VIDEO_ATTACHMENT", "WELCOME_STICKER", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b%\bÀ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010!\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\"\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010#\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010$\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010%\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010&\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010'\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010(\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000¨\u0006)"}, d2 = {"Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$ViewTypes;", "", "()V", "ACTIVITY_BOOKMARK", "", "ACTIVITY_INVITE_EMBED", "AUDIO_ATTACHMENT", "AUTO_MODERATION_NOTIFICATION_EMBED", "BOT_COMPONENTS", "CHANNEL_DEADCHAT_PROMPT_ACTIONS", "CONTENT", "EMBED", "EMBEDDED_ACTIVITY_INVITE", "EPHEMERAL_INDICATION", "FILE_ATTACHMENT", "FLAGGED_MESSAGE_ACTION_BAR", "FLAGGED_MESSAGE_EMBED", "FORUM_POST_ACTION_BAR", "GIFT", "GUILD_EVENT_INVITE", "GUILD_INVITE", "GUILD_INVITE_DISABLED", "IMAGE_ATTACHMENT", "INFO_LINK", "INTERACTION_STATUS", "MEDIA_MOSAIC_ATTACHMENT", "POST_PREVIEW_EMBED", "REACTIONS", "ROLE_SUBSCRIPTION_PURCHASE", "SAFETY_POLICY_NOTICE", "STAGE_INVITE_TO_SPEAK", "STICKER_APNG", "STICKER_GIF", "STICKER_LOTTIE", "STICKER_PNG", "SURVEY_INDICATION", "THREAD_EMBED", "TIMESTAMP", "UPLOAD_PROGRESS", "VIDEO_ATTACHMENT", "WELCOME_STICKER", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     
     public static final class ViewTypes {
         public static final int ACTIVITY_BOOKMARK = 30;
@@ -192,6 +195,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         public static final int POST_PREVIEW_EMBED = 32;
         public static final int REACTIONS = 4;
         public static final int ROLE_SUBSCRIPTION_PURCHASE = 23;
+        public static final int SAFETY_POLICY_NOTICE = 36;
         public static final int STAGE_INVITE_TO_SPEAK = 28;
         public static final int STICKER_APNG = 7;
         public static final int STICKER_GIF = 27;
@@ -249,7 +253,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.h(part, "$part");
         q.h(this$0, "this$0");
         q.h(holder, "$holder");
-        this$0.m213onMediaClickedl3ndGo(holder, part.mo236getMessageId3Eiw7ao(), ((ImageAttachmentMessageAccessory) part).getAttachmentIndex(), "attachment", null, null, ViewResizeMode.Fill);
+        this$0.m217onMediaClickedl3ndGo(holder, part.mo240getMessageId3Eiw7ao(), ((ImageAttachmentMessageAccessory) part).getAttachmentIndex(), "attachment", null, null, ViewResizeMode.Fill);
     }
 
     
@@ -262,7 +266,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         String str = this$0.messageId;
         q.e(str);
-        ChatEventHandler.DefaultImpls.m201onTapReactionu7_MRrM$default(chatEventHandler, str, null, null, 4, null);
+        ChatEventHandler.DefaultImpls.m205onTapReactionu7_MRrM$default(chatEventHandler, str, null, null, 4, null);
     }
 
     
@@ -275,7 +279,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         String str = this$0.messageId;
         q.e(str);
-        chatEventHandler.mo183onTapReactionu7_MRrM(str, null, Boolean.TRUE);
+        chatEventHandler.mo187onTapReactionu7_MRrM(str, null, Boolean.TRUE);
     }
 
     
@@ -290,7 +294,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.e(str);
         ChannelId channelId = this$0.channelId;
         q.e(channelId);
-        chatEventHandler.mo174onTapFollowForumPostpfaIj0E(str, channelId.m619unboximpl());
+        chatEventHandler.mo178onTapFollowForumPostpfaIj0E(str, channelId.m626unboximpl());
     }
 
     
@@ -303,10 +307,10 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         ChannelId channelId = this$0.channelId;
         q.e(channelId);
-        long j10 = channelId.m619unboximpl();
+        long j10 = channelId.m626unboximpl();
         GuildId guildId = this$0.guildId;
         q.e(guildId);
-        chatEventHandler.mo188onTapShareForumPostmgk6anA(j10, guildId.m632unboximpl());
+        chatEventHandler.mo192onTapShareForumPostmgk6anA(j10, guildId.m639unboximpl());
     }
 
     
@@ -319,7 +323,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         String str = this$0.messageId;
         q.e(str);
-        ChatEventHandler.DefaultImpls.m201onTapReactionu7_MRrM$default(chatEventHandler, str, null, null, 4, null);
+        ChatEventHandler.DefaultImpls.m205onTapReactionu7_MRrM$default(chatEventHandler, str, null, null, 4, null);
     }
 
     
@@ -334,7 +338,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.e(str);
         ChannelId channelId = this$0.channelId;
         q.e(channelId);
-        chatEventHandler.mo184onTapReactionOverflowpfaIj0E(str, channelId.m619unboximpl());
+        chatEventHandler.mo188onTapReactionOverflowpfaIj0E(str, channelId.m626unboximpl());
     }
 
     
@@ -347,13 +351,13 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
                 q.y("eventHandler");
                 chatEventHandler = null;
             }
-            chatEventHandler.mo173onTapDismissMediaPostSharePrompt1xi1bu0(str);
+            chatEventHandler.mo177onTapDismissMediaPostSharePrompt1xi1bu0(str);
         }
     }
 
     
     
-    public final void m213onMediaClickedl3ndGo(MessagePartViewHolder messagePartViewHolder, String str, int i10, String str2, Double d10, Integer num, ViewResizeMode viewResizeMode) {
+    public final void m217onMediaClickedl3ndGo(MessagePartViewHolder messagePartViewHolder, String str, int i10, String str2, Double d10, Integer num, ViewResizeMode viewResizeMode) {
         View itemView = messagePartViewHolder.itemView;
         q.g(itemView, "itemView");
         Point locationInWindow = ViewLocationUtilsKt.getLocationInWindow(itemView);
@@ -362,7 +366,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             q.y("eventHandler");
             chatEventHandler = null;
         }
-        chatEventHandler.mo176onTapImagea6FnOk(str, i10, str2, messagePartViewHolder.itemView.getWidth(), messagePartViewHolder.itemView.getHeight(), locationInWindow.x, locationInWindow.y, viewResizeMode, d10, num);
+        chatEventHandler.mo180onTapImagea6FnOk(str, i10, str2, messagePartViewHolder.itemView.getWidth(), messagePartViewHolder.itemView.getHeight(), locationInWindow.x, locationInWindow.y, viewResizeMode, d10, num);
     }
 
     @Override 
@@ -489,6 +493,9 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             if (messageAccessory instanceof InfoLinkMessageAccessory) {
                 return 35;
             }
+            if (messageAccessory instanceof SafetyPolicyNoticeMessageAccessory) {
+                return 36;
+            }
             throw new pf.q();
         }
     }
@@ -504,11 +511,11 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
 
     @SuppressLint({"NotifyDataSetChanged"})
     
-    public final void m214setItemsbo5iIEc(String messageId, long j10, GuildId guildId, List<? extends MessageAccessory> items) {
+    public final void m218setItemsbo5iIEc(String messageId, long j10, GuildId guildId, List<? extends MessageAccessory> items) {
         q.h(messageId, "messageId");
         q.h(items, "items");
         this.messageId = messageId;
-        this.channelId = ChannelId.m610boximpl(j10);
+        this.channelId = ChannelId.m617boximpl(j10);
         this.guildId = guildId;
         if (ChatView.Companion.getAreChatAnimationsEnabled()) {
             List<? extends MessageAccessory> list = this.items;
@@ -642,7 +649,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             boolean showRemixButton = imageAttachmentMessageAccessory.getShowRemixButton();
             Integer remixButtonIconColor = imageAttachmentMessageAccessory.getRemixButtonIconColor();
             Integer remixButtonBackgroundColor = imageAttachmentMessageAccessory.getRemixButtonBackgroundColor();
-            String str = messageAccessory.mo236getMessageId3Eiw7ao();
+            String str = messageAccessory.mo240getMessageId3Eiw7ao();
             ChatEventHandler chatEventHandler17 = this.eventHandler;
             if (chatEventHandler17 == null) {
                 q.y("eventHandler");
@@ -650,7 +657,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             } else {
                 chatEventHandler4 = chatEventHandler17;
             }
-            imageAttachmentViewHolder.m367bindNlw0kPk(attachment, width, dimensionPixelSize2, radiusPx2, resizeMode, bVar, onLongClick2, configure, useNewAltTextButton, attachmentsOpacity, showRemixButton, false, remixButtonIconColor, remixButtonBackgroundColor, str, new MessageAccessoriesAdapter$onBindViewHolder$20(chatEventHandler4));
+            imageAttachmentViewHolder.m374bindNlw0kPk(attachment, width, dimensionPixelSize2, radiusPx2, resizeMode, bVar, onLongClick2, configure, useNewAltTextButton, attachmentsOpacity, showRemixButton, false, remixButtonIconColor, remixButtonBackgroundColor, str, new MessageAccessoriesAdapter$onBindViewHolder$20(chatEventHandler4));
         } else if (messageAccessory instanceof VideoAttachmentMessageAccessory) {
             VideoAttachmentViewHolder videoAttachmentViewHolder = (VideoAttachmentViewHolder) holder;
             VideoAttachmentMessageAccessory videoAttachmentMessageAccessory = (VideoAttachmentMessageAccessory) messageAccessory;
@@ -676,9 +683,9 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             }
             uploadProgressViewHolder.bind(uploadProgress, chatEventHandler3);
         } else if (messageAccessory instanceof ReactionsMessageAccessory) {
-            String str2 = messageAccessory.mo236getMessageId3Eiw7ao();
+            String str2 = messageAccessory.mo240getMessageId3Eiw7ao();
             ReactionsMessageAccessory reactionsMessageAccessory = (ReactionsMessageAccessory) messageAccessory;
-            ((ReactionsViewHolder) holder).m372bindJJXpD5M(str2, reactionsMessageAccessory.getReactions(), reactionsMessageAccessory.getCanAddNewReactions(), reactionsMessageAccessory.getCanAddNewBurstReactions(), reactionsMessageAccessory.getAddReactionLabel(), reactionsMessageAccessory.getAddNewReactionAccessibilityLabel(), reactionsMessageAccessory.getAddNewBurstReactionAccessibilityLabel(), reactionsMessageAccessory.getReactionsTheme(), new View.OnClickListener() { 
+            ((ReactionsViewHolder) holder).m379bindJJXpD5M(str2, reactionsMessageAccessory.getReactions(), reactionsMessageAccessory.getCanAddNewReactions(), reactionsMessageAccessory.getCanAddNewBurstReactions(), reactionsMessageAccessory.getAddReactionLabel(), reactionsMessageAccessory.getAddNewReactionAccessibilityLabel(), reactionsMessageAccessory.getAddNewBurstReactionAccessibilityLabel(), reactionsMessageAccessory.getReactionsTheme(), new View.OnClickListener() { 
                 @Override 
                 public final void onClick(View view) {
                     MessageAccessoriesAdapter.onBindViewHolder$lambda$1(MessageAccessoriesAdapter.this, view);
@@ -850,10 +857,19 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
                 chatEventHandler28 = null;
             }
             channelPromptActionsViewHolder.bind(channelPromptActionsAccessory, new MessageAccessoriesAdapter$onBindViewHolder$49(chatEventHandler28));
+        } else if (messageAccessory instanceof SafetyPolicyNoticeMessageAccessory) {
+            SafetyPolicyNoticeViewHolder safetyPolicyNoticeViewHolder = (SafetyPolicyNoticeViewHolder) holder;
+            SafetyPolicyNoticeMessageAccessory safetyPolicyNoticeMessageAccessory = (SafetyPolicyNoticeMessageAccessory) messageAccessory;
+            ChatEventHandler chatEventHandler29 = this.eventHandler;
+            if (chatEventHandler29 == null) {
+                q.y("eventHandler");
+                chatEventHandler29 = null;
+            }
+            safetyPolicyNoticeViewHolder.bind(safetyPolicyNoticeMessageAccessory, new MessageAccessoriesAdapter$onBindViewHolder$50(chatEventHandler29));
         } else {
             throw new pf.q();
         }
-        ForceExhaustiveKt.forceExhaustive(Unit.f21600a);
+        ForceExhaustiveKt.forceExhaustive(Unit.f21601a);
     }
 
     @Override 
@@ -1117,6 +1133,10 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
                 Context context35 = parent.getContext();
                 q.g(context35, "parent.context");
                 return new InfoLinkViewHolder(new InfoLinkView(context35, null, 2, null));
+            case 36:
+                Context context36 = parent.getContext();
+                q.g(context36, "parent.context");
+                return new SafetyPolicyNoticeViewHolder(new SafetyPolicyNoticeView(context36, null, 2, null));
             default:
                 throw new IllegalArgumentException("Unknown view type: " + i10);
         }

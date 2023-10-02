@@ -149,7 +149,7 @@ public final class DirectReplyMessage$$serializer implements f0<DirectReplyMessa
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj8;
-        return new DirectReplyMessage(i10, messageId != null ? messageId.m644unboximpl() : null, (ChannelId) obj, (DirectReplyUser) obj2, (String) obj4, (Integer) obj3, (Integer) obj5, (String) obj6, (String) obj7, null, null);
+        return new DirectReplyMessage(i10, messageId != null ? messageId.m651unboximpl() : null, (ChannelId) obj, (DirectReplyUser) obj2, (String) obj4, (Integer) obj3, (Integer) obj5, (String) obj6, (String) obj7, null, null);
     }
 
     @Override 

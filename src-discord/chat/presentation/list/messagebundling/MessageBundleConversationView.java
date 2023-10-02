@@ -70,14 +70,14 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
     public static final void configure$lambda$7$lambda$5(ChatEventHandler eventHandler, Message message, View view) {
         q.h(eventHandler, "$eventHandler");
         q.h(message, "$message");
-        ChatEventHandler.DefaultImpls.m201onTapReactionu7_MRrM$default(eventHandler, message.m24getId3Eiw7ao(), null, null, 4, null);
+        ChatEventHandler.DefaultImpls.m205onTapReactionu7_MRrM$default(eventHandler, message.m24getId3Eiw7ao(), null, null, 4, null);
     }
 
     
     public static final void configure$lambda$7$lambda$6(ChatEventHandler eventHandler, Message message, View view) {
         q.h(eventHandler, "$eventHandler");
         q.h(message, "$message");
-        eventHandler.mo183onTapReactionu7_MRrM(message.m24getId3Eiw7ao(), null, Boolean.TRUE);
+        eventHandler.mo187onTapReactionu7_MRrM(message.m24getId3Eiw7ao(), null, Boolean.TRUE);
     }
 
     public final void configure(MessageItem messageItem, final ChatEventHandler eventHandler) {

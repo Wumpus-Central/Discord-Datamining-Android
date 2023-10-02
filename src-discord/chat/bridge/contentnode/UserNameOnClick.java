@@ -45,7 +45,7 @@ public final class UserNameOnClick {
             n1.b(i10, 3, UserNameOnClick$$serializer.INSTANCE.getDescriptor());
         }
         this.action = str;
-        this.userId = userId.m683unboximpl();
+        this.userId = userId.m690unboximpl();
         if ((i10 & 4) == 0) {
             this.messageChannelId = null;
         } else {
@@ -67,7 +67,7 @@ public final class UserNameOnClick {
     }
 
     
-    public static  UserNameOnClick m94copyGE3CLCU$default(UserNameOnClick userNameOnClick, String str, long j10, ChannelId channelId, Integer num, int i10, Object obj) {
+    public static  UserNameOnClick m98copyGE3CLCU$default(UserNameOnClick userNameOnClick, String str, long j10, ChannelId channelId, Integer num, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = userNameOnClick.action;
         }
@@ -80,7 +80,7 @@ public final class UserNameOnClick {
         if ((i10 & 8) != 0) {
             num = userNameOnClick.linkColor;
         }
-        return userNameOnClick.m97copyGE3CLCU(str, j10, channelId, num);
+        return userNameOnClick.m101copyGE3CLCU(str, j10, channelId, num);
     }
 
     public static final void write$Self(UserNameOnClick self, CompositeEncoder output, SerialDescriptor serialDesc) {
@@ -90,7 +90,7 @@ public final class UserNameOnClick {
         q.h(serialDesc, "serialDesc");
         boolean z11 = false;
         output.y(serialDesc, 0, self.action);
-        output.i(serialDesc, 1, UserId$$serializer.INSTANCE, UserId.m674boximpl(self.userId));
+        output.i(serialDesc, 1, UserId$$serializer.INSTANCE, UserId.m681boximpl(self.userId));
         if (!output.z(serialDesc, 2) && self.messageChannelId == null) {
             z10 = false;
         } else {
@@ -112,12 +112,12 @@ public final class UserNameOnClick {
     }
 
     
-    public final long m95component2re6GcUE() {
+    public final long m99component2re6GcUE() {
         return this.userId;
     }
 
     
-    public final ChannelId m96component3qMVnFVQ() {
+    public final ChannelId m100component3qMVnFVQ() {
         return this.messageChannelId;
     }
 
@@ -126,7 +126,7 @@ public final class UserNameOnClick {
     }
 
     
-    public final UserNameOnClick m97copyGE3CLCU(String action, long j10, ChannelId channelId, Integer num) {
+    public final UserNameOnClick m101copyGE3CLCU(String action, long j10, ChannelId channelId, Integer num) {
         q.h(action, "action");
         return new UserNameOnClick(action, j10, channelId, num, null);
     }
@@ -139,7 +139,7 @@ public final class UserNameOnClick {
             return false;
         }
         UserNameOnClick userNameOnClick = (UserNameOnClick) obj;
-        return q.c(this.action, userNameOnClick.action) && UserId.m678equalsimpl0(this.userId, userNameOnClick.userId) && q.c(this.messageChannelId, userNameOnClick.messageChannelId) && q.c(this.linkColor, userNameOnClick.linkColor);
+        return q.c(this.action, userNameOnClick.action) && UserId.m685equalsimpl0(this.userId, userNameOnClick.userId) && q.c(this.messageChannelId, userNameOnClick.messageChannelId) && q.c(this.linkColor, userNameOnClick.linkColor);
     }
 
     public final String getAction() {
@@ -151,20 +151,20 @@ public final class UserNameOnClick {
     }
 
     
-    public final ChannelId m98getMessageChannelIdqMVnFVQ() {
+    public final ChannelId m102getMessageChannelIdqMVnFVQ() {
         return this.messageChannelId;
     }
 
     
-    public final long m99getUserIdre6GcUE() {
+    public final long m103getUserIdre6GcUE() {
         return this.userId;
     }
 
     public int hashCode() {
-        int hashCode = ((this.action.hashCode() * 31) + UserId.m679hashCodeimpl(this.userId)) * 31;
+        int hashCode = ((this.action.hashCode() * 31) + UserId.m686hashCodeimpl(this.userId)) * 31;
         ChannelId channelId = this.messageChannelId;
         int i10 = 0;
-        int i11 = (hashCode + (channelId == null ? 0 : ChannelId.m615hashCodeimpl(channelId.m619unboximpl()))) * 31;
+        int i11 = (hashCode + (channelId == null ? 0 : ChannelId.m622hashCodeimpl(channelId.m626unboximpl()))) * 31;
         Integer num = this.linkColor;
         if (num != null) {
             i10 = num.hashCode();
@@ -174,7 +174,7 @@ public final class UserNameOnClick {
 
     public String toString() {
         String str = this.action;
-        String str2 = UserId.m681toStringimpl(this.userId);
+        String str2 = UserId.m688toStringimpl(this.userId);
         ChannelId channelId = this.messageChannelId;
         Integer num = this.linkColor;
         return "UserNameOnClick(action=" + str + ", userId=" + str2 + ", messageChannelId=" + channelId + ", linkColor=" + num + ")";

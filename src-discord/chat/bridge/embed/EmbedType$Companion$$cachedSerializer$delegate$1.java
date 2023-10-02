@@ -20,6 +20,6 @@ final class EmbedType$Companion$$cachedSerializer$delegate$1 extends s implement
 
     @Override 
     public final KSerializer<Object> invoke() {
-        return c0.a("com.discord.chat.bridge.embed.EmbedType", EmbedType.values(), new String[]{"article", "image", MediaStreamTrack.VIDEO_TRACK_KIND, "tweet", "link", "html", JSStackTrace.FILE_KEY, "gifv", "rich", "text", "application_news", "post_preview", "unknown"}, new Annotation[][]{null, null, null, null, null, null, null, null, null, null, null, null, null});
+        return c0.a("com.discord.chat.bridge.embed.EmbedType", EmbedType.values(), new String[]{"article", "image", MediaStreamTrack.VIDEO_TRACK_KIND, "tweet", "link", "html", JSStackTrace.FILE_KEY, "gifv", "rich", "text", "application_news", "post_preview", "safety_policy_notice", "unknown"}, new Annotation[][]{null, null, null, null, null, null, null, null, null, null, null, null, null, null});
     }
 }

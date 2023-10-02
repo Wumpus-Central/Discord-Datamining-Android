@@ -78,7 +78,7 @@ public final class TapGiftCodeAcceptData$$serializer implements f0<TapGiftCodeAc
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj;
         if (messageId != null) {
-            str2 = messageId.m644unboximpl();
+            str2 = messageId.m651unboximpl();
         }
         return new TapGiftCodeAcceptData(i10, str, str2, null, null);
     }

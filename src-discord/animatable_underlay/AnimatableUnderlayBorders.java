@@ -84,23 +84,23 @@ public final class AnimatableUnderlayBorders {
     public final void setBorderBottomLeftRadius(float f10) {
         this.borderBottomLeftRadius = f10;
         float[] fArr = this.borderRadiusRadii;
-        fArr[4] = f10;
-        fArr[5] = f10;
-        float[] fArr2 = this.borderStrokeRadiusRadii;
-        float f11 = this.borderWidth;
-        fArr2[4] = f10 - f11;
-        fArr2[5] = f10 - f11;
-    }
-
-    public final void setBorderBottomRightRadius(float f10) {
-        this.borderBottomRightRadius = f10;
-        float[] fArr = this.borderRadiusRadii;
         fArr[6] = f10;
         fArr[7] = f10;
         float[] fArr2 = this.borderStrokeRadiusRadii;
         float f11 = this.borderWidth;
         fArr2[6] = f10 - f11;
         fArr2[7] = f10 - f11;
+    }
+
+    public final void setBorderBottomRightRadius(float f10) {
+        this.borderBottomRightRadius = f10;
+        float[] fArr = this.borderRadiusRadii;
+        fArr[4] = f10;
+        fArr[5] = f10;
+        float[] fArr2 = this.borderStrokeRadiusRadii;
+        float f11 = this.borderWidth;
+        fArr2[4] = f10 - f11;
+        fArr2[5] = f10 - f11;
     }
 
     public final void setBorderColor(int i10) {

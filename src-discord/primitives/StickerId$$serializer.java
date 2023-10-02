@@ -34,13 +34,13 @@ public final class StickerId$$serializer implements f0<StickerId> {
 
     @Override 
     public   Object deserialize(Decoder decoder) {
-        return StickerId.m661boximpl(m671deserializeaEuejx8(decoder));
+        return StickerId.m668boximpl(m678deserializeaEuejx8(decoder));
     }
 
     
-    public long m671deserializeaEuejx8(Decoder decoder) {
+    public long m678deserializeaEuejx8(Decoder decoder) {
         q.h(decoder, "decoder");
-        return StickerId.m662constructorimpl(decoder.q(getDescriptor()).l());
+        return StickerId.m669constructorimpl(decoder.q(getDescriptor()).l());
     }
 
     @Override 
@@ -50,11 +50,11 @@ public final class StickerId$$serializer implements f0<StickerId> {
 
     @Override 
     public   void serialize(Encoder encoder, Object obj) {
-        m672serializePw5X2A(encoder, ((StickerId) obj).m670unboximpl());
+        m679serializePw5X2A(encoder, ((StickerId) obj).m677unboximpl());
     }
 
     
-    public void m672serializePw5X2A(Encoder encoder, long j10) {
+    public void m679serializePw5X2A(Encoder encoder, long j10) {
         q.h(encoder, "encoder");
         Encoder l10 = encoder.l(getDescriptor());
         if (l10 != null) {

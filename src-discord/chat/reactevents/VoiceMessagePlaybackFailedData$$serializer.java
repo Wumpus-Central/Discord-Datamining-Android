@@ -76,7 +76,7 @@ public final class VoiceMessagePlaybackFailedData$$serializer implements f0<Voic
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
         if (messageId != null) {
-            str = messageId.m644unboximpl();
+            str = messageId.m651unboximpl();
         }
         return new VoiceMessagePlaybackFailedData(i10, str, (String) obj, null, null);
     }

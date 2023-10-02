@@ -20,7 +20,7 @@ public  class EmbedViewHolder$bind$4 extends n implements Function1<LinkContentN
     @Override 
     public   Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f21600a;
+        return Unit.f21601a;
     }
 
     

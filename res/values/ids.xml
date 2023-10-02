@@ -371,6 +371,7 @@
     <item type="id" name="layout_aspect_ratio" />
     <item type="id" name="layout_rotate_wheel" />
     <item type="id" name="layout_scale_wheel" />
+    <item type="id" name="learn_more" />
     <item type="id" name="left_bar" />
     <item type="id" name="line1" />
     <item type="id" name="line3" />
@@ -623,6 +624,7 @@
     <item type="id" name="subtitle_icon" />
     <item type="id" name="subtitle_severity" />
     <item type="id" name="subtitle_start_time" />
+    <item type="id" name="subtitle_text" />
     <item type="id" name="subtitle_top_barrier" />
     <item type="id" name="suppress_notifications_icon" />
     <item type="id" name="survey_background" />

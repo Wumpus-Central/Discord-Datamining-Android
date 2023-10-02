@@ -76,7 +76,7 @@ public final class InitiateEditData$$serializer implements f0<InitiateEditData> 
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
         if (messageId != null) {
-            str = messageId.m644unboximpl();
+            str = messageId.m651unboximpl();
         }
         return new InitiateEditData(i10, str, (ChannelId) obj, null, null);
     }

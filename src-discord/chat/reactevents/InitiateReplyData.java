@@ -44,7 +44,7 @@ public final class InitiateReplyData implements ReactEvent {
             n1.b(i10, 3, InitiateReplyData$$serializer.INSTANCE.getDescriptor());
         }
         this.messageId = str;
-        this.channelId = channelId.m619unboximpl();
+        this.channelId = channelId.m626unboximpl();
     }
 
     public  InitiateReplyData(int i10, String str, ChannelId channelId, SerializationConstructorMarker serializationConstructorMarker, DefaultConstructorMarker defaultConstructorMarker) {
@@ -56,36 +56,36 @@ public final class InitiateReplyData implements ReactEvent {
     }
 
     
-    public static  InitiateReplyData m382copypfaIj0E$default(InitiateReplyData initiateReplyData, String str, long j10, int i10, Object obj) {
+    public static  InitiateReplyData m389copypfaIj0E$default(InitiateReplyData initiateReplyData, String str, long j10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = initiateReplyData.messageId;
         }
         if ((i10 & 2) != 0) {
             j10 = initiateReplyData.channelId;
         }
-        return initiateReplyData.m385copypfaIj0E(str, j10);
+        return initiateReplyData.m392copypfaIj0E(str, j10);
     }
 
     public static final void write$Self(InitiateReplyData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.i(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m636boximpl(self.messageId));
-        output.i(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m610boximpl(self.channelId));
+        output.i(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m643boximpl(self.messageId));
+        output.i(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m617boximpl(self.channelId));
     }
 
     
-    public final String m383component13Eiw7ao() {
+    public final String m390component13Eiw7ao() {
         return this.messageId;
     }
 
     
-    public final long m384component2o4g7jtM() {
+    public final long m391component2o4g7jtM() {
         return this.channelId;
     }
 
     
-    public final InitiateReplyData m385copypfaIj0E(String messageId, long j10) {
+    public final InitiateReplyData m392copypfaIj0E(String messageId, long j10) {
         q.h(messageId, "messageId");
         return new InitiateReplyData(messageId, j10, null);
     }
@@ -98,21 +98,21 @@ public final class InitiateReplyData implements ReactEvent {
             return false;
         }
         InitiateReplyData initiateReplyData = (InitiateReplyData) obj;
-        return MessageId.m640equalsimpl0(this.messageId, initiateReplyData.messageId) && ChannelId.m614equalsimpl0(this.channelId, initiateReplyData.channelId);
+        return MessageId.m647equalsimpl0(this.messageId, initiateReplyData.messageId) && ChannelId.m621equalsimpl0(this.channelId, initiateReplyData.channelId);
     }
 
     
-    public final long m386getChannelIdo4g7jtM() {
+    public final long m393getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
     
-    public final String m387getMessageId3Eiw7ao() {
+    public final String m394getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (MessageId.m641hashCodeimpl(this.messageId) * 31) + ChannelId.m615hashCodeimpl(this.channelId);
+        return (MessageId.m648hashCodeimpl(this.messageId) * 31) + ChannelId.m622hashCodeimpl(this.channelId);
     }
 
     @Override 
@@ -121,8 +121,8 @@ public final class InitiateReplyData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m642toStringimpl(this.messageId);
-        String str2 = ChannelId.m617toStringimpl(this.channelId);
+        String str = MessageId.m649toStringimpl(this.messageId);
+        String str2 = ChannelId.m624toStringimpl(this.channelId);
         return "InitiateReplyData(messageId=" + str + ", channelId=" + str2 + ")";
     }
 

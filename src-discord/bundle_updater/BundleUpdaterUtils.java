@@ -55,7 +55,7 @@ public final class BundleUpdaterUtils {
     public final AppManifest getManifestFromFile(File file) {
         String d10;
         q.h(file, "file");
-        Json.a aVar = Json.f22128d;
+        Json.a aVar = Json.f22129d;
         d10 = l.d(file, null, 1, null);
         aVar.a();
         return (AppManifest) aVar.b(AppManifest.Companion.serializer(), d10);
@@ -65,7 +65,7 @@ public final class BundleUpdaterUtils {
         q.h(file, "file");
         BufferedSource d10 = m.d(m.k(file));
         try {
-            j a10 = j.f15804m.a(m.b());
+            j a10 = j.f15805m.a(m.b());
             d10.u0(a10);
             th = null;
             return a10.a().l();

@@ -23,19 +23,19 @@ public final class SurveyIndicationMessageAccessory extends MessageAccessory {
     }
 
     
-    public static  SurveyIndicationMessageAccessory m313copyntcYbpo$default(SurveyIndicationMessageAccessory surveyIndicationMessageAccessory, String str, SurveyIndication surveyIndication, int i10, Object obj) {
+    public static  SurveyIndicationMessageAccessory m320copyntcYbpo$default(SurveyIndicationMessageAccessory surveyIndicationMessageAccessory, String str, SurveyIndication surveyIndication, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = surveyIndicationMessageAccessory.mo236getMessageId3Eiw7ao();
+            str = surveyIndicationMessageAccessory.mo240getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             surveyIndication = surveyIndicationMessageAccessory.surveyIndication;
         }
-        return surveyIndicationMessageAccessory.m315copyntcYbpo(str, surveyIndication);
+        return surveyIndicationMessageAccessory.m322copyntcYbpo(str, surveyIndication);
     }
 
     
-    public final String m314component13Eiw7ao() {
-        return mo236getMessageId3Eiw7ao();
+    public final String m321component13Eiw7ao() {
+        return mo240getMessageId3Eiw7ao();
     }
 
     public final SurveyIndication component2() {
@@ -43,7 +43,7 @@ public final class SurveyIndicationMessageAccessory extends MessageAccessory {
     }
 
     
-    public final SurveyIndicationMessageAccessory m315copyntcYbpo(String messageId, SurveyIndication surveyIndication) {
+    public final SurveyIndicationMessageAccessory m322copyntcYbpo(String messageId, SurveyIndication surveyIndication) {
         q.h(messageId, "messageId");
         q.h(surveyIndication, "surveyIndication");
         return new SurveyIndicationMessageAccessory(messageId, surveyIndication, null);
@@ -57,12 +57,12 @@ public final class SurveyIndicationMessageAccessory extends MessageAccessory {
             return false;
         }
         SurveyIndicationMessageAccessory surveyIndicationMessageAccessory = (SurveyIndicationMessageAccessory) obj;
-        return MessageId.m640equalsimpl0(mo236getMessageId3Eiw7ao(), surveyIndicationMessageAccessory.mo236getMessageId3Eiw7ao()) && q.c(this.surveyIndication, surveyIndicationMessageAccessory.surveyIndication);
+        return MessageId.m647equalsimpl0(mo240getMessageId3Eiw7ao(), surveyIndicationMessageAccessory.mo240getMessageId3Eiw7ao()) && q.c(this.surveyIndication, surveyIndicationMessageAccessory.surveyIndication);
     }
 
     @Override 
     
-    public String mo236getMessageId3Eiw7ao() {
+    public String mo240getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -71,11 +71,11 @@ public final class SurveyIndicationMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (MessageId.m641hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + this.surveyIndication.hashCode();
+        return (MessageId.m648hashCodeimpl(mo240getMessageId3Eiw7ao()) * 31) + this.surveyIndication.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m642toStringimpl(mo236getMessageId3Eiw7ao());
+        String str = MessageId.m649toStringimpl(mo240getMessageId3Eiw7ao());
         SurveyIndication surveyIndication = this.surveyIndication;
         return "SurveyIndicationMessageAccessory(messageId=" + str + ", surveyIndication=" + surveyIndication + ")";
     }

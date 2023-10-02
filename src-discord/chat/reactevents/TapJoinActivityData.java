@@ -52,27 +52,27 @@ public final class TapJoinActivityData implements ReactEvent {
     }
 
     
-    public static  TapJoinActivityData m430copy1xi1bu0$default(TapJoinActivityData tapJoinActivityData, String str, int i10, Object obj) {
+    public static  TapJoinActivityData m437copy1xi1bu0$default(TapJoinActivityData tapJoinActivityData, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapJoinActivityData.messageId;
         }
-        return tapJoinActivityData.m432copy1xi1bu0(str);
+        return tapJoinActivityData.m439copy1xi1bu0(str);
     }
 
     public static final void write$Self(TapJoinActivityData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.i(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m636boximpl(self.messageId));
+        output.i(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m643boximpl(self.messageId));
     }
 
     
-    public final String m431component13Eiw7ao() {
+    public final String m438component13Eiw7ao() {
         return this.messageId;
     }
 
     
-    public final TapJoinActivityData m432copy1xi1bu0(String messageId) {
+    public final TapJoinActivityData m439copy1xi1bu0(String messageId) {
         q.h(messageId, "messageId");
         return new TapJoinActivityData(messageId, null);
     }
@@ -81,16 +81,16 @@ public final class TapJoinActivityData implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof TapJoinActivityData) && MessageId.m640equalsimpl0(this.messageId, ((TapJoinActivityData) obj).messageId);
+        return (obj instanceof TapJoinActivityData) && MessageId.m647equalsimpl0(this.messageId, ((TapJoinActivityData) obj).messageId);
     }
 
     
-    public final String m433getMessageId3Eiw7ao() {
+    public final String m440getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return MessageId.m641hashCodeimpl(this.messageId);
+        return MessageId.m648hashCodeimpl(this.messageId);
     }
 
     @Override 
@@ -99,7 +99,7 @@ public final class TapJoinActivityData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m642toStringimpl(this.messageId);
+        String str = MessageId.m649toStringimpl(this.messageId);
         return "TapJoinActivityData(messageId=" + str + ")";
     }
 

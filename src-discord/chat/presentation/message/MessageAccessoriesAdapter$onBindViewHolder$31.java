@@ -19,13 +19,13 @@ public  class MessageAccessoriesAdapter$onBindViewHolder$31 extends n implements
 
     @Override 
     public   Unit invoke(MessageId messageId) {
-        m217invoke1xi1bu0(messageId.m644unboximpl());
-        return Unit.f21600a;
+        m221invoke1xi1bu0(messageId.m651unboximpl());
+        return Unit.f21601a;
     }
 
     
-    public final void m217invoke1xi1bu0(String p02) {
+    public final void m221invoke1xi1bu0(String p02) {
         q.h(p02, "p0");
-        ((ChatEventHandler) this.receiver).mo192onTapThreadEmbed1xi1bu0(p02);
+        ((ChatEventHandler) this.receiver).mo196onTapThreadEmbed1xi1bu0(p02);
     }
 }

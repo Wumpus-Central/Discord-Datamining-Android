@@ -46,7 +46,7 @@ public final class CommandMentionContentNode extends MentionContentNode {
         if (31 != (i10 & 31)) {
             n1.b(i10, 31, CommandMentionContentNode$$serializer.INSTANCE.getDescriptor());
         }
-        this.channelId = channelId.m619unboximpl();
+        this.channelId = channelId.m626unboximpl();
         this.commandId = str;
         this.commandName = str2;
         this.commandKey = str3;
@@ -87,7 +87,7 @@ public final class CommandMentionContentNode extends MentionContentNode {
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
         MentionContentNode.write$Self(self, output, serialDesc);
-        output.i(serialDesc, 0, ChannelId$$serializer.INSTANCE, ChannelId.m610boximpl(self.channelId));
+        output.i(serialDesc, 0, ChannelId$$serializer.INSTANCE, ChannelId.m617boximpl(self.channelId));
         output.y(serialDesc, 1, self.commandId);
         output.y(serialDesc, 2, self.commandName);
         output.y(serialDesc, 3, self.commandKey);
@@ -132,7 +132,7 @@ public final class CommandMentionContentNode extends MentionContentNode {
             return false;
         }
         CommandMentionContentNode commandMentionContentNode = (CommandMentionContentNode) obj;
-        return ChannelId.m614equalsimpl0(this.channelId, commandMentionContentNode.channelId) && q.c(this.commandId, commandMentionContentNode.commandId) && q.c(this.commandName, commandMentionContentNode.commandName) && q.c(this.commandKey, commandMentionContentNode.commandKey) && q.c(getContent(), commandMentionContentNode.getContent());
+        return ChannelId.m621equalsimpl0(this.channelId, commandMentionContentNode.channelId) && q.c(this.commandId, commandMentionContentNode.commandId) && q.c(this.commandName, commandMentionContentNode.commandName) && q.c(this.commandKey, commandMentionContentNode.commandKey) && q.c(getContent(), commandMentionContentNode.getContent());
     }
 
     
@@ -158,11 +158,11 @@ public final class CommandMentionContentNode extends MentionContentNode {
     }
 
     public int hashCode() {
-        return (((((((ChannelId.m615hashCodeimpl(this.channelId) * 31) + this.commandId.hashCode()) * 31) + this.commandName.hashCode()) * 31) + this.commandKey.hashCode()) * 31) + getContent().hashCode();
+        return (((((((ChannelId.m622hashCodeimpl(this.channelId) * 31) + this.commandId.hashCode()) * 31) + this.commandName.hashCode()) * 31) + this.commandKey.hashCode()) * 31) + getContent().hashCode();
     }
 
     public String toString() {
-        String str = ChannelId.m617toStringimpl(this.channelId);
+        String str = ChannelId.m624toStringimpl(this.channelId);
         String str2 = this.commandId;
         String str3 = this.commandName;
         String str4 = this.commandKey;

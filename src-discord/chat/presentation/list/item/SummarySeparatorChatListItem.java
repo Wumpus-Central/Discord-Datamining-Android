@@ -65,13 +65,13 @@ public final class SummarySeparatorChatListItem extends ChatListItem {
     }
 
     
-    public final String m204getCurrentMsgId3Eiw7ao() {
-        return this.isBeforeContent ? this.summary.m150getStartId3Eiw7ao() : this.summary.m149getEndId3Eiw7ao();
+    public final String m208getCurrentMsgId3Eiw7ao() {
+        return this.isBeforeContent ? this.summary.m154getStartId3Eiw7ao() : this.summary.m153getEndId3Eiw7ao();
     }
 
     
-    public final String m205getJumpToMsgId3Eiw7ao() {
-        return this.isBeforeContent ? this.summary.m149getEndId3Eiw7ao() : this.summary.m150getStartId3Eiw7ao();
+    public final String m209getJumpToMsgId3Eiw7ao() {
+        return this.isBeforeContent ? this.summary.m153getEndId3Eiw7ao() : this.summary.m154getStartId3Eiw7ao();
     }
 
     public final Summary getSummary() {

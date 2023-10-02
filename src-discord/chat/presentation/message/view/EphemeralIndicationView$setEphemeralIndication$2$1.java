@@ -27,12 +27,12 @@ final class EphemeralIndicationView$setEphemeralIndication$2$1 extends s impleme
     @Override 
     public   Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f21600a;
+        return Unit.f21601a;
     }
 
     
     public final void invoke2(LinkContentNode node) {
         q.h(node, "node");
-        this.$onLinkClicked.invoke(MessageId.m636boximpl(this.$messageId), node);
+        this.$onLinkClicked.invoke(MessageId.m643boximpl(this.$messageId), node);
     }
 }

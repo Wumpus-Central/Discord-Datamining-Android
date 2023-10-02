@@ -32,9 +32,9 @@ public final class InfoLinkMessageAccessory extends MessageAccessory {
     }
 
     
-    public static  InfoLinkMessageAccessory m284copyeTS4JUY$default(InfoLinkMessageAccessory infoLinkMessageAccessory, String str, long j10, String str2, String str3, String str4, ReactAsset reactAsset, int i10, Object obj) {
+    public static  InfoLinkMessageAccessory m288copyeTS4JUY$default(InfoLinkMessageAccessory infoLinkMessageAccessory, String str, long j10, String str2, String str3, String str4, ReactAsset reactAsset, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = infoLinkMessageAccessory.mo236getMessageId3Eiw7ao();
+            str = infoLinkMessageAccessory.mo240getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             j10 = infoLinkMessageAccessory.channelId;
@@ -51,16 +51,16 @@ public final class InfoLinkMessageAccessory extends MessageAccessory {
         if ((i10 & 32) != 0) {
             reactAsset = infoLinkMessageAccessory.icon;
         }
-        return infoLinkMessageAccessory.m287copyeTS4JUY(str, j10, str2, str3, str4, reactAsset);
+        return infoLinkMessageAccessory.m291copyeTS4JUY(str, j10, str2, str3, str4, reactAsset);
     }
 
     
-    public final String m285component13Eiw7ao() {
-        return mo236getMessageId3Eiw7ao();
+    public final String m289component13Eiw7ao() {
+        return mo240getMessageId3Eiw7ao();
     }
 
     
-    public final long m286component2o4g7jtM() {
+    public final long m290component2o4g7jtM() {
         return this.channelId;
     }
 
@@ -81,7 +81,7 @@ public final class InfoLinkMessageAccessory extends MessageAccessory {
     }
 
     
-    public final InfoLinkMessageAccessory m287copyeTS4JUY(String messageId, long j10, String str, String str2, String text, ReactAsset icon) {
+    public final InfoLinkMessageAccessory m291copyeTS4JUY(String messageId, long j10, String str, String str2, String text, ReactAsset icon) {
         q.h(messageId, "messageId");
         q.h(text, "text");
         q.h(icon, "icon");
@@ -96,7 +96,7 @@ public final class InfoLinkMessageAccessory extends MessageAccessory {
             return false;
         }
         InfoLinkMessageAccessory infoLinkMessageAccessory = (InfoLinkMessageAccessory) obj;
-        return MessageId.m640equalsimpl0(mo236getMessageId3Eiw7ao(), infoLinkMessageAccessory.mo236getMessageId3Eiw7ao()) && ChannelId.m614equalsimpl0(this.channelId, infoLinkMessageAccessory.channelId) && q.c(this.attachmentId, infoLinkMessageAccessory.attachmentId) && q.c(this.embedId, infoLinkMessageAccessory.embedId) && q.c(this.text, infoLinkMessageAccessory.text) && this.icon == infoLinkMessageAccessory.icon;
+        return MessageId.m647equalsimpl0(mo240getMessageId3Eiw7ao(), infoLinkMessageAccessory.mo240getMessageId3Eiw7ao()) && ChannelId.m621equalsimpl0(this.channelId, infoLinkMessageAccessory.channelId) && q.c(this.attachmentId, infoLinkMessageAccessory.attachmentId) && q.c(this.embedId, infoLinkMessageAccessory.embedId) && q.c(this.text, infoLinkMessageAccessory.text) && this.icon == infoLinkMessageAccessory.icon;
     }
 
     public final String getAttachmentId() {
@@ -104,7 +104,7 @@ public final class InfoLinkMessageAccessory extends MessageAccessory {
     }
 
     
-    public final long m288getChannelIdo4g7jtM() {
+    public final long m292getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
@@ -118,7 +118,7 @@ public final class InfoLinkMessageAccessory extends MessageAccessory {
 
     @Override 
     
-    public String mo236getMessageId3Eiw7ao() {
+    public String mo240getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -127,7 +127,7 @@ public final class InfoLinkMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int i10 = ((MessageId.m641hashCodeimpl(mo236getMessageId3Eiw7ao()) * 31) + ChannelId.m615hashCodeimpl(this.channelId)) * 31;
+        int i10 = ((MessageId.m648hashCodeimpl(mo240getMessageId3Eiw7ao()) * 31) + ChannelId.m622hashCodeimpl(this.channelId)) * 31;
         String str = this.attachmentId;
         int i11 = 0;
         int hashCode = (i10 + (str == null ? 0 : str.hashCode())) * 31;
@@ -139,8 +139,8 @@ public final class InfoLinkMessageAccessory extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m642toStringimpl(mo236getMessageId3Eiw7ao());
-        String str2 = ChannelId.m617toStringimpl(this.channelId);
+        String str = MessageId.m649toStringimpl(mo240getMessageId3Eiw7ao());
+        String str2 = ChannelId.m624toStringimpl(this.channelId);
         String str3 = this.attachmentId;
         String str4 = this.embedId;
         String str5 = this.text;

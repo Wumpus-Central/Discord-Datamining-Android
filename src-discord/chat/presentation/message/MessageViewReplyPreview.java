@@ -74,7 +74,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
         q.h(eventHandler, "$eventHandler");
         q.h(messageId, "$messageId");
         q.h(executedCommand, "$executedCommand");
-        eventHandler.mo169onTapAvatarx5gers8(messageId, executedCommand.m113getUserIdre6GcUE());
+        eventHandler.mo173onTapAvatarx5gers8(messageId, executedCommand.m117getUserIdre6GcUE());
     }
 
     public static  void configureReply$default(MessageViewReplyPreview messageViewReplyPreview, ReferencedMessage referencedMessage, boolean z10, Function0 function0, int i10, Object obj) {
@@ -102,7 +102,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
     }
 
     
-    public final void m232configureExecutedCommandLdU2QRA(final String messageId, final ExecutedCommand executedCommand, boolean z10, boolean z11, boolean z12, final ChatEventHandler eventHandler) {
+    public final void m236configureExecutedCommandLdU2QRA(final String messageId, final ExecutedCommand executedCommand, boolean z10, boolean z11, boolean z12, final ChatEventHandler eventHandler) {
         q.h(messageId, "messageId");
         q.h(executedCommand, "executedCommand");
         q.h(eventHandler, "eventHandler");
@@ -148,7 +148,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
         MessageContentView messageContentView3 = this.binding.replyText;
         q.g(messageContentView3, "binding.replyText");
         SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(messageContentView3));
-        Unit unit = Unit.f21600a;
+        Unit unit = Unit.f21601a;
         messageContentView2.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(linearLayout2, spannable$default));
         MessageContentView messageContentView4 = this.binding.replyText;
         q.g(messageContentView4, "binding.replyText");
@@ -241,7 +241,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
                 MessageContentView messageContentView4 = this.binding.replyText;
                 q.g(messageContentView4, "binding.replyText");
                 SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(messageContentView4));
-                Unit unit = Unit.f21600a;
+                Unit unit = Unit.f21601a;
                 messageContentView3.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(linearLayout3, spannable$default));
             } else {
                 this.binding.replyText.setText((CharSequence) null);

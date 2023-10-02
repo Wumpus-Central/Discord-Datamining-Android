@@ -34,13 +34,13 @@ public final class MessageId$$serializer implements f0<MessageId> {
 
     @Override 
     public   Object deserialize(Decoder decoder) {
-        return MessageId.m636boximpl(m645deserializeMpY7Jxs(decoder));
+        return MessageId.m643boximpl(m652deserializeMpY7Jxs(decoder));
     }
 
     
-    public String m645deserializeMpY7Jxs(Decoder decoder) {
+    public String m652deserializeMpY7Jxs(Decoder decoder) {
         q.h(decoder, "decoder");
-        return MessageId.m637constructorimpl(decoder.q(getDescriptor()).z());
+        return MessageId.m644constructorimpl(decoder.q(getDescriptor()).z());
     }
 
     @Override 
@@ -50,11 +50,11 @@ public final class MessageId$$serializer implements f0<MessageId> {
 
     @Override 
     public   void serialize(Encoder encoder, Object obj) {
-        m646serializeAyv7vGE(encoder, ((MessageId) obj).m644unboximpl());
+        m653serializeAyv7vGE(encoder, ((MessageId) obj).m651unboximpl());
     }
 
     
-    public void m646serializeAyv7vGE(Encoder encoder, String value) {
+    public void m653serializeAyv7vGE(Encoder encoder, String value) {
         q.h(encoder, "encoder");
         q.h(value, "value");
         Encoder l10 = encoder.l(getDescriptor());

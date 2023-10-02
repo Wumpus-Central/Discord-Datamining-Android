@@ -27,7 +27,7 @@ final class ImageManagerModule$getDominantColors$1 extends s implements Function
     @Override 
     public   Unit invoke(Bitmap bitmap) {
         invoke2(bitmap);
-        return Unit.f21600a;
+        return Unit.f21601a;
     }
 
     

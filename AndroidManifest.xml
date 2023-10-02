@@ -268,6 +268,30 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/zombie" android:name="com.discord.main.MainZombie" android:roundIcon="@mipmap/zombie_round" android:targetActivity="com.discord.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/clyde_stein" android:name="com.discord.main.MainClydeStein" android:roundIcon="@mipmap/clyde_stein_round" android:targetActivity="com.discord.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/slimy" android:name="com.discord.main.MainSlimy" android:roundIcon="@mipmap/slimy_round" android:targetActivity="com.discord.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/drip" android:name="com.discord.main.MainDrip" android:roundIcon="@mipmap/drip_round" android:targetActivity="com.discord.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
         <service android:foregroundServiceType="camera|mediaProjection|microphone|phoneCall" android:name="com.discord.foreground_service.ForegroundService"/>
         <service android:exported="false" android:name="com.discord.notifications.fcm.MessagingService">
             <intent-filter>

@@ -33,6 +33,6 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$4 extends s implem
             q.y("eventHandler");
             chatEventHandler = null;
         }
-        chatEventHandler.mo181onTapObscuredMediaLearnMore8a0ehIg(this.$part.mo236getMessageId3Eiw7ao(), ((InfoLinkMessageAccessory) this.$part).m288getChannelIdo4g7jtM(), ((InfoLinkMessageAccessory) this.$part).getAttachmentId(), ((InfoLinkMessageAccessory) this.$part).getEmbedId());
+        chatEventHandler.mo185onTapObscuredMediaLearnMore8a0ehIg(this.$part.mo240getMessageId3Eiw7ao(), ((InfoLinkMessageAccessory) this.$part).m292getChannelIdo4g7jtM(), ((InfoLinkMessageAccessory) this.$part).getAttachmentId(), ((InfoLinkMessageAccessory) this.$part).getEmbedId());
     }
 }

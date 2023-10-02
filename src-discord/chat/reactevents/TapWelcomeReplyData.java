@@ -26,14 +26,14 @@ public final class TapWelcomeReplyData implements ReactEvent {
     }
 
     
-    public static  TapWelcomeReplyData m468copyAyv7vGE$default(TapWelcomeReplyData tapWelcomeReplyData, long j10, String str, int i10, Object obj) {
+    public static  TapWelcomeReplyData m475copyAyv7vGE$default(TapWelcomeReplyData tapWelcomeReplyData, long j10, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             j10 = tapWelcomeReplyData.stickerId;
         }
         if ((i10 & 2) != 0) {
             str = tapWelcomeReplyData.messageId;
         }
-        return tapWelcomeReplyData.m470copyAyv7vGE(j10, str);
+        return tapWelcomeReplyData.m477copyAyv7vGE(j10, str);
     }
 
     public final long component1() {
@@ -41,12 +41,12 @@ public final class TapWelcomeReplyData implements ReactEvent {
     }
 
     
-    public final String m469component23Eiw7ao() {
+    public final String m476component23Eiw7ao() {
         return this.messageId;
     }
 
     
-    public final TapWelcomeReplyData m470copyAyv7vGE(long j10, String messageId) {
+    public final TapWelcomeReplyData m477copyAyv7vGE(long j10, String messageId) {
         q.h(messageId, "messageId");
         return new TapWelcomeReplyData(j10, messageId, null);
     }
@@ -59,11 +59,11 @@ public final class TapWelcomeReplyData implements ReactEvent {
             return false;
         }
         TapWelcomeReplyData tapWelcomeReplyData = (TapWelcomeReplyData) obj;
-        return this.stickerId == tapWelcomeReplyData.stickerId && MessageId.m640equalsimpl0(this.messageId, tapWelcomeReplyData.messageId);
+        return this.stickerId == tapWelcomeReplyData.stickerId && MessageId.m647equalsimpl0(this.messageId, tapWelcomeReplyData.messageId);
     }
 
     
-    public final String m471getMessageId3Eiw7ao() {
+    public final String m478getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -72,17 +72,17 @@ public final class TapWelcomeReplyData implements ReactEvent {
     }
 
     public int hashCode() {
-        return (b.a(this.stickerId) * 31) + MessageId.m641hashCodeimpl(this.messageId);
+        return (b.a(this.stickerId) * 31) + MessageId.m648hashCodeimpl(this.messageId);
     }
 
     @Override 
     public WritableMap serialize() {
-        return NativeMapExtensionsKt.nativeMapOf(x.a("messageId", MessageId.m642toStringimpl(this.messageId)), x.a("stickerId", String.valueOf(this.stickerId)));
+        return NativeMapExtensionsKt.nativeMapOf(x.a("messageId", MessageId.m649toStringimpl(this.messageId)), x.a("stickerId", String.valueOf(this.stickerId)));
     }
 
     public String toString() {
         long j10 = this.stickerId;
-        String str = MessageId.m642toStringimpl(this.messageId);
+        String str = MessageId.m649toStringimpl(this.messageId);
         return "TapWelcomeReplyData(stickerId=" + j10 + ", messageId=" + str + ")";
     }
 }

@@ -46,7 +46,7 @@ public final class TapTagData implements ReactEvent {
             n1.b(i10, 7, TapTagData$$serializer.INSTANCE.getDescriptor());
         }
         this.messageId = str;
-        this.channelId = channelId.m619unboximpl();
+        this.channelId = channelId.m626unboximpl();
         this.tagType = str2;
     }
 
@@ -59,7 +59,7 @@ public final class TapTagData implements ReactEvent {
     }
 
     
-    public static  TapTagData m462copyEqy5D80$default(TapTagData tapTagData, String str, long j10, String str2, int i10, Object obj) {
+    public static  TapTagData m469copyEqy5D80$default(TapTagData tapTagData, String str, long j10, String str2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapTagData.messageId;
         }
@@ -69,25 +69,25 @@ public final class TapTagData implements ReactEvent {
         if ((i10 & 4) != 0) {
             str2 = tapTagData.tagType;
         }
-        return tapTagData.m465copyEqy5D80(str, j10, str2);
+        return tapTagData.m472copyEqy5D80(str, j10, str2);
     }
 
     public static final void write$Self(TapTagData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.i(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m636boximpl(self.messageId));
-        output.i(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m610boximpl(self.channelId));
+        output.i(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m643boximpl(self.messageId));
+        output.i(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m617boximpl(self.channelId));
         output.E(serialDesc, 2, a2.f6238a, self.tagType);
     }
 
     
-    public final String m463component13Eiw7ao() {
+    public final String m470component13Eiw7ao() {
         return this.messageId;
     }
 
     
-    public final long m464component2o4g7jtM() {
+    public final long m471component2o4g7jtM() {
         return this.channelId;
     }
 
@@ -96,7 +96,7 @@ public final class TapTagData implements ReactEvent {
     }
 
     
-    public final TapTagData m465copyEqy5D80(String messageId, long j10, String str) {
+    public final TapTagData m472copyEqy5D80(String messageId, long j10, String str) {
         q.h(messageId, "messageId");
         return new TapTagData(messageId, j10, str, null);
     }
@@ -109,16 +109,16 @@ public final class TapTagData implements ReactEvent {
             return false;
         }
         TapTagData tapTagData = (TapTagData) obj;
-        return MessageId.m640equalsimpl0(this.messageId, tapTagData.messageId) && ChannelId.m614equalsimpl0(this.channelId, tapTagData.channelId) && q.c(this.tagType, tapTagData.tagType);
+        return MessageId.m647equalsimpl0(this.messageId, tapTagData.messageId) && ChannelId.m621equalsimpl0(this.channelId, tapTagData.channelId) && q.c(this.tagType, tapTagData.tagType);
     }
 
     
-    public final long m466getChannelIdo4g7jtM() {
+    public final long m473getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
     
-    public final String m467getMessageId3Eiw7ao() {
+    public final String m474getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -127,7 +127,7 @@ public final class TapTagData implements ReactEvent {
     }
 
     public int hashCode() {
-        int i10 = ((MessageId.m641hashCodeimpl(this.messageId) * 31) + ChannelId.m615hashCodeimpl(this.channelId)) * 31;
+        int i10 = ((MessageId.m648hashCodeimpl(this.messageId) * 31) + ChannelId.m622hashCodeimpl(this.channelId)) * 31;
         String str = this.tagType;
         return i10 + (str == null ? 0 : str.hashCode());
     }
@@ -138,8 +138,8 @@ public final class TapTagData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m642toStringimpl(this.messageId);
-        String str2 = ChannelId.m617toStringimpl(this.channelId);
+        String str = MessageId.m649toStringimpl(this.messageId);
+        String str2 = ChannelId.m624toStringimpl(this.channelId);
         String str3 = this.tagType;
         return "TapTagData(messageId=" + str + ", channelId=" + str2 + ", tagType=" + str3 + ")";
     }

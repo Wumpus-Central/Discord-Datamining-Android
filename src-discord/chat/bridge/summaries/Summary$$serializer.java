@@ -140,7 +140,7 @@ public final class Summary$$serializer implements f0<Summary> {
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj;
         MessageId messageId2 = (MessageId) obj3;
-        return new Summary(i12, str3, str2, str, (List) obj2, messageId != null ? messageId.m644unboximpl() : null, messageId2 != null ? messageId2.m644unboximpl() : null, i10, (ChannelId) obj4, null, null);
+        return new Summary(i12, str3, str2, str, (List) obj2, messageId != null ? messageId.m651unboximpl() : null, messageId2 != null ? messageId2.m651unboximpl() : null, i10, (ChannelId) obj4, null, null);
     }
 
     @Override 

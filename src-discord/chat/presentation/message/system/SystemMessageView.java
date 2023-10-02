@@ -11,7 +11,9 @@ import com.discord.chat.bridge.MediaType;
 import com.discord.chat.bridge.Message;
 import com.discord.chat.bridge.MessageKt;
 import com.discord.chat.bridge.MessageType;
+import com.discord.chat.bridge.embed.Embed;
 import com.discord.chat.bridge.ephemeral.EphemeralIndication;
+import com.discord.chat.bridge.policynotice.SafetyPolicyNoticeEmbed;
 import com.discord.chat.bridge.reaction.MessageReaction;
 import com.discord.chat.bridge.sticker.Sticker;
 import com.discord.chat.bridge.structurabletext.StructurableText;
@@ -20,12 +22,14 @@ import com.discord.chat.databinding.SystemMessageViewBinding;
 import com.discord.chat.presentation.events.ChatEventHandler;
 import com.discord.chat.presentation.message.MessageAccessoriesView;
 import com.discord.chat.presentation.message.messagepart.ChannelPromptActionsAccessory;
+import com.discord.chat.presentation.message.messagepart.EmbedMessageAccessory;
 import com.discord.chat.presentation.message.messagepart.EphemeralIndicationMessageAccessory;
 import com.discord.chat.presentation.message.messagepart.InviteToSpeakAccessory;
 import com.discord.chat.presentation.message.messagepart.MessageAccessory;
 import com.discord.chat.presentation.message.messagepart.MessageContentAccessory;
 import com.discord.chat.presentation.message.messagepart.ReactionsMessageAccessory;
 import com.discord.chat.presentation.message.messagepart.RoleSubscriptionPurchaseAccessory;
+import com.discord.chat.presentation.message.messagepart.SafetyPolicyNoticeMessageAccessory;
 import com.discord.chat.presentation.message.messagepart.ThreadEmbedMessageAccessory;
 import com.discord.chat.presentation.message.messagepart.TimestampMessageAccessory;
 import com.discord.chat.presentation.message.messagepart.WelcomeStickerAccessory;
@@ -42,10 +46,12 @@ import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.view.SimpleDraweeView;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
+import kotlin.collections.j;
 import kotlin.jvm.functions.Function4;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
@@ -214,7 +220,7 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
     private final List<MessageAccessory> generateMessageAccessories(Message message, MessageContext messageContext) {
         int i10;
         Message message2;
-        List<MessageReaction> reactions;
+        boolean z10;
         int i11;
         this.accessories.clear();
         Integer constrainedWidth = message.getConstrainedWidth();
@@ -224,7 +230,7 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
             i10 = getResources().getDisplayMetrics().widthPixels;
         }
         StructurableText content = message.getContent();
-        boolean z10 = false;
+        boolean z11 = false;
         if (content != null) {
             ArrayList<MessageAccessory> arrayList = this.accessories;
             String str = message.m24getId3Eiw7ao();
@@ -243,6 +249,7 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
             this.accessories.add(new TimestampMessageAccessory(message.m24getId3Eiw7ao(), timestamp, ThemeManagerKt.getTheme().getTextMuted(), DiscordFont.PrimaryMedium, null));
         }
         Integer totalMonthsSubscribed = message.getTotalMonthsSubscribed();
+        boolean z12 = true;
         if (totalMonthsSubscribed == null || totalMonthsSubscribed.intValue() > 1) {
             message2 = message;
         } else {
@@ -262,12 +269,30 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
             this.accessories.add(new InviteToSpeakAccessory(message2));
         }
         if (message.getType() == MessageType.GUILD_DEADCHAT_REVIVE_PROMPT || message.getType() == MessageType.GUILD_GAMING_STATS_PROMPT) {
-            this.accessories.add(new ChannelPromptActionsAccessory(message2));
-        }
-        if (message.getReactions() != null && (!reactions.isEmpty())) {
+            List<Embed> embeds = message.getEmbeds();
+            if (embeds != null) {
+                int i12 = 0;
+                for (Iterator it = embeds.iterator(); it.hasNext(); it = it) {
+                    Object next = it.next();
+                    int i13 = i12 + 1;
+                    if (i12 < 0) {
+                        j.s();
+                    }
+                    this.accessories.add(new EmbedMessageAccessory(message.m24getId3Eiw7ao(), i12, i10, 16, (Embed) next, false, false, false, false, null, null, null));
+                    z12 = z12;
+                    i12 = i13;
+                }
+            }
+            z10 = z12;
+            this.accessories.add(new ChannelPromptActionsAccessory(message));
+        } else {
             z10 = true;
         }
-        if (z10) {
+        List<MessageReaction> reactions = message.getReactions();
+        if (reactions != null && (reactions.isEmpty() ^ z10) == z10) {
+            z11 = z10;
+        }
+        if (z11) {
             this.accessories.add(new ReactionsMessageAccessory(message.m24getId3Eiw7ao(), message.getReactions(), messageContext.getCanAddNewReactions(), messageContext.getUseAddBurstReaction(), messageContext.getAddReactionLabel(), messageContext.getAddNewReactionAccessibilityLabel(), messageContext.getAddNewBurstReactionAccessibilityLabel(), messageContext.getReactionsTheme(), null, null));
         }
         ThreadEmbed threadEmbed = message.getThreadEmbed();
@@ -277,6 +302,10 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         EphemeralIndication ephemeralIndication = message.getEphemeralIndication();
         if (ephemeralIndication != null) {
             this.accessories.add(new EphemeralIndicationMessageAccessory(message.m24getId3Eiw7ao(), ephemeralIndication, null));
+        }
+        SafetyPolicyNoticeEmbed safetyPolicyNoticeEmbed = message.getSafetyPolicyNoticeEmbed();
+        if (safetyPolicyNoticeEmbed != null) {
+            this.accessories.add(new SafetyPolicyNoticeMessageAccessory(message.m24getId3Eiw7ao(), safetyPolicyNoticeEmbed, null));
         }
         return this.accessories;
     }
@@ -353,7 +382,7 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         }
         Function4<MessageId, ChannelId, Integer, MediaType, Unit> onMessageLongPressed = eventHandler.getOnMessageLongPressed();
         if (onMessageLongPressed != null) {
-            onMessageLongPressed.invoke(MessageId.m636boximpl(message.m24getId3Eiw7ao()), ChannelId.m610boximpl(message.m22getChannelIdo4g7jtM()), null, null);
+            onMessageLongPressed.invoke(MessageId.m643boximpl(message.m24getId3Eiw7ao()), ChannelId.m617boximpl(message.m22getChannelIdo4g7jtM()), null, null);
         }
         return true;
     }
@@ -393,7 +422,7 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         q.g(simpleDraweeView2, "binding.icon");
         ColorUtilsKt.setTintColor(simpleDraweeView2, Integer.valueOf(intValue));
         List<MessageAccessory> generateMessageAccessories = generateMessageAccessories(message, context);
-        this.binding.accessoriesView.m229setAccessoriesRC8ZMxU(message.m24getId3Eiw7ao(), message.m22getChannelIdo4g7jtM(), message.m23getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, null);
+        this.binding.accessoriesView.m233setAccessoriesRC8ZMxU(message.m24getId3Eiw7ao(), message.m22getChannelIdo4g7jtM(), message.m23getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, null);
         MessageAccessoriesView messageAccessoriesView = this.binding.accessoriesView;
         q.g(messageAccessoriesView, "binding.accessoriesView");
         if (!generateMessageAccessories.isEmpty()) {

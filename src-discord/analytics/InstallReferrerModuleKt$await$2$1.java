@@ -23,18 +23,18 @@ final class InstallReferrerModuleKt$await$2$1 extends s implements Function1<Thr
     @Override 
     public   Unit invoke(Throwable th2) {
         invoke2(th2);
-        return Unit.f21600a;
+        return Unit.f21601a;
     }
 
     
     public final void invoke2(Throwable th2) {
         InstallReferrerClient installReferrerClient = this.$this_await;
         try {
-            s.a aVar = pf.s.f26002k;
+            s.a aVar = pf.s.f26001k;
             installReferrerClient.a();
-            pf.s.b(Unit.f21600a);
+            pf.s.b(Unit.f21601a);
         } catch (Throwable th3) {
-            s.a aVar2 = pf.s.f26002k;
+            s.a aVar2 = pf.s.f26001k;
             pf.s.b(t.a(th3));
         }
     }

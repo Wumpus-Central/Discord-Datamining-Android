@@ -96,7 +96,7 @@ public final class LocalImageThumbnailView extends FrameLayout {
         this.imageView = imageView;
         SimpleDraweeView simpleDraweeView = new SimpleDraweeView(context);
         addToParent(simpleDraweeView);
-        simpleDraweeView.getHierarchy().t(ScalingUtils.ScaleType.f7533i);
+        simpleDraweeView.getHierarchy().t(ScalingUtils.ScaleType.f7536i);
         this.simpleDraweeView = simpleDraweeView;
     }
 }

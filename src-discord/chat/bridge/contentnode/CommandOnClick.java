@@ -148,7 +148,7 @@ public final class CommandOnClick {
             MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
             String str = self.messageId;
             if (str != null) {
-                messageId = MessageId.m636boximpl(str);
+                messageId = MessageId.m643boximpl(str);
             } else {
                 messageId = null;
             }
@@ -252,16 +252,16 @@ public final class CommandOnClick {
         int i10 = 0;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;
         UserId userId = this.userId;
-        int i11 = (hashCode + (userId == null ? 0 : UserId.m679hashCodeimpl(userId.m683unboximpl()))) * 31;
+        int i11 = (hashCode + (userId == null ? 0 : UserId.m686hashCodeimpl(userId.m690unboximpl()))) * 31;
         String str2 = this.messageId;
-        int i12 = (i11 + (str2 == null ? 0 : MessageId.m641hashCodeimpl(str2))) * 31;
+        int i12 = (i11 + (str2 == null ? 0 : MessageId.m648hashCodeimpl(str2))) * 31;
         UserId userId2 = this.applicationUserId;
-        int i13 = (i12 + (userId2 == null ? 0 : UserId.m679hashCodeimpl(userId2.m683unboximpl()))) * 31;
+        int i13 = (i12 + (userId2 == null ? 0 : UserId.m686hashCodeimpl(userId2.m690unboximpl()))) * 31;
         MessageType messageType = this.messageType;
         int hashCode2 = (i13 + (messageType == null ? 0 : messageType.hashCode())) * 31;
         ChannelId channelId = this.messageChannelId;
         if (channelId != null) {
-            i10 = ChannelId.m615hashCodeimpl(channelId.m619unboximpl());
+            i10 = ChannelId.m622hashCodeimpl(channelId.m626unboximpl());
         }
         return hashCode2 + i10;
     }
@@ -270,7 +270,7 @@ public final class CommandOnClick {
         String str = this.action;
         UserId userId = this.userId;
         String str2 = this.messageId;
-        String str3 = str2 == null ? "null" : MessageId.m642toStringimpl(str2);
+        String str3 = str2 == null ? "null" : MessageId.m649toStringimpl(str2);
         UserId userId2 = this.applicationUserId;
         MessageType messageType = this.messageType;
         ChannelId channelId = this.messageChannelId;

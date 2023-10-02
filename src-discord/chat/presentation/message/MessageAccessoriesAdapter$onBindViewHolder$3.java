@@ -29,11 +29,11 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$3 extends s implem
     @Override 
     public   Unit invoke(Double d10, Integer num) {
         invoke2(d10, num);
-        return Unit.f21600a;
+        return Unit.f21601a;
     }
 
     
     public final void invoke2(Double d10, Integer num) {
-        this.this$0.m213onMediaClickedl3ndGo(this.$holder, this.$part.mo236getMessageId3Eiw7ao(), ((EmbedMessageAccessory) this.$part).getIndex(), "embed", d10, num, ViewResizeMode.Fill);
+        this.this$0.m217onMediaClickedl3ndGo(this.$holder, this.$part.mo240getMessageId3Eiw7ao(), ((EmbedMessageAccessory) this.$part).getIndex(), "embed", d10, num, ViewResizeMode.Fill);
     }
 }

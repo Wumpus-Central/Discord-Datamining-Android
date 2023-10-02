@@ -26,7 +26,7 @@ final class CrashReportingModule$addListener$1 extends s implements Function2<Hi
     @Override 
     public   Unit invoke(HistoricalProcessExitReason.Reason reason, SystemLogUtils.Tombstone tombstone) {
         invoke2(reason, tombstone);
-        return Unit.f21600a;
+        return Unit.f21601a;
     }
 
     

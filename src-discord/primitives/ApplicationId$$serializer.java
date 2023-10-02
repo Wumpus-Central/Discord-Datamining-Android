@@ -34,13 +34,13 @@ public final class ApplicationId$$serializer implements f0<ApplicationId> {
 
     @Override 
     public   Object deserialize(Decoder decoder) {
-        return ApplicationId.m597boximpl(m607deserializeUV2lyTI(decoder));
+        return ApplicationId.m604boximpl(m614deserializeUV2lyTI(decoder));
     }
 
     
-    public long m607deserializeUV2lyTI(Decoder decoder) {
+    public long m614deserializeUV2lyTI(Decoder decoder) {
         q.h(decoder, "decoder");
-        return ApplicationId.m598constructorimpl(decoder.q(getDescriptor()).l());
+        return ApplicationId.m605constructorimpl(decoder.q(getDescriptor()).l());
     }
 
     @Override 
@@ -50,11 +50,11 @@ public final class ApplicationId$$serializer implements f0<ApplicationId> {
 
     @Override 
     public   void serialize(Encoder encoder, Object obj) {
-        m608serializemvAn8kk(encoder, ((ApplicationId) obj).m606unboximpl());
+        m615serializemvAn8kk(encoder, ((ApplicationId) obj).m613unboximpl());
     }
 
     
-    public void m608serializemvAn8kk(Encoder encoder, long j10) {
+    public void m615serializemvAn8kk(Encoder encoder, long j10) {
         q.h(encoder, "encoder");
         Encoder l10 = encoder.l(getDescriptor());
         if (l10 != null) {

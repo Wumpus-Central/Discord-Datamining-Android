@@ -87,7 +87,7 @@ public final class TapTagData$$serializer implements f0<TapTagData> {
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj3;
         if (messageId != null) {
-            str = messageId.m644unboximpl();
+            str = messageId.m651unboximpl();
         }
         return new TapTagData(i10, str, (ChannelId) obj, (String) obj2, null, null);
     }

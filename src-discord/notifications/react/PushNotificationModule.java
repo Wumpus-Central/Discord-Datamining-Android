@@ -14,7 +14,6 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.WritableNativeMap;
-import com.facebook.react.modules.appstate.AppStateModule;
 import com.facebook.react.uimanager.ViewProps;
 import java.util.Map;
 import kotlin.Metadata;
@@ -72,11 +71,12 @@ public final class PushNotificationModule extends ReactContextBaseJavaModule {
         q.h(type, "type");
     }
 
-    @ReactMethod
-    public final void appStateChanged(String appState) {
-        q.h(appState, "appState");
-        updateAuthState();
-        NotificationClient.Companion.getInstance().setActive(q.c(appState, AppStateModule.APP_STATE_ACTIVE));
+    
+    @com.facebook.react.bridge.ReactMethod
+    
+    public final void appStateChanged(java.lang.String r5) {
+        
+        throw new UnsupportedOperationException("Method not decompiled: com.discord.notifications.react.PushNotificationModule.appStateChanged(java.lang.String):void");
     }
 
     @ReactMethod

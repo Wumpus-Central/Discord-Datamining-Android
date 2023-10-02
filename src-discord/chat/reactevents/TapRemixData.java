@@ -52,27 +52,27 @@ public final class TapRemixData implements ReactEvent {
     }
 
     
-    public static  TapRemixData m446copy1xi1bu0$default(TapRemixData tapRemixData, String str, int i10, Object obj) {
+    public static  TapRemixData m453copy1xi1bu0$default(TapRemixData tapRemixData, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapRemixData.messageId;
         }
-        return tapRemixData.m448copy1xi1bu0(str);
+        return tapRemixData.m455copy1xi1bu0(str);
     }
 
     public static final void write$Self(TapRemixData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.h(self, "self");
         q.h(output, "output");
         q.h(serialDesc, "serialDesc");
-        output.i(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m636boximpl(self.messageId));
+        output.i(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m643boximpl(self.messageId));
     }
 
     
-    public final String m447component13Eiw7ao() {
+    public final String m454component13Eiw7ao() {
         return this.messageId;
     }
 
     
-    public final TapRemixData m448copy1xi1bu0(String messageId) {
+    public final TapRemixData m455copy1xi1bu0(String messageId) {
         q.h(messageId, "messageId");
         return new TapRemixData(messageId, null);
     }
@@ -81,16 +81,16 @@ public final class TapRemixData implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof TapRemixData) && MessageId.m640equalsimpl0(this.messageId, ((TapRemixData) obj).messageId);
+        return (obj instanceof TapRemixData) && MessageId.m647equalsimpl0(this.messageId, ((TapRemixData) obj).messageId);
     }
 
     
-    public final String m449getMessageId3Eiw7ao() {
+    public final String m456getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return MessageId.m641hashCodeimpl(this.messageId);
+        return MessageId.m648hashCodeimpl(this.messageId);
     }
 
     @Override 
@@ -99,7 +99,7 @@ public final class TapRemixData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m642toStringimpl(this.messageId);
+        String str = MessageId.m649toStringimpl(this.messageId);
         return "TapRemixData(messageId=" + str + ")";
     }
 

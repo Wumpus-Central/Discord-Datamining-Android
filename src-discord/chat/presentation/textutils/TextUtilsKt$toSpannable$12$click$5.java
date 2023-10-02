@@ -27,7 +27,7 @@ public final class TextUtilsKt$toSpannable$12$click$5 extends s implements Funct
     @Override 
     public   Unit invoke(View view) {
         invoke2(view);
-        return Unit.f21600a;
+        return Unit.f21601a;
     }
 
     

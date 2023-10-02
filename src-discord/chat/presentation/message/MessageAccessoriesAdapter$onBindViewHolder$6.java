@@ -26,7 +26,7 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$6 extends s implem
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f21600a;
+        return Unit.f21601a;
     }
 
     
@@ -38,6 +38,6 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$6 extends s implem
             q.y("eventHandler");
             chatEventHandler = null;
         }
-        chatEventHandler.mo175onTapGiftCodeAcceptNU4t8f8(giftCode, this.$part.mo236getMessageId3Eiw7ao());
+        chatEventHandler.mo179onTapGiftCodeAcceptNU4t8f8(giftCode, this.$part.mo240getMessageId3Eiw7ao());
     }
 }
